@@ -2,7 +2,7 @@
 layout: post
 title: Getting Started for Angular 2 DropDownList
 description: Getting Started for Angular 2 DropDownList
-platform: js
+platform:Angular2
 control: DropDownList
 documentation: ug
 keywords: DropDownList, js dropdown, Populating data

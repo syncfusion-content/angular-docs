@@ -2,7 +2,7 @@
 layout: post
 title: Getting-Started for Angular 2 Menu
 description: getting started for Angular 2 Menu
-platform: js
+platform:Angular2
 control: Menu
 documentation: ug
 keywords:ejmenu, js menu, menu
