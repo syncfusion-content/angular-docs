@@ -2,7 +2,7 @@
 layout: post
 title: Overview
 description: overview
-platform: js
+platform: Angular 2
 control: Accordion 
 documentation: ug
 ---

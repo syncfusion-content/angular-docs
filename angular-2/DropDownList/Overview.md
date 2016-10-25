@@ -1,8 +1,8 @@
 ---
 layout: post
-title: OverView of the DropDownList widget for Syncfusion Essential JS
-description: OverView of the DropDownList widget for Syncfusion Essential JS 
-platform: js
+title: OverView of the DropDownList widget 
+description: OverView of the DropDownList widget 
+platform: Angular 2
 control: DropDownList
 documentation: ug
 ---

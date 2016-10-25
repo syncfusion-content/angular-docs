@@ -8,7 +8,7 @@ keywords:ejaccordion, js accordion, accordion
 ---
 # Getting started
 
-This section explains briefly about how to create an **Accordion** in your application with **JavaScript**.
+This section explains briefly about how to create an **Accordion** in your application with **Angular 2**.
 
 ## Configure Accordion
 
