@@ -24,24 +24,22 @@ Create an **HTML** file and add the following template in the HTML file for crea
 
 {% highlight html %}
 
-<!doctype html>
-<html lang="en" ng-app="tabApp">
-<head>
-    <title>Essential Studio for JavaScript : Angular JS Support for Tab </title>
-    <!-- Style sheet for default theme (flat azure) -->
-    <link href="http://cdn.syncfusion.com/{{ site.releaseversion }}/js/web/flat-azure/ej.web.all.min.css" rel="stylesheet" />
-    <!--Scripts-->
-    <script src="http://cdn.syncfusion.com/js/assets/external/jquery-1.11.3.min.js" type="text/javascript"> </script> 
-    <script src="http://cdn.syncfusion.com/js/assets/external/angular.min.js"></script>
-    <script type="text/javascript" src="http://cdn.syncfusion.com/{{ site.releaseversion }}/js/web/ej.web.all.min.js "></script>
-    <script src="http://cdn.syncfusion.com/{{ site.releaseversion }}/js/common/ej.widget.angular.min.js"></script>
-    <!--Add custom scripts here -->
-</head>
-<body ng-controller="TabCtrl">
-
-<!--Add necessary HTML elements-->
-
-</body>
+<!DOCTYPE html>
+<html>
+   <head> 
+    <link href="//cdn.syncfusion.com/{{ site.releaseversion }}/js/web/flat-azure/ej.web.all.min.css" rel="stylesheet" />
+    <script src="node_modules/core-js/client/shim.min.js"></script>
+    <script src="node_modules/zone.js/dist/zone.js"></script>
+    <script src="node_modules/reflect-metadata/Reflect.js"></script>
+    <script src="node_modules/systemjs/dist/system.src.js"></script>
+    <script src="https://code.jquery.com/jquery-3.0.0.min.js"></script> 
+    <script src="http://cdn.syncfusion.com/{{ site.releaseversion }}/js/web/ej.web.all.min.js" type="text/javascript"></script>
+    <script src ="http://cdn.syncfusion.com/{{ site.releaseversion }}/js/common/ej.angular2.min.js"></script>
+    <script src="systemjs.config.js"></script>
+  </head>
+  <body>
+   <ej-app>Loading...</ej-app>
+  </body>
 </html>
 
 {% endhighlight %} 
