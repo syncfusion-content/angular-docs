@@ -106,7 +106,7 @@ Every **Menu** has a list of **Menu** items with list of sub level **Menu** item
 
 The following screenshot displays output.
 
-![](Getting-Started_images/Getting-Started_img3.png) 
+![](Getting-Started_images/Getting-Started_img3.jpg) 
 
 ## Initialize sub-level Menu items
 
@@ -214,7 +214,7 @@ To initialize multiple levels sub menu items, use the following code example.
 
 The following screenshot is the output.
 
-![](Getting-Started_images/Getting-Started_img5.png) 
+![](Getting-Started_images/Getting-Started_img1.png) 
 
 By following the above mentioned steps, you can render the **Menu** control with multiple level sub items through online data source. You can simply customize the **Menu** widget in an efficient manner.
 
