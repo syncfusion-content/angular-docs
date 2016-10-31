@@ -2,7 +2,7 @@
 layout: post
 title: Getting started with Syncfusion Essential HeatMap for Angular 2.0
 description: Getting started walk through to create your first Heat map.
-platform: js
+platform: Angular2
 control: ejHeatMap
 keywords: HeatMap, js heatmap, Populating data
 ---
@@ -66,7 +66,7 @@ import {EJ_HEATMAP_COMPONENTS} from 'ej/heatmap.component';
 })
 export class DefaultComponent {
     }
-}
+    
 {% endhighlight %}
 
 ### Prepare and Populate data

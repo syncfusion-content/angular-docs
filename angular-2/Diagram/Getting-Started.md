@@ -57,19 +57,15 @@ The Diagram can be created from a HTML ‘input’ element with the HTML 'id' at
 	
 {% highlight html%}	
 	
-		import {Component} from '@angular/core';
-        import {EJ_DIAGRAM_COMPONENTS} from 'ej/diagram.component';
-
-         @Component({
-           selector: 'sd-home',
-           //give the path file for diagram component html file.
-           templateUrl: 'app/components/diagram/diagram.component.html' 
-          })
-         export class DiagramComponent {
-            margin:Object ;
-            constructor() {
-                this.margin ={ "left": 25, "right": 25}
-        }}		
+import {Component} from '@angular/core';
+import {EJ_DIAGRAM_COMPONENTS} from 'ej/diagram.component';
+@Component({
+    selector: 'sd-home',
+    //give the path file for diagram component html file.
+    templateUrl: 'app/components/diagram/diagram.component.html'
+    })
+    export class DiagramComponent {
+        }		
 	
 {% endhighlight %}
 
@@ -174,15 +170,15 @@ export class DefaultComponent {
         this.nodeTemplate = function (diagram, node) {
                 node.labels[0].text = node.Name;
 	            node.fillColor = codes[node.Role];
-          };
+                };
         this.defaultSettings = {
             node: {
                 fillColor: "#88C65C", width: 100,
                 height: 40, borderColor: "black", borderWidth: 1, labels: [{ name: "label1", fontColor: "white", fontSize: 12, margin: { left: 10, right: 10 } }]
             },
             connector: {
-                lineColor: "#000000", segments: [{ type: "orthogonal" }], targetDecorator: { shape: "none" },
-            }
+                lineColor: "#000000", segments: [{ type: "orthogonal" }], targetDecorator: { shape: "none" }
+                }
         };
     }
 }
