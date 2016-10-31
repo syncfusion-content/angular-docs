@@ -110,37 +110,21 @@ Create a new HTML file and include the below initial code.
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
     <head>
         <meta charset="utf-8" />
-        <title> </title>
-    </head>
-    <body>
-    </body>
+        <title>Getting Started - Ribbon</title>
+        <link href="http://cdn.syncfusion.com/{{ site.releaseversion }}/js/web/flat-azure/ej.web.all.min.css" rel="stylesheet" />
+        <link href="http://cdn.syncfusion.com/{{ site.releaseversion }}/js/web/ribbon-css/ej.icons.css" rel="stylesheet" />
+        <script src="node_modules/core-js/client/shim.min.js"></script>
+        <script src="node_modules/zone.js/dist/zone.js"></script>
+        <script src="node_modules/reflect-metadata/Reflect.js"></script>
+        <script src="node_modules/systemjs/dist/system.src.js"></script>
+         <script src="http://cdn.syncfusion.com/js/assets/external/jquery-3.0.0.min.js"></script>
+	    <script src="http://cdn.syncfusion.com/{{ site.releaseversion }}/js/web/ej.web.all.min.js"></script>
+        <script src ="http://cdn.syncfusion.com/{{ site.releaseversion }}/js/common/ej.angular2.min.js"></script>
+        <script src="systemjs.config.js"></script>
+        </head>
+      <body>
+     </body>
 </html>
-
-{% endhighlight %}
-
-Refer the CSS file from the specific theme folder to your HTML file within the head section. Refer the built-in available themes from [here](/js/theming-in-essential-javascript-components).
-
-{% highlight html %}
-
-<head>
-    <meta charset="utf-8" />
-    <title>Getting Started - Ribbon</title>
-    <link href="http://cdn.syncfusion.com/{{ site.releaseversion }}/js/web/flat-azure/ej.web.all.min.css" rel="stylesheet" />
-</head>
-
-{% endhighlight %}
-
-Add links to the [CDN](/js/cdn) Script files with other required external dependencies.
-
-{% highlight html %}
-
-<head>
-    <meta charset="utf-8" />
-    <title>Getting Started - Ribbon</title>
-    <link href="http://cdn.syncfusion.com/{{ site.releaseversion }}/js/web/flat-azure/ej.web.all.min.css" rel="stylesheet" />
-    <script src="http://cdn.syncfusion.com/js/assets/external/jquery-3.0.0.min.js"></script>
-	<script src="http://cdn.syncfusion.com/{{ site.releaseversion }}/js/web/ej.web.all.min.js"></script>
-</head>
 
 {% endhighlight %}
 
@@ -194,7 +178,7 @@ export class RibbonComponent {
 
 {% endhighlight %}
 
-![](Getting-Started_images/Getting-Started_img1.png)
+![](Getting_Started_images/Getting_Started_img1.png)
 
 ## Adding Tabs
 
@@ -244,7 +228,7 @@ export class RibbonComponent {
 
 {% endhighlight %}
 
-![](Getting-Started_images/Getting-Started_img2.png)
+![](Getting_Started_images/Getting_Started_img2.png)
 
 ## Configuring Groups
 
@@ -300,4 +284,4 @@ export class RibbonComponent {
 }
 {% endhighlight %}
 
-![](Getting-Started_images/Getting-Started_img3.png)
+![](Getting_Started_images/Getting_Started_img3.png)

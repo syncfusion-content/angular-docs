@@ -161,48 +161,32 @@ N> Kanban uses one or more sub-controls, therefore refer the `ej.web.all.min.js`
 
 To get the real appearance of the Kanban, the dependent CSS file `ej.web.all.min.css` (which includes styles of all the widgets) should also needs to be referred.
 
-## Script/CSS Reference
+## Preparing HTML document
 
-Create a new HTML file and include the below initial code.
+Create an HTML page and add the scripts references in the order mentioned in the following code example.
 
 {% highlight html %}
 
 <!DOCTYPE html>
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
-    <head>
+     <head>
         <meta charset="utf-8" />
-        <title> </title>
-    </head>
-    <body>
-    </body>
+         <title>Getting Started - Kanban</title>
+        <link href="http://cdn.syncfusion.com/{{ site.releaseversion }}/js/web/flat-azure/ej.web.all.min.css" rel="stylesheet" />
+        <script src="node_modules/core-js/client/shim.min.js"></script>
+        <script src="node_modules/zone.js/dist/zone.js"></script>
+        <script src="node_modules/reflect-metadata/Reflect.js"></script>
+        <script src="node_modules/systemjs/dist/system.src.js"></script>
+        <script src="http://cdn.syncfusion.com/js/assets/external/jquery-3.0.0.min.js"></script>
+        <script src="http://cdn.syncfusion.com/js/assets/external/jsrender.min.js"></script>
+	    <script src="http://cdn.syncfusion.com/{{ site.releaseversion }}/js/web/ej.web.all.min.js"></script>
+        <script src ="http://cdn.syncfusion.com/{{ site.releaseversion }}/js/common/ej.angular2.min.js"></script>
+        <script src="systemjs.config.js"></script>
+      </head>
+     <body>
+        <ej-app>Loading...</ej-app>
+     </body>
 </html>
-
-{% endhighlight %}
-
-Refer the CSS file from the specific theme folder to your HTML file within the head section. Refer the built-in available themes from [here](/js/theming-in-essential-javascript-components).
-
-{% highlight html %}
-
-<head>
-    <meta charset="utf-8" />
-    <title>Getting Started - Kanban</title>
-    <link href="http://cdn.syncfusion.com/{{ site.releaseversion }}/js/web/flat-azure/ej.web.all.min.css" rel="stylesheet" />
-</head>
-
-{% endhighlight %}
-
-Add links to the [CDN](/js/cdn) Script files with other required external dependencies.
-
-{% highlight html %}
-
-<head>
-    <meta charset="utf-8" />
-    <title>Getting Started - Kanban</title>
-    <link href="http://cdn.syncfusion.com/{{ site.releaseversion }}/js/web/flat-azure/ej.web.all.min.css" rel="stylesheet" />
-    <script src="http://cdn.syncfusion.com/js/assets/external/jquery-3.0.0.min.js"></script>
-    <script src="http://cdn.syncfusion.com/js/assets/external/jsrender.min.js"></script>
-	<script src="http://cdn.syncfusion.com/{{ site.releaseversion }}/js/web/ej.web.all.min.js"></script>
-</head>
 
 {% endhighlight %}
 
@@ -218,7 +202,6 @@ Create a Div element within the body section of the HTML document, where the Kan
    <e-kanban-columns>
         <e-kanban-column headerText="Backlog"></e-kanban-column>
         <e-kanban-column headerText="In Progress"></e-kanban-column>
-        <e-kanban-column headerText="Testing"></e-kanban-column>
         <e-kanban-column headerText="Done"></e-kanban-column>
    </e-kanban-columns>
 </ej-kanban>
@@ -245,7 +228,7 @@ export class KanbanComponent {
 
 {% endhighlight %}
 
-![](Getting-Started_images/Getting-Started_img1.png)
+![](Getting_Started_images/Getting_Started_img1.png)
 
 ## Mapping Values
 
@@ -262,7 +245,6 @@ In order to display cards in Kanban control, you need to map the database fields
     <e-kanban-columns>
         <e-kanban-column key="Open" headerText="Backlog"></e-kanban-column>
         <e-kanban-column key="InProgress" headerText="In Progress"></e-kanban-column>
-        <e-kanban-column key="Testing" headerText="Testing"></e-kanban-column>
         <e-kanban-column key="Close" headerText="Done"></e-kanban-column>
     </e-kanban-columns>
 </ej-kanban>
@@ -289,7 +271,7 @@ export class KanbanComponent {
 
 {% endhighlight %}
 
-![](Getting-Started_images/Getting-Started_img2.png)
+![](Getting_Started_images/Getting_Started_img2.png)
 
 ## Mapping Values
 
@@ -301,7 +283,6 @@ export class KanbanComponent {
     <e-kanban-columns>
         <e-kanban-column key="Open" headerText="Backlog"></e-kanban-column>
         <e-kanban-column key="InProgress" headerText="In Progress"></e-kanban-column>
-        <e-kanban-column key="Testing" headerText="Testing"></e-kanban-column>
         <e-kanban-column key="Close" headerText="Done"></e-kanban-column>
     </e-kanban-columns>
 </ej-kanban>
@@ -328,7 +309,7 @@ export class KanbanComponent {
 
 {% endhighlight %}
 
-![](Getting-Started_images/Getting-Started_img3.png)
+![](Getting_Started_images/Getting_Started_img3.png)
 
 ## Adding Filters
 
@@ -340,13 +321,12 @@ Filters allows to filter the collection of cards from 'dataSource' which meets t
     <e-kanban-columns>
         <e-kanban-column key="Open" headerText="Backlog"></e-kanban-column>
         <e-kanban-column key="InProgress" headerText="In Progress"></e-kanban-column>
-        <e-kanban-column key="Testing" headerText="Testing"></e-kanban-column>
         <e-kanban-column key="Close" headerText="Done"></e-kanban-column>
     </e-kanban-columns>
       <e-filterSettings>
-        <e-filterSetting text="Janet Issues" query= "query1" description="Displays issues which matches the assignee as 'Janet Leverling'"></div>
-                         <div e-filterSetting e-text="InProgress Issues" e-query="query2" e-description="Display the issues of 'In Progress'"></div>						 
-                     </div>
+        <e-filterSetting text="Janet Issues" query= "query1" description="Displays issues which matches the assignee as 'Janet Leverling'"></e-filterSetting>
+        <e-filterSetting e-text="InProgress Issues" e-query="query2" e-description="Display the issues of 'In Progress'"></e-filterSetting>
+        </e-filterSettings>
 </ej-kanban>
 
 {% endhighlight %}
@@ -366,12 +346,11 @@ export class KanbanComponent {
     constructor(private northwindService:NorthwindService)
     {
       this.kanbanData = northwindService.getTasks();  
-      
-       query1 = new ej.Query().where('Assignee', 'equal', 'Janet Leverling');
-       query2 = new ej.Query().where('Status', 'equal', 'InProgress');
+      query1 = new ej.Query().where('Assignee', 'equal', 'Janet Leverling');
+      query2 = new ej.Query().where('Status', 'equal', 'InProgress');
     }
 }
 
 {% endhighlight %}
 
-![](Getting-Started_images/Getting-Started_img4.png)
+![](Getting_Started_images/Getting_Started_img4.png)
