@@ -9,13 +9,13 @@ documentation: ug
 
 # Getting Started
 
-This section helps to get started of the Rotator control in a Angular2 application
+This section helps to get started of the Rotator component in a Angular2 application
 
 ![](Getting-Started_images/Getting-Started_img1.png) 
 
 ## Create a Rotator
 
-The following steps guide you to add a Rotator control.
+The following step by step guidelines will help you to add a Rotator component.
 
 Refer the common Angular2 [Getting Started Documentation](https://help.syncfusion.com/js/angular2) to create an application and add necessary scripts and styles for rendering Essential JavaScript controls.
 
@@ -32,7 +32,7 @@ Create a simple Angular2 Rotator by adding ej-rotator attribute for initializing
 
 ## Configure data
 
-To configure images for Rotator control, define data in an object array and fields in the component’s constructor file.
+To configure images for Rotator component, define data in an object array and fields in the component’s constructor file.
 
 {% highlight typescript %}
 
