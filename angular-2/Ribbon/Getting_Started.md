@@ -8,7 +8,7 @@ keywords: ejribbon, ribbon, ribbon widget, js ribbon
 ---
 # Getting Started
 
-Before we start with the Ribbon, please refer [this page](https://help.syncfusion.com/js/angular2) page for general information regarding integrating Syncfusion widget’s.
+Before we start with the Ribbon, please refer [this page](https://help.syncfusion.com/angular-2/overview) page for general information regarding integrating Syncfusion widget’s.
 
 ## Adding JavaScript and CSS references
 
@@ -106,25 +106,44 @@ Create a new HTML file and include the below initial code.
 
 {% highlight html %}
 
-<!DOCTYPE html>
-<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+    <html>
     <head>
-        <meta charset="utf-8" />
-        <title>Getting Started - Ribbon</title>
-        <link href="http://cdn.syncfusion.com/{{ site.releaseversion }}/js/web/flat-azure/ej.web.all.min.css" rel="stylesheet" />
-        <link href="http://cdn.syncfusion.com/{{ site.releaseversion }}/js/web/ribbon-css/ej.icons.css" rel="stylesheet" />
-        <script src="node_modules/core-js/client/shim.min.js"></script>
-        <script src="node_modules/zone.js/dist/zone.js"></script>
-        <script src="node_modules/reflect-metadata/Reflect.js"></script>
-        <script src="node_modules/systemjs/dist/system.src.js"></script>
-         <script src="http://cdn.syncfusion.com/js/assets/external/jquery-3.0.0.min.js"></script>
-	    <script src="http://cdn.syncfusion.com/{{ site.releaseversion }}/js/web/ej.web.all.min.js"></script>
-        <script src ="http://cdn.syncfusion.com/{{ site.releaseversion }}/js/common/ej.angular2.min.js"></script>
-        <script src="systemjs.config.js"></script>
-        </head>
-      <body>
-     </body>
-</html>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Essential Studio for JavaScript">
+    <meta name="author" content="Syncfusion">
+    <title></title>
+
+    <!-- Essential Studio for JavaScript  theme reference -->
+    <link rel="stylesheet" href="http://cdn.syncfusion.com/{{ site.releaseversion }}/js/web/flat-azure/ej.web.all.min.css" />
+
+    <!-- Angular2 related script references -->
+    <!-- 1. Load libraries -->
+         <!-- Polyfill(s) for older browsers -->
+    <script src="node_modules/core-js/client/shim.min.js"></script>   
+    <script src="node_modules/zone.js/dist/zone.js"></script>
+    <script src="node_modules/reflect-metadata/Reflect.js"></script>
+    <script src="node_modules/systemjs/dist/system.src.js"></script>
+
+    <!-- Essential Studio for JavaScript  script references -->
+    <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+    <script src="http://cdn.syncfusion.com/js/assets/external/jquery.easing.1.3.min.js"> </script>
+    <script src="http://cdn.syncfusion.com/js/assets/external/jsrender.min.js"></script>
+    <script src="http://cdn.syncfusion.com/{{ site.releaseversion }}/js/web/ej.web.all.min.js"> </script> 
+    <script src="http://cdn.syncfusion.com/{{ site.releaseversion }}/js/common/ej.angular2.min.js"></script>
+    
+    <!-- 2. Configure SystemJS -->
+    <script src="systemjs.config.js"></script>
+    <script>       
+      System.import('app')
+            .then(null, console.error.bind(console));
+    </script>
+
+    </head>
+    <!-- 3. Display the application -->
+    <body>
+    <my-app>Loading...</my-app>
+    </body>
+    </html>
 
 {% endhighlight %}
 
