@@ -2,10 +2,10 @@
 layout: post
 title: Getting-Started for Angular 2 Upload box
 description: getting started for Angular 2 Upload box
-platform:Angular 2
+platform: Angular 2
 control: Uploadbox
 documentation: ug
-keywords:Uploadbox,js uploadbox,ejuploadbox
+keywords: Uploadbox,js uploadbox,ejuploadbox
 ---
 
 # Getting Started

@@ -135,7 +135,7 @@ npm start
 
 N> if you want to use other port, open `package.json` file, then change port in `--port 3000` script and also change the port in `config/webpack.dev.js`.
 
-![](/Getting Started/Images/getting-started-output.png) 
+![](/angular-2/GettingStarted/Images/getting-started-output.png) 
  
 ## Demos
 
