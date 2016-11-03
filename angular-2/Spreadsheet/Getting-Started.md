@@ -8,11 +8,26 @@ keywords:
 ---
 # Getting started
 
+Before we start with the Spreadsheet, please refer [`this page`](https://help.syncfusion.com/angular-2/overview) for general information regarding integrating Syncfusion widget's.
 This section explains you the steps required to populate the Spreadsheet with data, format, and export it as excel file. This section covers only the minimal features that you need to know to get started with the Spreadsheet.
 
 ## Adding Script Reference
 
-Create an HTML page and add the scripts references in the order mentioned in the following code example.
+To render the Spreadsheet control, the following list of external dependencies are needed, 
+
+* [jQuery](http://jquery.com) - 1.7.1 and later versions
+
+The required angular2 script as `ej.angular2.min.js` which can be available in below `CDN` links:
+
+* `ej.angular2.min.js` - [http://cdn.syncfusion.com/14.3.0.52/js/common/ej.angular2.min.js](http://cdn.syncfusion.com/14.3.0.52/js/common/ej.angular2.min.js)
+
+For other required internal dependencies refer the [`link`](http://help.syncfusion.com/js/spreadsheet/dependencies "link")
+
+N> Spreadsheet uses one or more sub-controls, therefore refer the `ej.web.all.min.js` (which encapsulates all the `ej` controls and frameworks in a single file) in the application instead of referring all the above specified internal dependencies. 
+
+To get the real appearance of the Spreadsheet, the dependent CSS file `ej.web.all.min.css` (which includes styles of all the widgets) should also needs to be referred.
+
+So the complete boilerplate code is
 
 {% highlight html %}
 
@@ -39,22 +54,21 @@ Create an HTML page and add the scripts references in the order mentioned in the
 
 {% endhighlight %}
 
-In the above code, `ej.web.all.min.js`script reference has been added for demonstration purpose. It is not recommended to use this for deployment purpose, as its file size is larger since it contains all the widgets. Instead, you can use[`CSG`](http://csg.syncfusion.com "CSG")utility to generate a custom script file with the required widgets for deployment purpose.
-
-N> For details about Spreadsheet internal and external dependencies refer following [`link`](http://help.syncfusion.com/js/spreadsheet/dependencies "link")
+N> In production, we highly recommend you to use our [`custom script generator`](http://helpjs.syncfusion.com/js/custom-script-generator)  to create custom script file with required controls and its dependencies only. Also to reduce the file size further please use [`GZip compression`](https://developers.google.com/web/fundamentals/performance/optimizing-content-efficiency/optimize-encoding-and-transfer?hl=en) in your server.
+N> For themes, you can use the `ej.web.all.min.css` CDN link from the code example given. To add the themes in your application, please refer to [`this link`](http://help.syncfusion.com/js/theming-in-essential-javascript-components).
 
 ## Initialize Spreadsheet
 
-In the `spreadsheet` component HTML file.
+The Sreadsheet component can be created with prefix of `ej-`.The code example for defining controls in Angular2 is as follows,
 
 {% highlight html %}
 
-<ej-spreadsheet id="spreadsheet">
+<ej-spreadsheet id="spreadsheet" scrollSettings.height="530" scrollSettings.width="100%">
 </ej-spreadsheet>
 
 {% endhighlight %}
 
-Initialize the Spreadsheet by using the ejSpreadsheet method. The Spreadsheet is rendered based on default `width` and `height`. You can also customize the Spreadsheet dimension by setting the [`width`](http://help.syncfusion.com/js/api/ejspreadsheet#members:scrollsettings-width "width") and [`height`](http://help.syncfusion.com/js/api/ejspreadsheet#members:scrollsettings-height "height") property in [`scrollSettings`](http://help.syncfusion.com/js/api/ejspreadsheet#members:scrollsettings "scrollSettings").
+Initialize the Spreadsheet by using the ejSpreadsheet method. The Spreadsheet is rendered based on [`scrollSettings.width`](http://help.syncfusion.com/js/api/ejspreadsheet#members:scrollsettings-width "width") and [`scrollSettings.height`](http://help.syncfusion.com/js/api/ejspreadsheet#members:scrollsettings-height "height") property.
 
 {% highlight html %}
 
@@ -73,7 +87,7 @@ Now, the Spreadsheet is rendered with default row and column count.
 
 ## Populate Spreadsheet with data
 
-Now, this section explains how to populate JSON data to the Spreadsheet. You can set [`dataSource`](http://help.syncfusion.com/js/api/ejspreadsheet#members:sheets-datasource "dataSource") property in [`sheet`](http://help.syncfusion.com/js/api/ejspreadsheet#members:sheets "sheet") settings to populate JSON data in Spreadsheet.
+Now, this section explains how to populate JSON data to the Spreadsheet. You can set [`dataSource`](http://help.syncfusion.com/js/api/ejspreadsheet#members:sheets-datasource "dataSource") property in [`e-sheets`](http://help.syncfusion.com/js/api/ejspreadsheet#members:sheets "sheet") settings to populate JSON data in Spreadsheet.
 
 {% highlight html %}
 
@@ -109,13 +123,19 @@ N> For more details about `data binding` refer following [`link`](http://help.sy
 
 ## Apply Conditional Formatting
 
-Conditional formatting helps you to apply formats to a cell or range with certain color based on the cells values. You can use [`allowConditionalFormats`](http://help.syncfusion.com/js/api/ejspreadsheet#members:allowconditionalformats "allowConditionalFormats") property to enable/disable Conditional formats.
+Conditional formatting helps you to apply formats to a cell or range with certain color based on the cells values. You can use [`allowConditionalFormats`](http://help.syncfusion.com/js/api/ejspreadsheet#members:allowconditionalformats "allowConditionalFormats") property within square bracket(`[]`) to enable/disable Conditional formats.
+
+Events can be bound to the controls using the event name within bracket [`()`]. For example, the `loadComplete` event of Spreadsheet control can be defined as follows.
+
+{% highlight html %}
+
+<ej-spreadsheet id="spreadsheet" [allowConditionalFormats]= true (loadComplete)= loadComplete($event)>
+
+{% endhighlight %}
 
 To apply conditional formats for a range use [`setCFRule`](http://help.syncfusion.com/js/api/ejspreadsheet#methods:xlcformat-setcfrule "setCFRule") method. The following code example illustrates this,
 
 {% highlight html %}
-
-<ej-spreadsheet id="spreadsheet" (loadComplete)= loadComplete($event)>
 
 import {Component, ViewEncapsulation} from '@angular/core';
 import {NorthwindService} from './services/northwind.service';
@@ -139,7 +159,7 @@ N> For more details about `Conditional Formatting` refer following [`link`](http
 
 ## Export Spreadsheet as Excel File
 
-The Spreadsheet can save its data, style, format into an excel file. To enable save option in Spreadsheet set [`allowExporting`](http://help.syncfusion.com/js/api/ejspreadsheet#members:exportsettings-allowexporting "allowExporting") option in [`exportSettings`](http://help.syncfusion.com/js/api/ejspreadsheet#members:exportsettings "exportSettings") as `true`. Since Spreadsheet uses server side helper to save documents set [`excelUrl`](http://help.syncfusion.com/js/api/ejspreadsheet#members:exportsettings-excelurl "excelUrl") in [`exportSettings`](http://help.syncfusion.com/js/api/ejspreadsheet#members:exportsettings "exportSettings") option. The following code example illustrates this,
+The Spreadsheet can save its data, style, format into an excel file. To enable save option in Spreadsheet set [`exportSettings.allowExporting`](http://help.syncfusion.com/js/api/ejspreadsheet#members:exportsettings-allowexporting "allowExporting") option as `true`and Specify [`exportSettings.excelUrl`](http://help.syncfusion.com/js/api/ejspreadsheet#members:exportsettings-excelurl "excelUrl") option to save documents using server side helper. The following code example illustrates this,
 
 {% highlight html %}
 
