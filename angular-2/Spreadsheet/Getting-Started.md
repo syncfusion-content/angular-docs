@@ -1,7 +1,7 @@
 ---
 title: Getting Started for Angular 2 Spreadsheet
 description: How to create a Spreadsheet with data source, apply format and export it as excel file.
-platform: Angular2
+platform: Angular-2
 control: Spreadsheet
 documentation: Ug
 keywords: 
