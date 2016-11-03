@@ -34,7 +34,7 @@ Create a simple Angular2 Rotator by adding ej-rotator attribute for initializing
 
 To configure images for Rotator component, define data in an object array and fields in the component’s constructor file.
 
-{% highlight typescript %}
+{% highlight ts %}
 
     export class AppComponent {
         data:array;
