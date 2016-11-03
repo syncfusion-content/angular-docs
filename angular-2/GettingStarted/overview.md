@@ -22,5 +22,5 @@ We have implemented seed application in GitHub repository [Syncfusion Angular 2 
 
 To get deep understanding about Syncfusion Angular2 seed application with SystemJS and Webpack, refer below links.
 
-* [SystemJS Getting started](/Getting started/getting-started-systemjs "Getting started with SystemJS")
-* [Webpack Getting started](/Getting started/getting-started-webpack "Getting started with Webpack")
+* [SystemJS Getting started](/angular-2/GettingStarted/getting-started-systemjs "Getting started with SystemJS")
+* [Webpack Getting started](/angular-2/GettingStarted/getting-started-webpack "Getting started with Webpack")
