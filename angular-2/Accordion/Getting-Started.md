@@ -4,7 +4,7 @@ description: Getting Started for Angular 2 Accordion
 platform: Angular2
 control: Accordion
 documentation: Ug
-keywords:ejaccordion, js accordion, accordion
+keywords: ejaccordion, js accordion, accordion
 ---
 # Getting started
 
