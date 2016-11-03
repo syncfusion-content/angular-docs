@@ -8,84 +8,17 @@ documentation: ug
 --- 
 # Angular 2
 
-Essential JavaScript provides support for Angular 2 Framework through wrappers. Each Syncfusion widgets are created as Angular 2 components with built in support for data binding and child directives to make complex property definition easier. 
+Essential JavaScript provides support for [Angular 2](https://angular.io/docs/ts/latest/quickstart.html) Framework through wrappers. Each Syncfusion widgets are created as Angular 2 components with built in support for data binding and child directives to make complex property definition easier.
 
-# Getting Started
+The Syncfusion Angular 2 components are named with prefix `ej` to avoid conflicting with other library component and offers the following features.
 
-Before getting started with Syncfusion JavaScript for Angular 2, prepare your application with the official [Getting Started documentation](https://angular.io/docs/ts/latest/quickstart.html) and follow the below steps to create Syncfusion Angular 2 components.
+* Properties
+* Two-way binding
+* Event binding
 
-## 1. Preparing the HTML document
+N> To getting started with Syncfusion Angular 2 seed application navigate to [here]().
 
-Angular 2 wrappers for Syncfusion JavaScript controls is available in the file `ej.angular2.min.js` which can be copied from Syncfusion Build installed location.
-
-{% highlight html %}
-
-<Program Files (x86)>\Syncfusion\Essential Studio\14.1.0.41\JavaScript\assets\scripts\common
-
-{% endhighlight %}
-
-
-
-For quicker startup, we are going to use CDN links for all Syncfusion resources. So the final boiler plate code will be.
-
-{% highlight html %}
-    <html>
-    <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Essential Studio for JavaScript">
-    <meta name="author" content="Syncfusion">
-    <title></title>
-
-    <!-- Essential Studio for JavaScript  theme reference -->
-    <link rel="stylesheet" href="http://cdn.syncfusion.com/14.1.0.41/js/web/flat-azure/ej.web.all.min.css" />
-
-    <!-- Angular2 related script references -->
-    <!-- 1. Load libraries -->
-         <!-- Polyfill(s) for older browsers -->
-    <script src="node_modules/core-js/client/shim.min.js"></script>   
-    <script src="node_modules/zone.js/dist/zone.js"></script>
-    <script src="node_modules/reflect-metadata/Reflect.js"></script>
-    <script src="node_modules/systemjs/dist/system.src.js"></script>
-
-    <!-- Essential Studio for JavaScript  script references -->
-    <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
-    <script src="http://cdn.syncfusion.com/js/assets/external/jquery.easing.1.3.min.js"> </script>
-    <script src="http://cdn.syncfusion.com/js/assets/external/jsrender.min.js"></script>
-    <script src="http://cdn.syncfusion.com/14.1.0.41/js/web/ej.web.all.min.js"> </script> 
-    <script src="http://cdn.syncfusion.com/14.1.0.41/js/common/ej.angular2.min.js"></script>
-    
-    <!-- 2. Configure SystemJS -->
-    <script src="systemjs.config.js"></script>
-    <script>       
-      System.import('app')
-            .then(null, console.error.bind(console));
-    </script>
-
-    </head>
-    <!-- 3. Display the application -->
-    <body>
-    <my-app>Loading...</my-app>
-    </body>
-    </html>
-
-
-{% endhighlight %}
-
-
-N> In production, we highly recommend you to use our custom script generator to create custom script file with required controls and its dependencies only. Also to reduce the file size further please use GZip compression in your server.
-For SystemJS configuration, please refer [Angular 2.0 documentation](https://angular.io/docs/ts/latest/quickstart.html#!#config-files).
-
-## 2. Adding Syncfusion Component to your Application
-
-Each Syncfusion components are wrapped as individual SystemJS module. So for importing and using any Syncfusion component, use `ej/<controlName>.component` in require path and variable name holding references to component is `EJ_<CONTROLNAME>_COMPONENTS`. For getting started, you can import the autocomplete component, refer the following code snippet for the same.
-
-{% highlight javascript %}
-
-import {EJ_AUTOCOMPLETE_COMPONENTS} from 'ej/autocomplete.component';
-
-{% endhighlight %}
-
-### Property Binding
+## Property Binding
 
 Properties of Syncfusion controls can be initialized with the exact casing of original property names. Bind property to the controls within square bracket(`[]`).
 
@@ -93,11 +26,13 @@ For example, create ejAutocomplete component with prefixing of `ej-` and control
 
 {% highlight html %}
 
-<input type="text" ej-autocomplete [value]= "Austin-Healey" [dataSource]="states" [(ngModel)]="value"/>
+<input type="text" ej-autocomplete [value]= "Austin-Healey" [dataSource]="states" />
 
 {% endhighlight %}
 
-### Event Binding
+N> The dataSource `states` will be defined in component.ts file.
+
+## Event Binding
 
 Events can be bound to the controls using the event name within bracket [`()`]. For example, the `open` event of ejAutocomplete control can be defined as follows.
 
@@ -119,7 +54,9 @@ export class AppComponent {
 
 {% endhighlight %}
 
-### Two-way Binding
+N> Get event argument values as e.data1,e.data2,e.data3.. (For ex,. for ejAutoComplete get type of event as `e.type`).
+
+## Two-way Binding
 
 Two-way binding of Angular 2 synchronizes the value in both view and component model using attribute `[(ngModel)]`. The same conversion is used for Syncfusion widgets which reflect the changes both ways. In general, we could have more than one property bound to the same variable.
 
@@ -132,8 +69,7 @@ Two-way binding for ejAutocomplete has been demonstrated in the below code.
     template: `<h2>Two-Way Binding</h2>
     <input type="text" ej-autocomplete [dataSource]="states" (open)="onOpen($event)" [(ngModel)]="value"/>
     <input type="text" name="AutoComplete" class="input ej-inputtext" [(ngModel)]="value" />
-    `,
-    directives: [EJ_AUTOCOMPLETE_COMPONENTS],
+    `
 })
 export class AppComponent {
     states: Array<string>;
@@ -169,7 +105,7 @@ export class AppComponent {
 
 
 
-The below table depicts the properties of all the Syncfusion widgets that supports model binding - 
+The below table depicts the properties of all the Syncfusion widgets that supports model binding.
 
 
 <table>
@@ -371,11 +307,9 @@ ejWaitingPopup</td><td>
 
 N> For complete understanding of Angular 2 inputs and outputs binding syntaxes, refer [this](https://angular.io/docs/ts/latest/guide/template-syntax.html#!#binding-syntax-an-overview) Angular 2 help document.
 
-E> Error : Cannot find module 'ej/autocomplete.component' - This error will throw if missing of `ej.angular2.min.js` file from sample.
+## Invoking EJ widget methods from component instance
 
-## 3. Invoking EJ widget methods from component instance
-
-You can invoke the ej widgetâ€™s public methods using Angular 2 component instance reference like the below syntax.
+You can invoke the ej widget's public methods using Angular 2 component instance reference like the below syntax.
 
 {% highlight javascript %}
 
@@ -432,7 +366,3 @@ export class AppComponent {
 }
 
 {% endhighlight %}
-
-Final browser output renders the ejAutocomplete component and looks like the below screenshot.
-
-![](/js/Angular2_images/angular2_sample_img.png)
