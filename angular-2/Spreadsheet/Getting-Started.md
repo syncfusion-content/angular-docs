@@ -63,19 +63,19 @@ The Sreadsheet component can be created with prefix of `ej-`.The code example fo
 
 {% highlight html %}
 
-<ej-spreadsheet id="spreadsheet" scrollSettings.height="530" scrollSettings.width="100%">
-</ej-spreadsheet>
+    <ej-spreadsheet id="spreadsheet" scrollSettings.height="530" scrollSettings.width="100%">
+    </ej-spreadsheet>
 
 {% endhighlight %}
 
 {% highlight ts %}
 
-import {Component, ViewEncapsulation} from '@angular/core';
-@Component({
-  selector: 'ej-app',
-  templateUrl: 'app/app.component.html',  //give the path file for spreadsheet component html file.
-})
-export class AppComponent {
+    import {Component, ViewEncapsulation} from '@angular/core';
+    @Component({
+        selector: 'ej-app',
+        templateUrl: 'app/app.component.html',  //give the path file for spreadsheet component html file.
+    })
+    export class AppComponent {
     }
     
 {% endhighlight %}
@@ -90,33 +90,33 @@ Now, this section explains how to populate JSON data to the Spreadsheet. You can
 
 {% highlight html %}
 
-<ej-spreadsheet id="spreadsheet">
-    <e-sheets>
-        <e-sheet>
-            <e-rangesettings>
-                <e-rangesetting [dataSource]="spreadData" startCell="A1" [headerStyles]="{'font-weight':'bold'}"></e-rangesetting>
-            </e-rangesettings>
-        </e-sheet>
-    </e-sheets>
-</ej-spreadsheet>
+    <ej-spreadsheet id="spreadsheet">
+        <e-sheets>
+            <e-sheet>
+                 <e-rangesettings>
+                    <e-rangesetting [dataSource]="spreadData" startCell="A1" [headerStyles]="{'font-weight':'bold'}"></e-rangesetting>
+                 </e-rangesettings>
+            </e-sheet>
+        </e-sheets>
+    </ej-spreadsheet>
 
 {% endhighlight %}
 
 {% highlight ts %}
 
-import {Component, ViewEncapsulation} from '@angular/core';
-import {NorthwindService} from './services/northwind.service';
-@Component({
-  selector: 'ej-app',
-  templateUrl: 'app/app.component.html',  //give the path file for spreadsheet control html file.
-  providers:[NorthwindService]
-})
-export class AppComponent {
-    public spreadData;
-    constructor(public northwindService: NorthwindService) {
-    this.spreadData = ej.DataManager(northwindService.getFoodInformation()).executeLocal(ej.Query().take(50).select("FoodId", "Time", "FoodName", "Calorie", "Protein", "Fat", "Carbohydrate"));
+    import {Component, ViewEncapsulation} from '@angular/core';
+    import {NorthwindService} from './services/northwind.service';
+    @Component({
+        selector: 'ej-app',
+  t     emplateUrl: 'app/app.component.html',  //give the path file for spreadsheet control html file.
+        providers:[NorthwindService]
+    })
+    export class AppComponent {
+        public spreadData;
+        constructor(public northwindService: NorthwindService) {
+            this.spreadData = ej.DataManager(northwindService.getFoodInformation()).executeLocal(ej.Query().take(50).select("FoodId", "Time", "FoodName", "Calorie", "Protein", "Fat", "Carbohydrate"));
+     }
     }
-}
 
 {% endhighlight %}
 
@@ -132,7 +132,7 @@ Events can be bound to the controls using the event name within bracket [`()`]. 
 
 {% highlight html %}
 
-<ej-spreadsheet id="spreadsheet" [allowConditionalFormats]= true (loadComplete)= loadComplete($event)>
+    <ej-spreadsheet id="spreadsheet" [allowConditionalFormats]= true (loadComplete)= loadComplete($event)>
 
 {% endhighlight %}
 
@@ -140,19 +140,21 @@ To apply conditional formats for a range use [`setCFRule`](http://help.syncfusio
 
 {% highlight ts %}
 
-import {Component, ViewEncapsulation} from '@angular/core';
-import {NorthwindService} from './services/northwind.service';
-@Component({
-  selector: 'ej-app',
-  templateUrl: 'app/app.component.html',  //give the path file for spreadsheet control html file.
-  providers:[NorthwindService]
-})
-export class AppComponent {
-  loadComplete(event) {
-     let xlObj = $("#spreadsheet").data("ejSpreadsheet");
-     xlObj.XLCFormat.setCFRule({ "action": "equalto", "inputs": ["100"], "color":   "redft", "range": "D1:D7" });
-     }
-}
+    import {Component, ViewEncapsulation} from '@angular/core';
+    import {NorthwindService} from './services/northwind.service';
+
+    @Component({
+        selector: 'ej-app',
+        templateUrl: 'app/app.component.html',  //give the path file for spreadsheet control html file.
+        providers:[NorthwindService]
+    })
+
+    export class AppComponent {
+        loadComplete(event) {
+            let xlObj = $("#spreadsheet").data("ejSpreadsheet");
+            xlObj.XLCFormat.setCFRule({ "action": "equalto", "inputs": ["100"], "color":   "redft", "range": "D1:D7" });
+        }
+    }
 
 {% endhighlight %}
 
@@ -166,8 +168,8 @@ The Spreadsheet can save its data, style, format into an excel file. To enable s
 
 {% highlight html %}
 
-<ej-spreadsheet id="spreadsheet"  exportSettings.excelUrl="http://js.syncfusion.com/demos/ejservices/api/JSXLExport/ExportToExcel" >
-</ej-spreadsheet>
+    <ej-spreadsheet id="spreadsheet"  exportSettings.excelUrl="http://js.syncfusion.com/demos/ejservices/api/JSXLExport/ExportToExcel" >
+    </ej-spreadsheet>
 
 {% endhighlight %}
 
