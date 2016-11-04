@@ -11,9 +11,9 @@ keywords: ejpivotgauge, pivotgauge, js pivotgauge
 
 This section explains briefly about how to create a **PivotGauge** control in your application with **Angular 2**. This section covers only the minimal features that you need to know to get started with the PivotGauge.
 
-## Adding Script Reference
+## Script and CSS Reference
 
-Create a **HTML** page and add the scripts references in the order mentioned in the following code example.
+Create a **HTML** page and add the scripts and CSS references in the order mentioned in the following code example.
 
 {% highlight html %}
 

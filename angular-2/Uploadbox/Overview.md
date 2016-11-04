@@ -2,7 +2,7 @@
 layout: post
 title: Overview
 description: overview
-platform:Angular 2
+platform: Angular 2
 control: Uploadbox
 documentation: ug
 ---
