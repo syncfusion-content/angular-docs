@@ -17,9 +17,9 @@ To render the Spreadsheet control, the following list of external dependencies a
 
 * [jQuery](http://jquery.com) - 1.7.1 and later versions
 
-The required angular2 script as `ej.angular2.min.js` which can be available in below `CDN` links:
+The required angular2 script as `ej.angular2.min.js` which can be available in below `CDN` link:
 
-* `ej.angular2.min.js` - [http://cdn.syncfusion.com/14.3.0.52/js/common/ej.angular2.min.js](http://cdn.syncfusion.com/14.3.0.52/js/common/ej.angular2.min.js)
+* [http://cdn.syncfusion.com/14.3.0.52/js/common/ej.angular2.min.js](http://cdn.syncfusion.com/14.3.0.52/js/common/ej.angular2.min.js)
 
 For other required internal dependencies refer the [`link`](http://help.syncfusion.com/js/spreadsheet/dependencies "link")
 
@@ -68,9 +68,7 @@ The Sreadsheet component can be created with prefix of `ej-`.The code example fo
 
 {% endhighlight %}
 
-Initialize the Spreadsheet by using the ejSpreadsheet method. The Spreadsheet is rendered based on [`scrollSettings.width`](http://help.syncfusion.com/js/api/ejspreadsheet#members:scrollsettings-width "width") and [`scrollSettings.height`](http://help.syncfusion.com/js/api/ejspreadsheet#members:scrollsettings-height "height") property.
-
-{% highlight html %}
+{% highlight ts %}
 
 import {Component, ViewEncapsulation} from '@angular/core';
 @Component({
@@ -79,6 +77,7 @@ import {Component, ViewEncapsulation} from '@angular/core';
 })
 export class AppComponent {
     }
+    
 {% endhighlight %}
 
 Now, the Spreadsheet is rendered with default row and column count.
@@ -87,7 +86,7 @@ Now, the Spreadsheet is rendered with default row and column count.
 
 ## Populate Spreadsheet with data
 
-Now, this section explains how to populate JSON data to the Spreadsheet. You can set [`dataSource`](http://help.syncfusion.com/js/api/ejspreadsheet#members:sheets-datasource "dataSource") property in [`e-sheets`](http://help.syncfusion.com/js/api/ejspreadsheet#members:sheets "sheet") settings to populate JSON data in Spreadsheet.
+Now, this section explains how to populate JSON data to the Spreadsheet. You can set [`dataSource`](http://help.syncfusion.com/js/api/ejspreadsheet#members:sheets-datasource "dataSource") property in [`e-rangesettings`](http://help.syncfusion.com/js/api/ejspreadsheet#members:sheets "sheet") to populate JSON data in Spreadsheet.
 
 {% highlight html %}
 
@@ -100,6 +99,10 @@ Now, this section explains how to populate JSON data to the Spreadsheet. You can
         </e-sheet>
     </e-sheets>
 </ej-spreadsheet>
+
+{% endhighlight %}
+
+{% highlight ts %}
 
 import {Component, ViewEncapsulation} from '@angular/core';
 import {NorthwindService} from './services/northwind.service';
@@ -135,7 +138,7 @@ Events can be bound to the controls using the event name within bracket [`()`]. 
 
 To apply conditional formats for a range use [`setCFRule`](http://help.syncfusion.com/js/api/ejspreadsheet#methods:xlcformat-setcfrule "setCFRule") method. The following code example illustrates this,
 
-{% highlight html %}
+{% highlight ts %}
 
 import {Component, ViewEncapsulation} from '@angular/core';
 import {NorthwindService} from './services/northwind.service';
