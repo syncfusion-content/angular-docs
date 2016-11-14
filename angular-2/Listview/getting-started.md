@@ -164,12 +164,9 @@ We can add a header for **ListView**. Refer to the following script.
 {% highlight html %}
 
        <div class="container" style="padding-top:100px">
-
         <div class="row">
             <div class="ctrllabel" style="padding-bottom: 12px"><b>Select a Music</b></div>
-
             <ej-listview [datasource]="listdata" [fieldsettings]="fieldsdata" width="300px" showheader="true" headertitle="MusicList"></ej-listview>
-
         </div>
     </div>
 

@@ -16,7 +16,7 @@ The Syncfusion Angular 2 components are named with prefix `ej` to avoid conflict
 * Two-way binding
 * Event binding
 
-N> To getting started with Syncfusion Angular 2 seed application navigate to [here]().
+N> To getting started with Syncfusion Angular 2 seed application navigate to [here](/angular-2/GettingStarted "Getting started").
 
 ## Property Binding
 
