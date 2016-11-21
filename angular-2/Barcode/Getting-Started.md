@@ -13,7 +13,7 @@ This section explains briefly about how to integrate a **Barcode** control in yo
 
 ## Script and CSS Reference
 
-Create a **HTML** page and add the scripts and CSS references in the order mentioned in the following code example.
+Create a page and add the scripts and CSS references in the order mentioned in the following code example.
 
 {% highlight html %}
 
