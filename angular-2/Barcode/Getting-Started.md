@@ -70,4 +70,4 @@ export class DefaultComponent {
 
 The above code will produce the Barcode as shown in the below figure.
 
-![](getting-started_images/default.png)
+![](getting-started-images/default.png)
