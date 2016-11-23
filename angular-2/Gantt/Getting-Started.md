@@ -131,11 +131,11 @@ export class AppModule { }
 
 A Gantt Control is created as shown in the following screen shot.
 
-![](/Getting-Started_images/Getting-Started_img5.png)
+![](Getting-Started_images/Getting-Started_img5.png)
 
 ## Enable Toolbar
 
-Gantt control contains toolbar options to edit, search, expand or collapse all records, indent, outdent, delete, and add a task. You can enable toolbar using the [`e-toolbar-settings`](http://help.syncfusion.com/js/api/ejgantt#members:toolbarsettings "toolbarSettings") property.
+Gantt control contains toolbar options to edit, search, expand or collapse all records, indent, outdent, delete, and add a task. You can enable toolbar using the [`toolbarSettings`](http://help.syncfusion.com/js/api/ejgantt#members:toolbarsettings "toolbarSettings") property.
 
 {% highlight html %}
 <ej-gantt id="GanttControl" 
@@ -185,7 +185,7 @@ export class DefaultComponent {
 
 The following screen shot displays a Tool bar in Gantt chart control:
 
-![](/Getting-Started_images/Getting-Started_img6.png)
+![](Getting-Started_images/Getting-Started_img6.png)
 
 N>  Add, edit, delete, indent and outdent options are enabled when enabling the allowEditing, allowAdding, allowDelete, allowIndent and allowOutdent properties in the edit Options.
 
@@ -260,7 +260,7 @@ export class DefaultComponent {
 
 The following screen shot displays a Gantt chart control with Enable Editing options.
 
-![](/Getting-Started_images/Getting-Started_img7.png)
+![](Getting-Started_images/Getting-Started_img7.png)
 
 N>  Both cellEditing and normal editing operations are performed through double-click or single click action that can be defined by editSettings.beginEditAction property.
 
@@ -278,7 +278,7 @@ You can enable the context menu in Gantt, by setting the [`enableContextMenu`](h
 
 The following screen shot displays Gantt chart in which Context menu option is enabled:
 
-![](/Getting-Started_images/Getting-Started_img8.png)
+![](Getting-Started_images/Getting-Started_img8.png)
 
 ## Enable Column Menu
 
@@ -294,7 +294,7 @@ You can enable the column menu in Gantt, by setting the [`showColumnChooser`](ht
 
 The following screen shot displays Gantt chart in which column chooser option is enabled:
 
-![](/Getting-Started_images/Getting-Started_img11.png)
+![](Getting-Started_images/Getting-Started_img11.png)
 
 ## Provide tasks relationship
 
@@ -319,7 +319,7 @@ You can show the relationship in tasks, by using the [`predecessorMapping`](http
 
 The following screenshot displays the relationship between tasks.
 
-![](/Getting-Started_images/Getting-Started_img9.png)
+![](Getting-Started_images/Getting-Started_img9.png)
 
 ## Provide Resources
 
@@ -371,7 +371,7 @@ export class DefaultComponent {
 
 The following screenshot displays resource allocation for tasks in Gantt chart.
 
-![](/Getting-Started_images/Getting-Started_img10.png)
+![](Getting-Started_images/Getting-Started_img10.png)
 
 By following these steps, you have learned how to provide data source to Gantt chart, how to configure Gantt to set task relationships, assign resources for each task, and add toolbar with necessary buttons.
 
@@ -391,7 +391,7 @@ In Gantt, you can on or off weekends highlighting by setting the [`highlightWeek
 
 The following screen shot displays Gantt chart in which highlight weekends is disabled:
 
-![](/Getting-Started_images/Getting-Started_img12.png)
+![](Getting-Started_images/Getting-Started_img12.png)
 
 ## Running the application
 
