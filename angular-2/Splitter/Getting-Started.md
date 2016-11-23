@@ -63,9 +63,7 @@ Configure the Splitter panes with images. Save the images in the corresponding l
     <ej-splitter id="outterSpliter" class="ang-splitter" e-height ="100%" e-width="485" e-properties="proper"  e-enableautoresize="true">
     <div>
     <div class="cont">
-    <h3 class="h3">AngularJS</h3>
-    <ej-treeview  class="visibleHide" (nodeSelect)="treeClicked($event)" [fields]="fields">
-    </ej-treeview>
+    <h3 class="h3">AngularJS</h3>    
     </div>
     </div>
     <div class="cont">
