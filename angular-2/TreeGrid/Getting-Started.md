@@ -142,7 +142,7 @@ export class AppModule { }
 
 A TreeGrid Control is created as shown in the following screen shot.
 
-![](/Getting-Started_images/Getting-Started_img3.png)
+![](Getting-Started_images/Getting-Started_img3.png)
 
 ### Enable Sorting
 
@@ -161,7 +161,7 @@ Enable the multicolumn sorting in TreeGrid by setting [`allowMultiSorting`](http
 
 {% endhighlight %}
 
-![](/Getting-Started_images/Getting-Started_img4.png)
+![](Getting-Started_images/Getting-Started_img4.png)
 
 ### Enable Editing
 
@@ -226,7 +226,7 @@ You can set the editor type for a particular column as follows.
 
 The output of the DateTimePicker editor in TreeGrid control is as follows.
 
-![](/Getting-Started_images/Getting-Started_img5.png)
+![](Getting-Started_images/Getting-Started_img5.png)
 
 ## Running the application
 
