@@ -23,7 +23,9 @@ N> `core.ts` source file is mandatory for all Syncfusion JavaScript Angular 2 co
 
 If you want to know about the external and internal dependencies of the Grid control, please refer here [here](https://help.syncfusion.com/js/grid/getting-started)
 
-I> `ej.angular2.min.js` file is additionally required to render the Grid in angular-2 platform which is available under the location, _(**Installed location**)\Syncfusion\Essential Studio\{{ site.releaseversion }}\JavaScript\assets\scripts\common_.
+I> `ej.angular2.min.js` file is additionally required to render the Grid in Angular-2 platform which is available under the location,
+
+(**Installed location**)\Syncfusion\Essential Studio\{{ site.releaseversion }}\JavaScript\assets\scripts\common.
 
 
 ## Data Binding
@@ -85,7 +87,7 @@ N> 3.ODataAdaptor is the default adaptor for the DataManager. On binding to othe
 
 ## Enable Paging
 
-[`Paging`](http://help.syncfusion.com/js/grid/paging) can be enabled by setting the [`allowPaging`](http://help.syncfusion.com/js/api/ejgrid#members:allowpaging) to true. The Paging feature inÂ GridÂ offers complete navigation support to easily switch between the pages, using the page bar available at the bottom of the Grid control
+[`Paging`](http://help.syncfusion.com/js/grid/paging) can be enabled by setting the [`allowPaging`](http://help.syncfusion.com/js/api/ejgrid#members:allowpaging) to true. The Paging feature in Grid offers complete navigation support to easily switch between the pages, using the page bar available at the bottom of the Grid control
 
 {% highlight html %}
 
