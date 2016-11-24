@@ -63,10 +63,6 @@ The other required internal dependencies are tabulated below,
    </tr>
 </table>
 
-N> DigitalGauge uses one or more script files, therefore refer the `ej.web.all.min.js` (which encapsulates all the `ej` controls and frameworks in a single file) in the application instead of referring all the above specified internal dependencies. 
-
-To get the real appearance of the DigitalGauge, the dependent CSS file `ej.web.all.min.css` (which includes styles of all the widgets) should also needs to be referred.
-
 ## Preparing HTML document
 
 Create an HTML page and add the scripts references in the order mentioned in the following code example.
@@ -237,7 +233,7 @@ You can customize the **Digital Gauge** using different properties.
 
 **Add Segment and Character Properties**
 
-* In this example, the **Digital Gauge** uses a welcome board in which the text color must be distinctly visible in nature. In order to meet this requirement, you can give some segment properties such as segment spacing, segment width, segment color, segment length and segment opacity.
+* In this example, the **Digital Gauge** uses a welcome board in which the text color must be distinctly visible in nature. To meet this requirement, you can give some segment properties such as segment spacing, segment width, segment color, segment length and segment opacity.
 
 * **Character** type is used to define the Digital representation of the character. Thee five types of character representation are as follows:
 

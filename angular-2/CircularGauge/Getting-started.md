@@ -63,10 +63,6 @@ The other required internal dependencies are tabulated below,
    </tr>
 </table>
 
-N> CircularGauge uses one or more script files, therefore refer the `ej.web.all.min.js` (which encapsulates all the `ej` controls and frameworks in a single file) in the application instead of referring all the above specified internal dependencies. 
-
-To get the real appearance of the CircularGauge, the dependent CSS file `ej.web.all.min.css` (which includes styles of all the widgets) should also needs to be referred.
-
 ## Preparing HTML document
 
 Create an HTML page and add the scripts references in the order mentioned in the following code example.
@@ -259,7 +255,7 @@ On executing the above code, sample renders a **Circular Gauge** with customized
 
 ## Add Label Customization
 
-To display the values in the **Gauge,** scale labels are used. You can customize the label color.  
+To display the values in the **Gauge**, scale labels are used. You can customize the label color.  
 
 {% highlight html %}
 
@@ -343,7 +339,7 @@ On executing the above code, sample renders a **Circular Gauge** with customized
 
 ## Add Range Values
 
-Ranges denote the property of scale value in the speedometer. The color values of the ranges specify the speed variation. Set **showRanges** property to **“True”** to show the ranges in the **Circular Gauge**. Select safe zone for low speed, caution zone for moderate speed and high zone for high speed.You can customize the range with the properties such as start value, end value, start width, end width,  background color , border color, etc.,
+Ranges denote the property of scale value in the speedometer. The color values of the ranges specify the speed variation. Set **showRanges** property to **True** to show the ranges in the **Circular Gauge**. Select safe zone for low speed, caution zone for moderate speed and high zone for high speed. You can customize the range with the properties such as start value, end value, start width, end width,  background color , border color, etc.,
 
 {% highlight javascript %}
 

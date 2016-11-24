@@ -55,10 +55,6 @@ The other required internal dependencies are tabulated below,
    </tr>
 </table>
 
-N> Bulletgraph uses one or more script files, therefore refer the `ej.web.all.min.js` (which encapsulates all the `ej` controls and frameworks in a single file) in the application instead of referring all the above specified internal dependencies. 
-
-To get the real appearance of the Bulletgraph, the dependent CSS file `ej.web.all.min.css` (which includes styles of all the widgets) should also needs to be referred.
-
 ## Preparing HTML document
 
 Create an HTML page and add the scripts references in the order mentioned in the following code example.
@@ -459,7 +455,7 @@ The following screenshot displays a **BulletGraph** in the caption and title in 
 
 **Show Tooltip**
 
-You can use a Tooltip in your application to display any information. The tooltip is enabled by setting the **visible** property in tooltip to **True.** 
+You can use a Tooltip in your application to display any information. The tooltip is enabled by setting the **visible** property in tooltip to **True**. 
 
 {% highlight javascript %}
 

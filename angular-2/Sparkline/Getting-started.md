@@ -55,10 +55,6 @@ The other required internal dependencies are tabulated below,
    </tr>
 </table>
 
-N> Sparkline uses one or more script files, therefore refer the `ej.web.all.min.js` (which encapsulates all the `ej` controls and frameworks in a single file) in the application instead of referring all the above specified internal dependencies. 
-
-To get the real appearance of the Sparkline, the dependent CSS file `ej.web.all.min.css` (which includes styles of all the widgets) should also needs to be referred.
-
 ## Preparing HTML document
 
 Create an HTML page and add the scripts references in the order mentioned in the following code example.

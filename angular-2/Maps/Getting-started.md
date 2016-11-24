@@ -321,7 +321,7 @@ export class DataService{
 
 1\. Create a **&lt;div&gt;** tag with a specific id and set the height and width to determine the rendering map’s size with `ej-map` attribute.
 2\. Create a `e-layers` with parent of `e-layers` inside the mapContainer tag `ej-map`.
-3\. Set the shapeData attribute value as usMap which containes the USA shape data details. 
+3\. Set the shapeData attribute value as usMap which contains the USA shape data details. 
 
 {% highlight javascript %}
 
