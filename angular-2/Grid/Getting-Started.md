@@ -299,7 +299,7 @@ export class AppComponent {
 
 {% endhighlight %}
 
-{% highlight ts %}
+{% highlight javascript %}
 
 import {Component, ViewEncapsulation} from '@angular/core';
 import {NorthwindService} from './services/northwind.service';
