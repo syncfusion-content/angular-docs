@@ -1,10 +1,13 @@
-layout:post
+---
+layout: post
 title: Getting Started for Angular-2 Grid
 description: How to create the Grid, data bind, enable paging, grouping, filtering and add summaries
 platform: Angular-2
 control: Grid
 documentation: ug
+keywords: ejGrid, Grid, Grid widget
 ---
+
 # Getting started
 
 To get start with how to use the Grid component within Angular-2 platform, please refer the basic requisites and the configurations needs to be done on the system from [here](https://help.syncfusion.com/angular-2/gettingstarted/getting-started-systemjs).By following the above steps in the document, you can get the newly cloned **angular2-seeds** template sample folder.Grid control has been already configured in that **angular2-seeds** folder.So that you can use already exisiting or modifiy grid sample available in **src/grid** folder.
@@ -47,7 +50,7 @@ I> `ej.angular2.min.js` file is additionally required to render the Grid in Angu
 
 {% endhighlight %}
 
-{% highlight ts %}
+{% highlight javascript %}
    
     import {Component, ViewEncapsulation} from '@angular/core';
     import {NorthwindService} from './services/northwind.service';
@@ -87,7 +90,7 @@ N> 3.ODataAdaptor is the default adaptor for the DataManager. On binding to othe
 
 ## Enable Paging
 
-[`Paging`](http://help.syncfusion.com/js/grid/paging) can be enabled by setting the [`allowPaging`](http://help.syncfusion.com/js/api/ejgrid#members:allowpaging) to true. The Paging feature in Grid offers complete navigation support to easily switch between the pages, using the page bar available at the bottom of the Grid control
+[`Paging`](http://help.syncfusion.com/js/grid/paging) can be enabled by setting the [`allowPaging`](http://help.syncfusion.com/js/api/ejgrid#members:allowpaging) to true. The Paging feature inï¿½Gridï¿½offers complete navigation support to easily switch between the pages, using the page bar available at the bottom of the Grid control
 
 {% highlight html %}
 
@@ -104,7 +107,7 @@ N> 3.ODataAdaptor is the default adaptor for the DataManager. On binding to othe
 {% endhighlight %}
 
 
-{% highlight ts %}
+{% highlight javascript %}
 
     import {Component, ViewEncapsulation} from '@angular/core';
     import {NorthwindService} from './services/northwind.service';
@@ -154,7 +157,7 @@ N> Pager settings can be customized by using the `pageSize` of [`pagesettings`](
 {% endhighlight %}
 
 
-{% highlight ts %}
+{% highlight javascript %}
 
     import {Component, ViewEncapsulation} from '@angular/core';
     import {NorthwindService} from './services/northwind.service';
@@ -202,7 +205,7 @@ N> Pager settings can be customized by using the `pageSize` of [`pagesettings`](
 
 {% endhighlight %}
 
-{% highlight ts %}
+{% highlight javascript %}
     
     import {Component, ViewEncapsulation} from '@angular/core';
     import {NorthwindService} from './services/northwind.service';
@@ -247,7 +250,7 @@ Refer to the following code example for initial grouping.
 
 {% endhighlight %}
 
-{% highlight ts %}
+{% highlight javascript %}
 
 import {Component, ViewEncapsulation} from '@angular/core';
 import {NorthwindService} from './services/northwind.service';
@@ -294,7 +297,9 @@ export class AppComponent {
     </e-columns>
 </ej-grid>
 
-{% highlight ts %}
+{% endhighlight %}
+
+{% highlight javascript %}
 
 import {Component, ViewEncapsulation} from '@angular/core';
 import {NorthwindService} from './services/northwind.service';
@@ -331,9 +336,3 @@ export class AppComponent {
 
 ![](Getting-started_images/Getting-started2_img6.png)
 {:.image }
-
-
-
-
-
-
