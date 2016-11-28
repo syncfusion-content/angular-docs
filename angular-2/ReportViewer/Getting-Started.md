@@ -9,31 +9,45 @@ keywords: ejReportViewer, ReportViewer, js ReportViewer
 
 # Getting Started
 
-To get start with how to use the ReportViewer component within Angular-2 platform, refer the basic requisites and the configurations needs to be done on the system from [here](/angular-2/overview).
+This section explains briefly about how to create a ReportViewer in your web application with Angular2.
 
-Once the configurations are done, run the below commands in the command prompt to clone the repository for `SystemJS` starter and to install the required dependency packages automatically.
+## Create your first ReportViewer in Angular-2
+
+In this tutorial, you can learn how to create a simple ReportViewer control, Load RDLC Report and Load SSRS Report in your web application with Angular2.
+
+## Add Scripts, Styles and Control in HTML Page
+
+Create a **HTML** page and add the scripts and CSS references in the order mentioned in the following code example.
 
 {% highlight html %}
 
-    > git clone https://github.com/syncfusion/angular2-seeds/ -b systemjs
-    > cd angular2-seeds
-    > npm install
- 
+    <!DOCTYPE html>
+    <html>
+    <head> 
+        <link href="http://cdn.syncfusion.com/14.3.0.52/js/web/flat-azure/ej.web.all.min.css" rel="stylesheet" />
+        <script src="node_modules/core-js/client/shim.min.js"></script>
+        <script src="node_modules/zone.js/dist/zone.js"></script>
+        <script src="node_modules/reflect-metadata/Reflect.js"></script>
+        <script src="node_modules/systemjs/dist/system.src.js"></script>
+        <script src="https://code.jquery.com/jquery-3.0.0.min.js"></script>
+        <script src="http://cdn.syncfusion.com/js/assets/external/jsrender.min.js" type="text/javascript"></script>
+        <script src="https://ajax.aspnetcdn.com/ajax/jquery.validate/1.14.0/jquery.validate.min.js"></script>
+        <script src="http://cdn.syncfusion.com/14.3.0.49/js/web/ej.web.all.min.js" type="text/javascript"></script>
+        <script src ="http://cdn.syncfusion.com/14.3.0.49/js/common/ej.angular2.min.js"></script>
+        <script src="systemjs.config.js"></script>
+    </head>
+    <body>
+    <ej-app>Loading...</ej-app>
+    </body>
+    </html>
+
 {% endhighlight %}
 
-Once the cloned seed application is created, now it is ready to make use of any of our Syncfusion components within it.
+In the above code, `ej.web.all.min.js`script reference has been added for demonstration purpose. It is not recommended to use it during deployment, as it contains all the widgets, which results in deploying large script file. Instead, you can use[CSG](http://csg.syncfusion.com/# "") utility to generate a custom script file with the required widgets for deployment purpose.
 
-## Copying ReportViewer source file
+## Initialize and configure the control
 
-Copy the required `reportviewer.component.ts` source file from the following location and add it under the **src/ej** folder within the newly cloned **angular2-seeds** folder.
-
-* (**Installed location**)\Syncfusion\Essential Studio\{{ site.releaseversion }}\JavaScript\assets-src\angular2\
-
-N> `core.ts` source file is mandatory for all Syncfusion JavaScript Angular 2 components. 
-
-## Adding ReportViewer HTML file
-
-Create a folder named **reportviewer** within the **src** folder. Now, create a html file and name it as **reportviewer.component.html** under the _src/reportviewer folder. Place the reportviewer rendering code within this file as depicted below,
+Add necessary HTML elements and CSS style to render ReportViewer and Set the desired `reportPath` and `reportServiceUrl` to ReportViewer. The code example for defining ReportViewer control in Angular2 is as follows,
 
 {% highlight html %}
 
@@ -41,8 +55,6 @@ Create a folder named **reportviewer** within the **src** folder. Now, create a 
 </ej-reportviewer>
 
 {% endhighlight %}
-
-Create a **reportviewer.component.css** file under the same **src/reportviewer** folder. Place the reportviewer CSS style within this file as depicted below,
 
 {% highlight css %}
 
@@ -52,8 +64,6 @@ ej-reportviewer {
 }
 
 {% endhighlight %}
-
-Create a **reportviewer.component.ts** file under the same **src/reportviewer** folder, where the reportPath and serviceUrl needs to be defined.
 
 {% highlight ts %}
 
@@ -77,61 +87,7 @@ export class ReportViewerComponent {
 
 {% endhighlight %}
 
-N> Default RDL Report will be rendered, which is used in the online service.
-
-## Configure the Router and Navigation
-
-Configure the route navigation link for the newly created ReportViewer sample within the **src/app.component.html** file as shown below,
-
-{% highlight html %}
-
-	<ul class="nav navbar-nav">
-		<li><a data-toggle="collapse" data-target="#skeleton-navigation-navbar-collapse.in" href="#" [routerLink]="['/']">Syncfusion Angular 2</a></li>
-		<li><a data-toggle="collapse" data-target="#skeleton-navigation-navbar-collapse.in" href="#home" [routerLink]="['/home']">Home</a></li>
-        <!-- ReportViewer sample navigation link -->
-        <li><a data-toggle="collapse" data-target="#skeleton-navigation-navbar-collapse.in" href="#reportviewer" [routerLink]="['/reportviewer']">ReportViewer</a></li>
-	</ul>
-
-{% endhighlight %}
-
-Now, import and define the ReportViewer sample's route within the **src/app.routes.ts** file as shown below,
-
-{% highlight ts %}
-
-    import { Routes } from '@angular/router';
-    import { ReportViewerComponent } from './reportviewer/reportviewer.component'; // imports ReportViewer component
-    import { HomeComponent } from './home/home.component';
-
-    export const rootRouterConfig: Routes = [
-        { path: '', redirectTo: 'home', pathMatch: 'full' },
-        { path: 'home', component: HomeComponent },
-    	{ path: 'reportviewer', component: ReportViewerComponent } // ReportViewer sample path
-    ];
-
-
-{% endhighlight %}
-
-Now, finally make sure to import and declare the ReportViewer's source and sample component files into the **app.module.ts** as shown in the below code snippet.
-
-{% highlight ts %}
-    
-    // imports the ReportViewer's source and sample component files
-    import { AppComponent } from './app.component';
-    import { HomeComponent } from './home/home.component';
-
-    import { EJ_REPORTVIEWER_COMPONENTS } from './ej/reportviewer.component';
-    import { ReportViewerComponent } from './reportviewer/reportviewer.component';
-    
-    import { rootRouterConfig } from './app.routes';
-    
-    // Declare the source and sample files here in this module declaration part
-    @NgModule({
-        imports: [BrowserModule, FormsModule, HttpModule, RouterModule.forRoot(rootRouterConfig, { useHash: true })],
-        declarations: [AppComponent, HomeComponent, EJ_REPORTVIEWER_COMPONENTS, ReportViewerComponent],
-        bootstrap: [AppComponent]
-    })
-
-{% endhighlight %}
+N> Default RDL Report will be rendered, which is used in the online service. You can obtain sample rdl/rdlc files from Syncfusion installed location (%userprofile%\AppData\Local\Syncfusion\EssentialStudio\{{ site.releaseversion }}\Common\Data\ejReportTemplate).
 
 ## Run the Application
 
@@ -148,8 +104,7 @@ ReportViewer with Grouping Aggregate Report
 
 ## Load SSRS Server Reports
 
-### Adding ReportViewer HTML file
-Create a folder named **reportviewer** within the **src** folder. Now, create a html file and name it as **reportviewer.component.html** under the _src/reportviewer folder. Place the reportviewer rendering code within this file as depicted below,
+Add necessary HTML elements and CSS style to render ReportViewer and Set the desired `reportPath`, `reportServerUrl` and `reportServiceUrl` to ReportViewer. The code example for defining ReportViewer control in Angular2 is as follows,
 
 {% highlight html %}
 
@@ -157,8 +112,6 @@ Create a folder named **reportviewer** within the **src** folder. Now, create a 
 </ej-reportviewer>
 
 {% endhighlight %}
-
-Create a **reportviewer.component.css** file under the same **src/reportviewer** folder. Place the reportviewer CSS style within this file as depicted below,
 
 {% highlight css %}
 
@@ -168,8 +121,6 @@ ej-reportviewer {
 }
 
 {% endhighlight %}
-
-Create a **reportviewer.component.ts** file under the same **src/reportviewer** folder, where the reportPath and serviceUrl needs to be defined.
 
 {% highlight ts %}
 
@@ -212,10 +163,7 @@ Report from SSRS
 
 ## Load RDLC Reports
 
-The ReportViewer has data binding support to visualize the RDLC reports. The following code example helps you to bind data to ReportViewer.
-
-### Adding ReportViewer HTML file
-Create a folder named **reportviewer** within the **src** folder. Now, create a html file and name it as **reportviewer.component.html** under the _src/reportviewer folder. Place the reportviewer rendering code to load RDLC report within this file as depicted below,
+The ReportViewer has data binding support to visualize the RDLC reports and Set the desired `reportPath`, `reportServerUrl`, `processingMode` and `reportServiceUrl` to ReportViewer. The following code example helps you to bind data to ReportViewer.
 
 {% highlight html %}
 
@@ -223,8 +171,6 @@ Create a folder named **reportviewer** within the **src** folder. Now, create a 
 </ej-reportviewer>
 
 {% endhighlight %}
-
-Create a **reportviewer.component.css** file under the same **src/reportviewer** folder. Place the reportviewer CSS style within this file as depicted below,
 
 {% highlight css %}
 
@@ -234,8 +180,6 @@ ej-reportviewer {
 }
 
 {% endhighlight %}
-
-Create a **reportviewer.component.ts** file under the same **src/reportviewer** folder, where the reportPath, serviceUrl and dataSources needs to be defined.
 
 {% highlight ts %}
 
