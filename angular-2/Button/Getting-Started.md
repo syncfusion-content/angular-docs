@@ -63,9 +63,7 @@ npm start
 
 {% endhighlight %}
 
-6. Browse the port where your application is hosted and navigate to Button tab to see the output. 
 
-![](Getting-Started_images/default.png)
 
 ### Configuring Button
 
@@ -73,8 +71,16 @@ This section encompasses the details on how you can configure the Button control
 To modify the size of the Button and rename the button, add the following snippet in your app.coponent.html file.
 
 {% highlight html %}
+<table>
+    <tr>
+        <td >My First Button</td>
+        <td>
+            <input type="button" ej-button id="button" [text]="text" />
+        </td>
+    </tr>
+</table>
 
-<input type="button" ej-button id="button" [text]="text" [size]="size" />
+
 
 {% endhighlight %}
 
@@ -84,14 +90,13 @@ To render the text and size properties add the following snippet in your TS file
 
 export class AppComponent {
     text: string;
-    size:string;
     constructor() {
-        this.text = "click";
-        this.size = "large";
+        this.text = "Button";
     }
 
 {% endhighlight %}
 
-The following screenshot illustrates the Button control with text and size properties.
+Browse the port where your application is hosted and navigate to Button tab to see the output. 
 
-![](!Getting-Started_images/configure.png)
+
+![](!Getting-Started_images/Getting-Started_img1.jpg)
