@@ -1,7 +1,7 @@
 ---
 title: Getting Started for Chart
 description: How to create a chart, add series, enable tooltip and other functionalities
-platform:js
+platform:angular2
 control:chart
 documentation:ug
 keywords: ejchart, chart, chart widget, angular 2 chart

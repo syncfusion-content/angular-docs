@@ -1,7 +1,7 @@
 ---
 title: Getting Started for BulletGraph
 description: How to create a bulletgraph, add scales, enable tooltip and other functionalities
-platform:js
+platform:angular2
 control:bulletgraph
 documentation:ug
 keywords: ejbulletgraph, bulletgraph, bulletgraph widget, angular 2 bulletgraph

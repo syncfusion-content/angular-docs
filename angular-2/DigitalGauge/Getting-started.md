@@ -1,7 +1,7 @@
 ---
 title: Getting Started for DigitalGauge
 description: How to create a digitalgauge, add items, enable frame and other functionalities
-platform:js
+platform:angular2
 control:digitalgauge
 documentation:ug
 keywords: ejdigitalgauge, digitalgauge, digitalgauge widget, angular 2 digitalgauge
