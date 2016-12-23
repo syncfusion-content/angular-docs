@@ -105,16 +105,16 @@ Now, this section explains how to populate JSON data to the Spreadsheet. You can
 {% highlight ts %}
 
     import {Component, ViewEncapsulation} from '@angular/core';
-    import {NorthwindService} from './services/northwind.service';
+    import { SpreadsheetService } from '../services/spreadsheet.service';
     @Component({
         selector: 'ej-app',
-  t     emplateUrl: 'app/app.component.html',  //give the path file for spreadsheet control html file.
-        providers:[NorthwindService]
+        templateUrl: 'app/app.component.html',  //give the path file for spreadsheet control html file.
+        providers:[SpreadsheetService]
     })
     export class AppComponent {
         public spreadData;
-        constructor(public northwindService: NorthwindService) {
-            this.spreadData = ej.DataManager(northwindService.getFoodInformation()).executeLocal(ej.Query().take(50).select("FoodId", "Time", "FoodName", "Calorie", "Protein", "Fat", "Carbohydrate"));
+        constructor(public SpreadsheetService: SpreadsheetService) {
+            this.spreadData = SpreadsheetService.getDefaultData();
      }
     }
 
@@ -133,7 +133,14 @@ Events can be bound to the controls using the event name within bracket [`()`]. 
 {% highlight html %}
 
     <ej-spreadsheet id="spreadsheet" [allowConditionalFormats]= true (loadComplete)= loadComplete($event)>
-
+      <e-sheets>
+            <e-sheet>
+                 <e-rangesettings>
+                    <e-rangesetting [dataSource]="spreadData" startCell="A1" [headerStyles]="{'font-weight':'bold'}"></e-rangesetting>
+                 </e-rangesettings>
+            </e-sheet>
+        </e-sheets>
+    </ej-spreadsheet>
 {% endhighlight %}
 
 To apply conditional formats for a range use [`setCFRule`](http://help.syncfusion.com/js/api/ejspreadsheet#methods:xlcformat-setcfrule "setCFRule") method. The following code example illustrates this,
@@ -141,18 +148,22 @@ To apply conditional formats for a range use [`setCFRule`](http://help.syncfusio
 {% highlight ts %}
 
     import {Component, ViewEncapsulation} from '@angular/core';
-    import {NorthwindService} from './services/northwind.service';
+    import { SpreadsheetService } from '../services/spreadsheet.service';
 
     @Component({
         selector: 'ej-app',
         templateUrl: 'app/app.component.html',  //give the path file for spreadsheet control html file.
-        providers:[NorthwindService]
+        providers:[SpreadsheetService]
     })
 
     export class AppComponent {
+        public spreadData;
+        constructor(public SpreadsheetService: SpreadsheetService) {
+            this.spreadData = SpreadsheetService.getDefaultData();
+     }
         loadComplete(event) {
             let xlObj = $("#spreadsheet").data("ejSpreadsheet");
-            xlObj.XLCFormat.setCFRule({ "action": "equalto", "inputs": ["100"], "color":   "redft", "range": "D1:D7" });
+            xlObj.XLCFormat.setCFRule({ "action": "greaterthan", "inputs": ["10"], "color": "redft", "range": "D2:D8" });
         }
     }
 
@@ -168,9 +179,34 @@ The Spreadsheet can save its data, style, format into an excel file. To enable s
 
 {% highlight html %}
 
-    <ej-spreadsheet id="spreadsheet"  exportSettings.excelUrl="http://js.syncfusion.com/demos/ejservices/api/JSXLExport/ExportToExcel" >
+    <ej-spreadsheet id="spreadsheet"  exportSettings.excelUrl="http://js.syncfusion.com/demos/ejservices/api/Spreadsheet/ExcelExport" >
+    <e-sheets>
+            <e-sheet>
+                 <e-rangesettings>
+                    <e-rangesetting [dataSource]="spreadData" startCell="A1" [headerStyles]="{'font-weight':'bold'}"></e-rangesetting>
+                 </e-rangesettings>
+            </e-sheet>
+        </e-sheets>
     </ej-spreadsheet>
 
+{% endhighlight %}
+
+{% highlight ts %}
+
+    import {Component, ViewEncapsulation} from '@angular/core';
+    import { SpreadsheetService } from '../services/spreadsheet.service';
+    @Component({
+        selector: 'ej-app',
+        templateUrl: 'app/app.component.html',  //give the path file for spreadsheet control html file.
+        providers:[SpreadsheetService]
+    })
+    export class AppComponent {
+        public spreadData;
+        constructor(public SpreadsheetService: SpreadsheetService) {
+            this.spreadData = SpreadsheetService.getDefaultData();
+     }
+    }
+  
 {% endhighlight %}
 
 Use shortcut [`Ctrl + S`](http://help.syncfusion.com/js/spreadsheet/keyboard-shortcuts "Ctrl + S") to save Spreadsheet as excel file.
