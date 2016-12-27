@@ -4,7 +4,7 @@ description: Getting Started for Angular 2 ColorPicker
 platform: Angular2
 control: ColorPicker
 documentation: Ug
-keywords:ejcolorpicker, angular colorpicker, colorpicker
+keywords: ejcolorpicker, angular colorpicker, colorpicker
 ---
 
 # Getting Started

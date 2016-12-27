@@ -4,7 +4,7 @@ description: Getting Started for Angular 2 Slider
 platform: Angular2
 control: Slider
 documentation: Ug
-keywords:ejslider, js slider, slider
+keywords: ejslider, js slider, slider
 ---
 
 # Getting Started
