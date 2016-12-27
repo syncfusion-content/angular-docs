@@ -1,7 +1,7 @@
 ---
 title: Getting Started for CircularGauge
 description: How to create a circulargauge, add scales, enable tooltip and other functionalities
-platform:js
+platform:angular2
 control:circulargauge
 documentation:ug
 keywords: ejcirculargauge, circulargauge, circulargauge widget, angular 2 circulargauge
