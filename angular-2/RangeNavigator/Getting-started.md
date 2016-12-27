@@ -1,9 +1,9 @@
 ---
 title: Getting Started for RangeNavigator
 description: How to create a rangenavigator, add series, enable tooltip and other functionalities
-platform:angular2
-control:rangenavigator
-documentation:ug
+platform: angular2
+control: rangenavigator
+documentation: ug
 keywords: ejrangenavigator, rangenavigator, rangenavigator widget, angular 2 rangenavigator
 ---
 #Getting Started

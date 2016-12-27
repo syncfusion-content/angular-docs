@@ -4,7 +4,7 @@ description: Getting Started for Angular 2 CurrencyTextbox
 platform: Angular2
 control: CurrencyTextbox
 documentation: Ug
-keywords:ejcurrencytextbox, js currencytextbox, currencytextbox
+keywords: ejcurrencytextbox, js currencytextbox, currencytextbox
 ---
 
 # Getting Started

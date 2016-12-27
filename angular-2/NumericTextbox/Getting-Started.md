@@ -4,7 +4,7 @@ description: Getting Started for Angular 2 NumericTextbox
 platform: Angular2
 control: NumericTextbox
 documentation: Ug
-keywords:ejnumerictextbox, js numerictextbox, numerictextbox
+keywords: ejnumerictextbox, js numerictextbox, numerictextbox
 ---
 
 # Getting Started
