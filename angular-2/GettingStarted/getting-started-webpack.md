@@ -20,17 +20,11 @@ To quick start with Syncfusion JavaScript Angular 2 components run the below com
  > npm install
 {% endhighlight %}
  
-The below steps describes to add component with above cloned seed application.
+N> The cloned application is fully configured to work with Essential Studio for JavaScript Angular 2 components, in which we configured our [ej-angular2](https://github.com/syncfusion/ej-angular2) library and necessary changes to consume our Angular 2 components. 
+ 
+This section describes to add component with above cloned seed application.
 
-## Syncfusion JavaScript components source configuration and sample creation
-
-* Copy required Syncfusion Angular 2 source component(s) from the below build location and add it in `src/app/ej` folder (For ex., consider the `dialog` component).
-
-{% highlight javascript %}
-(Installed Location)\Syncfusion\Essential Studio\14.3.0.49\JavaScript\assets-src\angular2\ 
-{% endhighlight %}
-
-N> `core.ts` file is mandatory for all Syncfusion JavaScript Angular 2 components. The repository having the source file from Essential Studio for JavaScript v14.3.0.49.
+## Adding sample with seed application
 
 * Create `dialog` folder inside `src/app` folder.
 
