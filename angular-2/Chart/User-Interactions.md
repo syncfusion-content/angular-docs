@@ -111,8 +111,6 @@ The **fill** and **border** options are used to customize the background color a
 
 {% highlight html %}
 
-{% endhighlight %}
-
 <ej-chart id="chartcontainer" style="display:block;">
     <e-seriescollection>
         <e-series [tooltip.visible]="true" tooltip.fill="#FF9933" [tooltip.border.width]=1 tooltip.border.color="#993300"> 		
