@@ -111,8 +111,6 @@ The **fill** and **border** options are used to customize the background color a
 
 {% highlight html %}
 
-{% endhighlight %}
-
 <ej-chart id="chartcontainer" style="display:block;">
     <e-seriescollection>
         <e-series [tooltip.visible]="true" tooltip.fill="#FF9933" [tooltip.border.width]=1 tooltip.border.color="#993300"> 		
@@ -554,7 +552,7 @@ To select the points that corresponds to the same index in all the series, set t
 
 **Range mode**
 
-To fetch the selected area data points value, you can set the selectionSettings **mode** as **range** in the chart series. The selection rectangle can be drawn as horizontally, vertically or in both direction by using **rangeType** property and the selected dataâ€™s are returned as an array collection in the **rangeSelected** event.  
+To fetch the selected area data points value, you can set the selectionSettings **mode** as **range** in the chart series. The selection rectangle can be drawn as horizontally, vertically or in both direction by using **rangeType** property and the selected data’s are returned as an array collection in the **rangeSelected** event.  
 
 {% highlight html %}
 
