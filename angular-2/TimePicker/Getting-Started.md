@@ -173,6 +173,6 @@ export class AppComponent {
 
 The following screenshot illustrates the output of above code.
 
-![](Getting-Started_img3.png)
+![](Getting-Started_images/Getting-Started_img1.png)
 
 
