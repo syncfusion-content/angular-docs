@@ -109,7 +109,7 @@ npm start
 
 6. Browse the port where your application is hosted and navigate to TimePicker tab to see the output. 
 
-![](Getting-Started_img1.png)
+![](Getting-Started_images/Getting-Started_img1.png)
 
 ## Configuring Properties
 
@@ -142,7 +142,7 @@ export class AppComponent {
 
 The following screenshot illustrates the output of above code.
 
-![](Getting-Started_img2.png)
+![](Getting-Started_images/Getting-Started_img2.png)
 
 ### DisableTimeRanges
 
@@ -173,6 +173,6 @@ export class AppComponent {
 
 The following screenshot illustrates the output of above code.
 
-![](Getting-Started_images/Getting-Started_img1.png)
+![](Getting-Started_images/Getting-Started_img3.png)
 
 
