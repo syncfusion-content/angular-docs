@@ -109,8 +109,6 @@ The following code example shows how to add background shapes and set template t
 
 {% endhighlight %}
 
-{% endhighlight %}
-
 ![](Data-Markers_images/Data-Markers_img4.png)
 
 

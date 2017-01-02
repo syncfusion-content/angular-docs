@@ -37,15 +37,7 @@ The possible enum values for the gaugePosition are as follows:
 
 {% highlight html %}
 
-<div style="float: left" id="gauge1"></div>
-<div id=" CoreCircularGaugehalfright "></div>
-
-{% endhighlight %}
-
-
-{% highlight html %}
-
- <ej-CircularGauge id="circularGauge1" backgroundColor="transparent" [width]=800 [height]=500 [radius]=120 [value]=60 [distanceFromCorner]=30
+ <ej-CircularGauge id="circularGauge1" backgroundColor="transparent" [width]=800 [height]=500 [radius]=120 [value]=60 [distanceFromCorner]=30 gaugePosition ="center"
                                     frame.frameType="halfcircle" [frame.halfCircleFrameStartAngle]=270 [frame.halfCircleFrameEndAngle]=90 >
      <e-scales>
           <e-scale [startAngle]=270 [sweepAngle]="180" [radius]="160"
@@ -54,6 +46,8 @@ The possible enum values for the gaugePosition are as follows:
        </e-scales>
   </ej-CircularGauge>
 
+ {% endhighlight %}
+ 
 Execute the above code to render the following output.
 
 ![](Gauge-Position_images/Gauge-Position_img1.png)
