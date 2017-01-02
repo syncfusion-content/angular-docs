@@ -99,4 +99,4 @@ export class AppComponent {
 Browse the port where your application is hosted and navigate to Button tab to see the output. 
 
 
-![](!Getting-Started_images/Getting-Started_img1.jpg)
+![](!Getting-Started_images/Getting-Started_img1.JPG)
