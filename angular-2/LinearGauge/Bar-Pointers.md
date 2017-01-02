@@ -132,7 +132,7 @@ Execute the above code to render the following output.
 
 {% endhighlight %}
 
-{% highlight javascript %}
+
 
 Execute the above code to render the following output.
 

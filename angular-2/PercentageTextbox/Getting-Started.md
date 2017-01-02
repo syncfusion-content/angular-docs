@@ -4,7 +4,7 @@ description: Getting Started for Angular 2 PercentageTextbox
 platform: Angular2
 control: PercentageTextbox
 documentation: Ug
-keywords:ejpercentagetextbox, js percentagetextbox, percentagetextbox
+keywords: ejpercentagetextbox, js percentagetextbox, percentagetextbox
 ---
 
 # Getting Started

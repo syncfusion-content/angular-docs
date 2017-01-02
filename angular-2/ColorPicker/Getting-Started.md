@@ -4,7 +4,7 @@ description: Getting Started for Angular 2 ColorPicker
 platform: Angular2
 control: ColorPicker
 documentation: Ug
-keywords:ejcolorpicker, angular colorpicker, colorpicker
+keywords: ejcolorpicker, angular colorpicker, colorpicker
 ---
 
 # Getting Started
@@ -223,5 +223,5 @@ npm start
 
 * Browse to [http://localhost:3000](http://localhost:3000) to see the application. And navigate to ColorPicker tab. The component is rendered as like the below screenshot. You can make changes in the code found under src folder and the browser should auto-refresh itself while you save files. 
 
-![](Getting-Started_images/Getting-Started_img1.jpeg)
+![](Getting-Started_images/Getting-Started_img1.png)
 

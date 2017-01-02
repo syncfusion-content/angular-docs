@@ -4,7 +4,7 @@ description: Getting Started for Angular 2 FileExplorer
 platform: Angular2
 control: FileExplorer
 documentation: Ug
-keywords:ejfileexplorer, js fileexplorer, fileexplorer
+keywords: ejfileexplorer, js fileexplorer, fileexplorer
 ---
 
 # Getting Started

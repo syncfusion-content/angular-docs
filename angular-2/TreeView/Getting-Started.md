@@ -4,7 +4,7 @@ description: Getting Started for Angular 2 TreeView
 platform: Angular2
 control: TreeView
 documentation: Ug
-keywords:ejtreeview, js treeview, treeview
+keywords: ejtreeview, js treeview, treeview
 ---
 
 # Getting Started

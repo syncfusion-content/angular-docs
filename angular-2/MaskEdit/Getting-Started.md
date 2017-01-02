@@ -4,7 +4,7 @@ description: Getting Started for Angular 2 MaskEdit
 platform: Angular2
 control: MaskEdit
 documentation: Ug
-keywords:ejmaskedit, js maskedit, maskedit
+keywords: ejmaskedit, js maskedit, maskedit
 ---
 
 # Getting Started

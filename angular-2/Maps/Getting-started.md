@@ -1,9 +1,9 @@
 ---
 title: Getting Started for Maps
 description: How to create a maps, add layers, enable tooltip,legend and other functionalities
-platform:angular2
-control:maps
-documentation:ug
+platform: angular2
+control: maps
+documentation: ug
 keywords: ejmaps, maps, maps widget, angular 2 maps
 ---
 #Getting Started

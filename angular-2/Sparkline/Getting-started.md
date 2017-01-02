@@ -1,9 +1,9 @@
 ---
 title: Getting Started for Sparkline
 description: How to create a sparkline, add datasource, enable tooltip and other functionalities
-platform:angular2
-control:sparkline
-documentation:ug
+platform: angular2
+control: sparkline
+documentation: ug
 keywords: ejsparkline, sparkline, sparkline widget, angular 2 sparkline
 ---
 #Getting Started

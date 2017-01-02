@@ -4,7 +4,7 @@ description: Getting Started for Angular 2 scroller
 platform: Angular2
 control: scroller
 documentation: Ug
-keywords:ejscroller, js scroller, scroller
+keywords: ejscroller, js scroller, scroller
 ---
 
 # Getting Started

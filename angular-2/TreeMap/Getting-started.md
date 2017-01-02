@@ -1,9 +1,9 @@
 ---
 title: Getting Started for TreeMap
 description: How to create a treemap, add levels, enable tooltip, colormapping and other functionalities
-platform:angular2
-control:treemap
-documentation:ug
+platform: angular2
+control: treemap
+documentation: ug
 keywords: ejtreemap, treemap, treemap widget, angular 2 treemap
 ---
 #Getting Started

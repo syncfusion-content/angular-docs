@@ -2,7 +2,7 @@
 layout: post
 title: Getting Started for Angular 2 Diagram
 description: Getting Started for Angular 2 Diagram
-platform:Angular2
+platform: Angular2
 control: Diagram
 documentation: ug
 keywords: Diagram, js diagram, Populating data
