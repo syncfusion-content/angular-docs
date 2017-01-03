@@ -74,7 +74,8 @@ The Pointers border is modified with the object called **border** as in scales. 
      <e-scales>
           <e-scale [showRanges]="true" [showScaleBar]="true" [radius]=150 [width]=10 >
           	<e-pointers>
-                <e-pointer [value]=45 [length]=100 backgroundColor="yellow" [width]=16 [opacity]=0.6 [border]="{ color: 'green', width: 2 }" >
+                <e-pointer [value]=45 [length]=100 backgroundColor="yellow" [width]=16 [opacity]=0.6
+                 [border]="{ color: 'green', width: 2 }" >
                 </e-pointer>
             </e-pointers>
           </e-scale>
@@ -97,7 +98,8 @@ Based on the value, the**pointer** point out the label value. You can set the po
      <e-scales>
           <e-scale [border]="{ width: 2, color: 'Red' }" [showScaleBar]="true" [radius]=150 [width]=10 >
           	<e-pointers>
-                <e-pointer [value]=45 [length]=100 backgroundColor="orange" [width]=16 [opacity]=0.6 [border]="{ color: 'red', width: 2 }" >
+                <e-pointer [value]=45 [length]=100 backgroundColor="orange" [width]=16 [opacity]=0.6
+                 [border]="{ color: 'red', width: 2 }" >
                 </e-pointer>
             </e-pointers>
           </e-scale>
@@ -118,14 +120,14 @@ Pointer can be positioned with the help of two properties such as **distanceFrom
 
  <ej-CircularGauge id="circularGauge1" >
      <e-scales>
-          <e-scale [border]="{ width: 2, color: 'Red' }" [showScaleBar]="true" [radius]=150 [width]=10 >
-          	<e-pointers>
-                <e-pointer type="marker" markerType="triangle" placement="near" [distanceFromScale]=20 >
-                </e-pointer>
-            </e-pointers>
-          </e-scale>
-       </e-scales>
-  </ej-CircularGauge>
+        <e-scale [border]="{ width: 2, color: 'Red' }" [showScaleBar]="true" [radius]=150 [width]=10>
+            <e-pointers>
+              <e-pointer type="marker" markerType="triangle" placement="near" [distanceFromScale]=20 >
+            </e-pointer>
+          </e-pointers>
+       </e-scale>
+   </e-scales>
+</ej-CircularGauge>
 
 {% endhighlight %}
 
@@ -202,10 +204,11 @@ In this type, needle pointer is completely replaced by image. We can implement i
 
  <ej-CircularGauge id="circularGauge1" frame.frameType="halfcircle" >
      <e-scales>
-          <e-scale [showRanges]="true" [showLabels]="false" [startAngle=]=180 [sweepAngle]=180 [showScaleBar]="false" [radius]=130 [width]=10 >
+          <e-scale [showRanges]="true" [showLabels]="false" [startAngle=]=180 [sweepAngle]=180
+                  [showScaleBar]="false" [radius]=130 [width]=10 >
           	<e-pointers>
-                <e-pointer type="needle" needleType="image" ImageUrl="nib.png" [value]=60 [length]=30 [width]=100 >
-                </e-pointer>
+                <e-pointer type="needle" needleType="image" ImageUrl="nib.png" [value]=60 
+                [length]=30 [width]=100 ></e-pointer>
             </e-pointers>
             <e-ticks>
                 <e-tick [height]='0' [width]='0'>
@@ -214,8 +217,8 @@ In this type, needle pointer is completely replaced by image. We can implement i
              <e-ranges>
                 <e-range [distanceFromScale]='-30' [startValue]='0' [endValue]='70' [size]=40>
                 </e-range>
-                <e-range [distanceFromScale]='-30' [startValue]='70' [endValue]='110' [size]=40 backgroundColor='#fc0606' border.color='#fc0606'>
-                </e-range>
+                <e-range [distanceFromScale]='-30' [startValue]='70' [endValue]='110' [size]=40 
+                         backgroundColor='#fc0606' border.color='#fc0606'></e-range>
             </e-ranges>
           </e-scale>
        </e-scales>
@@ -237,10 +240,11 @@ In this type, marker pointer is completely replaced by image. We can implement i
 
  <ej-CircularGauge id="circularGauge1" frame.frameType="halfcircle" >
      <e-scales>
-          <e-scale [showRanges]="true" [showLabels]="false" [startAngle=]=180 [sweepAngle]=180 [showScaleBar]="false" [radius]=130 [width]=10 >
+          <e-scale [showRanges]="true" [showLabels]="false" [startAngle=]=180 [sweepAngle]=180 
+                   [showScaleBar]="false" [radius]=130 [width]=10 >
           	<e-pointers>
-                <e-pointer type="marker" markerType="image" ImageUrl="ball.png" [value]=60 [length]=30 [width]=100 >
-                </e-pointer>
+                <e-pointer type="marker" markerType="image" ImageUrl="ball.png" [value]=60 [length]=30 
+                [width]=100></e-pointer>
             </e-pointers>
             <!--Add range and ticks here-->
           </e-scale>
@@ -262,9 +266,11 @@ In this type, marker pointer is drawn first and then image also loaded. We can i
 
  <ej-CircularGauge id="circularGauge1" frame.frameType="halfcircle" >
      <e-scales>
-          <e-scale [showRanges]="true" [showLabels]="false" [startAngle=]=180 [sweepAngle]=180 [showScaleBar]="false" [radius]=130 [width]=10 >
+          <e-scale [showRanges]="true" [showLabels]="false" [startAngle=]=180 [sweepAngle]=180
+           [showScaleBar]="false" [radius]=130 [width]=10 >
           	<e-pointers>
-                <e-pointer type="marker" markerType="rectangle" ImageUrl="ball.png" [value]=60 [length]=30 [width]=100 [border]="{ color: 'Black', width: 3 }">
+                <e-pointer type="marker" markerType="rectangle" ImageUrl="ball.png" [value]=60
+                 [length]=30 [width]=100 [border]="{ color: 'Black', width: 3 }">
                 </e-pointer>
             </e-pointers>
             <!--Add range and ticks here-->
@@ -288,11 +294,14 @@ Execute the above code to render the following output.
 
  <ej-CircularGauge id="circularGauge1">
      <e-scales>
-          <e-scale [showScaleBar]="true" [showScaleBar]="true" [radius]=150 [width]=10 [border]="{ width: 2, color: 'Green' }" >
+          <e-scale [showScaleBar]="true" [showScaleBar]="true" [radius]=150 [width]=10
+           [border]="{ width: 2, color: 'Green' }" >
           	<e-pointers>
-                <e-pointer [border]="{ width: 2, color: 'Green' }" backgroundColor="#DCEBF9" [value]=4060 [length]=100 [width]=16 [opacity]=0.6 >
+              <e-pointer [border]="{ width: 2, color: 'Green' }" backgroundColor="#DCEBF9"
+                 [value]=4060 [length]=100 [width]=16 [opacity]=0.6 >
                 </e-pointer>
-                <e-pointer type="marker" markerType="triangle" placement="near" [value]=60 [length]=20 [width]=20 backgroundColor="#DCEBF9" [border]="{ color: 'Green', width: 3 }">
+              <e-pointer type="marker" markerType="triangle" placement="near" [value]=60 [length]=20
+                 [width]=20 backgroundColor="#DCEBF9" [border]="{ color: 'Green', width: 3 }">
                 </e-pointer>
             </e-pointers>
             <!--Add range and ticks here-->
@@ -317,17 +326,18 @@ You can position the **Circular Gauge** pointer value with the gauge as center b
 
 {% highlight html %}
 
- <ej-CircularGauge id="circularGauge1" [radius]=100 [value]=55 backgroundColor="transparent" >
+ <ej-CircularGauge id="circularGauge1" [radius]=100 [value]=55 backgroundColor="transparent">
      <e-scales>
-          <e-scale [showRanges]="true" [showScaleBar]="true" [radius]=150 [width]=10 [border]="{ width: 2, color: 'Green' }" >
+          <e-scale [showRanges]="true" [showScaleBar]="true" [radius]=150 [width]=10
+           [border]="{ width: 2, color: 'Green' }" >
           	<e-ranges>
-                <e-range [size]=40 [startValue]='0' [endValue]='50' backgroundColor='#1B4279' border.color='#1B4279' >
-                </e-range>
-                <e-range [size]=40 [startValue]='50' [endValue]='100' backgroundColor='#91B8F3' border.color='#91B8F3'>
-                </e-range>
+                <e-range [size]=40 [startValue]='0' [endValue]='50' backgroundColor='#1B4279'
+                 border.color='#1B4279'></e-range>
+                <e-range [size]=40 [startValue]='50' [endValue]='100' backgroundColor='#91B8F3'
+                 border.color='#91B8F3'></e-range>
             </e-ranges>
             <e-pointers>
-                <e-pointer [pointerValueText]="{showValue: true,distance: 0,color: '#8c8c8c' }" >
+                <e-pointer [pointerValueText]="{showValue: true,distance: 0,color: '#8c8c8c' }">
                 </e-pointer>
             </e-pointers>
           </e-scale>
@@ -358,15 +368,19 @@ Appearance of the **Circular Gauge****pointer value text** is adjusted by using 
 
  <ej-CircularGauge id="circularGauge1" [radius]=100 [value]=55 backgroundColor="transparent" >
      <e-scales>
-          <e-scale [showRanges]="true" [showScaleBar]="true" [radius]=150 [width]=10 [border]="{ width: 2, color: 'Green' }" >
+          <e-scale [showRanges]="true" [showScaleBar]="true" [radius]=150 [width]=10 
+          [border]="{ width: 2, color: 'Green' }" >
           	<e-ranges>
-                <e-range [size]=40 [startValue]='0' [endValue]='50' backgroundColor='#1B4279' border.color='#1B4279' >
+                <e-range [size]=40 [startValue]='0' [endValue]='50' backgroundColor='#1B4279' 
+                border.color='#1B4279' >
                 </e-range>
-                <e-range [size]=40 [startValue]='50' [endValue]='100' backgroundColor='#91B8F3' border.color='#91B8F3'>
+                <e-range [size]=40 [startValue]='50' [endValue]='100' backgroundColor='#91B8F3' 
+                border.color='#91B8F3'>
                 </e-range>
             </e-ranges>
             <e-pointers>
-                <e-pointer [pointerValueText]="{showValue: true,distance: 0,color: 'red',opacity: 0.7, angle: 20 }" >
+                <e-pointer [pointerValueText]="{showValue: true,distance: 0,color: 'red',
+                                                                 opacity: 0.7, angle: 20 }" >
                 </e-pointer>
             </e-pointers>
           </e-scale>
@@ -388,16 +402,18 @@ Similar to other collection, font option is also available in this pointer value
 
  <ej-CircularGauge id="circularGauge1" [radius]=100 [value]=55 backgroundColor="transparent" >
      <e-scales>
-          <e-scale [showRanges]="true" [showScaleBar]="true" [radius]=150 [width]=10 [border]="{ width: 2, color: 'Green' }" >
+          <e-scale [showRanges]="true" [showScaleBar]="true" [radius]=150 [width]=10 [border]="{ 
+                                                                    width: 2, color: 'Green' }" >
           	<e-ranges>
-                <e-range [size]=40 [startValue]='0' [endValue]='50' backgroundColor='#1B4279' border.color='#1B4279' >
-                </e-range>
-                <e-range [size]=40 [startValue]='50' [endValue]='100' backgroundColor='#91B8F3' border.color='#91B8F3'>
-                </e-range>
+                <e-range [size]=40 [startValue]='0' [endValue]='50' backgroundColor='#1B4279'
+                                                         border.color='#1B4279' ></e-range>
+                <e-range [size]=40 [startValue]='50' [endValue]='100' backgroundColor='#91B8F3'
+                                                          border.color='#91B8F3'></e-range>
             </e-ranges>
             <e-pointers>
-                <e-pointer [pointerValueText]="{showValue: true,distance: 0,color: 'red',opacity: 0.7, angle: 20,  
-                                                font: { size: '15px', fontStyle: 'Normal', fontFamily: 'Arial'} }" >
+                <e-pointer [pointerValueText]="{showValue: true,distance: 0,color: 'red',
+                        opacity: 0.7, angle: 20, font: { size: '15px', fontStyle: 'Normal', 
+                        fontFamily: 'Arial'} }" >
                 </e-pointer>
             </e-pointers>
           </e-scale>

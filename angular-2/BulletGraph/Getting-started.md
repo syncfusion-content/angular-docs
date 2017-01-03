@@ -84,19 +84,18 @@ Create an HTML page and add the scripts references in the order mentioned in the
     <!-- 2. Configure SystemJS -->
     <script src="systemjs.config.js"></script>
     <script>       
-      System.import('app')
-            .then(null, console.error.bind(console));
+      System.import('app').then(null, console.error.bind(console));
     </script>
 
     </head>
     <!-- 3. Display the application -->
     <body>
-    <ej-app> 
-		    <div class="splash">
-			      <div class="message">Angular 2 Syncfusion Components App</div>
-			      <div class="spinner"></div>
-		    </div>
-	</ej-app>
+       <ej-app> 
+		<div class="splash">
+		    <div class="message">Angular 2 Syncfusion Components App</div>
+		    <div class="spinner"></div>
+		 </div>
+	   </ej-app>
     </body>
     </html>
 
@@ -119,8 +118,8 @@ N> `core.ts` file is mandatory for all Syncfusion JavaScript Angular 2 component
 * Create `bulletgraph.component.html` view file inside `src/bulletgraph` folder and render ejBulletgraph Angular 2 component using the below code example. 
 
 {% highlight html %}
-	<ej-bulletgraph id="defaultbulletgraph">
-	</ej-bulletgraph>
+<ej-bulletgraph id="defaultbulletgraph">
+</ej-bulletgraph>
 {% endhighlight %}
 
 * Create `bulletgraph.component.ts` model file inside the folder `src/bulletgraph` and create sample component using the below code example.
@@ -147,8 +146,10 @@ Before adding router configuration for above created ejBulletgraph component, we
 {% highlight html %}
 <div>
 	<ul class="nav navbar-nav">
-		. . . .
-		<li><a data-toggle="collapse" data-target="#skeleton-navigation-navbar-collapse.in" href="#bulletgraph" [routerLink]="['/bulletgraph']">bulletgraph </a></li>
+		<li>
+		    <a data-toggle="collapse" data-target="#skeleton-navigation-navbar-collapse.in" 
+		       href="#bulletgraph" [routerLink]="['/bulletgraph']">bulletgraph </a>
+		</li>
 	</ul>
 </div>
 <main>
@@ -209,10 +210,10 @@ Assign the data in **fieldData** property to the **dataSource** property of **Bu
 {% highlight html %}
 
 
-   <div id="frame">
-        <ej-bulletgraph id="bulletgraph"  [fields.dataSource]="fieldData">
-        </ej-bulletgraph>
-    </div>
+ <div id="frame">
+    <ej-bulletgraph id="bulletgraph"  [fields.dataSource]="fieldData">
+    </ej-bulletgraph>
+ </div>
     
 {% endhighlight %}
 
@@ -352,8 +353,7 @@ bulletgraphData():Array<any>{
 
 Once the **dataSource** property is assigned with the required values, you can bind the variable names used in the **JSON** data to the corresponding fields of the **BulletGraph** as shown in the following code sample.
 
-{% highlight javascript %}
-
+{% highlight html %}
 
 <ej-bulletgraph id="bulletgraph"  [fields.dataSource]="fieldData" fields.category="category"
         fields.featureMeasures="value" fields.comparativeMeasure="comparativeMeasureValue">
@@ -369,14 +369,15 @@ By default, the **BulletGraph** is rendered in the Horizontal orientation with i
 
 **Minimum**, **maximum** and **interval** values for the **quantitativeScale** of the **bullet graph** should be set, as shown in the following code example.
 
-{% highlight javascript %}
+{% highlight html %}
 
 
 <ej-bulletgraph id="bulletgraph" 
     [height]="540" [width]="850"
     [qualitativeRangeSize]="700" [quantitativeScaleLength]="420"
     orientation="vertical" flowDirection="backward" [quantitativeScaleSettings.interval]="10"
-    [quantitativeScaleSettings.minimum]="70" [quantitativeScaleSettings.maximum]="130" quantitativeScaleSettings.tickPosition="far"
+    [quantitativeScaleSettings.minimum]="70" [quantitativeScaleSettings.maximum]="130" 
+    quantitativeScaleSettings.tickPosition="far"
     [fields.dataSource]="fieldData" fields.category="category"
     fields.featureMeasures="value" fields.comparativeMeasure="comparativeMeasureValue">
 </ej-bulletgraph>
@@ -393,7 +394,7 @@ As you can see in the image above, the bullet graph without any ranges is displa
 
 By default, 3 ranges are displayed in the **BulletGraph** control during the initial rendering of the control with its default values. In order to customize it, you need to set appropriate values for the **rangeEnd** and its **rangeStroke** properties.  Any number of **qualitativeRanges** can be added to the control. 
 
-{% highlight javascript %}
+{% highlight html %}
 
 <ej-bulletgraph>
      <e-qualitativeranges>
@@ -418,11 +419,16 @@ After adding **qualitativeRanges** to the **BulletGraph**, the control will be r
 
 You have to do the following code changes in the quantitative scale in order to customize the tick size, the colors of the feature bar and comparative measure symbols. 
 
-{% highlight javascript %}
+{% highlight html %}
 
- <ej-bulletgraph [quantitativeScaleSettings.majorTickSettings.width]="1" [quantitativeScaleSettings.majorTickSettings.size]="13" quantitativeScaleSettings.majorTickSettings.stroke="gray"
- [quantitativeScaleSettings.minorTickSettings.width]="1" [quantitativeScaleSettings.minorTickSettings.size]="5" quantitativeScaleSettings.minorTickSettings.stroke="gray"
- quantitativeScaleSettings.comparativeMeasureSettings.stroke="#507786" quantitativeScaleSettings.featuredMeasureSettings.stroke="#169DD8">
+ <ej-bulletgraph [quantitativeScaleSettings.majorTickSettings.width]="1" 
+        [quantitativeScaleSettings.majorTickSettings.size]="13" 
+        quantitativeScaleSettings.majorTickSettings.stroke="gray"
+        [quantitativeScaleSettings.minorTickSettings.width]="1" 
+        [quantitativeScaleSettings.minorTickSettings.size]="5"
+        quantitativeScaleSettings.minorTickSettings.stroke="gray" 
+        quantitativeScaleSettings.comparativeMeasureSettings.stroke="#507786" 
+        quantitativeScaleSettings.featuredMeasureSettings.stroke="#169DD8">
 </ej-bulletgraph>
 
 {% endhighlight %}
@@ -437,11 +443,12 @@ When customization of ticks and measure bars is done, **BulletGraph** looks as f
 
 You can display an appropriate Caption in the **BulletGraph** by adding the following code example.
 
-{% highlight javascript %}
+{% highlight html %}
 
-<ej-bulletgraph  captionSettings.textPosition='top' captionSettings.textAlignment='center' captionSettings.textAnchor='middle'
- captionSettings.text="Monsoon Rainfall - Actual vs Forecast" captionSettings.font.fontFamily="segoe ui"
- captionSettings.font.fontStyle="normal" captionSettings.font.size="12px" captionSettings.font.fontWeight="regular"
+<ej-bulletgraph  captionSettings.textPosition='top' captionSettings.textAlignment='center'
+  captionSettings.textAnchor='middle'captionSettings.text="Monsoon Rainfall - Actual vs Forecast" 
+   captionSettings.font.fontFamily="segoe ui" captionSettings.font.fontStyle="normal" 
+   captionSettings.font.size="12px" captionSettings.font.fontWeight="regular"
  [captionSettings.font.opacity]="1">
 </ej-bulletgraph>
 
@@ -457,7 +464,7 @@ The following screenshot displays a **BulletGraph** in the caption and title in 
 
 You can use a Tooltip in your application to display any information. The tooltip is enabled by setting the **visible** property in tooltip to **True**. 
 
-{% highlight javascript %}
+{% highlight html %}
 
 <ej-bulletgraph  [tooltipSettings.visible]="true">
 </ej-bulletgraph>

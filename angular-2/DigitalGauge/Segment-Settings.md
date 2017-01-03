@@ -17,7 +17,8 @@ documentation: ug
 
 {% highlight html %}
 
-<ej-digitalgauge id="DigitalGauge1" with="800" [items]="[{value: 'GO AHEAD',segmentSettings: {color: 'Green', opacity: 0.1, spacing:4 }}]">
+<ej-digitalgauge id="DigitalGauge1" with="800" [items]="[{value: 'GO AHEAD',
+                segmentSettings: {color: 'Green', opacity: 0.1, spacing:4 }}]">
 </ej-digitalgauge>
 
 {% endhighlight %}
@@ -36,7 +37,8 @@ Execute the above code examples to render the **Digital****Gauge** as follows.
 
 {% highlight html %}
 
-<ej-digitalgauge id="DigitalGauge1" with="800" [items]="[{value: 'WELCOME',segmentSettings: {length: 3, width: 3 }}]">
+<ej-digitalgauge id="DigitalGauge1" with="800" [items]="[{value: 'WELCOME',
+                                   segmentSettings: {length: 3, width: 3 }}]">
 </ej-digitalgauge>
 
 {% endhighlight %}

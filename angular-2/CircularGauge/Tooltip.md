@@ -19,10 +19,12 @@ documentation: ug
 
 {% highlight html %}
 
- <ej-CircularGauge id="circularGauge1" [tooltip.showCustomLabelTooltip]="true" [tooltip.showCustomLabelTooltip]="true">
+ <ej-CircularGauge id="circularGauge1" [tooltip.showCustomLabelTooltip]="true" 
+                                         [tooltip.showCustomLabelTooltip]="true">
      <e-scales>
-          <e-scale [showLabels]="true" radius=150 [customLabels]="[{ value: '095345',font: {size: '18px',fontFamily: 'Arial',fontStyle: 'bold'},
-                                                                                                           position: { x: 180, y: 220 }}]">         
+          <e-scale [showLabels]="true" radius=150 [customLabels]="[{ value: '095345',
+                           font: {size: '18px',fontFamily: 'Arial',fontStyle: 'bold'},
+                                                        position: { x: 180, y: 220 }}]">         
             <e-pointers>
                 <e-pointer [value]=60 [length]="100">
                 </e-pointer>
@@ -55,10 +57,12 @@ In **Tooltip** option, you can customize the Tooltip window by adding the toolti
     </div>
 </div>
 
- <ej-CircularGauge id="circularGauge1" [tooltip.showCustomLabelTooltip]="true" [tooltip.showCustomLabelTooltip]="true" tooltip.templateID="Tooltip">
+ <ej-CircularGauge id="circularGauge1" [tooltip.showCustomLabelTooltip]="true" 
+                [tooltip.showCustomLabelTooltip]="true" tooltip.templateID="Tooltip">
      <e-scales>
-          <e-scale [showLabels]="true" radius=150 [customLabels]="[{ value: '0 9 5 3 4 5',font: {size: '18px',fontFamily: 'Arial',fontStyle: 'bold'},
-                                                                                                           position: { x: 180, y: 220 }}]">         
+          <e-scale [showLabels]="true" radius=150 [customLabels]="[{ value: '0 9 5 3 4 5',
+                                 font: {size: '18px',fontFamily: 'Arial',fontStyle: 'bold'},
+                                                              position: { x: 180, y: 220 }}]">         
             <e-pointers>
                 <e-pointer [value]=60 [length]="100">
                 </e-pointer>

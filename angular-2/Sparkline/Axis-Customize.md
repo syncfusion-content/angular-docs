@@ -13,9 +13,9 @@ The Sparkline axis can be collapsed using visible property in [`axisLineSetting`
 
  {% highlight html %}
  
-   <ej-sparkline id="sparklinecontainer" size.width="170px" [axisLineSettings.visible]="true" axisLineSettings.color="#ff14ae">    
+<ej-sparkline id="sparklinecontainer" size.width="170px" [axisLineSettings.visible]="true" axisLineSettings.color="#ff14ae">    
 
-   </ej-sparkline>
+</ej-sparkline>
 
 {% endhighlight %}
 

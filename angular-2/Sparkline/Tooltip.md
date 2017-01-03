@@ -13,9 +13,9 @@ A tooltip follows the pointer movement and is used to indicate the value of a po
 
 {% highlight html %}
 
-  <ej-sparkline id="sparklinecontainer" [tooltip.visible]="true">          
+<ej-sparkline id="sparklinecontainer" [tooltip.visible]="true">          
                                
-  </ej-sparkline>
+</ej-sparkline>
 
 {% endhighlight %}
 
@@ -34,9 +34,9 @@ HTML elements can be displayed in the tooltip by using the [`template`] option o
     </div>
 </div>
 
-  <ej-sparkline id="sparklinecontainer" [tooltip.visible]="true" tooltip.template="item">          
+<ej-sparkline id="sparklinecontainer" [tooltip.visible]="true" tooltip.template="item">          
                                
-  </ej-sparkline>
+</ej-sparkline>
 
 {% endhighlight %}
 

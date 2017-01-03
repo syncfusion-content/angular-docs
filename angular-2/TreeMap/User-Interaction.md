@@ -26,9 +26,10 @@ The border can be customized with the `highlightBorderBrush` and `highlightBorde
 
 {% highlight html %}
 
-  <ej-treemap id="treemap" [highlightOnSelection]="true" [highlightBorderThickness]=1 highlightBorderBrush="#3e3e3e">      
+<ej-treemap id="treemap" [highlightOnSelection]="true" [highlightBorderThickness]=1
+                                                    highlightBorderBrush="#3e3e3e">      
         
- </ej-treemap>
+</ej-treemap>
         
 {% endhighlight %}
         
@@ -40,9 +41,10 @@ To enable the selection of leaf nodes, the `highlightGroupOnSelection` property 
 
 {% highlight html %}
 
-  <ej-treemap id="treemap" [highlightGroupOnSelection]="true" [highlightBorderThickness]=1 highlightBorderBrush="#3e3e3e">      
+<ej-treemap id="treemap" [highlightGroupOnSelection]="true" [highlightBorderThickness]=1
+                                                          highlightBorderBrush="#3e3e3e">      
         
- </ej-treemap>
+</ej-treemap>
         
 {% endhighlight %}
         
@@ -57,9 +59,9 @@ To select multiple items simultaneously, the mouse tap should be done along with
 
 {% highlight html %}
 
-  <ej-treemap id="treemap" [highlightOnSelection]="true" selectionMode="multiple">      
+<ej-treemap id="treemap" [highlightOnSelection]="true" selectionMode="multiple">      
         
- </ej-treemap>
+</ej-treemap>
         
 {% endhighlight %}
 
@@ -69,9 +71,9 @@ To select multiple items simultaneously, the mouse tap should be done along with
 
 {% highlight html %}
 
-  <ej-treemap id="treemap" [highlightGroupOnSelection]="true" groupSelectionMode="multiple">      
+<ej-treemap id="treemap" [highlightGroupOnSelection]="true" groupSelectionMode="multiple">      
         
- </ej-treemap>
+</ej-treemap>
         
 {% endhighlight %}
 
@@ -87,9 +89,9 @@ To enable this feature, set the `draggingOnSelection` to "**true**".
 
 {% highlight html %}
 
-  <ej-treemap id="treemap" [draggingOnSelection]="true">      
+<ej-treemap id="treemap" [draggingOnSelection]="true">      
         
- </ej-treemap>
+</ej-treemap>
         
 {% endhighlight %}
 
@@ -101,9 +103,9 @@ To enable this feature, set the `draggingGroupOnSelection` to "**true**".
 
 {% highlight js %}
 
-  <ej-treemap id="treemap" [draggingGroupOnSelection]="true">
+<ej-treemap id="treemap" [draggingGroupOnSelection]="true">
 
- </ej-treemap>
+</ej-treemap>
         
 {% endhighlight %}
 

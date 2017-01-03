@@ -19,27 +19,30 @@ The **Series** property provides access to a collection of all series that are d
 
 {% highlight ts %}
 
-    this.rangeData = function GetData() {
-            var series1 = [];       
-            var value = 100;
-            for (var i = 1; i < 360; i++) {
-                if (Math.random() > .5) {
-                    value += Math.random();                 
-                } else {
-                    value -= Math.random();           
-                }
-                var point1 = { XValue: new Date(2010, 0, i), YValue: value };               
-                series1.push(point1);             
-            }
-            return data;
-        };
+this.rangeData = function GetData() {
+    var series1 = [];
+    var value = 100;
+    for (var i = 1; i < 360; i++) {
+        if (Math.random() > .5) {
+            value += Math.random();
+        } else {
+            value -= Math.random();
+        }
+        var point1 = { XValue: new Date(2010, 0, i), YValue: value };
+        series1.push(point1);
+    }
+    return data;
+};
 
 {% endhighlight %}
 
 {% highlight html %}
 
-<ej-rangenavigator align="center" id="rangecontainer" enableDefferedUpdate="true" padding="15" (load)="onrnload($event)" [dataSource]="rangeData" xName="XValue" yName="YValue" [allowSnapping]="true"
-    selectedRangeSettings.start="2010/5/1" padding="15" selectedRangeSettings.end="2010/10/1" [isResponsive]="true" sizeSettings.height="120" theme="azuredark">
+<ej-rangenavigator align="center" id="rangecontainer" enableDefferedUpdate="true" padding="15" 
+               (load)="onrnload($event)" [dataSource]="rangeData" xName="XValue" yName="YValue" 
+               [allowSnapping]="true"    selectedRangeSettings.start="2010/5/1" padding="15" 
+               selectedRangeSettings.end="2010/10/1" [isResponsive]="true" 
+               sizeSettings.height="120" theme="azuredark">
 </ej-rangenavigator>
 
 {% endhighlight %}

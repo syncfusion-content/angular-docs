@@ -17,8 +17,8 @@ If you set **enableDeferredUpdate**to true, the **rangeChanged** event gets fire
 
 {% highlight html %}
 
-  <ej-rangenavigator id="rangecontainer" [enableDeferredUpdate]="true">
-  </ej-rangenavigator>
+<ej-rangenavigator id="rangecontainer" [enableDeferredUpdate]="true">
+</ej-rangenavigator>
 
 {% endhighlight %}
 
@@ -33,8 +33,8 @@ This event is handled when the **RangeNavigator** gets loaded. A parameter **sen
 
 {% highlight html %}
 
-  <ej-rangenavigator id="rangecontainer" (loaded)="rangeLoaded($event)">
-  </ej-rangenavigator>
+<ej-rangenavigator id="rangecontainer" (loaded)="rangeLoaded($event)">
+</ej-rangenavigator>
 
   <script>     
 
@@ -53,8 +53,8 @@ This event gets fired whenever the selected range changes in **RangeNavigator**.
 
 {% highlight html %}
 
-  <ej-rangenavigator id="rangecontainer" (rangeChanged)="rangeChanged($event)">
-  </ej-rangenavigator>
+<ej-rangenavigator id="rangecontainer" (rangeChanged)="rangeChanged($event)">
+</ej-rangenavigator>
 
   <script>     
         
@@ -74,8 +74,8 @@ You can easily update the data for chart by assigning the **zoomFactor** and **z
 
 {% highlight html %}
 
-   <ej-rangenavigator id="rangecontainer" (rangeChanged)="onchartloaded($event)">
-   </ej-rangenavigator>
+<ej-rangenavigator id="rangecontainer" (rangeChanged)="onchartloaded($event)">
+</ej-rangenavigator>
   
   <script>
 
@@ -121,8 +121,8 @@ You can customize Thumb template by using **leftThumbTemplate** and **rightThumb
                     };
 </script>
 
-   <ej-rangenavigator id="rangecontainer" [navigatorStyleSettings]="navigatorStyleSettings">
-   </ej-rangenavigator>
+<ej-rangenavigator id="rangecontainer" [navigatorStyleSettings]="navigatorStyleSettings">
+</ej-rangenavigator>
 
 {% endhighlight %}
 

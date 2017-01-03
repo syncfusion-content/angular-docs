@@ -17,12 +17,12 @@ Tooltip for the data points can be enabled by using the **visible** option of th
 
 {% highlight html %}
 
-    <ej-chart id="chart">
+<ej-chart id="chart">
         <e-seriescollection>
             <e-series tooltip.visible="true">                
             </e-series>        
         </e-seriescollection>
-    </ej-chart>
+</ej-chart>
 
 
 {% endhighlight %}
@@ -39,12 +39,13 @@ You can also use * **#series.<optionname>#** * as placeholder to display the val
 
 {% highlight html %}
 
-    <ej-chart id="chart">
+<ej-chart id="chart">
         <e-seriescollection>
-            <e-series tooltip.visible="true" tooltip.format="#series.name# <br/> #point.x# : #point.y#  (g/kWh)">            
+            <e-series tooltip.visible="true" tooltip.format="#series.name# <br/>
+                                             #point.x# : #point.y#  (g/kWh)">            
             </e-series>        
         </e-seriescollection>
-    </ej-chart>
+</ej-chart>
 
 {% endhighlight %}
 
@@ -73,12 +74,12 @@ You can also use * **#series.<optionname>#** * as place holder to display the va
         </div>
     </div>
 
-    <ej-chart id="chart">
+<ej-chart id="chart">
         <e-seriescollection>
             <e-series tooltip.visible="true" tooltip.template="Tooltip">            
             </e-series>        
         </e-seriescollection>
-    </ej-chart>
+</ej-chart>
 
 </body>
 
@@ -95,12 +96,13 @@ N> Tooltip is animated only if the template is specified for tooltip.
 
 {% highlight html %}
 
-    <ej-chart id="chart">
+<ej-chart id="chart">
         <e-seriescollection>
-            <e-series name="India" tooltip.visible="true" tooltip.template="Tooltip" tooltip.enableAnimation="true" tooltip.duration="1000ms">
+            <e-series name="India" tooltip.visible="true" tooltip.template="Tooltip"
+                          tooltip.enableAnimation="true" tooltip.duration="1000ms">
             </e-series>        
         </e-seriescollection>
-    </ej-chart>
+</ej-chart>
 
 {% endhighlight %}
 
@@ -113,7 +115,8 @@ The **fill** and **border** options are used to customize the background color a
 
 <ej-chart id="chartcontainer" style="display:block;">
     <e-seriescollection>
-        <e-series [tooltip.visible]="true" tooltip.fill="#FF9933" [tooltip.border.width]=1 tooltip.border.color="#993300"> 		
+        <e-series [tooltip.visible]="true" tooltip.fill="#FF9933" 
+         [tooltip.border.width]=1 tooltip.border.color="#993300"> 		
 		</e-series>		
     </e-seriescollection>
 </ej-chart>
@@ -128,12 +131,12 @@ The options **rx** and **ry** are used to customize the corner radius of the too
 
 {% highlight html %}
 
-    <ej-chart id="chart">
+<ej-chart id="chart">
         <e-seriescollection>
             <e-series name="India" tooltip.visible="true" tooltip.rx="50" tooltip.ry="50">            
             </e-series>        
         </e-seriescollection>
-    </ej-chart>
+</ej-chart>
 
 {% endhighlight %}
 
@@ -157,8 +160,8 @@ N> Pinch zooming is supported only in browsers that support multi-touch gestures
 
 {% highlight html %}
 
-    <ej-chart id="zooming" [zooming.enable]="true" >
-    </ej-chart>
+<ej-chart id="zooming" [zooming.enable]="true" >
+</ej-chart>
 
 {% endhighlight %}
 
@@ -176,8 +179,8 @@ The **type** option in zooming specifies whether the chart is allowed to scale a
 
 {% highlight html %}
 
-    <ej-chart id="zooming" [zooming.enable]="true" zooming.type="x, y" >
-    </ej-chart>
+<ej-chart id="zooming" [zooming.enable]="true" zooming.type="x, y" >
+</ej-chart>
 
 {% endhighlight %}
 
@@ -188,8 +191,8 @@ You can choose the items displayed in the zooming toolbar by specifying the prop
 
 {% highlight html %}
 
-    <ej-chart id="zooming" [zooming.toolbarItems]="['reset', 'zoomIn', 'zoomOut']" [zooming.enable]="true">    
-    </ej-chart>
+<ej-chart id="zooming" [zooming.toolbarItems]="['reset', 'zoomIn', 'zoomOut']" [zooming.enable]="true">    
+</ej-chart>
 
 {% endhighlight %}
 
@@ -202,8 +205,8 @@ EjChart provides scrollbar support to view the other portions of chart area whic
 
 {% highlight html %}
 
-    <ej-chart id="zooming" [zooming.enableScrollbar]="true" >
-    </ej-chart>
+<ej-chart id="zooming" [zooming.enableScrollbar]="true" >
+</ej-chart>
 
 {% endhighlight %}
 
@@ -220,8 +223,10 @@ Crosshair can be enabled by using the **visible** option in the **crosshair**. C
 
 {% highlight html %}
 
-    <ej-chart id="zooming" [crosshair.visible]="true" [primaryXAxis.crosshairLabel.visible]="true" [primaryYAxis.crosshairLabel.visible]="true" >
-    </ej-chart>
+<ej-chart id="zooming" [crosshair.visible]="true" 
+             [primaryXAxis.crosshairLabel.visible]="true" 
+              [primaryYAxis.crosshairLabel.visible]="true" >
+</ej-chart>
 
 {% endhighlight %}
 
@@ -233,7 +238,7 @@ The **fill** and **border** options of the **crosshairLabel** is used to customi
 
 {% highlight html %}
 
-    <ej-chart id="zooming" 
+<ej-chart id="zooming" 
         [crosshair.visible]="true"
         [crosshair.line.color]="green"
         [crosshair.line.width]="2"
@@ -243,7 +248,7 @@ The **fill** and **border** options of the **crosshairLabel** is used to customi
         [primaryXAxis.crosshairLabel.border.color]="green"
         [primaryXAxis.crosshairLabel.border.width]="2" >
         
-    </ej-chart>
+</ej-chart>
 
 {% endhighlight %}
 
@@ -259,11 +264,11 @@ Trackball can be enabled by setting the **visible** option of the crosshair to *
 
 {% highlight html %}
 
-    <ej-chart id="zooming" 
+<ej-chart id="zooming" 
         [crosshair.visible]="true"
         crosshair.type="trackball" >
         
-    </ej-chart>
+</ej-chart>
 
 {% endhighlight %}
 
@@ -276,12 +281,12 @@ Shape and size of the trackball marker can be customized by using the **shape** 
 
 {% highlight html %}
 
-    <ej-chart id="zooming"
+<ej-chart id="zooming"
         [crosshair.visible]="true" 
         crosshair.type="trackball" 
         [crosshair.marker]="{shape : 'pentagon', size: { width: 9, height: 9 }}" >
 
-    </ej-chart>
+</ej-chart>
 
 {% endhighlight %}
 
@@ -294,14 +299,14 @@ X and Y values displayed in the trackball tooltip are formatted based on its axi
 
 {% highlight html %}
 
-    <ej-chart id="zooming"
+<ej-chart id="zooming"
         [crosshair.visible]="true"
         crosshair.type="trackball"
 
         primaryXAxis.labelFormat="MMM, yyyy"        
         primaryYAxis.labelFormat="{value}K" >
 
-    </ej-chart>
+</ej-chart>
 
 {% endhighlight %}
 
@@ -315,11 +320,11 @@ You can able to show the trackball tooltip in two modes, using trackballTooltipS
 
 {% highlight html %}
 
-    <ej-chart id="zooming"
+<ej-chart id="zooming"
         [crosshair.visible]="true" 
         crosshair.type="trackball"
         [crosshair.trackballTooltipSettings]="{mode: 'grouping', fill: 'green'}" >    
-    </ej-chart>
+</ej-chart>
 
 {% endhighlight %}
 
@@ -334,8 +339,8 @@ N> When hovering mouse on the data points, the corresponding series legend also 
 
 {% highlight html %}
 
-    <ej-chart id="container" [commonSeriesOptions.highlightSettings.enable]="true" >
-    </ej-chart>
+<ej-chart id="container" [commonSeriesOptions.highlightSettings.enable]="true" >
+</ej-chart>
 
 {% endhighlight %}
 
@@ -354,11 +359,11 @@ To highlight all the data points of the specified series, you can set the **"ser
 
 {% highlight html %}
 
-    <ej-chart id="container" 
+<ej-chart id="container" 
         [commonSeriesOptions.highlightSettings.enable]="true"
         [commonSeriesOptions.highlightSettings.mode] = "series" 
     >
-    </ej-chart>
+</ej-chart>
 
 {% endhighlight %}
 
@@ -371,8 +376,8 @@ To highlight a single point, you can set the **"point"** value to the **mode** o
 
 {% highlight html %}
 
-    <ej-chart id="container" [commonSeriesOptions.highlightSettings]="{enable:'true', mode: 'point'}" >
-    </ej-chart>
+<ej-chart id="container" [commonSeriesOptions.highlightSettings]="{enable:'true', mode: 'point'}" >
+</ej-chart>
 
 {% endhighlight %}
 
@@ -385,8 +390,9 @@ To highlight the points that corresponds to the same index in all the series, se
 
 {% highlight html %}
     
-    <ej-chart id="container" [commonSeriesOptions.highlightSettings]="{enable:'true', mode: 'cluster'}" >
-    </ej-chart>
+<ej-chart id="container" [commonSeriesOptions.highlightSettings]="{enable:'true',
+                                                              mode: 'cluster'}" >
+</ej-chart>
 
 {% endhighlight %}
 
@@ -398,13 +404,13 @@ To customize the highlighted series, use the **color**, **border** and **opacity
 
 {% highlight html %}
 
-    <ej-chart id="container" [commonSeriesOptions.highlightSettings]="{
+<ej-chart id="container" [commonSeriesOptions.highlightSettings]="{
         enable:'true', 
         border: { width: '1.5', color: 'red' }, 
         opacity: 0.5, 
         color: 'green' 
         }" >
-    </ej-chart>
+</ej-chart>
 
 {% endhighlight %}
 
@@ -437,8 +443,8 @@ EjChart provides pattern support for highlighting the data by setting the value 
 
 {% highlight html %}
 
-    <ej-chart id="container" [commonSeriesOptions.highlightSettings]="{enable:'true', pattern:'chessboard' }" >
-    </ej-chart>
+<ej-chart id="container" [commonSeriesOptions.highlightSettings]="{enable:'true', pattern:'chessboard' }" >
+</ej-chart>
 
 {% endhighlight %}
 
@@ -453,18 +459,21 @@ To create a custom pattern for the highlighting data points, set the pattern typ
 
 <body>
     <svg>
-        <pattern id="dots_a" patternUnits="userSpaceOnUse" width="6" height="6">
-            <rect x="0" y="0" width="6" height="6" transform="translate(0,0)" fill="black" opacity="1"></rect>
-            <path d='M 3 -3 L -3 3 M 0 6 L 6 0 M 9 3 L 3 9'stroke-width="1" stroke="white"></path>
-        </pattern>
+     <pattern id="dots_a" patternUnits="userSpaceOnUse" width="6" height="6">
+        <rect x="0" y="0" width="6" height="6" transform="translate(0,0)" fill="black" opacity="1">
+        </rect>
+        <path d='M 3 -3 L -3 3 M 0 6 L 6 0 M 9 3 L 3 9'stroke-width="1" stroke="white">
+        </path>
+     </pattern>
     </svg>
 
-    <ej-chart id="container" >
+<ej-chart id="container" >
         <e-seriescollection>
-            <e-series [highlightSettings]="{enable:'true', pattern: "custom", customPattern: 'dots_a' }" >
+            <e-series [highlightSettings]="{enable:'true', pattern: "custom", 
+                                                 customPattern: 'dots_a' }" >
             </e-series>        
         </e-seriescollection>
-    </ej-chart>    
+</ej-chart>    
 </body>
 
 {% endhighlight %}
@@ -478,12 +487,12 @@ N> When mouse is clicked on the data points, the corresponding series legend als
 
 {% highlight html %}
 
-    <ej-chart id="container" >
+<ej-chart id="container" >
         <e-seriescollection>
             <e-series [selectionSettings]="{ enable:'true' }" >
             </e-series>        
         </e-seriescollection>
-    </ej-chart>
+</ej-chart>
 
 {% endhighlight %}
 
@@ -502,12 +511,13 @@ To select all the data points of the specified series, you can set the **"series
 
 {% highlight html %}
 
-    <ej-chart id="container" >
+<ej-chart id="container" >
         <e-seriescollection>
-            <e-series [selectionSettings]="{ enable:'true', mode: 'series', pattern:'chessboard' }" >
+            <e-series [selectionSettings]="{ enable:'true', mode: 'series',
+                                                  pattern:'chessboard' }" >
             </e-series>        
         </e-seriescollection>
-    </ej-chart>
+</ej-chart>
 
 {% endhighlight %}
 
@@ -519,12 +529,12 @@ To highlight a single point, you can set the **"point"** value to the **mode** o
 
 {% highlight html %}
 
-    <ej-chart id="container" >
+<ej-chart id="container" >
         <e-seriescollection>
             <e-series [selectionSettings]="{ enable:'true', mode: 'point'}" >
             </e-series>        
         </e-seriescollection>
-    </ej-chart>
+</ej-chart>
 
 {% endhighlight %}
 
@@ -537,12 +547,12 @@ To select the points that corresponds to the same index in all the series, set t
 
 {% highlight html %}
 
-    <ej-chart id="container" >
+<ej-chart id="container" >
         <e-seriescollection>
             <e-series [selectionSettings]="{ enable:'true', mode: 'cluster' }" >
             </e-series>        
         </e-seriescollection>
-    </ej-chart>
+</ej-chart>
 
 {% endhighlight %}
 
@@ -556,12 +566,13 @@ To fetch the selected area data points value, you can set the selectionSettings 
 
 {% highlight html %}
 
-    <ej-chart id="container" (rangeSlected) = "rangeSelection($event)" >
+<ej-chart id="container" (rangeSlected) = "rangeSelection($event)" >
         <e-seriescollection>
-            <e-series [selectionSettings]="{ enable:'true', mode: 'range', rangeType: 'xy' }" >
+            <e-series [selectionSettings]="{ enable:'true', mode: 'range',
+                                                   rangeType: 'xy' }" >
             </e-series>        
         </e-seriescollection>
-    </ej-chart>
+</ej-chart>
 
    <script>
 
@@ -590,12 +601,13 @@ To select a data point or a series on mouse click based on the **selectionSettin
 
 {% highlight html %}
 
-    <ej-chart id="container" >
+<ej-chart id="container" >
         <e-seriescollection>
-            <e-series [selectionSettings]="{ enable:'true', mode: 'series', type: 'single' }" >
+            <e-series [selectionSettings]="{ enable:'true', mode: 'series',
+                                                        type: 'single' }" >
             </e-series>        
         </e-seriescollection>
-    </ej-chart>
+</ej-chart>
 
 {% endhighlight %}
 
@@ -607,12 +619,13 @@ For selecting multiple data points or series on mouse click, set **selectionSett
 
 {% highlight html %}
 
-    <ej-chart id="container" >
+<ej-chart id="container" >
         <e-seriescollection>
-            <e-series [selectionSettings]="{ enable:'true', mode: 'series', type: 'multiple' }" >
+            <e-series [selectionSettings]="{ enable:'true', mode: 'series',
+                                                   type: 'multiple' }" >
             </e-series>        
         </e-seriescollection>
-    </ej-chart>
+</ej-chart>
 
 {% endhighlight %}
 
@@ -625,12 +638,13 @@ To customize the selection styles, use the **color**, **border** and **opacity**
 
 {% highlight html %}
 
-    <ej-chart id="container" >
+<ej-chart id="container" >
         <e-seriescollection>
-            <e-series [selectionSettings]="{ enable:'true', border: { width: '1.5', color: "red" }, opacity: 0.5, color: "red" }" >
+            <e-series [selectionSettings]="{ enable:'true',
+             border: { width: '1.5', color: "red" }, opacity: 0.5, color: "red" }" >
             </e-series>        
         </e-seriescollection>
-    </ej-chart>
+</ej-chart>
 
 {% endhighlight %}
 
@@ -663,12 +677,12 @@ EjChart provides pattern support for the data selection by setting the value to 
 
 {% highlight html %}
 
-    <ej-chart id="container" >
+<ej-chart id="container" >
         <e-seriescollection>
             <e-series [selectionSettings]="{ enable:'true', pattern:'diagonalForward' }" >
             </e-series>        
         </e-seriescollection>
-    </ej-chart>
+</ej-chart>
 
 {% endhighlight %}
 
@@ -683,19 +697,21 @@ To create a custom pattern for selecting the data points, set the **pattern** ty
 
 
 <body>
-    <svg>
-        <pattern id="dots_a" patternUnits="userSpaceOnUse" width="6" height="6">
-            <rect x="0" y="0" width="6" height="6" transform="translate(0,0)" fill="black" opacity="1"></rect>
-            <path d='M 3 -3 L -3 3 M 0 6 L 6 0 M 9 3 L 3 9'stroke-width="1" stroke="white"></path>
-        </pattern>
-    </svg>
+  <svg>
+   <pattern id="dots_a" patternUnits="userSpaceOnUse" width="6" height="6">
+        <rect x="0" y="0" width="6" height="6" transform="translate(0,0)" fill="black" opacity="1">
+        </rect>
+        <path d='M 3 -3 L -3 3 M 0 6 L 6 0 M 9 3 L 3 9'stroke-width="1" stroke="white"></path>
+    </pattern>
+ </svg>
 
-    <ej-chart id="container" >
+<ej-chart id="container" >
         <e-seriescollection>
-            <e-series [selectionSettings]="{ enable:'true', pattern:'custom', customPattern:'dots_a' }" >
+            <e-series [selectionSettings]="{ enable:'true', pattern:'custom', 
+                                                 customPattern:'dots_a' }" >
             </e-series>        
         </e-seriescollection>
-    </ej-chart>
+</ej-chart>
 
 </body>
 

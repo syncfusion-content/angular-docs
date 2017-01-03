@@ -31,21 +31,19 @@ You can customize the labels of the **legend item** using `legendLabel` property
 
 {% highlight html %}
 
-  <ej-treemap id="treemap"  dataSource="population_data" colorValuePath= "Growth" weightValuePath= "Population" [showLegend]="true"  itemsLayoutMode="Squarified" [legendSettings.height]=40 [legendSettings.width]=700>
-        <e-levels>
-            <e-level groupPath="Continent" [groupGap]="5"></e-level>
-        </e-levels>
-        <e-rangecolormapping>
-           <e-rangecolor [from]="0" [to]="1" color="#77D8D8">
-            </e-rangecolor>
-            <e-rangecolor [from]="1" [to]="1.5" color="#AED960">
-            </e-rangecolor>
-            <e-rangecolor [from]="1.5" [to]="2" color="#FFAF51">
-            </e-rangecolor>
-           	<e-rangecolor [from]="2" [to]="3" color="#F3D240">
-            </e-rangecolor>
-		</e-rangecolormapping>
- </ej-treemap>
+<ej-treemap id="treemap"  dataSource="population_data" colorValuePath= "Growth"
+       weightValuePath= "Population" [showLegend]="true"  itemsLayoutMode="Squarified"
+          [legendSettings.height]=40 [legendSettings.width]=700>
+    <e-levels>
+       <e-level groupPath="Continent" [groupGap]="5"></e-level>
+    </e-levels>
+    <e-rangecolormapping>
+       <e-rangecolor [from]="0" [to]="1" color="#77D8D8"></e-rangecolor>
+       <e-rangecolor [from]="1" [to]="1.5" color="#AED960"></e-rangecolor>
+       <e-rangecolor [from]="1.5" [to]="2" color="#FFAF51"></e-rangecolor>
+       <e-rangecolor [from]="2" [to]="3" color="#F3D240"></e-rangecolor>
+	</e-rangecolormapping>
+</ej-treemap>
 
 {% endhighlight %}
 
@@ -67,10 +65,11 @@ You can provide the left and right labels to interactive legend by using `leftLa
 
 {% highlight html %}
 
-  <ej-treemap id="treemap" [legendSettings.height]=15 [legendSettings.width]=150 legendSettings.mode="interactive" legendSettings.title="Population" 
-                                                 legendSettings.leftLabel="0.5M" legendSettings.rightLabel="40M" legendSettings.dockPosition="top">
-           <!-- Add range color mappings here-->                                                
-        
+<ej-treemap id="treemap" [legendSettings.height]=15 [legendSettings.width]=150
+         legendSettings.mode="interactive" legendSettings.title="Population"
+           legendSettings.leftLabel="0.5M" legendSettings.rightLabel="40M" 
+            legendSettings.dockPosition="top">
+   <!-- Add range color mappings here-->
  </ej-treemap>
 
 {% endhighlight %}
@@ -84,18 +83,17 @@ You can set headers for each level by setting the `showHeader` property of the e
 
 {% highlight html %}
 
-  <ej-treemap id="treemap" >
-         <e-levels>
-                <e-level groupPath="Continent" [groupGap]=2 headerTemplate="headertemplate"></e-level>
-         </e-levels>                                             
-        
- </ej-treemap> 
+<ej-treemap id="treemap" >
+    <e-levels>
+       <e-level groupPath="Continent" [groupGap]=2 headerTemplate="headertemplate"></e-level>
+    </e-levels>                                                     
+</ej-treemap> 
 
-    <script  id="headertemplate" type="application/jsrender">
-        <div style="background-color: white; margin:5px">
-            <label style="color:black;font-size:large;" >{{:header}}</label><br />            
-        </div>                        
-    </script>                      
+ <script  id="headertemplate" type="application/jsrender">
+    <div style="background-color: white; margin:5px">
+       <label style="color:black;font-size:large;" >{{:header}}</label><br />            
+    </div>                        
+ </script>                      
 
 
 {% endhighlight %}
@@ -110,19 +108,20 @@ You can also set labels for the leaf nodes by setting the `showLabels` property 
 
 {% highlight html %}
 
-      <ej-treemap id="treemap" [legendSettings.height]=40 [legendSettings.width]=700 leafItemSettings.labelPath="Region" [leafItemSettings.showLabels]="true">
-         <e-levels>
-                <e-level groupPath="Continent" [showLabels]="true" [groupGap]=2 [headerHeight]="20" [groupPadding]="5"  headerTemplate="headertemplate">
-                </e-level>
-         </e-levels>                                             
-        
- </ej-treemap> 
+<ej-treemap id="treemap" [legendSettings.height]=40 [legendSettings.width]=700 
+       leafItemSettings.labelPath="Region" [leafItemSettings.showLabels]="true">
+    <e-levels>
+       <e-level groupPath="Continent" [showLabels]="true" [groupGap]=2 
+             [headerHeight]="20" [groupPadding]="5"  headerTemplate="headertemplate">
+       </e-level>
+    </e-levels>                                                     
+</ej-treemap> 
     
-    <script  id="headertemplate" type="application/jsrender">
-        <div style="background-color: white; margin:5px">
-            <label style="color:black;font-size:medium;" >{{:header}}</label><br />            
-        </div>                        
-    </script>             
+<script  id="headertemplate" type="application/jsrender">
+     <div style="background-color: white; margin:5px">
+     <label style="color:black;font-size:medium;" >{{:header}}</label><br />            
+     </div>                        
+</script>             
 
 
 {% endhighlight %}

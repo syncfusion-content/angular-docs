@@ -128,8 +128,8 @@ N> `core.ts` file is mandatory for all Syncfusion JavaScript Angular 2 component
 * Create `lineargauge.component.html` view file inside `src/lineargauge` folder and render ejLinearGauge Angular 2 component using the below code example. 
 
 {% highlight html %}
-	<ej-lineargauge id="defaultlineargauge">
-	</ej-lineargauge>
+<ej-lineargauge id="defaultlineargauge">
+</ej-lineargauge>
 {% endhighlight %}
 
 * Create `lineargauge.component.ts` model file inside the folder `src/lineargauge` and create sample component using the below code example.
@@ -156,8 +156,9 @@ Before adding router configuration for above created ejLinearGauge component, we
 {% highlight html %}
 <div>
 	<ul class="nav navbar-nav">
-		. . . .
-		<li><a data-toggle="collapse" data-target="#skeleton-navigation-navbar-collapse.in" href="#lineargauge" [routerLink]="['/lineargauge']">lineargauge </a></li>
+		<li>
+            <a data-toggle="collapse" data-target="#skeleton-navigation-navbar-collapse.in" href="#lineargauge" [routerLink]="['/lineargauge']">lineargauge </a>
+        </li>
 	</ul>
 </div>
 <main>
@@ -219,7 +220,7 @@ npm start
 
 {% highlight html %}
 
- <ej-lineargauge id="linearguage" [height]="550" [width]="500">
+<ej-lineargauge id="linearguage" [height]="550" [width]="500">
 </ej-lineargauge>
 
 {% endhighlight %}
@@ -270,8 +271,9 @@ On executing the above code sample renders a customized **Linear Gauge** as foll
 
 <ej-lineargauge id="lineargauge" [height]="550" [width]="500">
     <e-scales>
-       <e-scale type="thermometer" backgroundColor="transparent" [minimum]="-10" [maximum]="110" [minorIntervalValue]="5"
-                [width]="20" [position.x]="50" [position.y]="18" [length]="355" [border.width]="0.5"> 
+       <e-scale type="thermometer" backgroundColor="transparent" [minimum]="-10"
+               [maximum]="110" [minorIntervalValue]="5" [width]="20" [position.x]="50" 
+                                [position.y]="18" [length]="355" [border.width]="0.5"> 
        </e-scale>
     </e-scales>
 </ej-lineargauge>
@@ -303,7 +305,8 @@ In **Linear gauge** there are two types of pointers available such as marker poi
                <e-markerpointer opacity="0"></e-markerpointer>
            </e-markerpointers>
            <e-barpointers>
-              <e-barpointer  [width]="10" [distanceFromScale]="-0.5" [value]="37" backgroundColor="#DB3738"></e-barpointer>
+              <e-barpointer  [width]="10" [distanceFromScale]="-0.5" [value]="37"
+                                          backgroundColor="#DB3738"></e-barpointer>
            </e-barpointers>
        </e-scale>
     </e-scales>
@@ -333,7 +336,8 @@ On executing the above code sample renders a **Linear Gauge** with bar marker as
     <e-scales>
        <e-scale>
            <e-labels>
-             <e-label placement="near" font.size="10px" font.fontFamily="Segoe UI" font.fontStyle="Normal">
+             <e-label placement="near" font.size="10px" font.fontFamily="Segoe UI"
+                                                          font.fontStyle="Normal">
              </e-label>
              <e-label placement="far" [distanceFromScale.x]="10"></e-label>
           </e-labels>
@@ -363,8 +367,10 @@ On executing the above code sample renders a customized **Linear Gauge** as foll
     <e-scales>
        <e-scale>
           <e-ticks>
-              <e-tick type="majorinterval" [height]="8" [width]="1" color="#8c8c8c" [distanceFromScale.y]="-4"></e-tick>
-              <e-tick type="minorinterval" [height]="4" [width]="1" color="#8c8c8c" [distanceFromScale.y]="-4"></e-tick>
+              <e-tick type="majorinterval" [height]="8" [width]="1" color="#8c8c8c"
+                                                 [distanceFromScale.y]="-4"></e-tick>
+              <e-tick type="minorinterval" [height]="4" [width]="1" color="#8c8c8c"
+                                                  [distanceFromScale.y]="-4"></e-tick>
               <e-tick type="majorinterval" placement="far" [height]="8" [width]="1" color="#8c8c8c" 
                       [distanceFromScale.y]="-4">
               </e-tick>

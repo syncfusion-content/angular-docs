@@ -17,40 +17,40 @@ The labels are found along the range, displaying the value of the data it corres
 
 {% highlight ts %}
       
-        this.labelSettings= {
-            // customizing higher level labels.
-            higherLevel: {
-                style: {
-                    font: {
-                        color: '#ff0000',
-                        style: 'Normal',
-                        size: '12px',
-                        opacity: 1,
-                        weight: 'regular'
-                    },
-        
-                },
+this.labelSettings = {
+    // customizing higher level labels.
+    higherLevel: {
+        style: {
+            font: {
+                color: '#ff0000',
+                style: 'Normal',
+                size: '12px',
+                opacity: 1,
+                weight: 'regular'
             },
-            // customizing lower level labels.
-            lowerLevel: {
-                style: {
-                    font: {
-                        color: '#ff0000',
-                        style: 'Normal',
-                        size: '12px',
-                        opacity: 1,
-                        weight: 'regular'
-                    },
-                },
-            }
-        };
+
+        },
+    },
+    // customizing lower level labels.
+    lowerLevel: {
+        style: {
+            font: {
+                color: '#ff0000',
+                style: 'Normal',
+                size: '12px',
+                opacity: 1,
+                weight: 'regular'
+            },
+        },
+    }
+};
 
 {% endhighlight %}
 
 {% highlight html %}
 
-  <ej-rangenavigator [labelSettings]="labelSettings">
-  </ej-rangenavigator>
+<ej-rangenavigator [labelSettings]="labelSettings">
+</ej-rangenavigator>
 
 {% endhighlight %}
 
@@ -65,22 +65,22 @@ The following screen shot illustrates both the lower and higher level labels tha
 
 {% highlight ts %}
 
-        // change Placement of higher and lower level label             
-        this.labelSettings= {
-            higherLevel: {
-                labelPlacement: "inside",
-            },
-            lowerLevel: {
-                labelPlacement: "inside"
-            }
-        };
+// change Placement of higher and lower level label             
+this.labelSettings = {
+    higherLevel: {
+        labelPlacement: "inside",
+    },
+    lowerLevel: {
+        labelPlacement: "inside"
+    }
+};
 
 {% endhighlight %}
 
 {% highlight html %}
 
-  <ej-rangenavigator [labelSettings]="labelSettings">
-  </ej-rangenavigator>
+<ej-rangenavigator [labelSettings]="labelSettings">
+</ej-rangenavigator>
 
 {% endhighlight %}
 
@@ -96,61 +96,61 @@ RangeNavigator is customized using **navigatorStyleSettings** properties. You ca
 
 {% highlight ts %}
    
-        //  To customize the navigator element     
-        this.navigatorStyleSettings= {
-        
-            unselectedRegionColor: "white",
-            selectedRegionColor: "#5EABDE",
-            thumbColor: "white",
-            thumbRadius: 10,
-            thumbStroke: "#303030",
-            background: "transparent",
-            border: {
-                color: "black",
-                width: 3
+//  To customize the navigator element     
+this.navigatorStyleSettings = {
+
+    unselectedRegionColor: "white",
+    selectedRegionColor: "#5EABDE",
+    thumbColor: "white",
+    thumbRadius: 10,
+    thumbStroke: "#303030",
+    background: "transparent",
+    border: {
+        color: "black",
+        width: 3
+    },
+    majorGridLineStyle: {
+        color: "transparent"
+    },
+    minorGridLineStyle: {
+        color: "transparent"
+    }
+};
+//  To customize the labels
+this.labelSettings = {
+
+    higherLevel: {
+        style: {
+            font: {
+                color: 'black',
+                size: '13px',
+                opacity: 1
             },
-            majorGridLineStyle: {
-                color: "transparent"
+            horizontalAlignment: "left"
+        },
+        intervalType: 'years',
+        labelPlacement: "inside"
+    },
+    lowerLevel: {
+        style: {
+            font: {
+                color: 'black',
+                size: '12px',
+                opacity: 1
             },
-            minorGridLineStyle: {
-                color: "transparent"
-            }
-        };
-        //  To customize the labels
-        this.labelSettings= {
-        
-            higherLevel: {
-                style: {
-                    font: {
-                        color: 'black',
-                        size: '13px',
-                        opacity: 1
-                    },
-                    horizontalAlignment: "left"
-                },
-                intervalType: 'years',
-                labelPlacement: "inside"
-            },
-            lowerLevel: {
-                style: {
-                    font: {
-                        color: 'black',
-                        size: '12px',
-                        opacity: 1
-                    },
-                    horizontalAlignment: "center"
-                },
-                intervalType: 'quarters',
-                labelPlacement: "inside"
-            }
-        };
+            horizontalAlignment: "center"
+        },
+        intervalType: 'quarters',
+        labelPlacement: "inside"
+    }
+};
 
 {% endhighlight %}
 
 {% highlight html %}
 
-  <ej-rangenavigator [labelSettings]="labelSettings" [navigatorStyleSettings]="navigatorStyleSettings">
-  </ej-rangenavigator>
+<ej-rangenavigator [labelSettings]="labelSettings" [navigatorStyleSettings]="navigatorStyleSettings">
+</ej-rangenavigator>
 
 {% endhighlight %}
 
@@ -179,8 +179,8 @@ RangeNavigator is customized using **navigatorStyleSettings** properties. You ca
 
 {% highlight html %}
 
-  <ej-rangenavigator theme="azuredark">
-  </ej-rangenavigator>
+<ej-rangenavigator theme="azuredark">
+</ej-rangenavigator>
 
 {% endhighlight %}
 

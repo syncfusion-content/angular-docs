@@ -17,8 +17,8 @@ The **rangePadding** property allows you to customize the automatic range calcul
 
 {% highlight html %}
 
-  <ej-rangenavigator id="rangecontainer" valueType= "numeric" rangePadding="none">
-  </ej-rangenavigator>
+<ej-rangenavigator id="rangecontainer" valueType= "numeric" rangePadding="none">
+</ej-rangenavigator>
 
 {% endhighlight %}
 
@@ -64,8 +64,8 @@ Using the default range calculation for **RangeNavigator**, the **rangePadding**
 
 {% highlight html %}
 
-  <ej-rangenavigator id="rangecontainer" valueType= "datetime" rangePadding="none">
-  </ej-rangenavigator>
+<ej-rangenavigator id="rangecontainer" valueType= "datetime" rangePadding="none">
+</ej-rangenavigator>
 
 {% endhighlight %}
 
@@ -93,8 +93,9 @@ The following code example renders a RangeNavigator with a range from 2010 Janua
 
 {% highlight html %}
 
-  <ej-rangenavigator id="rangecontainer" selectedRangeSettings.start="2010/5/1" selectedRangeSettings.end="2011/10/1">
-  </ej-rangenavigator>
+<ej-rangenavigator id="rangecontainer" selectedRangeSettings.start="2010/5/1"
+                                       selectedRangeSettings.end="2011/10/1">
+</ej-rangenavigator>
 
 {% endhighlight %}
 

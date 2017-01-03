@@ -17,9 +17,9 @@ You can customize the Sparkline dimension by setting the width and height for th
 
 {% highlight html %}
 
-      <ej-sparkline id="sparklinecontainer" style="width:820px;height:500px;">          
+<ej-sparkline id="sparklinecontainer" style="width:820px;height:500px;">          
                                
-      </ej-sparkline>
+</ej-sparkline>
 
 {% endhighlight %} 
 
@@ -31,9 +31,9 @@ You can also set the Sparkline dimension by using the [`size`] property of the S
 
 {% highlight html %}
 
-   <ej-sparkline id="sparklinecontainer" size.width="170px" size.height="80px">          
+<ej-sparkline id="sparklinecontainer" size.width="170px" size.height="80px">          
                                
-   </ej-sparkline>
+</ej-sparkline>
 
 {% endhighlight %}
 
@@ -43,8 +43,8 @@ To resize the Sparkline when the browser or the sparkline container is resized, 
 
 {% highlight html %}
 
-   <ej-sparkline id="sparklinecontainer" [isResponsive]="true">          
+<ej-sparkline id="sparklinecontainer" [isResponsive]="true">          
                                
-   </ej-sparkline>
+</ej-sparkline>
 
 {% endhighlight %} 

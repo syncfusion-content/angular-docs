@@ -47,7 +47,8 @@ Major type ticks are for major interval values and minor type ticks are for mino
      <e-scales>
           <e-scale>
             <e-ticks>
-                <e-tick [value]=30 type='minor' placement="near" [distanceFromScale]='5' [height]='8' color='yellow'>
+                <e-tick [value]=30 type='minor' placement="near" [distanceFromScale]='5'
+                 [height]='8' color='yellow'>
                 </e-tick>
             </e-ticks>
           </e-scale>

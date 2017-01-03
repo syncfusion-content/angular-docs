@@ -41,13 +41,20 @@ Gets or sets a color for highlighting tree map item during drill down.</td></tr>
 
 {% highlight html %}
 
-        <ej-treemap id="treemap"  [dataSource]="population_data" [enableDrillDown]="true" weightValuePath= "Population"  uniColorMapping.color= "#CCDFE3">
-               <e-levels>
-                <e-level groupPath="Continent" [showLabels]= "true" [groupGap]=5 [headerHeight]=25 [showHeader]="true" headerTemplate='headertemplate'></e-level>
-                <e-level groupPath="Country" [showLabels]= "true" [groupGap]=5 [headerHeight]=25 [showHeader]="true" headerTemplate='headertemplate'></e-level>
-                <e-level groupPath="Name" [showLabels]= "true" [groupGap]=5 [headerHeight]=25 [showHeader]="true" headerTemplate='headertemplate'></e-level>
-            </e-levels>
-        </ej-treemap>
+<ej-treemap id="treemap"  [dataSource]="population_data" [enableDrillDown]="true"
+                    weightValuePath= "Population"  uniColorMapping.color= "#CCDFE3">
+    <e-levels>
+          <e-level groupPath="Continent" [showLabels]= "true" [groupGap]=5 
+          [headerHeight]=25 [showHeader]="true" headerTemplate='headertemplate'>
+          </e-level>
+          <e-level groupPath="Country" [showLabels]= "true" [groupGap]=5
+           [headerHeight]=25 [showHeader]="true" headerTemplate='headertemplate'>
+           </e-level>
+          <e-level groupPath="Name" [showLabels]= "true" [groupGap]=5 
+          [headerHeight]=25 [showHeader]="true" headerTemplate='headertemplate'>
+          </e-level>
+    </e-levels>
+</ej-treemap>
 
 {% endhighlight %}        
 
