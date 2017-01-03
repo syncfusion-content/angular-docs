@@ -562,7 +562,7 @@ To select the points that corresponds to the same index in all the series, set t
 
 **Range mode**
 
-To fetch the selected area data points value, you can set the selectionSettings **mode** as **range** in the chart series. The selection rectangle can be drawn as horizontally, vertically or in both direction by using **rangeType** property and the selected data’s are returned as an array collection in the **rangeSelected** event.  
+To fetch the selected area data points value, you can set the selectionSettings **mode** as **range** in the chart series. The selection rectangle can be drawn as horizontally, vertically or in both direction by using **rangeType** property and the selected data are returned as an array collection in the **rangeSelected** event.  
 
 {% highlight html %}
 
