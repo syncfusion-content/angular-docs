@@ -15,33 +15,34 @@ documentation: ug
 
 Data available in client-side (local data) can be bound with **Bullet Graph** using **fields** property. This property provides option to specify data source, fields representing progress measure bar value, comparative measure value and category value.
 
-{% highlight javascript %}
+{% highlight ts %}
 
 
 
-var localData = [
-               {
-                   value: 9.5, comparativeMeasureValue: 7.5,
-                   category: 2001
-               },
-               {
-                   value: 9.5, comparativeMeasureValue: 5,
-                   category: 2002
-               }];
+this.localData = [
+   {
+       value: 9.5, comparativeMeasureValue: 7.5,
+       category: 2001
+   },
+   {
+       value: 9.5, comparativeMeasureValue: 5,
+       category: 2002
+   }];
 
-                    this.bulletFields= {
-                        dataSource: localData, category: "category",
-                        featureMeasures: "value",
-                        comparativeMeasure: "comparativeMeasureValue"
-                    };
+this.bulletFields = {
+    dataSource: localData, category: "category",
+    featureMeasures: "value",
+    comparativeMeasure: "comparativeMeasureValue"
+};
 
 {% endhighlight %}
 
 {% highlight html %}
 
-   <ej-bulletgraph id="bullet1" [height]=120 [qualitativeRangeSize]=60 [fields]="bulletFields" [quantitativeScaleSettings.location.x]=50 [quantitativeScaleSettings.location.y]=20>         
+<ej-bulletgraph id="bullet1" [height]=120 [qualitativeRangeSize]=60 [fields]="bulletFields"
+       [quantitativeScaleSettings.location.x]=50 [quantitativeScaleSettings.location.y]=20>         
           
-   </ej-bulletgraph>
+</ej-bulletgraph>
 
 {% endhighlight %}
 
@@ -85,8 +86,10 @@ The following screenshot displays **Bullet Graph** with local data generated usi
 
 {% highlight html %}
 
-   <ej-bulletgraph id="bullet1" [qualitativeRangeSize]=60 [fields]="bulletFields" [quantitativeScaleSettings.location.x]=50 [quantitativeScaleSettings.location.y]=20
-                                                   [quantitativeScaleSettings.minimum]=5 [quantitativeScaleSettings.maximum]=45 [quantitativeScaleSettings.interval]=10>
+   <ej-bulletgraph id="bullet1" [qualitativeRangeSize]=60 [fields]="bulletFields" 
+     [quantitativeScaleSettings.location.x]=50 [quantitativeScaleSettings.location.y]=20
+     [quantitativeScaleSettings.minimum]=5 [quantitativeScaleSettings.maximum]=45 
+                                              [quantitativeScaleSettings.interval]=10>
     <e-qualitativeranges>
          <e-qualitativerange rangeEnd="25">
          </e-qualitativerange>

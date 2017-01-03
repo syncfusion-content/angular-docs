@@ -19,28 +19,28 @@ documentation: ug
 
 {% highlight ts %}
          
-                this.rnTooltip= {
-                    visible: true,  
-                    backgroundColor: "black",
-                           //  To customize the tooltip text
+this.rnTooltip = {
+    visible: true,
+    backgroundColor: "black",
+    //  To customize the tooltip text
 
-                        font: {
-                            color: 'red',
-                            family: 'Segoe UI',
-                            style: 'Normal',
-                            size: '12px',
-                            opacity: 1,
-                            weight: 'regular'
-                        }
+    font: {
+        color: 'red',
+        family: 'Segoe UI',
+        style: 'Normal',
+        size: '12px',
+        opacity: 1,
+        weight: 'regular'
+    }
 
-                };
+};
 
 {% endhighlight %}
 
 {% highlight html %}
 
-  <ej-rangenavigator id="rangecontainer" [tooltipSettings]= "rnTooltip">
-  </ej-rangenavigator>
+<ej-rangenavigator id="rangecontainer" [tooltipSettings]= "rnTooltip">
+</ej-rangenavigator>
 
 {% endhighlight %}
 
@@ -62,8 +62,8 @@ Some of the **labelFormat** for **DateTime** data area as follows:
 
 {% highlight html %}
 
-  <ej-rangenavigator id="rangecontainer" [tooltipSettings]= "{ labelFormat:'MMM, yyyy'}}">
-  </ej-rangenavigator>
+<ej-rangenavigator id="rangecontainer" [tooltipSettings]= "{ labelFormat:'MMM, yyyy'}}">
+</ej-rangenavigator>
 
 {% endhighlight %}
 
@@ -94,8 +94,8 @@ Tooltip get displayed only when we move the slider.</td></tr>
 
 {% highlight html %}
 
-  <ej-rangenavigator id="rangecontainer" [tooltipSettings]= "{tooltipDisplayMode: 'ondemand'}">
-  </ej-rangenavigator>
+<ej-rangenavigator id="rangecontainer" [tooltipSettings]= "{tooltipDisplayMode: 'ondemand'}">
+</ej-rangenavigator>
 
 {% endhighlight %}
 

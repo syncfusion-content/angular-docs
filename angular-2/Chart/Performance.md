@@ -13,8 +13,8 @@ documentation: ug
 
 {% highlight html %}
 
-   <ej-chart id="chartcontainer" [enableCanvasRendering]="true">
-   </ej-chart>
+<ej-chart id="chartcontainer" [enableCanvasRendering]="true">
+</ej-chart>
 
 {% endhighlight %}
 
@@ -26,25 +26,25 @@ Lazy loading feature provides an effective way for loading data on demand by scr
 
 {% highlight ts %}
 
-		this.axis = {  
-			scrollbarSettings: {
+this.axis = {
+    scrollbarSettings: {
 
-                              // enable the scrollbar
-                              visible: true,         
-                              // enable the resize option 
-                              canResize: true,       
-                              range: {
-                                       min: "2009/1/1", 
-                                       max: "2014/1/1"
-                                 }        
-                              }    
-                           };
+        // enable the scrollbar
+        visible: true,
+        // enable the resize option 
+        canResize: true,
+        range: {
+            min: "2009/1/1",
+            max: "2014/1/1"
+        }
+    }
+};
 {% endhighlight %}
 
 {% highlight html %}
 
-   <ej-chart id="chartcontainer" [primaryXAxis]="axis">
-   </ej-chart>
+<ej-chart id="chartcontainer" [primaryXAxis]="axis">
+</ej-chart>
 
 {% endhighlight %}
 

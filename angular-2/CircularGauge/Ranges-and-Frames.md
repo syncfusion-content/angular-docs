@@ -70,8 +70,8 @@ You can set the background color to improve the look and feel of the **Circular 
      <e-scales>
           <e-scale [showRanges]="true" [showScaleBar]="true" [radius]=150 [size]=2 >
           	<e-ranges>
-                <e-range [startValue]='20' [endValue]='80' backgroundColor="green" [border]="{ color: 'green', width: 2 }" >
-                </e-range>
+                <e-range [startValue]='20' [endValue]='80' backgroundColor="green" 
+                [border]="{ color: 'green', width: 2 }" ></e-range>
             </e-ranges>
           </e-scale>
        </e-scales>
@@ -93,7 +93,8 @@ You can position ranges using two properties such as **distanceFromScale** and *
      <e-scales>
           <e-scale [showRanges]="true" [showScaleBar]="true" [radius]=150 [size]=2 >
           	<e-ranges>
-                <e-range [startValue]='20' [endValue]='80' backgroundColor="green" [border]="{ color: 'green', width: 2 }" [distanceFromScale]=-30 placement="far" >
+                <e-range [startValue]='20' [endValue]='80' backgroundColor="green" 
+                [border]="{ color: 'green', width: 2 }" [distanceFromScale]=-30 placement="far" >
                 </e-range>
             </e-ranges>
           </e-scale>
@@ -116,11 +117,14 @@ You can set multiple ranges by adding an array of ranges objects. Refer the foll
      <e-scales>
           <e-scale [showRanges]="true" [showScaleBar]="true" [radius]=150 [size]=2 >
           	<e-ranges>
-                <e-range [startValue]='0' [endValue]='50' backgroundColor="green" [border]="{ color: 'green', width: 2 }" [distanceFromScale]=-30 placement="far" >
+                <e-range [startValue]='0' [endValue]='50' backgroundColor="green" [border]="{ 
+                    color: 'green', width: 2 }" [distanceFromScale]=-30 placement="far" >
                 </e-range>
-                <e-range [startValue]='50' [endValue]='80' backgroundColor="yellow" [border]="{ color: 'green', width: 2 }" [distanceFromScale]=-30 placement="far" >
+                <e-range [startValue]='50' [endValue]='80' backgroundColor="yellow" [border]="{ 
+                    color: 'green', width: 2 }" [distanceFromScale]=-30 placement="far" >
                 </e-range>
-                <e-range [startValue]='80' [endValue]='100' backgroundColor="red" [border]="{ color: 'green', width: 2 }" [distanceFromScale]=-30 placement="far" >
+                <e-range [startValue]='80' [endValue]='100' backgroundColor="red" [border]="{ 
+                    color: 'green', width: 2 }" [distanceFromScale]=-30 placement="far" >
                 </e-range>
             </e-ranges>
             <e-pointers>
@@ -145,8 +149,8 @@ Frame is the element that decides the appearance of the **Circular Gauge**. You 
 
 {% highlight html %}
 
- <ej-CircularGauge id="circularGauge1" frame.frameType="halfcircle" [frame.halfCircleFrameStartAngle]=205 [frame.halfCircleFrameEndAngle]=335 
-                                       backgroundColor="#FFCCCC" [pointerCap.radius]=50 >
+ <ej-CircularGauge id="circularGauge1" frame.frameType="halfcircle" [frame.halfCircleFrameStartAngle]=205 
+                [frame.halfCircleFrameEndAngle]=335 backgroundColor="#FFCCCC" [pointerCap.radius]=50 > 
      <e-scales>
           <e-scale [startAngle]=180 [sweepAngle]=180 >         
             <e-pointers>

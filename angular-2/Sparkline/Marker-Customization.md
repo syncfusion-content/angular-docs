@@ -13,9 +13,9 @@ You can customize markers by initializing the [`markerSettings`] property. The c
 
 {% highlight html %}
 
-   <ej-sparkline id="sparklinecontainer" [markerSettings.visible]="true" [markerSettings.border.width]=1 [markerSettings.width]=4 markerSettings.fill="#ff14ae">          
+<ej-sparkline id="sparklinecontainer" [markerSettings.visible]="true" [markerSettings.border.width]=1 [markerSettings.width]=4 markerSettings.fill="#ff14ae">          
                                
-   </ej-sparkline>
+</ej-sparkline>
 
 {% endhighlight %}
 

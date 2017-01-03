@@ -15,21 +15,21 @@ EjRangeNavigator provides highlighting supports to the intervals on mouse hover.
 
 {% highlight ts %}
 
-         this.navigatorStyle= {
-                //...        
-              highlightSettings:{
-                   // enable the highlight settings
-                   enable: true                                
-              }    
-              //...
-          };
+this.navigatorStyle = {
+    //...        
+    highlightSettings: {
+        // enable the highlight settings
+        enable: true
+    }
+    //...
+};
 
 {% endhighlight %}
 
 {% highlight html %}
 
-  <ej-rangenavigator id="rangecontainer" [navigatorStyleSettings]= "navigatorStyle">
-  </ej-rangenavigator>
+<ej-rangenavigator id="rangecontainer" [navigatorStyleSettings]= "navigatorStyle">
+</ej-rangenavigator>
 
 {% endhighlight %}
 
@@ -41,26 +41,26 @@ To customize the highlighted intervals, use color, border and opacity options in
 
 {% highlight ts %}
   
-         this.navigatorStyle= {
-                //...        
-                highlightSettings:{
-                    // enable the highlight settings
-                    enable: true,         
-                    // customizing style
-                    color: '#006fa0',       
-                    border:{
-                        color: 'red' , width: 2
-                      }        
-              }
-              //...
-         };
+this.navigatorStyle = {
+    //...        
+    highlightSettings: {
+        // enable the highlight settings
+        enable: true,
+        // customizing style
+        color: '#006fa0',
+        border: {
+            color: 'red', width: 2
+        }
+    }
+    //...
+};
 
 {% endhighlight %}
 
 {% highlight html %}
 
-  <ej-rangenavigator id="rangecontainer" [navigatorStyleSettings]= "navigatorStyle">
-  </ej-rangenavigator>
+<ej-rangenavigator id="rangecontainer" [navigatorStyleSettings]= "navigatorStyle">
+</ej-rangenavigator>
 
 {% endhighlight %}
 
@@ -73,21 +73,21 @@ EjRangeNavigator provides selection supports to the intervals by, clicking and d
 
 {% highlight ts %}
    
-         this.navigatorStyle= {
-                //...        
-              selectionSettings:{
-                   // enable the selection settings
-                   enable: true                                
-              }    
-              //...
-          };
+this.navigatorStyle = {
+    //...        
+    selectionSettings: {
+        // enable the selection settings
+        enable: true
+    }
+    //...
+};
 
 {% endhighlight %}
 
 {% highlight html %}
 
-  <ej-rangenavigator id="rangecontainer" [navigatorStyleSettings]= "navigatorStyle">
-  </ej-rangenavigator>
+<ej-rangenavigator id="rangecontainer" [navigatorStyleSettings]= "navigatorStyle">
+</ej-rangenavigator>
 
 {% endhighlight %}
 
@@ -100,26 +100,26 @@ To customize the selected intervals, use color, border and opacity options in th
 
 {% highlight ts %}
   
-         this.navigatorStyle= {
-                //...        
-                selectionSettings: {
-                    // enable the selection settings
-                    enable: true,         
-                    // customizing style
-                    color: '#27e8e5',       
-                    border:{
-                         color: 'red' , width: 2
-                       }
-                  //...
-              }
-         };
+this.navigatorStyle = {
+    //...        
+    selectionSettings: {
+        // enable the selection settings
+        enable: true,
+        // customizing style
+        color: '#27e8e5',
+        border: {
+            color: 'red', width: 2
+        }
+        //...
+    }
+};
 
 {% endhighlight %}
 
 {% highlight html %}
 
-  <ej-rangenavigator id="rangecontainer" [navigatorStyleSettings]= "navigatorStyle">
-  </ej-rangenavigator>
+<ej-rangenavigator id="rangecontainer" [navigatorStyleSettings]= "navigatorStyle">
+</ej-rangenavigator>
 
 {% endhighlight %}
 
@@ -138,9 +138,10 @@ To customize the selected intervals, use color, border and opacity options in th
 
 {% highlight html %}
 
-  <ej-rangenavigator id="rangecontainer" [enableScrollbar]= "true" (scrollEnd)="onScrollbarChange($event)"
-                                         scrollRangeSettings.start="2010/0/1" scrollRangeSettings.end="2011/10/31">
-  </ej-rangenavigator>
+<ej-rangenavigator id="rangecontainer" [enableScrollbar]= "true" 
+               (scrollEnd)="onScrollbarChange($event)"  scrollRangeSettings.start="2010/0/1"
+               scrollRangeSettings.end="2011/10/31">
+</ej-rangenavigator>
 
 {% endhighlight %}
 

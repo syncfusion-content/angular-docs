@@ -166,8 +166,8 @@ Before adding router configuration for above created ejRangeNavigator component,
 {% highlight html %}
 <div>
 	<ul class="nav navbar-nav">
-		. . . .
-		<li><a data-toggle="collapse" data-target="#skeleton-navigation-navbar-collapse.in" href="#rangenavigator" [routerLink]="['/rangenavigator']">rangenavigator </a></li>
+		<li><a data-toggle="collapse" data-target="#skeleton-navigation-navbar-collapse.in"
+     href="#rangenavigator" [routerLink]="['/rangenavigator']">rangenavigator </a></li>
 	</ul>
 </div>
 <main>
@@ -308,8 +308,8 @@ The following code sample shows how to enable a Tooltip.
 
 {% highlight html %}
 
-<ej-rangenavigator [tooltipSettings.visible]="true" 
- tooltipSettings.labelFormat="MMM/yyyy" tooltipSettings.tooltipDisplayMode="always">           
+<ej-rangenavigator [tooltipSettings.visible]="true" tooltipSettings.labelFormat="MMM/yyyy"
+                            tooltipSettings.tooltipDisplayMode="always">           
 </ej-rangenavigator>
 
 {% endhighlight %}

@@ -128,8 +128,8 @@ N> `core.ts` file is mandatory for all Syncfusion JavaScript Angular 2 component
 * Create `digitalgauge.component.html` view file inside `src/digitalgauge` folder and render ejDigitalGauge Angular 2 component using the below code example. 
 
 {% highlight html %}
-	<ej-digitalgauge id="defaultdigitalgauge">
-	</ej-digitalgauge>
+<ej-digitalgauge id="defaultdigitalgauge">
+</ej-digitalgauge>
 {% endhighlight %}
 
 * Create `digitalgauge.component.ts` model file inside the folder `src/digitalgauge` and create sample component using the below code example.
@@ -156,8 +156,10 @@ Before adding router configuration for above created ejDigitalGauge component, w
 {% highlight html %}
 <div>
 	<ul class="nav navbar-nav">
-		. . . .
-		<li><a data-toggle="collapse" data-target="#skeleton-navigation-navbar-collapse.in" href="#digitalgauge" [routerLink]="['/digitalgauge']">digitalgauge </a></li>
+		<li>
+            <a data-toggle="collapse" data-target="#skeleton-navigation-navbar-collapse.in" 
+                    href="#digitalgauge" [routerLink]="['/digitalgauge']">digitalgauge </a>
+        </li>
 	</ul>
 </div>
 <main>
@@ -213,7 +215,7 @@ npm start
 
 Basic attributes of each canvas elements are height and width. You can set the height and width of the gauge.
 
-{% highlight javascript %}
+{% highlight html %}
 
 <ej-digitalgauge [height]="145" [width]="260">
 </ej-digitalgauge>
@@ -253,8 +255,8 @@ You can customize the **Digital Gauge** using different properties.
 
 <ej-digitalgauge id="digitalGauge" [height]="145" [width]="260">
     <e-digitalgauge-items>
-        <e-digitalgauge-item value='"102"' [segmentSettings.width]="2" [segmentSettings.length]="20" characterSettings.type="sevensegment"
-                                [characterSettings.spacing]="12">
+        <e-digitalgauge-item value='"102"' [segmentSettings.width]="2" [segmentSettings.length]="20"
+             characterSettings.type="sevensegment" [characterSettings.spacing]="12">
         </e-digitalgauge-item>
     </e-digitalgauge-items>
 </ej-digitalgauge>
@@ -286,7 +288,7 @@ On executing the above code, sample renders a default **Digital Gauge** as follo
 
 You can position the digital letters inside the canvas element using **position** property.
 
-{% highlight javascript %}
+{% highlight html %}
 
 <ej-digitalgauge id="digitalGauge">
     <e-digitalgauge-items>
@@ -307,25 +309,35 @@ You can add **Items collection** to display the temperature value as used in the
 
 {% highlight html %}
 
-<ej-digitalgauge id="digitalGauge" [height]="145" [width]="260" frame.backgroundImageUrl="node_modules/syncfusion-javascript/Content/ej/web/common-images/frame.png">
+<ej-digitalgauge id="digitalGauge" [height]="145" [width]="260" 
+                       frame.backgroundImageUrl="Content/ej/web/common-images/frame.png">
     <e-digitalgauge-items>
-        <e-digitalgauge-item value='"102"' [segmentSettings.width]="2" [segmentSettings.length]="20" characterSettings.type="sevensegment"
-                                [characterSettings.spacing]="12" [position.x]="0" [position.y]="12">
+        <e-digitalgauge-item value='"102"' [segmentSettings.width]="2" [segmentSettings.length]="20"
+           characterSettings.type="sevensegment" [characterSettings.spacing]="12" [position.x]="0"
+           [position.y]="12">
         </e-digitalgauge-item>
-        <e-digitalgauge-item value='"0"' [segmentSettings.width]="2" [segmentSettings.length]="5" [segmentSettings.spacing]="0"
-                 characterSettings.type="sevensegment" [characterSettings.spacing]="5" [position.x]="77" [position.y]="7">
+        <e-digitalgauge-item value='"0"' [segmentSettings.width]="2" [segmentSettings.length]="5" 
+            [segmentSettings.spacing]="0" characterSettings.type="sevensegment"
+            [characterSettings.spacing]="5" [position.x]="77" [position.y]="7">
         </e-digitalgauge-item>
-        <e-digitalgauge-item value="F" [segmentSettings.width]="2" [segmentSettings.length]="20" [segmentSettings.spacing]="0"
-                 characterSettings.type="sevensegment" [characterSettings.spacing]="12" [position.x]="216" [position.y]="12">
+        <e-digitalgauge-item value="F" [segmentSettings.width]="2" [segmentSettings.length]="20" 
+            [segmentSettings.spacing]="0" characterSettings.type="sevensegment" 
+            [characterSettings.spacing]="12" [position.x]="216" [position.y]="12">
         </e-digitalgauge-item>
-        <e-digitalgauge-item value='"38"' [segmentSettings.width]="1" [segmentSettings.length]="5" [segmentSettings.spacing]="0" segmentSettings.color="#F5b43f"
-                 characterSettings.type="sevensegment" [characterSettings.spacing]="12" [position.x]="60" [position.y]="68">
+        <e-digitalgauge-item value='"38"' [segmentSettings.width]="1" [segmentSettings.length]="5" 
+            [segmentSettings.spacing]="0" segmentSettings.color="#F5b43f"
+            characterSettings.type="sevensegment" [characterSettings.spacing]="12" [position.x]="60"
+            [position.y]="68">
         </e-digitalgauge-item>
-        <e-digitalgauge-item value='"0"' [segmentSettings.width]="2" [segmentSettings.length]="2" [segmentSettings.spacing]="0" segmentSettings.color="#F5b43f"
-                 characterSettings.type="sevensegment" [characterSettings.spacing]="12" [position.x]="82" [position.y]="65">
+        <e-digitalgauge-item value='"0"' [segmentSettings.width]="2" [segmentSettings.length]="2"
+            [segmentSettings.spacing]="0" segmentSettings.color="#F5b43f"
+            characterSettings.type="sevensegment" [characterSettings.spacing]="12" [position.x]="82"
+             [position.y]="65">
         </e-digitalgauge-item>
-        <e-digitalgauge-item value="c" [segmentSettings.width]="2" [segmentSettings.length]="4" [segmentSettings.spacing]="0" segmentSettings.color="#F5b43f"
-                  characterSettings.type="sevensegment" [characterSettings.spacing]="12" [position.x]="110" [position.y]="68">
+        <e-digitalgauge-item value="c" [segmentSettings.width]="2" [segmentSettings.length]="4"
+             [segmentSettings.spacing]="0" segmentSettings.color="#F5b43f"
+                  characterSettings.type="sevensegment" [characterSettings.spacing]="12" [position.x]="110"
+                   [position.y]="68">
         </e-digitalgauge-item>
     </e-digitalgauge-items>
 </ej-digitalgauge>

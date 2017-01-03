@@ -20,7 +20,7 @@ Vertical axis always uses numerical or logarithmic scale. Horizontal(x) axis sup
 
 ## Category Axis
 
-Category axis displays the text labels instead of numbers. To use the categorical axis, you can set the [`valueType`] property of the axis to the **category**. Default value of [`valueType`] is **double**.
+Category axis displays the text labels instead of numbers. To use the categorical axis, you can set the `valueType` property of the axis to the **category**. Default value of `valueType` is **double**.
 
 {% highlight html %}
 
@@ -38,7 +38,7 @@ Category axis displays the text labels instead of numbers. To use the categorica
 
 ### Place labels on ticks
 
-Labels in the category axis can be placed on the ticks by setting the [`labelPlacement`] property of axis to the **onticks**. The default value of the [`labelPlacement`] property is **betweenticks** i.e. labels are placed between the ticks, by default.
+Labels in the category axis can be placed on the ticks by setting the `labelPlacement` property of axis to the **onticks**. The default value of the `labelPlacement` property is **betweenticks** i.e. labels are placed between the ticks, by default.
 
 {% highlight html %}
 
@@ -54,7 +54,7 @@ Labels in the category axis can be placed on the ticks by setting the [`labelPla
 
 ### Display labels after a fixed interval
 
-To display the labels after a fixed interval n, you can set the [`interval`] property of the axis range as **n**. The default value of the interval is 1 i.e. all the labels are displayed.
+To display the labels after a fixed interval n, you can set the `interval` property of the axis range as **n**. The default value of the interval is 1 i.e. all the labels are displayed.
 
 {% highlight html %}
 
@@ -70,24 +70,24 @@ To display the labels after a fixed interval n, you can set the [`interval`] pro
 
 ### Indexed Category Axis
 
-Category axis can also plot points based on index value of data points. Index based plotting can be enabled by setting [`isIndexed`] property to true in the axis.
+Category axis can also plot points based on index value of data points. Index based plotting can be enabled by setting `isIndexed` property to true in the axis.
 
 {% highlight html %}
 
 <ej-chart id="chartcontainer" [primaryXAxis.isIndexed]="true">
-    <e-seriescollection>
-        <e-series>
-		 <e-points>
-		 <e-point x="Monday" [y]="50"></e-point>
-		 <e-point x="Tuesday" [y]="40"></e-point>
-		 <e-point x="Wednesday" [y]="70"></e-point>
-		 <e-point x="Thursday" [y]="60"></e-point>
-		 <e-point x="Friday" [y]="50"></e-point>
-		 <e-point x="Monday" [y]="40"></e-point>
-		 <e-point x="Monday" [y]="30"></e-point>
-         </e-points>
+  <e-seriescollection>
+   <e-series>
+		  <e-points>
+		      <e-point x="Monday" [y]="50"></e-point>
+      		<e-point x="Tuesday" [y]="40"></e-point>
+		      <e-point x="Wednesday" [y]="70"></e-point>
+		      <e-point x="Thursday" [y]="60"></e-point>
+		      <e-point x="Friday" [y]="50"></e-point>
+          <e-point x="Monday" [y]="40"></e-point>
+		      <e-point x="Monday" [y]="30"></e-point>
+      </e-points>
 	  </e-series>
-   </e-seriescollection>
+  </e-seriescollection>
 	
 </ej-chart>
 
@@ -103,7 +103,7 @@ Category axis can also plot points based on index value of data points. Index ba
 
 ## Numeric Axis 
 
-Numeric axis uses numerical scale and displays numbers as labels. To use numeric axis, you can set the [`valueType`] property of the axis to **double**. 
+Numeric axis uses numerical scale and displays numbers as labels. To use numeric axis, you can set the `valueType` property of the axis to **double**. 
 
 {% highlight html %}
 
@@ -118,7 +118,7 @@ Numeric axis uses numerical scale and displays numbers as labels. To use numeric
 
 ### Customize numeric range
 
-To customize the range of an axis, you can use the [`range`] property of the axis to set the [`minimum`], [`maximum`] and [`interval`] values. Nice range is calculated automatically based on the provided data, by default.
+To customize the range of an axis, you can use the `range` property of the axis to set the `minimum`, `maximum` and `interval` values. Nice range is calculated automatically based on the provided data, by default.
 
 
 {% highlight html %}
@@ -135,7 +135,7 @@ To customize the range of an axis, you can use the [`range`] property of the axi
 
 #### Customizing numeric interval
 
-Axis interval can be customized by using the [`interval`] property of the axis range. Nice interval is calculated based on the minimum and maximum value of the provided data, by default.
+Axis interval can be customized by using the `interval` property of the axis range. Nice interval is calculated based on the minimum and maximum value of the provided data, by default.
 
 {% highlight html %}
 
@@ -150,7 +150,7 @@ Axis interval can be customized by using the [`interval`] property of the axis r
 
 ### Apply padding to the range
 
-Padding can be applied to the minimum and maximum extremes of the axis range by using the [`rangePadding`] property. Numeric axis supports the following types of padding
+Padding can be applied to the minimum and maximum extremes of the axis range by using the `rangePadding` property. Numeric axis supports the following types of padding
 
 * None
 * Round
@@ -159,7 +159,7 @@ Padding can be applied to the minimum and maximum extremes of the axis range by 
 
 **None**
 
-When the value of the [`rangePadding`] property is **none**, padding can not be applied to the axis. This is also the default value of the rangePadding. 
+When the value of the `rangePadding` property is **none**, padding can not be applied to the axis. This is also the default value of the rangePadding. 
 
 {% highlight html %}
 
@@ -175,7 +175,7 @@ When the value of the [`rangePadding`] property is **none**, padding can not be 
 
 #### Round
 
-When the value of [`rangePadding`] property is **round**, the axis range is rounded to the nearest possible value divided by the interval.
+When the value of `rangePadding` property is **round**, the axis range is rounded to the nearest possible value divided by the interval.
 
 {% highlight html %}
 
@@ -198,7 +198,7 @@ When the value of [`rangePadding`] property is **round**, the axis range is roun
 
 **Additional**
 
-When the value of the [`rangePadding`] property is **additional**, the axis range is rounded and an interval of the axis is added as padding to the minimum and maximum values of the range.
+When the value of the `rangePadding` property is **additional**, the axis range is rounded and an interval of the axis is added as padding to the minimum and maximum values of the range.
 
 {% highlight html %}
 
@@ -214,7 +214,7 @@ When the value of the [`rangePadding`] property is **additional**, the axis rang
 
 **Normal**
 
-When the value of the [`rangePadding`] property is **normal**, the padding is applied to the axis based on the range calculation.
+When the value of the `rangePadding` property is **normal**, the padding is applied to the axis based on the range calculation.
 
 {% highlight html %}
 
@@ -230,7 +230,7 @@ When the value of the [`rangePadding`] property is **normal**, the padding is ap
 
 ## DateTime Axis
 
-Date time axis uses date time scale and displays the date time values as axis labels in the specified format. To use date time axis, set the [`valueType`] property of the axis to **datetime**.
+Date time axis uses date time scale and displays the date time values as axis labels in the specified format. To use date time axis, set the `valueType` property of the axis to **datetime**.
 
 {% highlight html %}
 
@@ -245,11 +245,12 @@ Date time axis uses date time scale and displays the date time values as axis la
 
 ### Customizing date time range
  
- Axis range can be customized by using the [`range`] property to set the [`minimum`], [`maximum`] and [`interval`] values. Nice range is calculated automatically based on the provided data, by default.
+ Axis range can be customized by using the `range` property to set the `minimum`, `maximum` and `interval` values. Nice range is calculated automatically based on the provided data, by default.
  
  {% highlight html %}
 
-<ej-chart id="chartcontainer" [primaryXAxis.range.min]="2000/6/1" [primaryXAxis.range.max]="2010/6/1">
+<ej-chart id="chartcontainer" [primaryXAxis.range.min]="2000/6/1" 
+                                  [primaryXAxis.range.max]="2010/6/1">
    
 </ej-chart>
       
@@ -261,7 +262,7 @@ Date time axis uses date time scale and displays the date time values as axis la
 
 ### Date time intervals
 
-Date time intervals can be customized by using the [`interval`] and [`intervalType`] properties of the axis. For example, when you set *interval* as **2** and [`intervalType`] as **years**, it considers the 2 years as interval.
+Date time intervals can be customized by using the `interval` and `intervalType` properties of the axis. For example, when you set *interval* as **2** and `intervalType` as **years**, it considers the 2 years as interval.
 
 Essential Chart supports the following types of interval for date time axis.
 
@@ -287,7 +288,7 @@ Essential Chart supports the following types of interval for date time axis.
 
 ### Apply padding to the range
 
-Padding can be applied to the minimum and maximum extremes of the range by using the [`rangePadding`] property. Date time axis supports the following types of padding
+Padding can be applied to the minimum and maximum extremes of the range by using the `rangePadding` property. Date time axis supports the following types of padding
 
 * None
 * Round
@@ -295,7 +296,7 @@ Padding can be applied to the minimum and maximum extremes of the range by using
 
 **None**
 
-When the value of the [`rangePadding`] property is **none**, padding is applied to the axis. This is also the default value of the rangePadding. 
+When the value of the `rangePadding` property is **none**, padding is applied to the axis. This is also the default value of the rangePadding. 
 
 {% highlight html %}
 
@@ -309,7 +310,7 @@ When the value of the [`rangePadding`] property is **none**, padding is applied 
 
 **Round**
 
-When the value of the [`rangePadding`] property is **round**, the axis range is rounded to the nearest possible date time value.
+When the value of the `rangePadding` property is **round**, the axis range is rounded to the nearest possible date time value.
 
 {% highlight html %}
 
@@ -330,7 +331,7 @@ When the value of the [`rangePadding`] property is **round**, the axis range is 
 
 **Additional** 
 
-When the value of the [`rangePadding`] property is **additional**, the range is rounded and date time interval of the axis are added as padding to the minimum and maximum extremes of the range.
+When the value of the `rangePadding` property is **additional**, the range is rounded and date time interval of the axis are added as padding to the minimum and maximum extremes of the range.
 
 {% highlight html %}
 
@@ -345,7 +346,7 @@ When the value of the [`rangePadding`] property is **additional**, the range is 
 
 ## Logarithmic Axis
 
-Logarithmic axis uses logarithmic scale and it is very useful in visualizing when the data has values with both lower order of magnitude **(eg: 10<sup>-6</sup>)** and higher order of magnitude **(eg: 10<sup>6</sup>)**. To use logarithmic axis, set the [`valueType`] property of the axis to **logarithmic**.  
+Logarithmic axis uses logarithmic scale and it is very useful in visualizing when the data has values with both lower order of magnitude **(eg: 10<sup>-6</sup>)** and higher order of magnitude **(eg: 10<sup>6</sup>)**. To use logarithmic axis, set the `valueType` property of the axis to **logarithmic**.  
 
 {% highlight html %}
 
@@ -361,7 +362,7 @@ Logarithmic axis uses logarithmic scale and it is very useful in visualizing whe
 
 ### Customize Logarithmic range
 
-Logarithmic range can be customized by using the [`range`] property of the axis to change the [`minimum`], [`maximum`] and [`interval`] values. Nice range is calculated automatically based on the provided data, by default.
+Logarithmic range can be customized by using the `range` property of the axis to change the `minimum`, `maximum` and `interval` values. Nice range is calculated automatically based on the provided data, by default.
 
 {% highlight html %}
 
@@ -376,7 +377,7 @@ Logarithmic range can be customized by using the [`range`] property of the axis 
 
 ### Logarithmic base
 
-Logarithmic base can be customized by using the [`logBase`] property of the axis. The default value of the **logBase** is **10**.
+Logarithmic base can be customized by using the `logBase` property of the axis. The default value of the **logBase** is **10**.
 
 {% highlight html %}
 
@@ -391,7 +392,7 @@ Logarithmic base can be customized by using the [`logBase`] property of the axis
 
 ### Logarithmic interval
 
-Logarithmic axis interval can be customized by using the [`interval`] property of the axis. When the logarithmic base is 10 and logarithmic interval is 2, then the axis labels are placed at an interval of 10<sup>2</sup>. The default value of the interval is 1. 
+Logarithmic axis interval can be customized by using the `interval` property of the axis. When the logarithmic base is 10 and logarithmic interval is 2, then the axis labels are placed at an interval of 10<sup>2</sup>. The default value of the interval is 1. 
 
 {% highlight html %}
 
@@ -408,7 +409,7 @@ Logarithmic axis interval can be customized by using the [`interval`] property o
 
 ### Format numeric labels
 
-Numeric labels can be formatted by using the [`labelFormat`] property. Numeric values can be formatted with n (number with decimal points), c (currency) and p (percentage) commands.
+Numeric labels can be formatted by using the `labelFormat` property. Numeric values can be formatted with n (number with decimal points), c (currency) and p (percentage) commands.
 
 {% highlight html %}
 
@@ -482,7 +483,7 @@ The following table describes the result of applying some commonly used label fo
 
 ### Format date time values
 
-Date time labels can be formatted by using the [`labelFormat`] property of the axis.
+Date time labels can be formatted by using the `labelFormat` property of the axis.
 
 {% highlight html %}
 
@@ -544,7 +545,7 @@ The following table describes the result of applying some common date time forma
 
 ### Custom label format
 
-Prefix and suffix can be added to the category labels by using the [`labelFormat`] property. You can use the *{value}* as placeholder text in your custom text, it is replaced with the corresponding axis label at the runtime.
+Prefix and suffix can be added to the category labels by using the `labelFormat` property. You can use the *{value}* as placeholder text in your custom text, it is replaced with the corresponding axis label at the runtime.
 
 {% highlight html %}
 
@@ -564,7 +565,7 @@ Customization of features such as axis crossing, title, labels, grid lines and t
 
 ### Axis Crossing
 
-Axis can be positioned anywhere in chart area using the [`crossesAt`] property of axis. This property specifies where the horizontal axis should intersect or cross the vertical axis and vice versa. Default value of **crossesAt** property is null.
+Axis can be positioned anywhere in chart area using the `crossesAt` property of axis. This property specifies where the horizontal axis should intersect or cross the vertical axis and vice versa. Default value of **crossesAt** property is null.
 
 {% highlight html %}
 
@@ -580,19 +581,20 @@ Axis can be positioned anywhere in chart area using the [`crossesAt`] property o
 
 #### Crossing a specific Axis
 
-The [`crossesInAxis`] property takes axis name as input and determines the axis used for crossing. By default all the horizontal axes crosses in primary Y axis and all the vertical axes crosses in primary X axis.
+The `crossesInAxis` property takes axis name as input and determines the axis used for crossing. By default all the horizontal axes crosses in primary Y axis and all the vertical axes crosses in primary X axis.
 
 {% highlight ts %}
 
-    //  Creating a secondary axis
-	this.chartAxes = [{name:"secondaryYAxis", orientation: "vertical"}];
+//  Creating a secondary axis
+this.chartAxes = [{name:"secondaryYAxis", orientation: "vertical"}];
 
 {% endhighlight %}
 
 
 {% highlight html %}
 
-<ej-chart id="chartcontainer" [primaryXAxis.crossesAt]=-0.2 primaryXAxis.crossesInAxis="secondaryYAxis" [axes]="chartAxes">
+<ej-chart id="chartcontainer" [primaryXAxis.crossesAt]=-0.2 
+       primaryXAxis.crossesInAxis="secondaryYAxis" [axes]="chartAxes">
 
 </ej-chart>
 
@@ -600,14 +602,14 @@ The [`crossesInAxis`] property takes axis name as input and determines the axis 
 
 ![](Axis_images/axis_img53.png)
 
-Axis will be placed in the opposite side if value of [`crossesAt`] property is greater than the maximum value of crossing axis (axis name provided through [`crossesInAxis`] property or primary Y axis for horizontal axis).
+Axis will be placed in the opposite side if value of `crossesAt` property is greater than the maximum value of crossing axis (axis name provided through `crossesInAxis` property or primary Y axis for horizontal axis).
 
 {% highlight html %}
    
-   <!--Crosses primary Y axis at 200 -->
-   <ej-chart id="chartcontainer" [primaryXAxis.crossesAt]=200>
-    <!-- Write series code here -->
-   </ej-chart>
+<!--Crosses primary Y axis at 200 -->
+<ej-chart id="chartcontainer" [primaryXAxis.crossesAt]=200>
+<!-- Write series code here -->
+</ej-chart>
 
 {% endhighlight %}
 
@@ -616,15 +618,15 @@ Axis will be placed in the opposite side if value of [`crossesAt`] property is g
 
 #### Crossing in DateTime Axis
 
-For crossing in a date time horizontal axis, date object should be provided as value for [`crossesAt`] property of vertical axes.
+For crossing in a date time horizontal axis, date object should be provided as value for `crossesAt` property of vertical axes.
 
 {% highlight html %}
 
 
-     <!--Crosses primary Y axis at "2010/4/29" -->
-   <ej-chart id="chartcontainer" primaryXAxis.crossesAt="2010/4/29">
-    <!-- Write series code here -->
-   </ej-chart>
+<!--Crosses primary Y axis at "2010/4/29" -->
+<ej-chart id="chartcontainer" primaryXAxis.crossesAt="2010/4/29">
+<!-- Write series code here -->
+</ej-chart>
 
 {% endhighlight %}
 
@@ -633,17 +635,17 @@ For crossing in a date time horizontal axis, date object should be provided as v
 
 #### Crossing in Category Axis
 
-For crossing in a category type horizontal axis, either a string object or a number corresponding to the index of category value can be used for [`crossesAt`] property of vertical axes.
+For crossing in a category type horizontal axis, either a string object or a number corresponding to the index of category value can be used for `crossesAt` property of vertical axes.
 
-W> String value provided for [`crossesAt`] property is case-sensitive. 
+W> String value provided for `crossesAt` property is case-sensitive. 
 
 
 {% highlight html %}
 
-   <!--Crosses horizontal axis at category value "Third" -->
-   <ej-chart id="chartcontainer" primaryXAxis.crossesAt="Tuesday">
-    <!-- Write series code here -->
-   </ej-chart>
+<!--Crosses horizontal axis at category value "Third" -->
+<ej-chart id="chartcontainer" primaryXAxis.crossesAt="Tuesday">
+<!-- Write series code here -->
+</ej-chart>
 
 {% endhighlight %}
 
@@ -652,13 +654,13 @@ W> String value provided for [`crossesAt`] property is case-sensitive.
 
 ### Axis Visibility
 
-Axis visibility can be controlled by using the [`visible`] property of the axis. The default value of the *visible* property is **true**. 
+Axis visibility can be controlled by using the `visible` property of the axis. The default value of the *visible* property is **true**. 
 
 {% highlight html %}
 
-   <ej-chart id="chartcontainer" [primaryYAxis.visible]="false" >
-    <!-- Write series code here -->
-   </ej-chart>
+<ej-chart id="chartcontainer" [primaryYAxis.visible]="false" >
+<!-- Write series code here -->
+</ej-chart>
 
 {% endhighlight %}
 
@@ -667,31 +669,31 @@ Axis visibility can be controlled by using the [`visible`] property of the axis.
 
 ### Axis title
 
-The [`title`] property in the axis provides options to customize the text and font of the axis title. Axis does not display the title, by default. Title text can also be trimmed based on the title text length or specified length.
+The `title` property in the axis provides options to customize the text and font of the axis title. Axis does not display the title, by default. Title text can also be trimmed based on the title text length or specified length.
 
 {% highlight ts %}
 
-    //Customize title font style
-	this.titleFont={fontFamily:"Segoe UI", fontWeight: "bold", size: "16px", color: "grey"};
+//Customize title font style
+this.titleFont={fontFamily:"Segoe UI", fontWeight: "bold", size: "16px", color: "grey"};
 
 {% endhighlight %}
 
 {% highlight html %}
 
-   <ej-chart id="chartcontainer" primaryXAxis.title.text="Month" [primaryXAxis.title.font]="titleFont">
-    <!-- Write series code here -->
-   </ej-chart>
+<ej-chart id="chartcontainer" primaryXAxis.title.text="Month"  
+                             [primaryXAxis.title.font]="titleFont">
+<!-- Write series code here -->
+</ej-chart>
 
 {% endhighlight %}
 
 ![](Axis_images/axis_img27.png)
 
-You can modify the position of the axis title either inside or outside the chart area using the property [`position`]. By default, it will be placed outside the chart area. In addition, you can also change the alignment of the title to near, far and center by [`alignment`] property, using [`offset`] property you can change the position with respect to pixels.
+You can modify the position of the axis title either inside or outside the chart area using the property `position`. By default, it will be placed outside the chart area. In addition, you can also change the alignment of the title to near, far and center by `alignment` property, using `offset` property you can change the position with respect to pixels.
 
 {% highlight html %}
 
-<ej-chart id="chartcontainer" primaryXAxis.title.text="Month" primaryXAxis.title.position="inside" 
-                                primaryXAxis.title.alignment="near" [primaryXAxis.title.offset]=10>
+<ej-chart id="chartcontainer" primaryXAxis.title.text="Month" primaryXAxis.title.position="inside" primaryXAxis.title.alignment="near" [primaryXAxis.title.offset]=10>
 
  <!-- Write series code here-->
 </ej-chart>
@@ -702,16 +704,17 @@ You can modify the position of the axis title either inside or outside the chart
 
 ### Label customization
 
-The [`font`] property of the axis provides options to customize the [`font-family`], [`color`], [`opacity`], [`size`] and [`font-weight`] of the axis labels.  
+The `font` property of the axis provides options to customize the `font-family`, `color`, `opacity`, `size` and `font-weight` of the axis labels.  
 
 {% highlight html %}
 
 
-   <ej-chart id="chartcontainer" primaryXAxis.font.size="16px" primaryXAxis.font.fontFamily="Segoe UI"
-                                                       primaryXAxis.font.fontWeight="bold" primaryXAxis.font.color="blue">
+<ej-chart id="chartcontainer" primaryXAxis.font.size="16px" 
+          primaryXAxis.font.fontFamily="Segoe UI" primaryXAxis.font.fontWeight="bold" 
+          primaryXAxis.font.color="blue">
 
-        <!-- Write series code here-->
-  </ej-chart>
+  <!-- Write series code here-->
+</ej-chart>
 
 {% endhighlight %}
 
@@ -720,14 +723,14 @@ The [`font`] property of the axis provides options to customize the [`font-famil
 
 ### Label and tick positioning
  
-Axis labels and ticks can be positioned inside or outside the chart area by using the [`labelPosition`] and [`tickPosition`] properties. The labels and ticks are positioned outside the chart area, by default.
+Axis labels and ticks can be positioned inside or outside the chart area by using the `labelPosition` and `tickPosition` properties. The labels and ticks are positioned outside the chart area, by default.
  
 {% highlight html %}
 
-   <ej-chart id="chartcontainer" primaryXAxis.labelPosition="inside" primaryXAxis.tickLinesPosition="inside">
-
-        <!-- Write series code here-->
-  </ej-chart>
+<ej-chart id="chartcontainer" primaryXAxis.labelPosition="inside"
+                          primaryXAxis.tickLinesPosition="inside">
+   <!-- Write series code here-->
+</ej-chart>
 
 {% endhighlight %}
 
@@ -736,14 +739,14 @@ Axis labels and ticks can be positioned inside or outside the chart area by usin
 
 ### Edge labels placement
 
-Labels with long text at the edges of an axis may appear partially outside the chart. The [`edgeLabelPlacement`] property can be used to avoid the partial appearance of the labels at the corners. 
+Labels with long text at the edges of an axis may appear partially outside the chart. The `edgeLabelPlacement` property can be used to avoid the partial appearance of the labels at the corners. 
 
 {% highlight html %}
 
-   <ej-chart id="chartcontainer" primaryXAxis.edgeLabelPlacement="shift">
+<ej-chart id="chartcontainer" primaryXAxis.edgeLabelPlacement="shift">
 
-        <!-- Write series code here-->
-  </ej-chart>
+  <!-- Write series code here-->
+</ej-chart>
 
 {% endhighlight %}
 
@@ -759,16 +762,18 @@ Labels with long text at the edges of an axis may appear partially outside the c
 
 ### Grid lines customization
 
-The [`majorGridLines`] and [`minorGridLines`] properties in the axis are used to customize the major grid lines and minor grid lines of an axis. They provide options to change the width, color, visibility and opacity of the grid lines. The minor grid lines are not visible, by default.
+The `majorGridLines` and `minorGridLines` properties in the axis are used to customize the major grid lines and minor grid lines of an axis. They provide options to change the width, color, visibility and opacity of the grid lines. The minor grid lines are not visible, by default.
 
 {% highlight html %}
 
-   <ej-chart id="chartcontainer" primaryXAxis.majorGridLines.color="blue" [primaryXAxis.majorGridLines.visible]="true" [primaryXAxis.majorGridLines.width]=1
-                                 primaryXAxis.minorGridLines.color="red" [primaryXAxis.minorGridLines.visible]="false" [primaryXAxis.minorGridLines.width]=1
-								 [primaryXAxis.minorTicksPerInterval]=0 >
+<ej-chart id="chartcontainer" primaryXAxis.majorGridLines.color="blue" 
+            [primaryXAxis.majorGridLines.visible]="true" [primaryXAxis.majorGridLines.width]=1
+            primaryXAxis.minorGridLines.color="red" 
+            [primaryXAxis.minorGridLines.visible]="false" [primaryXAxis.minorGridLines.width]=1
+            [primaryXAxis.minorTicksPerInterval]=0 >
 
-        <!-- Write series code here-->
-  </ej-chart>
+   <!-- Write series code here-->
+</ej-chart>
 
 {% endhighlight %}
 
@@ -777,19 +782,19 @@ The [`majorGridLines`] and [`minorGridLines`] properties in the axis are used to
 
 ### Tick lines customization
 
-The [`majorTickLines`] and [`minorTickLines`] properties in the axis are used to customize the major tick lines of an axis and minor tick lines of an axis. They provide options to change the width, size, color and visibility of the grid lines. The minor tick lines are not visible, by default.
+The `majorTickLines` and `minorTickLines` properties in the axis are used to customize the major tick lines of an axis and minor tick lines of an axis. They provide options to change the width, size, color and visibility of the grid lines. The minor tick lines are not visible, by default.
 
 {% highlight html %}
 
 
-   <ej-chart id="chartcontainer" primaryXAxis.majorTickLines.color="blue" [primaryXAxis.majorTickLines.visible]="true" 
-                                 [primaryXAxis.majorTickLines.width]=1 [primaryXAxis.majorTickLines.size]=10
-                                 primaryXAxis.minorTickLines.color="red" [primaryXAxis.minorTickLines.visible]="false" 
-                                 [primaryXAxis.minorTickLines.width]=1 [primaryXAxis.minorTickLines.size]=5
-													 [primaryXAxis.minorTicksPerInterval]=0 >
+<ej-chart id="chartcontainer" primaryXAxis.majorTickLines.color="blue" 
+          [primaryXAxis.majorTickLines.width]=1 [primaryXAxis.majorTickLines.size]=10
+          primaryXAxis.minorTickLines.color="red" [primaryXAxis.minorTickLines.visible]="false" 
+          [primaryXAxis.minorTickLines.width]=1 [primaryXAxis.minorTickLines.size]=5
+					primaryXAxis.majorTickLines.visible]="true" [primaryXAxis.minorTicksPerInterval]=0 >
 
    <!-- Write series code here-->
-  </ej-chart>
+</ej-chart>
 
 {% endhighlight %}
 
@@ -798,13 +803,13 @@ The [`majorTickLines`] and [`minorTickLines`] properties in the axis are used to
   
 ### Inversing axis
 
-Axis can be inversed by using the [`isInversed`] property of the axis. The default value of the [`isInversed`] property is **false**.
+Axis can be inversed by using the `isInversed` property of the axis. The default value of the `isInversed` property is **false**.
 
 {% highlight html %}
 
-   <ej-chart id="chartcontainer" [primaryXAxis.isInversed]="true" >
-         <!-- Write series code here-->
-  </ej-chart>
+<ej-chart id="chartcontainer" [primaryXAxis.isInversed]="true" >
+      <!-- Write series code here-->
+</ej-chart>
 
 {% endhighlight %}
 
@@ -821,13 +826,13 @@ Axis can be inversed by using the [`isInversed`] property of the axis. The defau
 
 ### Place axes at the opposite side
 
-The [`opposedPosition`] property of axis can be used to place the axis at the opposite side of its default position. The default value of the [`opposedPosition`] property is **false**. 
+The `opposedPosition` property of axis can be used to place the axis at the opposite side of its default position. The default value of the `opposedPosition` property is **false**. 
 
 {% highlight html %}
 
-   <ej-chart id="chartcontainer" [primaryXAxis.opposedPosition]="true" >
-         <!-- Write series code here-->
-  </ej-chart>
+<ej-chart id="chartcontainer" [primaryXAxis.opposedPosition]="true" >
+     <!-- Write series code here-->
+</ej-chart>
 
 {% endhighlight %}
 
@@ -843,13 +848,13 @@ The [`opposedPosition`] property of axis can be used to place the axis at the op
 
 ### Maximum number of labels per 100 pixels
 
-A maximum of 3 labels are displayed for each 100 pixels in the axis, by default. The maximum number of labels that is present within the 100 pixels length can be customized by using the [`maximumLabels`] property of the axis. This property is applicable only for an automatic range calculation and it does not work when you set the value for **interval** property in the axis range.
+A maximum of 3 labels are displayed for each 100 pixels in the axis, by default. The maximum number of labels that is present within the 100 pixels length can be customized by using the `maximumLabels` property of the axis. This property is applicable only for an automatic range calculation and it does not work when you set the value for **interval** property in the axis range.
 
 {% highlight html %}
 
-   <ej-chart id="chartcontainer" [primaryXAxis.maximumLabels]="true" >
-         <!-- Write series code here-->
-  </ej-chart>
+<ej-chart id="chartcontainer" [primaryXAxis.maximumLabels]="true" >
+     <!-- Write series code here-->
+</ej-chart>
 
 {% endhighlight %}
 
@@ -869,19 +874,19 @@ Multiple axes can be used in the Chart and chart area can be split into multiple
 
 ![](Axis_images/axis_img40.png)
 
-An additional horizontal or vertical axis can be added to the chart by adding an axis instance to the **axes** collection and then you can associate it to a series by specifying the name of the axis to the [`xAxisName`] or [`yAxisName`] property of the series.
+An additional horizontal or vertical axis can be added to the chart by adding an axis instance to the **axes** collection and then you can associate it to a series by specifying the name of the axis to the `xAxisName` or `yAxisName` property of the series.
 
 {% highlight ts %}
 
-    //  Creating a secondary X & Y - axis
-	this.chartAxes = [{name:"SecondaryXAxis"}, {name:"SecondaryYAxis"}];
+//  Creating a secondary X & Y - axis
+this.chartAxes = [{name:"SecondaryXAxis"}, {name:"SecondaryYAxis"}];
 
 {% endhighlight %}
 
 
 {% highlight html %}
 
-  <ej-chart id="chartcontainer" style="display:block;" [axes]="chartAxes" >
+<ej-chart id="chartcontainer" style="display:block;" [axes]="chartAxes" >
 
    <!-- Write series code here-->
       <e-seriescollection>
@@ -889,7 +894,7 @@ An additional horizontal or vertical axis can be added to the chart by adding an
            <e-series xAxisName="SecondaryXAxis" yAxisName="SecondaryYAxis">
 	       </e-series>
       </e-seriescollection>
-  </ej-chart>
+</ej-chart>
 
 {% endhighlight %}
 
@@ -899,13 +904,13 @@ An additional horizontal or vertical axis can be added to the chart by adding an
 
 ## Smart Axis Labels
 
-When the Axis labels overlap with each other based on the chart dimensions and label size, you can use the [`labelIntersectAction`] property of the axis to avoid overlapping. The default value of the *labelIntersectAction* is **none**. The other available values of the Label Intersect Actions are **rotate45**, **rotate90**, **trim**, **multipleRows**, **wrap**, **wrapByWord** and **hide**.
+When the Axis labels overlap with each other based on the chart dimensions and label size, you can use the `labelIntersectAction` property of the axis to avoid overlapping. The default value of the *labelIntersectAction* is **none**. The other available values of the Label Intersect Actions are **rotate45**, **rotate90**, **trim**, **multipleRows**, **wrap**, **wrapByWord** and **hide**.
 
 {% highlight html %}
 
-   <ej-chart id="chartcontainer" primaryXAxis.labelIntersectAction="multipleRows">
-         <!-- Write series code here-->
-  </ej-chart>
+<ej-chart id="chartcontainer" primaryXAxis.labelIntersectAction="multipleRows">
+     <!-- Write series code here-->
+</ej-chart>
 
 {% endhighlight %}
 
@@ -949,76 +954,76 @@ The following screenshot displays the result, when the *labelIntersectAction* pr
 ![](Axis_images/axis_img49.png)
 
 ## Multi-level Labels
-Axis can be customized with multiple levels of labels using the [`multiLevelLabels`] property. These labels are placed based on the start and end range values and we can add any number of labels to an axis.
+Axis can be customized with multiple levels of labels using the `multiLevelLabels` property. These labels are placed based on the start and end range values and we can add any number of labels to an axis.
 
 {% highlight ts %}       
 
-    this.multiLabels = [{ 
-                            visible: true,
-                            start: -0.5,
-                            end: 2.5,
-                            text: "Quater1"
-                         }]; 
+this.multiLabels = [{ 
+        visible: true,
+        start: -0.5,
+        end: 2.5,
+        text: "Quater1"
+   }]; 
 
 {% endhighlight %}
 
 {% highlight html %}       
 
-   <ej-chart id="chartcontainer" [primaryXAxis.multiLevelLabels]="multiLabels">
-         <!-- Write series code here-->
-  </ej-chart> 
+<ej-chart id="chartcontainer" [primaryXAxis.multiLevelLabels]="multiLabels">
+       <!-- Write series code here-->
+</ej-chart> 
 
 {% endhighlight %}
 
 ![](Axis_images/axis_img57.png)
 
 ### Customizing the multi-Level labels
-The color, width and type of the border can be customized. The default border type is [`Rectangle`]. And the other supported border types are namely brace, curly brace, without top/bottom border and none. 
+The color, width and type of the border can be customized. The default border type is `Rectangle`. And the other supported border types are namely brace, curly brace, without top/bottom border and none. 
 
 {% highlight ts %}
 
-    this.multiLabels = [{ 
-                            //...
-                            // customizing the border properties 
-                            border:{
-                                type: "brace",
-                                width: 2,
-                                color: "black"
-                           }
-                         }]; 
+this.multiLabels = [{ 
+        //...
+        // customizing the border properties 
+        border:{
+           type: "brace",
+           width: 2,
+           color: "black"
+         }
+}]; 
 
 {% endhighlight %}
 
 {% highlight html %}       
 
-   <ej-chart id="chartcontainer" [primaryXAxis.multiLevelLabels]="multiLabels">
-         <!-- Write series code here-->
-  </ej-chart> 
+<ej-chart id="chartcontainer" [primaryXAxis.multiLevelLabels]="multiLabels">
+    <!-- Write series code here-->
+</ej-chart> 
 
 {% endhighlight %}
 
 ![](Axis_images/axis_img58.png)
 
-The text of the labels can be customized using the [`text`] and [`font`] properties 
+The text of the labels can be customized using the `text` and `font` properties 
 
 {% highlight ts %}
 
-          this.multiLabels = [{ 
-                            //...
-                            // customizing the text and font properties
-                            text: "Year - 2015",
-                            font:{
-                               fontFamily: "Algerian", 
-                               size: "12px",
-                               color: "black"                            
-                              }
-                         }];
+this.multiLabels = [{ 
+      //...
+      // customizing the text and font properties
+      text: "Year - 2015",
+      font:{
+         fontFamily: "Algerian", 
+         size: "12px",
+         color: "black"                            
+       }
+   }];
 
 {% endhighlight %}
 
 {% highlight html %}       
 
-   <ej-chart id="chartcontainer" [primaryXAxis.multiLevelLabels]="multiLabels">
+<ej-chart id="chartcontainer" [primaryXAxis.multiLevelLabels]="multiLabels">
          <!-- Write series code here-->
   </ej-chart> 
 
@@ -1026,46 +1031,46 @@ The text of the labels can be customized using the [`text`] and [`font`] propert
 
 ![](Axis_images/axis_img59.png)
 
-You can change the alignment of the text to far, near and center position using the [`textAlignment`] property. By default, the text will be center aligned. 
+You can change the alignment of the text to far, near and center position using the `textAlignment` property. By default, the text will be center aligned. 
 
 {% highlight ts %}
 
-          this.multiLabels = [{ 
-                            //...
-                            // customizing the text alignment
-                            textAlignment: "far",
-                         }];
+  this.multiLabels = [{ 
+         //...
+         // customizing the text alignment
+         textAlignment: "far",
+    }];
 
 {% endhighlight %}
 
 {% highlight html %}       
 
-   <ej-chart id="chartcontainer" [primaryXAxis.multiLevelLabels]="multiLabels">
-         <!-- Write series code here-->
-  </ej-chart> 
+<ej-chart id="chartcontainer" [primaryXAxis.multiLevelLabels]="multiLabels">
+    <!-- Write series code here-->
+</ej-chart> 
 
 {% endhighlight %}
 
 ![](Axis_images/axis_img60.png)
 
-You can trim, wrap or wrapAndTrim the text if it exceeds the maximum text width value using the property [`textOverflow`]
+You can trim, wrap or wrapAndTrim the text if it exceeds the maximum text width value using the property `textOverflow`
 
-{% highlight javascript %}
+{% highlight ts %}
 
-          this.multiLabels = [{ 
-                            //...
-                            // customizing the text overflow  
-                            textOverflow: “trim", 
-                            maximumtextWidth: 40 
-                         }];          
+this.multiLabels = [{ 
+      //...
+      // customizing the text overflow  
+      textOverflow: “trim", 
+      maximumtextWidth: 40 
+  }];          
 
 {% endhighlight %}
 
 {% highlight html %}       
 
-   <ej-chart id="chartcontainer" [primaryXAxis.multiLevelLabels]="multiLabels">
+<ej-chart id="chartcontainer" [primaryXAxis.multiLevelLabels]="multiLabels">
          <!-- Write series code here-->
-  </ej-chart> 
+</ej-chart> 
 
 {% endhighlight %}
 
@@ -1073,4 +1078,4 @@ The below screenshot shows the trimmed multi-level labels
 
 ![](Axis_images/axis_img61.png)
 
-And these labels can be placed in various rows using the [`level`] property.
+And these labels can be placed in various rows using the `level` property.

@@ -15,9 +15,9 @@ To render a Line type Sparkline, set the [`type`] as **line**. To change the col
 
 {% highlight html %}
 
-    <ej-sparkline id="sparklinecontainer" [width]=3 fill="#33ccff">          
+<ej-sparkline id="sparklinecontainer" [width]=3 fill="#33ccff">          
                                
-    </ej-sparkline>
+</ej-sparkline>
 
 {% endhighlight %}
 
@@ -29,9 +29,9 @@ To render a Column Sparkline, set the type as **column** To change the color of 
 
 {% highlight html %}
 
-    <ej-sparkline id="sparklinecontainer" type="column" fill="#33ccff">          
+<ej-sparkline id="sparklinecontainer" type="column" fill="#33ccff">          
                                
-    </ej-sparkline>
+</ej-sparkline>
 
 {% endhighlight %}
 
@@ -43,9 +43,9 @@ To render an Area Sparkline, you can specify the type as **area**. To change the
 
 {% highlight html %}
 
-    <ej-sparkline id="sparklinecontainer" type="area" fill="#69D2E7">          
+<ej-sparkline id="sparklinecontainer" type="area" fill="#69D2E7">          
                                
-    </ej-sparkline>
+</ej-sparkline>
 
 {% endhighlight %}
 
@@ -57,9 +57,9 @@ WinLoss Sparkline render as a column segment and it show the positive, negative 
 
 {% highlight html %}
 
-    <ej-sparkline id="sparklinecontainer" type="winloss" fill="#69D2E7">          
+<ej-sparkline id="sparklinecontainer" type="winloss" fill="#69D2E7">          
                                
-    </ej-sparkline>
+</ej-sparkline>
 
 {% endhighlight %}
 
@@ -71,9 +71,9 @@ You can create a pie type sparkline by setting the type as **pie**. Colors for t
 
 {% highlight html %}
 
-    <ej-sparkline id="sparklinecontainer" type="pie" [palette]="['#ff3399', '#33ccff']">          
+<ej-sparkline id="sparklinecontainer" type="pie" [palette]="['#ff3399', '#33ccff']">          
                                
-    </ej-sparkline>
+</ej-sparkline>
 
 {% endhighlight %}
 

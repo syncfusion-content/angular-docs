@@ -32,7 +32,8 @@ For a better appearance, you can set the **background****image** for the **Digit
 
 {% highlight html %}
 
-<ej-digitalgauge id="DigitalGauge1" value="RADAR" frame.backgroundImageUrl="board3.jpg" [items]="[{position: {x: 95,y: 10}}]">
+<ej-digitalgauge id="DigitalGauge1" value="RADAR" frame.backgroundImageUrl="board3.jpg" 
+                                                  [items]="[{position: {x: 95,y: 10}}]">
 </ej-digitalgauge>
 
 {% endhighlight %}

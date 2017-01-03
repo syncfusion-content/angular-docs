@@ -13,9 +13,9 @@ You can customize points by initializing the point colors. The customization opt
 
 {% highlight html %}
 
-    <ej-sparkline id="sparklinecontainer" negativePointColor="red" highPointColor="blue" lowPointColor="orange" startPointColor="green" endPointColor="green">          
+<ej-sparkline id="sparklinecontainer" negativePointColor="red" highPointColor="blue" lowPointColor="orange" startPointColor="green" endPointColor="green">          
                                
-    </ej-sparkline>
+</ej-sparkline>
 
 {% endhighlight %}
 

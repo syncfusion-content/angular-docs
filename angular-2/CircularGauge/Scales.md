@@ -57,7 +57,8 @@ The Scale border is modified with the object called **border**. It has two borde
 
 <ej-circulargauge  id="CircularGauge1">
        <e-scales>
-          <e-scale [radius]=150 [showScaleBar]="true" backgroundColor="red" [border]="{color: 'Blue',width: 3}" >  
+          <e-scale [radius]=150 [showScaleBar]="true" backgroundColor="red" 
+                   [border]="{color: 'Blue',width: 3}" >  
           <e-pointers>
                 <e-pointer [length]="100">
                 </e-pointer>
@@ -82,7 +83,8 @@ Execute the above code to render the following output.
 
 <ej-circulargauge  id="CircularGauge1">
        <e-scales>
-          <e-scale [pointerCap.radius]=10 [pointerCap.borderWidth]=4 pointerCap.borderColor="blue" pointerCap.backgroundColor="red" >
+          <e-scale [pointerCap.radius]=10 [pointerCap.borderWidth]=4 pointerCap.borderColor="blue"
+                    pointerCap.backgroundColor="red" >
           </e-scale>
        </e-scales>
 </ej-circulargauge>
@@ -103,8 +105,9 @@ Execute the above code to render the following output.
 
 <ej-circulargauge  id="CircularGauge1">
        <e-scales>
-          <e-scale [size]=30 [scaleRadius]=130 [minimum]=20 [maximum]=120 [majorIntervalValue]=20 [minorIntervalValue]=5 
-                                             direction="counterClockwise" backgroundColor="red" [offset]=20 [opacity]=0.5 >
+          <e-scale [size]=30 [scaleRadius]=130 [minimum]=20 [maximum]=120 [majorIntervalValue]=20
+           [minorIntervalValue]=5 direction="counterClockwise" backgroundColor="red" [offset]=20 
+           [opacity]=0.5 >
           </e-scale>
        </e-scales>
 </ej-circulargauge>
@@ -129,15 +132,17 @@ You can set **Multiple scales** for a single **Circular Gauge** control by using
 
 <ej-circulargauge  id="CircularGauge1">
        <e-scales>
-          <e-scale [size]=30 [scaleRadius]=150 [minimum]=20 [maximum]=120 [majorIntervalValue]=20 [minorIntervalValue]=5 
-                                             direction="counterClockwise" backgroundColor="red" [offset]=20 [opacity]=0.5 >
+          <e-scale [size]=30 [scaleRadius]=150 [minimum]=20 [maximum]=120 [majorIntervalValue]=20
+           [minorIntervalValue]=5 direction="counterClockwise" backgroundColor="red" [offset]=20 
+           [opacity]=0.5 >
             <e-pointers>
                 <e-pointer [length]="120" [value]=50 >
                 </e-pointer>
             </e-pointers> 
           </e-scale>
-          <e-scale [size]=10 [showScaleBar]="false" [scaleRadius]=80 [minimum]=20 [maximum]=120 [majorIntervalValue]=10 [labels]="[{ distanceFromScale:40,color:'red'}]"
-                                             direction="counterClockwise" backgroundColor="red" [shadowOffset]=5 [opacity]=0.5 >
+          <e-scale [size]=10 [showScaleBar]="false" [scaleRadius]=80 [minimum]=20 [maximum]=120 
+                [majorIntervalValue]=10 [labels]="[{ distanceFromScale:40,color:'red'}]"
+                direction="counterClockwise" backgroundColor="red" [shadowOffset]=5 [opacity]=0.5 >
             <e-pointers>
                 <e-pointer [length]="50" [value]=40 >
                 </e-pointer>

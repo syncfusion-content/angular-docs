@@ -22,7 +22,6 @@ EjChart supports localization for its axis labels and tooltip. To render the cha
 <body>
     <ej-chart id="chartcontainer" locale='fr-FR'>
     </ej-chart>
-
 </body>
 
 

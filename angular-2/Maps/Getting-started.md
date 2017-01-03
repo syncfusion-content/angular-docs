@@ -124,9 +124,9 @@ N> `core.ts` file is mandatory for all Syncfusion JavaScript Angular 2 component
 
 * Create `maps.component.html` view file inside `src/maps` folder and render ejMaps Angular 2 component using the below code example. 
 
-{% highlight javascript %}
-	<ej-maps id="defaultmaps" layerType="bing">
-	</ej-maps>
+{% highlight html %}
+<ej-maps id="defaultmaps" layerType="bing">
+</ej-maps>
 {% endhighlight %}
 
 * Create `maps.component.ts` model file inside the folder `src/maps` and create sample component using the below code example.
@@ -153,8 +153,9 @@ Before adding router configuration for above created ejMaps component, we recomm
 {% highlight javascript %}
 <div>
 	<ul class="nav navbar-nav">
-		. . . .
-		<li><a data-toggle="collapse" data-target="#skeleton-navigation-navbar-collapse.in" href="#maps" [routerLink]="['/maps']">maps </a></li>
+		<li>
+          <a data-toggle="collapse" data-target="#skeleton-navigation-navbar-collapse.in" href="#maps" [routerLink]="['/maps']">maps </a>
+        </li>
 	</ul>
 </div>
 <main>
@@ -323,7 +324,7 @@ export class DataService{
 2\. Create a `e-layers` with parent of `e-layers` inside the mapContainer tag `ej-map`.
 3\. Set the shapeData attribute value as usMap which contains the USA shape data details. 
 
-{% highlight javascript %}
+{% highlight html %}
 
 <ej-map id="container" style="height:400px;width:600px;">
     <e-layers>
@@ -380,11 +381,12 @@ The `shapePropertyPath` property is similar to the `shapeDataPath` that refers t
 
 The **JSON** object “populationData” is used as dataSource in the following code example.
 
-{% highlight javascript %}
+{% highlight html %}
 
 <ej-map id="container" style="height:400px;width:600px;">
     <e-layers>
-        <e-layer [shapeData]="usmap" [dataSource]="dataSource" shapeDataPath="name" shapePropertyPath="name">
+        <e-layer [shapeData]="usmap" [dataSource]="dataSource" shapeDataPath="name"
+                                         shapePropertyPath="name">
         </e-layer>
     </e-layers>
 </ej-map>
@@ -395,14 +397,14 @@ The **JSON** object “populationData” is used as dataSource in the following 
 
 You can customize the shape’s color by using `fill`, `stroke` and `strokeThickness` properties in `shapeSettings`.
 
-{% highlight javascript %}
+{% highlight html %}
 
 <ej-map id="container" style="height:400px;width:600px;">
     <e-layers>
         <e-layer enableSelection="false" enableMouseHover="true"
-         shapeSettings.strokeThickness="0.5" shapeSettings.fill="#9CBF4E" shapeSettings.stroke="White"
+         shapeSettings.strokeThickness="0.5" shapeSettings.fill="#9CBF4E"
          shapeSettings.highlightStroke="White" shapeSettings.highlightColor="#BC5353" 
-         shapeSettings.highlightBorderWidth="1">
+         shapeSettings.highlightBorderWidth="1"  shapeSettings.stroke="White">
         </e-layer>
     </e-layers>
 </ej-map>
@@ -421,14 +423,14 @@ N> The `enableGradient` property value is set to true to apply gradient colors f
 
 
 
-{% highlight javascript %}
+{% highlight html %}
 
 <div  style="height:400px;width:600px;">
 <ej-map id="container">
     <e-layers>
-        <e-layer
-         shapeSettings.valuePath="name" [shapeSettings.enableGradient]="true" shapeSettings.colorValuePath="population"
-         [shapeSettings.colorMappings.rangeColorMapping]="colorMapping">
+        <e-layer shapeSettings.valuePath="name" [shapeSettings.enableGradient]="true" 
+                 shapeSettings.colorValuePath="population"
+                 [shapeSettings.colorMappings.rangeColorMapping]="colorMapping">
         </e-layer>
     </e-layers>
 </ej-map>
@@ -476,7 +478,7 @@ The following screenshot illustrates a map with gradient color property enabled.
 
 The tooltip is displayed only when the `showTooltip` is set to “**True**” in the `layers`. By default, it takes the property of the bound object that is referred in the `valuePath` and displays its content on hovering the corresponding shape. The `tooltipTemplate` property is used for customizing the template for tooltip.	
 
-{% highlight javascript %}
+{% highlight html %}
 
 <div  style="height:400px;width:600px;">
 <ej-map id="container">
@@ -510,7 +512,7 @@ Use the `title` property to provide title for interactive legend.
 
 You can use `leftLabel` and `rightLabel` property to provide left and right labels for interactive legend.
 
-{% highlight javascript %}
+{% highlight html %}
 
 <div  style="height:400px;width:600px;">
 <ej-map id="container">

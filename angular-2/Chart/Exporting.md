@@ -15,18 +15,19 @@ Exporting a chart can be done in both client-side and in server-side. This can b
 
 In client-side rendered chart can be exported as PNG image or as SVG file.
 
-* Export as PNG - The chart can be exported to image when it is rendered in HTML5 Canvas.To render a chart in canvas, set the [`enableCanvasRendering`](../api/ejchart#members:enablecanvasrendering) option to *true*. To export the chart, you can use the [`export`](../api/ejchart#methods:export) method of the chart. Refer to the online [`KB for exporting`](http://www.syncfusion.com/kb/5045) to know more about chart exporting. 
+* Export as PNG - The chart can be exported to image when it is rendered in HTML5 Canvas.To render a chart in canvas, set the `enableCanvasRendering` option to *true*. To export the chart, you can use the [`export`](../api/ejchart#methods:export) method of the chart. Refer to the online [`KB for exporting`](http://www.syncfusion.com/kb/5045) to know more about chart exporting. 
 
 * Export as SVG - Chart can be exported as SVG if it is rendered as a scalable vector graphics element. By default chart will be rendered as SVG. 
 
 {% highlight html %}
 
-    <!--Chart download link-->
-    <a id="download" style="cursor: pointer; position: absolute;right: 150px;">ExportChart</a>
+<!--Chart download link-->
+<a id="download" style="cursor: pointer; position: absolute;right: 150px;">ExportChart</a>
    
-   <ej-chart id="chartcontainer" [enableCanvasRendering]="true" exportSettings.type="png" exportSettings.mode="client" exportSettings.fileName="ChartSnapshot">
+<ej-chart id="chartcontainer" [enableCanvasRendering]="true" exportSettings.type="png"
+                exportSettings.mode="client" exportSettings.fileName="ChartSnapshot">
 
-   </ej-chart>
+</ej-chart>
 
   <script>
 
@@ -61,13 +62,13 @@ Server-side operation can be done by using the server-side frameworks such as We
 
 {% highlight html %}
 
-    <!--Chart download link-->
-    <a id="download" style="cursor: pointer; position: absolute;right: 150px;">ExportChart</a>
+ <!--Chart download link-->
+<a id="download" style="cursor: pointer; position: absolute;right: 150px;">ExportChart</a>
    
-   <ej-chart id="chartcontainer" [enableCanvasRendering]="true" exportSettings.type="jpg" 
-                                 exportSettings.action="http://js.syncfusion.com/ExportingServices/api/JSChartExport/Export">
+<ej-chart id="chartcontainer" [enableCanvasRendering]="true" exportSettings.type="jpg"
+ exportSettings.action="http://js.syncfusion.com/ExportingServices/api/JSChartExport/Export">
 
-   </ej-chart>
+</ej-chart>
 
     <script>
        
@@ -101,7 +102,8 @@ public void ExportChart(string Data, string ChartModel)
                 data = System.Uri.UnescapeDataString(Data);
                 oStringWriter.WriteLine(System.Uri.UnescapeDataString(Data));
                 Response.ContentType = "text/plain";
-                Response.AddHeader("Content-Disposition", String.Format("attachment;filename={0}", (obj.ExportSettings.FileName + ".svg")));
+                Response.AddHeader("Content-Disposition", String.Format("attachment;filename={0}", 
+                                                    (obj.ExportSettings.FileName + ".svg")));
                 Response.Clear();
                 using (StreamWriter writer = new StreamWriter(Response.OutputStream))
                 {
@@ -139,7 +141,8 @@ public void ExportChart(string Data, string ChartModel)
                     else
                         section.PageSetup.Orientation = PageOrientation.Portrait;
                     paragraph.AppendPicture(Image.FromStream(stream));
-                    document.Save(fileName + ".doc", Syncfusion.DocIO.FormatType.Doc, HttpContext.ApplicationInstance.Response, Syncfusion.DocIO.HttpContentDisposition.Attachment);
+                    document.Save(fileName + ".doc", Syncfusion.DocIO.FormatType.Doc, 
+                    HttpContext.ApplicationInstance.Response, Syncfusion.DocIO.HttpContentDisposition.Attachment);
                 }
                 else if (type == "pdf")      // to export as PDF
                 {
@@ -211,7 +214,7 @@ N> Refer the MultipleExportType.AppendToSheet, MultipleExportType.NewSheet.
         function downloadExcel() {
             var chart = $("#container1").ejChart("instance");
             chart.export('Excel',
-                      'http://js.syncfusion.com/ExportingServices/api/JSChartExport/ExcelExport', true);
+            'http://js.syncfusion.com/ExportingServices/api/JSChartExport/ExcelExport', true);
         }
 
    </script>
@@ -269,10 +272,10 @@ We can also rotate the chart and can export it. Possible angles of rotation are 
 
 {% highlight html %}
 
-   <ej-chart id="chartcontainer" [enableCanvasRendering]="true" [exportSettings.angle]=180 
-                                 exportSettings.action="http://js.syncfusion.com/ExportingServices/api/JSChartExport/Export">
+<ej-chart id="chartcontainer" [enableCanvasRendering]="true" [exportSettings.angle]=180 
+ exportSettings.action="http://js.syncfusion.com/ExportingServices/api/JSChartExport/Export">
 
-   </ej-chart>
+</ej-chart>
        
 {% endhighlight %}
 

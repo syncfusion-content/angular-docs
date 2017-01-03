@@ -33,31 +33,31 @@ You can assign the complete contents in “**WorldMap.json**” file to new JSON
 
 {% highlight javascript %}
 
-    var world_map = //Paste all the content copied from the JSON file// 
+var world_map = //Paste all the content copied from the JSON file// 
 
-            this.mapLayers= [{
-                shapeData: world_map,
-                shapeSettings: {
-                    fill: "#9CBF4E",
-                    strokeThickness: "0.5",
-                    stroke: "White"
-                },
-                subLayers: [{
-                    shapeData: usMap,
-                    shapeSettings: {
-                        fill: "orange",
-                        strokeThickness: "1",
-                        stroke: "White"
-                    }
-                }]
-            }];
+this.mapLayers = [{
+    shapeData: world_map,
+    shapeSettings: {
+        fill: "#9CBF4E",
+        strokeThickness: "0.5",
+        stroke: "White"
+    },
+    subLayers: [{
+        shapeData: usMap,
+        shapeSettings: {
+            fill: "orange",
+            strokeThickness: "1",
+            stroke: "White"
+        }
+    }]
+}];
 
 {% endhighlight %}
 
 {% highlight html %}
 
-    <ej-map id="mapcontrol" [layers]="mapLayers">
-    </ej-map>
+<ej-map id="mapcontrol" [layers]="mapLayers">
+</ej-map>
 
 {% endhighlight %}
 

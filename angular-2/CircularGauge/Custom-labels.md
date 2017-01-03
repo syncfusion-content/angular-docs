@@ -19,7 +19,8 @@ Custom labels collection is directly added to the scale object. Refer the follow
 
  <ej-CircularGauge id="circularGauge1">
      <e-scales>
-          <e-scale showCustomLabels="true" [customLabels]="[{color: 'Red', value: 'KM / H', position:{x: 170, y:220}}]">
+          <e-scale showCustomLabels="true" [customLabels]="[{color: 'Red', value: 'KM / H', 
+                                                              position:{x: 170, y:220}}]">
           </e-scale>
        </e-scales>
   </ej-CircularGauge>
@@ -38,12 +39,13 @@ Font option is also available on  custom labels. The basic three properties of f
 
  <ej-CircularGauge id="circularGauge1">
      <e-scales>
-          <e-scale showCustomLabels="true" [customLabels]="[{color: 'Red', font: { size: '18px',fontFamily: 'Arial',fontStyle: 'bold'}
-                                            textAngle: 10, value: 'CustomLabel1', position:{x: 170, y:220}}]" [size]=2 [shadowOffset]=10 [showCustomLabels]="true"
-                                            [showRanges]="true" [showScaleBar]="true" [radius]=150 >
+          <e-scale showCustomLabels="true" [customLabels]="[{color: 'Red', font:
+           { size: '18px',fontFamily: 'Arial',fontStyle: 'bold'} textAngle: 10, 
+           value: 'CustomLabel1', position:{x: 170, y:220}}]" [size]=2 [shadowOffset]=10
+            [showCustomLabels]="true" [showRanges]="true" [showScaleBar]="true" [radius]=150 >
           </e-scale>
-       </e-scales>
-  </ej-CircularGauge>
+    </e-scales>
+</ej-CircularGauge>
 
 {% endhighlight %}
 
@@ -60,12 +62,15 @@ You can set multiple custom labels in a single **Circular Gauge** by adding an a
 
  <ej-CircularGauge id="circularGauge1">
      <e-scales>
-          <e-scale showCustomLabels="true" [customLabels]="[{color: 'Red', font: { size: '18px',fontFamily: 'Arial',fontStyle: 'bold'}
-                                            textAngle: 10, value: 'CustomLabel1', position:{x: 180, y:100}}, {color: 'Red', font: { size: '18px',fontFamily: 'Arial',fontStyle: 'bold'}
-                                            textAngle: 10, value: 'CustomLabel2', position:{x: 180, y:250}}]" [size]=2 [shadowOffset]=10 [showCustomLabels]="true"
-                                            [showRanges]="true" [showScaleBar]="true" [radius]=150 >
-          </e-scale>
-       </e-scales>
+          <e-scale showCustomLabels="true" [customLabels]="[{color: 'Red', font: 
+           { size: '18px',fontFamily: 'Arial',fontStyle: 'bold'},textAngle: 10,
+           value: 'CustomLabel1', position:{x: 180, y:100}}, {color: 'Red', 
+           font: { size: '18px',fontFamily: 'Arial',fontStyle: 'bold'}, textAngle: 10, 
+           value: 'CustomLabel2', position:{x: 180, y:250}}]"                         
+           [size]=2 [shadowOffset]=10 [showCustomLabels]="true" [showRanges]="true" 
+           [showScaleBar]="true" [radius]=150 >
+        </e-scale>
+    </e-scales>
   </ej-CircularGauge>
 
 {% endhighlight %}
@@ -93,9 +98,11 @@ When a custom label is to be displayed as an **Outer Custom Label**, set the API
 
  <ej-CircularGauge id="circularGauge1" outerCustomLabelPosition="right" [tooltip.showCustomLabelTooltip]="true">
      <e-scales>
-          <e-scale showCustomLabels="true" [customLabels]="[{color: 'Red', font: { size: '18px',fontFamily: 'Arial',fontStyle: 'bold'}
-                                            textAngle: 10, value: 'Average Speed', position:{x: 360, y:30}},positionType: 'outer']" [size]=2 [shadowOffset]=10 [showCustomLabels]="true"
-                                            [showRanges]="true" [showScaleBar]="true" [radius]=150 >
+          <e-scale showCustomLabels="true" [customLabels]="[{color: 'Red', font: { 
+              size: '18px',fontFamily: 'Arial',fontStyle: 'bold'},textAngle: 10, 
+              value: 'Average Speed', position:{x: 360, y:30}},positionType: 'outer']" 
+              [size]=2 [shadowOffset]=10 [showCustomLabels]="true" [showRanges]="true" 
+              [showScaleBar]="true" [radius]=150 >
             <e-pointers>
                 <e-pointer [value]="60" [length]="100">
                 </e-pointer>

@@ -41,7 +41,8 @@ Background color for qualitative range is applied to major ticks and minor ticks
 
 {% highlight html %}
 
-<ej-bulletgraph id="bullet1" [applyRangeStrokeToTicks]="true" [applyRangeStrokeToLabels]="true" [value]=8 [comparativeMeasureValue]=5 >         
+<ej-bulletgraph id="bullet1" [applyRangeStrokeToTicks]="true" [applyRangeStrokeToLabels]="true"
+                                                        [value]=8 [comparativeMeasureValue]=5 >         
     <e-qualitativeranges>
          <e-qualitativerange rangeEnd="3.5" rangeStroke="darkred" [rangeOpacity]=0.5>
          </e-qualitativerange>
@@ -76,7 +77,8 @@ Bullet Graph supports Tooltip template instead of default Tooltip to customize t
     <table style="color:green"> <tr> <td> Current </td> <td> : </td> </tr> <tr> <td> Target </td> <td> : </td> </tr> </table> 
 </div>
 
-{<ej-bulletgraph id="bullet1" [height]=150 [value]=8 [comparativeMeasureValue]=5 [tooltipSettings.visible]="true" tooltipSettings.template="BulletGraphTooltip">         
+<ej-bulletgraph id="bullet1" [height]=150 [value]=8 [comparativeMeasureValue]=5 
+      [tooltipSettings.visible]="true" tooltipSettings.template="BulletGraphTooltip">         
        
 </ej-bulletgraph>
 

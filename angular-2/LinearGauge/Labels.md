@@ -22,15 +22,20 @@ Labels are units that are used to display the values in the scales. You can cust
 
 {% highlight html %}
 
- <ej-lineargauge id="LinearGauge1" [value]="78" [enableAnimation]=false [frame.innerWidth]=8 [frame.outerWidth]=10 frame.backgroundImageUrl="../images/gauge/Gauge_linear_light.png" >
+ <ej-lineargauge id="LinearGauge1" [value]="78" [enableAnimation]=false [frame.innerWidth]=8
+      [frame.outerWidth]=10 frame.backgroundImageUrl="../images/gauge/Gauge_linear_light.png" >
    <e-scales>
-        <e-scale backgroundColor="transparent" [showCustomLabels]="true" [labels]="labels" [showMarkerPointers]="false" [showBarPointers]="true" [border]="{ color: 'transparent', width: 0 }">
+        <e-scale backgroundColor="transparent" [showCustomLabels]="true" [labels]="labels"
+                                    [showMarkerPointers]="false" [showBarPointers]="true" 
+                                                [border]="{ color: 'transparent', width: 0 }">
           <e-barpointers>
               <e-barpointer  [width]="10"></e-barpointer>
            </e-barpointers>	
           <e-ticks>
-               <e-tick type="majorinterval" [width]=2 color="#8c8c8c" [distanceFromScale]="{ x: 7, y: 0 }"></e-tick>
-               <e-tick type="minorinterval" [width]=1 [height]=6 color="#8c8c8c" [distanceFromScale]="{ x: 7, y: 0 }"></e-tick>
+               <e-tick type="majorinterval" [width]=2 color="#8c8c8c" 
+                             [distanceFromScale]="{ x: 7, y: 0 }"></e-tick>
+               <e-tick type="minorinterval" [width]=1 [height]=6 color="#8c8c8c"
+                                      [distanceFromScale]="{ x: 7, y: 0 }"></e-tick>
           </e-ticks>
         </e-scale>
    </e-scales>
@@ -40,15 +45,14 @@ Labels are units that are used to display the values in the scales. You can cust
 
 {% highlight ts %}
 
- 
-                //Adding label collection
-                this.labels= [{
-                    font: { size: "12px", fontFamily: "Arial", fontStyle: "Bold" },
-                    textColor: "Red",
-                    angle: 10,
-                    opacity: 0.5,
-                    includeFirstValue: false
-                }];
+//Adding label collection
+this.labels = [{
+    font: { size: "12px", fontFamily: "Arial", fontStyle: "Bold" },
+    textColor: "Red",
+    angle: 10,
+    opacity: 0.5,
+    includeFirstValue: false
+}];
 
 {% endhighlight %}
 
@@ -68,18 +72,23 @@ Execute the above code to render the following output.
 
 {% highlight html %}
 
- <ej-lineargauge id="LinearGauge1" [height]="250" [width]="600" [value]="31" [enableAnimation]=false theme="flatlight" 
-                       orientation="Horizontal" labelColor="black" [isResponsive]="true" frame.backgroundImageUrl="../images/gauge/Gauge_linear_light.png" >
+ <ej-lineargauge id="LinearGauge1" [height]="250" [width]="600" [value]="31" 
+                [enableAnimation]=false theme="flatlight" orientation="Horizontal" 
+                labelColor="black" [isResponsive]="true" 
+                frame.backgroundImageUrl="../images/gauge/Gauge_linear_light.png" >
    <e-scales>
-        <e-scale backgroundColor="White" direction="clockwise" [width]=5 [majorIntervalValue]=25 [minorIntervalValue]=5 type="roundedrectangle"
-                                [showCustomLabels]="true" [labels]="labels" [customLabels]="customLabels" [showMarkerPointers]="false" [showBarPointers]="true" 
-                                                        [border]="{ color: '#AEC75F', width: 2 }">
+        <e-scale backgroundColor="White" direction="clockwise" [width]=5 [majorIntervalValue]=25
+                  [minorIntervalValue]=5 type="roundedrectangle" [showCustomLabels]="true" 
+                  [labels]="labels" [customLabels]="customLabels" [showMarkerPointers]="false" 
+                  [showBarPointers]="true" [border]="{ color: '#AEC75F', width: 2 }">
           <e-barpointers>
               <e-barpointer  [width]="10" backgroundColor="red"></e-barpointer>
            </e-barpointers>	
           <e-ticks>
-               <e-tick type="majorinterval" [width]=2 color="#8c8c8c" [distanceFromScale]="{ x: 7, y: 0 }"></e-tick>
-               <e-tick type="minorinterval" [width]=1 [height]=6 color="#8c8c8c" [distanceFromScale]="{ x: 7, y: 0 }"></e-tick>
+               <e-tick type="majorinterval" [width]=2 color="#8c8c8c" 
+                                            [distanceFromScale]="{ x: 7, y: 0 }"></e-tick>
+               <e-tick type="minorinterval" [width]=1 [height]=6 color="#8c8c8c" 
+                                            [distanceFromScale]="{ x: 7, y: 0 }"></e-tick>
           </e-ticks>
         </e-scale>
    </e-scales>
@@ -89,15 +98,15 @@ Execute the above code to render the following output.
 
 {% highlight ts %}
 
-               // Adding label collection
-               this.labels= [{
-                   angle: 90,
-                   distanceFromScale: { x: 0, y: 60 },
-                   unitText: "%"
-               }];
-               this.customLabels= [{
-                   value: "Download in Progress", position: { x: 50, y: 20 },
-               }];
+// Adding label collection
+this.labels = [{
+    angle: 90,
+    distanceFromScale: { x: 0, y: 60 },
+    unitText: "%"
+}];
+this.customLabels = [{
+    value: "Download in Progress", position: { x: 50, y: 20 },
+}];
 
 
 {% endhighlight %}

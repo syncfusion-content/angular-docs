@@ -15,7 +15,8 @@ The Chart displays different series in different colors by default. You can cust
 
 {% highlight html %}
 
-   <ej-chart id="chartcontainer" [palette]="[ 'yellow', 'skyblue', 'orange', 'yellow', 'cyan', 'lightblue', '#ff0ade']" >
+   <ej-chart id="chartcontainer" [palette]="[ 'yellow', 'skyblue', 'orange', 
+                                 'yellow', 'cyan', 'lightblue', '#ff0ade']" >
    
    </ej-chart>
 
@@ -48,7 +49,7 @@ Following are the built-in themes available in the Chart
 * gradient-saffrondark
 
 
-You can set your desired theme by using the [`theme`] property. Flat light is the default theme used in the Chart.
+You can set your desired theme by using the `theme` property. Flat light is the default theme used in the Chart.
 
 {% highlight html %}
 
@@ -68,16 +69,16 @@ Marker, data label and fill color of each point in a series can be customized in
 
 {% highlight html %}
 
-  <ej-chart id="chartcontainer">
+<ej-chart id="chartcontainer">
     <e-seriescollection>
         <e-series>
 		 <e-points>
-		 <e-point x="10" [y]="50" fill="#E27F2D" [marker.visible]="true"></e-point>
+		   <e-point x="10" [y]="50" fill="#E27F2D" [marker.visible]="true">
+           </e-point>
          </e-points>
 		</e-series>
     </e-seriescollection>
-	
- </ej-chart>
+</ej-chart>
 
 
 {% endhighlight %}
@@ -86,22 +87,24 @@ Marker, data label and fill color of each point in a series can be customized in
 
 ## Series border customization
 
-To customize the series border color, width and dashArray, you can use [`series.border`] option. 
+To customize the series border color, width and dashArray, you can use `series.border` option. 
 
 N> Series border can be applied to all the series (except Line, Spline, HiLo, HiLoOpenClose and StepLine series).
 
 {% highlight html %}
 
-  <ej-chart id="chartcontainer">
+<ej-chart id="chartcontainer">
     <e-seriescollection>
         <e-series>
 		 <e-points>
-		 <e-point x="20" [y]="80"  border.color="blue" [border.width]= 2 border.dashArray= "5,3" ></e-point>
+		   <e-point x="20" [y]="80"  border.color="blue" [border.width]= 2
+                                                  border.dashArray= "5,3" >
+           </e-point>
          </e-points>
 		</e-series>
     </e-seriescollection>
 	
- </ej-chart>
+</ej-chart>
 
 
 {% endhighlight %}
@@ -112,11 +115,12 @@ N> Series border can be applied to all the series (except Line, Spline, HiLo, Hi
 
 ### Customize chart background
 
-The Chart background can be customized by using the [`background`] property of the Chart. To customize the chart border, use [`border`] option of the chart. 
+The Chart background can be customized by using the `background` property of the Chart. To customize the chart border, use `border` option of the chart. 
 
 {% highlight html %}
 
- <ej-chart id="chartcontainer"  background="skyblue"  [border.width]="2" [border.opacity]="0.35" >
+<ej-chart id="chartcontainer"  background="skyblue"  [border.width]="2" 
+                                               [border.opacity]="0.35" >
    
 </ej-chart>
 
@@ -132,7 +136,8 @@ The Chart [`margin`] property is used to add the margin to the chart area at the
 
 {% highlight html %}
 
-<ej-chart id="chartcontainer"  margin.left="80" margin.right="80" margin.top="40" margin.bottom="80">
+<ej-chart id="chartcontainer"  margin.left="80" margin.right="80" margin.top="40"
+                                                             margin.bottom="80">
     
 </ej-chart>
 
@@ -224,13 +229,13 @@ However, you can force the chart to animate series by calling the **animate** me
 
 {% highlight javascript %}
 
-      //Dynamically animating Chart
-      function animateChart(){
+//Dynamically animating Chart
+function animateChart(){
 
-           //Calling the animate method for dynamic animation
-           $("#chartcontainer").ejChart("animate");      
+    //Calling the animate method for dynamic animation
+    $("#chartcontainer").ejChart("animate");      
         
-      }
+}
 
 
 {% endhighlight %}

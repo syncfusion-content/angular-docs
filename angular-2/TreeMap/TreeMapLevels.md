@@ -26,12 +26,12 @@ You can use `groupGap` property to separate the items from every flat level and
 
 {% highlight html %}
 
-  <ej-treemap id="treemap" [dataSource]="population_data" weightValuePath="Population" colorValuePath="Growth" >
-         <e-levels>
-                <e-level groupPath="Continent" [groupGap]=5></e-level>
-         </e-levels>                                             
-        
- </ej-treemap>
+<ej-treemap id="treemap" [dataSource]="population_data" weightValuePath="Population"
+                                                           colorValuePath="Growth" >
+    <e-levels>
+       <e-level groupPath="Continent" [groupGap]=5></e-level>
+    </e-levels>
+</ej-treemap>
 
 {% endhighlight %}
 
