@@ -114,7 +114,7 @@ import { rootRouterConfig } from './app.routes';
 . . . . 
 @NgModule({
   imports: [BrowserModule, FormsModule, HttpModule, EJAngular2Module.forRoot(), RouterModule.forRoot(rootRouterConfig, { useHash: true })],
-  declarations: [. . . . , EJ_DIALOG_COMPONENTS,DialogComponent],
+  declarations: [. . . . , DialogComponent],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
