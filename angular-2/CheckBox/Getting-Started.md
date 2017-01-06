@@ -98,7 +98,7 @@ npm start
 
 ### Databinding
 
-To bind the model values to the **CheckBox** component, define the model values in the **AppComponent** class available in DateTimepicker.component.ts file as given below.
+To bind the model values to the **CheckBox** component, define the model values in the **AppComponent** class available in CheckBox.component.ts file as given below.
 
 {% highlight HTML %}
 
