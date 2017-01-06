@@ -9,15 +9,15 @@ documentation: ug
 
 # Getting Started
 
-This section explains the details on how to render and configure a RadioButton component in an Angular2 application.
+This section explains the details on how to render and configure a **RadioButton** component in an Angular-2 application.
 
-To get started with RadioButton component, refer the basic prerequisites and system configuration to be done form the given [getting started](https://help.syncfusion.com/angular2/overview) document
+To get started with **RadioButton** component, refer the basic prerequisites and system configuration to be done form the given [getting started](https://help.syncfusion.com/angular2/overview) document.
 
-Once you have cloned the sample angular2 application as mentioned in getting started document, you will have an angular application named **angular2-seeds** and is now ready use our EJ components with it. 
+Once you have cloned the sample Angular-2 application as mentioned in getting started document, you will have an angular application named **angular2-seeds** and is now ready use our EJ components with it. 
 
 ## Copying RadioButton source file
 
-Copy the required Angular2 source components file from the installed location and move it to the app/src/ej folder available inside the angular2-seeds folder.
+Copy the required Angular-2 source components file from the installed location and move it to the app/src/ej folder available inside the angular2-seeds folder.
 
 (Installed Location)\Syncfusion\Essential Studio\{installed version}\JavaScript\assets-src\angular2\ 
 
@@ -25,70 +25,70 @@ Copy the required Angular2 source components file from the installed location an
 
 ## Adding RadioButton component
 
-1. Create a folder named "RadioButton" inside app folder.
+1.Create a folder named "RadioButton" inside app folder.
 
-2. Create a View file and name it as "RadioButton.component" with "html" extension and add the RadioButton component in it as given below. 
+2.Create a View file and name it as "RadioButton.component" with "html" extension and add the **RadioButton** component in it as given below. 
 
 {% highlight html %}
 
-<div>
-                <br />
-                Category
-                <br />
-                <br />
-                <table>
-                    <tr>
-                        <td colspan="2">
-                            <input id="fresher" ej-radiobutton text="Fresher" name="category" value="fresher" />
-                        </td>
-                        <td>
-                            <input id="exp" ej-radiobutton text="Experienced" name="category" value="experienced" [{checked}]="checked" />
-                        </td>
-                    </tr>
-                </table>
-                <br />
-                <br />
-                Experienced
-                <br />
-                <br />
-                <table>
-                    <tr>
-                        <td>
-                            <input id="exp1" ej-radiobutton e-text="1+ years" name="experience" value="1+years"  [{checked}]="checked" />
-                        </td>
-                        <td colspan="2">
-                            <input id="exp2" ej-radiobutton text="2.5+ years" name="experience" value="2+years" />
-                        </td>
-                        <td colspan="2">
-                            <input id="exp5" ej-radiobutton text="5+ years" name="experience" value="5+years" />
+      <div>
+        <br />
+        Category
+        <br />
+        <br />
+        <table>
+            <tr>
+                <td colspan="2">
+                    <input id="fresher" ej-radiobutton text="Fresher" name="category" value="fresher" />
+                </td>
+                <td>
+                    <input id="exp" ej-radiobutton text="Experienced" name="category" value="experienced" [{checked}]="checked" />
+                </td>
+            </tr>
+        </table>
+        <br />
+        <br />
+        Experienced
+        <br />
+        <br />
+        <table>
+            <tr>
+                <td>
+                    <input id="exp1" ej-radiobutton e-text="1+ years" name="experience" value="1+years" [{checked}]="checked" />
+                </td>
+                <td colspan="2">
+                    <input id="exp2" ej-radiobutton text="2.5+ years" name="experience" value="2+years" />
+                </td>
+                <td colspan="2">
+                    <input id="exp5" ej-radiobutton text="5+ years" name="experience" value="5+years" />
 
-                        </td>
-                    </tr>
-                </table>
-            </div>
+                </td>
+            </tr>
+        </table>
+     </div>
 
 {% endhighlight %} 
 
-3. Create a Model file named "RadioButton.component" with "ts" extension inside "RadioButton" folder created in step 1.
+3.Create a Model file named "RadioButton.component" with "ts" extension inside "RadioButton" folder created in step 1.
 
-4. Now, define the **ej-app** component and RadioButton Model class inside the Model file created in the above step.
+4.Now, define the **ej-app** component and RadioButton Model class inside the Model file created in the above step.
 
 {% highlight JS %}
 
 @Component({
-    selector: 'ej-app',
-    templateUrl: 'app/app.component.html',
+     selector: 'ej-app',
+     templateUrl: 'app/app.component.html',
 })
 export class AppComponent {
-    checked: Boolean;
-    constructor() {
-    this.checked = true;
-    }
+     checked: Boolean;
+     constructor() {
+     this.checked = true;
+     }
 }
 
 {% endhighlight %}
 
-5. To Run the application, execute the below commands in the command prompt window. 
+5.To Run the application, execute the below commands in the command prompt window. 
 
 {% highlight JS %}
 
@@ -97,69 +97,69 @@ npm start
 
 {% endhighlight %}
 
-6. Browse the port where your application is hosted and navigate to RadioButton tab to see the output. 
+6.Browse the port where your application is hosted and navigate to RadioButton tab to see the output. 
 
 ![](Getting-Started_images/two-way.png)
 
 ### Databinding
 
-With the above steps you have rendered a simple RadioButton component with the value set in initial rendering. 
+With the above steps you have rendered a simple **RadioButton** component with the value set in initial rendering. 
 
-Now, to bind the model values to the RadioButton component, define the model values in the **AppComponent** class available in RadioButton.component.ts file as given below.
+Now, to bind the model values to the **RadioButton** component, define the model values in the **AppComponent** class available in RadioButton.component.ts file as given below.
 
 {% highlight html %}
-<div>
-                <br />
-                Category
-                <br />
-                <br />
-                <table>
-                    <tr>
-                        <td colspan="2">
-                            <input id="fresher" ej-radiobutton text="Fresher" name="category" value="fresher" [{checked}]="category"/>
-                        </td>
-                        <td>
-                            <input id="exp" ej-radiobutton text="Experienced" name="category" value="experienced" [{checked}]="category" />
-                        </td>
-                    </tr>
-                </table>
-                <br />
-                <br />
-                Experienced
-                <br />
-                <br />
-                <table>
-                    <tr>
-                        <td>
-                            <input id="exp1" ej-radiobutton e-text="1+ years" name="experience" value="1+years" [{checked}]="experience" />
-                        </td>
-                        <td colspan="2">
-                            <input id="exp2" ej-radiobutton text="2.5+ years" name="experience" value="2+years" [{checked}]="experience" />
-                        </td>
-                        <td colspan="2">
-                            <input id="exp5" ej-radiobutton text="5+ years" name="experience" value="5+years" [{checked}]="experience" />
+ <div>
+        <br />
+        Category
+        <br />
+        <br />
+        <table>
+            <tr>
+                <td colspan="2">
+                    <input id="fresher" ej-radiobutton text="Fresher" name="category" value="fresher" [{checked}]="category" />
+                </td>
+                <td>
+                    <input id="exp" ej-radiobutton text="Experienced" name="category" value="experienced" [{checked}]="category" />
+                </td>
+            </tr>
+        </table>
+        <br />
+        <br />
+        Experienced
+        <br />
+        <br />
+        <table>
+            <tr>
+                <td>
+                    <input id="exp1" ej-radiobutton e-text="1+ years" name="experience" value="1+years" [{checked}]="experience" />
+                </td>
+                <td colspan="2">
+                    <input id="exp2" ej-radiobutton text="2.5+ years" name="experience" value="2+years" [{checked}]="experience" />
+                </td>
+                <td colspan="2">
+                    <input id="exp5" ej-radiobutton text="5+ years" name="experience" value="5+years" [{checked}]="experience" />
 
-                        </td>
-                    </tr>
-                </table>
-            </div>
+                </td>
+            </tr>
+        </table>
+   </div>
 
 {% endhighlight %}
 
 {% highlight JS %}
 
 @Component({
-    selector: 'ej-app',
-    templateUrl: 'app/app.component.html',
+     selector: 'ej-app',
+     templateUrl: 'app/app.component.html',
 })
 export class AppComponent {
-    category: string;
-    experience: string;
-    constructor() {
+     category: string;
+     experience: string;
+     constructor() {
         this.category = "experienced";
         this.experience = "1+years";
-    }
-}
+     }
+}  
 
 {% endhighlight %}
 

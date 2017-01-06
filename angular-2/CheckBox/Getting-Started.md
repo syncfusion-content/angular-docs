@@ -9,15 +9,15 @@ documentation: ug
 
 # Getting Started
 
-This section explains the details on how to render and configure a CheckBox component in an Angular2 application.
+This section explains the details on how to render and configure a **CheckBox** component in an Angular-2 application.
 
-To get started with CheckBox component, you need to refer the basic prerequisites and system configuration to be done form the given [getting started](https://help.syncfusion.com/angular2/overview) document
+To get started with **CheckBox** component, you need to refer the basic prerequisites and system configuration to be done form the given [getting started](https://help.syncfusion.com/angular2/overview) document.
 
-Once you have cloned the sample angular2 application as mentioned in getting started document, you will have an angular application named **angular2-seeds** and the application is now ready integrate our EJ components in it. 
+Once you have cloned the sample Angular-2 application as mentioned in getting started document, you will have an angular application named **angular2-seeds** and the application is now ready integrate our EJ components in it. 
 
 ## Copying CheckBox source file
 
-Copy the required Angular2 source components file from the installed location and move it to the app/src/ej folder available inside the angular2-seeds folder.
+Copy the required Angular-2 source components file from the installed location and move it to the app/src/ej folder available inside the angular2-seeds folder.
 
 (Installed Location)\Syncfusion\Essential Studio\{installed version}\JavaScript\assets-src\angular2\ 
 
@@ -25,15 +25,15 @@ Copy the required Angular2 source components file from the installed location an
 
 ## Adding CheckBox component
 
-1. Create a folder named CheckBox inside the app folder.
+1.Create a folder named "CheckBox" inside the app folder.
 
-2.	Create a new file and name it as "Checkbox.Component" with "html" extension and add the Check box component in it as given below. 
+2.Create a new file and name it as "Checkbox.Component" with "html" extension and add the **CheckBox** component in it as given below. 
 
 {% highlight html %}
 
 <div>
-    Hobbies <br /><br />
-    <table>
+     Hobbies <br /><br />
+     <table>
         <tr>
             <td>
                 <ej-checkbox id="Checkbox1" [{checked}]="checked" size="small" text="Music"></ej-checkbox>
@@ -45,9 +45,9 @@ Copy the required Angular2 source components file from the installed location an
                 <ej-checkbox id="Checkbox3" size="small" text="Bike Riding"> </ej-checkbox>
             </td>
         </tr>
-    </table><br /><br />
-    Favorite Search Engines<br /><br />
-    <table>
+     </table><br /><br />
+     Favorite Search Engines<br /><br />
+     <table>
         <tr>
             <td>
                 <ej-checkbox id="Checkbox4" size="medium" [{checked}]="checked" text="Google"></ej-checkbox>
@@ -59,31 +59,31 @@ Copy the required Angular2 source components file from the installed location an
                 <ej-checkbox id="Checkbox6" size="medium" text="Bing"> </ej-checkbox>
             </td>
         </tr>
-    </table>
+     </table>
 </div>
 
 {% endhighlight %} 
 
-3. Create a Model file named "CheckBox.component" with "ts" extension inside "CheckBox" folder created in step 1.
+3.Create a Model file named "CheckBox.component" with "ts" extension inside "CheckBox" folder created in step 1.
 
-4. Now, define the **ej-app** component and CheckBox Model class inside the Model file created in the above step.
+4.Now, define the **ej-app** component and CheckBox Model class inside the Model file created in the above step.
 
 {% highlight JS %}
 
 @Component({
-    selector: 'ej-app',
-    templateUrl: 'app/app.component.html',
+     selector: 'ej-app',
+     templateUrl: 'app/app.component.html',
 })
 export class AppComponent {
-    checked: Boolean;
-    constructor() {
-    this.checked = true;
-    }
+     checked: Boolean;
+     constructor() {
+     this.checked = true;
+     }
 }
 
 {% endhighlight %}
 
-5. To Run the application, execute the below commands in the command prompt window. 
+5.To Run the application, execute the below commands in the command prompt window. 
 
 {% highlight JS %}
 
@@ -92,13 +92,13 @@ npm start
 
 {% endhighlight %}
 
-6. Browse the port where your application is hosted and navigate to CheckBox tab to see the output. 
+6.Browse the port where your application is hosted and navigate to CheckBox tab to see the output. 
 
 ![](Getting-Started_images/default.png)
 
 ### Databinding
 
-To bind the model values to the CheckBox component, define the model values in the **AppComponent** class available in DateTimepicker.component.ts file as given below.
+To bind the model values to the **CheckBox** component, define the model values in the **AppComponent** class available in DateTimepicker.component.ts file as given below.
 
 {% highlight HTML %}
 
@@ -140,9 +140,9 @@ Define the Model class as given below.
 {% highlight JavaScript%}
 
 export class AppComponent {
-    hobbies: Array<string>;
-    search_engines: Array<string>;
-    constructor() {
+     hobbies: Array<string>;
+     search_engines: Array<string>;
+     constructor() {
         this.hobbies = ["music", "sports"];
         this.search_engines = ["google"];
     }
@@ -151,6 +151,6 @@ export class AppComponent {
 
 {% endhighlight %}
 
-Execute the above code to get the following output
+Execute the above code to get the following output.
 
 ![](Getting-Started_images/two-way.png)
