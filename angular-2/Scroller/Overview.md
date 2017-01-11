@@ -1,8 +1,8 @@
 ---
 title: Schedule Overview	
 description: Scroller Introduction
-platform: Angular-2
-control: scroller
+platform: Angular 2
+control: Scroller
 documentation: ug
 ---
 
