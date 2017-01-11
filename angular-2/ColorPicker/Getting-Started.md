@@ -1,7 +1,7 @@
 ---
 title: Getting Started for Angular2 ColorPicker
 description: Getting Started for Angular 2 ColorPicker
-platform: Angular2
+platform: Angular 2
 control: ColorPicker
 documentation: Ug
 keywords: ejcolorpicker, angular colorpicker, colorpicker
@@ -9,9 +9,9 @@ keywords: ejcolorpicker, angular colorpicker, colorpicker
 
 # Getting Started
 
-This section explains briefly about how to create a **ColorPicker** control in your application with **Angular2**.
+This section explains briefly about how to create a **ColorPicker** control in your application with **Angular 2**.
 
-## Create ColorPicker in Angular2 Application using Webpack
+## Create ColorPicker in Angular 2 Application using Webpack
 
 To quick start with Syncfusion JavaScript Angular 2 components run the below commands to clone the repository for [Webpack starter](https://github.com/syncfusion/angular2-seeds) and installing required dependency packages.
 
@@ -117,7 +117,7 @@ npm start
 
 N> if you want to use other port, open `package.json` file, then change port in `--port 3000` script and also change the port in `config/webpack.dev.js`.
 
-![](Getting-Started_images/Getting-Started_img1.jpeg)
+![](Getting-Started_images/Getting-Started_img1.png)
 
 ## Create ColorPicker in Angular2 Application using SystemJS  
 

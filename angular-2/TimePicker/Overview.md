@@ -1,8 +1,8 @@
 ---
 layout: post
 title: Overview | TimePicker | Angular2 | Syncfusion
-description: overview
-platform: angular2
+description: Overview
+platform: Angular 2
 control: TimePicker
 documentation: ug
 ---
