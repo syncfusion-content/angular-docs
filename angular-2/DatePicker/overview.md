@@ -2,13 +2,13 @@
 layout: post
 title: Overview of Angular 2 DatePicker
 description: About Angular 2 DatePicker
-platform: js
-control: Angular 2 DatePicker
+platform: Angular-2
+control: DatePicker
 documentation: ug
 ---
 # OverView
 
-The DatePicker control provides an intuitive visual interface for selecting a date. Its rich feature set includes functionalities like highlighting special dates, globalization, responsive rendering, accessibility and much more. DatePicker support Angular 2 framework and provides the one way and two binding supports with Angular 2 framework.
+The **Essential JavaScript DatePicker control** provides an intuitive visual interface for selecting a date. Its rich feature set includes functionalities like highlighting special dates, globalization, responsive rendering, accessibility and much more.**DatePicker** support Angular 2 framework and provides the one way and two binding supports with Angular 2 framework.
 
 ## Key features
 

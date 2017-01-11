@@ -2,14 +2,14 @@
 layout: post
 title: Overview of Angular-2 DatePicker
 description: How to get started with Angular 2 datepicker?
-platform: js
-control: Angular-2 DatePicker
+platform: Angular 2
+control: DatePicker
 documentation: ug
 ---
 
 # Getting Started
 
-This section will explain the rendering the Angular-2 **DatePicker** with the step-by-step instructions.
+This section will explain the rendering the **Angular-2 DatePicker** with the step-by-step instructions.
 
 You can create the Angular-2 project with the **required script and themes files** with the help of the below link:
 
@@ -22,14 +22,14 @@ Create the **DatePicker** using input html tag with plugin name, inside the body
 
 {% highlight html %}
 
-<div class="content-container-fluid">
-    <div class="row">
-        <div class="cols-sample-area" style="height:400px; margin:0 auto;">
-            Datepicker
-            <input type="text" ej-datepicker id="datepick" />
+    <div class="content-container-fluid">
+        <div class="row">
+            <div class="cols-sample-area" style="height:400px; margin:0 auto;">
+                Datepicker
+                <input type="text" ej-datepicker id="datepick" />
+            </div>
         </div>
     </div>
-</div>
 
 {% endhighlight %}
 
@@ -37,28 +37,20 @@ Create the component TS file like below to render the component.
 
 {% highlight html %}
 
-import { Component, ViewEncapsulation} from '@angular/core';
-
-@Component({
-
-   selector: 'ej-app',
-
-   templateUrl: 'app/app.component.html',
-
-})
-
-export class AppComponent {
-
-   constructor() {}
-
-}
+    import { Component, ViewEncapsulation} from '@angular/core';
+    @Component({
+       selector: 'ej-app',
+       templateUrl: 'app/app.component.html',
+    })
+    export class AppComponent {
+       constructor() {}
+    }
 
 {% endhighlight %}
 
 Execution of above code will render the following output.
 
 ![](gettingstarted_images\gettingstarted_img1.png)
-
 
 ## Model biding
 
@@ -68,36 +60,30 @@ Here we have sets the **DatePicker** date value (inside the constructor of compo
 
 {% highlight javascript %}
 
-export class AppComponent {
-
-     intBeginn: string;
-
+    export class AppComponent {
+       intBeginn: string;
      constructor() {
-
         this.intBeginn = "11/10/2016";
-  
-     }
-  
-   }
+        }
+    }
 
 {% endhighlight %}
 
 ## Two Way Binding  
 
-
-  The Angular-2 **DatePicker** supports the Two-Way binding feature. Normally the binding will synchronize the values between model and view which will result in all views get change (the widgets/element that bounded with same scope variable). Please check with the below code example.
+    The **Angular-2 DatePicker** supports the Two-Way binding feature. Normally the binding will synchronize the values between model and view which will result in all views get change (the widgets/element that bounded with same scope variable). Please check with the below code example.
                               
 {% highlight html %}
 
-<div class="content-container-fluid">
-    <div class="row">
-        <div class="cols-sample-area" style="height:400px; margin:0 auto;">
-            Datepicker
-            <input type="text" ej-datepicker id="datepick"  [(ngModel)]="_beginDate"/>
-            <br>You can enter the date here to check two way binding :<input type="text" [(ngModel)]="_beginDate" />
-        </div>            
+    <div class="content-container-fluid">
+        <div class="row">
+            <div class="cols-sample-area" style="height:400px; margin:0 auto;">
+                Datepicker
+                <input type="text" ej-datepicker id="datepick"  [(ngModel)]="_beginDate"/>
+                <br>You can enter the date here to check two way binding :<input type="text" [(ngModel)]="_beginDate" />
+            </div>            
+        </div>
     </div>
-</div>
  
 {% endhighlight %}
 
@@ -105,27 +91,17 @@ To render the Angular-2 DatePicker Two Way binding using below code.
 
 {% highlight javascript %}
 
-     import { Component, ViewEncapsulation} from '@angular/core';
-
-     @Component({
-
-        selector: 'ej-app',
-
-        templateUrl: 'app/app.component.html',
-
-     })
-
-     export class AppComponent {
-
-        _beginDate:Date;
-
+        import { Component, ViewEncapsulation} from '@angular/core';
+        @Component({
+            selector: 'ej-app',
+            templateUrl: 'app/app.component.html',
+        })
+        export class AppComponent {
+            _beginDate:Date;
         constructor() {
-
-                this._beginDate =new Date();   
-
+            this._beginDate =new Date();   
+            }
         }
-
-     }
 
 {% endhighlight %}
 
@@ -135,50 +111,34 @@ All API of **DatePicker** can be configured and values can be updated from const
 
 {% highlight html %}
 
-     <div class="content-container-fluid">
-        <div class="row">
-            <div class="cols-sample-area" style="height:400px; margin:0 auto;">
-                Datepicker
-                <input type="text" ej-datepicker id="datepick"  [(ngModel)]="_beginDate" [minDate]="min" [maxDate]="max"/>             
-            </div>            
+        <div class="content-container-fluid">
+            <div class="row">
+                <div class="cols-sample-area" style="height:400px; margin:0 auto;">
+                    Datepicker
+                    <input type="text" ej-datepicker id="datepick"  [(ngModel)]="_beginDate" [minDate]="min" [maxDate]="max"/>             
+                </div>            
+            </div>
         </div>
-     </div>
 
 {% endhighlight %}
 
 {% highlight html %}
 
-
-     import { Component, ViewEncapsulation} from '@angular/core';
-
-     @Component({
-
-        selector: 'ej-app',
-
-        templateUrl: 'app/app.component.html',
-
-     })
- 
-     export **class** AppComponent {
-
-        _beginDate:**Date**;
-
-     min:**Date**;
-
-     max:**Date**;
-
-        constructor() {
-
-                this._beginDate =**new****Date**();   
-
-            this.min= **new****Date**("11/11/2012");
-
-            this.max = **new****Date**("11/11/2019")
-
+        import { Component, ViewEncapsulation} from '@angular/core';
+        @Component({
+            selector: 'ej-app',
+            templateUrl: 'app/app.component.html',
+        })
+        export class AppComponent {
+            _beginDate:Date;
+            min:Date;
+            max:Date;
+         constructor() {
+            this._beginDate = new Date();   
+            this.min = new Date("11/11/2012");
+            this.max = new Date("11/11/2019")
+            }
         }
-
-     }
-
 
 {% endhighlight %}
 
