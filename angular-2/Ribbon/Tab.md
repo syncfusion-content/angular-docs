@@ -3,7 +3,7 @@ layout: post
 title:  Tab
 description: tab 
 documentation: ug
-platform: js
+platform: Angular-2
 keywords: ribbon tab
 ---
 

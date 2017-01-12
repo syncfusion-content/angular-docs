@@ -3,7 +3,7 @@ layout: post
 title:  Appearance-and-Styling
 description: appearance and styling
 documentation: ug
-platform: js
+platform: Angular-2
 keywords: appearance and styling,ribbon appearance and styling
 ---
 

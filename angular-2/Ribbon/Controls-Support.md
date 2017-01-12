@@ -3,7 +3,7 @@ layout: post
 title: Controls-Support
 description: controls support
 documentation: ug
-platform: js
+platform: Angular-2
 keywords: controls support,ribbon controls support
 ---
 

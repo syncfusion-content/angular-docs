@@ -3,7 +3,7 @@ layout: post
 title:  Screen Tips
 description: screen tips
 documentation: ug
-platform: js
+platform: Angular-2
 keywords: screen tips,ribbon screen tips
 ---
 
