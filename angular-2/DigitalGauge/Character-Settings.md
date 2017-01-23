@@ -15,7 +15,8 @@ The opacity of the character is adjustable with the help of **opacity** property
 
 {% highlight html %}
 
-<ej-digitalgauge id="DigitalGauge1" width="800" [items]="[{value: 'Syncfusion',characterSettings: { opacity: 0.3,spacing: 3}}]">
+<ej-digitalgauge id="DigitalGauge1" width="800" [items]="[{value: 'Syncfusion',characterSettings: {
+                                                                        opacity: 0.3,spacing: 3}}]">
 </ej-digitalgauge>
 
 {% endhighlight %}
@@ -41,8 +42,8 @@ The number of text to be displayed can be limited by the attribute called **coun
 
 {% highlight html %}
 
-<ej-digitalgauge id="DigitalGauge1" width="800" [items]="[{value: '1234567890',characterSettings: {type: 'sevensegment', count: 10,spacing: 10},
-                                                          segemntSettings:{length: 8,width: 1}}]">
+<ej-digitalgauge id="DigitalGauge1" width="800" [items]="[{value: '1234567890',characterSettings:{
+            type: 'sevensegment', count: 10,spacing: 10}, segemntSettings:{length: 8,width: 1}}]">
 </ej-digitalgauge>
 
 {% endhighlight %}
@@ -57,8 +58,8 @@ The text in the **Digital****Gauge** is positioned with position object. This ob
 
 {% highlight html %}
 
-<ej-digitalgauge id="DigitalGauge1" height="300" frame.backgroundImageUrl="Board1.jpg" width="800" [items]="[{value: 'YELLOW',position:{x:80, y:10},
-                                                          segemntSettings:{color:'yellow'}}]">
+<ej-digitalgauge id="DigitalGauge1" height="300" frame.backgroundImageUrl="Board1.jpg" width="800"
+             [items]="[{value: 'YELLOW',position:{x:80, y:10}, segemntSettings:{color:'yellow'}}]">
 </ej-digitalgauge>
 
 {% endhighlight %}
@@ -75,8 +76,8 @@ The text in the **Digital Gauge** is positioned with position object. This objec
 
 {% highlight html %}
 
-<ej-digitalgauge id="DigitalGauge1" width="800" [items]="[{value: 'WELCOME',shadowColor: 'yellow',shadowBlur: 20,shadowOffsetX: 15, shadowOffsetY: 15,
-                                                          segemntSettings:{length: 3,width: 3}}]">
+<ej-digitalgauge id="DigitalGauge1" width="800" [items]="[{value: 'WELCOME',shadowColor: 'yellow',
+      shadowBlur: 20,shadowOffsetX: 15, shadowOffsetY: 15, segemntSettings:{length: 3,width: 3}}]">
 </ej-digitalgauge>
 
 {% endhighlight %}

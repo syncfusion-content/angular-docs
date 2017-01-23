@@ -20,8 +20,8 @@ documentation: ug
 
 {% highlight html %}
 
-  <ej-rangenavigator id="rangecontainer" valueType= "numeric">
-  </ej-rangenavigator>
+<ej-rangenavigator id="rangecontainer" valueType= "numeric">
+</ej-rangenavigator>
 
 {% endhighlight %}
 
@@ -38,8 +38,8 @@ By default the **valueType** of the **RangeNavigator** is “**datetime**” and
 
 {% highlight html %}
 
-  <ej-rangenavigator id="rangecontainer" valueType= "datetime">
-  </ej-rangenavigator>
+<ej-rangenavigator id="rangecontainer" valueType= "datetime">
+</ej-rangenavigator>
 
 {% endhighlight %}
 
@@ -64,21 +64,21 @@ By default **intervalType** for higher level labels are **auto** and for lower l
 
 {% highlight ts %}
 
-     this.labelSettings= { 
-          higherLevel: {
-                intervalType: 'years',
-            },
-        lowerLevel: {
-               intervalType: ' quarters',
-           }
-      };
+this.labelSettings = {
+    higherLevel: {
+        intervalType: 'years',
+    },
+    lowerLevel: {
+        intervalType: ' quarters',
+    }
+};
 
 {% endhighlight %}
 
 {% highlight html %}
 
-  <ej-rangenavigator id="rangecontainer" [labelSettings]= "labelSettings">
-  </ej-rangenavigator>
+<ej-rangenavigator id="rangecontainer" [labelSettings]= "labelSettings">
+</ej-rangenavigator>
 
 {% endhighlight %}
 

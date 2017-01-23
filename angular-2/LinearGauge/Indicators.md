@@ -20,44 +20,45 @@ Indicators simply indicates the current status of the pointer. Indicators are in
 
 {% highlight html %}
 
- <ej-lineargauge id="LinearGauge1"  [enableAnimation]="false" [value]=78 frame.backgroundImageUrl="../images/gauge/Gauge_linear_light.png" [scales]="scales" >
-  </ej-lineargauge>
+<ej-lineargauge id="LinearGauge1"  [enableAnimation]="false" [value]=78
+             frame.backgroundImageUrl="../images/gauge/Gauge_linear_light.png" [scales]="scales" >
+</ej-lineargauge>
 
 {% endhighlight %}
 
 {% highlight ts %}
 
-            this.scales= [{
-                width: 0,
-                border: { color: "transparent", width: 0 },
-                minimum: 0,
-                maximum: 300,
-                minorIntervalValue: 5,
-                majorIntervalValue: 30,
-                showBarPointers: false,
-                showIndicators: true,
-                //Adding marker pointer collection
-                markerPointers: [{
-                    width: 10, length: 10,
-                    backgroundColor: "Grey", distanceFromScale: 12
-                }],
-                //Adding ticks collection
-                ticks: [{
-                    type: "majorinterval", width: 2,
-                    color: "#8c8c8c", distanceFromScale: { x: 7, y: 0 }
-                },
-                {
-                    type: "minorinterval", width: 1, height: 6,
-                    color: "#8c8c8c", distanceFromScale: { x: 7, y: 0 }
-                }],
-                //Adding indicator collection
-                indicators: [{
-                    height: 10,
-                    width: 10,
-                    type: "circle",
-                    position: { x: 50, y: 100 }
-                }]
-            }];
+this.scales = [{
+    width: 0,
+    border: { color: "transparent", width: 0 },
+    minimum: 0,
+    maximum: 300,
+    minorIntervalValue: 5,
+    majorIntervalValue: 30,
+    showBarPointers: false,
+    showIndicators: true,
+    //Adding marker pointer collection
+    markerPointers: [{
+        width: 10, length: 10,
+        backgroundColor: "Grey", distanceFromScale: 12
+    }],
+    //Adding ticks collection
+    ticks: [{
+        type: "majorinterval", width: 2,
+        color: "#8c8c8c", distanceFromScale: { x: 7, y: 0 }
+    },
+    {
+        type: "minorinterval", width: 1, height: 6,
+        color: "#8c8c8c", distanceFromScale: { x: 7, y: 0 }
+    }],
+    //Adding indicator collection
+    indicators: [{
+        height: 10,
+        width: 10,
+        type: "circle",
+        position: { x: 50, y: 100 }
+    }]
+}];
 
 {% endhighlight %}
 
@@ -74,77 +75,78 @@ State ranges are used to specify the indicator behavior in the certain region. *
 
 {% highlight html %}
 
- <ej-lineargauge id="LinearGauge1"  [enableAnimation]="false" [value]=78 frame.backgroundImageUrl="../images/gauge/Gauge_linear_light.png" [scales]="scales" >
-  </ej-lineargauge>
+<ej-lineargauge id="LinearGauge1"  [enableAnimation]="false" [value]=78 
+            frame.backgroundImageUrl="../images/gauge/Gauge_linear_light.png" [scales]="scales" >
+</ej-lineargauge>
 
 {% endhighlight %}
 
 {% highlight ts %}
 
-            //Adding scale object
-            this.scales= [{
-                width: 0,
-                border: { color: "transparent", width: 0 },
-                minimum: 0,
-                maximum: 300,
-                minorIntervalValue: 5,
-                majorIntervalValue: 30,
-                showRanges: true,
-                showBarPointers: false,
-                showIndicators: true,
-                //Adding marker pointer collection
-                markerPointers: [{
-                    width: 10, length: 10, backgroundColor: "Grey",
-                    distanceFromScale: 12
-                }],
-                //Adding tick collection
-                ticks: [{
-                    type: "majorinterval", width: 2,
-                    color: "#8c8c8c", distanceFromScale: { x: 7, y: 0 }
-                },
-                {
-                    type: "minorinterval", width: 1, height: 6,
-                    color: "#8c8c8c", distanceFromScale: { x: 7, y: 0 }
-                }],
-                //Adding range collection
-                ranges: [
-                {
-                    startWidth: 5, endWidth: 5, startValue: 0, endValue: 200,
-                    backgroundColor: "#94C361", border: {
-                        color: "#94C361", width: 1
-                    }
-                },
-                {
-                    startWidth: 5, endWidth: 5, startValue: 200, endValue: 250,
-                    backgroundColor: "#F9CF67", border: {
-                        color: "#F9CF67", width: 1
-                    }
-                },
-                {
-                    startWidth: 5, endWidth: 5, startValue: 250, endValue: 300,
-                    backgroundColor: "#F89B83", border: {
-                        color: "#F89B83", width: 1
-                    }
-                }
-                ],
-                //Adding indicator collection
-                indicators: [
-                {
-                    height: 10, width: 10, type: "circle", position: { x: 50, y: 100 },
+//Adding scale object
+this.scales = [{
+    width: 0,
+    border: { color: "transparent", width: 0 },
+    minimum: 0,
+    maximum: 300,
+    minorIntervalValue: 5,
+    majorIntervalValue: 30,
+    showRanges: true,
+    showBarPointers: false,
+    showIndicators: true,
+    //Adding marker pointer collection
+    markerPointers: [{
+        width: 10, length: 10, backgroundColor: "Grey",
+        distanceFromScale: 12
+    }],
+    //Adding tick collection
+    ticks: [{
+        type: "majorinterval", width: 2,
+        color: "#8c8c8c", distanceFromScale: { x: 7, y: 0 }
+    },
+    {
+        type: "minorinterval", width: 1, height: 6,
+        color: "#8c8c8c", distanceFromScale: { x: 7, y: 0 }
+    }],
+    //Adding range collection
+    ranges: [
+    {
+        startWidth: 5, endWidth: 5, startValue: 0, endValue: 200,
+        backgroundColor: "#94C361", border: {
+            color: "#94C361", width: 1
+        }
+    },
+    {
+        startWidth: 5, endWidth: 5, startValue: 200, endValue: 250,
+        backgroundColor: "#F9CF67", border: {
+            color: "#F9CF67", width: 1
+        }
+    },
+    {
+        startWidth: 5, endWidth: 5, startValue: 250, endValue: 300,
+        backgroundColor: "#F89B83", border: {
+            color: "#F89B83", width: 1
+        }
+    }
+    ],
+    //Adding indicator collection
+    indicators: [
+    {
+        height: 10, width: 10, type: "circle", position: { x: 50, y: 100 },
 
-                    //Adding State ranges collection
-                    stateRanges: [
-                    {
-                        backgroundColor: "#02A258", endValue: 200,
-                        startValue: 0, borderColor: "#02A258"
-                    },
-                    {
-                        backgroundColor: "Grey", endValue: 300,
-                        startValue: 200, borderColor: "Grey"
-                    }
-                    ]
-                }]
-            }];
+        //Adding State ranges collection
+        stateRanges: [
+        {
+            backgroundColor: "#02A258", endValue: 200,
+            startValue: 0, borderColor: "#02A258"
+        },
+        {
+            backgroundColor: "Grey", endValue: 300,
+            startValue: 200, borderColor: "Grey"
+        }
+        ]
+    }]
+}];
 
 {% endhighlight %}
 
@@ -163,47 +165,48 @@ The **backgroundColor** and **borderColor** sets the appearance behavior for the
 
 {% highlight html %}
 
- <ej-lineargauge id="LinearGauge1"  [enableAnimation]="false" [value]=78 frame.backgroundImageUrl="../images/gauge/Gauge_linear_light.png" [scales]="scales" >
-  </ej-lineargauge>
+<ej-lineargauge id="LinearGauge1"  [enableAnimation]="false" [value]=78 
+                         frame.backgroundImageUrl="../images/gauge/Gauge_linear_light.png" [scales]="scales" >
+</ej-lineargauge>
 
 {% endhighlight %}
 
 {% highlight ts %}
 
 
-            //Adding scale object
-            this.scales= [{
-                width: 0,
-                border: { color: "transparent", width: 0 },
-                minimum: 0,
-                maximum: 300,
-                minorIntervalValue: 5,
-                majorIntervalValue: 30,
-                showBarPointers: false,
-                showIndicators: true,
-                //Adding marker pointer collection
-                markerPointers: [{
-                    width: 10, length: 10,
-                    backgroundColor: "Grey", distanceFromScale: 12
-                }],
-                //Adding ticks collection
-                ticks: [{
-                    type: "majorinterval", width: 2,
-                    color: "#8c8c8c", distanceFromScale: { x: 7, y: 0 }
-                },
-                {
-                    type: "minorinterval", width: 1, height: 6,
-                    color: "#8c8c8c", distanceFromScale: { x: 7, y: 0 }
-                }],
-                //Adding indicator collection
-                indicators: [{
-                    height: 10, width: 10, type: "circle", position: { x: 50, y: 100 },
-                    stateRanges: [{
-                        backgroundColor: "#91B64E", endValue: 300,
-                        startValue: 0, borderColor: "#91B64E"
-                    }]
-                }]
-            }];
+//Adding scale object
+this.scales = [{
+    width: 0,
+    border: { color: "transparent", width: 0 },
+    minimum: 0,
+    maximum: 300,
+    minorIntervalValue: 5,
+    majorIntervalValue: 30,
+    showBarPointers: false,
+    showIndicators: true,
+    //Adding marker pointer collection
+    markerPointers: [{
+        width: 10, length: 10,
+        backgroundColor: "Grey", distanceFromScale: 12
+    }],
+    //Adding ticks collection
+    ticks: [{
+        type: "majorinterval", width: 2,
+        color: "#8c8c8c", distanceFromScale: { x: 7, y: 0 }
+    },
+    {
+        type: "minorinterval", width: 1, height: 6,
+        color: "#8c8c8c", distanceFromScale: { x: 7, y: 0 }
+    }],
+    //Adding indicator collection
+    indicators: [{
+        height: 10, width: 10, type: "circle", position: { x: 50, y: 100 },
+        stateRanges: [{
+            backgroundColor: "#91B64E", endValue: 300,
+            startValue: 0, borderColor: "#91B64E"
+        }]
+    }]
+}];
 
 {% endhighlight %}
 
@@ -219,82 +222,83 @@ The basic font options available for the textual type indicators in the **Linear
 
 {% highlight html %}
 
- <ej-lineargauge id="LinearGauge1"  [enableAnimation]="false" [value]=78 frame.backgroundImageUrl="../images/gauge/Gauge_linear_light.png" [scales]="scales" >
-  </ej-lineargauge>
+<ej-lineargauge id="LinearGauge1"  [enableAnimation]="false" [value]=78 
+           frame.backgroundImageUrl="../images/gauge/Gauge_linear_light.png" [scales]="scales" >
+</ej-lineargauge>
 
 {% endhighlight %}
 
 {% highlight ts %}
 
-            //Adding scale collection
-            this.scales= [{
-                width: 0,
-                border: { color: "transparent", width: 0 },
-                minimum: 0,
-                maximum: 300,
-                minorIntervalValue: 5,
-                majorIntervalValue: 30,
-                showRanges: true,
-                showBarPointers: false,
-                showIndicators: true,
-                //Adding marker pointer collection
-                markerPointers: [{
-                    width: 10, length: 10,
-                    backgroundColor: "Grey", distanceFromScale: 12
-                }],
-                //Adding tick collection
-                ticks: [{
-                    type: "majorinterval", width: 2,
-                    color: "#8c8c8c", distanceFromScale: { x: 7, y: 0 }
-                },
-                {
-                    type: "minorinterval", width: 1, height: 6,
-                    color: "#8c8c8c", distanceFromScale: { x: 7, y: 0 }
-                }],
-                //Adding range collection
-                ranges: [
-                {
-                    startWidth: 5, endWidth: 5, startValue: 0, endValue: 200,
-                    backgroundColor: "#94C361", border: {
-                        color: "#94C361", width: 1
-                    }
-                },
-                {
-                    startWidth: 5, endWidth: 5, startValue: 200, endValue: 250,
-                    backgroundColor: "#F9CF67", border: {
-                        color: "#F9CF67", width: 1
-                    }
-                },
-                {
-                    startWidth: 5, endWidth: 5, startValue: 250, endValue: 300,
-                    backgroundColor: "#F89B83", border: {
-                        color: "#F89B83", width: 1
-                    }
-                }
-                ],
-                //Adding indicator collection
-                indicators: [
-                {
-                    type: "text", textLocation: { x: 50, y: 100 },
-                    //Adding font option
-                    font: { size: "12px", fontFamily: "Arial", fontType: "Bold" },
+//Adding scale collection
+this.scales = [{
+    width: 0,
+    border: { color: "transparent", width: 0 },
+    minimum: 0,
+    maximum: 300,
+    minorIntervalValue: 5,
+    majorIntervalValue: 30,
+    showRanges: true,
+    showBarPointers: false,
+    showIndicators: true,
+    //Adding marker pointer collection
+    markerPointers: [{
+        width: 10, length: 10,
+        backgroundColor: "Grey", distanceFromScale: 12
+    }],
+    //Adding tick collection
+    ticks: [{
+        type: "majorinterval", width: 2,
+        color: "#8c8c8c", distanceFromScale: { x: 7, y: 0 }
+    },
+    {
+        type: "minorinterval", width: 1, height: 6,
+        color: "#8c8c8c", distanceFromScale: { x: 7, y: 0 }
+    }],
+    //Adding range collection
+    ranges: [
+    {
+        startWidth: 5, endWidth: 5, startValue: 0, endValue: 200,
+        backgroundColor: "#94C361", border: {
+            color: "#94C361", width: 1
+        }
+    },
+    {
+        startWidth: 5, endWidth: 5, startValue: 200, endValue: 250,
+        backgroundColor: "#F9CF67", border: {
+            color: "#F9CF67", width: 1
+        }
+    },
+    {
+        startWidth: 5, endWidth: 5, startValue: 250, endValue: 300,
+        backgroundColor: "#F89B83", border: {
+            color: "#F89B83", width: 1
+        }
+    }
+    ],
+    //Adding indicator collection
+    indicators: [
+    {
+        type: "text", textLocation: { x: 50, y: 100 },
+        //Adding font option
+        font: { size: "12px", fontFamily: "Arial", fontType: "Bold" },
 
-                    //Adding state ranges collection
-                    stateRanges: [{
-                        startValue: 0, endValue: 200,
-                        text: "Safe", textColor: "#94C361"
-                    },
-                    {
-                        startValue: 200, endValue: 250,
-                        text: "Caution", textColor: "#F9CF67"
-                    },
-                    {
-                        startValue: 250, endValue: 300,
-                        text: "Danger", textColor: "#F89B83"
-                    }
-                    ]
-                }]
-            }];
+        //Adding state ranges collection
+        stateRanges: [{
+            startValue: 0, endValue: 200,
+            text: "Safe", textColor: "#94C361"
+        },
+        {
+            startValue: 200, endValue: 250,
+            text: "Caution", textColor: "#F9CF67"
+        },
+        {
+            startValue: 250, endValue: 300,
+            text: "Danger", textColor: "#F89B83"
+        }
+        ]
+    }]
+}];
 
 {% endhighlight %}
 
@@ -311,7 +315,8 @@ You can set multiple indicators in a single **Linear Gauge** by adding an array 
 
 {% highlight html %}
 
- <ej-lineargauge id="LinearGauge1"  [enableAnimation]="false" [value]=78 frame.backgroundImageUrl="../images/gauge/Gauge_linear_light.png" [scales]="scales" >
+ <ej-lineargauge id="LinearGauge1"  [enableAnimation]="false" [value]=78 
+        frame.backgroundImageUrl="../images/gauge/Gauge_linear_light.png" [scales]="scales" >
   </ej-lineargauge>
 
 {% endhighlight %}
@@ -319,80 +324,80 @@ You can set multiple indicators in a single **Linear Gauge** by adding an array 
 
 {% highlight ts %}
 
-            //Adding scale collection
-            this.scales [{
-                width: 0,
-                border: { color: "transparent", width: 0 },
-                minimum: 0,
-                maximum: 300,
-                minorIntervalValue: 5,
-                majorIntervalValue: 30,
-                showRanges: true,
-                showBarPointers: false,
-                showIndicators: true,
-                //Adding marker pointer collection
-                markerPointers: [{
-                    width: 10, length: 10, backgroundColor: "Grey",
-                    distanceFromScale: 12
-                }],
-                //Adding ticks collection
-                ticks: [{
-                    type: "majorinterval", width: 2,
-                    color: "#8c8c8c", distanceFromScale: { x: 7, y: 0 }
-                },
-                {
-                    type: "minorinterval", width: 1, height: 6,
-                    color: "#8c8c8c", distanceFromScale: { x: 7, y: 0 }
-                }],
-                //Adding ranges collection
-                ranges: [
-                {
-                    startWidth: 5, endWidth: 5, startValue: 0, endValue: 200,
-                    backgroundColor: "#94C361", border: {
-                        color: "#94C361", width: 1
-                    }
-                },
-                {
-                    startWidth: 5, endWidth: 5, startValue: 200, endValue: 250,
-                    backgroundColor: "#F9CF67", border: {
-                        color: "#F9CF67", width: 1
-                    }
-                },
-                {
-                    startWidth: 5, endWidth: 5, startValue: 250, endValue: 300,
-                    backgroundColor: "#F89B83", border: {
-                        color: "#F89B83", width: 1
-                    }
-                }
-                ],
-                //Adding indicator collection
-                indicators: [
-                //Adding indicator 1
-                {
-                    height: 10, width: 10, type: "circle", position: { x: 30, y: 100 },
-                    //Adding state ranges collection
-                    stateRanges: [{
-                        backgroundColor: "#02A258", endValue: 200,
-                        startValue: 0, borderColor: "#02A258"
-                    },
-                    {
-                        backgroundColor: "Grey", endValue: 300,
-                        startValue: 200, borderColor: "Grey"
-                    }]
-                },
-                //Adding indicator 2
-                {
-                    height: 10, width: 10, type: "circle", position: { x: 70, y: 100 },
-                    stateRanges: [{
-                        backgroundColor: "Grey", endValue: 200,
-                        startValue: 0, borderColor: "Grey"
-                    },
-                    {
-                        backgroundColor: "Red", endValue: 300,
-                        startValue: 200, borderColor: "Red"
-                    }]
-                }]
-            }];
+//Adding scale collection
+this.scales[{
+    width: 0,
+    border: { color: "transparent", width: 0 },
+    minimum: 0,
+    maximum: 300,
+    minorIntervalValue: 5,
+    majorIntervalValue: 30,
+    showRanges: true,
+    showBarPointers: false,
+    showIndicators: true,
+    //Adding marker pointer collection
+    markerPointers: [{
+        width: 10, length: 10, backgroundColor: "Grey",
+        distanceFromScale: 12
+    }],
+    //Adding ticks collection
+    ticks: [{
+        type: "majorinterval", width: 2,
+        color: "#8c8c8c", distanceFromScale: { x: 7, y: 0 }
+    },
+    {
+        type: "minorinterval", width: 1, height: 6,
+        color: "#8c8c8c", distanceFromScale: { x: 7, y: 0 }
+    }],
+    //Adding ranges collection
+    ranges: [
+    {
+        startWidth: 5, endWidth: 5, startValue: 0, endValue: 200,
+        backgroundColor: "#94C361", border: {
+            color: "#94C361", width: 1
+        }
+    },
+    {
+        startWidth: 5, endWidth: 5, startValue: 200, endValue: 250,
+        backgroundColor: "#F9CF67", border: {
+            color: "#F9CF67", width: 1
+        }
+    },
+    {
+        startWidth: 5, endWidth: 5, startValue: 250, endValue: 300,
+        backgroundColor: "#F89B83", border: {
+            color: "#F89B83", width: 1
+        }
+    }
+    ],
+    //Adding indicator collection
+    indicators: [
+    //Adding indicator 1
+    {
+        height: 10, width: 10, type: "circle", position: { x: 30, y: 100 },
+        //Adding state ranges collection
+        stateRanges: [{
+            backgroundColor: "#02A258", endValue: 200,
+            startValue: 0, borderColor: "#02A258"
+        },
+        {
+            backgroundColor: "Grey", endValue: 300,
+            startValue: 200, borderColor: "Grey"
+        }]
+    },
+    //Adding indicator 2
+    {
+        height: 10, width: 10, type: "circle", position: { x: 70, y: 100 },
+        stateRanges: [{
+            backgroundColor: "Grey", endValue: 200,
+            startValue: 0, borderColor: "Grey"
+        },
+        {
+            backgroundColor: "Red", endValue: 300,
+            startValue: 200, borderColor: "Red"
+        }]
+    }]
+}];
 
 {% endhighlight %}
 

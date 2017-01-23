@@ -20,28 +20,28 @@ N> For the **OHLC** type series, you have to map four dataSource fields (**high*
 
 {% highlight html %}
 
-    <ej-chart id="container">
+<ej-chart id="container">
         <e-seriescollection >
             <e-series xName="ShipCity" [dataSource]="chartData" yName="Freight" >
             </e-series>
         </e-seriescollection>
-    </ej-chart>
+</ej-chart>
 
 {% endhighlight %}
 
 {% highlight ts %}
 
-        this.chartData = [
-            {ShipCity:"STOCKHOLM",Freight:28},
-            {ShipCity:"MOSCOW",Freight: 148},
-            {ShipCity:"OTTAWA",Freight: 8},
-            {ShipCity:"KIEV",Freight:43},
-            {ShipCity:"COPENHAGEN",Freight:28},
-            {ShipCity:"Juneau",Freight:35},
-            {ShipCity:"Resende",Freight:13.97},
-            {ShipCity:"San Cristobal",Freight:81.91},
-            
-        ];
+this.chartData = [
+    { ShipCity: "STOCKHOLM", Freight: 28 },
+    { ShipCity: "MOSCOW", Freight: 148 },
+    { ShipCity: "OTTAWA", Freight: 8 },
+    { ShipCity: "KIEV", Freight: 43 },
+    { ShipCity: "COPENHAGEN", Freight: 28 },
+    { ShipCity: "Juneau", Freight: 35 },
+    { ShipCity: "Resende", Freight: 13.97 },
+    { ShipCity: "San Cristobal", Freight: 81.91 },
+
+];
 
 {% endhighlight %}
 
@@ -93,12 +93,12 @@ You can bind the remote data to the chart by using the DataManager and you can u
 
 {% highlight html %}
 
-    <ej-chart id="container">
+<ej-chart id="container">
         <e-seriescollection>
             <e-series xName="ShipCity" yName="Freight">
             </e-series>        
         </e-seriescollection>
-    </ej-chart>
+</ej-chart>
 
 {% endhighlight %}
 

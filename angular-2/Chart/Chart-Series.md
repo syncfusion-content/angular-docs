@@ -11,7 +11,7 @@ documentation: ug
 
 ## Multiple Series
 
-In EjChart, you can add multiple series object in the [`series`] options. The series are rendered in the order it is added to the [`series`] option, by default. You can change this order by using the [`zOrder`] option.  
+In EjChart, you can add multiple series object in the `series` options. The series are rendered in the order it is added to the `series` option, by default. You can change this order by using the `zOrder` option.  
 
 {% highlight html %}
 
@@ -41,7 +41,7 @@ In EjChart, you can add multiple series object in the [`series`] options. The se
 
 ### Customizing all series together
 
-By using the [`commonSeriesOptions`], you can customize the series options for all the series commonly, instead of setting the options directly on each series object. 
+By using the `commonSeriesOptions`, you can customize the series options for all the series commonly, instead of setting the options directly on each series object. 
 
 N> The inline properties of the series has the first priority and override the commonSeriesOptions.
 
@@ -49,24 +49,20 @@ The following code example explains on how to enable marker, tooltip and animati
 
 {% highlight ts %}
 
-
-        this.marker = {
-                    shape: 'circle',
-                    size:
-                    {
-                        height: 10, width: 10
-                    },
-                    visible: true
-                };
+this.marker = {
+    shape: 'circle',
+    size:
+    {
+        height: 10, width: 10
+    },
+    visible: true
+};
 
 {% endhighlight %}
 
 {% highlight html %}
 
- <ej-chart id="chartcontainer" style="display: block" commonSeriesOptions.type="line" [commonSeriesOptions.enableAnimation]="true"
-                [commonSeriesOptions.tooltip.visible]="true" [commonSeriesOptions.marker]="marker" [border.width]=2>
-
-              
+<ej-chart id="chartcontainer" style="display: block" commonSeriesOptions.type="line" [commonSeriesOptions.enableAnimation]="true" [commonSeriesOptions.tooltip.visible]="true" [commonSeriesOptions.marker]="marker" [border.width]=2>              
       <e-seriescollection>
           <!-- Write series code here-->
       </e-seriescollection>
@@ -90,13 +86,11 @@ EjChart allows you to render the combination of different series in the chart.
         <e-series type="column">
 		 <e-points>
 		 <!-- Add points here-->
-		 
          </e-points>
 	  </e-series>
 	  <e-series type="line">
 	    <e-points>
 		 <!-- Add points here-->
-		 
          </e-points>
 	  </e-series>
    </e-seriescollection>
@@ -110,11 +104,11 @@ EjChart allows you to render the combination of different series in the chart.
 
 ### Limitation of combination chart
 
-* [`Bar`], [`StackingBar`], and [`StackingBar100`] cannot be combined with the other Cartesian type series.
+* `Bar`, `StackingBar`, and `StackingBar100` cannot be combined with the other Cartesian type series.
 
-* Cartesian type series cannot be combined with the accumulation series ([`pie`], [`doughnut`], [`funnel`], and [`pyramid`]).
+* Cartesian type series cannot be combined with the accumulation series (`pie`, `doughnut`, `funnel`, and `pyramid`).
 
-* [`Polar`] and [`Radar`] series cannot be combined with the accumulation and Cartesian type series.
+* `Polar` and `Radar` series cannot be combined with the accumulation and Cartesian type series.
 
 When the combination of Cartesian and accumulation series types are added to the series option, the series that are similar to the first series are rendered and other series are ignored. The following code example illustrates this,  
 
@@ -122,20 +116,17 @@ When the combination of Cartesian and accumulation series types are added to the
 {% highlight html %}
 
 <ej-chart id="chartcontainer">
-
     <e-seriescollection>
       <!--Add line series-->
         <e-series type="line">
 		 <e-points>
-		 <!-- Add points here-->
-		 
+		 <!-- Add points here-->		 
          </e-points>
 	  </e-series>
       <!--Add pie series-->
 	  <e-series type="pie">
-	    <e-points>
+	     <e-points>
 		 <!-- Add points here-->
-		 
          </e-points>
 	  </e-series>
    </e-seriescollection>

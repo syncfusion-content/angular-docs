@@ -31,9 +31,9 @@ documentation: ug
 
 {% highlight html %}
 
-    <ej-sparkline id="sparklinecontainer"  [dataSource]="sparklinedata" xName="employeeId" yName="sales">          
+<ej-sparkline id="sparklinecontainer"  [dataSource]="sparklinedata" xName="employeeId" yName="sales">          
                                
-    </ej-sparkline>
+</ej-sparkline>
 
 {% endhighlight %}
 
@@ -44,9 +44,9 @@ documentation: ug
 
 {% highlight html %}
 
-    <ej-sparkline id="sparklinecontainer"  [dataSource]="[ 2, 6, -1, 1, 12, 5, -2, 7, -3, 5, 8, 10]">          
+<ej-sparkline id="sparklinecontainer"  [dataSource]="[ 2, 6, -1, 1, 12, 5, -2, 7, -3, 5, 8, 10]">          
                                
-    </ej-sparkline>
+</ej-sparkline>
 
 {% endhighlight %}
 

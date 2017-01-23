@@ -99,19 +99,21 @@ export const rootRouterConfig: Routes = [
 ];
 {% endhighlight %}
 
-* Import and declare the Syncfusion source component and ejDialog sample component into `app.module.ts` like the below code snippet.
+* Import and declare the ejDialog sample component into `app.module.ts` like the below code snippet.
 
 {% highlight javascript %}
 import { NgModule, enableProdMode, ErrorHandler } from '@angular/core';
 . . . . . 
-import { EJ_DIALOG_COMPONENTS } from './ej/dialog.component';
+import { EJAngular2Module } from 'ej-angular2';
+import { AppComponent } from './app.component';
+. . . .
 import { DialogComponent } from './dialog/dialog.component';
 
 import { rootRouterConfig } from './app.routes';
 . . . . 
 @NgModule({
-  imports: [BrowserModule, FormsModule, HttpModule, RouterModule.forRoot(rootRouterConfig, { useHash: true })],
-  declarations: [. . . . , EJ_DIALOG_COMPONENTS,DialogComponent],
+  imports: [BrowserModule, FormsModule, HttpModule, EJAngular2Module.forRoot(), RouterModule.forRoot(rootRouterConfig, { useHash: true })],
+  declarations: [. . . . , DialogComponent],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

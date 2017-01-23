@@ -33,13 +33,14 @@ documentation: ug
 {% highlight javascript %}
 
 $(function () {
-        $("#btnExportImage").ejButton({ width: "100px", click: "buttonclickevent", });
-    });
-    function buttonclickevent() {
-        var FileName = $("#txtFileName").val();
-        var FileFormat = $("#ddlFileType").val();
-        $("#circulargauge").ejCircularGauge("exportImage", FileName, FileFormat);
-    }
+    $("#btnExportImage").ejButton({ width: "100px", click: "buttonclickevent", });
+});
+
+function buttonclickevent() {
+    var FileName = $("#txtFileName").val();
+    var FileFormat = $("#ddlFileType").val();
+    $("#circulargauge").ejCircularGauge("exportImage", FileName, FileFormat);
+}
 
 {% endhighlight %}
 

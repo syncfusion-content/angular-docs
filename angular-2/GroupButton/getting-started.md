@@ -2,8 +2,8 @@
 layout: post
 title: Overview of Angular 2 GroupButton
 description: How to get started with Angular 2 GroupButton?
-platform: angular2
-control: Angular 2 GroupButton
+platform: Angular 2
+control: GroupButton
 documentation: ug
 ---
 
@@ -18,7 +18,7 @@ You can create the Angular 2 project with the **required script and themes files
 
 ## Creating a GroupButton in Angular2 environment
 
-Create the groupbutton using group button tag inside the body tag as like below
+Create the GroupButton using GroupButton tag inside the body tag as like below
 
 {% highlight html %}
 
@@ -56,7 +56,7 @@ Create the component TS file like below to render the component.
 
 ## Model biding
 
-DataSource for Group Button can be set to component via model binding like below code example.
+DataSource for GroupButton can be set to component via model binding like below code example.
 Here we have added the all required fields for GroupButton DataSource with data (inside the constructor of component)
 
 

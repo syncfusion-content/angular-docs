@@ -1,17 +1,17 @@
 ---
-title: Getting Started for Angular2 scroller
-description: Getting Started for Angular 2 scroller
-platform: Angular2
-control: scroller
+title: Getting Started for Angular2 Scroller
+description: Getting Started for Angular 2 Scroller
+platform: Angular 2
+control: Scroller
 documentation: Ug
-keywords: ejscroller, js scroller, scroller
+keywords: ejScroller, js Scroller, Scroller
 ---
 
 # Getting Started
 
-This section explains briefly about how to create a **scroller** control in your application with **Angular2**.
+This section explains briefly about how to create a **Scroller** control in your application with **Angular 2**.
 
-## Create scroller in Angular2 Application using Webpack
+## Create Scroller in Angular 2 Application using Webpack
 
 To quick start with Syncfusion JavaScript Angular 2 components run the below commands to clone the repository for [Webpack starter](https://github.com/syncfusion/angular2-seeds) and installing required dependency packages.
 
@@ -25,7 +25,7 @@ To quick start with Syncfusion JavaScript Angular 2 components run the below com
 
 {% endhighlight %}
 
-The below steps describes to add scroller component with above cloned seed application.
+The below steps describes to add Scroller component with above cloned seed application.
 
 ### Syncfusion JavaScript components source configuration and sample creation
 
@@ -38,6 +38,8 @@ The below steps describes to add scroller component with above cloned seed appli
 {% endhighlight %}
 
 N> `core.ts` file is mandatory for all Syncfusion JavaScript Angular 2 components. The repository having the source file from Essential Studio for JavaScript v14.3.0.49.
+
+
 
 * Create `scroller` folder inside `src/app` folder.
 
@@ -157,9 +159,9 @@ npm start
 
 N> if you want to use other port, open `package.json` file, then change port in `--port 3000` script and also change the port in `config/webpack.dev.js`.
 
-![](Getting-Started_images/Getting-Started_img1.jpeg)
+![](Getting_Started_images/Getting-Started_img1.png)
 
-## Create Scroller in Angular2 Application using SystemJS  
+## Create Scroller in Angular 2 Application using SystemJS  
 
 To quick start with Syncfusion JavaScript Angular 2 components run the below commands to clone the repository for [SystemJS starter](https://github.com/syncfusion/angular2-seeds/tree/systemjs) and installing required dependency packages.
 
@@ -173,7 +175,7 @@ To quick start with Syncfusion JavaScript Angular 2 components run the below com
 
 {% endhighlight %}
 
-The below steps describes to add scroller component with above cloned seed application.
+The below steps describes to add Scroller component with above cloned seed application.
 
 ### Syncfusion JavaScript components source configuration and sample creation
 
@@ -301,5 +303,5 @@ npm start
 
 * Browse to [http://localhost:3000](http://localhost:3000) to see the application. And navigate to Scroller tab. The component is rendered as like the below screenshot. You can make changes in the code found under src folder and the browser should auto-refresh itself while you save files. 
 
-![](Getting-Started_images/Getting-Started_img1.png)
+![](Getting_Started_images/Getting-Started_img1.png)
 

@@ -34,17 +34,22 @@ documentation: ug
 
 {% highlight html %}
 
- <ej-lineargauge id="LinearGauge1" [enableAnimation]="false"  frame.backgroundImageUrl="../images/gauge/Gauge_linear_light.png">
+ <ej-lineargauge id="LinearGauge1" [enableAnimation]="false"  
+           frame.backgroundImageUrl="../images/gauge/Gauge_linear_light.png">
    <e-scales>
-        <e-scale backgroundColor="grey" [width]="8" [labels]="labels" [showCustomLabels]="true" [showMarkerPointers]="true" [showBarPointers]="true"
-                                           [position]="{ x: 20, y: 50 }" [border]="{ color: 'grey', width: 1 }">
+        <e-scale backgroundColor="grey" [width]="8" [labels]="labels" [showCustomLabels]="true"
+                             [showMarkerPointers]="true" [showBarPointers]="true"
+                             [position]="{ x: 20, y: 50 }" [border]="{ color: 'grey', width: 1 }">
           <e-markerpointers>
-              <e-markerpointer type="pentagon" placement="near" [width]="20" backgroundColor="#FE8282" [length]=10 placement="near" [distanceFromScale]=20 >
+              <e-markerpointer type="pentagon" placement="near" [width]="20" backgroundColor="#FE8282"
+                                               [length]=10 placement="near" [distanceFromScale]=20 >
               </e-markerpointer>
            </e-markerpointers>	
           <e-ticks>
-               <e-tick type="majorinterval" [width]=2 color="#8c8c8c" [distanceFromScale]="{ x: 30, y: 0 }"></e-tick>
-               <e-tick type="minorinterval" [width]=1 [height]=6 color="#8c8c8c" [distanceFromScale]="{ x: 30, y: 0 }"></e-tick>
+               <e-tick type="majorinterval" [width]=2 color="#8c8c8c" 
+                         [distanceFromScale]="{ x: 30, y: 0 }"></e-tick>
+               <e-tick type="minorinterval" [width]=1 [height]=6 color="#8c8c8c" 
+                                           [distanceFromScale]="{ x: 30, y: 0 }"></e-tick>
           </e-ticks>
         </e-scale>
    </e-scales>
@@ -54,8 +59,8 @@ documentation: ug
 
 {% highlight ts %}
 
-        // For Adding label collection
-        this.labels= [{ distanceFromScale: { x: 50, y: 0 } }];
+// For Adding label collection
+this.labels= [{ distanceFromScale: { x: 50, y: 0 } }];
 
 {% endhighlight %}
 
@@ -78,17 +83,22 @@ Execute the above code to render the following output.
 
 {% highlight html %}
 
- <ej-lineargauge id="LinearGauge1" [enableAnimation]="false"  frame.backgroundImageUrl="../images/gauge/Gauge_linear_light.png">
+ <ej-lineargauge id="LinearGauge1" [enableAnimation]="false"  
+            frame.backgroundImageUrl="../images/gauge/Gauge_linear_light.png">
    <e-scales>
-        <e-scale backgroundColor="#FE8282" [width]="8" [labels]="labels" type="roundedrectangle" [opacity]=0.5 [shadowOffset]=10 [showCustomLabels]="true"
-                                   [showMarkerPointers]="true" [showBarPointers]="false" [position]="{ x: 20, y: 50 }" [border]="{ color: 'red', width: 1 }">
+        <e-scale backgroundColor="#FE8282" [width]="8" [labels]="labels" type="roundedrectangle"
+                 [opacity]=0.5 [shadowOffset]=10 [showCustomLabels]="true" 
+                 [showMarkerPointers]="true" [showBarPointers]="false" [position]="{ x: 20, y: 50 }"
+                  [border]="{ color: 'red', width: 1 }">
           <e-markerpointers>
-              <e-markerpointer type="pentagon" placement="near" [width]="20" backgroundColor="#FE8282" [length]=10 placement="near" [distanceFromScale]=20 >
-              </e-markerpointer>
+              <e-markerpointer type="pentagon" placement="near" [width]="20" backgroundColor="#FE8282"
+               [length]=10 placement="near" [distanceFromScale]=20 ></e-markerpointer>
            </e-markerpointers>	
           <e-ticks>
-               <e-tick type="majorinterval" [width]=2 color="#8c8c8c" [distanceFromScale]="{ x: 30, y: 0 }"></e-tick>
-               <e-tick type="minorinterval" [width]=1 [height]=6 color="#8c8c8c" [distanceFromScale]="{ x: 30, y: 0 }"></e-tick>
+               <e-tick type="majorinterval" [width]=2 color="#8c8c8c" 
+                          [distanceFromScale]="{ x: 30, y: 0 }"></e-tick>
+               <e-tick type="minorinterval" [width]=1 [height]=6 color="#8c8c8c" 
+                                  [distanceFromScale]="{ x: 30, y: 0 }"></e-tick>
           </e-ticks>
         </e-scale>
    </e-scales>
@@ -98,8 +108,8 @@ Execute the above code to render the following output.
 
 {% highlight ts %}
 
-         // For Adding label collection
-        this.labels= [{ distanceFromScale: { x: 50, y: 0 } }];
+// For Adding label collection
+this.labels= [{ distanceFromScale: { x: 50, y: 0 } }];
 
 {% endhighlight %}
 
@@ -120,18 +130,24 @@ Execute the above code to render the following output.
 
 {% highlight html %}
 
- <ej-lineargauge id="LinearGauge1" [enableAnimation]="false"  frame.backgroundImageUrl="../images/gauge/Gauge_linear_light.png">
+ <ej-lineargauge id="LinearGauge1" [enableAnimation]="false"  
+                      frame.backgroundImageUrl="../images/gauge/Gauge_linear_light.png">
    <e-scales>
-        <e-scale backgroundColor="grey" [minimum]=10 [maximum]=210 [majorIntervalValue]=50 [minorIntervalValue]=25 direction="clockwise" [width]="18" 
-                                         [labels]="labels" type="roundedrectangle" [opacity]=0.5 [shadowOffset]=10 [showCustomLabels]="true"
-                                         [showMarkerPointers]="true" [showBarPointers]="false"[position]="{ x: 20, y: 50 }" [border]="{ color: 'grey', width: 1 }">
+        <e-scale backgroundColor="grey" [minimum]=10 [maximum]=210 [majorIntervalValue]=50
+                    [minorIntervalValue]=25 direction="clockwise" [width]="18"  [labels]="labels" 
+                    type="roundedrectangle" [opacity]=0.5 [shadowOffset]=10 [showCustomLabels]="true"
+                    [showMarkerPointers]="true" [showBarPointers]="false"[position]="{ x: 20, y: 50 }"
+                     [border]="{ color: 'grey', width: 1 }">
           <e-markerpointers>
-              <e-markerpointer type="pentagon" placement="near" [width]="20" backgroundColor="#FE8282" [length]=10 placement="near" [distanceFromScale]=20 >
+              <e-markerpointer type="pentagon" placement="near" [width]="20" backgroundColor="#FE8282"
+               [length]=10 placement="near" [distanceFromScale]=20 >
               </e-markerpointer>
            </e-markerpointers>	
           <e-ticks>
-               <e-tick type="majorinterval" [width]=2 color="#8c8c8c" [distanceFromScale]="{ x: 30, y: 0 }"></e-tick>
-               <e-tick type="minorinterval" [width]=1 [height]=6 color="#8c8c8c" [distanceFromScale]="{ x: 30, y: 0 }"></e-tick>
+               <e-tick type="majorinterval" [width]=2 color="#8c8c8c" 
+                               [distanceFromScale]="{ x: 30, y: 0 }"></e-tick>
+               <e-tick type="minorinterval" [width]=1 [height]=6 color="#8c8c8c" 
+                                        [distanceFromScale]="{ x: 30, y: 0 }"></e-tick>
           </e-ticks>
         </e-scale>
    </e-scales>
@@ -141,8 +157,8 @@ Execute the above code to render the following output.
 
 {% highlight ts %}
  
-        //Adding label collection
-        this.labels= [{ distanceFromScale: { x: 50, y: 0 } }];
+//Adding label collection
+this.labels= [{ distanceFromScale: { x: 50, y: 0 } }];
 
 {% endhighlight %}
 
@@ -170,17 +186,22 @@ For rectangular scale type, the scale renders with rectangular structure. Refer 
 
 {% highlight html %}
 
- <ej-lineargauge id="LinearGauge1" [enableAnimation]="false"  frame.backgroundImageUrl="../images/gauge/Gauge_linear_light.png">
+ <ej-lineargauge id="LinearGauge1" [enableAnimation]="false"  
+                         frame.backgroundImageUrl="../images/gauge/Gauge_linear_light.png">
    <e-scales>
-        <e-scale backgroundColor="#C0B08E" [width]="18" type="rectangle" [length]=300 [showCustomLabels]="true"
-                                         [showMarkerPointers]="true" [showBarPointers]="false"[position]="{ x: 54, y: 50 }" [border]="{ color: '#C0B08E', width: 1 }">
+        <e-scale backgroundColor="#C0B08E" [width]="18" type="rectangle" [length]=300 
+                [showCustomLabels]="true" [showMarkerPointers]="true" [showBarPointers]="false" 
+                [position]="{ x: 54, y: 50 }" [border]="{ color: '#C0B08E', width: 1 }">
           <e-markerpointers>
-              <e-markerpointer type="pentagon" placement="near" [width]="20" backgroundColor="#FE8282" [length]=10 placement="near" [distanceFromScale]=20 >
+              <e-markerpointer type="pentagon" placement="near" [width]="20" backgroundColor="#FE8282"
+                                           [length]=10 placement="near" [distanceFromScale]=20 >
               </e-markerpointer>
            </e-markerpointers>	
           <e-ticks>
-               <e-tick type="majorinterval" [width]=2 color="#206BA4" placement="far" [distanceFromScale]="{ x: -27, y: 0 }"></e-tick>
-               <e-tick type="minorinterval" [width]=1 [height]=6 color="#206BA4" placement="far" [distanceFromScale]="{ x: -27, y: 0 }"></e-tick>
+               <e-tick type="majorinterval" [width]=2 color="#206BA4" placement="far" 
+                                     [distanceFromScale]="{ x: -27, y: 0 }"></e-tick>
+               <e-tick type="minorinterval" [width]=1 [height]=6 color="#206BA4" placement="far"
+                                     [distanceFromScale]="{ x: -27, y: 0 }"></e-tick>
           </e-ticks>
         </e-scale>
    </e-scales>
@@ -202,17 +223,22 @@ For rounded rectangular scale type, the scale renders as rectangular structure b
 
 {% highlight html %}
 
- <ej-lineargauge id="LinearGauge1" [enableAnimation]="false"  frame.backgroundImageUrl="../images/gauge/Gauge_linear_light.png">
+ <ej-lineargauge id="LinearGauge1" [enableAnimation]="false"  
+                                   frame.backgroundImageUrl="../images/gauge/Gauge_linear_light.png">
    <e-scales>
-        <e-scale backgroundColor="#C0B08E" [width]="18" type="roundedrectangle" [length]=300 [showCustomLabels]="true"
-                                         [showMarkerPointers]="true" [showBarPointers]="false"[position]="{ x: 54, y: 50 }" [border]="{ color: '#C0B08E', width: 1 }">
+        <e-scale backgroundColor="#C0B08E" [width]="18" type="roundedrectangle" 
+                  [length]=300 [showCustomLabels]="true" [showMarkerPointers]="true" 
+                   [showBarPointers]="false"[position]="{ x: 54, y: 50 }" 
+                    [border]="{ color: '#C0B08E', width: 1 }">
           <e-markerpointers>
-              <e-markerpointer type="pentagon" placement="near" [width]="20" backgroundColor="#FE8282" [length]=10 placement="near" [distanceFromScale]=20 >
-              </e-markerpointer>
+              <e-markerpointer type="pentagon" placement="near" [width]="20" backgroundColor="#FE8282"
+                [length]=10 placement="near" [distanceFromScale]=20 > </e-markerpointer>
            </e-markerpointers>	
           <e-ticks>
-               <e-tick type="majorinterval" [width]=2 color="#206BA4" placement="far" [distanceFromScale]="{ x: -27, y: 0 }"></e-tick>
-               <e-tick type="minorinterval" [width]=1 [height]=6 color="#206BA4" placement="far" [distanceFromScale]="{ x: -27, y: 0 }"></e-tick>
+               <e-tick type="majorinterval" [width]=2 color="#206BA4" placement="far" 
+                                          [distanceFromScale]="{ x: -27, y: 0 }"></e-tick>
+               <e-tick type="minorinterval" [width]=1 [height]=6 color="#206BA4" placement="far" 
+                                                  [distanceFromScale]="{ x: -27, y: 0 }"></e-tick>
           </e-ticks>
         </e-scale>
    </e-scales>
@@ -233,17 +259,22 @@ For thermometer scale type, the scale renders as thermometer structure with roun
 
 {% highlight html %}
 
- <ej-lineargauge id="LinearGauge1" [enableAnimation]="false"  frame.backgroundImageUrl="../images/gauge/Gauge_linear_light.png">
+ <ej-lineargauge id="LinearGauge1" [enableAnimation]="false"  
+                      frame.backgroundImageUrl="../images/gauge/Gauge_linear_light.png">
    <e-scales>
-        <e-scale backgroundColor="#C0B08E" [width]="18" type="thermometer" [length]=300 [showCustomLabels]="true"
-                                         [showMarkerPointers]="true" [showBarPointers]="false"[position]="{ x: 54, y: 50 }" [border]="{ color: '#C0B08E', width: 1 }">
+        <e-scale backgroundColor="#C0B08E" [width]="18" type="thermometer" [length]=300 
+                [showCustomLabels]="true" [showMarkerPointers]="true" [showBarPointers]="false" 
+                [position]="{ x: 54, y: 50 }" [border]="{ color: '#C0B08E', width: 1 }">
           <e-markerpointers>
-              <e-markerpointer type="pentagon" placement="near" [width]="20" backgroundColor="#FE8282" [length]=10 placement="near" [distanceFromScale]=20 >
+              <e-markerpointer type="pentagon" placement="near" [width]="20"  
+              backgroundColor="#FE8282" [length]=10 placement="near" [distanceFromScale]=20 >
               </e-markerpointer>
            </e-markerpointers>	
           <e-ticks>
-               <e-tick type="majorinterval" [width]=2 color="#206BA4" placement="far" [distanceFromScale]="{ x: -27, y: 0 }"></e-tick>
-               <e-tick type="minorinterval" [width]=1 [height]=6 color="#206BA4" placement="far" [distanceFromScale]="{ x: -27, y: 0 }"></e-tick>
+               <e-tick type="majorinterval" [width]=2 color="#206BA4" placement="far"
+                [distanceFromScale]="{ x: -27, y: 0 }"></e-tick>
+               <e-tick type="minorinterval" [width]=1 [height]=6 color="#206BA4"
+                placement="far" [distanceFromScale]="{ x: -27, y: 0 }"></e-tick>
           </e-ticks>
         </e-scale>
    </e-scales>
@@ -262,28 +293,39 @@ You can set multiple scales for a single **Linear Gauge** control by using an ar
 
 {% highlight html %}
 
- <ej-lineargauge id="LinearGauge1" [enableAnimation]="false"  frame.backgroundImageUrl="../images/gauge/Gauge_linear_light.png">
+ <ej-lineargauge id="LinearGauge1" [enableAnimation]="false"  
+                              frame.backgroundImageUrl="../images/gauge/Gauge_linear_light.png">
    <e-scales>
-        <e-scale backgroundColor="Grey" [width]="18" type="rectangle" [length]=300 [showCustomLabels]="true" [labels]="labels"
-                                         [showMarkerPointers]="true" [showBarPointers]="false"[position]="{ x: 15, y: 50 }" [border]="{ color: 'Grey', width: 1 }">
+        <e-scale backgroundColor="Grey" [width]="18" type="rectangle" [length]=300
+                   [showCustomLabels]="true" [labels]="labels" [showMarkerPointers]="true"
+                   [showBarPointers]="false"[position]="{ x: 15, y: 50 }" 
+                                            [border]="{ color: 'Grey', width: 1 }">
           <e-markerpointers>
-              <e-markerpointer type="pentagon" placement="near" [width]="20" backgroundColor="#FE8282" [length]=10 placement="near" [distanceFromScale]=20 >
+              <e-markerpointer type="pentagon" placement="near" [width]="20" backgroundColor="#FE8282"
+                                          [length]=10 placement="near" [distanceFromScale]=20 >
               </e-markerpointer>
            </e-markerpointers>	
           <e-ticks>
-               <e-tick type="majorinterval" [width]=2 color="#206BA4" placement="far" [distanceFromScale]="{ x: 30, y: 0 }"></e-tick>
-               <e-tick type="minorinterval" [width]=1 [height]=6 color="#206BA4" placement="far" [distanceFromScale]="{ x: 30, y: 0 }"></e-tick>
+               <e-tick type="majorinterval" [width]=2 color="#206BA4" placement="far"
+                                         [distanceFromScale]="{ x: 30, y: 0 }"></e-tick>
+               <e-tick type="minorinterval" [width]=1 [height]=6 color="#206BA4"
+                             placement="far" [distanceFromScale]="{ x: 30, y: 0 }"></e-tick>
           </e-ticks>
         </e-scale>
-        <e-scale backgroundColor="#206BA4" [width]="8" type="roundedrectangle" [showMarkerPointers]="false" [showBarPointers]="false" direction="clockwise"
-                                                                  [position]="{ x: 90, y: 50 }" [border]="{ color: '#206BA4', width: 1 }">
+        <e-scale backgroundColor="#206BA4" [width]="8" type="roundedrectangle"
+           [showMarkerPointers]="false" [showBarPointers]="false" direction="clockwise"
+                [position]="{ x: 90, y: 50 }" [border]="{ color: '#206BA4', width: 1 }">
           <e-ticks>
-               <e-tick type="majorinterval" [width]=2 color="#206BA4" placement="far" [distanceFromScale]="{ x: -27, y: 0 }"></e-tick>
-               <e-tick type="minorinterval" [width]=1 [height]=6 color="#206BA4" placement="far" [distanceFromScale]="{ x: -27, y: 0 }"></e-tick>
+               <e-tick type="majorinterval" [width]=2 color="#206BA4" placement="far"
+                                    [distanceFromScale]="{ x: -27, y: 0 }"></e-tick>
+               <e-tick type="minorinterval" [width]=1 [height]=6 color="#206BA4"
+                            placement="far" [distanceFromScale]="{ x: -27, y: 0 }"></e-tick>
           </e-ticks>
         </e-scale>
-        <e-scale backgroundColor="#C0B08E" [width]="18" [length]=300 [showLabels]="false" [showTicks]="false" type="thermometer" [showMarkerPointers]="false" [showBarPointers]="false" direction="clockwise"
-                                                                  [position]="{ x:54, y: 50 }" [border]="{ color: '#C0B08E', width: 1 }">
+        <e-scale backgroundColor="#C0B08E" [width]="18" [length]=300 [showLabels]="false"
+                [showTicks]="false" type="thermometer" [showMarkerPointers]="false" 
+                      [showBarPointers]="false" direction="clockwise" [position]="{ x:54, y: 50 }"
+                      [border]="{ color: '#C0B08E', width: 1 }">
         </e-scale>
    </e-scales>
 </ej-lineargauge>
@@ -293,8 +335,8 @@ You can set multiple scales for a single **Linear Gauge** control by using an ar
 
 {% highlight ts %}
 
-        //Adding label collection
-        this.labels= [{ distanceFromScale: { x: 50, y: 0 } }];
+//Adding label collection
+this.labels= [{ distanceFromScale: { x: 50, y: 0 } }];
 
 {% endhighlight %}
 

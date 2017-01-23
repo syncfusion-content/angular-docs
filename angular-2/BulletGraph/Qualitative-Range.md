@@ -11,20 +11,20 @@ documentation: ug
 
 **Qualitative Range** represents the quality of a specific range in quantitative scale like good, bad and satisfactory. Color for each qualitative range is customized using **rangeStroke** property. The **rangeEnd** property specifies the ending point of the qualitative range. Minimum value of quantitative scale is considered as the starting point of first qualitative range and previous end points are considered as starting point for other qualitative ranges.
 
-{% highlight javascript %}
+{% highlight ts %}
 
 
-                    this.quantitativeScale= {
-                        location: { x: 50, y: 20 },
-                        minimum: 0,
-                        maximum: 100,
-                        interval: 10,
-                        featureMeasures: [
-                            { value: 55, comparativeMeasureValue: 75, category: "Year 1" },
-                            { value: 65, comparativeMeasureValue: 70, category: "Year 2" },
-                            { value: 80, comparativeMeasureValue: 65, category: "Year 3" }
-                        ]
-                    };
+this.quantitativeScale = {
+    location: { x: 50, y: 20 },
+    minimum: 0,
+    maximum: 100,
+    interval: 10,
+    featureMeasures: [
+        { value: 55, comparativeMeasureValue: 75, category: "Year 1" },
+        { value: 65, comparativeMeasureValue: 70, category: "Year 2" },
+        { value: 80, comparativeMeasureValue: 65, category: "Year 3" }
+    ]
+};
 
 {% endhighlight %}
 

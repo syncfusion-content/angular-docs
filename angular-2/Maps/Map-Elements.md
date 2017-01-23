@@ -27,31 +27,31 @@ The `markers` property has a list of objects that contains the data for Annotati
 
 {% highlight ts %}
 
-    var markers = [
-        { latitude: 37.0000, longitude: -120.0000, city: "California" },
-        { latitude: 40.7127, longitude: -74.0059, city: "New York" },
-        { latitude: 42, longitude: -93, city: "Iowa" }            
-    ];
-      
-            this.mapLayers= [{
-                // ...                        
-                markers: markers,
-                markerTemplate: 'template'
-            }];
+var markers = [
+    { latitude: 37.0000, longitude: -120.0000, city: "California" },
+    { latitude: 40.7127, longitude: -74.0059, city: "New York" },
+    { latitude: 42, longitude: -93, city: "Iowa" }
+];
+
+this.mapLayers = [{
+    // ...                        
+    markers: markers,
+    markerTemplate: 'template'
+}];
 
 {% endhighlight %}
 
 {% highlight html %}
 
-    <div  id="template" style="display: none;">
+<div  id="template" style="display: none;">
         <div>
             <div  style="background-image:url(http://js.syncfusion.com/demos/web/Images/map/pin.png);margin-left:3px;height:40px;width:25px;margin-top:-15px;">
 	   	   </div>
         </div>
-    </div>  
+</div>  
 
-    <ej-map id="mapcontrol" [layers]="mapLayers">
-    </ej-map>
+<ej-map id="mapcontrol" [layers]="mapLayers">
+</ej-map>
 
 {% endhighlight %}
 
@@ -69,32 +69,33 @@ Without datasource, n number of markers can be added to shape layers with `marke
 
 {% highlight ts %}
 
-    var markers = [
-        { latitude: 37.0000, longitude: -120.0000, city: "California" },
-        { latitude: 40.7127, longitude: -74.0059, city: "New York" },
-        { latitude: 42, longitude: -93, city: "Iowa" }            
-    ];
+var markers = [
+    { latitude: 37.0000, longitude: -120.0000, city: "California" },
+    { latitude: 40.7127, longitude: -74.0059, city: "New York" },
+    { latitude: 42, longitude: -93, city: "Iowa" }
+];
 
-            this.mapLayers= [{
-                // ...                        
-                markers: markers,
-                markerTemplate: 'template'
-            }];
+this.mapLayers = [{
+    // ...                        
+    markers: markers,
+    markerTemplate: 'template'
+}];
 
 {% endhighlight %}
 
 {% highlight html %}
 
-    <div  id="template" style="display: none;">
+<div  id="template" style="display: none;">
         <div>
             <div style="margin-left:8px;height:45px;width:120px;margin-top:-23px;">					
-	           <label class="label1" style="color:black;margin-left:15px;font-weight:normal">{{:city}}</label>				 			 
+	           <label class="label1" style="color:black;margin-left:15px;font-weight:normal">{{:city}}
+               </label>				 			 
 	        </div>
         </div>
-    </div>  
+</div>  
 
-    <ej-map id="mapcontrol" [layers]="mapLayers">
-    </ej-map>
+<ej-map id="mapcontrol" [layers]="mapLayers">
+</ej-map>
 
 {% endhighlight %}
 
@@ -168,36 +169,36 @@ N> Tooltip and Color Mappings for bubble is to be set as similar to the tooltip 
 
 {% highlight ts %}
 
-            this.mapLayers= [{
-                shapeData: usMap,
-                shapeDataPath: "name",
-                shapePropertyPath: "name",
-                dataSource: [
-                    { name: "California", population: "38332521" },
-                    { name: "New York", population: "19651127" },
-                    { name: "Iowa", population: "3090416" }
-                ],
-                enableMouseHover: true,
-                shapeSettings: {
-                    fill: "#9CBF4E",
-                    strokeThickness: "0.5",
-                    stroke: "White"
-                },
-                bubbleSettings: {
-                    showBubble:true,
-                    minValue: "20",
-                    maxValue: "40",
-                    color: "#C99639",
-                    valuePath: "population"
-                }
-            }];
+this.mapLayers = [{
+    shapeData: usMap,
+    shapeDataPath: "name",
+    shapePropertyPath: "name",
+    dataSource: [
+        { name: "California", population: "38332521" },
+        { name: "New York", population: "19651127" },
+        { name: "Iowa", population: "3090416" }
+    ],
+    enableMouseHover: true,
+    shapeSettings: {
+        fill: "#9CBF4E",
+        strokeThickness: "0.5",
+        stroke: "White"
+    },
+    bubbleSettings: {
+        showBubble: true,
+        minValue: "20",
+        maxValue: "40",
+        color: "#C99639",
+        valuePath: "population"
+    }
+}];
 
 {% endhighlight %}
 
 {% highlight html %}
 
-    <ej-map id="mapcontrol" [layers]="mapLayers">
-    </ej-map>
+<ej-map id="mapcontrol" [layers]="mapLayers">
+</ej-map>
 
 {% endhighlight %}
 
@@ -265,23 +266,23 @@ N> Here, Equal Color Mapping code sample for shapeSettings with color mappings i
 
 {% highlight ts %}
 
-            this.mapLayers= [{
-                // ...
-                legendSettings:{
-                    showLegend:true,
-                    position:"bottomleft",
-                    height: 30,
-                    width: 70,                         
-                },
-                // ...                        
-            }];
+this.mapLayers = [{
+    // ...
+    legendSettings: {
+        showLegend: true,
+        position: "bottomleft",
+        height: 30,
+        width: 70,
+    },
+    // ...                        
+}];
 
 {% endhighlight %}
 
 {% highlight html %}
 
-    <ej-map id="mapcontrol" [layers]="mapLayers">
-    </ej-map>
+<ej-map id="mapcontrol" [layers]="mapLayers">
+</ej-map>
 
 {% endhighlight %}
 
@@ -305,28 +306,28 @@ N> Here, Range Color Mapping code snippet for shapeSettings with color mappings 
 
 {% highlight ts %}
 
-            this.mapLayers= [{
-                // ...
-                legendSettings: {
-                    showLegend: true,
-                    dockOnMap:true,
-                    height: 15,
-                    width: 150,
-                    position: "topleft",
-                    mode: "interactive",
-                    title: "Population",
-                    leftLabel: "0.5M",
-                    rightLabel: "40M"
-                },
-                // ...                        
-            }];
+this.mapLayers = [{
+    // ...
+    legendSettings: {
+        showLegend: true,
+        dockOnMap: true,
+        height: 15,
+        width: 150,
+        position: "topleft",
+        mode: "interactive",
+        title: "Population",
+        leftLabel: "0.5M",
+        rightLabel: "40M"
+    },
+    // ...                        
+}];
 
 {% endhighlight %}
 
 {% highlight html %}
 
-    <ej-map id="mapcontrol" [layers]="mapLayers">
-    </ej-map>
+<ej-map id="mapcontrol" [layers]="mapLayers">
+</ej-map>
 
 {% endhighlight %}
 
@@ -338,59 +339,59 @@ A bubble legend feature is used to provide the key (legend) for another map elem
 
 {% highlight ts %}
 
-            this.mapLayers= [{
-                legendSettings: {
-                    // ...
-                    type: "bubbles",                            
-                    // ...
+this.mapLayers = [{
+    legendSettings: {
+        // ...
+        type: "bubbles",
+        // ...
+    },
+
+    bubbleSettings: {
+        showBubble: true,
+        valuePath: "population",
+        minValue: 20,
+        maxValue: 40,
+        colorMappings:
+        {
+            rangeColorMapping:
+            [
+                {
+                    from: 500000,
+                    to: 1000000,
+                    color: "#9CBF4E",
+                    range: 10688
                 },
-                
-                bubbleSettings: {
-                    showBubble:true,
-                    valuePath: "population",
-                    minValue: 20,
-                    maxValue: 40,	
-                    colorMappings:
-                    {
-                        rangeColorMapping:
-                        [
-                            {
-                                from: 500000,
-                                to: 1000000,
-                                color: "#9CBF4E",
-                                range: 10688
-                            },
-                            {
-                                from: 1000001,
-                                to: 5000000,
-                                color: "#45D6BD",
-                                range: 19390
-                            },
-                            {
-                                from: 5000001,
-                                to: 10000000,
-                                color: "#FF567C",
-                                range: 18718
-                            },
-                            {
-                                from: 10000001,
-                                to: 40000000,
-                                color: "#470F52",
-                                range: 30716
-                            }
-                        ],
-                    }                                
+                {
+                    from: 1000001,
+                    to: 5000000,
+                    color: "#45D6BD",
+                    range: 19390
                 },
-                shapeData: usMap
+                {
+                    from: 5000001,
+                    to: 10000000,
+                    color: "#FF567C",
+                    range: 18718
+                },
+                {
+                    from: 10000001,
+                    to: 40000000,
+                    color: "#470F52",
+                    range: 30716
                 }
-            ];
+            ],
+        }
+    },
+    shapeData: usMap
+}
+];
 
 {% endhighlight %}
 
 {% highlight html %}
 
-    <ej-map id="mapcontrol" [layers]="mapLayers">
-    </ej-map>
+<ej-map id="mapcontrol" [layers]="mapLayers">
+</ej-map>
 
 {% endhighlight %}
 

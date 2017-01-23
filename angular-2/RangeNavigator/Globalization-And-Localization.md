@@ -36,8 +36,8 @@ ej.datavisualization.RangeNavigator.locale["fr-FR"] = {
 
 {% highlight html %}
 
-  <ej-rangenavigator id="rangecontainer" locale="fr-FR">
-  </ej-rangenavigator>
+<ej-rangenavigator id="rangecontainer" locale="fr-FR">
+</ej-rangenavigator>
 
 {% endhighlight %}
 
@@ -49,8 +49,8 @@ ej.datavisualization.RangeNavigator.locale["fr-FR"] = {
 
 {% highlight html %}
 
-  <ej-rangenavigator id="rangecontainer" [enableRTL]="true">
-  </ej-rangenavigator>
+<ej-rangenavigator id="rangecontainer" [enableRTL]="true">
+</ej-rangenavigator>
 
 {% endhighlight %}
 

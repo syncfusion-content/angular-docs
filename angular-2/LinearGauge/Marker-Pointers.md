@@ -29,8 +29,10 @@ You can add **Marker Pointer** collection directly to the scale object. To add p
               </e-markerpointer>
            </e-markerpointers>	
           <e-ticks>
-               <e-tick type="majorinterval" [width]=2 color="#8c8c8c" [distanceFromScale]="{ x: 7, y: 0 }"></e-tick>
-               <e-tick type="minorinterval" [width]=1 [height]=6 color="#8c8c8c" [distanceFromScale]="{ x: 7, y: 0 }"></e-tick>
+               <e-tick type="majorinterval" [width]=2 color="#8c8c8c" 
+                                       [distanceFromScale]="{ x: 7, y: 0 }"></e-tick>
+               <e-tick type="minorinterval" [width]=1 [height]=6 color="#8c8c8c" 
+                                       [distanceFromScale]="{ x: 7, y: 0 }"></e-tick>
           </e-ticks>
         </e-scale>
      </e-scales>
@@ -50,17 +52,22 @@ The **value** property is the important element in the marker pointer collection
 
 {% highlight html %}
 
- <ej-lineargauge id="LinearGauge1"  [height]="150" [width]="600" [value]="31" [enableAnimation]=false theme="flatlight" 
-                       orientation="Horizontal" labelColor="black" [isResponsive]="true" frame.backgroundImageUrl="../images/gauge/Gauge_linear_light.png" >
+ <ej-lineargauge id="LinearGauge1"  [height]="150" [width]="600" [value]="31" [enableAnimation]=false
+                    theme="flatlight" orientation="Horizontal" labelColor="black" [isResponsive]="true" 
+                                     frame.backgroundImageUrl="../images/gauge/Gauge_linear_light.png">
    <e-scales>
-        <e-scale backgroundColor="#AEC75F" direction="clockwise" [labels]="labels" type="roundedrectangle" [border]="{ color: '#AEC75F', width:30 }">           
+        <e-scale backgroundColor="#AEC75F" direction="clockwise" [labels]="labels"
+                 type="roundedrectangle" [border]="{ color: '#AEC75F', width:30 }">           
           <e-markerpointers>
-              <e-markerpointer  [width]="30" backgroundColor="#FE5C09" [value]=67.5 [distanceFromScale]=20 placement="near" [length]=30>
+              <e-markerpointer  [width]="30" backgroundColor="#FE5C09" [value]=67.5 [distanceFromScale]=20
+                                placement="near" [length]=30>
               </e-markerpointer>
            </e-markerpointers>	
           <e-ticks>
-               <e-tick type="majorinterval" [width]=2 color="#8c8c8c" [distanceFromScale]="{ x: 45, y: -1 }"></e-tick>
-               <e-tick type="minorinterval" [width]=1 [height]=6 color="#8c8c8c" [distanceFromScale]="{ x: 45, y: -1 }"></e-tick>
+               <e-tick type="majorinterval" [width]=2 color="#8c8c8c" 
+                            [distanceFromScale]="{ x: 45, y: -1 }"></e-tick>
+               <e-tick type="minorinterval" [width]=1 [height]=6 color="#8c8c8c" 
+                                   [distanceFromScale]="{ x: 45, y: -1 }"></e-tick>
           </e-ticks>
         </e-scale>
      </e-scales>
@@ -70,8 +77,8 @@ The **value** property is the important element in the marker pointer collection
 
 {% highlight ts %}
 
-                //Adding label collection
-                this.labels= [{ angle: 90, distanceFromScale: { x: 0, y: 100 } }];
+  //Adding label collection
+  this.labels= [{ angle: 90, distanceFromScale: { x: 0, y: 100 } }];
 
 
 {% endhighlight %}
@@ -93,17 +100,22 @@ Execute the above code to render the following output.
 
 {% highlight html %}
 
- <ej-lineargauge id="LinearGauge1"  [height]="150" [width]="600" [value]="31" [enableAnimation]=false theme="flatlight" 
-                       orientation="Horizontal" labelColor="black" [isResponsive]="true" frame.backgroundImageUrl="../images/gauge/Gauge_linear_light.png" >
+ <ej-lineargauge id="LinearGauge1"  [height]="150" [width]="600" [value]="31" [enableAnimation]=false
+                 theme="flatlight" orientation="Horizontal" labelColor="black" [isResponsive]="true" 
+                 frame.backgroundImageUrl="../images/gauge/Gauge_linear_light.png" >
    <e-scales>
-        <e-scale backgroundColor="#AEC75F" direction="clockwise" [labels]="labels" type="roundedrectangle" [border]="{ color: '#AEC75F', width:30 }">           
+        <e-scale backgroundColor="#AEC75F" direction="clockwise" [labels]="labels" 
+                 type="roundedrectangle" [border]="{ color: '#AEC75F', width:30 }">           
           <e-markerpointers>
-              <e-markerpointer  [width]="30" backgroundColor="#FCDD34" [value]=67.5 [distanceFromScale]=20 placement="near" [opacity]=0.4 [length]=30>
+              <e-markerpointer  [width]="30" backgroundColor="#FCDD34" [value]=67.5 
+                   [distanceFromScale]=20 placement="near" [opacity]=0.4 [length]=30>
               </e-markerpointer>
            </e-markerpointers>	
           <e-ticks>
-               <e-tick type="majorinterval" [width]=2 color="#8c8c8c" [distanceFromScale]="{ x: 45, y: -1 }"></e-tick>
-               <e-tick type="minorinterval" [width]=1 [height]=6 color="#8c8c8c" [distanceFromScale]="{ x: 45, y: -1 }"></e-tick>
+               <e-tick type="majorinterval" [width]=2 color="#8c8c8c" 
+                       [distanceFromScale]="{ x: 45, y: -1 }"></e-tick>
+               <e-tick type="minorinterval" [width]=1 [height]=6 color="#8c8c8c" 
+                                    [distanceFromScale]="{ x: 45, y: -1 }"></e-tick>
           </e-ticks>
         </e-scale>
      </e-scales>
@@ -113,8 +125,8 @@ Execute the above code to render the following output.
 
 {% highlight ts %}
 
-        //Adding label collection
-        this.labels= [{ angle: 90, distanceFromScale: { x: 0, y: 100 } }];
+  //Adding label collection
+  this.labels= [{ angle: 90, distanceFromScale: { x: 0, y: 100 } }];
 
 {% endhighlight %}
 
@@ -135,17 +147,22 @@ Execute the above code to render the following output.
 
 {% highlight html %}
 
- <ej-lineargauge id="LinearGauge1"  [height]="150" [width]="600" [value]="31" [enableAnimation]=false theme="flatlight" 
-                       orientation="Horizontal" labelColor="black" [isResponsive]="true" frame.backgroundImageUrl="../images/gauge/Gauge_linear_light.png" >
+ <ej-lineargauge id="LinearGauge1"  [height]="150" [width]="600" [value]="31" [enableAnimation]=false
+                 theme="flatlight" orientation="Horizontal" labelColor="black" [isResponsive]="true" 
+                  frame.backgroundImageUrl="../images/gauge/Gauge_linear_light.png" >
    <e-scales>
-        <e-scale backgroundColor="#AEC75F" direction="clockwise" [labels]="labels" type="roundedrectangle" [border]="{ color: '#AEC75F', width:30 }">           
+        <e-scale backgroundColor="#AEC75F" direction="clockwise" [labels]="labels" 
+                         type="roundedrectangle" [border]="{ color: '#AEC75F', width:30 }">           
           <e-markerpointers>
-              <e-markerpointer  [width]="30" [height]=8 backgroundColor="#01A357" [value]=55.5 [distanceFromScale]=60 placement="near" [opacity]=0.4 [length]=30>
+              <e-markerpointer  [width]="30" [height]=8 backgroundColor="#01A357" [value]=55.5 
+                                [distanceFromScale]=60 placement="near" [opacity]=0.4 [length]=30>
               </e-markerpointer>
            </e-markerpointers>	
           <e-ticks>
-               <e-tick type="majorinterval" [width]=2 color="#8c8c8c" [distanceFromScale]="{ x: 45, y: -1 }"></e-tick>
-               <e-tick type="minorinterval" [width]=1 [height]=6 color="#8c8c8c" [distanceFromScale]="{ x: 45, y: -1 }"></e-tick>
+               <e-tick type="majorinterval" [width]=2 color="#8c8c8c" 
+                             [distanceFromScale]="{ x: 45, y: -1 }"></e-tick>
+               <e-tick type="minorinterval" [width]=1 [height]=6 color="#8c8c8c" 
+                                   [distanceFromScale]="{ x: 45, y: -1 }"></e-tick>
           </e-ticks>
         </e-scale>
      </e-scales>
@@ -155,8 +172,8 @@ Execute the above code to render the following output.
 
 {% highlight ts %}
 
-        //Adding label collection
-        this.labels= [{ angle: 90, distanceFromScale: { x: 0, y: 100 } }];
+//Adding label collection
+this.labels= [{ angle: 90, distanceFromScale: { x: 0, y: 100 } }];
 
 {% endhighlight %}
 
@@ -199,21 +216,26 @@ It is possible to change the dimension of the marker pointer. Dimensions availab
 
 {% highlight html %}
 
- <ej-lineargauge id="LinearGauge1"  [height]="150" [width]="600" [value]="31" [enableAnimation]=false theme="flatlight" 
-                       orientation="Horizontal" labelColor="black" [isResponsive]="true" frame.backgroundImageUrl="../images/gauge/Gauge_linear_light.png" >
+ <ej-lineargauge id="LinearGauge1"  [height]="150" [width]="600" [value]="31" [enableAnimation]=false
+               theme="flatlight" orientation="Horizontal" labelColor="black" [isResponsive]="true" 
+                frame.backgroundImageUrl="../images/gauge/Gauge_linear_light.png" >
    <e-scales>
-        <e-scale backgroundColor="#AEC75F" direction="clockwise" [showCustomLabels]="true" [labels]="labels" [customLabels]="customLabels" type="roundedrectangle" [border]="{ color: '#AEC75F', width:30 }">           
+        <e-scale backgroundColor="#AEC75F" direction="clockwise" [showCustomLabels]="true" 
+          [labels]="labels" [customLabels]="customLabels" type="roundedrectangle" 
+           [border]="{ color: '#AEC75F', width:30 }">           
           <e-markerpointers>
-              <e-markerpointer [width]="30" [length]=30 backgroundColor="#01A357" [value]=32.2 [distanceFromScale]=60 placement="near">
-              </e-markerpointer>
-              <e-markerpointer [width]="10" [length]=30 backgroundColor="#90DAFB" [value]=23.7 [distanceFromScale]=60 placement="near" type="circle">
-              </e-markerpointer>
-              <e-markerpointer [width]="3" [length]=30 backgroundColor="#90DAFB" [value]=23.7 [distanceFromScale]=60 placement="near" type="star">
-              </e-markerpointer>
+              <e-markerpointer [width]="30" [length]=30 backgroundColor="#01A357" [value]=32.2 
+                                        [distanceFromScale]=60 placement="near"></e-markerpointer>
+              <e-markerpointer [width]="10" [length]=30 backgroundColor="#90DAFB" [value]=23.7 
+                              [distanceFromScale]=60 placement="near" type="circle"> </e-markerpointer>
+              <e-markerpointer [width]="3" [length]=30 backgroundColor="#90DAFB" [value]=23.7 
+                            [distanceFromScale]=60 placement="near" type="star"></e-markerpointer>
            </e-markerpointers>	
           <e-ticks>
-               <e-tick type="majorinterval" [width]=2 color="#8c8c8c" [distanceFromScale]="{ x: 45, y: -1 }"></e-tick>
-               <e-tick type="minorinterval" [width]=1 [height]=6 color="#8c8c8c" [distanceFromScale]="{ x: 45, y: -1 }"></e-tick>
+               <e-tick type="majorinterval" [width]=2 color="#8c8c8c" 
+                             [distanceFromScale]="{ x: 45, y: -1 }"></e-tick>
+               <e-tick type="minorinterval" [width]=1 [height]=6 color="#8c8c8c" 
+                                [distanceFromScale]="{ x: 45, y: -1 }"></e-tick>
           </e-ticks>
         </e-scale>
      </e-scales>
@@ -224,15 +246,15 @@ It is possible to change the dimension of the marker pointer. Dimensions availab
 {% highlight ts %}
 
          
-                // Adding label collection
-                this.labels= [{ angle: 90, distanceFromScale: { x: 0, y: 100 } }];
+// Adding label collection
+this.labels = [{ angle: 90, distanceFromScale: { x: 0, y: 100 } }];
 
-                // Adding custom label collection
-                this.customLabels= [{
-                    value: "Weather Condition in California", position: {
-                        x: 50, y: 20
-                    },
-                }];
+// Adding custom label collection
+this.customLabels = [{
+    value: "Weather Condition in California", position: {
+        x: 50, y: 20
+    },
+}];
 
 {% endhighlight %}
 

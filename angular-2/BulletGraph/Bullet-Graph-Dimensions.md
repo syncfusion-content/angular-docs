@@ -15,9 +15,9 @@ This section explains you on how to change the dimensions of the **Bullet Graph*
 
 {% highlight html %}
 
-   <ej-bulletgraph id="bullet1" [height]=100 [width]=500>         
+<ej-bulletgraph id="bullet1" [height]=100 [width]=500>         
           
-   </ej-bulletgraph>
+</ej-bulletgraph>
 
 {% endhighlight %}
 
@@ -33,9 +33,9 @@ The feature measure bar value is customized using the **value** property. Defaul
 
 {% highlight html %}
 
-   <ej-bulletgraph id="bullet1" [value]=5>         
+<ej-bulletgraph id="bullet1" [value]=5>         
           
-   </ej-bulletgraph>
+</ej-bulletgraph>
    
 {% endhighlight %}
 
@@ -51,9 +51,9 @@ The **Comparative measure value** is set using **comparativeMeasureValue** prope
 
 {% highlight html %}
 
-   <ej-bulletgraph id="bullet1" [comparativeMeasureValue]=5>         
+<ej-bulletgraph id="bullet1" [comparativeMeasureValue]=5>         
           
-   </ej-bulletgraph>
+</ej-bulletgraph>
 
 {% endhighlight %}
 
@@ -69,9 +69,9 @@ The following screenshot displays **Bullet Graph** with comparative measure valu
 
 {% highlight html %}
 
-   <ej-bulletgraph id="bullet1" theme="flatdark">         
+<ej-bulletgraph id="bullet1" theme="flatdark">         
           
-   </ej-bulletgraph>
+</ej-bulletgraph>
    
 {% endhighlight %}
 
@@ -85,9 +85,9 @@ Bullet Graph is oriented either horizontally or vertically using orientation pro
 
 {% highlight html %}
 
-   <ej-bulletgraph id="bullet1" [height]=550 [width]=100 orientation="vertical" flowDirection="backward">         
+<ej-bulletgraph id="bullet1" [height]=550 [width]=100 orientation="vertical" flowDirection="backward">         
           
-   </ej-bulletgraph>
+</ej-bulletgraph>
 
 {% endhighlight %}
 
@@ -97,9 +97,9 @@ The Flow direction of Bullet Graph is customized using flowDirection property. D
 
 {% highlight html %}
 
-   <ej-bulletgraph id="bullet1" [comparativeMeasureValue]=2 flowDirection="backward">         
+<ej-bulletgraph id="bullet1" [comparativeMeasureValue]=2 flowDirection="backward">         
           
-   </ej-bulletgraph>
+</ej-bulletgraph>
 
 {% endhighlight %}
 
@@ -113,9 +113,9 @@ Size of the Qualitative range is customized using qualitativeRangeSize property.
 
 {% highlight html %}
 
-   <ej-bulletgraph id="bullet1" [qualitativeRangeSize]=50>         
+<ej-bulletgraph id="bullet1" [qualitativeRangeSize]=50>         
           
-   </ej-bulletgraph>
+</ej-bulletgraph>
 
 {% endhighlight %}
 
@@ -131,9 +131,9 @@ Length of the **Quantitative****scale** is customized using **quantitativeScaleL
 
 {% highlight html %}
 
-   <ej-bulletgraph id="bullet1" [quantitativeScaleLength]=500>         
+<ej-bulletgraph id="bullet1" [quantitativeScaleLength]=500>         
           
-   </ej-bulletgraph>
+</ej-bulletgraph>
 
 {% endhighlight %}
 

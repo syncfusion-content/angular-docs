@@ -1,23 +1,23 @@
 ---
 layout: post
 title: Getting Started | TimePicker | Angular2 | Syncfusion
-description: getting started
-platform: angular2
+description: Getting started
+platform: Angular 2
 control: TimePicker
 documentation: ug
 ---
 
 # Getting Started
 
-This section explains you how to render and configure TimePicker component in an Angular2 application.
+This section explains you how to render and configure TimePicker component in an Angular 2 application.
 
 To get started with TimePicker component, refer the basic prerequisites and system configuration to be done form the given [getting started](#Getting-Started) document
 
-Once you have cloned the sample angular2 application as mentioned in getting started document, you will have an angular application named **angular2-seeds** and is now ready use our EJ components with it. 
+Once you have cloned the sample angular 2 application as mentioned in getting started document, you will have an angular application named **angular2-seeds** and is now ready use our EJ components with it. 
 
 ### Adding TimePicker source file
 
-Copy the required Angular2 source components file from the installed location and move it to the app/src/ej folder available inside the angular2-seeds folder.
+Copy the required Angular 2 source components file from the installed location and move it to the app/src/ej folder available inside the angular2-seeds folder.
 
 (Installed Location)\Syncfusion\Essential Studio\{installed version}\JavaScript\assets-src\angular2\ 
 
