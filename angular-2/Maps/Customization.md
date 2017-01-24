@@ -28,26 +28,26 @@ The above properties of `shapeSettings` are applied only when the `autoFill` pro
 
 {% highlight ts %}
 
-            this.mapLayers= [
-            {
-                shapeData: usMap,
-                enableMouseHover:true,
-                shapeSettings: {
-                    fill: "#9CBF4E",
-                    strokeThickness: "0.5",
-                    stroke: "White",
-                    highlightStroke: "White",
-                    highlightColor: "#BC5353",
-                    highlightBorderWidth: "1"
-                }
-            }];
+this.mapLayers = [
+{
+    shapeData: usMap,
+    enableMouseHover: true,
+    shapeSettings: {
+        fill: "#9CBF4E",
+        strokeThickness: "0.5",
+        stroke: "White",
+        highlightStroke: "White",
+        highlightColor: "#BC5353",
+        highlightBorderWidth: "1"
+    }
+}];
 
 {% endhighlight %}
 
 {% highlight html %}
 
-    <ej-map id="mapcontrol" [layers]="mapLayers">
-    </ej-map>
+<ej-map id="mapcontrol" [layers]="mapLayers">
+</ej-map>
 
 {% endhighlight %}
 
@@ -98,50 +98,50 @@ Gets or sets the start point and end point gradient colors to be applied for spe
 
 {% highlight ts %}
 
-            this.mapLayers= [{
-                shapeData: usMap,
-                shapeDataPath: "name",
-                shapePropertyPath: "name",
-                dataSource:populationData,
-                shapeSettings: {
-                    fill: "#9CBF4E",
-                    strokeThickness: "0.5",
-                    stroke: "White",
-                    valuePath: 'population',
-                    enableGradient: true,
-                    colorMappings:
-                    {
-                        rangeColorMapping: [
-                        {
-                            from: 500000,
-                            to: 1000000,
-                            gradientColors: ["#9CBF4E", "#B8CE7B"]
-                        },
-                        {
-                            from: 1000001,
-                            to: 5000000,
-                            gradientColors: ["#B8CE7B", "#CBD89A"]
-                        },
-                        {
-                            from: 5000001,
-                            to: 10000000,
-                            gradientColors: ["#CBD89A", "#DEE2B9"]
-                        },
-                        {
-                            from: 10000001,
-                            to: 40000000,
-                            gradientColors: ["#DEE2B9", "#F1ECD8"]
-                        }]
-                    }                                  
-                }
-            }];
+this.mapLayers = [{
+    shapeData: usMap,
+    shapeDataPath: "name",
+    shapePropertyPath: "name",
+    dataSource: populationData,
+    shapeSettings: {
+        fill: "#9CBF4E",
+        strokeThickness: "0.5",
+        stroke: "White",
+        valuePath: 'population',
+        enableGradient: true,
+        colorMappings:
+        {
+            rangeColorMapping: [
+            {
+                from: 500000,
+                to: 1000000,
+                gradientColors: ["#9CBF4E", "#B8CE7B"]
+            },
+            {
+                from: 1000001,
+                to: 5000000,
+                gradientColors: ["#B8CE7B", "#CBD89A"]
+            },
+            {
+                from: 5000001,
+                to: 10000000,
+                gradientColors: ["#CBD89A", "#DEE2B9"]
+            },
+            {
+                from: 10000001,
+                to: 40000000,
+                gradientColors: ["#DEE2B9", "#F1ECD8"]
+            }]
+        }
+    }
+}];
 
 {% endhighlight %}
 
 {% highlight html %}
 
-    <ej-map id="mapcontrol" [layers]="mapLayers">
-    </ej-map>
+<ej-map id="mapcontrol" [layers]="mapLayers">
+</ej-map>
 
 {% endhighlight %}
 
@@ -176,93 +176,93 @@ Here USA election data is considered as input datasource and stored in “electi
 
 {% highlight ts %}
        
-        var electionData = [
-            { State: "Alabama", Candidate: "Romney", Electors: 9 }, 
-            { State: "Alaska", Candidate: "Romney", Electors: 3 }, 
-            { State: "Arizona", Candidate: "Romney", Electors: 11 }, 
-            { State: "Arkansas", Candidate: "Romney", Electors: 6 }, 
-            { State: "California", Candidate: "Obama", Electors: 55 }, 
-            { State: "Colorado", Candidate: "Obama", Electors: 9 }, 
-            { State: "Connecticut", Candidate: "Obama", Electors: 7 }, 
-            { State: "Delaware", Candidate: "Obama", Electors: 3 }, 
-            { State: "District of Columbia", Candidate: "Obama", Electors: 3 }, 
-            { State: "Florida", Candidate: "Obama", Electors: 29 }, 
-            { State: "Georgia", Candidate: "Romney", Electors: 16 }, 
-            { State: "Hawaii", Candidate: "Obama", Electors: 4 }, 
-            { State: "Idaho", Candidate: "Romney", Electors: 4 }, 
-            { State: "Illinois", Candidate: "Obama", Electors: 20 }, 
-            { State: "Indiana", Candidate: "Romney", Electors: 11 }, 
-            { State: "Iowa", Candidate: "Obama", Electors: 6 }, 
-            { State: "Kansas", Candidate: "Romney", Electors: 6 }, 
-            { State: "Kentucky", Candidate: "Romney", Electors: 8 }, 
-            { State: "Louisiana", Candidate: "Romney", Electors: 8 },
-            { State: "Maine", Candidate: "Obama", Electors: 4 }, 
-            { State: "Maryland", Candidate: "Obama", Electors: 10 },     
-            { State: "Massachusetts", Candidate: "Obama", Electors: 11 }, 
-            { State: "Michigan", Candidate: "Obama", Electors: 16 }, 
-            { State: "Minnesota", Candidate: "Obama", Electors: 10 }, 
-            { State: "Mississippi", Candidate: "Romney", Electors: 6 }, 
-            { State: "Missouri", Candidate: "Romney", Electors: 10 }, 
-            { State: "Montana", Candidate: "Romney", Electors: 3 }, 
-            { State: "Nebraska", Candidate: "Romney", Electors: 5 }, 
-            { State: "Nevada", Candidate: "Obama", Electors: 6 }, 
-            { State: "New Hampshire", Candidate: "Obama", Electors: 4 }, 
-            { State: "New Jersey", Candidate: "Obama", Electors: 14 }, 
-            { State: "New Mexico", Candidate: "Obama", Electors: 5 },     
-            { State: "New York", Candidate: "Obama", Electors: 29 }, 
-            { State: "North Carolina", Candidate: "Romney", Electors: 15 }, 
-            { State: "North Dakota", Candidate: "Romney", Electors: 3 }, 
-            { State: "Ohio", Candidate: "Obama", Electors: 18 }, 
-            { State: "Oklahoma", Candidate: "Romney", Electors: 7 }, 
-            { State: "Oregon", Candidate: "Obama", Electors: 7 }, 
-            { State: "Pennsylvania", Candidate: "Obama", Electors: 20 }, 
-            { State: "Rhode Island", Candidate: "Obama", Electors: 4 }, 
-            { State: "South Carolina", Candidate: "Romney", Electors: 9 }, 
-            { State: "South Dakota", Candidate: "Romney", Electors: 3 }, 
-            { State: "Tennessee", Candidate: "Romney", Electors: 11 }, 
-            { State: "Texas", Candidate: "Romney", Electors: 38 }, 
-            { State: "Utah", Candidate: "Romney", Electors: 6 }, 
-            { State: "Vermont", Candidate: "Obama", Electors: 3 }, 
-            { State: "Virginia", Candidate: "Obama", Electors: 13 }, 
-            { State: "Washington", Candidate: "Obama", Electors: 12 }, 
-            { State: "West Virginia", Candidate: "Romney", Electors: 5 }, 
-            { State: "Wisconsin", Candidate: "Obama", Electors: 10 }, 
-            { State: "Wyoming", Candidate: "Romney", Electors: 3 }
-        ]
+this.electionData = [
+    { State: "Alabama", Candidate: "Romney", Electors: 9 },
+    { State: "Alaska", Candidate: "Romney", Electors: 3 },
+    { State: "Arizona", Candidate: "Romney", Electors: 11 },
+    { State: "Arkansas", Candidate: "Romney", Electors: 6 },
+    { State: "California", Candidate: "Obama", Electors: 55 },
+    { State: "Colorado", Candidate: "Obama", Electors: 9 },
+    { State: "Connecticut", Candidate: "Obama", Electors: 7 },
+    { State: "Delaware", Candidate: "Obama", Electors: 3 },
+    { State: "District of Columbia", Candidate: "Obama", Electors: 3 },
+    { State: "Florida", Candidate: "Obama", Electors: 29 },
+    { State: "Georgia", Candidate: "Romney", Electors: 16 },
+    { State: "Hawaii", Candidate: "Obama", Electors: 4 },
+    { State: "Idaho", Candidate: "Romney", Electors: 4 },
+    { State: "Illinois", Candidate: "Obama", Electors: 20 },
+    { State: "Indiana", Candidate: "Romney", Electors: 11 },
+    { State: "Iowa", Candidate: "Obama", Electors: 6 },
+    { State: "Kansas", Candidate: "Romney", Electors: 6 },
+    { State: "Kentucky", Candidate: "Romney", Electors: 8 },
+    { State: "Louisiana", Candidate: "Romney", Electors: 8 },
+    { State: "Maine", Candidate: "Obama", Electors: 4 },
+    { State: "Maryland", Candidate: "Obama", Electors: 10 },
+    { State: "Massachusetts", Candidate: "Obama", Electors: 11 },
+    { State: "Michigan", Candidate: "Obama", Electors: 16 },
+    { State: "Minnesota", Candidate: "Obama", Electors: 10 },
+    { State: "Mississippi", Candidate: "Romney", Electors: 6 },
+    { State: "Missouri", Candidate: "Romney", Electors: 10 },
+    { State: "Montana", Candidate: "Romney", Electors: 3 },
+    { State: "Nebraska", Candidate: "Romney", Electors: 5 },
+    { State: "Nevada", Candidate: "Obama", Electors: 6 },
+    { State: "New Hampshire", Candidate: "Obama", Electors: 4 },
+    { State: "New Jersey", Candidate: "Obama", Electors: 14 },
+    { State: "New Mexico", Candidate: "Obama", Electors: 5 },
+    { State: "New York", Candidate: "Obama", Electors: 29 },
+    { State: "North Carolina", Candidate: "Romney", Electors: 15 },
+    { State: "North Dakota", Candidate: "Romney", Electors: 3 },
+    { State: "Ohio", Candidate: "Obama", Electors: 18 },
+    { State: "Oklahoma", Candidate: "Romney", Electors: 7 },
+    { State: "Oregon", Candidate: "Obama", Electors: 7 },
+    { State: "Pennsylvania", Candidate: "Obama", Electors: 20 },
+    { State: "Rhode Island", Candidate: "Obama", Electors: 4 },
+    { State: "South Carolina", Candidate: "Romney", Electors: 9 },
+    { State: "South Dakota", Candidate: "Romney", Electors: 3 },
+    { State: "Tennessee", Candidate: "Romney", Electors: 11 },
+    { State: "Texas", Candidate: "Romney", Electors: 38 },
+    { State: "Utah", Candidate: "Romney", Electors: 6 },
+    { State: "Vermont", Candidate: "Obama", Electors: 3 },
+    { State: "Virginia", Candidate: "Obama", Electors: 13 },
+    { State: "Washington", Candidate: "Obama", Electors: 12 },
+    { State: "West Virginia", Candidate: "Romney", Electors: 5 },
+    { State: "Wisconsin", Candidate: "Obama", Electors: 10 },
+    { State: "Wyoming", Candidate: "Romney", Electors: 3 }
+];
     
  {% endhighlight %}
  
  {% highlight ts %}
                    
-                this.mapLayers= [{
-                    shapeData: usMap,                        
-                    shapeDataPath: "State",                        
-                    shapePropertyPath: "name",                        
-                    dataSource: electionData,                        
-                    shapeSettings: 
-                    {                            
-                        strokeThickness: 0.5,                            
-                        autoFill: false,                            
-                        stroke: "white",                            
-                        valuePath: "Electors",                            
-                        colorValuePath: "Candidate",                            
-                        colorMappings:                            
-                        {                                
-                            equalColorMapping:                                
-                            [                                    
-                                { value: "Romney", color: "#D84444" },                                    
-                                { value: "Obama", color: "#316DB5" }                                
-                            ]                            
-                        }                        
-                    }                    
-                }];
+this.mapLayers = [{
+    shapeData: usMap,
+    shapeDataPath: "State",
+    shapePropertyPath: "name",
+    dataSource: electionData,
+    shapeSettings:
+    {
+        strokeThickness: 0.5,
+        autoFill: false,
+        stroke: "white",
+        valuePath: "Electors",
+        colorValuePath: "Candidate",
+        colorMappings:
+        {
+            equalColorMapping:
+            [
+                { value: "Romney", color: "#D84444" },
+                { value: "Obama", color: "#316DB5" }
+            ]
+        }
+    }
+}];
 
 {% endhighlight %}
 
 {% highlight html %}
 
-    <ej-map id="mapcontrol" [layers]="mapLayers">
-    </ej-map>
+<ej-map id="mapcontrol" [layers]="mapLayers">
+</ej-map>
 
 {% endhighlight %}
 
@@ -276,21 +276,21 @@ When `autoFill` property is set to true, shapes are filled with default colors f
 
 {% highlight ts %}
 
-            this.mapLayers= [{
-                shapeData: usMap,
-                shapeSettings: {
-                    strokeThickness: 0.5,
-                    stroke: "white",
-                    autoFill: true
-                }
-            }];
+this.mapLayers = [{
+    shapeData: usMap,
+    shapeSettings: {
+        strokeThickness: 0.5,
+        stroke: "white",
+        autoFill: true
+    }
+}];
 
 {% endhighlight %}
 
 {% highlight html %}
 
-    <ej-map id="mapcontrol" [layers]="mapLayers">
-    </ej-map>
+<ej-map id="mapcontrol" [layers]="mapLayers">
+</ej-map>
 
 {% endhighlight %}
 
@@ -308,24 +308,24 @@ This property is enabled only when `colorPalette` property value is set to “cu
 
 {% highlight ts %}
 
-            this.mapLayers= [{
-                // ...
-                ShapeSettings: {
-                    // ...
-                    autoFill: true,
-                    colorPalette: "custompalette",
-                    customPalette: ["#E51400", "#A4C400", "#730202","#008B00", "#EF6535",
-                                    "#1BA0E2", "#C63477", "#0050EF", "#BF004D", "#AA00FF"]
-                    // ...
-                }
-            }];
+this.mapLayers = [{
+    // ...
+    ShapeSettings: {
+        // ...
+        autoFill: true,
+        colorPalette: "custompalette",
+        customPalette: ["#E51400", "#A4C400", "#730202", "#008B00", "#EF6535",
+                        "#1BA0E2", "#C63477", "#0050EF", "#BF004D", "#AA00FF"]
+        // ...
+    }
+}];
 
 {% endhighlight %}
 
 {% highlight html %}
 
-    <ej-map id="mapcontrol" [layers]="mapLayers">
-    </ej-map>
+<ej-map id="mapcontrol" [layers]="mapLayers">
+</ej-map>
 
 {% endhighlight %}
 
@@ -337,22 +337,22 @@ The tooltip is displayed only when you set `showTooltip` to “True” in the sh
 
 {% highlight ts %}
 
-            this.mapLayers= [{
-                // ...
-                ShapeSettings: {
-                    // ...
-                    valuePath: "name",
-                    // ...
-                }
-                showTooltip: true
-            }];
+this.mapLayers= [{
+    // ...
+    ShapeSettings: {
+        // ...
+        valuePath: "name",
+        // ...
+    },
+    showTooltip: true
+}];
 
 {% endhighlight %}
 
 {% highlight html %}
 
-    <ej-map id="mapcontrol" [layers]="mapLayers">
-    </ej-map>
+<ej-map id="mapcontrol" [layers]="mapLayers">
+</ej-map>
 
 {% endhighlight %}
 
@@ -364,16 +364,17 @@ The `tooltipTemplate` property is used for customizing the template for tooltip.
 
 {% highlight ts %}
 
-                this.mapLayers= [{
-                        // ...
-                        ShapeSettings: {
-                            // ...
-                            valuePath: "name",
-                            // ...
-                        }
-                        showTooltip: true,
-                        toolTipTemplate: 'myTooltip'
-                    }];
+this.mapLayers= [{
+    // ...
+    ShapeSettings: {
+        // ...
+        valuePath: "name",
+        // ...
+    },
+    showTooltip: true,
+toolTipTemplate: 'myTooltip'
+}];
+
 {% endhighlight %}
 
  {% highlight html %}   
@@ -381,18 +382,18 @@ The `tooltipTemplate` property is used for customizing the template for tooltip.
         <div >
             <div style="height:60px;width:120px;background:#4586a0;border-radius:3px;">
                 <div style="margin-top:-20px;margin-left:9px;padding-top:3px">
-                    <label style="margin-top:-20px;font-weight:normal;font-size:12px;color:white;font-family:Segoe UI;">{{:name}}</label>
+                    <label style="margin-top:-20px;font-weight:normal;font-size:12px;color:white;font-family:Segoe UI;">'{{:name}}'</label>
                 </div>
                 <div style="height:10px;"></div>
                 <div style="margin-top:-10px;margin-left:9px;">
-                    <label style="margin-top:-10px;font-weight:normal;font-size:14px;color:white;font-family:segoe ui light;">{{:population}}</label>
+                    <label style="margin-top:-10px;font-weight:normal;font-size:14px;color:white;font-family:segoe ui light;">'{{:population}}'</label>
                 </div>
             </div>
         </div>
     </div> 
 
-    <ej-map id="mapcontrol" [layers]="mapLayers">
-    </ej-map>
+<ej-map id="mapcontrol" [layers]="mapLayers">
+</ej-map>
 
 {% endhighlight %}
 

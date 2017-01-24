@@ -58,7 +58,8 @@ Execute the above code examples to render the **Digital****Gauge** as follows.
 
 {% highlight html %}
 
-<ej-digitalgauge id="DigitalGauge1" [isResponsive]="true" themes="flatdark" value="Syncfusion" height="200" width="500">
+<ej-digitalgauge id="DigitalGauge1" [isResponsive]="true" themes="flatdark" value="Syncfusion"
+                                                                          height="200" width="500">
 </ej-digitalgauge>
 
 {% endhighlight %}

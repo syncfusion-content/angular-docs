@@ -37,11 +37,14 @@ The possible enum values for the gaugePosition are as follows:
 
 {% highlight html %}
 
- <ej-CircularGauge id="circularGauge1" backgroundColor="transparent" [width]=800 [height]=500 [radius]=120 [value]=60 [distanceFromCorner]=30 gaugePosition ="center"
-                                    frame.frameType="halfcircle" [frame.halfCircleFrameStartAngle]=270 [frame.halfCircleFrameEndAngle]=90 >
+ <ej-CircularGauge id="circularGauge1" backgroundColor="transparent" [width]=800 
+         [height]=500 [radius]=120 [value]=60 [distanceFromCorner]=30 gaugePosition ="center"
+         frame.frameType="halfcircle" [frame.halfCircleFrameStartAngle]=270 
+         [frame.halfCircleFrameEndAngle]=90 >
      <e-scales>
-          <e-scale [startAngle]=270 [sweepAngle]="180" [radius]="160"
-		                   [showScaleBar]="true" [size]="1" [maximum]="120" [majorIntervalValue]="20" [minorIntervalValue]="10" [border.width]=0.5 >
+          <e-scale [startAngle]=270 [sweepAngle]="180" [radius]="160" [showScaleBar]="true" 
+              [size]="1" [maximum]="120" [majorIntervalValue]="20" [minorIntervalValue]="10" 
+              [border.width]=0.5 >
           </e-scale>
        </e-scales>
   </ej-CircularGauge>

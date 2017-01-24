@@ -13,9 +13,10 @@ The text in the **Digital Gauge** is positioned with position object. This objec
 
 {% highlight html %}
 
-<ej-digitalgauge id="DigitalGauge1" with="1350" height="400" frame.backgroundImageUrl="board3.jpg" [items]="[{value: 'BLUE',segmentSettings: {color: 'blue'},
-                                                             position: {x: 90,y: 0}},{value: 'RED',segmentSettings: {color: 'red'},position: {x: 90,y: 15}},
-                                                             {value: 'PINK',segmentSettings: {color: 'pink'},position: {x: 90,y: 30}}]">
+<ej-digitalgauge id="DigitalGauge1" with="1350" height="400" frame.backgroundImageUrl="board3.jpg"
+              [items]="[{value: 'BLUE',segmentSettings: {color: 'blue'}, position: {x: 90,y: 0}},
+              {value: 'RED',segmentSettings: {color: 'red'},position: {x: 90,y: 15}},
+              {value: 'PINK',segmentSettings: {color: 'pink'},position: {x: 90,y: 30}}]">
 </ej-digitalgauge>
 
 {% endhighlight %}

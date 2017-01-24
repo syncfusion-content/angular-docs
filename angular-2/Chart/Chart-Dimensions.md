@@ -17,22 +17,22 @@ You can customize the chart dimension by setting the width and height for the co
 
 {% highlight html %}
 
-  <body>
+<body>
         <ej-chart id="chartcontainer" style="width:620px; height:300px;">
         </ej-chart>
- </body>
+</body>
 
 {% endhighlight %}
 
 
 ## Set size in pixels
 
-You can also set the chart dimension by using the [`size`] property of the chart. 
+You can also set the chart dimension by using the `size` property of the chart. 
 
 {% highlight html %}
 
-    <ej-chart id="chartcontainer" size.width="600" size.height="450">
-    </ej-chart>
+<ej-chart id="chartcontainer" size.width="600" size.height="450">
+</ej-chart>
 
 {% endhighlight %}
 
@@ -41,11 +41,11 @@ You can also set the chart dimension by using the [`size`] property of the chart
 
 ## Setting size relative to the container size
 
-You can specify the chart size in percentage by using the [`size`] property. The chart gets its dimension with respect to its container.
+You can specify the chart size in percentage by using the `size` property. The chart gets its dimension with respect to its container.
 
 {% highlight html %}
 
-  <div id="container" style="width:700px; height:500px">
+<div id="container" style="width:700px; height:500px">
       <ej-chart id="chartcontainer" size.width="80%" size.height="90%">
       </ej-chart>
  </div>
@@ -58,11 +58,11 @@ You can specify the chart size in percentage by using the [`size`] property. The
 
 ## Responsive chart
 
-To resize the Chart when the browser or the chart container is resized, set the [`isResponsive`] property to **true**, where the chart adapts to the changes in size of the container.
+To resize the Chart when the browser or the chart container is resized, set the `isResponsive` property to **true**, where the chart adapts to the changes in size of the container.
 
 {% highlight html %}
 
-      <ej-chart id="chartcontainer" [isResponsive]="true">
-      </ej-chart>
+<ej-chart id="chartcontainer" [isResponsive]="true">
+</ej-chart>
 
 {% endhighlight %} 

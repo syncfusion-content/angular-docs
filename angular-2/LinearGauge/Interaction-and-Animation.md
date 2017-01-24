@@ -26,7 +26,8 @@ documentation: ug
            </e-markerpointers>	
           <e-ticks>
               <e-tick type="majorinterval" [width]="2" color="#8c8c8c" [distanceFromScale]="{ x: 7, y: 0 }"></e-tick>
-              <e-tick type="minorinterval" [height]="6" [width]="1" color="#8c8c8c" [distanceFromScale]="{ x: 7, y: 0 }"></e-tick>
+              <e-tick type="minorinterval" [height]="6" [width]="1" color="#8c8c8c" 
+                                     [distanceFromScale]="{ x: 7, y: 0 }"></e-tick>
         </e-ticks>
        </e-scale>
     </e-scales>

@@ -1,7 +1,7 @@
 ---
 title: Getting started with Kanban component	
 description: Rendering a Kanban control
-platform: js
+platform: Angular-2
 control: kanban
 documentation: ug
 keywords: ejkanban, kanban, kanban widget, js kanban

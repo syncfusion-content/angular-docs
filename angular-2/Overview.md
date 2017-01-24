@@ -16,6 +16,10 @@ The Syncfusion Angular 2 components are named with prefix `ej` to avoid conflict
 * Two-way binding
 * Event binding
 
+<blockquote class="notes angular-version">
+<p>The Essential JavaScript for Syncfusion Angular 2 components supports Angular 2 final release version <a href="http://angularjs.blogspot.in/2016/09/angular2-final.html" title="Release Version">2.0</a>.</p>
+</blockquote>
+
 N> To getting started with Syncfusion Angular 2 seed application navigate to [here](/angular-2/GettingStarted "Getting started").
 
 ## Property Binding
@@ -366,3 +370,9 @@ export class AppComponent {
 }
 
 {% endhighlight %}
+
+<style>
+.angular-version {
+	box-shadow: 0 4px 4px rgba(0,0,0,0.24), 0 0 4px rgba(0,0,0,0.12);
+}
+</style>

@@ -18,17 +18,23 @@ Custom labels collection can be directly added to the scale object. Refer the fo
 
 {% highlight html %}
 
- <ej-lineargauge id="LinearGauge1" [height]=500 [width]=299 labelColor="grey" [enableAnimation]="false" [frame.innerWidth]=8 [frame.outerWidth]=10
-                                                                           frame.backgroundImageUrl="../images/gauge/Gauge_linear_light.png">
+ <ej-lineargauge id="LinearGauge1" [height]=500 [width]=299 labelColor="grey" 
+          [enableAnimation]="false" [frame.innerWidth]=8 [frame.outerWidth]=10
+             frame.backgroundImageUrl="../images/gauge/Gauge_linear_light.png">
    <e-scales>
-        <e-scale backgroundColor="transparent" [showCustomLabels]="true" [customLabels]="customLabels" [showMarkerPointers]="false" [showBarPointers]="true" [border]="{ color: 'transparent', width: 0 }">
+        <e-scale backgroundColor="transparent" [showCustomLabels]="true" 
+         [customLabels]="customLabels" [showMarkerPointers]="false" [showBarPointers]="true"
+           [border]="{ color: 'transparent', width: 0 }">
           <e-barpointers>
-              <e-barpointer  [width]="10" backgroundColor="#8BABFF" [value]=91 placement="near" [distanceFromScale]=30 >
+              <e-barpointer  [width]="10" backgroundColor="#8BABFF" [value]=91 placement="near"
+                [distanceFromScale]=30 >
               </e-barpointer>
            </e-barpointers>	
           <e-ticks>
-               <e-tick type="majorinterval" [width]=2 color="#8c8c8c" [distanceFromScale]="{ x: 7, y: 0 }"></e-tick>
-               <e-tick type="minorinterval" [width]=1 [height]=6 color="#8c8c8c" [distanceFromScale]="{ x: 7, y: 0 }"></e-tick>
+               <e-tick type="majorinterval" [width]=2 color="#8c8c8c" 
+                            [distanceFromScale]="{ x: 7, y: 0 }"></e-tick>
+               <e-tick type="minorinterval" [width]=1 [height]=6 color="#8c8c8c" 
+                                      [distanceFromScale]="{ x: 7, y: 0 }"></e-tick>
           </e-ticks>
         </e-scale>
    </e-scales>
@@ -62,17 +68,22 @@ Execute the above code to render the following output.
 
 {% highlight html %}
 
- <ej-lineargauge id="LinearGauge1" [height]=500 [width]=299 labelColor="grey" [enableAnimation]="false" [frame.innerWidth]=8 [frame.outerWidth]=10
-                                                                           frame.backgroundImageUrl="../images/gauge/Gauge_linear_light.png">
+ <ej-lineargauge id="LinearGauge1" [height]=500 [width]=299 labelColor="grey" 
+           [enableAnimation]="false" [frame.innerWidth]=8 [frame.outerWidth]=10
+           frame.backgroundImageUrl="../images/gauge/Gauge_linear_light.png">
    <e-scales>
-        <e-scale backgroundColor="transparent" [showCustomLabels]="true" [customLabels]="customLabels" [showMarkerPointers]="false" [showBarPointers]="true" [border]="{ color: 'transparent', width: 0 }">
+        <e-scale backgroundColor="transparent" [showCustomLabels]="true" [customLabels]="customLabels" 
+          [showMarkerPointers]="false" [showBarPointers]="true" [border]="{ color: 'transparent', width: 0 }">
           <e-barpointers>
-              <e-barpointer  [width]="10" backgroundColor="#8BABFF" [value]=91 placement="near" [distanceFromScale]=30 >
+              <e-barpointer  [width]="10" backgroundColor="#8BABFF" [value]=91 placement="near" 
+              [distanceFromScale]=30 >
               </e-barpointer>
            </e-barpointers>	
           <e-ticks>
-               <e-tick type="majorinterval" [width]=2 color="#8c8c8c" [distanceFromScale]="{ x: 7, y: 0 }"></e-tick>
-               <e-tick type="minorinterval" [width]=1 [height]=6 color="#8c8c8c" [distanceFromScale]="{ x: 7, y: 0 }"></e-tick>
+               <e-tick type="majorinterval" [width]=2 color="#8c8c8c" 
+                                 [distanceFromScale]="{ x: 7, y: 0 }"></e-tick>
+               <e-tick type="minorinterval" [width]=1 [height]=6 color="#8c8c8c" 
+                                    [distanceFromScale]="{ x: 7, y: 0 }"></e-tick>
           </e-ticks>
         </e-scale>
    </e-scales>
@@ -82,13 +93,13 @@ Execute the above code to render the following output.
 
 {% highlight ts %}
 
-            this.customLabels= [{
-                    position: { x: 55, y: 87 },
-                    value: "Mathematics Mark",
-                    color: "Red",
-                    textAngle: 30,
-                    opacity: 0.5
-                }];
+this.customLabels = [{
+    position: { x: 55, y: 87 },
+    value: "Mathematics Mark",
+    color: "Red",
+    textAngle: 30,
+    opacity: 0.5
+}];
 
 {% endhighlight %}
 
@@ -105,17 +116,23 @@ To set the location of the custom label in **Linear Gauge**, **position** proper
 
 {% highlight html %}
 
- <ej-lineargauge id="LinearGauge1" [height]=500 [width]=299 labelColor="grey" [enableAnimation]="false" [frame.innerWidth]=8 [frame.outerWidth]=10
-                                                                           frame.backgroundImageUrl="../images/gauge/Gauge_linear_light.png">
+ <ej-lineargauge id="LinearGauge1" [height]=500 [width]=299 labelColor="grey"
+           [enableAnimation]="false" [frame.innerWidth]=8 [frame.outerWidth]=10
+           frame.backgroundImageUrl="../images/gauge/Gauge_linear_light.png">
    <e-scales>
-        <e-scale backgroundColor="transparent" [showCustomLabels]="true" [customLabels]="customLabels" [showMarkerPointers]="false" [showBarPointers]="true" [border]="{ color: 'transparent', width: 0 }">
+        <e-scale backgroundColor="transparent" [showCustomLabels]="true" 
+           [customLabels]="customLabels" [showMarkerPointers]="false" 
+           [showBarPointers]="true" [border]="{ color: 'transparent', width: 0 }">
           <e-barpointers>
-              <e-barpointer  [width]="10" backgroundColor="#8BABFF" [value]=91 placement="near" [distanceFromScale]=30 >
+              <e-barpointer  [width]="10" backgroundColor="#8BABFF" [value]=91 placement="near"
+               [distanceFromScale]=30 >
               </e-barpointer>
            </e-barpointers>	
           <e-ticks>
-               <e-tick type="majorinterval" [width]=2 color="#8c8c8c" [distanceFromScale]="{ x: 7, y: 0 }"></e-tick>
-               <e-tick type="minorinterval" [width]=1 [height]=6 color="#8c8c8c" [distanceFromScale]="{ x: 7, y: 0 }"></e-tick>
+               <e-tick type="majorinterval" [width]=2 color="#8c8c8c" 
+                            [distanceFromScale]="{ x: 7, y: 0 }"></e-tick>
+               <e-tick type="minorinterval" [width]=1 [height]=6 color="#8c8c8c"
+                               [distanceFromScale]="{ x: 7, y: 0 }"></e-tick>
           </e-ticks>
         </e-scale>
    </e-scales>
@@ -125,9 +142,9 @@ To set the location of the custom label in **Linear Gauge**, **position** proper
 
 {% highlight ts %}
 
-                //Adding custom label collection
-                this.customLabels= [
-                { value: "Mathematics Mark", position: { x: 55, y: 87 } }];
+//Adding custom label collection
+this.customLabels = [
+{ value: "Mathematics Mark", position: { x: 55, y: 87 } }];
 
 {% endhighlight %}
 
@@ -142,17 +159,23 @@ You can set multiple custom labels in a single **Linear Gauge** by adding an arr
 
 {% highlight html %}
 
- <ej-lineargauge id="LinearGauge1" [height]=500 [width]=299 labelColor="grey" [enableAnimation]="false" [frame.innerWidth]=8 [frame.outerWidth]=10
-                                                                           frame.backgroundImageUrl="../images/gauge/Gauge_linear_light.png">
+ <ej-lineargauge id="LinearGauge1" [height]=500 [width]=299 labelColor="grey"
+               [enableAnimation]="false" [frame.innerWidth]=8 [frame.outerWidth]=10
+                   frame.backgroundImageUrl="../images/gauge/Gauge_linear_light.png">
    <e-scales>
-        <e-scale backgroundColor="transparent" [showCustomLabels]="true" [customLabels]="customLabels" [showMarkerPointers]="false" [showBarPointers]="true" [border]="{ color: 'transparent', width: 0 }">
+        <e-scale backgroundColor="transparent" [showCustomLabels]="true" 
+        [customLabels]="customLabels" [showMarkerPointers]="false" [showBarPointers]="true" 
+         [border]="{ color: 'transparent', width: 0 }">
           <e-barpointers>
-              <e-barpointer  [width]="10" backgroundColor="#8BABFF" [value]=91 placement="near" [distanceFromScale]=30 >
+              <e-barpointer  [width]="10" backgroundColor="#8BABFF" [value]=91 
+                                             placement="near" [distanceFromScale]=30 >
               </e-barpointer>
            </e-barpointers>	
           <e-ticks>
-               <e-tick type="majorinterval" [width]=2 color="#8c8c8c" [distanceFromScale]="{ x: 7, y: 0 }"></e-tick>
-               <e-tick type="minorinterval" [width]=1 [height]=6 color="#8c8c8c" [distanceFromScale]="{ x: 7, y: 0 }"></e-tick>
+               <e-tick type="majorinterval" [width]=2 color="#8c8c8c" 
+                                [distanceFromScale]="{ x: 7, y: 0 }"></e-tick>
+               <e-tick type="minorinterval" [width]=1 [height]=6 color="#8c8c8c" 
+                                         [distanceFromScale]="{ x: 7, y: 0 }"></e-tick>
           </e-ticks>
         </e-scale>
    </e-scales>
@@ -162,16 +185,16 @@ You can set multiple custom labels in a single **Linear Gauge** by adding an arr
 
 {% highlight ts %}
 
-                //Adding custom label collection
-                this.customLabels= [
-                {
-                    value: "Mathematics Mark", position: { x: 55, y: 87 },
-                    color: "Red"
-                },
-                {
-                    value: "Marks in %", position: { x: 15, y: 57 },
-                    color: "Red", textAngle: 90
-                }];
+//Adding custom label collection
+this.customLabels = [
+{
+    value: "Mathematics Mark", position: { x: 55, y: 87 },
+    color: "Red"
+},
+{
+    value: "Marks in %", position: { x: 15, y: 57 },
+    color: "Red", textAngle: 90
+}];
 
 
 {% endhighlight %}

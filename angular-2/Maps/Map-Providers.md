@@ -21,18 +21,18 @@ You can enable this feature by setting the `layerType` property value as "OSM".
 
 {% highlight ts %}
 
-                this.mapLayers= [{
-                        layerType: 'osm',
-                        urlTemplate:'http://a.tile.openstreetmap.org/level/tileX/tileY.png'
-                }];
+this.mapLayers = [{
+    layerType: 'osm',
+    urlTemplate: 'http://a.tile.openstreetmap.org/level/tileX/tileY.png'
+}];
 
 {% endhighlight %}
 
 
 {% highlight html %}
 
-    <ej-map id="mapcontrol" [layers]="mapLayers">
-    </ej-map>
+<ej-map id="mapcontrol" [layers]="mapLayers">
+</ej-map>
 
 {% endhighlight %}
 
@@ -53,19 +53,19 @@ You can enable this feature by defining the `layerType` as “bing”.
 
 {% highlight ts %}
 
-            this.mapLayers= [{
-                layerType: 'bing',
-                bingMapType:"AerialWithLabel",
-                key:'// …bingMapKey'
-            }];
+this.mapLayers = [{
+    layerType: 'bing',
+    bingMapType: "AerialWithLabel",
+    key: '// ...bingMapKey'
+}];
 
 {% endhighlight %}
 
 
 {% highlight html %}
 
-    <ej-map id="mapcontrol" [layers]="mapLayers">
-    </ej-map>
+<ej-map id="mapcontrol" [layers]="mapLayers">
+</ej-map>
 
 {% endhighlight %}
 

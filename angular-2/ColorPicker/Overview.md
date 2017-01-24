@@ -1,8 +1,8 @@
 ---
 layout: post
 title: Overview
-description: overview
-platform: angular2
+description: Overview
+platform: Angular 2
 control: ColorPicker
 documentation: ug
 ---

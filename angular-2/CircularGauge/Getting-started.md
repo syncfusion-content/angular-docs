@@ -100,14 +100,14 @@ Create an HTML page and add the scripts references in the order mentioned in the
     </head>
     <!-- 3. Display the application -->
     <body>
-    <ej-app>  
-		    <div class="splash">
-			      <div class="message">Angular 2 Syncfusion Components App</div>
-			      <div class="spinner"></div>
-		    </div>
-	  </ej-app>
-    </body>
-    </html>
+     <ej-app>  
+		<div class="splash">
+	      <div class="message">Angular 2 Syncfusion Components App</div>
+	      <div class="spinner"></div>
+	   </div>
+	 </ej-app>
+   </body>
+</html>
 
 {% endhighlight %}
 
@@ -128,8 +128,8 @@ N> `core.ts` file is mandatory for all Syncfusion JavaScript Angular 2 component
 * Create `circularGauge.component.html` view file inside `src/circularGauge` folder and render ejCircularGauge Angular 2 component using the below code example. 
 
 {% highlight html %}
-	<ej-circularGauge id="defaultcircularGauge">
-	</ej-circularGauge>
+<ej-circularGauge id="defaultcircularGauge">
+</ej-circularGauge>
 {% endhighlight %}
 
 * Create `circularGauge.component.ts` model file inside the folder `src/circularGauge` and create sample component using the below code example.
@@ -156,8 +156,11 @@ Before adding router configuration for above created ejCircularGauge component, 
 {% highlight html %}
 <div>
 	<ul class="nav navbar-nav">
-		. . . .
-		<li><a data-toggle="collapse" data-target="#skeleton-navigation-navbar-collapse.in" href="#circularGauge" [routerLink]="['/circularGauge']">circularGauge </a></li>
+		<!--Added some content ....-->
+		<li>
+          <a data-toggle="collapse" data-target="#skeleton-navigation-navbar-collapse.in" 
+          href="#circularGauge" [routerLink]="['/circularGauge']">circularGauge </a>
+        </li>
 	</ul>
 </div>
 <main>
@@ -213,7 +216,7 @@ npm start
 
 You can draw the speedometer with dark background and to vary the speed of the pointer, set the **readOnly** option as **False** for user interaction. 
 
-{% highlight javascript %}
+{% highlight html %}
 
  <ej-CircularGauge e-height="500" e-width="500" e-backgroundcolor="##3D3F3D" e-readonly="false">
  </ej-CircularGauge>
@@ -238,9 +241,9 @@ The above code example renders a **Gauge** as shown in the following screen shot
 
  <ej-CircularGauge [height]="500" [width]="500" backgroundColor="#3D3F3D" [readOnly]="false">
      <e-scales>
-          <e-scale showRanges="true" showIndicators="true" maximum="200" majorIntervalValue="20" minorIntervalValue="5"
-                   pointerCap.radius="15" pointerCap.borderWidth="0" pointerCap.backgroundColor="#797C79" 
-                   pointerCap.borderColor="#797C79">
+          <e-scale showRanges="true" showIndicators="true" maximum="200" majorIntervalValue="20" 
+               minorIntervalValue="5" pointerCap.radius="15" pointerCap.borderWidth="0" 
+               pointerCap.backgroundColor="#797C79" pointerCap.borderColor="#797C79">
           </e-scale>
        </e-scales>
   </ej-CircularGauge>
@@ -282,19 +285,21 @@ On executing the above code, sample renders a default **Circular Gauge** with cu
 
 You can use three pointers that denote kilometer value, rotation per minute value and torque value.The torque value pointer should not be similar to other two pointers. Set the torque pointer as marker pointer. You can set other attributes for pointer such as background color, border color, Length, width and distance from scale.
 
-{% highlight javascript %}
+{% highlight html %}
 
 <ej-CircularGauge>
     <e-scales>
         <e-scale>
             <e-pointers>
-               <e-pointer [value]="140" [distanceFromScale]="60" [showBackNeedle]="false" [length]="20" type="marker" markerType="triangle"
+               <e-pointer [value]="140" [distanceFromScale]="60" [showBackNeedle]="false" 
+                          [length]="20" type="marker" markerType="triangle"
                           [width]="10" backgroundColor="#FF940A" border.color="#FF940A">
                 </e-pointer>
-                <e-pointer [value]="110" [showBackNeedle]="false" [length]="150" [width]="2" needleType="rectangle" 
-                           backgroundColor="#05AFFF" border.color="#05AFFF">
+                <e-pointer [value]="110" [showBackNeedle]="false" [length]="150" [width]="2" 
+                      needleType="rectangle" backgroundColor="#05AFFF" border.color="#05AFFF">
                 </e-pointer>
-                <e-pointer [value]="67" [showBackNeedle]="false" [length]="100" [width]="15" backgroundColor="#FC5D07" border.color="#FC5D07">
+                <e-pointer [value]="67" [showBackNeedle]="false" [length]="100" [width]="15" 
+                           backgroundColor="#FC5D07" border.color="#FC5D07">
                 </e-pointer>
              </e-pointers>
         </e-scale>
@@ -320,8 +325,10 @@ You can display the tick value with customization as given in the following code
     <e-scales>
         <e-scale>
              <e-ticks>
-                <e-tick type="major" [distanceFromScale]="70" [height]="20" [width]="3" color="#ffffff"></e-tick>
-                <e-tick type="minor" [distanceFromScale]="70" [height]="12" [width]="1" color="#ffffff"></e-tick>
+                <e-tick type="major" [distanceFromScale]="70" [height]="20" 
+                                     [width]="3" color="#ffffff"></e-tick>
+                <e-tick type="minor" [distanceFromScale]="70" [height]="12" 
+                                     [width]="1" color="#ffffff"></e-tick>
              </e-ticks>
         </e-scale>
      </e-scales>
@@ -347,12 +354,12 @@ Ranges denote the property of scale value in the speedometer. The color values o
     <e-scales>
         <e-scale>
              <e-ranges>
-                <e-range [distanceFromScale]="30" [startValue]="0" [endValue]="70" backgroundColor="#5DF243" border.color="#FFFFFF">
-                </e-range>
-                <e-range [distanceFromScale]="30" [startValue]="70" [endValue]="140" backgroundColor="#F6FF0A" border.color="#FFFFFF">
-                </e-range>
-                <e-range [distanceFromScale]="30" [startValue]="140" [endValue]="200" backgroundColor="#FF1807" border.color="#FFFFFF">
-                </e-range>
+                <e-range [distanceFromScale]="30" [startValue]="0" [endValue]="70" 
+                    backgroundColor="#5DF243" border.color="#FFFFFF"></e-range>
+                <e-range [distanceFromScale]="30" [startValue]="70" [endValue]="140" 
+                    backgroundColor="#F6FF0A" border.color="#FFFFFF"></e-range>
+                <e-range [distanceFromScale]="30" [startValue]="140" [endValue]="200" 
+                    backgroundColor="#FF1807" border.color="#FFFFFF"></e-range>
             </e-ranges>
         </e-scale>
      </e-scales>

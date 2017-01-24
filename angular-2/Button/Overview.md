@@ -1,26 +1,21 @@
 ---
 layout: post
-title: Overview | DateTimePicker | Angular2 | Syncfusion
+title: Overview
 description: overview
-platform: angular2
-control: DateTimePicker
+platform: Angular-2
+control: Button
 documentation: ug
 ---
 
 # Overview
 
-**CheckBox** component is an input component with trendy look and appearance used to input multiple options from the user.
+The **Essential JavaScript Button** control allows you to perform an action by clicking on it. The **Essential JavaScript Button** control has the feature of displaying both text and images. When the **Button** is clicked, it looks as if it is being pushed in and released.
 
-## Key Features
+**Key Features**
 
-* **Trendy Look :** Rich Appearance with Theme Support
-* **RTL :** Supports for Right to Left alignment
-* **Tri-State:** Supports **CheckBox** with three states.
-* **Easy Customization:** The customization of **CheckBox** is made simplesupports the basic functionalities of both controls.
-* **Data-Binding:** Supports two-way and one-way binding of data between View-Model
-* **Themes:** Essential PHP controls consist of 17 built-in themes (6 – flat and 6 – gradient effects), and also support custom skin options to set user-defined themes.
-* **Responsive and Touch support:** Fits in all range of devices and supports touch devices
-* **Model binding:** Supports both One-way and two-way binding of model values with the view template.  
-
-
-
+* **Trendy Look:** Rich Appearance with Theme Support
+* **RTL:** Supports for Right to Left alignment
+* **Repeat-Button:** Supports the rising of click event Repeatedly 
+* **Text and Image:** Supports both text and image as **Button** content
+* **Built-in Icon:**Supports the built-in icon libraries
+* **Easy Customization:** The customization of **Button** control to any form is made simple

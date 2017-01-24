@@ -167,8 +167,8 @@ Before adding router configuration for above created ejChart component, we recom
 {% highlight html %}
 <div>
 	<ul class="nav navbar-nav">
-		. . . .
-		<li><a data-toggle="collapse" data-target="#skeleton-navigation-navbar-collapse.in" href="#chart" [routerLink]="['/chart']">chart </a></li>
+		<li><a data-toggle="collapse" data-target="#skeleton-navigation-navbar-collapse.in"
+             href="#chart" [routerLink]="['/chart']">chart </a></li>
 	</ul>
 </div>
 <main>

@@ -17,8 +17,9 @@ The **Quantitative Scale** appearance is customized using **quantitativeScaleSet
 
 {% highlight html %}
 
-<ej-bulletgraph id="bullet1" [quantitativeScaleSettings.minimum]=0 [quantitativeScaleSettings.maximum]=10 [quantitativeScaleSettings.interval]=1
-                                                                    [quantitativeScaleSettings.minorTicksPerInterval]=4>         
+<ej-bulletgraph id="bullet1" [quantitativeScaleSettings.minimum]=0 
+ [quantitativeScaleSettings.maximum]=10 [quantitativeScaleSettings.interval]=1 
+ [quantitativeScaleSettings.minorTicksPerInterval]=4>         
        
 </ej-bulletgraph>
 
@@ -36,7 +37,8 @@ Bullet Graph does not position Quantitative scale automatically based on its siz
 
 {% highlight html %}
 
-<ej-bulletgraph id="bullet1" [quantitativeScaleSettings.location.x]=20 [quantitativeScaleSettings.location.y]=20>         
+<ej-bulletgraph id="bullet1" [quantitativeScaleSettings.location.x]=20 
+                                  [quantitativeScaleSettings.location.y]=20>         
        
 </ej-bulletgraph>
 
@@ -52,8 +54,9 @@ Color, size and width of **Major tick** lines are customized using **majorTickSe
 
 {% highlight html %}
 
-<ej-bulletgraph id="bullet1" [quantitativeScaleSettings.majorTickSettings.size]=15 [quantitativeScaleSettings.majorTickSettings.width]=3
-                                      quantitativeScaleSettings.majorTickSettings.stroke="gray">         
+<ej-bulletgraph id="bullet1" [quantitativeScaleSettings.majorTickSettings.size]=15 
+                          [quantitativeScaleSettings.majorTickSettings.width]=3 
+                        quantitativeScaleSettings.majorTickSettings.stroke="gray">         
        
 </ej-bulletgraph>
 
@@ -71,8 +74,9 @@ Minor ticks can also be customized similar to major ticks. The properties stroke
 
 {% highlight html %}
 
-<ej-bulletgraph id="bullet1" [quantitativeScaleSettings.minorTickSettings.size]=7 [quantitativeScaleSettings.minorTickSettings.width]=3
-                                      quantitativeScaleSettings.minorTickSettings.stroke="gray">         
+<ej-bulletgraph id="bullet1" [quantitativeScaleSettings.minorTickSettings.size]=7 
+                             [quantitativeScaleSettings.minorTickSettings.width]=3 
+                             quantitativeScaleSettings.minorTickSettings.stroke="gray">         
        
 </ej-bulletgraph>
 
@@ -108,25 +112,29 @@ The following screenshot displays **Bullet Graph** with ticks positioned above q
 
 
 
-{% highlight javascript %}
+{% highlight ts %}
 
 
-                this.caption= {
-                    textAngle: 0, location: { x: 17, y: 28 }, text: "Revenue YTD",
-                    subTitle: {
-                        textAngle: 0,
-                        text: "$ in Thousands", location: { x: 10, y: 42 }
-                        }
-                    };
+this.caption = {
+    textAngle: 0, location: { x: 17, y: 28 }, text: "Revenue YTD",
+    subTitle: {
+        textAngle: 0,
+        text: "$ in Thousands", location: { x: 10, y: 42 }
+    }
+};
 
 {% endhighlight %}
 
 {% highlight html %}
 
-   <ej-bulletgraph id="bullet1" [value]=8 [captionSettings]="caption" [comparativeMeasureValue]=50 quantitativeScaleSettings.tickPlacement="inside" [quantitativeScaleSettings.location.x]=108 [quantitativeScaleSettings.location.y]=10
-                                                           [quantitativeScaleSettings.labelSettings.offset]=5 [quantitativeScaleSettings.labelSettings.size]=10 quantitativeScaleSettings.labelSettings.labelPrefix="$">         
+<ej-bulletgraph id="bullet1" [value]=8 [captionSettings]="caption" 
+      [comparativeMeasureValue]=50 quantitativeScaleSettings.tickPlacement="inside"
+      [quantitativeScaleSettings.location.x]=108 [quantitativeScaleSettings.location.y]=10
+      [quantitativeScaleSettings.labelSettings.offset]=5 
+      [quantitativeScaleSettings.labelSettings.size]=10 
+      quantitativeScaleSettings.labelSettings.labelPrefix="$">         
           
-   </ej-bulletgraph>
+</ej-bulletgraph>
 
 {% endhighlight %}
 
@@ -140,10 +148,13 @@ The following screenshot displays **Bullet Graph** ticks inside **Quantitative S
 
 {% highlight html %}
 
-<ej-bulletgraph id="bullet1" [quantitativeScaleSettings.labelSettings.offset]=15 [quantitativeScaleSettings.labelSettings.size]=12
-                             quantitativeScaleSettings.labelSettings.labelPrefix="$" quantitativeScaleSettings.labelSettings.labelSuffix="K" 
-                             quantitativeScaleSettings.labelSettings.stroke="blue" [quantitativeScaleSettings.labelSettings.font]="{
-                                fontFamily: 'Segoe UI', fontStyle: 'bold', fontWeight: 'regular', opacity: 0.8 }">         
+<ej-bulletgraph id="bullet1" [quantitativeScaleSettings.labelSettings.offset]=15 
+       [quantitativeScaleSettings.labelSettings.size]=12 
+       quantitativeScaleSettings.labelSettings.labelPrefix="$" 
+       quantitativeScaleSettings.labelSettings.labelSuffix="K" 
+       quantitativeScaleSettings.labelSettings.stroke="blue" 
+      [quantitativeScaleSettings.labelSettings.font]="{fontFamily: 'Segoe UI', 
+                     fontStyle: 'bold', fontWeight: 'regular', opacity: 0.8 }">         
        
 </ej-bulletgraph>
 
@@ -159,29 +170,30 @@ The following screenshot displays **Bullet Graph** labels in blue color
 
 **Quantitative****scale****labels** can be placed either inside or outside the scale using “**labelPlacement**” property. By default labels are placed 15 pixels outside the scale.
 
-{% highlight javascript %}
+{% highlight ts %}
 
-                this.quantitativeScale= {
-                    location: { x: 108, y: 10 },
-                    labelSettings: {
-                        offset: 5, size: 10, labelPrefix: '$', labelSuffix:' K', font: { fontWeight: 'bold' },
-                        labelPlacement: 'inside'
-                    },
-                };
+this.quantitativeScale = {
+    location: { x: 108, y: 10 },
+    labelSettings: {
+        offset: 5, size: 10, labelPrefix: '$', labelSuffix: ' K', font: { fontWeight: 'bold' },
+        labelPlacement: 'inside'
+    },
+};
 
-                this.caption= {
-                    textAngle: 0, location: { x: 17, y: 28 }, text: "Revenue YTD",
-                    subTitle: {
-                        textAngle: 0,
-                        text: "$ in Thousands", location: { x: 10, y: 42 }
-                    }
-                }; 
+this.caption = {
+    textAngle: 0, location: { x: 17, y: 28 }, text: "Revenue YTD",
+    subTitle: {
+        textAngle: 0,
+        text: "$ in Thousands", location: { x: 10, y: 42 }
+    }
+}; 
 
 {% endhighlight %}
 
 {% highlight html %}
 
-<ej-bulletgraph id="bullet1" [value]=8 [comparativeMeasureValue]=50 [quantitativeScaleSettings]="quantitativeScale" [captionSettings]="caption">         
+<ej-bulletgraph id="bullet1" [value]=8 [comparativeMeasureValue]=50 
+   [quantitativeScaleSettings]="quantitativeScale" [captionSettings]="caption">         
        
 </ej-bulletgraph>
 
@@ -197,8 +209,9 @@ Performance measure bar is customized using featuredMeasureSettings in quantitat
 
 {% highlight html %}
 
-<ej-bulletgraph id="bullet1" [value]=5 quantitativeScaleSettings.featuredMeasureSettings.stroke="blue" 
-                                                         [quantitativeScaleSettings.featuredMeasureSettings.width]=4>         
+<ej-bulletgraph id="bullet1" [value]=5 
+ quantitativeScaleSettings.featuredMeasureSettings.stroke="blue" 
+  [quantitativeScaleSettings.featuredMeasureSettings.width]=4>         
        
 </ej-bulletgraph>
 
@@ -215,8 +228,9 @@ Comparative symbol color and width are customized using comparativeMeasureSettin
 
 {% highlight html %}
 
-<ej-bulletgraph id="bullet1" [comparativeMeasureValue]=5 quantitativeScaleSettings.featuredMeasureSettings.stroke="blue" 
-                                                         [quantitativeScaleSettings.featuredMeasureSettings.width]=5>         
+<ej-bulletgraph id="bullet1" [comparativeMeasureValue]=5 
+   quantitativeScaleSettings.featuredMeasureSettings.stroke="blue" 
+           [quantitativeScaleSettings.featuredMeasureSettings.width]=5>         
        
 </ej-bulletgraph>
 
@@ -230,15 +244,15 @@ The following screenshot displays **Bullet Graph** with customized **Comparative
 
 **Bullet Graph** supports comparing more than one performance at a time, given that all the comparisons are related using **featureMeasure** in **quantitativeScaleSettings** property.
 
-{% highlight javascript %}
+{% highlight ts %}
 
-                    this.quantitativeScale {
-                        featureMeasures: [
-                            { value: 6, comparativeMeasureValue: 3, category: 2010 },
-                            { value: 9, comparativeMeasureValue: 6, category: 2011 },
-                            { value: 5, comparativeMeasureValue: 5, category: 2012 },
-                        ]
-                    };
+this.quantitativeScale = {
+    featureMeasures: [
+        { value: 6, comparativeMeasureValue: 3, category: 2010 },
+        { value: 9, comparativeMeasureValue: 6, category: 2011 },
+        { value: 5, comparativeMeasureValue: 5, category: 2012 },
+    ]
+};
 
 
 {% endhighlight %}

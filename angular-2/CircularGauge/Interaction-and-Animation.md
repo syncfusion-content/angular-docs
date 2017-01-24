@@ -15,8 +15,8 @@ documentation: ug
 
 {% highlight html %}
 
-  <ej-CircularGauge id="circularGauge1" [readOnly]="false" >
-  </ej-CircularGauge>
+<ej-CircularGauge id="circularGauge1" [readOnly]="false" >
+</ej-CircularGauge>
 
 {% endhighlight %}
 
@@ -30,8 +30,8 @@ Execute the above code to render the following output.
 
 {% highlight html %}
 
-  <ej-CircularGauge id="circularGauge1" [enableAnimation]="true" [animationSpeed]=1000 >
-  </ej-CircularGauge>
+<ej-CircularGauge id="circularGauge1" [enableAnimation]="true" [animationSpeed]=1000 >
+</ej-CircularGauge>
 
 {% endhighlight %}
 

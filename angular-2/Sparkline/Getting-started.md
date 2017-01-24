@@ -91,14 +91,14 @@ Create an HTML page and add the scripts references in the order mentioned in the
     </head>
     <!-- 3. Display the application -->
     <body>
-    <ej-app>  
+     <ej-app>  
 		    <div class="splash">
 			      <div class="message">Angular 2 Syncfusion Components App</div>
 			      <div class="spinner"></div>
 		    </div>
-	  </ej-app>
+	   </ej-app>
     </body>
-    </html>
+</html>
 
 {% endhighlight %}
 
@@ -147,9 +147,10 @@ Before adding router configuration for above created ejSparkline component, we r
 {% highlight html %}
 <div>
 	<ul class="nav navbar-nav">
-		. . . .
-		<li><a data-toggle="collapse" data-target="#skeleton-navigation-navbar-collapse.in" href="#sparkline" [routerLink]="['/sparkline']">sparkline </a></li>
-	</ul>
+		    <li>
+           <a data-toggle="collapse" data-target="#skeleton-navigation-navbar-collapse.in" href="#sparkline" [routerLink]="['/sparkline']">sparkline </a>
+        </li>
+	  </ul>
 </div>
 <main>
 	<router-outlet></router-outlet>

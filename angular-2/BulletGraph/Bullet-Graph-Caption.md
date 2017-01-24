@@ -15,37 +15,38 @@ documentation: ug
 
 **Title** is set to **Bullet Graph** using **text** property in **captionSettings**. Caption settings also include properties like location, font, and textAngle for customizing the caption of **Bullet Graph**.
 
-{% highlight javascript %}
+{% highlight ts %}
 
-                   this.quantitativescale: {
-                        location: { x: 100, y: 200 },                   
-                        minimum: 0,
-                        maximum: 5,
-                        interval: 0.5,
-                        featureMeasures: [{ value: 4, comparativeMeasureValue: 3.5, category: "" }]
-                    };
-                    
-                    this.caption= {
-                        text: "Revenue YTD",
-                        textAngle: 0,
-                        location: {
-                            x: 10, y: 220
-                        },
-                        font: {
-                            color: 'gray',
-                            fontFamily: 'Segoe UI',
-                            fontStyle: 'bold',
-                            size: '14px',
-                            fontWeight: 'regular',
-                            opacity: 1
-                        }                        
-                    };
+this.quantitativescale= {
+    location: { x: 100, y: 200 },                   
+    minimum: 0,
+    maximum: 5,
+    interval: 0.5,
+    featureMeasures: [{ value: 4, comparativeMeasureValue: 3.5, category: "" }]
+};
+            
+this.caption= {
+    text: "Revenue YTD",
+    textAngle: 0,
+    location: {
+        x: 10, y: 220
+    },
+    font: {
+        color: 'gray',
+        fontFamily: 'Segoe UI',
+        fontStyle: 'bold',
+        size: '14px',
+        fontWeight: 'regular',
+        opacity: 1
+    }                        
+};
 
 {% endhighlight %}
 
 {% highlight html %}
 
-   <ej-bulletgraph id="bullet1" [height]=700 [width]=600 [captionSettings]="caption" [quantitativeScaleSettings]="quantitativescale">         
+   <ej-bulletgraph id="bullet1" [height]=700 [width]=600 [captionSettings]="caption" 
+                                       [quantitativeScaleSettings]="quantitativescale">         
           
    </ej-bulletgraph>
 
@@ -59,32 +60,32 @@ The following screenshot displays a **Bullet Graph** with customized caption usi
 
 **Subtitle** is added to **Bullet Graph** using **text** property of **subtitle** in **captionSettings**. **Subtitle** also provides properties like location, textAngle and font to customize subtitle similar to caption.
 
-{% highlight javascript %}
+{% highlight ts %}
 
 
-                    this.caption {
-                        subTitle: {
-                            text: "Subtitle",
-                            location: { x: 20, y: 225 },
-                            font: {
-                                    color: 'black',
-                                    fontFamily: 'segoe ui',
-                                    fontStyle: 'italic',
-                                    size: '16px',
-                                    fontWeight: 'regular',
-                                    opacity: 1
-                                }
-                        } 
-                    };
+this.caption = {
+    subTitle: {
+            text: "Subtitle",
+            location: { x: 20, y: 225 },
+            font: {
+                color: 'black',
+                fontFamily: 'segoe ui',
+                fontStyle: 'italic',
+                size: '16px',
+                fontWeight: 'regular',
+                opacity: 1
+            }
+    } 
+};
 
 {% endhighlight %}
 
 
 {% highlight html %}
 
-   <ej-bulletgraph id="bullet1" [height]=700 [width]=600 [captionSettings]="caption">         
+<ej-bulletgraph id="bullet1" [height]=700 [width]=600 [captionSettings]="caption">         
           
-   </ej-bulletgraph>
+</ej-bulletgraph>
 
 {% endhighlight %}
 
@@ -98,47 +99,47 @@ You can add **Indicator** to bullet graph by enabling **visible** and setting **
 
 Indicator displays a symbol along with text which is different from caption and subtitle. Images like logos can be used in indicator instead of symbols. Indicator has properties such as **symbol**, **text**, **textSpacing**, **textAngle**, **location** and **font**.
 
-{% highlight javascript %}
+{% highlight ts %}
 
 
-                    this.caption= {
-                        indicator: {
-                            visible: true,
-                            textAngle: 0,
-                            location: { x: 15, y: 240 },
-                            text: "+ $0.5 K",
-                            textSpacing: 5,
-                            symbol: {
-                                color: 'green',
-                                shape: 'triangle',
-                                imageURL: "Column.png",
-                                size: {
-                                    width: 10,
-                                    height: 10
-                                },
-                                border: {
-                                    width: 1,
-                                    color: 'green'
-                                }
-                            },
-                            font: {
-                                color: 'green',
-                                fontFamily: 'Segoe UI',
-                                fontStyle: 'Normal ',
-                                size: '12px',
-                                fontWeight: 'regular',
-                                opacity: 1
-                            },
-                        }
-                    };
+this.caption = {
+    indicator: {
+        visible: true,
+        textAngle: 0,
+        location: { x: 15, y: 240 },
+        text: "+ $0.5 K",
+        textSpacing: 5,
+        symbol: {
+            color: 'green',
+            shape: 'triangle',
+            imageURL: "Column.png",
+            size: {
+                width: 10,
+                height: 10
+            },
+            border: {
+                width: 1,
+                color: 'green'
+            }
+        },
+        font: {
+            color: 'green',
+            fontFamily: 'Segoe UI',
+            fontStyle: 'Normal ',
+            size: '12px',
+            fontWeight: 'regular',
+            opacity: 1
+        },
+    }
+};
 
 {% endhighlight %}
 
 {% highlight html %}
 
-   <ej-bulletgraph id="bullet1" [captionSettings]="caption">         
+<ej-bulletgraph id="bullet1" [captionSettings]="caption">         
           
-   </ej-bulletgraph>
+</ej-bulletgraph>
 
 {% endhighlight %}
 
@@ -150,21 +151,21 @@ The following screenshot displays a bullet graph with indicator.
 
 The title, subtitle and indicator text can be overlapped to the scale group. You can avoid the overlapped text by using the enableTrim property of the captionSettings. The default value of the enableTrim is true. 
 
-{% highlight javascript %}
+{% highlight ts %}
 
 
-      this.caption= {
-          text: 'Bullet Graph Title',
-          enableTrim : true,
-      };
+this.caption= {
+    text: 'Bullet Graph Title',
+    enableTrim : true,
+};
 
 {% endhighlight %}
 
 {% highlight html %}
 
-   <ej-bulletgraph id="bullet1" [captionSettings]="caption">         
+<ej-bulletgraph id="bullet1" [captionSettings]="caption">         
           
-   </ej-bulletgraph>
+</ej-bulletgraph>
 
 {% endhighlight %}
 
@@ -180,26 +181,27 @@ All the caption group elements (caption, subtitle, and indicator) in the **Bulle
 
 The property, textPosition, is used to position the text at the top, bottom, left, and right side of the quantitative scale. The default value of this property is float. By default, text can be placed at any desired location by using the location property.
 
-{% highlight javascript %}
+{% highlight ts %}
 
-                this.caption= {
-                    text: 'Bullet Graph Title',
-                    textPosition: 'top',
-                    font:{
-                        size: '20px',
-                        fontWeight: 'bold',
+this.caption = {
+    text: 'Bullet Graph Title',
+    textPosition: 'top',
+    font: {
+        size: '20px',
+        fontWeight: 'bold',
 
-                    }
-                };
+    }
+};
 
 {% endhighlight %}
 
 {% highlight html %}
 
-   <ej-bulletgraph id="bullet1" [height]=150 [width]=650 [value]=8 [comparativeMeasureValue]=5 [captionSettings]="caption"
-                                                   [quantitativeScaleSettings.location.x]=120 [quantitativeScaleSettings.location.y]=40>         
+<ej-bulletgraph id="bullet1" [height]=150 [width]=650 [value]=8 [comparativeMeasureValue]=5 
+                [captionSettings]="caption" [quantitativeScaleSettings.location.x]=120 
+                [quantitativeScaleSettings.location.y]=40>         
           
-   </ej-bulletgraph>
+</ej-bulletgraph>
 
 {% endhighlight %}
 
@@ -211,37 +213,38 @@ The following screenshot displays the Bullet Graph with the title positioned abo
 
 Alignment of text at different positions with respect to scale can be customized by using the **textAlignment** property. Text can be aligned in the **near**, **center,** and **far** locations of the scale. Text alignment depends upon **textPosition** property and is not applicable when the value of the **textPosition** property is **float**. The default value of the **textAlignment** property is **near**.
 
-{% highlight javascript %}
+{% highlight ts %}
 
-                this.caption= {
-                    text: 'Revenue',
-                    textPosition: 'left',
-                    textAnchor: 'middle',
-                    font:{
-                        size: '16px',
-                        fontWeight: 'bold',
+this.caption = {
+    text: 'Revenue',
+    textPosition: 'left',
+    textAnchor: 'middle',
+    font: {
+        size: '16px',
+        fontWeight: 'bold',
 
-                    },
-                    subTitle: {
-                        text: '$ in thousands',
-                        textPosition: 'left',
-                        textAlignment: 'center',
-                        font: {
-                            size: '12px',
-                            fontWeight: 'bold',
+    },
+    subTitle: {
+        text: '$ in thousands',
+        textPosition: 'left',
+        textAlignment: 'center',
+        font: {
+            size: '12px',
+            fontWeight: 'bold',
 
-                        }
-                    }
-                };
+        }
+    }
+};
 
 {% endhighlight %}
 
 {% highlight html %}
 
-   <ej-bulletgraph id="bullet1" [height]=150 [width]=650 [value]=8 [comparativeMeasureValue]=5 [captionSettings]="caption"
-                                                   [quantitativeScaleSettings.location.x]=120 [quantitativeScaleSettings.location.y]=40>         
+<ej-bulletgraph id="bullet1" [height]=150 [width]=650 [value]=8 [comparativeMeasureValue]=5 
+                [captionSettings]="caption" [quantitativeScaleSettings.location.x]=120 
+                [quantitativeScaleSettings.location.y]=40>         
           
-   </ej-bulletgraph>
+</ej-bulletgraph>
 
 {% endhighlight %}
 
@@ -253,37 +256,38 @@ The following screenshot displays the Bullet Graph with the title and subtitle a
 
 Text elements aligned at the same position are anchored by using the textAnchor property. These can be anchored at the start, middle, and end. The default value of this property is start and applicable only when two or more text elements are aligned at the same position. 
 
-{% highlight javascript %}
+{% highlight ts %}
 
-                this.caption= {
-                    text: 'Revenue',
-                    textPosition: 'left',
-                    textAnchor: 'middle',
-                    font:{
-                        size: '16px',
-                        fontWeight: 'bold',
+this.caption = {
+    text: 'Revenue',
+    textPosition: 'left',
+    textAnchor: 'middle',
+    font: {
+        size: '16px',
+        fontWeight: 'bold',
 
-                    },
-                    subTitle: {
-                        text: '$ in thousands',
-                        textPosition: 'left',
-                        textAlignment: 'center',
-                        font: {
-                            size: '12px',
-                            fontWeight: 'bold',
+    },
+    subTitle: {
+        text: '$ in thousands',
+        textPosition: 'left',
+        textAlignment: 'center',
+        font: {
+            size: '12px',
+            fontWeight: 'bold',
 
-                        }
-                    }
-                };
+        }
+    }
+};
 
 {% endhighlight %}
 
 {% highlight html %}
 
-   <ej-bulletgraph id="bullet1" [height]=150 [width]=650 [value]=8 [comparativeMeasureValue]=5 [captionSettings]="caption"
-                                                   [quantitativeScaleSettings.location.x]=120 [quantitativeScaleSettings.location.y]=40>         
+<ej-bulletgraph id="bullet1" [height]=150 [width]=650 [value]=8 [comparativeMeasureValue]=5 
+                [captionSettings]="caption" [quantitativeScaleSettings.location.x]=120 
+                [quantitativeScaleSettings.location.y]=40>         
           
-   </ej-bulletgraph>
+</ej-bulletgraph>
 
 {% endhighlight %}
 
@@ -293,29 +297,30 @@ Text elements aligned at the same position are anchored by using the textAnchor 
 
 The space required between text and quantitative scale is customized by using the padding property. The default value of this property is 5 and not applicable when the value of the textPosition property is float.
 
-{% highlight javascript %}
+{% highlight ts %}
 
 
-                this.caption= {
-                    text: 'Profit in %',
-                    textPosition: 'left',
-                    textAlignment: 'center',
-                    padding: 10,
-                    font:{
-                        size: '16px',
-                        fontWeight: 'bold',
+this.caption = {
+    text: 'Profit in %',
+    textPosition: 'left',
+    textAlignment: 'center',
+    padding: 10,
+    font: {
+        size: '16px',
+        fontWeight: 'bold',
 
-                    }
-                };
+    }
+};
 
 {% endhighlight %}
 
 {% highlight html %}
 
-   <ej-bulletgraph id="bullet1" [height]=150 [width]=650 [value]=8 [comparativeMeasureValue]=5 [captionSettings]="caption"
-                                                   [quantitativeScaleSettings.location.x]=120 [quantitativeScaleSettings.location.y]=40>         
+<ej-bulletgraph id="bullet1" [height]=150 [width]=650 [value]=8 [comparativeMeasureValue]=5
+                [captionSettings]="caption" [quantitativeScaleSettings.location.x]=120 
+                [quantitativeScaleSettings.location.y]=40>         
           
-   </ej-bulletgraph>
+</ej-bulletgraph>
 
 {% endhighlight %}
 

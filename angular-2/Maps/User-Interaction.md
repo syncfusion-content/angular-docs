@@ -21,27 +21,27 @@ You can select the shape by tapping the shape. The Single selection is enabled b
 
 {% highlight ts %}
 
-                this.mapLayers= [
-                    {
-                        shapeData: usMap,
-                        shapeSettings: {
-                            fill: "#9CBF4E",
-                            strokeThickness: "0.5",
-                            stroke: "White",
-                            selectionStrokeWidth: 2,
-                            selectionStroke:"white",
-                            selectionColor: "#BC5353"
-                        },
-                        enableSelection: true
-                    }];
+this.mapLayers = [
+    {
+        shapeData: usMap,
+        shapeSettings: {
+            fill: "#9CBF4E",
+            strokeThickness: "0.5",
+            stroke: "White",
+            selectionStrokeWidth: 2,
+            selectionStroke: "white",
+            selectionColor: "#BC5353"
+        },
+        enableSelection: true
+    }];
 
 {% endhighlight %}
 
 
 {% highlight html %}
 
-    <ej-map id="mapcontrol" [layers]="mapLayers">
-    </ej-map>
+<ej-map id="mapcontrol" [layers]="mapLayers">
+</ej-map>
 
 {% endhighlight %}
 
@@ -54,21 +54,21 @@ This feature enables you to select multiple Map shapes on mouse taps accompanied
 
 {% highlight ts %}
 
-                this.mapLayers= [{
-                        shapeData: usMap,
-                        // ...
-                        enableSelection: true,
-                        selectionMode: "multiple",
-                        // ..
-                    }];
+this.mapLayers = [{
+    shapeData: usMap,
+    // ...
+    enableSelection: true,
+    selectionMode: "multiple",
+    // ..
+}];
 
 {% endhighlight %}
 
 
 {% highlight html %}
 
-    <ej-map id="mapcontrol" [layers]="mapLayers">
-    </ej-map>
+<ej-map id="mapcontrol" [layers]="mapLayers">
+</ej-map>
 
 {% endhighlight %}
 
@@ -81,18 +81,18 @@ You can enable this feature by setting the `draggingOnSelection` property in the
 
 {% highlight ts %}
 
-                this.mapLayers= [{
-                        // ...                        
-                        draggingOnSelection: true
-                        // ...
-                    }];
+this.mapLayers = [{
+    // ...                        
+    draggingOnSelection: true
+    // ...
+}];
 
 {% endhighlight %}
 
 {% highlight html %}
 
-    <ej-map id="mapcontrol" [layers]="mapLayers">
-    </ej-map>
+<ej-map id="mapcontrol" [layers]="mapLayers">
+</ej-map>
 
 {% endhighlight %}
 
@@ -135,16 +135,16 @@ The `maxValue` property is used to set the maximum zoom level of the Map.
 
 {% highlight ts %}
 
-                this.mapLayers= [{
-                        shapeData: usMap
-                    }];
+this.mapLayers= [{
+        shapeData: usMap
+   }];
 
 {% endhighlight %}
 
 {% highlight html %}
 
-   <ej-map id="mapcontrol" [layers]="mapLayers" [zoomSettings.minValue]=1 [zoomSettings.maxValue]=20 [zoomSettings.enableZoom]="true" [zoomSettings.level]=1>
-   </ej-map>
+<ej-map id="mapcontrol" [layers]="mapLayers" [zoomSettings.minValue]=1 [zoomSettings.maxValue]=20 [zoomSettings.enableZoom]="true" [zoomSettings.level]=1>
+</ej-map>
 
 {% endhighlight %}
 
@@ -164,7 +164,7 @@ You can zoom the Maps by using `zoom` method. The `zoom` method contains paramet
 
 {% highlight javascript %}
  
-        $("#map").ejMap("zoom", 2);
+    $("#map").ejMap("zoom", 2);
 
 
 {% endhighlight %}
@@ -189,8 +189,8 @@ When `enableZoomOnSelection` property is set to true, then zooming by double cli
 
 {% highlight html %}
 
-   <ej-map id="mapcontrol" [layers]="mapLayers" [zoomSettings.enableZoomOnSelection]="true">
-   </ej-map>
+<ej-map id="mapcontrol" [layers]="mapLayers" [zoomSettings.enableZoomOnSelection]="true">
+</ej-map>
 
 {% endhighlight %}
 
@@ -240,8 +240,8 @@ The panning feature enables the Map navigation. The `enablePan` property is used
 
 {% highlight html %}
 
-   <ej-map id="mapcontrol" [layers]="mapLayers" [enablePan]="true">
-   </ej-map> 	
+<ej-map id="mapcontrol" [layers]="mapLayers" [enablePan]="true">
+</ej-map> 	
 
 {% endhighlight %}
 
@@ -256,8 +256,8 @@ The panning feature enables the Map navigation. The `enablePan` property is used
 
 {% highlight html %}
 
-   <ej-map id="mapcontrol" [layers]="mapLayers" [navigationControl.enableNavigation]="true" >
-   </ej-map> 
+<ej-map id="mapcontrol" [layers]="mapLayers" [navigationControl.enableNavigation]="true" >
+</ej-map> 
 
 {% endhighlight %}
 
@@ -292,9 +292,10 @@ You can set this option by using `dockPosition` property in `navigationControl`.
 
 {% highlight html %}
 
-   <ej-map id="mapcontrol" [layers]="mapLayers" [navigationControl.enableNavigation]="true" navigationControl.orientation='vertical' 
-                                                      navigationControl.dockPosition='none' [navigationControl.absolutePosition]="{x:'5',y:'16'}">
-   </ej-map>
+<ej-map id="mapcontrol" [layers]="mapLayers" [navigationControl.enableNavigation]="true"
+          navigationControl.orientation='vertical' navigationControl.dockPosition='none' 
+          [navigationControl.absolutePosition]="{x:'5',y:'16'}">
+</ej-map>
 
 {% endhighlight %}
 

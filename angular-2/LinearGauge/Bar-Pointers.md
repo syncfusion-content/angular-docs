@@ -18,15 +18,19 @@ You can add Bar Pointer collection directly to the scale object. Refer the follo
 
 {% highlight html %}
 
- <ej-lineargauge id="LinearGauge1" [value]="78" [frame.innerWidth]=8 [frame.outerWidth]=10 frame.backgroundImageUrl="../images/gauge/Gauge_linear_light.png" >
+ <ej-lineargauge id="LinearGauge1" [value]="78" [frame.innerWidth]=8 [frame.outerWidth]=10 
+                         frame.backgroundImageUrl="../images/gauge/Gauge_linear_light.png" >
    <e-scales>
-        <e-scale backgroundColor="transparent" [showMarkerPointers]="false" [showBarPointers]="true" [border]="{ color: 'transparent', width: 0 }">
+        <e-scale backgroundColor="transparent" [showMarkerPointers]="false" 
+                 [showBarPointers]="true" [border]="{ color: 'transparent', width: 0 }">
           <e-barpointers>
               <e-barpointer  [width]="5" backgroundColor="grey"></e-barpointer>
            </e-barpointers>	
           <e-ticks>
-               <e-tick type="majorinterval" [width]=2 color="#8c8c8c" [distanceFromScale]="{ x: 7, y: 0 }"></e-tick>
-               <e-tick type="minorinterval" [width]=1 [height]=6 color="#8c8c8c" [distanceFromScale]="{ x: 7, y: 0 }"></e-tick>
+               <e-tick type="majorinterval" [width]=2 color="#8c8c8c" [distanceFromScale]="
+                                                                     {x:7, y: 0 }"></e-tick>
+               <e-tick type="minorinterval" [width]=1 [height]=6 color="#8c8c8c" 
+                                               [distanceFromScale]="{ x: 7, y: 0 }"></e-tick>
           </e-ticks>
         </e-scale>
    </e-scales>
@@ -52,13 +56,16 @@ Bar pointer value is also important element in the **Linear Gauge** as it indica
 
  <ej-lineargauge id="LinearGauge1">
    <e-scales>
-        <e-scale backgroundColor="transparent" [showMarkerPointers]="false" [showBarPointers]="true" [border]="{ color: 'transparent', width: 0 }">
+        <e-scale backgroundColor="transparent" [showMarkerPointers]="false" 
+              [showBarPointers]="true" [border]="{ color: 'transparent', width: 0 }">
           <e-barpointers>
               <e-barpointer  [width]="5" backgroundColor="grey" [value]=91 ></e-barpointer>
            </e-barpointers>	
           <e-ticks>
-               <e-tick type="majorinterval" [width]=2 color="#8c8c8c" [distanceFromScale]="{ x: 7, y: 0 }"></e-tick>
-               <e-tick type="minorinterval" [width]=1 [height]=6 color="#8c8c8c" [distanceFromScale]="{ x: 7, y: 0 }"></e-tick>
+               <e-tick type="majorinterval" [width]=2 color="#8c8c8c" 
+                         [distanceFromScale]="{ x: 7, y: 0 }"></e-tick>
+               <e-tick type="minorinterval" [width]=1 [height]=6 color="#8c8c8c" 
+                                    [distanceFromScale]="{ x: 7, y: 0 }"></e-tick>
           </e-ticks>
         </e-scale>
    </e-scales>
@@ -83,14 +90,18 @@ Execute the above code to render the following output.
 
  <ej-lineargauge id="LinearGauge1">
    <e-scales>
-        <e-scale backgroundColor="transparent" [showMarkerPointers]="false" [showBarPointers]="true" [border]="{ color: 'transparent', width: 0 }">
+        <e-scale backgroundColor="transparent" [showMarkerPointers]="false" 
+             [showBarPointers]="true" [border]="{ color: 'transparent', width: 0 }">
           <e-barpointers>
-              <e-barpointer  [width]="5" backgroundColor="grey" [value]=91 backgroundColor="red" [opacity]=0.7 [border]="{ color: '#860201', width: 2 }" >
+              <e-barpointer  [width]="5" backgroundColor="grey" [value]=91 
+              backgroundColor="red" [opacity]=0.7 [border]="{ color: '#860201', width: 2 }" >
               </e-barpointer>
            </e-barpointers>	
           <e-ticks>
-               <e-tick type="majorinterval" [width]=2 color="#8c8c8c" [distanceFromScale]="{ x: 7, y: 0 }"></e-tick>
-               <e-tick type="minorinterval" [width]=1 [height]=6 color="#8c8c8c" [distanceFromScale]="{ x: 7, y: 0 }"></e-tick>
+               <e-tick type="majorinterval" [width]=2 color="#8c8c8c" 
+               [distanceFromScale]="{ x: 7, y: 0 }"></e-tick>
+               <e-tick type="minorinterval" [width]=1 [height]=6 color="#8c8c8c" 
+               [distanceFromScale]="{ x: 7, y: 0 }"></e-tick>
           </e-ticks>
         </e-scale>
    </e-scales>
@@ -116,15 +127,19 @@ Execute the above code to render the following output.
 
  <ej-lineargauge id="LinearGauge1">
    <e-scales>
-        <e-scale backgroundColor="transparent" [showMarkerPointers]="false" [showBarPointers]="true" [border]="{ color: 'transparent', width: 0 }">
+        <e-scale backgroundColor="transparent" [showMarkerPointers]="false" 
+         [showBarPointers]="true" [border]="{ color: 'transparent', width: 0 }">
           <e-barpointers>
-              <e-barpointer  [width]="10" backgroundColor="grey" [value]=91 backgroundColor="#8BABFF" [opacity]=0.7 [border]="{ color: '#860201', width: 2 }"
-                                         placement="near" [distanceFromScale]=20 >
+              <e-barpointer  [width]="10" backgroundColor="grey" [value]=91 
+               backgroundColor="#8BABFF" [opacity]=0.7 [border]="{ color: '#860201',
+                                width: 2 }" placement="near" [distanceFromScale]=20 >
               </e-barpointer>
            </e-barpointers>	
           <e-ticks>
-               <e-tick type="majorinterval" [width]=2 color="#8c8c8c" [distanceFromScale]="{ x: 7, y: 0 }"></e-tick>
-               <e-tick type="minorinterval" [width]=1 [height]=6 color="#8c8c8c" [distanceFromScale]="{ x: 7, y: 0 }"></e-tick>
+               <e-tick type="majorinterval" [width]=2 color="#8c8c8c" 
+                         [distanceFromScale]="{ x: 7, y: 0 }"></e-tick>
+               <e-tick type="minorinterval" [width]=1 [height]=6 color="#8c8c8c"
+                                   [distanceFromScale]="{ x: 7, y: 0 }"></e-tick>
           </e-ticks>
         </e-scale>
    </e-scales>
@@ -147,18 +162,22 @@ Execute the above code to render the following output.
 
  <ej-lineargauge id="LinearGauge1" [height]=500 [width]=300 labelColor="grey" [enableAnimation]="false">
    <e-scales>
-        <e-scale backgroundColor="transparent" [showCustomLabels]="true" [customLabels]="customLabels" [showMarkerPointers]="false" [showBarPointers]="true" [border]="{ color: 'transparent', width: 0 }">
+        <e-scale backgroundColor="transparent" [showCustomLabels]="true" 
+              [customLabels]="customLabels" [showMarkerPointers]="false" 
+              [showBarPointers]="true" [border]="{ color: 'transparent', width: 0 }">
           <e-barpointers>
-              <e-barpointer  [width]="10" backgroundColor="#8BABFF" [value]=91 placement="near" [distanceFromScale]=60 >
-              </e-barpointer>
-              <e-barpointer  [width]="10" backgroundColor="#FDB761" [value]=51 placement="near" [distanceFromScale]=20 >
-              </e-barpointer>
-              <e-barpointer  [width]="10" backgroundColor="#FF0000" [value]=88 placement="near" [distanceFromScale]=100 >
-              </e-barpointer>
+              <e-barpointer  [width]="10" backgroundColor="#8BABFF" [value]=91 
+               placement="near" [distanceFromScale]=60 ></e-barpointer>
+              <e-barpointer  [width]="10" backgroundColor="#FDB761" [value]=51 
+               placement="near" [distanceFromScale]=20 ></e-barpointer>
+              <e-barpointer  [width]="10" backgroundColor="#FF0000" [value]=88 
+               placement="near" [distanceFromScale]=100 ></e-barpointer>
            </e-barpointers>	
           <e-ticks>
-               <e-tick type="majorinterval" [width]=2 color="#8c8c8c" [distanceFromScale]="{ x: 7, y: 0 }"></e-tick>
-               <e-tick type="minorinterval" [width]=1 [height]=6 color="#8c8c8c" [distanceFromScale]="{ x: 7, y: 0 }"></e-tick>
+               <e-tick type="majorinterval" [width]=2 color="#8c8c8c" 
+                         [distanceFromScale]="{ x: 7, y: 0 }"></e-tick>
+               <e-tick type="minorinterval" [width]=1 [height]=6 color="#8c8c8c" 
+                         [distanceFromScale]="{ x: 7, y: 0 }"></e-tick>
           </e-ticks>
         </e-scale>
    </e-scales>
@@ -168,12 +187,13 @@ Execute the above code to render the following output.
 
 {% highlight ts %}
 
-                //Adding custom label collection
-                this.customLabels= [{
-                    value: "Mathematics Mark Comparision",position: { x: 55, y: 97 }},
-                { value: "Halfyearly", position: { x: 72, y: 87 }, textAngle: 90 },
-                { value: "Quaterly", position: { x: 56, y: 87 }, textAngle: 90 },
-                { value: "Annual", position: { x: 87, y: 87 }, textAngle: 90 }];
+//Adding custom label collection
+this.customLabels = [{
+    value: "Mathematics Mark Comparision", position: { x: 55, y: 97 }
+},
+{ value: "Halfyearly", position: { x: 72, y: 87 }, textAngle: 90 },
+{ value: "Quaterly", position: { x: 56, y: 87 }, textAngle: 90 },
+{ value: "Annual", position: { x: 87, y: 87 }, textAngle: 90 }];
 
 {% endhighlight %}
 

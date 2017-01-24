@@ -9,14 +9,14 @@ documentation: ug
 
 # Trendlines
 
-EjChart can generate Trendlines for Cartesian type series *(Line, Column, Scatter, Area, Candle, HiLo etc.)* except bar type series. You can add more than one trendline object to the [`trendlines`](../api/ejchart#members:series-trendlines) option.
+EjChart can generate Trendlines for Cartesian type series *(Line, Column, Scatter, Area, Candle, HiLo etc.)* except bar type series. You can add more than one trendline object to the `trendlines`(../api/ejchart#members:series-trendlines) option.
 
 {% highlight ts %}
 
-        this.ChartTrendlines= [{
-             //Enable Trendline to chart series
-             visibility: "visible", type: "linear"
-            }];
+this.ChartTrendlines= [{
+     //Enable Trendline to chart series
+     visibility: "visible", type: "linear"
+   }];
 
 {% endhighlight %}
 
@@ -36,15 +36,15 @@ EjChart can generate Trendlines for Cartesian type series *(Line, Column, Scatte
 
 ## Customize the trendline styles
 
-A trendline can be customized by using the properties such as [`fill`], [`width`], **dashArray** and **opacity**. The default type of trendline is **"linear"**.
+A trendline can be customized by using the properties such as `fill`, `width`, **dashArray** and **opacity**. The default type of trendline is **"linear"**.
 
 {% highlight ts %}
 
-            this.ChartTrendlines= [{
-                  //...
-                  //Customize the Trendline styles
-                  fill: '#99CCFF', width: 3, opacity: 1, dashArray: '2,3'
-            }];
+this.ChartTrendlines = [{
+    //...
+    //Customize the Trendline styles
+    fill: '#99CCFF', width: 3, opacity: 1, dashArray: '2,3'
+}];
 
 {% endhighlight %}
 
@@ -76,14 +76,14 @@ EjChart supports the following type of Trendlines.
 
 ### Linear
 
-To render Linear Trendline, you have to set the [`type`] as **"linear"**. 
+To render Linear Trendline, you have to set the `type` as **"linear"**. 
 
 {% highlight ts %}
 
-            this.ChartTrendlines= [{
-                       //Change Trendline type
-                       type: "linear"
-            }];
+this.ChartTrendlines = [{
+    //Change Trendline type
+    type: "linear"
+}];
 
 {% endhighlight %}
 
@@ -103,14 +103,14 @@ To render Linear Trendline, you have to set the [`type`] as **"linear"**.
 
 ### Exponential
 
-Exponential Trendline can be rendered by setting the [`type`] as **"exponential"**. 
+Exponential Trendline can be rendered by setting the `type` as **"exponential"**. 
 
 {% highlight ts %}
 
-            this.ChartTrendlines= [{
-                       //Change Trendline type
-                       type: "exponential"
-            }];
+this.ChartTrendlines = [{
+    //Change Trendline type
+    type: "exponential"
+}];
 
 {% endhighlight %}
 
@@ -131,14 +131,14 @@ Exponential Trendline can be rendered by setting the [`type`] as **"exponential"
 
 ### Logarithmic
 
-Logarithmic Trendline can be rendered by setting the [`type`] as **"Logarithmic"**.  
+Logarithmic Trendline can be rendered by setting the `type` as **"Logarithmic"**.  
 
 {% highlight ts %}
 
-            this.ChartTrendlines= [{
-                       //Change Trendline type
-                       type: "logarithmic"
-            }];
+this.ChartTrendlines = [{
+    //Change Trendline type
+    type: "logarithmic"
+}];
 
 {% endhighlight %}
 
@@ -159,14 +159,14 @@ Logarithmic Trendline can be rendered by setting the [`type`] as **"Logarithmic"
 
 ### Power
 
-Power Trendline can be rendered by setting the [`type`] of the trendline as **"power"**. 
+Power Trendline can be rendered by setting the `type` of the trendline as **"power"**. 
 
 {% highlight ts %}
 
-            this.ChartTrendlines= [{
-                       //Change Trendline type
-                       type: "power"
-            }];
+this.ChartTrendlines = [{
+    //Change Trendline type
+    type: "power"
+}];
 
 {% endhighlight %}
 
@@ -187,14 +187,14 @@ Power Trendline can be rendered by setting the [`type`] of the trendline as **"p
 
 ### Polynomial
 
-Polynomial Trendline can be rendered by setting the trendline [`type`] as **"polynomial"**.  You can change the polynomial order by using the **polynomialOrder** of the trendlines. It ranges from 2 to 6.
+Polynomial Trendline can be rendered by setting the trendline `type` as **"polynomial"**.  You can change the polynomial order by using the **polynomialOrder** of the trendlines. It ranges from 2 to 6.
 
 {% highlight ts %}
 
-            this.ChartTrendlines= [{
-                       //Change Trendline type
-                       type: "polynomial"
-            }];
+this.ChartTrendlines = [{
+    //Change Trendline type
+    type: "polynomial"
+}];
 
 {% endhighlight %}
 
@@ -216,14 +216,14 @@ Polynomial Trendline can be rendered by setting the trendline [`type`] as **"pol
 
 ### MovingAverage
 
-MovingAverage Trendline can be rendered by setting the [`type`] of the trendline as **"movingAverage"**. 
+MovingAverage Trendline can be rendered by setting the `type` of the trendline as **"movingAverage"**. 
 
 {% highlight ts %}
 
-            this.ChartTrendlines= [{
-                       //Change Trendline type and set period for moving average
-                       type: "movingAverage", period: 3
-            }];
+this.ChartTrendlines = [{
+    //Change Trendline type and set period for moving average
+    type: "movingAverage", period: 3
+}];
 
 {% endhighlight %}
 
@@ -249,15 +249,15 @@ MovingAverage Trendline can be rendered by setting the [`type`] of the trendline
 
 ### Forward Forecasting
 
-The value set for [`forwardForecast`] is used to determine the distance moving towards the future trend.
+The value set for `forwardForecast` is used to determine the distance moving towards the future trend.
 
 {% highlight ts %}
 
-            this.ChartTrendlines= [{
-                       //...
-                       //Set forward forecasting value
-                       forwardForecast: 5
-            }];
+this.ChartTrendlines = [{
+    //...
+    //Set forward forecasting value
+    forwardForecast: 5
+}];
 
 {% endhighlight %}
 
@@ -278,15 +278,15 @@ The value set for [`forwardForecast`] is used to determine the distance moving t
 
 ### Backward Forecasting
 
-The value set for the [`backwardForecast`] is used to determine the past trends.
+The value set for the `backwardForecast` is used to determine the past trends.
 
 {% highlight ts %}
 
-            this.ChartTrendlines= [{
-                       //...
-                       //Set forward forecasting value
-                       backwardForecast: 5
-            }];
+this.ChartTrendlines = [{
+    //...
+    //Set forward forecasting value
+    backwardForecast: 5
+}];
 
 {% endhighlight %}
 
@@ -306,15 +306,15 @@ The value set for the [`backwardForecast`] is used to determine the past trends.
 
 ## Trendlines Legend
 
-To display the legend item for trendline, use the [`name`] property. You can interact with the trendline legends similar to the series legends *(show/hide trendlines on legend click)*.  
+To display the legend item for trendline, use the `name` property. You can interact with the trendline legends similar to the series legends *(show/hide trendlines on legend click)*.  
 
 {% highlight ts %}
 
-            this.ChartTrendlines= [{
-                        //...
-                       //Set Trendline name to display in the legend
-                       name: 'Linear'
-            }];
+this.ChartTrendlines = [{
+    //...
+    //Set Trendline name to display in the legend
+    name: 'Linear'
+}];
 
 {% endhighlight %}
 

@@ -42,7 +42,8 @@ Basic attributes such as **height** and **width** property are used to set heigh
 
  <ej-CircularGauge id="circularGauge1">
      <e-scales>
-          <e-scale [showSubGauges]="true" [subGauges]="[{gaugeID: 'Gauge1', height:250,width: 250,position: { x: 150, y: 100 }}]" >           
+          <e-scale [showSubGauges]="true" [subGauges]="[{gaugeID: 'Gauge1', height:250,
+                   width: 250,position: { x: 150, y: 100 }}]" >           
           </e-scale>
        </e-scales>
   </ej-CircularGauge>
@@ -77,8 +78,10 @@ You can set multiple sub gauges in a single **Circular Gauge** by adding an arra
 
  <ej-CircularGauge id="circularGauge1">
      <e-scales>
-          <e-scale [showSubGauges]="true" [subGauges]="[{controlID: 'subGauge1', height:200,width: 200,position: { x: 200, y: 150 }},
-                                                        {controlID: 'subGauge2', height:200,width: 200,position: { x: 50, y: 200 }}]" >           
+          <e-scale [showSubGauges]="true" [subGauges]="[{controlID: 'subGauge1',
+                            height:200,width: 200,position: { x: 200, y: 150 }},
+                           {controlID: 'subGauge2', height:200,width: 200,position: 
+                           { x: 50, y: 200 }}]" >           
           </e-scale>
        </e-scales>
   </ej-CircularGauge>

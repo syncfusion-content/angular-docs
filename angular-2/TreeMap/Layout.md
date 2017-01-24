@@ -24,11 +24,12 @@ There are four different **TreeMap** layouts such as
 
 {% highlight html %}
 
-        <ej-treemap id="treemap"  [dataSource]="population_data" itemsLayoutMode="squarified" weightValuePath= "Population"  colorValuePath= "Growth">
-               <e-levels>
-                <e-level groupPath="Continent" [groupGap]=5></e-level>
-            </e-levels>
-        </ej-treemap>
+<ej-treemap id="treemap"  [dataSource]="population_data" itemsLayoutMode="squarified"
+                          weightValuePath= "Population"  colorValuePath= "Growth">
+     <e-levels>
+         <e-level groupPath="Continent" [groupGap]=5></e-level>
+     </e-levels>
+</ej-treemap>
 
 {% endhighlight %}
 
@@ -42,11 +43,12 @@ There are four different **TreeMap** layouts such as
 
 {% highlight html %}
 
-        <ej-treemap id="treemap"  [dataSource]="population_data" itemsLayoutMode="sliceanddiceauto" weightValuePath= "Population"  colorValuePath= "Growth">
-               <e-levels>
-                <e-level groupPath="Continent" [groupGap]=5></e-level>
-            </e-levels>
-        </ej-treemap>
+<ej-treemap id="treemap"  [dataSource]="population_data" itemsLayoutMode="sliceanddiceauto"
+                                 weightValuePath= "Population"  colorValuePath= "Growth">
+    <e-levels>
+         <e-level groupPath="Continent" [groupGap]=5></e-level>
+    </e-levels>
+</ej-treemap>
 
 {% endhighlight %}
 
@@ -60,11 +62,13 @@ There are four different **TreeMap** layouts such as
 
 {% highlight html %}
 
-        <ej-treemap id="treemap"  [dataSource]="population_data" itemsLayoutMode="sliceanddicehorizontal" weightValuePath= "Population"  colorValuePath= "Growth">
-               <e-levels>
-                <e-level groupPath="Continent" [groupGap]=5></e-level>
-            </e-levels>
-        </ej-treemap>
+<ej-treemap id="treemap"  [dataSource]="population_data" 
+        itemsLayoutMode="sliceanddicehorizontal" weightValuePath= "Population"
+        colorValuePath= "Growth">
+       <e-levels>
+           <e-level groupPath="Continent" [groupGap]=5></e-level>
+       </e-levels>
+</ej-treemap>
 
 {% endhighlight %}
 
@@ -78,11 +82,13 @@ There are four different **TreeMap** layouts such as
 
 {% highlight html %}
 
-        <ej-treemap id="treemap"  [dataSource]="population_data" itemsLayoutMode="sliceanddicevertical" weightValuePath= "Population"  colorValuePath= "Growth">
-               <e-levels>
-                <e-level groupPath="Continent" [groupGap]=5></e-level>
-            </e-levels>
-        </ej-treemap>
+<ej-treemap id="treemap"  [dataSource]="population_data" 
+       itemsLayoutMode="sliceanddicevertical" weightValuePath= "Population"
+                                                  colorValuePath= "Growth">
+     <e-levels>
+        <e-level groupPath="Continent" [groupGap]=5></e-level>
+     </e-levels>
+</ej-treemap>
 
 {% endhighlight %}
 

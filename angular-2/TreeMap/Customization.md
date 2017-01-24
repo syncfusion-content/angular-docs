@@ -27,8 +27,8 @@ You can color, all the leaf nodes with the same color by setting the `color` val
 
 {% highlight html %}
 
-        <ej-treemap id="treemap" uniColorMapping.color="orange">
-        </ej-treemap>
+<ej-treemap id="treemap" uniColorMapping.color="orange">
+</ej-treemap>
 
 {% endhighlight %}
 
@@ -42,9 +42,9 @@ You can group the leaf nodes based on the range of the data’s color values. Yo
 
 {% highlight html %}
 
-     <ej-treemap id="treemap">
-        <e-rangecolormapping>
-           <e-rangecolor [from]="0" [to]="1" color="#77D8D8">
+<ej-treemap id="treemap">
+      <e-rangecolormapping>
+            <e-rangecolor [from]="0" [to]="1" color="#77D8D8">
             </e-rangecolor>
             <e-rangecolor [from]="1" [to]="2" color="#AED960">
             </e-rangecolor>
@@ -52,8 +52,8 @@ You can group the leaf nodes based on the range of the data’s color values. Yo
             </e-rangecolor>
            	<e-rangecolor [from]="3" [to]="4" color="#F3D240">
             </e-rangecolor>
-		</e-rangecolormapping>
-    </ej-treemap>
+	</e-rangecolormapping>
+</ej-treemap>
 
 {% endhighlight %}
 
@@ -65,8 +65,11 @@ You can differentiate all the leaf nodes using the `desaturationColorMapping` pr
 
 {% highlight html %}
 
-        <ej-treemap id="treemap" desaturationColorMapping.color="DeepSkyBlue" desaturationColorMapping.from="1" desaturationColorMapping.to="0.2" desaturationColorMapping.rangeMinimum="0" desaturationColorMapping.rangeMaximum="4">
-        </ej-treemap>
+<ej-treemap id="treemap" desaturationColorMapping.color="DeepSkyBlue"
+           desaturationColorMapping.from="1" desaturationColorMapping.to="0.2"
+             desaturationColorMapping.rangeMinimum="0"
+               desaturationColorMapping.rangeMaximum="4">
+</ej-treemap>
 
 {% endhighlight %}
 
@@ -84,27 +87,28 @@ You can customize the **Leaf level TreeMap items** using `leafItemSettings`. The
 
 {% highlight html %}
 
-    <script  id="template" type="application/jsrender">
+<script  id="template" type="application/jsrender">
         <div  style="margin-left:17px;margin-top:-45px;">      
             <div style="height:auto;width:auto;background:black;border-radius:3px;opacity:0.6">
                 <div style="margin-top:-20px;margin-left:9px;padding-top:3px;margin-right:9px;">
-                    <label style="margin-top:-20px;font-weight:normal;font-size:12px;color:white;font-family:Segoe UI;">{{:Region}}</label>
+                    <label style="margin-top:-20px;font-weight:normal;font-size:12px;color:white;font-family:Segoe UI;">'{{:Region}}'</label>
                 </div>
                 <div style="height:10px;"></div>
                 <div style="margin-top:-10px;margin-left:9px;margin-right:9px;padding-bottom:3px;">
-                    <label style="margin-top:-10px;font-weight:normal;font-size:14px;color:white;font-family:segoe ui light;">{{:Population}}</label>
+                    <label style="margin-top:-10px;font-weight:normal;font-size:14px;color:white;font-family:segoe ui light;">'{{:Population}}'</label>
                 </div>
             </div>
         </div>            
-    </script>
+</script>
 
 
-
-  <ej-treemap id="treemap"  dataSource="population_data" colorValuePath= "Growth" weightValuePath= "Population" leafItemSettings.labelPath="Country" [showTooltip]="true" tooltipTemplate='template'>
-        <e-levels>
+<ej-treemap id="treemap"  dataSource="population_data" colorValuePath= "Growth"
+          weightValuePath= "Population" leafItemSettings.labelPath="Country" 
+                                 [showTooltip]="true" tooltipTemplate='template'>
+    <e-levels>
             <e-level groupPath="Continent" [groupGap]="5"></e-level>
-        </e-levels>
-        <e-rangecolormapping>
+    </e-levels>
+    <e-rangecolormapping>
            <e-rangecolor [from]="0" [to]="1" color="#77D8D8">
             </e-rangecolor>
             <e-rangecolor [from]="1" [to]="1.5" color="#AED960">
@@ -113,8 +117,8 @@ You can customize the **Leaf level TreeMap items** using `leafItemSettings`. The
             </e-rangecolor>
            	<e-rangecolor [from]="2" [to]="3" color="#F3D240">
             </e-rangecolor>
-		</e-rangecolormapping>
- </ej-treemap>
+  </e-rangecolormapping>
+</ej-treemap>
 
 {% endhighlight %}
 

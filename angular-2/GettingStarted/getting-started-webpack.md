@@ -138,4 +138,3 @@ N> if you want to use other port, open `package.json` file, then change port in 
 We have implemented our [Angular 2 sample browser](http://ng2jq.syncfusion.com/) using Angular 2 Syncfusion Angular 2 components.
 
 
-

@@ -43,11 +43,11 @@ Font option is also available on the labels. The basic three properties of fonts
 
  <ej-CircularGauge id="circularGauge1" >
      <e-scales>
-          <e-scale backgroundColor="#FAF4B5" [showScaleBar]="true" [radius]=150 [width]=10 [border]="{ width: 2, color: 'Yellow' }"
-                                            [labels]="pointerLabels" >
+          <e-scale backgroundColor="#FAF4B5" [showScaleBar]="true" [radius]=150 
+           [width]=10 [border]="{ width: 2, color: 'Yellow' }" [labels]="pointerLabels">
           	<e-pointers>
-                <e-pointer [value]=70 [length]="100" backgroundColor="#FAF4B5" [width]=16 [opacity]=0.6 [border]="{ color: 'Yellow', width: 2 }" >
-                </e-pointer>
+                <e-pointer [value]=70 [length]="100" backgroundColor="#FAF4B5" [width]=16
+                 [opacity]=0.6 [border]="{ color: 'Yellow', width: 2 }"></e-pointer>
             </e-pointers>
           </e-scale>
        </e-scales>
@@ -59,22 +59,22 @@ Font option is also available on the labels. The basic three properties of fonts
 
 {% highlight ts %}
 
-                this.pointerLabels= [{
-                    // For setting label angle
-                    angle: 10,
-                    // For setting label opacity
-                    opacity: 0.8,
-                    // For disable the include first value prperty
-                    includeFistValue: false,
-                    // For setting label color
-                    color: "Yellow",
-                    // For setting label font
-                    font: {
-                        size: "15px",
-                        fontFamily: "Arial",
-                        fontStyle: "bold"
-                    }
-                }];
+this.pointerLabels = [{
+    // For setting label angle
+    angle: 10,
+    // For setting label opacity
+    opacity: 0.8,
+    // For disable the include first value prperty
+    includeFistValue: false,
+    // For setting label color
+    color: "Yellow",
+    // For setting label font
+    font: {
+        size: "15px",
+        fontFamily: "Arial",
+        fontStyle: "bold"
+    }
+}];
 
 {% endhighlight %}
 
@@ -94,18 +94,19 @@ Labels can be positioned with the help of two properties such as **distanceFromS
 
  <ej-CircularGauge id="circularGauge1" >
      <e-scales>
-          <e-scale [showRanges]="true" backgroundColor="#5DF243" [showScaleBar]="true" [radius]=150 [size]=2 [labels]="[{ unitText: "kmpH", unitTextPosition: 'back'}]" >
+          <e-scale [showRanges]="true" backgroundColor="#5DF243" [showScaleBar]="true" 
+           [radius]=150 [size]=2 [labels]="[{ unitText: "kmpH", unitTextPosition: 'back'}]" >
           	<e-pointers>
                 <e-pointer [value]=40 [length]="100" [showBackNeedle]="true" >
                 </e-pointer>
             </e-pointers>
             <e-ranges>
-                <e-range [distanceFromScale]='-30' [startValue]='0' [endValue]='50' backgroundColor="Green" placement="far">
-                </e-range>
-                <e-range [distanceFromScale]='-30' [startValue]='50' [endValue]='80' backgroundColor="Yellow" placement="far">
-                </e-range>
-                <e-range [distanceFromScale]='-30' [startValue]='80' [endValue]='100' backgroundColor="red" placement="far">
-                </e-range>
+                <e-range [distanceFromScale]='-30' [startValue]='0' [endValue]='50' 
+                    backgroundColor="Green" placement="far"></e-range>
+                <e-range [distanceFromScale]='-30' [startValue]='50' [endValue]='80' 
+                    backgroundColor="Yellow" placement="far"></e-range>
+                <e-range [distanceFromScale]='-30' [startValue]='80' [endValue]='100' 
+                    backgroundColor="red" placement="far"></e-range>
             </e-ranges>
           </e-scale>
        </e-scales>
@@ -125,10 +126,12 @@ You can achieve multiple labels such as minor and major in a **Gauge** sample sc
 
  <ej-CircularGauge id="circularGauge1" >
      <e-scales>
-          <e-scale [showRanges]="true" backgroundColor="#5DF243" [showScaleBar]="true" [radius]=150 [size]=2 [labels]="[{type='minor', color: 'yellow'}, 
-                                                                                                                        {type='major', color: 'red'}]" >
+          <e-scale [showRanges]="true" backgroundColor="#5DF243" [showScaleBar]="true" 
+                    [radius]=150 [size]=2 [labels]="[{type='minor', color: 'yellow'}, 
+                    {type='major', color: 'red'}]" >
           	<e-pointers>
-                <e-pointer backgroundColor="yellow" [length]="110" [border]="{ width: 1.5, color: 'Red' }" >
+                <e-pointer backgroundColor="yellow" [length]="110" 
+                         [border]="{ width: 1.5, color: 'Red' }">
                 </e-pointer>
             </e-pointers>
           </e-scale>

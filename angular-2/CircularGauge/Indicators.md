@@ -19,7 +19,8 @@ Indicators collection is directly added to the scale object. Refer the following
 
  <ej-CircularGauge id="circularGauge1" >
      <e-scales>
-          <e-scale [showIndicators]="true" [indicators]="indicators: [{ height: 10,width: 10,type: 'circle',value: 0,position: { x: 185, y: 300 }}]" >
+          <e-scale [showIndicators]="true" [indicators]="indicators: [{ height: 10,
+                width: 10,type: 'circle',value: 0,position: { x: 185, y: 300 }}]" >
           </e-scale>
        </e-scales>
   </ej-CircularGauge>
@@ -41,10 +42,12 @@ Indicators are of several types such as, circle, rectangle, rounded rectangle, t
 
  <ej-CircularGauge id="circularGauge1" >
      <e-scales>
-          <e-scale [showIndicators]="true" backgroundColor="#5DF243" [showScaleBar]="true" [border]="{ width: 1.5, color: 'black' }" [indicators]="indicators: [{ height: 10,width: 10,type: 'circle',value: 0,position: { x: 185, y: 300 }}]" >
+          <e-scale [showIndicators]="true" backgroundColor="#5DF243" [showScaleBar]="true"
+            [border]="{ width: 1.5, color: 'black' }" [indicators]="indicators: [{ height: 10,
+            width: 10,type: 'circle',value: 0,position: { x: 185, y: 300 }}]" >
           	<e-pointers>
-                <e-pointer backgroundColor="#5DF243" [border]="{ width: 1.5, color: 'black' }" [length]="110">
-                </e-pointer>
+                <e-pointer backgroundColor="#5DF243" [border]="{ width: 1.5, color: 'black' }" 
+                                                                   [length]="110"></e-pointer>
             </e-pointers>
           </e-scale>
        </e-scales>
@@ -67,13 +70,14 @@ The **backgroundColor** and **borderColor** sets the appearance behavior for the
 
  <ej-CircularGauge id="circularGauge1" >
      <e-scales>
-          <e-scale [showIndicators]="true" backgroundColor="#5DF243" [showScaleBar]="true" [radius]=150 [size]=5 
-                                            [indicators]="indicators:[{ height: 10,width: 10,type: 'circle',value: 0,position: { x: 185, y: 300 },
-                                                stateRanges: [{endValue: 100,startValue: 0,backgroundColor: '#5DF243',borderColor: 'Black',textColor: '#870505'
-                                                }]}]" >
+          <e-scale [showIndicators]="true" backgroundColor="#5DF243" [showScaleBar]="true" 
+                   [radius]=150 [size]=5 [indicators]="indicators:[{ height: 10,width: 10,
+                   type: 'circle',value: 0,position: { x: 185, y: 300 }, stateRanges: 
+                   [{endValue: 100,startValue: 0,backgroundColor: '#5DF243',borderColor: 'Black',
+                   textColor: '#870505' }]}]" >
           	<e-pointers>
-                <e-pointer backgroundColor="#5DF243" [border]="{ width: 1.5, color: 'black' }" [length]="110">
-                </e-pointer>
+                <e-pointer backgroundColor="#5DF243" [border]="{ width: 1.5, color: 'black' }"
+                 [length]="110"></e-pointer>
             </e-pointers>
           </e-scale>
        </e-scales>
@@ -93,17 +97,17 @@ You can use multiple indicators for a single **Gauge**. Each indicator have a li
 
  <ej-CircularGauge id="circularGauge1" >
      <e-scales>
-          <e-scale [showIndicators]="true" backgroundColor="#5DF243" [showScaleBar]="true" [radius]=150 [size]=5 
-                                            [indicators]="gaugeIndicators" >
+          <e-scale [showIndicators]="true" backgroundColor="#5DF243" [showScaleBar]="true"
+              [radius]=150 [size]=5 [indicators]="gaugeIndicators" >
           	<e-pointers>
                 <e-pointer [value]=70 [length]="110">
                 </e-pointer>
             </e-pointers>
             <e-ranges>
-                <e-range [distanceFromScale]='-30' [startValue]='0' [endValue]='50' backgroundColor="Green" placement="far">
-                </e-range>
-                <e-range [distanceFromScale]='-30' [startValue]='50' [endValue]='100' backgroundColor="red" placement="far">
-                </e-range>
+                <e-range [distanceFromScale]='-30' [startValue]='0' [endValue]='50' 
+                        backgroundColor="Green" placement="far"></e-range>
+                <e-range [distanceFromScale]='-30' [startValue]='50' [endValue]='100' 
+                        backgroundColor="red" placement="far"></e-range>
             </e-ranges>
           </e-scale>
        </e-scales>
@@ -115,45 +119,45 @@ You can use multiple indicators for a single **Gauge**. Each indicator have a li
 {% highlight ts %}
 
 
-         this.gaugeIndicators= [
-                //Indicator1
-                {
-                    height: 10,
-                    width: 10,
-                    type: "circle",
-                    value: 0,
-                    position: { x: 165, y: 300 },
-                    stateRanges: [{
-                        endValue: 50,
-                        startValue: 0,
-                        backgroundColor: "#24F92F",
-                        borderColor: "Black"
-                    }, {
-                        endValue: 50,
-                        startValue: 100,
-                        backgroundColor: "#322C04",
-                        borderColor: "Black"
-                    }]
-                },
-                //Indicator2
-                {
-                    height: 10,
-                    width: 10,
-                    type: "circle",
-                    value: 0,
-                    position: { x: 215, y: 300 },
-                    stateRanges: [{
-                        endValue: 50,
-                        startValue: 0,
-                        backgroundColor: "#600000",
-                        borderColor: "Black"
-                    }, {
-                        endValue: 100,
-                        startValue: 50,
-                        backgroundColor: "#FF4F2A",
-                        borderColor: "Black"
-                    }]
-                }];
+this.gaugeIndicators = [
+       //Indicator1
+       {
+           height: 10,
+           width: 10,
+           type: "circle",
+           value: 0,
+           position: { x: 165, y: 300 },
+           stateRanges: [{
+               endValue: 50,
+               startValue: 0,
+               backgroundColor: "#24F92F",
+               borderColor: "Black"
+           }, {
+               endValue: 50,
+               startValue: 100,
+               backgroundColor: "#322C04",
+               borderColor: "Black"
+           }]
+       },
+       //Indicator2
+       {
+           height: 10,
+           width: 10,
+           type: "circle",
+           value: 0,
+           position: { x: 215, y: 300 },
+           stateRanges: [{
+               endValue: 50,
+               startValue: 0,
+               backgroundColor: "#600000",
+               borderColor: "Black"
+           }, {
+               endValue: 100,
+               startValue: 50,
+               backgroundColor: "#FF4F2A",
+               borderColor: "Black"
+           }]
+       }];
 
 {% endhighlight %}
 

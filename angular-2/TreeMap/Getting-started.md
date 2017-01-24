@@ -123,8 +123,8 @@ N> `core.ts` file is mandatory for all Syncfusion JavaScript Angular 2 component
 * Create `treemap.component.html` view file inside `src/treemap` folder and render ejTreeMap Angular 2 component using the below code example. 
 
 {% highlight html %}
-	<ej-treemap id="defaulttreemap">
-	</ej-treemap>
+<ej-treemap id="defaulttreemap">
+</ej-treemap>
 {% endhighlight %}
 
 * Create `treemap.component.ts` model file inside the folder `src/treemap` and create sample component using the below code example.
@@ -151,8 +151,10 @@ Before adding router configuration for above created ejTreeMap component, we rec
 {% highlight html %}
 <div>
 	<ul class="nav navbar-nav">
-		. . . .
-		<li><a data-toggle="collapse" data-target="#skeleton-navigation-navbar-collapse.in" href="#treemap" [routerLink]="['/treemap']">treemap </a></li>
+		<li>
+           <a data-toggle="collapse" data-target="#skeleton-navigation-navbar-collapse.in" 
+           href="#treemap" [routerLink]="['/treemap']">treemap </a>
+        </li>
 	</ul>
 </div>
 <main>
@@ -235,20 +237,20 @@ export class DataService{
 // DataService file containing treemap data in treemapData method
     treemapData():Array<any>{
         return[
-                   { Continent: "Asia", Region: "Southern Asia", Growth: 1.32, Population: 1749046000 },
-                   { Continent: "Asia", Region: "Eastern Asia", Growth: 0.57, Population: 1620807000 },
-                   { Continent: "Asia", Region: "South-Eastern Asia", Growth: 1.20, Population: 618793000 },
-                   { Continent: "Asia", Region: "Western Asia", Growth: 1.98, Population: 245707000 },
-                   { Continent: "Asia", Region: "Central Asia", Growth: 1.43, Population: 64370000 },
-                   { Continent: "Europe", Region: "Europe", Growth: 0.10, Population: 742452000 },
-                   { Continent: "America", Region: "South America", Growth: 1.06, Population: 406740000 },
-                   { Continent: "America", Region: "Northern America", Growth: 0.85, Population: 355361000 },
-                   { Continent: "America", Region: "Central America", Growth: 1.40, Population: 167387000 },
-                   { Continent: "Africa", Region: "Eastern Africa", Growth: 2.89, Population: 373202000 },
-                   { Continent: "Africa", Region: "Western Africa", Growth: 2.78, Population: 331255000 },
-                   { Continent: "Africa", Region: "Northern Africa", Growth: 1.70, Population: 210002000 },
-                   { Continent: "Africa", Region: "Middle Africa", Growth: 2.79, Population: 135750000 },
-                   { Continent: "Africa", Region: "Southern Africa", Growth: 0.91, Population: 60425000 }
+            { Continent: "Asia", Region: "Southern Asia", Growth: 1.32, Population: 1749046000 },
+            { Continent: "Asia", Region: "Eastern Asia", Growth: 0.57, Population: 1620807000 },
+            { Continent: "Asia", Region: "South-Eastern Asia", Growth: 1.20, Population: 618793000 },
+            { Continent: "Asia", Region: "Western Asia", Growth: 1.98, Population: 245707000 },
+            { Continent: "Asia", Region: "Central Asia", Growth: 1.43, Population: 64370000 },
+            { Continent: "Europe", Region: "Europe", Growth: 0.10, Population: 742452000 },
+            { Continent: "America", Region: "South America", Growth: 1.06, Population: 406740000 },
+            { Continent: "America", Region: "Northern America", Growth: 0.85, Population: 355361000 },
+            { Continent: "America", Region: "Central America", Growth: 1.40, Population: 167387000 },
+            { Continent: "Africa", Region: "Eastern Africa", Growth: 2.89, Population: 373202000 },
+            { Continent: "Africa", Region: "Western Africa", Growth: 2.78, Population: 331255000 },
+            { Continent: "Africa", Region: "Northern Africa", Growth: 1.70, Population: 210002000 },
+            { Continent: "Africa", Region: "Middle Africa", Growth: 2.79, Population: 135750000 },
+            { Continent: "Africa", Region: "Southern Africa", Growth: 0.91, Population: 60425000 }
         ];
     }
 
@@ -289,10 +291,9 @@ The following code sample explains how to group TreeMap Items using ‘Levels’
 {% highlight html %}
 
 <ej-treemap id="treemap" [dataSource]="dataSource" weightValuePath="Population">
-		<e-levels>
-			<e-level groupPath="Continent" groupGap="5">				
-			</e-level>
-		</e-levels>
+   <e-levels>
+	  <e-level groupPath="Continent" groupGap="5"></e-level>
+   </e-levels>
 </ej-treemap>
 
 {% endhighlight %}
@@ -316,22 +317,18 @@ The following code sample explains how to customize TreeMap appearance using Ran
 {% highlight html %}
 
 <div style="height:300px;width:500px;margin:0px auto;">
-	<ej-treemap id="treemap" [dataSource]="dataSource" weightValuePath="Population" colorValuePath="Growth">
-		<e-levels>
-			<e-level groupPath="Continent" groupGap="5">
-			</e-level>
-		</e-levels>
-		<e-rangecolormapping>
-           <e-rangecolor [from]="0" [to]="1" color="#DC562D">
-            </e-rangecolor>
-            <e-rangecolor [from]="1" [to]="1.5" color="#FED124">
-            </e-rangecolor>
-            <e-rangecolor [from]="1.5" [to]="2" color="#487FC1">
-            </e-rangecolor>
-           	<e-rangecolor [from]="2" [to]="3" color="#0E9F49">
-            </e-rangecolor>
-		</e-rangecolormapping>
-	</ej-treemap>
+<ej-treemap id="treemap" [dataSource]="dataSource" weightValuePath="Population"
+                                                      colorValuePath="Growth">
+	<e-levels>
+	   <e-level groupPath="Continent" groupGap="5"></e-level>
+	</e-levels>
+	<e-rangecolormapping>
+       <e-rangecolor [from]="0" [to]="1" color="#DC562D"></e-rangecolor>
+       <e-rangecolor [from]="1" [to]="1.5" color="#FED124"></e-rangecolor>
+       <e-rangecolor [from]="1.5" [to]="2" color="#487FC1"></e-rangecolor>
+       <e-rangecolor [from]="2" [to]="3" color="#0E9F49"></e-rangecolor>
+	</e-rangecolormapping>
+</ej-treemap>
 </div>
 
 {% endhighlight %}
@@ -348,16 +345,16 @@ You can enable the tooltip by setting `showTooltip` property to “True”. By d
 
 Add the template script to index.html file for treemap tooltip template , refer the below code snippet for tooltipTemplate
 
-{% highlight js %}
+{% highlight html %}
 <script  id="template" type="application/jsrender">
         <div  style="margin-left:17px;margin-top:-45px;">      
             <div style="height:auto;width:auto;background:black;border-radius:3px;opacity:1">
                 <div style="margin-top:-20px;margin-left:9px;padding-top:3px;margin-right:9px;">
-                    <label style="margin-top:-20px;font-weight:normal;font-size:12px;color:white;font-family:Segoe UI;">{{:Region}}</label>
+                    <label style="margin-top:-20px;font-weight:normal;font-size:12px;color:white;font-family:Segoe UI;">'{{:Region}}'</label>
                 </div>
                <div style="height:10px;"></div>
                 <div style="margin-top:-10px;margin-left:9px;margin-right:9px;padding-bottom:3px;">
-                    <label style="margin-top:-10px;font-weight:normal;font-size:14px;color:white;font-family:segoe ui light;">{{:Population}}</label>
+                    <label style="margin-top:-10px;font-weight:normal;font-size:14px;color:white;font-family:segoe ui light;">'{{:Population}}'</label>
                 </div>
             </div>
         </div>            
@@ -403,16 +400,13 @@ The following code sample illustrates how to add labels for legend in a TreeMap.
 
 <div style="height:300px;width:500px;margin:0px auto;">
 
-<ej-treemap id="treemap" [showLegend]="true" [legendSettings.height]="38" [legendSettings.width]="690">
-		<e-rangecolormapping>
-           <e-rangecolor legendLabel="0 - 1 %    Growth">
-            </e-rangecolor>
-            <e-rangecolor legendLabel="1 - 1.5 %    Growth">
-            </e-rangecolor>
-            <e-rangecolor legendLabel="1.5 - 2 %    Growth">
-            </e-rangecolor>
-           	<e-rangecolor legendLabel="2 - 3 %    Growth">
-            </e-rangecolor>
+<ej-treemap id="treemap" [showLegend]="true" [legendSettings.height]="38" 
+                                            [legendSettings.width]="690">
+	<e-rangecolormapping>
+       <e-rangecolor legendLabel="0 - 1 %    Growth"> </e-rangecolor>
+            <e-rangecolor legendLabel="1 - 1.5 %  Growth"></e-rangecolor>
+            <e-rangecolor legendLabel="1.5 - 2 %  Growth"></e-rangecolor>
+           	<e-rangecolor legendLabel="2 - 3 %  Growth"></e-rangecolor>
 		</e-rangecolormapping>
 </ej-treemap>
 

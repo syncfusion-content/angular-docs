@@ -57,9 +57,10 @@ export class DataService{
 
 {% highlight html %}
 
-        <ej-treemap id="treemap"  [dataSource]="population_data" colorValuePath= "Growth" weightValuePath= "Population">
+<ej-treemap id="treemap"  [dataSource]="population_data" colorValuePath= "Growth"
+                                                   weightValuePath= "Population">
                
-        </ej-treemap>
+</ej-treemap>
 
 {% endhighlight %}
 

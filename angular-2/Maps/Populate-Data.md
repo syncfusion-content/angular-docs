@@ -25,7 +25,7 @@ You can assign the complete contents in “**United States of America.json**” 
 
 {% highlight javascript %}
 
-    var usMap = //Paste all the content copied from the JSON file// 
+var usMap = //Paste all the content copied from the JSON file// 
 
 {% endhighlight %}
 
@@ -116,7 +116,7 @@ Refer both shape data and datasource as illustrated in the following code exampl
         { name: "District of Columbia", population: "646449" },
         { name: "Vermont", population: "626630" },
         { name: "Wyoming", population: "582658" }
-    ]
+];
 
     <!-- Shape data file-->
     <script src="usa.js" type="text/javascript"></script>
@@ -131,19 +131,19 @@ The JSON object “populationData” is used as `dataSource` in the following co
 
 {% highlight ts %}
 
-               this.mapLayers= [{
-                    shapeData: usMap,
-                    shapeDataPath: "name",
-                    shapeIdTableField: "name",
-                    dataSource: populationData
-               }];
+this.mapLayers = [{
+    shapeData: usMap,
+    shapeDataPath: "name",
+    shapeIdTableField: "name",
+    dataSource: populationData
+}];
 
 {% endhighlight %}
 
 {% highlight html %}
 
-    <ej-map id="mapcontrol" [layers]="mapLayers">
-    </ej-map>
+<ej-map id="mapcontrol" [layers]="mapLayers">
+</ej-map>
 
 {% endhighlight %}
 
