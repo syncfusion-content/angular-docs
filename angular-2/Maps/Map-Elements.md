@@ -88,7 +88,7 @@ this.mapLayers = [{
 <div  id="template" style="display: none;">
         <div>
             <div style="margin-left:8px;height:45px;width:120px;margin-top:-23px;">					
-	           <label class="label1" style="color:black;margin-left:15px;font-weight:normal">{{:city}}
+	           <label class="label1" style="color:black;margin-left:15px;font-weight:normal">'{{:city}}'
                </label>				 			 
 	        </div>
         </div>
