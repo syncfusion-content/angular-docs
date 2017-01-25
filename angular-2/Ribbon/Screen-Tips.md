@@ -21,7 +21,6 @@ Standard `html tooltip` can be set using [`tooltip`](http://help.syncfusion.com/
         <e-tabs>
             <e-tab id="home" text="HOME" [groups]="groups1">
             </e-tab>
-            
         </e-tabs>
    </ej-ribbon>
 <ul id="ribbonmenu">
@@ -36,6 +35,8 @@ Standard `html tooltip` can be set using [`tooltip`](http://help.syncfusion.com/
 
 {% endhighlight %}
 
+{% highlight html %}
+
 import { Component } from '@angular/core';
 import { NorthwindService } from '../../services/northwind.service';
 
@@ -46,22 +47,18 @@ import { NorthwindService } from '../../services/northwind.service';
     providers: [NorthwindService]
 })
 export class ResizeComponent {
-    constructor(public northwindService: NorthwindService) { }
-    groups1 = [{
+   constructor(public northwindService: NorthwindService) { }
+   groups1 = [{
         text: "Clipboard",
         content: [{
             groups: [{
                 id: "cut",
                 text: "Cut",
-
-                // set tooltip to cut button
                 toolTip: "Remove the selection and put it on clipboard"
             },
                 {
                     id: "copy",
                     text: "Copy",
-
-                    // set tooltip to copy button
                     toolTip: "Put a copy of selection on clipboard",
                     buttonSettings: {
                         contentType: ej.ContentType.TextAndImage,
@@ -73,10 +70,10 @@ export class ResizeComponent {
                 width: 60
             }
         }]
-    }]
+     }]
 }
 
-{% highlight html %}
+{% endhighlight %}
 
 
 ![](Screen-Tips_images/Screen-Tips_img1.png)
@@ -135,8 +132,6 @@ export class ResizeComponent {
                 type: ej.Ribbon.type.gallery,
                 galleryItems: [{
                     text: "Style 1",
-
-                    // custom tooltip of style 1 of gallery item
                     customToolTip: {
                         title: "Style 1",
                         content: "<I>Style 1 to customize the table</I>"
@@ -184,8 +179,6 @@ export class ResizeComponent {
                     text: "Clear Formatting",
                     toolTip: "Clear Formatting",
                     customItemType: ej.Ribbon.customItemType.button,
-
-                    // custom tooltip of style 1 of custom gallery item
                     customToolTip: {
                         title: "Clear Format",
                         content: "<I>To clear formatting</I>"

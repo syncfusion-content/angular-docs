@@ -106,7 +106,7 @@ import { NgModule, enableProdMode, ErrorHandler } from '@angular/core';
 . . . . . 
 import { EJAngular2Module } from 'ej-angular2';
 import { AppComponent } from './app.component';
-. . . .
+. . . . .
 import { DialogComponent } from './dialog/dialog.component';
 
 import { rootRouterConfig } from './app.routes';
@@ -136,6 +136,5 @@ N> if you want to use other port, open `package.json` file, then change port in 
 ## Demos
 
 We have implemented our [Angular 2 sample browser](http://ng2jq.syncfusion.com/) using Angular 2 Syncfusion Angular 2 components.
-
 
 

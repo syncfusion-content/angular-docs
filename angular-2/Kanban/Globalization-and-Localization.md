@@ -52,7 +52,7 @@ Add New Card
 <td>
 SwimlaneCaptionFormat
 </td><td>
-"- {{:count}}{{if count == 1 }} item {{else}} items {{/if}}"
+    "-{{:count}}{{if count == 1 }} item {{else}} items {{/if}}"
 </td></tr>
 <tr>
 <td>
