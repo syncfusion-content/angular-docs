@@ -35,6 +35,8 @@ Standard `html tooltip` can be set using [`tooltip`](http://help.syncfusion.com/
 
 {% endhighlight %}
 
+{% highlight html %}
+
 import { Component } from '@angular/core';
 import { NorthwindService } from '../../services/northwind.service';
 
@@ -71,7 +73,8 @@ export class ResizeComponent {
      }]
 }
 
-{% highlight html %}
+{% endhighlight %}
+
 
 ![](Screen-Tips_images/Screen-Tips_img1.png)
 
