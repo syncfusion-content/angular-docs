@@ -2,7 +2,7 @@
 layout: post
 title: Change-series-type
 description: change series type
-platform: js
+platform: angular-2
 control: RangeNavigator
 documentation: ug
 ---

@@ -1,7 +1,7 @@
 ---
 title: Getting Started for Angular 2 RichTextEditor
 description: How to create a RichTextEditor control.
-platform: js
+platform: angular-2
 control: RTE
 documentation: Ug
 keywords: ejrte, rte, js rte
