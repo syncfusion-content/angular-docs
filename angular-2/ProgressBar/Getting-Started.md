@@ -2,7 +2,7 @@
 layout: post
 title: Getting-Started | ProgressBar | JavaScript | Syncfusion
 description: getting started
-platform: js
+platform: angular-2
 control: ProgressBar
 documentation: ug
 keywords: ejprogressbar, progressbar, js progressbar

@@ -1,7 +1,7 @@
 ---
 title: Getting Started for LinearGauge
 description: How to create a lineargauge, add scales, enable pointer and other functionalities
-platform: js
+platform: angular-2
 control: lineargauge
 documentation: ug
 keywords: ejlineargauge, lineargauge, lineargauge widget, angular 2 lineargauge

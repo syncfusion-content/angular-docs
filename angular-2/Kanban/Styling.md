@@ -3,7 +3,7 @@ layout: post
 title:  Styling
 description: Styling
 documentation: ug
-platform: js
+platform: angular-2
 keywords: styling,kanban styling
 ---
 
