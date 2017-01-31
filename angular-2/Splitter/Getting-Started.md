@@ -23,7 +23,7 @@ Create a simple Splitter by adding ej-splitter attribute for initializing an emp
 
 {% highlight html %}
   
-    <ej-splitter id="outterSpliter" class="ang-splitter" e-height ="100%" e-width="485" e-properties="proper" e- enableautoresize="true">
+    <ej-splitter id="outterSpliter" class="ang-splitter" height ="100%" width="485" [properties]="proper" [isResponsive]="true">
     </ej-splitter>
 
 
@@ -38,9 +38,11 @@ To configure properties for Splitter component, define properties in the compone
 {% highlight ts %}
 
     export class AppComponent {
-        proper:Array<{paneSize:string}>;     
+        proper:Array<{paneSize:string}>; 
+        true:Boolean;
         constructor() {
-        this.proper = [{ paneSize: "50%" }, {paneSize:"50%"}]    
+        this.proper = [{ paneSize: "50%" }, {paneSize:"50%"}];
+        this.true=true;
         }
     }
 
@@ -50,7 +52,7 @@ Now assign the defined variables to paneSize properties. Add required properties
 
 {% highlight html %}
 
-    <ej-splitter id="outterSpliter" class="ang-splitter" e-height ="100%" e-width="485" e-properties="proper" e- enableautoresize="true">
+    <ej-splitter id="outterSpliter" class="ang-splitter" height ="100%" width="485" [properties]="proper" [isResponsive]="true">
     </ej-splitter>
 
 {% endhighlight %}
@@ -60,7 +62,7 @@ Configure the Splitter panes with images. Save the images in the corresponding l
 {% highlight html %}
 
     <div class="cols-sample-area" style="height:400px; margin:0 auto;">
-    <ej-splitter id="outterSpliter" class="ang-splitter" e-height ="100%" e-width="485" e-properties="proper"  e-enableautoresize="true">
+    <ej-splitter id="outterSpliter" class="ang-splitter" height ="100%" width="485" [properties]="proper" [isResponsive]="true">
     <div>
     <div class="cont">
     <h3 class="h3">AngularJS</h3>    
