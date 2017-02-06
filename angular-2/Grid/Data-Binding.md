@@ -8,14 +8,14 @@ documentation: ug
 --- 
 # Data binding
 
-The Grid control uses [`ej.DataManager`] which supports both RESTful JSON data services binding and local JSON array binding.  The [`dataSource`] property can be assigned either with the instance of [`ej.DataManger`] or JSON data array collection. It supports different kinds of data binding methods such as
+The Grid control uses `ej.DataManager` which supports both RESTful JSON data services binding and local JSON array binding.  The `dataSource` property can be assigned either with the instance of `ej.DataManger` or JSON data array collection. It supports different kinds of data binding methods such as
 
 1. Local data
 2. Remote data
 
 ## Local Data
 
-To bind local data to the Grid, you can assign a JSON array to the [`dataSource`] property.
+To bind local data to the Grid, you can assign a JSON array to the `dataSource` property.
 
 The following code example describes the above behavior.
 
@@ -36,13 +36,11 @@ The following code example describes the above behavior.
 
 {% highlight javascript %}
   
-  import {Component, ViewEncapsulation} from '@angular/core';
-    import {NorthwindService} from './services/northwind.service';
-    @Component({
+    import {Component, ViewEncapsulation} from '@angular/core';
+     @Component({
       selector: 'ej-app',
       templateUrl: 'app/app.component.html',  //give the path file for Grid control html file.
-      providers:[NorthwindService]
-    })
+     })
      export class AppComponent {
         public gridData;
         constructor()
@@ -65,11 +63,11 @@ N> 2. Refer this [Knowledge Base link](http://www.syncfusion.com/kb/3377/how-to-
 
 ## Remote Data
 
-To bind remote data to Grid Control, you can assign a service data as an instance of [`ej.DataManager`] to the [`dataSource`] property.
+To bind remote data to Grid Control, you can assign a service data as an instance of `ej.DataManager` to the `dataSource` property.
 
 ### OData
 
-OData is a standardized protocol for creating and consuming data. You can provide the [OData service](http://www.odata.org/#) URL directly to the [`ej.DataManager`] class and then you can assign it to Grid [`dataSource`].
+OData is a standardized protocol for creating and consuming data. You can provide the [OData service](http://www.odata.org/#) URL directly to the `ej.DataManager` class and then you can assign it to Grid `dataSource`.
 
 The following code example describes the above behavior.
 
@@ -111,6 +109,7 @@ The following code example describes the above behavior.
 	
 {% endhighlight %}
 
+	
 The following output is displayed as a result of the above code example.
 
 ![](dataBinding_images/dataBinding_img2.png)
