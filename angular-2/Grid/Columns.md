@@ -24,7 +24,7 @@ The following code example describes the above behavior.
 
 {% highlight html %}
 
-<ej-grid id="Grid" [dataSource]="gridData" allowPaging="true" [pageSettings.pageSize]="pagesize">
+<ej-grid id="Grid" [dataSource]="gridData" allowPaging="true" [pageSettings]="pageSettings">
     <e-columns>
         <e-column headerText="Photo">
              <template e-template let-data>
@@ -51,12 +51,12 @@ The following code example describes the above behavior.
     })
     export class AppComponent {
         public gridData;
-        public pagesize;
+        public pageSettings;
     	constructor()
         {
            //The datasource "window.employeeView" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
            this.gridData = window.employeeView;
-           this.pagesize = 4;
+           this.pageSettings = { pageSize:"4" };
         }
      }
 
