@@ -665,6 +665,8 @@ This can be achieved by setting the `formPosition` property of `editSettings` as
 
 The following code example describes the above behavior.
 
+{% highlight html %}
+
 <ej-grid id="Grid" [dataSource]="gridData" allowPaging="true" [toolbarSettings]="toolbarItems" [editSettings]="editSettings" [pageSettings]="pageSize">
     <e-columns>
         <e-column field="OrderID" [isPrimaryKey]="true" headerText="OrderID"></e-column>
