@@ -92,14 +92,15 @@ export const rootRouterConfig: Routes = [
 {% highlight javascript %}
 import { NgModule, enableProdMode, ErrorHandler } from '@angular/core';
 . . . . . 
-import { EJ_MASKEDIT_COMPONENTS } from './ej/maskedit.component';
+import { EJAngular2Module } from 'ej-angular2';
+import { AppComponent } from './app.component';
 import { MaskEditComponent } from './maskedit/maskedit.component';
 
 import { rootRouterConfig } from './app.routes';
 . . . . 
 @NgModule({
-  imports: [BrowserModule, FormsModule, HttpModule, RouterModule.forRoot(rootRouterConfig, { useHash: true })],
-  declarations: [. . . . , EJ_MASKEDIT_COMPONENTS, MaskEditComponent],
+  imports: [BrowserModule, FormsModule, HttpModule, EJAngular2Module.forRoot(), RouterModule.forRoot(rootRouterConfig, { useHash: true })],
+  declarations: [. . . . , MaskEditComponent],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
@@ -200,14 +201,15 @@ export const rootRouterConfig: Routes = [
 {% highlight javascript %}
 import { NgModule, enableProdMode, ErrorHandler } from '@angular/core';
 . . . . . 
-import { EJ_MASKEDIT_COMPONENTS } from './ej/maskedit.component';
+import { EJAngular2Module } from 'ej-angular2';
+import { AppComponent } from './app.component';
 import { MaskEditComponent } from './maskedit/maskedit.component';
 
 import { rootRouterConfig } from './app.routes';
 . . . . 
 @NgModule({
-  imports: [BrowserModule, FormsModule, HttpModule, RouterModule.forRoot(rootRouterConfig, { useHash: true })],
-  declarations: [. . . . , EJ_MASKEDIT_COMPONENTS, MaskEditComponent],
+  imports: [BrowserModule, FormsModule, HttpModule, EJAngular2Module.forRoot(), RouterModule.forRoot(rootRouterConfig, { useHash: true })],
+  declarations: [. . . . , MaskEditComponent],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
