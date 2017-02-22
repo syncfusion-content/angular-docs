@@ -156,14 +156,15 @@ export const rootRouterConfig: Routes = [
 {% highlight javascript %}
 import { NgModule, enableProdMode, ErrorHandler } from '@angular/core';
 . . . . . 
-import { EJ_TREEVIEW_COMPONENTS } from './ej/treeview.component';
+import { EJAngular2Module } from 'ej-angular2';
+import { AppComponent } from './app.component';
 import { TreeViewComponent } from './treeview/treeview.component';
 
 import { rootRouterConfig } from './app.routes';
 . . . . 
 @NgModule({
-  imports: [BrowserModule, FormsModule, HttpModule, RouterModule.forRoot(rootRouterConfig, { useHash: true })],
-  declarations: [. . . . , EJ_TREEVIEW_COMPONENTS, TreeViewComponent],
+  imports: [BrowserModule, FormsModule, HttpModule, EJAngular2Module.forRoot(), RouterModule.forRoot(rootRouterConfig, { useHash: true })],
+  declarations: [. . . . , TreeViewComponent],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
@@ -328,14 +329,15 @@ export const rootRouterConfig: Routes = [
 {% highlight javascript %}
 import { NgModule, enableProdMode, ErrorHandler } from '@angular/core';
 . . . . . 
-import { EJ_TREEVIEW_COMPONENTS } from './ej/treeview.component';
+import { EJAngular2Module } from 'ej-angular2';
+import { AppComponent } from './app.component';
 import { TreeViewComponent } from './treeview/treeview.component';
 
 import { rootRouterConfig } from './app.routes';
 . . . . 
 @NgModule({
-  imports: [BrowserModule, FormsModule, HttpModule, RouterModule.forRoot(rootRouterConfig, { useHash: true })],
-  declarations: [. . . . , EJ_TREEVIEW_COMPONENTS,TreeViewComponent],
+  imports: [BrowserModule, FormsModule, HttpModule, EJAngular2Module.forRoot(), RouterModule.forRoot(rootRouterConfig, { useHash: true })],
+  declarations: [. . . . , TreeViewComponent],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
