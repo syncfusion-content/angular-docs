@@ -2,8 +2,8 @@
 layout: post
 title: overview
 description: overview
-platform: js
-control: Control Name undefined
+platform: Angular-2
+control: Signature
 documentation: ug
 ---
 
