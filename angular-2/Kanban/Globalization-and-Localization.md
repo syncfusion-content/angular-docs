@@ -151,3 +151,61 @@ The following output is displayed as a result of the above code example.
 
 ![](Localization_images/localization_img1.png)
 
+## Right to Left (RTL)
+
+By default, Kanban render its text and layout from left to right. To customize Kanban’s direction, you can change direction from LTR to RTL by using `enableRTL` as true.
+
+The following code example describes the above behavior.
+
+
+{% highlight html %}
+
+    <ej-kanban [dataSource]="kanbanData" keyField="Status" fields.content="Summary" fields.primaryKey="Id" fields.swimlaneKey="Assignee" fields.imageUrl="ImgUrl" enableRTL="true" [locale]="ar-AE">
+    <e-kanban-columns>
+        <e-kanban-column key="Open" headerText="تراكم الأعمال غير المنجزة"></e-kanban-column>
+        <e-kanban-column key="InProgress" headerText="في تَقَدم" constraints.max="2"></e-kanban-column>
+        <e-kanban-column key="Close" headertext="فعله"></e-kanban-column>
+    </e-kanban-columns>
+    </ej-kanban> 
+
+{% endhighlight %}
+
+{% highlight html %}
+ 
+import {Component} from '@angular/core';
+         @Component({
+         selector: 'ej-app',
+         templateUrl: 'src/kanban/kanban.component.html'
+    })
+    export class KanbanComponent {
+    public kanbanData: any;
+    constructor() {
+        this.kanbanData = [{ Id: 2, Status: "InProgress", Summary: "تحسين أداء التطبيقات.", Type: " تحسين", Priority: "عادي", Tags: " تحسين", Estimate: 6, Assignee: " أندرو فولر", ImgUrl: "/images/kanban/2.png", RankId: 1 },
+            { Id: 13, Status: "Open", Summary: " تحسينات API.", Type: " تحسين", Priority: "عالي", Tags: "شبكة,API", Estimate: 3.5, Assignee: " روبرت الملك", ImgUrl: "/images/kanban/7.png", RankId: 3 },
+            { Id: 18, Status: "Close", Summary: " تحليل خادم SQL 2008 اتصال.", Type: " قصة", Priority: "قواطع الإفراج", Tags: "شبكة,Sql", Estimate: 2, Assignee: " أندرو فولر", ImgUrl: "/images/kanban/2.png", RankId: 4 },
+            { Id: 25, Status: "Open", Summary: " تعزيز وظائف التحرير.", Type: " تحسين", Priority: "منخفض", Tags: "التحرير", Estimate: 3.5, Assignee: " أندرو فولر", ImgUrl: "/images/kanban/2.png", RankId: 5 }];
+        ej.Kanban.Locale["ar-AE"] = {
+            EmptyCard: "لا بطاقات لعرض",
+            SaveButton: "حفظ",
+            CancelButton: "إلغاء",
+            EditFormTitle: "تفاصيل ",
+            AddFormTitle: "إضافة بطاقة جديدة",
+            SwimlaneCaptionFormat: "- 8 بند  العناصر ",
+            FilterSettings: "مرشحات:",
+            FilterOfText: "من",
+            Max: "ماكس",
+            Min: "دقيقة",
+            Cards: "  بطاقات",
+            ItemsCount: "عد العناصر:",
+            Unassigned: "غير معين",
+        };
+    }
+} 
+
+{% endhighlight %}
+
+The following output is displayed as a result of the above code example.
+
+![](Localization_images/localization_img2.png)
+
+
