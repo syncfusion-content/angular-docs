@@ -371,17 +371,17 @@ Place the ng-template in the "index.html" page.
             <tr>
                 <td>Order ID</td>
                 <td>
-                    <input id="OrderID" name="OrderID" disabled="disabled" ngModel="{{:OrderID}}" value="{{:OrderID}}" />
+                    <input id="OrderID" name="OrderID" disabled="disabled" ngModel="{{"{{"}}:OrderID{{}}}}" value="{{"{{"}}:OrderID{{}}}}"/>
                 </td>
                 <td>Customer ID</td>
                 <td>
-                    <input id="CustomerID" name="CustomerID" ngModel="{{:CustomerID}}" value="{{:CustomerID}}" class="e-field e-ejinputtext" style="width: 116px; height: 28px" />
+                    <input id="CustomerID" name="CustomerID" ngModel="{{"{{"}}:CustomerID{{}}}}" value="{{"{{"}}:CustomerID{{}}}}" class="e-field e-ejinputtext" style="width: 116px; height: 28px" />
                 </td>
             </tr>
             <tr>
                 <td>Employee ID</td>
                 <td>
-                    <input type="text" id="EmployeeID" name="EmployeeID" ngModel="{{:EmployeeID}}" value="{{:EmployeeID}}" />
+                    <input type="text" id="EmployeeID" name="EmployeeID" ngModel="{{"{{"}}:EmployeeID{{}}}}" value="{{"{{"}}:EmployeeID{{}}}}"/>
                 </td>
                 <td>Ship City</td>
                 <td>
@@ -525,17 +525,17 @@ Place the ng-template in the "index.html" page.
             <tr>
                 <td>Order ID</td>
                 <td>
-                    <input id="OrderID" name="OrderID" disabled="disabled" ngModel="{{:OrderID}}" value="{{:OrderID}}" />
+                    <input id="OrderID" name="OrderID" disabled="disabled" ngModel="{{"{{"}}:OrderID{{}}}}" value="{{"{{"}}:OrderID{{}}}}"/>
                 </td>
                 <td>Customer ID</td>
                 <td>
-                    <input id="CustomerID" name="CustomerID" ngModel="{{:CustomerID}}" value="{{:CustomerID}}" class="e-field e-ejinputtext" style="width: 116px; height: 28px" />
+                    <input id="CustomerID" name="CustomerID" ngModel="{{"{{"}}:CustomerID{{}}}}" value="{{"{{"}}:CustomerID{{}}}}" class="e-field e-ejinputtext" style="width: 116px; height: 28px" />
                 </td>
             </tr>
             <tr>
                 <td>Employee ID</td>
                 <td>
-                    <input type="text" id="EmployeeID" name="EmployeeID" ngModel="{{:EmployeeID}}" value="{{:EmployeeID}}" />
+                    <input type="text" id="EmployeeID" name="EmployeeID" ngModel="{{"{{"}}:EmployeeID{{}}}}" value="{{"{{"}}:EmployeeID{{}}}}"/>
                 </td>
                 <td>Ship City</td>
                 <td>
@@ -731,20 +731,19 @@ Place the ng-template in the "index.html" page.
 
 <script id="template" type="text/ng-template">
         <table cellspacing="10">
-            <tr>
-                <td>Order ID</td>
+            <td>Order ID</td>
                 <td>
-                    <input id="OrderID" name="OrderID" disabled="disabled" ngModel="{{:OrderID}}" value="{{:OrderID}}" />
+                    <input id="OrderID" name="OrderID" disabled="disabled" ngModel="{{"{{"}}:OrderID{{}}}}" value="{{"{{"}}:OrderID{{}}}}"/>
                 </td>
                 <td>Customer ID</td>
                 <td>
-                    <input id="CustomerID" name="CustomerID" ngModel="{{:CustomerID}}" value="{{:CustomerID}}" class="e-field e-ejinputtext" style="width: 116px; height: 28px" />
+                    <input id="CustomerID" name="CustomerID" ngModel="{{"{{"}}:CustomerID{{}}}}" value="{{"{{"}}:CustomerID{{}}}}" class="e-field e-ejinputtext" style="width: 116px; height: 28px" />
                 </td>
             </tr>
             <tr>
                 <td>Employee ID</td>
                 <td>
-                    <input type="text" id="EmployeeID" name="EmployeeID" ngModel="{{:EmployeeID}}" value="{{:EmployeeID}}" />
+                    <input type="text" id="EmployeeID" name="EmployeeID" ngModel="{{"{{"}}:EmployeeID{{}}}}" value="{{"{{"}}:EmployeeID{{}}}}"/>
                 </td>
                 <td>Ship City</td>
                 <td>
