@@ -76,7 +76,7 @@ Place the js-render template in the "index.html" page.
 <script id="tabGridContents" type="text/x-jsrender">
       <div class="tabcontrol" id="Test">
          <ul>
-           <li><a href="#gridTab{{:EmployeeID}}">Stock Grid</a></li>
+           <li><a href="#gridTab{{"{{"}}:EmployeeID{{}}}}">Stock Grid</a></li>
         </ul>
         <div id="gridTab">
         <div id="detailGrid">
@@ -138,7 +138,7 @@ Place the js-render template in the "index.html" page.
 <script id="templateData" type="text/x-jsrender">
           <tr>
             <td class="photo">
-                <img src="~/../Content/images/Employees/{{:EmployeeID}}.png" alt="{{:EmployeeID}}" />
+                <img src="~/../Content/images/Employees/{{"{{"}}:EmployeeID{{}}}}.png" alt="{{"{{"}}:EmployeeID{{}}}}"  />
             </td>
             <td class="details">
                 <table class="CardTable" cellpadding="3" cellspacing="2">
