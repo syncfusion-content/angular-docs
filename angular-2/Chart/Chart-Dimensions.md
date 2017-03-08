@@ -43,12 +43,12 @@ You can also set the chart dimension by using the `size` property of the chart.
 
 You can specify the chart size in percentage by using the `size` property. The chart gets its dimension with respect to its container.
 
+N> Chart is using custom tag for rendering. For custom tag, default display style attribute will not be applied. So, you need to specify chart container display style as `block` to get the actual size.
+
 {% highlight html %}
 
-<div id="container" style="width:700px; height:500px">
-      <ej-chart id="chartcontainer" size.width="80%" size.height="90%">
-      </ej-chart>
- </div>
+<ej-chart id="chartcontainer" style="display:block; width:700px; height:500px" size.width="80%" size.height="90%">
+</ej-chart>
 
 
 {% endhighlight %}
