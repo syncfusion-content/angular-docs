@@ -40,8 +40,8 @@ N> `core.ts` file is mandatory for all Syncfusion JavaScript Angular 2 component
 * Create `fileexplorer.component.html` view file inside `src/app/fileexplorer` folder and render ejFileExplorer Angular 2 component using the below code example. 
 
 {% highlight html %}
-    <ej-fileexplorer id="fileExplorer1" path= "http://mvc.syncfusion.com/ODataServices/FileBrowser/"
-			ajaxAction="http://mvc.syncfusion.com/OdataServices/fileExplorer/fileoperation/doJSONAction"  
+    <ej-fileexplorer id="fileExplorer1" path= "http://js.syncfusion.com/demos/ejServices/Content/FileBrowser/"
+			ajaxAction="http://js.syncfusion.com/demos/ejServices/api/FileExplorer/FileOperations" 
 			width="100%" minWidth="150px" fileTypes="*.png, *.gif, *.jpg, *.jpeg, *.docx" layout= "tile" style="display:block">
     </ej-fileexplorer>
 {% endhighlight %}
@@ -152,8 +152,8 @@ N> `core.ts` file is mandatory for all Syncfusion JavaScript Angular 2 component
 * Create `fileexplorer.component.html` view file inside `src/fileexplorer` folder and render ejFileExplorer Angular 2 component using the below code example. 
 
 {% highlight html %}
-    <ej-fileexplorer id="fileExplorer1" path= "http://mvc.syncfusion.com/ODataServices/FileBrowser/"
-			ajaxAction="http://mvc.syncfusion.com/OdataServices/fileExplorer/fileoperation/doJSONAction"  
+    <ej-fileexplorer id="fileExplorer1" path= "http://js.syncfusion.com/demos/ejServices/Content/FileBrowser/"
+			ajaxAction="http://js.syncfusion.com/demos/ejServices/api/FileExplorer/FileOperations" 
 			width="100%" minWidth="150px" fileTypes="*.png, *.gif, *.jpg, *.jpeg, *.docx" layout= "tile" style="display:block">
     </ej-fileexplorer>
 {% endhighlight %}
