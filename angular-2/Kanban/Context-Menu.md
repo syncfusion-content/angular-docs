@@ -181,3 +181,126 @@ The following output is displayed as a result of the above code example.
 ![](Context_images/context_img1.png)
 
 ![](Context_images/context_img2.png)
+
+## Custom Context Menu
+
+Custom context menu is used to create your own menu item and its action. To add customized context menu items, you need to use `contextMenuSettings.customMenuItems` property and to bind required actions for this, use `contextClick` event.
+
+The following code example describes the above behavior.
+
+{% highlight html %}
+
+    <ej-kanban [datasource]="kanbanData" keyfield="Status" fields.swimlaneKey="Assignee" fields.content="Summary" fields.primarykey="Id" [contextmenusettings.enable]="true" (contextclick)="onContextClick($event)" fields.tag="Tags" [contextmenusettings.menuitems]="menuitem" [contextmenusettings.custommenuitems]="customMenuItems">
+    <e-kanban-columns>
+        <e-kanban-column key="Open" headertext="Backlog"></e-kanban-column>
+        <e-kanban-column key="InProgress" headertext="In Progress"></e-kanban-column>
+        <e-kanban-column key="Close" headertext="Done"></e-kanban-column>
+    </e-kanban-columns>
+   </ej-kanban>
+
+{% endhighlight %}
+
+{% highlight html %}
+
+      import { Component } from '@angular/core';
+import { NorthwindService } from '../../services/northwind.service';
+
+@Component({
+    selector: 'ej-app',
+    templateUrl: 'app/components/kanban/contextmenu.component.html',
+    providers: [NorthwindService]
+})
+export class KanbanComponent {
+    public kanbanData: any;
+    constructor(private northwindService: NorthwindService) {
+        this.kanbanData = northwindService.getTasks();
+    }
+    editItem = [
+        { field: 'Id', editType: ej.Kanban.EditingType.String, validationRules: { required: true, number: true } },
+        { field: 'Status', editType: ej.Kanban.EditingType.Dropdown },
+        { field: 'Assignee', editType: ej.Kanban.EditingType.Dropdown },
+        { field: 'Estimate', editType: ej.Kanban.EditingType.Numeric, editParams: { decimalPlaces: 2 }, validationRules: { range: [0, 1000] } },
+        { field: 'Summary', editType: ej.Kanban.EditingType.TextArea, validationRules: { required: true } }
+    ];
+        this.menuitem = [];
+        this.customMenuItems = [{ text: "Clear Selection" }];
+    };
+    onContextClick(event) {
+        var kbnObj = $(event.targetelement).parents('.e-kanban').data('ejKanban')
+        if (event.text == "Clear Selection")
+            kbnObj.KanbanSelection.clear();
+    }
+
+} 
+
+{% endhighlight %}
+
+
+The following output is displayed as a result of the above code example.
+
+![](Context_images/context_img3.png)
+
+## Sub Context Menu
+
+Sub context menu is used to add customized sub menu to the custom context menu item. To add a sub context menu, you need to use `contextMenuSettings.subMenu` property and to bind required actions for this, use `contextClick` event.
+
+The following code example describes the above behavior.
+
+{% highlight html %}
+
+    <ej-kanban [datasource]="kanbanData" keyfield="Status" fields.swimlaneKey="Assignee" fields.content="Summary" fields.primarykey="Id" [contextmenusettings.enable]="true" (contextclick)="onContextClick($event)" fields.tag="Tags" [contextmenusettings.menuitems]="menuitem" [contextmenusettings.custommenuitems]="customMenuItems">
+    <e-kanban-columns>
+        <e-kanban-column key="Open" headertext="Backlog"></e-kanban-column>
+        <e-kanban-column key="InProgress" headertext="In Progress"></e-kanban-column>
+        <e-kanban-column key="Close" headertext="Done"></e-kanban-column>
+    </e-kanban-columns>
+   </ej-kanban>
+<ul id="submenu">
+    <li><a>Open</a> </li>
+    <li><a>InProgress</a> </li>
+    <li><a>Close</a> </li>
+</ul> 
+
+{% endhighlight %}
+
+{% highlight html %}
+
+import { Component } from '@angular/core';
+import { NorthwindService } from '../../services/northwind.service';
+
+@Component({
+    selector: 'ej-app',
+    templateUrl: 'app/components/kanban/contextmenu.component.html',
+    providers: [NorthwindService]
+})
+export class KanbanComponent {
+    public kanbanData: any;
+    constructor(private northwindService: NorthwindService) {
+        this.kanbanData = northwindService.getTasks();
+    }
+    editItem = [
+        { field: 'Id', editType: ej.Kanban.EditingType.String, validationRules: { required: true, number: true } },
+        { field: 'Status', editType: ej.Kanban.EditingType.Dropdown },
+        { field: 'Assignee', editType: ej.Kanban.EditingType.Dropdown },
+        { field: 'Estimate', editType: ej.Kanban.EditingType.Numeric, editParams: { decimalPlaces: 2 }, validationRules: { range: [0, 1000] } },
+        { field: 'Summary', editType: ej.Kanban.EditingType.TextArea, validationRules: { required: true } }
+    ];
+        this.menuitem = [];
+        this.customMenuItems = [{ text: "Clear Selection" }, { text: "Move to Column", template: "#submenu" }];
+    };
+    onContextClick(event) {
+        var kbnObj = $(event.targetelement).parents('.e-kanban').data('ejKanban')
+        if (event.text == "Clear Selection")
+            kbnObj.KanbanSelection.clear();
+        else if (event.text != "Move to Column")
+            kbnObj.updateCard(event.cardData.Id, event.cardData);
+    }
+
+} 
+
+{% endhighlight %}
+
+
+The following output is displayed as a result of the above code example.
+
+![](Context_images/context_img4.png)
