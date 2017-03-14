@@ -411,4 +411,4 @@ npm start
 
 ## Demos
 
-We have implemented our [Angular 2 sample browser](http://ng2.jq.syncfusion.com/) using Angular 2 Syncfusion Angular 2 components.
+We have implemented our [Angular 2 sample browser](http://ng2jq.syncfusion.com/) using Angular 2 Syncfusion Angular 2 components.
