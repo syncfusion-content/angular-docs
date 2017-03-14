@@ -14,6 +14,10 @@ The Kanban control has support for responsive behavior based on client browserâ€
 * Mobile(<480px)
 * Desktop(>480px)
 
+You can check the image representation of touch actions from the below image.
+
+![](Responsive_images/KanbanOverlayImage.png)
+
 ## Width
 
 By default, the Kanban is adaptable to its parent container. It can adjust its width of columns based on parent container width. You can also assign width of [`e-kanban-columns`](https://help.syncfusion.com/api/js/ejkanban#members:columns) in percentage. 
