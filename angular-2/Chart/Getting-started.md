@@ -122,6 +122,7 @@ Create an HTML page and add the scripts references in the order mentioned in the
 
 {% endhighlight %}
 
+N> If you are using the Essential Studio below 13.4.0.53 version, then you need to refer **jQuery.globalize.js** script file along with the above references to render the Chart control.
 N> Uncompressed version of library files are also available which is used for development or debugging purpose and can be generated from the custom script [here](http://csg.syncfusion.com).
 
 ## Control Initialization
