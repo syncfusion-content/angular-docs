@@ -53,7 +53,7 @@ The below table depicts the purpose of files in the above structure.
 </tr>
 <tr>
 <td>webpack.common.js</td>
-<td>It is known as the common configuration file for development, production and test environments. The configuration imports dependencies with 'require' statements and exports several objects as properties of a 'module.exports' object.<ul><li>entries - We can supply webpack with one or more entry files and let it find and incorporate the dependencies that radiate from those entries.</li> <li>resolve -The application will import lot of java script and typescript files. But most <b>import</b> statements don't mention the extension at all. So, we should tell the Webpack to resolve extension-less file requests by looking for matching files with ts or js extension.</li> <li>plugins - It creates instances of the plugins. i.e. Webpack has a build pipeline with well-defined phases. Tap into that pipeline with plugins such as the <b>uglify</b> minification plugin.</li></ul></td>
+<td>It is known as the common configuration file for development, production and test environments. The configuration imports dependencies with `require` statements and exports several objects as properties of a `module.exports` object.<ul><li>entries - We can supply webpack with one or more entry files and let it find and incorporate the dependencies that radiate from those entries.</li> <li>resolve -The application will import lot of java script and typescript files. But most `import` statements don't mention the extension at all. So, we should tell the Webpack to resolve extension-less file requests by looking for matching files with ts or js extension.</li> <li>plugins - It creates instances of the plugins. i.e. Webpack has a build pipeline with well-defined phases. Tap into that pipeline with plugins such as the `uglify` minification plugin.</li></ul></td>
 </tr>
 <tr>
 <td>webpack.prod.js</td>
@@ -61,7 +61,7 @@ The below table depicts the purpose of files in the above structure.
 </tr>
 <tr>
 <td>webpack.dev.js</td>
-<td>The development build relies on the webpack development server, configured near the bottom of the file. Here, <ul> <li>Webpack puts output bundles in the `dist` folder</li> <li>'HtmlwebpackPlugin' use the public path and the filename settings to generate appropriate <b>script</b> and <b>link</b> tags into the index.html.</li> <li>CSS styles are buried inside the JavaScript bundles by default.</li> </ul> </td>
+<td>The development build relies on the webpack development server, configured near the bottom of the file. Here, <ul> <li>Webpack puts output bundles in the `dist` folder</li> <li>HtmlwebpackPlugin use the public path and the filename settings to generate appropriate `script` and `link` tags into the index.html.</li> <li>CSS styles are buried inside the JavaScript bundles by default.</li> </ul> </td>
 </tr>
 <tr>
 <td>src/app/app.component.ts</td>
@@ -69,11 +69,11 @@ The below table depicts the purpose of files in the above structure.
 </tr>
 <tr>
 <td>src/app/app.module.ts</td>
-<td>It tells the angular how to construct and bootstrap the app in the root module. In our application, it bootstraps the 'AppComponent' to launch the application.</td>
+<td>It tells the angular how to construct and bootstrap the app in the root module. In our application, it bootstraps the `AppComponent` to launch the application.</td>
 </tr>
 <tr>
 <td>src/main.ts</td>
-<td>The main entry point of the application, in which we kick-off our application by importing the 'AppComponent' and bootstrapping it. </td>
+<td>The main entry point of the application, in which we kick-off our application by importing the `AppComponent` and bootstrapping it. </td>
 </tr>
 <tr>
 <td>package.json</td>
@@ -81,11 +81,11 @@ The below table depicts the purpose of files in the above structure.
 </tr>
 <tr>
 <td> index.html  </td>
-<td> It is the host page of application. It loads all needed libraries and essential scripts in a prescribed order. It holds a custom tag which is used for load the meta data of 'AppComponent'. <br> E.g.: 'ej-app' is the custom tag in our cloned seed application. </td>
+<td> It is the host page of application. It loads all needed libraries and essential scripts in a prescribed order. It holds a custom tag which is used for load the meta data of `AppComponent`. <br> E.g.: `ej-app` is the custom tag in our cloned seed application. </td>
 </tr>
 <tr>
 <td>tsconfig.json</td>
-<td>All typescript files need to be transpiled/compiled to native JavaScript files so that we can run them on browser. To accomplish this, we need to add 'Typescript Configuration file' called as tsconfig.json, which is used as input of typescript compiler(tsc) to transpile the typescript files.</td>
+<td>All typescript files need to be transpiled/compiled to native JavaScript files so that we can run them on browser. To accomplish this, we need to add `Typescript Configuration file` called as tsconfig.json, which is used as input of typescript compiler(tsc) to transpile the typescript files.</td>
 </tr>
 </table>
 
