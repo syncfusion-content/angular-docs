@@ -36,14 +36,41 @@ The cloned angular2-seed consists of files in the following structure. The files
 
 The below table depicts the purpose of files in the above structure.
 
-|   Files             	  	      |Purpose                            |
-|:--------------------------------|:----------------------------------|                                        
-|src/app/app.component.ts         |It is a top-level component where all the functionalities are lies in this component.  |
-|src/app/app.module.ts            |It tells the angular how to construct and bootstrap the app in the root module. In our component, it bootstraps the `AppComponent` to launch the application.             |
-| main.ts           	  	        |The main entry point of the application, in which we kick-off our application by importing the `AppComponent` and bootstrapping it.				|
-|package.json                     |It serves as documentation for what packages our project depends on. It allows you to specify the name, version, scripts, dependencies of a package. <ul> <li> Name- name of our package.</li> <li> Version- current version of package.</li> <li>Scripts- It runs at various time of lifecycle of package.</li> <li>Dependencies- It is used for production in our application</li> </ul> In our Syncfusion component we used name, version, scripts and dependencies in package.json file|
-|index.html                       |It is the host page of application. It loads all needed libraries and essential scripts in a prescribed order. It holds a custom tag which is used for load the meta data of `AppComponent`. E.g.: `ej-app` is the custom tag in our cloned seed application.|
-|systemjs.config.js               |It contains the mapping information of files, which are used for developing Angular application. It tells the SystemJS module loader where to find modules referenced in Angular component imports statements.|
+<table>
+<tr>
+<th>Files  </th>
+<th>Purpose </th>
+</tr>
+<tr>
+<td>src/app/app.component.ts </td>
+<td>It is a top-level component where all the functionalities are lies in this component</td>
+</tr>
+<tr>
+<td>src/app/app.module.ts </td>
+<td>It tells the angular how to construct and bootstrap the app in the root module. In our application, it bootstraps the `AppComponent` to launch the application.    </td>
+</tr>
+<tr>
+<td>src/app/main.ts</td>
+<td>The main entry point of the application, in which we kick-off our application by importing the `AppComponent` and bootstrapping it. </td>
+</tr>
+<tr>
+<td>package.json </td>
+<td>It serves as documentation for what packages our project depends on. It allows you to specify the name, version, scripts, dependencies of a package. <ul> <li> Name- Name of our package </li> <li> Version- Current version of package </li> <li> Scripts- It runs at various time of lifecycle of package </li> <li> Dependencies- It is used for production in our application </li> </ul> In our application, we used name, version, scripts and dependencies in package.json file
+</td>
+</tr>
+<tr>
+<td> index.html  </td>
+<td> It is the host page of application. It loads all needed libraries and essential scripts in a prescribed order. It holds a custom tag which is used for load the meta data of `AppComponent`. <br> E.g.: `ej-app` is the custom tag in our cloned seed application. </td>
+</tr>
+<tr>
+<td>systemjs.config.js </td>
+<td>It contains the mapping information of files, which are used for developing Angular application. It tells the SystemJS module loader where to find modules referenced in Angular component imports statements.</td>
+</tr>
+<tr>
+<td>tsconfig.json</td>
+<td>All typescript files need to be transpiled/compiled to native JavaScript files so that we can run them on browser. To accomplish this, we need to add 'Typescript Configuration file' called as tsconfig.json, which is used as input of typescript compiler(tsc) to transpile the typescript files.</td>
+</tr>
+</table>
 
 {% tabs %}
 
