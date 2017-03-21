@@ -22,7 +22,7 @@ To quick start with Syncfusion JavaScript Angular 2 components run the below com
  
 N> The cloned application is fully configured to work with Essential Studio for JavaScript Angular 2 components, in which we configured our [ej-angular2](https://github.com/syncfusion/ej-angular2) library and necessary changes to consume our Angular 2 components. 
  
-### What is in Syncfusion cloned angular2-seed.?
+## What is in Syncfusion cloned angular2-seed.?
 The cloned angular2-seed consists of files in the following structure. The files in the `src` folder is used for our application logical functionalities. The other files available outside the src folder is used to build, bundle and deploy the application. 
 
 * config
@@ -91,7 +91,7 @@ The below table depicts the purpose of files in the above structure.
 
 {% tabs %}
 
-{% highlight app.component.ts %}
+{% highlight ts %}
 
 import { Component } from '@angular/core';
 
@@ -104,7 +104,7 @@ export class AppComponent {
 
 {% endhighlight %}
 
-{% highlight app.module.ts %}
+{% highlight ts %}
 
 import { NgModule, enableProdMode, ErrorHandler } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
@@ -144,7 +144,7 @@ export class AppModule { }
 
 {% endhighlight %}
 
-{% highlight main.ts %}
+{% highlight ts %}
 
 import { platformBrowserDynamic } from '@angular/platform-browser-dynamic';
 import { enableProdMode } from '@angular/core';
@@ -156,7 +156,7 @@ platformBrowserDynamic().bootstrapModule(AppModule);
 
 {% endhighlight %}
 
-{% highlight index.html %}
+{% highlight html %}
 
 <!DOCTYPE html>
 <html>
@@ -189,7 +189,7 @@ platformBrowserDynamic().bootstrapModule(AppModule);
 
 {% endhighlight %}
 
-{% highlight package.json %}
+{% highlight json %}
 
 {
   "name": "ejangular-webpack-starter",
@@ -355,7 +355,7 @@ Now we can render any Syncfusion JavaScript Angular 2 components in Angular appl
 
 * Create `dialog.component.ts` model file inside the folder `src/app/dialog` and create sample component using the below code example.
 
-{% highlight javascript %}
+{% highlight ts %}
 import { Component, ViewEncapsulation } from '@angular/core';
 
 @Component({
@@ -397,7 +397,7 @@ Before adding router configuration for above created ejDialog component, we reco
 
 * Import the ejDialog sample component and define the route in `src/app/app.routes.ts` file.
 
-{% highlight javascript %}
+{% highlight ts %}
 import { Routes } from '@angular/router';
 . . . . 
 import { DialogComponent } from './dialog/dialog.component';
@@ -411,7 +411,7 @@ export const rootRouterConfig: Routes = [
 
 * Import and declare the ejDialog sample component into `app.module.ts` like the below code snippet.
 
-{% highlight javascript %}
+{% highlight ts %}
 import { NgModule, enableProdMode, ErrorHandler } from '@angular/core';
 . . . . . 
 import { EJAngular2Module } from 'ej-angular2';
