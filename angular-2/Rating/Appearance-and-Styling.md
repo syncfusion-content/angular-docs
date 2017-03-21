@@ -69,7 +69,6 @@ Add the below css in external file named as rating.component.css
 
 {% highlight css %}
 
-<style type="text/css">
     .e-rating
     {
         margin-top: -7px;
@@ -107,7 +106,6 @@ Add the below css in external file named as rating.component.css
         border:2px solid #b0c4de;
         color:black
     }    
-</style>
 
 {% endhighlight %}
 
