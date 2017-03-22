@@ -1802,7 +1802,7 @@ To render a Box and Whisker Chart, set the series `type` as **"boxandwhisker"**.
 {% highlight html %}
 
          this.chartData = 
-       [ { x: 'Development',
+         [ { x: 'Development',
            y: [22,22,23,25,25,25,26,27,27,28,28,29,30,32,34,32,34,36,35,38]  }, 
          { x: 'Testing', y: [22,33,23,25,26,28,29,30,34,33,32,31,50]  }, 
          { x: 'HR', y: [22,24,25,30,32,34,36,38,39,41,35,36,40,56]  }, 
@@ -1829,7 +1829,7 @@ To render a Box and Whisker Chart, set the series `type` as **"boxandwhisker"**.
 
 ### BoxPlotMode
 
-You can change the rendering mode of the  Box and Whisker series using the `boxPlotMode` property. The default value of `boxPlotMode` is **"exclusive"**.The other boxPlotModes available are `inclusive` and *normal*. 
+You can change the rendering mode of the  Box and Whisker series using the `boxPlotMode` property. The default value of `boxPlotMode` is **"exclusive"**.The other boxPlotModes available are `inclusive` and `normal`. 
 
 {% highlight html %}
 
