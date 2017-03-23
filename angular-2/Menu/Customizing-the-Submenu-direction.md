@@ -28,8 +28,8 @@ Add the following code in your **HTML** page.
             templateUrl: 'app/components/menu/menu.component.html'
             })
     export class MenuComponent {
-        data: array;
-        fieldsvalues: object;
+        data: Array<Object>;
+        fieldsvalues: Object;
         direction:any;
         constructor() {
         this.data = [
@@ -104,7 +104,7 @@ Add the following code in your **HTML** page.
     export class MenuComponent {
             type: any;
             direction: any;
-            data: array;
+            data: Array<Object>;
             target: any;
             constructor() {
                 this.type = ej.MenuType.ContextMenu;

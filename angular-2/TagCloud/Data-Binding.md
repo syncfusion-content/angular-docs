@@ -51,7 +51,7 @@ import {Component} from '@angular/core';
             templateUrl: 'app/components/tagcloud/tagcloud.component.html'
          })
         export class TagCloudComponent {
-          list: array;
+          list: Array<Object>;
           constructor() {      
           this.list = [
             { text: "Google", url: "http://www.google.co.in", frequency: 12 },

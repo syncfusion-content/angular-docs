@@ -27,8 +27,8 @@ The following code depicts you on how to enable the **rtl** property of the **Me
             templateUrl: 'app/components/menu/menu.component.html'
             })
     export class MenuComponent {
-            data: array;
-            fieldsvalues: object;
+            data: Array<Object>;
+            fieldsvalues: Object;
             constructor() {
                 this.data = [
                     { id: 1, text: "Home", parentId: null },

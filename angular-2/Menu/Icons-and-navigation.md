@@ -32,8 +32,8 @@ Add the following code in your **HTML** page.
             encapsulation: ViewEncapsulation.None 
             })
     export class MenuComponent {
-        data: array;
-        fieldsvalues: object;
+        data: Array<Object>;
+        fieldsvalues: Object;
         constructor() {
             this.data = [
                 { id: 1, text: "Group A", parentId: null },
@@ -126,8 +126,8 @@ Add the following code in your **HTML** page.
             templateUrl: 'app/components/menu/menu.component.html'
             })
     export class MenuComponent {
-            data: array;
-            fieldsvalues: object;
+            data: Array<Object>;
+            fieldsvalues: Object;
             constructor() {
                 this.data = [
                     { id: 1, text: "Search engine", parentId: null, url: null },

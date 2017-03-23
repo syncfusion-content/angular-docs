@@ -70,8 +70,8 @@ Add the following code to render menu using animation type.
             templateUrl: 'app/components/menu/menu.component.html'
             })
     export class MenuComponent {
-            data: array;
-            fieldsvalues: object;
+            data: Array<Object>;
+            fieldsvalues: Object;
             type: any;
             constructor() {
                 this.data = [
@@ -124,8 +124,8 @@ You can specify the title of the **Menu** control as follows.
             templateUrl: 'app/components/menu/menu.component.html'
             })
     export class MenuComponent {
-            data: array;
-            fieldsvalues: object;
+            data: Array<Object>;
+            fieldsvalues: Object;
             title: string;
             constructor() {
                 this.data = [

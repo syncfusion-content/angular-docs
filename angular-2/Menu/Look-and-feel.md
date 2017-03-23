@@ -51,8 +51,8 @@ Add the following code in your **HTML** page.
             encapsulation: ViewEncapsulation.None 
             })
     export class MenuComponent {
-            data: array;
-            fieldsvalues: object;
+            data: Array<Object>;
+            fieldsvalues: Object;
             constructor() {
                 this.data = [
                     { id: 1, text: "Home", parentId: null },

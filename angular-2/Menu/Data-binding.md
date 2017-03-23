@@ -86,8 +86,8 @@ Add the following code in your **HTML** page.
             templateUrl: 'app/components/menu/menu.component.html'
             })
     export class MenuComponent {
-        data: array;
-        fieldsvalues: object;
+        data: Array<Object>;
+        fieldsvalues: Object;
         constructor() {
         this.data = [
             { id: 1, text: "Products", parentId: null },

@@ -27,8 +27,8 @@ Add the following the code sample to display the **Menu** control without separa
             templateUrl: 'app/components/menu/menu.component.html'
             })
     export class MenuComponent {
-            data: array;
-            fieldsvalues: object;
+            data: Array<Object>;
+            fieldsvalues: Object;
             constructor() {
                 this.data = [
                     { id: 1, text: "Home", parentId: null },

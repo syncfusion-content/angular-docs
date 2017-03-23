@@ -27,8 +27,8 @@ Add the following code to show menu in center.
             templateUrl: 'app/components/menu/menu.component.html'
             })
     export class MenuComponent {
-            data: array;
-            fieldsvalues: object;
+            data: Array<Object>;
+            fieldsvalues: Object;
             constructor() {
                 this.data = [
                     { id: 1, text: "Home", parentId: null },
