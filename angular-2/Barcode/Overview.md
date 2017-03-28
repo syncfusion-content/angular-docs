@@ -13,5 +13,5 @@ The Syncfusion Essential JS Barcode widget enables rendering of one dimension an
 
 **Key Features**
 
-* Supports 10 one-dimensional barcodes including Code 39 and Code 32 barcodes.
+* Supports 11 one-dimensional barcodes including Code 39, Code 32 and UPC barcodes.
 * Supports 2 two-dimensional barcodes such as QR and Data Matrix barcodes.
