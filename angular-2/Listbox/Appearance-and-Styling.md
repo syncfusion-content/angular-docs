@@ -191,6 +191,8 @@ export class AppComponent {
     }
 }
 
+{% endhighlight %}
+
 In the following style sheet the existing theme style sheet file has been over-ridden using root class “**customclass**”. 
 
 Add the following code in your style section.

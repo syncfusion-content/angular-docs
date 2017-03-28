@@ -126,6 +126,8 @@ export class AppComponent {
     }
 }
 
+{% endhighlight %}
+
 ![](Keyboard-interaction_images\Keyboard-interaction_img1.png)
 
 **Note:**
