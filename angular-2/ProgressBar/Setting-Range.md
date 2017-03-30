@@ -17,6 +17,8 @@ The **range** of the ProgressBar is set by using minimum and maximum values. The
     <ej-progressbar id="progressBar" [minValue]="minvalue" [maxValue]="maxvalue" [value]="val" [height]="height" [width]="width" (create)="onCreate($event)"></ej-progressbar>  
 </div>
 
+{% endhighlight %}
+
 {% highlight html %}
 
 import {Component} from '@angular/core';
