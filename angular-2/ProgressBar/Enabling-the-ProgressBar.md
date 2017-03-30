@@ -19,6 +19,8 @@ The following code explains how to disable the ProgressBar widget when [enabled]
     <ej-progressbar id="progressBar" [enabled]="false" [value]="val" [height]="height" [width]="width" (create)="onCreate($event)"></ej-progressbar>  
 </div>
 
+{% endhighlight %}
+
 {% highlight html %}
 
 import {Component} from '@angular/core';

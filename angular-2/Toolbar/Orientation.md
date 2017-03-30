@@ -169,7 +169,7 @@ Add the following script in your **HTML** page.
 
 OR
 
-{% highlight js %}
+{% highlight html %}
   
 <ej-toolbar id="toolbar" [dataSource]="data" [fields]="fieldsvalues" [orientation]="Vertical" [width]="33"></ej-toolbar>
 </div>

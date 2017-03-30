@@ -225,7 +225,7 @@ The following code example is used to render the **Rating** control with **allow
 
  Add the following HTML to render Rating with allowReset.
 
-{% highlight javascript %}
+{% highlight html %}
 
 <div id="container" style="border: 1px solid black; width: 300px; padding: 2px">
     <table>
