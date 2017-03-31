@@ -2,8 +2,8 @@
 layout: post
 title: data binding
 description: data binding
-platform: js
-control: Control Name undefined
+platform: Angular2
+control: Autocomplete 
 documentation: ug
 ---
 

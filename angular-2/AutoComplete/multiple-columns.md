@@ -2,8 +2,8 @@
 layout: post
 title: multiple columns
 description: multiple columns
-platform: js
-control: Control Name undefined
+platform: Angular2
+control: Autocomplete 
 documentation: ug
 ---
 

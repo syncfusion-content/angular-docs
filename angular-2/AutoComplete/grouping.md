@@ -2,8 +2,8 @@
 layout: post
 title: grouping
 description: grouping
-platform: js
-control: Control Name undefined
+platform: Angular2
+control: Autocomplete 
 documentation: ug
 ---
 
