@@ -158,6 +158,8 @@ N> `core.ts` file is mandatory for all Syncfusion JavaScript Angular 2 component
     </ej-fileexplorer>
 {% endhighlight %}
 
+To perform the server side actions using local web API service, please refer the [link](https://help.syncfusion.com/js/fileexplorer/how-to#service-for-fileexplorer)
+
 * Create `fileexplorer.component.ts` model file inside the folder `src/fileexplorer` and create fileexplorer sample component using the below code example.
 
 {% highlight javascript %}
