@@ -140,7 +140,6 @@ The following steps explains the configuration of icon for an **Accordion** cont
 
 {% endhighlight %}
 
-
 {% highlight html %}
 
 import { Component } from '@angular/core';
@@ -153,16 +152,14 @@ export class AccordionComponent {
     header: string;
     selectedheader: string;
     constructor() {
-        this.header = "e-arrowheaddown";
+        this.header = "e-arrowhead-down";
         this.selectedheader = "e-arrowheadup";
     }
 }
 
 {% endhighlight %}
 
-
 Output for Accordion widget with customized icons is as follows.
-
 
 ![](Appearance-and-Styling_images/Appearance-and-Styling_img3.png) 
 
