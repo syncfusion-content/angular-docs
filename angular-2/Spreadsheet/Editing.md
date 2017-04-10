@@ -158,7 +158,7 @@ export class AppComponent {
   public dataManager;
   constructor() {
     this.dataManager = ej.DataManager({
-      url: "Home/Default", adaptor: new ej.UrlAdaptor(), batchUrl: "Home/BatchUpdate"
+      url: "Home/Default", adaptor: "UrlAdaptor", batchUrl: "Home/BatchUpdate"
     });
     this.spreadData = [{
       dataSource: this.dataManager,
