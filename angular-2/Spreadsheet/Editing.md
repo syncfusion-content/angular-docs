@@ -158,7 +158,8 @@ export class AppComponent {
   public dataManager;
   constructor() {
     this.dataManager = ej.DataManager({
-      url: "Home/Default", adaptor: "UrlAdaptor", batchUrl: "Home/BatchUpdate"
+      url: "Home/Default", adaptor: "UrlAdaptor", batchUrl: "Home/BatchUpdate" 
+       //  "Home/Default" and "Home/BatchUpdate" reffered from the service.
     });
     this.spreadData = [{
       dataSource: this.dataManager,
@@ -175,6 +176,8 @@ export class AppComponent {
   }
 }
 {% endhighlight %}
+
+The code snippets to specify the BatchUpdate in server side are as follows,
 
 {% highlight c# %}
 
