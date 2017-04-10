@@ -125,30 +125,29 @@ The DropDownList can be bounded to both local array and remote data services .Yo
  
 {% highlight html %}
 
-	 <input id="dropdown1" ej-dropdownlist [dataSource]="data" [fields]="fieldsvalues" [(value)]="value"/>
+	 <input id="dropdown1" ej-dropdownlist [dataSource]="customers" [fields]="fieldsvalues" [(value)]="value"/>
 	
 {% endhighlight %}
 	
 {% highlight html%}	
 	
-   import {Component,ViewEncapsulation} from '@angular/core';
-   import {NorthwindService} from './services/northwind.service'; //path of your service 
+   import {Component,ViewEncapsulation} from '@angular/core'; 
       
 	    @Component({
            selector: 'ej-app',
            templateUrl: 'app/app.component.html',
-            providers:[NorthwindService]
+            
              })
         export class AppComponent {
-                public Data:any;
-                public dataManager:any;
-                fieldsvalues: Object;
-	           constructor(private service:NorthwindService)
-             {
-         
-              this.data = service.getEmployees();
-              this.fieldsvalues = { dataSource: this.Data, text: "FirstName" };
-             }
+               customers: Array<Object> = [];
+               fieldsvalues: Object;
+               constructor() {
+               this.customers = [
+                 { id: "1", text: "ALFKI" }, { id: "2", text: "ANATR" }, { id: "3", text: "ANTON" },
+                 { id: "4", text: "AROUT" }, { id: "5", text: "BERGS" }, { id: "6", text: "BLAUS" }
+               ];
+             this.fieldsvalues = { dataSource: this.customers, id: 'id', text: 'text', value: 'text' };
+    }
        
          }
 	
