@@ -89,9 +89,9 @@ When the Rotator Item is an image, you can specify a caption for the Rotator�
 
 ### Supported Themes
 
-Rotator control’s style and appearance are controlled based on CSS classes. In order to apply styles to the Rotator component, you can refer 2 files namely, ej.widgets.core.min.css and ej.theme.min.css. When the file ej.widgets.all.min.css is referred, then it is not necessary to include the files ej.widgets.core.min.css and ej.theme.min.css in your project.
+Rotator component’s style and appearance are controlled based on CSS classes. In order to apply styles to the Rotator component, you can refer 2 files namely, ej.widgets.core.min.css and ej.theme.min.css. When the file ej.web.all.min.css is referred, then it is not necessary to include the files ej.widgets.core.min.css and ej.theme.min.css in your project.
 
-By default, there are 16 themes support available for Rotator control as follows,
+By default, there are 16 themes support available for Rotator component as follows,
 
 •	flat-azure
 •	flat-azure-dark
@@ -112,7 +112,7 @@ By default, there are 16 themes support available for Rotator control as follo
 
 ### Customize using CSS Class
 
-This property **cssClass** is used to set root class for Rotator control theme. The value set to this property is string type.
+This property **cssClass** is used to set root class for Rotator component theme. The value set to this property is string type.
 
 {% highlight html %}
 

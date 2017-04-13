@@ -9,7 +9,7 @@ documentation: ug
 
 ## Template
 
-The Rotator control provided the template support for having a customized appearance. Instead of having the same look for the rotator we can use our desired templates by using the **template** property.
+The Rotator component provided the template support for having a customized appearance. Instead of having the same look for the rotator we can use our desired templates by using the **template** property.
 
 You can refer the following code example to give the template for the rotator.
 

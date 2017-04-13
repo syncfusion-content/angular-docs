@@ -11,7 +11,7 @@ documentation: ug
 
 ### Enabling rotator
 
-The **enabled** property enables or disables the Rotator control. The default value is ‘true’. The value set to this property is Boolean type. You can refer the following code example to set this property.
+The **enabled** property enables or disables the Rotator component. The default value is ‘true’. The value set to this property is Boolean type. You can refer the following code example to set this property.
 
 {% highlight html %}
 
@@ -62,7 +62,7 @@ The **stopOnHover** property pauses the auto play while mouse over the Rota
 
 #### Show pager
 
-The **showPager** property turns on or off the pager support in the Rotator control. The Pager is used to navigate the Rotator Items. The default value is ‘true’. The value set to this property is Boolean.
+The **showPager** property turns on or off the pager support in the Rotator component. The Pager is used to navigate the Rotator Items. The default value is ‘true’. The value set to this property is Boolean.
 
 {% highlight html %}
 <ul ej-rotator id="sliderContent" [dataSource]="data" [fields]="fieldList" [showPlayButton="true" [showPager]="true" slideWidth="400px" slideHeight="300px">

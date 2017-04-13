@@ -9,7 +9,7 @@ documentation: ug
 
 ## Orientation
 
-The Rotator component supports both vertical and horizontal orientations allowing it to fit into any scenario. The Rotator property **orientation** defines the orientation where the control is rendered. The value set to this property is enum or string type. It accepts the following values.
+The Rotator component supports both vertical and horizontal orientations allowing it to fit into any scenario. The Rotator property **orientation** defines the orientation where the component is rendered. The value set to this property is enum or string type. It accepts the following values.
 
 ej.Orientation.Horizontal or “Horizontal”
 
@@ -19,7 +19,7 @@ The following steps explain you how to set orientation for the Rotator.
 
 ### Horizontal
 
-This property sets the Rotator in horizontal orientation. You can refer the following steps to set horizontal orientation for Rotator control.
+This property sets the Rotator in horizontal orientation. You can refer the following steps to set horizontal orientation for Rotator component.
 
 In View, create ul-li list of Rotator items and invoke the Rotator helper.
 
@@ -72,7 +72,7 @@ export class AppComponent {
 
 ### Vertical
 
-This property sets the Rotator in vertical orientation. You can refer the following steps to set vertical orientation for Rotator control.
+This property sets the Rotator in vertical orientation. You can refer the following steps to set vertical orientation for Rotator component.
 
 Create ul-li list of Rotator items and invoke the Rotator helper.
 

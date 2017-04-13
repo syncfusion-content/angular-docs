@@ -13,7 +13,7 @@ documentation: ug
 
 By default the downloaded image form the signature canvas will be of **png** format. We can define our own format to download the image with **saveImageFormat** property. And we can also save the image along with the background by using the **saveWithBackground** property.
 
-The following code example is used to download drawn image on the Signature control.
+The following code example is used to download drawn image on the Signature component.
 
 {% highlight html %}
 <ej-signature id="mysign" [backgroundImage]="image" [saveWithBackground]="true" [saveImageFormat]="format" > </ej-signature>

@@ -9,9 +9,9 @@ documentation: ug
 
 ## Thumbnail
 
-This feature implements Thumbnail in Rotator control. You can view or access any of the Rotator items instantly. All the images are given as Thumb Element to use this feature.
+This feature implements Thumbnail in Rotator component. You can view or access any of the Rotator items instantly. All the images are given as Thumb Element to use this feature.
 
-The property e-showthumbnail turns on or off thumbnail support in the Rotator control. Thumbnail is used to navigate between slides. Thumbnail supports only single slide transition. You must specify the source for thumbnail elements through the e-thumbnailsourceid property. The default value is ‘false’. The value set to this property is boolean.
+The property e-showthumbnail turns on or off thumbnail support in the Rotator component. Thumbnail is used to navigate between slides. Thumbnail supports only single slide transition. You must specify the source for thumbnail elements through the e-thumbnailsourceid property. The default value is ‘false’. The value set to this property is boolean.
 
 The property e-thumbnailsourceid specifies the source for thumbnail elements. The default value is null. The value set to this property is object.
 

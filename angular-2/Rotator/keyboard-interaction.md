@@ -23,7 +23,7 @@ Function</td></tr>
 <tr>
 <td>
 Alt + j</td><td>
-Focuses the control</td></tr>
+Focuses the component</td></tr>
 <tr>
 <td>
 UP</td><td>

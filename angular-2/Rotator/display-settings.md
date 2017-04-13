@@ -307,7 +307,7 @@ This **delay** property sets the delay between the Rotator Items to move aft
 
 ### Image with Contents
 
-This feature allows you to add text along with the image in Rotator control. This is achieved by splitting the content into two panels. In the following code example, image is given in the left panel and text is given in the right panel.
+This feature allows you to add text along with the image in Rotator component. This is achieved by splitting the content into two panels. In the following code example, image is given in the left panel and text is given in the right panel.
 
 
 
@@ -382,19 +382,6 @@ This feature allows you to add text along with the image in Rotator control.
 
 
 {% endhighlight %}
-
-
-
-{% highlight js %}
-
-
-    <script>
-        angular.module('rotatApp', ['ejangular']).controller('RotatCtrl', function ($scope) {});
-    </script>
-
-
-{% endhighlight %}
-
 
 
 {% highlight css %}
