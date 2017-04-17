@@ -33,7 +33,7 @@ I> `ej.angular2.min.js` file is additionally required to render the Grid in Angu
 
 ## Data Binding
 
-[`Data binding`](http://help.syncfusion.com/js/grid/data-binding) in the grid is achieved by using the [`ej.DataManager`](https://help.syncfusion.com/js/datamanager/overview) that supports both RESTful JSON data services binding and local JSON array binding.  To set the data source to the grid, the [`dataSource`](http://help.syncfusion.com/js/api/ejgrid#members:columns-datasource) property is assigned with the instance of the `ej.DataManger`. For demonstration purpose, [Northwind OData service](http://mvc.syncfusion.com/Services/Northwnd.svc/) is used in this tutorial. Refer to the following code example.
+[`Data binding`](http://help.syncfusion.com/js/grid/data-binding) in the grid is achieved by assigning an array of JavaScript objects to the [`dataSource`](http://help.syncfusion.com/js/api/ejgrid#members:columns-datasource) property. Refer to the following code example.
 
 {% highlight html %}
 
@@ -53,23 +53,17 @@ I> `ej.angular2.min.js` file is additionally required to render the Grid in Angu
 {% highlight javascript %}
    
     import {Component, ViewEncapsulation} from '@angular/core';
-    import {NorthwindService} from './services/northwind.service';
     @Component({
       selector: 'ej-app',
-      templateUrl: 'app/app.component.html',  //give the path file for Grid control html file.
-      providers:[NorthwindService]
+      templateUrl: 'app/app.component.html'  //give the path file for Grid control html file.
     })
     export class AppComponent {
         public gridData;
-        public dataManager;
     	constructor()
         {
-             this.dataManager = ej.DataManager({
-                    url: "http://mvc.syncfusion.com/Services/Northwnd.svc/Orders/", 
-                    crossDomain:true
-                });
-             this.gridData = this.dataManager;
-         }
+           //The datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
+           this.gridData = window.gridData;
+        }
      }
 
 {% endhighlight %}
@@ -86,7 +80,6 @@ N> 2.Events can be bound to the control using the event name within bracket [`()
 
  {% endhighlight %}
 
-N> 3.ODataAdaptor is the default adaptor for the DataManager. On binding to other web services, proper [data adaptor](http://help.syncfusion.com/js/datamanager/data-adaptors)  needs to be set on `adaptor` option of the DataManager.
 
 ## Enable Paging
 
@@ -110,22 +103,16 @@ N> 3.ODataAdaptor is the default adaptor for the DataManager. On binding to othe
 {% highlight javascript %}
 
     import {Component, ViewEncapsulation} from '@angular/core';
-    import {NorthwindService} from './services/northwind.service';
     @Component({
       selector: 'ej-app',
-      templateUrl: 'app/app.component.html',  //give the path file for Grid control html file.
-      providers:[NorthwindService]
+      templateUrl: 'app/app.component.html'  //give the path file for Grid control html file.
     })
     export class AppComponent {
         public gridData;
-        public dataManager;
     	constructor()
         {
-             this.dataManager = ej.DataManager({
-                    url: "http://mvc.syncfusion.com/Services/Northwnd.svc/Orders/", 
-                    crossDomain:true
-                });
-             this.gridData = this.dataManager;
+            //The datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
+            this.gridData = window.gridData;
          }
      }
 
@@ -160,22 +147,16 @@ N> Pager settings can be customized by using the `pageSize` of [`pagesettings`](
 {% highlight javascript %}
 
     import {Component, ViewEncapsulation} from '@angular/core';
-    import {NorthwindService} from './services/northwind.service';
     @Component({
       selector: 'ej-app',
-      templateUrl: 'app/app.component.html',  //give the path file for Grid control html file.
-      providers:[NorthwindService]
+      templateUrl: 'app/app.component.html'  //give the path file for Grid control html file.
     })
     export class AppComponent {
         public gridData;
-        public dataManager;
     	constructor()
         {
-             this.dataManager = ej.DataManager({
-                    url: "http://mvc.syncfusion.com/Services/Northwnd.svc/Orders/", 
-                    crossDomain:true
-                });
-             this.gridData = this.dataManager;
+            //The datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
+            this.gridData = window.gridData;
          }
      }
 
@@ -208,22 +189,16 @@ N> Pager settings can be customized by using the `pageSize` of [`pagesettings`](
 {% highlight javascript %}
     
     import {Component, ViewEncapsulation} from '@angular/core';
-    import {NorthwindService} from './services/northwind.service';
     @Component({
       selector: 'ej-app',
-      templateUrl: 'app/app.component.html',  //give the path file for Grid control html file.
-      providers:[NorthwindService]
+      templateUrl: 'app/app.component.html'  //give the path file for Grid control html file.
     })
     export class AppComponent {
         public gridData;
-        public dataManager;
     	constructor()
         {
-             this.dataManager = ej.DataManager({
-                    url: "http://mvc.syncfusion.com/Services/Northwnd.svc/Orders/", 
-                    crossDomain:true
-                });
-             this.gridData = this.dataManager;
+            //The datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
+            this.gridData = window.gridData;
         }
      }
 
@@ -253,23 +228,17 @@ Refer to the following code example for initial grouping.
 {% highlight javascript %}
 
 import {Component, ViewEncapsulation} from '@angular/core';
-import {NorthwindService} from './services/northwind.service';
 @Component({
   selector: 'ej-app',
-  templateUrl: 'app/app.component.html',  //give the path file for Grid control html file.
-  providers:[NorthwindService]
+  templateUrl: 'app/app.component.html'  //give the path file for Grid control html file.
 })
 export class AppComponent {
     public gridData;
-    public dataManager;
     groupedColumns:object;
 	constructor()
     {
-         this.dataManager = ej.DataManager({
-                url: "http://mvc.syncfusion.com/Services/Northwnd.svc/Orders/", 
-                crossDomain:true
-            });
-         this.gridData = this.dataManager;
+         //The datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
+         this.gridData = window.gridData;
          this.groupedColumn = {groupedColumns: ["ShipCountry"]};
      }
  }
@@ -302,24 +271,18 @@ export class AppComponent {
 {% highlight javascript %}
 
 import {Component, ViewEncapsulation} from '@angular/core';
-import {NorthwindService} from './services/northwind.service';
 @Component({
   selector: 'ej-app',
-  templateUrl: 'app/app.component.html',  //give the path file for Grid control html file.
-  providers:[NorthwindService]
+  templateUrl: 'app/app.component.html'  //give the path file for Grid control html file.
 })
 export class AppComponent {
     public gridData;
-    public dataManager;
     groupedColumns:object;
     summaryRows:array;
 	constructor()
     {
-         this.dataManager = ej.DataManager({
-                url: "http://mvc.syncfusion.com/Services/Northwnd.svc/Orders/", 
-                crossDomain:true
-            });
-         this.gridData = this.dataManager;
+         //The datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
+         this.gridData = window.gridData;
          this.groupedColumn = {groupedColumns: ["ShipCity"]};
          this.summaryRows=[{
                   	title: "Sum",
