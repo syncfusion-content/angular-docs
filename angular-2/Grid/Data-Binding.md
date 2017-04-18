@@ -5,6 +5,7 @@ description: How to bind in-memory JSON and remote web services in Grid
 platform: angular-2
 control: Grid
 documentation: ug
+api: /api/angular2/grid
 --- 
 # Data binding
 
