@@ -6,6 +6,7 @@ platform: Angular-2
 control: Grid
 documentation: ug
 keywords: ejGrid, Grid, Grid widget
+api: /api/angular2/grid
 ---
 
 # Getting started
