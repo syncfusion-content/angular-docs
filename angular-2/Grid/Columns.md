@@ -5,6 +5,7 @@ description: How to define the columns and its features
 platform: angular-2
 control: Grid
 documentation: ug
+api: /api/angular2/grid
 --- 
 # Columns
 
