@@ -9,7 +9,7 @@ documentation: ug
 
 # Rows and Columns
 
-Spreadsheet is a tabular format consisting of rows and columns. Rows and columns are used to represent the editing area in Spreadsheet. The intersection point of rows and columns are called as cells. In that you can perform editing. You have [`rowCount`](http://help.syncfusion.com/api/js/ejspreadsheet#members:rowcount "rowCount") and [`columnCount`](http://help.syncfusion.com/api/js/ejspreadsheet#members:columncount "columnCount") in sheets property for defining the rows and columns count. By default Spreadsheet creates `20` rows and `21` columns. Based on this grid content will be created.
+Spreadsheet is a tabular format consisting of rows and columns. Rows and columns are used to represent the editing area in Spreadsheet. The intersection point of rows and columns are called as cells. In that you can perform editing. You have `rowCount` and `columnCount` in sheets property for defining the rows and columns count. By default Spreadsheet creates `20` rows and `21` columns. Based on this grid content will be created.
 
 ## Rows 
 
@@ -62,7 +62,7 @@ You can perform following operations in rows and columns,
 
 ## Insert 
 
-You can insert blank cells, rows or columns based on the selection in a worksheet. You have to enable the [`allowInsert`](http://help.syncfusion.com/api/js/ejspreadsheet#members:allowinsert "allowInsert") property to perform the insert operation. 
+You can insert blank cells, rows or columns based on the selection in a worksheet. You have to enable the `allowInsert` property to perform the insert operation. 
 You can perform insert operation through,
 
 * OTHERS tab in ribbon.
@@ -112,7 +112,7 @@ You can also perform insert entire column using [`insertEntireColumn`](http://he
 
 ## Delete 
 
-You can delete a range of cells, rows or columns based on the selection in worksheet. You have to enable the [`allowDelete`](http://help.syncfusion.com/api/js/ejspreadsheet#members:allowdelete "allowDelete") property to perform delete operation. 
+You can delete a range of cells, rows or columns based on the selection in worksheet. You have to enable the `allowDelete` property to perform delete operation. 
 
 You can perform delete operation through,
 
@@ -334,13 +334,13 @@ The following output is displayed as a result of the above code example.
 
 ## Resizing
 
-You can change [`columnWidth`](http://help.syncfusion.com/api/js/ejspreadsheet#members:columnwidth "columnWidth") and [`rowHeight`](http://help.syncfusion.com/api/js/ejspreadsheet#members:rowheight "rowHeight") with the specified value. You have to enable [`allowResizing`](http://help.syncfusion.com/api/js/ejspreadsheet#members:allowresizing "allowResizing") to perform resizing. 
+You can change `columnWidth` and `rowHeight` with the specified value. You have to enable `allowResizing` to perform resizing. 
 
 You can perform resizing using one of the following ways,
 
 * Resize option in column header and row header.
-* set the column width by using [`setColWidth`](http://help.syncfusion.com/api/js/ejspreadsheet#methods:xlresize-setcolwidth "setColWidth") method or [`columnWidth`](http://help.syncfusion.com/api/js/ejspreadsheet#members:columnwidth "columnWidth") property.
-* set the row height by using [`setRowHeight`](http://help.syncfusion.com/api/js/ejspreadsheet#methods:xlresize-setrowheight "setRowHeight") method or [`rowHeight`](http://help.syncfusion.com/api/js/ejspreadsheet#members:rowheight "rowHeight") property.
+* set the column width by using [`setColWidth`](http://help.syncfusion.com/api/js/ejspreadsheet#methods:xlresize-setcolwidth "setColWidth") method or `columnWidth` property.
+* set the row height by using [`setRowHeight`](http://help.syncfusion.com/api/js/ejspreadsheet#methods:xlresize-setrowheight "setRowHeight") method or `rowHeight` property.
 
 The following code example describes the above behavior.
 

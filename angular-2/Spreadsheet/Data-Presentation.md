@@ -22,7 +22,7 @@ Data presentation is helpful for proper representation of data in Spreadsheet. Y
 
 ## Cell Type
 
-You can insert the controls like Button, Checkbox, Dropdown list and Date picker. You can use [`allowCellType`](http://help.syncfusion.com/api/js/ejspreadsheet#members:allowcelltype "allowCellType") property to enable/disable cell type operations.
+You can insert the controls like Button, Checkbox, Dropdown list and Date picker. You can use `allowCellType` property to enable/disable cell type operations.
 
 ### To insert a Cell Type.
 
@@ -83,7 +83,7 @@ The following output is displayed as a result of the above code example.
 
 ## Chart
 
-Chart is a graphical representation of data, that organizes and represents a set of numerical or qualitative data. It mostly displays the selected range of data in terms of x axis and y axis. You can use [`allowCharts`](http://help.syncfusion.com/api/js/ejspreadsheet#members:allowcharts "allowCharts") property to enable/disable chart operations.
+Chart is a graphical representation of data, that organizes and represents a set of numerical or qualitative data. It mostly displays the selected range of data in terms of x axis and y axis. You can use `allowCharts` property to enable/disable chart operations.
 
 ### Types of Chart
 
@@ -163,7 +163,7 @@ The following output is displayed as a result of the above code example.
 
 ## Conditional Formatting
 
-Conditional formatting helps you to apply formats to a cell or range with certain color based on the cells values. You can use [`allowConditionalFormats`](http://help.syncfusion.com/api/js/ejspreadsheet#members:allowconditionalformats "allowConditionalFormats") property to enable/disable Conditional formats.
+Conditional formatting helps you to apply formats to a cell or range with certain color based on the cells values. You can use `allowConditionalFormats` property to enable/disable Conditional formats.
 
 ### Condition Definition
 
@@ -276,7 +276,7 @@ The following output is displayed as a result of the above code example.
 
 ## Filtering
 
-Filtering allows you to view specific rows in Spreadsheet, while hiding the other rows. When a filter is added to the header row, a drop-down menu appears in each cell of the header row. You can use [`allowFiltering`](http://help.syncfusion.com/api/js/ejspreadsheet#members:allowfiltering "allowFiltering") property to enable/disable filtering. 
+Filtering allows you to view specific rows in Spreadsheet, while hiding the other rows. When a filter is added to the header row, a drop-down menu appears in each cell of the header row. You can use `allowFiltering` property to enable/disable filtering. 
 
 You can apply filtering by one of the following ways,
 
@@ -425,7 +425,7 @@ You can perform the following customizations for picture. These are available in
 
 ## Pivot Table
 
-Pivot table is a program tool that allows you to reorganize and summarize selected columns and rows of data to obtain a desired report. You can use [`enablePivotTable`](http://help.syncfusion.com/api/js/ejspreadsheet#members:enablepivottable "enablePivotTable") property to enable/disable pivot table operations. 
+Pivot table is a program tool that allows you to reorganize and summarize selected columns and rows of data to obtain a desired report. You can use `enablePivotTable` property to enable/disable pivot table operations. 
 
 You can do this by one of the following ways,
 
@@ -489,7 +489,7 @@ The following output is displayed as a result of the above code example.
 
 ## Sorting
 
-Sorting helps you to arrange the data to particular order in a selected range of cells. You can use [`allowSorting`](http://help.syncfusion.com/api/js/ejspreadsheet#members:allowsorting "allowSorting") property to enable/disable sorting. 
+Sorting helps you to arrange the data to particular order in a selected range of cells. You can use `allowSorting` property to enable/disable sorting. 
 
 You have following options in sorting.
 
@@ -564,7 +564,7 @@ You can do this by one of the following ways,
 
 ## Table
 
-A table is a data structure that organizes information into rows and columns. You can use [`allowFormatAsTable`](http://help.syncfusion.com/api/js/ejspreadsheet#members:allowformatastable "allowFormatAsTable") property enable/disable table operations. 
+A table is a data structure that organizes information into rows and columns. You can use `allowFormatAsTable` property enable/disable table operations. 
 
 You can do this by one of the following ways,
 
