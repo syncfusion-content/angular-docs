@@ -9,7 +9,7 @@ documentation: ug
 
 # Worksheet
 
-Worksheet is a collection of cells organized in the form of rows and columns that allow us to store, format, manipulate and display data in grid format. You can create multiple sheets in Spreadsheet and use sheet tab for switching between those worksheets. By default Spreadsheet creates single worksheet since default [`sheetCount`](https://help.syncfusion.com/api/js/ejspreadsheet#members:sheetcount "sheetCount") value is `1`.
+Worksheet is a collection of cells organized in the form of rows and columns that allow us to store, format, manipulate and display data in grid format. You can create multiple sheets in Spreadsheet and use sheet tab for switching between those worksheets. By default Spreadsheet creates single worksheet since default `sheetCount` value is `1`.
 
 ## List of Sheet Operations 
 
@@ -216,7 +216,7 @@ The following output is displayed as a result of the above code example.
 Headers in the spreadsheet are numbered rows and lettered columns in worksheets. It makes ease of view and reference your data. You can dynamically show/hide worksheet header by using one of the following ways,
 
 * Select PAGE LAYOUT tab in the ribbon and then check or uncheck Headings in the Show group.
-* Show/Hide the worksheet headers using [`showHeadings`](https://help.syncfusion.com/api/js/ejspreadsheet#members:sheets-showheadings "showHeadings") property and [`showHeadings`](https://help.syncfusion.com/api/js/ejspreadsheet#methods:showheadings "showHeadings") method.
+* Show/Hide the worksheet headers using `showHeadings` property and [`showHeadings`](https://help.syncfusion.com/api/js/ejspreadsheet#methods:showheadings "showHeadings") method.
 
 The following code example describes the above behavior.
 
@@ -288,7 +288,7 @@ The following output is displayed as a result of the above code example.
 Gridlines act as a border like appearance of cells. They are used to distinguish cells on the worksheet. You can dynamically show/hide gridlines by using one of the following ways,
 
 * Select PAGE LAYOUT tab in the ribbon and then check or uncheck Gridlines in the Show group.
-* Show/Hide gridlines in a worksheet using [`showGridlines`](https://help.syncfusion.com/api/js/ejspreadsheet#members:sheets-showgridlines "showGridlines") property and [`showGridlines`](https://help.syncfusion.com/api/js/ejspreadsheet#methods:showgridlines "showGridlines") method.
+* Show/Hide gridlines in a worksheet using `showGridlines` property and [`showGridlines`](https://help.syncfusion.com/api/js/ejspreadsheet#methods:showgridlines "showGridlines") method.
 
 The following code example describes the above behavior.
 
