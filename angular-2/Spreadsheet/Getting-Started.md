@@ -86,7 +86,7 @@ Now, the Spreadsheet is rendered with default row and column count.
 
 ## Populate Spreadsheet with data
 
-Now, this section explains how to populate JSON data to the Spreadsheet. You can set [`dataSource`](http://help.syncfusion.com/js/api/ejspreadsheet#members:sheets-datasource "dataSource") property in [`e-rangesettings`](http://help.syncfusion.com/js/api/ejspreadsheet#members:sheets "sheet") to populate JSON data in Spreadsheet.
+Now, this section explains how to populate JSON data to the Spreadsheet. You can set `dataSource` property in `e-rangesettings` to populate JSON data in Spreadsheet.
 
 {% highlight html %}
 
@@ -131,11 +131,11 @@ Now, this section explains how to populate JSON data to the Spreadsheet. You can
 
 ![](Getting-Started_images/Getting-Started_img2.png)
 
-N> For more details about `data binding` refer following [`link`](http://help.syncfusion.com/js/spreadsheet/data-binding "link")
+N> For more details about `data binding` refer following [`link`](http://help.syncfusion.com/angular-2/spreadsheet/data-binding "link")
 
 ## Apply Conditional Formatting
 
-Conditional formatting helps you to apply formats to a cell or range with certain color based on the cells values. You can use [`allowConditionalFormats`](http://help.syncfusion.com/js/api/ejspreadsheet#members:allowconditionalformats "allowConditionalFormats") property within square bracket(`[]`) to enable/disable Conditional formats.
+Conditional formatting helps you to apply formats to a cell or range with certain color based on the cells values. You can use `allowConditionalFormats` property within square bracket(`[]`) to enable/disable Conditional formats.
 
 Events can be bound to the controls using the event name within bracket [`()`]. For example, the `loadComplete` event of Spreadsheet control can be defined as follows.
 
@@ -180,11 +180,11 @@ To apply conditional formats for a range use [`setCFRule`](http://help.syncfusio
 
 ![](Getting-Started_images/Getting-Started_img3.png)
 
-N> For more details about `Conditional Formatting` refer following [`link`](http://help.syncfusion.com/js/spreadsheet/data-presentation#conditional-formatting "link")
+N> For more details about `Conditional Formatting` refer following [`link`](http://help.syncfusion.com/angular-2/spreadsheet/data-presentation#conditional-formatting "link")
 
 ## Export Spreadsheet as Excel File
 
-The Spreadsheet can save its data, style, format into an excel file. To enable save option in Spreadsheet set [`exportSettings.allowExporting`](http://help.syncfusion.com/js/api/ejspreadsheet#members:exportsettings-allowexporting "allowExporting") option as `true`and Specify [`exportSettings.excelUrl`](http://help.syncfusion.com/js/api/ejspreadsheet#members:exportsettings-excelurl "excelUrl") option to save documents using server side helper. The following code example illustrates this,
+The Spreadsheet can save its data, style, format into an excel file. To enable save option in Spreadsheet set `exportSettings.allowExporting` option as `true`and Specify `exportSettings.excelUrl` option to save documents using server side helper. The following code example illustrates this,
 
 {% highlight html %}
 
@@ -218,7 +218,7 @@ The Spreadsheet can save its data, style, format into an excel file. To enable s
   
 {% endhighlight %}
 
-Use shortcut [`Ctrl + S`](http://help.syncfusion.com/js/spreadsheet/keyboard-shortcuts "Ctrl + S") to save Spreadsheet as excel file.
+Use shortcut [`Ctrl + S`](http://help.syncfusion.com/angular-2/spreadsheet/keyboard-shortcuts "Ctrl + S") to save Spreadsheet as excel file.
 
-N> 1. For more details about `Export` refer following [`link`](http://help.syncfusion.com/js/spreadsheet/open-and-save#save "link")
-N> 2. For more details about `Server Configuration` refer following [`link`](http://help.syncfusion.com/js/spreadsheet/open-and-save#server-configuration "link")
+N> 1. For more details about `Export` refer following [`link`](http://help.syncfusion.com/angular-2/spreadsheet/open-and-save#save "link")
+N> 2. For more details about `Server Configuration` refer following [`link`](http://help.syncfusion.com/angular-2/spreadsheet/open-and-save#server-configuration "link")
