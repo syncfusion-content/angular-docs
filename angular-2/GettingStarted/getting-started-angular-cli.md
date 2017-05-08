@@ -12,7 +12,7 @@ documentation: ug
 
 The [Angular CLI](https://cli.angular.io/) is a command line interface for Angular which makes it easy to create an application that already works. To getting started with Syncfusion Angular components, the NPM packages [ej-angular2](https://www.npmjs.com/package/ej-angular2) and [syncfusion-javascript](https://www.npmjs.com/package/syncfusion-javascript) helps to seamlessly supports angular-cli environment for our components.
 
-The following steps depicts, to create an application in angular-cli with Syncfusion Components
+The following steps depicts, to create an application in angular-cli with Syncfusion Angular Components
 
 ## Prerequisites
 
@@ -43,8 +43,6 @@ npm install -g @angular/cli
 
 N> To know more about angular-cli commands refer [here](https://github.com/angular/angular-cli)
 
-N> This command installs all the required dependencies for Angular application.
-
 ## Create a new Application
 
 * To create a new Angular application run the below command in Command Prompt
@@ -54,6 +52,8 @@ ng new project-name
 
 E.g.: ng new ejProject
 {% endhighlight %}
+
+N> This command installs all the required dependencies for Angular application.
 
 ## Configuration of Syncfusion Angular Component
 
