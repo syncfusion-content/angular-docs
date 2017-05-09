@@ -16,6 +16,7 @@ Vertical axis always uses numerical or logarithmic scale. Horizontal(x) axis sup
 * Category
 * Numeric
 * DateTime
+* DateTime Category
 * Logarithmic
 
 ## Category Axis
@@ -227,6 +228,20 @@ When the value of the `rangePadding` property is **normal**, the padding is appl
 
 ![](Axis_images/axis_img11.png)
 
+#### Customizing the starting range of the axis
+
+By default the Y axis will be always calculated from the value 0 for column, bar, stacking column and stacking bar series types. You can modify this behavior by setting false to the property `startFromZero` in the axis. On setting this the axis minimum value will be calculated based on the value for the data points.
+
+{% highlight html %}
+
+
+<ej-chart id="chartcontainer" primaryYAxis.rangePadding="none" primaryYAxis.startfromZero="false">
+   
+</ej-chart>
+
+{% endhighlight %}
+
+![](Axis_images/axis_img66.png)
 
 ## DateTime Axis
 
@@ -342,6 +357,62 @@ When the value of the `rangePadding` property is **additional**, the range is ro
 {% endhighlight %} 
 
 ![](Axis_images/axis_img18.png)
+
+
+## DateTime Category Axis
+
+DateTime category axis takes date time value as input but behaves like category axis. This is used to display the date time values with nonlinear intervals (used to depict the business days by skipping holidays). To use date time axis, set the `valueType` property of the axis to **datetimeCategory**.
+
+{% highlight html %}
+
+<ej-chart id="chartcontainer" primaryXAxis.valueType="datetimecategory">
+   
+</ej-chart>
+
+{% endhighlight %}
+
+![](Axis_images/axis_img63.png)
+
+ [Click](http://ng2jq.syncfusion.com/#/chart/datetimeCategory) here to view our online demo sample for date time axis.
+
+### Customizing DateTime Category range
+
+Axis range can be customized by using the `range` property to set the `minimum`, `maximum` and `interval` values. Datetime category axis takes numeric input for minimum and maximum property.
+
+{% highlight html %}
+
+<ej-chart id="chartcontainer" [primaryXAxis.range.min]="0" 
+                                  [primaryXAxis.range.max]="4">
+   
+</ej-chart>
+
+{% endhighlight %}
+
+![](Axis_images/axis_img64.png)
+
+### DateTime Category intervals
+
+Date time category intervals can be customized by using the `interval`and `intervalType` properties of the axis. For example, when you set the intervalType as months, it displays only the first label of all the months from the data.
+
+Essential Chart supports the following types of interval for date time category axis.
+* Days
+* Hours
+* Milliseconds
+* Minutes
+* Months
+* Seconds
+* Years
+* Auto
+
+{% highlight html %}
+
+ <ej-chart id="chartcontainer" primaryXAxis.intervalType="months" >
+   <!-- Write series code here-->
+ </ej-chart>
+
+{% endhighlight %}
+
+![](Axis_images/axis_img65.png)
 
 
 ## Logarithmic Axis

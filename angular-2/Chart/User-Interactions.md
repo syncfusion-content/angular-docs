@@ -581,7 +581,7 @@ To fetch the selected area data points value, you can set the selectionSettings 
             var selectedData = sender.data.selectedDataCollection;
             //...
          }
-  </script>
+</script>
 
 {% endhighlight %}
 
@@ -741,7 +741,7 @@ To get the series information when selecting the specific series, subscribe to t
             //Get Series information on series selection
             var seriesData = sender.series;
         }
-  </script>
+</script>
 
 {% endhighlight %}
 
@@ -768,3 +768,40 @@ We can able to select the point/series programmatically on chart load, by settin
 {% endhighlight %}
 
 ![](User-Interactions_images/User-Interactions_img29.png)
+
+
+## Data Editing
+
+EjChart provides support to change the location of the rendered points. This can be done by dragging the point and dropping it on another location in chart. To enable the data editing, set the `enable` property to true in the `dragSettings` of the series.
+
+{% highlight html %}
+
+<ej-chart id="container" >
+        <e-seriescollection>
+            <e-series [dragSettings.enable]="true" >
+            </e-series>        
+        </e-seriescollection>
+</ej-chart>
+
+{% endhighlight %}
+
+![](User-Interactions_images/User-Interactions_img31.png)
+
+[Click](http://ng2jq.syncfusion.com/#/chart/drag) here to view the data editing online demo sample.
+
+### Customize Dragging direction
+
+To drag the point along x and y axes, you can specify `type` as xy in dragSettings. And to drag along x axis alone, specify the type as x and to drag along y axis, specify type as y.
+
+{% highlight html %}
+
+<ej-chart id="container" >
+        <e-seriescollection>
+            <e-series [dragSettings.type]="y" >
+            </e-series>        
+        </e-seriescollection>
+</ej-chart>
+
+{% endhighlight %}
+
+![](User-Interactions_images/User-Interactions_img32.png)
