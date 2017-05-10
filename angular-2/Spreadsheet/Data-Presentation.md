@@ -63,7 +63,7 @@ import { SpreadsheetService } from '../services/spreadsheet.service';
      }
 
     loadComplete(event) {
-    let xlObj = $("#spreadsheet").data("ejSpreadsheet")
+    let xlObj = $("#spreadsheet").data("ejSpreadsheet");
      var xlCellType = xlObj.XLCellType;
      if (!xlObj.isImport) {
         xlCellType.addCellTypes("D1", {"type" : ej.Spreadsheet.CustomCellType.Button, "text" : "Button1", "background-color" : "green" },  1);
@@ -147,7 +147,7 @@ import { SpreadsheetService } from '../services/spreadsheet.service';
      }
 
     loadComplete(event) {
-     let xlObj = $("#spreadsheet").data("ejSpreadsheet")
+     let xlObj = $("#spreadsheet").data("ejSpreadsheet");
      if (!xlObj.isImport) {
         xlObj.XLChart.createChart("D1:E6", { type: "column", enable3D: false, marker: false, top: 40, left: 260, width: 340, height: 250 });
         xlObj.performSelection("E1");
@@ -203,7 +203,7 @@ import { SpreadsheetService } from '../services/spreadsheet.service';
      }
 
     loadComplete(event) {
-     let xlObj = $("#spreadsheet").data("ejSpreadsheet")
+     let xlObj = $("#spreadsheet").data("ejSpreadsheet");
      var xlCFormat = xlObj.XLCFormat;
     if (!xlObj.isImport) {
         xlCFormat.setCFRule({ "action": "greaterthan", "inputs": ["10"], "color": "redft", "range": "G2:G11" });
@@ -257,7 +257,7 @@ import { SpreadsheetService } from '../services/spreadsheet.service';
             this.spreadData = SpreadsheetService.getDefaultData();
      }
     loadComplete(event) {
-     let xlObj = $("#spreadsheet").data("ejSpreadsheet")
+     let xlObj = $("#spreadsheet").data("ejSpreadsheet");
     var xlCFormat = xlObj.XLCFormat;
     if (!xlObj.isImport) {
         xlCFormat.setCFRule({ "action": "greaterthan", "inputs": ["10"], "color": "redft", "range": "G2:G11" });
@@ -328,7 +328,7 @@ import { SpreadsheetService } from '../services/spreadsheet.service';
             this.spreadData = SpreadsheetService.getDefaultData();
      }
     loadComplete(event) {
-     let xlObj = $("#spreadsheet").data("ejSpreadsheet")
+     let xlObj = $("#spreadsheet").data("ejSpreadsheet");
     var xlFilter = xlObj.XLFilter;
     if (!xlObj.isImport) {
         xlObj.performSelection("E2");
@@ -390,7 +390,7 @@ import { SpreadsheetService } from '../services/spreadsheet.service';
             this.spreadData = SpreadsheetService.getDefaultData();
      }
     loadComplete(event) {
-     let xlObj = $("#spreadsheet").data("ejSpreadsheet")
+     let xlObj = $("#spreadsheet").data("ejSpreadsheet");
     var xlFilter = xlObj.XLFilter;
     if (!xlObj.isImport) {
         xlObj.performSelection("E2");
@@ -465,7 +465,7 @@ import { SpreadsheetService } from '../services/spreadsheet.service';
             this.spreadData = SpreadsheetService.getPivotData();
      }
     loadComplete(event) {
-     let xlObj = $("#spreadsheet").data("ejSpreadsheet")
+     let xlObj = $("#spreadsheet").data("ejSpreadsheet");
     if (!xlObj.isImport) {
        var settings = {
             rows: [{fieldName: "Country"}, { fieldName: "State"}],
@@ -538,7 +538,7 @@ import { SpreadsheetService } from '../services/spreadsheet.service';
             this.spreadData = SpreadsheetService.getDefaultData();
      }
     loadComplete(event) {
-     let xlObj = $("#spreadsheet").data("ejSpreadsheet")
+     let xlObj = $("#spreadsheet").data("ejSpreadsheet");
      var xlSort = xlObj.XLSort, xlFormat = xlObj.XLFormat;
     if (!xlObj.isImport) {
         xlSort.sortByRange("A2:A10", "A", "ascending");
@@ -616,7 +616,7 @@ import { SpreadsheetService } from '../services/spreadsheet.service';
             this.spreadData = SpreadsheetService.getTableData();
      }
     loadComplete(event) {
-     let xlObj = $("#spreadsheet").data("ejSpreadsheet")
+     let xlObj = $("#spreadsheet").data("ejSpreadsheet");
     var xlFormat = this.XLFormat;
     if (!xlObj.isImport) {
         xlFormat.createTable({ "header": true, "formatName": "TableStyleLight8" }, "A1:B4");

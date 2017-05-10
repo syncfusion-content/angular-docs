@@ -7,7 +7,7 @@ documentation: ug
 ---
 # Selection
 
-Selection provides an interactive support to highlight cell, row, or column that you select. Selection can be done through Mouse, Touch or Keyboard interaction. To enable selection, set [`allowSelection`](https://help.syncfusion.com/api/js/ejspreadsheet#members:allowselection "allowSelection") as `true`.
+Selection provides an interactive support to highlight cell, row, or column that you select. Selection can be done through Mouse, Touch or Keyboard interaction. To enable selection, set `allowSelection` as `true`.
 
 ## Selection Modes
 

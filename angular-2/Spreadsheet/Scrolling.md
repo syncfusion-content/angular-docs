@@ -24,7 +24,7 @@ To set height and width in spreadsheet use `height` and `width` property in `scr
 The following code example describes the above behavior.
 
 {% highlight html %}
-<ej-spreadsheet id="spreadsheet" [scrollSettings.allowScrolling]= true scrollSettings.height= "400" scrollSettings.width= "50%">
+<ej-spreadsheet id="spreadsheet" [scrollSettings]="scrollSettings">
 </ej-spreadsheet> 
 {% endhighlight %}
 
@@ -36,8 +36,11 @@ import {Component, ViewEncapsulation} from '@angular/core';
         templateUrl: 'app/app.component.html',  //give the path file for spreadsheet component html file.
     })
   export class AppComponent {
+  public scrollSettings;
+  constructor() {
+      this.scrollSettings = { width: "50%", height: 400 , allowScrolling: true}; // Height in pixel and Width in percentage
  }
-
+}
 {% endhighlight %}
 
 The following output is displayed as a result of the above code example.

@@ -629,7 +629,6 @@ import { Component, ViewEncapsulation } from '@angular/core';
 })
 export class AppComponent {
   public spreadData;
-  public styles;
   constructor() {
     this.spreadData = [{
       dataSource: ej.DataManager("http://mvc.syncfusion.com/Services/Northwnd.svc/Orders/"),

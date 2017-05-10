@@ -64,7 +64,7 @@ import { SpreadsheetService } from '../services/spreadsheet.service';
             this.spreadData = SpreadsheetService.getDefaultData();
      }
     loadComplete(event) {
-     let xlObj = $("#spreadsheet").data("ejSpreadsheet")
+     let xlObj = $("#spreadsheet").data("ejSpreadsheet");
      if(!xlObj.isImport) {
          xlObj.XLEdit.editCell(3, 0, true); // if true, it maintains the existing data otherwise it clears the data.
         //this.XLEdit.saveCell();
@@ -114,7 +114,7 @@ import { SpreadsheetService } from '../services/spreadsheet.service';
             this.spreadData = SpreadsheetService.getDefaultData();
      }
     loadComplete(event) {
-    let xlObj = $("#spreadsheet").data("ejSpreadsheet")
+    let xlObj = $("#spreadsheet").data("ejSpreadsheet");
      if(!xlObj.isImport) {
          xlObj.protectSheet(false);
          xlObj.lockCells("A1:A5", true);
@@ -167,7 +167,7 @@ export class AppComponent {
     }]
   }  
  loadComplete(event) {
-     let xlObj = $("#spreadsheet").data("ejSpreadsheet")
+     let xlObj = $("#spreadsheet").data("ejSpreadsheet");
      if(!xlObj.isImport) {
         xlObj.XLEdit.updateValue("I2", "amazon");
         xlObj.XLEdit.updateValue("J2", "flipkart");
