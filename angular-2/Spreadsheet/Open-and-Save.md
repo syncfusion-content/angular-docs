@@ -57,7 +57,7 @@ To load excel documents initially from client side, set `importUrl` as excel fil
 
 {% highlight html %}
 
-<ej-spreadsheet id="spreadsheet" [allowImport]="true" importSettings.importMapper="http://js.syncfusion.com/demos/ejservices/api/Spreadsheet/Import" importSettings.importUrl="http://mvc.syncfusion.com/Spreadsheet/LargeData.xlsx">
+<ej-spreadsheet id="spreadsheet" [allowImport]="true" importSettings.importMapper="http://js.syncfusion.com/demos/ejservices/api/Spreadsheet/Import" importSettings.importUrl="http://js.syncfusion.com/demos/ejservices/data/Spreadsheet/LargeData.xlsx">
 </ej-spreadsheet>
 
 {% endhighlight %}
@@ -82,7 +82,7 @@ public class JSXLExportController : ApiController
     public HttpResponseMessage Import()
     {
         ImportRequest importRequest = new ImportRequest();
-        importRequest.Url = "http://mvc.syncfusion.com/Spreadsheet/LargeData.xlsx";           
+        importRequest.Url = "http://js.syncfusion.com/demos/ejservices/data/Spreadsheet/LargeData.xlsx";           
         string str = Spreadsheet.Open(importRequest);
         return new HttpResponseMessage() { Content = new StringContent(str, Encoding.UTF8, "text/plain") };
     }
@@ -135,7 +135,7 @@ The code snippets to open excel document as URL from client side are as follows,
 
 function fileOpen() {
     var xlObj = $("#spreadsheet").data("ejSpreadsheet");
-    xlObj["import"]({Url: "http://mvc.syncfusion.com/Spreadsheet/LargeData.xlsx"});
+    xlObj["import"]({Url: "http://js.syncfusion.com/demos/ejservices/data/Spreadsheet/LargeData.xlsx"});
 }
 
 {% endhighlight %}
@@ -151,7 +151,7 @@ The code snippets to specify excel document as URL in server side are as follows
 public HttpResponseMessage Import()
 {
     ImportRequest importRequest = new ImportRequest();
-    importRequest.Url = "http://mvc.syncfusion.com/Spreadsheet/LargeData.xlsx";
+    importRequest.Url = "http://js.syncfusion.com/demos/ejservices/data/Spreadsheet/LargeData.xlsx";
     string str = Spreadsheet.Open(importRequest);
     return new HttpResponseMessage() { Content = new StringContent(str, Encoding.UTF8, "text/plain") };
 }
@@ -168,7 +168,7 @@ The Spreadsheet can save its data, style, format into an excel file. To enable s
 
 {% highlight html %}
 
-<ej-spreadsheet id="spreadsheet" scrollSettings.height="530" scrollSettings.width="100%" exportSettings.allowExporting="true" exportSettings.excelUrl="http://js.syncfusion.com/demos/ejservices/api/Spreadsheet/ExcelExport" exportSettings.csvUrl="http://js.syncfusion.com/demos/ejservices/api/Spreadsheet/CsvExport" exportSettings.pdfUrl="http://js.syncfusion.com/demos/ejservices/api/Spreadsheet/PdfExport">
+<ej-spreadsheet id="spreadsheet" exportSettings.allowExporting="true" exportSettings.excelUrl="http://js.syncfusion.com/demos/ejservices/api/Spreadsheet/ExcelExport" exportSettings.csvUrl="http://js.syncfusion.com/demos/ejservices/api/Spreadsheet/CsvExport" exportSettings.pdfUrl="http://js.syncfusion.com/demos/ejservices/api/Spreadsheet/PdfExport">
 </ej-spreadsheet>
 
 {% endhighlight %}

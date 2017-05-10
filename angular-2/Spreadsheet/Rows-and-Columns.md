@@ -194,7 +194,7 @@ import { SpreadsheetService } from '../services/spreadsheet.service';
      }
 
     loadComplete(event) {
-     let xlObj = $("#spreadsheet").data("ejSpreadsheet")
+     let xlObj = $("#spreadsheet").data("ejSpreadsheet");
      if(!xlObj.isImport) {
         xlObj.insertEntireRow(2, 2);
         xlObj.insertEntireColumn(2, 2);
@@ -238,7 +238,7 @@ The following code example describes the above behavior.
     <e-sheets>
         <e-sheet>
             <e-rangesettings>
-                <e-rangesetting [dataSource]= "spreadData" ></e-rangesetting>
+                <e-rangesetting [dataSource]= "spreadData"  ></e-rangesetting>
             </e-rangesettings>
         </e-sheet>
     </e-sheets>
@@ -261,7 +261,7 @@ import { SpreadsheetService } from '../services/spreadsheet.service';
             this.spreadData = SpreadsheetService.getDefaultData();
      }
     loadComplete(event) {
-     let xlObj = $("#spreadsheet").data("ejSpreadsheet")
+     let xlObj = $("#spreadsheet").data("ejSpreadsheet");
      xlObj.setWidthToColumns([180, ]);
      if(!xlObj.isImport){
         xlObj.hideRow(2);
@@ -319,7 +319,7 @@ import { SpreadsheetService } from '../services/spreadsheet.service';
             this.spreadData = SpreadsheetService.getDefaultData();
      }
     loadComplete(event) {
-     let xlObj = $("#spreadsheet").data("ejSpreadsheet")
+     let xlObj = $("#spreadsheet").data("ejSpreadsheet");
      if(!xlObj.isImport){
         xlObj.showRow(2);
         xlObj.showColumn(2);
@@ -373,7 +373,7 @@ import { SpreadsheetService } from '../services/spreadsheet.service';
             this.spreadData = SpreadsheetService.getDefaultData();
      }
     loadComplete(event) {
-let xlObj = $("#spreadsheet").data("ejSpreadsheet")
+let xlObj = $("#spreadsheet").data("ejSpreadsheet");
      if(!xlObj.isImport){
         xlObj.XLResize.setColWidth(2, 100);
         xlObj.XLResize.setRowHeight(2, 40);

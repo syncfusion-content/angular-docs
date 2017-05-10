@@ -210,7 +210,7 @@ export class AppComponent {
 
 Place the following code in index.html,
 
-{% highlight javascript %}
+{% highlight html %}
 
 <script>
 function customTotal(args) {
@@ -275,7 +275,7 @@ export class AppComponent {
 
 Place the following code in index.html,
 
-{% highlight javascript %}
+{% highlight html %}
 
 <script>
 function customTotal(args) {
@@ -299,10 +299,58 @@ To remove user defined function from Spreadsheet use [`removeCustomFormula`](htt
 ## Named Ranges
 
 To understand the purpose of cell reference or table, you can define a meaningful name using named ranges support. By using names, you can make your formula much easier to understand and maintain. You can add named ranges to Spreadsheet in following ways,
-   
-1. Method
 
-2. User Interface
+   
+1. Initial load
+
+2. Method
+
+3. User Interface
+
+### Initial Load
+
+You can add named ranges at initial load with `nameManager` API. The following code example describes the above behavior,
+
+{% highlight html %}
+
+<ej-spreadsheet id="spreadsheet" [sheets] = "spreadData" [nameManager] = "namemanager">
+</ej-spreadsheet>
+
+{% endhighlight %}
+
+{% highlight javascript %}
+
+import { Component, ViewEncapsulation } from '@angular/core';
+//import { SpreadsheetService } from './services/spreadsheet.service';
+
+@Component({
+  selector: 'ej-app',
+  templateUrl: 'app/app.component.html',  //give the path file for spreadsheet control html file.
+  //providers: [SpreadsheetService]
+})
+export class AppComponent {
+  public spreadData;
+  public namemanager;
+  constructor() {
+    this.spreadData = [{
+      rows: [{
+        cells: [{
+          value: 1
+        }]
+      },
+      {
+        cells: [{
+          value: 2
+        }]
+      }]
+    }];
+  }
+}
+
+{% endhighlight %}
+
+The following output is displayed as a result of the above code example.
+![](Formulas_images/Formula_img3.png)
 
 ### Method
 

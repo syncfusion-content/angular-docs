@@ -13,21 +13,6 @@ Spreadsheet provides the support to perform undo and redo operations. You can se
 
 N> Default value of `undoRedoStep` is 20. You can perform 20 undo or redo actions.
 
-The following code example describes the above behavior.
-
-{% highlight html %}
-<ej-spreadsheet id="spreadsheet" scrollSettings.height="550" scrollSettings.width="750" (loadComplete)= loadComplete($event)  [allowUndoRedo]= "false" >
-    <e-sheets>
-        <e-sheet >
-            <e-rangesettings>
-                <e-rangesetting [dataSource]="spreadData" ></e-rangesetting>
-            </e-rangesettings>
-        </e-sheet>
-    </e-sheets>
-</ej-spreadsheet>
-{% endhighlight %}
-
-
 ## Undo the last action
 
 Undo reverses the last action you performed with spreadsheet. You can do this by following ways.

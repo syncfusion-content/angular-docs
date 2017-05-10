@@ -63,7 +63,7 @@ The Sreadsheet component can be created with prefix of `ej-`.The code example fo
 
 {% highlight html %}
 
-    <ej-spreadsheet id="spreadsheet" scrollSettings.height="530" scrollSettings.width="100%">
+    <ej-spreadsheet id="spreadsheet">
     </ej-spreadsheet>
 
 {% endhighlight %}
