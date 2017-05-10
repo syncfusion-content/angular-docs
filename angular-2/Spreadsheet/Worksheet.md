@@ -60,7 +60,7 @@ import {Component, ViewEncapsulation} from '@angular/core';
     export class AppComponent {
 
    loadComplete(args) {  
-    let xlObj = $("#spreadsheet").data("ejSpreadsheet")        
+    let xlObj = $("#spreadsheet").data("ejSpreadsheet");     
     if(!xlObj.isImport) {
         xlObj.addNewSheet(); //To add as a last sheet.
         //xlObj.insertSheet(); // To insert a sheet before the active sheet.
@@ -96,7 +96,7 @@ import {Component, ViewEncapsulation} from '@angular/core';
     export class AppComponent {
 
     loadComplete(args) {  
-    let xlObj = $("#spreadsheet").data("ejSpreadsheet")        
+    let xlObj = $("#spreadsheet").data("ejSpreadsheet");        
     if (!xlObj.isImport)
         xlObj.copySheet(1, 3, true); //arg1- from index, arg2 -to index, arg3 - isCopySheet
     }
@@ -129,7 +129,7 @@ import {Component, ViewEncapsulation} from '@angular/core';
     export class AppComponent {
 
     loadComplete(args) {  
-    let xlObj = $("#spreadsheet").data("ejSpreadsheet")        
+    let xlObj = $("#spreadsheet").data("ejSpreadsheet");        
     if (!xlObj.isImport)
         xlObj.copySheet(1, 3, false); //arg1- from index, arg2 -to index, arg3 - isCopySheet
     }
@@ -165,7 +165,7 @@ import {Component, ViewEncapsulation} from '@angular/core';
   export class AppComponent {
 
   loadComplete(args) {  
-    let xlObj = $("#spreadsheet").data("ejSpreadsheet")        
+    let xlObj = $("#spreadsheet").data("ejSpreadsheet");  
     if (!xlObj.isImport)
         xlObj.deleteSheet();
     }
@@ -200,7 +200,7 @@ import {Component, ViewEncapsulation} from '@angular/core';
   export class AppComponent {
 
   loadComplete(args) {  
-    let xlObj = $("#spreadsheet").data("ejSpreadsheet")        
+    let xlObj = $("#spreadsheet").data("ejSpreadsheet");        
     if (!xlObj.isImport)
         xlObj.sheetRename("RenameSheet");
     }
@@ -270,7 +270,7 @@ import {Component, ViewEncapsulation} from '@angular/core';
  export class AppComponent {
 
  loadComplete(args) {  
-    let xlObj = $("#spreadsheet").data("ejSpreadsheet")        
+    let xlObj = $("#spreadsheet").data("ejSpreadsheet");        
     if (!xlObj.isImport)
         xlObj.hideSheet(1);
         xlObj.hideSheet(2);

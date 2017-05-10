@@ -29,7 +29,7 @@ The following code example describes the above behavior.
 {% highlight html %}
 <div><button id="btnPrint" (click)="printClick($event)">Print</button>
 <button id="btnPrintSel" (click)="printSelClick($event)">Print Selected</button> </div> <br />
-<ej-spreadsheet id="spreadsheet" scrollSettings.height="550" scrollSettings.width="750" (loadComplete)= loadComplete($event)  [printSettings.allowPrinting]= "true" >
+<ej-spreadsheet id="spreadsheet" (loadComplete)= loadComplete($event)  [printSettings.allowPrinting]= "true" >
     <e-sheets>
         <e-sheet>
             <e-rangesettings>
@@ -55,19 +55,19 @@ export class AppComponent {
     this.spreadData = SpreadsheetService.getDefaultData();
     }
  loadComplete(event) {
-     let xlObj = $("#spreadsheet").data("ejSpreadsheet")
+     let xlObj = $("#spreadsheet").data("ejSpreadsheet");
         if(!xlObj.isImport) {
         xlObj.setWidthToColumns([ 140, 85, 85 ]);
 		xlObj.performSelection("A1:C6");
     }
 }
 printClick(event) {
-     let xlObj = $("#spreadsheet").data("ejSpreadsheet")
+     let xlObj = $("#spreadsheet").data("ejSpreadsheet");
         xlObj.XLPrint.printSheet();
     
 }
 printSelClick(event) {
-     let xlObj = $("#spreadsheet").data("ejSpreadsheet")
+     let xlObj = $("#spreadsheet").data("ejSpreadsheet");
         xlObj.XLPrint.printSelection();
 }
 }
@@ -97,7 +97,7 @@ You have an option to print the spreadsheet with gridlines or without gridlines.
 The following code example describes the above behavior.
 
 {% highlight html %}
-<ej-spreadsheet id="spreadsheet" scrollSettings.height="550" scrollSettings.width="750" (loadComplete)= loadComplete($event)  [printSettings.allowPrinting]= "true" >
+<ej-spreadsheet id="spreadsheet" (loadComplete)= loadComplete($event)  [printSettings.allowPrinting]= "true" >
     <e-sheets>
         <e-sheet [showGridlines] = "false" >
             <e-rangesettings>
@@ -124,7 +124,7 @@ You have an option to print the spreadsheet with headers or without headers. You
 The following code example describes the above behavior.
 
 {% highlight html %}
-<ej-spreadsheet id="spreadsheet" scrollSettings.height="550" scrollSettings.width="750" (loadComplete)= loadComplete($event)  [printSettings.allowPrinting]= "true" >
+<ej-spreadsheet id="spreadsheet"  (loadComplete)= loadComplete($event)  [printSettings.allowPrinting]= "true" >
     <e-sheets>
         <e-sheet [showHeadings] = "false" >
             <e-rangesettings>
