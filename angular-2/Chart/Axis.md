@@ -722,6 +722,21 @@ W> String value provided for `crossesAt` property is case-sensitive.
 
 ![](Axis_images/axis_img56.png)
 
+#### Positioning the axis elements while crossing
+
+The `showNextToAxisLine`property is used for controlling the axis elements movement along with the axis line while axis crossing is performed. When the showNextToAxisLine is set as false only the axis line and the tick lines are placed at the crossing Value and the axis elements will be placed outside the chart area. The default value of `showNextToAxisLine` is **true**.  
+
+{% highlight html %}
+
+ <!--Crosses horizontal axis at category value "zero" -->
+<ej-chart id="chartcontainer" primaryXAxis.crossesAt="0" primaryXAxis.showNextToAxisLine="false">
+<!-- Write series code here -->
+</ej-chart>
+
+{% endhighlight %}
+
+![](Axis_images/axis_img67.png)
+
 
 ### Axis Visibility
 
