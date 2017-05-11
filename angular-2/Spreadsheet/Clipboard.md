@@ -83,7 +83,7 @@ import { SpreadsheetService } from '../services/spreadsheet.service';
             this.spreadData = SpreadsheetService.getDefaultData();
      }
     loadComplete(event) {
-    let xlObj = $("#spreadsheet").data("ejSpreadsheet")
+    let xlObj = $("#spreadsheet").data("ejSpreadsheet");
     var xlClip = xlObj.XLClipboard;
     xlObj.performSelection("G1:H3");
     xlClip.cut(); // Cut the selected cells

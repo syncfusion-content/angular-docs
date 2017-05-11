@@ -71,7 +71,7 @@ import { SpreadsheetService } from '../services/spreadsheet.service';
      }
 
     loadComplete(event) {
-     let xlObj = $("#spreadsheet").data("ejSpreadsheet")
+     let xlObj = $("#spreadsheet").data("ejSpreadsheet");
       if(!xlObj.isImport) {
         xlObj.XLComment.setComment("A2", " Casual Foot wears with wide variety of colors.", false);
         xlObj.XLComment.setComment("A4", " Formal Foot wears with wide variety of sizes.", true); // If true comment is in Editing mode.
@@ -162,7 +162,7 @@ import { SpreadsheetService } from '../services/spreadsheet.service';
      }
 
     loadComplete(event) {
-     let xlObj = $("#spreadsheet").data("ejSpreadsheet")
+     let xlObj = $("#spreadsheet").data("ejSpreadsheet");
       if(!xlObj.isImport) {
         xlObj.XLValidate.applyDVRules("G2:G12", ["Greater", 6], "number", true, true);
         //the last two boolean values used to ignore blank value and error alert.
@@ -208,7 +208,7 @@ import { SpreadsheetService } from '../services/spreadsheet.service';
      }
 
     loadComplete(event) {
-     let xlObj = $("#spreadsheet").data("ejSpreadsheet")
+     let xlObj = $("#spreadsheet").data("ejSpreadsheet");
       if(!xlObj.isImport) {
         xlObj.XLValidate.applyDVRules("G2:G12", ["Greater", 6], "number", true, true);
         //the last two boolean values used to ignore blank value and error alert.
@@ -255,7 +255,7 @@ import { SpreadsheetService } from '../services/spreadsheet.service';
      }
 
    loadComplete(event) {
-     let xlObj = $("#spreadsheet").data("ejSpreadsheet")
+     let xlObj = $("#spreadsheet").data("ejSpreadsheet");
       if(!xlObj.isImport) {
        xlObj.XLValidate.applyDVRules("G2:G12", ["Greater", 6], "number", true, true);
         //the last two boolean values used to ignore blank value and error alert.
@@ -307,7 +307,7 @@ import { SpreadsheetService } from '../services/spreadsheet.service';
      }
 
     loadComplete(event) {
-     let xlObj = $("#spreadsheet").data("ejSpreadsheet")
+     let xlObj = $("#spreadsheet").data("ejSpreadsheet");
       if(!xlObj.isImport) {
         xlObj.XLDragDrop.moveRangeTo([1, 6, 4, 7], [1, 9, 4, 10]);
       }
@@ -412,7 +412,7 @@ import { SpreadsheetService } from '../services/spreadsheet.service';
      }
 
     loadComplete(event) {
-     let xlObj = $("#spreadsheet").data("ejSpreadsheet")
+     let xlObj = $("#spreadsheet").data("ejSpreadsheet");
       if(!xlObj.isImport) {
         xlObj.XLEdit.updateValue("N2", "Name");
         xlObj.XLEdit.updateValue("N3", "Casual Shoes");
@@ -485,7 +485,7 @@ import { SpreadsheetService } from '../services/spreadsheet.service';
      }
 
     loadComplete(event) {
-     let xlObj = $("#spreadsheet").data("ejSpreadsheet")
+     let xlObj = $("#spreadsheet").data("ejSpreadsheet");
       if(!xlObj.isImport) {
         xlObj.XLEdit.updateValue("I2", "amazon");
         xlObj.XLEdit.updateValue("J2", "flipkart");
@@ -569,7 +569,7 @@ import { SpreadsheetService } from '../services/spreadsheet.service';
      }
 
     loadComplete(event) {
-     let xlObj = $("#spreadsheet").data("ejSpreadsheet")
+     let xlObj = $("#spreadsheet").data("ejSpreadsheet");
       if(!xlObj.isImport) {
         xlObj.mergeCells("A2:B4", true);
         xlObj.mergeCenter = true;
@@ -620,7 +620,7 @@ import { SpreadsheetService } from '../services/spreadsheet.service';
      }
 
    loadComplete(event) {
-     let xlObj = $("#spreadsheet").data("ejSpreadsheet")
+     let xlObj = $("#spreadsheet").data("ejSpreadsheet");
       if(!xlObj.isImport) {
         xlObj.mergeCells("B2:C4", true); // true is to prevent the alert message.
         xlObj.unmergeCells("B2:C4");
