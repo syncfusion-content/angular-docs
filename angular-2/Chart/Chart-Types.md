@@ -1881,6 +1881,93 @@ Outlier symbol, width and height can be customized using outlierSettings through
 
 [Click](http://ng2jq.syncfusion.com/#/chart/box) here to view the Box and Whisker Chart online demo sample.
 
+## Pie Of Pie Chart
+
+To render the pie of pie chart, set the series `type` as **pieofpie**. Pie of pie chart is used for displaying the data of a pie slice as another pie chart. The values in the second pie is displayed based on the **splitMode**  property.
+
+{% highlight html %}
+
+ <ej-chart id="chartcontainer">
+    <e-seriescollection>
+        <e-series type="pieofpie" [splitvalue]="10">
+		      <e-points>
+		       <e-point x="Saudi Arabia" [y]="58" text='58%'></e-point>
+		       <e-point x="Persian Gulf" [y]="15"  text='15%'></e-point>
+		       <e-point x="Canada" [y]="13" text='13%'></e-point>
+		       <e-point x="Venezula" [y]="8" text='8%'></e-point>
+		       <e-point x="Mexico" [y]="3" text='3%'></e-point>
+		       <e-point x="Russia" [y]="2" text='2%'></e-point>
+		       <e-point x="Miscellaneous" [y]="1" text='1%'></e-point>
+         </e-points>
+	  </e-series>
+   </e-seriescollection>
+</ej-chart>
+
+{% endhighlight %}
+
+![](Chart-Types_images/Chart-Types_img93.png)
+
+[Click](http://ng2jq.syncfusion.com/#/chart/pieofpie) here to view the Pie Of Pie Chart online demo sample.
+
+### Split Mode and Split Value 
+
+The points to be displayed in the second pie is decided based on the `splitMode`property.**SplitMode** property takes the following values. 
+* Position – Have to split the data points based on its position
+* Value – Have to split the data points based on its Y value
+* Percentage – Have to split the points based on the percentage value
+* Indexes – The data points with the specified indexes are split separately 
+ By default, the splitMode is set to  **Value**. 
+
+{% highlight html %}
+
+<ej-chart id="chartcontainer">
+     <e-seriescollection>
+           <e-series splitMode="position" [splitValue]="3"> 
+           </e-series>
+     </e-seriescollection>
+</ej-chart>
+
+{% endhighlight %}
+
+![](Chart-Types_images/Chart-Types_img94.png)
+
+### Changing Pie Of Pie Size
+
+The size of the second Pie can be customized by using the `pieOfPieCoefficient` property. The default value of pieOfPieCoefficient is **0.6**.Its value ranges from 0 to 1.
+
+{% highlight html %}
+
+<ej-chart id="chartcontainer">
+     <e-seriescollection>
+           <e-series pieofpiecoefficient="1"> 
+           </e-series>
+     </e-seriescollection>
+</ej-chart>
+
+{% endhighlight %}
+
+The following screenshot represents the pie of pie series with pieOfPieCoefficient as 1
+
+![](Chart-Types_images/Chart-Types_img95.png)
+
+#### Customizing the Gap
+
+The distance between the two pies in the pie of pie chart can be controlled by using the `gapWidth` property. The default value is **50**.
+
+ {% highlight html %}
+
+<ej-chart id="chartcontainer">
+     <e-seriescollection>
+           <e-series gapWidth="150"> 
+           </e-series>
+     </e-seriescollection>
+</ej-chart>
+
+{% endhighlight %}
+
+![](Chart-Types_images/Chart-Types_img96.png)
+
+
 
 
 
