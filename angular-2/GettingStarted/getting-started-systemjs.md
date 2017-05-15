@@ -115,41 +115,46 @@ platformBrowserDynamic().bootstrapModule(AppModule);
 
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
-   <head>
-      <title>Essential JavaScript for Angular 2 | SystemJS seed</title>
-      <meta name="viewport" content="width=device-width, initial-scale=1">
-      <link rel="shortcut icon" type="image/png" href="deps/images/favicon.ico">
-      <link href="node_modules/syncfusion-javascript/Content/ej/web/material/ej.web.all.min.css" rel="stylesheet" />
-      <link rel="stylesheet" href="node_modules/bootstrap/dist/css//bootstrap.min.css">
-      <link rel="stylesheet" href="deps/default.css">
-      <!-- Polyfill(s) for older browsers -->
-      <script src="node_modules/core-js/client/shim.min.js"></script>
-      <script src="node_modules/zone.js/dist/zone.js"></script>
-      <script src="node_modules/reflect-metadata/Reflect.js"></script>
-      <script src="node_modules/systemjs/dist/system.src.js"></script>
-      <script src="node_modules/jquery/dist/jquery.min.js"></script>
-      <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-      <script src="node_modules/jsrender/jsrender.min.js"></script>
-      <script src="node_modules/syncfusion-javascript/Scripts/ej/web/ej.web.all.min.js"></script>
-      <!-- 2. Configure SystemJS -->
-      <script src="systemjs.config.js"></script>
-      <!-- 2. Configure SystemJS -->
-      <script>       
-         System.import('app')
-               .then(null, console.error.bind(console));
-      </script>
-   </head>
-   <!-- 3. Display the application -->
-   <body>
-      <ej-app>
-         <div class="splash">
-            <div class="message">Angular 2 Syncfusion Components App</div>
-            <div class="spinner"></div>
-         </div>
-      </ej-app>
-   </body>
-</html>
 
+<head>
+	<title>Essential JavaScript for Angular 2 | SystemJS seed</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="shortcut icon" type="image/png" href="deps/images/favicon.ico">
+
+	<link href="node_modules/syncfusion-javascript/Content/ej/web/material/ej.web.all.min.css" rel="stylesheet" />
+	<link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+	<link rel="stylesheet" href="deps/default.css">
+
+	<!-- Polyfill(s) for older browsers -->
+	<script src="node_modules/core-js/client/shim.min.js"></script>
+	<script src="node_modules/zone.js/dist/zone.js"></script>
+	<script src="node_modules/reflect-metadata/Reflect.js"></script>
+	<script src="node_modules/systemjs/dist/system.src.js"></script>
+
+	
+	<!-- 2. Configure SystemJS -->
+	<script src="systemjs.config.js"></script>
+
+	<!-- 2. Configure SystemJS -->
+	<script>       
+      System.import('app')
+            .then(null, console.error.bind(console));
+    </script>
+
+</head>
+
+<!-- 3. Display the application -->
+
+<body>
+	<ej-app>
+		<div class="splash">
+			<div class="message">Angular 2 Syncfusion Components App</div>
+			<div class="spinner"></div>
+		</div>
+	</ej-app>
+</body>
+
+</html>
 {% endhighlight %}
 
 {% highlight json %}
@@ -241,7 +246,11 @@ platformBrowserDynamic().bootstrapModule(AppModule);
       // other libraries
       'rxjs': 'npm:rxjs',
       'angular2-in-memory-web-api': 'npm:angular2-in-memory-web-api',
-      'ej-angular2':'npm:ej-angular2'
+      'jquery': 'npm:jquery/dist/jquery.min.js',
+      'jsrender': 'npm:jsrender/jsrender.min.js',
+      'jquery-validation': 'npm:jquery-validation/dist/jquery.validate.min.js',
+      'syncfusion-javascript': 'npm:syncfusion-javascript',
+      'ej-angular2': 'npm:ej-angular2'
     },
     // packages tells the System loader how to load when no filename and/or no extension
     packages: {
@@ -258,6 +267,9 @@ platformBrowserDynamic().bootstrapModule(AppModule);
       },
       'ej-angular2': {
         main: './src/index.js'
+      },
+      'syncfusion-javascript': {
+        defaultExtension: 'js'
       }
     }
   });
