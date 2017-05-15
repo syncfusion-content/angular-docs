@@ -169,11 +169,6 @@ platformBrowserDynamic().bootstrapModule(AppModule);
 	<link rel="shortcut icon" type="image/png" href="deps/images/favicon.ico">
 	<link href="src/deps/default.css" rel="stylesheet" />
 	<link href="../node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" />
-	<link rel="stylesheet" href="../node_modules/syncfusion-javascript/Content/ej/web/material/ej.web.all.min.css" />
-	<script src="../node_modules/jquery/dist/jquery.min.js"></script>
-	<script src="../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-	<script src="../node_modules/jsrender/jsrender.min.js"></script>
-	<script src="../node_modules/syncfusion-javascript/Scripts/ej/web/ej.web.all.min.js"> </script>
 </head>
 
 <body>
@@ -298,6 +293,20 @@ export class ComponentName {
 {% endhighlight %}
 
 N> We recommend you to go through the [quick start](https://angular.io/docs/ts/latest/quickstart.html) of Angular application to get deeper knowledge of setup and structure of the application.
+
+## Configuration of Syncfusion Javascript Widget Dependencies
+
+* Syncfusion JavaScript widgets need `window.jQuery` to render the Angular components, since, we need to import jQuery in `vendor.ts` file and include `Syncfusion theme files` from `node_modules` as like the below code snippet
+
+{% highlight javascript %}
+
+import * as $ from 'jquery';
+window["jQuery"] = $;
+window["$"] = $;
+import 'jsrender';
+import '../node_modules/syncfusion-javascript/Content/ej/web/material/ej.web.all.min.css';
+
+{% endhighlight %}
 
 ## Consuming ej-angular2 library
 
