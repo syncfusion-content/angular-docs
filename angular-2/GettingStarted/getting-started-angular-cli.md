@@ -138,21 +138,47 @@ window['$'] = jquery;
 
 ## Render Syncfusion Angular Component
 
-* To render `ejDialog` Angular component in angular-cli modify the app.component.html file using the below code example.
+* To render `ejDialog` Angular component in angular-cli, modify the `app.component.html` file using the below code example.
 
 {% highlight html %}
 <div id="parent">
-    <ej-dialog id="basicDialog" title="Facebook" [(enableResize)]="resize" containment="#parent" (close)="onClose($event)">
-        Facebook is an online social networking service headquartered in Menlo Park, California. Its website was launched on
-        February 4, 2004, by Mark Zuckerberg with his Harvard College roommates and fellow students Eduardo Saverin, Andrew
-        McCollum, Dustin Moskovitz and Chris Hughes. The founders had initially limited the website's membership to Harvard
-        students, but later expanded it to colleges in the Boston area, the Ivy League, and Stanford University. It gradually
-        added support for students at various other universities and later to high-school students.
-    </ej-dialog>
+	<input id="btnOpen" style="display:none; height: 30px" type="button" class="ejinputtext" value="Click to open Dialog" (click)="onClick($event)" />
+	<ej-dialog id="basicDialog" title="Facebook" [(enableResize)]="resize" containment="#parent" (close)="onClose($event)">
+		Facebook is an online social networking service headquartered in Menlo Park, California. Its website was launched on February
+		4, 2004, by Mark Zuckerberg with his Harvard College roommates and fellow students Eduardo Saverin, Andrew McCollum, Dustin
+		Moskovitz and Chris Hughes. The founders had initially limited the website's membership to Harvard students, but later
+		expanded it to colleges in the Boston area, the Ivy League, and Stanford University. It gradually added support for students
+		at various other universities and later to high-school students.
+	</ej-dialog>
 </div>
 {% endhighlight %}
 
-* Import `EJAngular2Module` from `ej-angular2` package in app.module.ts file to import Syncfusion Angular components into the project. Refer to the below code snippets to import Syncfusion Angular components.
+* Modify the `app.component.ts` file using the below code example.
+ {% highlight ts %}
+ 
+ import { Component, ViewEncapsulation } from '@angular/core';
+
+@Component({
+  selector: 'ej-app',
+  templateUrl: 'src/dialog/dialog.component.html'
+})
+export class DialogComponent {
+  resize: boolean;
+  constructor() {
+    this.resize = false;
+  }
+  onClick(event) {
+    $('#btnOpen').hide();
+    $('#basicDialog').ejDialog('open');
+  }
+  onClose(event) {
+    $('#btnOpen').show();
+  }
+}
+ {% endhighlight %}
+
+
+* Import `EJAngular2Module` from `ej-angular2` package in `app.module.ts` file to import Syncfusion Angular components into the project. Refer to the below code snippets to import Syncfusion Angular components.
 
 {% highlight ts %}
 
