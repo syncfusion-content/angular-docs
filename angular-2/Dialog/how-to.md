@@ -7,7 +7,7 @@ control: Angular- Dialog
 documentation: ug
 ---
 
-##How To?
+## How To?
 
 ### Create Multiple Dialogs
 
@@ -40,9 +40,9 @@ Add the following code in constructor to set position of each dialogs.
         position2:object;
         position3:object;
         constructor() {
-            this.position1={ X:20,Y:20;};
-            this.position2={ X:300,Y:20;};
-            this.position3={ X:150,Y:150;};
+            this.position1={ X:20,Y:20};
+            this.position2={ X:300,Y:20};
+            this.position3={ X:150,Y:150};
     }
 
 {% endhighlight %}
@@ -118,14 +118,19 @@ Initialize the Dialog component using the below code.
 
 {% endhighlight %}
 
-Initialize Footer in Dialog components by adding the div element in HTML page as below.
+Initialize Footer in Dialog component by adding the script section in JsRender in the index.html page
 
-{% highlight html %}
+{% highlight javascript %}
 
-    <div id="sample" style="display:none;">
-        <div class="footerspan" style="float:right"> <input id='btn1' type="button" class="ejinputtext" value="Ok" /><input id='btn2' type="button" class="ejinputtext" value="Cancel" /> </div>
-        <div class="condition" style="float:left; margin-left:15px"> <ej-checkbox></ej-checkbox> </div>
-    </div>
+    <script id="sample" type="text/x-jsrender">
+        <div class="footerspan" style="float:right">
+            <input id='btn1' type="button" class="ejinputtext" value="Ok" />
+            <input id='btn2' type="button" class="ejinputtext" value="Cancel" />
+        </div>
+        <div class="condition" style="float:left; margin-left:15px">
+            <input id="Checkbox1" type="checkbox" class="ejinputcheckbox" />Don't ask me this again
+        </div>
+    </script>
 
 {% endhighlight %}
 
@@ -134,8 +139,9 @@ Add the below code in constructor to render the Dialog component.
 {% highlight javascript %}
   
     export class AppComponent {
+        footerTemplate:any;
         constructor() {
-
+           this.footerTemplate= "sample";
         }
     OnOpen(event){
             $("#basicDialog").ejDialog("open");
