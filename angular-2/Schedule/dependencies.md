@@ -48,5 +48,3 @@ N> Scheduler uses one or more sub-controls, therefore refer the `ej.web.all.min.
 To get the real appearance of the Scheduler, the dependent CSS file `ej.web.all.min.css` (which includes styles of all the widgets) should also needs to be referred.
 
 N> Uncompressed version of library files are also available which is used for development or debugging purpose and can be generated from the custom script [here](http://csg.syncfusion.com).
-
-I> `ej.angular2.min.js` file is additionally required to render the Scheduler in angular-2 platform which is available under the location, _(**Installed location**)\Syncfusion\Essential Studio\{{ site.releaseversion }}\JavaScript\assets\scripts\common_.
