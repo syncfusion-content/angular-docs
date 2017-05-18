@@ -112,7 +112,7 @@ Initialize the Dialog component using the below code.
 {% highlight html %}
 
     <input id="GetOpen" style="display:block; height: 30px" type="button" class="ejinputtext" value="Click to Open Dialog" (click)="OnOpen($event)" />
-    <ej-dialog id="basicDialog" title="Confirmation Dialog" [showFooter]="true" footerTemplateId="sample" [showOnInit]="false">
+    <ej-dialog id="basicDialog" title="Confirmation Dialog" [showFooter]="true" [footerTemplateId]="footerTemplate" [showOnInit]="false">
         Do you really leave the session?
     </ej-dialog>
 
