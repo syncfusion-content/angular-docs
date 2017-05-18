@@ -213,4 +213,38 @@ ng serve
 
 {% endhighlight %}
 
-![](/angular-2/GettingStarted/Images/angularcli.png) 
+![](/angular-2/GettingStarted/Images/angularcli.png)
+
+## ng build - production
+
+To generate production build, run below command.
+
+{% highlight javascript %}
+node_modules\.bin\ng build --prod
+{% endhighlight %}
+
+If you get error `FATAL ERROR: CALL_AND_RETRY_LAST Allocation failed - JavaScript heap out of memory` add `--max_old_space_size=xxxx` space in `ngc.cmd` and `ng.cmd` file from `node_modules\.bin` folder.
+
+Modify **ngc.cmd**
+
+{% highlight javascript %}
+@IF EXIST "%~dp0\node.exe" ( 
+  "%~dp0\node.exe" --max_old_space_size=1000 "%~dp0\..\@angular\compiler-cli\src\main.js" %* 
+) ELSE ( 
+  @SETLOCAL 
+  @SET PATHEXT=%PATHEXT:;.JS;=;% 
+  node  "%~dp0\..\@angular\compiler-cli\src\main.js" %* 
+) 
+{% endhighlight %}
+
+Modify **ng.cmd**
+
+{% highlight javascript %}
+@IF EXIST "%~dp0\node.exe" ( 
+  "%~dp0\node.exe" --max_old_space_size=1000 "%~dp0\..\@angular\cli\bin\ng" %* 
+) ELSE ( 
+  @SETLOCAL 
+  @SET PATHEXT=%PATHEXT:;.JS;=;% 
+  node  "%~dp0\..\@angular\cli\bin\ng" %* 
+)
+{% endhighlight %}
