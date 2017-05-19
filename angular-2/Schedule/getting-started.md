@@ -11,11 +11,11 @@ keywords: ejschedule, schedule, schedule widget
 
 To get start with how to use the Scheduler component within Angular-2 platform, refer the basic requisites and the configurations needs to be done on the system from [here](/angular-2/overview).
 
-Once the configurations are done, Create the angular seed application by referring [here](/angular-2/GettingStarted/overview").
+Once the configurations are done, Create an angular seed application by referring [here](/angular-2/GettingStarted/overview").
 
-## Render Scheduler Component
+## Initializing Scheduler
 
-To render ejSchedule Angular component using the below code example.
+To render the Schedule component on a page, simply define it with the `ej-schedule` tag as shown in the below code example.
 
 {% highlight html %}
 
@@ -26,7 +26,7 @@ To render ejSchedule Angular component using the below code example.
 
 ## Data-binding
 
-The above code example creats an empty Scheduler with no data bind to it. To bind specific appointment data on the Scheduler, then the **dataSource** property needs to be defined as shown below.
+The above code example creates an empty Scheduler with no data bound to it. To bind specific appointment data on the Scheduler, then the **dataSource** property needs to be defined as shown below.
 
 {% highlight html %}
 
@@ -34,7 +34,9 @@ The above code example creats an empty Scheduler with no data bind to it. To bin
         [appointmentSettings.dataSource]=scheduleData >
 </ej-schedule> 
 
-{% endhighlight %} 
+{% endhighlight %}
+
+The below code depicts the collection of appointment data, which is then assigned to the Scheduler `dataSource`.
 
 {% highlight ts %}
 
