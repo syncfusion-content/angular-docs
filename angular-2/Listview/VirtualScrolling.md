@@ -37,7 +37,7 @@ Add following code in Typescript file.
     constructor() {
         this.listdata = ej.DataManager({
              //OData service
-             url: "http://mvc.syncfusion.com/Services/Northwnd.svc/"
+             url: "http://js.syncfusion.com/ejservices/Wcf/Northwind.svc/"
         });
         this.query = ej.Query().from('Customers');
         this.fieldsdata = { 'text': 'CustomerID' };
