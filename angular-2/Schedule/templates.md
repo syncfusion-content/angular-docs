@@ -48,7 +48,7 @@ Place the js-render template in the "index.html" page.
 
 {% highlight html %}
 
-<!--Template to apply appointments-->
+<!--Template to apply on appointments-->
 <script id="apptemplate" type="text/x-jsrender">
     {{"{{"}}if View !== "agenda"{{}}}}
         <div style="height:100%; background-color:orange; margin-left: 5px;">
@@ -463,7 +463,7 @@ When template is applied for the `prioritySettings`, these default icons will be
 
 {% endhighlight %}
 
-{% highlight html %}
+{% highlight css %}
 
 	.critical,
 	.ultracritical,
