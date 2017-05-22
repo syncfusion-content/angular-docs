@@ -9,7 +9,7 @@ documentation: ug
 
 # Sorting
 
-We can change ListBox items rendering order either as ascending or descending, by using "SortOrder" property. By default SortOrder will be "None". Please use code as like in below,
+We can change ListBox items rendering order either as ascending or descending, by using "sortOrder" property. By default sortOrder will be "None". Please use code as like in below,
 
 {% highlight html %} 
 
