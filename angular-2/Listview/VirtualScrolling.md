@@ -21,7 +21,7 @@ Please refer the following code examples.
 
 {% highlight html %}
 
-    <ej-listview [dataSource]="listdata" [fieldSettings]="fieldsdata" [width]="width" [height]="height" [allowVirtualScrolling]="true" [virtualScrollMode]="VirtualMode" [query]="query">
+    <ej-listview [dataSource]="listdata" [fieldSettings]="fieldsdata" [width]="width" [height]="height" [allowVirtualScrolling]="true" [virtualScrollMode]="VirtualMode" [query]="query" [itemRequestCount]="requestCount">
     </ej-listview>
 
 {% endhighlight %}
@@ -34,6 +34,7 @@ Add following code in Typescript file.
     width: any;
     fieldsdata: any;
     query: any;
+    requestCount:any;
     constructor() {
         this.listdata = ej.DataManager({
              //OData service
@@ -43,6 +44,7 @@ Add following code in Typescript file.
         this.fieldsdata = { 'text': 'CustomerID' };
         this.width = 50; 
 		this.height=200;
+        this.requestCount=8;
 		this.VirtualMode=ej.VirtualScrollMode.Continuous
                 }
             }
