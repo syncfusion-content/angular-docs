@@ -141,9 +141,9 @@ window['$'] = jquery;
 * To render `ejDialog` Angular component in angular-cli, modify the `app.component.html` file using the below code example.
 
 {% highlight html %}
-<div id="parent">
-	<input id="btnOpen" style="display:none; height: 30px" type="button" class="ejinputtext" value="Click to open Dialog" (click)="onClick($event)" />
-	<ej-dialog id="basicDialog" title="Facebook" [(enableResize)]="resize" containment="#parent" (close)="onClose($event)">
+<div id="parent" >
+	<input id="btnOpen" style="height: 30px" type="button" ej-button class="ejinputtext" value="Click to open Dialog" (click)="onClick($event)" *ngIf="btndisplay"/>
+	<ej-dialog id="basicDialog" #dialog title="Facebook" [(enableResize)]="resize" containment="#parent" (close)="onClose($event)">
 		Facebook is an online social networking service headquartered in Menlo Park, California. Its website was launched on February
 		4, 2004, by Mark Zuckerberg with his Harvard College roommates and fellow students Eduardo Saverin, Andrew McCollum, Dustin
 		Moskovitz and Chris Hughes. The founders had initially limited the website's membership to Harvard students, but later
@@ -156,25 +156,32 @@ window['$'] = jquery;
 * Modify the `app.component.ts` file using the below code example.
  {% highlight ts %}
  
- import { Component, ViewEncapsulation } from '@angular/core';
+ import { Component, ViewEncapsulation, ViewChild } from '@angular/core';
+import { EJComponents } from 'ej-angular2';
 
 @Component({
   selector: 'ej-app',
-  templateUrl: 'src/dialog/dialog.component.html'
+  templateUrl: './app.component.html',
 })
-export class DialogComponent {
+export class AppComponent {
   resize: boolean;
-  constructor() {
+  btndisplay: boolean;
+  @ViewChild('dialog') dialog: EJComponents <any,any>;
+    constructor() {
     this.resize = false;
+      this.btndisplay = false;
   }
+  //Button click event handler to open the ejDialog
   onClick(event) {
-    $('#btnOpen').hide();
-    $('#basicDialog').ejDialog('open');
+   this.btndisplay = false;
+    this.dialog.widget.element.ejDialog('open');
   }
+  //Dialog close event handler
   onClose(event) {
-    $('#btnOpen').show();
+      this.btndisplay = true;
   }
 }
+
  {% endhighlight %}
 
 
