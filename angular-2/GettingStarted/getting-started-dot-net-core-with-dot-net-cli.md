@@ -14,11 +14,65 @@ ASP.NET Single Page Application(SPA) helps you to build applications that includ
 
 To getting started with Syncfusion Angular Components, the NPM packges [ej-angular2](https://www.npmjs.com/package/ej-angular2) and [syncfusion-javascript](https://www.npmjs.com/package/syncfusion-javascript) helps to seamlessly supports ASP.NET Core environment for our components. The following steps depicts, to create an application in ASP.NET Core using SPA template with Syncfusion Angular Components.
 
-## Create a new Application
+## Synopsis
 
-* Create simple application using [.NET Web Development](https://blogs.msdn.microsoft.com/webdev/2017/02/14/building-single-page-applications-on-asp-net-core-with-javascriptservices/) and Tool and run the application to ensure the system environment is properly configured to work with Angular applications.
+* [Prerequisites](#prerequisites)
+* [Install the SPA Template](#install-the-spa-template)
+* [Instal the Dependencies](#install-the-dependencies)
+* [Configuration of Syncfusion Angular Component](#configuration-of-syncfusion-angular-component)
+* [Run the Application](#run-the-application)
+
+## Prerequisites
+
+* Node JS(v6.x.x or higher)
+* NPM(v4.x.x or higher)
+* [.NET Core SDK 1.0 RC4](https://www.microsoft.com/net/core#windowscmd)
+
+## Install the SPA Template
+
+* To create a new application in .Net Core, we should install the Single Page Application(SPA) template by following command
+
+{% highlight js %}
+dotnet new --install Microsoft.AspNetCore.SpaTemplates::*
+{% endhighlight %}
+
+![](/angular-2/GettingStarted/Images/createtemplate.png)
+
+* To generate a new angular project run the below command in your directory
+
+{% highlight javascript %}
+
+dotnet new angular
+
+{% endhighlight %}
+
+
+## Install the Dependencies
+
+* To restore the .NET dependencies and install the NPM dependencies, run the below command in your root directory
+
+{% highlight javascript %}
+
+dotnet restore
+npm install
+
+{% endhighlight %}
+
+N> To run the ASP.NET in development mode, set the below environment variable using command prompt and restart your command prompt to make the change take effect
+
+{% highlight javascript %}
+
+setx ASPNETCORE_ENVIRONMENT "Development"
+
+{% endhighlight %}
+
+![](/angular-2/GettingStarted/Images/environmentvariable.png)
+
+N> To know more about environment varaible refer the [link](https://blogs.msdn.microsoft.com/webdev/2017/02/14/building-single-page-applications-on-asp-net-core-with-javascriptservices/)
 
 ## Configuration of Syncfusion Angular Component
+
+* Open the project in Visual Studio Code or Visual Studio 2015 to configure the Syncfusion Components
 
 * To install Syncfusion JavaScript and Angular components run below commands from sample's root folder.
 
@@ -184,6 +238,8 @@ export class HomeComponent {
 }
 
 {% endhighlight %}
+
+## Run the Application
 
 * Now run the application with below command and navigate to [http://localhost:5000/](http://localhost:5000/) to see the output window.
 
