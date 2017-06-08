@@ -185,7 +185,7 @@ export class AppComponent {
  {% endhighlight %}
 
 
-* Import `EJAngularModule` from `ej-angular2` package in `app.module.ts` file to import Syncfusion Angular components into the project. Refer to the below code snippets to import Syncfusion Angular components.
+* Import `EJAngular2Module` from `ej-angular2` package in `app.module.ts` file to import Syncfusion Angular components into the project. Refer to the below code snippets to import Syncfusion Angular components.
 
 {% highlight ts %}
 
@@ -193,7 +193,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
-import { EJAngularModule } from 'ej-angular2'; 
+import { EJAngular2Module } from 'ej-angular2'; 
 import { AppComponent } from './app.component';
 
 @NgModule({
@@ -201,7 +201,7 @@ import { AppComponent } from './app.component';
     AppComponent
   ],
   imports: [
-    BrowserModule,FormsModule,HttpModule,EJAngularModule.forRoot() 
+    BrowserModule,FormsModule,HttpModule,EJAngular2Module.forRoot() 
   ],
   providers: [],
   bootstrap: [AppComponent]
