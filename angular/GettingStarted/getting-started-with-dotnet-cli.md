@@ -24,9 +24,9 @@ To getting started with Syncfusion Angular Components, the NPM packges [ej-angul
 
 ## Prerequisites
 
-* Node JS(v6.x.x or higher)
-* NPM(v4.x.x or higher)
-* [.NET Core SDK 1.0 RC4](https://www.microsoft.com/net/core#windowscmd)
+* [Node JS](https://nodejs.org/en/)(v6.x.x or higher)(v6.x.x or higher)
+* [NPM](http://blog.npmjs.org/post/85484771375/how-to-install-npm)(v4.x.x or higher)
+* [.NET Core SDK 1.1](https://www.microsoft.com/net/download/core#/current) 
 
 ## Install the SPA Template
 
@@ -36,7 +36,7 @@ To getting started with Syncfusion Angular Components, the NPM packges [ej-angul
 dotnet new --install Microsoft.AspNetCore.SpaTemplates::*
 {% endhighlight %}
 
-![](/angular-2/GettingStarted/Images/createtemplate.png)
+![](/angular/GettingStarted/Images/createtemplate.png)
 
 * To generate a new angular project run the below command in your directory
 
@@ -66,7 +66,7 @@ setx ASPNETCORE_ENVIRONMENT "Development"
 
 {% endhighlight %}
 
-![](/angular-2/GettingStarted/Images/environmentvariable.png)
+![](/angular/GettingStarted/Images/environmentvariable.png)
 
 N> To know more about environment varaible refer the [link](https://blogs.msdn.microsoft.com/webdev/2017/02/14/building-single-page-applications-on-asp-net-core-with-javascriptservices/)
 
@@ -74,7 +74,7 @@ N> To know more about environment varaible refer the [link](https://blogs.msdn.m
 
 * Open the project in Visual Studio Code or Visual Studio 2015 to configure the Syncfusion Components
 
-* To install Syncfusion JavaScript and Angular components run below commands from sample's root folder.
+* To install Syncfusion JavaScript for Angular components run below commands from sample's root folder.
 
 {% highlight javascript %}
 
@@ -168,9 +168,9 @@ npm install jsrender --save
 
 N> If we run our application, we will get the following error.
 
-![](/angular-2/GettingStarted/Images/windowerror.png)
+![](/angular/GettingStarted/Images/windowerror.png)
 
-* To overcome this issue, modify the code is referred as below and refer `ej-themes` from `dist` folder.
+* To overcome this issue, modify the `Views/Home/index.cshtml` file is referred as below and refer `ej-themes` from `dist` folder.
 
 {% highlight javascript %}
 
@@ -195,7 +195,7 @@ ViewData["Title"] = "Home Page";
 {% highlight html %}
 
 <div id="parent" >
-	<input *ngIf="btndisplay" id="btnOpen" style="height: 30px" type="button" ej-button class="ejinputtext" value="Click to open Dialog" (click)="onClick($event)"/>
+	<input id="btnOpen" style="height: 30px" type="button" ej-button class="ejinputtext" value="Click to open Dialog" (click)="onClick($event)" *ngIf="btndisplay" />
 	<ej-dialog id="basicDialog" #dialog title="Facebook" [(enableResize)]="resize" containment="#parent" (close)="onClose($event)">
 		Facebook is an online social networking service headquartered in Menlo Park, California. Its website was launched on February
 		4, 2004, by Mark Zuckerberg with his Harvard College roommates and fellow students Eduardo Saverin, Andrew McCollum, Dustin
@@ -221,19 +221,20 @@ import { EJComponents } from 'ej-angular2';
 export class HomeComponent {
   resize: boolean;
   btndisplay: boolean;
-  @ViewChild('dialog') dialog: EJComponents <any,any>;
-    constructor() {
+  @ViewChild('dialogelement') dialogelement: EJComponents<any, any>;
+  @ViewChild('btnelement') btnelement: EJComponents<any, any>;
+  constructor() {
     this.resize = false;
-      this.btndisplay = false;
+    this.btndisplay = false;
   }
   //Button click event handler to open the ejDialog
   onClick(event) {
-   this.btndisplay = false;
-    this.dialog.widget.element.ejDialog('open');
+    this.btndisplay = false;
+    this.dialogelement.widget.element.ejDialog('open');
   }
   //Dialog close event handler
   onClose(event) {
-      this.btndisplay = true;
+    this.btndisplay = true;
   }
 }
 
@@ -249,4 +250,4 @@ dotnet run
 
 {% endhighlight %}
 
-![](/angular-2/GettingStarted/Images/spatemplateoutput.png)
+![](/angular/GettingStarted/Images/spatemplateoutput.png)
