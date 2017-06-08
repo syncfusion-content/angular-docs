@@ -220,7 +220,7 @@ ng serve
 
 {% endhighlight %}
 
-![](/angular-2/GettingStarted/Images/angularcli.png)
+![](/angular/GettingStarted/Images/angularcli.png)
 
 ## ng build - production
 
