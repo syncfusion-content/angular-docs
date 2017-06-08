@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Performance tips 
-description: How to improve the performance of Essential Angular 2 Chart
+description: How to improve the performance of Essential Angular Chart
 platform: Angular
 control: Chart
 documentation: ug

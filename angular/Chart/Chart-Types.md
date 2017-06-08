@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Chart types
-description: What are the different types of Charts available in Essential Angular 2 Chart.
+description: What are the different types of Charts available in Essential Angular Chart.
 platform: Angular
 control: Chart
 documentation: ug

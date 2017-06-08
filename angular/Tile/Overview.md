@@ -9,7 +9,7 @@ documentation: ug
 
 # Overview
 
-The Essential JavaScript Tile component provided with Angular2 support displays opaque rectangles or squares and they are arrayed on the start screen like a grid pattern. Tapping or selecting a Tile, launches the app or does some other action that is represented by the Tile. Tiles are arranged in a group separated by columns that looks like a start screen of a device and it can be either static or live.
+The Essential JavaScript Tile component provided with Angular support displays opaque rectangles or squares and they are arrayed on the start screen like a grid pattern. Tapping or selecting a Tile, launches the app or does some other action that is represented by the Tile. Tiles are arranged in a group separated by columns that looks like a start screen of a device and it can be either static or live.
 
 # Key Features
 

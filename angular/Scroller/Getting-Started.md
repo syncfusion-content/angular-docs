@@ -1,6 +1,6 @@
 ---
-title: Getting Started for Angular2 Scroller
-description: Getting Started for Angular 2 Scroller
+title: Getting Started for Angular Scroller
+description: Getting Started for Angular Scroller
 platform: Angular
 control: Scroller
 documentation: Ug
@@ -9,17 +9,17 @@ keywords: ejScroller, js Scroller, Scroller
 
 # Getting Started
 
-This section explains briefly about how to create a **Scroller** control in your application with **Angular 2**.
+This section explains briefly about how to create a **Scroller** control in your application with **Angular**.
 
-## Create Scroller in Angular 2 Application using Webpack
+## Create Scroller in Angular Application using Webpack
 
-To quick start with Syncfusion JavaScript Angular 2 components run the below commands to clone the repository for [Webpack starter](https://github.com/syncfusion/angular2-seeds) and installing required dependency packages.
+To quick start with Syncfusion JavaScript Angular components run the below commands to clone the repository for [Webpack starter](https://github.com/syncfusion/Angular-seeds) and installing required dependency packages.
 
 {% highlight javascript %}
 
- > git clone https://github.com/syncfusion/angular2-seeds
+ > git clone https://github.com/syncfusion/Angular-seeds
 
- > cd angular2-seeds
+ > cd Angular-seeds
 
  > npm install
 
@@ -29,21 +29,21 @@ The below steps describes to add Scroller component with above cloned seed appli
 
 ### Syncfusion JavaScript components source configuration and sample creation
 
-* Copy required Syncfusion Angular 2 source component(s) from the below build location and add it in `src/app/ej` folder.
+* Copy required Syncfusion Angular source component(s) from the below build location and add it in `src/app/ej` folder.
 
 {% highlight javascript %}
 
-(Installed Location)\Syncfusion\Essential Studio\14.3.0.49\JavaScript\assets-src\angular2\ 
+(Installed Location)\Syncfusion\Essential Studio\14.3.0.49\JavaScript\assets-src\Angular\ 
 
 {% endhighlight %}
 
-N> `core.ts` file is mandatory for all Syncfusion JavaScript Angular 2 components. The repository having the source file from Essential Studio for JavaScript v14.3.0.49.
+N> `core.ts` file is mandatory for all Syncfusion JavaScript Angular components. The repository having the source file from Essential Studio for JavaScript v14.3.0.49.
 
 
 
 * Create `scroller` folder inside `src/app` folder.
 
-* Create `scroller.component.html` view file inside `src/app/scroller` folder and render ejScroller Angular 2 component using the below code example. 
+* Create `scroller.component.html` view file inside `src/app/scroller` folder and render ejScroller Angular component using the below code example. 
 
 {% highlight html %}
     <ej-scroller height="300" width="460px" style="display:block;border:1px solid #bbbcbb">
@@ -95,7 +95,7 @@ export class DefaultComponent {
 
 ### Configure the routes for the Router
 
-Before adding router configuration for above created ejScroller component, we recommend you to go through the [Angular 2 Routing](https://angular.io/docs/ts/latest/guide/router.html) configuration to get the deeper knowledge about Angular 2 routing. 
+Before adding router configuration for above created ejScroller component, we recommend you to go through the [Angular Routing](https://angular.io/docs/ts/latest/guide/router.html) configuration to get the deeper knowledge about Angular routing. 
 
 * Now, we are going to configure the route navigation link for created Scroller sample in `src/app/app.component.html` file.
 
@@ -161,15 +161,15 @@ N> if you want to use other port, open `package.json` file, then change port in 
 
 ![](Getting_Started_images/Getting-Started_img1.png)
 
-## Create Scroller in Angular 2 Application using SystemJS  
+## Create Scroller in Angular Application using SystemJS  
 
-To quick start with Syncfusion JavaScript Angular 2 components run the below commands to clone the repository for [SystemJS starter](https://github.com/syncfusion/angular2-seeds/tree/systemjs) and installing required dependency packages.
+To quick start with Syncfusion JavaScript Angular components run the below commands to clone the repository for [SystemJS starter](https://github.com/syncfusion/Angular-seeds/tree/systemjs) and installing required dependency packages.
 
 {% highlight javascript %}
 
- > git clone https://github.com/syncfusion/angular2-seeds/ -b systemjs
+ > git clone https://github.com/syncfusion/Angular-seeds/ -b systemjs
 
- > cd angular2-seeds
+ > cd Angular-seeds
 
  > npm install
 
@@ -179,19 +179,19 @@ The below steps describes to add Scroller component with above cloned seed appli
 
 ### Syncfusion JavaScript components source configuration and sample creation
 
-* Copy required Syncfusion Angular 2 source component(s) from the below build location and add it in `src/ej` folder.
+* Copy required Syncfusion Angular source component(s) from the below build location and add it in `src/ej` folder.
 
 {% highlight javascript %}
 
-(Installed Location)\Syncfusion\Essential Studio\14.3.0.49\JavaScript\assets-src\angular2\ 
+(Installed Location)\Syncfusion\Essential Studio\14.3.0.49\JavaScript\assets-src\Angular\ 
 
 {% endhighlight %}
 
-N> `core.ts` file is mandatory for all Syncfusion JavaScript Angular 2 components. The repository having the source file from Essential Studio for JavaScript v14.3.0.49.
+N> `core.ts` file is mandatory for all Syncfusion JavaScript Angular components. The repository having the source file from Essential Studio for JavaScript v14.3.0.49.
 
 * Create `scroller` folder inside `src` folder.
 
-* Create `scroller.component.html` view file inside `src/scroller` folder and render ejScroller Angular 2 component using the below code example. 
+* Create `scroller.component.html` view file inside `src/scroller` folder and render ejScroller Angular component using the below code example. 
 
 {% highlight html %}
 
@@ -243,7 +243,7 @@ export class DefaultComponent {
 
 ### Configure the routes for the Router
 
-Before adding router configuration for above created ejScroller component, we recommend you to go through the [Angular 2 Routing](https://angular.io/docs/ts/latest/guide/router.html) configuration to get the deeper knowledge about Angular 2 routing. 
+Before adding router configuration for above created ejScroller component, we recommend you to go through the [Angular Routing](https://angular.io/docs/ts/latest/guide/router.html) configuration to get the deeper knowledge about Angular routing. 
 
 * Now, we are going to configure the route navigation link for created Scroller sample in `src/app.component.html` file.
 

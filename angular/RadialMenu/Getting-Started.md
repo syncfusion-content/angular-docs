@@ -9,7 +9,7 @@ documentation: ug
 
 # Getting Started
 
-This section helps to get started of the RadialMenu component in an Angular2 application.
+This section helps to get started of the RadialMenu component in an Angular application.
 
 ![](Getting_Started_images/getting-started_img1.png)
 

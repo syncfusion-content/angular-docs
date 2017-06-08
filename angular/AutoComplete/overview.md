@@ -9,7 +9,7 @@ documentation: ug
 
 # Overview
 
-The Essential Angular2 AutoComplete is a textbox component that provides a list of suggestions based on the user input. When the users enters the text in the text box, the control performs a search operation and provides a list of results in the suggestion pop up. There are several filter types available to perform the search.
+The Essential Angular AutoComplete is a textbox component that provides a list of suggestions based on the user input. When the users enters the text in the text box, the control performs a search operation and provides a list of results in the suggestion pop up. There are several filter types available to perform the search.
 
 ## Key Features
 

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Chart legend
-description: How to cutomize the legend in Essential Angular 2 Chart.
+description: How to cutomize the legend in Essential Angular Chart.
 platform: Angular
 control: Chart
 documentation: ug

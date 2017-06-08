@@ -1,5 +1,5 @@
 ---
-title: Getting Started for Angular 2 ReportViewer
+title: Getting Started for Angular ReportViewer
 description: ReportViewer
 platform: Angular
 control: ReportViewer
@@ -9,11 +9,11 @@ keywords: ejReportViewer, ReportViewer, js ReportViewer
 
 # Getting Started
 
-This section explains briefly about how to create a ReportViewer in your web application with Angular2.
+This section explains briefly about how to create a ReportViewer in your web application with Angular.
 
 ## Create your first ReportViewer in Angular-2
 
-In this tutorial, you can learn how to create a simple ReportViewer control, Load RDLC Report and Load SSRS Report in your web application with Angular2.
+In this tutorial, you can learn how to create a simple ReportViewer control, Load RDLC Report and Load SSRS Report in your web application with Angular.
 
 ## Add Scripts, Styles and Control in HTML Page
 
@@ -33,7 +33,7 @@ Create a **HTML** page and add the scripts and CSS references in the order menti
         <script src="http://cdn.syncfusion.com/js/assets/external/jsrender.min.js" type="text/javascript"></script>
         <script src="https://ajax.aspnetcdn.com/ajax/jquery.validate/1.14.0/jquery.validate.min.js"></script>
         <script src="http://cdn.syncfusion.com/14.3.0.49/js/web/ej.web.all.min.js" type="text/javascript"></script>
-        <script src ="http://cdn.syncfusion.com/14.3.0.49/js/common/ej.angular2.min.js"></script>
+        <script src ="http://cdn.syncfusion.com/14.3.0.49/js/common/ej.Angular.min.js"></script>
         <script src="systemjs.config.js"></script>
     </head>
     <body>
@@ -47,7 +47,7 @@ In the above code, `ej.web.all.min.js`script reference has been added for demons
 
 ## Initialize and configure the control
 
-Add necessary HTML elements and CSS style to render ReportViewer and Set the desired `reportPath` and `reportServiceUrl` to ReportViewer. The code example for defining ReportViewer control in Angular2 is as follows,
+Add necessary HTML elements and CSS style to render ReportViewer and Set the desired `reportPath` and `reportServiceUrl` to ReportViewer. The code example for defining ReportViewer control in Angular is as follows,
 
 {% highlight html %}
 
@@ -104,7 +104,7 @@ ReportViewer with Grouping Aggregate Report
 
 ## Load SSRS Server Reports
 
-Add necessary HTML elements and CSS style to render ReportViewer and Set the desired `reportPath`, `reportServerUrl` and `reportServiceUrl` to ReportViewer. The code example for defining ReportViewer control in Angular2 is as follows,
+Add necessary HTML elements and CSS style to render ReportViewer and Set the desired `reportPath`, `reportServerUrl` and `reportServiceUrl` to ReportViewer. The code example for defining ReportViewer control in Angular is as follows,
 
 {% highlight html %}
 

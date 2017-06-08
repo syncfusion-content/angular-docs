@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Overview of Angular-2 DatePicker
-description: How to get started with Angular 2 datepicker?
+description: How to get started with Angular datepicker?
 platform: Angular
 control: DatePicker
 documentation: ug

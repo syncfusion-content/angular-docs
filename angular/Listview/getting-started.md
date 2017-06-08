@@ -9,11 +9,11 @@ documentation: ug
 
 # Getting Started
 
-The Angular2 ListView control allows you to select an item from a list-like interface and provides the infrastructure to display a set of data items in different layouts or views. Lists display data, data navigation, result lists, and data entry. 
+The Angular ListView control allows you to select an item from a list-like interface and provides the infrastructure to display a set of data items in different layouts or views. Lists display data, data navigation, result lists, and data entry. 
 
-This section explains briefly about how to create a web ListView in your application with Angular2 by step-by-step instructions
+This section explains briefly about how to create a web ListView in your application with Angular by step-by-step instructions
 
-## Create an ListView widget in Angular2
+## Create an ListView widget in Angular
 
 Create a new HTML file and include the below code:
 
@@ -32,7 +32,7 @@ Create a new HTML file and include the below code:
     <script src="https://ajax.aspnetcdn.com/ajax/jquery.validate/1.14.0/jquery.validate.min.js">
     </script>
         <script src="http://cdn.syncfusion.com/{{site.releaseversion}}/js/web/ej.web.all.min.js" type="text/javascript"></script>
-    <script src ="http://cdn.syncfusion.com/{{site.releaseversion}}/js/common/ej.angular2.min.js"></script>
+    <script src ="http://cdn.syncfusion.com/{{site.releaseversion}}/js/common/ej.Angular.min.js"></script>
 
     <script src="systemjs.config.js"></script>
   </head>
@@ -55,7 +55,7 @@ Create **input** element and add in the body tag as below.
 
 {% endhighlight %}
 
-To render the Angular2 ListBox use the below code.
+To render the Angular ListBox use the below code.
 
 {% highlight js %}
 
@@ -86,12 +86,12 @@ export class ListViewComponent {
 
 Run the above code to render the following output. 
 
-![](getting_started_images\createanlistviewwidgetinangular2_img1.png)
+![](getting_started_images\createanlistviewwidgetinAngular_img1.png)
 
 
 ## Model binding
 
-The Essential Angular2 **ListView** supports the data binding feature. When a widget’s model attribute is bound to ngModel variable, it will be reflected the changes.
+The Essential Angular **ListView** supports the data binding feature. When a widget’s model attribute is bound to ngModel variable, it will be reflected the changes.
 
 The below table depicts the properties of **Listview** widget that supports model binding:
 

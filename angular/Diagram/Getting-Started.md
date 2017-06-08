@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Getting Started for Angular 2 Diagram
-description: Getting Started for Angular 2 Diagram
+title: Getting Started for Angular Diagram
+description: Getting Started for Angular Diagram
 platform: Angular
 control: Diagram
 documentation: ug
@@ -10,7 +10,7 @@ keywords: Diagram, js diagram, Populating data
 
 # Getting started
 
-This section explains briefly about how to create a **Diagram** control in your application with **Angular 2**.
+This section explains briefly about how to create a **Diagram** control in your application with **Angular**.
 
 ## Adding Script Reference
 
@@ -31,7 +31,7 @@ Create an HTML page and add the scripts references in the order mentioned in the
     <script src="https://ajax.aspnetcdn.com/ajax/jquery.validate/1.14.0/jquery.validate.min.js">
     </script>
     <script src="http://cdn.syncfusion.com/14.3.0.49/js/web/ej.web.all.min.js" type="text/javascript"></script>
-    <script src ="http://cdn.syncfusion.com/14.3.0.49/js/common/ej.angular2.min.js"></script>
+    <script src ="http://cdn.syncfusion.com/14.3.0.49/js/common/ej.Angular.min.js"></script>
     <script src="systemjs.config.js"></script>
   </head>
   <body>

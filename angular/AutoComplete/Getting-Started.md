@@ -9,11 +9,11 @@ documentation: ug
 
 # Getting Started
 
-The Angular2 AutoComplete control is a textbox control that provides a list of suggestions based on your query. When you enter text into the text box, the control performs a search operation and provides a list of results. There are several filter types available to perform the search.
+The Angular AutoComplete control is a textbox control that provides a list of suggestions based on your query. When you enter text into the text box, the control performs a search operation and provides a list of results. There are several filter types available to perform the search.
 
-This section helps to understand the getting started of the Angular2 AutoComplete with the step-by-step instructions.
+This section helps to understand the getting started of the Angular AutoComplete with the step-by-step instructions.
 
-## Create an Angular2 AutoComplete
+## Create an Angular AutoComplete
 
 Create a new HTML file and include the below code:
 
@@ -31,7 +31,7 @@ Create a new HTML file and include the below code:
     <script src="http://cdn.syncfusion.com/js/assets/external/jsrender.min.js" type="text/javascript"></script>
     <script src="https://ajax.aspnetcdn.com/ajax/jquery.validate/1.14.0/jquery.validate.min.js">
     </script>
-    <script src ="http://cdn.syncfusion.com/14.3.0.49/js/common/ej.angular2.min.js"></script>
+    <script src ="http://cdn.syncfusion.com/14.3.0.49/js/common/ej.Angular.min.js"></script>
     <script src="http://cdn.syncfusion.com/14.3.0.49/js/web/ej.web.all.min.js" type="text/javascript"></script>
     <script src="systemjs.config.js"></script>
   </head>
@@ -67,7 +67,7 @@ Create input element and add in the body tag as below.
         </div>
 {% endhighlight %}
 
-To render the Angular2 AutoComplete using below code.
+To render the Angular AutoComplete using below code.
 
 {% highlight javascript %}
 
@@ -91,7 +91,7 @@ export class AppComponent {
 
 ## Model binding
 
-The Angular2 AutoComplete supports the data binding feature. When a widget’s model attribute is bound to ngModel variable, it will be reflected the changes both ways.
+The Angular AutoComplete supports the data binding feature. When a widget’s model attribute is bound to ngModel variable, it will be reflected the changes both ways.
 
 Add in the ngModel value as below.
 
@@ -281,7 +281,7 @@ This button helps you to show all the available suggestions on clicking it.
 
 ## Two Way Binding
 
-The Angular2 AutoComplete have supports a two-way data binding when a model variable is bound to an element that changed in both and display the value of the variable. 
+The Angular AutoComplete have supports a two-way data binding when a model variable is bound to an element that changed in both and display the value of the variable. 
 
 {% tabs %}
 {% highlight html %}

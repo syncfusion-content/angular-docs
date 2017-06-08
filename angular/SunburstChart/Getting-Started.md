@@ -17,7 +17,7 @@ Before we start with the Chart, please refer [this page](https://help.syncfusion
 To render the SunburstChart control, the following list of external dependencies are needed, 
 
 * [jQuery](http://jquery.com) - 1.7.1 and later versions
-* [Angular 2](https://angularjs.org/) - angular latest versions
+* [Angular](https://angularjs.org/) - angular latest versions
 
 The other required internal dependencies are tabulated below,
 
@@ -66,12 +66,12 @@ Create an HTML page and add the scripts references in the order mentioned in the
 
     <html>
     <head>
-    <title>Angular 2 Chart</title>
+    <title>Angular Chart</title>
 
     <!-- Essential Studio for JavaScript  theme reference -->
     <link rel="stylesheet" href="http://cdn.syncfusion.com/{{ site.releaseversion }}/js/web/flat-azure/ej.web.all.min.css" />
 
-    <!-- Angular2 related script references -->
+    <!-- Angular related script references -->
     <!-- 1. Load libraries -->
          <!-- Polyfill(s) for older browsers -->
     <script src="node_modules/core-js/client/shim.min.js"></script>
@@ -82,7 +82,7 @@ Create an HTML page and add the scripts references in the order mentioned in the
     <!-- Essential Studio for JavaScript  script references -->
     <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
     <script src="http://cdn.syncfusion.com/{{ site.releaseversion }}/js/web/ej.web.all.min.js"> </script>
-    <script src="http://cdn.syncfusion.com/{{ site.releaseversion }}/js/common/ej.angular2.min.js"></script>
+    <script src="http://cdn.syncfusion.com/{{ site.releaseversion }}/js/common/ej.Angular.min.js"></script>
 
     <!-- 2. Configure SystemJS -->
     <script src="systemjs.config.js"></script>
@@ -96,7 +96,7 @@ Create an HTML page and add the scripts references in the order mentioned in the
     <body>
     <ej-app>
 		    <div class="splash">
-			      <div class="message">Angular 2 Syncfusion Components App</div>
+			      <div class="message">Angular Syncfusion Components App</div>
 			      <div class="spinner"></div>
 		    </div>
 	  </ej-app>
@@ -109,17 +109,17 @@ N> Uncompressed version of library files are also available which is used for de
 
 ## Control Initialization
 
-* Copy SunburstChart Syncfusion Angular 2 source component(s) from the below build location and add it in `src/ej` folder (For ex., consider the `sunburstchart` component).
+* Copy SunburstChart Syncfusion Angular source component(s) from the below build location and add it in `src/ej` folder (For ex., consider the `sunburstchart` component).
 
 {% highlight javascript %}
-(Installed Location)\Syncfusion\Essential Studio\14.3.0.49\JavaScript\assets-src\angular2\ 
+(Installed Location)\Syncfusion\Essential Studio\14.3.0.49\JavaScript\assets-src\Angular\ 
 {% endhighlight %}
 
-N> `core.ts` file is mandatory for all Syncfusion JavaScript Angular 2 components. The repository having the source file from Essential Studio for JavaScript v14.3.0.49.
+N> `core.ts` file is mandatory for all Syncfusion JavaScript Angular components. The repository having the source file from Essential Studio for JavaScript v14.3.0.49.
 
 * Create `sunburstchart` folder inside `src` folder.
 
-* Create `sunburstchart.component.html` view file inside `src/sunburstchart` folder and render ejChart Angular 2 component using the below code example. 
+* Create `sunburstchart.component.html` view file inside `src/sunburstchart` folder and render ejChart Angular component using the below code example. 
 
 {% highlight html %}
 	<ej-sunburstchart id="defaultchart">
@@ -143,7 +143,7 @@ export class SunburstChartComponent {
 
 ## Configure the routes for the Router
 
-Before adding router configuration for above created ejChart component, we recommend you to go through the [Angular 2 Routing](https://angular.io/docs/ts/latest/guide/router.html) configuration to get the deeper knowledge about Angular 2 routing. 
+Before adding router configuration for above created ejChart component, we recommend you to go through the [Angular Routing](https://angular.io/docs/ts/latest/guide/router.html) configuration to get the deeper knowledge about Angular routing. 
 
 * Now, we are going to configure the route navigation link for created chart sample in `src/app.component.html` file.
 

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Trendlines in Essential Angular 2 Chart
+title: Trendlines in Essential Angular Chart
 description: What are the different types of trendlines available in chart.
 platform: Angular
 control: Chart

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Getting Started | RadioButton | Angular2 | Syncfusion
+title: Getting Started | RadioButton | Angular | Syncfusion
 description: getting started
 platform: Angular
 control: RadioButton
@@ -11,17 +11,17 @@ documentation: ug
 
 This section explains the details on how to render and configure a **RadioButton** component in an Angular-2 application.
 
-To get started with **RadioButton** component, refer the basic prerequisites and system configuration to be done form the given [getting started](https://help.syncfusion.com/angular2/overview) document.
+To get started with **RadioButton** component, refer the basic prerequisites and system configuration to be done form the given [getting started](https://help.syncfusion.com/Angular/overview) document.
 
-Once you have cloned the sample Angular-2 application as mentioned in getting started document, you will have an angular application named **angular2-seeds** and is now ready use our EJ components with it. 
+Once you have cloned the sample Angular-2 application as mentioned in getting started document, you will have an angular application named **Angular-seeds** and is now ready use our EJ components with it. 
 
 ## Copying RadioButton source file
 
-Copy the required Angular-2 source components file from the installed location and move it to the app/src/ej folder available inside the angular2-seeds folder.
+Copy the required Angular-2 source components file from the installed location and move it to the app/src/ej folder available inside the Angular-seeds folder.
 
-(Installed Location)\Syncfusion\Essential Studio\{installed version}\JavaScript\assets-src\angular2\ 
+(Installed Location)\Syncfusion\Essential Studio\{installed version}\JavaScript\assets-src\Angular\ 
 
-> _Note:_ _core.ts file is mandatory for all Syncfusion JavaScript Angular 2 components. The repository having the source file from Essential Studio for JavaScript v14.3.0.49._
+> _Note:_ _core.ts file is mandatory for all Syncfusion JavaScript Angular components. The repository having the source file from Essential Studio for JavaScript v14.3.0.49._
 
 ## Adding RadioButton component
 

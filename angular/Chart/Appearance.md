@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Customizing the appearance of Essential Angular 2 Chart
+title: Customizing the appearance of Essential Angular Chart
 description: Learn how to customize the appearance of Chart using palettes, themes, color, background and animation. 
 platform: Angular
 control: Chart

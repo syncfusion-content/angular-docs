@@ -9,11 +9,11 @@ documentation: ug
 
 # Getting Started
 
-The Angular2 ListBox widget that contains a list of selectable items. It performs exceptionally well with thousands of items and supports checkboxes, template, single and multiple selection, keyboard navigation and virtual scrolling.
+The Angular ListBox widget that contains a list of selectable items. It performs exceptionally well with thousands of items and supports checkboxes, template, single and multiple selection, keyboard navigation and virtual scrolling.
 
- This section explains briefly about how to create a web ListBox in your application with Angular 2 by step-by-step instructions
+ This section explains briefly about how to create a web ListBox in your application with Angular by step-by-step instructions
 
-## Create an ListBox widget in Angular2
+## Create an ListBox widget in Angular
 
 Create a new HTML file and include the below code:
 
@@ -32,7 +32,7 @@ Create a new HTML file and include the below code:
     <script src="https://ajax.aspnetcdn.com/ajax/jquery.validate/1.14.0/jquery.validate.min.js">
     </script>
         <script src="http://cdn.syncfusion.com/{{site.releaseversion}}/js/web/ej.web.all.min.js" type="text/javascript"></script>
-    <script src ="http://cdn.syncfusion.com/{{site.releaseversion}}/js/common/ej.angular2.min.js"></script>
+    <script src ="http://cdn.syncfusion.com/{{site.releaseversion}}/js/common/ej.Angular.min.js"></script>
 
     <script src="systemjs.config.js"></script>
   </head>
@@ -60,7 +60,7 @@ Create **input** element and add in the body tag as below.
 {% endhighlight %}
 
 
-To render the Angular2 ListBox use the below code.
+To render the Angular ListBox use the below code.
 
 {% highlight js %}
 
@@ -106,12 +106,12 @@ export class AppComponent {
 Run the above code to render the following output. 
 
 
-![](Getting_Started_images\createanlistboxwidgetinangular2_img1.png)
+![](Getting_Started_images\createanlistboxwidgetinAngular_img1.png)
 
 
 ## Model binding
 
-The Angular2 **ListBox** supports the data binding feature. When a widget’s model attribute is bound to ngModel variable, it will be reflected the changes.
+The Angular **ListBox** supports the data binding feature. When a widget’s model attribute is bound to ngModel variable, it will be reflected the changes.
 
 The below table depicts the properties of **ListBox** widget that supports model binding:
 

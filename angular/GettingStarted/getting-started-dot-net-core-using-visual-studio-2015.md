@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  Getting Started with Angular on ASP.Net Core using Visual Studio 2015
-description: Overview of Syncfusion Essential Angular 2
+description: Overview of Syncfusion Essential Angular
 platform: Angular
 control: Introduction
 documentation: ug
@@ -45,11 +45,11 @@ Refer the below code snippet for packages used in our application.
 {% highlight javascript %}
 
 {
-  "name": "ejangular2-systemjs-starter",
+  "name": "ejAngular-systemjs-starter",
   "version": "1.0.0",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/syncfusion/angular2-seeds.git"
+    "url": "git+https://github.com/syncfusion/Angular-seeds.git"
   },
   "description": "A systemjs starter for Angular",
   "scripts": {
@@ -63,15 +63,15 @@ Refer the below code snippet for packages used in our application.
     "ej",
     "essential",
     "javascript",
-    "Angular 2",
-    "angular2"
+    "Angular",
+    "Angular"
   ],
   "author": "Syncfusion Inc",
   "license": "SEE LICENSE IN README.md",
   "bugs": {
-    "url": "https://github.com/syncfusion/angular2-seeds/issues"
+    "url": "https://github.com/syncfusion/Angular-seeds/issues"
   },
-  "homepage": "https://github.com/syncfusion/angular2-seeds#readme",
+  "homepage": "https://github.com/syncfusion/Angular-seeds#readme",
   "dependencies": {
     "@angular/common": "~2.4.0",
     "@angular/compiler": "~2.4.0",
@@ -87,12 +87,12 @@ Refer the below code snippet for packages used in our application.
     "rxjs": "5.0.1",
     "systemjs": "0.19.40",
     "zone.js": "^0.7.4",
-    "angular2-in-memory-web-api": "0.0.20",
+    "Angular-in-memory-web-api": "0.0.20",
     "bootstrap": "^3.3.6",
     "jquery": "^3.1.1",
     "jsrender": "^0.9.75",
     "syncfusion-javascript": "^15.1.33",
-    "ej-angular2": "^15.1.33",
+    "ej-Angular": "^15.1.33",
     "@types/ej.web.all": "^14.4.1",
     "@types/jquery": "2.0.34",
     "@types/es6-shim": "0.31.32",
@@ -117,7 +117,7 @@ Refer the below code snippet for packages used in our application.
 
 ![](/angular-2/GettingStarted/Images/npmpackage.png)
 
-* Copy the `src` folder in solution from the cloned seed application. The cloned angular2-seed consists of following files.
+* Copy the `src` folder in solution from the cloned seed application. The cloned Angular-seed consists of following files.
 
     * app.component.ts
     * app.module.ts
@@ -149,7 +149,7 @@ Refer the below code snippet for packages used in our application.
 |              Tasks            |               Purpose                |                                       
 |:------------------------------|:-------------------------------------|
 |default                        |The default task is used in gulp to run any number of dependent sub tasks defined in a sequential order automatically.|
-|copy:lib                       |It is used to copy all libraries from node_modules to `wwwroot/lib` folder. These libraries are used to run the Angular2 application in ASP.Net Core environment             |
+|copy:lib                       |It is used to copy all libraries from node_modules to `wwwroot/lib` folder. These libraries are used to run the Angular application in ASP.Net Core environment             |
 |copy:systemjs           	    |This task copy the systemjs.config.js file from `src` folder to `wwwroot` folder|  
 |clean                          |A task that uses the rimraf Node deletion module to remove the library files from `wwwroot/lib` folder.|
 |ts                             |It is used to transpile the typescript files into `wwwroot` folder.|
@@ -236,7 +236,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
-import { EJAngular2Module } from 'ej-angular2';
+import { EJAngularModule } from 'ej-Angular';
 import { AppComponent } from './app.component';
 
 @NgModule({
@@ -246,7 +246,7 @@ import { AppComponent } from './app.component';
   imports: [
     BrowserModule,
     FormsModule,
-    HttpModule, EJAngular2Module.forRoot()
+    HttpModule, EJAngularModule.forRoot()
 
   ],
   bootstrap: [AppComponent]
@@ -290,8 +290,8 @@ platformBrowserDynamic().bootstrapModule(AppModule);
             '@angular/upgrade': 'npm:@angular/upgrade/bundles/upgrade.umd.js',
             // other libraries
             'rxjs': 'npm:rxjs',
-            'angular2-in-memory-web-api': 'npm:angular2-in-memory-web-api',
-            'ej-angular2': 'npm:ej-angular2/src'
+            'Angular-in-memory-web-api': 'npm:Angular-in-memory-web-api',
+            'ej-Angular': 'npm:ej-Angular/src'
         },
         // packages tells the System loader how to load when no filename and/or no extension
         packages: {
@@ -302,11 +302,11 @@ platformBrowserDynamic().bootstrapModule(AppModule);
             rxjs: {
                 defaultExtension: 'js'
             },
-            'angular2-in-memory-web-api': {
+            'Angular-in-memory-web-api': {
                 main: './index.js',
                 defaultExtension: 'js'
             },
-            'ej-angular2': {
+            'ej-Angular': {
                 main: './index.js'
             }
         }
@@ -320,7 +320,7 @@ platformBrowserDynamic().bootstrapModule(AppModule);
 
 <head>
     <base href="/" />
-    <title>Essential JavaScript for Angular 2</title>
+    <title>Essential JavaScript for Angular</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <link rel="shortcut icon" type="image/png" href="deps/css/images/browser-logo.png">
@@ -360,7 +360,7 @@ platformBrowserDynamic().bootstrapModule(AppModule);
 {% highlight json %}
 {
   "version": "1.0.0",
-  "name": "angular2demoinasp.net",
+  "name": "Angulardemoinasp.net",
   "dependencies": {
     "@angular/common": "~2.1.1",
     "@angular/compiler": "~2.1.1",
@@ -377,11 +377,11 @@ platformBrowserDynamic().bootstrapModule(AppModule);
     "rxjs": "5.0.0-beta.12",
     "systemjs": "0.19.39",
     "zone.js": "^0.6.25",
-    "angular2-in-memory-web-api": "0.0.21",
+    "Angular-in-memory-web-api": "0.0.21",
     "jquery": "^3.1.1",
     "jsrender": "^0.9.75",
     "syncfusion-javascript": "^14.3.49",
-    "ej-angular2": "15.1.33",
+    "ej-Angular": "15.1.33",
     "@types/ej.web.all": "0.0.2",
     "@types/jquery": "2.0.34",
     "@types/es6-shim": "0.31.32"
@@ -466,7 +466,7 @@ gulp.task('default', ['watch']);
 
 ## Configure the routes for the Router
 
-Before adding router configuration for above created ejDialog component, we recommend you to go through the [Angular 2 Routing](https://angular.io/docs/ts/latest/guide/router.html) configuration to get the deeper knowledge about Angular 2 routing.
+Before adding router configuration for above created ejDialog component, we recommend you to go through the [Angular Routing](https://angular.io/docs/ts/latest/guide/router.html) configuration to get the deeper knowledge about Angular routing.
 
 * Now, we are going to configure the route navigation link for created Dialog sample in `src/app.component.html` file.
 
@@ -510,14 +510,14 @@ export const routes: Routes = [
 
 import { NgModule } from '@angular/core'; 
 . . . . . 
-import { EJAngular2Module } from 'ej-angular2'; 
+import { EJAngularModule } from 'ej-Angular'; 
 import { AppComponent } from './app.component'; 
 . . . . . 
 import { DialogComponent } from './dialog/dialog.component'; 
 import { AppRoutingModule } from './app.routes'; 
 . . . . 
 @NgModule({ 
-imports: [BrowserModule, FormsModule, HttpModule, EJAngular2Module.forRoot(), 
+imports: [BrowserModule, FormsModule, HttpModule, EJAngularModule.forRoot(), 
 RouterModule, AppRoutingModule ], 
 declarations: [. . . . , DialogComponent], 
 bootstrap: [AppComponent] }) 

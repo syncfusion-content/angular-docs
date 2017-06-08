@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Rendering modes available in Essential Angular 2 Chart
+title: Rendering modes available in Essential Angular Chart
 description: How Essential Chart renders in IE8. How to render Essential Chart in a HTML5 Canvas.                    
 platform: Angular
 control: Chart

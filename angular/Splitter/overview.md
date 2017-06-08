@@ -9,7 +9,7 @@ documentation: ug
 
 # Overview
 
-The Essential JavaScript Splitter provides Angular2 that enables you to divide a Web page into distinct areas by inserting resizable panes. You can create any number of Splitter panes and place them inside the Splitter component. The split bars are inserted automatically in between the adjacent panes.
+The Essential JavaScript Splitter provides Angular that enables you to divide a Web page into distinct areas by inserting resizable panes. You can create any number of Splitter panes and place them inside the Splitter component. The split bars are inserted automatically in between the adjacent panes.
 
 **Key Features**
 

@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Getting-Started for Angular 2 Menu
-description: getting started for Angular 2 Menu
+title: Getting-Started for Angular Menu
+description: getting started for Angular Menu
 platform: Angular
 control: Menu
 documentation: ug
@@ -10,7 +10,7 @@ keywords: ejmenu, js menu, menu
 
 # Getting Started 
 
-This section explains briefly about how to create a **Menu** control in your application with **Angular 2**. The **Essential JavaScript** **Menu** supports displaying a **Menu** of list-out items. This **Menu** is based on ul-li hierarchy, where the sub-list items are rendered as the sub-menu items. The **Menu** control can also be rendered with local and remote data source.  From the following guidelines, you can learn how to customize the **Menu** control for a website. In this case, **Syncfusion's** website **Menu** is discussed. The following screenshot displays the appearance of **Menu**.
+This section explains briefly about how to create a **Menu** control in your application with **Angular**. The **Essential JavaScript** **Menu** supports displaying a **Menu** of list-out items. This **Menu** is based on ul-li hierarchy, where the sub-list items are rendered as the sub-menu items. The **Menu** control can also be rendered with local and remote data source.  From the following guidelines, you can learn how to customize the **Menu** control for a website. In this case, **Syncfusion's** website **Menu** is discussed. The following screenshot displays the appearance of **Menu**.
 
 
 ![](Getting-Started_images/Getting-Started_img1.png) 
@@ -33,7 +33,7 @@ Create an HTML page and add the scripts references in the order mentioned in the
      <script src="node_modules/systemjs/dist/system.src.js"></script>
      <script src="https://code.jquery.com/jquery-3.0.0.min.js"></script>
      <script src="http://cdn.syncfusion.com/14.3.0.49/js/web/ej.web.all.min.js" type="text/javascript"></script>
-     <script src ="http://cdn.syncfusion.com/14.3.0.49/js/common/ej.angular2.min.js"></script>
+     <script src ="http://cdn.syncfusion.com/14.3.0.49/js/common/ej.Angular.min.js"></script>
      <script src="systemjs.config.js"></script>
      </head>
      <body>

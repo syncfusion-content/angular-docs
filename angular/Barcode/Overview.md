@@ -1,5 +1,5 @@
 ---
-title: Getting Started for Angular 2 Barcode
+title: Getting Started for Angular Barcode
 description: Barcode
 platform: Angular
 control: Barcode

@@ -9,13 +9,13 @@ documentation: ug
 
 # Getting Started
 
-The Angular2 Signature simplifies creation of a signature capture in a browser, allowing a user to draw a signature using mouse or touch.
+The Angular Signature simplifies creation of a signature capture in a browser, allowing a user to draw a signature using mouse or touch.
 
-This section explains briefly about how to create a **Signature** component in your application with Angular2 by the following step-by-step instructions. The following screenshot demonstrates the functionality of Signature component.
+This section explains briefly about how to create a **Signature** component in your application with Angular by the following step-by-step instructions. The following screenshot demonstrates the functionality of Signature component.
 
 ![https://help.syncfusion.com/js/signature/Getting_Started_images/gettingstarted_img1.png](Getting_Started_images\gettingstarted_img1.png)
 
-## Create an Signature component in Angular2
+## Create an Signature component in Angular
 
 Create a new HTML file and include the below code:
 
@@ -32,7 +32,7 @@ Create a new HTML file and include the below code:
         <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
         <script src="http://cdn.syncfusion.com/js/assets/external/jsrender.min.js" type="text/javascript"></script>
         <script src="http://cdn.syncfusion.com/{{site.releaseversion}}/js/web/ej.web.all.min.js" type="text/javascript"></script>
-        <script src="http://cdn.syncfusion.com/{{site.releaseversion}}/js/common/ej.angular2.min.js"></script>
+        <script src="http://cdn.syncfusion.com/{{site.releaseversion}}/js/common/ej.Angular.min.js"></script>
         <script src="systemjs.config.js">
         </script>
     </head>
@@ -61,7 +61,7 @@ Create **div** element and add in the body tag as below.
 
 
 
-To render the Angular2 Signature use the below code.
+To render the Angular Signature use the below code.
 
 {% highlight js %}
 
@@ -85,7 +85,7 @@ export class SignatureComponent {
 
 Run the above code to render the following output.
 
-![https://help.syncfusion.com/js/signature/Getting_Started_images/createsignaturecontrol_img1.png](Getting_Started_images\createansignaturecomponentinangular2_img1.png)
+![https://help.syncfusion.com/js/signature/Getting_Started_images/createsignaturecontrol_img1.png](Getting_Started_images\createansignaturecomponentinAngular_img1.png)
 
 
 

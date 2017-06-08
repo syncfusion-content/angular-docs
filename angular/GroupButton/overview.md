@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Overview of Angular 2 GroupButton
-description: About Angular 2 GroupButton
+title: Overview of Angular GroupButton
+description: About Angular GroupButton
 platform: Angular
 control: GroupButton
 documentation: ug
 ---
 # OverView
 
-GroupButton is a UI component which provides the option to have the multiple buttons in succession. This component also have data source binding and more flexible options to provide the friendlier implementation and usage. Also this component can be developed with Angular 2 environment, since it’s has Angular 2 support.
+GroupButton is a UI component which provides the option to have the multiple buttons in succession. This component also have data source binding and more flexible options to provide the friendlier implementation and usage. Also this component can be developed with Angular environment, since it’s has Angular support.
 
 ## Key features
 

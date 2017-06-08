@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Getting Started for Angular 2 DropDownList
-description: Getting Started for Angular 2 DropDownList
+title: Getting Started for Angular DropDownList
+description: Getting Started for Angular DropDownList
 platform: Angular
 control: DropDownList
 documentation: ug
@@ -68,7 +68,7 @@ Create an HTML page and add the scripts references in the order mentioned in the
      <script src="node_modules/systemjs/dist/system.src.js"></script>
      <script src="https://code.jquery.com/jquery-3.0.0.min.js"></script>
      <script src="http://cdn.syncfusion.com/14.3.0.49/js/web/ej.web.all.min.js" type="text/javascript"></script>
-     <script src ="http://cdn.syncfusion.com/14.3.0.49/js/common/ej.angular2.min.js"></script>
+     <script src ="http://cdn.syncfusion.com/14.3.0.49/js/common/ej.Angular.min.js"></script>
      <script src="systemjs.config.js"></script>
      </head>
      <body>
@@ -80,7 +80,7 @@ Create an HTML page and add the scripts references in the order mentioned in the
 
 N> In the above code, `ej.web.all.min.js`script reference has been added for demonstration purpose. It is not recommended to use this for deployment purpose, as its file size is larger since it contains all the widgets. Instead, you can use [`CSG`](http://csg.syncfusion.com "CSG") utility to generate a custom script file with the required widgets for deployment purpose.
 
-## Creating DropDownList in Angular2
+## Creating DropDownList in Angular
 
 The DropDownList can be created from a HTML ‘input’ element with the HTML 'id' attribute and pre-defined options set to it. To create the DropDownList, you should call the 'ejDropDownList' jQuery plug-in function.
 
