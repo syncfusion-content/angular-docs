@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Overview of Angular 2 GroupButton
-description: How to get started with Angular 2 GroupButton?
+title: Overview of Angular GroupButton
+description: How to get started with Angular GroupButton?
 platform: Angular
 control: GroupButton
 documentation: ug
@@ -9,14 +9,14 @@ documentation: ug
 
 # Getting Started
 
-This section will explain the rendering procedure for the Angular2 GroupButton with the step-by-step instructions.
+This section will explain the rendering procedure for the Angular GroupButton with the step-by-step instructions.
 
-You can create the Angular 2 project with the **required script and themes files** with the help of the below link:
+You can create the Angular project with the **required script and themes files** with the help of the below link:
 
 [https://help.syncfusion.com/angular-2/overview](https://help.syncfusion.com/angular-2/overview)
 
 
-## Creating a GroupButton in Angular2 environment
+## Creating a GroupButton in Angular environment
 
 Create the GroupButton using GroupButton tag inside the body tag as like below
 
@@ -91,7 +91,7 @@ This dataSource need to be bounded with the GroupButton component like below
 {% endhighlight %}
 
 
-## Configuring the APIs of Angular 2 GroupButton 
+## Configuring the APIs of Angular GroupButton 
 
 All APIs of GroupButton can be configured and values can be updated from constructor. Please check with the below code example
 

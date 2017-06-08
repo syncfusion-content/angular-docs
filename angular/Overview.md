@@ -1,26 +1,27 @@
 ---
 layout: post
-title: Welcome to Syncfusion Essential Angular 2
-description: Overview of Syncfusion Essential Angular 2
+title: Welcome to Syncfusion Essential Angular
+description: Overview of Syncfusion Essential Angular
 platform: Angular
 control: Introduction
 documentation: ug
 --- 
-# Angular 2
 
-Essential JavaScript provides support for [Angular 2](https://angular.io/docs/ts/latest/quickstart.html) Framework through wrappers. Each Syncfusion widgets are created as Angular 2 components with built in support for data binding and child directives to make complex property definition easier.
+# Angular 
 
-The Syncfusion Angular 2 components are named with prefix `ej` to avoid conflicting with other library component and offers the following features.
+Essential JavaScript provides support for [Angular](https://angular.io/docs/ts/latest/quickstart.html) Framework through wrappers. Each Syncfusion widgets are created as Angular components with built in support for data binding to make complex property definition easier.
+
+The Syncfusion Angular components are named with prefix `ej` to avoid conflicting with other library component and offers the following features.
 
 * Properties
 * Two-way binding
 * Event binding
 
 <blockquote class="notes angular-version">
-<p>The Essential JavaScript for Syncfusion Angular 2 components supports Angular 2 release version <a href="http://angularjs.blogspot.in/2017/03/angular-400-now-available.html" title="Release Version">4.X.X</a>.</p>
+<p>The Essential JavaScript for Syncfusion Angular components supports Angular release version <a href="http://angularjs.blogspot.in/2017/03/angular-400-now-available.html" title="Release Version">4.X.X</a>.</p>
 </blockquote>
 
-N> To getting started with Syncfusion Angular 2 seed application navigate to [here](/angular-2/GettingStarted "Getting started").
+N> To getting started with Syncfusion Angular seed application navigate to [here](/angular-2/GettingStarted "Getting started").
 
 ## Property Binding
 
@@ -62,11 +63,12 @@ N> Get event argument values as e.data1,e.data2,e.data3.. (For ex,. for ejAutoCo
 
 ## Two-way Binding
 
-Two-way binding of Angular 2 synchronizes the value in both view and component model using attribute `[(ngModel)]`. The same conversion is used for Syncfusion widgets which reflect the changes both ways. In general, we could have more than one property bound to the same variable.
+Two-way binding of Angular synchronizes the value in both view and component model using attribute `[(ngModel)]`. The same conversion is used for Syncfusion widgets which reflect the changes both ways. In general, we could have more than one property bound to the same variable.
 
 Two-way binding for ejAutocomplete has been demonstrated in the below code.
 
 {% highlight javascript %}
+import { Component } from '@angular/core';
 
 @Component({
     selector: 'my-app',
@@ -309,11 +311,11 @@ ejWaitingPopup</td><td>
 
 
 
-N> For complete understanding of Angular 2 inputs and outputs binding syntaxes, refer [this](https://angular.io/docs/ts/latest/guide/template-syntax.html#!#binding-syntax-an-overview) Angular 2 help document.
+N> For complete understanding of Angular inputs and outputs binding syntaxes, refer [this](https://angular.io/docs/ts/latest/guide/template-syntax.html#!#binding-syntax-an-overview) Angular help document.
 
 ## Invoking EJ widget methods from component instance
 
-You can invoke the ej widget's public methods using Angular 2 component instance reference like the below syntax.
+You can invoke the ej widget's public methods using Angular component instance reference like the below syntax.
 
 {% highlight javascript %}
 
@@ -326,7 +328,6 @@ For example, to invoke `clearText` method of ejAutocomplete widget, you can use 
 {% highlight javascript %}
 
 import {Component} from '@angular/core';
-import {EJ_AUTOCOMPLETE_COMPONENTS} from 'ej/autocomplete.component';
 
 @Component({
     selector: 'my-app',
@@ -334,8 +335,7 @@ import {EJ_AUTOCOMPLETE_COMPONENTS} from 'ej/autocomplete.component';
     <button id="clearTxt" (click)="myApp.widget.clearText()">clearText</button>
     <input #myApp type="text" ej-autocomplete [dataSource]="states" (open)="onOpen($event)" [(ngModel)]="value"/>
     <input type="text" name="AutoComplete" class="input ej-inputtext" [(ngModel)]="value" />
-    `,
-    directives: [EJ_AUTOCOMPLETE_COMPONENTS],
+    `
 })
 export class AppComponent {
     states: Array<string>;

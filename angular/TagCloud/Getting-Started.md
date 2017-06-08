@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Getting-Started for Angular 2 TagCloud
-description: getting started for Angular 2 TagCloud
+title: Getting-Started for Angular TagCloud
+description: getting started for Angular TagCloud
 platform: Angular
 control: TagCloud
 documentation: ug
@@ -10,7 +10,7 @@ keywords: TagCloud,js tagcloud,ejtagcloud
 
 # Getting Started
 
-This section explains briefly about how to create a **TagCloud** in your application with **Angular 2**. The **TagCloud** can be easily configured to the div element in which the tags are placed. The following screenshot illustrates the functionality of a **TagCloud** widget with a list of the topmost search engines. 
+This section explains briefly about how to create a **TagCloud** in your application with **Angular**. The **TagCloud** can be easily configured to the div element in which the tags are placed. The following screenshot illustrates the functionality of a **TagCloud** widget with a list of the topmost search engines. 
 
 ![](Getting-Started_images/Getting-Started1.jpg)
 
@@ -30,7 +30,7 @@ Create an HTML page and add the scripts references in the order mentioned in the
      <script src="node_modules/systemjs/dist/system.src.js"></script>
      <script src="https://code.jquery.com/jquery-3.0.0.min.js"></script>
      <script src="http://cdn.syncfusion.com/14.3.0.49/js/web/ej.web.all.min.js" type="text/javascript"></script>
-     <script src ="http://cdn.syncfusion.com/14.3.0.49/js/common/ej.angular2.min.js"></script>
+     <script src ="http://cdn.syncfusion.com/14.3.0.49/js/common/ej.Angular.min.js"></script>
      <script src="systemjs.config.js"></script>
      </head>
      <body>

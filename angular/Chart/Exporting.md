@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Exporting options in Essential Angular 2 Chart
+title: Exporting options in Essential Angular Chart
 description: Learn how to export Chart as excel file or image.
 platform: Angular
 control: Chart

@@ -9,7 +9,7 @@ documentation: ug
 
 # Overview
 
- Our Essential JavaScript RadialMenu component provided with Angular2 is a context that represents the menu items are arranged in a circular order with a centric button element in it. By default, center button only is visible. The Radial Menu displays the root level menu item with rotational animation effects on clicking the center menu button. You can close it either by clicking anywhere in the document or by clicking the center button where the root level items are displayed.
+ Our Essential JavaScript RadialMenu component provided with Angular is a context that represents the menu items are arranged in a circular order with a centric button element in it. By default, center button only is visible. The Radial Menu displays the root level menu item with rotational animation effects on clicking the center menu button. You can close it either by clicking anywhere in the document or by clicking the center button where the root level items are displayed.
 
 **Key Features**
 

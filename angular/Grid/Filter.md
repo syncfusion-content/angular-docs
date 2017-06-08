@@ -5,7 +5,7 @@ description: How to enable filtering and its functionalities
 platform: Angular
 control: Grid
 documentation: ug
-api: /api/angular2/grid
+api: /api/Angular/grid
 --- 
 # Filtering
 

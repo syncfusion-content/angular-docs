@@ -9,7 +9,7 @@ documentation: ug
 
 # Overview
 
-Our Essential JavaScript Rotator component provided with Angular2 widget support that helps to display a set of sliding images or images and content, or content with user-defined transition between them. It supports Data Binding, Thumbnail, Pager, dynamic number of slide move options and all custom animations. It supports all types of image formats (JPEG, GIF and so on).
+Our Essential JavaScript Rotator component provided with Angular widget support that helps to display a set of sliding images or images and content, or content with user-defined transition between them. It supports Data Binding, Thumbnail, Pager, dynamic number of slide move options and all custom animations. It supports all types of image formats (JPEG, GIF and so on).
 
 ## Key Features
 

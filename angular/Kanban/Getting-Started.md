@@ -16,7 +16,7 @@ To render the Kanban control, the following list of external dependencies are ne
 
 * [jQuery](http://jquery.com) - 1.7.1 and later versions
 * [jsRender](https://github.com/borismoore/jsrender) - to render the templates
-* [Angular 2](https://angular.io/) - angular 2 latest versions
+* [Angular](https://angular.io/) - Angular latest versions
 
 The other required internal dependencies are tabulated below,
 
@@ -177,7 +177,7 @@ Create an HTML page and add the scripts references in the order mentioned in the
     <!-- Essential Studio for JavaScript  theme reference -->
     <link rel="stylesheet" href="http://cdn.syncfusion.com/{{ site.releaseversion }}/js/web/flat-azure/ej.web.all.min.css" />
 
-    <!-- Angular2 related script references -->
+    <!-- Angular related script references -->
     <!-- 1. Load libraries -->
          <!-- Polyfill(s) for older browsers -->
     <script src="node_modules/core-js/client/shim.min.js"></script>   
@@ -190,7 +190,7 @@ Create an HTML page and add the scripts references in the order mentioned in the
     <script src="http://cdn.syncfusion.com/js/assets/external/jquery.easing.1.3.min.js"> </script>
     <script src="http://cdn.syncfusion.com/js/assets/external/jsrender.min.js"></script>
     <script src="http://cdn.syncfusion.com/{{ site.releaseversion }}/js/web/ej.web.all.min.js"> </script> 
-    <script src="http://cdn.syncfusion.com/{{ site.releaseversion }}/js/common/ej.angular2.min.js"></script>
+    <script src="http://cdn.syncfusion.com/{{ site.releaseversion }}/js/common/ej.Angular.min.js"></script>
     
     <!-- 2. Configure SystemJS -->
     <script src="systemjs.config.js"></script>

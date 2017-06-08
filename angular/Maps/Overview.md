@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Maps | Angular 2 | Syncfusion
+title: Maps | Angular | Syncfusion
 description: Maps Overview
 platform: Angular
 control: Maps

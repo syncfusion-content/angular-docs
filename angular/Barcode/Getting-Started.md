@@ -1,5 +1,5 @@
 ---
-title: Getting Started for Angular 2 Barcode
+title: Getting Started for Angular Barcode
 description: Barcode
 platform: Angular
 control: Barcode
@@ -9,7 +9,7 @@ keywords: ejBarcode
 
 # Getting Started
 
-This section explains briefly about how to integrate a **Barcode** control in your application with **Angular 2**.
+This section explains briefly about how to integrate a **Barcode** control in your application with **Angular**.
 
 ## Script and CSS Reference
 
@@ -29,7 +29,7 @@ Create a HTML page and add the scripts and CSS references in the order mentioned
         <script src="http://cdn.syncfusion.com/js/assets/external/jsrender.min.js" type="text/javascript"></script>
         <script src="https://ajax.aspnetcdn.com/ajax/jquery.validate/1.14.0/jquery.validate.min.js"></script>
         <script src="http://cdn.syncfusion.com/14.3.0.49/js/web/ej.web.all.min.js" type="text/javascript"></script>
-        <script src ="http://cdn.syncfusion.com/14.3.0.49/js/common/ej.angular2.min.js"></script>
+        <script src ="http://cdn.syncfusion.com/14.3.0.49/js/common/ej.Angular.min.js"></script>
         <script src="systemjs.config.js"></script>
     </head>
     <body>
@@ -43,7 +43,7 @@ In the above code, `ej.web.all.min.js`script reference has been added for demons
 
 ## Initialize and configure the control
 
-The code example for defining Barcode control in Angular2 is as follows,
+The code example for defining Barcode control in Angular is as follows,
 
 
 {% highlight html %}

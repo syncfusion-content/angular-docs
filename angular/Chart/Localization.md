@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Localization of Essential Angular 2 Chart
+title: Localization of Essential Angular Chart
 description: Learn how to localize chart based on a specific culture.
 platform: Angular
 control: Chart

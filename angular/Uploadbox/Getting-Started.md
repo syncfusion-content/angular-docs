@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Getting-Started for Angular 2 Upload box
-description: getting started for Angular 2 Upload box
+title: Getting-Started for Angular Upload box
+description: getting started for Angular Upload box
 platform: Angular
 control: Uploadbox
 documentation: ug
@@ -10,7 +10,7 @@ keywords: Uploadbox,js uploadbox,ejuploadbox
 
 # Getting Started
 
-This section explains briefly about how to create an **Uploadbox** in your application with **Angular 2.** **Essential JavaScript Uploadbox** widget provides support to upload files or photos within your web page. From the following guidelines, you can learn how to upload the files that are used in a Resume Upload scenario. This helps you to restrict some file extensions when you upload the resume in server by using **Uploadbox** control.
+This section explains briefly about how to create an **Uploadbox** in your application with **Angular.** **Essential JavaScript Uploadbox** widget provides support to upload files or photos within your web page. From the following guidelines, you can learn how to upload the files that are used in a Resume Upload scenario. This helps you to restrict some file extensions when you upload the resume in server by using **Uploadbox** control.
 
 The following screenshot demonstrates the functionality of **Uploadbox** with the file extension.
 
@@ -20,7 +20,7 @@ In the above screenshot, you can upload a resume that allows **.txt** files. Thi
 
 N> To get upload the file, you should either run this sample in Visual Studio IDE or host in local IIS.
 
-## Create Uploadbox widgets in Angular 2
+## Create Uploadbox widgets in Angular
 
 **Essential JavaScript Uploadbox** widget basically renders built-in features like upload multiple files, and deletes the files from **Uploadbox**. You can know the status of uploading the file whether it is completed or failed and you can retry uploading the files.  You can easily create the **Uploadbox** widget by using the following steps.
 
@@ -38,7 +38,7 @@ Create an HTML page and add the scripts references in the order mentioned in the
      <script src="node_modules/systemjs/dist/system.src.js"></script>
      <script src="https://code.jquery.com/jquery-3.0.0.min.js"></script>
      <script src="http://cdn.syncfusion.com/{{ site.releaseversion }}/js/web/ej.web.all.min.js" type="text/javascript"></script>
-     <script src ="http://cdn.syncfusion.com/{{ site.releaseversion }}/js/common/ej.angular2.min.js"></script>
+     <script src ="http://cdn.syncfusion.com/{{ site.releaseversion }}/js/common/ej.Angular.min.js"></script>
      <script src="systemjs.config.js"></script>
      </head>
      <body>

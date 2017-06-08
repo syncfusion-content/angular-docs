@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Overview | DateTimePicker | Angular2 | Syncfusion
+title: Overview | DateTimePicker | Angular | Syncfusion
 description: overview
 platform: Angular
 control: DateTimePicker

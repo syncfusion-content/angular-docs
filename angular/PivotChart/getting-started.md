@@ -1,5 +1,5 @@
 ---
-title: Getting Started for Angular 2 PivotChart
+title: Getting Started for Angular PivotChart
 description: How to create a PivotChart with data source.
 platform: Angular
 control: PivotChart
@@ -9,7 +9,7 @@ keywords: ejpivotchart, pivotchart, js pivotchart
 
 # Getting Started
 
-This section explains briefly about how to create a **PivotChart** control in your application with **Angular 2**. This section covers only the minimal features that you need to know to get started with the PivotChart.
+This section explains briefly about how to create a **PivotChart** control in your application with **Angular**. This section covers only the minimal features that you need to know to get started with the PivotChart.
 
 ## Script and CSS Reference
 
@@ -29,7 +29,7 @@ Create a **HTML** page and add the scripts and CSS references in the order menti
         <script src="http://cdn.syncfusion.com/js/assets/external/jsrender.min.js" type="text/javascript"></script>
         <script src="https://ajax.aspnetcdn.com/ajax/jquery.validate/1.14.0/jquery.validate.min.js"></script>
         <script src="http://cdn.syncfusion.com/14.3.0.49/js/web/ej.web.all.min.js" type="text/javascript"></script>
-        <script src ="http://cdn.syncfusion.com/14.3.0.49/js/common/ej.angular2.min.js"></script>
+        <script src ="http://cdn.syncfusion.com/14.3.0.49/js/common/ej.Angular.min.js"></script>
         <script src="systemjs.config.js"></script>
     </head>
     <body>

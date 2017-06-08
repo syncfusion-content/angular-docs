@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Overview | DateTimePicker | Angular2 | Syncfusion
+title: Overview | DateTimePicker | Angular | Syncfusion
 description: overview
 platform: Angular
 control: DateTimePicker
@@ -10,7 +10,7 @@ documentation: ug
 # Overview
 
 The DateTimePicker component is used to input the date and time values with a specific format. The DateTimePicker control combines the DatePicker and TimePicker controls so that you can select the date and time with desired format.
-DateTimePicker can be used seamlessly angular2 framework and provides one way and two way binding with Angular framework.
+DateTimePicker can be used seamlessly Angular framework and provides one way and two way binding with Angular framework.
 
 ## Key Features
 

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Empty Points 
-description: How to show or hide an empty point in Essential Angular 2 Chart.
+description: How to show or hide an empty point in Essential Angular Chart.
 platform: Angular
 control: Chart
 documentation: ug

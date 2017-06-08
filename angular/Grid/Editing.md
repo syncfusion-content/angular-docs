@@ -5,7 +5,7 @@ description: How to perform editing and configure edit time functionalities like
 platform: Angular
 control: Grid
 documentation: ug
-api: /api/angular2/grid
+api: /api/Angular/grid
 --- 
 # Editing
 
