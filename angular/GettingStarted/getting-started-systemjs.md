@@ -160,64 +160,64 @@ platformBrowserDynamic().bootstrapModule(AppModule);
 {% highlight json %}
 
 {
-   "name": "ejAngular-systemjs-starter",
-   "version": "1.0.0",
-   "repository": {
-      "type": "git",
-      "url": "git+https://github.com/syncfusion/Angular-seeds.git"
-   },
-   "description": "A systemjs starter for Angular",
-   "scripts": {
-      "start": "concurrently \"npm run tsc:w\" \"npm run lite\" ",
-      "lite": "lite-server",
-      "tsc": "tsc",
-      "tsc:w": "tsc -w"
-   },
-   "keywords": [
-      "syncfusion",
-      "ej",
-      "essential",
-      "javascript",
-      "Angular",
-      "Angular"
-   ],
-   "author": "Syncfusion Inc",
-   "license": "SEE LICENSE IN README.md",
-   "bugs": {
-      "url": "https://github.com/syncfusion/Angular-seeds/issues"
-   },
-   "homepage": "https://github.com/syncfusion/Angular-seeds#readme",
-   "dependencies": {
-      "@angular/common": "~2.4.0",
-      "@angular/compiler": "~2.4.0",
-      "@angular/core": "~2.4.0",
-      "@angular/forms": "~2.4.0",
-      "@angular/http": "~2.4.0",
-      "@angular/platform-browser": "~2.4.0",
-      "@angular/platform-browser-dynamic": "~2.4.0",
-      "@angular/router": "~3.4.0",
-      "@angular/upgrade": "2.0.0",
-      "core-js": "^2.4.1",
-      "reflect-metadata": "^0.1.3",
-      "rxjs": "5.0.1",
-      "systemjs": "0.19.40",
-      "zone.js": "^0.7.4",
-      "Angular-in-memory-web-api": "0.0.20",
-      "bootstrap": "^3.3.6",
-      "jquery": "^3.1.1",
-      "jsrender": "^0.9.75",
-      "syncfusion-javascript": "^15.1.33",
-      "ej-Angular": "^15.1.33",
-      "@types/ej.web.all": "^14.4.1",
-      "@types/jquery": "2.0.34",
-      "@types/es6-shim": "0.31.32",
-      "@types/node": "6.0.52"
-   },
-   "devDependencies": {
-      "concurrently": "^2.0.0",
-      "lite-server": "^2.1.0",
-      "typescript": "^2.1.4"
-   }
+  "name": "ejangular2-systemjs-starter",
+  "version": "1.0.0",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/syncfusion/angular2-seeds.git"
+  },
+  "description": "A systemjs starter for Angular",
+  "scripts": {
+    "start": "concurrently \"npm run tsc:w\" \"npm run lite\" ",
+    "lite": "lite-server",
+    "tsc": "tsc",
+    "tsc:w": "tsc -w"
+  },
+  "keywords": [
+    "syncfusion",
+    "ej",
+    "essential",
+    "javascript",
+    "Angular 2",
+    "angular2"
+  ],
+  "author": "Syncfusion Inc",
+  "license": "SEE LICENSE IN README.md",
+  "bugs": {
+    "url": "https://github.com/syncfusion/angular2-seeds/issues"
+  },
+  "homepage": "https://github.com/syncfusion/angular2-seeds#readme",
+  "dependencies": {
+    "@angular/common": "~4.1.3",
+    "@angular/compiler": "~4.1.3",
+    "@angular/core": "~4.1.3",
+    "@angular/forms": "~4.1.3",
+    "@angular/http": "~4.1.3",
+    "@angular/platform-browser": "~4.1.3",
+    "@angular/platform-browser-dynamic": "~4.1.3",
+    "@angular/router": "~4.1.3",
+    "@angular/upgrade": "~4.1.3",
+    "core-js": "^2.4.1",
+    "reflect-metadata": "^0.1.3",
+    "rxjs": "5.0.1",
+    "systemjs": "0.19.40",
+    "zone.js": "^0.7.4",
+    "angular2-in-memory-web-api": "0.0.20",
+    "bootstrap": "^3.3.6",
+    "jquery": "^3.1.1",
+    "jsrender": "^0.9.75",
+    "syncfusion-javascript": "^15.1.33",
+    "ej-angular2": "^15.1.33",
+    "@types/ej.web.all": "^14.4.1",
+    "@types/jquery": "2.0.34",
+    "@types/es6-shim": "0.31.32",
+    "@types/node": "6.0.52"
+  },
+  "devDependencies": {
+    "concurrently": "^2.0.0",
+    "lite-server": "^2.1.0",
+    "typescript": "^2.1.4"
+  }
 }
 
 {% endhighlight %}
