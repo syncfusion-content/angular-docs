@@ -1,5 +1,5 @@
 ---
-title: Getting Started for Angular 2 Barcode
+title: Getting Started for Angular Barcode
 description: Barcode
 platform: Angular
 control: Barcode
@@ -9,7 +9,7 @@ keywords: ejBarcode
 
 # Getting Started
 
-This section explains briefly about how to integrate a **Barcode** control in your application with **Angular 2**.
+This section explains briefly about how to integrate a **Barcode** control in your application with **Angular**.
 
 ## Script and CSS Reference
 
