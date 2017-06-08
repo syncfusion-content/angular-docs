@@ -12,7 +12,7 @@ documentation: ug
 
 ASP.NET Single Page Application(SPA) helps you to build applications that include significant client-side interactions using HTML 5, CSS 3 and Javascript.
 
-To getting started with Syncfusion Angular Components, the NPM packages [ej-Angular](https://www.npmjs.com/package/ej-Angular) and [syncfusion-javascript](https://www.npmjs.com/package/syncfusion-javascript) helps to seamlessly supports ASP.NET Core environment for our components. The following steps depicts, to create an application in ASP.NET Core using SPA template with Syncfusion Angular Components.
+To getting started with Syncfusion Angular Components, the NPM packages [ej-angular2](https://www.npmjs.com/package/ej-angular2) and [syncfusion-javascript](https://www.npmjs.com/package/syncfusion-javascript) helps to seamlessly supports ASP.NET Core environment for our components. The following steps depicts, to create an application in ASP.NET Core using SPA template with Syncfusion Angular Components.
 
 ## Synopsis
 
@@ -79,7 +79,7 @@ N> To know more about environment varaible refer the [link](https://blogs.msdn.m
 {% highlight javascript %}
 
 npm install syncfusion-javascript --save
-npm install ej-Angular --save
+npm install ej-angular2 --save
 npm install --save-dev @types/jquery
 npm install --save-dev @types/ej.web.all
 
@@ -109,14 +109,14 @@ npm install --save-dev @types/ej.web.all
 
 {% endhighlight %}
 
-* Import `ej-Angular` module into app.module.ts file
+* Import `ej-angular2` module into app.module.ts file
 
 {% highlight ts %}
 
 import { NgModule } from '@angular/core';
 . . .
 . . .
-import { EJAngularModule } from 'ej-Angular';
+import { EJAngular2Module } from 'ej-angular2';
 
 @NgModule({
 bootstrap: [ AppComponent ],
@@ -130,7 +130,7 @@ RouterModule.forRoot([
 { path: 'fetch-data', component: FetchDataComponent },
 { path: '**', redirectTo: 'home' }
 ]),
-EJAngularModule.forRoot()
+EJAngular2Module.forRoot()
 ]
 })
 export class AppModule {
@@ -212,7 +212,7 @@ ViewData["Title"] = "Home Page";
 {% highlight ts %}
 
 import { Component, ViewChild, ElementRef } from '@angular/core';
-import { EJComponents } from 'ej-Angular';
+import { EJComponents } from 'ej-angular2';
 
 @Component({
     selector: 'home',
