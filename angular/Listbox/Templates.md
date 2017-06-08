@@ -2,7 +2,7 @@
 layout: post
 title: Templates
 description: templates
-platform: angular-2
+platform: Angular
 control: ListBox
 documentation: ug
 ---

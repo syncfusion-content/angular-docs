@@ -2,7 +2,7 @@
 layout: post
 title: keyboard interaction
 description: keyboard interaction
-platform: angular-2
+platform: Angular
 control: rotator
 documentation: ug
 ---

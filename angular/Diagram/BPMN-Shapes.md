@@ -2,7 +2,7 @@
 layout: post
 title: Visually represents the internal business procedures and the communication among them
 description: How to graphically notate the internal business procedure? 
-platform:  Angular-2
+platform:  Angular
 control: Diagram
 documentation: ug
 ---

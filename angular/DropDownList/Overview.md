@@ -2,7 +2,7 @@
 layout: post
 title: OverView of the DropDownList widget 
 description: OverView of the DropDownList widget 
-platform: Angular 2
+platform: Angular
 control: DropDownList
 documentation: ug
 ---

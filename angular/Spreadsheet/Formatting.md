@@ -1,7 +1,7 @@
 ---
 title: Formatting with Spreadsheet widget for Syncfusion Essential Angular-2
 description: How to use different types of formatting in Spreadsheet and configure its properties.
-platform: angular-2
+platform: Angular
 control: Spreadsheet
 documentation: UG
 ---

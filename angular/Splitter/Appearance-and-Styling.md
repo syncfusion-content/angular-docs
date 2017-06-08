@@ -2,7 +2,7 @@
 layout: post
 title: Apperance and Styling
 description: Apperance and Styling
-platform: Angular-2
+platform: Angular
 control: Splitter
 documentation: ug
 ---

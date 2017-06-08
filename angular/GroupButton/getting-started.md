@@ -2,7 +2,7 @@
 layout: post
 title: Overview of Angular 2 GroupButton
 description: How to get started with Angular 2 GroupButton?
-platform: Angular 2
+platform: Angular
 control: GroupButton
 documentation: ug
 ---

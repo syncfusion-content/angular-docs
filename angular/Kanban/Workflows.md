@@ -3,7 +3,7 @@ layout: post
 title:  Workflows
 description: Workflows
 documentation: ug
-platform: Angular-2
+platform: Angular
 keywords: Workflows,kanban Workflows
 ---
 

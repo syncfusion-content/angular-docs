@@ -2,7 +2,7 @@
 layout: post
 title:  Getting Started with Angular CLI
 description: Overview of Syncfusion Essential Angular 2
-platform: Angular-2
+platform: Angular
 control: Introduction
 documentation: ug
 ---

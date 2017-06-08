@@ -2,7 +2,7 @@
 layout: post
 title: Cell Range with Spreadsheet widget for Syncfusion Essential JS
 description: How to use the Spreadsheet Cell Range
-platform: Angular-2
+platform: Angular
 control: Spreadsheet
 documentation: ug
 --- 

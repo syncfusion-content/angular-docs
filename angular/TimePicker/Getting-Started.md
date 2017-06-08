@@ -2,7 +2,7 @@
 layout: post
 title: Getting Started | TimePicker | Angular2 | Syncfusion
 description: Getting started
-platform: Angular 2
+platform: Angular
 control: TimePicker
 documentation: ug
 ---

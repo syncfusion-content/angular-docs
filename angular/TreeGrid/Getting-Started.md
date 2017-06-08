@@ -2,7 +2,7 @@
 layout: post
 title: Getting-Started
 description: getting started
-platform: Angular 2
+platform: Angular
 control: TreeGrid
 documentation: ug
 ---

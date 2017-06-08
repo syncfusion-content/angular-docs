@@ -2,7 +2,7 @@
 layout: post
 title: badge-settings
 description: badge-settings
-platform: angular-2
+platform: Angular
 control: Tile
 documentation: ug
 ---

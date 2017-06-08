@@ -2,7 +2,7 @@
 layout: post
 title: Overview | ProgressBar | JavaScript | Syncfusion
 description: overview
-platform: angular-2
+platform: Angular
 control: ProgressBar
 documentation: ug
 keywords: progressbar features, key features, progressbar overview

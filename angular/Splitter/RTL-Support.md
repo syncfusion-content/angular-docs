@@ -2,7 +2,7 @@
 layout: post
 title: RTL Support
 description: RTL Support
-platform: Angular-2
+platform: Angular
 control: Splitter
 documentation: ug
 ---

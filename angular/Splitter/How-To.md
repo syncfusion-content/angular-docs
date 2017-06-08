@@ -2,7 +2,7 @@
 layout: post
 title: How To
 description: How To
-platform: Angular-2
+platform: Angular
 control: Splitter
 documentation: ug
 ---

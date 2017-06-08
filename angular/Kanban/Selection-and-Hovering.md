@@ -3,7 +3,7 @@ layout: post
 title: Selection and Hovering
 description: Selection and Hovering
 documentation: ug
-platform: Angular-2
+platform: Angular
 keywords: selection, hovering,kanban selection, hovering
 ---
 

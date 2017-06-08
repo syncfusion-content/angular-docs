@@ -2,7 +2,7 @@
 layout: post
 title: Localization
 description: Localization
-platform: angular-2
+platform: Angular
 control: Tile
 documentation: ug
 ---

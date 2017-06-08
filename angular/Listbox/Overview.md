@@ -2,7 +2,7 @@
 layout: post
 title: Overview
 description: overview
-platform: angular-2
+platform: Angular
 control: ListBox
 documentation: ug
 ---

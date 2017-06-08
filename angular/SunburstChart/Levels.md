@@ -2,7 +2,7 @@
 layout: post
 title: Levels
 description: Learn how to customize various levels in SunburstChart
-platform: Angular-2
+platform: Angular
 control: SunburstChart
 documentation: ug
 ---

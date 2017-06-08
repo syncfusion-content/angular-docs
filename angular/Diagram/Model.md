@@ -2,7 +2,7 @@
 layout: post
 title: Represent the data to render the Diagram control
 description: How to represent the data to render the Diagram control?
-platform: Angular-2
+platform: Angular
 control: Diagram
 documentation: ug
 ---

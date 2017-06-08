@@ -3,7 +3,7 @@ layout: post
 title:  Group
 description: group
 documentation: ug
-platform: Angular-2
+platform: Angular
 keywords: group,ribbon group
 ---
 

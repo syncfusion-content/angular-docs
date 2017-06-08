@@ -1,7 +1,7 @@
 ---
 title: Overview
 description: overview
-platform: Angular-2
+platform: Angular
 control: Ribbon
 documentation: UG
 keywords: 

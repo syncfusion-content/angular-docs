@@ -2,7 +2,7 @@
 layout: post
 title: Enabling-Collapsible
 description: enabling collapsible
-platform: Angular-2
+platform: Angular
 control: Splitter
 documentation: ug
 ---

@@ -2,7 +2,7 @@
 layout: post
 title: orientation
 description: orientation
-platform: angular-2
+platform: Angular
 control: rotator
 documentation: ug
 ---

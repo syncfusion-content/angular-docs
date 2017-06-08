@@ -2,7 +2,7 @@
 layout: post
 title: DataBinding with Grid widget for Syncfusion Essential Angular-2
 description: How to bind in-memory JSON and remote web services in Grid
-platform: angular-2
+platform: Angular
 control: Grid
 documentation: ug
 api: /api/angular2/grid

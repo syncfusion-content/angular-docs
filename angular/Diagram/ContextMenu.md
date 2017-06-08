@@ -2,7 +2,7 @@
 layout: post
 title: Add context menu items to ease the execution of frequently used commands
 description: How to execute frequently used commands by using context menu items?
-platform: Angular-2
+platform: Angular
 control: Diagram
 documentation: ug
 ---

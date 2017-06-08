@@ -2,7 +2,7 @@
 layout: post
 title: Behavior Settings
 description: Behavior Settings
-platform: angular-2
+platform: Angular
 control: rotator
 documentation: ug
 ---

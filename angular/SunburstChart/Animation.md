@@ -2,7 +2,7 @@
 layout: post
 title: Animation
 description: Learn how to animate the SunburstChart .
-platform: Angular-2
+platform: Angular
 control: SunburstChart
 documentation: ug
 ---

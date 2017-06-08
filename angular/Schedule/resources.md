@@ -1,7 +1,7 @@
 ---
 title: Schedule - Resource handling with multiple option
 description: Handling multiple resources in Scheduler
-platform: Angular-2
+platform: Angular
 control: schedule
 documentation: ug
 keywords: resource, resources, multiple resources, grouping

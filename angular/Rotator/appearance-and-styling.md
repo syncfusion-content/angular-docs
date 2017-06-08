@@ -2,7 +2,7 @@
 layout: post
 title: appearance and styling
 description: appearance and styling
-platform: angular-2
+platform: Angular
 control: rotator
 documentation: ug
 ---

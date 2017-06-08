@@ -2,7 +2,7 @@
 layout: post
 title: PivotGauge Control Overview 
 description: Overview of PivotGauge control 
-platform: Angular 2
+platform: Angular
 control: PivotGauge
 documentation: ug
 ---

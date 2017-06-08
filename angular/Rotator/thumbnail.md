@@ -2,7 +2,7 @@
 layout: post
 title: preview thumbnail
 description: preview thumbnail
-platform: angular-2
+platform: Angular
 control: rotator
 documentation: ug
 ---

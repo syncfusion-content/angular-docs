@@ -1,7 +1,7 @@
 ---
 title: Selection with Spreadsheet widget for Syncfusion Essential Angular-2
 description: How to perform Selection and configure its properties like selection type, selection mode etc.
-platform: angular-2
+platform: Angular
 control: Spreadsheet
 documentation: ug
 ---

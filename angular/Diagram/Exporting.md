@@ -2,7 +2,7 @@
 layout: post
 title: Export Diagram content as image/svg files
 description: How to export the Diagram as image/svg?
-platform: Angular-2
+platform: Angular
 control: Diagram
 documentation: ug
 ---

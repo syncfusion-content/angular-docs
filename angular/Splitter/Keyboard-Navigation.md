@@ -2,7 +2,7 @@
 layout: post
 title: Keyboard-Navigation
 description: keyboard navigation
-platform: Angular-2
+platform: Angular
 control: Splitter
 documentation: ug
 ---

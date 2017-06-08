@@ -3,7 +3,7 @@ layout: post
 title:  Drag and Drop
 description: Drag and Drop
 documentation: ug
-platform: Angular-2
+platform: Angular
 keywords: drag and drop,kanban drag and drop
 ---
 

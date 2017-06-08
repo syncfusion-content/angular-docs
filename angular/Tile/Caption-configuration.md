@@ -2,7 +2,7 @@
 layout: post
 title: Caption-settings
 description: Caption-settings
-platform: angular-2
+platform: Angular
 control: Tile
 documentation: ug
 ---

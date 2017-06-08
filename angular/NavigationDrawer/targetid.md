@@ -2,7 +2,7 @@
 layout: post
 title: targetid
 description: targetid
-platform: Angular-2
+platform: Angular
 control: Navigation Drawer
 documentation: ug
 ---

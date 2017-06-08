@@ -2,7 +2,7 @@
 layout: post
 title:  Splitter Orientation
 description: Splitter Orientation
-platform: Angular-2
+platform: Angular
 control: Splitter
 documentation: ug
 ---
