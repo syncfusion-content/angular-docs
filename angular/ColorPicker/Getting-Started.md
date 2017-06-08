@@ -1,6 +1,6 @@
 ---
-title: Getting Started for Angular2 ColorPicker
-description: Getting Started for Angular 2 ColorPicker
+title: Getting Started for Angular ColorPicker
+description: Getting Started for Angular ColorPicker
 platform: Angular
 control: ColorPicker
 documentation: Ug
@@ -9,16 +9,16 @@ keywords: ejcolorpicker, angular colorpicker, colorpicker
 
 # Getting Started
 
-This section explains briefly about how to create a **ColorPicker** control in your application with **Angular 2**.
+This section explains briefly about how to create a **ColorPicker** control in your application with **Angular**.
 
-## Create ColorPicker in Angular 2 Application using Webpack
+## Create ColorPicker in Angular Application using Webpack
 
-To quick start with Syncfusion JavaScript Angular 2 components run the below commands to clone the repository for [Webpack starter](https://github.com/syncfusion/angular2-seeds) and installing required dependency packages.
+To quick start with Syncfusion JavaScript Angular components run the below commands to clone the repository for [Webpack starter](https://github.com/syncfusion/Angular-seeds) and installing required dependency packages.
 
 {% highlight javascript %}
- > git clone https://github.com/syncfusion/angular2-seeds
+ > git clone https://github.com/syncfusion/Angular-seeds
 
- > cd angular2-seeds
+ > cd Angular-seeds
 
  > npm install
 {% endhighlight %}
@@ -27,17 +27,17 @@ The below steps describes to add ColorPicker component with above cloned seed ap
 
 ### Syncfusion JavaScript components source configuration and sample creation
 
-* Copy required Syncfusion Angular 2 source component(s) from the below build location and add it in `src/app/ej` folder.
+* Copy required Syncfusion Angular source component(s) from the below build location and add it in `src/app/ej` folder.
 
 {% highlight javascript %}
-(Installed Location)\Syncfusion\Essential Studio\14.3.0.49\JavaScript\assets-src\angular2\ 
+(Installed Location)\Syncfusion\Essential Studio\14.3.0.49\JavaScript\assets-src\Angular\ 
 {% endhighlight %}
 
-N> `core.ts` file is mandatory for all Syncfusion JavaScript Angular 2 components. The repository having the source file from Essential Studio for JavaScript v14.3.0.49.
+N> `core.ts` file is mandatory for all Syncfusion JavaScript Angular components. The repository having the source file from Essential Studio for JavaScript v14.3.0.49.
 
 * Create `colorpicker` folder inside `src/app` folder.
 
-* Create `colorpicker.component.html` view file inside `src/app/colorpicker` folder and render ejColorPicker Angular 2 component using the below code example. 
+* Create `colorpicker.component.html` view file inside `src/app/colorpicker` folder and render ejColorPicker Angular component using the below code example. 
 
 {% highlight html %}
     <input id="colorpicker" ej-colorpicker value="#278787" />
@@ -57,7 +57,7 @@ export class ColorPickerComponent { }
 
 ### Configure the routes for the Router
 
-Before adding router configuration for above created ejColorPicker component, we recommend you to go through the [Angular 2 Routing](https://angular.io/docs/ts/latest/guide/router.html) configuration to get the deeper knowledge about Angular 2 routing. 
+Before adding router configuration for above created ejColorPicker component, we recommend you to go through the [Angular Routing](https://angular.io/docs/ts/latest/guide/router.html) configuration to get the deeper knowledge about Angular routing. 
 
 * Now, we are going to configure the route navigation link for created ColorPicker sample in `src/app/app.component.html` file.
 
@@ -119,14 +119,14 @@ N> if you want to use other port, open `package.json` file, then change port in 
 
 ![](Getting-Started_images/Getting-Started_img1.png)
 
-## Create ColorPicker in Angular2 Application using SystemJS  
+## Create ColorPicker in Angular Application using SystemJS  
 
-To quick start with Syncfusion JavaScript Angular 2 components run the below commands to clone the repository for [SystemJS starter](https://github.com/syncfusion/angular2-seeds/tree/systemjs) and installing required dependency packages.
+To quick start with Syncfusion JavaScript Angular components run the below commands to clone the repository for [SystemJS starter](https://github.com/syncfusion/Angular-seeds/tree/systemjs) and installing required dependency packages.
 
 {% highlight javascript %}
- > git clone https://github.com/syncfusion/angular2-seeds/ -b systemjs
+ > git clone https://github.com/syncfusion/Angular-seeds/ -b systemjs
 
- > cd angular2-seeds
+ > cd Angular-seeds
 
  > npm install
 {% endhighlight %}
@@ -135,17 +135,17 @@ The below steps describes to add colorpicker component with above cloned seed ap
 
 ### Syncfusion JavaScript components source configuration and sample creation
 
-* Copy required Syncfusion Angular 2 source component(s) from the below build location and add it in `src/ej` folder.
+* Copy required Syncfusion Angular source component(s) from the below build location and add it in `src/ej` folder.
 
 {% highlight javascript %}
-(Installed Location)\Syncfusion\Essential Studio\14.3.0.49\JavaScript\assets-src\angular2\ 
+(Installed Location)\Syncfusion\Essential Studio\14.3.0.49\JavaScript\assets-src\Angular\ 
 {% endhighlight %}
 
-N> `core.ts` file is mandatory for all Syncfusion JavaScript Angular 2 components. The repository having the source file from Essential Studio for JavaScript v14.3.0.49.
+N> `core.ts` file is mandatory for all Syncfusion JavaScript Angular components. The repository having the source file from Essential Studio for JavaScript v14.3.0.49.
 
 * Create `colorpicker` folder inside `src` folder.
 
-* Create `colorpicker.component.html` view file inside `src/colorpicker` folder and render ejColorPicker Angular 2 component using the below code example. 
+* Create `colorpicker.component.html` view file inside `src/colorpicker` folder and render ejColorPicker Angular component using the below code example. 
 
 {% highlight html %}
      <input id="colorpicker" ej-colorpicker value="#278787" />
@@ -165,7 +165,7 @@ export class ColorPickerComponent { }
 
 ### Configure the routes for the Router
 
-Before adding router configuration for above created ejColorPicker component, we recommend you to go through the [Angular 2 Routing](https://angular.io/docs/ts/latest/guide/router.html) configuration to get the deeper knowledge about Angular 2 routing. 
+Before adding router configuration for above created ejColorPicker component, we recommend you to go through the [Angular Routing](https://angular.io/docs/ts/latest/guide/router.html) configuration to get the deeper knowledge about Angular routing. 
 
 * Now, we are going to configure the route navigation link for created ColorPicker sample in `src/app.component.html` file.
 

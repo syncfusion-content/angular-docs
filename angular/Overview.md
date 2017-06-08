@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Welcome to Syncfusion Essential Angular 2
-description: Overview of Syncfusion Essential Angular 2
+title: Welcome to Syncfusion Essential Angular
+description: Overview of Syncfusion Essential Angular
 platform: Angular
 control: Introduction
 documentation: ug

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Overview | Radiobutton | Angular2 | Syncfusion
+title: Overview | Radiobutton | Angular | Syncfusion
 description: overview
 platform: Angular
 control: RadioButton

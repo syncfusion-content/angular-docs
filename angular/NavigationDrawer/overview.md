@@ -9,7 +9,7 @@ documentation: ug
 
 # Overview
 
- The Essential JavaScript Navigation Drawer with Angular2 support displays a sliding panel, which displays the list of view options. By default, the list of view options is not visible, but you can display it onto the left/right side of the window screen by clicking with the desired target icon.
+ The Essential JavaScript Navigation Drawer with Angular support displays a sliding panel, which displays the list of view options. By default, the list of view options is not visible, but you can display it onto the left/right side of the window screen by clicking with the desired target icon.
  
 **Key Features**
 

@@ -5,7 +5,7 @@ description: How to use and customize the grid row
 platform: Angular
 control: Grid
 documentation: ug
-api: /api/angular2/grid
+api: /api/Angular/grid
 --- 
 # Row
 

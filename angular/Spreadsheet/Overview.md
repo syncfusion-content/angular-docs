@@ -8,11 +8,11 @@ documentation: ug
 ---
 # Overview
 
-The Spreadsheet control for Angular 2 is a Microsoft Excel-like Spreadsheet component for web. It provides editing experience that is very similar to that of Excel and it is able to import and export Excel workbook files. The Spreadsheet control includes all the important features of Microsoft Excel like editing, sorting, filtering, formulas, data validation, formatting, table, charts, import and export.
+The Spreadsheet control for Angular is a Microsoft Excel-like Spreadsheet component for web. It provides editing experience that is very similar to that of Excel and it is able to import and export Excel workbook files. The Spreadsheet control includes all the important features of Microsoft Excel like editing, sorting, filtering, formulas, data validation, formatting, table, charts, import and export.
 
 **Key** **Features**
 
-The key features of Spreadsheet control for Angular 2 are:
+The key features of Spreadsheet control for Angular are:
 
 * **Editing** - Provides support to edit the cell content.
 * **Sorting** - Helps you to visualize and figure out your data better, organize and find the data quickly that you want.

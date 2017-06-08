@@ -6,28 +6,28 @@ platform: Angular
 control: Grid
 documentation: ug
 keywords: ejGrid, Grid, Grid widget
-api: /api/angular2/grid
+api: /api/Angular/grid
 ---
 
 # Getting started
 
-To get start with how to use the Grid component within Angular-2 platform, please refer the basic requisites and the configurations needs to be done on the system from [here](https://help.syncfusion.com/angular-2/gettingstarted/getting-started-systemjs).By following the above steps in the document, you can get the newly cloned **angular2-seeds** template sample folder.Grid control has been already configured in that **angular2-seeds** folder.So that you can use already exisiting or modifiy grid sample available in **src/grid** folder.
+To get start with how to use the Grid component within Angular-2 platform, please refer the basic requisites and the configurations needs to be done on the system from [here](https://help.syncfusion.com/angular-2/gettingstarted/getting-started-systemjs).By following the above steps in the document, you can get the newly cloned **Angular-seeds** template sample folder.Grid control has been already configured in that **Angular-seeds** folder.So that you can use already exisiting or modifiy grid sample available in **src/grid** folder.
 
 
 ## Copying Grid source file
 
-In that newly cloned **angular2-seeds** folder,we have referred `grid.component.ts` source file from 14.3 version.If you want the upgraded version  of `grid.component.ts` source file, you can get it from the below mentioned location and add it under the **src/ej** folder. 
+In that newly cloned **Angular-seeds** folder,we have referred `grid.component.ts` source file from 14.3 version.If you want the upgraded version  of `grid.component.ts` source file, you can get it from the below mentioned location and add it under the **src/ej** folder. 
 
-* (**Installed location**)\Syncfusion\Essential Studio\{{ site.releaseversion }}\JavaScript\assets-src\angular2\
+* (**Installed location**)\Syncfusion\Essential Studio\{{ site.releaseversion }}\JavaScript\assets-src\Angular\
 
-N> `core.ts` source file is mandatory for all Syncfusion JavaScript Angular 2 components. 
+N> `core.ts` source file is mandatory for all Syncfusion JavaScript Angular components. 
 
 
 ##  External and Internal Dependencies
 
 If you want to know about the external and internal dependencies of the Grid control, please refer here [here](https://help.syncfusion.com/js/grid/getting-started)
 
-I> `ej.angular2.min.js` file is additionally required to render the Grid in Angular-2 platform which is available under the location,
+I> `ej.Angular.min.js` file is additionally required to render the Grid in Angular-2 platform which is available under the location,
 
 (**Installed location**)\Syncfusion\Essential Studio\{{ site.releaseversion }}\JavaScript\assets\scripts\common.
 
@@ -72,7 +72,7 @@ I> `ej.angular2.min.js` file is additionally required to render the Grid in Angu
 ![](Getting-started_images/Getting-started2_img1.jpeg)
 {:.image }
 
-N> 1.In the above code snippet, `ej-grid` denotes the control directive for the Syncfusion's Grid angular 2 widget and all its properties can be initialized with the exact casing of original property names also binded within square bracket(`[]`).(For example, [dataSource]).
+N> 1.In the above code snippet, `ej-grid` denotes the control directive for the Syncfusion's Grid Angular widget and all its properties can be initialized with the exact casing of original property names also binded within square bracket(`[]`).(For example, [dataSource]).
 N> 2.Events can be bound to the control using the event name within bracket [`()`].  For example, the `actionBegin` event of Grid control can be defined as follows.
      
  {% highlight html %}

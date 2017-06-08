@@ -1,7 +1,7 @@
 ---
 layout: post
-title: 3D Chart types available in Essential Angular 2 Chart
-description: Learn about the different types of 3D charts supported by Syncfusion Essential Angular 2 Chart and how to customize the 3D view.
+title: 3D Chart types available in Essential Angular Chart
+description: Learn about the different types of 3D charts supported by Syncfusion Essential Angular Chart and how to customize the 3D view.
 platform: Angular
 control: Chart
 documentation: ug
@@ -9,7 +9,7 @@ documentation: ug
 
 # 3D Chart
 
-Essential 3D Chart for Angular 2 allows you to view 8 chart types in 3D view such as `Bar`, `StackingBar`, `StackingBar100`, `Column`, `Stacked Column`, `100% Stacked Column`], `Pie`, `Doughnut`.
+Essential 3D Chart for Angular allows you to view 8 chart types in 3D view such as `Bar`, `StackingBar`, `StackingBar100`, `Column`, `Stacked Column`, `100% Stacked Column`], `Pie`, `Doughnut`.
 
 
 ## 3D Column Chart

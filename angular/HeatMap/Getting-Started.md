@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Getting started with Syncfusion Essential HeatMap for Angular 2.0
+title: Getting started with Syncfusion Essential HeatMap for Angular.0
 description: Getting started walk through to create your first Heat map.
 platform: Angular
 control: ejHeatMap
@@ -9,7 +9,7 @@ keywords: HeatMap, js heatmap, Populating data
 
 # Getting Started
 
-This section helps to get started of the HeatMap component for Angular 2.0. 
+This section helps to get started of the HeatMap component for Angular.0. 
 
 ## Adding Script Reference
 
@@ -30,7 +30,7 @@ Create an HTML page and add the scripts references in the order mentioned in the
     <script src="https://ajax.aspnetcdn.com/ajax/jquery.validate/1.14.0/jquery.validate.min.js">
     </script>
     <script src="http://cdn.syncfusion.com/14.3.0.49/js/web/ej.web.all.min.js" type="text/javascript"></script>
-    <script src ="http://cdn.syncfusion.com/14.3.0.49/js/common/ej.angular2.min.js"></script>
+    <script src ="http://cdn.syncfusion.com/14.3.0.49/js/common/ej.Angular.min.js"></script>
     <script src="systemjs.config.js"></script>
   </head>
   <body>

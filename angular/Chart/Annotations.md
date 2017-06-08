@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Chart Annotations 
-description: How to add annotations in Essential Angular 2 Chart and the different options available to customize its position. 
+description: How to add annotations in Essential Angular Chart and the different options available to customize its position. 
 platform: Angular
 control: Chart
 documentation: ug

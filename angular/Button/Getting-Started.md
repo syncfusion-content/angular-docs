@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Getting Started | Button | Angular2 | Syncfusion
+title: Getting Started | Button | Angular | Syncfusion
 description: getting started
 platform: Angular
 control: Button
@@ -9,9 +9,9 @@ documentation: ug
 
 # Getting Started
 
-This section explains the details on how to render and configure a **Button** component in an **Angular2** application.
+This section explains the details on how to render and configure a **Button** component in an **Angular** application.
 
-## Create a simple Button in Angular 2
+## Create a simple Button in Angular
 To get started, you need to refer the basic prerequisites and system configuration to be done from the given [Getting started](https://help.syncfusion.com/angular-2/gettingstarted/overview) document.
 
 Create the HTML file app.component.html and add the below given code to render **Button** control.

@@ -9,7 +9,7 @@ documentation: ug
 
 # Overview
 
-Our Essential JavaScript Dialog component provided with Angular2 support helps to display a pop-up window within a web page. The Dialog enables a message to be displayed, such as supplementary content like images and text, and an interactive content like forms.
+Our Essential JavaScript Dialog component provided with Angular support helps to display a pop-up window within a web page. The Dialog enables a message to be displayed, such as supplementary content like images and text, and an interactive content like forms.
 
 ## Key Features
 

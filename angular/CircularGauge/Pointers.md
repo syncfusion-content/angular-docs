@@ -183,7 +183,7 @@ Execute the above code to render the following output.
  
 ## Pointer Images
 
-In Angular 2 circular gauge, it is possible to replace the pointer with images. We can use image instead of rendering the pointer.
+In Angular circular gauge, it is possible to replace the pointer with images. We can use image instead of rendering the pointer.
 
 **Image with URL**
 

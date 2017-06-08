@@ -1,6 +1,6 @@
 ---
-title: Getting Started for Angular2 MaskEdit
-description: Getting Started for Angular 2 MaskEdit
+title: Getting Started for Angular MaskEdit
+description: Getting Started for Angular MaskEdit
 platform: Angular
 control: MaskEdit
 documentation: Ug
@@ -9,16 +9,16 @@ keywords: ejmaskedit, js maskedit, maskedit
 
 # Getting Started
 
-This section explains briefly about how to create a **MaskEdit** control in your application with **Angular2**.
+This section explains briefly about how to create a **MaskEdit** control in your application with **Angular**.
 
-## Create MaskEdit in Angular2 Application using Webpack
+## Create MaskEdit in Angular Application using Webpack
 
-To quick start with Syncfusion JavaScript Angular 2 components run the below commands to clone the repository for [Webpack starter](https://github.com/syncfusion/angular2-seeds) and installing required dependency packages.
+To quick start with Syncfusion JavaScript Angular components run the below commands to clone the repository for [Webpack starter](https://github.com/syncfusion/Angular-seeds) and installing required dependency packages.
 
 {% highlight javascript %}
- > git clone https://github.com/syncfusion/angular2-seeds
+ > git clone https://github.com/syncfusion/Angular-seeds
 
- > cd angular2-seeds
+ > cd Angular-seeds
 
  > npm install
 {% endhighlight %}
@@ -27,17 +27,17 @@ The below steps describes to add maskedit component with above cloned seed appli
 
 ### Syncfusion JavaScript components source configuration and sample creation
 
-* Copy required Syncfusion Angular 2 source component(s) from the below build location and add it in `src/app/ej` folder.
+* Copy required Syncfusion Angular source component(s) from the below build location and add it in `src/app/ej` folder.
 
 {% highlight javascript %}
-(Installed Location)\Syncfusion\Essential Studio\14.3.0.49\JavaScript\assets-src\angular2\ 
+(Installed Location)\Syncfusion\Essential Studio\14.3.0.49\JavaScript\assets-src\Angular\ 
 {% endhighlight %}
 
-N> `core.ts` file is mandatory for all Syncfusion JavaScript Angular 2 components. The repository having the source file from Essential Studio for JavaScript v14.3.0.49.
+N> `core.ts` file is mandatory for all Syncfusion JavaScript Angular components. The repository having the source file from Essential Studio for JavaScript v14.3.0.49.
 
 * Create `maskedit` folder inside `src/app` folder.
 
-* Create `maskedit.component.html` view file inside `src/app/maskedit` folder and render ejMaskEdit Angular 2 component using the below code example. 
+* Create `maskedit.component.html` view file inside `src/app/maskedit` folder and render ejMaskEdit Angular component using the below code example. 
 
 {% highlight html %}
     <input id="maskedit" ej-maskedit value="4242422424" inputMode="ej.InputMode.Text" maskFormat='99 999-99999' width="100%" />
@@ -57,7 +57,7 @@ export class MaskEditComponent { }
 
 ### Configure the routes for the Router
 
-Before adding router configuration for above created ejMaskEdit component, we recommend you to go through the [Angular 2 Routing](https://angular.io/docs/ts/latest/guide/router.html) configuration to get the deeper knowledge about Angular 2 routing. 
+Before adding router configuration for above created ejMaskEdit component, we recommend you to go through the [Angular Routing](https://angular.io/docs/ts/latest/guide/router.html) configuration to get the deeper knowledge about Angular routing. 
 
 * Now, we are going to configure the route navigation link for created MaskEdit sample in `src/app/app.component.html` file.
 
@@ -92,14 +92,14 @@ export const rootRouterConfig: Routes = [
 {% highlight javascript %}
 import { NgModule, enableProdMode, ErrorHandler } from '@angular/core';
 . . . . . 
-import { EJAngular2Module } from 'ej-angular2';
+import { EJAngularModule } from 'ej-Angular';
 import { AppComponent } from './app.component';
 import { MaskEditComponent } from './maskedit/maskedit.component';
 
 import { rootRouterConfig } from './app.routes';
 . . . . 
 @NgModule({
-  imports: [BrowserModule, FormsModule, HttpModule, EJAngular2Module.forRoot(), RouterModule.forRoot(rootRouterConfig, { useHash: true })],
+  imports: [BrowserModule, FormsModule, HttpModule, EJAngularModule.forRoot(), RouterModule.forRoot(rootRouterConfig, { useHash: true })],
   declarations: [. . . . , MaskEditComponent],
   bootstrap: [AppComponent]
 })
@@ -120,14 +120,14 @@ N> if you want to use other port, open `package.json` file, then change port in 
 
 ![](Getting-Started_images/Getting-Started_img1.jpeg)
 
-## Create MaskEdit in Angular2 Application using SystemJS  
+## Create MaskEdit in Angular Application using SystemJS  
 
-To quick start with Syncfusion JavaScript Angular 2 components run the below commands to clone the repository for [SystemJS starter](https://github.com/syncfusion/angular2-seeds/tree/systemjs) and installing required dependency packages.
+To quick start with Syncfusion JavaScript Angular components run the below commands to clone the repository for [SystemJS starter](https://github.com/syncfusion/Angular-seeds/tree/systemjs) and installing required dependency packages.
 
 {% highlight javascript %}
- > git clone https://github.com/syncfusion/angular2-seeds/ -b systemjs
+ > git clone https://github.com/syncfusion/Angular-seeds/ -b systemjs
 
- > cd angular2-seeds
+ > cd Angular-seeds
 
  > npm install
 {% endhighlight %}
@@ -136,17 +136,17 @@ The below steps describes to add maskedit component with above cloned seed appli
 
 ### Syncfusion JavaScript components source configuration and sample creation
 
-* Copy required Syncfusion Angular 2 source component(s) from the below build location and add it in `src/ej` folder.
+* Copy required Syncfusion Angular source component(s) from the below build location and add it in `src/ej` folder.
 
 {% highlight javascript %}
-(Installed Location)\Syncfusion\Essential Studio\14.3.0.49\JavaScript\assets-src\angular2\ 
+(Installed Location)\Syncfusion\Essential Studio\14.3.0.49\JavaScript\assets-src\Angular\ 
 {% endhighlight %}
 
-N> `core.ts` file is mandatory for all Syncfusion JavaScript Angular 2 components. The repository having the source file from Essential Studio for JavaScript v14.3.0.49.
+N> `core.ts` file is mandatory for all Syncfusion JavaScript Angular components. The repository having the source file from Essential Studio for JavaScript v14.3.0.49.
 
 * Create `maskedit` folder inside `src` folder.
 
-* Create `maskedit.component.html` view file inside `src/maskedit` folder and render ejMaskEdit Angular 2 component using the below code example. 
+* Create `maskedit.component.html` view file inside `src/maskedit` folder and render ejMaskEdit Angular component using the below code example. 
 
 {% highlight html %}
      <input id="maskedit" ej-maskedit value="4242422424" inputMode="ej.InputMode.Text" maskFormat='99 999-99999' width="100%" />
@@ -166,7 +166,7 @@ export class MaskEditComponent { }
 
 ### Configure the routes for the Router
 
-Before adding router configuration for above created ejMaskEdit component, we recommend you to go through the [Angular 2 Routing](https://angular.io/docs/ts/latest/guide/router.html) configuration to get the deeper knowledge about Angular 2 routing. 
+Before adding router configuration for above created ejMaskEdit component, we recommend you to go through the [Angular Routing](https://angular.io/docs/ts/latest/guide/router.html) configuration to get the deeper knowledge about Angular routing. 
 
 * Now, we are going to configure the route navigation link for created MaskEdit sample in `src/app.component.html` file.
 
@@ -201,14 +201,14 @@ export const rootRouterConfig: Routes = [
 {% highlight javascript %}
 import { NgModule, enableProdMode, ErrorHandler } from '@angular/core';
 . . . . . 
-import { EJAngular2Module } from 'ej-angular2';
+import { EJAngularModule } from 'ej-Angular';
 import { AppComponent } from './app.component';
 import { MaskEditComponent } from './maskedit/maskedit.component';
 
 import { rootRouterConfig } from './app.routes';
 . . . . 
 @NgModule({
-  imports: [BrowserModule, FormsModule, HttpModule, EJAngular2Module.forRoot(), RouterModule.forRoot(rootRouterConfig, { useHash: true })],
+  imports: [BrowserModule, FormsModule, HttpModule, EJAngularModule.forRoot(), RouterModule.forRoot(rootRouterConfig, { useHash: true })],
   declarations: [. . . . , MaskEditComponent],
   bootstrap: [AppComponent]
 })

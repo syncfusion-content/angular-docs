@@ -8,7 +8,7 @@ documentation: ug
 ---
 # Overview
 
-Our Essential JavaScript Radial Slider component provided with Angular2 support provides an optimized interface for selecting a numeric value using touch interface. This allows the user to select a value or range of values in a circular motion.
+Our Essential JavaScript Radial Slider component provided with Angular support provides an optimized interface for selecting a numeric value using touch interface. This allows the user to select a value or range of values in a circular motion.
 
 ## Key Features
 

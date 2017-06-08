@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Getting started with Webpack
-description: Overview of Syncfusion Essential Angular 2.
+description: Overview of Syncfusion Essential Angular.
 platform: Angular
 control: Introduction
 documentation: ug
@@ -10,17 +10,17 @@ documentation: ug
 
 # Getting started with Webpack
 
-To quick start with Syncfusion JavaScript Angular components run the below commands to clone the repository for [Webpack starter](https://github.com/syncfusion/angular2-seeds) and installing required dependency packages.
+To quick start with Syncfusion JavaScript Angular components run the below commands to clone the repository for [Webpack starter](https://github.com/syncfusion/Angular-seeds) and installing required dependency packages.
 
 {% highlight javascript %}
- > git clone https://github.com/syncfusion/angular2-seeds
+ > git clone https://github.com/syncfusion/Angular-seeds
 
- > cd angular2-seeds
+ > cd Angular-seeds
 
  > npm install
 {% endhighlight %}
  
-N> The cloned application is fully configured to work with Essential Studio for JavaScript Angular components, in which we configured our [ej-angular2](https://github.com/syncfusion/ej-angular2) library and necessary changes to consume our Angular components. 
+N> The cloned application is fully configured to work with Essential Studio for JavaScript Angular components, in which we configured our [ej-Angular](https://github.com/syncfusion/ej-Angular) library and necessary changes to consume our Angular components. 
  
 ## What is in Syncfusion cloned Angular seed.?
 The cloned Angular seed consists of files in the following structure. The files in the `src` folder is used for our application logical functionalities. The other files available outside the src folder is used to build, bundle and deploy the application. 
@@ -112,7 +112,7 @@ import { RouterModule } from '@angular/router';
 import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 
-import { EJAngular2Module } from 'ej-angular2';
+import { EJAngularModule } from 'ej-Angular';
 
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
@@ -133,7 +133,7 @@ class CustomErrorHandler implements ErrorHandler {
 
 @NgModule({
   imports: [
-    BrowserModule, FormsModule, HttpModule, RouterModule.forRoot(rootRouterConfig, { useHash: true }), EJAngular2Module.forRoot()
+    BrowserModule, FormsModule, HttpModule, RouterModule.forRoot(rootRouterConfig, { useHash: true }), EJAngularModule.forRoot()
   ],
   declarations: [
     AppComponent, HomeComponent, GridComponent
@@ -163,7 +163,7 @@ platformBrowserDynamic().bootstrapModule(AppModule);
 
 <head>
 	<base href="/">
-	<title>Essential JavaScript for Angular 2 | Webpack seed</title>
+	<title>Essential JavaScript for Angular | Webpack seed</title>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="shortcut icon" type="image/png" href="deps/images/favicon.ico">
@@ -191,7 +191,7 @@ platformBrowserDynamic().bootstrapModule(AppModule);
   "version": "1.0.0",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/syncfusion/angular2-seeds.git"
+    "url": "git+https://github.com/syncfusion/Angular-seeds.git"
   },
   "description": "A webpack starter for Angular",
   "scripts": {
@@ -204,15 +204,15 @@ platformBrowserDynamic().bootstrapModule(AppModule);
     "ej",
     "essential",
     "javascript",
-    "Angular 2",
-    "angular2"
+    "Angular",
+    "Angular"
   ],
   "author": "Syncfusion Inc",
   "license": "SEE LICENSE IN README.md",
   "bugs": {
-    "url": "https://github.com/syncfusion/angular2-seeds/issues"
+    "url": "https://github.com/syncfusion/Angular-seeds/issues"
   },
-  "homepage": "https://github.com/syncfusion/angular2-seeds#readme",
+  "homepage": "https://github.com/syncfusion/Angular-seeds#readme",
   "dependencies": {
     "@angular/common": "~2.4.0",
     "@angular/compiler": "~2.4.0",
@@ -227,7 +227,7 @@ platformBrowserDynamic().bootstrapModule(AppModule);
     "zone.js": "^0.7.4"
   },
   "devDependencies": {
-    "angular2-template-loader": "^0.4.0",
+    "Angular-template-loader": "^0.4.0",
     "awesome-typescript-loader": "^3.0.0-beta.17",
     "css-loader": "^0.23.1",
     "extract-text-webpack-plugin": "^1.0.1",
@@ -253,7 +253,7 @@ platformBrowserDynamic().bootstrapModule(AppModule);
     "jquery": "^3.1.1",
     "jsrender": "^0.9.75",
     "syncfusion-javascript": "^15.1.33",
-    "ej-angular2": "^15.1.33",
+    "ej-Angular": "^15.1.33",
     "@types/ej.web.all": "^14.4.1",
     "@types/jquery": "2.0.34",
     "@types/es6-shim": "0.31.32",
@@ -308,19 +308,19 @@ import '../node_modules/syncfusion-javascript/Content/ej/web/material/ej.web.all
 
 {% endhighlight %}
 
-## Consuming ej-angular2 library
+## Consuming ej-Angular library
 
-The cloned application already configured with `ej-angular2` library to seamlessly work with Angular and Essential JavaScript components. The below steps describe, how the library consumed in the Angular seed application.
+The cloned application already configured with `ej-Angular` library to seamlessly work with Angular and Essential JavaScript components. The below steps describe, how the library consumed in the Angular seed application.
 
 * To install this library, run the below command in the root of Angular application.
 
 {% highlight javascript %}
 
-npm install ej-angular2 --save
+npm install ej-Angular --save
 
 {% endhighlight %}
 
-*	We can import this library in any Angular application's AppModule. Here we imported the `ej-angular2` library in our cloned application.
+*	We can import this library in any Angular application's AppModule. Here we imported the `ej-Angular` library in our cloned application.
 
 {% highlight ts %}
 
@@ -328,11 +328,11 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { AppComponent } from './app.component';
 // Import the library module
-import { EJAngular2Module } from 'ej-angular2';
+import { EJAngularModule } from 'ej-Angular';
 
 @NgModule({
   declarations: [AppComponent],
-  imports: [BrowserModule,LibraryModule, EJAngular2Module.forRoot()],
+  imports: [BrowserModule,LibraryModule, EJAngularModule.forRoot()],
   providers: [],
   bootstrap: [AppComponent]
 })
@@ -366,7 +366,7 @@ Now we can render any Syncfusion JavaScript Angular components in Angular applic
 
 {% highlight ts %}
 import { Component, ViewEncapsulation, ViewChild } from '@angular/core';
-import { EJComponents } from 'ej-angular2';
+import { EJComponents } from 'ej-Angular';
 
 @Component({
   selector: 'ej-app',
@@ -429,7 +429,7 @@ export const rootRouterConfig: Routes = [
 {% highlight ts %}
 import { NgModule, enableProdMode, ErrorHandler } from '@angular/core';
 . . . . . 
-import { EJAngular2Module } from 'ej-angular2';
+import { EJAngularModule } from 'ej-Angular';
 import { AppComponent } from './app.component';
 . . . . .
 import { DialogComponent } from './dialog/dialog.component';
@@ -437,7 +437,7 @@ import { DialogComponent } from './dialog/dialog.component';
 import { rootRouterConfig } from './app.routes';
 . . . . 
 @NgModule({
-  imports: [BrowserModule, FormsModule, HttpModule, EJAngular2Module.forRoot(), RouterModule.forRoot(rootRouterConfig, { useHash: true })],
+  imports: [BrowserModule, FormsModule, HttpModule, EJAngularModule.forRoot(), RouterModule.forRoot(rootRouterConfig, { useHash: true })],
   declarations: [. . . . , DialogComponent],
   bootstrap: [AppComponent]
 })

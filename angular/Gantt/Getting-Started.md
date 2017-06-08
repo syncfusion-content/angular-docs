@@ -7,16 +7,16 @@ control: Gantt
 documentation: ug
 ---
 
-# Create your first Gantt in Angular 2
+# Create your first Gantt in Angular
 
 ## Getting started with SystemJS
 
-To quick start with Syncfusion JavaScript Angular 2 components run the below commands to clone the repository for [SystemJS starter](https://github.com/syncfusion/angular2-seeds/tree/systemjs) and installing required dependency packages.
+To quick start with Syncfusion JavaScript Angular components run the below commands to clone the repository for [SystemJS starter](https://github.com/syncfusion/Angular-seeds/tree/systemjs) and installing required dependency packages.
 
 {% highlight javascript %}
- > git clone https://github.com/syncfusion/angular2-seeds/ -b systemjs
+ > git clone https://github.com/syncfusion/Angular-seeds/ -b systemjs
 
- > cd angular2-seeds
+ > cd Angular-seeds
 
  > npm install
 {% endhighlight %}
@@ -25,17 +25,17 @@ The below steps describes to add component with above cloned seed application.
 
 ## Syncfusion JavaScript components source configuration and sample creation
 
-* Copy required Syncfusion Angular 2 source component(s) from the below build location and add it in `src/ej` folder (For ex., consider the `gantt` component).
+* Copy required Syncfusion Angular source component(s) from the below build location and add it in `src/ej` folder (For ex., consider the `gantt` component).
 
 {% highlight javascript %}
-(Installed Location)\Syncfusion\Essential Studio\{{ site.releaseversion }}\JavaScript\assets-src\angular2\ 
+(Installed Location)\Syncfusion\Essential Studio\{{ site.releaseversion }}\JavaScript\assets-src\Angular\ 
 {% endhighlight %}
 
-N> `core.ts` file is mandatory for all Syncfusion JavaScript Angular 2 components. The repository having the source file from Essential Studio for JavaScript v{{ site.releaseversion }}.
+N> `core.ts` file is mandatory for all Syncfusion JavaScript Angular components. The repository having the source file from Essential Studio for JavaScript v{{ site.releaseversion }}.
 
 * Create `gantt` folder inside `src` folder.
 
-* Create `gantt.component.html` view file inside `src/gantt` folder and render ejGantt Angular 2 component using the below code example. 
+* Create `gantt.component.html` view file inside `src/gantt` folder and render ejGantt Angular component using the below code example. 
 
 {% highlight html %}
 <ej-gantt id="GanttControl" [dataSource]="ganttData" taskIdMapping="taskID" taskNameMapping="taskName"
@@ -80,7 +80,7 @@ export class DefaultComponent {
 
 ## Configure the routes for the Router
 
-Before adding router configuration for above created ejGantt component, we recommend you to go through the [Angular 2 Routing](https://angular.io/docs/ts/latest/guide/router.html) configuration to get the deeper knowledge about Angular 2 routing. 
+Before adding router configuration for above created ejGantt component, we recommend you to go through the [Angular Routing](https://angular.io/docs/ts/latest/guide/router.html) configuration to get the deeper knowledge about Angular routing. 
 
 * Now, we are going to configure the route navigation link for created Gantt sample in `src/app.component.html` file.
 

@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  Overview of  Angular SPA on ASP.NET Core 
-description: Overview of Syncfusion Essential Angular 2
+description: Overview of Syncfusion Essential Angular
 platform: Angular-2
 control: Introduction
 documentation: ug

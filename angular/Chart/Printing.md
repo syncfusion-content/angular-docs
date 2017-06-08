@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Printing option in Essential Angular 2 Chart
+title: Printing option in Essential Angular Chart
 description: Learn how to print Chart 
-form: angular2
+form: Angular
 control: Chart
 documentation: ug
 ---

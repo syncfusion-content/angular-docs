@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Interactions available in Essential Angular 2 Chart
+title: Interactions available in Essential Angular Chart
 description: What are the interactions available in Chart like tooltip, crosshair, trackball, highlighting, zooming and panning, etc..,
 platform: Angular
 control: Chart

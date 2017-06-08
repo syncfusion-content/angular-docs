@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Getting Started | TimePicker | Angular2 | Syncfusion
+title: Getting Started | TimePicker | Angular | Syncfusion
 description: Getting started
 platform: Angular
 control: TimePicker
@@ -9,22 +9,22 @@ documentation: ug
 
 # Getting Started
 
-This section explains you how to render and configure TimePicker component in an Angular 2 application.
+This section explains you how to render and configure TimePicker component in an Angular application.
 
 To get started with TimePicker component, refer the basic prerequisites and system configuration to be done form the given [getting started](#Getting-Started) document
 
-Once you have cloned the sample angular 2 application as mentioned in getting started document, you will have an angular application named **angular2-seeds** and is now ready use our EJ components with it. 
+Once you have cloned the sample Angular application as mentioned in getting started document, you will have an angular application named **Angular-seeds** and is now ready use our EJ components with it. 
 
 ### Adding TimePicker source file
 
-Copy the required Angular 2 source components file from the installed location and move it to the app/src/ej folder available inside the angular2-seeds folder.
+Copy the required Angular source components file from the installed location and move it to the app/src/ej folder available inside the Angular-seeds folder.
 
-(Installed Location)\Syncfusion\Essential Studio\{installed version}\JavaScript\assets-src\angular2\ 
+(Installed Location)\Syncfusion\Essential Studio\{installed version}\JavaScript\assets-src\Angular\ 
 
-> _Note:_ _core.ts file is mandatory for all Syncfusion JavaScript Angular 2 components. The repository having the source file from Essential Studio for JavaScript v14.3.0.49._
+> _Note:_ _core.ts file is mandatory for all Syncfusion JavaScript Angular components. The repository having the source file from Essential Studio for JavaScript v14.3.0.49._
 
 ### Adding JavaScript and CSS Reference
-Create an HTML page and refer the necessary script and CSS dependency files in your application with the help of given  [Angular 2 Getting Started Documentation.](https://help.syncfusion.com/angular-2/overview)
+Create an HTML page and refer the necessary script and CSS dependency files in your application with the help of given  [Angular Getting Started Documentation.](https://help.syncfusion.com/angular-2/overview)
 
 Example
 
@@ -33,12 +33,12 @@ Example
 <!DOCTYPE html>
 
     <head>
-    <title>Angular 2 TimePicker</title>
+    <title>Angular TimePicker</title>
 
     <!-- Essential Studio for JavaScript  theme reference -->
     <link rel="stylesheet" href="http://cdn.syncfusion.com/14.4.0.15/js/web/flat-azure/ej.web.all.min.css" />
 
-    <!-- Angular2 related script references -->
+    <!-- Angular related script references -->
     <!-- 1. Load libraries -->
          <!-- Polyfill(s) for older browsers -->
     <script src="node_modules/core-js/client/shim.min.js"></script>
@@ -49,7 +49,7 @@ Example
     <!-- Essential Studio for JavaScript  script references -->
     <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
     <script src="http://cdn.syncfusion.com/14.4.0.15/js/web/ej.web.all.min.js"> </script>
-    <script src="http://cdn.syncfusion.com/14.4.0.15/js/common/ej.angular2.min.js"></script>
+    <script src="http://cdn.syncfusion.com/14.4.0.15/js/common/ej.Angular.min.js"></script>
 
     <!-- 2. Configure SystemJS -->
     <script src="systemjs.config.js"></script>
@@ -63,7 +63,7 @@ Example
     <body>
     <ej-app>
 		    <div class="splash">
-			      <div class="message">Angular 2 Syncfusion Components App</div>
+			      <div class="message">Angular Syncfusion Components App</div>
 			      <div class="spinner"></div>
 		    </div>
 	  </ej-app>

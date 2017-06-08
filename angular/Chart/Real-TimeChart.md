@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Using Essential Angular 2 Chart in real-time scenario 
+title: Using Essential Angular Chart in real-time scenario 
 description: Learn how to update the chart dynamically with real-time data. 
 platform: Angular
 control: Chart

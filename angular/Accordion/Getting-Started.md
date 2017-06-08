@@ -1,6 +1,6 @@
 ---
-title: Getting Started for Angular 2 Accordion
-description: Getting Started for Angular 2 Accordion
+title: Getting Started for Angular Accordion
+description: Getting Started for Angular Accordion
 platform: Angular
 control: Accordion
 documentation: Ug
@@ -8,7 +8,7 @@ keywords: ejaccordion, js accordion, accordion
 ---
 # Getting started
 
-This section explains briefly about how to create an **Accordion** in your application with **Angular 2**.
+This section explains briefly about how to create an **Accordion** in your application with **Angular**.
 
 ## Configure Accordion
 
@@ -20,7 +20,7 @@ The following screenshot illustrates you the usage of **Accordion** control in l
 
 The usage of **Accordion** control is described in the following sections.
 
-## Create a Simple Accordion in Angular 2
+## Create a Simple Accordion in Angular
 
 Create an HTML page and add the scripts references in the order mentioned in the following code example.
 
@@ -36,7 +36,7 @@ Create an HTML page and add the scripts references in the order mentioned in the
      <script src="node_modules/systemjs/dist/system.src.js"></script>
      <script src="https://code.jquery.com/jquery-3.0.0.min.js"></script>
      <script src="http://cdn.syncfusion.com/14.3.0.49/js/web/ej.web.all.min.js" type="text/javascript"></script>
-     <script src ="http://cdn.syncfusion.com/14.3.0.49/js/common/ej.angular2.min.js"></script>
+     <script src ="http://cdn.syncfusion.com/14.3.0.49/js/common/ej.Angular.min.js"></script>
      <script src="systemjs.config.js"></script>
      </head>
      <body>

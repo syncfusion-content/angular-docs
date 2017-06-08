@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Overview of Essential Angular 2 Chart
+title: Overview of Essential Angular Chart
 description: What are the key features available in chart.                                                   
 platform: Angular
 control: Chart
@@ -9,7 +9,7 @@ documentation: ug
 
 # Overview
 
-Essential Chart for Angular 2 is a visually stunning Charting component. It includes common Chart types ranging from line Charts to specialized financial Charts.
+Essential Chart for Angular is a visually stunning Charting component. It includes common Chart types ranging from line Charts to specialized financial Charts.
 
 Some of the key features are,
 

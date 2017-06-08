@@ -9,7 +9,7 @@ documentation: ug
 
 # Getting Started
 
-This section helps to get started of the Splitter component in an Angular2 application.
+This section helps to get started of the Splitter component in an Angular application.
 
 ![](Getting_Started_images/Getting_Started_img1.png) 
 

@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  Angular SPA on ASP.NET Core with .NET CLI
-description: Overview of Syncfusion Essential Angular 2
+description: Overview of Syncfusion Essential Angular
 platform: Angular
 control: Introduction
 documentation: ug
@@ -12,7 +12,7 @@ documentation: ug
 
 ASP.NET Single Page Application(SPA) helps you to build applications that include significant client-side interactions using HTML 5, CSS 3 and Javascript.
 
-To getting started with Syncfusion Angular Components, the NPM packges [ej-angular2](https://www.npmjs.com/package/ej-angular2) and [syncfusion-javascript](https://www.npmjs.com/package/syncfusion-javascript) helps to seamlessly supports ASP.NET Core environment for our components. The following steps depicts, to create an application in ASP.NET Core using SPA template with Syncfusion Angular Components.
+To getting started with Syncfusion Angular Components, the NPM packges [ej-Angular](https://www.npmjs.com/package/ej-Angular) and [syncfusion-javascript](https://www.npmjs.com/package/syncfusion-javascript) helps to seamlessly supports ASP.NET Core environment for our components. The following steps depicts, to create an application in ASP.NET Core using SPA template with Syncfusion Angular Components.
 
 ## Synopsis
 
@@ -79,7 +79,7 @@ N> To know more about environment varaible refer the [link](https://blogs.msdn.m
 {% highlight javascript %}
 
 npm install syncfusion-javascript --save
-npm install ej-angular2 --save
+npm install ej-Angular --save
 npm install --save-dev @types/jquery
 npm install --save-dev @types/ej.web.all
 
@@ -109,14 +109,14 @@ npm install --save-dev @types/ej.web.all
 
 {% endhighlight %}
 
-* Import `ej-angular2` module into app.module.ts file
+* Import `ej-Angular` module into app.module.ts file
 
 {% highlight ts %}
 
 import { NgModule } from '@angular/core';
 . . .
 . . .
-import { EJAngular2Module } from 'ej-angular2';
+import { EJAngularModule } from 'ej-Angular';
 
 @NgModule({
 bootstrap: [ AppComponent ],
@@ -130,7 +130,7 @@ RouterModule.forRoot([
 { path: 'fetch-data', component: FetchDataComponent },
 { path: '**', redirectTo: 'home' }
 ]),
-EJAngular2Module.forRoot()
+EJAngularModule.forRoot()
 ]
 })
 export class AppModule {
@@ -142,9 +142,9 @@ export class AppModule {
 
 {% highlight ts %}
 
-import 'angular2-universal-polyfills/browser';
+import 'Angular-universal-polyfills/browser';
 import { enableProdMode } from '@angular/core';
-import { platformUniversalDynamic } from 'angular2-universal';
+import { platformUniversalDynamic } from 'Angular-universal';
 import * as $ from 'jquery'; // Import jQuery in Window Object 
 window['jQuery'] = $;
 window['$'] = $
@@ -212,7 +212,7 @@ ViewData["Title"] = "Home Page";
 {% highlight ts %}
 
 import { Component, ViewChild, ElementRef } from '@angular/core';
-import { EJComponents } from 'ej-angular2';
+import { EJComponents } from 'ej-Angular';
 
 @Component({
     selector: 'home',

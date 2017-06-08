@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Overview of Syncfusion Angular 2 seed application
-description: Overview of Syncfusion Essential Angular 2.
+title: Overview of Syncfusion Angular seed application
+description: Overview of Syncfusion Essential Angular.
 platform: Angular
 control: Introduction
 documentation: ug
@@ -10,7 +10,7 @@ documentation: ug
 
 # Overview
 
-We have implemented seed application in GitHub repository [Syncfusion Angular seed](https://github.com/syncfusion/angular2-seeds) to avoid configuration issues while developing Angular application using Syncfusion JavaScript components for the below module loaders.
+We have implemented seed application in GitHub repository [Syncfusion Angular seed](https://github.com/syncfusion/Angular-seeds) to avoid configuration issues while developing Angular application using Syncfusion JavaScript components for the below module loaders.
 
 * [SystemJS](https://github.com/systemjs/systemjs)
 * [Webpack](https://github.com/webpack/webpack)

@@ -4,7 +4,7 @@ description: How to create a treemap, add levels, enable tooltip, colormapping a
 platform: Angular
 control: treemap
 documentation: ug
-keywords: ejtreemap, treemap, treemap widget, angular 2 treemap
+keywords: ejtreemap, treemap, treemap widget, Angular treemap
 ---
 #Getting Started
 
@@ -16,7 +16,7 @@ To render the TreeMap control, the following list of external dependencies are n
 
 * [jQuery](http://jquery.com) - 1.7.1 and later versions
 * [jsRender](https://github.com/borismoore/jsrender) - to render the templates
-* [Angular 2](https://angular.io/) - angular 2 latest versions
+* [Angular](https://angular.io/) - Angular latest versions
 
 The other required internal dependencies are tabulated below,
 
@@ -67,12 +67,12 @@ Create an HTML page and add the scripts references in the order mentioned in the
 
     <html>
     <head>
-    <title>Angular 2 TreeMap</title>
+    <title>Angular TreeMap</title>
 
     <!-- Essential Studio for JavaScript  theme reference -->
     <link rel="stylesheet" href="http://cdn.syncfusion.com/{{ site.releaseversion }}/js/web/flat-azure/ej.web.all.min.css" />
 
-    <!-- Angular2 related script references -->
+    <!-- Angular related script references -->
     <!-- 1. Load libraries -->
          <!-- Polyfill(s) for older browsers -->
     <script src="node_modules/core-js/client/shim.min.js"></script>   
@@ -83,7 +83,7 @@ Create an HTML page and add the scripts references in the order mentioned in the
     <!-- Essential Studio for JavaScript  script references -->
     <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
     <script src="http://cdn.syncfusion.com/{{ site.releaseversion }}/js/web/ej.web.all.min.js"> </script> 
-    <script src="http://cdn.syncfusion.com/{{ site.releaseversion }}/js/common/ej.angular2.min.js"></script>
+    <script src="http://cdn.syncfusion.com/{{ site.releaseversion }}/js/common/ej.Angular.min.js"></script>
     
     <!-- 2. Configure SystemJS -->
     <script src="systemjs.config.js"></script>
@@ -97,7 +97,7 @@ Create an HTML page and add the scripts references in the order mentioned in the
     <body>
     <ej-app>  
 		    <div class="splash">
-			      <div class="message">Angular 2 Syncfusion Components App</div>
+			      <div class="message">Angular Syncfusion Components App</div>
 			      <div class="spinner"></div>
 		    </div>
 	  </ej-app>
@@ -110,17 +110,17 @@ N> Uncompressed version of library files are also available which is used for de
 
 ## Control Initialization
 
-* Copy TreeMap Syncfusion Angular 2 source component(s) from the below build location and add it in `src/ej` folder (For ex., consider the `treemap` component).
+* Copy TreeMap Syncfusion Angular source component(s) from the below build location and add it in `src/ej` folder (For ex., consider the `treemap` component).
 
 {% highlight javascript %}
-(Installed Location)\Syncfusion\Essential Studio\14.3.0.49\JavaScript\assets-src\angular2\ 
+(Installed Location)\Syncfusion\Essential Studio\14.3.0.49\JavaScript\assets-src\Angular\ 
 {% endhighlight %}
 
-N> `core.ts` file is mandatory for all Syncfusion JavaScript Angular 2 components. The repository having the source file from Essential Studio for JavaScript v14.3.0.49.
+N> `core.ts` file is mandatory for all Syncfusion JavaScript Angular components. The repository having the source file from Essential Studio for JavaScript v14.3.0.49.
 
 * Create `treemap` folder inside `src` folder.
 
-* Create `treemap.component.html` view file inside `src/treemap` folder and render ejTreeMap Angular 2 component using the below code example. 
+* Create `treemap.component.html` view file inside `src/treemap` folder and render ejTreeMap Angular component using the below code example. 
 
 {% highlight html %}
 <ej-treemap id="defaulttreemap">
@@ -144,7 +144,7 @@ export class TreeMapComponent {
 
 ## Configure the routes for the Router
 
-Before adding router configuration for above created ejTreeMap component, we recommend you to go through the [Angular 2 Routing](https://angular.io/docs/ts/latest/guide/router.html) configuration to get the deeper knowledge about Angular 2 routing. 
+Before adding router configuration for above created ejTreeMap component, we recommend you to go through the [Angular Routing](https://angular.io/docs/ts/latest/guide/router.html) configuration to get the deeper knowledge about Angular routing. 
 
 * Now, we are going to configure the route navigation link for created treemap sample in `src/app.component.html` file.
 

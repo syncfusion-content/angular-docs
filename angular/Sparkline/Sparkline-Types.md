@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Sparkline types
-description: What are the different types of Sparkline available in Essential Angular 2 Chart.
+description: What are the different types of Sparkline available in Essential Angular Chart.
 platform: Angular
 control: Sparkline
 documentation: ug

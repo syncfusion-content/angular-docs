@@ -9,7 +9,7 @@ documentation: ug
 
 ### Appearance and Styling
 
-**Angular 2 RangeNavigator** is enriched with lots of customization options for labels, gridlines and slider to develop high quality graphic rich control.
+**Angular RangeNavigator** is enriched with lots of customization options for labels, gridlines and slider to develop high quality graphic rich control.
 
 #### Customize labels
 
@@ -158,7 +158,7 @@ this.labelSettings = {
 
 #### Themes
 
-**RangeNavigator** theme is a set of pre-defined options that are applied to the control before each **RangeNavigator** is instantiated. Following predefined themes are available in Angular 2 **RangeNavigator**.
+**RangeNavigator** theme is a set of pre-defined options that are applied to the control before each **RangeNavigator** is instantiated. Following predefined themes are available in Angular **RangeNavigator**.
 
 1. flatlight
 2. flatdark

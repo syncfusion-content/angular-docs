@@ -1,7 +1,7 @@
 ---
 layout: post
 title: UserInteraction
-description: How to enable and cutomize the scrollbar, selection and highlighting in Essential Angular 2 RangeNavigator.
+description: How to enable and cutomize the scrollbar, selection and highlighting in Essential Angular RangeNavigator.
 platform: Angular
 control: RangeNavigator
 documentation: ug
