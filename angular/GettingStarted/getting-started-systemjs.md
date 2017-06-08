@@ -91,10 +91,10 @@ export class AppComponent { }
 import { NgModule }      from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { AppComponent }  from './app.component';
-import { EJAngularModule } from 'ej-angular2';
+import { EJAngular2Module } from 'ej-angular2';
 
 @NgModule({  
-  imports:      [ BrowserModule, EJAngularModule.forRoot() ],
+  imports:      [ BrowserModule, EJAngular2Module.forRoot() ],
   declarations: [ AppComponent ],
   bootstrap:    [ AppComponent ]
 })
@@ -326,7 +326,7 @@ import { EJAngular2Module } from 'ej-angular2';
 
 @NgModule({
   declarations: [AppComponent],
-  imports: [BrowserModule,LibraryModule, EJAngularModule.forRoot()],
+  imports: [BrowserModule,LibraryModule, EJAngular2Module.forRoot()],
   providers: [],
   bootstrap: [AppComponent]
 })
@@ -433,7 +433,7 @@ export const rootRouterConfig: Routes = [
 
 import { NgModule, enableProdMode, ErrorHandler } from '@angular/core';
 . . . . . 
-import { EJAngularModule } from 'ej-angular2';
+import { EJAngular2Module } from 'ej-angular2';
 import { AppComponent } from './app.component';
 . . . . .
 import { DialogComponent } from './dialog/dialog.component';
@@ -441,7 +441,7 @@ import { DialogComponent } from './dialog/dialog.component';
 import { rootRouterConfig } from './app.routes';
 . . . . 
 @NgModule({
-  imports: [BrowserModule, FormsModule, HttpModule, EJAngularModule.forRoot(), RouterModule.forRoot(rootRouterConfig, { useHash: true })],
+  imports: [BrowserModule, FormsModule, HttpModule, EJAngular2Module.forRoot(), RouterModule.forRoot(rootRouterConfig, { useHash: true })],
   declarations: [. . . . , DialogComponent],
   bootstrap: [AppComponent]
 })
