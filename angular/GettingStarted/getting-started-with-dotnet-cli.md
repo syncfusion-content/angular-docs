@@ -211,7 +211,7 @@ ViewData["Title"] = "Home Page";
 
 {% highlight ts %}
 
-import { Component, ViewChild, ElementRef } from '@angular/core';
+import { Component, ViewChild } from '@angular/core';
 import { EJComponents } from 'ej-angular2';
 
 @Component({
