@@ -2,7 +2,7 @@
 layout: post
 title: grouped list
 description: grouped list
-platform: Angular-2
+platform: Angular
 control: ListView
 documentation: ug
 ---

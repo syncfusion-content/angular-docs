@@ -2,7 +2,7 @@
 layout: post
 title: signature customization
 description: signature customization
-platform: Angular-2
+platform: Angular
 control: Signature
 documentation: ug
 ---

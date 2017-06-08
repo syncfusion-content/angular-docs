@@ -3,7 +3,7 @@ layout: post
 title:  context menu 
 description: context menu 
 documentation: ug
-platform: Angular-2
+platform: Angular
 keywords: context menu ,kanban context menu 
 ---
 

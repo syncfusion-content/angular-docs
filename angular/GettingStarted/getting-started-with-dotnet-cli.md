@@ -2,7 +2,7 @@
 layout: post
 title:  Angular SPA on ASP.NET Core with .NET CLI
 description: Overview of Syncfusion Essential Angular 2
-platform: Angular-2
+platform: Angular
 control: Introduction
 documentation: ug
 ---

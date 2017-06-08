@@ -2,7 +2,7 @@
 layout: post
 title: getting started
 description: getting started
-platform: Angular-2
+platform: Angular
 control: Signature
 documentation: ug
 ---

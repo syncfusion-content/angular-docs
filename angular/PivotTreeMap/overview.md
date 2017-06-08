@@ -2,7 +2,7 @@
 layout: post
 title: PivotTreeMap Control Overview 
 description: Overview of PivotTreeMap control 
-platform: Angular 2
+platform: Angular
 control: PivotTreeMap
 documentation: ug
 ---

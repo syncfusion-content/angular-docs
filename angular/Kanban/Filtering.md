@@ -3,7 +3,7 @@ layout: post
 title:  Filtering
 description: Filtering
 documentation: ug
-platform: Angular-2
+platform: Angular
 keywords: filtering,kanban filtering
 ---
 

@@ -2,7 +2,7 @@
 layout: post
 title: overview
 description: overview
-platform: Angular-2
+platform: Angular
 control: Signature
 documentation: ug
 ---

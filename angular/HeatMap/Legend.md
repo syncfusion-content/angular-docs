@@ -2,7 +2,7 @@
 layout: post
 title: Legend gives visual guideline for mapping between value and color.
 description: How to create and configure legend for HeatMap
-platform: Angular-2
+platform: Angular
 control: HeatMapLegend
 documentation: ug
 ---

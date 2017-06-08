@@ -2,7 +2,7 @@
 layout: post
 title: Data presentation with Spreadsheet widget for Syncfusion Essential JS.
 description: How to perform Spreadsheet Data presentation.
-platform: Angular-2
+platform: Angular
 control: Spreadsheet
 documentation: ug
 --- 

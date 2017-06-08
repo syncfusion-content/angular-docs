@@ -2,7 +2,7 @@
 layout: post
 title: Filtering with Grid widget for Syncfusion Essential Angular-2
 description: How to enable filtering and its functionalities
-platform: angular-2
+platform: Angular
 control: Grid
 documentation: ug
 api: /api/angular2/grid

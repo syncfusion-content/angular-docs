@@ -2,7 +2,7 @@
 layout: post
 title: Create custom connection points to draw connections with any specific point of node
 description: How to draw connections with specific points of node?
-platform: Angular-2
+platform: Angular
 control: Diagram
 documentation: ug
 ---

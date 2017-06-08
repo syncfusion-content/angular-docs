@@ -2,7 +2,7 @@
 layout: post
 title: Freeze Pane with Spreadsheet widget for Syncfusion Essential Angular-2
 description: How to use the Spreadsheet Freeze Pane
-platform: angular-2
+platform: Angular
 control: Spreadsheet
 documentation: ug
 keywords: Freeze, unfreeze, freezePanes, freezeleftcolumn, freezetoprow

@@ -2,7 +2,7 @@
 layout: post
 title: customize-position
 description: customize position
-platform: Angular-2
+platform: Angular
 control: Navigation Drawer
 documentation: ug
 ---

@@ -2,7 +2,7 @@
 layout: post
 title: PivotGrid Control Overview 
 description: Overview of PivotGrid control 
-platform: Angular 2
+platform: Angular
 control: PivotGrid
 documentation: ug
 ---

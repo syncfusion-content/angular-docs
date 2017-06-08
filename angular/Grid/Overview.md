@@ -1,7 +1,7 @@
 ---
 title:  Grid widget for Syncfusion Essential Angular-2
 description: Overview of Grid control
-platform: Angular-2
+platform: Angular
 control: Grid
 documentation: ug
 keywords: ejGrid, Grid, Grid widget

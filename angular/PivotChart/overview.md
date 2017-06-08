@@ -2,7 +2,7 @@
 layout: post
 title: PivotChart Control Overview 
 description: Overview of PivotChart control 
-platform: Angular 2
+platform: Angular
 control: PivotChart
 documentation: ug
 ---

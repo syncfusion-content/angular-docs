@@ -3,7 +3,7 @@ layout: post
 title:  Resize
 description: resize
 documentation: ug
-platform: Angular-2
+platform: Angular
 keywords: resize,ribbon resize,responsive
 ---
 

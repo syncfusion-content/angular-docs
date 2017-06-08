@@ -2,7 +2,7 @@
 layout: post
 title: data binding
 description: data binding
-platform: Angular-2
+platform: Angular
 control: ListView
 documentation: ug
 ---

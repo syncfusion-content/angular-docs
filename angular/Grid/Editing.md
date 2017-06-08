@@ -2,7 +2,7 @@
 layout: post
 title: Editing with Grid widget for Syncfusion Essential Angular-2
 description: How to perform editing and configure edit time functionalities like edit type, edit time controls etc
-platform: angular-2
+platform: Angular
 control: Grid
 documentation: ug
 api: /api/angular2/grid

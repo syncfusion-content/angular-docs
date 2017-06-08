@@ -2,7 +2,7 @@
 layout: post
 title: Overview of Sunburst Chart
 description: What are the key features available in SunburstChart.
-platform: Angular-2
+platform: Angular
 control: SunburstChart
 documentation: ug
 ---

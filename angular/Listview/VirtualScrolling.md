@@ -2,7 +2,7 @@
 layout: post
 title: Virtual Scrolling
 description: virtual scrolling
-platform: Angular-2
+platform: Angular
 control: ListView
 documentation: ug
 ---

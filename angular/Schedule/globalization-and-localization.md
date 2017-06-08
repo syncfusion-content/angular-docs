@@ -1,7 +1,7 @@
 ---
 title: Globalization and Localization
 description: Globalizing and localizing Scheduler
-platform: angular-2
+platform: Angular
 control: schedule
 documentation: ug
 keywords: globalize, localize, localization, globalization 

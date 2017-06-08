@@ -2,7 +2,7 @@
 layout: post
 title: Overview | Rating | JavaScript | Syncfusion
 description: overview
-platform: angular-2
+platform: Angular
 control: Rating
 documentation: ug
 keywords: rating features, key features, rating overview

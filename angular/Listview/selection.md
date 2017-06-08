@@ -2,7 +2,7 @@
 layout: post
 title: selection
 description: selection
-platform: Angular-2
+platform: Angular
 control: ListView
 documentation: ug
 ---

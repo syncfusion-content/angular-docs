@@ -2,7 +2,7 @@
 layout: post
 title: Getting started for Angular 2 Tooltip
 description: How to create the Tooltip in Angular 2
-platform: Angular 2
+platform: Angular
 control: Tooltip
 documentation: ug
 keywords : ejTooltip, Tooltip, js Tooltip, Tooltip widget

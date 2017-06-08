@@ -1,7 +1,7 @@
 ---
 title: Schedule - Customization	
 description: Customization of working hours, date, and appointment window
-platform: Angular-2
+platform: Angular
 control: schedule
 documentation: ug
 keywords: customization, work hours, appointment window, display hours, Query cell info

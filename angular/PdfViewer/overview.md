@@ -1,7 +1,7 @@
 ---
 title: PDF viewer Control Overview	
 description: Overview of PDF viewer control
-platform: Angular-2
+platform: Angular
 control: pdfviewer
 documentation: ug
 keywords: PDF viewer features, key features, PDF viewer overview 

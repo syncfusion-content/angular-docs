@@ -3,7 +3,7 @@ layout: post
 title:  Editing
 description: Editing
 documentation: ug
-platform: Angular-2
+platform: Angular
 keywords: editing,kanban editing
 ---
 

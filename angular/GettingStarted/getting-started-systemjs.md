@@ -2,7 +2,7 @@
 layout: post
 title: Getting started with SystemJS
 description: Overview of Syncfusion Essential Angular 2.
-platform: Angular-2
+platform: Angular
 control: Introduction
 documentation: ug
 ---

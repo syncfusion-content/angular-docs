@@ -2,7 +2,7 @@
 layout: post
 title: Sunburst elements 
 description: Learn how to customize the sunburst segments 
-platform: Angular-2 
+platform: Angular 
 control: SunburstChart
 documentation: ug
 ---
