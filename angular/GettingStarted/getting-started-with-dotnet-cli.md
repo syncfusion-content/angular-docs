@@ -12,13 +12,13 @@ documentation: ug
 
 ASP.NET Single Page Application(SPA) helps you to build applications that include significant client-side interactions using HTML 5, CSS 3 and Javascript.
 
-To getting started with Syncfusion Angular Components, the NPM packges [ej-Angular](https://www.npmjs.com/package/ej-Angular) and [syncfusion-javascript](https://www.npmjs.com/package/syncfusion-javascript) helps to seamlessly supports ASP.NET Core environment for our components. The following steps depicts, to create an application in ASP.NET Core using SPA template with Syncfusion Angular Components.
+To getting started with Syncfusion Angular Components, the NPM packages [ej-Angular](https://www.npmjs.com/package/ej-Angular) and [syncfusion-javascript](https://www.npmjs.com/package/syncfusion-javascript) helps to seamlessly supports ASP.NET Core environment for our components. The following steps depicts, to create an application in ASP.NET Core using SPA template with Syncfusion Angular Components.
 
 ## Synopsis
 
 * [Prerequisites](#prerequisites)
 * [Install the SPA Template](#install-the-spa-template)
-* [Instal the Dependencies](#install-the-dependencies)
+* [Install the Dependencies](#install-the-dependencies)
 * [Configuration of Syncfusion Angular Component](#configuration-of-syncfusion-angular-component)
 * [Run the Application](#run-the-application)
 
@@ -85,7 +85,7 @@ npm install --save-dev @types/ej.web.all
 
 {% endhighlight %}
 
-* Refer the below code snippet for Npm Configuration file.
+* Refer the below code snippet for NPM Configuration file.
 
 {% highlight javascript %}
 
@@ -221,8 +221,7 @@ import { EJComponents } from 'ej-Angular';
 export class HomeComponent {
   resize: boolean;
   btndisplay: boolean;
-  @ViewChild('dialogelement') dialogelement: EJComponents<any, any>;
-  @ViewChild('btnelement') btnelement: EJComponents<any, any>;
+  @ViewChild('dialog') dialog: EJComponents<any, any>;
   constructor() {
     this.resize = false;
     this.btndisplay = false;
@@ -230,7 +229,7 @@ export class HomeComponent {
   //Button click event handler to open the ejDialog
   onClick(event) {
     this.btndisplay = false;
-    this.dialogelement.widget.element.ejDialog('open');
+    this.dialog.widget.element.ejDialog('open');
   }
   //Dialog close event handler
   onClose(event) {
