@@ -10,7 +10,7 @@ documentation: ug
 
 # Getting started with Webpack
 
-To quick start with Syncfusion JavaScript Angular 2 components run the below commands to clone the repository for [Webpack starter](https://github.com/syncfusion/angular2-seeds) and installing required dependency packages.
+To quick start with Syncfusion JavaScript Angular components run the below commands to clone the repository for [Webpack starter](https://github.com/syncfusion/angular2-seeds) and installing required dependency packages.
 
 {% highlight javascript %}
  > git clone https://github.com/syncfusion/angular2-seeds
@@ -20,10 +20,10 @@ To quick start with Syncfusion JavaScript Angular 2 components run the below com
  > npm install
 {% endhighlight %}
  
-N> The cloned application is fully configured to work with Essential Studio for JavaScript Angular 2 components, in which we configured our [ej-angular2](https://github.com/syncfusion/ej-angular2) library and necessary changes to consume our Angular 2 components. 
+N> The cloned application is fully configured to work with Essential Studio for JavaScript Angular components, in which we configured our [ej-angular2](https://github.com/syncfusion/ej-angular2) library and necessary changes to consume our Angular components. 
  
-## What is in Syncfusion cloned angular2-seed.?
-The cloned angular2-seed consists of files in the following structure. The files in the `src` folder is used for our application logical functionalities. The other files available outside the src folder is used to build, bundle and deploy the application. 
+## What is in Syncfusion cloned Angular seed.?
+The cloned Angular seed consists of files in the following structure. The files in the `src` folder is used for our application logical functionalities. The other files available outside the src folder is used to build, bundle and deploy the application. 
 
 * config
     * helpers.js
@@ -174,7 +174,7 @@ platformBrowserDynamic().bootstrapModule(AppModule);
 <body>
 	<ej-app>
 		<div class="splash">
-			<div class="message">Angular 2 Syncfusion Components App</div>
+			<div class="message">Angular Syncfusion Components App</div>
 			<div class="spinner"></div>
 		</div>
 	</ej-app>
@@ -310,7 +310,7 @@ import '../node_modules/syncfusion-javascript/Content/ej/web/material/ej.web.all
 
 ## Consuming ej-angular2 library
 
-The cloned application already configured with `ej-angular2` library to seamlessly work with Angular and Essential JavaScript components. The below steps describe, how the library consumed in the angular2-seed application.
+The cloned application already configured with `ej-angular2` library to seamlessly work with Angular and Essential JavaScript components. The below steps describe, how the library consumed in the Angular seed application.
 
 * To install this library, run the below command in the root of Angular application.
 
@@ -341,13 +341,13 @@ export class AppModule { }
 
 {% endhighlight %}
 
-Now we can render any Syncfusion JavaScript Angular 2 components in Angular application which we discussed in the next section.
+Now we can render any Syncfusion JavaScript Angular components in Angular application which we discussed in the next section.
 
 ## Adding sample with seed application
 
 * Create `dialog` folder inside `src/app` folder.
 
-* Create `dialog.component.html` view file inside `src/app/dialog` folder and render ejDialog Angular 2 component using the below code example. 
+* Create `dialog.component.html` view file inside `src/app/dialog` folder and render ejDialog Angular component using the below code example. 
 
 {% highlight html %}
 <div id="parent" >
@@ -394,7 +394,7 @@ export class DialogComponent {
 
 ## Configure the routes for the Router
 
-Before adding router configuration for above created ejDialog component, we recommend you to go through the [Angular 2 Routing](https://angular.io/docs/ts/latest/guide/router.html) configuration to get the deeper knowledge about Angular 2 routing. 
+Before adding router configuration for above created ejDialog component, we recommend you to go through the [Angular Routing](https://angular.io/docs/ts/latest/guide/router.html) configuration to get the deeper knowledge about Angular routing. 
 
 * Now, we are going to configure the route navigation link for created Dialog sample in `src/app/app.component.html` file.
 
@@ -456,10 +456,9 @@ npm start
 
 N> if you want to use other port, open `package.json` file, then change port in `--port 3000` script and also change the port in `config/webpack.dev.js`.
 
-![](/angular-2/GettingStarted/Images/getting-started-output.png) 
+![](/angular/GettingStarted/Images/getting-started-output.png) 
  
 ## Demos
 
-We have implemented our [Angular 2 sample browser](http://ng2jq.syncfusion.com/) using Angular 2 Syncfusion Angular 2 components.
-
+We have implemented our [Angular sample browser](http://ng2jq.syncfusion.com/) using Syncfusion Angular components.
 
