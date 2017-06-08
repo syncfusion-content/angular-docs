@@ -2,7 +2,7 @@
 layout: post
 title: Overview | Tab | JavaScript | Syncfusion
 description: overview
-platform: angular-2
+platform: Angular
 control: Tab
 documentation: ug
 keywords: tab features, key features, tab overview 

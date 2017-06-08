@@ -1,7 +1,7 @@
 ---
 title: Getting started with Schedule component	
 description: Rendering a basic Scheduler with local data
-platform: Angular-2
+platform: Angular
 control: schedule
 documentation: ug
 keywords: ejschedule, schedule, schedule widget

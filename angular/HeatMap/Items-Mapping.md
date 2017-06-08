@@ -2,7 +2,7 @@
 layout: post
 title: Data source given to HeatMap is configured using ItemsMapping
 description: How to populate data for heatmap?
-platform: Angular-2
+platform: Angular
 control: HeatMap
 documentation: ug
 ---

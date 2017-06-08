@@ -1,7 +1,7 @@
 ---
 title: ReportViewer Control Overview
 description: overview of ReportViewer Control
-platform: Angular-2
+platform: Angular
 control: ReportViewer
 documentation: ug
 keywords: ReportViewer features, key features, ReportViewer overview 

@@ -2,7 +2,7 @@
 layout: post
 title:  Layout nodes and connectors in an organized structure
 description: How to arrange nodes by using the automatic layouts?.
-platform: Angular-2
+platform: Angular
 control: Diagram
 documentation: ug
 ---

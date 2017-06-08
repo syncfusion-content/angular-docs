@@ -2,7 +2,7 @@
 layout: post
 title: Getting started with Webpack
 description: Overview of Syncfusion Essential Angular 2.
-platform:  Angular-2
+platform: Angular
 control: Introduction
 documentation: ug
 ---

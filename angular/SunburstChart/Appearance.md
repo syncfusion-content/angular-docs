@@ -2,7 +2,7 @@
 layout: post
 title: Appearance
 description: What are the different ways to customize the SunburstChart 
-platform: Angular-2
+platform: Angular
 control: SunburstChart
 documentation: ug
 ---

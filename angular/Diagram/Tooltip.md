@@ -2,7 +2,7 @@
 layout: post
 title: Show tooltips when mouse hovers over objects
 description: How to show/hide tooltips when mouse hovers over objects or during interaction?
-platform: Angular-2
+platform: Angular
 control: Diagram
 documentation: ug
 ---

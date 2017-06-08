@@ -2,7 +2,7 @@
 layout: post
 title:  Getting Started with Angular on ASP.Net Core using Visual Studio 2015
 description: Overview of Syncfusion Essential Angular 2
-platform: Angular-2
+platform: Angular
 control: Introduction
 documentation: ug
 ---

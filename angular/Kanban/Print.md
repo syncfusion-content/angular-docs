@@ -3,7 +3,7 @@ layout: post
 title:  Print with Kanban widget for Syncfusion Essential JS
 description: How to enable print option in Kanban
 documentation: ug
-platform: Angular-2
+platform: Angular
 ---
 
 # Print

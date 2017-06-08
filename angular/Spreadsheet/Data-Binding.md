@@ -1,7 +1,7 @@
 ---
 title: Data binding with Spreadsheet widget for Syncfusion Essential Angular-2
 description: How to perform Data Binding and configure its properties like dataSource, query etc.
-platform: angular-2
+platform: Angular
 control: Spreadsheet
 documentation: ug
 ---

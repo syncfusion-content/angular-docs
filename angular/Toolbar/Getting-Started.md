@@ -2,7 +2,7 @@
 layout: post
 title: Getting-Started | Toolbar | JavaScript | Syncfusion
 description: getting started
-platform: angular-2
+platform: Angular
 control: Toolbar
 documentation: ug
 keywords: ejtoolbar, toolbar, js toolbar 

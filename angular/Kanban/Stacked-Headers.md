@@ -3,7 +3,7 @@ layout: post
 title:  Stacked Headers
 description: Stacked Headers
 documentation: ug
-platform: Angular-2
+platform: Angular
 keywords: stacked headers,kanban stacked headers
 ---
 # Stacked Headers

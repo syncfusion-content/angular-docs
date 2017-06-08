@@ -2,7 +2,7 @@
 layout: post
 title: Searching with Spreadsheet widget for Syncfusion Essential Angular-2
 description: How to enable Searching and its functionalities
-platform: angular-2
+platform: Angular
 control: Spreadsheet
 documentation: ug
 --- 

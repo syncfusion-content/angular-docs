@@ -2,7 +2,7 @@
 layout: post
 title: Scrolling with Spreadsheet widget for Syncfusion Essential JS
 description: How to enable Scrolling and its functionalities
-platform: Angular-2
+platform: Angular
 control: Spreadsheet
 documentation: ug
 --- 

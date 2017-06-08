@@ -2,7 +2,7 @@
 layout: post
 title: Overview of Syncfusion Angular 2 seed application
 description: Overview of Syncfusion Essential Angular 2.
-platform:  Angular-2
+platform: Angular
 control: Introduction
 documentation: ug
 ---

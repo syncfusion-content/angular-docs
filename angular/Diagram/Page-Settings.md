@@ -2,7 +2,7 @@
 layout: post
 title: Customize the size and appearance of single or multiple Diagram pages
 description: How to customize the size and appearance of the Diagram pages?
-platform: Angular-2
+platform: Angular
 control: Diagram
 documentation: ug
 ---

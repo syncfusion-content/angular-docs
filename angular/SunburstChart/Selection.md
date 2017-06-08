@@ -2,7 +2,7 @@
 layout: post
 title: Selection
 description: What are the different modes of selection present in the Sunburst Chart
-platform: Angular-2
+platform: Angular
 control: SunburstChart
 documentation: ug
 ---

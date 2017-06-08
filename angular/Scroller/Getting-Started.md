@@ -1,7 +1,7 @@
 ---
 title: Getting Started for Angular2 Scroller
 description: Getting Started for Angular 2 Scroller
-platform: Angular 2
+platform: Angular
 control: Scroller
 documentation: Ug
 keywords: ejScroller, js Scroller, Scroller

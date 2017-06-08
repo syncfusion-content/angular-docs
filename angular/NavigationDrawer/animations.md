@@ -2,7 +2,7 @@
 layout: post
 title: animations
 description: animations
-platform: Angular-2
+platform: Angular
 control: Navigation Drawer
 documentation: ug
 ---

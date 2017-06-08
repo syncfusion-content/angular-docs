@@ -1,7 +1,7 @@
 ---
 title: Schedule dependencies	
 description: Dependencies required to render the Schedule control
-platform: Angular-2
+platform: Angular
 control: schedule
 documentation: ug
 keywords: schedule individual dependency files

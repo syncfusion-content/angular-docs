@@ -2,7 +2,7 @@
 layout: post
 title: Row with Grid widget for Syncfusion Essential Angular-2
 description: How to use and customize the grid row
-platform: angular-2
+platform: Angular
 control: Grid
 documentation: ug
 api: /api/angular2/grid

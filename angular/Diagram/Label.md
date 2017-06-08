@@ -2,7 +2,7 @@
 layout: post
 title: Add text annotations to Diagram objects to textually describe them
 description: How to textually describe nodes and connectors?
-platform: Angular-2
+platform: Angular
 control: Diagram
 documentation: ug
 ---

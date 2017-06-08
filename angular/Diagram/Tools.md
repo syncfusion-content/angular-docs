@@ -2,7 +2,7 @@
 layout: post
 title: Draw shapes, selection rectangles, or Pan Diagram, when you click and drag over the Digram surface
 description: How to draw shapes or pan Diagram by clicking and dragging over the Diagram surface?
-platform: Angular-2
+platform: Angular
 control: Diagram
 documentation: ug
 ---

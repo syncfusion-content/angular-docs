@@ -2,7 +2,7 @@
 layout: post
 title: Serialize the Diagram as JSON and load Diagram from serialized JSON
 description: How to save and load the Diagram?
-platform:  Angular-2
+platform:  Angular
 control: Diagram
 documentation: ug
 ---

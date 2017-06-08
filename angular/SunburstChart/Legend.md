@@ -2,7 +2,7 @@
 layout: post
 title: legend
 description: Learn how to add and customize the legnds in Sunburst Chart.
-platform: Angular-2 
+platform: Angular 
 control: SunburstChart
 documentation: ug
 ---

@@ -2,7 +2,7 @@
 layout: post
 title: data fields and configuration
 description: data fields and configuration
-platform: angular-2
+platform: Angular
 control: rotator
 documentation: ug
 ---

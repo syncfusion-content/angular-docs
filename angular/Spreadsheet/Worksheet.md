@@ -2,7 +2,7 @@
 layout: post
 title: Worksheets with Spreadsheet widget for Syncfusion Essential JS
 description: How to use and customize the Spreadsheet Worksheet
-platform: Angular-2
+platform: Angular
 control: Spreadsheet
 documentation: ug
 --- 

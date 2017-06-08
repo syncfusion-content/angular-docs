@@ -2,7 +2,7 @@
 layout: post
 title: getting started
 description: getting started
-platform: angular-2
+platform: Angular
 control: ListView
 documentation: ug
 ---

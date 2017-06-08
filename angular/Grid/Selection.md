@@ -2,7 +2,7 @@
 layout: post
 title: Selection with Grid widget for Syncfusion Essential Angular-2
 description: How to enable selection and its functionalities
-platform: angular-2
+platform: Angular
 control: Grid
 documentation: ug
 api: /api/angular2/grid

@@ -2,7 +2,7 @@
 layout: post
 title: Add-Group-Tiles
 description: add group tiles
-platform: angular-2
+platform: Angular
 control: Tile
 documentation: ug
 ---

@@ -3,7 +3,7 @@ layout: post
 title:  Globalization and Localization
 description: Globalization and Localization
 documentation: ug
-platform: Angular-2
+platform: Angular
 keywords: globalization and localization,kanban globalization and localizationards
 ---
 

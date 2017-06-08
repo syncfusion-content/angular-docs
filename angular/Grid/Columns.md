@@ -2,7 +2,7 @@
 layout: post
 title: Columns with Grid widget for Syncfusion Essential Angular-2
 description: How to define the columns and its features
-platform: angular-2
+platform: Angular
 control: Grid
 documentation: ug
 api: /api/angular2/grid

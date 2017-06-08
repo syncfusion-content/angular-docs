@@ -2,7 +2,7 @@
 layout: post
 title: Context Menu with Spreadsheet widget for Syncfusion Essential Angular-2
 description: How to use the Spreadsheet Context Menu
-platform: angular-2
+platform: Angular
 control: Spreadsheet
 documentation: ug
 ---

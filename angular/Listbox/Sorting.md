@@ -2,7 +2,7 @@
 layout: post
 title: Sorting
 description: sorting support
-platform: angular-2
+platform: Angular
 control: ListBox
 documentation: ug
 ---

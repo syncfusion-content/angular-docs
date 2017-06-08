@@ -2,7 +2,7 @@
 layout: post
 title: Explore the frequently used built-in commands
 description: How to explore and use the built-in commands?
-platform: Angular-2
+platform: Angular
 control: Diagram
 documentation: ug
 ---

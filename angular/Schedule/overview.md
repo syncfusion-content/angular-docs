@@ -1,7 +1,7 @@
 ---
 title: Schedule Overview	
 description: Scheduler Introduction
-platform: Angular-2
+platform: Angular
 control: schedule
 documentation: ug
 keywords: overview of ejschedule, schedule, schedule widget, js schedule overview

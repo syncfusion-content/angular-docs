@@ -1,7 +1,7 @@
 ---
 title: Export and print the Schedule with its appointments	
 description: Export/Print the complete Scheduler or specific appointment alone
-platform: Angular-2
+platform: Angular
 control: schedule
 documentation: ug
 keywords: export, import and print 
