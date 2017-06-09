@@ -126,7 +126,7 @@ ejAccordion</td><td>
 <tr>
 <td>
 ejAutoComplete</td><td>
-value</td></tr>
+-</td></tr>
 <tr>
 <td>
 ejBarcode</td><td>
@@ -134,7 +134,7 @@ ejBarcode</td><td>
 <tr>
 <td>
 ejBulletGraph</td><td>
--</td></tr>
+featureMeasures-value<br/>featureMeasures-comparativeMeasureValue</td></tr>
 <tr>
 <td>
 ejButton</td><td>
@@ -142,11 +142,11 @@ ejButton</td><td>
 <tr>
 <td>
 ejChart</td><td>
--</td></tr>
+xZoomFactor<br/>yZoomFactor<br/>xZoomPosition<br/>yZoomPosition<br/>legend.visibility</td></tr>
 <tr>
 <td>
 ejCheckBox</td><td>
--</td></tr>
+checked<br/>checkState</td></tr>
 <tr>
 <td>
 ejCircularGauge</td><td>
@@ -182,11 +182,27 @@ value</td></tr>
 <tr>
 <td>
 ejGantt</td><td>
-dataSource<br/>selectedItem<br/>splitterSettings.position</td></tr>
+dataSource<br/>selectedRowIndex<br/>splitterSettings.position</td></tr>
 <tr>
 <td>
 ejGrid</td><td>
 dataSource<br/>pageSettings.currentPage</td></tr>
+<tr>
+<td>
+ejGroupButton</td><td>
+-</td></tr>
+<tr>
+<td>
+ejFileExplorer</td><td>
+-</td></tr>
+<tr>
+<td>
+ejHeatMap</td><td>
+-</td></tr>
+<tr>
+<td>
+ejHeatMapLegend</td><td>
+-</td></tr>
 <tr>
 <td>
 ejKanban</td><td>
@@ -210,10 +226,18 @@ baseMapIndex<br/>enablePan<br/>enableResize<br/>enableAnimation<br/>zoomSettings
 <tr>
 <td>
 ejMaskEdit</td><td>
-value</td></tr>
+-</td></tr>
 <tr>
 <td>
 ejMenu</td><td>
+-</td></tr>
+<tr>
+<td>
+ejNavigationDrawer</td><td>
+-</td></tr>
+<tr>
+<td>
+ejOverview</td><td>
 -</td></tr>
 <tr>
 <td>
@@ -221,16 +245,52 @@ ejPivotGrid</td><td>
 -</td></tr>
 <tr>
 <td>
+ejPivotChart</td><td>
+-</td></tr>
+<tr>
+<td>
+ejPivotSchemaDesigner</td><td>
+-</td></tr>
+<tr>
+<td>
+ejPivotTreeMap</td><td>
+-</td></tr>
+<tr>
+<td>
+ejPivotGauge</td><td>
+-</td></tr>
+<tr>
+<td>
+ejProgressBar</td><td>
+-</td></tr>
+<tr>
+<td>
+ejRadialMenu</td><td>
+value</td></tr>
+<tr>
+<td>
+ejRadialSlider</td><td>
+value</td></tr>
+<tr>
+<td>
 ejRadioButton</td><td>
 -</td></tr>
 <tr>
 <td>
 ejRangeNavigator</td><td>
--</td></tr>
+selectedRangeStart<br/>selectedRangeEnd<br/></td></tr>
 <tr>
 <td>
 ejRating</td><td>
 value</td></tr>
+<tr>
+<td>
+ejReportViewer</td><td>
+-</td></tr>
+<tr>
+<td>
+ejRibbon</td><td>
+-</td></tr>
 <tr>
 <td>
 ejRTE</td><td>
@@ -245,12 +305,24 @@ ejSchedule</td><td>
 appointmentSettings.dataSource<br/>currentView<br/>currentDate</td></tr>
 <tr>
 <td>
+ejSignature</td><td>
+-</td></tr>
+<tr>
+<td>
 ejScroller</td><td>
 -</td></tr>
 <tr>
 <td>
 ejSlider</td><td>
 value</td></tr>
+<tr>
+<td>
+ejSparkline</td><td>
+-</td></tr>
+<tr>
+<td>
+ejSpellCheck</td><td>
+-</td></tr>
 <tr>
 <td>
 ejSplitButton</td><td>
@@ -261,12 +333,32 @@ ejSplitter</td><td>
 -</td></tr>
 <tr>
 <td>
-ejTab</td><td>
+ejSpreadsheet</td><td>
 -</td></tr>
+<tr>
+<td>
+ejSunburstChart</td><td>
+-</td></tr>
+<tr>
+<td>
+ejSymbolPalette</td><td>
+-</td></tr>
+<tr>
+<td>
+ejTab</td><td>
+selectedItemIndex</td></tr>
 <tr>
 <td>
 ejTagCloud</td><td>
 -</td></tr>
+<tr>
+<td>
+ejTooltip</td><td>
+-</td></tr>
+<tr>
+<td>
+ejTreeGrid</td><td>
+dataSource<br/>selectedRowIndex</td></tr>
 <tr>
 <td>
 ejNumericTextbox</td><td>
@@ -279,6 +371,10 @@ value</td></tr>
 <td>
 ejCurrencyTextbox</td><td>
 value</td></tr>
+<tr>
+<td>
+ejTile</td><td>
+badge.value<br/>badge.enabled<br/>badge.text<br/>badge.position<br/>text<br/>caption.text</td></tr>
 <tr>
 <td>
 ejTimePicker</td><td>
@@ -298,7 +394,7 @@ dataSource<br/>weightValuePath</td></tr>
 <tr>
 <td>
 ejTreeView</td><td>
--</td></tr>
+dataSource</td></tr>
 <tr>
 <td>
 ejUploadbox</td><td>
@@ -363,6 +459,61 @@ export class AppComponent {
                     "Volvo P1800", "Volkswagen Shirako"
         ];
         this.value="Jaguar XJS";
+   }
+   onOpen(e){
+        console.log("Triggers after the suggestion list is opened.");        
+    }
+}
+
+{% endhighlight %}
+
+N> Here, We don't need to import the specific component file. Because all component files are import in `EJAngular2Module` from `ej-angular2` package in `app.module.ts` file
+
+* We can invoke the `clearText` method of `ejAutocomplete` widget using `ViewChild` in model file. Refer the below code snippet 
+
+{% highlight ts %}
+
+import {Component, ViewChild } from '@angular/core';
+import { EJComponents } from 'ej-angular2';
+
+@Component({
+    selector: 'my-app',
+    template: ` <h2>Two-Way Binding</h2>
+    <button id="clearTxt" #autocomplete (click)="buttonclick($event)">clearText</button>
+    <input #myApp type="text" ej-autocomplete [dataSource]="states" (open)="onOpen($event)" [(ngModel)]="value"/>
+    <input type="text" name="AutoComplete" class="input ej-inputtext" [(ngModel)]="value" />
+    `
+})
+export class AppComponent {
+    states: Array<string>;
+    value:string; 
+    @ViewChild('autocomplete') autocomplete: EJComponents<any, any>;
+    constructor() {
+        this.states = [
+         "Audi S6", "Austin-Healey", "Alfa Romeo", "Aston Martin",
+                    "BMW 7 ", "Bentley Mulsanne", "Bugatti Veyron",
+                    "Chevrolet Camaro", "Cadillac ",
+                    "Duesenberg J ", "Dodge Sprinter",
+                    "Elantra", "Excavator",
+                    "Ford Boss 302", "Ferrari 360", "Ford Thunderbird ",
+                    "GAZ Siber",
+                    "Honda S2000", "Hyundai Santro",
+                    "Isuzu Swift", "Infiniti Skyline",
+                    "Jaguar XJS",
+                    "Kia Sedona EX", "Koenigsegg Agera",
+                    "Lotus Esprit", "Lamborghini Diablo ",
+                    "Mercedes-Benz ", "Mercury Coupe", "Maruti Alto 800",
+                    "Nissan Qashqai",
+                    "Oldsmobile S98", "Opel Superboss",
+                    "Porsche 356 ", "Pontiac Sunbird",
+                    "Scion SRS/SC/SD", "Saab Sportcombi", "Subaru Sambar", "Suzuki Swift",
+                    "Triumph Spitfire ", "Toyota 2000GT",
+                    "Volvo P1800", "Volkswagen Shirako"
+        ];
+        this.value="Jaguar XJS";
+   }
+   buttonclick(e){
+       this.autocomplete.widget.clearText();
    }
    onOpen(e){
         console.log("Triggers after the suggestion list is opened.");        

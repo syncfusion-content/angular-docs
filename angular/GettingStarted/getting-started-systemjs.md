@@ -22,8 +22,8 @@ To quick start with Syncfusion JavaScript Angular components run the below comma
 
 N> The cloned application is fully configured to work with Essential Studio for JavaScript Angular components, in which we configured our [ej-angular2](https://github.com/syncfusion/ej-angular2) library and necessary changes to consume our Angular components.
 
-### What is in Syncfusion cloned Angular seed.?
-The cloned Angular seed consists of files in the following structure. The files in the `src/app` folder is used for our application logical functionalities. The other files available outside the src folder is used to build, bundle and deploy the application. 
+## What is in Syncfusion cloned Angular seed.?
+The cloned Angular seed consists of files in the following structure. The files in the `src/app` folder is used for logical functionalities in our application. The other files available outside the src folder is used to build, bundle and deploy the application. 
 
 * src
     * app
@@ -60,7 +60,7 @@ The below table depicts the purpose of files in the above structure.
 </tr>
 <tr>
 <td> index.html  </td>
-<td> It is the host page of application. It loads all needed libraries and essential scripts in a prescribed order. It holds a custom tag which is used for load the meta data of `AppComponent`. <br> E.g.: `ej-app` is the custom tag in our cloned seed application. </td>
+<td> It is the host page of application. It loads all needed libraries and essential scripts in a prescribed order. It holds a custom tag which is used to load the meta data of `AppComponent`. <br> E.g.: `ej-app` is the custom tag in our cloned seed application. </td>
 </tr>
 <tr>
 <td>systemjs.config.js </td>
@@ -335,7 +335,7 @@ export class AppModule { }
 
 {% endhighlight %}
 
-Now we can render any Syncfusion JavaScript Angular components in Angular application which we discussed in the next section.
+Now we can render any Syncfusion JavaScript Angular components in Angular application which will be discuss in the next section.
 
 ##  Adding sample with seed application
 
@@ -376,16 +376,16 @@ export class DialogComponent {
   @ViewChild('dialog') dialog: EJComponents <any,any>;
     constructor() {
     this.resize = false;
-      this.btndisplay = false;
+    this.btndisplay = false;
   }
   //Button click event handler to open the ejDialog
   onClick(event) {
    this.btndisplay = false;
-    this.dialog.widget.element.ejDialog('open');
+   this.dialog.widget.element.ejDialog('open');
   }
   //Dialog close event handler
   onClose(event) {
-      this.btndisplay = true;
+    this.btndisplay = true;
   }
 }
 

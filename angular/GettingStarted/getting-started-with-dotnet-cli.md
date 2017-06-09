@@ -70,6 +70,225 @@ setx ASPNETCORE_ENVIRONMENT "Development"
 
 N> To know more about environment varaible refer the [link](https://blogs.msdn.microsoft.com/webdev/2017/02/14/building-single-page-applications-on-asp-net-core-with-javascriptservices/)
 
+{% tabs %}
+
+{% highlight ts %}
+import { Component, ViewChild } from '@angular/core';
+import { EJComponents } from 'ej-angular2';
+
+@Component({
+  selector: 'home',
+  templateUrl: './home.component.html'
+})
+export class HomeComponent {
+  resize: boolean;
+  btndisplay: boolean;
+  @ViewChild('dialog') dialog: EJComponents<any, any>;
+  constructor() {
+    this.resize = false;
+    this.btndisplay = false;
+  }
+  //Button click event handler to open the ejDialog
+  onClick(event) {
+    this.btndisplay = false;
+    this.dialog.widget.element.ejDialog('open');
+  }
+  //Dialog close event handler
+  onClose(event) {
+    this.btndisplay = true;
+  }
+}
+{% endhighlight %}
+
+{% highlight html %}
+
+<div id="parent" >
+	<input id="btnOpen" style="height: 30px" type="button" ej-button class="ejinputtext" value="Click to open Dialog" (click)="onClick($event)" *ngIf="btndisplay" />
+	<ej-dialog id="basicDialog" #dialog title="Facebook" [(enableResize)]="resize" containment="#parent" (close)="onClose($event)">
+		Facebook is an online social networking service headquartered in Menlo Park, California. Its website was launched on February
+		4, 2004, by Mark Zuckerberg with his Harvard College roommates and fellow students Eduardo Saverin, Andrew McCollum, Dustin
+		Moskovitz and Chris Hughes. The founders had initially limited the website's membership to Harvard students, but later
+		expanded it to colleges in the Boston area, the Ivy League, and Stanford University. It gradually added support for students
+		at various other universities and later to high-school students.
+	</ej-dialog>
+</div>
+
+{% endhighlight %}
+
+{% highlight ts %}
+
+import { NgModule } from '@angular/core';
+import { RouterModule } from '@angular/router';
+import { UniversalModule } from 'angular2-universal';
+import { AppComponent } from './components/app/app.component'
+import { NavMenuComponent } from './components/navmenu/navmenu.component';
+import { HomeComponent } from './components/home/home.component';
+import { FetchDataComponent } from './components/fetchdata/fetchdata.component';
+import { CounterComponent } from './components/counter/counter.component';
+import { GridComponent } from './components/grid/grid.component';
+
+import { EJAngular2Module } from 'ej-angular2';
+@NgModule({
+    bootstrap: [ AppComponent ],
+    declarations: [
+        AppComponent,
+        NavMenuComponent,
+        CounterComponent,
+        FetchDataComponent,
+        HomeComponent, 
+        GridComponent
+    ],
+    imports: [
+        UniversalModule, // Must be first import. This automatically imports BrowserModule, HttpModule, and JsonpModule too.
+        RouterModule.forRoot([
+            { path: '', redirectTo: 'home', pathMatch: 'full' },
+            { path: 'home', component: HomeComponent },
+            { path: 'counter', component: CounterComponent },
+            { path: 'fetch-data', component: FetchDataComponent },
+            { path: 'grid', component: GridComponent },
+            { path: '**', redirectTo: 'home' }
+        ]),
+        EJAngular2Module.forRoot()
+    ]
+})
+export class AppModule {
+}
+
+{% endhighlight %}
+
+{% highlight ts %}
+
+// Refer this code to import 'jQuery' in 'boot.client.ts'
+import 'angular2-universal-polyfills/browser';
+import { enableProdMode } from '@angular/core';
+import { platformUniversalDynamic } from 'angular2-universal';
+import * as $ from 'jquery';
+window['jQuery'] = $;
+window['$'] = $
+import 'jsrender';
+import { AppModule } from './app/app.module';
+import 'bootstrap';
+const rootElemTagName = 'app'; // Update this if you change your root component selector
+
+// Enable either Hot Module Reloading or production mode
+if (module['hot']) {
+    module['hot'].accept();
+    module['hot'].dispose(() => {
+        // Before restarting the app, we create a new root element and dispose the old one
+        const oldRootElem = document.querySelector(rootElemTagName);
+        const newRootElem = document.createElement(rootElemTagName);
+        oldRootElem.parentNode.insertBefore(newRootElem, oldRootElem);
+        platform.destroy();
+    });
+} else {
+    enableProdMode();
+}
+
+// Boot the application, either now or when the DOM content is loaded
+const platform = platformUniversalDynamic();
+const bootApplication = () => { platform.bootstrapModule(AppModule); };
+if (document.readyState === 'complete') {
+    bootApplication();
+} else {
+    document.addEventListener('DOMContentLoaded', bootApplication);
+}
+
+{% endhighlight %}
+
+{% highlight html %}
+
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<!--To overcome the issue "ReferenceError: window is not defined"-->
+<app asp-ng2-prerender-module="ClientApp/dist/main-server">Loading...</app>
+<!--ej theme reference-->
+<link href="~/dist/ej/web/material/ej.web.all.min.css" rel="stylesheet" asp-append-version="true">
+
+<script src="~/dist/vendor.js" asp-append-version="true"></script>
+@section scripts {
+    <script src="~/dist/main-client.js" asp-append-version="true"></script>
+}
+
+{% endhighlight %}
+
+{% highlight json %}
+{
+  "name": "ejappliaction",
+  "version": "0.0.0",
+  "scripts": {
+    "build": "webpack",
+    "copy-ej": "xcopy node_modules\\syncfusion-javascript\\Content\\ej wwwroot\\dist\\ej /y /s /i",
+    "postinstall": "npm run copy-ej",
+    "test": "karma start ClientApp/test/karma.conf.js"
+  },
+  "dependencies": {
+    "@angular/common": "^2.4.5",
+    "@angular/compiler": "^2.4.5",
+    "@angular/core": "^2.4.5",
+    "@angular/forms": "^2.4.5",
+    "@angular/http": "^2.4.5",
+    "@angular/platform-browser": "^2.4.5",
+    "@angular/platform-browser-dynamic": "^2.4.5",
+    "@angular/platform-server": "^2.4.5",
+    "@angular/router": "^3.4.5",
+    "@types/node": "^6.0.42",
+    "angular2-platform-node": "~2.0.11",
+    "angular2-template-loader": "^0.6.2",
+    "angular2-universal": "^2.1.0-rc.1",
+    "angular2-universal-patch": "^0.2.1",
+    "angular2-universal-polyfills": "^2.1.0-rc.1",
+    "aspnet-prerendering": "^2.0.0",
+    "aspnet-webpack": "^1.0.17",
+    "awesome-typescript-loader": "^3.0.0",
+    "bootstrap": "^3.3.7",
+    "css": "^2.2.1",
+    "css-loader": "^0.25.0",
+    "ej-angular2": "^15.2.41",
+    "es6-shim": "^0.35.1",
+    "event-source-polyfill": "^0.0.7",
+    "expose-loader": "^0.7.1",
+    "extract-text-webpack-plugin": "^2.0.0-rc",
+    "file-loader": "^0.9.0",
+    "html-loader": "^0.4.4",
+    "isomorphic-fetch": "^2.2.1",
+    "jquery": "^2.2.1",
+    "json-loader": "^0.5.4",
+    "jsrender": "^0.9.84",
+    "preboot": "^4.5.2",
+    "raw-loader": "^0.5.1",
+    "rxjs": "^5.0.1",
+    "style-loader": "^0.13.1",
+    "syncfusion-javascript": "^15.1.41",
+    "to-string-loader": "^1.1.5",
+    "typescript": "^2.2.1",
+    "url-loader": "^0.5.7",
+    "webpack": "^2.2.0",
+    "webpack-hot-middleware": "^2.12.2",
+    "webpack-merge": "^0.14.1",
+    "zone.js": "^0.7.6"
+  },
+  "devDependencies": {
+    "@types/chai": "^3.4.34",
+    "@types/ej.web.all": "^15.1.4",
+    "@types/jasmine": "^2.5.37",
+    "@types/jquery": "^2.0.43",
+    "chai": "^3.5.0",
+    "jasmine-core": "^2.5.2",
+    "karma": "^1.3.0",
+    "karma-chai": "^0.1.0",
+    "karma-chrome-launcher": "^2.0.0",
+    "karma-cli": "^1.0.1",
+    "karma-jasmine": "^1.0.2",
+    "karma-webpack": "^1.8.0"
+  }
+}
+
+{% endhighlight %}
+
+{% endtabs %}
+
 ## Configuration of Syncfusion Angular Component
 
 * Open the project in Visual Studio Code or Visual Studio 2015 to configure the Syncfusion Components
@@ -138,7 +357,7 @@ export class AppModule {
 
 {% endhighlight %}
 
-* Syncfusion JavaScript components need `jQuery` to render the control, so import jQuery in `ClientApp/boot-client.ts` file.
+* Syncfusion JavaScript components need `jQuery` to render the control, so import jQuery in `ClientApp/boot-client.ts` file which we already configured in our [webpack angular seed](https://github.com/syncfusion/angular2-seeds/blob/master/src/vendor.ts/#L12-L15) application.
 
 {% highlight ts %}
 
