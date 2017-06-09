@@ -22,5 +22,5 @@ We can create an Angular Application on SPA template using two ways.
 
 The below links explains how to create an angular application and how to configure the Syncfusion Angular Components using Dotnet CLI and Yeoman Generator
 
-* [.NET CLI Application](/angular/GettingStarted/getting-started-dotnet-cli "Getting started with .NET CLI")
-* [Yeoman Generator Application](/angular/GettingStarted/getting-started-yeoman-generator "Getting started with Yeoman Generator")
+* [.NET CLI Application](/angular/GettingStarted/getting-started-with-dotnet-cli "Getting started with .NET CLI")
+* [Yeoman Generator Application](/angular/GettingStarted/getting-started-with-yeoman-generator "Getting started with Yeoman Generator")
