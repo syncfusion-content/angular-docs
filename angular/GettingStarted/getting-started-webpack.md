@@ -191,7 +191,7 @@ platformBrowserDynamic().bootstrapModule(AppModule);
   "version": "1.0.0",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/syncfusion/Angular-seeds.git"
+    "url": "git+https://github.com/syncfusion/angular2-seeds.git"
   },
   "description": "A webpack starter for Angular",
   "scripts": {
@@ -204,36 +204,36 @@ platformBrowserDynamic().bootstrapModule(AppModule);
     "ej",
     "essential",
     "javascript",
-    "Angular",
-    "Angular"
+    "Angular 2",
+    "angular2"
   ],
   "author": "Syncfusion Inc",
   "license": "SEE LICENSE IN README.md",
   "bugs": {
-    "url": "https://github.com/syncfusion/Angular-seeds/issues"
+    "url": "https://github.com/syncfusion/angular2-seeds/issues"
   },
-  "homepage": "https://github.com/syncfusion/Angular-seeds#readme",
+  "homepage": "https://github.com/syncfusion/angular2-seeds#readme",
   "dependencies": {
-    "@angular/common": "~2.4.0",
-    "@angular/compiler": "~2.4.0",
-    "@angular/core": "~2.4.0",
-    "@angular/forms": "~2.4.0",
-    "@angular/http": "~2.4.0",
-    "@angular/platform-browser": "~2.4.0",
-    "@angular/platform-browser-dynamic": "~2.4.0",
-    "@angular/router": "~3.4.0",
+    "@angular/common": "~4.1.3",
+    "@angular/compiler": "~4.1.3",
+    "@angular/core": "~4.1.3",
+    "@angular/forms": "~4.1.3",
+    "@angular/http": "~4.1.3",
+    "@angular/platform-browser": "~4.1.3",
+    "@angular/platform-browser-dynamic": "~4.1.3",
+    "@angular/router": "~4.1.3",
     "core-js": "^2.4.1",
     "rxjs": "5.0.1",
     "zone.js": "^0.7.4"
   },
   "devDependencies": {
-    "Angular-template-loader": "^0.4.0",
-    "awesome-typescript-loader": "^3.0.0-beta.17",
-    "css-loader": "^0.23.1",
-    "extract-text-webpack-plugin": "^1.0.1",
-    "file-loader": "^0.8.5",
-    "html-loader": "^0.4.3",
-    "html-webpack-plugin": "^2.15.0",
+    "angular2-template-loader": "~0.6.2",
+    "awesome-typescript-loader": "~3.1.3",
+    "css-loader": "^0.26.1",
+    "extract-text-webpack-plugin": "~2.1.0",
+    "file-loader": "~0.11.1",
+    "html-loader": "~0.4.5",
+    "html-webpack-plugin": "^2.16.1",
     "jasmine-core": "^2.4.1",
     "karma": "^1.2.0",
     "karma-jasmine": "^1.0.2",
@@ -242,21 +242,22 @@ platformBrowserDynamic().bootstrapModule(AppModule);
     "karma-webpack": "^1.8.0",
     "null-loader": "^0.1.1",
     "phantomjs-prebuilt": "^2.1.7",
+    "protractor": "~4.0.14",
     "raw-loader": "^0.5.1",
-    "rimraf": "^2.5.2",
+    "rimraf": "^2.5.4",
     "style-loader": "^0.13.1",
-    "typescript": "^2.1.4",
-    "webpack": "^1.13.0",
-    "webpack-dev-server": "^1.14.1",
-    "webpack-merge": "^0.14.0",
+    "typescript": "~2.3.3",
+    "url-loader": "^0.5.8",
+    "webpack": "~2.6.1",
+    "webpack-dev-server": "~2.4.5",
+    "webpack-merge": "~4.1.0",
     "bootstrap": "^3.3.6",
-    "jquery": "^3.1.1",
-    "jsrender": "^0.9.75",
-    "syncfusion-javascript": "^15.1.33",
-    "ej-angular2": "^15.1.33",
-    "@types/ej.web.all": "^14.4.1",
+    "jquery": "~3.2.1",
+    "jsrender": "~0.9.84",
+    "syncfusion-javascript": "^15.2.41",
+    "ej-angular2": "^15.2.41",
+    "@types/ej.web.all": "^15.2.0",
     "@types/jquery": "2.0.34",
-    "@types/es6-shim": "0.31.32",
     "@types/node": "^6.0.46"
   }
 }
@@ -461,4 +462,3 @@ N> if you want to use other port, open `package.json` file, then change port in 
 ## Demos
 
 We have implemented our [Angular sample browser](http://ng2jq.syncfusion.com/) using Syncfusion Angular components.
-
