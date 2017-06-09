@@ -10,7 +10,7 @@ documentation: ug
 
 # Getting Started with Angular CLI
 
-The [Angular CLI](https://cli.angular.io/) is a command line interface for Angular which makes it easy to create an application that already works. To getting started with Syncfusion Angular components, the NPM packages [ej-Angular](https://www.npmjs.com/package/ej-Angular) and [syncfusion-javascript](https://www.npmjs.com/package/syncfusion-javascript) helps to seamlessly supports angular-cli environment for our components.
+The [Angular CLI](https://cli.angular.io/) is a command line interface for Angular which makes it easy to create an application that already works. To getting started with Syncfusion Angular components, the NPM packages [ej-angular2](https://www.npmjs.com/package/ej-angular2) and [syncfusion-javascript](https://www.npmjs.com/package/syncfusion-javascript) helps to seamlessly supports angular-cli environment for our components.
 
 The following steps depicts, to create an application in angular-cli with Syncfusion Angular Components
 
@@ -72,7 +72,7 @@ E.g.: cd ejProject
 {% highlight javascript %}
 
 npm install syncfusion-javascript --save
-npm install ej-Angular --save
+npm install ej-angular2 --save
 npm install --save-dev @types/jquery
 npm install --save-dev @types/ej.web.all
 
@@ -157,7 +157,7 @@ window['$'] = jquery;
  {% highlight ts %}
  
  import { Component, ViewEncapsulation, ViewChild } from '@angular/core';
-import { EJComponents } from 'ej-Angular';
+import { EJComponents } from 'ej-angular2';
 
 @Component({
   selector: 'ej-app',
@@ -185,7 +185,7 @@ export class AppComponent {
  {% endhighlight %}
 
 
-* Import `EJAngularModule` from `ej-Angular` package in `app.module.ts` file to import Syncfusion Angular components into the project. Refer to the below code snippets to import Syncfusion Angular components.
+* Import `EJAngular2Module` from `ej-angular2` package in `app.module.ts` file to import Syncfusion Angular components into the project. Refer to the below code snippets to import Syncfusion Angular components.
 
 {% highlight ts %}
 
@@ -193,7 +193,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
-import { EJAngularModule } from 'ej-Angular'; 
+import { EJAngular2Module } from 'ej-angular2'; 
 import { AppComponent } from './app.component';
 
 @NgModule({
@@ -201,7 +201,7 @@ import { AppComponent } from './app.component';
     AppComponent
   ],
   imports: [
-    BrowserModule,FormsModule,HttpModule,EJAngularModule.forRoot() 
+    BrowserModule,FormsModule,HttpModule,EJAngular2Module.forRoot() 
   ],
   providers: [],
   bootstrap: [AppComponent]
@@ -220,7 +220,7 @@ ng serve
 
 {% endhighlight %}
 
-![](/angular-2/GettingStarted/Images/angularcli.png)
+![](/angular/GettingStarted/Images/angularcli.png)
 
 ## ng build - production
 
