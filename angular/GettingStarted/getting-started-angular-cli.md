@@ -23,17 +23,11 @@ The following synopsis illustrates the major steps in creation of application.
 
 ## Synopsis 
 
-* Install the latest version of Angular CLI(#install-the-angular-cli)
-* Create new Application(#create-a-new-application)
-* Configuration of Syncfusion Angular Component(#configuration-of-syncfusion-angular-component)
-	* app.component.ts
-	* app.module.ts
-	* main.ts
-	* package.json
-	* tsconfig.json
-	* angular-cli.json
-* Render Syncfusion Angular Component(#render-syncfusion-angular-component)
-* Serve the application(#serve-the-application)
+* [Install the latest version of Angular CLI](#install-the-angular-cli)
+* [Create new Application](#create-a-new-application)
+* [Configuration of Syncfusion Angular Component](#configuration-of-syncfusion-angular-component)
+* [Render Syncfusion Angular Component](#render-syncfusion-angular-component)
+* [Serve the application](#serve-the-application)
 
 ## Install the Angular CLI
 
