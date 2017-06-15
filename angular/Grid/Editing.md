@@ -1298,7 +1298,7 @@ Parameters Table
                 action, key, deleted
             </td>
             <td>
-               public ActionResult CrudUrl(string action, string key, List <EditableOrder> deleted){ }
+               public ActionResult CrudUrl(string action, string key, List &lt;EditableOrder&gt; deleted){ }
             </td>
         </tr>
     </table>
