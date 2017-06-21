@@ -48,7 +48,7 @@ import { Component } from '@angular/core';
     templateUrl: 'src/textbox/textbox.component.html',
 })
 export class TextboxComponent {
-    text: any;
+    locale: any;
    constructor(){
        this.locale = 'fr-FR';
     }
