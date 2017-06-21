@@ -164,7 +164,7 @@ var gulp = require('gulp'),
  rimraf = require('rimraf');
 
 gulp.task('clean', function (cb) {
-    return rimraf('./wwwroot/lib/', cb)
+    return rimraf('./wwwroot/lib/', cb);
 });
 
 gulp.task('copy:lib', function () {
@@ -464,7 +464,7 @@ var gulp = require('gulp'),
  rimraf = require('rimraf');
 
 gulp.task('clean', function (cb) {
-    return rimraf('./wwwroot/lib/', cb)
+    return rimraf('./wwwroot/lib/', cb);
 });
 
 gulp.task('copy:lib', function () {
