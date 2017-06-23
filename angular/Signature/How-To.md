@@ -11,7 +11,7 @@ documentation: ug
 
 ### Save signature image with user defined format
 
-By default the downloaded image form the signature canvas will be of **png** format. We can define our own format to download the image with **saveImageFormat** property. And we can also save the image along with the background by using the **saveWithBackground** property.
+By default the downloaded image from the signature canvas will be of **png** format. We can define our own format to download the image with **saveImageFormat** property. And we can also save the image along with the background by using the **saveWithBackground** property.
 
 The following code example is used to download drawn image on the Signature component.
 
@@ -106,7 +106,7 @@ After giving the Responsiveness:
 
 ### To check whether any input to the signature control since render
 
-We can detect whether not there has been any input to the signature control since render. To detect we can use the storeSnap public variable, which is an array that stores all the canvas inputs. At initial rendering this array is empty and we can use this variable to check for the drwan strokes.
+We can detect whether not there has been any input to the signature control since it has rendered. To detect we can use the storeSnap public variable, which is an array that stores all the canvas inputs. At initial rendering this array is empty and we can use this variable to check for the drawn strokes.
 
 
 {% highlight js %}
