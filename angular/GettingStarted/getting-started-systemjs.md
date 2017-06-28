@@ -335,6 +335,16 @@ export class AppModule { }
 
 {% endhighlight %}
 
+N> The Syncfusion Javascript Component needs dependencies `jquery` and `jsrender` which need to loaded through systemjs loader in `systemjs.config.js` file. Refer the [link](https://github.com/syncfusion/angular2-seeds/blob/systemjs/systemjs.config.js/#L27-L28) for code snippet
+
+{% highlight javascript %}
+
+'jquery': 'npm:jquery/dist/jquery.min.js',
+'jsrender': 'npm:jsrender/jsrender.min.js',
+
+{% endhighlight %}
+
+
 Now we can render any Syncfusion JavaScript Angular components in Angular application which will be discuss in the next section.
 
 ##  Adding sample with seed application

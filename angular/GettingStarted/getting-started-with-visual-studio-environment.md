@@ -246,7 +246,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
-import { EJAngularModule } from 'ej-angular2';
+import { EJAngular2Module } from 'ej-angular2';
 import { AppComponent } from './app.component';
 
 @NgModule({
@@ -256,7 +256,7 @@ import { AppComponent } from './app.component';
   imports: [
     BrowserModule,
     FormsModule,
-    HttpModule, EJAngularModule.forRoot()
+    HttpModule, EJAngular2Module.forRoot()
 
   ],
   bootstrap: [AppComponent]
@@ -550,14 +550,14 @@ export const routes: Routes = [
 
 import { NgModule } from '@angular/core'; 
 . . . . . 
-import { EJAngularModule } from 'ej-angular2'; 
+import { EJAngular2Module } from 'ej-angular2'; 
 import { AppComponent } from './app.component'; 
 . . . . . 
 import { DialogComponent } from './dialog/dialog.component'; 
 import { AppRoutingModule } from './app.routes'; 
 . . . . 
 @NgModule({ 
-imports: [BrowserModule, FormsModule, HttpModule, EJAngularModule.forRoot(), 
+imports: [BrowserModule, FormsModule, HttpModule, EJAngular2Module.forRoot(), 
 RouterModule, AppRoutingModule ], 
 declarations: [. . . . , DialogComponent], 
 bootstrap: [AppComponent] }) 
