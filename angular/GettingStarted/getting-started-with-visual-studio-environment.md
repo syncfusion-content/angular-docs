@@ -34,7 +34,7 @@ ASP.Net Core is a cross-platform framework for building applications such as web
 
 * Create a new ASP.NET Core project in VS2015 and select Empty as template.
 
-![](/angular-2/GettingStarted/Images/createapp.png)
+![](/angular/GettingStarted/Images/createapp.png)
 
 ## Configuration of Angular application
 
@@ -110,10 +110,10 @@ Refer the below code snippet for packages used in our application.
 }
 {% endhighlight %}
 
-![](/angular-2/GettingStarted/Images/restore.png)
+![](/angular/GettingStarted/Images/restore.png)
 
 
-![](/angular-2/GettingStarted/Images/npmpackage.png)
+![](/angular/GettingStarted/Images/npmpackage.png)
 
 * Copy the `src` folder in solution from our [systemJS cloned seed](https://github.com/syncfusion/angular2-seeds/tree/systemjs) application. The cloned Angular-seed consists of following files.
 
@@ -203,12 +203,12 @@ gulp.task('default', ['watch', 'ts', 'copy:lib', 'copy:systemjs', 'copy:html', '
 {% endhighlight %}
 Once, you are finished with adding all Angular application files, you need to run the every gulp tasks via View->Other Windows->Task Runner Explorer.
 
-![](/angular-2/GettingStarted/Images/gulptask.png)
+![](/angular/GettingStarted/Images/gulptask.png)
 
 
 N> If we run our application, we will get a following typescript error while building the application. Because the Gulp task `ts` will do the same work of typescript compiler.
 
-![](/angular-2/GettingStarted/Images/tscerror.png)
+![](/angular/GettingStarted/Images/tscerror.png)
 
 So, we should disable the typescript compiler in our Angular environment.
 
@@ -227,8 +227,7 @@ import { Component } from '@angular/core';
 @Component({
     selector: 'ej-app',
     template:`<div id="parent" >
-	<input id="btnOpen" style="height: 30px" type="button" ej-button class="ejinputtext" value="Click to open Dialog" (click)="onClick($event)" *ngIf="btndisplay" />
-	<ej-dialog id="basicDialog" #dialog title="Facebook" [(enableResize)]="resize" containment="#parent" (close)="onClose($event)">
+	<ej-dialog id="basicDialog" title="Facebook" containment="#parent">
 		Facebook is an online social networking service headquartered in Menlo Park, California. Its website was launched on February
 		4, 2004, by Mark Zuckerberg with his Harvard College roommates and fellow students Eduardo Saverin, Andrew McCollum, Dustin
 		Moskovitz and Chris Hughes. The founders had initially limited the website's membership to Harvard students, but later
@@ -570,4 +569,4 @@ export class AppModule { }
 
 * To run the application, press `Ctrl+F5`
 
-![](/angular-2/GettingStarted/Images/output.png)
+![](/angular/GettingStarted/Images/output.png)
