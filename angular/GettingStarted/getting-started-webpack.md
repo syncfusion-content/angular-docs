@@ -309,6 +309,8 @@ import '../node_modules/syncfusion-javascript/Content/ej/web/material/ej.web.all
 
 {% endhighlight %}
 
+N> To overcome the issue `$(..)['ej'+this.controlname] is not defined`, [alias](https://webpack.js.org/configuration/resolve/) is used to define `jQuery` in `webpack configuration(common)` file which we already configured in [webpack seed](https://github.com/syncfusion/angular2-seeds/blob/master/config/webpack.common.js/#L14-L19) application.
+
 ## Consuming ej-angular2 library
 
 The cloned application already configured with `ej-angular2` library to seamlessly work with Angular and Essential JavaScript components. The below steps describe, how the library consumed in the Angular seed application.
