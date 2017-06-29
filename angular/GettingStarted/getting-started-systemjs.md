@@ -72,6 +72,189 @@ The below table depicts the purpose of files in the above structure.
 </tr>
 </table>
 
+## Syntax of Angular component
+
+{% highlight ts %}
+
+//import statements
+import {Component} from '@angular/core';
+
+@Component ({
+         . . . .
+         . . . .
+         // Takes metadata object from exported class
+         // It describes how the HTML template and component class work together 
+})
+
+export class ComponentName { 
+         . . . .
+         // Exports the metadata object to component 
+}
+
+{% endhighlight %}
+
+N> We recommend you to go through the [quick start](https://angular.io/docs/ts/latest/quickstart.html) of Angular application to get deeper knowledge of setup and structure of the application.
+
+## Consuming ej-angular2 library
+
+The cloned application already configured with `ej-angular2` library to seamlessly work with Angular and Essential JavaScript components. The below steps describe, how the library consumed in the Angular seed application.
+
+* To install this library, run the below command in the root of Angular application.
+
+{% highlight javascript %}
+
+npm install ej-angular2 --save
+
+{% endhighlight %}
+
+*	We can import this library in any Angular application's AppModule. Here we imported the `ej-angular2` library in our cloned application.
+
+{% highlight ts %}
+
+import { BrowserModule } from '@angular/platform-browser';
+import { NgModule } from '@angular/core';
+import { AppComponent } from './app.component';
+// Import the library module
+import { EJAngular2Module } from 'ej-angular2';
+
+@NgModule({
+  declarations: [AppComponent],
+  imports: [BrowserModule,LibraryModule, EJAngular2Module.forRoot()],
+  providers: [],
+  bootstrap: [AppComponent]
+})
+
+export class AppModule { }
+
+{% endhighlight %}
+
+N> The Syncfusion Javascript Component needs dependencies `jquery` and `jsrender` which need to loaded through systemjs loader in `systemjs.config.js` file. Refer the [link](https://github.com/syncfusion/angular2-seeds/blob/systemjs/systemjs.config.js/#L27-L28) for code snippet
+
+{% highlight javascript %}
+
+'jquery': 'npm:jquery/dist/jquery.min.js',
+'jsrender': 'npm:jsrender/jsrender.min.js',
+
+{% endhighlight %}
+
+
+Now we can render any Syncfusion JavaScript Angular components in Angular application which will be discuss in the next section.
+
+##  Adding sample with seed application
+
+* Create `dialog` folder inside `src/app` folder.
+
+* Create `dialog.component.html` view file inside `src/app/dialog` folder and render ejDialog Angular component using the below code example.
+
+{% highlight html %}
+
+<div id="parent" >
+	<input id="btnOpen" style="height: 30px" type="button" ej-button class="ejinputtext" value="Click to open Dialog" (click)="onClick($event)" *ngIf="btndisplay" />
+	<ej-dialog id="basicDialog" #dialog title="Facebook" [(enableResize)]="resize" containment="#parent" (close)="onClose($event)">
+		Facebook is an online social networking service headquartered in Menlo Park, California. Its website was launched on February
+		4, 2004, by Mark Zuckerberg with his Harvard College roommates and fellow students Eduardo Saverin, Andrew McCollum, Dustin
+		Moskovitz and Chris Hughes. The founders had initially limited the website's membership to Harvard students, but later
+		expanded it to colleges in the Boston area, the Ivy League, and Stanford University. It gradually added support for students
+		at various other universities and later to high-school students.
+	</ej-dialog>
+</div>
+
+
+{% endhighlight %}
+
+* Create `dialog.component.ts` model file inside the folder `src/app/dialog` and create sample component using the below code example
+
+{% highlight ts %}
+
+import { Component, ViewEncapsulation, ViewChild } from '@angular/core';
+import { EJComponents } from 'ej-angular2';
+
+@Component({
+  selector: 'ej-app',
+  templateUrl: 'src/dialog/dialog.component.html'
+})
+export class DialogComponent {
+  resize: boolean;
+  btndisplay: boolean;
+  @ViewChild('dialog') dialog: EJComponents <any,any>;
+    constructor() {
+    this.resize = false;
+    this.btndisplay = false;
+  }
+  //Button click event handler to open the ejDialog
+  onClick(event) {
+   this.btndisplay = false;
+   this.dialog.widget.element.ejDialog('open');
+  }
+  //Dialog close event handler
+  onClose(event) {
+    this.btndisplay = true;
+  }
+}
+
+{% endhighlight %}
+
+## Configure the routes for the Router
+
+Before adding router configuration for above created ejDialog component, we recommend you to go through the [Angular Routing](https://angular.io/docs/ts/latest/guide/router.html) configuration to get the deeper knowledge about Angular routing.
+
+* Now, we are going to configure the route navigation link for created Dialog sample in `src/app.component.html` file.
+
+{% highlight html %}
+
+<div>
+	<ul class="nav navbar-nav">
+		. . . .
+		<li><a data-toggle="collapse" data-target="#skeleton-navigation-navbar-collapse.in" href="#dialog" [routerLink]="['/dialog']">Dialog </a></li>
+	</ul>
+</div>
+<main>
+	<router-outlet></router-outlet>
+</main>
+
+{% endhighlight %}
+
+* Import the ejDialog sample component and define the route in `src/app.routes.ts` file.
+
+{% highlight ts %}
+
+import { Routes } from '@angular/router';
+. . . . 
+import { DialogComponent } from './dialog/dialog.component';
+
+export const rootRouterConfig: Routes = [
+    { path: '', redirectTo: 'home', pathMatch: 'full' },
+    . . . . 
+    { path: 'dialog', component: DialogComponent }
+];
+
+{% endhighlight %}
+
+* Import and declare the ejDialog sample component into `app.module.ts` like the below code snippet.
+
+{% highlight ts %}
+
+import { NgModule, enableProdMode, ErrorHandler } from '@angular/core';
+. . . . . 
+import { EJAngular2Module } from 'ej-angular2';
+import { AppComponent } from './app.component';
+. . . . .
+import { DialogComponent } from './dialog/dialog.component';
+
+import { rootRouterConfig } from './app.routes';
+. . . . 
+@NgModule({
+  imports: [BrowserModule, FormsModule, HttpModule, EJAngular2Module.forRoot(), RouterModule.forRoot(rootRouterConfig, { useHash: true })],
+  declarations: [. . . . , DialogComponent],
+  bootstrap: [AppComponent]
+})
+export class AppModule { } }) 
+export class AppModule { }
+
+{% endhighlight %}
+
+Refer the below codes to create the application
+
 {% tabs %}
 
 {% highlight ts %}
@@ -278,187 +461,6 @@ platformBrowserDynamic().bootstrapModule(AppModule);
 {% endhighlight %}
 
 {% endtabs %}
-
-## Syntax of Angular component
-
-{% highlight ts %}
-
-//import statements
-import {Component} from '@angular/core';
-
-@Component ({
-         . . . .
-         . . . .
-         // Takes metadata object from exported class
-         // It describes how the HTML template and component class work together 
-})
-
-export class ComponentName { 
-         . . . .
-         // Exports the metadata object to component 
-}
-
-{% endhighlight %}
-
-N> We recommend you to go through the [quick start](https://angular.io/docs/ts/latest/quickstart.html) of Angular application to get deeper knowledge of setup and structure of the application.
-
-## Consuming ej-angular2 library
-
-The cloned application already configured with `ej-angular2` library to seamlessly work with Angular and Essential JavaScript components. The below steps describe, how the library consumed in the Angular seed application.
-
-* To install this library, run the below command in the root of Angular application.
-
-{% highlight javascript %}
-
-npm install ej-angular2 --save
-
-{% endhighlight %}
-
-*	We can import this library in any Angular application's AppModule. Here we imported the `ej-angular2` library in our cloned application.
-
-{% highlight ts %}
-
-import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
-import { AppComponent } from './app.component';
-// Import the library module
-import { EJAngular2Module } from 'ej-angular2';
-
-@NgModule({
-  declarations: [AppComponent],
-  imports: [BrowserModule,LibraryModule, EJAngular2Module.forRoot()],
-  providers: [],
-  bootstrap: [AppComponent]
-})
-
-export class AppModule { }
-
-{% endhighlight %}
-
-N> The Syncfusion Javascript Component needs dependencies `jquery` and `jsrender` which need to loaded through systemjs loader in `systemjs.config.js` file. Refer the [link](https://github.com/syncfusion/angular2-seeds/blob/systemjs/systemjs.config.js/#L27-L28) for code snippet
-
-{% highlight javascript %}
-
-'jquery': 'npm:jquery/dist/jquery.min.js',
-'jsrender': 'npm:jsrender/jsrender.min.js',
-
-{% endhighlight %}
-
-
-Now we can render any Syncfusion JavaScript Angular components in Angular application which will be discuss in the next section.
-
-##  Adding sample with seed application
-
-* Create `dialog` folder inside `src/app` folder.
-
-* Create `dialog.component.html` view file inside `src/app/dialog` folder and render ejDialog Angular component using the below code example.
-
-{% highlight html %}
-
-<div id="parent" >
-	<input id="btnOpen" style="height: 30px" type="button" ej-button class="ejinputtext" value="Click to open Dialog" (click)="onClick($event)" *ngIf="btndisplay" />
-	<ej-dialog id="basicDialog" #dialog title="Facebook" [(enableResize)]="resize" containment="#parent" (close)="onClose($event)">
-		Facebook is an online social networking service headquartered in Menlo Park, California. Its website was launched on February
-		4, 2004, by Mark Zuckerberg with his Harvard College roommates and fellow students Eduardo Saverin, Andrew McCollum, Dustin
-		Moskovitz and Chris Hughes. The founders had initially limited the website's membership to Harvard students, but later
-		expanded it to colleges in the Boston area, the Ivy League, and Stanford University. It gradually added support for students
-		at various other universities and later to high-school students.
-	</ej-dialog>
-</div>
-
-
-{% endhighlight %}
-
-* Create `dialog.component.ts` model file inside the folder `src/app/dialog` and create sample component using the below code example
-
-{% highlight ts %}
-
-import { Component, ViewEncapsulation, ViewChild } from '@angular/core';
-import { EJComponents } from 'ej-angular2';
-
-@Component({
-  selector: 'ej-app',
-  templateUrl: 'src/dialog/dialog.component.html'
-})
-export class DialogComponent {
-  resize: boolean;
-  btndisplay: boolean;
-  @ViewChild('dialog') dialog: EJComponents <any,any>;
-    constructor() {
-    this.resize = false;
-    this.btndisplay = false;
-  }
-  //Button click event handler to open the ejDialog
-  onClick(event) {
-   this.btndisplay = false;
-   this.dialog.widget.element.ejDialog('open');
-  }
-  //Dialog close event handler
-  onClose(event) {
-    this.btndisplay = true;
-  }
-}
-
-{% endhighlight %}
-
-## Configure the routes for the Router
-
-Before adding router configuration for above created ejDialog component, we recommend you to go through the [Angular Routing](https://angular.io/docs/ts/latest/guide/router.html) configuration to get the deeper knowledge about Angular routing.
-
-* Now, we are going to configure the route navigation link for created Dialog sample in `src/app.component.html` file.
-
-{% highlight html %}
-
-<div>
-	<ul class="nav navbar-nav">
-		. . . .
-		<li><a data-toggle="collapse" data-target="#skeleton-navigation-navbar-collapse.in" href="#dialog" [routerLink]="['/dialog']">Dialog </a></li>
-	</ul>
-</div>
-<main>
-	<router-outlet></router-outlet>
-</main>
-
-{% endhighlight %}
-
-* Import the ejDialog sample component and define the route in `src/app.routes.ts` file.
-
-{% highlight ts %}
-
-import { Routes } from '@angular/router';
-. . . . 
-import { DialogComponent } from './dialog/dialog.component';
-
-export const rootRouterConfig: Routes = [
-    { path: '', redirectTo: 'home', pathMatch: 'full' },
-    . . . . 
-    { path: 'dialog', component: DialogComponent }
-];
-
-{% endhighlight %}
-
-* Import and declare the ejDialog sample component into `app.module.ts` like the below code snippet.
-
-{% highlight ts %}
-
-import { NgModule, enableProdMode, ErrorHandler } from '@angular/core';
-. . . . . 
-import { EJAngular2Module } from 'ej-angular2';
-import { AppComponent } from './app.component';
-. . . . .
-import { DialogComponent } from './dialog/dialog.component';
-
-import { rootRouterConfig } from './app.routes';
-. . . . 
-@NgModule({
-  imports: [BrowserModule, FormsModule, HttpModule, EJAngular2Module.forRoot(), RouterModule.forRoot(rootRouterConfig, { useHash: true })],
-  declarations: [. . . . , DialogComponent],
-  bootstrap: [AppComponent]
-})
-export class AppModule { } }) 
-export class AppModule { }
-
-{% endhighlight %}
 
 ## Running the application
 
