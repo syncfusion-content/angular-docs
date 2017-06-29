@@ -24,7 +24,7 @@ To getting started with Syncfusion Angular Components, the NPM packages [ej-angu
 
 ## Prerequisites
 
-* [Node JS](https://nodejs.org/en/)(v6.x.x or higher)(v6.x.x or higher)
+* [Node JS](https://nodejs.org/en/)(v6.x.x or higher)
 * [NPM](http://blog.npmjs.org/post/85484771375/how-to-install-npm)(v4.x.x or higher)
 * [.NET Core SDK 1.1](https://www.microsoft.com/net/download/core#/current) 
 
@@ -69,6 +69,177 @@ setx ASPNETCORE_ENVIRONMENT "Development"
 ![](/angular/GettingStarted/Images/environmentvariable.png)
 
 N> To know more about environment varaible refer the [link](https://blogs.msdn.microsoft.com/webdev/2017/02/14/building-single-page-applications-on-asp-net-core-with-javascriptservices/)
+
+## Configuration of Syncfusion Angular Component
+
+* Open the project in Visual Studio Code or Visual Studio 2015 to configure the Syncfusion Components
+
+* To install Syncfusion JavaScript for Angular components run below commands from sample's root folder.
+
+{% highlight javascript %}
+
+npm install syncfusion-javascript --save
+npm install ej-angular2 --save
+npm install --save-dev @types/jquery
+npm install --save-dev @types/ej.web.all
+
+{% endhighlight %}
+
+* Refer the below code snippet for NPM Configuration file.
+
+{% highlight javascript %}
+
+{
+  "name": "ejapplication",
+  "version": "0.0.0",
+  "scripts": {
+    "build": "webpack",
+    "copy-ej": "xcopy node_modules\\syncfusion-javascript\\Content\\ej wwwroot\\dist\\ej /y /s /i",
+    "postinstall": "npm run copy-ej",
+    "test": "karma start ClientApp/test/karma.conf.js"
+  },
+  "dependencies": {
+    . . .
+    . . .
+  },
+  "devDependencies": {
+    . . . 
+  }
+}
+
+{% endhighlight %}
+
+* Import `ej-angular2` module into app.module.ts file
+
+{% highlight ts %}
+
+import { NgModule } from '@angular/core';
+. . .
+. . .
+import { EJAngular2Module } from 'ej-angular2';
+
+@NgModule({
+bootstrap: [ AppComponent ],
+declarations: [AppComponent,NavMenuComponent,CounterComponent,FetchDataComponent,HomeComponent],
+imports: [
+UniversalModule, // Must be first import. This automatically imports BrowserModule, HttpModule, and JsonpModule too.
+RouterModule.forRoot([
+{ path: '', redirectTo: 'home', pathMatch: 'full' },
+{ path: 'home', component: HomeComponent },
+{ path: 'counter', component: CounterComponent },
+{ path: 'fetch-data', component: FetchDataComponent },
+{ path: '**', redirectTo: 'home' }
+]),
+EJAngular2Module.forRoot()
+]
+})
+export class AppModule {
+}
+
+{% endhighlight %}
+
+* Syncfusion JavaScript components need `jQuery` to render the control, so import jQuery in `ClientApp/boot-client.ts` file which we already configured in our [webpack angular seed](https://github.com/syncfusion/angular2-seeds/blob/master/src/vendor.ts/#L12-L15) application.
+
+{% highlight ts %}
+
+import 'Angular-universal-polyfills/browser';
+import { enableProdMode } from '@angular/core';
+import { platformUniversalDynamic } from 'Angular-universal';
+import * as $ from 'jquery'; // Import jQuery in Window Object 
+window['jQuery'] = $;
+window['$'] = $
+import 'jsrender';
+import { AppModule } from './app/app.module';
+import 'bootstrap';
+
+const rootElemTagName = 'app'; // Update this if you change your root component selector
+...
+...
+
+{% endhighlight %}
+
+* If you are using templates like grid, to render that component, we need to install and import dependency `jsrender` in `ClientApp/boot-client.ts` file. Run the below command to install jsrender.
+
+{% highlight javascript %}
+
+npm install jsrender --save
+
+{% endhighlight %}
+
+N> If we run our application, we will get the following error.
+
+![](/angular/GettingStarted/Images/windowerror.png)
+
+* To overcome this issue, modify the `Views/Home/index.cshtml` file is referred as below and refer `ej-themes` from `dist` folder.
+
+{% highlight javascript %}
+
+@{
+ViewData["Title"] = "Home Page";
+}
+
+<!--To overcome the issue "ReferenceError: window is not defined"-->
+<app asp-ng2-prerender-module="ClientApp/dist/main-server">Loading...</app>
+<!--ej theme reference-->
+<link href="~/dist/ej/web/material/ej.web.all.min.css" rel="stylesheet" asp-append-version="true">
+
+<script src="~/dist/vendor.js" asp-append-version="true"></script>
+@section scripts {
+<script src="~/dist/main-client.js" asp-append-version="true"></script>
+}
+
+{% endhighlight %}
+
+* Import the `ejDialog` component in `home.component.html`
+
+{% highlight html %}
+
+<div id="parent" >
+	<input id="btnOpen" style="height: 30px" type="button" ej-button class="ejinputtext" value="Click to open Dialog" (click)="onClick($event)" *ngIf="btndisplay" />
+	<ej-dialog id="basicDialog" #dialog title="Facebook" [(enableResize)]="resize" containment="#parent" (close)="onClose($event)">
+		Facebook is an online social networking service headquartered in Menlo Park, California. Its website was launched on February
+		4, 2004, by Mark Zuckerberg with his Harvard College roommates and fellow students Eduardo Saverin, Andrew McCollum, Dustin
+		Moskovitz and Chris Hughes. The founders had initially limited the website's membership to Harvard students, but later
+		expanded it to colleges in the Boston area, the Ivy League, and Stanford University. It gradually added support for students
+		at various other universities and later to high-school students.
+	</ej-dialog>
+</div>
+
+{% endhighlight %}
+
+* Create sample component using the below code example in `home.component.ts`
+
+{% highlight ts %}
+
+import { Component, ViewChild } from '@angular/core';
+import { EJComponents } from 'ej-angular2';
+
+@Component({
+    selector: 'home',
+    templateUrl: './home.component.html'
+})
+export class HomeComponent {
+  resize: boolean;
+  btndisplay: boolean;
+  @ViewChild('dialog') dialog: EJComponents<any, any>;
+  constructor() {
+    this.resize = false;
+    this.btndisplay = false;
+  }
+  //Button click event handler to open the ejDialog
+  onClick(event) {
+    this.btndisplay = false;
+    this.dialog.widget.element.ejDialog('open');
+  }
+  //Dialog close event handler
+  onClose(event) {
+    this.btndisplay = true;
+  }
+}
+
+{% endhighlight %}
+
+Refer the below codes to create the application
 
 {% tabs %}
 
@@ -288,175 +459,6 @@ if (document.readyState === 'complete') {
 {% endhighlight %}
 
 {% endtabs %}
-
-## Configuration of Syncfusion Angular Component
-
-* Open the project in Visual Studio Code or Visual Studio 2015 to configure the Syncfusion Components
-
-* To install Syncfusion JavaScript for Angular components run below commands from sample's root folder.
-
-{% highlight javascript %}
-
-npm install syncfusion-javascript --save
-npm install ej-angular2 --save
-npm install --save-dev @types/jquery
-npm install --save-dev @types/ej.web.all
-
-{% endhighlight %}
-
-* Refer the below code snippet for NPM Configuration file.
-
-{% highlight javascript %}
-
-{
-  "name": "ejapplication",
-  "version": "0.0.0",
-  "scripts": {
-    "build": "webpack",
-    "copy-ej": "xcopy node_modules\\syncfusion-javascript\\Content\\ej wwwroot\\dist\\ej /y /s /i",
-    "postinstall": "npm run copy-ej",
-    "test": "karma start ClientApp/test/karma.conf.js"
-  },
-  "dependencies": {
-    . . .
-    . . .
-  },
-  "devDependencies": {
-    . . . 
-  }
-}
-
-{% endhighlight %}
-
-* Import `ej-angular2` module into app.module.ts file
-
-{% highlight ts %}
-
-import { NgModule } from '@angular/core';
-. . .
-. . .
-import { EJAngular2Module } from 'ej-angular2';
-
-@NgModule({
-bootstrap: [ AppComponent ],
-declarations: [AppComponent,NavMenuComponent,CounterComponent,FetchDataComponent,HomeComponent],
-imports: [
-UniversalModule, // Must be first import. This automatically imports BrowserModule, HttpModule, and JsonpModule too.
-RouterModule.forRoot([
-{ path: '', redirectTo: 'home', pathMatch: 'full' },
-{ path: 'home', component: HomeComponent },
-{ path: 'counter', component: CounterComponent },
-{ path: 'fetch-data', component: FetchDataComponent },
-{ path: '**', redirectTo: 'home' }
-]),
-EJAngular2Module.forRoot()
-]
-})
-export class AppModule {
-}
-
-{% endhighlight %}
-
-* Syncfusion JavaScript components need `jQuery` to render the control, so import jQuery in `ClientApp/boot-client.ts` file which we already configured in our [webpack angular seed](https://github.com/syncfusion/angular2-seeds/blob/master/src/vendor.ts/#L12-L15) application.
-
-{% highlight ts %}
-
-import 'Angular-universal-polyfills/browser';
-import { enableProdMode } from '@angular/core';
-import { platformUniversalDynamic } from 'Angular-universal';
-import * as $ from 'jquery'; // Import jQuery in Window Object 
-window['jQuery'] = $;
-window['$'] = $
-import 'jsrender';
-import { AppModule } from './app/app.module';
-import 'bootstrap';
-
-const rootElemTagName = 'app'; // Update this if you change your root component selector
-...
-...
-
-{% endhighlight %}
-
-* If you are using templates like grid, to render that component, we need to install and import dependency `jsrender` in `ClientApp/boot-client.ts` file. Run the below command to install jsrender.
-
-{% highlight javascript %}
-
-npm install jsrender --save
-
-{% endhighlight %}
-
-N> If we run our application, we will get the following error.
-
-![](/angular/GettingStarted/Images/windowerror.png)
-
-* To overcome this issue, modify the `Views/Home/index.cshtml` file is referred as below and refer `ej-themes` from `dist` folder.
-
-{% highlight javascript %}
-
-@{
-ViewData["Title"] = "Home Page";
-}
-
-<!--To overcome the issue "ReferenceError: window is not defined"-->
-<app asp-ng2-prerender-module="ClientApp/dist/main-server">Loading...</app>
-<!--ej theme reference-->
-<link href="~/dist/ej/web/material/ej.web.all.min.css" rel="stylesheet" asp-append-version="true">
-
-<script src="~/dist/vendor.js" asp-append-version="true"></script>
-@section scripts {
-<script src="~/dist/main-client.js" asp-append-version="true"></script>
-}
-
-{% endhighlight %}
-
-* Import the `ejDialog` component in `home.component.html`
-
-{% highlight html %}
-
-<div id="parent" >
-	<input id="btnOpen" style="height: 30px" type="button" ej-button class="ejinputtext" value="Click to open Dialog" (click)="onClick($event)" *ngIf="btndisplay" />
-	<ej-dialog id="basicDialog" #dialog title="Facebook" [(enableResize)]="resize" containment="#parent" (close)="onClose($event)">
-		Facebook is an online social networking service headquartered in Menlo Park, California. Its website was launched on February
-		4, 2004, by Mark Zuckerberg with his Harvard College roommates and fellow students Eduardo Saverin, Andrew McCollum, Dustin
-		Moskovitz and Chris Hughes. The founders had initially limited the website's membership to Harvard students, but later
-		expanded it to colleges in the Boston area, the Ivy League, and Stanford University. It gradually added support for students
-		at various other universities and later to high-school students.
-	</ej-dialog>
-</div>
-
-{% endhighlight %}
-
-* Create sample component using the below code example in `home.component.ts`
-
-{% highlight ts %}
-
-import { Component, ViewChild } from '@angular/core';
-import { EJComponents } from 'ej-angular2';
-
-@Component({
-    selector: 'home',
-    templateUrl: './home.component.html'
-})
-export class HomeComponent {
-  resize: boolean;
-  btndisplay: boolean;
-  @ViewChild('dialog') dialog: EJComponents<any, any>;
-  constructor() {
-    this.resize = false;
-    this.btndisplay = false;
-  }
-  //Button click event handler to open the ejDialog
-  onClick(event) {
-    this.btndisplay = false;
-    this.dialog.widget.element.ejDialog('open');
-  }
-  //Dialog close event handler
-  onClose(event) {
-    this.btndisplay = true;
-  }
-}
-
-{% endhighlight %}
 
 ## Run the Application
 
