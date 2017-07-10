@@ -40,7 +40,7 @@ Appointments play a dynamic role within the Schedule control with which the user
 The appointments can be added/edited in the Scheduler using any one of the following ways,
 
 * Quick window
-* Inline Appointment creation/editing
+* Inline creation/editing
 * Default appointment window
 * Context menu
 * Through programmatically
