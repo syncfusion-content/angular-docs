@@ -126,7 +126,7 @@ export class ScheduleComponent {
 
 {% endhighlight %}
 
-#### Inline creation/editing
+#### Inline Appointment Creation/Editing
 
 Another easier way, alternative to quick window for adding or editing the appointment’s subject alone on the Scheduler in a quicker manner can be achieved using inline Add/Edit support. It allows the user to add and edit the appointments inline.
 
