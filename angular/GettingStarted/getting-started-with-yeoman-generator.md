@@ -18,6 +18,8 @@ To getting started with Syncfusion Angular Components, the NPM packages [ej-angu
 * [Prerequisites](#prerequisites)
 * [Install the SPA Template using Yeoman Generator](#install-the-spa-template-using-yeoman-generator)
 * [Configuration of Syncfusion Angular Component](#configuration-of-syncfusion-angular-component)
+* [Bundling Syncfusion JavaScript Theme Files](#bundling-syncfusion-javascript-theme-files)
+* [Adding Dialog Sample](#adding-dialog-sample) 
 * [Run the Application](#run-the-application)
 
 ## Prerequisites
@@ -58,7 +60,7 @@ N> To know more about environment varaible refer the [link](https://blogs.msdn.m
 
 ## Configuration of Syncfusion Angular Component
 
-* Open the project in Visual Studio Code or Visual Studio 2015 to configure the Syncfusion Components
+* Open the project in Visual Studio Code or Visual Studio 2017 to configure the Syncfusion Components
 
 * To install Syncfusion JavaScript for Angular components run below commands from sample's root folder.
 
@@ -173,6 +175,91 @@ ViewData["Title"] = "Home Page";
 }
 
 {% endhighlight %}
+
+## Bundling Syncfusion JavaScript Theme Files
+
+* we can bundle `syncfusion-javascript` theme file into `vendor.css`. Refer to the below code snippet to import the theme file in `webpack.config.vendor.js` 
+
+ {% highlight javascript %}
+ module.exports = (env) => { 
+    const extractCSS = new ExtractTextPlugin('vendor.css'); 
+    const isDevBuild = !(env && env.prod); 
+    const sharedConfig = { 
+        stats: { modules: false }, 
+        resolve: { extensions: ['.js'] }, 
+        module: { 
+            rules: [ 
+                { test: /\.(png|woff|woff2|eot|ttf|svg)(\?|$)/, use: 'url-loader?limit=100000' }, 
+                { 
+                    test: /\.(png|jpe?g|gif|cur|svg|woff|woff2|ttf|eot|ico)$/, 
+                    loader: 'file-loader?name=assets/[name].[hash].[ext]' 
+                }, 
+            ] 
+        }, 
+        entry: { 
+            vendor: [ 
+                '@angular/animations', 
+                '@angular/common', 
+                '@angular/compiler', 
+                '@angular/core', 
+                '@angular/forms', 
+                '@angular/http', 
+                '@angular/platform-browser', 
+                '@angular/platform-browser-dynamic', 
+                '@angular/router', 
+                'bootstrap', 
+                'syncfusion-javascript/Content/ej/web/material/ej.web.all.min.css', 
+                'bootstrap/dist/css/bootstrap.css', 
+                'es6-shim', 
+                'es6-promise', 
+                'event-source-polyfill', 
+                'jquery', 
+                'zone.js', 
+            ] 
+        },   
+        . . .
+        . . .     
+ {% endhighlight %}
+ 
+* Syncfusion JavaScript theme files have more type of image files. To bundle these type files,  we can use `file-loader`. Run the below command to install file-loader package. 
+
+{% highlight javascript %}
+npm install file-loader --save-dev 
+{% endhighlight %}
+
+* Also configure the `webpack.config.vendor.js` file as like below code snippet. 
+
+{% highlight javascript %}
+module.exports = (env) => { 
+    const extractCSS = new ExtractTextPlugin('vendor.css'); 
+    const isDevBuild = !(env && env.prod); 
+    const sharedConfig = { 
+        stats: { modules: false }, 
+        resolve: { extensions: ['.js'] }, 
+        module: { 
+            rules: [ 
+                { test: /\.(png|woff|woff2|eot|ttf|svg)(\?|$)/, use: 'url-loader?limit=100000' }, 
+                { 
+                    test: /\.(png|jpe?g|gif|cur|svg|woff|woff2|ttf|eot|ico)$/, 
+                    loader: 'file-loader?name=assets/[name].[hash].[ext]' 
+                }, 
+            ] 
+        },   
+        . . .
+        . . .
+{% endhighlight %}
+
+* To bundle the Syncfusion Javsctipt Theme file, run the below command in your command prompt
+
+{% highlight javascript %}
+
+npm run build 
+
+{% endhighlight %}
+
+N> If you change the theme in `webpack.config.js` file , run th above command to bundle the new theme in application
+
+## Adding Dialog sample
 
 * Import the `ejDialog` component in `home.component.html`
 
@@ -444,6 +531,11 @@ const modulePromise = platformBrowserDynamic().bootstrapModule(AppModule);
 dotnet run
 
 {% endhighlight %}
+
+
+## Running the Application using Visual Studio 2017
+
+* Open the `.csproj` file which is in project folder and then press `Ctrl+F5` to launch the application in a browser.
 
 ![](/angular/GettingStarted/Images/spatemplateoutput.png)
 
