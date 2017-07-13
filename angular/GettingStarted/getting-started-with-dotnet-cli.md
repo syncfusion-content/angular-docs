@@ -72,7 +72,7 @@ N> To know more about environment varaible refer the [link](https://blogs.msdn.m
 
 ## Configuration of Syncfusion Angular Component
 
-* Open the project in Visual Studio Code or Visual Studio 2015 to configure the Syncfusion Components
+* Open the project in Visual Studio Code or Visual Studio 2017 to configure the Syncfusion Components
 
 * To install Syncfusion JavaScript for Angular components run below commands from sample's root folder.
 
@@ -469,5 +469,9 @@ if (document.readyState === 'complete') {
 dotnet run
 
 {% endhighlight %}
+
+## Running the Application using Visual Studio 2017
+
+* Open the `.csproj` file which is in project folder and then press `Ctrl+F5` to launch the application in a browser.
 
 ![](/angular/GettingStarted/Images/spatemplateoutput.png)
