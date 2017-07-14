@@ -515,3 +515,28 @@ Modify **ng.cmd**
   node  "%~dp0\..\@angular\cli\bin\ng" %* 
 )
 {% endhighlight %}
+
+### Importing required Syncfusion Angular components
+
+Importing `EJAngular2Module` from `ej-angular2` package may cause bundle size bigger, because it imports all Syncfusion Angular components and all its Syncfusion JavaScript dependencies. So, we recommend to import required Angular component from ej-angular2 package as like below code sample. 
+
+{% highlight ts %}
+
+import { BrowserModule } from '@angular/platform-browser'; 
+import { NgModule } from '@angular/core'; 
+import { EJ_GRID_COMPONENTS } from 'ej-angular2'; 
+import { AppComponent } from './app.component'; 
+ 
+@NgModule({ 
+  declarations: [ 
+    AppComponent, EJ_GRID_COMPONENTS 
+  ], 
+  imports: [ 
+    BrowserModule 
+  ], 
+  providers: [], 
+  bootstrap: [AppComponent] 
+}) 
+export class AppModule { } 
+
+{% endhighlight %}
