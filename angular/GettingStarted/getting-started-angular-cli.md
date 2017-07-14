@@ -524,7 +524,7 @@ Importing `EJAngular2Module` from `ej-angular2` package may cause bundle size bi
 
 import { BrowserModule } from '@angular/platform-browser'; 
 import { NgModule } from '@angular/core'; 
-import { EJ_GRID_COMPONENTS } from 'ej-angular2'; 
+import { EJ_GRID_COMPONENTS } from 'ej-angular2/src/ej/grid.component'; 
 import { AppComponent } from './app.component'; 
  
 @NgModule({ 
