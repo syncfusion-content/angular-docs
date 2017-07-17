@@ -87,30 +87,6 @@ npm install --save-dev @types/ej.web.all
 
 {% endhighlight %}
 
-* Refer the below code snippet for NPM Configuration file.
-
-{% highlight javascript %}
-
-{
-  "name": "ejapplication",
-  "version": "0.0.0",
-  "scripts": {
-    "build": "webpack",
-    "copy-ej": "xcopy node_modules\\syncfusion-javascript\\Content\\ej wwwroot\\dist\\ej /y /s /i",
-    "postinstall": "npm run copy-ej",
-    "test": "karma start ClientApp/test/karma.conf.js"
-  },
-  "dependencies": {
-    . . .
-    . . .
-  },
-  "devDependencies": {
-    . . . 
-  }
-}
-
-{% endhighlight %}
-
 * Import `ej-angular2` module into app.module.ts file
 
 {% highlight ts %}
