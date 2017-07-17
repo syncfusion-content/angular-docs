@@ -82,7 +82,6 @@ npm install --save-dev @types/ej.web.all
   "version": "0.0.0",
   "scripts": {
     "build": "webpack",
-    "copy-ej": "xcopy node_modules\\syncfusion-javascript\\Content\\ej wwwroot\\dist\\ej /y /s /i",
     "postinstall": "npm run copy-ej",
     "test": "karma start ClientApp/test/karma.conf.js"
   },
@@ -166,8 +165,6 @@ ViewData["Title"] = "Home Page";
 
 <!--To overcome the issue "ReferenceError: window is not defined"-->
 <app asp-ng2-prerender-module="ClientApp/dist/main-server">Loading...</app>
-<!--ej theme reference-->
-<link href="~/dist/ej/web/material/ej.web.all.min.css" rel="stylesheet" asp-append-version="true">
 
 <script src="~/dist/vendor.js" asp-append-version="true"></script>
 @section scripts {
@@ -437,8 +434,6 @@ const modulePromise = platformBrowserDynamic().bootstrapModule(AppModule);
 
 <!--To overcome the issue "ReferenceError: window is not defined"-->
 <app asp-ng2-prerender-module="ClientApp/dist/main-server">Loading...</app>
-<!--ej theme reference-->
-<link href="~/dist/ej/web/material/ej.web.all.min.css" rel="stylesheet" asp-append-version="true">
 
 <script src="~/dist/vendor.js" asp-append-version="true"></script>
 @section scripts {
@@ -455,7 +450,6 @@ const modulePromise = platformBrowserDynamic().bootstrapModule(AppModule);
   "version": "0.0.0",
   "scripts": {
     "build": "webpack",
-    "copy-ej": "xcopy node_modules\\syncfusion-javascript\\Content\\ej wwwroot\\dist\\ej /y /s /i",
     "postinstall": "npm run copy-ej",
     "test": "karma start ClientApp/test/karma.conf.js"
   },
