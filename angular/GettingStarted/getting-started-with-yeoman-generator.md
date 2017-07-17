@@ -73,29 +73,6 @@ npm install --save-dev @types/ej.web.all
 
 {% endhighlight %}
 
-* Refer the below code snippet for NPM Configuration file.
-
-{% highlight javascript %}
-
-{
-  "name": "WebApplicationBasic",
-  "version": "0.0.0",
-  "scripts": {
-    "build": "webpack",
-    "postinstall": "npm run copy-ej",
-    "test": "karma start ClientApp/test/karma.conf.js"
-  },
-  "dependencies": {
-    . . .
-    . . .
-  },
-  "devDependencies": {
-    . . . 
-  }
-}
-
-{% endhighlight %}
-
 * Import `ej-angular2` module into `app.module.shared.ts` file 
 
 {% highlight ts %}
@@ -155,7 +132,7 @@ N> If we run our application, we will get the following error.
 
 ![](/angular/GettingStarted/Images/windowerror.png)
 
-* To overcome this issue, modify the `Views/Home/index.cshtml` file is referred as below and refer `ej-themes` from `dist` folder.
+* To overcome this issue, modify the `Views/Home/index.cshtml` file is referred as below.
 
 {% highlight javascript %}
 
@@ -450,7 +427,6 @@ const modulePromise = platformBrowserDynamic().bootstrapModule(AppModule);
   "version": "0.0.0",
   "scripts": {
     "build": "webpack",
-    "postinstall": "npm run copy-ej",
     "test": "karma start ClientApp/test/karma.conf.js"
   },
   "dependencies": {
