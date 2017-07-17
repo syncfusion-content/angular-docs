@@ -73,30 +73,6 @@ npm install --save-dev @types/ej.web.all
 
 {% endhighlight %}
 
-* Refer the below code snippet for NPM Configuration file.
-
-{% highlight javascript %}
-
-{
-  "name": "WebApplicationBasic",
-  "version": "0.0.0",
-  "scripts": {
-    "build": "webpack",
-    "copy-ej": "xcopy node_modules\\syncfusion-javascript\\Content\\ej wwwroot\\dist\\ej /y /s /i",
-    "postinstall": "npm run copy-ej",
-    "test": "karma start ClientApp/test/karma.conf.js"
-  },
-  "dependencies": {
-    . . .
-    . . .
-  },
-  "devDependencies": {
-    . . . 
-  }
-}
-
-{% endhighlight %}
-
 * Import `ej-angular2` module into `app.module.shared.ts` file 
 
 {% highlight ts %}
@@ -156,7 +132,7 @@ N> If we run our application, we will get the following error.
 
 ![](/angular/GettingStarted/Images/windowerror.png)
 
-* To overcome this issue, modify the `Views/Home/index.cshtml` file is referred as below and refer `ej-themes` from `dist` folder.
+* To overcome this issue, modify the `Views/Home/index.cshtml` file is referred as below.
 
 {% highlight javascript %}
 
@@ -166,8 +142,6 @@ ViewData["Title"] = "Home Page";
 
 <!--To overcome the issue "ReferenceError: window is not defined"-->
 <app asp-ng2-prerender-module="ClientApp/dist/main-server">Loading...</app>
-<!--ej theme reference-->
-<link href="~/dist/ej/web/material/ej.web.all.min.css" rel="stylesheet" asp-append-version="true">
 
 <script src="~/dist/vendor.js" asp-append-version="true"></script>
 @section scripts {
@@ -437,8 +411,6 @@ const modulePromise = platformBrowserDynamic().bootstrapModule(AppModule);
 
 <!--To overcome the issue "ReferenceError: window is not defined"-->
 <app asp-ng2-prerender-module="ClientApp/dist/main-server">Loading...</app>
-<!--ej theme reference-->
-<link href="~/dist/ej/web/material/ej.web.all.min.css" rel="stylesheet" asp-append-version="true">
 
 <script src="~/dist/vendor.js" asp-append-version="true"></script>
 @section scripts {
@@ -455,8 +427,6 @@ const modulePromise = platformBrowserDynamic().bootstrapModule(AppModule);
   "version": "0.0.0",
   "scripts": {
     "build": "webpack",
-    "copy-ej": "xcopy node_modules\\syncfusion-javascript\\Content\\ej wwwroot\\dist\\ej /y /s /i",
-    "postinstall": "npm run copy-ej",
     "test": "karma start ClientApp/test/karma.conf.js"
   },
   "dependencies": {
