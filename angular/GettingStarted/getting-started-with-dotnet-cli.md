@@ -20,6 +20,8 @@ To getting started with Syncfusion Angular Components, the NPM packages [ej-angu
 * [Install the SPA Template](#install-the-spa-template)
 * [Install the Dependencies](#install-the-dependencies)
 * [Configuration of Syncfusion Angular Component](#configuration-of-syncfusion-angular-component)
+* [Bundling Syncfusion JavaScript Theme Files](#bundling-syncfusion-javascript-theme-files)
+* [Adding Dialog Sample](#adding-dialog-sample) 
 * [Run the Application](#run-the-application)
 
 ## Prerequisites
@@ -85,30 +87,6 @@ npm install --save-dev @types/ej.web.all
 
 {% endhighlight %}
 
-* Refer the below code snippet for NPM Configuration file.
-
-{% highlight javascript %}
-
-{
-  "name": "ejapplication",
-  "version": "0.0.0",
-  "scripts": {
-    "build": "webpack",
-    "copy-ej": "xcopy node_modules\\syncfusion-javascript\\Content\\ej wwwroot\\dist\\ej /y /s /i",
-    "postinstall": "npm run copy-ej",
-    "test": "karma start ClientApp/test/karma.conf.js"
-  },
-  "dependencies": {
-    . . .
-    . . .
-  },
-  "devDependencies": {
-    . . . 
-  }
-}
-
-{% endhighlight %}
-
 * Import `ej-angular2` module into app.module.ts file
 
 {% highlight ts %}
@@ -170,7 +148,7 @@ N> If we run our application, we will get the following error.
 
 ![](/angular/GettingStarted/Images/windowerror.png)
 
-* To overcome this issue, modify the `Views/Home/index.cshtml` file is referred as below and refer `ej-themes` from `dist` folder.
+* To overcome this issue, modify the `Views/Home/index.cshtml` file is referred as below.
 
 {% highlight javascript %}
 
@@ -180,8 +158,6 @@ ViewData["Title"] = "Home Page";
 
 <!--To overcome the issue "ReferenceError: window is not defined"-->
 <app asp-ng2-prerender-module="ClientApp/dist/main-server">Loading...</app>
-<!--ej theme reference-->
-<link href="~/dist/ej/web/material/ej.web.all.min.css" rel="stylesheet" asp-append-version="true">
 
 <script src="~/dist/vendor.js" asp-append-version="true"></script>
 @section scripts {
@@ -189,6 +165,91 @@ ViewData["Title"] = "Home Page";
 }
 
 {% endhighlight %}
+
+## Bundling Syncfusion JavaScript Theme Files
+
+* we can bundle `syncfusion-javascript` theme file into `vendor.css`. Refer to the below code snippet to import the theme file in `webpack.config.vendor.js` 
+
+ {% highlight javascript %}
+ module.exports = (env) => { 
+    const extractCSS = new ExtractTextPlugin('vendor.css'); 
+    const isDevBuild = !(env && env.prod); 
+    const sharedConfig = { 
+        stats: { modules: false }, 
+        resolve: { extensions: ['.js'] }, 
+        module: { 
+            rules: [ 
+                { test: /\.(png|woff|woff2|eot|ttf|svg)(\?|$)/, use: 'url-loader?limit=100000' }, 
+                { 
+                    test: /\.(png|jpe?g|gif|cur|svg|woff|woff2|ttf|eot|ico)$/, 
+                    loader: 'file-loader?name=assets/[name].[hash].[ext]' 
+                }, 
+            ] 
+        }, 
+        entry: { 
+            vendor: [ 
+                '@angular/animations', 
+                '@angular/common', 
+                '@angular/compiler', 
+                '@angular/core', 
+                '@angular/forms', 
+                '@angular/http', 
+                '@angular/platform-browser', 
+                '@angular/platform-browser-dynamic', 
+                '@angular/router', 
+                'bootstrap', 
+                'syncfusion-javascript/Content/ej/web/material/ej.web.all.min.css', 
+                'bootstrap/dist/css/bootstrap.css', 
+                'es6-shim', 
+                'es6-promise', 
+                'event-source-polyfill', 
+                'jquery', 
+                'zone.js', 
+            ] 
+        },   
+        . . .
+        . . .     
+ {% endhighlight %}
+ 
+* Syncfusion JavaScript theme files have more type of image files. To bundle these type files,  we can use `file-loader`. Run the below command to install file-loader package. 
+
+{% highlight javascript %}
+npm install file-loader --save-dev 
+{% endhighlight %}
+
+* Also configure the `webpack.config.vendor.js` file as like below code snippet. 
+
+{% highlight javascript %}
+module.exports = (env) => { 
+    const extractCSS = new ExtractTextPlugin('vendor.css'); 
+    const isDevBuild = !(env && env.prod); 
+    const sharedConfig = { 
+        stats: { modules: false }, 
+        resolve: { extensions: ['.js'] }, 
+        module: { 
+            rules: [ 
+                { test: /\.(png|woff|woff2|eot|ttf|svg)(\?|$)/, use: 'url-loader?limit=100000' }, 
+                { 
+                    test: /\.(png|jpe?g|gif|cur|svg|woff|woff2|ttf|eot|ico)$/, 
+                    loader: 'file-loader?name=assets/[name].[hash].[ext]' 
+                }, 
+            ] 
+        },   
+        . . .
+        . . .
+{% endhighlight %}
+
+* To bundle the Syncfusion Javsctipt Theme file, run the below command in your command prompt
+
+{% highlight javascript %}
+
+npm run build 
+
+{% endhighlight %}
+
+N> If you change the theme in `webpack.config.js` file , run th above command to bundle the new theme in application
+
+## Adding Dialog sample
 
 * Import the `ejDialog` component in `home.component.html`
 
@@ -374,8 +435,6 @@ if (document.readyState === 'complete') {
 
 <!--To overcome the issue "ReferenceError: window is not defined"-->
 <app asp-ng2-prerender-module="ClientApp/dist/main-server">Loading...</app>
-<!--ej theme reference-->
-<link href="~/dist/ej/web/material/ej.web.all.min.css" rel="stylesheet" asp-append-version="true">
 
 <script src="~/dist/vendor.js" asp-append-version="true"></script>
 @section scripts {
@@ -390,8 +449,6 @@ if (document.readyState === 'complete') {
   "version": "0.0.0",
   "scripts": {
     "build": "webpack",
-    "copy-ej": "xcopy node_modules\\syncfusion-javascript\\Content\\ej wwwroot\\dist\\ej /y /s /i",
-    "postinstall": "npm run copy-ej",
     "test": "karma start ClientApp/test/karma.conf.js"
   },
   "dependencies": {

@@ -156,7 +156,7 @@ import { Component, ViewEncapsulation, ViewChild } from '@angular/core';
 import { EJComponents } from 'ej-angular2';
 
 @Component({
-  selector: 'ej-app',
+  selector: 'app-root',
   templateUrl: './app.component.html',
 })
 export class AppComponent {
