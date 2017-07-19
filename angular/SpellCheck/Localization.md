@@ -1,7 +1,7 @@
 ---
 title: Localization
 description: Localizing SpellCheck
-platform: Angular-2
+platform: Angular
 control: spellcheck
 documentation: ug
 keywords: spellcheck localize, localize, localization, localize specific words

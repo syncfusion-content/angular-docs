@@ -1,7 +1,7 @@
 ---
 title: SpellCheck - Operations
 description: SpellCheck Operations
-platform: Angular-2
+platform: Angular
 control: spellcheck
 documentation: ug
 keywords: operations, spellcheck modes, dialog mode, context menu mode,  custom menu, handling menu actions, handling dialog actions

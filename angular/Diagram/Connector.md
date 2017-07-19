@@ -11,7 +11,7 @@ documentation: ug
 
 Connectors are objects used to create link between two points, nodes or ports to represent the relationships between them.
 
-![](/angular-2/Diagram/Connector_images/Connector_img1.png)
+![](/angular/Diagram/Connector_images/Connector_img1.png)
 
 ## Create Connector
 
@@ -54,7 +54,7 @@ export class ModelComponent {
 
 {% endhighlight %}
 
-![](/angular-2/Diagram/Connector_images/Connector_img2.png)
+![](/angular/Diagram/Connector_images/Connector_img2.png)
 
 ### Add connector at run time
 
@@ -80,24 +80,24 @@ diagram.add(connector);
 
 {% endhighlight %}
 
-![](/angular-2/Diagram/Connector_images/Connector_img3.png)
+![](/angular/Diagram/Connector_images/Connector_img3.png)
 
 ### Connectors from palette
 
 Connectors can be predefined and added to the symbol palette. You can drop those connectors into the Diagram, when required.
 
-For more information about adding connectors from symbol palette, refer to [Symbol Palette](/angular-2/Diagram/Symbol-Palette "Symbol Palette").
+For more information about adding connectors from symbol palette, refer to [Symbol Palette](/angular/Diagram/Symbol-Palette "Symbol Palette").
 
 ### Connectors through data source
 
 Connectors are automatically generated based on the relationships defined through the data source.
 The default properties for these connectors are fetched from default settings.
 
-For more information about data source, refer to [Data Binding](/angular-2/Diagram/Data-Binding "Data Binding").
+For more information about data source, refer to [Data Binding](/angular/Diagram/Data-Binding "Data Binding").
 
 ### Draw connectors
 
-Connectors can be interactively drawn by clicking and dragging on the Diagram surface by using **DrawingTool**. For more information about drawing connectors, refer to [Draw Connectors](/angular-2/Diagram/Tools#drawing-tools:connectors "Draw Connectors").
+Connectors can be interactively drawn by clicking and dragging on the Diagram surface by using **DrawingTool**. For more information about drawing connectors, refer to [Draw Connectors](/angular/Diagram/Tools#drawing-tools:connectors "Draw Connectors").
 
 ## Update Connector at runtime
 
@@ -179,7 +179,7 @@ export class ConnectorComponent {
 
 {% endhighlight %}
 
-![](/angular-2/Diagram/Connector_images/Connector_img4.png)
+![](/angular/Diagram/Connector_images/Connector_img4.png)
 
 N> By default, connections are created at the intersecting point of segments and node bounds. The connection between any specific point of source and target nodes can be achieved with connection ports.
 
@@ -282,7 +282,7 @@ export class NodesComponent {
 
 {% endhighlight %}
 
-![](/angular-2/Diagram/Connector_images/Connector_img5.png)
+![](/angular/Diagram/Connector_images/Connector_img5.png)
 
 ## Segments
 
@@ -323,7 +323,7 @@ export class ConnectorComponent {
 
 {% endhighlight %}
 
-![](/angular-2/Diagram/Connector_images/connector_img6.png)
+![](/angular/Diagram/Connector_images/connector_img6.png)
 
 The `point` property of straight segment allows you to define the end point of it. The following code example illustrates how to define the end point of a straight segment.
 
@@ -362,7 +362,7 @@ export class ConnectorComponent {
 
 {% endhighlight %}
 
-![](/angular-2/Diagram/Connector_images/Connector_img7.png)
+![](/angular/Diagram/Connector_images/Connector_img7.png)
 
 ### Orthogonal
 
@@ -397,7 +397,7 @@ export class ConnectorComponent {
 
 {% endhighlight %}
 
-![](/angular-2/Diagram/Connector_images/Connector_img8.png)
+![](/angular/Diagram/Connector_images/Connector_img8.png)
 
 The `length` and `direction` properties allow to define the flow and length of segment. The following code example illustrates how to create customized orthogonal segments.
 
@@ -430,15 +430,15 @@ export class ConnectorComponent {
 }
 {% endhighlight %}
 
-![](/angular-2/Diagram/Connector_images/Connector_img9.png)
+![](/angular/Diagram/Connector_images/Connector_img9.png)
 
 #### Avoid overlapping
 
 Orthogonal segments are automatically re-routed, in order to avoid overlapping with the source and target nodes. The following images illustrate how orthogonal segments are re-routed.
 
-![](/angular-2/Diagram/Connector_images/Connector_img10.png)
+![](/angular/Diagram/Connector_images/Connector_img10.png)
 
-![](/angular-2/Diagram/Connector_images/Connector_img11.png)
+![](/angular/Diagram/Connector_images/Connector_img11.png)
 
 N> Overlapping with source and target nodes are only avoided. Other nodes are not considered as obstacles.
 
@@ -474,7 +474,7 @@ export class ConnectorComponent {
 }
 {% endhighlight %}
 
-![](/angular-2/Diagram/Connector_images/Connector_img12.png)
+![](/angular/Diagram/Connector_images/Connector_img12.png)
 
 The `point1` and `point2` properties of bezier segment enable you to set the control points. The following code example illustrates how to configure the Bezier segments with control points.
 
@@ -515,7 +515,7 @@ export class ConnectorComponent {
 
 {% endhighlight %}
 
-![](/angular-2/Diagram/Connector_images/Connector_img13.png)
+![](/angular/Diagram/Connector_images/Connector_img13.png)
 
 
 The `vactor1` and `vector2` properties of bezier segment enable you to define the vectors. The following code illustrates how to configure a bezier curve with vectors.
@@ -557,7 +557,7 @@ export class ConnectorComponent {
 
 {% endhighlight %}
 
-![](/angular-2/Diagram/Connector_images/Connector_img14.png)
+![](/angular/Diagram/Connector_images/Connector_img14.png)
 
 ### Complex segments
 
@@ -599,7 +599,7 @@ export class ConnectorComponent {
 
 {% endhighlight %}
 
-![](/angular-2/Diagram/Connector_images/Connector_img15.png)
+![](/angular/Diagram/Connector_images/Connector_img15.png)
 
 ## Decorator
 
@@ -679,7 +679,7 @@ export class ConnectorComponent {
 }
 {% endhighlight %}
 
-![](/angular-2/Diagram/Connector_images/Connector_img16.png)
+![](/angular/Diagram/Connector_images/Connector_img16.png)
 
 ## Padding
 
@@ -723,7 +723,7 @@ export class ConnectorComponent {
 }
 {% endhighlight %}
 
-![](/angular-2/Diagram/Connector_images/Connector_img17.png)
+![](/angular/Diagram/Connector_images/Connector_img17.png)
 
 The `connectorPadding` property of node defines the space to be left between the node bounds and its edges. The following code example illustrates how to leave the space between a node and its connections.
 
@@ -762,7 +762,7 @@ export class ConnectorComponent {
 
 {% endhighlight %}
 
-![](/angular-2/Diagram/Connector_images/Connector_img18.png)
+![](/angular/Diagram/Connector_images/Connector_img18.png)
 
 The `connectorPadding` property of port defines the space between the ports and its in/out edges. The following code example illustrates how to leave the space between ports and its connections.
 
@@ -814,7 +814,7 @@ export class ConnectorComponent {
 
 {% endhighlight %}
 
-![](/angular-2/Diagram/Connector_images/Connector_img19.png)
+![](/angular/Diagram/Connector_images/Connector_img19.png)
 
 ## Bridging
 
@@ -861,7 +861,7 @@ export class ConnectorComponent {
 
 {% endhighlight %}
 
-![](/angular-2/Diagram/Connector_images/Connector_img20.png)
+![](/angular/Diagram/Connector_images/Connector_img20.png)
 
 The direction of the bridge can be customized with the property `bridgeDirection`. BridgeDirection defines the intersecting segment where the bridge has to be inserted. By default, the bridge direction points to the top.
 
@@ -894,7 +894,7 @@ export class ConnectorComponent {
 
 {% endhighlight %}
 
-![](/angular-2/Diagram/Connector_images/Connector_img21.png)
+![](/angular/Diagram/Connector_images/Connector_img21.png)
 
 **Limitation**: Bezier segments do not support bridging.
 
@@ -951,7 +951,7 @@ export class ConnectorComponent {
 
 {% endhighlight %}
 
-![](/angular-2/Diagram/Connector_images/Connector_img22.png)
+![](/angular/Diagram/Connector_images/Connector_img22.png)
 
 ## Appearance
 
@@ -1027,10 +1027,10 @@ export class ConnectorComponent {
 
 {% endhighlight %}
 
-![](/angular-2/Diagram/Connector_images/Connector_img23.png)
+![](/angular/Diagram/Connector_images/Connector_img23.png)
 
 ## Interaction
-Diagram allows to edit the connectors at runtime. To edit the connector segments at runtime, refer to [Connection Editing](/angular-2/Diagram/Interaction#connection-editing "Connection Editing").
+Diagram allows to edit the connectors at runtime. To edit the connector segments at runtime, refer to [Connection Editing](/angular/Diagram/Interaction#connection-editing "Connection Editing").
 
 ## Constraints
-The `constraints` property of connector allows to enable/disable certain features of connectors. For more information about constraints, refer to [Connector Constraints](/angular-2/Diagram/Constraints#connectorconstraints "Connector Constraints").
+The `constraints` property of connector allows to enable/disable certain features of connectors. For more information about constraints, refer to [Connector Constraints](/angular/Diagram/Constraints#connectorconstraints "Connector Constraints").
