@@ -1,7 +1,7 @@
 ---
 title: SpellCheck - Working with Target Elements
 description: Target element's text spell checking with Syncfusion SpellCheck
-platform: Angular-2
+platform: Angular
 control: spellcheck
 documentation: ug
 keywords: multiple target, target element check

@@ -17,7 +17,7 @@ Selector provides a visual representation of selected elements. It behaves like 
 
 An element can be selected by clicking that element. During single click, all previously selected items are cleared. The following image shows how the selected elements are visually represented.
 
-![](/angular-2/Diagram/Interaction_images/Interaction_img1.png)
+![](/angular/Diagram/Interaction_images/Interaction_img1.png)
 
 ### Selecting a group
 
@@ -37,7 +37,7 @@ Multiple elements can be selected with the following ways.
 
 Multiple selected elements are visually represented as shown.
 
-![](/angular-2/Diagram/Interaction_images/Interaction_img2.png)
+![](/angular/Diagram/Interaction_images/Interaction_img2.png)
 
 ### Select/Unselect elements programmatically
 
@@ -88,9 +88,9 @@ N> SelectedItems’s children is a read-only property. You cannot change the chi
 ## Drag
 
 * An object can be dragged by clicking and dragging it. When multiple elements are selected, dragging any one of the selected elements move every selected element.
-* While dragging, the objects are snapped towards the nearest objects to make better alignments. For better alignments, refer to [Snapping](/angular-2/Diagram/Gridlines#snapping "Snapping").
+* While dragging, the objects are snapped towards the nearest objects to make better alignments. For better alignments, refer to [Snapping](/angular/Diagram/Gridlines#snapping "Snapping").
 
-![](/angular-2/Diagram/Interaction_images/Interaction_img3.png)
+![](/angular/Diagram/Interaction_images/Interaction_img3.png)
 
 ## Working with multiple diagrams
 
@@ -144,9 +144,9 @@ The following code illustrates how to drag nodes over multiple diagrams.
 
 The following screen short illustrates how the nodes are dragged from one diagram to another.
  
-![](/angular-2/Diagram/Interaction_images/Interaction_img12.png)
+![](/angular/Diagram/Interaction_images/Interaction_img12.png)
 
-![](/angular-2/Diagram/Interaction_images/Interaction_img13.png)
+![](/angular/Diagram/Interaction_images/Interaction_img13.png)
  
 
 
@@ -154,18 +154,18 @@ The following screen short illustrates how the nodes are dragged from one diagra
 
 * Selector is surrounded by eight thumbs. When dragging these thumbs, selected items can be resized smaller or larger.
 * When one corner of the selector is dragged, opposite corner is in a static position.
-* While resizing, the objects are snapped towards the nearest objects to make better alignments. For better alignments, refer to [Snapping](/angular-2/Diagram/Gridlines#snapping "Snapping").
+* While resizing, the objects are snapped towards the nearest objects to make better alignments. For better alignments, refer to [Snapping](/angular/Diagram/Gridlines#snapping "Snapping").
 
-![](/angular-2/Diagram/Interaction_images/Interaction_img4.png)
+![](/angular/Diagram/Interaction_images/Interaction_img4.png)
 
 ## Rotate
 
 * A rotate handler is placed above the selector. Clicking and dragging the handler in a circular direction lead to rotate the node.
 * The node is rotated with reference to the static pivot point.
 * Pivot thumb (thumb at the middle of the node) appears while rotating the node to represent the static point.
-* For more information about pivot, refer to [Position](/angular-2/Diagram/Node#position "Position").
+* For more information about pivot, refer to [Position](/angular/Diagram/Node#position "Position").
 
-![](/angular-2/Diagram/Interaction_images/Interaction_img5.png)
+![](/angular/Diagram/Interaction_images/Interaction_img5.png)
 
 ## Connection editing
 
@@ -175,7 +175,7 @@ The following screen short illustrates how the nodes are dragged from one diagra
 
 Source and target points of the selected connectors are represented with two handles. Clicking and dragging those handles help you to adjust the source and target points.
 
-![](/angular-2/Diagram/Interaction_images/Interaction_img6.png)
+![](/angular/Diagram/Interaction_images/Interaction_img6.png)
 
 ### Straight segment editing
 
@@ -187,17 +187,17 @@ Source and target points of the selected connectors are represented with two han
 
 * Orthogonal thumbs allow to adjust the length of adjacent segments by clicking and dragging it.
 
-![](/angular-2/Diagram/Interaction_images/Interaction_img7.png)
+![](/angular/Diagram/Interaction_images/Interaction_img7.png)
 
 * When necessary, some segments are added or removed automatically, when dragging the segment. This is to maintain proper routing of orthogonality between segments.
 
-![](/angular-2/Diagram/Interaction_images/Interaction_img8.png)
+![](/angular/Diagram/Interaction_images/Interaction_img8.png)
 
 ### Bezier thumbs
 
 * Bezier segments are annotated with two thumbs to represent the control points. Control points of the curve can be configured by clicking and dragging the control thumbs.
 
-![](/angular-2/Diagram/Interaction_images/Interaction_img9.png)
+![](/angular/Diagram/Interaction_images/Interaction_img9.png)
 
 ## Drag and drop nodes over other elements
 
@@ -305,7 +305,7 @@ syncApp.controller('diagramCtrl', function ($scope) {
 
 {% endhighlight %}
 
-![](/angular-2/Diagram/Interaction_images/Interaction_img10.png)
+![](/angular/Diagram/Interaction_images/Interaction_img10.png)
 
 ### Appearance
 
@@ -341,7 +341,7 @@ syncApp.controller('diagramCtrl', function ($scope) {
 });
 {% endhighlight %}
 
-![](/angular-2/Diagram/Interaction_images/Interaction_img11.png)
+![](/angular/Diagram/Interaction_images/Interaction_img11.png)
 
 ## Zoom pan
 
@@ -375,5 +375,5 @@ The following table illustrates those commands with the associated key values.
 | Shift + Tab | focusToPreviousItem | Focus the previous node/connector based on z-order |
 | Enter | selectFocusedItem | Select the focussed node/connector |
 
-To add custom commands, configure or modify key/mouse gesture through [Command Manager](/angular-2/Diagram/commands#command-manager "Command Manager").
+To add custom commands, configure or modify key/mouse gesture through [Command Manager](/angular/Diagram/commands#command-manager "Command Manager").
  

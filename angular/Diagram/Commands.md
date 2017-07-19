@@ -50,9 +50,9 @@ diagram.align("left");
 
 {% endhighlight %}
 
-![](/angular-2/Diagram/Commands_images/Commands_img1.png)
+![](/angular/Diagram/Commands_images/Commands_img1.png)
 
-![](/angular-2/Diagram/Commands_images/Commands_img2.png)
+![](/angular/Diagram/Commands_images/Commands_img2.png)
 
 ## Space
 
@@ -72,9 +72,9 @@ diagram.spaceDown();
 
 {% endhighlight %}
 
-![](/angular-2/Diagram/Commands_images/Commands_img3.png)
+![](/angular/Diagram/Commands_images/Commands_img3.png)
 
-![](/angular-2/Diagram/Commands_images/Commands_img4.png)
+![](/angular/Diagram/Commands_images/Commands_img4.png)
 
 ## Sizing
 
@@ -97,7 +97,7 @@ diagram.sameWidth();
 
 {% endhighlight %}
 
-![](/angular-2/Diagram/Commands_images/Commands_img5.png)
+![](/angular/Diagram/Commands_images/Commands_img5.png)
 
 
 ## Clipboard
@@ -119,7 +119,7 @@ diagram.paste();
 
 {% endhighlight %}
 
-![](/angular-2/Diagram/Commands_images/Commands_img6.png)
+![](/angular/Diagram/Commands_images/Commands_img6.png)
 
 ## Grouping
 
@@ -152,7 +152,7 @@ diagram.bringToFront();
 
 {% endhighlight %}
 
-![](/angular-2/Diagram/Commands_images/Commands_img7.png)
+![](/angular/Diagram/Commands_images/Commands_img7.png)
 
 ### sendToBack Command
 
@@ -165,7 +165,7 @@ diagram.sendToBack();
 
 {% endhighlight %}
 
-![](/angular-2/Diagram/Commands_images/Commands_img8.png)
+![](/angular/Diagram/Commands_images/Commands_img8.png)
 
 ### moveForward Command
 
@@ -178,7 +178,7 @@ diagram.moveForward();
 
 {% endhighlight %}
 
-![](/angular-2/Diagram/Commands_images/Commands_img9.png)
+![](/angular/Diagram/Commands_images/Commands_img9.png)
 
 ### sendBackward Command
 
@@ -191,7 +191,7 @@ diagram.sendBackward();
 
 {% endhighlight %}
 
-![](/angular-2/Diagram/Commands_images/Commands_img10.png)
+![](/angular/Diagram/Commands_images/Commands_img10.png)
 
 ## Zoom
 
@@ -253,11 +253,11 @@ diagram.nudge("up", 5);
 
 The corresponding arrow keys are used to move the selected elements towards up, down, left, or right direction by 1 pixel.
 
-![](/angular-2/Diagram/Commands_images/Commands_img11.png)
+![](/angular/Diagram/Commands_images/Commands_img11.png)
 
 Nudge commands are particularly useful for accurate placement of elements.
 
-For more information, refer to [Keyboard Interaction](/angular-2/Diagram/Interaction#keyboard "Keyboard Interaction").
+For more information, refer to [Keyboard Interaction](/angular/Diagram/Interaction#keyboard "Keyboard Interaction").
 
 ## BringIntoView
 
@@ -347,7 +347,7 @@ Region specifies the region/bounds of the Diagram content that is to be fit into
 
 ## Command Manager
 
-Diagram provides support to map/bind command execution with desired combination of key gestures. Diagram provides some built-in commands. For more information about built-in commands, refer to [Keyboard Interaction](/angular-2/Diagram/Interaction#keyboard "Keyboard Interaction").
+Diagram provides support to map/bind command execution with desired combination of key gestures. Diagram provides some built-in commands. For more information about built-in commands, refer to [Keyboard Interaction](/angular/Diagram/Interaction#keyboard "Keyboard Interaction").
 Command Manager provides support to define custom commands. The custom commands are executed, when the specified key gesture is recognized.
 
 ### Custom command

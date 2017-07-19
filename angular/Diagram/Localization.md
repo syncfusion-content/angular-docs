@@ -65,6 +65,6 @@ export class ShapesComponent {
 
 {% endhighlight %}
 
-![](/angular-2/Diagram/Localization_images/Localization_img1.png)
+![](/angular/Diagram/Localization_images/Localization_img1.png)
 
 N> You have to define the textual descriptions of the context menu items for your custom cultures.

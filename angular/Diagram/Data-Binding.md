@@ -90,7 +90,7 @@ export class LocalDataBindingComponent {
 
 {% endhighlight %}
 
-![](/angular-2/Diagram/Data-Binding_images/Data-Binding_img1.png)
+![](/angular/Diagram/Data-Binding_images/Data-Binding_img1.png)
 
 ## Remote Data
 
@@ -149,7 +149,7 @@ export class LocalDataBindingComponent {
 
 {% endhighlight %}
 
-![](/angular-2/Diagram/Data-Binding_images/Data-Binding_img2.png)
+![](/angular/Diagram/Data-Binding_images/Data-Binding_img2.png)
 
 ## HTML Table Data
 
@@ -276,7 +276,7 @@ syncApp.controller('diagramCtrl', function($scope) {
 
 {% endhighlight %}
 
-![](/angular-2/Diagram/Data-Binding_images/Data-Binding_img4.png)
+![](/angular/Diagram/Data-Binding_images/Data-Binding_img4.png)
 
 
 

@@ -56,7 +56,7 @@ export class scrollSettingsComponent {
 
 In the example given below, the vertical scroll bar is scrolled down by 50px and horizontal scroll bar is scrolled to right by 100px. 
 
-![](/angular-2/Diagram/Scroll-Settings_images/Scroll-Settings_img1.png)
+![](/angular/Diagram/Scroll-Settings_images/Scroll-Settings_img1.png)
 
 ## AutoScroll 
 

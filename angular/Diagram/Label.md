@@ -86,7 +86,7 @@ export class ShapesComponent {
 
 {% endhighlight %}
 
-![](/angular-2/Diagram/Label_images/Label_img1.png)
+![](/angular/Diagram/Label_images/Label_img1.png)
 
 To explore more label properties, refer to [Label Properties](/api/js/ejdiagram#members:nodes-labels "Label Properties").
 
@@ -118,7 +118,7 @@ var diagram = $("#sourceDiagram").ejDiagram("instance");
 
 {% endhighlight %}
 
-![](/angular-2/Diagram/Label_images/addlabelatruntime_img1.png)
+![](/angular/Diagram/Label_images/addlabelatruntime_img1.png)
 
 
 ## Update Label at runtime
@@ -148,7 +148,7 @@ The `offset` property of label is used to align the labels based on fractions. 0
 
 The following image shows the relationship between the label position (black colored circle) and offset (fraction values).
 
-![](/angular-2/Diagram/Label_images/Label_img2.png)
+![](/angular/Diagram/Label_images/Label_img2.png)
 
 ### Horizontal and vertical alignments
 
@@ -158,15 +158,15 @@ The following tables illustrates all the possible alignments visually with **off
 
 | Horizontal Alignment | Vertical Alignment | Output with Offset(0,0) |
 |---|---|---|
-| Left | Top | ![](/angular-2/Diagram/Label_images/Label_img3.png) |
-| Center | | ![](/angular-2/Diagram/Label_images/Label_img4.png) |
-| Right | | ![](/angular-2/Diagram/Label_images/Label_img5.png) |
-| Left | Center | ![](/angular-2/Diagram/Label_images/Label_img6.png) |
-| Center | | ![](/angular-2/Diagram/Label_images/Label_img7.png) |
-| Right | | ![](/angular-2/Diagram/Label_images/Label_img8.png) |
-| Left | Bottom | ![](/angular-2/Diagram/Label_images/Label_img9.png) |
-| Center | | ![](/angular-2/Diagram/Label_images/Label_img10.png) |
-| Right | | ![](/angular-2/Diagram/Label_images/Label_img11.png) |
+| Left | Top | ![](/angular/Diagram/Label_images/Label_img3.png) |
+| Center | | ![](/angular/Diagram/Label_images/Label_img4.png) |
+| Right | | ![](/angular/Diagram/Label_images/Label_img5.png) |
+| Left | Center | ![](/angular/Diagram/Label_images/Label_img6.png) |
+| Center | | ![](/angular/Diagram/Label_images/Label_img7.png) |
+| Right | | ![](/angular/Diagram/Label_images/Label_img8.png) |
+| Left | Bottom | ![](/angular/Diagram/Label_images/Label_img9.png) |
+| Center | | ![](/angular/Diagram/Label_images/Label_img10.png) |
+| Right | | ![](/angular/Diagram/Label_images/Label_img11.png) |
 
 The following codes illustrates how to align labels.
 
@@ -211,13 +211,13 @@ export class ShapesComponent {
 
 {% endhighlight %}
 
-![](/angular-2/Diagram/Label_images/Label_img12.png)
+![](/angular/Diagram/Label_images/Label_img12.png)
 
 ### Label alignment with respect to Segments
 
  `segmentOffset` and `alignment` properties of label allows you to align the connector labels with respect to the segments. In the following image, the labels are placed exactly over the segments regardless of its rectangular bounds.
  
- ![](/angular-2/Diagram/Label_images/Label_img32.png)
+ ![](/angular/Diagram/Label_images/Label_img32.png)
  
  Following code example illustrates how to align connector labels.
  
@@ -317,7 +317,7 @@ export class UMLDiagramComponent {
 		
 {% endhighlight %}
 
-![](/angular-2/Diagram/Label_images/Label_img31.png)
+![](/angular/Diagram/Label_images/Label_img31.png)
 
 By default, connector labels will be aligned with respect to the segments. The `relativeMode` property of label allows you to disable this segment specific label alignment. Following code example illustrates how to disable the segment specific label alignment.
 
@@ -407,7 +407,7 @@ export class ShapesComponent {
 }		
 {% endhighlight %}
 
-![](/angular-2/Diagram/Label_images/Label_img13.png)
+![](/angular/Diagram/Label_images/Label_img13.png)
 
 ### Text Alignment
 
@@ -437,14 +437,14 @@ export class ShapesComponent {
 
 {% endhighlight %}
 
-![](/angular-2/Diagram/Label_images/Label_img14.png)
+![](/angular/Diagram/Label_images/Label_img14.png)
 
 | TextAlign | Image |
 |---|---|
-| Left | ![](/angular-2/Diagram/Label_images/Label_img15.png) |
-| Right | ![](/angular-2/Diagram/Label_images/Label_img16.png) |
-| Center | ![](/angular-2/Diagram/Label_images/Label_img17.png) |
-| Justify | ![](/angular-2/Diagram/Label_images/Label_img18.png) |
+| Left | ![](/angular/Diagram/Label_images/Label_img15.png) |
+| Right | ![](/angular/Diagram/Label_images/Label_img16.png) |
+| Center | ![](/angular/Diagram/Label_images/Label_img17.png) |
+| Justify | ![](/angular/Diagram/Label_images/Label_img18.png) |
 
 ## Wrapping
 
@@ -474,13 +474,13 @@ export class ShapesComponent {
 
 {% endhighlight %}
 
-![](/angular-2/Diagram/Label_images/Label_img19.png)
+![](/angular/Diagram/Label_images/Label_img19.png)
 
 | Values | Description | Image |
 |---|---|---|
-| NoWrap | Text will not be wrapped | ![](/angular-2/Diagram/Label_images/Label_img20.png) |
-| Wrap | Text-wrapping occurs when the text overflows beyond the available node width. | ![](/angular-2/Diagram/Label_images/Label_img21.png) |
-| WrapWithOverflow (Default) | Text-wrapping occurs when the text overflows beyond the available node width. However, the text may overflow beyond the node width in the case of a very long word. | ![](/angular-2/Diagram/Label_images/Label_img22.png) |
+| NoWrap | Text will not be wrapped | ![](/angular/Diagram/Label_images/Label_img20.png) |
+| Wrap | Text-wrapping occurs when the text overflows beyond the available node width. | ![](/angular/Diagram/Label_images/Label_img21.png) |
+| WrapWithOverflow (Default) | Text-wrapping occurs when the text overflows beyond the available node width. However, the text may overflow beyond the node width in the case of a very long word. | ![](/angular/Diagram/Label_images/Label_img22.png) |
 
 ## Appearance
 
@@ -515,7 +515,7 @@ export class ShapesComponent {
 
 {% endhighlight %}
 
-![](/angular-2/Diagram/Label_images/Label_img23.png)
+![](/angular/Diagram/Label_images/Label_img23.png)
 
 The fill, border and opacity appearances of the text can also be customized with appearance specific properties of label.The following code illustrates how to customize background, opacity and border of a label.
 
@@ -547,7 +547,7 @@ export class ShapesComponent {
 
 {% endhighlight %}
 
-![](/angular-2/Diagram/Label_images/Label_img24.png)
+![](/angular/Diagram/Label_images/Label_img24.png)
 
 ## Drag
 
@@ -599,7 +599,7 @@ export class ShapesComponent {
 
 {% endhighlight %}
 
-![](/angular-2/Diagram/Label_images/Label_img25.png)
+![](/angular/Diagram/Label_images/Label_img25.png)
 
 ## Rotate
 
@@ -629,7 +629,7 @@ export class ShapesComponent {
 
 {% endhighlight %}
 
-![](/angular-2/Diagram/Label_images/Label_img26.png)
+![](/angular/Diagram/Label_images/Label_img26.png)
 
 N> There is no built-in support to rotate labels interactively.
 
@@ -656,7 +656,7 @@ diagram.updateLabel(node.name, node.labels[0], options);
 
 {% endhighlight %}
 
-![](/angular-2/Diagram/Label_images/Label_img27.png)
+![](/angular/Diagram/Label_images/Label_img27.png)
 
 ### Read Only labels
 
@@ -729,7 +729,7 @@ export class ShapesComponent {
 
 {% endhighlight %}
 
-![](/angular-2/Diagram/Label_images/Label_img28.png)
+![](/angular/Diagram/Label_images/Label_img28.png)
 
 ## Limitation
 
@@ -737,7 +737,7 @@ export class ShapesComponent {
 
 | Expected behavior | Current behavior |
 |---|---|
-| ![](/angular-2/Diagram/Label_images/Label_img29.png) | ![](/angular-2/Diagram/Label_images/Label_img30.png) |
+| ![](/angular/Diagram/Label_images/Label_img29.png) | ![](/angular/Diagram/Label_images/Label_img30.png) |
 
 
 

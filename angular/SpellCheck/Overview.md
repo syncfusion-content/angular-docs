@@ -1,7 +1,7 @@
 ---
 title: SpellCheck - Overview
 description: SpellCheck Introduction
-platform: Angular-2
+platform: Angular
 control: spellcheck
 documentation: ug
 keywords: overview, key features, usage

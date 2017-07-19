@@ -61,7 +61,7 @@ export class ShapesComponent {
 
 {% endhighlight %}
 
-![](/angular-2/Diagram/Shapes_images/Shapes_img59.png)
+![](/angular/Diagram/Shapes_images/Shapes_img59.png)
 
 ## Image
 Diagram allows to add images as image nodes. For image nodes, the `type` should be set as "image". In addition, the `source` property of node enables you to set the image source. 
@@ -91,7 +91,7 @@ export class ShapesComponent {
 
 {% endhighlight %}
 
-![](/angular-2/Diagram/Shapes_images/Shapes_img60.png)
+![](/angular/Diagram/Shapes_images/Shapes_img60.png)
 
 N> Deploy your HTML file in the web Application and export the diagram (image node) or else the image node will not be exported in the chrome and Firefox due to security issues. Please refer to the link below.
 
@@ -109,10 +109,10 @@ The following tables illustrates all the possible scale options for the image no
 
 | Values| Image |
 |---|---|
-| None | ![](/angular-2/Diagram/Shapes_images/Shapes_img128.png) |
-| Meet | ![](/angular-2/Diagram/Shapes_images/Shapes_img129.png) |
-| Slice | ![](/angular-2/Diagram/Shapes_images/Shapes_img130.png) |
-| Stretch | ![](/angular-2/Diagram/Shapes_images/Shapes_img131.png) |
+| None | ![](/angular/Diagram/Shapes_images/Shapes_img128.png) |
+| Meet | ![](/angular/Diagram/Shapes_images/Shapes_img129.png) |
+| Slice | ![](/angular/Diagram/Shapes_images/Shapes_img130.png) |
+| Stretch | ![](/angular/Diagram/Shapes_images/Shapes_img131.png) |
 
 ## HTML
 
@@ -154,7 +154,7 @@ export class ShapesComponent {
 
 {% endhighlight %}
 
-![](/angular-2/Diagram/Shapes_images/Shapes_img61.png)
+![](/angular/Diagram/Shapes_images/Shapes_img61.png)
 
 N> HTML node cannot be exported to image format, like JPEG, PNG, and BMP. It is by design that while exporting, Diagram is drawn in a canvas. Further, this canvas is exported into image formats. Currently, drawing in a canvas equivalent from all possible HTML is not feasible. Hence, this limitation. 
 
@@ -201,7 +201,7 @@ export class ShapesComponent {
 
 {% endhighlight %}
 
-![](/angular-2/Diagram/Shapes_images/Shapes_img62.png)
+![](/angular/Diagram/Shapes_images/Shapes_img62.png)
 
 N> Like HTML node, Native node also cannot be exported to image format. Fill color of native node can be overridden by the inline style or fill of the SVG element specified in the template. 
 
@@ -252,10 +252,10 @@ The following tables illustrates all the possible scale options for the node
 
 | Values| Image |
 |---|---|
-| None | ![](/angular-2/Diagram/Shapes_images/Shapes_img124.png) |
-| Meet | ![](/angular-2/Diagram/Shapes_images/Shapes_img125.png) |
-| Slice | ![](/angular-2/Diagram/Shapes_images/Shapes_img126.png) |
-| Stretch | ![](/angular-2/Diagram/Shapes_images/Shapes_img127.png) |
+| None | ![](/angular/Diagram/Shapes_images/Shapes_img124.png) |
+| Meet | ![](/angular/Diagram/Shapes_images/Shapes_img125.png) |
+| Slice | ![](/angular/Diagram/Shapes_images/Shapes_img126.png) |
+| Stretch | ![](/angular/Diagram/Shapes_images/Shapes_img127.png) |
 
 ## Basic Shapes
 
@@ -288,7 +288,7 @@ export class ShapesComponent {
 
 {% endhighlight %}
 
-![](/angular-2/Diagram/Shapes_images/Shapes_img1.png)
+![](/angular/Diagram/Shapes_images/Shapes_img1.png)
 
 N> By default, the `type` property of node is set as "basic".
 
@@ -327,11 +327,11 @@ export class ShapesComponent {
 
 {% endhighlight %}
 
-![](/angular-2/Diagram/Shapes_images/Shapes_img58.png)
+![](/angular/Diagram/Shapes_images/Shapes_img58.png)
 
 The list of basic shapes are as follows.
 
-![](/angular-2/Diagram/Shapes_images/Shapes_img2.png)
+![](/angular/Diagram/Shapes_images/Shapes_img2.png)
 
 ## Flow Shapes
 
@@ -362,10 +362,10 @@ export class ShapesComponent {
 
 {% endhighlight %}
 
-![](/angular-2/Diagram/Shapes_images/Shapes_img3.png)
+![](/angular/Diagram/Shapes_images/Shapes_img3.png)
 
 The list of flow shapes are as follows.
 
-![](/angular-2/Diagram/Shapes_images/Shapes_img4.png)
+![](/angular/Diagram/Shapes_images/Shapes_img4.png)
 
 

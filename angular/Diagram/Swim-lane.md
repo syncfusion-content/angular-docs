@@ -68,7 +68,7 @@ export class SwimlaneComponent {
 ## Add swimlane into diagram
 
 Adding a swimlane to the Diagram is same as adding a node. You can add either through the `nodes` collection or through the client side method `add`. You can also drag and drop a swimlane from symbol palette.
-For more information about adding a node/swimlane to the Diagram, refer to [Add Nodes](/angular-2/Diagram/Node#create-node "Add Nodes").
+For more information about adding a node/swimlane to the Diagram, refer to [Add Nodes](/angular/Diagram/Node#create-node "Add Nodes").
 
 The following code example illustrates how to add a swimlane to the Diagram through `nodes` collection.
 
@@ -81,7 +81,7 @@ The following code example illustrates how to add a swimlane to the Diagram thro
 
 {% endhighlight %}
 
-![](/angular-2/Diagram/Swim-lane_images/Swim-lane_img2.png)
+![](/angular/Diagram/Swim-lane_images/Swim-lane_img2.png)
 
 ## Headers
 
@@ -116,7 +116,7 @@ export class SwimlaneComponent {
 
 {% endhighlight %}
 
-![](/angular-2/Diagram/Swim-lane_images/Swim-lane_img3.png)
+![](/angular/Diagram/Swim-lane_images/Swim-lane_img3.png)
 
 ### Disable headers
 
@@ -283,7 +283,7 @@ export class SwimlaneComponent {
 
 {% endhighlight %}
 
-![](/angular-2/Diagram/Swim-lane_images/Swim-lane_img4.png)
+![](/angular/Diagram/Swim-lane_images/Swim-lane_img4.png)
 
 ## Phase
 
@@ -331,7 +331,7 @@ export class SwimlaneComponent {
 
 {% endhighlight %}
 
-![](/angular-2/Diagram/Swim-lane_images/Swim-lane_img5.png)
+![](/angular/Diagram/Swim-lane_images/Swim-lane_img5.png)
 
 ## Limitations
 

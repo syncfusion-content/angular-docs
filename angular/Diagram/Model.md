@@ -41,4 +41,4 @@ export class ModelComponent {
 
 {% endhighlight %}
 
-![](/angular-2/Diagram/Model_images/Model_img1.png)
+![](/angular/Diagram/Model_images/Model_img1.png)

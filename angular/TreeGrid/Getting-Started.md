@@ -14,10 +14,10 @@ This section helps to understand the getting started of the Angular TreeGrid wit
 
 ## Getting started with SystemJS
 
-To quick start with Syncfusion JavaScript Angular components run the below commands to clone the repository for [SystemJS starter](https://github.com/syncfusion/Angular-seeds/tree/systemjs) and installing required dependency packages.
+To quick start with Syncfusion JavaScript Angular components run the below commands to clone the repository for [SystemJS starter](https://github.com/syncfusion/angular2-seeds/tree/systemjs) and installing required dependency packages.
 
 {% highlight javascript %}
- > git clone https://github.com/syncfusion/Angular-seeds/ -b systemjs
+ > git clone https://github.com/syncfusion/angular2-seeds/ -b systemjs
 
  > cd Angular-seeds
 
