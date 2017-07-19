@@ -13,10 +13,10 @@ This section explains briefly about how to create a **TreeView** control in your
 
 ## Create TreeView in Angular Application using Webpack
 
-To quick start with Syncfusion JavaScript Angular components run the below commands to clone the repository for [Webpack starter](https://github.com/syncfusion/Angular-seeds) and installing required dependency packages.
+To quick start with Syncfusion JavaScript Angular components run the below commands to clone the repository for [Webpack starter](https://github.com/syncfusion/angular2-seeds) and installing required dependency packages.
 
 {% highlight javascript %}
- > git clone https://github.com/syncfusion/Angular-seeds
+ > git clone https://github.com/syncfusion/angular2-seeds
 
  > cd Angular-seeds
 
@@ -186,10 +186,10 @@ N> if you want to use other port, open `package.json` file, then change port in 
 
 ## Create TreeView in Angular Application using SystemJS  
 
-To quick start with Syncfusion JavaScript Angular components run the below commands to clone the repository for [SystemJS starter](https://github.com/syncfusion/Angular-seeds/tree/systemjs) and installing required dependency packages.
+To quick start with Syncfusion JavaScript Angular components run the below commands to clone the repository for [SystemJS starter](https://github.com/syncfusion/angular2-seeds/tree/systemjs) and installing required dependency packages.
 
 {% highlight javascript %}
- > git clone https://github.com/syncfusion/Angular-seeds/ -b systemjs
+ > git clone https://github.com/syncfusion/angular2-seeds/ -b systemjs
 
  > cd Angular-seeds
 
