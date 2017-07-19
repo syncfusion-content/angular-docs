@@ -16,7 +16,7 @@ By default, Diagram displays a tooltip to provide the size, position, and angle 
 
 | Drag | Resize | Rotate |
 |---|---|---|
-| ![](/angular-2/Diagram/Tooltip_images/Tooltip_img1.png) | ![](/angular-2/Diagram/Tooltip_images/Tooltip_img2.png) | ![](/angular-2/Diagram/Tooltip_images/Tooltip_img3.png) |
+| ![](/angular/Diagram/Tooltip_images/Tooltip_img1.png) | ![](/angular/Diagram/Tooltip_images/Tooltip_img2.png) | ![](/angular/Diagram/Tooltip_images/Tooltip_img3.png) |
 
 ### Disable default tooltip
 
@@ -110,7 +110,7 @@ export class TooltipComponent {
 
 {% endhighlight %} 
 
-![](/angular-2/Diagram/Tooltip_images/Tooltip_img4.png)
+![](/angular/Diagram/Tooltip_images/Tooltip_img4.png)
 
 ### Disable tooltip at runtime
 
@@ -221,7 +221,7 @@ export class TooltipComponent {
 
 {% endhighlight %}
 
-![](/angular-2/Diagram/Tooltip_images/Tooltip_img5.png)
+![](/angular/Diagram/Tooltip_images/Tooltip_img5.png)
 
 ### Tooltip relative to mouse position
 
@@ -267,6 +267,6 @@ export class TooltipComponent {
 
 {% endhighlight %}
 
-![](/angular-2/Diagram/Tooltip_images/Tooltip_img6.png)
+![](/angular/Diagram/Tooltip_images/Tooltip_img6.png)
 
 

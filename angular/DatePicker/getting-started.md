@@ -13,7 +13,7 @@ This section will explain the rendering the **Angular-2 DatePicker** with the st
 
 You can create the Angular-2 project with the **required script and themes files** with the help of the below link:
 
-[https://help.syncfusion.com/angular-2/overview](https://help.syncfusion.com/angular-2/overview)
+[https://help.syncfusion.com/angular/overview](https://help.syncfusion.com/angular/overview)
 
 
 ## Creating a DatePicker in Angular-2 environment

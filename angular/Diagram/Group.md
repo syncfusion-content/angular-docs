@@ -119,7 +119,7 @@ diagram.add(group);
 
 Group nodes can be predefined and added to symbol palette. You can drop those groups into Diagram, when required.
 
-To explore how to add groups from symbol palette, refer to [Symbol Palette](/angular-2/Diagram/Symbol-Palette "Symbol Palette")
+To explore how to add groups from symbol palette, refer to [Symbol Palette](/angular/Diagram/Symbol-Palette "Symbol Palette")
 
 ## Container
 
@@ -196,7 +196,7 @@ export class ModelComponent {
 
 {% endhighlight %}
 
-![](/angular-2/Diagram/Group_images/Group_img9.png)
+![](/angular/Diagram/Group_images/Group_img9.png)
 
 ### Stack
 
@@ -254,7 +254,7 @@ export class ModelComponent {
 
 {% endhighlight %}
 
-![](/angular-2/Diagram/Group_images/Group_img10.png)
+![](/angular/Diagram/Group_images/Group_img10.png)
 
 ## Difference between a basic group and containers
 
@@ -266,4 +266,4 @@ export class ModelComponent {
 
 ## Interaction
 
-You can edit the group and its children at runtime. For more information about how to interact with a group, refer to [Edit Groups](/angular-2/Diagram/Interaction#selection "Interaction").
+You can edit the group and its children at runtime. For more information about how to interact with a group, refer to [Edit Groups](/angular/Diagram/Interaction#selection "Interaction").

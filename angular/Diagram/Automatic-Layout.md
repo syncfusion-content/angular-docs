@@ -73,7 +73,7 @@ export class HierarchicalLayoutComponent {
 
 {% endhighlight %}
 
-![](/angular-2/Diagram/Automatic-Layout_images/Automatic-Layout_img1.png)
+![](/angular/Diagram/Automatic-Layout_images/Automatic-Layout_img1.png)
 
 N> You can ignore a particular Node from layout arrangement by setting its **excludeFromLayout** property as true.
 
@@ -283,7 +283,7 @@ export class RadialTreeComponent {
 }
 {% endhighlight %}
 
-![](/angular-2/Diagram/Automatic-Layout_images/Automatic-Layout_img2.png)
+![](/angular/Diagram/Automatic-Layout_images/Automatic-Layout_img2.png)
 
 ## Organizational Chart
 
@@ -446,7 +446,7 @@ export class OrganizationalChartComponent {
 
 {% endhighlight %}
 
-![](/angular-2/Diagram/Automatic-Layout_images/Automatic-Layout_img3.png)
+![](/angular/Diagram/Automatic-Layout_images/Automatic-Layout_img3.png)
 
 Organizational chart layout starts parsing from root and iterate through all its child elements. ‘getLayoutInfo’ method provides necessary information of a node’s children and the way to arrange (direction, orientation, offsets, etc.) them. You can customize the arrangements by overriding this function as explained.
 
@@ -499,13 +499,13 @@ The following table illustrates the different chart orientations and chart types
 
 | Orientation | Type | Description | Example |
 |---|---|---|---|
-| Horizontal | Left | Arranges the child nodes horizontally at the left side of parent. | ![](/angular-2/Diagram/Automatic-Layout_images/Automatic-Layout_img4.png) |
-| | Right | Arranges the child nodes horizontally at the right side of parent. | ![](/angular-2/Diagram/Automatic-Layout_images/Automatic-Layout_img5.png) |
-| | Center | Arranges the children like standard tree layout orientation. | ![](/angular-2/Diagram/Automatic-Layout_images/Automatic-Layout_img6.png) |
-| | Balanced | Arranges the leaf-level child nodes in multiple rows. | ![](/angular-2/Diagram/Automatic-Layout_images/Automatic-Layout_img16.png) |
-| Vertical | Left | Vertically arranges the children at the left side of parent | ![](/angular-2/Diagram/Automatic-Layout_images/Automatic-Layout_img7.png) |
-| | Right | Vertically arranges the children at the right side of parent | ![](/angular-2/Diagram/Automatic-Layout_images/Automatic-Layout_img8.png) |
-| | Alternate | Vertically arranges the children at both left and right sides of parent | ![](/angular-2/Diagram/Automatic-Layout_images/Automatic-Layout_img9.png) |
+| Horizontal | Left | Arranges the child nodes horizontally at the left side of parent. | ![](/angular/Diagram/Automatic-Layout_images/Automatic-Layout_img4.png) |
+| | Right | Arranges the child nodes horizontally at the right side of parent. | ![](/angular/Diagram/Automatic-Layout_images/Automatic-Layout_img5.png) |
+| | Center | Arranges the children like standard tree layout orientation. | ![](/angular/Diagram/Automatic-Layout_images/Automatic-Layout_img6.png) |
+| | Balanced | Arranges the leaf-level child nodes in multiple rows. | ![](/angular/Diagram/Automatic-Layout_images/Automatic-Layout_img16.png) |
+| Vertical | Left | Vertically arranges the children at the left side of parent | ![](/angular/Diagram/Automatic-Layout_images/Automatic-Layout_img7.png) |
+| | Right | Vertically arranges the children at the right side of parent | ![](/angular/Diagram/Automatic-Layout_images/Automatic-Layout_img8.png) |
+| | Alternate | Vertically arranges the children at both left and right sides of parent | ![](/angular/Diagram/Automatic-Layout_images/Automatic-Layout_img9.png) |
 
 ## Customize Layout
 
@@ -572,7 +572,7 @@ export class OrganizationalChartComponent {
 
 {% endhighlight %}
 
-![](/angular-2/Diagram/Automatic-Layout_images/Automatic-Layout_img14.png)
+![](/angular/Diagram/Automatic-Layout_images/Automatic-Layout_img14.png)
 
 ### Layout Margin
 
@@ -630,7 +630,7 @@ export class OrganizationalChartComponent {
 
 {% endhighlight %}
 
-![](/angular-2/Diagram/Automatic-Layout_images/Automatic-Layout_img15.png)
+![](/angular/Diagram/Automatic-Layout_images/Automatic-Layout_img15.png)
 
 ### Layout Orientation
 
@@ -688,7 +688,7 @@ export class OrganizationalChartComponent {
 }};
 {% endhighlight %}
 
-![](/angular-2/Diagram/Automatic-Layout_images/Automatic-Layout_img12.png)
+![](/angular/Diagram/Automatic-Layout_images/Automatic-Layout_img12.png)
 
 ### Fixed Node
 
@@ -740,7 +740,7 @@ export class OrganizationalChartComponent {
 
 {% endhighlight %}
 
-![](/angular-2/Diagram/Automatic-Layout_images/Automatic-Layout_img13.png)
+![](/angular/Diagram/Automatic-Layout_images/Automatic-Layout_img13.png)
 
 ### Expand and collapse
 

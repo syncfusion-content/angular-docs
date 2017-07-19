@@ -44,9 +44,9 @@ export class ModelComponent {
 
 {% endhighlight %}
 
-![](/angular-2/Diagram/Gridlines_images/Gridlines_img1.png)
+![](/angular/Diagram/Gridlines_images/Gridlines_img1.png)
 
-To show only horizontal/vertical gridlines or to hide gridlines, refer to [Constraints](/angular-2/Diagram/Constraints#snapconstraints "Constraints")
+To show only horizontal/vertical gridlines or to hide gridlines, refer to [Constraints](/angular/Diagram/Constraints#snapconstraints "Constraints")
 
 ## Appearance
 
@@ -82,7 +82,7 @@ export class ModelComponent {
 
 {% endhighlight %}
 
-![](/angular-2/Diagram/Gridlines_images/Gridlines_img4.png)
+![](/angular/Diagram/Gridlines_images/Gridlines_img4.png)
 
 ### Line Intervals
 
@@ -121,7 +121,7 @@ export class ModelComponent {
 
 {% endhighlight %}
 
-![](/angular-2/Diagram/Gridlines_images/Gridlines_img2.png)
+![](/angular/Diagram/Gridlines_images/Gridlines_img2.png)
 
 # Snapping
 
@@ -145,7 +145,7 @@ export class ModelComponent {
 
 {% endhighlight %}
 
-To enable/disable snapping to horizontal/vertical lines, refer to [Constraints] (/angular-2/Diagram/Constraints#SnapConstraints "Constraints")
+To enable/disable snapping to horizontal/vertical lines, refer to [Constraints] (/angular/Diagram/Constraints#SnapConstraints "Constraints")
 
 ## Customization of Snap Intervals
 
@@ -193,4 +193,4 @@ export class ModelComponent {
 
 {% endhighlight %}
 
-![](/angular-2/Diagram/Gridlines_images/Gridlines_img4.png)
+![](/angular/Diagram/Gridlines_images/Gridlines_img4.png)
