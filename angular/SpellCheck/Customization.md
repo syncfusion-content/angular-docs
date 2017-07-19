@@ -1,7 +1,7 @@
 ---
 title: SpellCheck - Customization
 description: SpellCheck Customization
-platform: Angular-2
+platform: Angular
 control: spellcheck
 documentation: ug
 keywords: customization, spellcheck customization, misspell word appearance, restrict suggestion count

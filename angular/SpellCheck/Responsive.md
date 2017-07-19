@@ -1,7 +1,7 @@
 ---
 title: SpellCheck - Responsive
 description: How to set the spellcheck, responsive to screen resolutions
-platform: Angular-2
+platform: Angular
 control: spellcheck
 documentation: ug
 keywords: Responsive, Responsive spellcheck dialog, Resize spellcheck dialog
