@@ -81,7 +81,7 @@ export class ShapesComponent {
 }
 {% endhighlight %}	
 
-![](/angular-2/Diagram/Shapes_images/Shapes_img141.png)
+![](/angular/Diagram/Shapes_images/Shapes_img141.png)
 
 N> The default value for the property `classifier` is "class".
 
@@ -134,7 +134,7 @@ export class ShapesComponent {
 }
 {% endhighlight %}	
 
-![](/angular-2/Diagram/Shapes_images/Shapes_img142.png)
+![](/angular/Diagram/Shapes_images/Shapes_img142.png)
 
 ###  Enumeration
 
@@ -180,7 +180,7 @@ export class ShapesComponent {
 
 {% endhighlight %}	
 
-![](/angular-2/Diagram/Shapes_images/Shapes_img143.png)
+![](/angular/Diagram/Shapes_images/Shapes_img143.png)
 
 ### Relationships
 
@@ -190,11 +190,11 @@ The list of relationships are demonstrated as follows.
 
 | shape | Image |
 |---|---|
-| Association | ![](/angular-2/Diagram/Shapes_images/Shapes_img144.png) |
-| Aggregation | ![](/angular-2/Diagram/Shapes_images/Shapes_img145.png) |
-| Composition | ![](/angular-2/Diagram/Shapes_images/Shapes_img146.png) |
-| Inheritance | ![](/angular-2/Diagram/Shapes_images/Shapes_img147.png) |
-| Dependency  | ![](/angular-2/Diagram/Shapes_images/Shapes_img148.png) |
+| Association | ![](/angular/Diagram/Shapes_images/Shapes_img144.png) |
+| Aggregation | ![](/angular/Diagram/Shapes_images/Shapes_img145.png) |
+| Composition | ![](/angular/Diagram/Shapes_images/Shapes_img146.png) |
+| Inheritance | ![](/angular/Diagram/Shapes_images/Shapes_img147.png) |
+| Dependency  | ![](/angular/Diagram/Shapes_images/Shapes_img148.png) |
 
 ### Association
 
@@ -246,7 +246,7 @@ export class ShapesComponent {
 
 {% endhighlight %}
 
-![](/angular-2/Diagram/Shapes_images/Shapes_img144.png)
+![](/angular/Diagram/Shapes_images/Shapes_img144.png)
 
 N> The default value for the property `association` is "directional".
 
@@ -294,7 +294,7 @@ export class ShapesComponent {
 
 {% endhighlight %}
 
-![](/angular-2/Diagram/Shapes_images/Shapes_img145.png)
+![](/angular/Diagram/Shapes_images/Shapes_img145.png)
 
 ### Composition
 
@@ -333,7 +333,7 @@ export class ShapesComponent {
 
 {% endhighlight %}
 
-![](/angular-2/Diagram/Shapes_images/Shapes_img146.png)
+![](/angular/Diagram/Shapes_images/Shapes_img146.png)
 
 ### Dependency
 
@@ -372,7 +372,7 @@ export class ShapesComponent {
 
 {% endhighlight %}
 
-![](/angular-2/Diagram/Shapes_images/Shapes_img147.png)
+![](/angular/Diagram/Shapes_images/Shapes_img147.png)
 
 ### Inheritance
 
@@ -413,7 +413,7 @@ export class ShapesComponent {
 
 {% endhighlight %}
 
-![](/angular-2/Diagram/Shapes_images/Shapes_img148.png)
+![](/angular/Diagram/Shapes_images/Shapes_img148.png)
 
 ### Multiplicity
 
@@ -484,7 +484,7 @@ export class ShapesComponent {
 
 {% endhighlight %}
 
-![](/angular-2/Diagram/Shapes_images/Shapes_img149.png)
+![](/angular/Diagram/Shapes_images/Shapes_img149.png)
 
 ### Editing
 
@@ -493,5 +493,5 @@ The string "---" acts as a splitter between the three sections.
 
 The following image illustrates how the text editor will be.
 
-![](/angular-2/Diagram/Shapes_images/Shapes_img150.png)
+![](/angular/Diagram/Shapes_images/Shapes_img150.png)
   

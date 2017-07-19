@@ -11,7 +11,7 @@ documentation: ug
 
 Nodes are graphical objects used to visually represent the geometrical information, process flow, internal business procedure, entity, or any other kind of data.
 
-![](/angular-2/Diagram/Node_images/Node_img1.png)
+![](/angular/Diagram/Node_images/Node_img1.png)
 
 ## Create Node
 
@@ -57,7 +57,7 @@ export class NodesComponent {
 
 {% endhighlight %}
 
-![](/angular-2/Diagram/Node_images/Node_img2.png)
+![](/angular/Diagram/Node_images/Node_img2.png)
 
 ## Position
 
@@ -95,11 +95,11 @@ export class NodesComponent {
 
 {% endhighlight %}
 
-![](/angular-2/Diagram/Node_images/Node_img4.png)
+![](/angular/Diagram/Node_images/Node_img4.png)
 
 ## Types
 
-Diagram allows to add different kind of nodes. To explore the types of nodes, refer to [Types of Nodes](/angular-2/Diagram/Shapes "Types of Nodes").
+Diagram allows to add different kind of nodes. To explore the types of nodes, refer to [Types of Nodes](/angular/Diagram/Shapes "Types of Nodes").
 
 ## Appearance
 
@@ -128,7 +128,7 @@ export class NodesComponent {
 
 {% endhighlight %}
 
-![](/angular-2/Diagram/Node_images/Node_img5.png)
+![](/angular/Diagram/Node_images/Node_img5.png)
 
 ### Gradient
 
@@ -205,7 +205,7 @@ export class PageSettingsComponent {
 
 {% endhighlight %}
 
-![](/angular-2/Diagram/Node_images/Node_img6.png)
+![](/angular/Diagram/Node_images/Node_img6.png)
 
 ## Shadow
 
@@ -234,7 +234,7 @@ export class NodesComponent {
 {% endhighlight %}
 
 
-![](/angular-2/Diagram/Node_images/Node_img7.png)
+![](/angular/Diagram/Node_images/Node_img7.png)
 
 The following code illustrates how to disable shadow effect at runtime.
 
@@ -292,7 +292,7 @@ export class NodesComponent {
 
 {% endhighlight %}
 
-![](/angular-2/Diagram/Node_images/Node_img8.png)
+![](/angular/Diagram/Node_images/Node_img8.png)
 
 ## Icon
 
@@ -361,14 +361,14 @@ export class ShapesComponent {
 
 {% endhighlight %}
 
-![](/angular-2/Diagram/Node_images/Node_img9.png)
+![](/angular/Diagram/Node_images/Node_img9.png)
 
-![](/angular-2/Diagram/Node_images/Node_img10.png)
+![](/angular/Diagram/Node_images/Node_img10.png)
 
 ## Interaction
 
-Diagram provides support to drag, resize, or rotate the node interactively. For more information about editing a node at runtime, refer to [Edit Nodes](/angular-2/Diagram/Interaction "Interaction").
+Diagram provides support to drag, resize, or rotate the node interactively. For more information about editing a node at runtime, refer to [Edit Nodes](/angular/Diagram/Interaction "Interaction").
 
 ## Constraints
 
-The `constraints` property of node allows you to enable/disable certain features. For more information about node constraints, refer to [Node Constraints](/angular-2/Diagram/Constraints#nodeconstraints "Node Constraints").
+The `constraints` property of node allows you to enable/disable certain features. For more information about node constraints, refer to [Node Constraints](/angular/Diagram/Constraints#nodeconstraints "Node Constraints").

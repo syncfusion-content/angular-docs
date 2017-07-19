@@ -8,7 +8,7 @@ keywords: ejdigitalgauge, digitalgauge, digitalgauge widget, Angular digitalgaug
 ---
 #Getting Started
 
-Before we start with the DigitalGauge, please refer [this page](https://help.syncfusion.com/angular-2/overview) for general information regarding integrating Syncfusion widget’s.
+Before we start with the DigitalGauge, please refer [this page](https://help.syncfusion.com/angular/overview) for general information regarding integrating Syncfusion widget’s.
 
 ## Adding JavaScript and CSS Reference
 

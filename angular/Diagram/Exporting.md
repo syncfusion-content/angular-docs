@@ -20,7 +20,7 @@ diagram.exportDiagram();
 
 {% endhighlight %}
 
-![](/angular-2/Diagram/Exporting_images/Exporting_img1.png)
+![](/angular/Diagram/Exporting_images/Exporting_img1.png)
 
 ## Exporting options
 

@@ -43,7 +43,7 @@ export class ModelComponent {
 
 {% endhighlight %}
 
-![](/angular-2/Diagram/ContextMenu_images/Contextmenu_img1.png)
+![](/angular/Diagram/ContextMenu_images/Contextmenu_img1.png)
 
 ## Customize Context Menu
 
@@ -112,7 +112,7 @@ The following code example illustrates how to customize the icon of context menu
 
 {% endhighlight %}
 
-![](/angular-2/Diagram/ContextMenu_images/Contextmenu_img2.png)
+![](/angular/Diagram/ContextMenu_images/Contextmenu_img2.png)
 
 ## Context Menu Events
 
