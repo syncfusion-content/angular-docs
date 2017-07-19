@@ -10,7 +10,7 @@ documentation: ug
 
 # Getting Started with Angular CLI
 
-The [Angular CLI](https://cli.angular.io/) is a command line interface for Angular which makes it easy to create an application that already works. To getting started with Syncfusion Angular components, the NPM packages [ej-angular2](https://www.npmjs.com/package/ej-angular2) and [syncfusion-javascript](https://www.npmjs.com/package/syncfusion-javascript) helps to seamlessly supports angular-cli environment for our components.
+The [Angular CLI](https://cli.angular.io/) is a command line interface is used to create an Angular application that already works. To getting started with Syncfusion Angular components, the NPM packages [ej-angular2](https://www.npmjs.com/package/ej-angular2) and [syncfusion-javascript](https://www.npmjs.com/package/syncfusion-javascript) helps to seamlessly supports angular-cli environment for our components.
 
 The following steps depicts, to create an application in angular-cli with Syncfusion Angular Components
 
@@ -25,7 +25,8 @@ The following synopsis illustrates the major steps in creation of application.
 
 * [Install the latest version of Angular CLI](#install-the-angular-cli)
 * [Create new Application](#create-a-new-application)
-* [Configuration of Syncfusion Angular Component](#configuration-of-syncfusion-angular-component)
+* [Configure Syncfusion Angular Component in Angular CLI](#configure-syncfusion-angular-component-in-angular-cli)
+* [Refer the Syncfusion Theme Files](#refer-the-syncfusion-theme-files)
 * [Render Syncfusion Angular Component](#render-syncfusion-angular-component)
 * [Serve the application](#serve-the-application)
 
@@ -50,11 +51,9 @@ E.g.: ng new ejProject
 
 N> This command installs all the required dependencies for Angular application.
 
-## Configuration of Syncfusion Angular Component
-
-We need to install the below packages to work with Syncfusion Angular components.
+## Configure Syncfusion Angular Component in Angular CLI
  
-* Run the below command to move to sample's root folder of created application.
+* To configure the Syncfusion Angular component, change the directory to your application's root folder 
 
 {% highlight javascript %}
 cd project-name
@@ -62,18 +61,26 @@ cd project-name
 E.g.: cd ejProject
 {% endhighlight %}
 
-* To install Syncfusion JavaScript and Angular components along with typings, run below commands from sample's root folder.
+* Essential JavaScript provides support for Angular Framework through wrappers. Since, we need the dependencies `ej-angular2` package and `syncfusion-javascript` package. Run the below commands, to install the dependencies.
 
 {% highlight javascript %}
 
 npm install syncfusion-javascript --save
 npm install ej-angular2 --save
+
+{% endhighlight %}
+
+* We are working with `typescript`, since, we need to install the typings dependencies `jquery` and `ej.web.all`. We may need of accessing the `ej` object for Syncfusion wiget's properties in Angular application, which is defined in `ej.web.all` typings file.
+E.g.  `ej.TextAlign.right`
+
+{% highlight javascript %}
+
 npm install --save-dev @types/jquery
 npm install --save-dev @types/ej.web.all
 
 {% endhighlight %}
 
-* Include the required typings `jquery` and `ej.web.all` in `tsconfig.app.json` file. 
+* And also include the typings `jquery` and `ej.web.all` in `tsconfig.app.json` file. 
 
 {% highlight javascript %}
 
@@ -96,7 +103,33 @@ npm install --save-dev @types/ej.web.all
 
 {% endhighlight %}
 
-* Include `Syncfusion theme files` from `node_modules` in style section of `angular-cli.json` file.
+* Syncfusion JavaScript widgets need `window.jQuery` object to render the Angular components, since, we need to import jQuery in `polyfills.ts` file as like the below code snippet which we already configured in our [webpack angular seed](https://github.com/syncfusion/angular2-seeds/blob/master/src/vendor.ts/#L12-L14) application.
+
+{% highlight javascript %}
+
+import * as jquery from 'jquery';
+window['jQuery'] = jquery;
+window['$'] = jquery;
+
+{% endhighlight %}
+
+* If you are using Syncfusion Angular components(like gird component) which uses template, we need to install and import the dependency `jsrender` in `polyfills.ts` file. Run the below command to install jsrender.
+
+{% highlight javascript %}
+
+npm install jsrender --save
+
+{% endhighlight %}
+
+* Refer the below code snippet to import the `jsrender` in `polyfills.ts` file.
+
+{% highlight javascript %}
+import 'jsrender';
+{% endhighlight %}
+
+## Refer the Syncfusion Theme Files
+
+* We configured the Syncfusion Angular components and their dependencies. For the appearance we need to include `Syncfusion theme files` from `node_modules` in style section of `angular-cli.json` file. Here, we referred the `material theme`. 
 
 {% highlight javascript %}
 {
@@ -121,19 +154,35 @@ npm install --save-dev @types/ej.web.all
 
 {% endhighlight %}
 
-* Syncfusion JavaScript widgets need `window.jQuery` to render the Angular components, since, we need to import jQuery in `polyfills.ts` file as like the below code snippet which we already configured in our [webpack angular seed](https://github.com/syncfusion/angular2-seeds/blob/master/src/vendor.ts/#L12-L14) application.
-
-{% highlight javascript %}
-
-import * as jquery from 'jquery';
-window['jQuery'] = jquery;
-window['$'] = jquery;
-
-{% endhighlight %}
 
 ## Render Syncfusion Angular Component
 
-* To render `ejDialog` Angular component in angular-cli, modify the `app.component.html` file using the below code example.
+* To render any Syncfusion Angular Components into the project, we need to import `EJAngular2Module` from `ej-angular2` package in `app.module.ts` file. Refer to the below code snippets to import Syncfusion Angular components.
+
+{% highlight ts %}
+
+import { BrowserModule } from '@angular/platform-browser';
+import { NgModule } from '@angular/core';
+import { FormsModule } from '@angular/forms';
+import { HttpModule } from '@angular/http';
+import { EJAngular2Module } from 'ej-angular2'; 
+import { AppComponent } from './app.component';
+
+@NgModule({
+  declarations: [
+    AppComponent
+  ],
+  imports: [
+    BrowserModule,FormsModule,HttpModule,EJAngular2Module.forRoot() 
+  ],
+  providers: [],
+  bootstrap: [AppComponent]
+})
+export class AppModule { }
+
+{% endhighlight %}
+
+* Now we can render any Angular component. Here, We rendered the `ejDialog` Angular component in angular-cli. Refer the below code snippet for `app.component.html` file.
 
 {% highlight html %}
 <div id="parent" >
@@ -181,36 +230,13 @@ export class AppComponent {
  {% endhighlight %}
 
 
-* Import `EJAngular2Module` from `ej-angular2` package in `app.module.ts` file to import Syncfusion Angular components into the project. Refer to the below code snippets to import Syncfusion Angular components.
-
-{% highlight ts %}
-
-import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
-import { FormsModule } from '@angular/forms';
-import { HttpModule } from '@angular/http';
-import { EJAngular2Module } from 'ej-angular2'; 
-import { AppComponent } from './app.component';
-
-@NgModule({
-  declarations: [
-    AppComponent
-  ],
-  imports: [
-    BrowserModule,FormsModule,HttpModule,EJAngular2Module.forRoot() 
-  ],
-  providers: [],
-  bootstrap: [AppComponent]
-})
-export class AppModule { }
-
-{% endhighlight %}
-
 Refer the below codes to create the application
 
 {% tabs %}
 
 {% highlight ts %}
+
+// Refer the code for app.component.ts file (src/app/app.component.ts)
 
 import { Component,  ViewEncapsulation, ViewChild } from '@angular/core';
 import { EJComponents } from 'ej-angular2';
@@ -242,6 +268,8 @@ export class AppComponent {
 
 {% highlight html %}
 
+// Refer the code for app.component.html file (src/app/app.component.html)
+
 <div id="parent" >
 	<input id="btnOpen" style="height: 30px" type="button" ej-button class="ejinputtext" value="Click to open Dialog" (click)="onClick($event)" *ngIf="btndisplay" />
 	<ej-dialog id="basicDialog" #dialog title="Facebook" [(enableResize)]="resize" containment="#parent" (close)="onClose($event)">
@@ -255,6 +283,9 @@ export class AppComponent {
 {% endhighlight %}
 
 {% highlight ts %}
+
+// Refer the code for app.module.ts file (src/app/app.module.ts)
+
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
@@ -292,6 +323,9 @@ platformBrowserDynamic().bootstrapModule(AppModule);
 {% endhighlight %}
 
 {% highlight json %}
+
+// Refer the code for angular-cli.json file 
+
 {
   "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
   "project": {
@@ -355,7 +389,8 @@ platformBrowserDynamic().bootstrapModule(AppModule);
 
 {% highlight ts %}
 
-// Refer the code for polyfills.ts
+// Refer the code for polyfills.ts (src/polyfills.ts)
+
 /** Evergreen browsers require these. **/
 import 'core-js/es6/reflect';
 import 'core-js/es7/reflect';
@@ -390,7 +425,7 @@ window['$'] = jquery;
 
 {% highlight json %}
 
-// Refer the code for tsconfig.app.json
+// Refer the code for tsconfig.app.json(src/tsconfig.app.json)
 {
   "extends": "../tsconfig.json",
   "compilerOptions": {
@@ -411,6 +446,9 @@ window['$'] = jquery;
 {% endhighlight %}
 
 {% highlight json %}
+
+
+// Refer the code for package.json file  
 
 {
   "name": "angularcliaot",
