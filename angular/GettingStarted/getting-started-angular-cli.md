@@ -70,8 +70,7 @@ npm install ej-angular2 --save
 
 {% endhighlight %}
 
-* We are working with `typescript`, since, we need to install the typings dependencies `jquery` and `ej.web.all`.
-The `ej` object is defined in `ej.web.all` file which is used to access the `enumeration property`.
+* We are working with `typescript`, since, we need to install the typings dependencies `jquery` and `ej.web.all`. We may need of accessing the `ej` object for Syncfusion wiget's properties in Angular application, which is defined in `ej.web.all` typings file.
 E.g.  `ej.TextAlign.right`
 
 {% highlight javascript %}
