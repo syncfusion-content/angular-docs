@@ -268,7 +268,7 @@ export class AppComponent {
 
 {% highlight html %}
 
-// Refer the code for app.component.html file (src/app/app.component.html)
+<!-- Refer the code for app.component.html file (src/app/app.component.html)-->
 
 <div id="parent" >
 	<input id="btnOpen" style="height: 30px" type="button" ej-button class="ejinputtext" value="Click to open Dialog" (click)="onClick($event)" *ngIf="btndisplay" />
@@ -308,6 +308,8 @@ export class AppModule { }
 {% endhighlight %}
 
 {% highlight ts %}
+// Refer the code for main.ts (src/main.ts)
+
 import { enableProdMode } from '@angular/core';
 import { platformBrowserDynamic } from '@angular/platform-browser-dynamic';
 
