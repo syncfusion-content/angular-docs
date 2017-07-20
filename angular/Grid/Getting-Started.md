@@ -11,7 +11,7 @@ api: /api/Angular/grid
 
 # Getting started
 
-To get start with how to use the Grid component within Angular-2 platform, please refer the basic requisites and the configurations needs to be done on the system from [here](https://help.syncfusion.com/angular-2/gettingstarted/getting-started-systemjs).By following the above steps in the document, you can get the newly cloned **angular2-seeds** template sample folder.Grid control has been already configured in that **angular2-seeds** folder.So that you can use already exisiting or modifiy grid sample available in **src/grid** folder.
+To get start with how to use the Grid component within Angular-2 platform, please refer the basic requisites and the configurations needs to be done on the system from [here](https://help.syncfusion.com/angular/gettingstarted/getting-started-systemjs).By following the above steps in the document, you can get the newly cloned **angular2-seeds** template sample folder.Grid control has been already configured in that **angular2-seeds** folder.So that you can use already exisiting or modifiy grid sample available in **src/grid** folder.
 
 
 ## Copying Grid source file
