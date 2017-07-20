@@ -16,7 +16,7 @@ To quick start with Syncfusion JavaScript Angular components run the below comma
 {% highlight javascript %}
  > git clone https://github.com/syncfusion/angular2-seeds/ -b systemjs
 
- > cd Angular-seeds
+ > cd angular2-seeds
 
  > npm install
 {% endhighlight %}
@@ -28,7 +28,7 @@ The below steps describes to add component with above cloned seed application.
 * Copy required Syncfusion Angular source component(s) from the below build location and add it in `src/ej` folder (For ex., consider the `gantt` component).
 
 {% highlight javascript %}
-(Installed Location)\Syncfusion\Essential Studio\{{ site.releaseversion }}\JavaScript\assets-src\Angular\ 
+(Installed Location)\Syncfusion\Essential Studio\{{ site.releaseversion }}\JavaScript\assets-src\angular2\ 
 {% endhighlight %}
 
 N> `core.ts` file is mandatory for all Syncfusion JavaScript Angular components. The repository having the source file from Essential Studio for JavaScript v{{ site.releaseversion }}.

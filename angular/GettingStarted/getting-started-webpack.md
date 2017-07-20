@@ -364,7 +364,7 @@ platformBrowserDynamic().bootstrapModule(AppModule);
 {% highlight json %}
 
 {
-  "name": "ejangular-webpack-starter",
+  "name": "EJAngular2-webpack-starter",
   "version": "1.0.0",
   "repository": {
     "type": "git",

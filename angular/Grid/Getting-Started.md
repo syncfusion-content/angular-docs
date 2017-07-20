@@ -11,14 +11,14 @@ api: /api/Angular/grid
 
 # Getting started
 
-To get start with how to use the Grid component within Angular-2 platform, please refer the basic requisites and the configurations needs to be done on the system from [here](https://help.syncfusion.com/angular-2/gettingstarted/getting-started-systemjs).By following the above steps in the document, you can get the newly cloned **Angular-seeds** template sample folder.Grid control has been already configured in that **Angular-seeds** folder.So that you can use already exisiting or modifiy grid sample available in **src/grid** folder.
+To get start with how to use the Grid component within Angular-2 platform, please refer the basic requisites and the configurations needs to be done on the system from [here](https://help.syncfusion.com/angular-2/gettingstarted/getting-started-systemjs).By following the above steps in the document, you can get the newly cloned **angular2-seeds** template sample folder.Grid control has been already configured in that **angular2-seeds** folder.So that you can use already exisiting or modifiy grid sample available in **src/grid** folder.
 
 
 ## Copying Grid source file
 
-In that newly cloned **Angular-seeds** folder,we have referred `grid.component.ts` source file from 14.3 version.If you want the upgraded version  of `grid.component.ts` source file, you can get it from the below mentioned location and add it under the **src/ej** folder. 
+In that newly cloned **angular2-seeds** folder,we have referred `grid.component.ts` source file from 14.3 version.If you want the upgraded version  of `grid.component.ts` source file, you can get it from the below mentioned location and add it under the **src/ej** folder. 
 
-* (**Installed location**)\Syncfusion\Essential Studio\{{ site.releaseversion }}\JavaScript\assets-src\Angular\
+* (**Installed location**)\Syncfusion\Essential Studio\{{ site.releaseversion }}\JavaScript\assets-src\angular2\
 
 N> `core.ts` source file is mandatory for all Syncfusion JavaScript Angular components. 
 

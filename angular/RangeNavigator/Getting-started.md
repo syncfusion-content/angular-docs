@@ -128,7 +128,7 @@ N> Uncompressed version of library files are also available which is used for de
 * Copy RangeNavigator Syncfusion Angular source component(s) from the below build location and add it in `src/ej` folder (For ex., consider the `rangenavigator` component).
 
 {% highlight javascript %}
-(Installed Location)\Syncfusion\Essential Studio\14.3.0.49\JavaScript\assets-src\Angular\ 
+(Installed Location)\Syncfusion\Essential Studio\14.3.0.49\JavaScript\assets-src\angular2\ 
 {% endhighlight %}
 
 N> `core.ts` file is mandatory for all Syncfusion JavaScript Angular components. The repository having the source file from Essential Studio for JavaScript v14.3.0.49.
