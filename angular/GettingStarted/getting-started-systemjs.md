@@ -428,7 +428,7 @@ platformBrowserDynamic().bootstrapModule(AppModule);
       '@angular/forms': 'npm:@angular/forms/bundles/forms.umd.js',
       // other libraries
       'rxjs': 'npm:rxjs',
-      'Angular-in-memory-web-api': 'npm:Angular-in-memory-web-api',
+      'angular2-in-memory-web-api': 'npm:angular2-in-memory-web-api',
       'jquery': 'npm:jquery/dist/jquery.min.js',
       'jsrender': 'npm:jsrender/jsrender.min.js',
       'jquery-validation': 'npm:jquery-validation/dist/jquery.validate.min.js',
@@ -444,7 +444,7 @@ platformBrowserDynamic().bootstrapModule(AppModule);
       rxjs: {
         defaultExtension: 'js'
       },
-      'Angular-in-memory-web-api': {
+      'angular2-in-memory-web-api': {
         main: './index.js',
         defaultExtension: 'js'
       },
