@@ -114,7 +114,7 @@ To initiate Ahead-of-Time compilation by using the previously installed ngc comp
 
 {% highlight javascript %}
 {
-  "name": "ejangular-webpack-starter",
+  "name": "EJAngular2-webpack-starter",
   "version": "1.0.0",
   "repository": {
     "type": "git",

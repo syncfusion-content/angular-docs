@@ -45,7 +45,7 @@ Refer the below code snippet for packages used in our application.
 {% highlight javascript %}
 
 {
-  "name": "ejangular2-systemjs-starter",
+  "name": "EJAngular2-systemjs-starter",
   "version": "1.0.0",
   "repository": {
     "type": "git",
@@ -461,7 +461,7 @@ platformBrowserDynamic().bootstrapModule(AppModule);
 {% highlight json %}
 
 {
-  "name": "ejangular2-systemjs-starter",
+  "name": "EJAngular2-systemjs-starter",
   "version": "1.0.0",
   "repository": {
     "type": "git",

@@ -114,7 +114,7 @@ N> Uncompressed version of library files are also available which is used for de
 
 {% highlight javascript %}
 
-(Installed Location)\Syncfusion\Essential Studio\14.3.0.49\JavaScript\assets-src\Angular\
+(Installed Location)\Syncfusion\Essential Studio\14.3.0.49\JavaScript\assets-src\angular2\
 
 {% endhighlight %}
 

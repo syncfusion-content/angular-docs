@@ -18,7 +18,7 @@ To quick start with Syncfusion JavaScript Angular components run the below comma
 {% highlight javascript %}
  > git clone https://github.com/syncfusion/angular2-seeds
 
- > cd Angular-seeds
+ > cd angular2-seeds
 
  > npm install
 {% endhighlight %}
@@ -30,7 +30,7 @@ The below steps describes to add maskedit component with above cloned seed appli
 * Copy required Syncfusion Angular source component(s) from the below build location and add it in `src/app/ej` folder.
 
 {% highlight javascript %}
-(Installed Location)\Syncfusion\Essential Studio\14.3.0.49\JavaScript\assets-src\Angular\ 
+(Installed Location)\Syncfusion\Essential Studio\14.3.0.49\JavaScript\assets-src\angular2\ 
 {% endhighlight %}
 
 N> `core.ts` file is mandatory for all Syncfusion JavaScript Angular components. The repository having the source file from Essential Studio for JavaScript v14.3.0.49.
@@ -92,14 +92,14 @@ export const rootRouterConfig: Routes = [
 {% highlight javascript %}
 import { NgModule, enableProdMode, ErrorHandler } from '@angular/core';
 . . . . . 
-import { EJAngularModule } from 'ej-Angular';
+import { EJAngular2Module } from 'ej-angular2';
 import { AppComponent } from './app.component';
 import { MaskEditComponent } from './maskedit/maskedit.component';
 
 import { rootRouterConfig } from './app.routes';
 . . . . 
 @NgModule({
-  imports: [BrowserModule, FormsModule, HttpModule, EJAngularModule.forRoot(), RouterModule.forRoot(rootRouterConfig, { useHash: true })],
+  imports: [BrowserModule, FormsModule, HttpModule, EJAngular2Module.forRoot(), RouterModule.forRoot(rootRouterConfig, { useHash: true })],
   declarations: [. . . . , MaskEditComponent],
   bootstrap: [AppComponent]
 })
@@ -127,7 +127,7 @@ To quick start with Syncfusion JavaScript Angular components run the below comma
 {% highlight javascript %}
  > git clone https://github.com/syncfusion/angular2-seeds/ -b systemjs
 
- > cd Angular-seeds
+ > cd angular2-seeds
 
  > npm install
 {% endhighlight %}
@@ -139,7 +139,7 @@ The below steps describes to add maskedit component with above cloned seed appli
 * Copy required Syncfusion Angular source component(s) from the below build location and add it in `src/ej` folder.
 
 {% highlight javascript %}
-(Installed Location)\Syncfusion\Essential Studio\14.3.0.49\JavaScript\assets-src\Angular\ 
+(Installed Location)\Syncfusion\Essential Studio\14.3.0.49\JavaScript\assets-src\angular2\ 
 {% endhighlight %}
 
 N> `core.ts` file is mandatory for all Syncfusion JavaScript Angular components. The repository having the source file from Essential Studio for JavaScript v14.3.0.49.
@@ -201,14 +201,14 @@ export const rootRouterConfig: Routes = [
 {% highlight javascript %}
 import { NgModule, enableProdMode, ErrorHandler } from '@angular/core';
 . . . . . 
-import { EJAngularModule } from 'ej-Angular';
+import { EJAngular2Module } from 'ej-angular2';
 import { AppComponent } from './app.component';
 import { MaskEditComponent } from './maskedit/maskedit.component';
 
 import { rootRouterConfig } from './app.routes';
 . . . . 
 @NgModule({
-  imports: [BrowserModule, FormsModule, HttpModule, EJAngularModule.forRoot(), RouterModule.forRoot(rootRouterConfig, { useHash: true })],
+  imports: [BrowserModule, FormsModule, HttpModule, EJAngular2Module.forRoot(), RouterModule.forRoot(rootRouterConfig, { useHash: true })],
   declarations: [. . . . , MaskEditComponent],
   bootstrap: [AppComponent]
 })

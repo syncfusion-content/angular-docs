@@ -343,7 +343,7 @@ platformBrowserDynamic().bootstrapModule(AppModule);
 {% highlight json %}
 
 {
-  "name": "ejangular2-systemjs-starter",
+  "name": "EJAngular2-systemjs-starter",
   "version": "1.0.0",
   "repository": {
     "type": "git",
@@ -448,7 +448,7 @@ platformBrowserDynamic().bootstrapModule(AppModule);
         main: './index.js',
         defaultExtension: 'js'
       },
-      'ej-Angular': {
+      'ej-angular2': {
         main: './src/index.js'
       },
       'syncfusion-javascript': {

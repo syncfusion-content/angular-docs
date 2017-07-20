@@ -19,7 +19,7 @@ To quick start with Syncfusion JavaScript Angular components run the below comma
 
  > git clone https://github.com/syncfusion/angular2-seeds
 
- > cd Angular-seeds
+ > cd angular2-seeds
 
  > npm install
 
@@ -33,7 +33,7 @@ The below steps describes to add Scroller component with above cloned seed appli
 
 {% highlight javascript %}
 
-(Installed Location)\Syncfusion\Essential Studio\14.3.0.49\JavaScript\assets-src\Angular\ 
+(Installed Location)\Syncfusion\Essential Studio\14.3.0.49\JavaScript\assets-src\angular2\ 
 
 {% endhighlight %}
 
@@ -169,7 +169,7 @@ To quick start with Syncfusion JavaScript Angular components run the below comma
 
  > git clone https://github.com/syncfusion/angular2-seeds/ -b systemjs
 
- > cd Angular-seeds
+ > cd angular2-seeds
 
  > npm install
 
@@ -183,7 +183,7 @@ The below steps describes to add Scroller component with above cloned seed appli
 
 {% highlight javascript %}
 
-(Installed Location)\Syncfusion\Essential Studio\14.3.0.49\JavaScript\assets-src\Angular\ 
+(Installed Location)\Syncfusion\Essential Studio\14.3.0.49\JavaScript\assets-src\angular2\ 
 
 {% endhighlight %}
 
