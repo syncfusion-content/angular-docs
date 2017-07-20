@@ -17,9 +17,9 @@ To render the Spreadsheet control, the following list of external dependencies a
 
 * [jQuery](http://jquery.com) - 1.7.1 and later versions
 
-The required Angular script as `ej.Angular.min.js` which can be available in below `CDN` link:
+The required Angular script as `ej.angular2.min.js` which can be available in below `CDN` link:
 
-* [http://cdn.syncfusion.com/14.3.0.52/js/common/ej.Angular.min.js](http://cdn.syncfusion.com/14.3.0.52/js/common/ej.Angular.min.js)
+* [http://cdn.syncfusion.com/14.3.0.52/js/common/ej.angular2.min.js](http://cdn.syncfusion.com/14.3.0.52/js/common/ej.angular2.min.js)
 
 For other required internal dependencies refer the [`link`](http://help.syncfusion.com/js/spreadsheet/dependencies "link")
 
@@ -44,7 +44,7 @@ So the complete boilerplate code is
     <script src="https://ajax.aspnetcdn.com/ajax/jquery.validate/1.14.0/jquery.validate.min.js">
     </script>
     <script src="http://cdn.syncfusion.com/14.3.0.49/js/web/ej.web.all.min.js" type="text/javascript"></script>
-    <script src ="http://cdn.syncfusion.com/14.3.0.49/js/common/ej.Angular.min.js"></script>
+    <script src ="http://cdn.syncfusion.com/14.3.0.49/js/common/ej.angular2.min.js"></script>
     <script src="systemjs.config.js"></script>
   </head>
   <body>

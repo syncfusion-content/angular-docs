@@ -49,7 +49,7 @@ Example
     <!-- Essential Studio for JavaScript  script references -->
     <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
     <script src="http://cdn.syncfusion.com/14.4.0.15/js/web/ej.web.all.min.js"> </script>
-    <script src="http://cdn.syncfusion.com/14.4.0.15/js/common/ej.Angular.min.js"></script>
+    <script src="http://cdn.syncfusion.com/14.4.0.15/js/common/ej.angular2.min.js"></script>
 
     <!-- 2. Configure SystemJS -->
     <script src="systemjs.config.js"></script>

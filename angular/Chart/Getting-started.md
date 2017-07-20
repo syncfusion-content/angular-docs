@@ -99,7 +99,7 @@ Create an HTML page and add the scripts references in the order mentioned in the
     <!-- Essential Studio for JavaScript  script references -->
     <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
     <script src="http://cdn.syncfusion.com/{{ site.releaseversion }}/js/web/ej.web.all.min.js"> </script>
-    <script src="http://cdn.syncfusion.com/{{ site.releaseversion }}/js/common/ej.Angular.min.js"></script>
+    <script src="http://cdn.syncfusion.com/{{ site.releaseversion }}/js/common/ej.angular2.min.js"></script>
 
     <!-- 2. Configure SystemJS -->
     <script src="systemjs.config.js"></script>
@@ -226,7 +226,7 @@ npm start
 Typically, you will assign data directly to chart using [`dataSource`](../api/ejchart#members:series-datasource) property of the series. In Angular-2, you need to bind the variable, which contains data in the Angular-2 class variable, to the dataSource property as illustrated in the following code example,
 
 
-I> Essential JS includes Angular-2 directives for all controls in the **ej.Angular.min** script file. 
+I> Essential JS includes Angular-2 directives for all controls in the **ej.angular2.min** script file. 
 
 
 {% highlight html %}
