@@ -52,7 +52,7 @@ Add the following code in your **HTML** page.
       <script src="http://cdn.syncfusion.com/js/assets/external/jquery-3.1.1.min.js"></script>
       <script src="http://cdn.syncfusion.com/js/assets/external/jsrender.min.js" type="text/javascript"></script>
       <script src="http://cdn.syncfusion.com/{{ site.releaseversion }}/js/web/ej.web.all.min.js"> </script>
-      <script src ="http://cdn.syncfusion.com/{{ site.releaseversion }}/js/common/ej.Angular.min.js"></script>
+      <script src ="http://cdn.syncfusion.com/{{ site.releaseversion }}/js/common/ej.angular2.min.js"></script>
       <script src="systemjs.config.js"></script>
    </head>
  <body>
@@ -133,7 +133,7 @@ Add the following code in your **HTML** page to render the ListBox.
       <script src="http://cdn.syncfusion.com/js/assets/external/jquery-3.1.1.min.js"></script>
       <script src="http://cdn.syncfusion.com/js/assets/external/jsrender.min.js" type="text/javascript"></script>
       <script src="http://cdn.syncfusion.com/{{ site.releaseversion }}/js/web/ej.web.all.min.js"> </script>
-      <script src ="http://cdn.syncfusion.com/{{ site.releaseversion }}/js/common/ej.Angular.min.js"></script>
+      <script src ="http://cdn.syncfusion.com/{{ site.releaseversion }}/js/common/ej.angular2.min.js"></script>
       <script src="systemjs.config.js"></script>
    </head>
  <body>
