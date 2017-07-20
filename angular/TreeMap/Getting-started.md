@@ -83,7 +83,7 @@ Create an HTML page and add the scripts references in the order mentioned in the
     <!-- Essential Studio for JavaScript  script references -->
     <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
     <script src="http://cdn.syncfusion.com/{{ site.releaseversion }}/js/web/ej.web.all.min.js"> </script> 
-    <script src="http://cdn.syncfusion.com/{{ site.releaseversion }}/js/common/ej.Angular.min.js"></script>
+    <script src="http://cdn.syncfusion.com/{{ site.releaseversion }}/js/common/ej.angular2.min.js"></script>
     
     <!-- 2. Configure SystemJS -->
     <script src="systemjs.config.js"></script>
@@ -113,7 +113,7 @@ N> Uncompressed version of library files are also available which is used for de
 * Copy TreeMap Syncfusion Angular source component(s) from the below build location and add it in `src/ej` folder (For ex., consider the `treemap` component).
 
 {% highlight javascript %}
-(Installed Location)\Syncfusion\Essential Studio\14.3.0.49\JavaScript\assets-src\Angular\ 
+(Installed Location)\Syncfusion\Essential Studio\14.3.0.49\JavaScript\assets-src\angular2\ 
 {% endhighlight %}
 
 N> `core.ts` file is mandatory for all Syncfusion JavaScript Angular components. The repository having the source file from Essential Studio for JavaScript v14.3.0.49.

@@ -99,7 +99,7 @@ Create an HTML page and add the scripts references in the order mentioned in the
     <!-- Essential Studio for JavaScript  script references -->
     <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
     <script src="http://cdn.syncfusion.com/{{ site.releaseversion }}/js/web/ej.web.all.min.js"> </script>
-    <script src="http://cdn.syncfusion.com/{{ site.releaseversion }}/js/common/ej.Angular.min.js"></script>
+    <script src="http://cdn.syncfusion.com/{{ site.releaseversion }}/js/common/ej.angular2.min.js"></script>
 
     <!-- 2. Configure SystemJS -->
     <script src="systemjs.config.js"></script>
@@ -130,7 +130,7 @@ N> Uncompressed version of library files are also available which is used for de
 * Copy Chart Syncfusion Angular source component(s) from the below build location and add it in `src/ej` folder (For ex., consider the `chart` component).
 
 {% highlight javascript %}
-(Installed Location)\Syncfusion\Essential Studio\14.3.0.49\JavaScript\assets-src\Angular\ 
+(Installed Location)\Syncfusion\Essential Studio\14.3.0.49\JavaScript\assets-src\angular2\ 
 {% endhighlight %}
 
 N> `core.ts` file is mandatory for all Syncfusion JavaScript Angular components. The repository having the source file from Essential Studio for JavaScript v14.3.0.49.
@@ -226,7 +226,7 @@ npm start
 Typically, you will assign data directly to chart using [`dataSource`](../api/ejchart#members:series-datasource) property of the series. In Angular-2, you need to bind the variable, which contains data in the Angular-2 class variable, to the dataSource property as illustrated in the following code example,
 
 
-I> Essential JS includes Angular-2 directives for all controls in the **ej.Angular.min** script file. 
+I> Essential JS includes Angular-2 directives for all controls in the **ej.angular2.min** script file. 
 
 
 {% highlight html %}

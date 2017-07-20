@@ -18,7 +18,7 @@ To quick start with Syncfusion JavaScript Angular components run the below comma
 {% highlight javascript %}
  > git clone https://github.com/syncfusion/angular2-seeds
 
- > cd Angular-seeds
+ > cd angular2-seeds
 
  > npm install
 {% endhighlight %}
@@ -30,7 +30,7 @@ The below steps describes to add ColorPicker component with above cloned seed ap
 * Copy required Syncfusion Angular source component(s) from the below build location and add it in `src/app/ej` folder.
 
 {% highlight javascript %}
-(Installed Location)\Syncfusion\Essential Studio\14.3.0.49\JavaScript\assets-src\Angular\ 
+(Installed Location)\Syncfusion\Essential Studio\14.3.0.49\JavaScript\assets-src\angular2\ 
 {% endhighlight %}
 
 N> `core.ts` file is mandatory for all Syncfusion JavaScript Angular components. The repository having the source file from Essential Studio for JavaScript v14.3.0.49.
@@ -126,7 +126,7 @@ To quick start with Syncfusion JavaScript Angular components run the below comma
 {% highlight javascript %}
  > git clone https://github.com/syncfusion/angular2-seeds/ -b systemjs
 
- > cd Angular-seeds
+ > cd angular2-seeds
 
  > npm install
 {% endhighlight %}
@@ -138,7 +138,7 @@ The below steps describes to add colorpicker component with above cloned seed ap
 * Copy required Syncfusion Angular source component(s) from the below build location and add it in `src/ej` folder.
 
 {% highlight javascript %}
-(Installed Location)\Syncfusion\Essential Studio\14.3.0.49\JavaScript\assets-src\Angular\ 
+(Installed Location)\Syncfusion\Essential Studio\14.3.0.49\JavaScript\assets-src\angular2\ 
 {% endhighlight %}
 
 N> `core.ts` file is mandatory for all Syncfusion JavaScript Angular components. The repository having the source file from Essential Studio for JavaScript v14.3.0.49.

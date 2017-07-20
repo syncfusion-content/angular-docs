@@ -13,13 +13,13 @@ This section explains you how to render and configure TimePicker component in an
 
 To get started with TimePicker component, refer the basic prerequisites and system configuration to be done form the given [getting started](#Getting-Started) document
 
-Once you have cloned the sample Angular application as mentioned in getting started document, you will have an angular application named **Angular-seeds** and is now ready use our EJ components with it. 
+Once you have cloned the sample Angular application as mentioned in getting started document, you will have an angular application named **angular2-seeds** and is now ready use our EJ components with it. 
 
 ### Adding TimePicker source file
 
-Copy the required Angular source components file from the installed location and move it to the app/src/ej folder available inside the Angular-seeds folder.
+Copy the required Angular source components file from the installed location and move it to the app/src/ej folder available inside the angular2-seeds folder.
 
-(Installed Location)\Syncfusion\Essential Studio\{installed version}\JavaScript\assets-src\Angular\ 
+(Installed Location)\Syncfusion\Essential Studio\{installed version}\JavaScript\assets-src\angular2\ 
 
 > _Note:_ _core.ts file is mandatory for all Syncfusion JavaScript Angular components. The repository having the source file from Essential Studio for JavaScript v14.3.0.49._
 
@@ -49,7 +49,7 @@ Example
     <!-- Essential Studio for JavaScript  script references -->
     <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
     <script src="http://cdn.syncfusion.com/14.4.0.15/js/web/ej.web.all.min.js"> </script>
-    <script src="http://cdn.syncfusion.com/14.4.0.15/js/common/ej.Angular.min.js"></script>
+    <script src="http://cdn.syncfusion.com/14.4.0.15/js/common/ej.angular2.min.js"></script>
 
     <!-- 2. Configure SystemJS -->
     <script src="systemjs.config.js"></script>
