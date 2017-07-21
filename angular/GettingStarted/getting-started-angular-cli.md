@@ -80,7 +80,7 @@ npm install --save-dev @types/ej.web.all
 
 {% endhighlight %}
 
-* And also include the typings `jquery` and `ej.web.all` in `tsconfig.app.json` file. 
+* And also include the typings `jquery` and `ej.web.all` in `src/tsconfig.app.json` file. 
 
 {% highlight javascript %}
 
@@ -103,7 +103,7 @@ npm install --save-dev @types/ej.web.all
 
 {% endhighlight %}
 
-* Syncfusion JavaScript widgets need `window.jQuery` object to render the Angular components, since, we need to import jQuery in `polyfills.ts` file as like the below code snippet which we already configured in our [webpack angular seed](https://github.com/syncfusion/angular2-seeds/blob/master/src/vendor.ts/#L12-L14) application.
+* Syncfusion JavaScript widgets need `window.jQuery` object to render the Angular components, since, we need to import jQuery in `src/polyfills.ts` file as like the below code snippet which we already configured in our [webpack angular seed](https://github.com/syncfusion/angular2-seeds/blob/master/src/vendor.ts/#L12-L14) application.
 
 {% highlight javascript %}
 
@@ -111,20 +111,6 @@ import * as jquery from 'jquery';
 window['jQuery'] = jquery;
 window['$'] = jquery;
 
-{% endhighlight %}
-
-* If you are using Syncfusion Angular components(like gird component) which uses template, we need to install and import the dependency `jsrender` in `polyfills.ts` file. Run the below command to install jsrender.
-
-{% highlight javascript %}
-
-npm install jsrender --save
-
-{% endhighlight %}
-
-* Refer the below code snippet to import the `jsrender` in `polyfills.ts` file.
-
-{% highlight javascript %}
-import 'jsrender';
 {% endhighlight %}
 
 ## Refer the Syncfusion Theme Files
@@ -476,33 +462,34 @@ window['$'] = jquery;
     "@angular/platform-browser-dynamic": "^4.0.0",
     "@angular/router": "^4.0.0",
     "core-js": "^2.4.1",
-    "ej-angular2": "^15.2.41",
+    "ej-angular2": "^15.2.43",
     "jquery": "^3.2.1",
     "rxjs": "^5.1.0",
-    "syncfusion-javascript": "^15.1.41",
+    "syncfusion-javascript": "^15.1.46",
     "zone.js": "^0.8.4"
   },
   "devDependencies": {
-    "@angular/cli": "1.0.0",
+    "@angular/cli": "1.2.0",
     "@angular/compiler-cli": "^4.0.0",
-    "@types/ej.web.all": "^15.1.4",
-    "@types/jasmine": "2.5.38",
-    "@types/jquery": "^2.0.43",
-    "@types/es6-shim": "0.31.32",
+    "@angular/language-service": "^4.0.0",
+    "@types/ej.web.all": "^15.2.4",
+    "@types/jasmine": "~2.5.53",
+    "@types/jasminewd2": "~2.0.2",
+    "@types/jquery": "^3.2.9",
     "@types/node": "~6.0.60",
-    "codelyzer": "~2.0.0",
-    "jasmine-core": "~2.5.2",
-    "jasmine-spec-reporter": "~3.2.0",
-    "karma": "~1.4.1",
-    "karma-chrome-launcher": "~2.0.0",
+    "codelyzer": "~3.0.1",
+    "jasmine-core": "~2.6.2",
+    "jasmine-spec-reporter": "~4.1.0",
+    "karma": "~1.7.0",
+    "karma-chrome-launcher": "~2.1.1",
     "karma-cli": "~1.0.1",
-    "karma-coverage-istanbul-reporter": "^0.2.0",
+    "karma-coverage-istanbul-reporter": "^1.2.1",
     "karma-jasmine": "~1.1.0",
     "karma-jasmine-html-reporter": "^0.2.2",
-    "protractor": "~5.1.0",
-    "ts-node": "~2.0.0",
-    "tslint": "~4.5.0",
-    "typescript": "~2.2.0"
+    "protractor": "~5.1.2",
+    "ts-node": "~3.0.4",
+    "tslint": "~5.3.2",
+    "typescript": "~2.3.3"
   }
 }
 
@@ -564,12 +551,12 @@ Importing `EJAngular2Module` from `ej-angular2` package may cause bundle size bi
 
 import { BrowserModule } from '@angular/platform-browser'; 
 import { NgModule } from '@angular/core'; 
-import { EJ_GRID_COMPONENTS } from 'ej-angular2/src/ej/grid.component'; 
+import { EJ_DIALOG_COMPONENTS } from 'ej-angular2/src/ej/dialog.component'; 
 import { AppComponent } from './app.component'; 
  
 @NgModule({ 
   declarations: [ 
-    AppComponent, EJ_GRID_COMPONENTS 
+    AppComponent, EJ_DIALOG_COMPONENTS 
   ], 
   imports: [ 
     BrowserModule 
@@ -578,5 +565,43 @@ import { AppComponent } from './app.component';
   bootstrap: [AppComponent] 
 }) 
 export class AppModule { } 
+
+{% endhighlight %}
+
+* If you get error like `Error in Type DialogComponent in D:\ejProject\node_modules\src\ej\dialog.component.d.ts is a part of the declarations of 2 Modules : EJAngular2Module and AppModule` in dialog component, then import `EJComponents` as like the below code snippet.
+
+{% highlight ts %}
+
+import { Component, ViewChild } from '@angular/core';
+import { EJComponents } from 'ej-angular2/src/ej/core';
+@Component({
+  selector: 'app-root',
+  templateUrl: './app.component.html',
+  styleUrls: ['./app.component.css']
+})
+export class AppComponent {
+   resize: boolean;
+   . . .
+  }
+}
+
+{% endhighlight %}
+
+N> This type of error will occur when we use combination of imports components like components from `ej-angular2` package and components from `individual component from ej-angular2` package.
+For Example:
+
+{% highlight ts %}
+import { EJComponents } from 'ej-angular2';
+ and 
+import { EJ_DIALOG_COMPONENTS } from 'ej-angular2/src/ej/dialog.component';
+{% endhighlight %}
+
+So we recommend you to import all Syncfusion Angular Components from individual components source file.
+
+N> If you are using Syncfusion Angular components(like gird component) which uses template, then you need to import `EJTemplateDirective` as like the below code snippet.
+
+{% highlight ts %}
+
+import { EJTemplateDirective } from 'ej-angular2/src/ej/template';
 
 {% endhighlight %}
