@@ -293,7 +293,9 @@ Refer the below codes to create the application
 
 {% tabs %}
 
-{% highlight ts %}
+
+// Refer this code for app.component.ts file
+
 import {Component, ViewEncapsulation, ViewChild} from '@angular/core';
 import { EJComponents } from 'ej-angular2';
 
@@ -324,6 +326,8 @@ export class AppComponent {
 
 {% highlight html %}
 
+<!-- Refer the code for app.component.html file -->
+
 <div id="parent">
     <input id="btnOpen" style="height: 30px" type="button" ej-button class="ejinputtext" value="Click to open Dialog" (click)="onClick($event)" *ngIf="btndisplay" />
     <ej-dialog id="basicDialog" #dialog title="Facebook" [(enableResize)]="resize" containment="#parent" (close)="onClose($event)">
@@ -338,6 +342,8 @@ export class AppComponent {
 {% endhighlight %}
 
 {% highlight ts %}
+
+// Refer this code for app.module.ts file
 
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
@@ -362,6 +368,9 @@ export class AppModule { }
 {% endhighlight %}
 
 {% highlight ts %}
+
+// Refer this code for main.ts file
+
 import { platformBrowserDynamic } from '@angular/platform-browser-dynamic';
 import { AppModule } from './app.module';
 
@@ -369,6 +378,9 @@ platformBrowserDynamic().bootstrapModule(AppModule);
 {% endhighlight %}
 
 {% highlight javascript %}
+
+// Refer this code for systemjs.config.js file
+
 /**
 * System configuration for Angular 2 samples
 * Adjust as necessary for your application needs.
@@ -426,6 +438,9 @@ platformBrowserDynamic().bootstrapModule(AppModule);
 {% endhighlight %}
 
 {% highlight html %}
+
+<!-- Refer the code for index.html file -->
+
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
@@ -458,7 +473,9 @@ platformBrowserDynamic().bootstrapModule(AppModule);
 
 {% endhighlight %}
 
-{% highlight json %}
+{% highlight json %} 
+
+// Refer this code for package.json 
 
 {
   "name": "EJAngular2-systemjs-starter",
@@ -529,6 +546,8 @@ platformBrowserDynamic().bootstrapModule(AppModule);
 
 {% highlight json %}
 
+// Refer this code for tsconfig.json file
+
 {
   "compilerOptions": {
     "target": "es6",
@@ -554,6 +573,8 @@ platformBrowserDynamic().bootstrapModule(AppModule);
 {% endhighlight %}
 
 {% highlight javascript %}
+
+// Refer this code for gulpfile.js file
 
 var ts = require('gulp-typescript');
 
