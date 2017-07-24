@@ -257,6 +257,8 @@ Refer the below codes to create the application
 
 {% tabs %}
 
+// Refer the code for app.component.ts file (src/app/app.component.ts)
+
 {% highlight ts %}
 
 import { Component } from '@angular/core';
@@ -270,6 +272,8 @@ export class AppComponent { }
 {% endhighlight %}
 
 {% highlight ts %}
+
+// Refer the code for app.module.ts file (src/app/app.module.ts)
 
 import { NgModule }      from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
@@ -287,6 +291,8 @@ export class AppModule { }
 
 {% highlight ts %}
 
+// Refer the code for main.ts file (src/app/main.ts)
+
 import { platformBrowserDynamic } from '@angular/platform-browser-dynamic';
 import { AppModule } from './app.module';
 
@@ -295,6 +301,8 @@ platformBrowserDynamic().bootstrapModule(AppModule);
 {% endhighlight %}
 
 {% highlight html %}
+
+<!-- Refer the code for app.component.html file (src/app/app.component.html)-->
 
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
@@ -340,7 +348,11 @@ platformBrowserDynamic().bootstrapModule(AppModule);
 </html>
 {% endhighlight %}
 
+
+
 {% highlight json %}
+
+// Refer the code for package.json file 
 
 {
   "name": "EJAngular2-systemjs-starter",
@@ -406,6 +418,8 @@ platformBrowserDynamic().bootstrapModule(AppModule);
 {% endhighlight %}
 
 {% highlight javascript %}
+
+// Refer the code for systemjs.config.js file 
 
 (function (global) {
   System.config({

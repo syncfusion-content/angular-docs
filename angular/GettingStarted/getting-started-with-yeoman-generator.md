@@ -289,6 +289,9 @@ Refer the below codes to create the application
 {% tabs %}
 
 {% highlight ts %}
+
+// Refer this code for app.component.ts file
+
 import { Component, ViewChild } from '@angular/core';
 import { EJComponents } from 'ej-angular2';
 
@@ -318,6 +321,8 @@ export class HomeComponent {
 
 {% highlight html %}
 
+<!-- Refer the code for app.component.html file -->
+
 <div id="parent" >
 	<input id="btnOpen" style="height: 30px" type="button" ej-button class="ejinputtext" value="Click to open Dialog" (click)="onClick($event)" *ngIf="btndisplay" />
 	<ej-dialog id="basicDialog" #dialog title="Facebook" [(enableResize)]="resize" containment="#parent" (close)="onClose($event)">
@@ -333,7 +338,7 @@ export class HomeComponent {
 
 {% highlight ts %}
 
-// import EJAngular2Module in app.module.shared.ts
+// Refer the code to import EJAngular2Module in app.module.shared.ts
 
 import { NgModule } from '@angular/core';
 import { RouterModule } from '@angular/router';
@@ -374,6 +379,7 @@ export class AppModule {
 {% highlight ts %}
 
 // Refer this code to import 'jQuery' in 'boot.client.ts'
+
 import 'reflect-metadata';
 import 'zone.js';
 import { enableProdMode } from '@angular/core';
@@ -405,6 +411,8 @@ const modulePromise = platformBrowserDynamic().bootstrapModule(AppModule);
 
 {% highlight html %}
 
+<!-- Refer the code for index.cshtml file -->
+
 @{
     ViewData["Title"] = "Home Page";
 }
@@ -421,6 +429,8 @@ const modulePromise = platformBrowserDynamic().bootstrapModule(AppModule);
 {% endhighlight %}
 
 {% highlight json %}
+
+// Refer this code for package.json file
 
 {
   "name": "WebApplicationBasic",
