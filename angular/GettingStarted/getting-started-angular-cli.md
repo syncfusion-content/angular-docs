@@ -70,7 +70,7 @@ npm install ej-angular2 --save
 
 {% endhighlight %}
 
-* We are working with `typescript`, since, we need to install the typings dependencies `jquery` and `ej.web.all`. We may need of accessing the `ej` object for Syncfusion wiget's properties in Angular application, which is defined in `ej.web.all` typings file.
+* We are working with `typescript`, since, we need to install the typings dependencies `jquery` and `ej.web.all`. We may need of accessing the `ej` object for Syncfusion widget's properties in Angular application, which is defined in `ej.web.all` typings file.
 E.g.  `ej.TextAlign.right`
 
 {% highlight javascript %}
@@ -143,7 +143,7 @@ window['$'] = jquery;
 
 ## Render Syncfusion Angular Component
 
-* To render any Syncfusion Angular Components into the project, we need to import `EJAngular2Module` from `ej-angular2` package in `app.module.ts` file. Refer to the below code snippets to import Syncfusion Angular components.
+* To render any Syncfusion Angular Components into the project, we need to import `EJAngular2Module` from `ej-angular2` package in `app.module.ts` file. Refer to the below code snippet to import Syncfusion Angular components.
 
 {% highlight ts %}
 

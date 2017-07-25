@@ -270,6 +270,8 @@ Refer the below codes to create the application
 
 {% highlight ts %}
 
+// Refer the code for app.component.ts file(src/app/app.component.ts) 
+
 import { Component } from '@angular/core';
 
 @Component({
@@ -282,6 +284,8 @@ export class AppComponent {
 {% endhighlight %}
 
 {% highlight ts %}
+
+// Refer the code for app.module.ts file(src/app/app.module.ts) 
 
 import { NgModule, enableProdMode, ErrorHandler } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
@@ -323,6 +327,8 @@ export class AppModule { }
 
 {% highlight ts %}
 
+// Refer the code for main.ts file(src/main.ts) 
+
 import { platformBrowserDynamic } from '@angular/platform-browser-dynamic';
 import { enableProdMode } from '@angular/core';
 import { AppModule } from './app/app.module';
@@ -334,6 +340,8 @@ platformBrowserDynamic().bootstrapModule(AppModule);
 {% endhighlight %}
 
 {% highlight html %}
+
+<!-- Refer the code for app.component.html file (src/app/app.component.html)-->
 
 <!DOCTYPE html>
 <html>
@@ -362,6 +370,8 @@ platformBrowserDynamic().bootstrapModule(AppModule);
 {% endhighlight %}
 
 {% highlight json %}
+
+// Refer the code for package.json file 
 
 {
   "name": "EJAngular2-webpack-starter",
@@ -442,6 +452,8 @@ platformBrowserDynamic().bootstrapModule(AppModule);
 {% endhighlight %}
 
 {% highlight javascript %}
+
+// Refer the code for webpack.config.js file
 
 module.exports = require('./config/webpack.dev.js');
 
