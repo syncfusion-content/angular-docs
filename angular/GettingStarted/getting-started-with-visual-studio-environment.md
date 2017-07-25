@@ -293,6 +293,7 @@ Refer the below codes to create the application
 
 {% tabs %}
 
+{% highlight ts %}
 
 // Refer this code for app.component.ts file
 
