@@ -275,7 +275,7 @@ export class AppComponent {
 
 N> If you get the following error, you need to refer the corresponding image type in `webpack.common.js` file. 
 
-![](/angular/GettingStarted/Images/css loader.png)
+![](/angular/GettingStarted/Images/cssloader.png)
 
 * Refer the below code snippet to refer the image types.
 {% highlight javascript %}
