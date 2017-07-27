@@ -23,16 +23,16 @@ To quick start with Syncfusion JavaScript Angular components run the below comma
 N> The cloned application is fully configured to work with Essential Studio for JavaScript Angular components, in which we configured our [ej-angular2](https://github.com/syncfusion/ej-angular2) library and necessary changes to consume our Angular components.
 
 ## What is in Syncfusion cloned Angular seed.?
-The cloned Angular seed consists of files in the following structure. The files in the `src/app` folder is used for logical functionalities in our application. The other files available outside the src folder is used to build, bundle and deploy the application. 
+The cloned Angular seed consists of files in the following structure. The files in the `src` folder is used for logical functionalities in our application. The other files available outside the src folder is used to build, bundle and deploy the application. 
 
 * src
-    * app
         * app.component.ts
         * app.module.ts
         * main.ts
 * index.html
 * package.json
 * systemjs.config.js
+* tsconfig.json
 
 The below table depicts the purpose of files in the above structure.
 
@@ -42,15 +42,15 @@ The below table depicts the purpose of files in the above structure.
 <th>Purpose </th>
 </tr>
 <tr>
-<td>src/app/app.component.ts </td>
+<td>src/app.component.ts </td>
 <td>It is a top-level component where all the functionalities are lies in this component</td>
 </tr>
 <tr>
-<td>src/app/app.module.ts </td>
+<td>src/app.module.ts </td>
 <td>It tells the angular how to construct and bootstrap the app in the root module. In our application, it bootstraps the `AppComponent` to launch the application.    </td>
 </tr>
 <tr>
-<td>src/app/main.ts</td>
+<td>src/main.ts</td>
 <td>The main entry point of the application, in which we kick-off our application by importing the `AppComponent` and bootstrapping it. </td>
 </tr>
 <tr>
@@ -142,9 +142,9 @@ Now we can render any Syncfusion JavaScript Angular components in Angular applic
 
 ##  Adding sample with seed application
 
-* Create `dialog` folder inside `src/app` folder.
+* Create `dialog` folder inside `src` folder.
 
-* Create `dialog.component.html` view file inside `src/app/dialog` folder and render ejDialog Angular component using the below code example.
+* Create `dialog.component.html` view file inside `src/dialog` folder and render ejDialog Angular component using the below code example.
 
 {% highlight html %}
 
@@ -162,7 +162,7 @@ Now we can render any Syncfusion JavaScript Angular components in Angular applic
 
 {% endhighlight %}
 
-* Create `dialog.component.ts` model file inside the folder `src/app/dialog` and create sample component using the below code example
+* Create `dialog.component.ts` model file inside the folder `src/dialog` and create sample component using the below code example
 
 {% highlight ts %}
 
@@ -257,9 +257,9 @@ Refer the below codes to create the application
 
 {% tabs %}
 
-// Refer the code for app.component.ts file (src/app/app.component.ts)
-
 {% highlight ts %}
+
+// Refer the code for app.component.ts file (src/app.component.ts)
 
 import { Component } from '@angular/core';
 
@@ -273,7 +273,7 @@ export class AppComponent { }
 
 {% highlight ts %}
 
-// Refer the code for app.module.ts file (src/app/app.module.ts)
+// Refer the code for app.module.ts file (src/app.module.ts)
 
 import { NgModule }      from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
@@ -291,7 +291,7 @@ export class AppModule { }
 
 {% highlight ts %}
 
-// Refer the code for main.ts file (src/app/main.ts)
+// Refer the code for main.ts file (src/main.ts)
 
 import { platformBrowserDynamic } from '@angular/platform-browser-dynamic';
 import { AppModule } from './app.module';
@@ -302,7 +302,7 @@ platformBrowserDynamic().bootstrapModule(AppModule);
 
 {% highlight html %}
 
-<!-- Refer the code for app.component.html file (src/app/app.component.html)-->
+<!-- Refer the code for app.component.html file (src/app.component.html)-->
 
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
