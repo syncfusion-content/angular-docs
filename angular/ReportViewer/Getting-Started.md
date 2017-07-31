@@ -80,7 +80,7 @@ export class ReportViewerComponent {
     public reportPath: string;
 
     constructor() {
-        this.serviceUrl = 'http://js.syncfusion.com/ejservices/api/RDLReport';        
+        this.serviceUrl = 'http://js.syncfusion.com/ejservices/api/ReportViewer';        
         this.reportPath = 'GroupingAgg.rdl';
     }
 }
@@ -138,7 +138,7 @@ export class ReportViewerComponent {
     public reportPath: string;
 
     constructor() {
-        this.serviceUrl = 'http://js.syncfusion.com/ejservices/api/SSRSReport';
+        this.serviceUrl = 'http://js.syncfusion.com/ejservices/api/ReportViewer';
         this.serverUrl = 'http://mvc.syncfusion.com/reportserver';
         this.reportPath = '/SSRSSamples2/Territory Sales new';
     }
@@ -197,7 +197,7 @@ export class ReportViewerComponent {
 	public reportData: any;
 
     constructor() {
-        this.serviceUrl = 'http://js.syncfusion.com/ejservices/api/RDLCReport';        
+        this.serviceUrl = 'http://js.syncfusion.com/ejservices/api/ReportViewer';        
         this.reportPath = 'AreaCharts.rdlc"';
 		this.reportData = [{
       value: [
