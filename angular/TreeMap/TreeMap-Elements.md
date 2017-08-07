@@ -102,6 +102,29 @@ You can set headers for each level by setting the `showHeader` property of the e
 
 ![](TreeMap-Elements_images/TreeMap-Elements_img2.png)
 
+
+## Customizing the header
+
+The text in the header can be customized by triggering the event [`headerTemplateRendering`](../api/ejtreemap#events:headertemplaterendering) of the **TreeMap**. This event is triggered before rendering the header template. 
+
+{% highlight html %}
+
+<ej-treemap id="treemap" >
+    <e-levels>
+       <e-level groupPath="Continent" [groupGap]=2 (headerTemplateRendering)="loadTemplate($event)"></e-level>
+    </e-levels>                                                     
+</ej-treemap> 
+
+function loadTemplate(sender) {
+        //...                   
+}
+                    
+
+{% endhighlight %}
+
+![](TreeMap-Elements_images/TreeMap-Elements_img4.png)
+
+
 ## Label
 
 You can also set labels for the leaf nodes by setting the `showLabels` property as true. Group path value is displayed as a label for leaf nodes. You can customize the default label appearance by setting the `labelTemplate` of the **TreeMap** levels.
@@ -129,4 +152,37 @@ You can also set labels for the leaf nodes by setting the `showLabels` property 
 
 
 ![](TreeMap-Elements_images/TreeMap-Elements_img3.png)
+
+
+## Customizing the Overflow labels
+
+You can handle the label overflow, by specifying any one of the following values to the property `textOverflow`as
+
+**None**       - By specifying textOverflow as “none”, it displays the default label text.
+**Hide**       - By specifying textOverflow as “hide”, You can hide the label, when it exceeds the header width.
+**Wrap**       - By specifying textOverflow as “wrap”, you can wrap the label text.
+**Wrapbyword** - By specifying textOverflow as “wrapbyword”, you can wrap the label text by word.
+
+
+
+{% highlight html %}
+
+<ej-treemap id="treemap" [legendSettings.height]=40 [legendSettings.width]=700 
+       leafItemSettings.labelPath="Region" [leafItemSettings.showLabels]="true" leafItemSettings.textOverFlow="Wrap">
+    <e-levels>
+       <e-level groupPath="Continent" [showLabels]="true" [groupGap]=2 
+             [headerHeight]="20" [groupPadding]="5"  headerTemplate="headertemplate">
+       </e-level>
+    </e-levels>                                                     
+</ej-treemap> 
+    
+<script  id="headertemplate" type="application/jsrender">
+     <div style="background-color: white; margin:5px">
+     <label style="color:black;font-size:medium;" >{{:header}}</label><br />            
+     </div>                        
+</script>             
+
+
+{% endhighlight %}
+
 

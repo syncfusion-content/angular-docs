@@ -240,3 +240,25 @@ function animateChart(){
 
 {% endhighlight %}
 
+
+### Control the Speed of animation
+
+To control the speed of animation, you can use the [`animationDuration`](../api/ejchart#members:series-animationduration) property in the series. 
+
+
+{% highlight html %}
+
+<ej-chart id="chartcontainer">
+    <e-seriescollection>
+        <e-series [enableAnimation]="true" [animationDuration]="2000">
+		<-- Add points here-->
+		</e-series>
+    </e-seriescollection>
+	
+</ej-chart>
+
+
+{% endhighlight %}
+
+
+
