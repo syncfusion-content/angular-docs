@@ -40,6 +40,7 @@ Appointments play a dynamic role within the Schedule control with which the user
 The appointments can be added/edited in the Scheduler using any one of the following ways,
 
 * Quick window
+* Inline creation/editing
 * Default appointment window
 * Context menu
 * Through programmatically
@@ -120,6 +121,85 @@ export class ScheduleComponent {
     }
     onCellClick(args) {
         args.cancel = true; // Prevents the display of quick window on clicking the cells.
+    }
+}
+
+{% endhighlight %}
+
+#### Inline Appointment Creation/Editing
+
+Another easier way, alternative to quick window for adding or editing the appointment’s subject alone on the Scheduler in a quicker manner can be achieved using inline Add/Edit support. It allows the user to add and edit the appointments inline.
+
+To get familiar with inline adding mode, single click on any of the Scheduler cells or press `enter` key on the selected cells. When the inline adding mode is ON, a text box will get created within the clicked Scheduler cells with a blinking cursor in it requiring the user to enter the subject of the appointment. Once the subject is typed, the appointment will be saved on pressing the `enter` key. 
+
+To enable the inline edit mode, single click on any of the existing appointment’s subject, so that the user can edit the subject of that appointment. The edited subject of that appointment is then updated on pressing the `enter` key.
+
+The inline option can be enabled/disabled on Scheduler by using the `allowInline` API, whereas its default value is set to **false**.
+
+{% highlight html %}
+
+<ej-schedule id="Schedule1" width="100%" height="525px" [currentDate]=currentDate [appointmentSettings.dataSource]=dataSource [allowInline]="true">
+</ej-schedule>
+
+{% endhighlight %}
+
+{% highlight ts %}
+
+import { Component } from '@angular/core';
+
+@Component({
+    selector: 'ej-app',
+    templateUrl: 'src/schedule/schedule.component.html'
+})
+export class ScheduleComponent {
+    public dataSource;
+    public currentDate: Date;
+    constructor() {
+        this.currentDate = new Date(2017, 11, 5);
+        this.dataSource = [{
+            Id: 101,
+            Subject: "Talk with Nature",
+            StartTime: new Date(2017, 11, 5, 10, 0),
+            EndTime: new Date(2017, 11, 5, 11, 0)
+        }];
+    }
+}
+
+{% endhighlight %}
+
+##### Enabling Inline Edit alone
+
+A workaround can be done with Scheduler to disable the inline appointment creation and enabling only the editing mode of inline by making use of the `cellClick` event. The below code example shows the way to disable the inline appointment creation while clicking on the cells, but appointments can be edited while clicking on the appointment’s subject.
+
+{% highlight html %}
+
+<ej-schedule id="Schedule1" width="100%" height="525px" [currentDate]=currentDate [appointmentSettings.dataSource]=dataSource [allowInline]="true" (cellClick)="onCellClick($event)">
+</ej-schedule>
+
+{% endhighlight %}
+
+{% highlight ts %}
+
+import { Component } from '@angular/core';
+
+@Component({
+    selector: 'ej-app',
+    templateUrl: 'src/schedule/schedule.component.html'
+})
+export class ScheduleComponent {
+    public dataSource;
+    public currentDate: Date;
+    constructor() {
+        this.currentDate = new Date(2017, 11, 5);
+        this.dataSource = [{
+            Id: 101,
+            Subject: "Talk with Nature",
+            StartTime: new Date(2017, 11, 5, 10, 0),
+            EndTime: new Date(2017, 11, 5, 11, 0)
+        }];
+    }
+    onCellClick(args) {
+        args.cancel = true;  // Prevents inline appointment creation on clicking the cells.
     }
 }
 
