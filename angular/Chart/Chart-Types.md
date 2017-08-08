@@ -351,6 +351,46 @@ To render a 100% Stacked Area Chart, set the `type` as **"stackingArea100"** in 
 ![](Chart-Types_images/Chart-Types_img16.png)
 
 
+## Stacked Spline Area Chart
+
+To render a Stacked Spline Area Chart, set the [`type`](../api/ejchart.html#members:series-type) as **"stackingsplinearea"** in the chart series. 
+
+
+{% highlight html %}
+
+<ej-chart id="chartcontainer">
+     <e-seriescollection>
+        <e-series type="stackingsplinearea">
+    	  </e-series>
+     </e-seriescollection>
+</ej-chart>
+
+{% endhighlight %}
+
+
+![](Chart-Types_images/Chart-Types_img97.png)
+
+
+## 100% Stacked Spline Area Chart  
+
+To render a 100% Stacked Spline Area Chart, set the [`type`](../api/ejchart.html#members:series-type) as **"stackingsplinearea100"** in the chart series. 
+
+
+{% highlight html %}
+
+<ej-chart id="chartcontainer">
+     <e-seriescollection>
+        <e-series type="stackingsplinearea100">
+    	  </e-series>
+     </e-seriescollection>
+</ej-chart>
+
+{% endhighlight %}
+
+
+![](Chart-Types_images/Chart-Types_img98.png)
+
+
 ## Column Chart
 
 To render a Column Chart, set the `type` as **"column"** in the chart series. To change the color of the column series, you can use the `fill` property.  
@@ -823,6 +863,42 @@ To render a Spline Chart, set the `type` as **"spline"** in the chart series. To
 {% endhighlight %}
 
 ![](Chart-Types_images/Chart-Types_img35.png)
+
+
+
+### Spline Types
+
+Spline series supports four types of curves, namely natural, monotonic, cardinal and clamped. To change the spline type, you can use the [`splineType`](../api/ejchart#members:series-splinetype) property in the series. 
+
+
+{% highlight html %}
+
+<ej-chart id="chartcontainer">
+     <e-seriescollection>
+        <e-series type="spline" splineType="Natural">
+	      </e-series>
+     </e-seriescollection>
+</ej-chart>
+
+{% endhighlight %}
+
+
+### Change the cardinal spline tension
+
+To change cardinal spline tension, you can use the [`cardinalSplineTension`](../api/ejchart#members:series-cardinalsplinetension) property in the series. The default value of cardinalSplineTension is **0.5**. Its value ranges from 0 to 1.
+
+
+{% highlight html %}
+
+<ej-chart id="chartcontainer">
+     <e-seriescollection>
+        <e-series type="spline" splineType="Cardinal" [cardinalSplineTension] ="0.7">
+	      </e-series>
+     </e-seriescollection>
+</ej-chart>
+
+{% endhighlight %}
+
 
 
 ### Change the spline width
