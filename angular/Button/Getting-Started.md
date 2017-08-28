@@ -21,7 +21,7 @@ Create the HTML file app.component.html and add the below given code to render *
     <table>
        <tr>
          <td >My First Button</td>
-         <td><input type="button" ej-button id="button" [value]="Button" /></td>
+         <td><input type="button" ej-button id="button" value="Button" /></td>
       </tr>
     </table>
             
@@ -52,7 +52,7 @@ To modify the size of the Button and rename the button, add the following snippe
     <table>
         <tr>
             <td >My First Button</td>
-            <td><input type="button" ej-button id="button" [value]="Button" [size]="large" /></td>
+            <td><input type="button" ej-button id="button" [value]="text" [size]="large" /></td>
         </tr>
     </table>
 
@@ -65,7 +65,7 @@ To render the text and size properties add the following snippet in your TS file
         export class AppComponent {
             text: string;
         constructor() {
-            this.text = "Button";
+            this.text = "Click";
             this.size = "large";
          }
 
