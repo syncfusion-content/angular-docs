@@ -73,7 +73,7 @@ npm install --save-dev @types/ej.web.all
 
 {% endhighlight %}
 
-N> Typescript definition file `ej.web.all.d.ts` supports `jquery` version 3.2.7. If the jquery version is higher than the mentioned version, it may lead to the issue `Interface 'JQueryDeferred<T>' cannot simultaneously extend types 'Deferred<T, any, any>' and 'JQueryPromise<T>'`. Run the below command to install the same.
+N> Typescript definition file `ej.web.all.d.ts` supports `jquery` typings version 3.2.7. If the jquery version is higher than the mentioned version, it may lead to the issue `Interface 'JQueryDeferred<T>' cannot simultaneously extend types 'Deferred<T, any, any>' and 'JQueryPromise<T>'`. Run the below command to install the same.
 `npm install --save-dev @types/jquery@3.2.7`.
 
 * Import `ej-angular2` module into `app.module.shared.ts` file 
