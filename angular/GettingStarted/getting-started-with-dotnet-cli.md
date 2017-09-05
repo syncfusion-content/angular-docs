@@ -173,7 +173,7 @@ ViewData["Title"] = "Home Page";
 
 ## Bundling Syncfusion JavaScript Theme Files
 
-* We are going to configure bundling of `syncfusion-javascript` theme file into `vendor.css` by importing theme file in `webpack.config.vendor.js`. 
+* We are going to configure bundling of `syncfusion-javascript` theme file into `vendor.css` by importing the file in `webpack.config.vendor.js`. 
 
  {% highlight javascript %}
  const path = require('path');
@@ -205,7 +205,7 @@ const nonTreeShakableModules = [
         . . .     
  {% endhighlight %}
 
-* Also add `gif and cur` type of filetypes to load syncfusion-javascript themes used files(.png, .jpg, etc.). 
+* Also add `gif and cur` filetypes in `webpack.config.vendor.js` to load `syncfusion-javascript` theme's used files(.png, .jpg, etc.). 
 
 {% highlight javascript %}
 . . .
