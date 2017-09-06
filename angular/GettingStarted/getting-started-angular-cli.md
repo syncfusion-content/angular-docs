@@ -525,24 +525,24 @@ If you get error `FATAL ERROR: CALL_AND_RETRY_LAST Allocation failed - JavaScrip
 Modify **ngc.cmd**
 
 {% highlight javascript %}
-@IF EXIST "%~dp0\node.exe" ( 
-  "%~dp0\node.exe" --max_old_space_size=1000 "%~dp0\..\@angular\compiler-cli\src\main.js" %* 
-) ELSE ( 
-  @SETLOCAL 
-  @SET PATHEXT=%PATHEXT:;.JS;=;% 
-  node  "%~dp0\..\@angular\compiler-cli\src\main.js" %* 
-) 
+@IF EXIST "%~dp0\node.exe" (
+  "%~dp0\node.exe" --max_old_space_size=8192 "%~dp0\..\@angular\compiler-cli\src\main.js" %*
+) ELSE (
+  @SETLOCAL
+  @SET PATHEXT=%PATHEXT:;.JS;=;%
+  node --max_old_space_size=8192 "%~dp0\..\@angular\compiler-cli\src\main.js" %*
+)
 {% endhighlight %}
 
 Modify **ng.cmd**
 
 {% highlight javascript %}
-@IF EXIST "%~dp0\node.exe" ( 
-  "%~dp0\node.exe" --max_old_space_size=1000 "%~dp0\..\@angular\cli\bin\ng" %* 
-) ELSE ( 
-  @SETLOCAL 
-  @SET PATHEXT=%PATHEXT:;.JS;=;% 
-  node  "%~dp0\..\@angular\cli\bin\ng" %* 
+@IF EXIST "%~dp0\node.exe" (
+  "%~dp0\node.exe" --max_old_space_size=8192 "%~dp0\..\@angular\cli\bin\ng" %*
+) ELSE (
+  @SETLOCAL
+  @SET PATHEXT=%PATHEXT:;.JS;=;%
+  node --max_old_space_size=8192 "%~dp0\..\@angular\cli\bin\ng" %*
 )
 {% endhighlight %}
 
