@@ -13,6 +13,10 @@ ASP.NET Single Page Application(SPA) helps you to build applications that includ
 
 To getting started with Syncfusion Angular Components, the NPM packages [ej-angular2](https://www.npmjs.com/package/ej-angular2) and [syncfusion-javascript](https://www.npmjs.com/package/syncfusion-javascript) helps to seamlessly supports ASP.NET Core environment for our components. The following steps depicts, to create an application in ASP.NET Core using SPA template with Syncfusion Angular Components.
 
+<blockquote class="notes yeomanspa">
+<p>Yeoman Generator is [DEPRECATED](https://www.npmjs.com/package/generator-aspnetcore-spa) now. So, we suggest you to refer the [Getting Started with .NET CLI](/angular/GettingStarted/getting-started-with-dotnet-cli) document to create ASP .NET Core SPA Application.</p>
+</blockquote>
+
 ## Synopsis
 
 * [Prerequisites](#prerequisites)
@@ -72,9 +76,6 @@ npm install --save-dev @types/jquery
 npm install --save-dev @types/ej.web.all
 
 {% endhighlight %}
-
-N> Typescript definition file `ej.web.all.d.ts` supports `jquery` typings version `3.2.7`. If the `jquery` definition file version is higher than the mentioned version, it may leads to the issue `Interface 'JQueryDeferred<T>' cannot simultaneously extend types 'Deferred<T, any, any>' and 'JQueryPromise<T>'`. Run the below command to install the specific `jquery.d.ts` file.
-`npm install --save-dev @types/jquery@3.2.7`.
 
 * Import `ej-angular2` module into `app.module.shared.ts` file 
 
@@ -522,3 +523,8 @@ dotnet run
 
 ![](/angular/GettingStarted/Images/spatemplateoutput.png)
 
+<style>
+.yeomanspa{
+    	box-shadow: 0 4px 4px rgba(0,0,0,0.24), 0 0 4px rgba(0,0,0,0.12);
+}
+</style>
