@@ -114,7 +114,7 @@ N> We recommend you to go through the [quick start](https://angular.io/docs/ts/l
 
 ## Configuration of Syncfusion Javascript Widget Dependencies
 
-* Syncfusion JavaScript widgets need `window.jQuery` to render the Angular components, since, we need to import jQuery in `vendor.ts` file and include `Syncfusion theme files` from `node_modules` as like the below code snippet. Refer the [cloned seed](https://github.com/syncfusion/angular2-seeds/blob/master/src/vendor.ts/#L12-L16) for this code snippet 
+* Syncfusion JavaScript widgets need `window.jQuery` to render the Angular components, since, we need to import jQuery in `vendor.ts` file and include `Syncfusion theme files` from `node_modules` as like the below code snippet. Refer the [cloned seed](https://github.com/syncfusion/angular2-seeds/blob/master/src/vendor.ts/#L12-L16) for this code snippet.
 
 {% highlight javascript %}
 
@@ -298,7 +298,7 @@ import { EJAngular2Module } from 'ej-angular2';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import { GridComponent } from './grid/grid.component';
-
+import { DialogComponent } from './dialog/dialog.component';
 import { rootRouterConfig } from './app.routes';
 
 enableProdMode();
@@ -317,7 +317,7 @@ class CustomErrorHandler implements ErrorHandler {
     BrowserModule, FormsModule, HttpModule, RouterModule.forRoot(rootRouterConfig, { useHash: true }), EJAngular2Module.forRoot()
   ],
   declarations: [
-    AppComponent, HomeComponent, GridComponent
+    AppComponent, HomeComponent, GridComponent, DialogComponent
   ],
   bootstrap: [AppComponent]
 })
@@ -343,29 +343,19 @@ platformBrowserDynamic().bootstrapModule(AppModule);
 
 <!-- Refer the code for app.component.html file (src/app/app.component.html)-->
 
-<!DOCTYPE html>
-<html>
-
-<head>
-	<base href="/">
-	<title>Essential JavaScript for Angular | Webpack seed</title>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="shortcut icon" type="image/png" href="deps/images/favicon.ico">
-	<link href="src/deps/default.css" rel="stylesheet" />
-	<link href="../node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" />
-</head>
-
-<body>
-	<ej-app>
-		<div class="splash">
-			<div class="message">Angular Syncfusion Components App</div>
-			<div class="spinner"></div>
-		</div>
-	</ej-app>
-</body>
-
-</html>
+<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+	<div style="padding-left:0px;" class="collapse navbar-collapse" id="skeleton-navigation-navbar-collapse">
+		<ul class="nav navbar-nav">
+			<li><a data-toggle="collapse" data-target="#skeleton-navigation-navbar-collapse.in" href="#">Syncfusion Angular Seed</a></li>
+			<li><a data-toggle="collapse" data-target="#skeleton-navigation-navbar-collapse.in" href="#home">Home</a></li>
+			<li><a data-toggle="collapse" data-target="#skeleton-navigation-navbar-collapse.in" href="#grid">Grid</a></li>
+			<li><a data-toggle="collapse" data-target="#skeleton-navigation-navbar-collapse.in" href="#dialog">Dialog</a></li>
+		</ul>
+	</div>
+</nav>
+<main>
+	<router-outlet></router-outlet>
+</main>
 
 {% endhighlight %}
 
@@ -374,7 +364,7 @@ platformBrowserDynamic().bootstrapModule(AppModule);
 // Refer the code for package.json file 
 
 {
-  "name": "EJAngular2-webpack-starter",
+  "name": "ejangular-webpack-starter",
   "version": "1.0.0",
   "repository": {
     "type": "git",
@@ -382,7 +372,7 @@ platformBrowserDynamic().bootstrapModule(AppModule);
   },
   "description": "A webpack starter for Angular",
   "scripts": {
-    "start": "webpack-dev-server --inline --progress --port 3000",
+    "start": "webpack-dev-server --inline --progress --port 2000",
     "test": "karma start",
     "build": "rimraf dist && webpack --config config/webpack.prod.js --progress --profile --bail"
   },
@@ -391,6 +381,7 @@ platformBrowserDynamic().bootstrapModule(AppModule);
     "ej",
     "essential",
     "javascript",
+    "Angular",
     "Angular 2",
     "angular2"
   ],
@@ -401,16 +392,16 @@ platformBrowserDynamic().bootstrapModule(AppModule);
   },
   "homepage": "https://github.com/syncfusion/angular2-seeds#readme",
   "dependencies": {
-    "@angular/common": "~4.1.3",
-    "@angular/compiler": "~4.1.3",
-    "@angular/core": "~4.1.3",
-    "@angular/forms": "~4.1.3",
-    "@angular/http": "~4.1.3",
-    "@angular/platform-browser": "~4.1.3",
-    "@angular/platform-browser-dynamic": "~4.1.3",
-    "@angular/router": "~4.1.3",
+    "@angular/common": "~4.3.6",
+    "@angular/compiler": "~4.3.6",
+    "@angular/core": "~4.3.6",
+    "@angular/forms": "~4.3.6",
+    "@angular/http": "~4.3.6",
+    "@angular/platform-browser": "~4.3.6",
+    "@angular/platform-browser-dynamic": "~4.3.6",
+    "@angular/router": "~4.3.6",
     "core-js": "^2.4.1",
-    "rxjs": "5.0.1",
+    "rxjs": "^5.4.3",
     "zone.js": "^0.7.4"
   },
   "devDependencies": {
@@ -433,7 +424,7 @@ platformBrowserDynamic().bootstrapModule(AppModule);
     "raw-loader": "^0.5.1",
     "rimraf": "^2.5.4",
     "style-loader": "^0.13.1",
-    "typescript": "~2.3.3",
+    "typescript": "^2.4.2",
     "url-loader": "^0.5.8",
     "webpack": "~2.6.1",
     "webpack-dev-server": "~2.4.5",
@@ -441,21 +432,31 @@ platformBrowserDynamic().bootstrapModule(AppModule);
     "bootstrap": "^3.3.6",
     "jquery": "~3.2.1",
     "jsrender": "~0.9.84",
-    "syncfusion-javascript": "^15.2.41",
-    "ej-angular2": "^15.2.41",
-    "@types/ej.web.all": "^15.2.0",
-    "@types/jquery": "2.0.34",
+    "syncfusion-javascript": "^15.3.29",
+    "ej-angular2": "^15.3.29",
+    "@types/ej.web.all": "15.2.4",
+    "@types/jquery": "^3.2.12",
     "@types/node": "^6.0.46"
   }
 }
 
 {% endhighlight %}
 
-{% highlight javascript %}
+{% highlight ts %}
 
-// Refer the code for webpack.config.js file
+// Refer the code for app.routes.ts file(src/app/app.routes.ts)
 
-module.exports = require('./config/webpack.dev.js');
+import { Routes } from '@angular/router';
+import { GridComponent } from './grid/grid.component';
+import { HomeComponent } from './home/home.component';
+import { DialogComponent } from './dialog/dialog.component';
+export const rootRouterConfig: Routes = [
+    { path: '', redirectTo: 'home', pathMatch: 'full' },
+    { path: 'home', component: HomeComponent },
+    { path: 'grid', component: GridComponent },
+    { path: 'dialog', component: DialogComponent}
+];
+
 
 {% endhighlight %}
 
