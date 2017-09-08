@@ -25,8 +25,8 @@ Syncfusion Angular Components supports culture change in application. Now, We ar
 Refer the below steps to create an Angular application with globalization support.
 
 * Clone the Angular seed from [here](https://github.com/syncfusion/angular2-seeds/tree/systemjs)
-* Create `textbox` folder inside `src/app` folder.
-* Create `textbox.component.html` view file inside `src/app/textbox` folder and render `ejCurrencyTextbox` Angular component using `locale` property which does the culture change in Angular application.
+* Create `textbox` folder inside `src` folder.
+* Create `textbox.component.html` view file inside `src/textbox` folder and render `ejCurrencyTextbox` Angular component using `locale` property which does the culture change in Angular application.
 
 {% highlight html %}
 
