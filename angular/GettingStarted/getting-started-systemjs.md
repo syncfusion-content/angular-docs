@@ -128,7 +128,7 @@ export class AppModule { }
 
 {% endhighlight %}
 
-N> The Syncfusion Javascript Component needs dependencies `jquery` and `jsrender` which need to loaded through systemjs loader in `systemjs.config.js` file. Refer the [link](https://github.com/syncfusion/angular2-seeds/blob/systemjs/systemjs.config.js/#L27-L28) for code snippet
+N> The Syncfusion Javascript Component needs dependencies `jquery` and `jsrender` which need to loaded through systemjs loader in `systemjs.config.js` file. Refer the [link](https://github.com/syncfusion/angular2-seeds/blob/systemjs/systemjs.config.js/#L27-L28) for code snippet.
 
 {% highlight javascript %}
 
@@ -162,7 +162,7 @@ Now we can render any Syncfusion JavaScript Angular components in Angular applic
 
 {% endhighlight %}
 
-* Create `dialog.component.ts` model file inside the folder `src/dialog` and create sample component using the below code example
+* Create `dialog.component.ts` model file inside the folder `src/dialog` and create sample component using the below code example.
 
 {% highlight ts %}
 
@@ -253,7 +253,7 @@ export class AppModule { }
 
 {% endhighlight %}
 
-Refer the below codes to create the application
+Refer the below codes to create the application.
 
 {% tabs %}
 
@@ -275,15 +275,35 @@ export class AppComponent { }
 
 // Refer the code for app.module.ts file (src/app.module.ts)
 
-import { NgModule }      from '@angular/core';
+import { NgModule, enableProdMode, ErrorHandler } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { AppComponent }  from './app.component';
+import { RouterModule } from '@angular/router';
+import { FormsModule } from '@angular/forms';
+import { HttpModule } from '@angular/http';
+
 import { EJAngular2Module } from 'ej-angular2';
 
-@NgModule({  
-  imports:      [ BrowserModule, EJAngular2Module.forRoot() ],
-  declarations: [ AppComponent ],
-  bootstrap:    [ AppComponent ]
+import { AppComponent } from './app.component';
+import { HomeComponent } from './home/home.component';
+import { GridComponent } from './grid/grid.component';
+import { DialogComponent } from './dialog/dialog.component';
+import { rootRouterConfig } from './app.routes';
+
+enableProdMode();
+
+class CustomErrorHandler implements ErrorHandler {
+  call(error, stackTrace = null, reason = null) {
+    console.log(error + "\n" + stackTrace);
+  }
+  handleError(error: any): void {
+    console.log(error);
+  }
+}
+
+@NgModule({
+  imports: [BrowserModule, FormsModule, HttpModule, EJAngular2Module.forRoot(), RouterModule.forRoot(rootRouterConfig, { useHash: true })],
+  declarations: [AppComponent, HomeComponent, GridComponent, DialogComponent],
+  bootstrap: [AppComponent]
 })
 export class AppModule { }
 
@@ -304,58 +324,45 @@ platformBrowserDynamic().bootstrapModule(AppModule);
 
 <!-- Refer the code for app.component.html file (src/app.component.html)-->
 
-<!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml">
-
-<head>
-	<title>Essential JavaScript for Angular | SystemJS seed</title>
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="shortcut icon" type="image/png" href="deps/images/favicon.ico">
-
-	<link href="node_modules/syncfusion-javascript/Content/ej/web/material/ej.web.all.min.css" rel="stylesheet" />
-	<link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
-	<link rel="stylesheet" href="deps/default.css">
-
-	<!-- Polyfill(s) for older browsers -->
-	<script src="node_modules/core-js/client/shim.min.js"></script>
-	<script src="node_modules/zone.js/dist/zone.js"></script>
-	<script src="node_modules/reflect-metadata/Reflect.js"></script>
-	<script src="node_modules/systemjs/dist/system.src.js"></script>
-
-	
-	<!-- 2. Configure SystemJS -->
-	<script src="systemjs.config.js"></script>
-
-	<!-- 2. Configure SystemJS -->
-	<script>       
-      System.import('app')
-            .then(null, console.error.bind(console));
-    </script>
-
-</head>
-
-<!-- 3. Display the application -->
-
-<body>
-	<ej-app>
-		<div class="splash">
-			<div class="message">Angular Syncfusion Components App</div>
-			<div class="spinner"></div>
-		</div>
-	</ej-app>
-</body>
-
-</html>
+<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+	<div style="padding-left:0px;" class="collapse navbar-collapse" id="skeleton-navigation-navbar-collapse">
+		<ul class="nav navbar-nav">
+			<li><a data-toggle="collapse" data-target="#skeleton-navigation-navbar-collapse.in" href="#">Syncfusion Angular Seed</a></li>
+			<li><a data-toggle="collapse" data-target="#skeleton-navigation-navbar-collapse.in" href="#home">Home</a></li>
+			<li><a data-toggle="collapse" data-target="#skeleton-navigation-navbar-collapse.in" href="#grid">Grid</a></li>
+			<li><a data-toggle="collapse" data-target="#skeleton-navigation-navbar-collapse.in" href="#dialog">Dialog</a></li>
+		</ul>
+	</div>
+</nav>
+<main>
+	<router-outlet></router-outlet>
+</main>
 {% endhighlight %}
 
+{% highlight ts %}
 
+// Refer the code for app.routes.ts file(src/app.routes.ts)
+
+import { Routes } from '@angular/router';
+import { GridComponent } from './grid/grid.component';
+import { HomeComponent } from './home/home.component';
+import { DialogComponent } from './dialog/dialog.component';
+
+export const rootRouterConfig: Routes = [
+    { path: '', redirectTo: 'home', pathMatch: 'full' },
+    { path: 'home', component: HomeComponent },
+    { path: 'grid', component: GridComponent },
+    { path: 'dialog', component: DialogComponent }
+];
+
+{% endhighlight %}
 
 {% highlight json %}
 
 // Refer the code for package.json file 
 
 {
-  "name": "EJAngular2-systemjs-starter",
+  "name": "ejangular2-systemjs-starter",
   "version": "1.0.0",
   "repository": {
     "type": "git",
@@ -373,6 +380,7 @@ platformBrowserDynamic().bootstrapModule(AppModule);
     "ej",
     "essential",
     "javascript",
+    "Angular",
     "Angular 2",
     "angular2"
   ],
@@ -383,15 +391,15 @@ platformBrowserDynamic().bootstrapModule(AppModule);
   },
   "homepage": "https://github.com/syncfusion/angular2-seeds#readme",
   "dependencies": {
-    "@angular/common": "~4.1.3",
-    "@angular/compiler": "~4.1.3",
-    "@angular/core": "~4.1.3",
-    "@angular/forms": "~4.1.3",
-    "@angular/http": "~4.1.3",
-    "@angular/platform-browser": "~4.1.3",
-    "@angular/platform-browser-dynamic": "~4.1.3",
-    "@angular/router": "~4.1.3",
-    "@angular/upgrade": "~4.1.3",
+    "@angular/common": "~4.3.6",
+    "@angular/compiler": "~4.3.6",
+    "@angular/core": "~4.3.6",
+    "@angular/forms": "~4.3.6",
+    "@angular/http": "~4.3.6",
+    "@angular/platform-browser": "~4.3.6",
+    "@angular/platform-browser-dynamic": "~4.3.6",
+    "@angular/router": "~4.3.6",
+    "@angular/upgrade": "~4.3.6",
     "core-js": "^2.4.1",
     "reflect-metadata": "^0.1.3",
     "rxjs": "5.0.1",
@@ -401,8 +409,8 @@ platformBrowserDynamic().bootstrapModule(AppModule);
     "bootstrap": "^3.3.6",
     "jquery": "^3.1.1",
     "jsrender": "^0.9.75",
-    "syncfusion-javascript": "^15.1.33",
-    "ej-angular2": "^15.1.33",
+    "syncfusion-javascript": "^15.3.29",
+    "ej-angular2": "^15.3.29",
     "@types/ej.web.all": "^14.4.1",
     "@types/jquery": "2.0.34",
     "@types/es6-shim": "0.31.32",
