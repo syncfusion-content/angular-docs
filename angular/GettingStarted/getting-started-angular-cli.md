@@ -80,6 +80,8 @@ npm install --save-dev @types/ej.web.all
 
 {% endhighlight %}
 
+N> Typescript definition file `ej.web.all.d.ts` supports `jquery` typings version `3.2.7`. If the `jquery` definition file version is higher than the mentioned version, it may leads to the issue `Interface 'JQueryDeferred<T>' cannot simultaneously extend types 'Deferred<T, any, any>' and 'JQueryPromise<T>'`. Run the below command to install the specific `jquery.d.ts` file.
+`npm install --save-dev @types/jquery@3.2.7`. 
 
 * And also include the typings `jquery` and `ej.web.all` in `src/tsconfig.app.json` file. 
 
@@ -150,8 +152,6 @@ window['$'] = jquery;
 
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { FormsModule } from '@angular/forms';
-import { HttpModule } from '@angular/http';
 import { EJAngular2Module } from 'ej-angular2'; 
 import { AppComponent } from './app.component';
 
@@ -160,7 +160,7 @@ import { AppComponent } from './app.component';
     AppComponent
   ],
   imports: [
-    BrowserModule,FormsModule,HttpModule,EJAngular2Module.forRoot() 
+    BrowserModule,EJAngular2Module.forRoot() 
   ],
   providers: [],
   bootstrap: [AppComponent]
@@ -194,6 +194,7 @@ import { EJComponents } from 'ej-angular2';
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
+  styleUrls: ['./app.component.css']
 })
 export class AppComponent {
   resize: boolean;
@@ -275,8 +276,6 @@ export class AppComponent {
 
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { FormsModule } from '@angular/forms';
-import { HttpModule } from '@angular/http';
 import { EJAngular2Module } from 'ej-angular2';  
 import { AppComponent } from './app.component';
  
@@ -285,7 +284,7 @@ import { AppComponent } from './app.component';
     AppComponent
   ],
   imports: [
-    BrowserModule,FormsModule,HttpModule,EJAngular2Module.forRoot() 
+    BrowserModule,EJAngular2Module.forRoot() 
   ],
   providers: [],
   bootstrap: [AppComponent]
@@ -440,11 +439,10 @@ window['$'] = jquery;
 // Refer the code for package.json file  
 
 {
-  "name": "angularcliaot",
+  "name": "ej-project",
   "version": "0.0.0",
   "license": "MIT",
   "scripts": {
-  
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
@@ -454,31 +452,31 @@ window['$'] = jquery;
   },
   "private": true,
   "dependencies": {
-    "@angular/common": "^4.0.0",
-    "@angular/compiler": "^4.0.0",
-    "@angular/core": "^4.0.0",
-    "@angular/forms": "^4.0.0",
-    "@angular/http": "^4.0.0",
-    "@angular/platform-browser": "^4.0.0",
-    "@angular/platform-browser-dynamic": "^4.0.0",
-    "@angular/router": "^4.0.0",
+    "@angular/animations": "^4.2.4",
+    "@angular/common": "^4.2.4",
+    "@angular/compiler": "^4.2.4",
+    "@angular/core": "^4.2.4",
+    "@angular/forms": "^4.2.4",
+    "@angular/http": "^4.2.4",
+    "@angular/platform-browser": "^4.2.4",
+    "@angular/platform-browser-dynamic": "^4.2.4",
+    "@angular/router": "^4.2.4",
     "core-js": "^2.4.1",
-    "ej-angular2": "^15.2.43",
-    "jquery": "^3.2.1",
-    "rxjs": "^5.1.0",
-    "syncfusion-javascript": "^15.1.46",
-    "zone.js": "^0.8.4"
+    "ej-angular2": "^15.3.29",
+    "rxjs": "^5.4.2",
+    "syncfusion-javascript": "^15.3.29",
+    "zone.js": "^0.8.14"
   },
   "devDependencies": {
-    "@angular/cli": "1.2.0",
-    "@angular/compiler-cli": "^4.0.0",
-    "@angular/language-service": "^4.0.0",
-    "@types/ej.web.all": "^15.2.4",
+    "@angular/cli": "1.4.1",
+    "@angular/compiler-cli": "^4.2.4",
+    "@angular/language-service": "^4.2.4",
+    "@types/ej.web.all": "^15.3.3",
     "@types/jasmine": "~2.5.53",
     "@types/jasminewd2": "~2.0.2",
-    "@types/jquery": "^3.2.9",
+    "@types/jquery": "^3.2.12",
     "@types/node": "~6.0.60",
-    "codelyzer": "~3.0.1",
+    "codelyzer": "~3.1.1",
     "jasmine-core": "~2.6.2",
     "jasmine-spec-reporter": "~4.1.0",
     "karma": "~1.7.0",
@@ -488,11 +486,12 @@ window['$'] = jquery;
     "karma-jasmine": "~1.1.0",
     "karma-jasmine-html-reporter": "^0.2.2",
     "protractor": "~5.1.2",
-    "ts-node": "~3.0.4",
+    "ts-node": "~3.2.0",
     "tslint": "~5.3.2",
     "typescript": "~2.3.3"
   }
 }
+
 
 {% endhighlight %}
 
@@ -588,7 +587,7 @@ export class AppComponent {
 
 {% endhighlight %}
 
-N> This type of error will occur when we use combination of imports components like components from `ej-angular2` package and components from `individual component from ej-angular2` package.
+N> This type of error will occur when we use combination of component imports like, 'components from `ej-angular2` package' and 'components from `individual component from ej-angular2` package'.
 For Example:
 
 {% highlight ts %}
