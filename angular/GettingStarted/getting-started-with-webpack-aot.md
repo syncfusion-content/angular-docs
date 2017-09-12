@@ -49,9 +49,11 @@ npm install @angular/compiler-cli --save
 
 It will install the ngc compiler to support the Ahead-of-Time Compilation.
 
+N> If you get an error like `TypeError:this.compiler.analyzeModulesAsync is not a function`, then the problem is with the mismatched versions of `@angular/compiler-cli` and `other angular packages`. So we suggest you to install `@angular/compiler-cli` package in the same version of other angular packaes.
+
 ## tsconfig.json
 
-The ngc compiler needs its own tsconfig.json with Ahead-of-Time compilation oriented settings. Modify the tsconfig.json file as below code snippet.
+The ngc compiler needs its own `tsconfig.json` with Ahead-of-Time compilation oriented settings. Modify the tsconfig.json file as below code snippet.
 
 {% highlight javascript %}
 {
@@ -100,7 +102,7 @@ The ngc compiler needs its own tsconfig.json with Ahead-of-Time compilation orie
 }
 {% endhighlight %}
 
-The below table depicts the purpose of tsconfig file with Ahead-of-Time compilation oriented settings.
+The below table depicts the purpose of `tsconfig.json` file with Ahead-of-Time compilation oriented settings.
 
 |              Properties       |               Purpose                |                                       
 |:------------------------------|:-------------------------------------|
@@ -110,7 +112,7 @@ The below table depicts the purpose of tsconfig file with Ahead-of-Time compilat
 
 ## Compiling the Application
 
-To initiate Ahead-of-Time compilation by using the previously installed ngc compiler, run the below command in your application's root directory. Before that we need to add the NPM command `ngc` in script section of package.json file as below code snippet.
+To initiate Ahead-of-Time compilation by using the previously installed ngc compiler, run the below command in your application's root directory. Before that we need to add the NPM command `ngc` in script section of `package.json` file as below code snippet.
 
 {% highlight javascript %}
 {
