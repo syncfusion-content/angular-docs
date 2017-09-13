@@ -248,6 +248,33 @@ npm run build
 
 N> If you change the theme in `webpack.config.vendor.js` file, run the above command to bundle the new theme in application.
 
+N> If you get an error like below screenshot while bundling other themes in application, then change the output path from `dist/` to `./` in `webpack.config.vendor.js` file. 
+
+![](/angular/GettingStarted/Images/bundlingerror.png)
+
+Refer to the below code snippet to change the output path in `webpack.config.vendor.js`.
+
+{% highlight javascript %}
+module.exports = (env) => {
+    const extractCSS = new ExtractTextPlugin('vendor.css');
+    const isDevBuild = !(env && env.prod);
+    const sharedConfig = {
+        stats: { modules: false },
+        resolve: { extensions: [ '.js' ] },
+        module: {
+            rules: [
+                { test: /\.(png|woff|woff2|eot|ttf|svg|gif|cur)(\?|$)/, use: 'url-loader?limit=100000' },
+            ]
+        },
+        output: {
+            publicPath: './',
+            filename: '[name].js',
+            library: '[name]_[hash]'
+        },
+        . . .
+         . . .
+{% endhighlight %}
+
 ## Adding Dialog sample
 
 * Import the `ejDialog` component in `home.component.html`.
