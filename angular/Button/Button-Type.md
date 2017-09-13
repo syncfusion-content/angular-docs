@@ -55,16 +55,30 @@ In the HTML page, add the following button elements to configure Button widget.
         <td>
             <input id="buttonType_button" size="mini" contentType="imageonly" type="button" ej-button text="button"/> 
     <td>
-            <input id="buttonType_submit" size="mini" contentType="imageonly" type="button" ej-button text="submit"/> 
+            <input id="buttonType_submit" size="mini" contentType="imageonly" type="submit" ej-button text="submit"/> 
     <td>
-            <input id="buttonType_reset" size="mini" contentType="imageonly" type="button" ej-button text="reset"/> 
+            <input id="buttonType_reset" size="mini" contentType="imageonly" type="reset" ej-button text="reset"/> 
   
     </tr>
     </table>
 
 {% endhighlight %}
 
+{% highlight html %}
 
+import {Component} from '@angular/core';
+@Component({
+    selector: 'ej-app',
+    templateUrl: './default.component.html',
+})
+export class DefaultComponent {
+    checkstatus: boolean;
+    constructor() {
+        this.checkstatus = true;
+    }
+}
+
+{% endhighlight %}
 
 Execute the above code to render the following output.
 
