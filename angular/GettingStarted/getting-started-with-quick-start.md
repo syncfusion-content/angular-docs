@@ -27,7 +27,7 @@ Webpack is a popular module bundler, a tool for bundling application source code
 
 ## Clone the Quick Start
 
-To getting started with webpack clone the quick start from [here](https://angular.io/guide/webpack)
+To getting started with webpack, clone the quick start from [here](https://angular.io/guide/webpack)
 
 ## Dependencies installation
 
@@ -63,7 +63,6 @@ npm install --save-dev @types/ej.web.all
 
 {% endhighlight %}
 
-
 * And also include the typings `jquery` and `ej.web.all` in `src/tsconfig.json` file. 
 
 {% highlight javascript %}
@@ -84,41 +83,7 @@ npm install --save-dev @types/ej.web.all
     ],
      "types": [
       "jquery",
-      "ej.web.all",
-      "node"
-    ]
-  },
-  "compileOnSave": true,
-  "exclude": [
-    "node_modules/*",
-    "**/*-aot.ts"
-  ]
-}
-
-{% endhighlight %}
-
-N>If you get the typescript error `Cannot find name 'beforeEach, describe, it` in `app.component.specs.ts` file, then install the typings dependencies `@types/jasmine` in application. Run the below command to install the dependency.
-
-{% highlight javascript %}
-npm install --save-dev @types/jasmine
-{% endhighlight %}
-
-* And also include the dependency in `src/tsconfig.json` file.
-
-{% highlight javascript %}
-
-{
-  "compilerOptions": {
-    "target": "es5",
-    . . .
-    "typeRoots": [
-      "../node_modules/@types/"
-    ],
-     "types": [
-      "jquery",
-      "ej.web.all",
-      "node",
-      "jasmine"
+      "ej.web.all"
     ]
   },
   "compileOnSave": true,
@@ -137,7 +102,6 @@ npm install --save-dev @types/jasmine
 import * as $ from 'jquery';
 window["jQuery"] = $;
 window["$"] = $;
-import 'jsrender';
 import '../node_modules/syncfusion-javascript/Content/ej/web/material/ej.web.all.min.css';
 
 {% endhighlight %}
@@ -175,8 +139,6 @@ module.exports = {
 
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { FormsModule } from '@angular/forms';
-import { HttpModule } from '@angular/http';
 import { EJAngular2Module } from 'ej-angular2'; 
 import { AppComponent } from './app.component';
 
@@ -185,7 +147,7 @@ import { AppComponent } from './app.component';
     AppComponent
   ],
   imports: [
-    BrowserModule,FormsModule,HttpModule,EJAngular2Module.forRoot() 
+    BrowserModule,EJAngular2Module.forRoot() 
   ],
   providers: [],
   bootstrap: [AppComponent]
@@ -274,11 +236,15 @@ export class AppComponent {
 
 * To run the application, execute below command in application's root folder.
 
-N> If you get the following error, you need to refer the corresponding image type in `webpack.common.js` file. 
+{% highlight javascript %}
+npm start
+{% endhighlight %}
+
+N> If you get the following error, you need to refer the corresponding image type `cur` in `config/webpack.common.js` file. 
 
 ![](/angular/GettingStarted/Images/cssloader.png)
 
-* Refer the below code snippet to refer the image types.
+* Refer the below code snippet to refer the image type `cur`.
 {% highlight javascript %}
 var webpack = require('webpack');
 var HtmlWebpackPlugin = require('html-webpack-plugin');
@@ -304,7 +270,7 @@ module.exports = {
         loader: 'html-loader'
       },
       {
-        test: /\.(png|jpe?g|gif|svg|woff|woff2|ttf|eot|ico|cur|ani)$/,
+        test: /\.(png|jpe?g|gif|svg|woff|woff2|ttf|eot|ico|cur)$/,
         loader: 'file-loader?name=assets/[name].[hash].[ext]'
       },
       {
@@ -312,17 +278,191 @@ module.exports = {
         exclude: helpers.root('src', 'app'),
         loader: ExtractTextPlugin.extract({ fallbackLoader: 'style-loader', loader: 'css-loader?sourceMap' })
       },
-      {
-        test: /\.css$/,
-        include: helpers.root('src', 'app'),
-        loader: 'raw-loader'
-      }
-    ]
-  },
-
+. . . 
 
 {% endhighlight %}
 
+N>If you get typescript error like in the below image, then we should include the typings dependencies `node and jasmine` in `src/tsconfig.json` file.
+
+![](/angular/GettingStarted/Images/typingsissue.png)
+
+{% highlight javascript %}
+
+{
+  "compilerOptions": {
+    "target": "es5",
+    . . .
+    "typeRoots": [
+      "../node_modules/@types/"
+    ],
+     "types": [
+      "jquery",
+      "ej.web.all",
+      "node",
+      "jasmine"
+    ]
+  },
+  "compileOnSave": true,
+  "exclude": [
+    "node_modules/*",
+    "**/*-aot.ts"
+  ]
+}
+
+{% endhighlight %}
+
+Refer the below codes to create an application.
+
+{% tabs %}
+
+{% highlight ts %}
+//Refer the below code for app.component.ts file(src/app/app.component.ts)
+
+import { Component } from '@angular/core';
+
+@Component({
+  selector: 'my-app',
+  templateUrl: './app.component.html',
+  styleUrls: ['./app.component.css']
+})
+export class AppComponent {  
+  public gridData: any;
+  constructor() {
+      this.gridData = [{
+          OrderID: 10248, CustomerID: 'VINET', EmployeeID: 5,
+          OrderDate: new Date(8364186e5), Freight: 32.38
+      },
+      {
+          OrderID: 10249, CustomerID: 'TOMSP', EmployeeID: 6,
+          OrderDate: new Date(836505e6), Freight: 11.61
+      },
+      {
+          OrderID: 10250, CustomerID: 'HANAR', EmployeeID: 4,
+          OrderDate: new Date(8367642e5), Freight: 65.83
+      },
+      {
+          OrderID: 10251, CustomerID: 'VICTE', EmployeeID: 3,
+          OrderDate: new Date(8367642e5), Freight: 41.34
+      },
+      {
+          OrderID: 10252, CustomerID: 'SUPRD', EmployeeID: 4,
+          OrderDate: new Date(8368506e5), Freight: 51.3
+      },
+       {
+          OrderID: 10251, CustomerID: 'BERGS', EmployeeID: 8,
+          OrderDate:new Date(840006e6), Freight: 8.98
+      },
+       {
+          OrderID: 10251, CustomerID: 'BLONP', EmployeeID: 2,
+          OrderDate: new Date(838278e6), Freight: 55.28
+      },
+       {
+          OrderID: 10251, CustomerID: 'BONAP', EmployeeID: 7,
+          OrderDate: new Date(8738748e5), Freight: 113.15
+      },
+       {
+          OrderID: 10251, CustomerID: 'BOTTM', EmployeeID: 4,
+          OrderDate: new Date(8921916e5), Freight: 74.44
+      },
+       {
+          OrderID: 10251, CustomerID: 'CACTU', EmployeeID: 3,
+          OrderDate: new Date(88416e7), Freight: 19.76
+      }];
+  } }
+
+{% endhighlight %}
+
+{% highlight html %}
+<!-- Refer the below code for app.component.html(src/app/app.component.html)-->
+<main>
+  <ej-grid [allowPaging]="true"  [dataSource]="gridData" [allowPaging]="true" [pageSettings.pageSize]="5">
+    <e-columns>
+        <e-column field="OrderID" headerText="Order ID" width="75" textAlign="right"></e-column>
+        <e-column field="CustomerID" headerText="Customer ID" width="80"></e-column>
+        <e-column field="EmployeeID" headerText="Employee ID" width="75" textAlign="right"></e-column>
+        <e-column field="Freight" width="75" format="{0:C}" textAlign="right"></e-column>
+        <e-column field="OrderDate" headerText="Order Date" width="80" format="{0:MM/dd/yyyy}" textAlign="right"></e-column>
+    </e-columns>
+</ej-grid>
+</main>
+
+{% endhighlight %}
+
+{% highlight ts %}
+//Refer the below code for app.module.ts file(src/app/app.module.ts)
+import { NgModule } from '@angular/core';
+import { BrowserModule }  from '@angular/platform-browser';
+import { EJAngular2Module } from 'ej-angular2'; 
+
+import { AppComponent } from './app.component';
+
+@NgModule({
+  imports: [
+    BrowserModule, EJAngular2Module.forRoot()
+  ],
+  declarations: [
+    AppComponent
+  ],
+  bootstrap: [ AppComponent ]
+})
+export class AppModule { }
+
+{% endhighlight %}
+
+{% highlight json %}
+//Refer the below code for tsconfig.json file(src/tsconfig.json)
+{
+  "compilerOptions": {
+    "target": "es5",
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "sourceMap": true,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "lib": [ "es2015", "dom" ],
+    "noImplicitAny": true,
+    "suppressImplicitAnyIndexErrors": true,
+    "typeRoots": [
+      "../node_modules/@types/"
+    ],
+    "types": [
+      "jquery",
+      "ej.web.all",
+      "node",
+      "jasmine"
+    ]
+  },
+  "compileOnSave": true,
+  "exclude": [
+    "node_modules/*",
+    "**/*-aot.ts"
+  ]
+}
+
+{% endhighlight %}
+
+{% highlight ts %}
+//Refer the below code for vendor.ts file(src/vendor.ts)
+// Angular
+import '@angular/platform-browser';
+import '@angular/platform-browser-dynamic';
+import '@angular/core';
+import '@angular/common';
+import '@angular/http';
+import '@angular/router';
+
+// RxJS
+import 'rxjs';
+
+// Other vendors for example jQuery, Lodash or Bootstrap
+// You can import js, ts, css, sass, ...
+import * as $ from 'jquery';
+window["jQuery"] = $;
+window["$"] = $;
+import '../node_modules/syncfusion-javascript/Content/ej/web/material/ej.web.all.min.css';
+
+{% endhighlight %}
+
+{% endtabs %}
+
 ![](/angular/GettingStarted/Images/webpackoutput.png)
-
-
