@@ -232,85 +232,6 @@ export class AppComponent {
 }
 {% endhighlight %}
 
-## Run the Application
-
-* To run the application, execute below command in application's root folder.
-
-{% highlight javascript %}
-npm start
-{% endhighlight %}
-
-N> If you get the following error, you need to refer the corresponding image type `cur` in `config/webpack.common.js` file. 
-
-![](/angular/GettingStarted/Images/cssloader.png)
-
-* Refer the below code snippet to refer the image type `cur`.
-{% highlight javascript %}
-var webpack = require('webpack');
-var HtmlWebpackPlugin = require('html-webpack-plugin');
-var ExtractTextPlugin = require('extract-text-webpack-plugin');
-var helpers = require('./helpers');
-
-module.exports = {
-  . . .
-  . . .
-  module: {
-    rules: [
-      {
-        test: /\.ts$/,
-        loaders: [
-          {
-            loader: 'awesome-typescript-loader',
-            options: { configFileName: helpers.root('src', 'tsconfig.json') }
-          } , 'angular2-template-loader'
-        ]
-      },
-      {
-        test: /\.html$/,
-        loader: 'html-loader'
-      },
-      {
-        test: /\.(png|jpe?g|gif|svg|woff|woff2|ttf|eot|ico|cur)$/,
-        loader: 'file-loader?name=assets/[name].[hash].[ext]'
-      },
-      {
-        test: /\.css$/,
-        exclude: helpers.root('src', 'app'),
-        loader: ExtractTextPlugin.extract({ fallbackLoader: 'style-loader', loader: 'css-loader?sourceMap' })
-      },
-. . . 
-
-{% endhighlight %}
-
-N>If you get typescript error like in the below image, then we should include the typings dependencies `node and jasmine` in `src/tsconfig.json` file.
-
-![](/angular/GettingStarted/Images/typingsissue.png)
-
-{% highlight javascript %}
-
-{
-  "compilerOptions": {
-    "target": "es5",
-    . . .
-    "typeRoots": [
-      "../node_modules/@types/"
-    ],
-     "types": [
-      "jquery",
-      "ej.web.all",
-      "node",
-      "jasmine"
-    ]
-  },
-  "compileOnSave": true,
-  "exclude": [
-    "node_modules/*",
-    "**/*-aot.ts"
-  ]
-}
-
-{% endhighlight %}
-
 Refer the below codes to create an application.
 
 {% tabs %}
@@ -464,5 +385,84 @@ import '../node_modules/syncfusion-javascript/Content/ej/web/material/ej.web.all
 {% endhighlight %}
 
 {% endtabs %}
+
+## Run the Application
+
+* To run the application, execute below command in application's root folder.
+
+{% highlight javascript %}
+npm start
+{% endhighlight %}
+
+N> If you get the following error, you need to refer the corresponding image type `cur` in `config/webpack.common.js` file. 
+
+![](/angular/GettingStarted/Images/cssloader.png)
+
+* Refer the below code snippet to refer the image type `cur`.
+{% highlight javascript %}
+var webpack = require('webpack');
+var HtmlWebpackPlugin = require('html-webpack-plugin');
+var ExtractTextPlugin = require('extract-text-webpack-plugin');
+var helpers = require('./helpers');
+
+module.exports = {
+  . . .
+  . . .
+  module: {
+    rules: [
+      {
+        test: /\.ts$/,
+        loaders: [
+          {
+            loader: 'awesome-typescript-loader',
+            options: { configFileName: helpers.root('src', 'tsconfig.json') }
+          } , 'angular2-template-loader'
+        ]
+      },
+      {
+        test: /\.html$/,
+        loader: 'html-loader'
+      },
+      {
+        test: /\.(png|jpe?g|gif|svg|woff|woff2|ttf|eot|ico|cur)$/,
+        loader: 'file-loader?name=assets/[name].[hash].[ext]'
+      },
+      {
+        test: /\.css$/,
+        exclude: helpers.root('src', 'app'),
+        loader: ExtractTextPlugin.extract({ fallbackLoader: 'style-loader', loader: 'css-loader?sourceMap' })
+      },
+. . . 
+
+{% endhighlight %}
+
+N>If you get typescript error like in the below image, then we should include the typings dependencies `node and jasmine` in `src/tsconfig.json` file.
+
+![](/angular/GettingStarted/Images/typingsissue.png)
+
+{% highlight javascript %}
+
+{
+  "compilerOptions": {
+    "target": "es5",
+    . . .
+    "typeRoots": [
+      "../node_modules/@types/"
+    ],
+     "types": [
+      "jquery",
+      "ej.web.all",
+      "node",
+      "jasmine"
+    ]
+  },
+  "compileOnSave": true,
+  "exclude": [
+    "node_modules/*",
+    "**/*-aot.ts"
+  ]
+}
+
+{% endhighlight %}
 
 ![](/angular/GettingStarted/Images/webpackoutput.png)

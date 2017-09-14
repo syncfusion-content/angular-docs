@@ -460,6 +460,36 @@ export const rootRouterConfig: Routes = [
 
 {% endhighlight %}
 
+{% highlight json %}
+
+// Refer the below code for tsconfig.json(src/tsconfig.json)
+{
+  "compilerOptions": {
+    "target": "es5",
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "sourceMap": true,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "removeComments": false,
+    "noImplicitAny": false,
+    "suppressImplicitAnyIndexErrors": true,
+    "lib": [
+      "es2015",
+      "dom"
+    ],
+    "typeRoots": [
+      "./../node_modules/@types/"
+    ],
+    "types": [
+      "jquery",
+      "ej.web.all",
+      "node"
+    ]
+  }
+}
+{% endhighlight %}
+
 {% endtabs %}
 
 ## Running the application
