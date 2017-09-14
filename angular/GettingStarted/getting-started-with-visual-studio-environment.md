@@ -124,7 +124,7 @@ N> If the packages are not installed properly try the below steps in the sample'
 
 ![](/angular/GettingStarted/Images/path.png)
 
-* Copy the `src` folder in solution from our [systemJS cloned seed](https://github.com/syncfusion/angular2-seeds/tree/systemjs) application. The cloned Angular-seed consists of following files.
+* Copy the `src` folder in `Solution Explorer` from our [systemJS cloned seed](https://github.com/syncfusion/angular2-seeds/tree/systemjs) application. The cloned Angular-seed consists of following files.
 
     * app.component.ts
     * app.component.html
@@ -490,7 +490,7 @@ Refer the below codes to create the application
 
 {% highlight ts %}
 
-// Refer this code for app.component.ts file
+// Refer this code for app.component.ts file(src/app.component.ts)
 
 import {Component, ViewEncapsulation} from '@angular/core';
 
@@ -506,7 +506,7 @@ export class AppComponent {
 
 {% highlight html %}
 
-<!-- Refer the code for app.component.html file -->
+<!-- Refer the code for app.component.html file(src/app.component.html) -->
 
 <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
 	<div style="padding-left:0px;" class="collapse navbar-collapse" id="skeleton-navigation-navbar-collapse">
@@ -525,7 +525,7 @@ export class AppComponent {
 
 {% highlight ts %}
 
-// Refer this code for app.module.ts file
+// Refer this code for app.module.ts file(src/app.module.ts)
 
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
@@ -551,7 +551,7 @@ export class AppModule { }
 
 {% highlight ts %}
 
-// Refer this code for main.ts file
+// Refer this code for main.ts file(src/main.ts)
 
 import { platformBrowserDynamic } from '@angular/platform-browser-dynamic';
 import { AppModule } from './app.module';
@@ -561,7 +561,7 @@ platformBrowserDynamic().bootstrapModule(AppModule);
 
 {% highlight javascript %}
 
-// Refer this code for systemjs.config.js file
+// Refer this code for systemjs.config.js file(src/systemjs.config.js)
 
 /**
 * System configuration for Angular 2 samples
@@ -621,7 +621,7 @@ platformBrowserDynamic().bootstrapModule(AppModule);
 
 {% highlight html %}
 
-<!-- Refer the code for index.html file -->
+<!-- Refer the code for index.html file(wwwroot/index.html) -->
 
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
@@ -728,7 +728,7 @@ platformBrowserDynamic().bootstrapModule(AppModule);
 
 {% highlight json %}
 
-// Refer this code for tsconfig.json file
+// Refer this code for tsconfig.json file(src/tsconfig.json)
 
 {
   "compilerOptions": {
