@@ -36,7 +36,7 @@ Refer the below steps to create an Angular application with globalization suppor
 
 N> To know more about `locale` property in textbox, refer the [link](https://help.syncfusion.com/api/js/ejtextboxes#members:locale) here.
 
-* Create `textbox.component.ts` model file inside the folder `src/app/textbox` and create sample component using the below code example
+* Create `textbox.component.ts` model file inside the folder `src/textbox` and create sample component using the below code example
 
 {% highlight ts %}
 
