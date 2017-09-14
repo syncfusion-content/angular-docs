@@ -221,7 +221,7 @@ ejListView</td><td>
 dataSource</td></tr>
 <tr>
 <td>
-ejMaps</td><td>
+ejMap</td><td>
 baseMapIndex<br/>enablePan<br/>enableResize<br/>enableAnimation<br/>zoomSettings.level<br/>zoomSettings.minValue<br/>zoomSettings.maxValue<br/>zoomSettings.factor<br/>zoomSettings.enableZoom<br/>zoomSettings.enableZoomOnSelection<br/>navigationControl.enableNavigation<br/>navigationControl.orientation<br/>navigationControl.absolutePosition<br/>navigationControl.dockPosition</td></tr>
 <tr>
 <td>
