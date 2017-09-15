@@ -54,7 +54,7 @@ Copy the required Angular-2 source components file from the installed location a
         <table>
             <tr>
                 <td>
-                    <input id="exp1" ej-radiobutton e-text="1+ years" name="experience" value="1+years" [{checked}]="checked" />
+                    <input id="exp1" ej-radiobutton text="1+ years" name="experience" value="1+years" [{checked}]="checked" />
                 </td>
                 <td colspan="2">
                     <input id="exp2" ej-radiobutton text="2.5+ years" name="experience" value="2+years" />
@@ -131,7 +131,7 @@ Now, to bind the model values to the **RadioButton** component, define the model
         <table>
             <tr>
                 <td>
-                    <input id="exp1" ej-radiobutton e-text="1+ years" name="experience" value="1+years" [{checked}]="experience" />
+                    <input id="exp1" ej-radiobutton text="1+ years" name="experience" value="1+years" [{checked}]="experience" />
                 </td>
                 <td colspan="2">
                     <input id="exp2" ej-radiobutton text="2.5+ years" name="experience" value="2+years" [{checked}]="experience" />
