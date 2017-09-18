@@ -294,7 +294,7 @@ Refer the below codes to create the application
 
 {% highlight ts %}
 
-// Refer this code for app.component.ts file
+// Refer this code for home.component.ts file
 
 import { Component, ViewChild } from '@angular/core';
 import { EJComponents } from 'ej-angular2';
@@ -325,7 +325,7 @@ export class HomeComponent {
 
 {% highlight html %}
 
-<!-- Refer the code for app.component.html file -->
+<!-- Refer the code for home.component.html file -->
 
 <div id="parent" >
 	<input id="btnOpen" style="height: 30px" type="button" ej-button class="ejinputtext" value="Click to open Dialog" (click)="onClick($event)" *ngIf="btndisplay" />
