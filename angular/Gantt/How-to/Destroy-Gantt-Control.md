@@ -1,0 +1,49 @@
+---
+layout: post
+title: Destroy-Gantt-Contrl
+description: Destroy Gantt Control
+platform: Angular
+control: Gantt
+documentation: ug
+---
+
+# Destroy Gantt Control
+Gantt control is composed with more sub-controls like TreeGrid, Splitter, Dialog etc. So while destroying the Gantt control we need to
+remove all sub-control elements and unbind all events boud by this control. By using [`destroy`](/api/js/ejgantt#methods:destroy "destroy") public method, we can properly remove the Gantt control from DOM.
+
+The following code example explains how to destroy Gantt control.
+
+{% highlight html %} 
+<button id="buttonon" (click)="destroy($event, item)">Destroy Gantt</button>
+<ej-gantt id="GanttControl">
+//...
+</ej-gantt>
+
+{% endhighlight %}
+
+{% highlight javascript %}
+
+import {Component} from '@angular/core';
+
+@Component({
+    selector: 'ej-app',
+    templateUrl: 'app/app.component.html',
+})
+export class AppComponent {
+    constructor() {
+        //...
+    }
+    public destroy(event, item) {
+        var obj = $("#GanttControl").ejGantt("instance");
+        obj.destroy();
+    }
+}
+
+{% endhighlight %}
+
+N> If you want to re-initialize Gantt control on same `div` element,
+we need to perform destroy action before re-initialize the Gantt.
+
+
+
+

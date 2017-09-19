@@ -153,6 +153,9 @@ The TreeGrid export supports the below themes,
 * gradient-saffron
 * gradient-saffron-dark
 * bootstrap-theme
+* high-contrast
+* material
+* office-365
 
 The desired theme should be passed as a parameter to the Export method and the code snippet for this as follows
 

@@ -32,6 +32,8 @@ Using TreeGrid default toolbar items we can perform below operations.
 		   
 * **ExcelExport**- To export TreeGrid in Excel format.
 
+* **Print**- To Print the TreeGrid.
+
 We can enable TreeGrid toolbar by using below code example:
 
 {% highlight javascript %}
@@ -65,7 +67,8 @@ export class AppComponent {
                 ej.TreeGrid.ToolbarItems.ExpandAll,
                 ej.TreeGrid.ToolbarItems.CollapseAll,
                 ej.TreeGrid.ToolbarItems.PdfExport,
-                ej.TreeGrid.ToolbarItems.ExcelExport
+                ej.TreeGrid.ToolbarItems.ExcelExport,
+                ej.TreeGrid.ToolbarItems.Print
             ],
         }
     }
