@@ -27,6 +27,9 @@ The following are the available themes in TreeGrid control.
 11. Gradient Saffron
 12. Gradient Saffron Dark
 13. Bootstrap
+14. High contrast
+15. Material theme
+16. Office 365
 
 You can apply the theme (Gradient lime) to the TreeGrid control by using the style sheet from the online link as follows.
 
