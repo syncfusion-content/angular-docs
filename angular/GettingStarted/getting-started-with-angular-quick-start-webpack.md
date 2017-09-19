@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Getting started with Quick Start Webpack
+title: Integration of Syncfusion Angular components into Angular Quick Start - Webpack
 description: Overview of Syncfusion Essential Angular.
 platform: Angular
 control: Introduction
@@ -8,14 +8,9 @@ documentation: ug
 ---
 
 
-# Getting started with Quick Start Webpack
+# Getting started with Angular Quick Start - Webpack
 
 Webpack is a popular module bundler, a tool for bundling application source code in convenient chunks and for loading that code from a server into a browser
-
-## Prerequisites
-
-* [Node JS](https://nodejs.org/en/) (v6.x.x or higher)
-* [NPM](http://blog.npmjs.org/post/85484771375/how-to-install-npm) (v3.x.x or higher)
 
 ## Synopsis 
 
