@@ -17,6 +17,7 @@ List of Button types
    <tr>
       <th>Button Types</th>
       <th>Description</th>
+   </tr>
    <tr>
       <td>
          button
