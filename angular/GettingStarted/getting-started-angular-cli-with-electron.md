@@ -233,7 +233,7 @@ ng serve
 
 {% endhighlight %}
 
-* We configured the Syncfusion Angular components in Angular cli. Now, We are going to configure the Electron in the next section.
+* We configured the Syncfusion Angular components in Angular cli. Now, we are going to configure the Electron in the next section.
 
 ## Integration of Electron
 
@@ -249,7 +249,7 @@ npm install electron --save-dev
 
 ## Electron Configuration
 
-* To configure the electron in our application, create `electron` folder in `src` directory. Then add `main.js` file in `src/electron` directory. This `main.js` file is the `startup of electron application`. It should create window and it handles the system events.
+* To configure the electron in our application, create `electron` folder in `src` directory. Then add `main.js` file in `src/electron` directory. This `main.js` file is the `startup of electron application`. It should create window and it handles the system events.To know more about main process of electron, refer the link [here](https://electron.atom.io/docs/tutorial/quick-start/#write-your-first-electron-app)
 
 Refer to the below code snippet for `electron/main.js` file.
 
@@ -319,7 +319,7 @@ Refer to the below code snippet for `package.json` file.
   ...
 {% endhighlight %}
 
-* Electron is using the `file://` protocol instead of `http://`. So , we need to modify the `base href` in `index.html` as like the below code snippet.
+* Electron is using the `file://` protocol instead of `http://`. So, we need to modify the `base href` in `index.html` as like the below code snippet.
 {% highlight javascript %}
 <!doctype html>
 <html lang="en">
@@ -728,7 +728,7 @@ app.on('activate', () => {
 
 ## Run the Executable file
 
-* The electron executable file is created in the location `ej-angular-package-win32-x64/ej-angular-package.exe`. Double click on the .exe file to launch the application.
+* The electron executable file is created in the location `ej-angular-package-win32-x64/ej-angular-package.exe`. Double click on the `.exe` file to launch the application.
 
 ![](/angular/GettingStarted/Images/electronoutput.png)
 
