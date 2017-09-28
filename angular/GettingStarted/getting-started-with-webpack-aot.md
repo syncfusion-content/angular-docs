@@ -22,6 +22,8 @@ To quick start with Syncfusion JavaScript Angular components run the below comma
 
 N> The cloned application is fully configured to work with Essential Studio for JavaScript Angular components, in which we configured our [ej-angular2](https://github.com/syncfusion/ej-angular2) library and necessary changes to consume our Angular components. 
 
+N> We already implemented the below Ahead-of-Time Compiler configuration in our Angular Seed. To quick start with AOT,clone the seed [here](https://github.com/syncfusion/angular2-seeds/tree/webpack-aot) to render the Syncfusion Angular Components.
+
 ## Ahead-of-Time Compilation
 
 The [Ahead-of-Time (AOT) compiler](https://angular.io/guide/aot-compiler) can catch template errors early and improve performance by compiling at build time.
