@@ -35,6 +35,8 @@ export class PivotGridComponent {
     }
  }
 
+{% endhighlight %}
+
 {% endtabs %}
 
 ![](SubTotal-Hiding_images/SubTotal.png)
