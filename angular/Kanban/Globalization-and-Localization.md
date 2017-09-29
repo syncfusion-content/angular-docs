@@ -196,7 +196,7 @@ The following code example describes the above behavior.
 
 {% endhighlight %}
 
-{% highlight html %}
+{% highlight ts %}
 
 import { Component } from '@angular/core';
 import { NorthwindService } from '../../services/northwind.service';
@@ -254,7 +254,7 @@ The following code example describes the above behavior.
 
 {% endhighlight %}
 
-{% highlight html %}
+{% highlight ts %}
  
 import {Component} from '@angular/core';
          @Component({
