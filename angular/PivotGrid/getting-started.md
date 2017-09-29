@@ -313,7 +313,7 @@ Add necessary HTML elements in `pivotgrid.component.html` to render PivotGrid
 
 Create a **CSS** page and add necessary CSS elements for PivotGrid
 
-{% highlight html %}
+{% highlight CSS %}
 
     ej-pivotgrid {
         display: block;

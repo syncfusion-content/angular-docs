@@ -127,7 +127,7 @@ Add necessary HTML elements in `pivottreemap.component.html` to render PivotTree
 
 Create a **CSS** page and add necessary CSS elements for PivotTreeMap
 
-{% highlight html %}
+{% highlight CSS %}
 
     .e-pivottreemap {
         min-height: 275px; 

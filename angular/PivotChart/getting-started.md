@@ -235,10 +235,11 @@ export class PivotChartComponent {
 
 {% endhighlight %}
 
+{% endtabs %}
 
 Create a **CSS** page and add necessary CSS elements for PivotChart
 
-{% highlight html %}
+{% highlight CSS %}
 
 ej-pivotchart {
     display: block;
@@ -255,6 +256,8 @@ ej-pivotchart {
 
 Let us now see how to populate the PivotChart control using a sample JSON data as shown below.
 
+{% tabs %}
+
 {% highlight html %}
 
 <ej-pivotchart [dataSource.data]="data" [dataSource.catalog]="catalog" [dataSource.cube]="cube" [dataSource.rows]="rows" [dataSource.columns]="columns" [dataSource.values]="values"  [commonSeriesOptions]="commonSeriesOptions" [size]="size" [primaryXAxis]="primaryXAxis" [primaryYAxis]="primaryYAxis" [legend]="legend" >
@@ -262,7 +265,7 @@ Let us now see how to populate the PivotChart control using a sample JSON data a
 
 {% endhighlight %}
 
-{% highlight html %}
+{% highlight ts %}
 
 import {Component, ViewEncapsulation} from '@angular/core';
 
