@@ -13,8 +13,6 @@ keywords: ejpivotgrid, pivotgrid, js pivotgrid
 Grouping Bar allows user to dynamically alter the report by filter, sort and remove operations in the PivotGrid control. Based on the Relational datasource and report bound to the PivotGrid control, Grouping Bar will be automatically populated. You can enable Grouping Bar option in PivotGrid by setting the [`enableGroupingBar`](/api/angular/ejpivotgrid#members:enablegroupingbar) property to true.
 
 {% highlight html %}
-
-{% highlight html %}
 <ej-pivotgrid [enableGroupingBar]="true">
 </ej-pivotgrid>
 
