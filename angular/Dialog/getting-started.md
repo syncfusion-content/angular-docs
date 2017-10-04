@@ -73,7 +73,7 @@ The dialog will be opened on clicking the Button component. Refer to the below m
 
 <div id="parent">
     <input id="btnOpen" style="display:block; height: 30px" type="button" class="ejinputtext" value="Click to open Dialog" (click)="onClick($event)" />
-    <ej-dialog id="basicDialog" title="Dialog" (close)="onClose($event)" [showoninit]="showoninit">
+    <ej-dialog id="basicDialog" title="Dialog" (close)="onClose($event)" [showOnInit]="showoninit">
         This is a simple dialog
     </ej-dialog>
 </div>
