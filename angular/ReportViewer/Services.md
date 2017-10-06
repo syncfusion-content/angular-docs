@@ -2404,8 +2404,6 @@ Specify the authentication key to process drill through
 
 ### Request
 
-{% endhighlight %}
-
 {% highlight ts %}
 import { Component } from '@angular/core';
 
