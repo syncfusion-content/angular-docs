@@ -6,7 +6,7 @@ platform: angular
 control: Tooltip
 documentation: ug
 keywords : ejTooltip, Tooltip, js Tooltip, Tooltip widget
-api: /api/angular/ejtooltip
+api: /api/js/ejtooltip
 ---
 
 # How To
