@@ -55,6 +55,8 @@ export class OrientationComponent {
   }
 }
 
+{% endhighlight %}
+
 ##Through Items API:
 
 {% highlight html %}
@@ -96,6 +98,8 @@ export class OrientationComponent {
     });
 	}
 }
+
+{% endhighlight %}
 
 ##Through template field in dataSource API:
 
@@ -140,6 +144,8 @@ export class OrientationComponent {
     });
 	}
 }
+
+{% endhighlight %}
 
 The following screenshot displays a Toolbar with embedded controls.
 
