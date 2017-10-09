@@ -5,7 +5,7 @@ description: orientation
 platform: angular
 control: Menu
 documentation: ug
-api: /api/angular/ejmenu
+api: /api/js/ejmenu
 ---
 
 # Orientation
