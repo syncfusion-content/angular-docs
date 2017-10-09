@@ -64,7 +64,7 @@ export class OrientationComponent {
 <ej-toolbar [Items]="items" (create)=onCreate($event)>
 </ej-toolbar>
 
-% endhighlight %}
+{% endhighlight %}
 
 {% highlight ts %}
 
@@ -108,7 +108,7 @@ export class OrientationComponent {
 <ej-toolbar [dataSource]="items" [fields]="fieldsvalues" (create)=onloading($event)>
 </ej-toolbar>
 
-% endhighlight %}
+{% endhighlight %}
 
 {% highlight ts %}
 
