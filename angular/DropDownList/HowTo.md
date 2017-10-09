@@ -6,7 +6,7 @@ platform: angular
 control: DropDownList
 documentation: ug
 keywords: DropDownList, dropdown, Adding Items, Set Focus, custommization
-api: /api/angular/ejdropdownlist
+api: /api/js/ejdropdownlist
 ---
 
 # How To
@@ -50,7 +50,7 @@ export class DropdownlistComponent {
 
 ## Add an item dynamically to the DropDownList?
 
-You can use [addItem](https://help.syncfusion.com/api/angular/ejdropdownlist#methods:additem) method to add single or multiple items dynamically to the popup list. You can define all the possible values that is supported by field property such as text, value, id, HTML attributes, selected, image and its associated attributes such as alt, width, and height etc..,
+You can use [addItem](https://help.syncfusion.com/api/js/ejdropdownlist#methods:additem) method to add single or multiple items dynamically to the popup list. You can define all the possible values that is supported by field property such as text, value, id, HTML attributes, selected, image and its associated attributes such as alt, width, and height etc..,
 
 Adding text and value is demonstrated in the below given sample,
 
@@ -103,7 +103,7 @@ You can enable or disable the DropDownList widget using "enabled" property or me
 
 ## Control the popup visibility via methods in script showPopup ()/hidePopup ()?
 
-By default popup list is shown on DropDownList button click but you can display the list initially by enabling the [showPopupOnLoad](https://help.syncfusion.com/api/angular/ejdropdownlist#members:showpopuponload) property. You can also use [showPopup ()](https://help.syncfusion.com/api/angular/ejdropdownlist#methods:showpopup) or [hidePopup ()](https://help.syncfusion.com/api/angular/ejdropdownlist#methods:hidepopup) methods at run time to display or hide the popup list.
+By default popup list is shown on DropDownList button click but you can display the list initially by enabling the [showPopupOnLoad](https://help.syncfusion.com/api/js/ejdropdownlist#members:showpopuponload) property. You can also use [showPopup ()](https://help.syncfusion.com/api/js/ejdropdownlist#methods:showpopup) or [hidePopup ()](https://help.syncfusion.com/api/js/ejdropdownlist#methods:hidepopup) methods at run time to display or hide the popup list.
 
 ## Retrieve the selected item data from select event via arguments?
 
@@ -220,7 +220,7 @@ export class DropDownListComponent {
 
 ## Add check all option in popup list?
 
-You can use [headerTemplate](https://help.syncfusion.com/api/angular/ejdropdownlist#members:headertemplate) property to add any HTML element. Code snippet to add check all option is given below,
+You can use [headerTemplate](https://help.syncfusion.com/api/js/ejdropdownlist#members:headertemplate) property to add any HTML element. Code snippet to add check all option is given below,
 
 {% highlight html %}
 
