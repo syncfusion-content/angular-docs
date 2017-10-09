@@ -5,7 +5,7 @@ description: synchronous upload
 platform: angular
 control: Uploadbox
 documentation: ug
-api: /angular/ejuploadbox
+api: /js/ejuploadbox
 ---
 
 # Synchronous Upload 
