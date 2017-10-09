@@ -6,7 +6,7 @@ platform: angular
 control: ProgressBar
 documentation: ug
 keywords: ProgressBar, events, 
-api: /api/angular/ejprogressbar
+api: /api/js/ejprogressbar
 ---
 
 # How To
