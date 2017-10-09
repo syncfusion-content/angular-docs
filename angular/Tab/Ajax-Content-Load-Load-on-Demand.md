@@ -5,7 +5,7 @@ description: ajax content load (load on demand)
 platform: angular
 control: Tab Control
 documentation: ug
-api: /api/angular/ejtab
+api: /api/js/ejtab
 ---
 
 # AJAX Content Load (Load on Demand)
