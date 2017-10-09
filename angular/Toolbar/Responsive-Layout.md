@@ -2,10 +2,10 @@
 layout: post
 title: Responsive-Layout
 description: responsive layout
-platform: js
+platform: angular
 control: Toolbar
 documentation: ug
-api: /api/js/ejtoolbar
+api: /api/angular/ejtoolbar
 ---
 
 # Responsive Layout
