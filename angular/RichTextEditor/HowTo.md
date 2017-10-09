@@ -6,7 +6,7 @@ platform: angular
 control: RTE
 documentation: ug
 keywords: RichTextEditor, Context Menu, Adding Items, Removing Items
-api: /api/angular/ejrte
+api: /api/js/ejrte
 ---
 
 # How To
@@ -57,9 +57,9 @@ export class RTEComponent {
 
 ## Increase RTE max word count 
 
-To increase the RTE content maximum word count, we suggest you to set the [maxLength](https://help.syncfusion.com/api/angular/ejrte#members:maxlength) property for it. By default, maxLength value is 7000, assign it with a value based on your requirement. 
+To increase the RTE content maximum word count, we suggest you to set the [maxLength](https://help.syncfusion.com/api/js/ejrte#members:maxlength) property for it. By default, maxLength value is 7000, assign it with a value based on your requirement. 
 
-Refer the following API reference link: [Link](https://help.syncfusion.com/api/angular/ejrte#members:maxlength) 
+Refer the following API reference link: [Link](https://help.syncfusion.com/api/js/ejrte#members:maxlength) 
 
 ## Add multiple editor instances to a single page
 
@@ -403,7 +403,7 @@ Add the code snippet in stylesheet.
 
 ## Add Separator in the Toolbar
 
-we can add separator in the RTE toolbar list. We have a property [“enableSeparator”](https://help.syncfusion.com/api/angular/ejtoolbar#members:enableseparator) in the toolbar control. So we need to set this property as true by creating the object of toolbar in the “preRender” event of RTE as shown below code:
+we can add separator in the RTE toolbar list. We have a property [“enableSeparator”](https://help.syncfusion.com/api/js/ejtoolbar#members:enableseparator) in the toolbar control. So we need to set this property as true by creating the object of toolbar in the “preRender” event of RTE as shown below code:
 
 {% highlight html %}
 
@@ -435,7 +435,7 @@ export class RTEComponent {
 
 ## Custom image for the Tools
 
-This requirement can have achieved by using [“cssClass”](https://help.syncfusion.com/api/angular/ejrte#members:cssclass) API of RichTextEditor component. It is used to customize the default “CSS” styles of the control. Using this API to define our own custom “CSS” and images to overwrite the default “CSS” styles of the control. 
+This requirement can have achieved by using [“cssClass”](https://help.syncfusion.com/api/js/ejrte#members:cssclass) API of RichTextEditor component. It is used to customize the default “CSS” styles of the control. Using this API to define our own custom “CSS” and images to overwrite the default “CSS” styles of the control. 
 
 {% highlight html %}
 
