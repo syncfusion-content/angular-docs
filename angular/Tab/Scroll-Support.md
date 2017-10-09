@@ -5,7 +5,7 @@ description: scroll support
 platform: angular
 control: Tab Control
 documentation: ug
-api: /api/angular/ejtab
+api: /api/js/ejtab
 ---
 
 # Scroll Support
