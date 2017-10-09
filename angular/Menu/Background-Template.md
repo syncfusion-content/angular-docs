@@ -5,7 +5,7 @@ description: background template
 platform: angular
 control: Menu
 documentation: ug
-api: /api/angular/ejmenu
+api: /api/js/ejmenu
 ---
 
 # Background Template
