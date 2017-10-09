@@ -5,7 +5,7 @@ description: ajax settings
 platform: angular
 control: Accordion 
 documentation: ug
-api: /api/angular/ejaccordion
+api: /api/js/ejaccordion
 ---
 
 # AJAX settings
