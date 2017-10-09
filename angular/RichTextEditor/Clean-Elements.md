@@ -6,12 +6,12 @@ platform: angular
 control: RTE
 documentation: ug
 keywords: RichTextEditor, cleanup, paste-cleanup
-api: /api/angular/ejrte
+api: /api/js/ejrte
 ---
 
 # Clean unwanted elements and styles when copy paste from Microsoft Word
 
-While copy pasting content from MSWord document, the content will be processed in the paste action event.[pasteCleanupSettings](https://help.syncfusion.com/api/angular/ejrte#members:pasteCleanupSettings) API can be used for removing unwanted elements.
+While copy pasting content from MSWord document, the content will be processed in the paste action event.[pasteCleanupSettings](https://help.syncfusion.com/api/js/ejrte#members:pasteCleanupSettings) API can be used for removing unwanted elements.
 This will convert an unformatted html element (MOS XML format) content to a proper html element.Table elements also will be converted with proper elements. 
 <table>
 <tr>
@@ -19,19 +19,19 @@ This will convert an unformatted html element (MOS XML format) content to a prop
     <th> Description <br/><br/></th>
 </tr>
 <tr>
-    <td> {{'[listConversion](https://help.syncfusion.com/api/angular/ejrte#members:pasteCleanupSettings-listconversion)'| markdownify }} <br/><br/></td>
+    <td> {{'[listConversion](https://help.syncfusion.com/api/js/ejrte#members:pasteCleanupSettings-listconversion)'| markdownify }} <br/><br/></td>
     <td>List Conversion option convert the list elements into a proper format pasted from MSWord document to editor. <br/><br/></td>
 </tr>
 <tr>
-    <td> {{'[cleanCSS ](https://help.syncfusion.com/api/angular/ejrte#members:pasteCleanupSettings-cleanCSS )'| markdownify }} <br/><br/></td>
+    <td> {{'[cleanCSS ](https://help.syncfusion.com/api/js/ejrte#members:pasteCleanupSettings-cleanCSS )'| markdownify }} <br/><br/></td>
     <td>Clean Css is used to clean the unwanted css in the elements pasted from MSWord document to editor <br/><br/></td>
 </tr>
 <tr>
-    <td> {{'[removeStyles  ](https://help.syncfusion.com/api/angular/ejrte#members:pasteCleanupSettings-removeStyles  )'| markdownify }} <br/><br/></td>
+    <td> {{'[removeStyles  ](https://help.syncfusion.com/api/js/ejrte#members:pasteCleanupSettings-removeStyles  )'| markdownify }} <br/><br/></td>
     <td>Remove styles will remove all styles in the elements pasted from MSWord document to editor. <br/><br/></td>
 </tr>
 <tr>
-    <td> {{'[cleanElements   ](https://help.syncfusion.com/api/angular/ejrte#members:pasteCleanupSettings-cleanElements   )'| markdownify }} <br/><br/></td>
+    <td> {{'[cleanElements   ](https://help.syncfusion.com/api/js/ejrte#members:pasteCleanupSettings-cleanElements   )'| markdownify }} <br/><br/></td>
     <td>Clean Elements is used to clean the unwanted elements pasted from MSWord document to editor.<br/><br/></td>
 </tr>
 </table>
