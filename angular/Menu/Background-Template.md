@@ -138,7 +138,7 @@ Add the following code in your **HTML** page.
 
 {% endhighlight %}
 
-{% highlight typescript %}
+{% highlight ts %}
 
 import { Component } from '@angular/core';
 import { ViewEncapsulation } from '@angular/core';
@@ -159,7 +159,7 @@ export class DefaultComponent {
 
 Add the following code in your style sheet.
 
-{% highlight css %}
+{% highlight html %}
 
 
 <style type="text/css">

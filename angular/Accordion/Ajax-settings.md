@@ -48,7 +48,7 @@ api: /api/js/ejaccordion
 
 {% endhighlight %}
 
-{% highlight typescript %}
+{% highlight ts %}
 
 import { Component } from '@angular/core';
 
