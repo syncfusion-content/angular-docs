@@ -66,7 +66,7 @@ Add the following **HTML** to render sub **Tab** with **AJAX** content.
 {% endhighlight %}
 
 
-{% highlight typescript %}
+{% highlight ts %}
 
 import { Component } from '@angular/core';
 import { ViewEncapsulation } from '@angular/core';
