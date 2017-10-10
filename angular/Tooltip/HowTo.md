@@ -17,7 +17,7 @@ Use jQuery’s built-in AJAX functionality to retrieve remote content and set th
 
 Define three employee’s JSON Array as given below(an array of 3 employees records)
 
-{% highlight Js %}
+{% highlight js %}
 
 [
     {
