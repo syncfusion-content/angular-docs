@@ -22,21 +22,31 @@ In the **HTML** page, create a form with action and post method and then add the
 
 {% highlight html %}
 
-<div id="Uploadbox"></div>
+<div id="upload_controls" style="margin-left: 35%;">
+<div>Select a file to upload</div>
+<div style="width:100px;height:35px;">
+    <ej-uploadbox id="uploadDefault" [saveUrl]="saveURL" [removeUrl]="removeURL" [asyncUpload]=false></ej-uploadbox>
+</div>
+</div>
 
 {% endhighlight %}
 
-{% highlight js %}
+{% highlight ts %}
 
-    // Initialize the control in JavaScript.
-    $(function () {
-        //Declaration.
-        $("#Uploadbox").ejUploadbox({
-            saveUrl: "saveFiles.ashx",
-            removeUrl: "removeFiles.ashx",
-            asyncUpload: false
-        });
-    });
+import {Component} from '@angular/core';
+
+@Component({
+  selector: 'sd-home',
+  templateUrl: './default.component.html'
+})
+export class DefaultComponent {
+  saveURL: string;
+  removeURL: string;
+  constructor() {
+  this.saveURL = 'http://js.syncfusion.com/ejServices/api/uploadbox/Save';
+  this.removeURL = 'http://js.syncfusion.com/ejServices/api/uploadbox/Remove';
+  }
+}
 
 {% endhighlight %}
 
