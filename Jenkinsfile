@@ -1,6 +1,6 @@
 node('content')
 { 
-String platform='AngularJS';
+String platform='Angular';
    try
 	{   
 		//Clone scm repository in Workspace source directory
