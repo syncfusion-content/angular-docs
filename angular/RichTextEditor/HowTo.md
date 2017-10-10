@@ -338,7 +338,7 @@ export class RTEComponent {
 
 First insert the text to the RTE using “executeCommand” in the RTE. 
 
-{% highlight javascript %}
+{% highlight js %}
 
     editor = $("#rteSample").ejRTE("instance");
     editor.executeCommand("inserthtml", text);
@@ -393,7 +393,7 @@ export class RTEComponent {
 We do not have any property for adjusting the height of the RTE Toolbar. But it is possible to adjust the height by overriding the class of the RTE toolbar. Override the class as below,
 
 Add the code snippet in stylesheet.
-{% highlight CSS %}
+{% highlight html %}
     
         .e-rte .e-js.e-toolbar{
                 height: 100px;
