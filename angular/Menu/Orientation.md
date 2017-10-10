@@ -30,7 +30,7 @@ Add the **&lt;ej-menu&gt;** tag in html page.
 
 {% endhighlight %}
 
-{% highlight typescript %}
+{% highlight ts %}
 
 import { Component } from '@angular/core';
 import { ViewEncapsulation } from '@angular/core';
@@ -102,7 +102,7 @@ Add the following code in your **&lt;ej-menu&gt;** tag.
 
 {% endhighlight %}
 
-{% highlight typescript %}
+{% highlight ts %}
 
 import { Component } from '@angular/core';
 import { ViewEncapsulation } from '@angular/core';
