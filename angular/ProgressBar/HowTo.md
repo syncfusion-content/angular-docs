@@ -110,7 +110,7 @@ export class ProgressbarComponent {
 
 {% endhighlight %}
 
-{% highlight css %}
+{% highlight html %}
 
  .frame {
             border: 1px solid #BBBCBB;
