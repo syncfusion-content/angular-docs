@@ -69,7 +69,7 @@ Add the following **HTML** code to create a simple Tab with scroll button.
 
 {% endhighlight %}
 
-{% highlight javascript %}
+{% highlight js %}
 
 import { Component } from '@angular/core';
 import { ViewEncapsulation } from '@angular/core';
