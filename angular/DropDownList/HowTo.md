@@ -21,7 +21,7 @@ api: /api/js/ejdropdownlist
 
 {% endhighlight %}
 
-{% highlight javascript %}
+{% highlight ts %}
 
 import {Component} from '@angular/core';
 
@@ -61,7 +61,7 @@ Adding text and value is demonstrated in the below given sample,
 
 {% endhighlight %}
 
-{% highlight typescript %}
+{% highlight ts %}
 
 import {Component} from '@angular/core';
 
@@ -115,7 +115,7 @@ Bind the select event and you can retrieve the value from args.value.
 
 {% endhighlight %}
 
-{% highlight typescript %}
+{% highlight ts %}
 
 import {Component} from '@angular/core';
 
@@ -174,7 +174,7 @@ Create a custom HTML element and insert it after popup wrapper.
 
 {% endhighlight %}
 
-{% highlight typescript %}
+{% highlight ts %}
 
 import {Component} from '@angular/core';
 
@@ -228,7 +228,7 @@ You can use [headerTemplate](https://help.syncfusion.com/api/js/ejdropdownlist#m
  
 {% endhighlight %}
 
-{% highlight typescript %}
+{% highlight ts %}
 
 import {Component} from '@angular/core';
 
@@ -315,7 +315,7 @@ Refer the following code blocks below
 
 {% endhighlight %}
 
-{% highlight typescript %}
+{% highlight ts %}
 
 import {Component} from '@angular/core';
 
@@ -381,7 +381,7 @@ Initialize a DropDownList control with allowVirtualScrolling, enableFilterSearch
 
 {% endhighlight %}
 
-{% highlight typescript %}
+{% highlight ts %}
 
 import {Component} from '@angular/core';
 
@@ -460,7 +460,7 @@ Initialize a DropDownList control with allowVirtualScrolling, enableFilterSearch
 
 {% endhighlight %}
 
-{% highlight typescript %}
+{% highlight ts %}
 
 import {Component} from '@angular/core';
 
@@ -495,7 +495,7 @@ export class DropDownListComponent {
 
 Now override the addItem method which will be redefined based on this scenario to avoid adding duplicate data on virtualScrolling and empty the _updateSelectedIndexByValue prototype method.
 
-{% highlight javascript %}
+{% highlight js %}
     
     function onCreate(args) {
         window.dropObj = this;
@@ -530,7 +530,7 @@ Now override the addItem method which will be redefined based on this scenario t
 
 In the begin event for loading data items from remote source, modify the query for fetching data based on the search string. Also when items fetched from remote service append it to a temporary list instead of main popup list
 
-{% highlight typescript %}
+{% highlight ts %}
 
     function onBegin(args) {
         var proxy = this;
@@ -572,7 +572,7 @@ In the begin event for loading data items from remote source, modify the query f
 
 When performing search, define the event to change the query string for filtering data from remote service based on the search string. Also maintain selected items so that when you empty the search text box selected items will be appended to the popup list.
 
-{% highlight typescript %}
+{% highlight ts %}
     
     /*
     In search event, we just filter out the query string according the search string from remote and append it to popup list items. 
@@ -624,7 +624,7 @@ When performing search, define the event to change the query string for filterin
 
 Finally define change event to maintain the selected items on search
 
-{% highlight typescript %}
+{% highlight ts %}
 
     function onChange(args) {
         var proxy = this;
@@ -668,7 +668,7 @@ Removing an entry from DropdownList is demonstrated in the below given sample.
 
 {% endhighlight %}
 
-{% highlight typescript %}
+{% highlight ts %}
 
 import {Component} from '@angular/core';
 
@@ -729,7 +729,7 @@ By default, the DropDownList displays only the text of the data item. We can abl
 
 Initialize the DropDownList as follows
 
-{% highlight javascript %}
+{% highlight js %}
 
     <input type="text" id="List " />
 
@@ -759,7 +759,7 @@ Initialize the DropDownList as follows
 
 Upon selecting the items from the DropDownList, the client side event “select” will be triggered, in that find the input element which holds the text value and make it as “hidden” and then create the span element for the custom value and append to the DropDownList outer wrapper element.
 
-{% highlight javascript %}
+{% highlight js %}
 
 function onSelect(args){
         
@@ -822,7 +822,7 @@ This can be achieved, by adding the attributes directly to the input element if 
 
 {% endhighlight %}
 
-{% highlight typescript %}
+{% highlight ts %}
 
 import {Component} from '@angular/core';
 
@@ -878,7 +878,7 @@ export class DropDownListComponent {
 
 {% endhighlight %}
 
-{% highlight typescript %}
+{% highlight ts %}
 
 import {Component} from '@angular/core';
 
@@ -917,7 +917,7 @@ The client side events such as “select” or “change” can be prevented in 
 
 {% endhighlight %}
 
-{% highlight typescript %}
+{% highlight ts %}
 
 import {Component} from '@angular/core';
 
@@ -947,7 +947,7 @@ export class DropDownListComponent {
 {% endhighlight %}
 While selecting the items in the DropDownList, the select or change event will be triggered. In that, sets “true” to the cancel argument, which will prevent the further selecting of items in the DropDownList.
 
-{% highlight typescript %}
+{% highlight ts %}
 
     onSelect(args) {
         args.cancel = true;
@@ -969,7 +969,7 @@ Initialize the DropDownList as follows
 
 {% endhighlight %}
 
-{% highlight typescript %}
+{% highlight ts %}
 
 import {Component} from '@angular/core';
 
@@ -1009,7 +1009,7 @@ export class DropdownlistComponent {
 
 Upon clicking to the Prepend button, which will insert the items at index of “0” in the DropDownList.
 
-{% highlight javascript %}
+{% highlight js %}
 
     dataPrepend() {
         var prepend = $('#countriesSelect').data("ejDropDownList");
@@ -1025,7 +1025,7 @@ Upon clicking to the Prepend button, which will insert the items at index of “
 
 If you click the postpone button, which insert items at the last index in the DropDownList.
 
-{% highlight javascript %}
+{% highlight js %}
 
   dataAppend() {
         $('#countriesSelect').ejDropDownList("addItem", { text: "India" });
@@ -1047,7 +1047,7 @@ Method 1: Setting custom delimiter Character
 
 {% endhighlight %}
 
-{% highlight typescript %}
+{% highlight ts %}
 
 import {Component} from '@angular/core';
 
@@ -1095,7 +1095,7 @@ Method 2: Using Visual Mode
 
 {% endhighlight %}
 
-{% highlight typescript %}
+{% highlight ts %}
 
 import {Component} from '@angular/core';
 
