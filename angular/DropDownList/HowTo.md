@@ -279,7 +279,7 @@ export class DropDownListComponent {
 
 {% endhighlight %}
 
-{% highlight css %}
+{% highlight html %}
 
         .temp {
             height: 30px;
@@ -445,9 +445,6 @@ export class DropdownlistComponent {
 }
 
 {% endhighlight %}
-
-{% highlight html %}
-
 
 ## To enable filter search for virtual items that are not visible on the page when virtualScrollMode is continuous
 By default when virtualScrolling is enabled, filterSearch will work only for the elements available at that moment. To enable searching for the complete datasource bound to DropDownList, we need to manually configure the search query and corresponding changes for it. 
@@ -783,7 +780,7 @@ function onSelect(args){
 
 Apply the following styles 
 
-{% highlight javascript %}
+{% highlight html %}
 
     <style type="text/css" class="cssStyles">
         .eimg {
