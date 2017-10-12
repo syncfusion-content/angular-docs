@@ -502,27 +502,19 @@ To make a column as "read-only" then set [`allowEditing`](https://help.syncfusio
 The following code example describes the above behavior.
 
 {% highlight html %}
-<div id="Grid"></div>
+<ej-grid id="Grid" [dataSource]="gridData" [editSettings]="editSettings">
+    <e-columns>
+        <e-column field= "OrderID" [isPrimaryKey]="true"></e-column>
+        <e-column field= "CustomerID" [allowEditing]="false"></e-column>
+        <e-column field= "Freight"></e-column>
+    </e-columns>
+</ej-grid>
 {% endhighlight %}
 
-{% highlight javascript %}
-$(function () {
-	$("#Grid").ejGrid({
-		//The datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
-		dataSource : window.gridData,
-		allowPaging : true,
-		editSettings : {
-			allowEditing : true
-		},
-		columns : [
-			{ field: "OrderID", isPrimaryKey:true },
-			{ field: "EmployeeID", allowEditing: false },
-			{ field: "Freight" },
-			{ field: "ShipCity" },
-			{ field: "ShipCountry" }
-		]
-	});
-});
+{% highlight ts %}
+//The datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
+this.gridData = window.gridData;
+this.editSettings={allowEditing:true};
 {% endhighlight %}
 
 The following output is displayed as a result of the above code example.
@@ -582,38 +574,24 @@ Through [`buttonOptions`](https://help.syncfusion.com/api/js/ejgrid#members:colu
 The following code example describes the above behavior.
 
 {% highlight html %}
-<div id="Grid"></div>
+<ej-grid id="Grid" [dataSource]="gridData" [editSettings]="editSettings">
+    <e-columns>
+        <e-column field= "OrderID" [isPrimaryKey]="true"></e-column>
+        <e-column field= "CustomerID"></e-column>
+        <e-column  headerText= "Manage Records" [commands]="buttons"></e-column>
+    </e-columns>
+</ej-grid>
 {% endhighlight %}
 
-{% highlight javascript %}
-$(function () {
-	$("#Grid").ejGrid({
-		//The datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
-		dataSource : window.gridData,
-		allowPaging : true,
-		editSettings : {
-			allowEditing : true,
-			allowAdding : true,
-			allowDeleting : true
-		},
-		columns : [
-			{ field: "OrderID", isPrimaryKey: true },
-			{ field: "EmployeeID" },
-			{ field: "Freight", editType: "numericedit"},
-			{ field: "ShipCountry" },
-			{
-				headerText : "Manage Records",
-				commands : [
-					{ type : "edit", buttonOptions : { text : "Edit" } },
-					{ type : "delete", buttonOptions : { text : "Delete" } },
-					{ type : "save", buttonOptions : { text : "Save" } }, 
-					{ type : "cancel", buttonOptions : { text : "Cancel" } }
-				],
-				width : 150
-			}
-		]
-	});
-});
+{% highlight ts %}
+//The datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
+this.gridData = window.gridData;
+this.editSettings={allowEditing:true,allowAdding:true,allowDeleting:true};
+this.buttons=[    { type: "edit", buttonOptions: { text: "Edit" } },
+                  { type: "delete", buttonOptions: { text: "Delete" } },
+                  { type: "save", buttonOptions: { text: "Save" } },
+                  { type: "cancel", buttonOptions: { text: "Cancel" } }
+             ];
 {% endhighlight %}
 
 The following output is displayed as a result of the above code example.
