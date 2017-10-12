@@ -105,24 +105,17 @@ N> If [`headerText`](https://help.syncfusion.com/api/js/ejgrid#members:columns-h
 The following code example describes the above behavior.
 
 {% highlight html %}
-<div id="Grid"></div>
+<ej-grid id="Grid" [dataSource]="gridData" >
+    <e-columns>
+       <e-column field="OrderID"  headerText="OrderID" width="75" [textAlign]="right"></e-column>
+       <e-column field="CustomerID" headerText="CustomerID" width="80"></e-column>
+    </e-columns>
+</ej-grid>
 {% endhighlight %}
 
-{% highlight javascript %}
-$(function () {
-	$("#Grid").ejGrid({
-		//The datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
-		dataSource : window.gridData,
-		allowPaging : true,
-		columns : [
-			{ field : "OrderID", headerText : "Order ID" },
-			{ field : "EmployeeID",	headerText : "Emp ID" }, 
-			{ field : "Freight", headerText : "Freight" }, 
-			{ field : "ShipCountry", headerText : "Country" }, 
-			{ field : "ShipCity", headerText : "City" }
-		]
-	});
-});
+{% highlight ts %}
+//The datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
+this.gridData = window.gridData;
 {% endhighlight %}
 
 The following output is displayed as a result of the above code example.
