@@ -239,24 +239,18 @@ The [`format`](https://help.syncfusion.com/api/js/ejgrid#members:columns-format 
 The following code example describes the above behavior.
 
 {% highlight html %}
-<div id="Grid"></div>
+<ej-grid id="Grid" [dataSource]="gridData">
+    <e-columns>
+        <e-column field="OrderID"  headerText="OrderID"></e-column>
+        <e-column field="CustomerID" headerText="CustomerID"></e-column>
+        <e-column field="Freight" width="75" format="{0:C2}"></e-column>
+    </e-columns>
+</ej-grid> 
 {% endhighlight %}
 
-{% highlight javascript %}
-$(function () {
-	$("#Grid").ejGrid({
-		//The datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
-		dataSource : window.gridData,
-		allowPaging : true,
-		columns : [
-			{ field: "OrderID" },
-			{ field: "EmployeeID" },
-			{ field: "Freight", format: "{0:C2}" },
-			{ field: "OrderDate", format: "{0:dd/MM/yyyy}" },
-			{ field: "ShipCity" }
-		]
-	});
-});
+{% highlight ts %}
+//The datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
+this.gridData = window.gridData;
 {% endhighlight %}
 
 The following output is displayed as a result of the above code example.
@@ -271,24 +265,18 @@ You can specify the width for particular column by setting [`width`](https://hel
 The following code example describes the above behavior.
 
 {% highlight html %}
-<div id="Grid"></div>
+<ej-grid id="Grid" [dataSource]="gridData" >
+    <e-columns>
+        <e-column field="OrderID" width="75"></e-column>
+        <e-column field="CustomerID" width="80"></e-column>
+        <e-column field="ShipCity" width="110"></e-column>
+    </e-columns>
+</ej-grid>
 {% endhighlight %}
 
-{% highlight javascript %}
-$(function () {
-	$("#Grid").ejGrid({
-		//The datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
-		dataSource : window.gridData,
-		allowPaging : true,
-		columns : [
-		    { field: "OrderID", width: "10%" },
-			{ field: "EmployeeID", width: "15%" },
-			{ field: "Freight", width: 100 },
-			{ field: "ShipCity", width: 150 },
-			{ field: "ShipCountry", width: 100 }
-		]
-	});
-});
+{% highlight ts %}
+//The datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
+this.gridData = window.gridData;
 {% endhighlight %}
 
 
