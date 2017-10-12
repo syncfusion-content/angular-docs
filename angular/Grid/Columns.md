@@ -687,31 +687,20 @@ N> In remote data, server should be configured to perform select and filter oper
 The following code example describes the above behavior.
 
 {% highlight html %}
-<div id="Grid"></div>
+<ej-grid id="Grid" [dataSource]="gridData" [editSettings]="editSettings">
+    <e-columns>
+        <e-column field= "OrderID" ></e-column>
+        <e-column field= "CustomerID" [visible]="false"></e-column>
+        <e-column field="EmployeeID" foreignKeyField= "EmployeeID" foreignKeyValue= "FirstName" [dataSource]= "employeedata" headerText= "FirstName" ></e-column>
+    </e-columns>
+</ej-grid>
 {% endhighlight %}
 
-{% highlight javascript %}
-$(function () {
-	$("#Grid").ejGrid({
-		//The datasource "window.gridData" and "window.employeeView" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
-		dataSource : window.gridData,
-		allowPaging : true,
-		editSettings : {
-			allowEditing : true,
-			allowAdding : true,
-			allowDeleting : true
-		},
-		columns : [
-			{ field: "OrderID", isPrimaryKey: true },
-			{ field: "EmployeeID", foreignKeyField: "EmployeeID", foreignKeyValue: "FirstName", dataSource: window.employeeView, headerText: "First Name" },
-			         //(or)
-			{ field: "EmployeeID", foreignKeyField: "EmployeeID", foreignKeyValue: "FirstName", dataSource: ej.DataManager({ url: "http://mvc.syncfusion.com/Services/Northwnd.svc/Employees/" }), headerText: "First Name" },
-			{ field: "CustomerID" },
-			{ field: "Freight" },
-			{ field: "ShipCity" }
-		]
-	});
-});
+{% highlight ts %}
+//The datasource "window.gridData" and "window.employeeView" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
+this.gridData = window.gridData;
+this.employee = window.employeeView;
+this.editSettings={allowAdding:true, allowEditing:true, allowDeleting:true, };
 {% endhighlight %}
 
 The following output is displayed as a result of the above code example.
@@ -726,39 +715,23 @@ You can [customize](https://help.syncfusion.com/api/js/ejgrid#members:columns-cs
 The following code example describes the above behavior.
 
 {% highlight html %}
-<div id="Grid"></div>
+<style class="temp">
+.temp{
+color:green;
+}
+</style>
+<ej-grid id="Grid" [dataSource]="gridData">
+    <e-columns>
+        <e-column field= "OrderID"></e-column>
+        <e-column field= "CustomerID" cssClass="temp"></e-column>
+        <e-column field= "Freight"></e-column>
+    </e-columns>
+</ej-grid> 
 {% endhighlight %}
 
-{% highlight css %}
-.customCSS.e-headercell {
-	background-color: #2382c3;
-	color: white;
-	font-family: 'Bell MT';
-	font-size: 20px;
-}
-
-.customCSS.e-rowcell {
-	background-color: #ecedee;
-	font-family: 'Bell MT';
-	color: red;
-	font-size: 20px;
-}
-{% endhighlight %}
-
-{% highlight javascript %}
-$(function () {
-	$("#Grid").ejGrid({
-		//The datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
-		dataSource : window.gridData,
-		allowPaging : true,
-		columns : [
-			{ field: "OrderID" },
-			{ field: "CustomerID" },
-			{ field: "EmployeeID", cssClass: "customCSS" },
-			{ field: "Freight" }
-		]
-	});
-});
+{% highlight ts %}
+//The datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
+this.gridData = window.gridData;
 {% endhighlight %}
 
 The following output is displayed as a result of the above code example.
@@ -820,24 +793,18 @@ Gets or sets the type of the column value as checkbox for row selection </td>
 The following code example describes the above behavior.
 
 {% highlight html %}
-<div id="Grid"></div>
+<ej-grid id="Grid" [dataSource]="gridData" >
+    <e-columns>
+        <e-column field="OrderID" ></e-column>
+        <e-column field="CustomerID" type="string"></e-column>
+        <e-column field="EmployeeID"></e-column>
+    </e-columns>
+</ej-grid>
 {% endhighlight %}
 
-{% highlight javascript %}
-$(function () {
-	$("#Grid").ejGrid({
-		//The datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
-		dataSource : window.gridData,
-		allowPaging : true,
-		columns : [
-			{ field: "OrderID" },
-			{ field: "CustomerID", type: "string" },
-			{ field: "EmployeeID", type:"number" },
-			{ field: "Freight" },
-			{ field: "ShipCountry"}
-		]
-	});
-});
+{% highlight ts %}
+//The datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
+this.gridData = window.gridData;
 {% endhighlight %}
 
 The following output is displayed as a result of the above code example.
