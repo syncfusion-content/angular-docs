@@ -107,8 +107,8 @@ The following code example describes the above behavior.
 {% highlight html %}
 <ej-grid id="Grid" [dataSource]="gridData" >
     <e-columns>
-       <e-column field="OrderID"  headerText="OrderID" width="75" [textAlign]="right"></e-column>
-       <e-column field="CustomerID" headerText="CustomerID" width="80"></e-column>
+       <e-column field="OrderID"  headerText="OrderID"></e-column>
+       <e-column field="CustomerID" headerText="CustomerID"></e-column>
     </e-columns>
 </ej-grid>
 {% endhighlight %}
@@ -137,24 +137,18 @@ N> For [`headerTextAlign`](https://help.syncfusion.com/api/js/ejgrid#members:col
 The following code example describes the above behavior.
 
 {% highlight html %}
-<div id="Grid"></div>
+<ej-grid id="Grid" [dataSource]="gridData">
+    <e-columns>
+       <e-column field="OrderID"  headerText="OrderID"></e-column>
+       <e-column field="CustomerID" headerText="CustomerID" [headerTextAlign]="right"></e-column>
+    </e-columns>
+</ej-grid> 
 {% endhighlight %}
 
-{% highlight javascript %}
-$(function () {
-	$("#Grid").ejGrid({
-		//The datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
-		dataSource : window.gridData,
-		allowPaging : true,
-		columns : [
-			{ field : "OrderID", headerText : "Order ID" }, 
-			{ field : "EmployeeID",	headerText : "Emp ID", headerTextAlign : "right" },
-			{ field : "Freight", headerText : "Freight" },
-			{ field : "ShipCountry", headerText : "Country", headerTextAlign : "center" },
-			{ field : "ShipCity", headerText : "City", headerTextAlign : "right" }
-		]
-	});
-});
+{% highlight ts %}
+//The datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
+this.gridData = window.gridData;
+this.right=ej.TextAlign.Right;
 {% endhighlight %}
 
 The following output is displayed as a result of the above code example.
@@ -216,24 +210,19 @@ N> 2. The [`textAlign`](https://help.syncfusion.com/api/js/ejgrid#members:column
 The following code example describes the above behavior.
 
 {% highlight html %}
-<div id="Grid"></div>
+<ej-grid id="Grid" [dataSource]="gridData" >
+    <e-columns>
+        <e-column field="OrderID"></e-column>
+        <e-column field="CustomerID" [textAlign]="right"></e-column>
+        <e-column field="EmployeeID"></e-column>
+    </e-columns>
+</ej-grid> 
 {% endhighlight %}
 
-{% highlight javascript %}
-$(function () {
-	$("#Grid").ejGrid({
-		//The datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
-		dataSource : window.gridData,
-		allowPaging : true,
-		columns : [
-			{ field : "OrderID", textAlign : "right" }, 
-			{ field : "EmployeeID", textAlign : "right" },
-			{ field : "Freight", textAlign : "right" },
-			{ field : "ShipCountry", textAlign : "center" }, 
-			{ field : "ShipCity", textAlign : "justify" }
-		]
-	});
-});
+{% highlight ts %}
+//The datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
+this.gridData = window.gridData;
+this.right=ej.TextAlign.Right;
 {% endhighlight %}
 
 The following output is displayed as a result of the above code example.
