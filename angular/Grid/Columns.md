@@ -655,25 +655,18 @@ Column Chooser would be shown in the top right corner of Grid. To enable column 
 The following code example describes the above behavior.
 
 {% highlight html %}
-<div id="Grid"></div>
+<ej-grid id="Grid" [dataSource]="gridData" showColumnChooser="true">
+    <e-columns>
+        <e-column field="OrderID" ></e-column>
+        <e-column field="CustomerID" [showInColumnChooser]="false"></e-column>
+        <e-column field="EmployeeID"></e-column>
+    </e-columns>
+</ej-grid>
 {% endhighlight %}
 
-{% highlight javascript %}
-$(function () {
-	$("#Grid").ejGrid({
-		//The datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
-		dataSource : window.gridData,
-		allowPaging : true,
-		showColumnChooser : true,
-		columns : [
-			{ field: "OrderID" },
-			{ field: "EmployeeID", showInColumnChooser: false },
-			{ field: "Freight" },
-			{ field: "ShipCity" },
-			{ field: "ShipCountry" }
-		]
-	});
-});
+{% highlight ts %}
+//The datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
+this.gridData = window.gridData;
 {% endhighlight %}
 
 The following output is displayed as a result of the above code example.
