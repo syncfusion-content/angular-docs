@@ -697,6 +697,24 @@ $(function () {
 	});
 });
 {% endhighlight %}
+{% highlight html %} 
+<script id="columnTemplate" type="text/x-jsrender">
+<img src="styles/images/Employees/{{"{{"}}:EmployeeID{{}}}}.png" alt="{{"{{"}}:EmployeeID{{}}}}"/>
+</script>
+<ej-grid id="Grid" [dataSource]="gridData" >
+    <e-columns>
+        <e-column field="OrderID" ></e-column>
+        <e-column field="CustomerID" [template]="columnTemplate"></e-column>
+        <e-column field="EmployeeID" ></e-column>
+    </e-columns>
+</ej-grid>
+{% endhighlight %}
+
+{% highlight ts %}
+//The datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
+this.gridData = window.gridData;
+this.columnTemplate="#columnTemplate";
+{% endhighlight %}
 
 The following output is displayed as a result of the above code example.
 
