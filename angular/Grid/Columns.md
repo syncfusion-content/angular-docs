@@ -208,28 +208,35 @@ N> It's a standard way to enclose the [`template`](https://help.syncfusion.com/a
 The following code example describes the above behavior.
 
 {% highlight html %}
-<div id="Grid"></div>
-<script id="empTemplate" type="text/x-jsrender">
-Emp ID
-<span class="e-userlogin e-icon employee"></span>
-</script>
+<div id="customerTemplate">
+<span class="e-userlogin e-icon headericon"></span>
+ CUS ID
+</div>
+<ej-grid id="Grid" [dataSource]="gridData" >
+    <e-columns>
+        <e-column field= "OrderID"></e-column>
+        <e-column field= "CustomerID" headerTemplateID= "#customerTemplate"></e-column>
+        <e-column field= "Freight"  ></e-column>
+    </e-columns>
+</ej-grid>
 {% endhighlight %}
 
-{% highlight javascript %}
-$(function () {
-	$("#Grid").ejGrid({
-		//The datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
-		dataSource : window.gridData,
-		allowPaging : true,
-		columns : [
-			{ field : "OrderID", headerText : "Order ID" },
-			{ field : "EmployeeID", headerTemplateID : "#empTemplate" },
-			{ field: "Freight", headerText: "Freight" },
-			{ field: "ShipCountry", headerText: "Country" },
-			{ field: "ShipCity", headerText: "City" }
-		]
-	});
-});
+{% highlight ts %}
+
+    import {Component, ViewEncapsulation} from '@angular/core';
+    @Component({
+      selector: 'ej-app',
+      templateUrl: 'src/grid/grid.component.html',  //give the path file for Grid control html file.
+    })
+    export class GridComponent {
+        public gridData;
+    	constructor()
+        {        
+        //The datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
+        this.gridData = window.gridData;
+        }
+    }
+     
 {% endhighlight %}
 
 The following output is displayed as a result of the above code example.
