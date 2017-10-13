@@ -747,6 +747,7 @@ The following code example describes the above behavior.
 {% endhighlight %}
 
 {% highlight ts %}
+
     import {Component, ViewEncapsulation} from '@angular/core';
     @Component({
       selector: 'ej-app',
@@ -785,34 +786,42 @@ N> 2. In command column you can add only buttons.
 The following code example describes the above behavior.
 
 {% highlight html %}
-<div id="Grid"></div>
+<ej-grid id="Grid" [dataSource]="gridData" [editSettings]="editSettings">
+    <e-columns>
+        <e-column field= "EmployeeID"></e-column>
+        <e-column  headerText= "Employee Details" [commands]="buttons"></e-column>
+    </e-columns>
+</ej-grid> 
 {% endhighlight %}
 
-{% highlight javascript %}
-$(function () {
-	$("#Grid").ejGrid({
-		//The datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
-		dataSource : window.employeeView,
-		columns : [
-			{ field : "EmployeeID" }, 
-			{
-				headerText : "Employee Details",
-				commands : [
-					{ type: "details", buttonOptions: { text: "Details", width: "100", click: "onClick" } }
-				],				
-				textAlign : ej.TextAlign.Center,
-				width : 150
-			}
-		]
-	});
-});
-
-function onClick(args) {
-	var grid = $("#Grid").ejGrid("instance");
-	var index = this.element.closest("tr").index();
-	var record = grid.getCurrentViewData()[index];
-	alert("Record Details: " + JSON.stringify(record));
-}
+{% highlight ts %}
+    
+    import {Component, ViewEncapsulation} from '@angular/core';
+    @Component({
+      selector: 'ej-app',
+      templateUrl: 'src/grid/grid.component.html',  //give the path file for Grid control html file.
+    })
+    export class GridComponent {
+        public gridData;
+        public editSettings;
+        public buttons;
+    	constructor()
+        {        
+            //The datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
+            this.gridData = window.gridData;
+            this.editSettings={allowEditing:true };
+            this.buttons=[{ type: "details", buttonOptions: { text: "Edit",
+                            click: function(){
+                                    var grid = $("#Grid").ejGrid("instance");
+                                    var index = this.element.closest("tr").index();
+                                    var record = grid.getCurrentViewData()[index];
+                                    alert("Record Details: " + JSON.stringify(record));
+                                    } 
+                            }
+                        }];
+        }
+     }
+     
 {% endhighlight %}
 
 The following output is displayed as a result of the above code example.
