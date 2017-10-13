@@ -118,6 +118,15 @@ The following code example illustrates how to customize the icon of context menu
 
 You would be notified with events when you try to open the context menu items(`contextMenuBeforeOpen`) and when you click the menu items(`contextMenuClick`). The following code example illustrates how to define those events.
 
+{% highlight html %}
+
+<div>
+<ej-diagram  id="diagram" width="100%" height="600px" [enableContextMenu]="enableContextMenu" [contextMenu]="contextMenu" (contextMenuBeforeOpen)="contextMenuBeforeOpen($event)" (contextMenuClick)="contextMenuClick($event)">
+</ej-diagram>
+</div>
+
+{% endhighlight %}
+
 {% highlight javascript %}
 
 export class ModelComponent {
@@ -130,8 +139,9 @@ export class ModelComponent {
             name: "zoom",
             text: "zoom"
         }],
-
-        contextMenuBeforeOpen: function(args) {
+        }
+    }
+       contextMenuBeforeOpen: function(args) {
             //do your custom action here.
         },
 
@@ -142,8 +152,5 @@ export class ModelComponent {
                     break;
                 }
             }
-        }
-    }
 };
-
 {% endhighlight %}
