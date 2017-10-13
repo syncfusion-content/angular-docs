@@ -764,7 +764,6 @@ The following code example describes the above behavior.
     })
     export class AppComponent {
         public gridData;
-        public pageSettings;
     	constructor()
         {
             //The datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
