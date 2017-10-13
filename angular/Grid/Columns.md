@@ -596,29 +596,34 @@ You can control the Grid actions of a particular column by setting [`allowSortin
 The following code example describes the above behavior.
 
 {% highlight html %}
-<div id="Grid"></div>
+<ej-grid #Grid [dataSource]="gridData" [allowPaging]=true [allowFiltering]=true [allowGrouping]=true [allowSorting]=true [allowResizing]=true [editSettings]="editSettings" >
+    <e-columns>
+        <e-column field= "OrderID"></e-column>
+        <e-column field= "ShipAddress" [allowFiltering]=false [allowGrouping]=false [allowSorting]=false [allowResizing]=false [allowEditing]="false"></e-column>
+        <e-column field= "Freight"></e-column>
+        <e-column field= "OrderDate"></e-column>
+    </e-columns>
+</ej-grid>  
 {% endhighlight %}
 
-{% highlight javascript %}
-$(function () {
-	$("#Grid").ejGrid({
-		//The datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
-		dataSource : window.gridData,
-		columns : [
-			{ field: "OrderID", isPrimaryKey:true },
-			{ field: "EmployeeID", allowEditing: false, allowResizing: false, allowSorting: false, allowGrouping: false, allowFiltering: false },
-			{ field: "Freight" },
-			{ field: "ShipCity" },
-			{ field: "ShipCountry" }
-		],
-		allowPaging : true,
-		allowFiltering : true,
-		allowGrouping : true,
-		allowSorting : true,
-		allowResizing : true,
-		editSettings : { allowEditing : true },
-	});
-});
+{% highlight ts %}
+
+    import {Component, ViewEncapsulation} from '@angular/core';
+    @Component({
+      selector: 'ej-app',
+      templateUrl: 'src/grid/grid.component.html',  //give the path file for Grid control html file.
+    })
+    export class GridComponent {
+        public gridData;
+        public editSettings;
+    	constructor()
+        {        
+        //The datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
+        this.gridData = window.gridData;
+        this.editSettings = {allowEditing:true};
+        }
+     }
+     
 {% endhighlight %}
 
 ## Read only
