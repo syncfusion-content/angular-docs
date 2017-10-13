@@ -34,7 +34,6 @@ The following code example shows auto-generate columns behavior.
     })
     export class AppComponent {
         public gridData;
-        public pageSettings;
     	constructor()
         {
             //The datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
@@ -136,7 +135,6 @@ The following code example describes the above behavior.
     })
     export class AppComponent {
         public gridData;
-        public pageSettings;
     	constructor()
         {
             //The datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
@@ -182,12 +180,12 @@ The following code example describes the above behavior.
     })
     export class AppComponent {
         public gridData;
-        public pageSettings;
+        public right;
     	constructor()
         {
             //The datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
             this.gridData = window.gridData;
-            this.right=ej.TextAlign.Right;
+            this.right = ej.TextAlign.Right;
         }
      }
 
@@ -226,14 +224,14 @@ The following code example describes the above behavior.
     import {Component, ViewEncapsulation} from '@angular/core';
     @Component({
       selector: 'ej-app',
-      templateUrl: 'src/grid/grid.component.html',  //give the path file for Grid control html file.
+      templateUrl: 'app/app.component.html',  //give the path file for Grid control html file.
     })
-    export class GridComponent {
+    export class AppComponent {
         public gridData;
     	constructor()
         {        
-        //The datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
-        this.gridData = window.gridData;
+            //The datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
+            this.gridData = window.gridData;
         }
     }
      
@@ -277,7 +275,6 @@ The following code example describes the above behavior.
     })
     export class AppComponent {
         public gridData;
-        public pageSettings;
     	constructor()
         {
             //The datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
@@ -320,7 +317,6 @@ The following code example describes the above behavior.
     })
     export class AppComponent {
         public gridData;
-        public pageSettings;
     	constructor()
         {
             //The datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
@@ -360,7 +356,6 @@ The following code example describes the above behavior.
     })
     export class AppComponent {
         public gridData;
-        public pageSettings;
     	constructor()
         {
             //The datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
@@ -404,7 +399,6 @@ The following code example describes the above behavior.
     })
     export class AppComponent {
         public gridData;
-        public pageSettings;
     	constructor()
         {
             //The datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
@@ -444,7 +438,6 @@ The following code example describes the above behavior.
     })
     export class AppComponent {
         public gridData;
-        public pageSettings;
     	constructor()
         {
             //The datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
@@ -484,7 +477,6 @@ The following code example describes the above behavior.
     })
     export class AppComponent {
         public gridData;
-        public pageSettings;
     	constructor()
         {
             //The datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
@@ -529,8 +521,7 @@ The following code example describes the above behavior.
     
     @Component({
       selector: 'ej-app',
-      templateUrl: 'src/app.component.html',
-      styleUrls:['src/app.component.css']
+      templateUrl: 'app/app.component.html',  //give the path file for Grid control html file.
     })
     export class AppComponent {
         public gridData;
@@ -539,7 +530,7 @@ The following code example describes the above behavior.
             //The datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
             this.gridData = window.gridData;
         }
-        Clicking(){
+        Click(){
             var obj = $("#Grid").data("ejGrid");
 	        obj.deleteRecord("OrderID", obj.getSelectedRecords()[0]);
         }
@@ -629,9 +620,9 @@ The following code example describes the above behavior.
     import {Component, ViewEncapsulation} from '@angular/core';
     @Component({
       selector: 'ej-app',
-      templateUrl: 'src/grid/grid.component.html',  //give the path file for Grid control html file.
+      templateUrl: 'app/app.component.html',  //give the path file for Grid control html file.
     })
-    export class GridComponent {
+    export class AppComponent {
         public gridData;
         public editSettings;
     	constructor()
@@ -669,7 +660,7 @@ The following code example describes the above behavior.
     })
     export class AppComponent {
         public gridData;
-        public pageSettings;
+        public editSettings;
     	constructor()
         {
             //The datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
@@ -815,11 +806,12 @@ The following code example describes the above behavior.
 {% highlight ts %}
     
     import {Component, ViewEncapsulation} from '@angular/core';
+    
     @Component({
       selector: 'ej-app',
-      templateUrl: 'src/grid/grid.component.html',  //give the path file for Grid control html file.
+      templateUrl: 'app/app.component.html',  //give the path file for Grid control html file.
     })
-    export class GridComponent {
+    export class AppComponent {
         public gridData;
         public editSettings;
         public buttons;
@@ -876,7 +868,6 @@ The following code example describes the above behavior.
     })
     export class AppComponent {
         public gridData;
-        public pageSettings;
     	constructor()
         {
             //The datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
@@ -922,7 +913,6 @@ The following code example describes the above behavior.
     })
     export class AppComponent {
         public gridData;
-        public pageSettings;
     	constructor()
         {
             //The datasource "window.gridData" and "window.employeeView" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
@@ -969,7 +959,6 @@ color:green;
     })
     export class AppComponent {
         public gridData;
-        public pageSettings;
     	constructor()
         {
             //The datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
@@ -1056,7 +1045,6 @@ The following code example describes the above behavior.
     })
     export class AppComponent {
         public gridData;
-        public pageSettings;
     	constructor()
         {
             //The datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
@@ -1099,7 +1087,6 @@ The following code example describes the above behavior.
     })
     export class AppComponent {
         public gridData;
-        public pageSettings;
     	constructor()
         {
             //The datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
