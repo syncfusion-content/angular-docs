@@ -508,32 +508,43 @@ N> Editing, grouping, filtering, sorting, summary and searching support are not 
 The following code example describes the above behavior. 
 
 {% highlight html %}
-<div id="Grid"></div>
+<ej-grid id="Grid" [dataSource]="gridData" allowPaging="true" >
+    <e-columns>
+        <e-column field= "OrderID"></e-column>
+        <e-column field= "CustomerID"></e-column>
+        <e-column field= "EmployeeID"></e-column>
+        <e-column field= "Freight"></e-column>
+        <e-column headerText="">
+              <template e-template let-data>
+                <a (click)="Click($event)" href=#>Delete</a>
+            </template>
+         </e-column>
+    </e-columns>
+</ej-grid>
 {% endhighlight %}
 
-{% highlight javascript %}
-$(function () {
-	$("#Grid").ejGrid({
-		//The datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
-		dataSource : window.gridData,
-		allowPaging : true,
-		editSettings : {
-			allowDeleting : true
-		},
-		columns : [
-			{ field: "OrderID", isPrimaryKey: true },
-			{ field: "CustomerID" },
-			{ field: "EmployeeID" },
-			{ field: "Freight" },
-			{ headerText: "",format: "<a onclick =\"click(this)\" href=#>Delete</a>" }
-		]
-	});
-});
+{% highlight ts %}
+    
+    import {Component, ViewEncapsulation} from '@angular/core';
+    
+    @Component({
+      selector: 'ej-app',
+      templateUrl: 'src/app.component.html',
+      styleUrls:['src/app.component.css']
+    })
+    export class AppComponent {
+        public gridData;
+    	constructor()
+        {        
+            //The datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
+            this.gridData = window.gridData;
+        }
+        Clicking(){
+            var obj = $("#Grid").data("ejGrid");
+	        obj.deleteRecord("OrderID", obj.getSelectedRecords()[0]);
+        }
+     }
 
-function click(e) {
-	var obj = $("#Grid").data("ejGrid");
-	obj.deleteRecord("OrderID", obj.getSelectedRecords()[0]);
-}
 {% endhighlight %}
 
 The following output is displayed as a result of the above code example.
