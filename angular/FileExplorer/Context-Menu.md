@@ -181,39 +181,39 @@ export class FileExplorerComponent {
                             id: 'tile',
                             text: 'Tile view',
                             action: function (event) {
-                                 let feObj = $('#fileExplorer4').data('ejFileExplorer');
-                                 feObj.option('layout', event.ID);
+                                 let fileExplorerObj = $('#fileExplorer4').data('ejFileExplorer');
+                                 fileExplorerObj.option('layout', event.ID);
                             }
                         },
                         {
                             id: 'grid',
                             text: 'Grid view',
                            action: function (event) {
-                                 let feObj = $('#fileExplorer4').data('ejFileExplorer');
-                                 feObj.option('layout', event.ID);
+                                 let fileExplorerObj = $('#fileExplorer4').data('ejFileExplorer');
+                                 fileExplorerObj.option('layout', event.ID);
                             }
                         },
                         {
                             id: 'largeicons',
                             text: 'Large icons view',
                            action: function (event) {
-                                 let feObj = $('#fileExplorer4').data('ejFileExplorer');
-                                 feObj.option('layout', event.ID);
+                                 let fileExplorerObj = $('#fileExplorer4').data('ejFileExplorer');
+                                 fileExplorerObj.option('layout', event.ID);
                             }
                         }, ]
                     }, ]
                 };
     }
     onLayoutChange() {
-         let feObj = $('#fileExplorer4').data('ejFileExplorer');
+         let fileExplorerObj = $('#fileExplorer4').data('ejFileExplorer');
          $('.fe-context-menu .View').removeClass('custom-grid custom-tile custom-largeicons');
-         $('.fe-context-menu .View').addClass('custom-' + feObj.model.layout);
+         $('.fe-context-menu .View').addClass('custom-' + fileExplorerObj.model.layout);
     }
     onMenuOpen(event) {
         if (event.contextMenu == 'cwd') {
-                let feObj = $('#fileExplorer4').data('ejFileExplorer');
+                let fileExplorerObj = $('#fileExplorer4').data('ejFileExplorer');
                 $('.fe-context-menu').find('.e-fe-activeicon').removeClass('e-fe-activeicon');
-                $('.fe-context-menu').find('.' + feObj.model.layout).addClass('e-fe-activeicon');
+                $('.fe-context-menu').find('.' + fileExplorerObj.model.layout).addClass('e-fe-activeicon');
             }
     }
 }
@@ -252,7 +252,7 @@ You would be notified with events when you try to open the context menu items (*
 
 <ej-fileexplorer id="fileExplorer" path= "http://js.syncfusion.com/demos/ejServices/Content/FileBrowser/"
     ajaxAction="http://js.syncfusion.com/demos/ejServices/api/FileExplorer/FileOperations"
-    (menuOpen)="onMenuOpen($event)" (menuBeforeOpen)="onMenuBeforeOpen($event)" (menuClick)="onMenuClcik($event)"
+    (menuOpen)="onMenuOpen($event)" (menuBeforeOpen)="onMenuBeforeOpen($event)" (menuClick)="onMenuClick($event)"
      style="display:block">
 </ej-fileexplorer>
 
@@ -280,7 +280,7 @@ export class FileExplorerComponent {
             //do your custom action here.
         }
     }
-    onMenuClcik(event) {
+    onMenuClick(event) {
         switch (args.text) {
             case "largeicons":
                 //do your custom action here.
