@@ -16,7 +16,7 @@ N> 2. If the `field` name contains "dot" operator then it is considered as compl
 
 ## Auto generation
 
-The [`columns`](https://help.syncfusion.com/api/js/ejgrid#members:columns "columns") are automatically generated when [`columns`](https://help.syncfusion.com/api/js/ejgrid#members:columns "columns") declaration is empty or undefined while initializing the Grid. Also, all the columns which are in [`dataSource`](https://help.syncfusion.com/api/js/ejgrid#members:datasource "dataSource") are bound as a Grid columns.
+The [`columns`](https://help.syncfusion.com/api/angular/grid#members:columns "columns") are automatically generated when [`columns`](https://help.syncfusion.com/api/angular/grid#members:columns "columns") declaration is empty or undefined while initializing the Grid. Also, all the columns which are in [`dataSource`](https://help.syncfusion.com/api/angular/grid#members:datasource "dataSource") are bound as a Grid columns.
 
 The following code example shows auto-generate columns behavior.
 
@@ -50,7 +50,7 @@ The following output is displayed as a result of the above code example.
 
 ### How to set isPrimaryKey for auto generated columns when editing is enabled:
 
-Using [`dataBound`](https://help.syncfusion.com/api/js/ejgrid#events:databound "dataBound") event, you can set [`isPrimaryKey`](https://help.syncfusion.com/api/js/ejgrid#members:columns-isprimarykey "isPrimaryKey") value as `true` by two ways. The following code example demonstrates the above behavior.
+Using [`dataBound`](https://help.syncfusion.com/api/angular/grid#events:databound "dataBound") event, you can set [`isPrimaryKey`](https://help.syncfusion.com/api/angular/grid#members:columns-isprimarykey "isPrimaryKey") value as `true` by two ways. The following code example demonstrates the above behavior.
 
 1. If primary key "column index" is known then refer the following code example
 {% highlight html %} 
@@ -111,9 +111,9 @@ $(function () {
 
 ### HeaderText
 
-It represents the title for particular column. To enable header text, set [`headerText`](https://help.syncfusion.com/api/js/ejgrid#members:columns-headertext "headerText") property of [`columns`](https://help.syncfusion.com/api/js/ejgrid#members:columns "columns"). The following code example describes the above behavior.
+It represents the title for particular column. To enable header text, set [`headerText`](https://help.syncfusion.com/api/angular/grid#members:columns-headertext "headerText") property of [`columns`](https://help.syncfusion.com/api/angular/grid#members:columns "columns"). The following code example describes the above behavior.
 
-N> If [`headerText`](https://help.syncfusion.com/api/js/ejgrid#members:columns-headertext "headerText") is not defined then the [`field`](https://help.syncfusion.com/api/js/ejgrid#members:columns-field "field") name is considered as header text for that particular column. If both [`field`](https://help.syncfusion.com/api/js/ejgrid#members:columns-field "field") name and [`headerText`](https://help.syncfusion.com/api/js/ejgrid#members:columns-headertext "headerText") are not defined then the column is rendered with "empty" header text.
+N> If [`headerText`](https://help.syncfusion.com/api/angular/grid#members:columns-headertext "headerText") is not defined then the [`field`](https://help.syncfusion.com/api/angular/grid#members:columns-field "field") name is considered as header text for that particular column. If both [`field`](https://help.syncfusion.com/api/angular/grid#members:columns-field "field") name and [`headerText`](https://help.syncfusion.com/api/angular/grid#members:columns-headertext "headerText") are not defined then the column is rendered with "empty" header text.
 
 The following code example describes the above behavior.
 
@@ -151,14 +151,14 @@ The following output is displayed as a result of the above code example.
 
 ### Header Text alignment
 
-[Align](https://help.syncfusion.com/api/js/ejgrid#members:columns-headertextalign "Align") the header text of column header using [`headerTextAlign`](https://help.syncfusion.com/api/js/ejgrid#members:columns-headertextalign "headerTextAlign") property of [`columns`](https://help.syncfusion.com/api/js/ejgrid#members:columns "columns"). There are four possible ways to align header text, they are
+[Align](https://help.syncfusion.com/api/angular/grid#members:columns-headertextalign "Align") the header text of column header using [`headerTextAlign`](https://help.syncfusion.com/api/angular/grid#members:columns-headertextalign "headerTextAlign") property of [`columns`](https://help.syncfusion.com/api/angular/grid#members:columns "columns"). There are four possible ways to align header text, they are
 
 1. Right
 2. Left
 3. Center
 4. Justify
 
-N> For [`headerTextAlign`](https://help.syncfusion.com/api/js/ejgrid#members:columns-headertextalign "headerTextAlign") property you can assign either `string` value ("right") or `enum` value (`ej.TextAlign.Right`).
+N> For [`headerTextAlign`](https://help.syncfusion.com/api/angular/grid#members:columns-headertextalign "headerTextAlign") property you can assign either `string` value ("right") or `enum` value (`ej.TextAlign.Right`).
 
 The following code example describes the above behavior.
 
@@ -198,10 +198,10 @@ The following output is displayed as a result of the above code example.
 
 ## Header Template
 
-The template design that applies on for the column header. To render template, set [`headerTemplateID`](https://help.syncfusion.com/api/js/ejgrid#members:columns-headertemplateid "headerTemplateID") property of the [`columns`](https://help.syncfusion.com/api/js/ejgrid#members:columns "columns").
+The template design that applies on for the column header. To render template, set [`headerTemplateID`](https://help.syncfusion.com/api/angular/grid#members:columns-headertemplateid "headerTemplateID") property of the [`columns`](https://help.syncfusion.com/api/angular/grid#members:columns "columns").
 
 
-N> It's a standard way to enclose the [`template`](https://help.syncfusion.com/api/js/ejgrid#members:columns-template "template") within the `script` tag with `type` as `text/x-jsrender`.
+N> It's a standard way to enclose the [`template`](https://help.syncfusion.com/api/angular/grid#members:columns-template "template") within the `script` tag with `type` as `text/x-jsrender`.
 
 The following code example describes the above behavior.
 
@@ -244,15 +244,15 @@ The following output is displayed as a result of the above code example.
 
 ## Text alignment
 
-You can [align](https://help.syncfusion.com/api/js/ejgrid#members:columns-textalign "align") both content and header text of particular column using [`textAlign`](https://help.syncfusion.com/api/js/ejgrid#members:columns-textalign "textAlign") property of [`columns`](https://help.syncfusion.com/api/js/ejgrid#members:columns "columns"). There are four possible ways to align content and header text of column, they are 
+You can [align](https://help.syncfusion.com/api/angular/grid#members:columns-textalign "align") both content and header text of particular column using [`textAlign`](https://help.syncfusion.com/api/angular/grid#members:columns-textalign "textAlign") property of [`columns`](https://help.syncfusion.com/api/angular/grid#members:columns "columns"). There are four possible ways to align content and header text of column, they are 
 
 1. Right
 2. Left
 3. Center
 4. Justify
 
-N> 1. For [`textAlign`](https://help.syncfusion.com/api/js/ejgrid#members:columns-textalign "textAlign") property you can assign either `string` value ("right") or `enum` value (`ej.TextAlign.Right`).
-N> 2. The [`textAlign`](https://help.syncfusion.com/api/js/ejgrid#members:columns-textalign "textAlign") property will affect both content and header text of the grid.
+N> 1. For [`textAlign`](https://help.syncfusion.com/api/angular/grid#members:columns-textalign "textAlign") property you can assign either `string` value ("right") or `enum` value (`ej.TextAlign.Right`).
+N> 2. The [`textAlign`](https://help.syncfusion.com/api/angular/grid#members:columns-textalign "textAlign") property will affect both content and header text of the grid.
 
 The following code example describes the above behavior.
 
@@ -292,9 +292,9 @@ The following output is displayed as a result of the above code example.
 
 ## Format
 
-[Format](https://help.syncfusion.com/api/js/ejgrid#members:columns-format "Format") is the process of customizing the particular column data with specified jQuery recognized globalize formats, such as currency, numeric, decimal, percentage or dates. The globalize format can be specified by using [`format`](https://help.syncfusion.com/api/js/ejgrid#members:columns-format "format") property of [`columns`](https://help.syncfusion.com/api/js/ejgrid#members:columns "columns").
+[Format](https://help.syncfusion.com/api/angular/grid#members:columns-format "Format") is the process of customizing the particular column data with specified jQuery recognized globalize formats, such as currency, numeric, decimal, percentage or dates. The globalize format can be specified by using [`format`](https://help.syncfusion.com/api/angular/grid#members:columns-format "format") property of [`columns`](https://help.syncfusion.com/api/angular/grid#members:columns "columns").
 
-The [`format`](https://help.syncfusion.com/api/js/ejgrid#members:columns-format "format") value should be wrapped within "{0:" and "}". (For ex: "{0:C3}"). The [data format](https://github.com/jquery/globalize/tree/v0.1.1#format "data format") strings are available for the Date and Number types.
+The [`format`](https://help.syncfusion.com/api/angular/grid#members:columns-format "format") value should be wrapped within "{0:" and "}". (For ex: "{0:C3}"). The [data format](https://github.com/jquery/globalize/tree/v0.1.1#format "data format") strings are available for the Date and Number types.
 
 The following code example describes the above behavior.
 
@@ -333,7 +333,7 @@ The following output is displayed as a result of the above code example.
 
 ## Width
 
-You can specify the width for particular column by setting [`width`](https://help.syncfusion.com/api/js/ejgrid#members:columns-width "width") property of [`columns`](https://help.syncfusion.com/api/js/ejgrid#members:columns "columns") as in pixel (ex: 100) or in percentage (ex: 40%).
+You can specify the width for particular column by setting [`width`](https://help.syncfusion.com/api/angular/grid#members:columns-width "width") property of [`columns`](https://help.syncfusion.com/api/angular/grid#members:columns "columns") as in pixel (ex: 100) or in percentage (ex: 40%).
 
 The following code example describes the above behavior.
 
@@ -374,7 +374,7 @@ The following output is displayed as a result of the above code example.
 
 ## Resize to fit 
 
-The [`allowResizeToFit`](https://help.syncfusion.com/api/js/ejgrid#members:allowresizetofit "allowResizeToFit") property enable the Grid to set width to columns based on maximum width of the particular column's content to facilitate full visibility of data in all the grid rows. This automatic behavior is applicable only for the columns which does not have width specified. 
+The [`allowResizeToFit`](https://help.syncfusion.com/api/angular/grid#members:allowresizetofit "allowResizeToFit") property enable the Grid to set width to columns based on maximum width of the particular column's content to facilitate full visibility of data in all the grid rows. This automatic behavior is applicable only for the columns which does not have width specified. 
 
 On columns where "width is defined", double click on the particular column header's resizer symbol to resize the column to show the whole text. For example, refer the "ShipCity" column in the below code snippet and output screen shot. 
 
@@ -415,7 +415,7 @@ The following output is displayed as a result of the above code example.
 
 ## Reorder
 
-Reordering can be done by drag and drop the particular column header from one index to another index within the Grid. Reordering can be enabled by setting [`allowReordering`](https://help.syncfusion.com/api/js/ejgrid#members:allowreordering "allowReordering") property as `true`.
+Reordering can be done by drag and drop the particular column header from one index to another index within the Grid. Reordering can be enabled by setting [`allowReordering`](https://help.syncfusion.com/api/angular/grid#members:allowreordering "allowReordering") property as `true`.
 
 The following code example describes the above behavior.
 
@@ -454,7 +454,7 @@ The following output is displayed as a result of the above code example.
 
 ## Visibility
 
-You can hide particular column in Grid view by setting [`visible`](https://help.syncfusion.com/api/js/ejgrid#members:columns-visible "visible") property of it as `false`.
+You can hide particular column in Grid view by setting [`visible`](https://help.syncfusion.com/api/angular/grid#members:columns-visible "visible") property of it as `false`.
 
 The following code example describes the above behavior.
 
@@ -493,7 +493,7 @@ The following output is displayed as a result of the above code example.
 
 ## Unbound Column
 
-You can define the unbound columns in Grid by not defining [`field`](https://help.syncfusion.com/api/js/ejgrid#members:columns-field "field") property for that particular column. Value for these columns can be populated either manually using [`queryCellInfo`](https://help.syncfusion.com/api/js/ejgrid#events:querycellinfo "queryCellInfo") event or by using column [`template`](https://help.syncfusion.com/api/js/ejgrid#members:columns-template "template") or by column [`format`](https://help.syncfusion.com/api/js/ejgrid#members:columns-format "format") property.
+You can define the unbound columns in Grid by not defining [`field`](https://help.syncfusion.com/api/angular/grid#members:columns-field "field") property for that particular column. Value for these columns can be populated either manually using [`queryCellInfo`](https://help.syncfusion.com/api/angular/grid#events:querycellinfo "queryCellInfo") event or by using column [`template`](https://help.syncfusion.com/api/angular/grid#members:columns-template "template") or by column [`format`](https://help.syncfusion.com/api/angular/grid#members:columns-format "format") property.
 
 N> Editing, grouping, filtering, sorting, summary and searching support are not available for unbound columns.
 
@@ -600,7 +600,7 @@ The following output is displayed as a result of the above code example.
 
 ## Controlling Grid actions
 
-You can control the Grid actions of a particular column by setting [`allowSorting`](https://help.syncfusion.com/api/js/ejgrid#members:allowsorting "allowSorting"), [`allowGrouping`](https://help.syncfusion.com/api/js/ejgrid#members:allowgrouping "allowGrouping"), `allowFiltering`, [`allowResizing`](https://help.syncfusion.com/api/js/ejgrid#members:allowresizing "allowResizing") and [`allowEditing`](https://help.syncfusion.com/api/js/ejgrid#members:editsettings-allowediting "allowEditing") properties.
+You can control the Grid actions of a particular column by setting [`allowSorting`](https://help.syncfusion.com/api/angular/grid#members:allowsorting "allowSorting"), [`allowGrouping`](https://help.syncfusion.com/api/angular/grid#members:allowgrouping "allowGrouping"), `allowFiltering`, [`allowResizing`](https://help.syncfusion.com/api/angular/grid#members:allowresizing "allowResizing") and [`allowEditing`](https://help.syncfusion.com/api/angular/grid#members:editsettings-allowediting "allowEditing") properties.
 
 The following code example describes the above behavior.
 
@@ -637,7 +637,7 @@ The following code example describes the above behavior.
 
 ## Read only
 
-To make a column as "read-only" then set [`allowEditing`](https://help.syncfusion.com/api/js/ejgrid#members:editsettings-allowediting "allowEditing") property of [`columns`](https://help.syncfusion.com/api/js/ejgrid#members:columns "columns") as `false`.
+To make a column as "read-only" then set [`allowEditing`](https://help.syncfusion.com/api/angular/grid#members:editsettings-allowediting "allowEditing") property of [`columns`](https://help.syncfusion.com/api/angular/grid#members:columns "columns") as `false`.
 
 The following code example describes the above behavior.
 
@@ -678,7 +678,7 @@ The following output is displayed as a result of the above code example.
 
 ## Expression Column
 
-[Expression](https://help.syncfusion.com/api/js/ejgrid#members:columns-template "Expression") column is possible only for [`template`](https://help.syncfusion.com/api/js/ejgrid#members:columns-template "template") column.
+[Expression](https://help.syncfusion.com/api/angular/grid#members:columns-template "Expression") column is possible only for [`template`](https://help.syncfusion.com/api/angular/grid#members:columns-template "template") column.
 
 You can use JsRender syntax in the template.For more information about JsRender syntax, please refer [the link](http://www.jsviews.com/#jsrapi "the link"). 
 
@@ -734,14 +734,14 @@ The following output is displayed as a result of the above code example.
 
 ### Default action buttons
 
-Using [`command`](https://help.syncfusion.com/api/js/ejgrid#members:columns-commands "command") column, you can add CRUD action buttons as one of the Grid column, through [`type`](https://help.syncfusion.com/api/js/ejgrid#members:columns-commands-type "type") property of [`commands`](https://help.syncfusion.com/api/js/ejgrid#members:columns-commands "commands"). The type property supports the below default [`UnboundType`](https://help.syncfusion.com/api/js/ejgrid#members:columns-commands-type "UnboundType") buttons.
+Using [`command`](https://help.syncfusion.com/api/angular/grid#members:columns-commands "command") column, you can add CRUD action buttons as one of the Grid column, through [`type`](https://help.syncfusion.com/api/angular/grid#members:columns-commands-type "type") property of [`commands`](https://help.syncfusion.com/api/angular/grid#members:columns-commands "commands"). The type property supports the below default [`UnboundType`](https://help.syncfusion.com/api/angular/grid#members:columns-commands-type "UnboundType") buttons.
 
 1. edit
 2. save
 3. delete
 4. cancel
 
-Through [`buttonOptions`](https://help.syncfusion.com/api/js/ejgrid#members:columns-commands-buttonoptions "buttonOptions") property of [`commands`](https://help.syncfusion.com/api/js/ejgrid#members:columns-commands "commands"), you can specify all the button options which are supported by Essential Studio JavaScript [`Button`](https://help.syncfusion.com/api/js/ejbutton# "Button") control. 
+Through [`buttonOptions`](https://help.syncfusion.com/api/angular/grid#members:columns-commands-buttonoptions "buttonOptions") property of [`commands`](https://help.syncfusion.com/api/angular/grid#members:columns-commands "commands"), you can specify all the button options which are supported by Essential Studio JavaScript [`Button`](https://help.syncfusion.com/api/js/ejbutton# "Button") control. 
 
 The following code example describes the above behavior.
 
@@ -786,9 +786,9 @@ The following output is displayed as a result of the above code example.
 
 ### Custom buttons
 
-You can add custom button in the command column by specifying the [`type`](https://help.syncfusion.com/api/js/ejgrid#members:columns-commands-type "type") property of [`commands`](https://help.syncfusion.com/api/js/ejgrid#members:columns-commands "commands") as "empty" or any other `string` which does not corresponds to default [`UnboundType`](https://help.syncfusion.com/api/js/ejgrid#members:columns-commands-type "UnboundType") buttons.
+You can add custom button in the command column by specifying the [`type`](https://help.syncfusion.com/api/angular/grid#members:columns-commands-type "type") property of [`commands`](https://help.syncfusion.com/api/angular/grid#members:columns-commands "commands") as "empty" or any other `string` which does not corresponds to default [`UnboundType`](https://help.syncfusion.com/api/angular/grid#members:columns-commands-type "UnboundType") buttons.
 
-N> 1. For [`type`](https://help.syncfusion.com/api/js/ejgrid#members:columns-commands-type "type") property you can assign either `string` value ("edit") or `enum` value (`ej.Grid.UnboundType.Edit`).
+N> 1. For [`type`](https://help.syncfusion.com/api/angular/grid#members:columns-commands-type "type") property you can assign either `string` value ("edit") or `enum` value (`ej.Grid.UnboundType.Edit`).
 N> 2. In command column you can add only buttons.
 
 The following code example describes the above behavior.
@@ -840,11 +840,11 @@ The following output is displayed as a result of the above code example.
 
 ## Column Chooser
 
-Column chooser contains the list of all the columns which are defined in the [`columns`](https://help.syncfusion.com/api/js/ejgrid#members:columns "columns") property. Using this you can control the visibility of columns in Grid. You can prevent to show the particular column name in column chooser by setting [`showInColumnChooser`](https://help.syncfusion.com/api/js/ejgrid#members:showcolumnchooser "showInColumnChooser") property of [`columns`](https://help.syncfusion.com/api/js/ejgrid#members:columns "columns") as `false`. 
+Column chooser contains the list of all the columns which are defined in the [`columns`](https://help.syncfusion.com/api/angular/grid#members:columns "columns") property. Using this you can control the visibility of columns in Grid. You can prevent to show the particular column name in column chooser by setting [`showInColumnChooser`](https://help.syncfusion.com/api/angular/grid#members:showcolumnchooser "showInColumnChooser") property of [`columns`](https://help.syncfusion.com/api/angular/grid#members:columns "columns") as `false`. 
 
 
 
-Column Chooser would be shown in the top right corner of Grid. To enable column chooser, set [`showColumnChooser`](https://help.syncfusion.com/api/js/ejgrid#members:showcolumnchooser "showColumnChooser") property as `true`. 
+Column Chooser would be shown in the top right corner of Grid. To enable column chooser, set [`showColumnChooser`](https://help.syncfusion.com/api/angular/grid#members:showcolumnchooser "showColumnChooser") property as `true`. 
 
 The following code example describes the above behavior.
 
@@ -883,11 +883,11 @@ The following output is displayed as a result of the above code example.
 
 ## Foreign Key Column
 
-Lookup data source can be bound to [`dataSource`](https://help.syncfusion.com/api/js/ejgrid#members:datasource "dataSource") property of [`columns`](https://help.syncfusion.com/api/js/ejgrid#members:columns "columns"). Data [`field`](https://help.syncfusion.com/api/js/ejgrid#members:columns-field "field") and `text` can be set using [`foreignKeyField`](https://help.syncfusion.com/api/js/ejgrid#members:columns-foreignkeyfield "foreignKeyField") and [`foreignKeyValue`](https://help.syncfusion.com/api/js/ejgrid#members:columns-foreignkeyvalue "foreignKeyValue") property of [`columns`](https://help.syncfusion.com/api/js/ejgrid#members:columns "columns").
+Lookup data source can be bound to [`dataSource`](https://help.syncfusion.com/api/angular/grid#members:datasource "dataSource") property of [`columns`](https://help.syncfusion.com/api/angular/grid#members:columns "columns"). Data [`field`](https://help.syncfusion.com/api/angular/grid#members:columns-field "field") and `text` can be set using [`foreignKeyField`](https://help.syncfusion.com/api/angular/grid#members:columns-foreignkeyfield "foreignKeyField") and [`foreignKeyValue`](https://help.syncfusion.com/api/angular/grid#members:columns-foreignkeyvalue "foreignKeyValue") property of [`columns`](https://help.syncfusion.com/api/angular/grid#members:columns "columns").
 
-In the [`dataSource`](https://help.syncfusion.com/api/js/ejgrid#members:datasource "dataSource") property, we can bound local and remote data.
+In the [`dataSource`](https://help.syncfusion.com/api/angular/grid#members:datasource "dataSource") property, we can bound local and remote data.
 
-I> For foreign key column the sorting and grouping is based on [`foreignKeyField`](https://help.syncfusion.com/api/js/ejgrid#members:columns-foreignkeyfield "foreignKeyField") instead of [`foreignKeyValue`](https://help.syncfusion.com/api/js/ejgrid#members:columns-foreignkeyvalue "foreignKeyValue").
+I> For foreign key column the sorting and grouping is based on [`foreignKeyField`](https://help.syncfusion.com/api/angular/grid#members:columns-foreignkeyfield "foreignKeyField") instead of [`foreignKeyValue`](https://help.syncfusion.com/api/angular/grid#members:columns-foreignkeyvalue "foreignKeyValue").
 
 N> In remote data, server should be configured to perform select and filter operations since the Grid will try to fetch required columns using select operation and required data using filter operation.
 
@@ -930,7 +930,7 @@ The following output is displayed as a result of the above code example.
 
 ## Customize column
 
-You can [customize](https://help.syncfusion.com/api/js/ejgrid#members:columns-cssclass "customize") the header and content of the particular column by [`cssClass`](https://help.syncfusion.com/api/js/ejgrid#members:columns-cssclass "cssClass") property of the column.
+You can [customize](https://help.syncfusion.com/api/angular/grid#members:columns-cssclass "customize") the header and content of the particular column by [`cssClass`](https://help.syncfusion.com/api/angular/grid#members:columns-cssclass "cssClass") property of the column.
 
 The following code example describes the above behavior.
 
@@ -974,9 +974,9 @@ The following output is displayed as a result of the above code example.
 
 ## Type
 
-Used to define the type of the particular column data. If the [`type`](https://help.syncfusion.com/api/js/ejgrid#members:columns-type "type") property of [`columns`](https://help.syncfusion.com/api/js/ejgrid#members:columns "columns") is not specified then its type is automatically defined based on the first row data of that column.
+Used to define the type of the particular column data. If the [`type`](https://help.syncfusion.com/api/angular/grid#members:columns-type "type") property of [`columns`](https://help.syncfusion.com/api/angular/grid#members:columns "columns") is not specified then its type is automatically defined based on the first row data of that column.
 
-N> The [`type`](https://help.syncfusion.com/api/js/ejgrid#members:columns-type "type") is needed for filtering feature when first row of the data is "null" or "empty".
+N> The [`type`](https://help.syncfusion.com/api/angular/grid#members:columns-type "type") is needed for filtering feature when first row of the data is "null" or "empty".
 
 The available column data type is tabulated as follows.
 
@@ -1058,13 +1058,13 @@ The following output is displayed as a result of the above code example.
 
 ## Column Layout
 
-You can set the Grid's columns layout based on either Grid width or its columns width using [`columnLayout`](https://help.syncfusion.com/api/js/ejgrid#members:columnlayout "columnLayout") property of Grid. There are two ways to set the column layout, they are 
+You can set the Grid's columns layout based on either Grid width or its columns width using [`columnLayout`](https://help.syncfusion.com/api/angular/grid#members:columnlayout "columnLayout") property of Grid. There are two ways to set the column layout, they are 
 
 1. Auto
 2. Fixed
 
-N> 1. For [`columnLayout`](https://help.syncfusion.com/api/js/ejgrid#members:columnlayout "columnLayout") property you can assign either `string` value ("fixed") or `enum` value (`ej.Grid.ColumnLayout.Fixed`).
-N> 2. Default [`columnLayout`](https://help.syncfusion.com/api/js/ejgrid#members:columnlayout "columnLayout") is `auto` which is set the columns layout based on the Grid's width.
+N> 1. For [`columnLayout`](https://help.syncfusion.com/api/angular/grid#members:columnlayout "columnLayout") property you can assign either `string` value ("fixed") or `enum` value (`ej.Grid.ColumnLayout.Fixed`).
+N> 2. Default [`columnLayout`](https://help.syncfusion.com/api/angular/grid#members:columnlayout "columnLayout") is `auto` which is set the columns layout based on the Grid's width.
 
 The following code example describes the above behavior.
 
