@@ -111,8 +111,8 @@ import { SliderModule } from '@syncfusion/ej2-ng-inputs';
 export class DefaultSliderComponent {
     public value: number = '60';
     public default : string = 'default';  
-    public minvalue : string = '40';
-    public maxvalue : string = '80';
+    public minValue : string = '40';
+    public maxValue : string = '80';
 
 }
 </script>
@@ -129,8 +129,8 @@ import { SliderModule } from '@syncfusion/ej2-ng-inputs';
 export class RangeSliderComponent {
     public values: number = [10,90];
     public range: string ='range';
-    public minvalue : string = '10';
-    public maxvalue : string = '90';
+    public minValue : string = '10';
+    public maxValue : string = '90';
     
 }
 </script>

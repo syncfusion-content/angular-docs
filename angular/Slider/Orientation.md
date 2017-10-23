@@ -56,7 +56,7 @@ import { SliderModule } from '@syncfusion/ej2-ng-inputs';
     templateUrl: 'app/components/slider/slider.component.html'',
 })
 export class DefaultSliderComponent {
-    public slidevalue: number = 60; 
+    public slideValue: number = 60; 
     public height: number = 16;
     public width: number = 150;
     public orientation:'vertical';

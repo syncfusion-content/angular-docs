@@ -43,8 +43,8 @@ import { SliderModule } from '@syncfusion/ej2-ng-inputs';
 export class DefaultSliderComponent {
     public value: number = '60';
     public range: string ='range';
-    public maxvalue : string ='80';
-    public minvalue : string ='40';
+    public maxValue : string ='80';
+    public minValue : string ='40';
     public ticks: Object = {
         placement: 'both',
         largeStep: 15,
@@ -92,8 +92,8 @@ import { SliderModule } from '@syncfusion/ej2-ng-inputs';
 export class DefaultSliderComponent {
     public value: number = '60';
     public range: string ='range';
-    public maxvalue : string ='80';
-    public minvalue : string ='40';
+    public maxValue : string ='80';
+    public minValue : string ='40';
     public ticks: Object = {
         placement: 'both',
         largeStep: 15,
@@ -144,8 +144,8 @@ import { SliderModule } from '@syncfusion/ej2-ng-inputs';
 export class DefaultSliderComponent {
     public value: number = '60';
     public range: string ='range';
-    public maxvalue : string ='80';
-    public minvalue : string ='40';
+    public maxValue : string ='80';
+    public minValue : string ='40';
     public ticks: Object = {
         placement: 'both',
         largeStep: 15,
