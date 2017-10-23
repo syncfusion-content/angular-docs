@@ -35,7 +35,7 @@ import { TreeViewComponent } from '@syncfusion/ej2-ng-navigations';
 export class AppComponent {
     constructor() {
     }
-    //define the data source
+      //define the data source
     public continents:Object[] = [
         {
         code: 'AF', name: 'Africa', countries: [
