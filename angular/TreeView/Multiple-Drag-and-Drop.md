@@ -26,7 +26,7 @@ import { Component, Inject } from '@angular/core';
 
 @Component({
     selector: 'control-content',
-    templateUrl: 'app/components/treeview/dragdrop.component.html'
+    templateUrl: 'app/components/treeview/dragDrop.component.html'
 })
 export class DragdropTreeViewComponent {
 

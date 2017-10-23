@@ -21,7 +21,7 @@ N>  "Ul-li" template option, state has been persisted by index.
 
 TreeView stores its model in local storage / cookies of browser before page refreshes and reinitialized with their stored model after refresh.
 
-% highlight html %}
+{% highlight html %}
 
  <ej-treeview id="dragdrop" [fields]='field' [enablePersistence]='enablePersistence'></ej-treeview>
 

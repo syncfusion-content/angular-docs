@@ -170,7 +170,7 @@ export class editingTreeViewComponent {
         }
     ];
     public field:Object ={ dataSource: this.hierarchicalData, id: 'id', text: 'name', child: 'child', selected: 'isSelected' };
-    public allowediting:boolean = true;
+    public allowEditing:boolean = true;
 }
 
 {% endhighlight %}
