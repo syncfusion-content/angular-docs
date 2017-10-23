@@ -54,7 +54,7 @@ Refer the below German culture file in head section of HTML page after the refer
 
 {% highlight html %}
 
-<input id="maskedit" ej-maskedit [value]="value" [maskFormat]="format" [locale]="locale" [inputMode]="inputMode" />
+<input id="maskEdit" ej-maskedit [value]="value" [maskFormat]="format" [locale]="locale" [inputMode]="inputMode" />
 
 {% endhighlight %}
 
@@ -64,7 +64,7 @@ import { Component } from '@angular/core';
 
 @Component({
   selector: 'ej-app',
-  templateUrl: 'src/maskedit/maskedit.component.html'
+  templateUrl: 'src/maskEdit/maskEdit.component.html'
 })
 export class MaskEditComponent {
     public value: string;
@@ -85,10 +85,10 @@ The output for **MaskEdit** with Globalization.
 
 ![](/js/MaskEdit/Globalization-Support_images/Globalization-Support_img1.jpg)
 
-MaskEdit with de-DE locale
+MaskEdit with `de-DE` locale
 {:.caption}
 
 ![](/js/MaskEdit/Globalization-Support_images/Globalization-Support_img2.jpg)
 
-MaskEdit with en-US locale
+MaskEdit with `en-US` locale
 {:.caption}
