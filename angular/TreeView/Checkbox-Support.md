@@ -81,7 +81,7 @@ export class AppComponent {
     },
     {
         code: 'AN', name: 'Antarctica', countries: [
-            { code: 'BVT', name: 'Bouvet Island' },
+            { code: 'BUT', name: 'Paulet Island' },
             { code: 'ATF', name: 'French Southern Lands' }
         ]
     }
