@@ -79,5 +79,7 @@ export class DragdropTreeViewComponent {
 
 </script>
 
+{% endhighlight %}
+
 For more details about multiple drag and drop in TreeView, refer the sample [here](http://jsplayground.syncfusion.com/Sync_1mo2awgk).
 
