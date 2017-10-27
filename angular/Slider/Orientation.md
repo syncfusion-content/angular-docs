@@ -63,6 +63,8 @@ export class DefaultSliderComponent {
 }
 </script>
 
+{% endhighlight %}
+
 Execute the above code example to render the following output.
 
 ![](Orientation_images/orientation_img1.png) 
