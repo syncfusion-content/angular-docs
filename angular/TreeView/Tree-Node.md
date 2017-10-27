@@ -173,6 +173,8 @@ export class editingTreeViewComponent {
     public allowEditing:boolean = true;
 }
 
+<script>
+
 {% endhighlight %}
 
 
