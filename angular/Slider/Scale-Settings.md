@@ -122,6 +122,8 @@ The following steps explains you on how to configure the smallStep and largeStep
 
 In an **HTML** page, specify the **<div>** elements to render the “Default Slider” and “Range Slider”
 
+{% highlight html %}
+
 <div>Default Slider</div>
 <ej-slider id='defaultSlider' [type]='default' [value]='value' [max]='maxvalue' [min]='minvalue' [ticks]='ticks'></ej-slider>
 
