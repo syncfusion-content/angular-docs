@@ -84,3 +84,9 @@ export class enablePersistenceTreeViewComponent {
     public field:Object ={ dataSource: this.hierarchicalData, id: 'id', text: 'name', child: 'child', selected: 'isSelected' };
     public enablePersistence:boolean = true;
 }
+
+<script>
+
+{% endhighlight %}
+
+
