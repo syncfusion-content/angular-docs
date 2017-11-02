@@ -302,4 +302,4 @@ export class GroupButtonComponent {
     }
 }
 
-{% endhighlight %
+{% endhighlight %}
