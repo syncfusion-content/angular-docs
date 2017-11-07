@@ -68,7 +68,7 @@ In the HTML page, add a &lt;div&gt; element to configure Scroller widget.
 
 {% endhighlight %}
 
-{% highlight html %}
+{% highlight javascript %}
 
 import { Component } from '@angular/core';
 @Component({
