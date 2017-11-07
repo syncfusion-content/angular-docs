@@ -241,6 +241,8 @@ module.exports = (env) => {
 
 {% endhighlight %}
 
+N> we can refer different theme files from `syncfusion-javascript` package installed location `<sample_location>/node_modules/syncfusion-javascript/Content/ej/web`.
+
 * After adding the script in `package.json` file, Run the below command in your command prompt.
 
 {% highlight javascript %}
