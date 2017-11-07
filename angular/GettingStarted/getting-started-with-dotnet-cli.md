@@ -230,11 +230,14 @@ module.exports = (env) => {
         . . .
 {% endhighlight %}
 
-* To bundle the Syncfusion JavaScript Theme file, add the below script in `package.json` file.
+* To bundle the Syncfusion JavaScript Theme file, add the below script `build` under `scripts` section in `package.json` file.
 
 {% highlight javascript %}
 
-"build": "webpack --config webpack.config.vendor.js && webpack"
+ "scripts": {
+    "test": "karma start ClientApp/test/karma.conf.js",
+    "build": "webpack --config webpack.config.vendor.js && webpack"
+  },
 
 {% endhighlight %}
 
