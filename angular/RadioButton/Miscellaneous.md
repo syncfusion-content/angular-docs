@@ -115,6 +115,7 @@ Set name and value for each radio button control as follows.
         </td>
     </tr>
     </table>
+{% endhighlight %}
 
 {% highlight html %}
 

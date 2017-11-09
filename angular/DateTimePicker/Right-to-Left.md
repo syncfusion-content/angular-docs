@@ -22,7 +22,7 @@ Add the following code in your **HTML** page.
 {% endhighlight %}
 
 
-{% highlight html %}s
+{% highlight html %}
 
 import { Component } from '@angular/core';
 @Component({

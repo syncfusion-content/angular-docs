@@ -519,7 +519,7 @@ In the **HTML** page, add the following button elements to configure **Toggle Bu
 
 {% endhighlight %}
 
-{% highlight html }
+{% highlight html %}
 
 import { Component } from '@angular/core';
 @Component({
