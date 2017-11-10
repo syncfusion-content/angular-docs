@@ -188,7 +188,7 @@ In the **HTML** page, add the following input elements to configure **Checkbox**
 {% endhighlight %}
 
 
-{% highlight html %}%}
+{% highlight html %}
 
 import {Component} from '@angular/core';
 @Component({
