@@ -42,7 +42,7 @@ Setting a ButtonMode to radio, we can perform the only single action with all re
 
 {% endhighlight %}
 
-{% highlight html %}
+{% highlight javascript %}
     
 import { Component } from '@angular/core';
 @Component({
@@ -86,7 +86,7 @@ export class GroupButtonComponent {
 
 {% endhighlight %}
 
-{% highlight html %}
+{% highlight javascript %}
 
        import { Component } from '@angular/core';
 @Component({
@@ -138,7 +138,7 @@ This property will accept the array values and its value will be differ based on
 
 ** Setting a selectedItemIndex for radio button mode**
 
-{% highlight html %}
+{% highlight javascript %}
 
 import { Component } from '@angular/core';
 @Component({
@@ -190,7 +190,7 @@ Button items in GroupButton can be selected or deselected using available public
 
 ** Setting a selectedItemIndex for radio button mode**
 
-{% highlight html %}
+{% highlight javascript %}
 
 import { Component } from '@angular/core';
 @Component({
@@ -237,7 +237,7 @@ export class GroupButtonComponent {
 
 {% endhighlight %}
 
-{% highlight html %}
+{% highlight javascript %}
 
 import { Component } from '@angular/core';
 @Component({
@@ -286,7 +286,7 @@ You can select or deselect the button items based on id of the button items also
 
 {% endhighlight %}
 
-{% highlight html %}
+{% highlight javascript %}
 
 import { Component } from '@angular/core';
 @Component({
