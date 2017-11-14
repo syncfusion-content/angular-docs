@@ -180,7 +180,7 @@ You can select the cells programmatically using [selectCells](/api/js/ejgantt#me
 
 {% highlight javascript %}
 
-<button id="selectcell" (click)="selectcell($event)">Selectcells</button>
+<button id="SelectMultipleCell" (click)="SelectMultipleCell($event)">SelectMultipleCells</button>
 
 <ej-gantt id="GanttControl"
     //...>
@@ -200,7 +200,7 @@ export class AppComponent {
     constructor() {
         //...
     }
-    public selectcell(event) {
+    public SelectMultipleCell(event) {
         //create Gantt object
         var ganttObj = $("#GanttControl").data("ejGantt");
         cellIndex = [{
