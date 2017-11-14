@@ -102,7 +102,7 @@ The following code example explains how to enable multiple selection in Gantt.
 
 The output of the Gantt with multiple row selection is as follows.
 
-![](/js/Gantt/Selection_images/Selection_img5.png)
+![](Selection_images/Selection_img5.png)
 
 To enable multiple selection, you can set `selectionType` property either as `multiple` or enumeration value `ej.Gantt.SelectionType.Multiple`.
 
@@ -235,4 +235,4 @@ The following code example describes how to enable multiple selection in Gantt.
 
 The following output is displayed the result of multiple selection in touch device environment.
 
-![](/js/Gantt/Selection_images/Selection_img6.png)
+![](Selection_images/Selection_img6.png)

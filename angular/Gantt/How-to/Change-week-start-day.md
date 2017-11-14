@@ -50,7 +50,7 @@ export class AppComponent {
 
 {% endhighlight %}
 
-![](/js/Gantt/How-to/Change-Weekstart-Day-images/image-1.png)
+![](How-to/Change-Weekstart-Day-images/image-1.png)
 
 ## Using start date mode as Year
 
@@ -92,6 +92,6 @@ export class AppComponent {
 
 {% endhighlight %}
 
-![](/js/Gantt/How-to/Change-Weekstart-Day-images/image-2.png)
+![](How-to/Change-Weekstart-Day-images/image-2.png)
 
 By default _enableMonthStart property will be true. Week header in month schedule mode will be rendered with month/year start day. To customize the week start day in month mode we need to set _enableMonthStart as false.
