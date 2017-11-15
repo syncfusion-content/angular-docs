@@ -87,6 +87,61 @@ export class AppComponent {
 
 {% endhighlight %}
 
+### Multiple row selection
+
+It is also possible to select multiple rows by setting `selectionType` as `multiple`. You can select more than one row by holding down `CTRL` key while selecting multiple rows.
+The following code example explains how to enable multiple selection in Gantt.
+
+{% highlight javascript %}
+
+<ej-gantt id="GanttControl" selectionMode="row" selectionType= "multiple"
+    //...>
+</ej-gantt>
+
+{% endhighlight %}
+
+The output of the Gantt with multiple row selection is as follows.
+
+![](Selection_images/Selection_img5.png)
+
+To enable multiple selection, you can set `selectionType` property either as `multiple` or enumeration value `ej.Gantt.SelectionType.Multiple`.
+
+### Selecting multiple rows programmatically 
+
+You can also select multiple rows programmatically  by using `selectMultipleRows` public method. The following code example explains how to enable multiple selection in Gantt.
+
+{% highlight javascript %}
+
+<button id="selectMultipleRows" (click)="selectMultipleRows($event)">selectMultipleRows</button>
+
+<ej-gantt id="GanttControl"
+    //...>
+</ej-gantt>
+
+{% endhighlight %}
+
+{% highlight javascript %}
+
+import {Component} from '@angular/core';
+
+@Component({
+    selector: 'ej-app',
+    templateUrl: 'app/app.component.html',
+})
+export class AppComponent {
+    constructor() {
+        //...
+    }
+    public selectMultipleRows(event) {
+        //create Gantt object
+        var ganttObj = $("#GanttControl").data("ejGantt"),
+        multipleRowIndex = [1,0,5,7];   
+        ganttObj.selectMultipleRows(multipleRowIndex);
+    }
+}
+
+{% endhighlight %}
+
 ## Cell selection
 
 You can select a cell in Gantt by setting [selectionMode](/api/js/ejgantt#members:selectionmode) property as ‘cell’. And you can able to get the selected cell information using selectedCellIndexes property from the Gantt object. selectedCellIndexes is an object collection, which has the cell index and row index information of the selected cells.
@@ -125,7 +180,7 @@ You can select the cells programmatically using [selectCells](/api/js/ejgantt#me
 
 {% highlight javascript %}
 
-<button id="selectcells" (click)="selectcells($event)">Selectcells</button>
+<button id="SelectMultipleCell" (click)="SelectMultipleCell($event)">SelectMultipleCells</button>
 
 <ej-gantt id="GanttControl"
     //...>
@@ -145,7 +200,7 @@ export class AppComponent {
     constructor() {
         //...
     }
-    public selectcells(event) {
+    public SelectMultipleCell(event) {
         //create Gantt object
         var ganttObj = $("#GanttControl").data("ejGantt");
         cellIndex = [{
@@ -163,3 +218,21 @@ export class AppComponent {
 
 
 ![](Selection_images/Selection_img4.png)
+
+## MultiSelection – Touch Option
+
+It is possible to select rows using touch action in Gantt. Gantt provides support for both single selection and multiple row selection using touch action. For multiple row selection, when we tap on a cell, a helper icon will be displayed using which we can select multiple rows.
+
+The following code example describes how to enable multiple selection in Gantt.
+
+{% highlight javascript %}
+
+<ej-gantt id="GanttControl" selectionMode="row" selectionType= "multiple"
+    //...>
+</ej-gantt>
+
+{% endhighlight %}
+
+The following output is displayed the result of multiple selection in touch device environment.
+
+![](Selection_images/Selection_img6.png)
