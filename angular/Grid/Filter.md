@@ -78,6 +78,8 @@ There is an option to show or hide the additional filter options in the menu by 
 
 N> For `filterType` property you can assign either `string` value ("menu") or `enum` value (`ej.Grid.FilterType.Menu`).
 
+We have the support for filtering the specified range of values by using the `between` operator for the column type number and date.
+
 The following code example describes the above behavior.
 
 
