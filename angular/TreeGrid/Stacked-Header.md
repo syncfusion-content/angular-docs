@@ -98,7 +98,7 @@ write the below code in app.component.css file.
 
 {% highlight html %}
 .stack {
-            background-color: red; 
+            background-color: #ffb3b3; 
         }
 {% endhighlight %}
 
