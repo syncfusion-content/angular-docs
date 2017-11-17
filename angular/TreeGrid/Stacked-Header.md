@@ -10,7 +10,7 @@ api: /api/js/ejtreegrid
 ---
 # Stacked Headers
 
-The stacked headers helps you to group the logical columns in treegrid. It can be shown by setting `showStackedHeader` as `true` and by defining `stackedHeaderRows`.
+The stacked headers helps you to group the logical columns in TreeGrid. It can be shown by setting `showStackedHeader` as `true` and by defining `stackedHeaderRows`.
 
 ## Adding Stacked header columns
 
