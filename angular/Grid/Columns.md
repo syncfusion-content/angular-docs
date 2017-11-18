@@ -63,7 +63,7 @@ The following code example describes the above behavior.
     <e-columns>
        <e-column field="OrderID"  headerText="OrderID"></e-column>
        <e-column field="EmployeeID" headerText="Emp ID"></e-column>
-       <e-column field="Frieght"  headerText="Frieght"></e-column>
+       <e-column field="Freight"  headerText="Freight"></e-column>
        <e-column field="ShipCountry" headerText="Country"></e-column>
        <e-column field="ShipCity"  headerText="City"></e-column>
     </e-columns>
@@ -111,7 +111,7 @@ The following code example describes the above behavior.
     <e-columns>
        <e-column field="OrderID"  headerText="OrderID"></e-column>
        <e-column field="EmployeeID" headerText="Emp ID" [headerTextAlign]="right"></e-column>
-       <e-column field="Frieght"  headerText="Frieght"></e-column>
+       <e-column field="Freight"  headerText="Freight"></e-column>
        <e-column field="ShipCountry" headerText="Country" [headerTextAlign]="center"></e-column>
        <e-column field="ShipCity"  headerText="City" [headerTextAlign]="right"></e-column>
     </e-columns>
@@ -161,7 +161,7 @@ The following code example describes the above behavior.
     <e-columns>
        <e-column field="OrderID"  headerText="OrderID"></e-column>
        <e-column field="EmployeeID" headerText="Emp ID" headerTemplateID= "#customerTemplate"></e-column>
-       <e-column field="Frieght"  headerText="Frieght"></e-column>
+       <e-column field="Freight"  headerText="Freight"></e-column>
        <e-column field="ShipCountry" headerText="Country"></e-column>
        <e-column field="ShipCity"  headerText="City"></e-column>
     </e-columns>
@@ -210,7 +210,7 @@ The following code example describes the above behavior.
     <e-columns>
        <e-column field="OrderID" [textAlign]="right"></e-column>
        <e-column field="EmployeeID" [textAlign]="right"></e-column>
-       <e-column field="Frieght" [textAlign]="right"></e-column>
+       <e-column field="Freight" [textAlign]="right"></e-column>
        <e-column field="ShipCountry" [textAlign]="center"></e-column>
        <e-column field="ShipCity" [textAlign]="justify"></e-column>
     </e-columns>
