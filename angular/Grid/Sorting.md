@@ -9,7 +9,7 @@ api: /api/js/ejgrid
 --- 
 # Sorting
 
-The Grid control has support to sort data bound columns in ascending or descending order. This can be achieved by setting [`allowSorting`](https://help.syncfusion.com/api/angular/grid#members:allowsorting "allowSorting") property as `true`. 
+The Grid control has support to sort data bound columns in ascending or descending order. This can be achieved by setting [`allowSorting`](https://help.syncfusion.com/api/angular/ejgrid#members:allowsorting "allowSorting") property as `true`. 
 
 To dynamically sort a particular column, click on its column header. The order switch between ascending and descending each time you click a column header for sorting.
 
@@ -50,9 +50,9 @@ The following output is displayed as a result of the above code example.
 
 ## Initial Sorting
 
-Through `sortedColumns` property of [`sortSettings`](https://help.syncfusion.com/api/angular/grid#members:sortsettings "sortSettings"), you can sort the columns while initializing the grid itself. You need to specify the [`field`](https://help.syncfusion.com/api/angular/grid#members:sortsettings-sortedcolumns-field "field") (column) name and [`direction`](https://help.syncfusion.com/api/angular/grid#members:sortsettings-sortedcolumns-direction "direction") in the `sortedColumns`.
+Through `sortedColumns` property of [`sortSettings`](https://help.syncfusion.com/api/angular/ejgrid#members:sortsettings "sortSettings"), you can sort the columns while initializing the grid itself. You need to specify the [`field`](https://help.syncfusion.com/api/angular/grid#members:sortsettings-sortedcolumns-field "field") (column) name and [`direction`](https://help.syncfusion.com/api/angular/grid#members:sortsettings-sortedcolumns-direction "direction") in the `sortedColumns`.
 
-N> 1. For [`direction`](https://help.syncfusion.com/api/angular/grid#members:sortsettings-sortedcolumns-direction "direction") property you can assign either `string` value ("descending") or `enum` value (`ej.sortOrder.Descending`). 
+N> 1. For [`direction`](https://help.syncfusion.com/api/angular/ejgrid#members:sortsettings-sortedcolumns-direction "direction") property you can assign either `string` value ("descending") or `enum` value (`ej.sortOrder.Descending`). 
 N> 2. You can add multiple columns in `sortedColumns` for multi column sorting while initializing the grid itself.
 
 The following code example describes the above behavior.
@@ -94,11 +94,11 @@ The following output is displayed as a result of the above code example.
 
 ## Multi-Column Sorting
 
-Sort multiple columns in grid by setting [`allowMultiSorting`](https://help.syncfusion.com/api/angular/grid#members:allowmultisorting "allowMultiSorting") property as true. The sorting order is displayed in the header while doing multi sorting.
+Sort multiple columns in grid by setting [`allowMultiSorting`](https://help.syncfusion.com/api/angular/ejgrid#members:allowmultisorting "allowMultiSorting") property as true. The sorting order is displayed in the header while doing multi sorting.
 
 You can sort more than one column by pressing "Ctrl key + mouse left click" on the column header. To clear sorting for particular column, press "Shift + mouse left click". 
 
-N> [`allowSorting`](https://help.syncfusion.com/api/angular/grid#members:allowsorting "allowSorting") must be true while enabling multi sort.
+N> [`allowSorting`](https://help.syncfusion.com/api/angular/ejgrid#members:allowsorting "allowSorting") must be true while enabling multi sort.
 
 The following code example describes the above behavior.
 
@@ -193,7 +193,7 @@ While using Grid in a touch device, you have an option for multi sorting in sing
 
 Again if you tap the popup symbol, then the single tap multi sorting will be disabled. 
 
-N> [`allowMultiSorting`](https://help.syncfusion.com/api/angular/grid#members:allowmultisorting "allowMultiSorting") and [`allowSorting`](https://help.syncfusion.com/api/angular/grid#members:allowsorting "allowSorting") should be `true` then only the popup will be shown.
+N> [`allowMultiSorting`](https://help.syncfusion.com/api/angular/ejgrid#members:allowmultisorting "allowMultiSorting") and [`allowSorting`](https://help.syncfusion.com/api/angular/ejgrid#members:allowsorting "allowSorting") should be `true` then only the popup will be shown.
 
 The following code example describes the above behavior.
 
