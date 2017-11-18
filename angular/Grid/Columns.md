@@ -899,21 +899,6 @@ You can [customize](https://help.syncfusion.com/api/angular/ejgrid#members:colum
 The following code example describes the above behavior.
 
 {% highlight html %}
-<style class="customCSS">
-.customCSS.e-headercell {
-	background-color: #2382c3;
-	color: white;
-	font-family: 'Bell MT';
-	font-size: 20px;
-}
-
-.customCSS.e-rowcell {
-	background-color: #ecedee;
-	font-family: 'Bell MT';
-	color: red;
-	font-size: 20px;
-}
-</style>
 <ej-grid id="Grid" [dataSource]="gridData">
     <e-columns>
         <e-column field= "OrderID"></e-column>
@@ -930,6 +915,19 @@ The following code example describes the above behavior.
     @Component({
       selector: 'ej-app',
       templateUrl: 'app/app.component.html',  //give the path file for Grid control html file.
+      encapsulation: ViewEncapsulation.None,
+      styles:[`.customCSS.e-headercell {
+	            background-color: #2382c3;
+	            color: white;
+	            font-family: 'Bell MT';
+	            font-size: 20px;
+      }
+               .customCSS.e-rowcell {
+	            background-color: #ecedee;
+	            font-family: 'Bell MT';
+	            color: red;
+	            font-size: 20px;
+      }`]
     })
     export class AppComponent {
         public gridData;
