@@ -628,9 +628,10 @@ The following code example describes the above behavior.
 <ej-grid #Grid [dataSource]="gridData" [allowPaging]=true [allowFiltering]=true [allowGrouping]=true [allowSorting]=true [allowResizing]=true [editSettings]="editSettings" >
     <e-columns>
         <e-column field= "OrderID"></e-column>
-        <e-column field= "ShipAddress" [allowFiltering]=false [allowGrouping]=false [allowSorting]=false [allowResizing]=false [allowEditing]="false"></e-column>
+        <e-column field= "EmployeeID" [allowFiltering]=false [allowGrouping]=false [allowSorting]=false [allowResizing]=false [allowEditing]="false"></e-column>
         <e-column field= "Freight"></e-column>
-        <e-column field= "OrderDate"></e-column>
+        <e-column field= "ShipCountry"></e-column>
+        <e-column field= "ShipCity"></e-column>
     </e-columns>
 </ej-grid>  
 {% endhighlight %}
@@ -664,9 +665,11 @@ The following code example describes the above behavior.
 {% highlight html %}
 <ej-grid id="Grid" [dataSource]="gridData" [editSettings]="editSettings">
     <e-columns>
-        <e-column field= "OrderID" [isPrimaryKey]="true"></e-column>
-        <e-column field= "CustomerID" [allowEditing]="false"></e-column>
-        <e-column field= "Freight"></e-column>
+        <e-column field="OrderID" [isPrimaryKey]="true"></e-column>
+        <e-column field="EmployeeID" [allowEditing]="false"></e-column>
+        <e-column field="Freight"></e-column>
+        <e-column field="ShipCountry"></e-column>
+        <e-column field="ShipCity"></e-column>
     </e-columns>
 </ej-grid>
 {% endhighlight %}
@@ -768,8 +771,10 @@ The following code example describes the above behavior.
 {% highlight html %}
 <ej-grid id="Grid" [dataSource]="gridData" [editSettings]="editSettings">
     <e-columns>
-        <e-column field= "OrderID" [isPrimaryKey]="true"></e-column>
-        <e-column field= "CustomerID"></e-column>
+        <e-column field="OrderID" [isPrimaryKey]="true"></e-column>
+        <e-column field="EmployeeID"></e-column>
+        <e-column field="Freight"></e-column>
+        <e-column field="ShipCountry"></e-column>
         <e-column  headerText= "Manage Records" [commands]="buttons"></e-column>
     </e-columns>
 </ej-grid>
@@ -871,9 +876,11 @@ The following code example describes the above behavior.
 {% highlight html %}
 <ej-grid id="Grid" [dataSource]="gridData" showColumnChooser="true">
     <e-columns>
-        <e-column field="OrderID" ></e-column>
-        <e-column field="CustomerID" [showInColumnChooser]="false"></e-column>
-        <e-column field="EmployeeID"></e-column>
+        <e-column field="OrderID"></e-column>
+        <e-column field="EmployeeID" [showInColumnChooser]="false"></e-column>
+        <e-column field="Freight"></e-column>
+        <e-column field="ShipCountry"></e-column>
+        <e-column field="ShipCity"></e-column>
     </e-columns>
 </ej-grid>
 {% endhighlight %}
@@ -916,9 +923,11 @@ The following code example describes the above behavior.
 {% highlight html %}
 <ej-grid id="Grid" [dataSource]="gridData" [editSettings]="editSettings">
     <e-columns>
-        <e-column field= "OrderID" ></e-column>
-        <e-column field= "CustomerID" [visible]="false"></e-column>
+        <e-column field="OrderID" [isPrimaryKey]="true"></e-column>
         <e-column field="EmployeeID" foreignKeyField= "EmployeeID" foreignKeyValue= "FirstName" [dataSource]= "employeedata" headerText= "FirstName" ></e-column>
+        <e-column field="CustomerID"></e-column>
+        <e-column field="Freight"></e-column>
+        <e-column field="ShipCity"></e-column>
     </e-columns>
 </ej-grid>
 {% endhighlight %}
@@ -955,15 +964,26 @@ You can [customize](https://help.syncfusion.com/api/angular/ejgrid#members:colum
 The following code example describes the above behavior.
 
 {% highlight html %}
-<style class="temp">
-.temp{
-color:green;
+<style class="customCSS">
+.customCSS.e-headercell {
+	background-color: #2382c3;
+	color: white;
+	font-family: 'Bell MT';
+	font-size: 20px;
+}
+
+.customCSS.e-rowcell {
+	background-color: #ecedee;
+	font-family: 'Bell MT';
+	color: red;
+	font-size: 20px;
 }
 </style>
 <ej-grid id="Grid" [dataSource]="gridData">
     <e-columns>
         <e-column field= "OrderID"></e-column>
-        <e-column field= "CustomerID" cssClass="temp"></e-column>
+        <e-column field= "CustomerID">
+        <e-column field= "EmployeeID" cssClass="customCSS"></e-column>
         <e-column field= "Freight"></e-column>
     </e-columns>
 </ej-grid> 
@@ -1048,9 +1068,11 @@ The following code example describes the above behavior.
 {% highlight html %}
 <ej-grid id="Grid" [dataSource]="gridData" >
     <e-columns>
-        <e-column field="OrderID" ></e-column>
+        <e-column field="OrderID"></e-column>
         <e-column field="CustomerID" type="string"></e-column>
-        <e-column field="EmployeeID"></e-column>
+        <e-column field="EmployeeID" type="number"></e-column>
+        <e-column field="Freight"></e-column>
+        <e-column field="ShipCountry"></e-column>
     </e-columns>
 </ej-grid>
 {% endhighlight %}
@@ -1091,8 +1113,12 @@ The following code example describes the above behavior.
 {% highlight html %}           
 <ej-grid id="Grid" [dataSource]="gridData" [columnLayout]="fixed">
     <e-columns>
-        <e-column field= "OrderID" headerText= "Order ID" width= "80"></e-column>
-        <e-column field= "CustomerID" headerText= "Customer ID" width= "90"></e-column>
+        <e-column field="OrderID" width= "80"></e-column>
+        <e-column field="EmployeeID" width= "80"></e-column>
+        <e-column field="ShipCity" width= "90"></e-column>
+        <e-column field="ShipName" width= "110"></e-column>
+        <e-column field="ShipCountry" width= "100"></e-column>
+        <e-column field="Freight" width= "80"></e-column>
     </e-columns>
 </ej-grid>
 {% endhighlight %}
