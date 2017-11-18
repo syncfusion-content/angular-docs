@@ -21,7 +21,7 @@ The [`columns`](https://help.syncfusion.com/api/angular/ejgrid#members:columns "
 The following code example shows auto-generate columns behavior.
 
 {% highlight html %} 
-<ej-grid id="Grid" [dataSource]="gridData" allowPaging="true">
+<ej-grid id="Grid" [dataSource]="gridData" [allowPaging]="true">
 </ej-grid>
 {% endhighlight %}
 
@@ -336,7 +336,7 @@ On columns where "width is defined", double click on the particular column heade
 The following code example describes the above behavior. 
 
 {% highlight html %} 
-<ej-grid id="Grid" [dataSource]="gridData" allowResizeToFit="true">
+<ej-grid id="Grid" [dataSource]="gridData" [allowResizeToFit]="true">
     <e-columns>
         <e-column field="OrderID" width="100"></e-column>
         <e-column field="EmployeeID"></e-column>
@@ -377,7 +377,7 @@ Reordering can be done by drag and drop on the particular column header from one
 The following code example describes the above behavior.
 
 {% highlight html %}                     
-<ej-grid id="Grid" [dataSource]="gridData" allowReordering="true">
+<ej-grid id="Grid" [dataSource]="gridData" [allowReordering]="true">
     <e-columns>
         <e-column field="OrderID"></e-column>
         <e-column field="EmployeeID"></e-column>
@@ -421,7 +421,7 @@ The following code example describes the above behavior.
 <ej-grid id="Grid" [dataSource]="gridData" >
     <e-columns>
         <e-column field="EmployeeID"></e-column>
-        <e-column field="OrderID" visible="false"></e-column>
+        <e-column field="OrderID" [visible]="false"></e-column>
         <e-column field="Freight"></e-column>
         <e-column field="ShipCountry"></e-column>
         <e-column field="ShipCity"></e-column>
@@ -461,7 +461,7 @@ N> Editing, grouping, filtering, sorting, summary and searching support are not 
 The following code example describes the above behavior. 
 
 {% highlight html %}
-<ej-grid id="Grid" [dataSource]="gridData" allowPaging="true" >
+<ej-grid id="Grid" [dataSource]="gridData" [allowPaging]="true" >
     <e-columns>
         <e-column field= "OrderID"></e-column>
         <e-column field= "CustomerID"></e-column>
@@ -514,7 +514,7 @@ The following code example describes the above behavior.
 
 {% highlight html %}
 
-<ej-grid id="Grid" [dataSource]="gridData" allowPaging="true" [pageSettings]="pageSettings">
+<ej-grid id="Grid" [dataSource]="gridData" [allowPaging]="true" [pageSettings]="pageSettings">
     <e-columns>
         <e-column headerText="Photo">
              <template e-template let-data>
@@ -565,7 +565,7 @@ You can control the Grid actions of a particular column by setting [`allowSortin
 The following code example describes the above behavior.
 
 {% highlight html %}
-<ej-grid #Grid [dataSource]="gridData" [allowPaging]=true [allowFiltering]=true [allowGrouping]=true [allowSorting]=true [allowResizing]=true [editSettings]="editSettings" >
+<ej-grid #Grid [dataSource]="gridData" [allowPaging]="true" [allowFiltering]="true" [allowGrouping]="true" [allowSorting]="true" [allowResizing]="true" [editSettings]="editSettings" >
     <e-columns>
         <e-column field= "OrderID"></e-column>
         <e-column field= "EmployeeID" [allowFiltering]=false [allowGrouping]=false [allowSorting]=false [allowResizing]=false [allowEditing]="false"></e-column>
@@ -650,7 +650,7 @@ N> This expression column is supported at read only mode.
 The following code example describes the above behavior.
 
 {% highlight html %} 
-<ej-grid id="Grid" [dataSource]="gridData" allowPaging="true">
+<ej-grid id="Grid" [dataSource]="gridData" [allowPaging]="true">
     <e-columns>
         <e-column field="FoodName" ></e-column>
         <e-column field="Protein" ></e-column>
@@ -809,7 +809,7 @@ Column Chooser would be shown in the top right corner of Grid. To enable column 
 The following code example describes the above behavior.
 
 {% highlight html %}
-<ej-grid id="Grid" [dataSource]="gridData" showColumnChooser="true">
+<ej-grid id="Grid" [dataSource]="gridData" [showColumnChooser]="true">
     <e-columns>
         <e-column field="OrderID"></e-column>
         <e-column field="EmployeeID" [showInColumnChooser]="false"></e-column>
