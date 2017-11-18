@@ -70,7 +70,7 @@ By default, the Grid can be print from toolbar. To print from external button ac
 
 {% highlight html %}
 <input type="button" ej-button id="button1" value="Button" (click)="onClick($event)" />
-<ej-grid  id="Grid"  [allowPaging]="true"  [dataSource]="gridData">
+<ej-grid  id="Grid" #grid [allowPaging]="true"  [dataSource]="gridData">
     <e-columns>
         <e-column field="OrderID" [isPrimaryKey]="true"  width="85" textAlign="right" headerText="Order ID"></e-column>
         <e-column field="CustomerID" headerText="Customer ID" width="85" ></e-column>        
@@ -95,6 +95,7 @@ import { Component } from '@angular/core';
 })
 export class GridComponent {
     public gridData: any;
+     @ViewChild('grid') Grid: EJComponents<any, any>;
     constructor() {
 
         //The datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
@@ -102,8 +103,7 @@ export class GridComponent {
 
     }
      onClick(e: any) {
-        var grid = $("#Grid").ejGrid("instance");
-        grid.print();
+         this.Grid.widget.print();
     }
 }
 
