@@ -13,7 +13,7 @@ You need to use [`print()`](https://help.syncfusion.com/api/angular/ejgrid#metho
 
 {% highlight html %}
 
-<ej-grid  id="Grid"  [allowPaging]="true"  [dataSource]="gridData" toolbarSettings.showToolbar="true" [toolbarSettings.toolbarItems]="tools">
+<ej-grid  id="Grid"  [allowPaging]="true"  [dataSource]="gridData" [toolbarSettings.showToolbar]="true" [toolbarSettings.toolbarItems]="tools">
     <e-columns>
         <e-column field="OrderID" [isPrimaryKey]="true"  width="85" textAlign="right" headerText="Order ID"></e-column>
         <e-column field="CustomerID" headerText="Customer ID" width="85" ></e-column>        
@@ -126,7 +126,7 @@ By default, the Grid will print all records. To print current page, you need to 
 
 {% highlight  html %}
 
-<ej-grid  id="Grid" [allowPaging]="true" [dataSource]="gridData" [pageSettings]="pageSettings" toolbarSettings.showToolbar="true" [toolbarSettings.toolbarItems]="tools">
+<ej-grid  id="Grid" [allowPaging]="true" [dataSource]="gridData" [pageSettings]="pageSettings" [toolbarSettings.showToolbar]="true" [toolbarSettings.toolbarItems]="tools">
     <e-columns>
         <e-column field="OrderID" [isPrimaryKey]="true"  width="85" textAlign="right" headerText="Order ID"></e-column>
         <e-column field="CustomerID" headerText="Customer ID" width="85" ></e-column>        
