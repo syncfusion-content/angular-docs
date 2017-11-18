@@ -284,7 +284,7 @@ Last Page</td></tr>
 {% highlight html %}
 
 
-<ej-grid id="Grid" allowPaging="true"  [dataSource]="gridData" allowGrouping='true' [groupSettings]="group"  [pageSettings]='page' [locale]="locale" (load)="load($event)" >
+<ej-grid id="Grid" [allowPaging]="true"  [dataSource]="gridData" [allowGrouping]='true' [groupSettings]="group"  [pageSettings]='page' [locale]="locale" (load)="load($event)" >
     <e-columns>
         <e-column field="OrderID" headerText="OrderID"  width="75" textAlign="right"></e-column>
         <e-column field="CustomerID" headerText="Customer ID" width="95"></e-column>
@@ -597,7 +597,7 @@ I> We have uploaded the predefined language packs for some commonly used culture
 
 {% highlight html %}
 
-<ej-grid id="Grid" allowPaging="true"  [dataSource]="gridData"   [locale]="locale"  >
+<ej-grid id="Grid" [allowPaging]="true"  [dataSource]="gridData"   [locale]="locale"  >
    
      <e-columns>
         <e-column field="OrderID" headerText="OrderID"  width="75" textAlign="right"></e-column>
@@ -646,7 +646,7 @@ By default, Grid render its text and layout from left to right. To customize Gri
 
 {% highlight html %}
 
-<ej-grid id="Grid" allowPaging="true"  [dataSource]="gridData" enableRTL="true"  >
+<ej-grid id="Grid" [allowPaging]="true"  [dataSource]="gridData" [enableRTL]="true"  >
    
      <e-columns>
         <e-column field="OrderID" headerText="OrderID"  width="120" textAlign="right"></e-column>
