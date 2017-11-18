@@ -669,3 +669,85 @@ List of Column type and Filter operators
             </td>
         </tr>
     </table>
+    
+    ## FilterBar Template
+
+Usually enabling allowFiltering, will create default textbox in Grid FilterBar. So, Using [`filterBarTemplate`](https://help.syncfusion.com/api/js/ejgrid#members:columns-filterbartemplate "filterBarTemplate") property of `columns` we can render any other controls like AutoComplete, DropDownList etc in filterbar to filter the grid data for the particular column.
+It has three functions. They are    
+
+1. `create` - It is used to create the control at time of initialize.
+2. `read`   - It is used to read the Filter value selected.
+3. `write`  - It is used to render the control and assign the value selected for filtering.
+
+
+The following code example describes the above behavior.
+
+{% highlight html %}
+
+<ej-grid id="Grid" [dataSource]="gridData" [allowPaging]="true" [allowFiltering]="true" >
+    <e-columns>
+        <e-column field="Order ID" headerText="OrderID" width="75"></e-column>
+        <e-column field="CustomerID" headerText="CustomerID" [filterBarTemplate]="CustomerIDFilterBarTemp" width="100"></e-column>
+        <e-column field="EmployeeID" headerText="EmployeeID"  width="100"></e-column>
+        <e-column field="Freight" headerText="Freight" [filterBarTemplate]="FreightFilterBarTemp" width="100" ></e-column>
+        <e-column field="ShipCountry" headerText="Ship Country" width="100"></e-column>
+        <e-column field="Verified" headerText="Verified" [filterBarTemplate]="VerifiedFilterBarTemp" width="90"></e-column>
+    </e-columns>
+ </ej-grid>
+
+{% endhighlight %}
+
+{% highlight javascript %}
+
+import {Component, ViewEncapsulation} from '@angular/core';
+    @Component({
+      selector: 'ej-app',
+      templateUrl: 'app/app.component.html',  //give the path file for Grid control html file.
+    })
+    export class AppComponent {
+        public gridData;
+		public CustomerIDFilterBarTemp;
+        public FreightFilterBarTemp;
+        public VerifiedFilterBarTemp;
+        constructor()
+        {
+           //The datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
+           this.gridData = window.gridData;
+		   this.FreightFilterBarTemp = {
+            write: function (args) {
+                args.element.ejNumericTextbox({ width: "100%",decimalPlaces: 2, focusOut: ej.proxy(args.column.filterBarTemplate.read, this, args) });
+            },
+            read: function (args) {
+                this.filterColumn(args.column.field, "equal", args.element.val(), "and", true)
+            }
+        };
+        this.CustomerIDFilterBarTemp = {
+            create: function (args) {
+                return "<input>"
+            },
+            write: function (args) {
+                var data = new ej.DataManager(this.gridData).executeLocal(new ej.Query().select("CustomerID"));
+                args.element.ejAutocomplete({ width: "100%", dataSource: data, enableDistinct: true, focusOut: ej.proxy(args.column.filterBarTemplate.read, this, args) });
+            },
+            read: function (args) {
+                this.filterColumn(args.column.field, "equal", args.element.val(), "and", true)
+            }
+        };
+        this.VerifiedFilterBarTemp = {
+            write: function (args) {
+                args.element.ejCheckBox({ change: ej.proxy(args.column.filterBarTemplate.read, this, args) });
+            },
+            read: function (args) {
+                this.filterColumn(args.column.field, "equal", args.element.parent().attr('aria-checked'), "and", true)
+            }
+        };
+		}
+     }
+
+{% endhighlight %}
+
+The following output is displayed as a result of the above code example.
+
+![](filtering_images/filtering_img11.png)
+{:caption}
+After Filtering
