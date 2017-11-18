@@ -15,7 +15,7 @@ N> The Grid's responsive and exporting support is not applicable for Hierarchica
 
 {% highlight html %}
 
-<ej-grid id="Grid"  allowPaging="true"  [dataSource]="gridData"  [childGrid]="childData"  >
+<ej-grid id="Grid"  [allowPaging]="true"  [dataSource]="gridData"  [childGrid]="childData"  >
     <e-columns>
         <e-column field="EmployeeID" headerText="Employee ID"  width="85" textAlign="right"></e-column>
         <e-column field="FirstName" headerText="First Name" textAlign="left"  width="100"></e-column>
@@ -74,7 +74,7 @@ The Grid can able to expand and collapse all the [`childGrid`](https://help.sync
 <input type="button" ej-button id="button" value="expandAll"  (ejclick)= "onClick($event)" /> 
      <input type="button" ej-button id="button" value="collapseAll"  (ejclick)= "onClick($event)" />         
       
-<ej-grid id="Grid" allowPaging="true" [dataSource]="gridData"  [childGrid]="childData">
+<ej-grid id="Grid" [allowPaging]="true" [dataSource]="gridData"  [childGrid]="childData">
     <e-columns>
         <e-column field="EmployeeID" headerText="Employee ID"  width="85" textAlign="right"></e-column>
         <e-column field="FirstName" headerText="First Name" textAlign="left"  width="100"></e-column>
