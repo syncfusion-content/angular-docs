@@ -650,43 +650,38 @@ N> This expression column is supported at read only mode.
 
 The following code example describes the above behavior.
 
-{% highlight html %}
-<div id="Grid"></div>
-{% endhighlight %}
-
-{% highlight javascript %}
-$(function () {
-	$("#Grid").ejGrid({
-		//The datasource "window.FoodInformation" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
-		dataSource : window.FoodInformation,
-		allowPaging : true,
-		columns : [
-			{ field: "FoodName" },
-			{ field: "Protein" },
-			{ field: "Fat" },
-			{ field: "Carbohydrate" },
-			{ headerText: "Calories In Take", template: "<span>{{"{{"}}:Protein * 4  + Fat * 4 + Carbohydrate * 9 {{"}}"}}</span>" }
-		]
-	});
-});
-{% endhighlight %}
 {% highlight html %} 
-<script id="columnTemplate" type="text/x-jsrender">
-<img src="styles/images/Employees/{{"{{"}}:EmployeeID{{}}}}.png" alt="{{"{{"}}:EmployeeID{{}}}}"/>
-</script>
-<ej-grid id="Grid" [dataSource]="gridData" >
+<ej-grid id="Grid" [dataSource]="gridData" allowPaging="true">
     <e-columns>
-        <e-column field="OrderID" ></e-column>
-        <e-column field="CustomerID" [template]="columnTemplate"></e-column>
-        <e-column field="EmployeeID" ></e-column>
+        <e-column field="FoodName" ></e-column>
+        <e-column field="Protein" ></e-column>
+        <e-column field="Fat" ></e-column>
+        <e-column field="Carbohydrate" ></e-column>
+        <e-column headerText="Calories In Take">
+             <template e-template let-data>
+                <span>{{data.Protein * 4 + data.Fat * 4 + data.Carbohydrate * 9}}</span>
+            </template>
+        </e-column>
     </e-columns>
 </ej-grid>
 {% endhighlight %}
 
 {% highlight ts %}
-//The datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
-this.gridData = window.gridData;
-this.columnTemplate="#columnTemplate";
+
+    import {Component, ViewEncapsulation} from '@angular/core';
+    @Component({
+      selector: 'ej-app',
+      templateUrl: 'app/app.component.html',  //give the path file for Grid control html file.
+    })
+    export class AppComponent {
+        public gridData;
+    	constructor()
+        {
+            //The datasource "window.FoodInformation" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
+            this.gridData = window.FoodInformation;
+        }
+    }
+
 {% endhighlight %}
 
 The following output is displayed as a result of the above code example.
