@@ -48,65 +48,6 @@ The following output is displayed as a result of the above code example.
 ![](columns_images/columns_img1.png)
 
 
-### How to set isPrimaryKey for auto generated columns when editing is enabled:
-
-Using [`dataBound`](https://help.syncfusion.com/api/angular/ejgrid#events:databound "dataBound") event, you can set [`isPrimaryKey`](https://help.syncfusion.com/api/angular/ejgrid#members:columns-isprimarykey "isPrimaryKey") value as `true` by two ways. The following code example demonstrates the above behavior.
-
-1. If primary key "column index" is known then refer the following code example
-{% highlight html %} 
-<ej-grid id="Grid" [dataSource]="gridData" allowPaging="true" (dataBound)="onDataBound($event)">
-</ej-grid>
-{% endhighlight %}
-
-{% highlight javascript %}
-$(function () {
-	$("#Grid").ejGrid({
-		//The datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
-		dataSource : window.gridData,
-		allowPaging : true,
-		editSettings : {
-			allowEditing : true
-		},
-		dataBound : function (args) {
-			var column = args.model.columns[0];
-			//(or)
-			var column = this.getColumnByIndex(0);
-			column.isPrimaryKey = true;
-			//Here columns method used to update the particular column
-			this.columns(column, "update");
-		}
-	});
-});
-{% endhighlight %}
-{% highlight ts %}
-//The datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
-this.gridData = window.gridData;
-this.editSettings={allowEditing:true};
-
-{% endhighlight %}
-
-2. If primary key "column field name" is known then refer the following code example
-{% highlight html %}
-<div id="Grid"></div>
-{% endhighlight %}
-
-{% highlight javascript %}
-$(function () {
-	$("#Grid").ejGrid({
-		//The datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
-		dataSource : window.gridData,
-		allowPaging : true,
-		editSettings : { allowEditing : true },
-		dataBound : function (args) {
-			var column = this.getColumnByField("OrderID");
-			column.isPrimaryKey = true;
-			//Here columns method used to update the particular column
-			this.columns(column, "update");
-		}
-	});
-});
-{% endhighlight %}
-
 ## Headers
 
 ### HeaderText
