@@ -17,7 +17,7 @@ To stack columns in stacked header, you need to define [`column`](https://help.s
 
 {% highlight html %}
 
-<ej-grid id="Grid" allowPaging="true" [dataSource]="gridData" showStackedHeader="true" [stackedHeaderRows]="stackedHeaderRows">
+<ej-grid id="Grid" [allowPaging]="true" [dataSource]="gridData" [showStackedHeader]="true" [stackedHeaderRows]="stackedHeaderRows">
     <e-columns>
         <e-column field="OrderID" headerText="Order ID" width="80"></e-column>
         <e-column field="OrderDate" headerText="Order Date" width="80" format="{0:MM/dd/yyyy}" textAlign="right"></e-column>

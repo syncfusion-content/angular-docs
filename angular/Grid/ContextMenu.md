@@ -146,7 +146,7 @@ Please find the below table for default context menu items and its actions.
 {% highlight html %}
 
 
-<ej-grid  id="Grid"  allowPaging="true"  [dataSource]="gridData" allowSorting="true" allowGrouping="true" editSettings.allowAdding='true'  [editSettings.allowEditing]='true' editSettings.allowDeleting='true' toolbarSettings.showToolbar="true" [toolbarSettings.toolbarItems]="tools"  contextMenuSettings.enableContextMenu="true" pageSettings.pageSize="5" >
+<ej-grid  id="Grid"  [allowPaging]="true"  [dataSource]="gridData" [allowSorting]="true" [allowGrouping]="true" [editSettings.allowAdding]='true'  [editSettings.allowEditing]='true' [editSettings.allowDeleting]='true' [toolbarSettings.showToolbar]="true" [toolbarSettings.toolbarItems]="tools"  [contextMenuSettings.enableContextMenu]="true" pageSettings.pageSize="5" >
     <e-columns>
         <e-column field="OrderID" [isPrimaryKey]="true"  width="85" textAlign="right" headerText="Order ID"></e-column>
         <e-column field="CustomerID" headerText="Customer ID" width="85" ></e-column>        
@@ -208,7 +208,7 @@ Custom context menu is used to create your own menu item and its action. To add 
 
 {% highlight html %}
 
-<ej-grid id="Grid" #grid allowPaging="true"  [dataSource]="gridData"  [contextMenuSettings]="context" pageSettings.pageSize="5" (contextClick)="contextClick($event)" >
+<ej-grid id="Grid" #grid [allowPaging]="true"  [dataSource]="gridData"  [contextMenuSettings]="context" pageSettings.pageSize="5" (contextClick)="contextClick($event)" >
     <e-columns>
         <e-column field="OrderID"  headerText="Order ID" width="90" textAlign="right"></e-column>
         <e-column field="CustomerID" headerText="Customer ID" width="90"></e-column>        
@@ -260,7 +260,7 @@ Sub context menu is used to add customized sub menu to the custom context menu i
 {% highlight html %}
 
 
-<ej-grid id="Grid" #grid allowPaging="true"  [dataSource]="gridData"  [contextMenuSettings]="context" pageSettings.pageSize="5" (contextClick)="contextClick($event)" >
+<ej-grid id="Grid" #grid [allowPaging]="true"  [dataSource]="gridData"  [contextMenuSettings]="context" pageSettings.pageSize="5" (contextClick)="contextClick($event)" >
     <e-columns>
         <e-column field="OrderID"  headerText="Order ID" width="90" textAlign="right"></e-column>
         <e-column field="CustomerID" headerText="Customer ID" width="90"></e-column>        
@@ -311,7 +311,7 @@ On rendering the Sub context menu items, the customized sub menu items created b
 {% highlight html %}
 
 
-<ej-grid id="Grid" #grid allowPaging="true"  [dataSource]="gridData"  [contextMenuSettings]="context" pageSettings.pageSize="5" (contextClick)="contextClick($event)" >
+<ej-grid id="Grid" #grid [allowPaging]="true"  [dataSource]="gridData"  [contextMenuSettings]="context" pageSettings.pageSize="5" (contextClick)="contextClick($event)" >
    <e-columns>
         <e-column field="OrderID"  headerText="Order ID" width="90" textAlign="right"></e-column>
         <e-column field="CustomerID" headerText="Customer ID" width="90"></e-column>        
