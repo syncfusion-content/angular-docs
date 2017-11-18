@@ -471,7 +471,7 @@ The following code example describes the above behavior.
               <template e-template let-data>
                 <a (click)="Click($event)" href=#>Delete</a>
             </template>
-         </e-column>
+        </e-column>
     </e-columns>
 </ej-grid>
 {% endhighlight %}
