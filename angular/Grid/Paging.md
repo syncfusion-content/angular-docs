@@ -9,7 +9,7 @@ api: /api/js/ejgrid
 --- 
 # Paging
 
-You can display the grid records in paged view, by setting [`allowPaging`](https://help.syncfusion.com/api/angular/grid#members:allowpaging "allowPaging") property as `true`. 
+You can display the grid records in paged view, by setting [`allowPaging`](https://help.syncfusion.com/api/angular/ejgrid#members:allowpaging "allowPaging") property as `true`. 
 
 The code snippet to enable paging is follows.
 
@@ -48,7 +48,7 @@ The following output is displayed as a result of the above code example.
 
 ## Pager with query string
 
-You can pass the current page information as a query string while navigating to other page. To enable query string, set the [`enableQueryString`](https://help.syncfusion.com/api/angular/grid#members:pagesettings-enablequerystring "enableQueryString") property of [`pageSettings`](https://help.syncfusion.com/api/angular/grid#members:pagesettings "pageSettings") as `true`.
+You can pass the current page information as a query string while navigating to other page. To enable query string, set the [`enableQueryString`](https://help.syncfusion.com/api/angular/ejgrid#members:pagesettings-enablequerystring "enableQueryString") property of [`pageSettings`](https://help.syncfusion.com/api/angular/ejgrid#members:pagesettings "pageSettings") as `true`.
 
 The following code example describes the above behavior.
 
@@ -89,11 +89,11 @@ The following output is displayed as a result of the above code example.
 
 ## Pager template
 
-Apart from default pager, there is an option to render a specific custom template in a grid pager. To render template in pager, set [`enableTemplates`](https://help.syncfusion.com/api/angular/grid#members:pagesettings-enabletemplates "enableTemplates") as true and [`template`](https://help.syncfusion.com/api/angular/grid#members:pagesettings-template "template") properties of [`pageSettings`](https://help.syncfusion.com/api/angular/grid#members:pagesettings "pageSettings").
+Apart from default pager, there is an option to render a specific custom template in a grid pager. To render template in pager, set [`enableTemplates`](https://help.syncfusion.com/api/angular/ejgrid#members:pagesettings-enabletemplates "enableTemplates") as true and [`template`](https://help.syncfusion.com/api/angular/ejgrid#members:pagesettings-template "template") properties of [`pageSettings`](https://help.syncfusion.com/api/angular/ejgrid#members:pagesettings "pageSettings").
 
-Prevent to show the default pager while enabling the pager [`template`](https://help.syncfusion.com/api/angular/grid#members:pagesettings-template "template") by setting [`showDefaults`](https://help.syncfusion.com/api/angular/grid#members:pagesettings-showdefaults "showDefaults") property of [`pageSettings`](https://help.syncfusion.com/api/angular/grid#members:pagesettings "pageSettings") as `false`.
+Prevent to show the default pager while enabling the pager [`template`](https://help.syncfusion.com/api/angular/ejgrid#members:pagesettings-template "template") by setting [`showDefaults`](https://help.syncfusion.com/api/angular/ejgrid#members:pagesettings-showdefaults "showDefaults") property of [`pageSettings`](https://help.syncfusion.com/api/angular/ejgrid#members:pagesettings "pageSettings") as `false`.
 
-N> It's a standard way to enclose the [`template`](https://help.syncfusion.com/api/angular/grid#members:pagesettings-template "template") within the `script` tag with `type` as "text/x-jsrender".
+N> It's a standard way to enclose the [`template`](https://help.syncfusion.com/api/angular/ejgrid#members:pagesettings-template "template") within the `script` tag with `type` as "text/x-jsrender".
 
 The following code example describes the above behavior.
 
@@ -160,7 +160,7 @@ The following output is displayed as a result of the above code example.
 
 ## Pager with pageSize drop down
 
-There is an option to set the size of page by means selecting the pageSize you wish from the options available at the dropdown in pager. To render drop down in pager, provide the pageSize values you wish to display in drop down as `array` values to [`pageSizeList`](https://help.syncfusion.com/api/angular/grid#members:pagesettings-pagesizelist "pageSizeList") property of [`pageSettings`](https://help.syncfusion.com/api/angular/grid#members:pagesettings "pageSettings").
+There is an option to set the size of page by means selecting the pageSize you wish from the options available at the dropdown in pager. To render drop down in pager, provide the pageSize values you wish to display in drop down as `array` values to [`pageSizeList`](https://help.syncfusion.com/api/angular/ejgrid#members:pagesettings-pagesizelist "pageSizeList") property of [`pageSettings`](https://help.syncfusion.com/api/angular/ejgrid#members:pagesettings "pageSettings").
 
 The following code example describes the above behavior.
 
