@@ -555,7 +555,7 @@ The following code example describes the above behavior.
 
 The following output is displayed as a result of the above code example.
 
-![](columns_images/columns_img1.png)
+![](columns_images/columns_img14.png)
 
 
 ## Controlling Grid actions
