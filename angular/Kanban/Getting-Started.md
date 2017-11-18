@@ -291,7 +291,7 @@ export class KanbanComponent {
 
 ![](Getting_Started_images/Getting_Started_img2.png)
 
-## Mapping Values
+## Enable Swimlane
 
 'Swimlane' can be enabled by mapping the 'fields.swimlaneKey' to appropriate column name in 'dataSource'. This enables the grouping of the cards based on the mapped column values.
 
