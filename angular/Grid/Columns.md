@@ -918,7 +918,7 @@ The following code example describes the above behavior.
 <ej-grid id="Grid" [dataSource]="gridData">
     <e-columns>
         <e-column field= "OrderID"></e-column>
-        <e-column field= "CustomerID">
+        <e-column field= "CustomerID"></e-column>
         <e-column field= "EmployeeID" cssClass="customCSS"></e-column>
         <e-column field= "Freight"></e-column>
     </e-columns>
