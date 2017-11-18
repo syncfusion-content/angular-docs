@@ -468,9 +468,9 @@ The following code example describes the above behavior.
         <e-column field= "EmployeeID"></e-column>
         <e-column field= "Freight"></e-column>
         <e-column headerText="">
-              <template e-template let-data>
+            <ng-template e-template let-data>
                 <a (click)="Click($event)" href=#>Delete</a>
-            </template>
+            </ng-template>
         </e-column>
     </e-columns>
 </ej-grid>
