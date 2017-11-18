@@ -36,8 +36,8 @@ The following code example shows auto-generate columns behavior.
         public gridData;
     	constructor()
         {
-            //The datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
-            this.gridData = window.gridData;
+            //The datasource "(window as any).gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
+            this.gridData = (window as any).gridData;
         }
      }
 
@@ -81,8 +81,8 @@ The following code example describes the above behavior.
         public gridData;
     	constructor()
         {
-            //The datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
-            this.gridData = window.gridData;
+            //The datasource "(window as any).gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
+            this.gridData = (window as any).gridData;
         }
      }
 
@@ -130,8 +130,8 @@ The following code example describes the above behavior.
         public right;
     	constructor()
         {
-            //The datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
-            this.gridData = window.gridData;
+            //The datasource "(window as any).gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
+            this.gridData = (window as any).gridData;
             this.right = ej.TextAlign.Right;
         }
      }
@@ -179,8 +179,8 @@ The following code example describes the above behavior.
         public gridData;
     	constructor()
         {        
-            //The datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
-            this.gridData = window.gridData;
+            //The datasource "(window as any).gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
+            this.gridData = (window as any).gridData;
         }
     }
      
@@ -228,8 +228,8 @@ The following code example describes the above behavior.
         public gridData;
     	constructor()
         {
-            //The datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
-            this.gridData = window.gridData;
+            //The datasource "(window as any).gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
+            this.gridData = (window as any).gridData;
             this.right=ej.TextAlign.Right;
         }
      }
@@ -272,8 +272,8 @@ The following code example describes the above behavior.
         public gridData;
     	constructor()
         {
-            //The datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
-            this.gridData = window.gridData;
+            //The datasource "(window as any).gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
+            this.gridData = (window as any).gridData;
         }
     }
 
@@ -313,8 +313,8 @@ The following code example describes the above behavior.
         public gridData;
     	constructor()
         {
-            //The datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
-            this.gridData = window.gridData;
+            //The datasource "(window as any).gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
+            this.gridData = (window as any).gridData;
         }
     }
 
@@ -358,8 +358,8 @@ The following code example describes the above behavior.
         public gridData;
     	constructor()
         {
-            //The datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
-            this.gridData = window.gridData;
+            //The datasource "(window as any).gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
+            this.gridData = (window as any).gridData;
         }
     }
 
@@ -399,8 +399,8 @@ The following code example describes the above behavior.
         public gridData;
     	constructor()
         {
-            //The datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
-            this.gridData = window.gridData;
+            //The datasource "(window as any).gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
+            this.gridData = (window as any).gridData;
         }
     }
 
@@ -440,8 +440,8 @@ The following code example describes the above behavior.
         public gridData;
     	constructor()
         {
-            //The datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
-            this.gridData = window.gridData;
+            //The datasource "(window as any).gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
+            this.gridData = (window as any).gridData;
         }
     }
 
@@ -488,8 +488,8 @@ The following code example describes the above behavior.
         public gridData;
     	constructor()
         {        
-            //The datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
-            this.gridData = window.gridData;
+            //The datasource "(window as any).gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
+            this.gridData = (window as any).gridData;
         }
         Click(){
             var obj = $("#Grid").data("ejGrid");
@@ -589,8 +589,8 @@ The following code example describes the above behavior.
         public editSettings;
     	constructor()
         {        
-        //The datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
-        this.gridData = window.gridData;
+        //The datasource "(window as any).gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
+        this.gridData = (window as any).gridData;
         this.editSettings = {allowEditing:true};
         }
      }
@@ -627,8 +627,8 @@ The following code example describes the above behavior.
         public editSettings;
     	constructor()
         {
-            //The datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
-            this.gridData = window.gridData;
+            //The datasource "(window as any).gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
+            this.gridData = (window as any).gridData;
             this.editSettings={allowEditing:true};
         }
     }
@@ -727,8 +727,8 @@ The following code example describes the above behavior.
         public gridData;
     	constructor()
         {
-            //The datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
-            this.gridData = window.gridData;
+            //The datasource "(window as any).gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
+            this.gridData = (window as any).gridData;
             this.editSettings={allowEditing:true,allowAdding:true,allowDeleting:true};
             this.buttons=[    { type: "edit", buttonOptions: { text: "Edit" } },
                               { type: "delete", buttonOptions: { text: "Delete" } },
@@ -777,8 +777,8 @@ The following code example describes the above behavior.
         public buttons;
     	constructor()
         {        
-            //The datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
-            this.gridData = window.gridData;
+            //The datasource "(window as any).gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
+            this.gridData = (window as any).gridData;
             this.editSettings={allowEditing:true };
             this.buttons=[{ type: "details", buttonOptions: { text: "Edit",
                             click: function(){
@@ -832,8 +832,8 @@ The following code example describes the above behavior.
         public gridData;
     	constructor()
         {
-            //The datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
-            this.gridData = window.gridData;
+            //The datasource "(window as any).gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
+            this.gridData = (window as any).gridData;
         }
     }
 
@@ -879,9 +879,9 @@ The following code example describes the above behavior.
         public gridData;
     	constructor()
         {
-            //The datasource "window.gridData" and "window.employeeView" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
-            this.gridData = window.gridData;
-            this.employee = window.employeeView;
+            //The datasource "(window as any).gridData" and "window.employeeView" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
+            this.gridData = (window as any).gridData;
+            this.employee = (window as any).employeeView;
             this.editSettings={allowAdding:true, allowEditing:true, allowDeleting:true, };
         }
     }
@@ -936,8 +936,8 @@ The following code example describes the above behavior.
         public gridData;
     	constructor()
         {
-            //The datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
-            this.gridData = window.gridData;
+            //The datasource "(window as any).gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
+            this.gridData = (window as any).gridData;
         }
     }
 
@@ -1024,8 +1024,8 @@ The following code example describes the above behavior.
         public gridData;
     	constructor()
         {
-            //The datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
-            this.gridData = window.gridData;
+            //The datasource "(window as any).gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
+            this.gridData = (window as any).gridData;
         }
     }
 {% endhighlight %}
@@ -1070,8 +1070,8 @@ The following code example describes the above behavior.
         public gridData;
     	constructor()
         {
-            //The datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
-            this.gridData = window.gridData;
+            //The datasource "(window as any).gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
+            this.gridData = (window as any).gridData;
             this.fixed = ej.Grid.ColumnLayout.Fixed;
         }
     }
