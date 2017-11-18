@@ -95,7 +95,7 @@ The following output is displayed as a result of the above code example.
 
 ### Header Text alignment
 
-[Align](https://help.syncfusion.com/api/angular/ejgrid#members:columns-headertextalign "Align") the header text of column header using [`headerTextAlign`](https://help.syncfusion.com/api/angular/ejgrid#members:columns-headertextalign "headerTextAlign") property of [`columns`](https://help.syncfusion.com/api/angular/ejgrid#members:columns "columns"). There are four possible ways to align header text, they are
+Align the header text of column header using [`headerTextAlign`](https://help.syncfusion.com/api/angular/ejgrid#members:columns-headertextalign "headerTextAlign") property of [`columns`](https://help.syncfusion.com/api/angular/ejgrid#members:columns "columns"). There are four possible ways to align header text, they are
 
 1. Right
 2. Left
@@ -110,10 +110,10 @@ The following code example describes the above behavior.
 <ej-grid id="Grid" [dataSource]="gridData">
     <e-columns>
        <e-column field="OrderID"  headerText="OrderID"></e-column>
-       <e-column field="EmployeeID" headerText="Emp ID" [headerTextAlign]="right"></e-column>
+       <e-column field="EmployeeID" headerText="Emp ID" headerTextAlign="right"></e-column>
        <e-column field="Freight"  headerText="Freight"></e-column>
-       <e-column field="ShipCountry" headerText="Country" [headerTextAlign]="center"></e-column>
-       <e-column field="ShipCity"  headerText="City" [headerTextAlign]="right"></e-column>
+       <e-column field="ShipCountry" headerText="Country" headerTextAlign="center"></e-column>
+       <e-column field="ShipCity"  headerText="City" headerTextAlign="right"></e-column>
     </e-columns>
 </ej-grid> 
 {% endhighlight %}
@@ -193,7 +193,7 @@ The following output is displayed as a result of the above code example.
 
 ## Text alignment
 
-You can [align](https://help.syncfusion.com/api/angular/ejgrid#members:columns-textalign "align") both content and header text of particular column using [`textAlign`](https://help.syncfusion.com/api/angular/ejgrid#members:columns-textalign "textAlign") property of [`columns`](https://help.syncfusion.com/api/angular/ejgrid#members:columns "columns"). There are four possible ways to align content and header text of column, they are 
+You can align both content and header text of particular column using [`textAlign`](https://help.syncfusion.com/api/angular/ejgrid#members:columns-textalign "textAlign") property of [`columns`](https://help.syncfusion.com/api/angular/ejgrid#members:columns "columns"). There are four possible ways to align content and header text of column, they are 
 
 1. Right
 2. Left
@@ -208,11 +208,11 @@ The following code example describes the above behavior.
 {% highlight html %}
 <ej-grid id="Grid" [dataSource]="gridData" >
     <e-columns>
-       <e-column field="OrderID" [textAlign]="right"></e-column>
-       <e-column field="EmployeeID" [textAlign]="right"></e-column>
-       <e-column field="Freight" [textAlign]="right"></e-column>
-       <e-column field="ShipCountry" [textAlign]="center"></e-column>
-       <e-column field="ShipCity" [textAlign]="justify"></e-column>
+       <e-column field="OrderID" textAlign="right"></e-column>
+       <e-column field="EmployeeID" textAlign="right"></e-column>
+       <e-column field="Freight" textAlign="right"></e-column>
+       <e-column field="ShipCountry" textAlign="center"></e-column>
+       <e-column field="ShipCity" textAlign="justify"></e-column>
     </e-columns>
 </ej-grid> 
 {% endhighlight %}
@@ -372,7 +372,7 @@ The following output is displayed as a result of the above code example.
 
 ## Reorder
 
-Reordering can be done by drag and drop the particular column header from one index to another index within the Grid. Reordering can be enabled by setting [`allowReordering`](https://help.syncfusion.com/api/angular/ejgrid#members:allowreordering "allowReordering") property as `true`.
+Reordering can be done by drag and drop on the particular column header from one index to another index within the Grid. Reordering can be enabled by setting [`allowReordering`](https://help.syncfusion.com/api/angular/ejgrid#members:allowreordering "allowReordering") property as `true`.
 
 The following code example describes the above behavior.
 
@@ -421,7 +421,7 @@ The following code example describes the above behavior.
 <ej-grid id="Grid" [dataSource]="gridData" >
     <e-columns>
         <e-column field="EmployeeID"></e-column>
-        <e-column field="OrderID" [visible]="false"></e-column>
+        <e-column field="OrderID" visible="false"></e-column>
         <e-column field="Freight"></e-column>
         <e-column field="ShipCountry"></e-column>
         <e-column field="ShipCity"></e-column>
@@ -492,8 +492,7 @@ The following code example describes the above behavior.
             this.gridData = (window as any).gridData;
         }
         Click(){
-            var obj = $("#Grid").data("ejGrid");
-	        obj.deleteRecord("OrderID", obj.getSelectedRecords()[0]);
+            this.Grid.widget.deleteRecord("OrderID", this.Grid.widget.getSelectedRecords()[0]);
         }
      }
 
