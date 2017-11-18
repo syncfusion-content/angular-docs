@@ -357,7 +357,7 @@ import {Component} from '@angular/core';
 import {NorthwindService} from '../../services/northwind.service';
 
 @Component({
-  selector: 'sd-home',
+  selector: 'ej-app',
   templateUrl: 'app/components/kanban/kanban.component.html'
 })
 export class KanbanComponent {
