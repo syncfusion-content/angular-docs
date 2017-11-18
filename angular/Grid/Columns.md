@@ -121,7 +121,10 @@ The following code example describes the above behavior.
 <ej-grid id="Grid" [dataSource]="gridData" >
     <e-columns>
        <e-column field="OrderID"  headerText="OrderID"></e-column>
-       <e-column field="CustomerID" headerText="CustomerID"></e-column>
+       <e-column field="EmployeeID" headerText="Emp ID"></e-column>
+       <e-column field="Frieght"  headerText="Frieght"></e-column>
+       <e-column field="ShipCountry" headerText="Country"></e-column>
+       <e-column field="ShipCity"  headerText="City"></e-column>
     </e-columns>
 </ej-grid>
 {% endhighlight %}
@@ -166,7 +169,10 @@ The following code example describes the above behavior.
 <ej-grid id="Grid" [dataSource]="gridData">
     <e-columns>
        <e-column field="OrderID"  headerText="OrderID"></e-column>
-       <e-column field="CustomerID" headerText="CustomerID" [headerTextAlign]="right"></e-column>
+       <e-column field="EmployeeID" headerText="Emp ID" [headerTextAlign]="right"></e-column>
+       <e-column field="Frieght"  headerText="Frieght"></e-column>
+       <e-column field="ShipCountry" headerText="Country" [headerTextAlign]="center"></e-column>
+       <e-column field="ShipCity"  headerText="City" [headerTextAlign]="right"></e-column>
     </e-columns>
 </ej-grid> 
 {% endhighlight %}
@@ -212,9 +218,11 @@ The following code example describes the above behavior.
 </div>
 <ej-grid id="Grid" [dataSource]="gridData" >
     <e-columns>
-        <e-column field= "OrderID"></e-column>
-        <e-column field= "CustomerID" headerTemplateID= "#customerTemplate"></e-column>
-        <e-column field= "Freight"  ></e-column>
+       <e-column field="OrderID"  headerText="OrderID"></e-column>
+       <e-column field="EmployeeID" headerText="Emp ID" headerTemplateID= "#customerTemplate"></e-column>
+       <e-column field="Frieght"  headerText="Frieght"></e-column>
+       <e-column field="ShipCountry" headerText="Country"></e-column>
+       <e-column field="ShipCity"  headerText="City"></e-column>
     </e-columns>
 </ej-grid>
 {% endhighlight %}
@@ -259,9 +267,11 @@ The following code example describes the above behavior.
 {% highlight html %}
 <ej-grid id="Grid" [dataSource]="gridData" >
     <e-columns>
-        <e-column field="OrderID"></e-column>
-        <e-column field="CustomerID" [textAlign]="right"></e-column>
-        <e-column field="EmployeeID"></e-column>
+       <e-column field="OrderID" [textAlign]="right"></e-column>
+       <e-column field="EmployeeID" [textAlign]="right"></e-column>
+       <e-column field="Frieght" [textAlign]="right"></e-column>
+       <e-column field="ShipCountry" [textAlign]="center"></e-column>
+       <e-column field="ShipCity" [textAlign]="justify"></e-column>
     </e-columns>
 </ej-grid> 
 {% endhighlight %}
@@ -301,9 +311,11 @@ The following code example describes the above behavior.
 {% highlight html %}
 <ej-grid id="Grid" [dataSource]="gridData">
     <e-columns>
-        <e-column field="OrderID"  headerText="OrderID"></e-column>
-        <e-column field="CustomerID" headerText="CustomerID"></e-column>
-        <e-column field="Freight" width="75" format="{0:C2}"></e-column>
+       <e-column field="OrderID"></e-column>
+       <e-column field="EmployeeID"></e-column>
+       <e-column field="Freight" format="{0:C2}"></e-column>
+       <e-column field="OrderDate" format="{0:dd/MM/yyyy}"></e-column>
+       <e-column field="ShipCity"></e-column>
     </e-columns>
 </ej-grid> 
 {% endhighlight %}
@@ -340,9 +352,11 @@ The following code example describes the above behavior.
 {% highlight html %}
 <ej-grid id="Grid" [dataSource]="gridData" >
     <e-columns>
-        <e-column field="OrderID" width="75"></e-column>
-        <e-column field="CustomerID" width="80"></e-column>
-        <e-column field="ShipCity" width="110"></e-column>
+        <e-column field="OrderID" width="110"></e-column>
+        <e-column field="EmployeeID" width="110"></e-column>
+        <e-column field="Freight" width="100"></e-column>
+        <e-column field="ShipCountry" width="150"></e-column>
+        <e-column field="ShipCity" width="100"></e-column>
     </e-columns>
 </ej-grid>
 {% endhighlight %}
@@ -383,9 +397,11 @@ The following code example describes the above behavior.
 {% highlight html %} 
 <ej-grid id="Grid" [dataSource]="gridData" allowResizeToFit="true">
     <e-columns>
-        <e-column field="OrderID" width="75"></e-column>
-        <e-column field="CustomerID" width="80"></e-column>
-        <e-column field="ShipCity" width="110"></e-column>
+        <e-column field="OrderID" width="100"></e-column>
+        <e-column field="EmployeeID"></e-column>
+        <e-column field="Freight" width="75"></e-column>
+        <e-column field="ShipCountry" width="50"></e-column>
+        <e-column field="ShipCity"></e-column>
     </e-columns>
 </ej-grid>
 {% endhighlight %}
@@ -422,9 +438,11 @@ The following code example describes the above behavior.
 {% highlight html %}                     
 <ej-grid id="Grid" [dataSource]="gridData" allowReordering="true">
     <e-columns>
-        <e-column field="OrderID" width="75"></e-column>
-        <e-column field="CustomerID" width="80"></e-column>
-        <e-column field="ShipCity" width="110"></e-column>
+        <e-column field="OrderID"></e-column>
+        <e-column field="EmployeeID"></e-column>
+        <e-column field="ShipCountry"></e-column>
+        <e-column field="ShipCity"></e-column>
+        <e-column field="Freight"></e-column>
     </e-columns>
 </ej-grid>
 {% endhighlight %}
@@ -461,9 +479,11 @@ The following code example describes the above behavior.
 {% highlight html %}
 <ej-grid id="Grid" [dataSource]="gridData" >
     <e-columns>
-        <e-column field="OrderID" [visible]="false"></e-column>
-        <e-column field="CustomerID"></e-column>
         <e-column field="EmployeeID"></e-column>
+        <e-column field="OrderID" [visible]="false"></e-column>
+        <e-column field="Freight"></e-column>
+        <e-column field="ShipCountry"></e-column>
+        <e-column field="ShipCity"></e-column>
     </e-columns>
 </ej-grid> 
 {% endhighlight %}
