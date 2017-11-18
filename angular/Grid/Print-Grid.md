@@ -9,11 +9,11 @@ api: /api/angular/ejgrid
 ---
 # Print
 
-You need to use [`print()`](https://help.syncfusion.com/api/angular/grid#methods:print) method from Grid instance to print the Grid. You can add Print option in Toolbar item by adding `ej.Grid.ToolBarItems.PrintGrid` in [`toolbarItems`](https://help.syncfusion.com/api/angular/grid#members:toolbarsettings-toolbaritems).
+You need to use [`print()`](https://help.syncfusion.com/api/angular/ejgrid#methods:print) method from Grid instance to print the Grid. You can add Print option in Toolbar item by adding `ej.Grid.ToolBarItems.PrintGrid` in [`toolbarItems`](https://help.syncfusion.com/api/angular/grid#members:toolbarsettings-toolbaritems).
 
 {% highlight html %}
 
-<ej-grid  id="Grid"  allowPaging="true"  [dataSource]="gridData" toolbarSettings.showToolbar="true" [toolbarSettings.toolbarItems]="tools">
+<ej-grid  id="Grid"  [allowPaging]="true"  [dataSource]="gridData" toolbarSettings.showToolbar="true" [toolbarSettings.toolbarItems]="tools">
     <e-columns>
         <e-column field="OrderID" [isPrimaryKey]="true"  width="85" textAlign="right" headerText="Order ID"></e-column>
         <e-column field="CustomerID" headerText="Customer ID" width="85" ></e-column>        
@@ -66,11 +66,11 @@ Some of print options are not configurable through JavaScript code. You need to 
 
 ## Print on external Button Click
 
-By default, the Grid can be print from toolbar. To print from external button action, you need to call the grid's [`print()`](https://help.syncfusion.com/api/angular/grid#methods:print) method from required button event.
+By default, the Grid can be print from toolbar. To print from external button action, you need to call the grid's [`print()`](https://help.syncfusion.com/api/angular/ejgrid#methods:print) method from required button event.
 
 {% highlight html %}
 <input type="button" ej-button id="button1" value="Button" (click)="onClick($event)" />
-<ej-grid  id="Grid"  allowPaging="true"  [dataSource]="gridData">
+<ej-grid  id="Grid"  [allowPaging]="true"  [dataSource]="gridData">
     <e-columns>
         <e-column field="OrderID" [isPrimaryKey]="true"  width="85" textAlign="right" headerText="Order ID"></e-column>
         <e-column field="CustomerID" headerText="Customer ID" width="85" ></e-column>        
@@ -126,7 +126,7 @@ By default, the Grid will print all records. To print current page, you need to 
 
 {% highlight  html %}
 
-<ej-grid  id="Grid"  allowPaging="true"  [dataSource]="gridData"[pageSettings]="pageSettings" toolbarSettings.showToolbar="true" [toolbarSettings.toolbarItems]="tools">
+<ej-grid  id="Grid" [allowPaging]="true" [dataSource]="gridData" [pageSettings]="pageSettings" toolbarSettings.showToolbar="true" [toolbarSettings.toolbarItems]="tools">
     <e-columns>
         <e-column field="OrderID" [isPrimaryKey]="true"  width="85" textAlign="right" headerText="Order ID"></e-column>
         <e-column field="CustomerID" headerText="Customer ID" width="85" ></e-column>        
