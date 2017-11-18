@@ -517,11 +517,11 @@ The following code example describes the above behavior.
 <ej-grid id="Grid" [dataSource]="gridData" [allowPaging]="true" [pageSettings]="pageSettings">
     <e-columns>
         <e-column headerText="Photo">
-             <template e-template let-data>
+             <ng-template e-template let-data>
                 <div *ngIf="data.EmployeeID">
                 <img style="width: 75px; height: 70px" [attr.src]="'app/Content/images/grid/Employees/' + data.EmployeeID + '.png' " [alt]="data.EmployeeID" />
                 </div>
-            </template>
+            </ng-template>
          </e-column>
         <e-column field="EmployeeID" headerText="EmployeeID"></e-column>
         <e-column field="FirstName" headerText="FirstName"></e-column>
@@ -657,9 +657,9 @@ The following code example describes the above behavior.
         <e-column field="Fat" ></e-column>
         <e-column field="Carbohydrate" ></e-column>
         <e-column headerText="Calories In Take">
-             <template e-template let-data>
+             <ng-template e-template let-data>
                 <span>{{data.Protein * 4 + data.Fat * 4 + data.Carbohydrate * 9}}</span>
-            </template>
+            </ng-template>
         </e-column>
     </e-columns>
 </ej-grid>
