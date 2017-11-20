@@ -9,7 +9,7 @@ api: /api/angular/ejgrid
 ---
 # Summary
 
-Summary rows visibility can be controlled by [`showSummary`](https://help.syncfusion.com/api/js/ejgrid#members:showsummary "showSummary") property and it can be added to grid by using [`summaryRows`](https://help.syncfusion.com/api/js/ejgrid#members:summaryrows "summaryRows") array property. The following code example describes the above behavior.
+Summary rows visibility can be controlled by [`showSummary`](https://help.syncfusion.com/api/angular/ejgrid#members:showsummary "showSummary") property and it can be added to grid by using [`summaryRows`](https://help.syncfusion.com/api/angular/ejgrid#members:summaryrows "summaryRows") array property. The following code example describes the above behavior.
 
 {% highlight html %}
 
@@ -40,7 +40,7 @@ Summary rows visibility can be controlled by [`showSummary`](https://help.syncfu
         constructor()
         {
            //The datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
-           this.gridData = window.gridData;
+           this.gridData = (window as any).gridData;
 		   this.summaryrows = [{ 
                  title: "Sum", 
                  summaryColumns: [{ 
@@ -72,7 +72,7 @@ Following are the supported list of aggregates
 ### Sum, Average, Maximum and minimum
 
 
-Summaries with Sum, Average, Maximum and Minimum aggregate can be defined by using [`summaryType`](https://help.syncfusion.com/api/js/ejgrid#members:summaryrows-summarycolumns-summarytype "summaryType") in [`summaryColumns`](https://help.syncfusion.com/api/js/ejgrid#members:summaryrows-summarycolumns "summaryColumns") collections. These aggregate are used in `Number` column.
+Summaries with Sum, Average, Maximum and Minimum aggregate can be defined by using [`summaryType`](https://help.syncfusion.com/api/angular/ejgrid#members:summaryrows-summarycolumns-summarytype "summaryType") in [`summaryColumns`](https://help.syncfusion.com/api/angular/ejgrid#members:summaryrows-summarycolumns "summaryColumns") collections. These aggregate are used in `Number` column.
 
 {% highlight html %}
 
@@ -103,7 +103,7 @@ Summaries with Sum, Average, Maximum and Minimum aggregate can be defined by usi
         constructor()
         {
            //The datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
-           this.gridData = window.gridData;
+           this.gridData = (window as any).gridData;
 		   this.summaryrows = [{ 
                title: "Sum", 
                summaryColumns: [{ 
@@ -147,7 +147,7 @@ Summaries with Sum, Average, Maximum and Minimum aggregate can be defined by usi
 
 ### True and False Count
 
-Summaries with `True` and `False` count aggregate can be defined by using [`summaryType`](https://help.syncfusion.com/api/js/ejgrid#members:summaryrows-summarycolumns-summarytype "summaryType") [`summaryColumns`](https://help.syncfusion.com/api/js/ejgrid#members:summaryrows-summarycolumns "summaryColumns") collections. `True` and `False` count aggregates are used for Boolean columns.
+Summaries with `True` and `False` count aggregate can be defined by using [`summaryType`](https://help.syncfusion.com/api/angular/ejgrid#members:summaryrows-summarycolumns-summarytype "summaryType") [`summaryColumns`](https://help.syncfusion.com/api/angular/ejgrid#members:summaryrows-summarycolumns "summaryColumns") collections. `True` and `False` count aggregates are used for Boolean columns.
 
 {% highlight html %}
 
@@ -178,7 +178,7 @@ Summaries with `True` and `False` count aggregate can be defined by using [`summ
         constructor()
         {
            //The datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
-           this.gridData = window.gridData;
+           this.gridData = (window as any).gridData;
 		   this.summaryrows = [{ 
                title: "False Count", 
                summaryColumns: [{ 
@@ -204,7 +204,7 @@ Summaries with `True` and `False` count aggregate can be defined by using [`summ
 
 ## Custom Summary
 
-Custom Summary can be used to create summary values based on your required custom logic and calculations. To enable Custom Summary, [`summaryType`](https://help.syncfusion.com/api/js/ejgrid#members:summaryrows-summarycolumns-summarytype "summaryType") should be [`custom`](https://help.syncfusion.com/js/grid/summary#custom-summary-by-string "custom") and `value` property need to define as function. In this property `value` function, you need to use Grid instance to access `model.dataSource` and `model.currentViewData`. After the custom calculation, the returned value will be displayed in corresponding Summary cell.
+Custom Summary can be used to create summary values based on your required custom logic and calculations. To enable Custom Summary, [`summaryType`](https://help.syncfusion.com/api/angular/ejgrid#members:summaryrows-summarycolumns-summarytype "summaryType") should be [`custom`](https://help.syncfusion.com/js/grid/summary#custom-summary-by-string "custom") and `value` property need to define as function. In this property `value` function, you need to use Grid instance to access `model.dataSource` and `model.currentViewData`. After the custom calculation, the returned value will be displayed in corresponding Summary cell.
 
 
 {% highlight html %}
@@ -236,7 +236,7 @@ Custom Summary can be used to create summary values based on your required custo
         constructor()
         {
             //The datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
-            this.gridData = window.gridData;
+            this.gridData = (window as any).gridData;
             this.summaryrows = [{ 
                 title: "Currency", 
                 summaryColumns: [{ 
@@ -294,7 +294,7 @@ Custom Summary can be used to create summary values based on your required custo
         constructor()
         {
             //The datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
-            this.gridData = window.gridData;
+            this.gridData = (window as any).gridData;
             this.summaryrows = [{
                 summaryColumns: [{
                    summaryType: ej.Grid.SummaryType.Sum,
@@ -318,7 +318,7 @@ W> Minimum one column should be grouped to show summary details.
 
 ## Group Caption Summary
 
-To show summaries in each Group's Caption row, particular [summary row](https://help.syncfusion.com/api/js/ejgrid#members:summaryrows) should have [`showTotalSummary`](https://help.syncfusion.com/api/js/ejgrid#members:summaryrows-showtotalsummary "showtotalsummary") as `false` and [`showCaptionSummary`](https://help.syncfusion.com/api/js/ejgrid#members:summaryrows-showcaptionsummary "showCaptionSummary") as `true`.
+To show summaries in each Group's Caption row, particular [summary row](https://help.syncfusion.com/api/angular/ejgrid#members:summaryrows) should have [`showTotalSummary`](https://help.syncfusion.com/api/angular/ejgrid#members:summaryrows-showtotalsummary "showtotalsummary") as `false` and [`showCaptionSummary`](https://help.syncfusion.com/api/js/ejgrid#members:summaryrows-showcaptionsummary "showCaptionSummary") as `true`.
 
 
 {% highlight html %}
@@ -349,7 +349,7 @@ To show summaries in each Group's Caption row, particular [summary row](https://
         constructor()
         {
             //The datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
-            this.gridData = window.gridData;
+            this.gridData = (window as any).gridData;
             this.summaryrows = [{
               showCaptionSummary: true,
               summaryColumns: [{
@@ -387,7 +387,7 @@ The following code example describes the above behavior.
         <e-column field="EmployeeID"></e-column>
         <e-column field="Freight" format="{0:C}"></e-column>
     </e-columns>
-    <ng-template #summarytemplate e-summary-template let-data>
+    <ng-template e-summary-template let-data>
         <div class="test">
             "'Freight has Average of ' + data.summaryValue + 'in  dollars  '"
         </div>
@@ -446,7 +446,7 @@ The following output is displayed as a result of the above code example.
 
 ## Format
 
-To format Summary values, [`format`](https://help.syncfusion.com/api/js/ejgrid#members:summaryrows-summarycolumns-format "format") property needs to be assigned in [`summaryColumns`](https://help.syncfusion.com/api/js/ejgrid#members:summaryrows-summarycolumns "summaryColumns") collection object.  To know more about formatting options. Please refer [**globalize.js**](https://github.com/jquery/globalize/tree/v0.1.1#)
+To format Summary values, [`format`](https://help.syncfusion.com/api/angular/ejgrid#members:summaryrows-summarycolumns-format "format") property needs to be assigned in [`summaryColumns`](https://help.syncfusion.com/api/js/ejgrid#members:summaryrows-summarycolumns "summaryColumns") collection object.  To know more about formatting options. Please refer [**globalize.js**](https://github.com/jquery/globalize/tree/v0.1.1#)
 
 {% highlight html %}
 
@@ -478,7 +478,7 @@ To format Summary values, [`format`](https://help.syncfusion.com/api/js/ejgrid#m
         constructor()
         {
             //The datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
-            this.gridData = window.gridData;
+            this.gridData = (window as any).gridData;
             this.summaryrows =  [{
                  title: "Sum",
                  summaryColumns: [{
