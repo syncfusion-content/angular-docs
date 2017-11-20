@@ -1,4 +1,4 @@
---
+---
 layout: post
 title: Searching with Grid widget for Syncfusion Essential Angular-2
 description: How to enable search opition and its functionalities
