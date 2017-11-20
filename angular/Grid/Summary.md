@@ -13,10 +13,10 @@ Summary rows visibility can be controlled by [`showSummary`](https://help.syncfu
 
 {% highlight html %}
 
-<ej-grid [allowpaging]="true" [allowsorting]="true" [datasource]="gridData" [showsummary]="true" [summaryrows]="summaryrows">
+<ej-grid [allowPaging]="true" [allowSorting]="true" [dataSource]="gridData" [showSummary]="true" [summaryRows]="summaryrows">
 
     <e-columns>
-        <e-column field="OrderID" headertext="OrderID" [isprimarykey]="true" width="80" textalign="right"></e-column>
+        <e-column field="OrderID" headertext="OrderID" width="80" textalign="right"></e-column>
         <e-column field="EmployeeID" headertext="EmployeeID" edittype="numericedit" width="30" width="80" textalign="right"></e-column>
         <e-column field="ShipCity" headertext="ShipCity" width="90"></e-column>
         <e-column field="ShipCountry" headertext="Ship Country" width="100"></e-column>
@@ -41,7 +41,15 @@ Summary rows visibility can be controlled by [`showSummary`](https://help.syncfu
         {
            //The datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
            this.gridData = window.gridData;
-		   this.summaryrows = [{ title: "Sum", summaryColumns: [{ summaryType: ej.Grid.SummaryType.Sum, displayColumn: "Freight", dataMember: "Freight", format: "{0:C2}" }] }]
+		   this.summaryrows = [{ 
+                 title: "Sum", 
+                 summaryColumns: [{ 
+                   summaryType: ej.Grid.SummaryType.Sum, 
+                   displayColumn: "Freight", 
+                   dataMember: "Freight", 
+                   format: "{0:C2}" 
+                }] 
+             }]
          }
      }
 
@@ -68,7 +76,7 @@ Summaries with Sum, Average, Maximum and Minimum aggregate can be defined by usi
 
 {% highlight html %}
 
-<ej-grid [allowpaging]="true" [allowsorting]="true" [datasource]="gridData" [showsummary]="true" [summaryrows]="summaryrows">
+<ej-grid [allowPaging]="true" [allowSorting]="true" [dataSource]="gridData" [showSummary]="true" [summaryRows]="summaryrows">
 
     <e-columns>
         <e-column field="OrderID" headertext="OrderID" [isprimarykey]="true" width="80" textalign="right"></e-column>
@@ -96,8 +104,40 @@ Summaries with Sum, Average, Maximum and Minimum aggregate can be defined by usi
         {
            //The datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
            this.gridData = window.gridData;
-		   this.summaryrows = [{ title: "Sum", summaryColumns: [{ summaryType: ej.Grid.SummaryType.Sum, displayColumn: "Freight", dataMember: "Freight", format: "{0:C2}" }] }, { title: "Average", summaryColumns: [{ summaryType: ej.Grid.SummaryType.Average, displayColumn: "Freight", dataMember: "Freight", format: "{0:C2}" }] }, { title: "Maximum", summaryColumns: [{ summaryType: ej.Grid.SummaryType.Maximum, displayColumn: "Freight", dataMember: "Freight", format: "{0:C2}" }] }, { title: "Minimum", summaryColumns: [{ summaryType: ej.Grid.SummaryType.Minimum, displayColumn: "Freight", dataMember: "Freight", format: "{0:C2}" }] } ]
-         }
+		   this.summaryrows = [{ 
+               title: "Sum", 
+               summaryColumns: [{ 
+                  summaryType: ej.Grid.SummaryType.Sum, 
+                  displayColumn: "Freight", 
+                  dataMember: "Freight", 
+                  format: "{0:C2}" 
+               }] 
+            }, { 
+                title: "Average", 
+                summaryColumns: [{ 
+                  summaryType: ej.Grid.SummaryType.Average, 
+                  displayColumn: "Freight", 
+                  dataMember: "Freight", 
+                  format: "{0:C2}" 
+               }] 
+           }, { 
+               title: "Maximum", 
+               summaryColumns: [{ 
+                 summaryType: ej.Grid.SummaryType.Maximum, 
+                 displayColumn: "Freight", 
+                 dataMember: "Freight", 
+                 format: "{0:C2}" 
+              }] 
+           }, { 
+               title: "Minimum", 
+               summaryColumns: [{ 
+                 summaryType: ej.Grid.SummaryType.Minimum, 
+                 displayColumn: "Freight", 
+                 dataMember: "Freight", 
+                 format: "{0:C2}" 
+              }] 
+           }]
+        }
      }
 
 {% endhighlight %}
@@ -111,7 +151,7 @@ Summaries with `True` and `False` count aggregate can be defined by using [`summ
 
 {% highlight html %}
 
-<ej-grid [allowpaging]="true" [allowsorting]="true" [datasource]="gridData" [showsummary]="true" [summaryrows]="summaryrows">
+<ej-grid [allowPaging]="true" [allowSorting]="true" [dataSource]="gridData" [showSummary]="true" [summaryRows]="summaryrows">
 
     <e-columns>
         <e-column field="OrderID" headertext="OrderID" [isprimarykey]="true" width="80" textalign="right"></e-column>
@@ -139,7 +179,21 @@ Summaries with `True` and `False` count aggregate can be defined by using [`summ
         {
            //The datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
            this.gridData = window.gridData;
-		   this.summaryrows = [{ title: "False Count", summaryColumns: [{ summaryType: ej.Grid.SummaryType.FalseCount, displayColumn: "Verified", dataMember: "Verified" }] }, { title: "True Count", summaryColumns: [{ summaryType: ej.Grid.SummaryType.TrueCount, displayColumn: "Verified", dataMember: "Verified" }] }]
+		   this.summaryrows = [{ 
+               title: "False Count", 
+               summaryColumns: [{ 
+                  summaryType: ej.Grid.SummaryType.FalseCount, 
+                  displayColumn: "Verified", 
+                  dataMember: "Verified" 
+               }] 
+           }, {
+                title: "True Count", 
+                summaryColumns: [{ 
+                  summaryType: ej.Grid.SummaryType.TrueCount, 
+                  displayColumn: "Verified", 
+                  dataMember: "Verified" 
+              }] 
+            }]
          }
      }
 
@@ -155,13 +209,7 @@ Custom Summary can be used to create summary values based on your required custo
 
 {% highlight html %}
 
-<script type="text/javascript">
-    function currency() {
-        //ej.sum is aggregate to add data of freight from datasource
-        return ej.sum(this.model.dataSource(), "Freight");
-    }
-</script>
-    <ej-grid [allowpaging]="true" [datasource]="gridData" [showsummary]="true" [summaryrows]="summaryrows">
+    <ej-grid [allowPaging]="true" [dataSource]="gridData" [showSummary]="true" [summaryRows]="summaryrows">
 
      <e-columns>
         <e-column field="OrderID" headertext="OrderID" width="70" textalign="right"></e-column>
@@ -189,7 +237,23 @@ Custom Summary can be used to create summary values based on your required custo
         {
             //The datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
             this.gridData = window.gridData;
-            this.summaryrows = [{ title: "Currency", summaryColumns: [{ summaryType: ej.Grid.SummaryType.Custom, displayColumn: "Freight", customSummaryValue: currency, format: "{0:C2}" }] }, { title: "True Count", summaryColumns: [{ summaryType: ej.Grid.SummaryType.TrueCount, displayColumn: "Verified", dataMember: "Verified" }] }]
+            this.summaryrows = [{ 
+                title: "Currency", 
+                summaryColumns: [{ 
+                  summaryType: ej.Grid.SummaryType.Custom, 
+                  displayColumn: "Freight", 
+                  customSummaryValue: function currency() {
+                      return ej.sum(this.model.dataSource(), "Freight");
+                  }, 
+                  format: "{0:C2}" }] 
+            }, { 
+                title: "True Count", 
+                summaryColumns: [{ 
+                  summaryType: ej.Grid.SummaryType.TrueCount, 
+                  displayColumn: "Verified", 
+                  dataMember: "Verified"
+               }] 
+           }]
         }
     }
 
@@ -204,7 +268,7 @@ Custom Summary can be used to create summary values based on your required custo
 
 {% highlight html %}
 
-    <ej-grid [allowpaging]="true" [datasource]="gridData" [showsummary]="true" [summaryrows]="summaryrows" [allowsorting]="true" [allowgrouping]="true" [groupsettings]="groupsettings">
+    <ej-grid [allowPaging]="true" [dataSource]="gridData" [showSummary]="true" [summaryRows]="summaryrows" [allowSorting]="true" [allowGrouping]="true" [groupSettings]="groupsettings">
 
     <e-columns>
         <e-column field="OrderID" headertext="OrderID" width="70" textalign="right"></e-column>
@@ -258,7 +322,7 @@ To show summaries in each Group's Caption row, particular [summary row](https://
 
 
 {% highlight html %}
-<ej-grid [allowpaging]="true" [datasource]="gridData" [showsummary]="true" [summaryrows]="summaryrows" [allowsorting]="true" [allowgrouping]="true" [groupsettings]="groupsettings">
+<ej-grid [allowPaging]="true" [dataSource]="gridData" [showSummary]="true" [summaryRows]="summaryrows" [allowSorting]="true" [allowGrouping]="true" [groupSettings]="groupsettings">
 
     <e-columns>
         <e-column field="OrderID" headertext="OrderID" width="80" textalign="right"></e-column>
@@ -316,17 +380,18 @@ The following code example describes the above behavior.
 
 {% highlight html %}
 
-<script id="templateData" type="text/x-jsrender">
-    Freight has Average of {{:summaryValue}} in  dollars
-</script>
-
-<ej-grid [datasource]="gridData" [showsummary]="true" [summaryrows]="summaryrows">
+<ej-grid [dataSource]="gridData" [showSummary]="true" [summaryRows]="summaryrows">
 
     <e-columns>
         <e-column field="OrderID"></e-column>
         <e-column field="EmployeeID"></e-column>
         <e-column field="Freight" format="{0:C}"></e-column>
     </e-columns>
+    <ng-template #summarytemplate e-summary-template let-data>
+        <div class="test">
+            "'Freight has Average of ' + data.summaryValue + 'in  dollars  '"
+        </div>
+    </ng-template>
 
 </ej-grid>
 
@@ -386,7 +451,7 @@ To format Summary values, [`format`](https://help.syncfusion.com/api/js/ejgrid#m
 {% highlight html %}
 
 
-<ej-grid [allowpaging]="true" [datasource]="gridData" [showsummary]="true" [summaryrows]="summaryrows">
+<ej-grid [allowPaging]="true" [dataSource]="gridData" [showSummary]="true" [summaryRows]="summaryrows">
 
     <e-columns>
         <e-column field="OrderID" headertext="OrderID" width="80" textalign="right"></e-column>
