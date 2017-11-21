@@ -26,7 +26,8 @@ N> We already implemented the below Ahead-of-Time Compiler configuration in our 
 
 ## Ahead-of-Time Compilation
 
-The [Ahead-of-Time (AOT) compiler](https://angular.io/guide/aot-compiler) can catch template errors early and improve performance by compiling at build time.
+The Angular [Ahead-of-Time (AOT) compiler](https://angular.io/guide/aot-compiler) converts your Angular HTML and TypeScript code into efficient JavaScript code during the build phase before the browser downloads and runs that code.
+
 
 |              AOT Compiler            |               JIT Compiler           |                                       
 |:-------------------------------------|:-------------------------------------|
@@ -53,121 +54,65 @@ It will install the ngc compiler to support the Ahead-of-Time Compilation.
 
 N> If you get an error like `TypeError:this.compiler.analyzeModulesAsync is not a function`, then the problem is with the mismatched versions of `@angular/compiler-cli` and `other angular packages`. So we suggest you to install `@angular/compiler-cli` package in the same version of other angular packages.
 
-## tsconfig.json
-
-The ngc compiler needs its own `tsconfig.json` with Ahead-of-Time compilation oriented settings. Modify the tsconfig.json file as below code snippet.
+The [`@ngtools/webpack`](https://www.npmjs.com/package/@ngtools/webpack) provides AOTPlugin and loader for Webpack which shares the context with other loaders/plugins. Run the below command to install NPM package `@ngtools/webpack`.
 
 {% highlight javascript %}
-{
-  "compilerOptions": {
-    "target": "es5",
-    "module": "es2015",
-    "moduleResolution": "node",
-    "sourceMap": true,
-    "emitDecoratorMetadata": true,
-    "experimentalDecorators": true,
-    "removeComments": false,
-    "noImplicitAny": false,
-    "suppressImplicitAnyIndexErrors": true,
-    "outDir": "./build",
-    "skipLibCheck": true,
-    "lib": [
-      "es2015",
-      "dom"
-    ],
-    "typeRoots": [
-      "./../node_modules/@types/"
-    ],
-    "types": [
-      "jquery",
-      "ej.web.all",
-      "node"
+npm install @ngtools/webpack --save-dev
+{% endhighlight %}
+
+## Configure @ngtools/webpack
+
+The below steps depicts the configuration of `@ngtools/webpack` in Angular application.
+
+* Instead of using `awesome-typescript-loader` configure `@ngtools/webpack` to compile the typescript files of the application, under rules section in `config/webpack.common.js` file.
+
+* Add instance of `AngularCompilerPlugin`, which has an apply property. This apply property is called by the webpack compiler, giving access to the entire compilation lifecycle. Add options `tsConfigPath` and `entryModule` with `AngularCompilerPlugin` instance.
+
+  * `tsConfigPath` - The path to the `tsconfig.json` file. In your `tsconfig.json`, you can pass options to the Angular Compiler with `angularCompilerOptions`.
+
+  * `entryModule` - Optional if specified in `angularCompilerOptions`. The path and classname of the main application module. This follows the format `path/to/file#ClassName`.
+
+Refer to the below configuration of `webpack.common.js` file. 
+
+{% highlight javascript %}
+
+var webpack = require('webpack');
+. . . . .
+var AngularCompilerPlugin = require('@ngtools/webpack').AngularCompilerPlugin;
+
+module.exports = {
+ 
+
+  module: {
+    rules: [
+      {
+        test: /(?:\.ngfactory\.js|\.ngstyle\.js|\.ts)$/,
+        loader: '@ngtools/webpack',
+      },
+      . . . . .
     ]
   },
-  "compileOnSave": false,
-  "buildOnSave": false,
-  "exclude": [
-    "node_modules",
-    "dist",
-    "src/main*.ts",
-    "src/polyfills.ts",
-    "src/vendor.ts"
-  ],
-   "awesomeTypescriptLoaderOptions": {
-    "forkChecker": true,
-    "useWebpackText": true
-  },
-  "angularCompilerOptions": {
-    "genDir": ".",
-    "entryModule": "src/app/app.module#AppModule"
-  }
-}
-{% endhighlight %}
 
-The below table depicts the purpose of `tsconfig.json` file with Ahead-of-Time compilation oriented settings.
+  plugins: [
+    . . . . . .
 
-|              Properties       |               Purpose                |                                       
-|:------------------------------|:-------------------------------------|
-|entryModule                    |It tells the entry point for angular-compiler.|
-|gendir                         |It tells the angular-compiler to store the compiled output files in that folder.|
-|skipLibCheck         	        |It skips type checking of all declaration files (*.d.ts).|
-
-## Compiling the Application
-
-To initiate Ahead-of-Time compilation by using the previously installed ngc compiler, run the below command in your application's root directory. Before that we need to add the NPM command `ngc` in script section of `package.json` file as below code snippet.
-
-{% highlight javascript %}
-{
-  "name": "EJAngular2-webpack-starter",
-  "version": "1.0.0",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/syncfusion/angular2-seeds.git"
-  },
-  "description": "A webpack starter for Angular",
-  "scripts": {
-    "start": "webpack-dev-server --inline --progress --port 3000",
-    "test": "karma start",
-    "build:aot": "rimraf dist && webpack --config config/webpack.prod.js --progress --profile --bail",
-    "ngc": "ngc -p src/tsconfig.json"
-  },
-  
-. . .
-. . .
+    new AngularCompilerPlugin({
+      tsConfigPath: 'src/tsconfig.json',
+      entryModule: 'src/app/app.module#AppModule'
+    })
+    . . . .
+  ]
+};
 
 {% endhighlight %}
 
-Now run the below command. 
-
-{% highlight javascript %}
-
-npm run ngc
-{% endhighlight %}
-
-* After ngc completes, it has the collection of NgFactory files in the src folder, those factory files are essential to the compiled application. Each component factory creates an instance of the component at runtime by combining the original class file and a JavaScript representation of the component's template.
-
-## Bootstrap the Application
-
-* The application with Ahead-of-Time compiler will be bootstraped with the generated `AppModuleNgFactory`. To bootstrap the application, modify the `main.ts` file as below code snippet.
-
-{% highlight javascript %}
-
-import { platformBrowser }    from '@angular/platform-browser';
-import { AppModuleNgFactory } from './app/app.module.ngfactory';
-import { enableProdMode } from '@angular/core';
-if (process.env.ENV === 'production') {
-  enableProdMode();
-}
-platformBrowser().bootstrapModuleFactory(AppModuleNgFactory);
-
-{% endhighlight %}
 
 ## Build the application
 
 * To build the webpack application with Ahead-of-Time compiler, run the below command. It will create `dist` folder for production build.
 
 {% highlight javascript %}
-npm run build:aot
+npm run build
 {% endhighlight %}
 
 Refer the below codes to create an application.
@@ -234,13 +179,14 @@ export class AppModule { }
 
 // Refer the code for main.ts file(src/main.ts) 
 
-import { platformBrowser }    from '@angular/platform-browser';
-import { AppModuleNgFactory } from './app/app.module.ngfactory';
+import { platformBrowserDynamic } from '@angular/platform-browser-dynamic';
 import { enableProdMode } from '@angular/core';
+import { AppModule } from './app/app.module';
 if (process.env.ENV === 'production') {
   enableProdMode();
 }
-platformBrowser().bootstrapModuleFactory(AppModuleNgFactory);
+platformBrowserDynamic().bootstrapModule(AppModule);
+
 
 {% endhighlight %}
 
@@ -276,10 +222,10 @@ platformBrowser().bootstrapModuleFactory(AppModuleNgFactory);
   },
   "description": "A webpack starter for Angular",
   "scripts": {
+    "build": "rimraf dist && webpack --config config/webpack.prod.js --progress --profile --bail",
+    "ngc": "ngc -p src/tsconfig.json",
     "start": "webpack-dev-server --inline --progress --port 3000",
-    "test": "karma start",
-    "build:aot": "rimraf dist && webpack --config config/webpack.prod.js --progress --profile --bail",
-    "ngc": "ngc -p src/tsconfig.json"
+    "test": "karma start"
   },
   "keywords": [
     "syncfusion",
@@ -297,22 +243,21 @@ platformBrowser().bootstrapModuleFactory(AppModuleNgFactory);
   },
   "homepage": "https://github.com/syncfusion/angular2-seeds#readme",
   "dependencies": {
-    "@angular/common": "~4.3.6",
-    "@angular/compiler": "~4.3.6",
-    "@angular/compiler-cli": "~4.3.6",
-    "@angular/core": "~4.3.6",
-    "@angular/forms": "~4.3.6",
-    "@angular/http": "~4.3.6",
-    "@angular/platform-browser": "~4.3.6",
-    "@angular/platform-browser-dynamic": "~4.3.6",
-    "@angular/router": "~4.3.6",
+    "@angular/common": "~5.0.0",
+    "@angular/compiler": "~5.0.0",
+    "@angular/compiler-cli": "^5.0.0",
+    "@angular/core": "~5.0.0",
+    "@angular/forms": "~5.0.0",
+    "@angular/http": "~5.0.0",
+    "@angular/platform-browser": "~5.0.0",
+    "@angular/platform-browser-dynamic": "~5.0.0",
+    "@angular/router": "~5.0.0",
     "core-js": "^2.4.1",
     "rxjs": "^5.4.3",
     "zone.js": "^0.7.4"
   },
   "devDependencies": {
-    "angular2-template-loader": "~0.6.2",
-    "awesome-typescript-loader": "~3.1.3",
+    "@ngtools/webpack": "^1.8.2",
     "css-loader": "^0.26.1",
     "extract-text-webpack-plugin": "~2.1.0",
     "file-loader": "~0.11.1",
@@ -346,7 +291,6 @@ platformBrowser().bootstrapModuleFactory(AppModuleNgFactory);
   }
 }
 
-
 {% endhighlight %}
 
 {% highlight ts %}
@@ -371,7 +315,7 @@ export const rootRouterConfig: Routes = [
 {
   "compilerOptions": {
     "target": "es5",
-    "module": "es2015",
+    "module": "commonjs",
     "moduleResolution": "node",
     "sourceMap": true,
     "emitDecoratorMetadata": true,
@@ -379,8 +323,6 @@ export const rootRouterConfig: Routes = [
     "removeComments": false,
     "noImplicitAny": false,
     "suppressImplicitAnyIndexErrors": true,
-    "outDir": "./build",
-    "skipLibCheck": true,
     "lib": [
       "es2015",
       "dom"
@@ -393,23 +335,6 @@ export const rootRouterConfig: Routes = [
       "ej.web.all",
       "node"
     ]
-  },
-  "compileOnSave": false,
-  "buildOnSave": false,
-  "exclude": [
-    "node_modules",
-    "dist",
-    "src/main*.ts",
-    "src/polyfills.ts",
-    "src/vendor.ts"
-  ],
-   "awesomeTypescriptLoaderOptions": {
-    "forkChecker": true,
-    "useWebpackText": true
-  },
-  "angularCompilerOptions": {
-    "genDir": ".",
-    "entryModule": "src/app/app.module#AppModule"
   }
 }
 {% endhighlight %}
