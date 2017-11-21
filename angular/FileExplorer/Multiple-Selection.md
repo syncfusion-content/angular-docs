@@ -17,7 +17,7 @@ N>  For selecting files by mouse down and drag set `allowMultiSelection` propert
 
 {% highlight html %}
 
-<ej-fileexplorer id="fileExplorer" path= "http://js.syncfusion.com/demos/ejServices/Content/FileBrowser"
+<ej-fileexplorer id="fileExplorer" path= "http://js.syncfusion.com/demos/ejServices/Content/FileBrowser/"
     ajaxAction="http://js.syncfusion.com/demos/ejServices/api/FileExplorer/FileOperations" 
     [allowMultiSelection]="true" style="display:block">
 </ej-fileexplorer>
