@@ -87,6 +87,32 @@ npm install --save-dev @types/ej.web.all
 
 {% endhighlight %}
 
+* And also include the typings `jquery` and `ej.web.all` in `tsconfig.json` file. 
+
+{% highlight javascript %}
+
+{
+  "compilerOptions": {
+    "module": "es2015",
+    "moduleResolution": "node",
+    "target": "es5",
+    "sourceMap": true,
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+    "skipDefaultLibCheck": true,
+    "skipLibCheck": true, // Workaround for https://github.com/angular/angular/issues/17863. Remove this if you upgrade to a fixed version of Angular.
+    "strict": true,
+    "lib": [ "es6", "dom" ],
+    "types": [ "webpack-env",
+               "jquery",
+               "ej.web.all"
+             ]
+  },
+  "exclude": [ "bin", "node_modules" ],
+  "atom": { "rewriteTsconfig": false }
+}
+
+{% endhighlight %}
 
 * Import `ej-angular2` module into `app.module.shared.ts` file.
 
