@@ -62,7 +62,7 @@ npm install @ngtools/webpack --save-dev
 
 ## Configure @ngtools/webpack
 
-The below steps depicts the configuration of `` in Angular application.
+The below steps depicts the configuration of `@ngtools/webpack` in Angular application.
 
 * Instead of using `awesome-typescript-loader` configure `@ngtools/webpack` to compile the typescript files of the application, under rules section in `config/webpack.common.js` file.
 
