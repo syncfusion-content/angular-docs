@@ -328,9 +328,9 @@ this.caption = {
 
 ## Localization
 
-Bullet graph supports localization for its axis labels and tooltip. To render the bullet graph with specific culture you have to refer the corresponding globalize culture script and need to specify the culture name in locale property of bullet graph.
+Bullet graph supports localization for its axis labels and tooltip. To render the bullet graph with specific culture you have to refer the corresponding globalize culture script and need to specify the culture name in `locale` property of bullet graph.
 
-Enable Group Separator is used to Convert the date object to string while using the locale settings, you can set enableGroupSeparator property as true.
+Enable Group Separator is used to Convert the date object to string while using the locale settings, you can set `enableGroupSeparator` property as true.
 
 
 

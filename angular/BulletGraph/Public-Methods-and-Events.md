@@ -249,36 +249,6 @@ ondrawfeaturemeasurebar(sender){
 
 Fires on rendering the indicator of bullet graph.
 
-<table class="params">
-<thead>
-<tr>
-<th>Name</th>
-<th>Type</th>
-<th class="last">Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td class="type"><span class="param-type">Object</span></td>
-<td class="description last">returns an object to customize bullet graph indicator text and symbol before rendering it.</td>
-</tr>
-<tr>
-<td class="type"><span class="param-type">Object</span></td>
-<td class="description last">returns the object of bullet graph.</td>
-</tr>
-<tr>
-<td class="type"><span class="param-type">string</span></td>
-<td class="description last">returns the type of event.</td>
-</tr>
-<tr>
-<td class="type"><span class="param-type">boolean</span></td>
-<td class="description last">for canceling the event.</td>
-</tr>
-</tbody>
-</table>
-
-
-
 
 {% highlight ts %}
 
