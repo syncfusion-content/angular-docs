@@ -46,3 +46,16 @@ HTML elements can be displayed in the tooltip by using the `tooltip.template` pr
 {% endhighlight %}
 
 ![](Tooltip_images/Tooltip_img2.png)
+
+## Customize the appearance of tooltip
+
+The `fill` and `border` options are used to customize the `background color` and `border` of the tooltip respectively. The `font` option in the tooltip is used to customize the font of the tooltip text.
+
+
+{% highlight js %}
+
+<ej-sunburstchart  id="sunburst"   [tooltip.border]="{color:'black',width:2}" [tooltip.visible]="true" [tooltip.font]="{fontFamily:'Arial',fontStyle:'Italic',size:'10px'}">
+</ej-sunburstchart>	
+
+{% endhighlight %}
+
