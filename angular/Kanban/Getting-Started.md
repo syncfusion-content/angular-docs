@@ -226,7 +226,7 @@ Create a Div element within the body section of the HTML document, where the Kan
 
 {% endhighlight %}
 
-The below code is to retrive data from service and assigned to Kanban datasource.
+The below code is to retrieve data from service and assigned to Kanban datasource.
 
 {% highlight js %}
 
@@ -234,7 +234,7 @@ import {Component} from '@angular/core';
 import {NorthwindService} from '../../services/northwind.service';
 
 @Component({
-  selector: 'sd-home',
+  selector: 'ej-app',
   templateUrl: 'app/components/kanban/kanban.component.html'
 })
 export class KanbanComponent {
@@ -269,7 +269,7 @@ In order to display cards in Kanban control, you need to map the database fields
 
 {% endhighlight %}
 
-The below code is to retrive data from service and assigned to Kanban datasource.
+The below code is to retrieve data from service and assigned to Kanban datasource.
 
 {% highlight js %}
 
@@ -277,7 +277,7 @@ import {Component} from '@angular/core';
 import {NorthwindService} from '../../services/northwind.service';
 
 @Component({
-  selector: 'sd-home',
+  selector: 'ej-app',
   templateUrl: 'app/components/kanban/kanban.component.html'
 })
 export class KanbanComponent {
@@ -291,7 +291,7 @@ export class KanbanComponent {
 
 ![](Getting_Started_images/Getting_Started_img2.png)
 
-## Mapping Values
+## Enable Swimlane
 
 'Swimlane' can be enabled by mapping the 'fields.swimlaneKey' to appropriate column name in 'dataSource'. This enables the grouping of the cards based on the mapped column values.
 
@@ -307,7 +307,7 @@ export class KanbanComponent {
 
 {% endhighlight %}
 
-The below code is to retrive data from service and assigned to Kanban datasource.
+The below code is to retrieve data from service and assigned to Kanban datasource.
 
 {% highlight js %}
 
@@ -315,7 +315,7 @@ import {Component} from '@angular/core';
 import {NorthwindService} from '../../services/northwind.service';
 
 @Component({
-  selector: 'sd-home',
+  selector: 'ej-app',
   templateUrl: 'app/components/kanban/kanban.component.html'
 })
 export class KanbanComponent {
@@ -349,7 +349,7 @@ Filters allows to filter the collection of cards from 'dataSource' which meets t
 
 {% endhighlight %}
 
-The below code is to retrive data from service and assigned to Kanban datasource.
+The below code is to retrieve data from service and assigned to Kanban datasource.
 
 {% highlight js %}
 
@@ -357,7 +357,7 @@ import {Component} from '@angular/core';
 import {NorthwindService} from '../../services/northwind.service';
 
 @Component({
-  selector: 'sd-home',
+  selector: 'ej-app',
   templateUrl: 'app/components/kanban/kanban.component.html'
 })
 export class KanbanComponent {
