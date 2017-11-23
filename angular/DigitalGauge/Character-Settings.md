@@ -43,7 +43,7 @@ The number of text to be displayed can be limited by the attribute called **coun
 {% highlight html %}
 
 <ej-digitalgauge id="DigitalGauge1" width="800" [items]="[{value: '1234567890',characterSettings:{
-            type: 'sevensegment', count: 10,spacing: 10}, segemntSettings:{length: 8,width: 1}}]">
+            type: 'sevensegment', count: 10,spacing: 10}, segementSettings:{length: 8,width: 1}}]">
 </ej-digitalgauge>
 
 {% endhighlight %}
@@ -77,7 +77,7 @@ The text in the **Digital Gauge** is positioned with position object. This objec
 {% highlight html %}
 
 <ej-digitalgauge id="DigitalGauge1" width="800" [items]="[{value: 'WELCOME',shadowColor: 'yellow',
-      shadowBlur: 20,shadowOffsetX: 15, shadowOffsetY: 15, segemntSettings:{length: 3,width: 3}}]">
+      shadowBlur: 20,shadowOffsetX: 15, shadowOffsetY: 15, segementSettings:{length: 3,width: 3}}]">
 </ej-digitalgauge>
 
 {% endhighlight %}
@@ -88,7 +88,7 @@ Execute the above code examples to render the **Digital****Gauge** as follows.
 
 ## Font Customization
 
-You can customize the **font** of the text as per your requirement. To customize the font, you have to set `enablecustomfont`. Following font customization options are available.
+You can customize the **font** of the text as per your requirement. To customize the font, you have to set `enableCustomFont`. Following font customization options are available.
 
 **Font-family**- used to set the font-family of the text.
 

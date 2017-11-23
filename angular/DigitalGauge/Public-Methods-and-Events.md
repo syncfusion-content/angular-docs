@@ -31,7 +31,7 @@ destroy(){
      
      }
 
-// Create digitalgauge instance
+// Create digital gauge instance
 @ViewChild('gauge') digital: EJComponents<any, any>;
 
 }
@@ -61,7 +61,7 @@ exportImage(){
 
 }
 
-// Create digitalgauge instance
+// Create digital gauge instance
 @ViewChild('gauge') digital: EJComponents<any, any>;
 
 }
@@ -90,7 +90,7 @@ getPosition(){
 
 }
 
-// Create digitalgauge instance
+// Create digital gauge instance
 @ViewChild('gauge') digital: EJComponents<any, any>;
 
 }
@@ -117,7 +117,7 @@ getValue(){
 
 }
 
-// Create digitalgauge instance
+// Create digital gauge instance
 @ViewChild('gauge') digital: EJComponents<any, any>;
 
 }
@@ -147,7 +147,7 @@ refresh(){
          
          }
 
-// Create digitalgauge instance
+// Create digital gauge instance
 @ViewChild('gauge') digital: EJComponents<any, any>;
 
 }
@@ -174,7 +174,7 @@ setPosition(){
 
 }
 
-// Create digitalgauge instance
+// Create digital gauge instance
 @ViewChild('gauge') digital: EJComponents<any, any>;
 
 }
@@ -200,7 +200,7 @@ setValue(){
 
 }
 
-// Create digitalgauge instance
+// Create digital gauge instance
 @ViewChild('gauge') digital: EJComponents<any, any>;
 
 }
@@ -250,7 +250,7 @@ Triggers when the gauge item rendering.
 
 
 {% highlight ts %}
- itemrendering(sender) {
+ itemRendering(sender) {
     
     // Do something
     
@@ -260,7 +260,7 @@ Triggers when the gauge item rendering.
 
 {% highlight html %}
 
-<ej-digitalgauge id="DigitalGauge1" (itemRendering)="itemrendering($event)">
+<ej-digitalgauge id="DigitalGauge1" (itemRendering)="itemRendering($event)">
 </ej-digitalgauge>
 
 {% endhighlight %}
