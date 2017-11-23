@@ -30,7 +30,7 @@ destroy(){
 }
 
 // Create instance for bullet graph
-@ViewChild('bulletgraph') bullet: EJComponents<any, any>;
+@ViewChild('bullet1') bullet: EJComponents<any, any>;
 
 }
 
@@ -60,7 +60,7 @@ redraw(){
 }
 
 // Create instance for bullet graph
-@ViewChild('bulletgraph') bullet: EJComponents<any, any>;
+@ViewChild('bullet1') bullet: EJComponents<any, any>;
 
 }
 
@@ -88,7 +88,7 @@ setComparativeMeasureSymbol(){
 }
 
 // Create instance for bullet graph
-@ViewChild('bulletgraph') bullet: EJComponents<any, any>;
+@ViewChild('bullet1') bullet: EJComponents<any, any>;
 
 }
 
@@ -117,7 +117,7 @@ setFeatureMeasureBarValue(){
 }
 
 // Create instance for bullet graph
-@ViewChild('bulletgraph') bullet: EJComponents<any, any>;
+@ViewChild('bullet1') bullet: EJComponents<any, any>;
 
 }
 
@@ -139,7 +139,7 @@ Fires on rendering the caption of bullet graph.
 
 {% highlight ts %}
 
-ondrawcaption(sender){
+onDrawCaption(sender){
      
      //Do something
 
@@ -149,7 +149,7 @@ ondrawcaption(sender){
 
 {% highlight html %}
 
-<ej-bulletgraph id="events" (drawCaption)="ondrawcaption($event)"> 
+<ej-bulletgraph id="events" (drawCaption)="onDrawCaption($event)"> 
 </ej-bulletgraph>
 
 {% endhighlight %}
@@ -166,7 +166,7 @@ Fires on rendering the category.
 
 {% highlight ts %}
 
-ondrawcategory(sender){
+onDrawCategory(sender){
      
      //Do something
 
@@ -176,7 +176,7 @@ ondrawcategory(sender){
 
 {% highlight html %}
 
-<ej-bulletgraph id="events" (drawCategory)="ondrawcategory($event)"> 
+<ej-bulletgraph id="events" (drawCategory)="onDrawCategory($event)"> 
 </ej-bulletgraph>
 
 {% endhighlight %}
@@ -196,7 +196,7 @@ Fires on rendering the comparative measure symbol.
 
 {% highlight ts %}
 
-ondrawcomparativemeasuresymbol(sender){
+onDrawComparativeMeasureSymbol(sender){
      
      //Do something
 
@@ -206,7 +206,7 @@ ondrawcomparativemeasuresymbol(sender){
 
 {% highlight html %}
 
-<ej-bulletgraph id="events" (drawComparativeMeasureSymbol)="ondrawcomparativemeasuresymbol($event)"> 
+<ej-bulletgraph id="events" (drawComparativeMeasureSymbol)="onDrawComparativeMeasureSymbol($event)"> 
 </ej-bulletgraph>
 
 {% endhighlight %}
@@ -223,7 +223,7 @@ Fires on rendering the feature measure bar.
 
 {% highlight ts %}
 
-ondrawfeaturemeasurebar(sender){
+onDrawFeatureMeasureBar(sender){
      
      //Do something
 
@@ -233,7 +233,7 @@ ondrawfeaturemeasurebar(sender){
 
 {% highlight html %}
 
-<ej-bulletgraph id="events" (drawFeatureMeasureBar)="ondrawfeaturemeasurebar($event)"> 
+<ej-bulletgraph id="events" (drawFeatureMeasureBar)="onDrawFeatureMeasureBar($event)"> 
 </ej-bulletgraph>
 
 {% endhighlight %}
@@ -252,7 +252,7 @@ Fires on rendering the indicator of bullet graph.
 
 {% highlight ts %}
 
-ondrawindicator(sender){
+onDrawIndicator(sender){
      
      //Do something
 
@@ -262,7 +262,7 @@ ondrawindicator(sender){
 
 {% highlight html %}
 
-<ej-bulletgraph id="events" (drawIndicator)="ondrawindicator($event)"> 
+<ej-bulletgraph id="events" (drawIndicator)="onDrawIndicator($event)"> 
 </ej-bulletgraph>
 
 {% endhighlight %}
@@ -280,7 +280,7 @@ Fires on rendering the labels.
 
 {% highlight ts %}
 
-ondrawlabels(sender){
+onDrawLabels(sender){
      
      //Do something
 
@@ -290,7 +290,7 @@ ondrawlabels(sender){
 
 {% highlight html %}
 
-<ej-bulletgraph id="events" (drawLabels)="ondrawlabels($event)"> 
+<ej-bulletgraph id="events" (drawLabels)="onDrawLabels($event)"> 
 </ej-bulletgraph>
 
 {% endhighlight %}
@@ -309,7 +309,7 @@ Fires on rendering the qualitative ranges.
 
 {% highlight ts %}
 
-ondrawqualitativeranges(sender){
+onDrawQualitativeRanges(sender){
      
      //Do something
 
@@ -319,7 +319,7 @@ ondrawqualitativeranges(sender){
 
 {% highlight html %}
 
-<ej-bulletgraph id="events" (drawQualitativeRanges)="ondrawqualitativeranges($event)"> 
+<ej-bulletgraph id="events" (drawQualitativeRanges)="onDrawQualitativeRanges($event)"> 
 </ej-bulletgraph>
 
 {% endhighlight %}
@@ -339,7 +339,7 @@ Fires on loading bullet graph.
 
 {% highlight ts %}
 
-onload(sender){
+onLoad(sender){
      
      //Do something
 
@@ -349,7 +349,7 @@ onload(sender){
 
 {% highlight html %}
 
-<ej-bulletgraph id="events" (load)="onload($event)"> 
+<ej-bulletgraph id="events" (load)="onLoad($event)"> 
 </ej-bulletgraph>
 
 {% endhighlight %}

@@ -17,7 +17,7 @@ documentation: ug
 
 {% highlight ts %}
 
-this.quantitativescale= {
+this.quantitativeScale= {
     location: { x: 100, y: 200 },                   
     minimum: 0,
     maximum: 5,
@@ -46,7 +46,7 @@ this.caption= {
 {% highlight html %}
 
    <ej-bulletgraph id="bullet1" [height]=700 [width]=600 [captionSettings]="caption" 
-                                       [quantitativeScaleSettings]="quantitativescale">         
+                                       [quantitativeScaleSettings]="quantitativeScale">         
           
    </ej-bulletgraph>
 
