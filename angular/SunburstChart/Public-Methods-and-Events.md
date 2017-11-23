@@ -143,7 +143,7 @@ onLoaded(sender){
 
 ### dataLabelRendering
 
-Fires before rendering the datalabel 
+Fires before rendering the data label 
 
 
 {% highlight ts %}

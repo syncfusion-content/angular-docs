@@ -10,7 +10,7 @@ documentation: ug
 # Data Labels 
 
 Sunburst data labels are used to display the data related to the segment. It helps to provide the information about the data points to the users.
-You can enable or disable the data labels by setting the `visible` property of the `datalabelsettings` to true as shown in the below code
+You can enable or disable the data labels by setting the `visible` property of the data label settings to true as shown in the below code
 
 {% highlight js %}
 
