@@ -9,7 +9,7 @@ api: /api/Angular/grid
 --- 
 # Filtering
 
-Filtering helps to view particular or related records from dataSource which meets a given filtering criteria. To enable filter, set `allowFiltering` as `true`. 
+Filtering helps to view particular or related records from dataSource which meets a given filtering criteria. To enable filter, set [`allowFiltering`](https://help.syncfusion.com/api/angular/ejgrid#members:allowfiltering "allowFiltering") as `true`. 
 
 The Grid supports three types of filter, they are
 
@@ -26,8 +26,8 @@ And also four types of filter menu is available in all filter types, they are
 
 The corresponding filter menu is opened based on the column type.
 
-N> 1. Need to specify the `type`of column, when first record data value is empty or null otherwise the filter menu is not opened. 
-N> 2. The default filter type is Filter bar, when `allowFiltering` is enabled and `filterType` is not set.
+N> 1. Need to specify the [`type`](https://help.syncfusion.com/api/angular/ejgrid#members:columns-type "type") of column, when first record data value is empty or null otherwise the filter menu is not opened. 
+N> 2. The default filter type is Filter bar, when [`allowFiltering`](https://help.syncfusion.com/api/angular/ejgrid#members:allowfiltering "allowFiltering") is enabled and [`filterType`](https://help.syncfusion.com/api/angular/ejgrid#members:filtersettings-filtertype "filterType") is not set.
 
 The following code example describes the above behavior.
 
@@ -72,13 +72,11 @@ The following output is displayed as a result of the above code example.
 
 ## Menu filter
 
-You can enable menu filter by setting `filterType` of `filterSettings` property as `menu`. 
+You can enable menu filter by setting [`filterSettings.filterType`](https://help.syncfusion.com/api/angular/ejgrid#members:filtersettings-filtertype "filterSettings.filterType") property as `menu`. 
 
-There is an option to show or hide the additional filter options in the menu by setting `showPredicate` of `filterSettings` property as `true` or `false` respectively.
+There is an option to show or hide the additional filter options in the menu by setting [`showPredicate`](https://help.syncfusion.com/api/angular/ejgrid#members:filtersettings-showpredicate "showPredicate") of [`filterSettings`](https://help.syncfusion.com/api/angular/ejgrid#members:filtersettings "filterSettings") property as `true` or `false` respectively.
 
-N> For `filterType` property you can assign either `string` value ("menu") or `enum` value (`ej.Grid.FilterType.Menu`).
-
-We can also filter a specified range of values by using the `between` operator for the column type `number`, `date` and `datetime`.
+N> For [`filterType`](https://help.syncfusion.com/api/angular/ejgrid#members:filtersettings-filtertype "filterType") property you can assign either `string` value ("menu") or `enum` value (`ej.Grid.FilterType.Menu`).
 
 The following code example describes the above behavior.
 
@@ -138,7 +136,7 @@ Boolean Filter
 
 ## Excel-like filter
 
-You can enable excel menu by setting  `filterType`of `filterSettings` property as `excel`. The excel menu contains an option such as Sorting, Clear filter, submenu for advanced filtering.
+You can enable excel menu by setting [`filterSettings.filterType`](https://help.syncfusion.com/api/angular/ejgrid#members:filtersettings-filtertype "filterSettings.filterType") as `excel`. The excel menu contains an option such as Sorting, Clear filter, submenu for advanced filtering.
 
 The following code example describes the above behavior.
 
@@ -186,10 +184,10 @@ The following output is displayed as a result of the above code example.
 
 By default, the checkbox list is generated from distinct values of the filter column from dataSource which gives an option to search and select the required items.
 
-Also on checkbox list generation, if the number of distinct values are greater than 1000, then the excel filter will display only first 1000 values to ensure the best performance on rendering and searching. However this limit has been customized according to your requirement by setting `maxFilterChoices` of `filterSettings` property with required limit in integer.
+Also on checkbox list generation, if the number of distinct values are greater than 1000, then the excel filter will display only first 1000 values to ensure the best performance on rendering and searching. However this limit has been customized according to your requirement by setting [`filterSettings.maxFilterChoices`](https://help.syncfusion.com/api/angular/ejgrid#members:filtersettings-maxfilterchoices "filterSettings.maxFilterChoices") property with required limit in integer.
 
 N> 1. Using excel filter events you can change the dataSource of the checkbox list. 
-N> 2. `ej.Query`of checkbox list can also be changed using excel filter events.
+N> 2. `ej.Query` of checkbox list can also be changed using excel filter events.
 
 The following code example describes the above behavior.
 
@@ -245,7 +243,7 @@ The following image describes the above mentioned behavior.
 
 ### Case Sensitivity
 
-To perform filter operation with case sensitive in excel styled filter menu mode by setting `enableCaseSensitivity` as `true`.
+To perform filter operation with case sensitive in excel styled filter menu mode by setting [`enableCaseSensitivity`](https://help.syncfusion.com/api/angular/ejgrid#members:filtersettings-enablecasesensitivity "enableCaseSensitivity") as `true`.
 
 The following code example describes the above behavior.
 
@@ -293,7 +291,7 @@ The following output is displayed as a result of the above code example.
 
 ## Filter bar
 
-`Filter bar` row is located next to column header of grid. You can filter the records with different expressions depending upon the column type. To show the filter bar row, set the `filterType` as `filterbar`.
+[Filter bar](https://help.syncfusion.com/api/angular/ejgrid#members:filtersettings-filtertype "Filter bar") row is located next to column header of grid. You can filter the records with different expressions depending upon the column type. To show the filter bar row, set the [`filterType`](https://help.syncfusion.com/api/angular/ejgrid#members:filtersettings-filtertype "filterType") as `filterbar`.
 
 List of Filter bar Expressions:
 
@@ -478,16 +476,16 @@ The following output is displayed as a result of the above code example.
 
 Filter bar modes:
 
-This specifies the grid to start the filter action while typing in the filter bar or after pressing the enter key based on `filterBarMode`.There are two types of `filterBarMode`, they are
+This specifies the grid to start the filter action while typing in the filter bar or after pressing the enter key based on [`filterBarMode`](https://help.syncfusion.com/api/angular/ejgrid#members:filtersettings-filterbarmode "filterBarMode").There are two types of [`filterBarMode`](https://help.syncfusion.com/api/angular/ejgrid#members:filtersettings-filterbarmode "filterBarMode"), they are
 
 1. OnEnter
 2. Immediate
 
-N> For `filterBarMode` property you can assign either `string` value (onenter) or `enum` value (`ej.Grid.FilterBarMode.OnEnter`).
+N> For [`filterBarMode`](https://help.syncfusion.com/api/angular/ejgrid#members:filtersettings-filterbarmode "filterBarMode") property you can assign either `string` value (onenter) or `enum` value (`ej.Grid.FilterBarMode.OnEnter`).
 
 Filter bar message:
 
-The filter bar message is supported only for the `filterType` as "filterbar". The filtered data with column name is displayed in the grid pager itself. By default `showFilterBarStatus` is true.
+The filter bar message is supported only for the [`filterType`](https://help.syncfusion.com/api/angular/ejgrid#members:filtersettings-filtertype "filterType") as "filterbar". The filtered data with column name is displayed in the grid pager itself. By default [`showFilterBarMessage`](https://help.syncfusion.com/api/angular/ejgrid#members:filtersettings-showfilterbarstatus "showFilterBarMessage") is true.
 
 The following code example describes the above behavior.
 
@@ -672,9 +670,9 @@ List of Column type and Filter operators
         </tr>
     </table>
     
-    ## FilterBar Template
+## FilterBar Template
 
-Usually enabling allowFiltering, will create default textbox in Grid FilterBar. So, Using [`filterBarTemplate`](https://help.syncfusion.com/api/js/ejgrid#members:columns-filterbartemplate "filterBarTemplate") property of `columns` we can render any other controls like AutoComplete, DropDownList etc in filterbar to filter the grid data for the particular column.
+Usually enabling allowFiltering, will create default textbox in Grid FilterBar. So, Using [`filterBarTemplate`](https://help.syncfusion.com/api/angular/ejgrid#members:columns-filterbartemplate "filterBarTemplate") property of `columns` we can render any other controls like AutoComplete, DropDownList etc in filterbar to filter the grid data for the particular column.
 It has three functions. They are    
 
 1. `create` - It is used to create the control at time of initialize.
