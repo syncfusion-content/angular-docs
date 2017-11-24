@@ -359,7 +359,7 @@ Specifies the navigation control template for map, you can use `content` propert
 
 #### Enable Layer Change Animation 
 
-Enables or Disables the animation for layer change in map, you can use `enablelayerchangeanimation` property and the default value is false.
+Enables or Disables the animation for layer change in map, you can use `enableLayerChangeAnimation` property and the default value is false.
 
 
 {% highlight html %}
@@ -377,7 +377,7 @@ Enables or Disables the animation for layer change in map, you can use `enablela
 
 ### Responsiveness during browser resize
 
-**Map** is made responsive when resizing the browser by using `isresponsive` property.
+**Map** is made responsive when resizing the browser by using `isResponsive` property.
 
 {% highlight javascript %}
 

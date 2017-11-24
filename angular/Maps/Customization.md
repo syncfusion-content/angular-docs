@@ -417,13 +417,13 @@ The Map background can be customized by using the `background` property of the M
 
 ### Base Map Index 
 
-Specifies the index of the map to determine the shape layer to be displayed, you can use `basemapindex` property and the default value is 0.
+Specifies the index of the map to determine the shape layer to be displayed, you can use `baseMapIndex` property and the default value is 0.
 
 
 {% highlight html %}
  
        
-<ej-map id="mapcontrol" [basemapindex]="0">
+<ej-map id="mapcontrol" [baseMapIndex]="0">
 </ej-map>
 
 
@@ -433,13 +433,13 @@ Specifies the index of the map to determine the shape layer to be displayed, you
 ### Center Position 
 
 
-Specify the `centerposition` where map should be displayed
+Specify the `centerPosition` where map should be displayed
 
 
 {% highlight html %}
   
          
-<ej-map id="mapcontrol" centerposition="">
+<ej-map id="mapcontrol" centerPosition="">
 </ej-map>
 
 {% endhighlight %}
