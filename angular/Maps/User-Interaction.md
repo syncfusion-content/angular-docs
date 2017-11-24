@@ -245,6 +245,20 @@ The panning feature enables the Map navigation. The `enablePan` property is used
 
 {% endhighlight %}
 
+### Factor
+
+Specifies the zoom factor for map zoom value, you can use `factor` property.
+
+{% highlight html %}
+
+ <ej-map id="mapcontrol" [factor]=''>
+</ej-map> 
+
+
+
+{% endhighlight %}
+
+
 ## Navigation Control
 
 **Navigation** control is built-in with **Maps** control. With Navigation control, **Maps** can be panned in any direction and zoomed. It is possible to show or hide the NavigationControl by `enableNavigation` property.
@@ -298,6 +312,88 @@ You can set this option by using `dockPosition` property in `navigationControl`.
 </ej-map>
 
 {% endhighlight %}
+
+
+#### Orientation
+
+Set the `orientation` value for navigation control.
+
+
+{% highlight html %}
+
+<ej-map id="mapcontrol" [layers]="mapLayers" [navigationControl.enableNavigation]="true"
+          navigationControl.orientation='vertical' navigationControl.dockPosition='none' 
+          [navigationControl.absolutePosition]="{x:'5',y:'16'}">
+</ej-map>
+   	
+   
+{% endhighlight %}
+
+#### Content
+
+
+Specifies the navigation control template for map, you can use `content` property.
+
+
+{% highlight html %}
+ 
+<ej-map id="mapcontrol" [layers]="mapLayers" [navigationControl.enableNavigation]="true"
+          navigationControl.content="">
+</ej-map>
+
+{% endhighlight %}
+
+
+
+### Animation
+
+ **Animation** is enabled or disabled using `enable animation`property. 
+
+{% highlight html %}
+
+<ej-map id="mapcontrol" [enableAnimation]="true">
+</ej-map>
+
+{% endhighlight %}
+
+
+#### Enable Layer Change Animation 
+
+Enables or Disables the animation for layer change in map, you can use `enablelayerchangeanimation` property and the default value is false.
+
+
+{% highlight html %}
+ 
+{% highlight html %}
+
+<ej-map id="mapcontrol" [enableChangeLayerAnimation]="true">
+</ej-map>
+
+{% endhighlight %}
+
+
+{% endhighlight %}
+
+
+### Responsiveness during browser resize
+
+**Map** is made responsive when resizing the browser by using `isresponsive` property.
+
+{% highlight javascript %}
+
+{% highlight html %}
+
+<ej-map id="mapcontrol" [isResponsive]="true">
+</ej-map>
+
+{% endhighlight %}
+
+
+{% endhighlight %}
+
+
+
+
 
 
 
