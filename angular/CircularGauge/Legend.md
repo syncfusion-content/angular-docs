@@ -47,6 +47,20 @@ The text displayed in the legend can be customized by using the `legendText` pro
 {% endhighlight %}
 
 
+### Legend Fill and Opacity
+
+You can change the opacity and fill color of legend text using `Opacity` and `Fill` property of legend. 
+
+{% highlight html %}
+
+<ej-CircularGauge id="circularGauge1" legend.fill="blue" [legend.opacity]="0.5" >
+</ej-CircularGauge>
+
+
+{% endhighlight %}
+
+
+
 ## Position and Align the Legend
 
 By using the `position` property, you can position the legend at *left*, *right*, *top* or *bottom* of the CircularGauge. The legend is positioned at the **bottom** of the circular gauge, by default.
