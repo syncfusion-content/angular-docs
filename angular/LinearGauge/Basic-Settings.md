@@ -89,9 +89,9 @@ Execute the above code to render the following output.
 
 * Theme is the basic property of any control. It is used to set the theme for Linear Gauge. There are two types of themes used for Linear Gauge such as
 
- * flatlight
+ * flat light
 
- * flatdark
+ * flat dark
 
 
 {% highlight html %}

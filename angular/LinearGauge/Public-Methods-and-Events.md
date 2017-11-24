@@ -49,7 +49,7 @@ To export Image
 
 {% highlight ts %}
 
-exportimage(){
+exportImage(){
      
      //Do something
      this.linearIns.widget.exportImage();
@@ -851,7 +851,7 @@ To get Range Start Width in number
 getRangeStartWidth(){
      
      //Do something
-     this.linearIns.widget.getRangeSartWidth();
+     this.linearIns.widget.getRangeStartWidth();
 
 }
 
