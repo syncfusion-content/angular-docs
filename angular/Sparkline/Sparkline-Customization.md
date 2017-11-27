@@ -26,7 +26,7 @@ $("#container").ejSparkline({
 
 {% endhighlight %} 
 
-![](/js/Sparkline/Sparkline-Customization_images/Sparkline-Customization_img1.png)
+![](Sparkline-Customization_images/Sparkline-Customization_img1.png)
 
 ## Stroke color and width
 
@@ -44,7 +44,7 @@ $("#container").ejSparkline({
 
 {% endhighlight %} 
 
-![](/js/Sparkline/Sparkline-Customization_images/Sparkline-Customization_img2.png)
+![](Sparkline-Customization_images/Sparkline-Customization_img2.png)
 
 ## Sparkline border
 
@@ -61,7 +61,7 @@ $("#container").ejSparkline({
 
 {% endhighlight %} 
 
-![](/js/Sparkline/Sparkline-Customization_images/Sparkline-Customization_img3.png)
+![](Sparkline-Customization_images/Sparkline-Customization_img3.png)
 
 ## Opacity
 
@@ -78,7 +78,7 @@ $("#container").ejSparkline({
 
 {% endhighlight %} 
 
-![](/js/Sparkline/Sparkline-Customization_images/Sparkline-Customization_img4.png)
+![](Sparkline-Customization_images/Sparkline-Customization_img4.png)
 
 ## Localization
 
@@ -110,7 +110,7 @@ $("#container").ejSparkline({
 
 {% endhighlight %} 
 
-![](/js/Sparkline/Sparkline-Customization_images/Sparkline-Customization_img5.png)
+![](Sparkline-Customization_images/Sparkline-Customization_img5.png)
 
 ## Canvas support
 
@@ -136,10 +136,10 @@ You can specify different `themes` for Sparkline control.
 $("#container").ejSparkline({
             // ...
             //theme for sparkline
-            theme:"flatdark",
+            theme:"saffron",
             // ...
 });
 
 {% endhighlight %} 
 
-![](/js/Sparkline/Sparkline-Customization_images/Sparkline-Customization_img6.png)
+![](Sparkline-Customization_images/Sparkline-Customization_img6.png)
