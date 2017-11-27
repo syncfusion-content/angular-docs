@@ -136,7 +136,7 @@ You can specify different `themes` for Sparkline control.
 $("#container").ejSparkline({
             // ...
             //theme for sparkline
-            theme:"flatdark",
+            theme:"saffron",
             // ...
 });
 
