@@ -204,11 +204,11 @@ You can get the legend item details such as *RangeIndex*, *bounds*, *shape* and 
 
 {% highlight html %}
 
-<ej-CircularGauge id="circularGauge1" (legendItemClick)="onLegendclicked($event)"> 
+<ej-CircularGauge id="circularGauge1" (legendItemClick)="onLegendClicked($event)"> 
 </ej-CircularGauge>
  
   <script>
-     function onLegendclicked(sender) {
+     function onLegendClicked(sender) {
         //Get legend item details on legend item click.
         var legendItem = sender.data;
      }
