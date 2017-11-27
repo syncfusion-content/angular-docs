@@ -13,7 +13,10 @@ When you provide data to **RangeNavigator**, it produces limited set of data. Yo
 
 #### Add series to the RangeNavigator
 
-The **Series** property provides access to a collection of all series that are defined explicitly within a **RangeNavigator** control. Each series is assigned with type and name. It contains collection of data point, each point contains x value and y values. You can add data points to the series through **dataSource** property.
+The **Series** property provides access to a collection of all series that are defined explicitly within a **RangeNavigator** control. Each series is assigned with type and name. It contains collection of data point, each point contains x value and y values. You can add data points to the series through **dataSource** property.You can add data points to the series through `DataSource` property by providing field name to get the values from the DataSource in `xName` and `yName` options.
+
+Animation can be enabled by setting `EnableAnimation` property as true and the series color can be customized by using `Fill` property in series.
+
 
 
 
@@ -39,7 +42,7 @@ this.rangeData = function GetData() {
 {% highlight html %}
 
 <ej-rangenavigator align="center" id="rangecontainer" enableDefferedUpdate="true" padding="15" 
-               (load)="onrnload($event)" [dataSource]="rangeData" xName="XValue" yName="YValue" 
+               (load)="onLoad($event)" [dataSource]="rangeData" xName="XValue" yName="YValue" 
                [allowSnapping]="true"    selectedRangeSettings.start="2010/5/1" padding="15" 
                selectedRangeSettings.end="2010/10/1" [isResponsive]="true" 
                sizeSettings.height="120" theme="azuredark">

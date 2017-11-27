@@ -401,3 +401,86 @@ The following screenshot illustrates a map control displaying a Tooltip with tem
 
 ![](Customization_images/Customization_img7.png)
 
+
+### Customize map background
+
+The Map background can be customized by using the `background` property of the Map. 
+
+{% highlight html %}
+
+       
+<ej-map id="mapcontrol" [background]="grey">
+</ej-map>
+
+{% endhighlight %} 
+
+
+### Base Map Index 
+
+Specifies the index of the map to determine the shape layer to be displayed, you can use `baseMapIndex` property and the default value is 0.
+
+
+{% highlight html %}
+ 
+       
+<ej-map id="mapcontrol" [baseMapIndex]="0">
+</ej-map>
+
+
+{% endhighlight %}
+
+
+### Center Position 
+
+
+Specify the `centerPosition` where map should be displayed
+
+
+{% highlight html %}
+  
+         
+<ej-map id="mapcontrol" centerPosition="">
+</ej-map>
+
+{% endhighlight %}
+
+
+### Label Settings
+
+The `labelSettings` defines the basic customization settings of labels in the map. 
+
+The below properties are used for `labelSettings`
+
+* `enableSmartLabel` - enable or disable the enableSmartLabel property.
+* `labelLength` - set the labelLength property.
+* `labelPath` - set the labelPath property.
+* `showLabels`- The property specifies whether to show labels or not
+* `smartLabelSize` - set the smartLabelSize property.
+
+
+{% highlight ts %}
+
+this.mapLayers= [{
+    // ...
+    LabelSettings: {        
+        enableSmartLabel: "true",
+        labelLength:'',
+        labelPath:'',
+        showLabels:'true',
+        smartLabelSize:''
+    },
+    showTooltip: true
+}];
+
+{% endhighlight %}
+ 
+{% highlight javascript %}
+
+          
+<ej-map id="mapcontrol" [layers]="mapLayers">
+</ej-map>
+
+{% endhighlight %}
+
+
+

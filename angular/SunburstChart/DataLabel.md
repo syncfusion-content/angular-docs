@@ -10,7 +10,7 @@ documentation: ug
 # Data Labels 
 
 Sunburst data labels are used to display the data related to the segment. It helps to provide the information about the data points to the users.
-You can enable or disable the data labels by setting the `visible` property of the `datalabelsettings` to true as shown in the below code
+You can enable or disable the data labels by setting the `visible` property of the data label settings to true as shown in the below code
 
 {% highlight js %}
 
@@ -91,3 +91,33 @@ You can customize the appearance of the data point using the `font` property.
 {% endhighlight %}
 
 ![](DataLabel_images/DataLabel_img6.png)
+
+## Sunburst Chart Title & Subtitle
+
+### Title & TextAlignment
+
+By using the title option, you can add the `title-text` as well as customize its `title-border`, `title-background` and `title-font`.
+
+You can change the title alignment to center, far and near by using the `title-textAlignment` property of the Title.
+
+{% highlight js %}
+
+<ej-sunburstchart id="sunburst" [title.visible]="true"                    
+                 [title.font] ="{ color: 'black' , font-weight : 'bold' , size : '15px'}" [title.border]="color:'black',width:2}">
+</ej-sunburstchart>
+
+{% endhighlight %}
+
+
+### Sub Title & TextAlignment
+
+By using the subTitle option, you can add the `title-subTitle-text` as well as customize its `title-subTitle-border`, `title-subTitle-background` and `title-subTitle-font`.
+
+{% highlight js %}
+
+<ej-sunburstchart id="sunburst" [title.subTitle.visible]="true"                    
+                 [title.subTitle.font] ="{ color: 'black' , font-weight : 'bold' , size : '15px'}" [title.subTitle.border]="color:'black',width:2}">
+</ej-sunburstchart>
+
+{% endhighlight %}
+

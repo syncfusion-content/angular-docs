@@ -33,6 +33,17 @@ documentation: ug
 
 {% endhighlight %}
 
+Responsiveness of the linear gauge is controlled by using enableResize property.
+
+
+{% highlight html %}
+
+<ej-bulletgraph id="bullet1" [enableResize]="true">         
+       
+</ej-bulletgraph>
+
+{% endhighlight %}
+
 
 
 ## Applying same color to all ticks and labels in a range
