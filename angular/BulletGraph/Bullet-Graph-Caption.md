@@ -17,7 +17,7 @@ documentation: ug
 
 {% highlight ts %}
 
-this.quantitativescale= {
+this.quantitativeScale= {
     location: { x: 100, y: 200 },                   
     minimum: 0,
     maximum: 5,
@@ -46,7 +46,7 @@ this.caption= {
 {% highlight html %}
 
    <ej-bulletgraph id="bullet1" [height]=700 [width]=600 [captionSettings]="caption" 
-                                       [quantitativeScaleSettings]="quantitativescale">         
+                                       [quantitativeScaleSettings]="quantitativeScale">         
           
    </ej-bulletgraph>
 
@@ -325,4 +325,20 @@ this.caption = {
 {% endhighlight %}
 
 ![](Bullet-Graph-Caption_images/Bullet-Graph-Caption_img8.png)
+
+## Localization
+
+Bullet graph supports localization for its axis labels and tooltip. To render the bullet graph with specific culture you have to refer the corresponding globalize culture script and need to specify the culture name in `locale` property of bullet graph.
+
+Enable Group Separator is used to Convert the date object to string while using the locale settings, you can set `enableGroupSeparator` property as true.
+
+
+
+{% highlight html %}
+
+<ej-bulletgraph id="bullet1" locale="" [enableGroupSeperator]="true">         
+          
+</ej-bulletgraph>
+
+{% endhighlight %}
 
