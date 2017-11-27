@@ -42,7 +42,7 @@ this.rangeData = function GetData() {
 {% highlight html %}
 
 <ej-rangenavigator align="center" id="rangecontainer" enableDefferedUpdate="true" padding="15" 
-               (load)="onrnload($event)" [dataSource]="rangeData" xName="XValue" yName="YValue" 
+               (load)="onLoad($event)" [dataSource]="rangeData" xName="XValue" yName="YValue" 
                [allowSnapping]="true"    selectedRangeSettings.start="2010/5/1" padding="15" 
                selectedRangeSettings.end="2010/10/1" [isResponsive]="true" 
                sizeSettings.height="120" theme="azuredark">

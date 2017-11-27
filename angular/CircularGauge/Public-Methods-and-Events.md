@@ -1021,10 +1021,10 @@ To set LabelStyle
 
 {% highlight ts %}
 
-seLabelStyle(){
+setLabelStyle(){
      
      //Do something
-     this.gauge.widget.seLabelStyle();
+     this.gauge.widget.setLabelStyle();
 
 }
 

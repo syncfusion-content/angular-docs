@@ -24,7 +24,7 @@ Tooltip visibility can be enabled or disabled using `visible` property.
 
 {% highlight ts %}
          
-this.rnTooltip = {
+this.Tooltip = {
     visible: true,
     backgroundColor: "black",
     //  To customize the tooltip text
@@ -44,7 +44,7 @@ this.rnTooltip = {
 
 {% highlight html %}
 
-<ej-rangenavigator id="rangecontainer" [tooltipSettings]= "rnTooltip">
+<ej-rangenavigator id="rangecontainer" [tooltipSettings]= "Tooltip">
 </ej-rangenavigator>
 
 {% endhighlight %}

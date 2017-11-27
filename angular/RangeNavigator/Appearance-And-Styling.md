@@ -174,7 +174,7 @@ this.labelSettings = {
 
 #### Themes
 
-**RangeNavigator** theme is a set of pre-defined options that are applied to the control before each **RangeNavigator** is instantiated. Following predefined themes are available in Angular **RangeNavigator**.
+**RangeNavigator** theme is a set of pre-defined options that are applied to the control before each **RangeNavigator** is instantiated. Following predefined themes are available in **Angular** **RangeNavigator**.
 
 1. flatlight
 2. flatdark

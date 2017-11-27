@@ -91,7 +91,7 @@ You can align the legend to the *center*, *far* or *near* based on its position 
 
 ### Legend shape
 
-To change the legend ite, shape, you have to specify the desired shape in the `shape` property of the legend. By default the legend shape is **circle**.It also supports rectangle,diamond,triangle,slider,line,pentagon,trapezoid and wedge shapes.
+To change the legend item, shape, you have to specify the desired shape in the `shape` property of the legend. By default the legend shape is **circle**.It also supports rectangle,diamond,triangle,slider,line,pentagon,trapezoid and wedge shapes.
 
 {% highlight html %}
 
@@ -105,7 +105,7 @@ To change the legend ite, shape, you have to specify the desired shape in the `s
 
 ### Legend Item Size and Border
 
-You can change the size of the legend items by using the `width` and `height` properties in the `itemstyle`. To change the legend item border, use `border` property of the legend itemStyle.
+You can change the size of the legend items by using the `width` and `height` properties in the `itemStyle`. To change the legend item border, use `border` property of the legend itemStyle.
 
 {% highlight html %}
 
@@ -186,11 +186,11 @@ this.legendFont= { fontFamily: 'Segoe UI', fontStyle: 'Normal', fontWeight: 'Bol
 
 {% highlight html %}
 
-<ej-CircularGauge id="circularGauge1" (legendItemRender)="onlegendItemRender($event)"> 
+<ej-CircularGauge id="circularGauge1" (legendItemRender)="onLegendItemRender($event)"> 
 </ej-CircularGauge>
  
 <script>
-function onlegendItemRender(sender) {
+function onLegendItemRender(sender) {
 //Get legend item details on legend item click.
 var legendItem = sender.data;
 }
@@ -200,15 +200,15 @@ var legendItem = sender.data;
 
 ### Legend Item Click
 
-You can get the legend item details such as *Rangeindex*, *bounds*, *shape* and *series* by subscribing the `legendItemClick` event on the circular gauge. When the legend item is clicked, it triggers the event and returns the legend information. 
+You can get the legend item details such as *RangeIndex*, *bounds*, *shape* and *series* by subscribing the `legendItemClick` event on the circular gauge. When the legend item is clicked, it triggers the event and returns the legend information. 
 
 {% highlight html %}
 
-<ej-CircularGauge id="circularGauge1" (legendItemClick)="onlegendclicked($event)"> 
+<ej-CircularGauge id="circularGauge1" (legendItemClick)="onLegendclicked($event)"> 
 </ej-CircularGauge>
  
   <script>
-     function onlegendclicked(sender) {
+     function onLegendclicked(sender) {
         //Get legend item details on legend item click.
         var legendItem = sender.data;
      }

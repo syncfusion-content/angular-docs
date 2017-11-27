@@ -74,17 +74,17 @@ You can easily update the data for chart by assigning the **zoomFactor** and **z
 
 {% highlight html %}
 
-<ej-rangenavigator id="rangecontainer" (rangeChanged)="onchartloaded($event)">
+<ej-rangenavigator id="rangecontainer" (rangeChanged)="onChartLoaded($event)">
 </ej-rangenavigator>
   
   <script>
 
     // setting zoom factor and position for chart axis in rangeChanged event.
-    function onchartloaded(sender) {
-        var chartobj = $("#container").data("ejChart");
-        if (chartobj != null) {
-            chartobj.model.axes[0].zoomPosition = sender.zoomPosition;
-            chartobj.model.axes[0].zoomFactor = sender.zoomFactor;
+    function onChartLoaded(sender) {
+        var chartObj = $("#container").data("ejChart");
+        if (chartObj != null) {
+            chartObj.model.axes[0].zoomPosition = sender.zoomPosition;
+            chartObj.model.axes[0].zoomFactor = sender.zoomFactor;
         }
         $("#container").ejChart("redraw");
     }

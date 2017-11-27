@@ -129,7 +129,7 @@ $("#container").ejSparkline({
 
 ## Themes
 
-You can specify different [`themes`](../api/ejsparkline#members:theme) for Sparkline control.
+You can specify different `themes` for Sparkline control.
 
 {% highlight javascript %}
 
