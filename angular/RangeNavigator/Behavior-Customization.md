@@ -131,3 +131,62 @@ You can customize Thumb template by using **leftThumbTemplate** and **rightThumb
 The following screenshot displays the **RangeNavigator** using thumb template.
 
 ![](Behavior-Customization_images/Behavior-Customization_img3.png) 
+
+
+## Value Axis Settings
+
+You can customize the line, `Font` `Size`, gridline, tickline, range, `RangePadding` and visibility of **RangeNavigator** axis.
+
+To enable the visibility of axis line, you need to set `Visible` property of `AxisLine` in `ValueAxisSettings`. 
+
+You can customize the axis range by specifying `Min`, `Max` and `Interval` for `Range` property.
+
+The `MajorGridLines` can be enabled by specifying `Visible` property. The `Size`, `Width` and `Visible` property of `MajorTickLines` is used to customize the axis tick lines.
+
+The visibility of `ValueAxisSettings` is enabled by setting `Visible` property as true. 
+
+{% highlight html %}
+
+<script type="text/javascript" language="javascript">
+                    
+                    this.valueAxisSettings= {
+                          Min:10 ,
+                          Max: 50 ,
+                          Interval: 5,                          
+                          MajorTickLines:{
+                              visible:'true'
+                          },
+                          Size:2,
+                          Width:2,
+                          MajorGridLines:{
+                              visible:'true'
+                          },
+                    };
+</script>
+
+<ej-rangenavigator id="rangecontainer" [valueAxisSettings]="this.valueAxisSettings">
+</ej-rangenavigator>
+
+
+
+{% endhighlight %}
+
+## Selected Range Settings
+
+The start and end range values of selected range can be customized using `Start` and `End` property of `SelectedRangeSettings`.
+
+{% highlight html %}
+
+<script type="text/javascript" language="javascript">
+                    
+                    this.selectedRangeSettings= {
+                          start:'',
+                          end:''
+                    };
+</script>
+
+<ej:RangeNavigator ID="Range1" [selectedRangeSettings]="this.selectedRangeSettings" >               
+</ej:RangeNavigator>  
+
+{% endhighlight %}
+
