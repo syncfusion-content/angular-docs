@@ -16,10 +16,15 @@ documentation: ug
 
 **RangeNavigator** provides support for you to customize the text display in the tooltip and background using **tooltipSettings** property. You can change font family, font color, font style, font weight. By default “**Segoe UI**” font family is set to tooltip text.
 
+Tooltip visibility can be enabled or disabled using `visible` property.
+* You can change background color of tooltip using `backgroundColor` property.
+* You can customize the `color`, `family`, `fontStyle`, `opacity`, `size` and `weight` of tooltip text in `Font` property.
+
+
 
 {% highlight ts %}
          
-this.rnTooltip = {
+this.Tooltip = {
     visible: true,
     backgroundColor: "black",
     //  To customize the tooltip text
@@ -39,7 +44,7 @@ this.rnTooltip = {
 
 {% highlight html %}
 
-<ej-rangenavigator id="rangecontainer" [tooltipSettings]= "rnTooltip">
+<ej-rangenavigator id="rangecontainer" [tooltipSettings]= "Tooltip">
 </ej-rangenavigator>
 
 {% endhighlight %}
