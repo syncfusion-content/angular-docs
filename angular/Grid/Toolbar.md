@@ -129,7 +129,7 @@ Custom toolbar is used to create your own toolbar items in toolbar. It can add b
             this.toolbarSettings={showToolbar:true,customToolbarItems:["Collapse", {templateID: "<a  class='e-toolbaricons e-icon refresh' />"}]};
         }
         toolbar(e:any){
-            var toolbarObject = $(args.target),
+            var toolbarObject = $(e.target),
             grid = this.gridIns.widget;
             if (toolbarObject.hasClass("Collapse")) grid.collapseAll(); //collapse Grid using grid instance, `this` is grid instance
             else grid.refreshContent(); //refresh content using grid instance
