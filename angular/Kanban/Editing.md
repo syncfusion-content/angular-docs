@@ -147,7 +147,7 @@ Place the ng-template in the "index.html" page.
                                 <td style="text-align: right;">Id
                                 </td>
                                 <td style="text-align: left">
-                                    <input id="Id" name="Id" value="{{: Id}}" class="e-field e-ejinputtext valid e-disable" style="text-align: right; width: 175px; height: 28px" disabled="disabled" />
+                                    <input id="Id" name="Id" value={% raw %}"{{: Id}}"{% endraw %} class="e-field e-ejinputtext valid e-disable" style="text-align: right; width: 175px; height: 28px" disabled="disabled" />
                                 </td>
                                 <td style="text-align: right;">Status
                                 </td>
@@ -163,7 +163,7 @@ Place the ng-template in the "index.html" page.
                                 <td style="text-align: right;">Estimate
                                 </td>
                                 <td style="text-align: left">
-                                    <input type="text" id="Estimate" name="Estimate" value="{{:Estimate}}" />
+                                    <input type="text" id="Estimate" name="Estimate" value={% raw %}"{{:Estimate}}"{% endraw %} />
                                 </td>
                                 <td style="text-align: right;">Assignee
                                 </td>
@@ -323,7 +323,7 @@ Place the ng-template in the "index.html" page.
                     Id
                 </td>
                 <td style="text-align: left">
-                    <input id="Id" name="Id" value="{{: Id}}" class="e-field e-ejinputtext valid e-disable" style="text-align: right; width: 175px; height: 28px" disabled="disabled" />
+                    <input id="Id" name="Id" value={% raw %}"{{: Id}}"{% endraw %} class="e-field e-ejinputtext valid e-disable" style="text-align: right; width: 175px; height: 28px" disabled="disabled" />
                 </td>
             </tr>
             <tr>
@@ -362,7 +362,7 @@ Place the ng-template in the "index.html" page.
                     Priority
                 </td>
                 <td style="text-align: left">
-                    <input id="Priority" name="Priority" value="{{: Priority}}" class="e-field e-ejinputtext valid" style="width: 175px; height: 28px" />
+                    <input id="Priority" name="Priority" value={% raw %}"{{: Priority}}"{% endraw %} class="e-field e-ejinputtext valid" style="width: 175px; height: 28px" />
                 </td>
             </tr>
             <tr>
@@ -370,7 +370,7 @@ Place the ng-template in the "index.html" page.
                     Summary
                 </td>
                 <td style="text-align: left">
-                    <textarea id="Summary" name="Summary" class="e-ejinputtext" value="{{: Summary}}" style="width: 270px; height: 95px">{{: Summary}}</textarea>
+                    <textarea id="Summary" name="Summary" class="e-ejinputtext" value={% raw %}"{{: Summary}}"{% endraw %} style="width: 270px; height: 95px">{{: Summary}}</textarea>
                 </td>
             </tr>
         </table>

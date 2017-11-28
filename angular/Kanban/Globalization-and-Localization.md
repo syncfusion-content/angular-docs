@@ -52,7 +52,7 @@ Add New Card
 <td>
 SwimlaneCaptionFormat
 </td><td>
-    "-{{:count}}{{if count == 1 }} item {{else}} items {{/if}}"
+    {% raw %}"-{{:count}}{{if count == 1 }} item {{else}} items {{/if}}"{% endraw %}
 </td></tr>
 <tr>
 <td>
@@ -217,7 +217,7 @@ export class DefaultComponent {
             CancelButton: "stornieren",
             EditFormTitle: "Details von ",
             AddFormTitle: "Neue Karte hinzufügen",
-            SwimlaneCaptionFormat: "- {{:count}}{{if count == 1 }} Artikel {{else}} Artikel {{/if}}",
+            SwimlaneCaptionFormat: {% raw %}"- {{:count}}{{if count == 1 }} Artikel {{else}} Artikel {{/if}}"{% endraw %},
             FilterSettings: "Filter:",
             FilterOfText: "Von",
             Max: "Max.",
