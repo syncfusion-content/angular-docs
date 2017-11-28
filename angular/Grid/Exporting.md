@@ -405,4 +405,435 @@ To export the grid, `export` method should  be called with export mapper as para
 
     {% endhighlight %}
 
+## ColumnTemplate Exporting
+
+To export the grid with columnTemplate we have to set `IsTemplateColumnIncluded` as true in the parameter of the export method. You can handle the template elements in server side event while exporting grid to various files such as Excel, PDF and Word.
+
+The server side events available in template column exporting and its argument types are listed in the following table.
+
+<table>
+<tr>
+<th>
+Event Name
+</th>
+<th>
+Argument
+</th>
+<th>
+Description
+</th>
+</tr>
+<tr>
+<td>
+ExcelColumnTemplateInfo
+</td>
+<td>
+currentCell, Row
+</td>
+<td>
+It returns the current cell and row of excel sheet.
+</td>
+</tr>
+<tr>
+<td>
+WordColumnTemplateInfo
+</td>
+<td>
+currentCell, Row
+</td>
+<td>
+It returns the current cell and row of word.
+</td>
+</tr>
+<tr>
+<td>
+PdfColumnTemplateInfo
+</td>
+<td>
+currentCell, Row
+</td>
+<td>
+It returns the current cell and row of PDF.
+</td>
+</tr>
+</table>
+
+You can modify the template column of exporting files using server events. The code snippet for this is
+
+{% highlight html %}
+
+<ej-grid #grid [dataSource]="gridData" [allowPaging]="true" [toolbarSettings]="toolbarsettings" (toolbarClick)="toolbar($event)">
+    <e-columns>
+        <e-column headerText="Photo">
+            <ng-template e-template let-data>
+                <a href="https://www.syncfusion.com">data.FirstName</a>
+            </ng-template>
+         </e-column>
+        <e-column field="EmployeeID" headerText="EmployeeID"></e-column>
+        <e-column field="FirstName" headerText="FirstName"></e-column>
+        <e-column field="LastName" headerText="LastName"></e-column>
+        <e-column field="Country" headerText="Country"></e-column>
+    </e-columns>
+</ej-grid>
+
+{% endhighlight %}
+
+{% highlight javascript %}
+
+import {Component, ViewEncapsulation} from '@angular/core';
+    @Component({
+      selector: 'ej-app',
+      templateUrl: 'app/app.component.html',  //give the path file for Grid control html file.
+    })
+    export class AppComponent {
+        public gridData;
+
+	    public toolbarsettings;
+
+        toolbar(e:any){
+
+            if (e.itemName == "Excel Export") {
+                this.Grid.widget.export('http://js.syncfusion.com/demos/ejServices/api/grid/ExcelExport');
+                e.cancel = true;
+            }
+            else if (e.itemName == "Word Export") {
+                this.Grid.widget.export('http://js.syncfusion.com/demos/ejServices/api/grid/WordExport')
+                e.cancel = true;//prevent the default action
+            }
+            else if (e.itemName == "PDF Export") {
+                this.Grid.widget.export('http://js.syncfusion.com/demos/ejServices/api/grid/PdfExport')
+                e.cancel = true;
+            }
+    }
+
+   @ViewChild('grid') Grid: EJComponents<any, any>;
+
+    constructor() {
+
+       this.gridData = new ej.DataManager({ url: "http://mvc.syncfusion.com/Services/Northwnd.svc/Employees" });
+
+       this.toolbarsettings = { showToolbar: true, toolbarItems: ["excelExport", "wordExport", "pdfExport"] }
+
+      }
+   }
+
+{% endhighlight %}
+ 
+{% highlight c# %}
+
+public void ExcelExport(string GridModel)
+{
+   ExcelExport exp = new ExcelExport();
+   var DataSource =  new NorthwindDataContext().EmployeeViews.ToList();
+   GridProperties obj = ConvertGridObject(GridModel);
+   obj.ExcelColumnTemplateInfo = templateInfo;
+   exp.Export(obj, DataSource, "Export.xlsx", ExcelVersion.Excel2010, false, true, "flat-saffron");
+}
+
+public void WordExport(string GridModel)
+{
+  WordExport exp = new WordExport();
+  var DataSource =  new NorthwindDataContext().EmployeeViews.ToList();
+  GridProperties obj = ConvertGridObject(GridModel);
+  obj.WordColumnTemplateInfo = WordTemplateInfo;
+  exp.Export(obj, DataSource, "Export.docx", false, true, "flat-saffron");
+}
+
+public void PdfExport(string GridModel)
+{
+  PdfExport exp = new PdfExport();
+  var DataSource = new NorthwindDataContext().EmployeeViews.ToList();
+  GridProperties obj = ConvertGridObject(GridModel);
+  obj.PdfColumnTemplateInfo = PdfTemplateInfo;
+  exp.Export(obj, DataSource, "Export.pdf", false, true, "flat-saffron");
+}
+
+public void templateInfo(object currentCell, object row)
+{
+   IRange range = (IRange)currentCell;
+   object templates;
+   foreach (var data in row.GetType().GetProperties())
+   {
+     if (range.Value.Contains(data.Name))
+      {
+         templates = row.GetType().GetProperty(data.Name).GetValue(row, null);
+         range.Value = range.Value.Replace(data.Name, templates.ToString());
+         var regex = new Regex("<a [^>]*href=(?:'(?<href>.*?)')|(?:\"(?<href>.*?)\")", RegexOptions.IgnoreCase);
+         var urls = regex.Matches(range.Value.ToString()).OfType<match>().Select(m => m.Groups["href"].Value).SingleOrDefault();
+         IHyperLink hyperlink = (range.Parent as Syncfusion.XlsIO.Implementation.WorksheetImpl).HyperLinks.Add(range);
+         hyperlink.Type = ExcelHyperLinkType.Url;
+         hyperlink.TextToDisplay = templates.ToString();
+         hyperlink.Address = urls;
+      }
+   }
+}
+
+public void WordTemplateInfo(object currentCell, object row)
+{
+   WTableCell wCell = (WTableCell)currentCell;
+   object templates;
+   foreach (var data in row.GetType().GetProperties())
+   {
+     if (wCell.LastParagraph.Text.ToString().Contains(data.Name))
+      {
+        templates = row.GetType().GetProperty(data.Name).GetValue(row, null);
+        var regex = new Regex("<a [^>]*href=(?:'(?<href>.*?)')|(?:\"(?<href>.*?)\")", RegexOptions.IgnoreCase);
+        var urls = regex.Matches(wCell.LastParagraph.Text).OfType<Match>().Select(m => m.Groups["href"].Value).SingleOrDefault();
+        wCell.LastParagraph.Text = "";
+        IWField field = wCell.LastParagraph.AppendHyperlink(urls, templates.ToString(), HyperlinkType.WebLink);
+      }
+   }
+}
+
+public void PdfTemplateInfo(object currentCell, object row)
+{
+  Syncfusion.Pdf.Grid.PdfGridCell range = (Syncfusion.Pdf.Grid.PdfGridCell)currentCell;
+  object templates;
+  range.Value = Uri.UnescapeDataString(range.Value.ToString());
+  foreach (var data in row.GetType().GetProperties())
+  {
+     if (range.Value.ToString().Contains(data.Name))
+     {
+        templates = row.GetType().GetProperty(data.Name).GetValue(row, null);
+        var regex = new Regex("<a [^>]*href=(?:'(?<href>.*?)')|(?:\"(?<href>.*?)\")", RegexOptions.IgnoreCase);
+        var urls = regex.Matches(range.Value.ToString()).OfType<Match>().Select(m => m.Groups["href"].Value).SingleOrDefault();
+        RectangleF rectangle = new RectangleF(10, 40, 30, 30);
+        PdfUriAnnotation uriAnnotation = new PdfUriAnnotation(rectangle, urls);
+        uriAnnotation.Text = templates.ToString();
+        range.Value = uriAnnotation;
+      }
+   }
+}
+
+{% endhighlight %}
+
+## DetailTemplate Exporting
+
+To export the grid with detail template we have to set `IncludeDetailRow` as true in the parameter of the export method. You can handle template elements using server side event while exporting grid to various files such as Excel, PDF and Word.
+
+The server side events available in detail template exporting and its argument types are listed in the following table.
+
+<table>
+<tr>
+<th>
+Event Name
+</th>
+<th>
+Argument
+</th>
+<th>
+Description
+</th>
+</tr>
+<tr>
+<td>
+ExcelDetailTemplateInfo
+</td>
+<td>
+currentCell, Row
+</td>
+<td>
+It returns the current cell and row of excel sheet.
+</td>
+</tr>
+<tr>
+<td>
+WordDetailTemplateInfo
+</td>
+<td>
+currentCell, Row
+</td>
+<td>
+It returns the current cell and row of word.
+</td>
+</tr>
+<tr>
+<td>
+PdfDetailTemplateInfo
+</td>
+<td>
+currentCell, Row
+</td>
+<td>
+It returns the current cell and row of PDF.
+</td>
+</tr>
+</table>
+
+You can modify the detailTemplate of exporting files using server events. The code snippet for this is
+
+{% highlight html %}
+
+<ej-grid #grid [allowPaging]="true" [allowSorting]="true" [dataSource]="gridData" [detailsTemplate]="temp" [allowPaging]="true" [toolbarSettings]="toolbarsettings" (toolbarClick)="toolbar($event)">
+    <e-columns>
+         <e-column field="EmployeeID" headerText="EmployeeID"></e-column>
+        <e-column field="FirstName" headerText="FirstName"></e-column>
+        <e-column field="LastName" headerText="LastName"></e-column>
+        <e-column field="Country" headerText="Country"></e-column>             
+    </e-columns>    
+    <ng-template e-details-template let-data>
+        <div>
+        <b> More Details: </b> <br /><br /> <b class='detail'>Last Name</b> - data.LastName <br /> <br /> <b class='detail'>Home Phone</b> - data.HomePhone <br /> <br /> <b class='detail'>Exten No</b> - data.Extension
+        </div>
+    </ng-template>
+</ej-grid>
+
+{% endhighlight %}
+
+{% highlight javascript %}
+
+import {Component, ViewEncapsulation} from '@angular/core';
+    @Component({
+      selector: 'ej-app',
+      templateUrl: 'app/app.component.html',  //give the path file for Grid control html file.
+    })
+    export class AppComponent {
+        public gridData;
+
+	    public toolbarsettings;
+
+        temp: any;
+
+        toolbar(e:any){
+
+            if (e.itemName == "Excel Export") {
+                this.Grid.widget.export('http://js.syncfusion.com/demos/ejServices/api/grid/ExcelExport');
+                e.cancel = true;
+            }
+            else if (e.itemName == "Word Export") {
+                this.Grid.widget.export('http://js.syncfusion.com/demos/ejServices/api/grid/WordExport')
+                e.cancel = true;//prevent the default action
+            }
+            else if (e.itemName == "PDF Export") {
+                this.Grid.widget.export('http://js.syncfusion.com/demos/ejServices/api/grid/PdfExport')
+                e.cancel = true;
+            }
+    }
+
+   @ViewChild('grid') Grid: EJComponents<any, any>;
+
+    constructor() {
+
+       this.gridData = new ej.DataManager({ url: "http://mvc.syncfusion.com/Services/Northwnd.svc/Employees" });
+
+       this.toolbarsettings = { showToolbar: true, toolbarItems: ["excelExport", "wordExport", "pdfExport"] };
+
+       this.temp = "#template";
+
+      }
+   }
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+public void ExcelExport(string GridModel)
+{
+   ExcelExport exp = new ExcelExport();
+   var DataSource = new NorthwindDataContext().EmployeeViews.ToList();
+   GridProperties obj = ConvertGridObject(GridModel);
+   GridExcelExport exp2 = new GridExcelExport() { IncludeDetailRow = true, Theme = "flat-saffron", FileName = "Export.xlsx" };
+   obj.ExcelDetailTemplateInfo = templateInfo;
+   exp.Export(obj, DataSource, exp2);
+}
+
+public void WordExport(string GridModel)
+{
+  WordExport exp = new WordExport();
+  var DataSource = new NorthwindDataContext().EmployeeViews.ToList();
+  GridProperties obj = ConvertGridObject(GridModel);
+  obj.WordDetailTemplateInfo = WordDetailTemplateInfo;
+  GridWordExport exp1 = new GridWordExport() { IncludeDetailRow = true, Theme = "flat-saffron", FileName = "Export.docx" };
+  exp.Export(obj, DataSource, exp1);
+}
+
+public void PdfExport(string GridModel)
+{
+  PdfExport exp = new PdfExport();
+  var DataSource = new NorthwindDataContext().EmployeeViews.ToList();
+  GridProperties obj = ConvertGridObject(GridModel);     
+  obj.PdfDetailTemplateInfo = PdfDetailTemplateInfo;
+  GridPdfExport exp3 = new GridPdfExport() { IncludeDetailRow = true, Theme = "flat-saffron", FileName = "Export.pdf" };
+  exp.Export(obj, DataSource, exp3);
+}
+
+public void templateInfo(object currentCell, object row)
+{
+  IRange range = (IRange)currentCell;
+  object templates;
+  foreach (var data in row.GetType().GetProperties())
+  {
+     if (range.Value.Contains(data.Name))
+     {
+       templates = row.GetType().GetProperty(data.Name).GetValue(row, null);
+       range.Value = range.Value.Replace(data.Name, templates.ToString());
+       var charsToRemove = new string[] { '{', '}', '<b>', ':', '</b>', '<br />', 'style', '=', 'class', '</div>', '<p>', '</p>', 'detail', '<b', '>', };
+       foreach (var c in charsToRemove)
+       {
+         range.Value = range.Value.ToString().Replace(c, string.Empty);
+       }
+       range.HorizontalAlignment = ExcelHAlign.HAlignCenter;
+    }
+  }
+}
+   
+public void WordDetailTemplateInfo(object currentCell, object row)
+{
+   WTableCell wCell = (WTableCell)currentCell;
+   object templates;
+   foreach (var data in row.GetType().GetProperties())
+   {
+      if (wCell.LastParagraph.Text.ToString().Contains(data.Name))
+      {
+        templates = row.GetType().GetProperty(data.Name).GetValue(row, null);
+        wCell.LastParagraph.Text = wCell.LastParagraph.Text.ToString().Replace(data.Name, templates.ToString());
+        var charsToRemove = new string[] { '{', '}', '<b>', ':', '</b>', '<br />', 'style', '=', 'class', '</div>', '<p>', '</p>', 'detail', '<b', '>', };
+        foreach (var c in charsToRemove)
+        {
+           wCell.LastParagraph.Text  = wCell.LastParagraph.Text.ToString().Replace(c, string.Empty); //
+        }
+      }
+   }
+}
+
+public void PdfDetailTemplateInfo(object currentCell, object row)
+{
+   Syncfusion.Pdf.Grid.PdfGridCell range = (Syncfusion.Pdf.Grid.PdfGridCell)currentCell;
+   object templates;
+   foreach (var data in row.GetType().GetProperties())
+   {
+     if (range.Value.ToString().Contains(data.Name))
+     {
+       templates = row.GetType().GetProperty(data.Name).GetValue(row, null);
+       range.Value = range.Value.ToString().Replace(data.Name, templates.ToString());
+       var charsToRemove = new string[] { '{', '}', '<b>', ':', '</b>', '<br />', 'style', '=', 'class', '</div>', '<p>', '</p>', 'detail', '<b', '>', };
+       foreach (var c in charsToRemove)
+       {
+          range.Value = range.Value.ToString().Replace(c, string.Empty);
+        }
+     }
+   }
+}
+
+private GridProperties ConvertGridObject(string gridProperty)
+{
+  JavaScriptSerializer serializer = new JavaScriptSerializer();
+  IEnumerable div = (IEnumerable)serializer.Deserialize(gridProperty, typeof(IEnumerable));
+  GridProperties gridProp = new GridProperties();
+  foreach (KeyValuePair<string, object> data in div)
+  {
+     var property = gridProp.GetType().GetProperty(data.Key, BindingFlags.Instance | BindingFlags.Public | BindingFlags.IgnoreCase);
+     if (property != null)
+     {
+       Type type = property.PropertyType;
+       string serialize = serializer.Serialize(data.Value);
+       object value = serializer.Deserialize(serialize, type);
+       property.SetValue(gridProp, value, null);
+     }
+  }
+  return gridProp;
+}
+
+{% endhighlight %}
+
 
