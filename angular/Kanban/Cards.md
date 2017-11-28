@@ -113,7 +113,7 @@ Place the ng-template in the "index.html" page.
             <table>
             <tr>
                 <td class="photo">
-                    <img src="src/images/kanban/{{:Priority}}.png">
+                    <img src="src/images/kanban/{% raw %}{{:Priority}}{% endraw %}.png">
                 </td>            
                 <td class="details">
                     <table>
@@ -124,11 +124,11 @@ Place the ng-template in the "index.html" page.
                         <tbody>
                             <tr>
                                 <td class="CardHeader">   Name: </td>
-                                <td>{{:Assignee}}</td>
+                                <td>{% raw %}{{:Assignee}}{% endraw %}</td>
                             </tr>
                             <tr>
                                 <td class="CardHeader">   Task: </td>
-                                <td>{{:Type}}</td>
+                                <td>{% raw %}{{:Type}}{% endraw %}</td>
                             </tr>
                         </tbody>
                     </table>
@@ -264,7 +264,7 @@ Place the ng-template in the "index.html" page.
                 <table>
                     <tr>
                         <td class="photo">
-                            <img src="{{:ImgUrl}}">
+                            <img src={% raw %}"{{:ImgUrl}}"{% endraw %}>
                         </td>
                         <td class="details">
                             <table>
@@ -275,19 +275,19 @@ Place the ng-template in the "index.html" page.
                                 <tbody>
                                     <tr>
                                         <td class="CardHeader">Assignee:</td>
-                                        <td>{{:Assignee}}</td>
+                                        <td>{% raw %}{{:Assignee}}{% endraw %}</td>
                                     </tr>
                                     <tr>
                                         <td class="CardHeader">Type:</td>
-                                        <td>{{:Type}}</td>
+                                        <td>{% raw %}{{:Type}}{% endraw %}</td>
                                     </tr>                                
                                     <tr>
                                         <td class="CardHeader">Estimate:</td>
-                                        <td>{{:Estimate}}</td>
+                                        <td>{% raw %}{{:Estimate}}{% endraw %}</td>
                                     </tr>                                
                                     <tr>
                                         <td class="CardHeader">Summary:</td>
-                                        <td>{{:Summary}}</td>
+                                        <td>{% raw %}{{:Summary}}{% endraw %}</td>
                                     </tr>
                                 </tbody>
                             </table>
