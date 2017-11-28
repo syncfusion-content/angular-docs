@@ -89,9 +89,9 @@ Execute the above code to render the following output.
 
 * Theme is the basic property of any control. It is used to set the theme for Linear Gauge. There are two types of themes used for Linear Gauge such as
 
- * flatlight
+ * flat light
 
- * flatdark
+ * flat dark
 
 
 {% highlight html %}
@@ -158,6 +158,38 @@ Execute the above code to render the following output.
 
 
 ![](Basic-Settings_images/Basic-Settings_img4.png)
+
+
+Responsiveness of the linear gauge is controlled by using `enableResize` property.
+
+
+{% highlight html %}
+
+<%-- For Linear Gauge rendering-- %>
+
+<%-- For enabling responsible layout-- %>
+
+<ej-lineargauge id="lineargauge" [height]="100" [width]="400" [enableResize]="true">    
+</ej-lineargauge>
+
+{% endhighlight %}
+
+
+## Localization
+
+**LinearGauge** supports localization for its axis labels and tooltip. To render the gauge with specific culture you have to refer the corresponding globalize culture script and need to specify the culture name in `locale` property of gauge.
+
+**Enable Group Separator** is used to Convert the date object to string while using the locale settings, you can set `enableGroupSeparator` property as **true**.
+
+
+
+{% highlight html %}
+
+<ej-lineargauge id="lineargauge" locale="en-fr" [enableGroupSeperator]="true">    
+</ej-lineargauge>
+
+{% endhighlight %}
+
 
 
 
