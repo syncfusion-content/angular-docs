@@ -11,9 +11,12 @@ documentation: ug
 
 The Autocomplete allows list of data to be displayed in several columns and column collection can be defined and customized through the [multiColumnSettings ](http://help.syncfusion.com/api/js/ejautocomplete)property.
 
-In AutoComplete Multiple Column search is based on [stringFormat ](http://help.syncfusion.com/api/js/ejautocomplete)property which specifies column indices.
+In AutoComplete Multiple Column search is based on [searchColumnIndices](https://help.syncfusion.com/api/js/ejautocomplete#members:multicolumnsettings-searchColumnIndices) property which allows user to search text for any number of fields in the suggestion list without modifying the selected text format.
 
-NOTE : [stringFormat ](http://help.syncfusion.com/api/js/ejautocomplete)as “{0} ({1}) ({2})” means search based on 0, 1 and 2 columns data.
+In AutoComplete Multiple Column searched value is updated to autocomplete input box based on [stringFormat](https://help.syncfusion.com/api/js/ejautocomplete#members:multiColumnSettings-stringFormat) property which specifies column indices values to  updated.
+
+NOTE :NOTE: 1. [stringFormat ](http://help.syncfusion.com/api/js/ejautocomplete)as “{0} ({1})” means search based on 0, 1 and 2 columns data.
+            2. If [searchColumnIndices](https://help.syncfusion.com/api/js/ejautocomplete#members:multicolumnsettings-searchColumnIndices) given as [0,1,2], then the column search will done using 0,1,2 column data alone.
 
 <table>
 <tr>
@@ -122,7 +125,8 @@ export class AppComponent {
         { 'EmployeeID': 31, 'FirstName': 'Margaret', 'City': 'Redmond' },
         { 'EmployeeID': 32, 'FirstName': 'Steven', 'City': 'London' }];
         this.multicolumncolset = {
-            stringFormat: '{0}  ({2}) ({1})',
+            stringFormat: '{0} ({1})',
+            searchColumnIndices:[0,1,2],
             enable: true,
             showHeader: true,
             columns: [
