@@ -70,6 +70,11 @@ public class SignalHub: Hub
             this.editSettings={allowAdding: true, allowEditing: true, allowDeleting: true };
             this.toolbarSettings={showToolbar: true, toolbarItems: [ej.Grid.ToolBarItems.Add, ej.Grid.ToolBarItems.Edit, ej.Grid.ToolBarItems.Delete, ej.Grid.ToolBarItems.Update, ej.Grid.ToolBarItems.Cancel]};
         }
+        
+     }
+
+{% endhighlight %}
+{% highlight javascript  %}
         window.signal = $.connection.signalHub;
         window.signal.client.modify = function (action, details) {
           details = JSON.parse(details);
@@ -83,10 +88,7 @@ public class SignalHub: Hub
               if (args.requestType != "delete") window.previousAction = args.requestType;
           }
         });
-     }
-
 {% endhighlight %}
-
 
 ## Copy data from Excel to Grid
 
