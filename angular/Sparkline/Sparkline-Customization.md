@@ -15,14 +15,11 @@ This section explains you the customization options available to make changes in
 
 You can specify the background color for the Sparkline using `background` property. When you don't specify the `background`, it takes "transparent" as background color. 
 
-{% highlight javascript %}
+{% highlight html %}
 
-$("#container").ejSparkline({
-            // ...
-            //Specifies background color for sparkline
-            background : "gray"
-            // ...
-});
+<ej-sparkline id="spark" background="blue">          
+                               
+</ej-sparkline>
 
 {% endhighlight %} 
 
@@ -30,17 +27,14 @@ $("#container").ejSparkline({
 
 ## Stroke color and width
 
-You can customize the series border color and width using [`stroke`](../api/ejsparkline#members:stroke) and [`width`](../api/ejsparkline#members:width). This is applicable for Sparkline types line and area.
+You can customize the series border color and width using `stroke`and `width`. This is applicable for Sparkline types line and area.
 
-{% highlight javascript %}
 
-$("#container").ejSparkline({
-            // ...
-            //Specifies border color and width for line and area series
-            stroke: "green",
-            width: 3
-            // ...
-});
+{% highlight html %}
+
+<ej-sparkline id="spark" stroke="blue" [width]="2">          
+                               
+</ej-sparkline>
 
 {% endhighlight %} 
 
@@ -48,16 +42,13 @@ $("#container").ejSparkline({
 
 ## Sparkline border
 
-You can customize the [`border`](../api/ejsparkline#members:border) width and height of the Sparkline using [`border width`](../api/ejsparkline#members:border-color) and [`border height`](../api/ejsparkline#members:border-width) properties. This is applicable for column, win-loss and pie series.
+You can customize the `border` width and height of the Sparkline using border `width` and border `height`properties. This is applicable for column, win-loss and pie series.
 
-{% highlight javascript %}
+{% highlight html %}
 
-$("#container").ejSparkline({
-            // ...
-            //Specifies border width and color for column, winLoss and pie series
-            border: { color: "green", width: 2 },
-            // ...
-});
+<ej-sparkline id="spark" stroke="blue" [width]="3">          
+                               
+</ej-sparkline>
 
 {% endhighlight %} 
 
@@ -65,16 +56,17 @@ $("#container").ejSparkline({
 
 ## Opacity
 
-By default [`opacity`](../api/ejsparkline#members:opacity) of the Sparkline is 1. You can specify the opacity value from 0 to 1. This is applicable for all types of series. 
+By default `opacity`of the Sparkline is 1. You can specify the opacity value from 0 to 1. This is applicable for all types of series. 
 
-{% highlight javascript %}
 
-$("#container").ejSparkline({
-            // ...
-            //Specifies the opacity of the sparkline
-            opacity: 0.5
-            // ...
-});
+{% highlight html %}
+
+<ej-sparkline id="spark">          
+
+<e-border [width]="50" [height]="10"> </e-border>
+                               
+</ej-sparkline>
+
 
 {% endhighlight %} 
 
@@ -82,31 +74,25 @@ $("#container").ejSparkline({
 
 ## Localization
 
-Sparkline is having support for localization as well. Default culture is "en-US". You can modify the culture using the property [`locale`](../api/ejsparkline#members:locale).
+Sparkline is having support for localization as well. Default culture is "en-US". You can modify the culture using the property `locale`.
 
-{% highlight javascript %}
+{% highlight html %}
 
-$("#container").ejSparkline({
-            // ...
-            //Culture for the sparkline
-            culture: "fr-FR"
-            // ...
-});
+<ej-sparkline id="spark" [opacity]="0.5">          
+                               
+</ej-sparkline>
 
 {% endhighlight %} 
 
 ## Padding for Sparkline
 
-[`Padding`](../api/ejsparkline#members:padding) is used to specify the padding value between the container and Sparkline. By default padding value of the Sparkline is 5. 
+`Padding` is used to specify the padding value between the container and Sparkline. By default padding value of the Sparkline is 5. 
 
-{% highlight javascript %}
+{% highlight html %}
 
-$("#container").ejSparkline({
-            // ...
-            //Padding for the sparkline
-            padding: 20,
-            // ...
-});
+<ej-sparkline id="spark" [padding]="2">          
+                               
+</ej-sparkline>
 
 {% endhighlight %} 
 
@@ -114,16 +100,13 @@ $("#container").ejSparkline({
 
 ## Canvas support
 
-You can control whether Sparkline has to be rendered as SVG or [`Canvas`](../api/ejsparkline#members:enablecanvasrendering). Canvas rendering supports all the functionalities supported in SVG rendering.
+You can control whether Sparkline has to be rendered as SVG or `Canvas`. Canvas rendering supports all the functionalities supported in SVG rendering.
 
-{% highlight javascript %}
+{% highlight html %}
 
-$("#container").ejSparkline({
-            // ...
-            //enables canvas rendering
-            enableCanvasRendering : true
-            // ...
-});
+<ej-sparkline id="spark" enableCanvasRendering="true">          
+                               
+</ej-sparkline>
 
 {% endhighlight %} 
 
@@ -131,14 +114,11 @@ $("#container").ejSparkline({
 
 You can specify different `themes` for Sparkline control.
 
-{% highlight javascript %}
+{% highlight html %}
 
-$("#container").ejSparkline({
-            // ...
-            //theme for sparkline
-            theme:"saffron",
-            // ...
-});
+<ej-sparkline id="spark" theme="saffaron">          
+                               
+</ej-sparkline>
 
 {% endhighlight %} 
 
