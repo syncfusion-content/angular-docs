@@ -711,3 +711,95 @@ export class DropDownListComponent {
 {% endhighlight %}
 
 ![](Functionalities_images/Functionalities_img9.png)
+
+## Validation
+
+You can validate the DropDownList value on form submission by applying “validationRules” and “validationMessage” to the DropDownList. 
+
+N> [jquery.validate.min](http://cdn.syncfusion.com/js/assets/external/jquery.validate.min.js) script file should be referred for validation, for more details, refer [here](http://jqueryvalidation.org/documentation).
+
+### Validation Rules
+
+The validation rules help you to verify the selected text by adding validation attributes to the input element. This can be set by using [validationRules](https://help.syncfusion.com/api/js/ejdropdownlist#members:validationrules) property.
+
+### Validation Messages 
+
+You can set your own custom error message by using [validationMessage](https://help.syncfusion.com/api/js/ejdropdownlist#members:validationmessage) property. To display the error message, specify the corresponding annotation attribute followed by the message to display.
+
+N> jQuery predefined error messages to that annotation attribute will be shown when this property is not defined. The below given example explain this behavior of ‘required’ attribute,
+
+When you initialize the DropDownList widget, it creates an input hidden element which is used to store the selected items value. Hence, the validation is performed based on the value stored in this hidden element.
+
+Required field and min value validation is demonstrated in the below given example.
+
+{% highlight html %}
+
+    <form id="form1">
+    	<input ej-dropdownlist [dataSource]="data" [fields]="fieldvalues" type="text" id="dropdown1" [validationRules]="validRule"  [validationMessage]="validMessage"  />
+   
+    	<input type="submit" value="Validate" />
+	</form>
+                
+{% endhighlight %}
+
+{% highlight javascript %}
+	
+ import { Component } from '@angular/core';
+@Component({
+  selector: 'ej-app',
+  templateUrl: 'src/dropdown/dropdown.component.html',
+})
+export class DropDownListComponent { 
+	  validRule: any;
+	  validMessage: any;
+      data: Array<Object> = [];
+      fieldvalues: Object; 
+     constructor() {
+	   this.data = [{
+            text: "10",
+            value: 10
+        }, {
+            text: "20",
+            value: 20
+        }, {
+            text: "30",
+            value: 30
+        }, {
+            text: "40",
+            value: 40
+        }, {
+            text: "50",
+            value: 50
+        }];
+	  $['validator'].setDefaults({
+        ignore: [],// To include hidden input validation.
+        errorClass: 'e-validation-error', // to get the error message on jquery validation
+        errorPlacement: function (error, element) {
+            $(error).insertAfter(element.closest(".e-widget"));
+        }
+    });
+     $['validator'].addMethod("min",
+        function (value, element, params) {
+            if (!/Invalid|NaN/.test(value)) {
+                return parseInt(value) > params;
+            }
+        }, 'Must be greater than 30.');
+  this.fieldvalues = { dataSource: this.data, text: 'text', value: 'value' };
+  	  this.validRule={
+      required: true ,
+      min: 30   
+   };
+   this.validMessage={
+    required: "* Required",
+    min: "Select > 30"
+  
+   };
+
+   }
+
+ }
+	
+{% endhighlight %}
+
+![](Functionalities_images/Functionalities_img10.jpeg)
+
