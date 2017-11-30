@@ -22,9 +22,9 @@ Redraws the entire sparkline. You can call this method whenever you update, add 
 
 export class AppComponent {
 
-destroy(){
+redraw(){
           
-     this.sparkline.widget.destroy();
+     this.sparkline.widget.redraw();
 
 }
 
