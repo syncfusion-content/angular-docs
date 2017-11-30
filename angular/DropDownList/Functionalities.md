@@ -166,7 +166,7 @@ To select an item initially you can pass the item’s value via [value](http://h
 
 {% highlight html %}
 
-<input id="dropdown1" ej-dropdownlist [dataSource]="data" [fields]="fieldsvalues" [(value)]="val"/>
+<input id="dropdown1" ej-dropdownlist [dataSource]="data" [fields]="field" [(value)]="val"/>
      
 {% endhighlight %}
 
@@ -179,7 +179,7 @@ templateUrl: 'app/components/dropdown/dropdown.component.html'
 })
 export class DropDownListComponent {
     data: Array<Object> = [];
-    fieldsvalues: Object;
+    field: Object;
     val: string;
     constructor() {
         this.data = [
@@ -189,7 +189,7 @@ export class DropDownListComponent {
             { text: "ListItem 4", value: "item4" },
             { text: "ListItem 5", value: "item5" }
         ];
-        this.fieldsvalues = { dataSource: this.data, text: "text", value: "value" };
+        this.field = { dataSource: this.data, text: "text", value: "value" };
         this.val="item3";
     }
 }
@@ -220,7 +220,7 @@ You can select a single or more than one item by passing index values to the pro
 
 {% highlight html %}
 
-<input id="dropdown1" ej-dropdownlist [dataSource]="data" [fields]="fieldsvalues" [selectedIndex]="index"/>
+<input id="dropdown1" ej-dropdownlist [dataSource]="data" [fields]="field" [selectedIndex]="index"/>
      
 {% endhighlight %}
 
@@ -233,7 +233,7 @@ templateUrl: 'app/components/dropdown/dropdown.component.html'
 })
 export class DropDownListComponent {
    	data: Array<Object> = [];
-    fieldsvalues: Object;
+    field: Object;
     index: number;
     constructor() {
         this.data = [
@@ -243,7 +243,7 @@ export class DropDownListComponent {
             { text: "ListItem 4", value: "item4" },
             { text: "ListItem 5", value: "item5" }
         ];
-        this.fieldsvalues = { dataSource: this.data, text: "text", value: "value" };
+        this.field = { dataSource: this.data, text: "text", value: "value" };
         this.index = 1;
     }
 }
@@ -256,7 +256,7 @@ I> To use "selectedIndices" property, you should enable either showCheckbox or m
 
 {% highlight html %}
 
-<input id="dropdown1" ej-dropdownlist [dataSource]="data" [fields]="fieldsvalues" [selectedIndices]="select" [showCheckbox]="true"/>
+<input id="dropdown1" ej-dropdownlist [dataSource]="data" [fields]="field" [selectedIndices]="select" [showCheckbox]="true"/>
      
 {% endhighlight %}
 
@@ -269,7 +269,7 @@ templateUrl: 'app/components/dropdown/dropdown.component.html'
 })
 export class DropDownListComponent {
    	data: Array<Object> = [];
-    fieldsvalues: Object;
+    field: Object;
     select: Array<Number>;
     constructor() {
         this.data = [
@@ -279,7 +279,7 @@ export class DropDownListComponent {
             { text: "ListItem 4", value: "item4" },
             { text: "ListItem 5", value: "item5" }
         ];
-        this.fieldsvalues = { dataSource: this.data, text: "text", value: "value" };
+        this.field = { dataSource: this.data, text: "text", value: "value" };
         this.select = [1, 2];
     }
 }
@@ -292,7 +292,7 @@ Similarly, you can unselect a single or multiple items by using [unselectItemByV
 
 {% highlight html %}
 
-<input id="dropdown1" ej-dropdownlist [dataSource]="data" [fields]="fieldsvalues" [selectedIndices]="select" [showCheckbox]="true"/>
+<input id="dropdown1" ej-dropdownlist [dataSource]="data" [fields]="field" [selectedIndices]="select" [showCheckbox]="true"/>
 <button (click)="unselect()">Unselect</button>
   
 {% endhighlight %}
@@ -306,7 +306,7 @@ templateUrl: 'app/components/dropdown/dropdown.component.html'
 })
 export class DropDownListComponent {
    	data: Array<Object> = [];
-    fieldsvalues: Object;
+    field: Object;
     select: Array<Number>;
     constructor() {
         this.data = [
@@ -316,7 +316,7 @@ export class DropDownListComponent {
             { text: "ListItem 4", value: "item4" },
             { text: "ListItem 5", value: "item5" }
         ];
-        this.fieldsvalues = { dataSource: this.data, text: "text", value: "value" };
+        this.field = { dataSource: this.data, text: "text", value: "value" };
         this.select = [1, 2, 3];
     }
     unselect() {
@@ -336,7 +336,7 @@ The below given example explains the behavior of grouping with JSON array bindin
 
 {% highlight html %}
 
-<input type="text" id="dropdown1" ej-dropdownlist [width]="width" [dataSource]="data" [fields]="fieldsvalues" [watermarkText]="watermark" [popupHeight]="height" />
+<input type="text" id="dropdown1" ej-dropdownlist [width]="width" [dataSource]="data" [fields]="field" [watermarkText]="watermark" [popupHeight]="height" />
      
 {% endhighlight %}
 
@@ -349,7 +349,7 @@ templateUrl: 'app/components/dropdown/dropdown.component.html'
 })
 export class DropDownListComponent {   	
     data: Array<Object>;
-    fieldsvalues: Object;
+    field: Object;
     watermark: string;
     height: number;
     constructor() {
@@ -420,7 +420,7 @@ export class DropDownListComponent {
                 skill: "Turmeric",
                 category: "Root and Tuberous"
             }];
-        this.fieldsvalues = { text: "skill", value: "value",groupBy:"category" };
+        this.field = { text: "skill", value: "value",groupBy:"category" };
         this.watermark = "Select a vegetable";
         this.height = 300;
     }
@@ -438,7 +438,7 @@ Sorting is enabled to order to display the items alphabetically in either ascend
 
 {% highlight html %}
 
-<input id="dropdown1" ej-dropdownlist [dataSource]="data" [fields]="fieldsvalues" [enableSorting]="true" [sortOrder]="order"/>
+<input id="dropdown1" ej-dropdownlist [dataSource]="data" [fields]="field" [enableSorting]="true" [sortOrder]="order"/>
                 
 {% endhighlight %}
 
@@ -451,7 +451,7 @@ templateUrl: 'app/components/dropdown/dropdown.component.html'
 })
 export class DropDownListComponent {
    	data: Array<Object> = [];
-    fieldsvalues: Object;
+    field: Object;
     select: Array<Number>;
     order: any;
     constructor() {
@@ -471,7 +471,7 @@ export class DropDownListComponent {
                 text: "ListItem 3",
                 value: "item3"
         }];
-        this.fieldsvalues = { dataSource: this.data, text: "text", value: "value" };
+        this.field = { dataSource: this.data, text: "text", value: "value" };
         this.order = ej.SortOrder.Ascending;
     }
 }
@@ -620,7 +620,7 @@ Selects the item in the popup list based on the keyed in value. If the time take
 
 {% highlight html %}
 
-<input id="dropdown1" ej-dropdownlist [dataSource]="items" [fields]="fieldsvalues" [enableIncrementalSearch]="true" [caseSensitiveSearch]="true"/>
+<input id="dropdown1" ej-dropdownlist [dataSource]="items" [fields]="field" [enableIncrementalSearch]="true" [caseSensitiveSearch]="true"/>
                 
 {% endhighlight %}
 
@@ -633,7 +633,7 @@ templateUrl: 'app/components/dropdown/dropdown.component.html'
 })
 export class DropDownListComponent {
    	items: Array<Object>;
-    fieldsvalues: Object;
+    field: Object;
     constructor() {
         this.items = [{
             text: "Adams",
@@ -651,7 +651,7 @@ export class DropDownListComponent {
                 text: "jenneth",
                 value: "emp5"
             }];
-        this.fieldsvalues = { dataSource: this.items, text: "text", value: "value" };
+        this.field = { dataSource: this.items, text: "text", value: "value" };
     }
 }
 
@@ -671,7 +671,7 @@ N> Items are filtered based on “contains” filter type by default.
 
 {% highlight html %}
 
-<input id="dropdown1" ej-dropdownlist [dataSource]="items" [fields]="fieldsvalues" [enableFilterSearch]="true" [filterType]="type"/>
+<input id="dropdown1" ej-dropdownlist [dataSource]="items" [fields]="field" [enableFilterSearch]="true" [filterType]="type"/>
                 
 {% endhighlight %}
 
@@ -684,7 +684,7 @@ templateUrl: 'app/components/dropdown/dropdown.component.html'
 })
 export class DropDownListComponent {
    	items: Array<Object>;
-    fieldsvalues: Object;
+    field: Object;
     type: any;
     constructor() {
         this.items = [{
@@ -703,7 +703,7 @@ export class DropDownListComponent {
                 text: "jenneth",
                 value: "emp5"
             }];
-        this.fieldsvalues = { dataSource: this.items, text: "text", value: "value" };
+        this.field = { dataSource: this.items, text: "text", value: "value" };
         this.type = "startsWith";
     }
 }
@@ -735,7 +735,7 @@ Required field and min value validation is demonstrated in the below given examp
 {% highlight html %}
 
     <form id="form1">
-    	<input ej-dropdownlist [dataSource]="data" [fields]="fieldvalues" type="text" id="dropdown1" [validationRules]="validRule"  [validationMessage]="validMessage"  />
+    	<input ej-dropdownlist [dataSource]="data" [fields]="field" type="text" id="dropdown1" [validationRules]="validRule"  [validationMessage]="validMessage"  />
    
     	<input type="submit" value="Validate" />
 	</form>
@@ -753,7 +753,7 @@ export class DropDownListComponent {
 	  validRule: any;
 	  validMessage: any;
       data: Array<Object> = [];
-      fieldvalues: Object; 
+      field: Object; 
      constructor() {
 	   this.data = [{
             text: "10",
@@ -773,7 +773,7 @@ export class DropDownListComponent {
         }];
 	  $['validator'].setDefaults({
         ignore: [],// To include hidden input validation.
-        errorClass: 'e-validation-error', // to get the error message on jquery validation
+        errorClass: 'e-validation-error', // to get the error message on jQuery validation
         errorPlacement: function (error, element) {
             $(error).insertAfter(element.closest(".e-widget"));
         }
@@ -784,7 +784,7 @@ export class DropDownListComponent {
                 return parseInt(value) > params;
             }
         }, 'Must be greater than 30.');
-  this.fieldvalues = { dataSource: this.data, text: 'text', value: 'value' };
+  this.field = { dataSource: this.data, text: 'text', value: 'value' };
   	  this.validRule={
       required: true ,
       min: 30   
