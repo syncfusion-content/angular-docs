@@ -363,7 +363,7 @@ export class DropDownListComponent {
                 skill: "Spinach",
                 category: "Leafy and Salad"
             }, {
-                skill: "Wheatgrass",
+                skill: "Wheat grass",
                 category: "Leafy and Salad"
             }, {
                 skill: "Yarrow",
@@ -494,7 +494,7 @@ Configuring the data items for cascading to the series of DropDownList is demons
 </div>
 <div style="float: right;">
 	<span>Select Country</span>
-	<input id="countrylist" type="text" ej-dropdownlist [dataSource]="countries" [fields]="countryField" [enabled]="false" />
+	<input id="country" type="text" ej-dropdownlist [dataSource]="countries" [fields]="countryField" [enabled]="false" />
 </div>
 
 {% endhighlight %}
@@ -597,7 +597,7 @@ export class DropDownListComponent {
             }];
         this.groupField = { dataSource: this.groups, text: "text", value: "parentId" };
         this.countryField = { dataSource: this.countries, text: "text", value: "parentId" };
-        this.cascade = "countrylist";
+        this.cascade = "country";
     }
 }
 
@@ -648,7 +648,7 @@ export class DropDownListComponent {
                 text: "Jessica",
                 value: "emp4"
             }, {
-                text: "jenneth",
+                text: "Jenneth",
                 value: "emp5"
             }];
         this.field = { dataSource: this.items, text: "text", value: "value" };
@@ -700,7 +700,7 @@ export class DropDownListComponent {
                 text: "Jessica",
                 value: "emp4"
             }, {
-                text: "jenneth",
+                text: "Jenneth",
                 value: "emp5"
             }];
         this.field = { dataSource: this.items, text: "text", value: "value" };
