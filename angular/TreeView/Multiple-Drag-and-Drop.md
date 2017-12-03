@@ -14,7 +14,8 @@ TreeView supports to drag and drop multiple nodes by specifying [allowMultiSelec
 
 {% highlight html %}
 
- <ej-treeview id="dragdrop" [fields]='field' [allowMultiSelection]='allowMultiSelection' [allowDragAndDrop]='allowDragAndDrop'></ej-treeview>
+ <ej-treeview id="dragdrop" [fields]='field' [allowMultiSelection]='allowMultiSelection' 
+ [allowDragAndDrop]='allowDragAndDrop'></ej-treeview>
 
 {% endhighlight %}
 

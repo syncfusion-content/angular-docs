@@ -17,13 +17,13 @@ Standard `html tooltip` can be set using [`tooltip`](http://help.syncfusion.com/
 
 {% highlight html %}
 
-   <ej-ribbon id="resize" width="20%" applicationTab.type="menu" applicationTab.menuItemID="ribbonmenu" allowResizing="true">
+   <ej-ribbon id="resize" width="20%" applicationTab.type="menu" applicationTab.menuItemID="menu" allowResizing="true">
         <e-tabs>
             <e-tab id="home" text="HOME" [groups]="groups1">
             </e-tab>
         </e-tabs>
    </ej-ribbon>
-<ul id="ribbonmenu">
+<ul id="menu">
     <li>
         <a>FILE</a>
         <ul>
@@ -86,16 +86,16 @@ N> Custom gallery item `menu` is not supported to Custom tooltip.
 
 {% highlight html %}
 
-     <ej-ribbon id="resize" width="500" applicationTab.type="menu" applicationTab.menuItemID="ribbonmenu">
+     <ej-ribbon id="resize" width="500" applicationTab.type="menu" applicationTab.menuItemID="menu">
         <e-tabs>
             <e-tab id="home" text="HOME" [groups]="groups1">
             </e-tab>
        </e-tabs>
     </ej-ribbon>
-<ul id="ribbonmenu">
+<ul id="menu">
     <li><a>FILE</a> </li>
 </ul>
-<ul id="custommenu">
+<ul id="custom">
     <li>
         <a>New Quick Step</a>
         <ul>
@@ -188,7 +188,7 @@ export class ResizeComponent {
                     }
                 }, {
                         customItemType: ej.Ribbon.customItemType.menu,
-                        menuId: "custommenu",
+                        menuId: "custom",
                         menuSettings: {
                             openOnClick: false
                         }
@@ -208,13 +208,14 @@ Specifies the [`custom tooltip`](http://help.syncfusion.com/api/js/ejribbon#memb
 
 {% highlight html %}
 
-   <ej-ribbon id="resize" width="300" applicationTab.type="menu" applicationTab.menuItemID="ribbonmenu" [expandPinSettings.customToolTip]="customtooltip" applicationTab.menuSettings.openOnClick="false">
+   <ej-ribbon id="resize" width="300" applicationTab.type="menu" applicationTab.menuItemID="menu" 
+   [expandPinSettings.customToolTip]="tooltip" applicationTab.menuSettings.openOnClick="false">
         <e-tabs>
             <e-tab id="home" text="HOME" [groups]="groups1">
             </e-tab>
        </e-tabs>
    </ej-ribbon>
-<ul id="ribbonmenu">
+<ul id="menu">
    <li>
         <a>FILE</a>
         <ul>
@@ -261,7 +262,7 @@ export class ResizeComponent {
             }
         }],
     }]
-    customtooltip = {
+    tooltip = {
         title: "Collapse the Ribbon",
         content: "<h6>Click the icon to collapse the Ribbon.</h6>"
     }
@@ -278,13 +279,14 @@ Specifies the [`custom tooltip`](http://help.syncfusion.com/api/js/ejribbon#memb
 
 {% highlight html %}
 
-       <ej-ribbon id="resize" width="300" applicationTab.type="menu" applicationTab.menuItemID="ribbonmenu" [collapsePinSettings.customToolTip]="customtooltip" applicationTab.menuSettings.openOnClick="false">
+       <ej-ribbon id="resize" width="300" applicationTab.type="menu" 
+       applicationTab.menuItemID="menu" [collapsePinSettings.customToolTip]="tooltip" applicationTab.menuSettings.openOnClick="false">
         <e-tabs>
             <e-tab id="home" text="HOME" [groups]="groups1">
             </e-tab>
        </e-tabs>
     </ej-ribbon>
-<ul id="ribbonmenu">
+<ul id="menu">
     <li>
         <a>FILE</a>
         <ul>
@@ -331,7 +333,7 @@ export class ResizeComponent {
             }
         }],
     }]
-    customtooltip = {
+    tooltip = {
         title: "Pin the Ribbon",
         content: "<h6>Keep it open while you work</h6>"
     }
@@ -347,13 +349,14 @@ export class ResizeComponent {
 
 {% highlight html %}
 
-      <ej-ribbon id="resize" width="300" applicationTab.type="menu" applicationTab.menuItemID="ribbonmenu" [collapsePinSettings.customToolTip]="customtooltip" applicationTab.menuSettings.openOnClick="false">
+      <ej-ribbon id="resize" width="300" applicationTab.type="menu" 
+       applicationTab.menuItemID="menu" [collapsePinSettings.customToolTip]="tooltip" applicationTab.menuSettings.openOnClick="false">
         <e-tabs>
             <e-tab id="home" text="HOME" [groups]="groups1">
             </e-tab>
        </e-tabs>
     </ej-ribbon>
-<ul id="ribbonmenu">
+<ul id="menu">
     <li>
         <a>FILE</a>
         <ul>

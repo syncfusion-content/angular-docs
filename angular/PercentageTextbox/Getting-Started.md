@@ -11,9 +11,9 @@ keywords: ejpercentagetextbox, js percentagetextbox, percentagetextbox
 
 This section explains briefly about how to create a **PercentageTextbox** control in your application with **Angular**.
 
-## Create PercentageTextbox in Angular Application using Webpack
+## Create PercentageTextbox in Angular Application using Web pack
 
-To quick start with Syncfusion JavaScript Angular components run the below commands to clone the repository for [Webpack starter](https://github.com/syncfusion/angular2-seeds) and installing required dependency packages.
+To quick start with Syncfusion JavaScript Angular components run the below commands to clone the repository for [Web pack starter](https://github.com/syncfusion/angular2-seeds) and installing required dependency packages.
 
 {% highlight javascript %}
  > git clone https://github.com/syncfusion/angular2-seeds
@@ -65,7 +65,8 @@ Before adding router configuration for above created ejPercentageTextbox compone
 <div>
 	<ul class="nav navbar-nav">
 		. . . .
-		<li><a data-toggle="collapse" data-target="#skeleton-navigation-navbar-collapse.in" href="#percentagetextbox" [routerLink]="['/percentagetextbox']">PercentageTextbox </a></li>
+	<li><a data-toggle="collapse" data-target="#skeleton-navigation-navbar-collapse.in" href="#percentagetextbox"
+    [routerLink]="['/percentagetextbox']">PercentageTextbox </a></li>
 	</ul>
 </div>
 <main>
@@ -99,7 +100,8 @@ import { PercentageTextboxComponent } from './percentagetextbox/percentagetextbo
 import { rootRouterConfig } from './app.routes';
 . . . . 
 @NgModule({
-  imports: [BrowserModule, FormsModule, HttpModule, EJAngular2Module.forRoot(), RouterModule.forRoot(rootRouterConfig, { useHash: true })],
+  imports: [BrowserModule, FormsModule, HttpModule, EJAngular2Module.forRoot(), 
+  RouterModule.forRoot(rootRouterConfig, { useHash: true })],
   declarations: [. . . . , PercentageTextboxComponent],
   bootstrap: [AppComponent]
 })
@@ -174,7 +176,8 @@ Before adding router configuration for above created ejPercentageTextbox compone
 <div>
 	<ul class="nav navbar-nav">
 		. . . .
-		<li><a data-toggle="collapse" data-target="#skeleton-navigation-navbar-collapse.in" href="#percentagetextbox" [routerLink]="['/percentagetextbox']">PercentageTextbox </a></li>
+	<li><a data-toggle="collapse" data-target="#skeleton-navigation-navbar-collapse.in" 
+    href="#percentagetextbox" [routerLink]="['/percentagetextbox']">PercentageTextbox </a></li>
 	</ul>
 </div>
 <main>
@@ -208,7 +211,8 @@ import { PercentageTextboxComponent } from './percentagetextbox/percentagetextbo
 import { rootRouterConfig } from './app.routes';
 . . . . 
 @NgModule({
-  imports: [BrowserModule, FormsModule, HttpModule, EJAngular2Module.forRoot(), RouterModule.forRoot(rootRouterConfig, { useHash: true })],
+  imports: [BrowserModule, FormsModule, HttpModule, EJAngular2Module.forRoot(),
+  RouterModule.forRoot(rootRouterConfig, { useHash: true })],
   declarations: [. . . . , PercentageTextboxComponent],
   bootstrap: [AppComponent]
 })

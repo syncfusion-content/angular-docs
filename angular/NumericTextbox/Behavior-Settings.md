@@ -21,7 +21,8 @@ In the HTML page set the corresponding &lt;input&gt; elements for rendering Nume
 
 {% highlight html %}
 
-<input id="numeric" type="text" ej-numerictextbox [value]="value" [decimalPlaces]="decimalPlaces"/>
+<input id="numeric" type="text" ej-numerictextbox [value]="value" 
+[decimalPlaces]="decimalPlaces"/>
     
 {% endhighlight %}
 
@@ -235,7 +236,8 @@ In the HTML page set the corresponding &lt;input&gt; elements for rendering Nume
 
 {% highlight html %}
 
-<input id="numeric" type="text" ej-numerictextbox [value]="value" [incrementStep]="incrementStep"/>
+<input id="numeric" type="text" ej-numerictextbox [value]="value"
+ [incrementStep]="incrementStep"/>
          
 {% endhighlight %}
 
@@ -504,7 +506,7 @@ In the HTML page set the corresponding &lt;input&gt; elements for rendering Nume
 
 import {Component,ViewEncapsulation} from '@angular/core';
 @Component({
-selector: 'sd-home',
+selector: 'ej-app',
 templateUrl: 'app/components/numerictextbox/numerictextbox.component.html',
 styleUrls: ['app/components/numerictextbox/numerictextbox.component.css'],
 encapsulation: ViewEncapsulation.None 
@@ -543,7 +545,7 @@ The output for NumericTextBox after applying **cssClass** is as follows.
 
 The NumericTextBox provides you with rounded corner support whose appearance is different from normal textbox controls.
 
-###Configure Rounded Corner Support
+### Configure Rounded Corner Support
 
 The following steps explain the implementation of **showRoundedCorner** in **NumericTextBox** .
 
@@ -625,7 +627,8 @@ In the HTML page set the corresponding &lt;input&gt; elements for rendering Nume
 
 {% highlight html %}
 
-<input id="numeric" type="text" ej-numerictextbox [value]="value" [watermarkText]="watermarkText"/>
+<input id="numeric" type="text" ej-numerictextbox [value]="value"
+ [watermarkText]="watermarkText"/>
     
 {% endhighlight %}
 

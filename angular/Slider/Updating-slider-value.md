@@ -89,7 +89,8 @@ In an **HTML** page, specify the **<div>** elements to render the **Default Slid
 {% highlight html %}
 
 <div>Default Slider</div>
-<ej-slider id='defaultSlider' [type]='default' [width]='width' [value]='value' [min]='minvalue' [max]='maxvalue' ></ej-slider>
+<ej-slider id='defaultSlider' [type]='default' [width]='width' [value]='value' 
+[min]='minValue' [max]='maxValue' ></ej-slider>
 
 <div>Range Slider</div>
 
@@ -159,7 +160,8 @@ In an **HTML** page, specify the **div** elements to render the **Range Slider.*
 
 {% highlight html %}
 
-<ej-slider  [sliderType]="range"  [values]="value" id="rangeSlider" [showButtons]="true"></ej-slider>
+<ej-slider [sliderType]="range" [values]="value" id="rangeSlider" [showButtons]="true">
+</ej-slider>
 
 {% endhighlight %}
 

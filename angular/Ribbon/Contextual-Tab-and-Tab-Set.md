@@ -13,13 +13,14 @@ keywords: contextual tab and tab set
 
 {% highlight html %}
 
-<ej-ribbon id="Default" width="500px" applicationTab.type="menu" applicationTab.menuItemID="ribbonmenu" [contextualTabs]="contextualtab">
+<ej-ribbon id="Default" width="500px" applicationTab.type="menu" applicationTab.menuItemID="menu"
+[contextualTabs]="tab">
    <e-tabs>
         <e-tab id="home" text="HOME" [groups]="groups1">
         </e-tab>
    </e-tabs>
 </ej-ribbon>
-<ul id="ribbonmenu">
+<ul id="menu">
     <li>
         <a>FILE</a>
         <ul>
@@ -30,15 +31,15 @@ keywords: contextual tab and tab set
 <div id="Contents">Custom Control</div>
 <div id="headings" class="e-headings">
     <div>
-        <p>AaBbCcDd</p>
+        <p>Article</p>
         <p>No Spacing</p>
     </div>
     <div>
-        <p class="e-strong">AaBbCcDd</p>
+        <p class="e-strong">Article</p>
         <p>Strong</p>
     </div>
     <div>
-        <p class="e-emphasis">AaBbCcDd</p>
+        <p class="e-emphasis">Article</p>
         <p>Emphasis</p>
     </div>
 </div>
@@ -63,7 +64,7 @@ import {Component} from '@angular/core';
 import {NorthwindService} from '../../services/northwind.service';
 
 @Component({
-  selector: 'sd-home',
+  selector: 'ej-app',
   templateUrl: 'app/components/ribbon/ribbon.component.html',
   providers: [NorthwindService]
 })
@@ -74,7 +75,7 @@ export class RibbonComponent {
         type: "custom",
         contentID: "Contents"
    }]
-   contextualtab = [{
+   tab = [{
         backgroundColor: "#FCFBEB",
         borderColor: "#F2CC1C",
         tabs: [{
@@ -89,7 +90,7 @@ export class RibbonComponent {
     },
         {
             backgroundColor: "blue",
-            borderColor: "lightblue",
+            borderColor: "gray",
             tabs: [{
                 id: "tabset1",
                 text: "Tabset1",

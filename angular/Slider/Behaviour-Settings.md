@@ -104,7 +104,8 @@ In a **HTML** page, add a **<div>** element to render it as a **Slider** widget.
 
 {% highlight html %}
 
-<ej-slider id='BasicSlider' [height]='height' [width]='width' [readonly]='isReadonly'></ej-slider>
+<ej-slider id='BasicSlider' [height]='height' [width]='width' [readonly]='isReadonly'>
+</ej-slider>
 
 {% endhighlight %}
 

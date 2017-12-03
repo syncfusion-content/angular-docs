@@ -22,7 +22,8 @@ In the **HTML** page set the corresponding **&lt;input&gt;** elements for render
 
 {% highlight html %}
 
-<input id="currency" type="text" ej-currencytextbox [value]="value" [decimalPlaces]="decimalPlaces" />
+<input id="currency" type="text" ej-currencytextbox [value]="value" 
+[decimalPlaces]="decimalPlaces" />
     
 {% endhighlight %}
 
@@ -62,7 +63,8 @@ In the **HTML** page set the corresponding **&lt;input&gt;** elements for render
 
 {% highlight html %}
 
-<input id="currency" type="text" ej-currencytextbox [value]="value" [enablePersistence]="true" />
+<input id="currency" type="text" ej-currencytextbox [value]="value" 
+[enablePersistence]="true" />
     
 {% endhighlight %}
 
@@ -108,7 +110,8 @@ In the **HTML** page set the corresponding **&lt;input&gt;** elements for render
 
 {% highlight html %}
 
-<input id="currency" type="text" ej-currencytextbox [value]="value" [minValue]="minValue" [maxValue]="maxValue" [enableStrictMode]="true" />
+<input id="currency" type="text" ej-currencytextbox [value]="value" [minValue]="minValue" 
+[maxValue]="maxValue" [enableStrictMode]="true" />
     
 {% endhighlight %}
 
@@ -198,7 +201,8 @@ In the **HTML** page set the corresponding **&lt;input&gt;** elements for render
 
 {% highlight html %}
 
-<input id="currency" type="text" ej-currencytextbox [value]="value" [width]="width" [height]="height" />
+<input id="currency" type="text" ej-currencytextbox [value]="value" [width]="width" 
+[height]="height" />
 
 {% endhighlight %}
 
@@ -241,7 +245,8 @@ In the **HTML** page set the corresponding **&lt;input&gt;** elements for render
 
 {% highlight html %}
 
-<input id="currency" type="text" ej-currencytextbox [value]="value" [incrementstep]="incrementStep" />
+<input id="currency" type="text" ej-currencytextbox [value]="value" 
+[incrementstep]="incrementStep" />
     
 {% endhighlight %}
 
@@ -519,7 +524,7 @@ In the **HTML** page set the corresponding **&lt;input&gt;** elements for render
 
 import {Component,ViewEncapsulation} from '@angular/core';
 @Component({
-selector: 'sd-home',
+selector: 'ej-app',
 templateUrl: 'app/components/currencytextbox/currencytextbox.component.html',
 styleUrls: ['app/components/currencytextbox/currencytextbox.component.css'],
 encapsulation: ViewEncapsulation.None 
@@ -567,7 +572,8 @@ In the **HTML** page set the corresponding **&lt;input&gt;** elements for render
 
 {% highlight html %}
 
-<input id="currency" type="text" ej-currencytextbox [value]="value" [showRoundedCorner]="true"/>
+<input id="currency" type="text" ej-currencytextbox [value]="value" 
+[showRoundedCorner]="true"/>
     
 {% endhighlight %}
 

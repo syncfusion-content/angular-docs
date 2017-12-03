@@ -18,7 +18,7 @@ The below table lists out the keys with corresponding texts in English culture.
 
         ej.FileExplorer.Locale["en-US"] = {
             		
-		    Back: "Backward",
+Back: "Backward",
 
             Forward: "Forward",
 
@@ -52,9 +52,9 @@ The below table lists out the keys with corresponding texts in English culture.
 
             Search: "Search",
 			
-			EmptyResult:"No items match your search",
+EmptyResult:"No items match your search",
 			
-			EmptyFolder: "This folder is empty",
+EmptyFolder: "This folder is empty",
 
             NewFolder: "New Folder",
 
@@ -314,7 +314,7 @@ export class FileExplorerComponent {
 
             GeneralError: "Bitte beachten Sie Browser Konsolenfenster für weitere Informationen",
 
-            ErrorPath: "Fileexplorer kann nicht finden '{0}'. Überprüfen Sie die Schreibweise und versuchen Sie es erneut.",
+            ErrorPath: "File explorer kann nicht finden '{0}'. Überprüfen Sie die Schreibweise und versuchen Sie es erneut.",
 
             ReplaceAlert: "Datei mit dem Namen '{0}' ist bereits vorhanden. Ersetzen Sie alte Datei durch eine neue?",
 
