@@ -58,5 +58,5 @@ The following screenshot displays the output.
 
 
 
-![](/js/UploadBox/Synchronous-Upload_images/Synchronous-Upload_img1.png) 
+![](Synchronous-Upload_images/Synchronous-Upload_img1.png) 
 
