@@ -368,7 +368,7 @@ export class cascadeToComponent {
 
 {% endhighlight %}
 
-![](HowTo_images/HowTo_img3.jpeg)
+![](HowTo_images/HowTo_img3.png)
 
 ## To reorder the selected items and assign it to the top of popup list
 Consider a DropDownList enabled with Virtual Scrolling, Filter search and Checkbox. This allows you to search through the list items and select multiple items. Selected items will be maintained in the DropDownList textbox but randomly shown in the pop up. 
@@ -726,39 +726,42 @@ By default, the DropDownList displays only the text of the data item. We can abl
 
 Initialize the DropDownList as follows
 
-{% highlight js %}
+{% highlight html %}
 
-    <input type="text" id="List " />
+   <input id="countriesSelect" ej-dropdownlist [dataSource]="listddl"  [fields]="fieldsvalues" [template]="template" watermarkText="Select an employee"  (select)="onSelect($event)" popupWidth="200px" width="200px"  />
 
-    //DataSource
-    var List = [
-    { text: "Erik Linden", image: "3", designation: "Representative", country: "England" }, 
-    { text: "John Linden", image: "6", designation: "Representative", country: "Norway" },
-    { text: "Louis", image: "7", designation: "Representative", country: "Australia" }, 
-    { text: "Lawrence", image: "8", designation: "Representative", country: "India" }];
-
-    //DropDownList Initialization
-
-    $(function () {
-        $('#List').ejDropDownList({
-            dataSource: List,
-            fields: { text: "text", value: "image" },
-            width : "80px"
-            popupWidth: 200 ,
-            watermarkText: "Select an employee",
-            template: '<div><img class="eimg" src="http://js.syncfusion.com/demos/web/images/Employee/${eimg}.png" alt="employee"/>' +
-                        '<div class="ename"> ${text} </div></div>',
-            select: "onSelect"
-        });
-    });
     
 {% endhighlight %}    
 
 Upon selecting the items from the DropDownList, the client side event “select” will be triggered, in that find the input element which holds the text value and make it as “hidden” and then create the span element for the custom value and append to the DropDownList outer wrapper element.
 
-{% highlight js %}
+{% highlight ts %}
 
-function onSelect(args){
+import {Component} from '@angular/core';
+
+@Component({
+    selector: 'ej-app',
+    templateUrl: './DropDownList.component.html',
+    styleUrls: ['./dropdownlist.component.css']
+})
+export class DropDownListComponent {
+    list: object;	
+    fieldsvalues: Object;
+    template: any;
+	
+    constructor() {
+		
+        this.list = [
+    { text: "Erik Linden", image: "3", designation: "Representative", country: "England" }, 
+    { text: "John Linden", image: "6", designation: "Representative", country: "Norway" },
+    { text: "Louis", image: "7", designation: "Representative", country: "Australia" }, 
+    { text: "Lawrence", image: "8", designation: "Representative", country: "India" }];
+this.template ='<div><img class="eimg" src="http://mvc.syncfusion.com/demos/web/images/Employee/${image}.png" alt="employee"/>' +
+                        '<div class="ename"> ${text} </div></div>';
+        this.fieldsvalues = {  text: "text", value: "value" };
+       		
+    }
+	onSelect(args){
         
     if(!args.model.showCheckbox && args.model.multiSelectMode == "none"){
          var imgLocation = "http://js.syncfusion.com/demos/web/images/Employee/" + args.value + ".png";
@@ -775,9 +778,10 @@ function onSelect(args){
               edit_save.src = imgLocation;     
           }
     }
-     
-{% endhighlight %}
+	}
+}
 
+{% endhighlight %}
 Apply the following styles 
 
 {% highlight html %}
@@ -787,8 +791,8 @@ Apply the following styles
             margin: 0;
             padding: 3px 10px 3px 3px;
             border: 0 none;
-            width: 20px;
-            height: 20px;
+            width: 33px;
+            height: 33px;
             float: left;
         }
         .ename {
@@ -803,7 +807,7 @@ Apply the following styles
 
 {% endhighlight %}
 
-![](HowTo_images/customValue.jpg)
+![](HowTo_images/customValue.png)
 
 N> This scenarios, will be suits for the single select mode in the DropDownList.
 
@@ -1082,7 +1086,7 @@ export class DropdownlistComponent {
 
 {% endhighlight %}
 
-![](HowTo_images/Json1.jpg)
+![](HowTo_images/Json1.png)
 
 Method 2: Using Visual Mode
 
@@ -1130,4 +1134,4 @@ export class DropdownlistComponent {
 
 {% endhighlight %}
 
-![](HowTo_images/Json2.jpg)
+![](HowTo_images/Json2.png)

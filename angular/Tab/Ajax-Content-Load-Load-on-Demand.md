@@ -134,14 +134,14 @@ At the time of **Ajax** call, the content fetched from external file referenced 
 
 
 
-![](/js/Tab/Ajax-Content-Load-Load-on-Demand_images/Ajax-Content-Load-Load-on-Demand_img1.png) 
+![](Ajax-Content-Load-Load-on-Demand_images/Ajax-Content-Load-Load-on-Demand_img1.png) 
 
 
 
 
 The following screenshot illustrates the First **Tab** with the sub **Tab** control using **Load on Demand**. 
 
-![](/js/Tab/Ajax-Content-Load-Load-on-Demand_images/Ajax-Content-Load-Load-on-Demand_img2.png) 
+![](Ajax-Content-Load-Load-on-Demand_images/Ajax-Content-Load-Load-on-Demand_img2.png) 
 
 
 

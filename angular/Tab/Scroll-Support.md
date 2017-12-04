@@ -93,7 +93,7 @@ export class ScrollTabComponent {
 
 The following screenshot illustrates you the **Tab** control with scroll button. 
 
-![](/angular/Tab/Scroll-Support_images/Scroll-Support_img1.png) 
+![](Scroll-Support_images/Scroll-Support_img1.png) 
 
 
 
