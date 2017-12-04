@@ -12,7 +12,7 @@ api: /api/js/ejmenu
 
 It gets or sets the direction in which the **Menu** control renders and specifies the orientation of the normal menu.  According to the orientation property the **Menu** control renders in horizontal or vertical.
 
-##Horizontal Menu
+## Horizontal Menu
 
 Horizontal orientation displays the menu items horizontally and it is the default orientation behavior of **Menu** control. 
 
@@ -83,10 +83,10 @@ export class DefaultComponent {
 
 The following screenshot displays the output of the above code.        
 
-![](/angular/Menu/Orientation_images/Orientation_img1.png) 
+![](Orientation_images/Orientation_img1.png) 
 
 
-##Vertical Menu
+## Vertical Menu
 
 You can also render **Menu** control in vertical direction using **orientation.** To set the vertical orientation of **Menu** control, replace the following attribute in the above sample code example.
 
@@ -155,4 +155,4 @@ export class DefaultComponent {
 
 The following screenshot displays the output of the above code.        
 
-![](/angular/Menu/Orientation_images/Orientation_img2.png) 
+![](Orientation_images/Orientation_img2.png) 
