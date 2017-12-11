@@ -118,6 +118,98 @@ The following output is displayed as a result of the above code example.
 ![](Row_images/Row_img3.png)
 
 
+## Row Template
+
+Row template enables you to set the customized look and behavior to all Grid rows. The [`rowTemplate`](https://help.syncfusion.com/api/js/ejgrid#members:rowtemplate "rowTemplate") property can be used to bind the `id` of HTML template.
+
+The following code example describes the above behavior.
+
+{% highlight html %}
+<ej-grid  [dataSource]="gridData" [rowTemplate]="temp" >
+    <e-columns>
+        <e-column headerText="Photo"></e-column>
+        <e-column headerText="Employee Details"></e-column>
+    </e-columns>
+    <ng-template rowtemplate e-row-template let-data>
+<tr>
+   <td class="photo">
+   <img style="width: 130px; height: 160px" src="/13.2.0.29/themes/web/images/employees/{{data.EmployeeID}}.png" />
+   </td>
+   <td class="details">
+   <table class="CardTable" cellpadding="3" cellspacing="2">
+   <colgroup>
+   <col width="50%">
+   <col width="50%">
+   </colgroup>
+   <tbody>
+   <tr>
+   <td class="CardHeader">First Name </td>
+   <td>{{data.FirstName}}</td>
+   </tr>
+   <tr>
+   <td class="CardHeader">Last Name</td>
+   <td>{{data.LastName}}</td>
+   </tr>
+   <tr>
+   <td class="CardHeader">Title
+   </td>
+   <td>{{data.Title}}</td>
+   </tr>
+   </tbody>
+   </table>
+   </td>
+   </tr>
+    </ng-template>
+
+</ej-grid>
+{% endhighlight %}
+
+{% highlight css %}
+.photo img {
+	width: 130px;
+}
+.photo, .details {
+	border-color: #c4c4c4;
+	border-style: solid;
+}
+.photo {
+	border-width: 1px 0px 0px 0px;
+}
+.details {
+	border-width: 1px 0px 0px 1px;
+}
+.details > table {
+	width: 100%;
+}
+.CardHeader {
+	font-weight: bolder;
+}
+{% endhighlight %}
+
+{% highlight javascript %}
+
+ import {Component, ViewEncapsulation} from '@angular/core';
+    @Component({
+      selector: 'ej-app',
+      templateUrl: 'app/app.component.html',  //give the path file for Grid control html file.
+    })
+    export class AppComponent {
+       ublic gridData: any;
+    
+    temp:any;
+    
+    constructor() {
+       
+        this.gridData = (window as any).employeeView,
+    
+        this.temp = "#rowtemplate";
+     }
+{% endhighlight %}
+
+The following output is displayed as a result of the above code example.
+
+![](Row_images/Row_img3.png)
+
 ## Alternate row styling
 
 Alternate row styling enhances the readability of grid rows by setting different background color for every alternate row. You can enable the alternative row styling in grid by using [`enableAltRow`](https://help.syncfusion.com/api/angular/ejgrid#members:enablealtrow "enableAltRow") property. 
