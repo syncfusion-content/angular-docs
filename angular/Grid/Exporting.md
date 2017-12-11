@@ -844,7 +844,7 @@ N> Excel File will be exported in the collapsed state with the expand/collapse i
 
 {% highlight html %}
 
-<ej-grid id="Grid"  [allowPaging]="true"  [dataSource]="gridData" [toolbarSettings]="toolbarsettings" toolbarClick)="toolbar($event)" [childGrid]="childData"  >
+<ej-grid id="Grid"  [allowPaging]="true"  [dataSource]="gridData" [toolbarSettings]="toolbarsettings" [exportToWordAction]= "exportWord" [exportToExcelAction]= "exportExcel" [exportToPdfAction]= "exportPdf"   [childGrid]="childData"  >
     <e-columns>
         <e-column field="EmployeeID" headerText="Employee ID"  width="85" textAlign="right"></e-column>
         <e-column field="FirstName" headerText="First Name" textAlign="left"  width="100"></e-column>
@@ -869,6 +869,9 @@ export class GridComponent {
     public gridData: any;
     public childData: any;    
     public toolbarsettings;
+    public exportPdf =  "http://js.syncfusion.com/ExportingServices/api/JSGridExport/HierarchyPdfExport";
+    public exportWord = "http://js.syncfusion.com/ExportingServices/api/JSGridExport/HierarchyWordExport";
+    public exportExcel =  "http://js.syncfusion.com/ExportingServices/api/JSGridExport/HierarchyExcelExport";
     constructor() {
 		@ViewChild('grid') Grid: EJComponents<any, any>;
         this.gridData = (window as any).employeeView;
@@ -885,21 +888,6 @@ export class GridComponent {
                       { field: "ShipName", headerText: 'Ship Name', width: 100 }
                     ]
         }
-
-        toolbar(e:any){
-                if (e.itemName == "Excel Export") {
-                  this.Grid.widget.export('http://js.syncfusion.com/demos/ejServices/api/grid/ExcelExport');
-                  e.cancel = true;
-                }
-                else if (e.itemName == "Word Export") {
-                  this.Grid.widget.export('http://js.syncfusion.com/demos/ejServices/api/grid/WordExport')
-                  e.cancel = true;//prevent the default action
-                }
-                else if (e.itemName == "PDF Export") {
-                  this.Grid.widget.export('http://js.syncfusion.com/demos/ejServices/api/grid/PdfExport')
-                  e.cancel = true;
-               }
-    }
 }
 
 {% endhighlight %}
@@ -908,47 +896,10 @@ export class GridComponent {
 
 {% highlight c# %}
  
-    public class HomeController : Controller
+    public class GridController : ApiController
     {
-        public ActionResult Index()
-        {
-            var order = new NorthWndDataContext().Orders.Take(100).ToList();
-            var emp = new NorthWndDataContext().Employees.ToList();
-            ViewBag.childData = order;
-            ViewBag.parentData = emp;
-            return View();
-        }
-        public void ExportToExcel(string GridModel)
-        {
-            ExcelExport exp = new ExcelExport();
-            var DataSource = new NorthWndDataContext().Employees.ToList();
-            GridProperties obj = ConvertGridObject(GridModel);
-            obj.ChildGrid.DataSource = new NorthWndDataContext().Orders.Take(100).ToList();
-            GridExcelExport expo = new GridExcelExport();
-            expo.IncludeChildGrid = true;
-            exp.Export(obj, DataSource, expo);
-        }
-        public void ExportToWord(string GridModel)
-        {
-            WordExport exp = new WordExport();
-            var DataSource = new NorthWndDataContext().Employees.ToList();
-            GridProperties obj = ConvertGridObject(GridModel);
-            obj.ChildGrid.DataSource = new NorthWndDataContext().Orders.Take(100).ToList();
-            GridWordExport expo = new GridWordExport();
-            expo.IncludeChildGrid = true;
-            exp.Export(obj, DataSource, expo);
-        }
-        public void ExportToPdf(string GridModel)
-        {
-            PdfExport exp = new PdfExport();
-            var DataSource = new NorthWndDataContext().Employees.ToList();
-            GridProperties obj = ConvertGridObject(GridModel);
-            obj.ChildGrid.DataSource = new NorthWndDataContext().Orders.Take(100).ToList();
-            GridPdfExport expo = new GridPdfExport();
-            expo.IncludeChildGrid = true;
-            expo.Unicode = true;
-            exp.Export(obj, DataSource, expo);
-        }
+        NorthwindDataContext db = new NorthwindDataContext();
+        
         private GridProperties ConvertGridObject(string gridProperty)
         {
             JavaScriptSerializer serializer = new JavaScriptSerializer();
@@ -962,14 +913,59 @@ export class GridComponent {
                     Type type = property.PropertyType;
                     object value = null;
                     string serialize = serializer.Serialize(ds.Value);
-                    if (ds.Key == "childGrid")
+                    if (ds.Key == "childGrid" && ds.Value != null)
                         value = ConvertGridObject(serialize);
+                    else if (ds.Key == "query")
+                        continue;
                     else
                         value = serializer.Deserialize(serialize, type);
                     property.SetValue(gridProp, value, null);
                 }
             }
             return gridProp;
+        }
+        [AcceptVerbs("Post")]
+        public void HierarchyExcelExport()
+        {
+            GridExcelExport GridExp = new GridExcelExport();
+            string gridModel = HttpContext.Current.Request.Params["GridModel"];
+            GridProperties gridProperty = ConvertGridObject(gridModel);
+            ExcelExport exp = new ExcelExport();
+            IEnumerable<Employee> result = db.Employees.ToList();
+            gridProperty.ChildGrid.DataSource = db.Orders.Take(100).ToList();
+            GridExp.IncludeChildGrid = true;
+            GridExp.Theme = "default-theme";
+            GridExp.FileName = "Export.xlsx";
+            exp.Export(gridProperty, result, GridExp);
+        }
+        [AcceptVerbs("Post")]
+        public void HierarchyPdfExport()
+        {
+            GridPdfExport GridExp = new GridPdfExport();
+            string gridModel = HttpContext.Current.Request.Params["GridModel"];
+            GridProperties gridProperty = ConvertGridObject(gridModel);
+            PdfExport exp = new PdfExport();
+            IEnumerable<Employee> result = db.Employees.ToList();
+            gridProperty.ChildGrid.DataSource = db.Orders.Take(100).ToList();
+            GridExp.IncludeChildGrid = true;
+            GridExp.Theme = "default-theme";
+            GridExp.FileName = "Export.pdf";
+            exp.Export(gridProperty, result, GridExp);
+        }
+
+        [AcceptVerbs("Post")]
+        public void HierarchyWordExport()
+        {
+            GridWordExport GridExp = new GridWordExport();
+            string gridModel = HttpContext.Current.Request.Params["GridModel"];
+            GridProperties gridProperty = ConvertGridObject(gridModel);
+            WordExport exp = new WordExport();
+            IEnumerable<Employee> data = db.Employees.ToList();
+            gridProperty.ChildGrid.DataSource = db.Orders.Take(100).ToList();
+            GridExp.IncludeChildGrid = true;
+            GridExp.Theme = "default-theme";
+            GridExp.FileName = "Export.docx";
+            exp.Export(gridProperty, (IEnumerable)data, GridExp);
         }
     }
 
