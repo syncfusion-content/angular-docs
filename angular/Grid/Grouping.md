@@ -365,3 +365,61 @@ import {Component, ViewEncapsulation} from '@angular/core';
 The following output is displayed as a result of the above code example.
 
 ![](Grouping_images/Grouping_img8.png)
+
+
+## Group Caption Format / Group Caption Template
+
+Using [`captionFormat`](https://help.syncfusion.com/api/angular/ejgrid#members:groupsettings-captionformat "captionFormat") property of [`groupSettings`](https://help.syncfusion.com/api/js/ejgrid#members:groupsettings "groupSettings") you can render any type of JsRender templates or customizing the group caption text. 
+
+The following code example describes the above behavior.
+
+{% highlight html %}
+
+<ej-grid  [allowPaging]="true" [groupSettings]="group" [allowGrouping]="true" [allowSorting]="true" [dataSource]="gridData" >
+    <e-columns>
+        <e-column field="OrderID"></e-column>
+        <e-column field="EmployeeID"></e-column>
+        <e-column field="ShipCity"></e-column>
+        <e-column field="ShipCountry"></e-column>
+        <e-column field="Freight"></e-column>
+    </e-columns>
+
+    <ng-template #caption  e-groupcaption-template let-data>
+        <span>{{data.field}}: {{data.key}}</span>
+        <button id="btn{{data.field}}{{data.key}}" class="btn" (click)="buttonclick($event)">Collapse</button>
+    </ng-template>
+</ej-grid>
+
+{% endhighlight %}
+
+{% highlight javascript %}
+
+import {Component, ViewEncapsulation} from '@angular/core';
+ @Component({
+    selector: 'ej-app',
+    templateUrl: 'app/app.component.html',  //give the path file for Grid control html file.
+  })
+  export class AppComponent {
+    public gridData: any;
+    public group;
+    constructor()
+    {
+        //The datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
+        this.gridData = (window as any).gridData;
+        this.group = { captionFormat: "#caption" };
+    }
+    buttonclick(e:any) {
+         var gridObj = $(".e-grid").ejGrid("instance");
+         gridObj.expandCollapse($(e.target).parents("td").prev());
+         $(e.target).text() == "Collapse" ?  $(e.target).text("Expand") : $(e.target).text("Collapse");
+     }
+}
+
+
+{% endhighlight %}
+
+The following output is displayed as a result of the above code example.
+
+![](Grouping_images/Grouping_img9.png)
+
+![](Grouping_images/Grouping_img10.png)
