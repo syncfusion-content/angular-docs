@@ -924,6 +924,7 @@ export class GridComponent {
             }
             return gridProp;
         }
+        [System.Web.Http.ActionName("HierarchyExcelExport")]
         [AcceptVerbs("Post")]
         public void HierarchyExcelExport()
         {
@@ -938,6 +939,7 @@ export class GridComponent {
             GridExp.FileName = "Export.xlsx";
             exp.Export(gridProperty, result, GridExp);
         }
+        [System.Web.Http.ActionName("HierarchyPdfExport")]
         [AcceptVerbs("Post")]
         public void HierarchyPdfExport()
         {
@@ -952,7 +954,7 @@ export class GridComponent {
             GridExp.FileName = "Export.pdf";
             exp.Export(gridProperty, result, GridExp);
         }
-
+        [System.Web.Http.ActionName("HierarchyWordExport")]
         [AcceptVerbs("Post")]
         public void HierarchyWordExport()
         {
