@@ -235,7 +235,7 @@ Add the following code in your style sheet.
 
 Execute the above code to render the following output.                       
 
-![](/angular/Menu/Background-Template_images/Background-Template_img1.png) 
+![](Background-Template_images/Background-Template_img1.png) 
 
 
 
