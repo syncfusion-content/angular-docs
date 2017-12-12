@@ -174,7 +174,7 @@ To select an item initially you can pass the item’s value via [value](http://h
     
 import {Component} from '@angular/core';
 @Component({
-selector: 'sd-home',
+selector: 'ej-app',
 templateUrl: 'app/components/dropdown/dropdown.component.html'
 })
 export class DropDownListComponent {
@@ -228,7 +228,7 @@ You can select a single or more than one item by passing index values to the pro
     
 import {Component} from '@angular/core';
 @Component({
-selector: 'sd-home',
+selector: 'ej-app',
 templateUrl: 'app/components/dropdown/dropdown.component.html'
 })
 export class DropDownListComponent {
@@ -264,7 +264,7 @@ I> To use "selectedIndices" property, you should enable either showCheckbox or m
     
 import {Component} from '@angular/core';
 @Component({
-selector: 'sd-home',
+selector: 'ej-app',
 templateUrl: 'app/components/dropdown/dropdown.component.html'
 })
 export class DropDownListComponent {
@@ -301,7 +301,7 @@ Similarly, you can unselect a single or multiple items by using [unselectItemByV
     
 import {Component} from '@angular/core';
 @Component({
-selector: 'sd-home',
+selector: 'ej-app',
 templateUrl: 'app/components/dropdown/dropdown.component.html'
 })
 export class DropDownListComponent {
@@ -344,7 +344,7 @@ The below given example explains the behavior of grouping with JSON array bindin
     
 import {Component} from '@angular/core';
 @Component({
-selector: 'sd-home',
+selector: 'ej-app',
 templateUrl: 'app/components/dropdown/dropdown.component.html'
 })
 export class DropDownListComponent {   	
@@ -446,7 +446,7 @@ Sorting is enabled to order to display the items alphabetically in either ascend
     
 import {Component} from '@angular/core';
 @Component({
-selector: 'sd-home',
+selector: 'ej-app',
 templateUrl: 'app/components/dropdown/dropdown.component.html'
 })
 export class DropDownListComponent {
@@ -503,7 +503,7 @@ Configuring the data items for cascading to the series of DropDownList is demons
     
 import {Component} from '@angular/core';
 @Component({
-selector: 'sd-home',
+selector: 'ej-app',
 templateUrl: 'app/components/dropdown/dropdown.component.html'
 })
 export class DropDownListComponent {
@@ -628,7 +628,7 @@ Selects the item in the popup list based on the keyed in value. If the time take
 
 import {Component} from '@angular/core';
 @Component({
-selector: 'sd-home',
+selector: 'ej-app',
 templateUrl: 'app/components/dropdown/dropdown.component.html'
 })
 export class DropDownListComponent {
@@ -679,7 +679,7 @@ N> Items are filtered based on “contains” filter type by default.
 
 import {Component} from '@angular/core';
 @Component({
-selector: 'sd-home',
+selector: 'ej-app',
 templateUrl: 'app/components/dropdown/dropdown.component.html'
 })
 export class DropDownListComponent {
