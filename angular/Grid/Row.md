@@ -56,7 +56,9 @@ The following output is displayed as a result of the above code example.
 
 ## Details Template
 
-It provides a detailed view /additional information about each row of the grid. On enabling details template, new column will be added in grid with an expander button in it and that can be expanded or collapsed to show or hide the underlying details of row respectively.
+It provides a detailed view /additional information about each row of the grid. You can render any type of template using ng-template with e-detailstemplate attribute in grid.
+
+On enabling details template, new column will be added in grid with an expander button in it and that can be expanded or collapsed to show or hide the underlying details of row respectively.
 
 The following code example describes the above behavior.
 
@@ -120,7 +122,7 @@ The following output is displayed as a result of the above code example.
 
 ## Row Template
 
-Row template enables you to set the customized look and behavior to all Grid rows. The [`rowTemplate`](https://help.syncfusion.com/api/js/ejgrid#members:rowtemplate "rowTemplate") property can be used to bind the `id` of HTML template.
+Row template enables you to set the customized look and behavior to all Grid rows.You can render any type of template using ng-template with e-row-template attribute in grid.
 
 The following code example describes the above behavior.
 
