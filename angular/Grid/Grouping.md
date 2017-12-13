@@ -369,7 +369,7 @@ The following output is displayed as a result of the above code example.
 
 ## Group Caption Format / Group Caption Template
 
-Using [`captionFormat`](https://help.syncfusion.com/api/angular/ejgrid#members:groupsettings-captionformat "captionFormat") property of [`groupSettings`](https://help.syncfusion.com/api/js/ejgrid#members:groupsettings "groupSettings") you can render any type of JsRender templates or customizing the group caption text. 
+Using [`captionFormat`](https://help.syncfusion.com/api/angular/ejgrid#members:groupsettings-captionformat "captionFormat") property of [`groupSettings`](https://help.syncfusion.com/api/js/ejgrid#members:groupsettings "groupSettings") you can render any type of template using ngtemplate with e-groupcaption-template attribute to customize the group caption text. 
 
 The following code example describes the above behavior.
 
