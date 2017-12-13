@@ -836,4 +836,191 @@ private GridProperties ConvertGridObject(string gridProperty)
 
 {% endhighlight %}
 
+## Hierarchy Grid Exporting
+
+Grid will be exported with its child Grid. This can be achieved by enabling `IncludeChildGrid` property of the respective Exporting classes like `GridExcelExport`, `GridWordExport` and `GridPdfExport` and include the dataSource needed for ChildGrid in the GridProperties object after deserializing them. Remaining procedures will be same as the normal Grid Exporting.
+
+N> Excel File will be exported in the collapsed state with the expand/collapse icon whereas other file-formats like Pdf and Word will be exported in expanded state.
+
+{% highlight html %}
+
+<ej-grid id="Grid"  [allowPaging]="true"  [dataSource]="gridData" [toolbarSettings]="toolbarsettings" [exportToWordAction]= "exportWord" [exportToExcelAction]= "exportExcel" [exportToPdfAction]= "exportPdf"   [childGrid]="childData"  >
+    <e-columns>
+        <e-column field="EmployeeID" headerText="Employee ID"  width="85" textAlign="right"></e-column>
+        <e-column field="FirstName" headerText="First Name" textAlign="left"  width="100"></e-column>
+        <e-column field="Title" headerText="Title " width="120" textAlign="left"></e-column>        
+        <e-column field="City" headerText="City" textAlign="left" width="10"></e-column> 
+        <e-column field="Country" headerText="Country" textAlign="left" width="100"></e-column>        
+    </e-columns>
+</ej-grid>
+
+{% endhighlight %}
+
+{% highlight javascript %}
+
+import { Component } from '@angular/core';
+
+
+@Component({
+    selector: 'ej-app',
+    templateUrl: 'src/grid/grid.component.html',
+})
+export class GridComponent {
+    public gridData: any;
+    public childData: any;    
+    public toolbarsettings;
+    public exportPdf =  "http://js.syncfusion.com/ExportingServices/api/JSGridExport/HierarchyPdfExport";
+    public exportWord = "http://js.syncfusion.com/ExportingServices/api/JSGridExport/HierarchyWordExport";
+    public exportExcel =  "http://js.syncfusion.com/ExportingServices/api/JSGridExport/HierarchyExcelExport";
+    constructor() {
+		@ViewChild('grid') Grid: EJComponents<any, any>;
+        this.gridData = (window as any).employeeView;
+		
+        this.toolbarsettings = { showToolbar: true, toolbarItems: ["excelExport", "wordExport", "pdfExport"] }
+        this.childData = {
+            dataSource: ej.DataManager({ url: "http://js.syncfusion.com/demos/ejServices/Wcf/Northwind.svc/Orders", crossDomain: true, offline: true }),
+            queryString: "EmployeeID",
+            allowPaging: true,
+			columns: [
+                      { field: "OrderID", headerText: 'Order ID', textAlign: ej.TextAlign.Right, width: 75 },
+                      { field: "ShipCity", headerText: 'Ship City',  width: 100 },
+                      { field: "Freight", headerText: 'Freight', textAlign: ej.TextAlign.Right, format: "{0:C2}", width: 120 },
+                      { field: "ShipName", headerText: 'Ship Name', width: 100 }
+                    ]
+        }
+}
+
+{% endhighlight %}
+
+
+
+{% highlight c# %}
+ 
+    public class GridController : ApiController
+    {
+        NorthwindDataContext db = new NorthwindDataContext();
+        
+        private GridProperties ConvertGridObject(string gridProperty)
+        {
+            JavaScriptSerializer serializer = new JavaScriptSerializer();
+            IEnumerable div = (IEnumerable)serializer.Deserialize(gridProperty, typeof(IEnumerable));
+            GridProperties gridProp = new GridProperties();
+            foreach (KeyValuePair<string, object> ds in div)
+            {
+                var property = gridProp.GetType().GetProperty(ds.Key, BindingFlags.Instance | BindingFlags.Public | BindingFlags.IgnoreCase);
+                if (property != null)
+                {
+                    Type type = property.PropertyType;
+                    object value = null;
+                    string serialize = serializer.Serialize(ds.Value);
+                    if (ds.Key == "childGrid" && ds.Value != null)
+                        value = ConvertGridObject(serialize);
+                    else if (ds.Key == "query")
+                        continue;
+                    else
+                        value = serializer.Deserialize(serialize, type);
+                    property.SetValue(gridProp, value, null);
+                }
+            }
+            return gridProp;
+        }
+        [System.Web.Http.ActionName("HierarchyExcelExport")]
+        [AcceptVerbs("Post")]
+        public void HierarchyExcelExport()
+        {
+            GridExcelExport GridExp = new GridExcelExport();
+            string gridModel = HttpContext.Current.Request.Params["GridModel"];
+            GridProperties gridProperty = ConvertGridObject(gridModel);
+            ExcelExport exp = new ExcelExport();
+            IEnumerable<Employee> result = db.Employees.ToList();
+            gridProperty.ChildGrid.DataSource = db.Orders.Take(100).ToList();
+            GridExp.IncludeChildGrid = true;
+            GridExp.Theme = "default-theme";
+            GridExp.FileName = "Export.xlsx";
+            exp.Export(gridProperty, result, GridExp);
+        }
+        [System.Web.Http.ActionName("HierarchyPdfExport")]
+        [AcceptVerbs("Post")]
+        public void HierarchyPdfExport()
+        {
+            GridPdfExport GridExp = new GridPdfExport();
+            string gridModel = HttpContext.Current.Request.Params["GridModel"];
+            GridProperties gridProperty = ConvertGridObject(gridModel);
+            PdfExport exp = new PdfExport();
+            IEnumerable<Employee> result = db.Employees.ToList();
+            gridProperty.ChildGrid.DataSource = db.Orders.Take(100).ToList();
+            GridExp.IncludeChildGrid = true;
+            GridExp.Theme = "default-theme";
+            GridExp.FileName = "Export.pdf";
+            exp.Export(gridProperty, result, GridExp);
+        }
+        [System.Web.Http.ActionName("HierarchyWordExport")]
+        [AcceptVerbs("Post")]
+        public void HierarchyWordExport()
+        {
+            GridWordExport GridExp = new GridWordExport();
+            string gridModel = HttpContext.Current.Request.Params["GridModel"];
+            GridProperties gridProperty = ConvertGridObject(gridModel);
+            WordExport exp = new WordExport();
+            IEnumerable<Employee> data = db.Employees.ToList();
+            gridProperty.ChildGrid.DataSource = db.Orders.Take(100).ToList();
+            GridExp.IncludeChildGrid = true;
+            GridExp.Theme = "default-theme";
+            GridExp.FileName = "Export.docx";
+            exp.Export(gridProperty, (IEnumerable)data, GridExp);
+        }
+    }
+
+
+
+{% endhighlight %}
+
+The server side events available in Hierarchy Grid exporting and its argument types are listed in the following table.
+
+<table>
+<tr>
+<th>
+Event Name
+</th>
+<th>
+Argument
+</th>
+<th>
+Description
+</th>
+</tr>
+<tr>
+<td>
+ExcelChildGridInfo
+</td>
+<td>
+current row, row data, GridProperties
+</td>
+<td>
+Customize the cell and child Grid
+</td>
+</tr>
+<tr>
+<td>
+PdfChildGridInfo
+</td>
+<td>
+current row, row data, GridProperties
+</td>
+<td>
+Customize the cell and child Grid
+</td>
+</tr>
+<tr>
+<td>
+WordChildGridInfo
+</td>
+<td>
+current row, row data, GridProperties
+</td>
+<td>
+Customize the cell and child Grid
+</td>
+</tr>
+</table>
 

@@ -166,7 +166,7 @@ To select an item initially you can pass the item’s value via [value](http://h
 
 {% highlight html %}
 
-<input id="dropdown1" ej-dropdownlist [dataSource]="data" [fields]="fieldsvalues" [(value)]="val"/>
+<input id="dropdown1" ej-dropdownlist [dataSource]="data" [fields]="field" [(value)]="val"/>
      
 {% endhighlight %}
 
@@ -174,12 +174,12 @@ To select an item initially you can pass the item’s value via [value](http://h
     
 import {Component} from '@angular/core';
 @Component({
-selector: 'sd-home',
+selector: 'ej-app',
 templateUrl: 'app/components/dropdown/dropdown.component.html'
 })
 export class DropDownListComponent {
     data: Array<Object> = [];
-    fieldsvalues: Object;
+    field: Object;
     val: string;
     constructor() {
         this.data = [
@@ -189,7 +189,7 @@ export class DropDownListComponent {
             { text: "ListItem 4", value: "item4" },
             { text: "ListItem 5", value: "item5" }
         ];
-        this.fieldsvalues = { dataSource: this.data, text: "text", value: "value" };
+        this.field = { dataSource: this.data, text: "text", value: "value" };
         this.val="item3";
     }
 }
@@ -220,7 +220,7 @@ You can select a single or more than one item by passing index values to the pro
 
 {% highlight html %}
 
-<input id="dropdown1" ej-dropdownlist [dataSource]="data" [fields]="fieldsvalues" [selectedIndex]="index"/>
+<input id="dropdown1" ej-dropdownlist [dataSource]="data" [fields]="field" [selectedIndex]="index"/>
      
 {% endhighlight %}
 
@@ -228,12 +228,12 @@ You can select a single or more than one item by passing index values to the pro
     
 import {Component} from '@angular/core';
 @Component({
-selector: 'sd-home',
+selector: 'ej-app',
 templateUrl: 'app/components/dropdown/dropdown.component.html'
 })
 export class DropDownListComponent {
    	data: Array<Object> = [];
-    fieldsvalues: Object;
+    field: Object;
     index: number;
     constructor() {
         this.data = [
@@ -243,7 +243,7 @@ export class DropDownListComponent {
             { text: "ListItem 4", value: "item4" },
             { text: "ListItem 5", value: "item5" }
         ];
-        this.fieldsvalues = { dataSource: this.data, text: "text", value: "value" };
+        this.field = { dataSource: this.data, text: "text", value: "value" };
         this.index = 1;
     }
 }
@@ -256,7 +256,7 @@ I> To use "selectedIndices" property, you should enable either showCheckbox or m
 
 {% highlight html %}
 
-<input id="dropdown1" ej-dropdownlist [dataSource]="data" [fields]="fieldsvalues" [selectedIndices]="select" [showCheckbox]="true"/>
+<input id="dropdown1" ej-dropdownlist [dataSource]="data" [fields]="field" [selectedIndices]="select" [showCheckbox]="true"/>
      
 {% endhighlight %}
 
@@ -264,12 +264,12 @@ I> To use "selectedIndices" property, you should enable either showCheckbox or m
     
 import {Component} from '@angular/core';
 @Component({
-selector: 'sd-home',
+selector: 'ej-app',
 templateUrl: 'app/components/dropdown/dropdown.component.html'
 })
 export class DropDownListComponent {
    	data: Array<Object> = [];
-    fieldsvalues: Object;
+    field: Object;
     select: Array<Number>;
     constructor() {
         this.data = [
@@ -279,7 +279,7 @@ export class DropDownListComponent {
             { text: "ListItem 4", value: "item4" },
             { text: "ListItem 5", value: "item5" }
         ];
-        this.fieldsvalues = { dataSource: this.data, text: "text", value: "value" };
+        this.field = { dataSource: this.data, text: "text", value: "value" };
         this.select = [1, 2];
     }
 }
@@ -292,7 +292,7 @@ Similarly, you can unselect a single or multiple items by using [unselectItemByV
 
 {% highlight html %}
 
-<input id="dropdown1" ej-dropdownlist [dataSource]="data" [fields]="fieldsvalues" [selectedIndices]="select" [showCheckbox]="true"/>
+<input id="dropdown1" ej-dropdownlist [dataSource]="data" [fields]="field" [selectedIndices]="select" [showCheckbox]="true"/>
 <button (click)="unselect()">Unselect</button>
   
 {% endhighlight %}
@@ -301,12 +301,12 @@ Similarly, you can unselect a single or multiple items by using [unselectItemByV
     
 import {Component} from '@angular/core';
 @Component({
-selector: 'sd-home',
+selector: 'ej-app',
 templateUrl: 'app/components/dropdown/dropdown.component.html'
 })
 export class DropDownListComponent {
    	data: Array<Object> = [];
-    fieldsvalues: Object;
+    field: Object;
     select: Array<Number>;
     constructor() {
         this.data = [
@@ -316,7 +316,7 @@ export class DropDownListComponent {
             { text: "ListItem 4", value: "item4" },
             { text: "ListItem 5", value: "item5" }
         ];
-        this.fieldsvalues = { dataSource: this.data, text: "text", value: "value" };
+        this.field = { dataSource: this.data, text: "text", value: "value" };
         this.select = [1, 2, 3];
     }
     unselect() {
@@ -336,7 +336,7 @@ The below given example explains the behavior of grouping with JSON array bindin
 
 {% highlight html %}
 
-<input type="text" id="dropdown1" ej-dropdownlist [width]="width" [dataSource]="data" [fields]="fieldsvalues" [watermarkText]="watermark" [popupHeight]="height" />
+<input type="text" id="dropdown1" ej-dropdownlist [width]="width" [dataSource]="data" [fields]="field" [watermarkText]="watermark" [popupHeight]="height" />
      
 {% endhighlight %}
 
@@ -344,12 +344,12 @@ The below given example explains the behavior of grouping with JSON array bindin
     
 import {Component} from '@angular/core';
 @Component({
-selector: 'sd-home',
+selector: 'ej-app',
 templateUrl: 'app/components/dropdown/dropdown.component.html'
 })
 export class DropDownListComponent {   	
     data: Array<Object>;
-    fieldsvalues: Object;
+    field: Object;
     watermark: string;
     height: number;
     constructor() {
@@ -363,7 +363,7 @@ export class DropDownListComponent {
                 skill: "Spinach",
                 category: "Leafy and Salad"
             }, {
-                skill: "Wheatgrass",
+                skill: "Wheat grass",
                 category: "Leafy and Salad"
             }, {
                 skill: "Yarrow",
@@ -420,7 +420,7 @@ export class DropDownListComponent {
                 skill: "Turmeric",
                 category: "Root and Tuberous"
             }];
-        this.fieldsvalues = { text: "skill", value: "value",groupBy:"category" };
+        this.field = { text: "skill", value: "value",groupBy:"category" };
         this.watermark = "Select a vegetable";
         this.height = 300;
     }
@@ -438,7 +438,7 @@ Sorting is enabled to order to display the items alphabetically in either ascend
 
 {% highlight html %}
 
-<input id="dropdown1" ej-dropdownlist [dataSource]="data" [fields]="fieldsvalues" [enableSorting]="true" [sortOrder]="order"/>
+<input id="dropdown1" ej-dropdownlist [dataSource]="data" [fields]="field" [enableSorting]="true" [sortOrder]="order"/>
                 
 {% endhighlight %}
 
@@ -446,12 +446,12 @@ Sorting is enabled to order to display the items alphabetically in either ascend
     
 import {Component} from '@angular/core';
 @Component({
-selector: 'sd-home',
+selector: 'ej-app',
 templateUrl: 'app/components/dropdown/dropdown.component.html'
 })
 export class DropDownListComponent {
    	data: Array<Object> = [];
-    fieldsvalues: Object;
+    field: Object;
     select: Array<Number>;
     order: any;
     constructor() {
@@ -471,7 +471,7 @@ export class DropDownListComponent {
                 text: "ListItem 3",
                 value: "item3"
         }];
-        this.fieldsvalues = { dataSource: this.data, text: "text", value: "value" };
+        this.field = { dataSource: this.data, text: "text", value: "value" };
         this.order = ej.SortOrder.Ascending;
     }
 }
@@ -494,7 +494,7 @@ Configuring the data items for cascading to the series of DropDownList is demons
 </div>
 <div style="float: right;">
 	<span>Select Country</span>
-	<input id="countrylist" type="text" ej-dropdownlist [dataSource]="countries" [fields]="countryField" [enabled]="false" />
+	<input id="country" type="text" ej-dropdownlist [dataSource]="countries" [fields]="countryField" [enabled]="false" />
 </div>
 
 {% endhighlight %}
@@ -503,7 +503,7 @@ Configuring the data items for cascading to the series of DropDownList is demons
     
 import {Component} from '@angular/core';
 @Component({
-selector: 'sd-home',
+selector: 'ej-app',
 templateUrl: 'app/components/dropdown/dropdown.component.html'
 })
 export class DropDownListComponent {
@@ -597,7 +597,7 @@ export class DropDownListComponent {
             }];
         this.groupField = { dataSource: this.groups, text: "text", value: "parentId" };
         this.countryField = { dataSource: this.countries, text: "text", value: "parentId" };
-        this.cascade = "countrylist";
+        this.cascade = "country";
     }
 }
 
@@ -620,7 +620,7 @@ Selects the item in the popup list based on the keyed in value. If the time take
 
 {% highlight html %}
 
-<input id="dropdown1" ej-dropdownlist [dataSource]="items" [fields]="fieldsvalues" [enableIncrementalSearch]="true" [caseSensitiveSearch]="true"/>
+<input id="dropdown1" ej-dropdownlist [dataSource]="items" [fields]="field" [enableIncrementalSearch]="true" [caseSensitiveSearch]="true"/>
                 
 {% endhighlight %}
 
@@ -628,12 +628,12 @@ Selects the item in the popup list based on the keyed in value. If the time take
 
 import {Component} from '@angular/core';
 @Component({
-selector: 'sd-home',
+selector: 'ej-app',
 templateUrl: 'app/components/dropdown/dropdown.component.html'
 })
 export class DropDownListComponent {
    	items: Array<Object>;
-    fieldsvalues: Object;
+    field: Object;
     constructor() {
         this.items = [{
             text: "Adams",
@@ -648,10 +648,10 @@ export class DropDownListComponent {
                 text: "Jessica",
                 value: "emp4"
             }, {
-                text: "jenneth",
+                text: "Jenneth",
                 value: "emp5"
             }];
-        this.fieldsvalues = { dataSource: this.items, text: "text", value: "value" };
+        this.field = { dataSource: this.items, text: "text", value: "value" };
     }
 }
 
@@ -671,7 +671,7 @@ N> Items are filtered based on “contains” filter type by default.
 
 {% highlight html %}
 
-<input id="dropdown1" ej-dropdownlist [dataSource]="items" [fields]="fieldsvalues" [enableFilterSearch]="true" [filterType]="type"/>
+<input id="dropdown1" ej-dropdownlist [dataSource]="items" [fields]="field" [enableFilterSearch]="true" [filterType]="type"/>
                 
 {% endhighlight %}
 
@@ -679,12 +679,12 @@ N> Items are filtered based on “contains” filter type by default.
 
 import {Component} from '@angular/core';
 @Component({
-selector: 'sd-home',
+selector: 'ej-app',
 templateUrl: 'app/components/dropdown/dropdown.component.html'
 })
 export class DropDownListComponent {
    	items: Array<Object>;
-    fieldsvalues: Object;
+    field: Object;
     type: any;
     constructor() {
         this.items = [{
@@ -700,10 +700,10 @@ export class DropDownListComponent {
                 text: "Jessica",
                 value: "emp4"
             }, {
-                text: "jenneth",
+                text: "Jenneth",
                 value: "emp5"
             }];
-        this.fieldsvalues = { dataSource: this.items, text: "text", value: "value" };
+        this.field = { dataSource: this.items, text: "text", value: "value" };
         this.type = "startsWith";
     }
 }
@@ -711,3 +711,95 @@ export class DropDownListComponent {
 {% endhighlight %}
 
 ![](Functionalities_images/Functionalities_img9.png)
+
+## Validation
+
+You can validate the DropDownList value on form submission by applying “validationRules” and “validationMessage” to the DropDownList. 
+
+N> [jquery.validate.min](http://cdn.syncfusion.com/js/assets/external/jquery.validate.min.js) script file should be referred for validation, for more details, refer [here](http://jqueryvalidation.org/documentation).
+
+### Validation Rules
+
+The validation rules help you to verify the selected text by adding validation attributes to the input element. This can be set by using [validationRules](https://help.syncfusion.com/api/js/ejdropdownlist#members:validationrules) property.
+
+### Validation Messages 
+
+You can set your own custom error message by using [validationMessage](https://help.syncfusion.com/api/js/ejdropdownlist#members:validationmessage) property. To display the error message, specify the corresponding annotation attribute followed by the message to display.
+
+N> jQuery predefined error messages to that annotation attribute will be shown when this property is not defined. The below given example explain this behavior of ‘required’ attribute,
+
+When you initialize the DropDownList widget, it creates an input hidden element which is used to store the selected items value. Hence, the validation is performed based on the value stored in this hidden element.
+
+Required field and min value validation is demonstrated in the below given example.
+
+{% highlight html %}
+
+    <form id="form1">
+    	<input ej-dropdownlist [dataSource]="data" [fields]="field" type="text" id="dropdown1" [validationRules]="validRule"  [validationMessage]="validMessage"  />
+   
+    	<input type="submit" value="Validate" />
+	</form>
+                
+{% endhighlight %}
+
+{% highlight javascript %}
+	
+ import { Component } from '@angular/core';
+@Component({
+  selector: 'ej-app',
+  templateUrl: 'src/dropdown/dropdown.component.html',
+})
+export class DropDownListComponent { 
+	  validRule: any;
+	  validMessage: any;
+      data: Array<Object> = [];
+      field: Object; 
+     constructor() {
+	   this.data = [{
+            text: "10",
+            value: 10
+        }, {
+            text: "20",
+            value: 20
+        }, {
+            text: "30",
+            value: 30
+        }, {
+            text: "40",
+            value: 40
+        }, {
+            text: "50",
+            value: 50
+        }];
+	  $['validator'].setDefaults({
+        ignore: [],// To include hidden input validation.
+        errorClass: 'e-validation-error', // to get the error message on jQuery validation
+        errorPlacement: function (error, element) {
+            $(error).insertAfter(element.closest(".e-widget"));
+        }
+    });
+     $['validator'].addMethod("min",
+        function (value, element, params) {
+            if (!/Invalid|NaN/.test(value)) {
+                return parseInt(value) > params;
+            }
+        }, 'Must be greater than 30.');
+  this.field = { dataSource: this.data, text: 'text', value: 'value' };
+  	  this.validRule={
+      required: true ,
+      min: 30   
+   };
+   this.validMessage={
+    required: "* Required",
+    min: "Select > 30"
+  
+   };
+
+   }
+
+ }
+	
+{% endhighlight %}
+
+![](Functionalities_images/Functionalities_img10.jpeg)
+

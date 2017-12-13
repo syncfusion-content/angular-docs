@@ -134,5 +134,5 @@ export class ProgressbarComponent {
 
 The progress bar movement will be as shown below:
 
-![](HowTo_images/HowTo_img1.jpeg)
+![](HowTo_images/HowTo_img1.png)
 
