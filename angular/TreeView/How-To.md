@@ -14,7 +14,7 @@ documentation: ug
 
 TreeView allow you to get the updated tree data after performing such operation like node editing, drag and drop, add and remove node. Using [getTreeData](http://help.syncfusion.com/api/js/ejtreeview#methods:gettreedata) method you can get the updated tree data. 
 
-Refer the sample from the link [Updated tree data](https://plnkr.co/edit/dqMs51zfCGeBda2TMcml?p=preview) to know how to get updated data from TreeView.
+Refer the sample from the link [Updated tree data](https://plnkr.co/edit/B4KNop88EgajmNvwmgpn?p=preview) to know how to get updated data from TreeView.
 
 You can also get the updated data source for remote data binding after performing the operation like editing, selecting/unselecting, expanding/collapsing, checking/unchecking and removing node. You cannot get the updated data source when you perform operation like drag and drop, adding node for remote data binding.
 
@@ -38,11 +38,11 @@ TreeView allow you to refresh the entire tree data by using [refresh](http://hel
 
 TreeView allow you to persist the updated data after performing node manipulation. By using persistence option, you can sustain on page refresh.
 
-Refer the sample from the link [PersistData](https://plnkr.co/edit/NSl2pQqHYuWXesANPNCn?p=preview) to know how to persist updated tree data after refresh.
+Refer the sample from the link [PersistData](https://plnkr.co/edit/im7rElfoOawRkyvy8hqi?p=preview) to know how to persist updated tree data after refresh.
 
 ## Filtering nodes in TreeView
 
-You can able to filter TreeView nodes based on node text. Refer the sample from the link [FilterTreeNodes](https://plnkr.co/edit/wQCMIxQCI9DxIIPxjlMK?p=preview) to know how to filter tree nodes based on the node text.
+You can able to filter TreeView nodes based on node text. Refer the sample from the link [FilterTreeNodes](https://plnkr.co/edit/ns1FHVofoLSrHTw6L3YJ?p=preview) to know how to filter tree nodes based on the node text.
 
 ## AngularJS data binding to update data while add and remove node
 
