@@ -176,8 +176,8 @@ Before adding router configuration for above created ejNumericTextbox component,
 <div>
 	<ul class="nav navbar-nav">
 		. . . .
-	<li><a data-toggle="collapse" data-target="#skeleton-navigation-navbar-collapse.in" href="#numerictextbox" 
-    [routerLink]="['/numerictextbox']">NumericTextbox </a></li>
+	<li><a data-toggle="collapse" data-target="#skeleton-navigation-navbar-collapse.in" 
+    href="#numerictextbox" [routerLink]="['/numerictextbox']">NumericTextbox </a></li>
 	</ul>
 </div>
 <main>
