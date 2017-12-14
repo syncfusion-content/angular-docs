@@ -12,13 +12,13 @@ documentation: ug
 
 ## Overview
 
-To render Syncfusion Angular components in ASP .Net MVC project:
+To render Syncfusion Angular components in ASP .NET MVC project:
 
 * [Prerequisites](#prerequisites)
 * [Create an empty ASP DOTNET MVC Application](#create-an-empty-asp-dotnet-mvc-application)
-* [Configure Typescript configuration file](#configure-typescript-configuration-file)
+* [Configure TypeScript configuration file](#configure-typescript-configuration-file)
 * [Add NPM Configuration file for managing Angular packages](#add-npm-configuration-file-for-managing-angular-packages)
-* [Gulp task Configuration](#gulp-task-configuration) (To transpile typescript to JavaScript). 
+* [Gulp task Configuration](#gulp-task-configuration) (To transpile TypeScript to JavaScript). 
 * [Add Syncfusion Angular seed Application](#add-syncfusion-angular-seed-application)
 * [Add systemjs Configuration to load Angular core modules](#add-systemjs-configuration-to-load-angular-core-modules)
 * [Add References in Layout file](#add-references-in-layout-file)
@@ -33,15 +33,15 @@ To render Syncfusion Angular components in ASP .Net MVC project:
 
 ## Create an empty ASP DOTNET MVC Application
 
-Open Visual studio 2015 and select `ASP.NET Web Application`. Provide the name as `ESAngularMVCDemo` and select `MVC` project template.
+Open Visual Studio 2015 and select `ASP.NET Web Application`. Provide the name as `ESAngularMVCDemo` and select `MVC` project template.
 
 ![](/angular/GettingStarted/Images/createproject.png)
 
 ![](/angular/GettingStarted/Images/mvc.png)
 
-## Configure Typescript configuration file
+## Configure TypeScript configuration file
 
-Include Typescript Configuration file that does the work of `transpiling Typescript files into JavaScript files`. Create Typescript configuration file `tsconfig.json` by right clicking `sample root folder->Add->New Item->Typescript JSON Configuration File.`
+Include TypeScript Configuration file that does the work of `transpiling TypeScript files into JavaScript files`. Create TypeScript configuration file `tsconfig.json` by right clicking `sample root folder->Add->New Item->TypeScript JSON Configuration File.`
 
 ![](/angular/GettingStarted/Images/tsconfig.png)
 
@@ -165,7 +165,7 @@ npm install
 
 ## Gulp task Configuration
 
-It requires to compile Typescript files to JavaScript file. For this process use GULP tasks that helps to compile Typescript files to JavaScript files and then move to `Scripts` folder. 
+It requires to compile TypeScript files to JavaScript file. For this process use GULP tasks that helps to compile TypeScript files to JavaScript files and then move to `Scripts` folder. 
 
 Right Click the `ESAngularMVCDemo` project and choose `Add->New Item->Gulp Configuration File.` Name it as `gulpfile.js` in your project and copy the following code.
 
@@ -184,7 +184,7 @@ gulp.task('clean', function () {
     .pipe(clean());
 });
 
-// Transpiling typescript files into JavaScript.
+// Transpiling TypeScript files into JavaScript.
 tsProject = ts.createProject('./tsconfig.json', {
     typescript: require('typescript')
 });
@@ -373,7 +373,7 @@ To load Angular in ASP.NET MVC, include the script references of Angular core mo
 
 ## Run the Application
 
-Run the GULP tasks, so that the Angular Typescript files are compiled and moved to the appropriate folder (Scripts). Open the `Task Runner Explorer (View->Other Windows->Task Runner)` in Visual Studio 2015. 
+Run the GULP tasks, so that the Angular TypeScript files are compiled and moved to the appropriate folder (Scripts). Open the `Task Runner Explorer (View->Other Windows->Task Runner)` in Visual Studio 2015. 
 
 ![](/angular/GettingStarted/Images/taskrunner.png)
 
