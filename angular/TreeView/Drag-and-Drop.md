@@ -14,7 +14,8 @@ To perform drag and drop operation in TreeView, specify [allowDragAndDrop](http:
 
  {% highlight html %} 
  
- <ej-treeview id='treeview' [fields]='field' [allowDragAndDrop]='allowDragAndDrop'></ej-treeview>
+ <ej-treeview id='treeview' [fields]='field' [allowDragAndDrop]='allowDragAndDrop'>
+ </ej-treeview>
 
   {% endhighlight %}
 
@@ -49,7 +50,9 @@ You can restrict the dragged nodes to be dropped at siblings or children’s lev
 
  {% highlight html %} 
  
- <ej-treeview id='treeview' [fields]='field' [allowDragAndDrop]='allowDragAndDrop' [allowDropSibling]='allowDropSibling'></ej-treeview>
+ <ej-treeview id='treeview' [fields]='field' [allowDragAndDrop]='allowDragAndDrop' 
+   [allowDropSibling]='allowDropSibling'>
+ </ej-treeview>
 
   {% endhighlight %}
 
@@ -60,7 +63,11 @@ You can drag and drop tree nodes between two TreeView by setting [allowDragAndDr
 
 {% highlight html %} 
  
- <ej-treeview id='treeview' [fields]='field' [allowDragAndDrop]='allowDragAndDrop' [allowDragAndDropAccessControl]='allowDragAndDropAccessControl' [allowDropSibling]='allowDropSibling' [allowDropChild]='allowDropChild' ></ej-treeview>
+ <ej-treeview id='treeview' [fields]='field' [allowDragAndDrop]='allowDragAndDrop' 
+   [allowDragAndDropAccessControl]='allowDragAndDropAccessControl' 
+   [allowDropSibling]='allowDropSibling' 
+   [allowDropChild]='allowDropChild' >
+ </ej-treeview>
 
 {% endhighlight %}
 

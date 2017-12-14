@@ -15,9 +15,10 @@ The resize behavior can be enabled through the `enableResize` property.
 
 {% highlight html %}
 
-<ej-fileexplorer id="fileExplorer" path= "http://js.syncfusion.com/demos/ejServices/Content/FileBrowser/"
-    ajaxAction="http://js.syncfusion.com/demos/ejServices/api/FileExplorer/FileOperations" 
-    [enableResize]="true" style="display:block">
+<ej-fileexplorer id="fileExplorer" 
+   path= "http://js.syncfusion.com/demos/ejServices/Content/FileBrowser/"
+   ajaxAction="http://js.syncfusion.com/demos/ejServices/api/FileExplorer/FileOperations" 
+   [enableResize]="true" style="display:block">
 </ej-fileexplorer>
 
 {% endhighlight %}
@@ -28,9 +29,10 @@ By enabling the `isResponsive` property, you can make the FileExplorer as respon
 
 {% highlight html %}
 
-<ej-fileexplorer id="fileExplorer" path= "http://js.syncfusion.com/demos/ejServices/Content/FileBrowser/"
-    ajaxAction="http://js.syncfusion.com/demos/ejServices/api/FileExplorer/FileOperations" 
-    [enableResize]="true" [isResponsive]="true" style="display:block">
+<ej-fileexplorer id="fileExplorer" 
+   path= "http://js.syncfusion.com/demos/ejServices/Content/FileBrowser/"
+   ajaxAction="http://js.syncfusion.com/demos/ejServices/api/FileExplorer/FileOperations" 
+   [enableResize]="true" [isResponsive]="true" style="display:block">
 </ej-fileexplorer>
 
 {% endhighlight %}
@@ -41,10 +43,11 @@ You can restrict the dimension of the FileExplorer by setting the `minHeight`, `
 
 {% highlight html %}
 
-<ej-fileexplorer id="fileExplorer" path= "http://js.syncfusion.com/demos/ejServices/Content/FileBrowser/"
-    ajaxAction="http://js.syncfusion.com/demos/ejServices/api/FileExplorer/FileOperations" 
-    [enableResize]="true" [isResponsive]="true" minHeight="200px" maxHeight="400px"  minWidth="300px"
-    maxWidth= "1200px" maxWidth= "1200px" style="display:block">
+<ej-fileexplorer id="fileExplorer" 
+   path= "http://js.syncfusion.com/demos/ejServices/Content/FileBrowser/"
+   ajaxAction="http://js.syncfusion.com/demos/ejServices/api/FileExplorer/FileOperations" 
+   [enableResize]="true" [isResponsive]="true" minHeight="200px" maxHeight="400px"  
+   minWidth="300px" maxWidth= "1200px" maxWidth= "1200px" style="display:block">
 </ej-fileexplorer>
 
 {% endhighlight %}

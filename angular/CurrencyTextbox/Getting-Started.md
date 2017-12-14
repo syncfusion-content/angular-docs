@@ -11,9 +11,9 @@ keywords: ejcurrencytextbox, angular currencytextbox, currencytextbox
 
 This section explains briefly about how to create a **CurrencyTextbox** control in your application with **Angular**.
 
-## Create CurrencyTextbox in Angular Application using Webpack
+## Create CurrencyTextbox in Angular Application using Web pack
 
-To quick start with Syncfusion JavaScript Angular components run the below commands to clone the repository for [Webpack starter](https://github.com/syncfusion/angular2-seeds) and installing required dependency packages.
+To quick start with Syncfusion JavaScript Angular components run the below commands to clone the repository for [Web pack starter](https://github.com/syncfusion/angular2-seeds) and installing required dependency packages.
 
 {% highlight javascript %}
  > git clone https://github.com/syncfusion/angular2-seeds
@@ -65,7 +65,8 @@ Before adding router configuration for above created ejCurrencyTextbox component
 <div>
 	<ul class="nav navbar-nav">
 		. . . .
-		<li><a data-toggle="collapse" data-target="#skeleton-navigation-navbar-collapse.in" href="#currencytextbox" [routerLink]="['/currencytextbox']">CurrencyTextbox </a></li>
+	<li><a data-toggle="collapse" data-target="#skeleton-navigation-navbar-collapse.in" 
+     href="#currencytextbox" [routerLink]="['/currencytextbox']">CurrencyTextbox </a></li>
 	</ul>
 </div>
 <main>
@@ -99,9 +100,10 @@ import { CurrencyTextboxComponent } from './currencytextbox/currencytextbox.comp
 import { rootRouterConfig } from './app.routes';
 . . . . 
 @NgModule({
-  imports: [BrowserModule, FormsModule, HttpModule, EJAngular2Module.forRoot(), RouterModule.forRoot(rootRouterConfig, { useHash: true })],
-  declarations: [. . . . , CurrencyTextboxComponent],
-  bootstrap: [AppComponent]
+   imports: [BrowserModule, FormsModule, HttpModule, EJAngular2Module.forRoot(),
+   RouterModule.forRoot(rootRouterConfig, { useHash: true })],
+   declarations: [. . . . , CurrencyTextboxComponent],
+   bootstrap: [AppComponent]
 })
 export class AppModule { }
 {% endhighlight %}
@@ -174,7 +176,8 @@ Before adding router configuration for above created ejCurrencyTextbox component
 <div>
 	<ul class="nav navbar-nav">
 		. . . .
-		<li><a data-toggle="collapse" data-target="#skeleton-navigation-navbar-collapse.in" href="#currencytextbox" [routerLink]="['/currencytextbox']">CurrencyTextbox </a></li>
+	<li><a data-toggle="collapse" data-target="#skeleton-navigation-navbar-collapse.in"
+     href="#currencytextbox" [routerLink]="['/currencytextbox']">CurrencyTextbox </a></li>
 	</ul>
 </div>
 <main>
@@ -208,9 +211,10 @@ import { CurrencyTextboxComponent } from './currencytextbox/currencytextbox.comp
 import { rootRouterConfig } from './app.routes';
 . . . . 
 @NgModule({
-  imports: [BrowserModule, FormsModule, HttpModule, EJAngular2Module.forRoot(), RouterModule.forRoot(rootRouterConfig, { useHash: true })],
-  declarations: [. . . . , CurrencyTextboxComponent],
-  bootstrap: [AppComponent]
+   imports: [BrowserModule, FormsModule, HttpModule, EJAngular2Module.forRoot(),
+   RouterModule.forRoot(rootRouterConfig, { useHash: true })],
+   declarations: [. . . . , CurrencyTextboxComponent],
+   bootstrap: [AppComponent]
 })
 export class AppModule { }
 {% endhighlight %}

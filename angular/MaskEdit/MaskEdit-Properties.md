@@ -31,7 +31,8 @@ In the **HTML** page, add a **&lt;div&gt;** element to render the **MaskEdit** w
 
 {% highlight html %}
 
-<input id="maskedit" ej-maskedit [name]="name" [maskFormat]="format" [customCharacter]="customCharacter" [inputMode]="inputMode" [hidePromptOnLeave]="true" />
+<input id="maskedit" ej-maskedit [name]="name" [maskFormat]="format" 
+[customCharacter]="customCharacter" [inputMode]="inputMode" [hidePromptOnLeave]="true" />
 	
 {% endhighlight %}
 

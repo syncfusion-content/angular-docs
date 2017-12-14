@@ -11,9 +11,9 @@ keywords: ejfileexplorer, js fileexplorer, fileexplorer
 
 This section explains briefly about how to create a **FileExplorer** control in your application with **Angular**.
 
-## Create FileExplorer in Angular Application using Webpack
+## Create FileExplorer in Angular Application using Web pack
 
-To quick start with Syncfusion JavaScript Angular components run the below commands to clone the repository for [Webpack starter](https://github.com/syncfusion/angular2-seeds) and installing required dependency packages.
+To quick start with Syncfusion JavaScript Angular components run the below commands to clone the repository for [Web pack starter](https://github.com/syncfusion/angular2-seeds) and installing required dependency packages.
 
 {% highlight javascript %}
  > git clone https://github.com/syncfusion/angular2-seeds
@@ -40,9 +40,11 @@ N> `core.ts` file is mandatory for all Syncfusion JavaScript Angular components.
 * Create `fileexplorer.component.html` view file inside `src/app/fileexplorer` folder and render ejFileExplorer Angular component using the below code example. 
 
 {% highlight html %}
-    <ej-fileexplorer id="fileExplorer" path= "http://js.syncfusion.com/demos/ejServices/Content/FileBrowser/"
-			ajaxAction="http://js.syncfusion.com/demos/ejServices/api/FileExplorer/FileOperations" 
-			width="100%" minWidth="150px" fileTypes="*.png, *.gif, *.jpg, *.jpeg, *.docx" layout= "tile" style="display:block">
+    <ej-fileexplorer id="fileExplorer" 
+       path= "http://js.syncfusion.com/demos/ejServices/Content/FileBrowser/"
+       ajaxAction="http://js.syncfusion.com/demos/ejServices/api/FileExplorer/FileOperations" 
+       width="100%" minWidth="150px" fileTypes="*.png, *.gif, *.jpg, *.jpeg, *.docx"
+       layout= "tile" style="display:block">
     </ej-fileexplorer>
 {% endhighlight %}
 
@@ -68,7 +70,8 @@ Before adding router configuration for above created ejFileExplorer component, w
 <div>
 	<ul class="nav navbar-nav">
 		. . . .
-		<li><a data-toggle="collapse" data-target="#skeleton-navigation-navbar-collapse.in" href="#fileexplorer" [routerLink]="['/fileexplorer']">FileExplorer </a></li>
+	<li><a data-toggle="collapse" data-target="#skeleton-navigation-navbar-collapse.in" href="#fileexplorer" 
+    [routerLink]="['/fileexplorer']">FileExplorer </a></li>
 	</ul>
 </div>
 <main>
@@ -102,7 +105,8 @@ import { FileExplorerComponent } from './fileexplorer/fileexplorer.component';
 import { rootRouterConfig } from './app.routes';
 . . . . 
 @NgModule({
-  imports: [BrowserModule, FormsModule, HttpModule, EJAngular2Module.forRoot(), RouterModule.forRoot(rootRouterConfig, { useHash: true })],
+  imports: [BrowserModule, FormsModule, HttpModule, EJAngular2Module.forRoot(),
+  RouterModule.forRoot(rootRouterConfig, { useHash: true })],
   declarations: [. . . . , FileExplorerComponent],
   bootstrap: [AppComponent]
 })
@@ -152,9 +156,11 @@ N> `core.ts` file is mandatory for all Syncfusion JavaScript Angular components.
 * Create `fileexplorer.component.html` view file inside `src/fileexplorer` folder and render ejFileExplorer Angular component using the below code example. 
 
 {% highlight html %}
-    <ej-fileexplorer id="fileExplorer" path= "http://js.syncfusion.com/demos/ejServices/Content/FileBrowser/"
-			ajaxAction="http://js.syncfusion.com/demos/ejServices/api/FileExplorer/FileOperations" 
-			width="100%" minWidth="150px" fileTypes="*.png, *.gif, *.jpg, *.jpeg, *.docx" layout= "tile" style="display:block">
+    <ej-fileexplorer id="fileExplorer" 
+        path= "http://js.syncfusion.com/demos/ejServices/Content/FileBrowser/"
+	ajaxAction="http://js.syncfusion.com/demos/ejServices/api/FileExplorer/FileOperations" 
+	width="100%" minWidth="150px" fileTypes="*.png, *.gif, *.jpg, *.jpeg, *.docx" 
+	layout= "tile" style="display:block">
     </ej-fileexplorer>
 {% endhighlight %}
 
@@ -180,7 +186,8 @@ Before adding router configuration for above created ejFileExplorer component, w
 <div>
 	<ul class="nav navbar-nav">
 		. . . .
-		<li><a data-toggle="collapse" data-target="#skeleton-navigation-navbar-collapse.in" href="#fileexplorer" [routerLink]="['/fileexplorer']">FileExplorer </a></li>
+	<li><a data-toggle="collapse" data-target="#skeleton-navigation-navbar-collapse.in"
+    href="#fileexplorer" [routerLink]="['/fileexplorer']">FileExplorer </a></li>
 	</ul>
 </div>
 <main>
@@ -214,9 +221,10 @@ import { FileExplorerComponent } from './fileexplorer/fileexplorer.component';
 import { rootRouterConfig } from './app.routes';
 . . . . 
 @NgModule({
-   imports: [BrowserModule, FormsModule, HttpModule, EJAngular2Module.forRoot(), RouterModule.forRoot(rootRouterConfig, { useHash: true })],
-  declarations: [. . . . , FileExplorerComponent],
-  bootstrap: [AppComponent]
+   imports: [BrowserModule, FormsModule, HttpModule, EJAngular2Module.forRoot(), 
+   RouterModule.forRoot(rootRouterConfig, { useHash: true })],
+   declarations: [. . . . , FileExplorerComponent],
+   bootstrap: [AppComponent]
 })
 export class AppModule { }
 {% endhighlight %}
