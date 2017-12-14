@@ -18,7 +18,7 @@ The below table lists out the keys with corresponding texts in English culture.
 
         ej.FileExplorer.Locale["en-US"] = {
             		
-Back: "Backward",
+            Back: "Backward",
 
             Forward: "Forward",
 
@@ -52,9 +52,9 @@ Back: "Backward",
 
             Search: "Search",
 			
-EmptyResult:"No items match your search",
+            EmptyResult:"No items match your search",
 			
-EmptyFolder: "This folder is empty",
+            EmptyFolder: "This folder is empty",
 
             NewFolder: "New Folder",
 
