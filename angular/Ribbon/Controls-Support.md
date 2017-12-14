@@ -76,13 +76,14 @@ N> 2. For [`type`](http://help.syncfusion.com/api/js/ejribbon#members:tabs-group
 
 {% highlight html %}
 
-<ej-ribbon id="Default" width="100%" applicationTab.type="menu" applicationTab.menuItemID="ribbonmenu" applicationTab.menuSettings.openOnClick="false">
+<ej-ribbon id="Default" width="100%" applicationTab.type="menu" 
+applicationTab.menuItemID="menu" applicationTab.menuSettings.openOnClick="false">
     <e-tabs>
         <e-tab id="home" text="HOME" [groups]="groups1">
         </e-tab>
     </e-tabs>
 </ej-ribbon>
-<ul id="ribbonmenu">
+<ul id="menu">
     <li>
         <a>FILE</a>
         <ul>
@@ -102,7 +103,7 @@ import {Component} from '@angular/core';
 import {NorthwindService} from '../../services/northwind.service';
 
 @Component({
-  selector: 'sd-home',
+  selector: 'ej-app',
   templateUrl: 'app/components/ribbon/ribbon.component.html',
   providers: [NorthwindService]
 })
@@ -169,19 +170,19 @@ export class RibbonComponent {
                 {
                     groups: [
                         {
-                            id: "fontfamily",
+                            id: "font",
                             toolTip: "Font",
                             dropdownSettings: {
-                                dataSource: fontfamily,
+                                dataSource: font,
                                 text: "Segoe UI",
                                 width: 150
                             }
                         },
                         {
-                            id: "fontsize",
+                            id: "size",
                             toolTip: "FontSize",
                             dropdownSettings: {
-                                dataSource: fontsize,
+                                dataSource: size,
                                 text: "1pt",
                                 width: 65
                             }
@@ -223,7 +224,11 @@ export class RibbonComponent {
                     }
               }]
         }]    
-     var fontfamily = ["Segoe UI", "Arial", "Times New Roman", "Tahoma", "Helvetica"], fontsize = ["1pt", "2pt", "3pt", "4pt", "5pt"], action1 = ["New", "Clear"], action2 = ["Bold", "Italic", "Underline", "strikethrough", "superscript", "subscript", "JustifyLeft", "JustifyCenter", "JustifyRight", "JustifyFull", "Undo", "Redo"]
+     var font = ["Segoe UI", "Arial", "Times New Roman", "Tahoma", "Helvetica"], 
+     var size = ["1pt", "2pt", "3pt", "4pt", "5pt"], action1 = ["New", "Clear"], 
+     action2 = ["Bold", "Italic", "Underline", "strikethrough", "superscript", 
+     "subscript", "JustifyLeft", "JustifyCenter", "JustifyRight", "JustifyFull", 
+     "Undo", "Redo"]
   }
   
 {% endhighlight %}
@@ -236,14 +241,15 @@ You can set [`type`](http://help.syncfusion.com/api/js/ejribbon#members:tabs-gro
 
 {% highlight html %}
 
-<ej-ribbon id="Default" width="600" applicationTab.type="menu" applicationTab.menuItemID="ribbonmenu" (create)="createControl($event)">
+<ej-ribbon id="Default" width="600" applicationTab.type="menu" 
+applicationTab.menuItemID="menu" (create)="createControl($event)">
    <e-tabs>
         <e-tab id="home" text="HOME" [groups]="groups1">
         </e-tab>
    </e-tabs>
 </ej-ribbon>
 
-<ul id="ribbonmenu">
+<ul id="menu">
     <li>
         <a>FILE </a>
         <ul>
@@ -252,19 +258,21 @@ You can set [`type`](http://help.syncfusion.com/api/js/ejribbon#members:tabs-gro
         </ul>
     </li>
 </ul>
-<input id="fontcolor" />
+<input id="color" />
 <table id="design" class="e-designtablestyle">
     <tr>
         <td>
             <input type="checkbox" id="check1" /><label for="check1">Header Row</label>
         </td>
         <td>
-            <input type="checkbox" id="Check2" checked="checked" /><label for="Check2">First Column</label>
+            <input type="checkbox" id="Check2" checked="checked" />
+            <label for="Check2">First Column</label>
         </td>
     </tr>
     <tr>
         <td>
-            <input type="checkbox" id="check4" checked="checked" /><label for="check4">Total Row</label>
+            <input type="checkbox" id="check4" checked="checked" />
+            <label for="check4">Total Row</label>
         </td>
         <td>
             <input type="checkbox" id="Check5" /><label for="Check5">Last Column</label>
@@ -280,7 +288,7 @@ import {Component} from '@angular/core';
 import {NorthwindService} from '../../services/northwind.service';
 
 @Component({
-  selector: 'sd-home',
+  selector: 'ej-app',
   templateUrl: 'app/components/ribbon/ribbon.component.html',
   providers: [NorthwindService]
 })
@@ -291,9 +299,9 @@ export class RibbonComponent {
         text: "Font",
         content: [{
             groups: [{
-                id: "fontcolor",
+                id: "color",
                 toolTip: "Font Color",
-                contentID: "fontcolor"
+                contentID: "color"
             }],
             defaults: {
                 height: 30,
@@ -312,7 +320,8 @@ export class RibbonComponent {
         }]
      createControl(args) {
          var ribbon = $("#Ribbon").data("ejRibbon");
-         $("#fontcolor").ejColorPicker({ value: "#FFFF00", modelType: "palette", cssClass: "e-ribbon", toolIcon: "e-fontcoloricon" });
+         $("#color").ejColorPicker({ value: "#FFFF00", modelType: "palette", 
+         cssClass: "e-ribbon", toolIcon: "e-fontcoloricon" });
      }
  }
   

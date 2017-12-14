@@ -15,7 +15,10 @@ The TreeView control provides the option to highlight a full row of tree view no
 
 {% highlight html %} 
  
- <ej-treeview id='treeView' [fields]='field' [spriteCssClass]='spriteCssClass' [imageUrl]='imageUrl' [htmlAttribute]='htmlAttribute' [linkAttribute]='linkAttribute' [imageAttribute]='imageAttribute' [fullRowSelect]='fullRowSelect'></ej-treeview>
+ <ej-treeview id='treeView' [fields]='field' [spriteCssClass]='spriteCssClass' [imageUrl]='imageUrl' 
+   [htmlAttribute]='htmlAttribute' [linkAttribute]='linkAttribute' [imageAttribute]='imageAttribute' 
+   [fullRowSelect]='fullRowSelect'>
+ </ej-treeview>
 
 {% endhighlight %}
 

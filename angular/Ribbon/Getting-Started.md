@@ -120,7 +120,8 @@ Create a new HTML file and include the below initial code.
     <title></title>
 
     <!-- Essential Studio for JavaScript  theme reference -->
-    <link rel="stylesheet" href="http://cdn.syncfusion.com/{{ site.releaseversion }}/js/web/flat-azure/ej.web.all.min.css" />
+    <link rel="stylesheet" href="http://cdn.syncfusion.com/{{ site.releaseversion }}/js/web/flat-azure/
+    ej.web.all.min.css" />
 
     <!-- Angular related script references -->
     <!-- 1. Load libraries -->
@@ -131,7 +132,8 @@ Create a new HTML file and include the below initial code.
     <script src="node_modules/systemjs/dist/system.src.js"></script>
 
     <!-- Essential Studio for JavaScript  script references -->
-    <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+    <script src="https://code.jquery.com/jquery-1.10.2.min.js">
+    </script>
     <script src="http://cdn.syncfusion.com/js/assets/external/jquery.easing.1.3.min.js"> </script>
     <script src="http://cdn.syncfusion.com/js/assets/external/jsrender.min.js"></script>
     <script src="http://cdn.syncfusion.com/{{ site.releaseversion }}/js/web/ej.web.all.min.js"> </script> 
@@ -163,7 +165,8 @@ Define the Application Tab with 'applicationTab-type' as 'menu' to render simple
 
 {% highlight html %}
 
-<ej-ribbon id="Default" width="100%" applicationTab.type="menu" applicationTab.menuItemID="ribbonmenu">
+<ej-ribbon id="Default" width="100%" applicationTab.type="menu" 
+applicationTab.menuItemID="menu">
 </ej-ribbon>
 
 <style type="text/css">
@@ -173,7 +176,7 @@ Define the Application Tab with 'applicationTab-type' as 'menu' to render simple
         margin-left: 5px;
     }
 </style>	  
-     <ul id="ribbonmenu">
+     <ul id="menu">
         <li><a>FILE</a>
             <ul>
                 <li><a>New</a></li>
@@ -193,7 +196,7 @@ import {Component} from '@angular/core';
 import {NorthwindService} from '../../services/northwind.service';
 
 @Component({
-  selector: 'sd-home',
+  selector: 'ej-app',
   templateUrl: 'app/components/ribbon/ribbon.component.html',
   providers: [NorthwindService]
 })
@@ -211,7 +214,8 @@ Tab is a set of related groups which are combined into single item. For creating
 
 {% highlight html %}
 
-<ej-ribbon id="Default" width="100%" applicationTab.type="menu" applicationTab.menuItemID="ribbonmenu">
+<ej-ribbon id="Default" width="100%" applicationTab.type="menu" 
+applicationTab.menuItemID="menu">
     <e-tabs>
         <e-tab id="home1" text="HOME">
         </e-tab>
@@ -224,7 +228,7 @@ Tab is a set of related groups which are combined into single item. For creating
         margin-left: 5px;
     }
 </style>	  
-     <ul id="ribbonmenu">
+     <ul id="menu">
         <li><a>FILE</a>
             <ul>
                 <li><a>New</a></li>
@@ -243,7 +247,7 @@ import {Component} from '@angular/core';
 import {NorthwindService} from '../../services/northwind.service';
 
 @Component({
-  selector: 'sd-home',
+  selector: 'ej-app',
   templateUrl: 'app/components/ribbon/ribbon.component.html',
   providers: [NorthwindService]
 })
@@ -263,7 +267,8 @@ Create group item with 'text' specified and add content group to Groups collecti
 
 {% highlight html %}
 
-<ej-ribbon id="Default" width="100%" applicationTab.type="menu" applicationTab.menuItemID="ribbonmenu">
+<ej-ribbon id="Default" width="100%" applicationTab.type="menu" 
+applicationTab.menuItemID="menu">
    <e-tabs>
         <e-tab id="home1" text="HOME" [groups]="groups1">
         </e-tab>
@@ -276,7 +281,7 @@ Create group item with 'text' specified and add content group to Groups collecti
         margin-left: 5px;
     }
 </style>	  
-     <ul id="ribbonmenu">
+     <ul id="menu">
         <li><a>FILE</a>
             <ul>
                 <li><a>New</a></li>
@@ -294,16 +299,25 @@ import {Component} from '@angular/core';
 import {NorthwindService} from '../../services/northwind.service';
 
 @Component({
-  selector: 'sd-home',
+  selector: 'ej-app',
   templateUrl: 'app/components/ribbon/ribbon.component.html',
   providers: [NorthwindService]
 })
 export class RibbonComponent {
     constructor(public northwindService: NorthwindService) {}
      defaults={type:"button",width:"60",height:"70"};
-     buttonSettings={ contentType:"imageonly",imagePosition:"imagetop",prefixIcon:"e-ribbon e-icon e-new"};
-       var fontfamily = [{value: 1,text: "Segoe UI" }, {value: 2, text: "Arial"}];
-     groups1 = [{ text: "New", alignType: "rows", content: [{ groups: [{id:"new",text:"New",toolTip: "New",buttonSettings:{contentType:"imageonly",imagePosition:"imagetop",prefixIcon:"e-ribbon e-icon e-new"}}], defaults: { type: "button", width: "50",height:"70", isBig: "true" }} ] },{ text: "Clipboard", alignType: "columns",enableGroupExpander:"true", content: [{ groups: [{id:"paste",text:"Paste",toolTip: "Paste",buttonSettings:{contentType:"imageonly",imagePosition:"imagetop",prefixIcon:"e-ribbon e-icon e-ribbonpaste"}}], defaults: { type: "button", width: "50",height:"70", isBig: "true" }}, { groups: [{ id: "fontfamily", dropdownSettings: { dataSource: "fontfamily", text: "Segoe UI", width: "150"}}]}  ] }, 
+     buttonSettings={ contentType:"imageonly",imagePosition:"imagetop",
+     prefixIcon:"e-ribbon e-icon e-new"};
+       var font = [{value: 1,text: "Segoe UI" }, {value: 2, text: "Arial"}];
+     groups1 = [{ text: "New", alignType: "rows", content: [{ groups: [{id:"new",text:"New",
+     toolTip: "New",buttonSettings:{contentType:"imageonly",imagePosition:"imagetop",
+     prefixIcon:"e-ribbon e-icon e-new"}}], defaults: { type: "button", width: "50",height:"70",
+      isBig: "true" }} ] },{ text: "Clipboard", alignType: "columns",enableGroupExpander:"true",
+       content: [{ 
+         groups: [{id:"paste",text:"Paste",toolTip: "Paste",buttonSettings:{contentType:"imageonly",
+         imagePosition:"imagetop",prefixIcon:"e-ribbon e-icon e-ribbonpaste"}}], 
+         defaults: { type: "button", width: "50",height:"70", isBig: "true" }}, { groups: [{ id: "font", 
+         dropdownSettings: { dataSource: "font", text: "Segoe UI", width: "150"}}]}  ] }, 
      ];
      
 }

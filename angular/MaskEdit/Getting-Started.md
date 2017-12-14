@@ -11,9 +11,9 @@ keywords: ejmaskedit, js maskedit, maskedit
 
 This section explains briefly about how to create a **MaskEdit** control in your application with **Angular**.
 
-## Create MaskEdit in Angular Application using Webpack
+## Create MaskEdit in Angular Application using Web pack
 
-To quick start with Syncfusion JavaScript Angular components run the below commands to clone the repository for [Webpack starter](https://github.com/syncfusion/angular2-seeds) and installing required dependency packages.
+To quick start with Syncfusion JavaScript Angular components run the below commands to clone the repository for [Web pack starter](https://github.com/syncfusion/angular2-seeds) and installing required dependency packages.
 
 {% highlight javascript %}
  > git clone https://github.com/syncfusion/angular2-seeds
@@ -40,7 +40,8 @@ N> `core.ts` file is mandatory for all Syncfusion JavaScript Angular components.
 * Create `maskedit.component.html` view file inside `src/app/maskedit` folder and render ejMaskEdit Angular component using the below code example. 
 
 {% highlight html %}
-    <input id="maskedit" ej-maskedit value="4242422424" inputMode="ej.InputMode.Text" maskFormat='99 999-99999' width="100%" />
+    <input id="maskedit" ej-maskedit value="4242422424" inputMode="ej.InputMode.Text" 
+     maskFormat='99 999-99999' width="100%" />
 {% endhighlight %}
 
 * Create `maskedit.component.ts` model file inside the folder `src/app/maskedit` and create maskedit sample component using the below code example.
@@ -65,7 +66,8 @@ Before adding router configuration for above created ejMaskEdit component, we re
 <div>
 	<ul class="nav navbar-nav">
 		. . . .
-		<li><a data-toggle="collapse" data-target="#skeleton-navigation-navbar-collapse.in" href="#maskedit" [routerLink]="['/maskedit']">MaskEdit </a></li>
+	<li><a data-toggle="collapse" data-target="#skeleton-navigation-navbar-collapse.in" 
+    href="#maskedit" [routerLink]="['/maskedit']">MaskEdit </a></li>
 	</ul>
 </div>
 <main>
@@ -99,7 +101,8 @@ import { MaskEditComponent } from './maskedit/maskedit.component';
 import { rootRouterConfig } from './app.routes';
 . . . . 
 @NgModule({
-  imports: [BrowserModule, FormsModule, HttpModule, EJAngular2Module.forRoot(), RouterModule.forRoot(rootRouterConfig, { useHash: true })],
+  imports: [BrowserModule, FormsModule, HttpModule, EJAngular2Module.forRoot(),
+  RouterModule.forRoot(rootRouterConfig, { useHash: true })],
   declarations: [. . . . , MaskEditComponent],
   bootstrap: [AppComponent]
 })
@@ -149,7 +152,8 @@ N> `core.ts` file is mandatory for all Syncfusion JavaScript Angular components.
 * Create `maskedit.component.html` view file inside `src/maskedit` folder and render ejMaskEdit Angular component using the below code example. 
 
 {% highlight html %}
-     <input id="maskedit" ej-maskedit value="4242422424" inputMode="ej.InputMode.Text" maskFormat='99 999-99999' width="100%" />
+     <input id="maskedit" ej-maskedit value="4242422424" inputMode="ej.InputMode.Text" 
+     maskFormat='99 999-99999' width="100%" />
 {% endhighlight %}
 
 * Create `maskedit.component.ts` model file inside the folder `src/maskedit` and create maskedit sample component using the below code example.
@@ -174,7 +178,8 @@ Before adding router configuration for above created ejMaskEdit component, we re
 <div>
 	<ul class="nav navbar-nav">
 		. . . .
-		<li><a data-toggle="collapse" data-target="#skeleton-navigation-navbar-collapse.in" href="#maskedit" [routerLink]="['/maskedit']">MaskEdit </a></li>
+	<li><a data-toggle="collapse" data-target="#skeleton-navigation-navbar-collapse.in"
+    href="#maskedit" [routerLink]="['/maskedit']">MaskEdit </a></li>
 	</ul>
 </div>
 <main>
@@ -208,7 +213,8 @@ import { MaskEditComponent } from './maskedit/maskedit.component';
 import { rootRouterConfig } from './app.routes';
 . . . . 
 @NgModule({
-  imports: [BrowserModule, FormsModule, HttpModule, EJAngular2Module.forRoot(), RouterModule.forRoot(rootRouterConfig, { useHash: true })],
+  imports: [BrowserModule, FormsModule, HttpModule, EJAngular2Module.forRoot(),
+  RouterModule.forRoot(rootRouterConfig, { useHash: true })],
   declarations: [. . . . , MaskEditComponent],
   bootstrap: [AppComponent]
 })

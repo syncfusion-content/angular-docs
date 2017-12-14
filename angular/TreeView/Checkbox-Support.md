@@ -17,7 +17,8 @@ TreeView supports tristate checkboxes in addition with standard two state checkb
 
  {% highlight html %} 
  
- <ej-treeview id='treeview' [fields]='field' [autoCheckParentNode]='autoCheckParentNode'></ej-treeview>
+ <ej-treeview id='treeview' [fields]='field' [autoCheckParentNode]='autoCheckParentNode'>
+ </ej-treeview>
 
   {% endhighlight %}
 
@@ -87,7 +88,8 @@ export class AppComponent {
     }
     ];
     
-    public field:Object = { dataSource: this.continents, id: 'code', text: 'name', child: 'countries' };
+    public field:Object = { dataSource: this.continents, id: 'code', text: 'name', 
+    child: 'countries' };
 
     public autoCheckParentNode: boolean = false;
 }

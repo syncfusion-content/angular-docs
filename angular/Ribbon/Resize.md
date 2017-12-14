@@ -19,13 +19,14 @@ Set [`isResponsive`](http://help.syncfusion.com/api/js/ejribbon#members:isrespon
 
 {% highlight html %}
 
-<ej-ribbon id="Default" width="20%" applicationTab.type="menu" applicationTab.menuItemID="ribbonmenu" isResponsive="true">
+<ej-ribbon id="Default" width="20%" applicationTab.type="menu" 
+applicationTab.menuItemID="menu" isResponsive="true">
      <e-tabs>
         <e-tab id="home" text="HOME" [groups]="groups1">
         </e-tab>
      </e-tabs>
 </ej-ribbon>
-<ul id="ribbonmenu">
+<ul id="menu">
     <li>
         <a>FILE </a>
         <ul>
@@ -43,7 +44,7 @@ import {Component} from '@angular/core';
 import {NorthwindService} from '../../services/northwind.service';
 
 @Component({
-  selector: 'sd-home',
+  selector: 'ej-app',
   templateUrl: 'app/components/ribbon/ribbon.component.html',
   providers: [NorthwindService]
 })
@@ -109,7 +110,8 @@ For each group shirked for resizing, Custom Class will be added based on group t
 
 {% highlight html %}
 
-<ej-ribbon id="Default" width="40%" applicationTab.type="menu" allowResizing="true" applicationTab.menuItemID="ribbonmenu">
+<ej-ribbon id="Default" width="40%" applicationTab.type="menu" allowResizing="true" 
+applicationTab.menuItemID="menu">
     <e-tabs>
         <e-tab id="home" text="HOME" [groups]="groups1">
         </e-tab>
@@ -117,7 +119,7 @@ For each group shirked for resizing, Custom Class will be added based on group t
         </e-tab>
     </e-tabs>
 </ej-ribbon>
-<ul id="ribbonmenu">
+<ul id="menu">
     <li>
         <a>FILE</a>
         <ul>
@@ -135,7 +137,7 @@ import {Component} from '@angular/core';
 import {NorthwindService} from '../../services/northwind.service';
 
 @Component({
-  selector: 'sd-home',
+  selector: 'ej-app',
   templateUrl: 'app/components/ribbon/ribbon.component.html',
   styleUrls: ['app/components/ribbon/ribbon.component.css'],
   providers: [NorthwindService]
@@ -190,18 +192,18 @@ export class RibbonComponent {
             alignType: "rows",
             content: [{
                 groups: [{
-                    id: "fontfamily",
+                    id: "font",
                     toolTip: "Font",
                     dropdownSettings: {
-                        dataSource: fontfamily,
+                        dataSource: font,
                         text: "Segoe UI",
                         width: 150
                     }
                 }, {
-                        id: "fontsize",
+                        id: "size",
                         toolTip: "FontSize",
                         dropdownSettings: {
-                            dataSource: fontsize,
+                            dataSource: size,
                             text: "1pt",
                             width: 65
                         }
@@ -280,8 +282,8 @@ export class RibbonComponent {
             }
         }]
     }]
-       var fontfamily = ["Segoe UI", "Arial"],
-        fontsize = ["1pt", "2pt"];
+       var font = ["Segoe UI", "Arial"],
+        var size = ["1pt", "2pt"];
   }
      
 {% endhighlight %}

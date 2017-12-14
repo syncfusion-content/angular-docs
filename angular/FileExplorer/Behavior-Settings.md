@@ -19,9 +19,11 @@ By default it having the value “*.*”, so it allows all the file types. In ca
 
 {% highlight html %}
 
-<ej-fileexplorer id="fileExplorer" path= "http://js.syncfusion.com/demos/ejServices/Content/FileBrowser/"
-    ajaxAction="http://js.syncfusion.com/demos/ejServices/api/FileExplorer/FileOperations" 
-    width="100%" minWidth="150px" fileTypes="*.png, *.gif, *.jpg, *.jpeg" layout= "tile" style="display:block">
+<ej-fileexplorer id="fileExplorer" 
+  path= "http://js.syncfusion.com/demos/ejServices/Content/FileBrowser/"
+  ajaxAction="http://js.syncfusion.com/demos/ejServices/api/FileExplorer/FileOperations" 
+  width="100%" minWidth="150px" fileTypes="*.png, *.gif, *.jpg, *.jpeg" layout= "tile" 
+  style="display:block">
 </ej-fileexplorer>
 
 {% endhighlight %}
@@ -56,8 +58,10 @@ If you want to customize read action alone, the AJAX **url** and **dataType** ar
 
 {% highlight html %}
 
-<ej-fileexplorer id="fileExplorer" path= "http://js.syncfusion.com/demos/ejServices/Content/FileBrowser/"
-    ajaxAction="http://js.syncfusion.com/demos/ejServices/api/FileExplorer/FileOperations" [ajaxSettings]="ajaxSettings" style="display:block">
+<ej-fileexplorer id="fileExplorer" 
+    path= "http://js.syncfusion.com/demos/ejServices/Content/FileBrowser/"
+    ajaxAction="http://js.syncfusion.com/demos/ejServices/api/FileExplorer/FileOperations" 
+    [ajaxSettings]="ajaxSettings" style="display:block">
 </ej-fileexplorer>
 
 {% endhighlight %}

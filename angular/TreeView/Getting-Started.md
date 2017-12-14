@@ -11,9 +11,9 @@ keywords: ejtreeview, js treeview, treeview
 
 This section explains briefly about how to create a **TreeView** control in your application with **Angular**.
 
-## Create TreeView in Angular Application using Webpack
+## Create TreeView in Angular Application using Web pack
 
-To quick start with Syncfusion JavaScript Angular components run the below commands to clone the repository for [Webpack starter](https://github.com/syncfusion/angular2-seeds) and installing required dependency packages.
+To quick start with Syncfusion JavaScript Angular components run the below commands to clone the repository for [Web pack starter](https://github.com/syncfusion/angular2-seeds) and installing required dependency packages.
 
 {% highlight javascript %}
  > git clone https://github.com/syncfusion/angular2-seeds
@@ -94,7 +94,7 @@ N> `core.ts` file is mandatory for all Syncfusion JavaScript Angular components.
                     <li>
                         Classical
                         <ul>
-                            <li>Avant-Garde</li>
+                            <li>Renaissance</li>
                             <li>Medieval</li>
                             <li>Orchestral</li>
                         </ul>
@@ -129,7 +129,7 @@ Before adding router configuration for above created ejTreeView component, we re
 <div>
 	<ul class="nav navbar-nav">
 		. . . .
-		<li><a data-toggle="collapse" data-target="#skeleton-navigation-navbar-collapse.in" href="#treeview" [routerLink]="['/treeview']">TreeView </a></li>
+	<li><a data-toggle="collapse" data-target="#skeleton-navigation-navbar-collapse.in" href="#treeview" [routerLink]="['/treeview']">TreeView </a></li>
 	</ul>
 </div>
 <main>
@@ -163,7 +163,8 @@ import { TreeViewComponent } from './treeview/treeview.component';
 import { rootRouterConfig } from './app.routes';
 . . . . 
 @NgModule({
-  imports: [BrowserModule, FormsModule, HttpModule, EJAngular2Module.forRoot(), RouterModule.forRoot(rootRouterConfig, { useHash: true })],
+  imports: [BrowserModule, FormsModule, HttpModule, EJAngular2Module.forRoot(), 
+  RouterModule.forRoot(rootRouterConfig, { useHash: true })],
   declarations: [. . . . , TreeViewComponent],
   bootstrap: [AppComponent]
 })
@@ -267,7 +268,7 @@ N> `core.ts` file is mandatory for all Syncfusion JavaScript Angular components.
                     <li>
                         Classical
                         <ul>
-                            <li>Avant-Garde</li>
+                            <li>Renaissance</li>
                             <li>Medieval</li>
                             <li>Orchestral</li>
                         </ul>
@@ -302,7 +303,8 @@ Before adding router configuration for above created ejTreeView component, we re
 <div>
 	<ul class="nav navbar-nav">
 		. . . .
-		<li><a data-toggle="collapse" data-target="#skeleton-navigation-navbar-collapse.in" href="#treeview" [routerLink]="['/treeview']">TreeView </a></li>
+	<li><a data-toggle="collapse" data-target="#skeleton-navigation-navbar-collapse.in" href="#treeview" 
+    [routerLink]="['/treeview']">TreeView </a></li>
 	</ul>
 </div>
 <main>
@@ -336,7 +338,8 @@ import { TreeViewComponent } from './treeview/treeview.component';
 import { rootRouterConfig } from './app.routes';
 . . . . 
 @NgModule({
-  imports: [BrowserModule, FormsModule, HttpModule, EJAngular2Module.forRoot(), RouterModule.forRoot(rootRouterConfig, { useHash: true })],
+  imports: [BrowserModule, FormsModule, HttpModule, EJAngular2Module.forRoot(), 
+  RouterModule.forRoot(rootRouterConfig, { useHash: true })],
   declarations: [. . . . , TreeViewComponent],
   bootstrap: [AppComponent]
 })

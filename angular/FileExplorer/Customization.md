@@ -15,8 +15,10 @@ The dimension of the FileExplorer can be customized through `height` and `width`
 
 {% highlight html %}
 
-<ej-fileexplorer id="fileExplorer" path= "http://js.syncfusion.com/demos/ejServices/Content/FileBrowser/"
-    ajaxAction="http://js.syncfusion.com/demos/ejServices/api/FileExplorer/FileOperations" width="900px" height="300px" style="display:block">
+<ej-fileexplorer id="fileExplorer" 
+   path= "http://js.syncfusion.com/demos/ejServices/Content/FileBrowser/"
+   ajaxAction="http://js.syncfusion.com/demos/ejServices/api/FileExplorer/FileOperations" 
+   width="900px" height="300px" style="display:block">
 </ej-fileexplorer>
 
 {% endhighlight %}
@@ -29,8 +31,10 @@ The visibility of the navigation pane can be controlled by the `showNavigationPa
 
 {% highlight html %}
 
-<ej-fileexplorer id="fileExplorer" path= "http://js.syncfusion.com/demos/ejServices/Content/FileBrowser/"
-    ajaxAction="http://js.syncfusion.com/demos/ejServices/api/FileExplorer/FileOperations" [showNavigationPane]="false" style="display:block">
+<ej-fileexplorer id="fileExplorer" 
+   path= "http://js.syncfusion.com/demos/ejServices/Content/FileBrowser/"
+   ajaxAction="http://js.syncfusion.com/demos/ejServices/api/FileExplorer/FileOperations" 
+   [showNavigationPane]="false" style="display:block">
 </ej-fileexplorer>
 
 {% endhighlight %}
@@ -57,8 +61,10 @@ Also the layout views can be changed through the `layout` property.
 
 {% highlight html %}
 
-<ej-fileexplorer id="fileExplorer" path= "http://js.syncfusion.com/demos/ejServices/Content/FileBrowser/"
-    ajaxAction="http://js.syncfusion.com/demos/ejServices/api/FileExplorer/FileOperations" layout="tile" style="display:block">
+<ej-fileexplorer id="fileExplorer" 
+  path= "http://js.syncfusion.com/demos/ejServices/Content/FileBrowser/"
+  ajaxAction="http://js.syncfusion.com/demos/ejServices/api/FileExplorer/FileOperations" 
+  layout="tile" style="display:block">
 </ej-fileexplorer>
 
 {% endhighlight %}
@@ -71,8 +77,10 @@ The behavior of the columns can be customized through the `columns` property.
 
 {% highlight html %}
 
-<ej-fileexplorer id="fileExplorer" path= "http://js.syncfusion.com/demos/ejServices/Content/FileBrowser/"
-    ajaxAction="http://js.syncfusion.com/demos/ejServices/api/FileExplorer/FileOperations" [gridSettings]="gridSettings" style="display:block">
+<ej-fileexplorer id="fileExplorer" 
+   path= "http://js.syncfusion.com/demos/ejServices/Content/FileBrowser/"
+   ajaxAction="http://js.syncfusion.com/demos/ejServices/api/FileExplorer/FileOperations" 
+   [gridSettings]="gridSettings" style="display:block">
 </ej-fileexplorer>
 
 {% endhighlight %}
@@ -94,7 +102,8 @@ export class FileExplorerComponent {
         columns: [
             { field: "name", headerText: "Name", width: 150 },
             { field: "dateModified", headerText: "Date Modified", width: 150 },
-            { field: "size", headerText: "Size", width: 90, textAlign: "right", headerTextAlign: "left" }
+            { field: "size", headerText: "Size", width: 90, textAlign: "right",
+             headerTextAlign: "left" }
         ]
         }   
     }
@@ -108,8 +117,10 @@ The footer displays the details of the current selected files and folders, and t
 
 {% highlight html %}
 
-<ej-fileexplorer id="fileExplorer" path= "http://js.syncfusion.com/demos/ejServices/Content/FileBrowser/"
-    ajaxAction="http://js.syncfusion.com/demos/ejServices/api/FileExplorer/FileOperations" [showFooter]="false" style="display:block">
+<ej-fileexplorer id="fileExplorer" 
+   path= "http://js.syncfusion.com/demos/ejServices/Content/FileBrowser/"
+   ajaxAction="http://js.syncfusion.com/demos/ejServices/api/FileExplorer/FileOperations" 
+   [showFooter]="false" style="display:block">
 </ej-fileexplorer>
 
 {% endhighlight %}

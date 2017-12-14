@@ -21,7 +21,8 @@ In the **HTML** page set the corresponding **&lt;input&gt;** elements for render
 
 {% highlight html %}
 
-<input id="percent" type="text" ej-percentagetextbox [value]="value" [decimalPlaces]="decimalPlaces" />
+<input id="percent" type="text" ej-percentagetextbox [value]="value"
+ [decimalPlaces]="decimalPlaces" />
 
 {% endhighlight %}
 
@@ -60,7 +61,8 @@ In the **HTML** page set the corresponding **&lt;input&gt;** elements for render
 
 {% highlight html %}
 
-<input id="percent" type="text" ej-percentagetextbox [value]="value" [enablePersistence]="true" />
+<input id="percent" type="text" ej-percentagetextbox [value]="value" 
+[enablePersistence]="true" />
 
 {% endhighlight %}
 
@@ -108,7 +110,8 @@ In the **HTML** page set the corresponding **&lt;input&gt;** elements for render
 
 {% highlight html %}
 
-<input id="percent" type="text" ej-percentagetextbox [value]="value" [minValue]="minValue" [maxValue]="maxValue" [enableStrictMode]="true" />
+<input id="percent" type="text" ej-percentagetextbox [value]="value" [minValue]="minValue" 
+[maxValue]="maxValue" [enableStrictMode]="true" />
 
 {% endhighlight %}
 
@@ -195,7 +198,8 @@ In the **HTML** page set the corresponding **&lt;input&gt;** elements for render
 
 {% highlight html %}
 
-<input id="percent" type="text" ej-percentagetextbox [value]="value" [width]="width" [height]="height" />
+<input id="percent" type="text" ej-percentagetextbox [value]="value" [width]="width" 
+[height]="height" />
 
 {% endhighlight %}
 
@@ -236,7 +240,8 @@ In the **HTML** page set the corresponding **&lt;input&gt;** elements for render
 
 {% highlight html %}
 
-<input id="percent" type="text" ej-percentagetextbox [value]="value" [incrementStep]="incrementStep" />
+<input id="percent" type="text" ej-percentagetextbox [value]="value"
+ [incrementStep]="incrementStep" />
 
 {% endhighlight %}
 
