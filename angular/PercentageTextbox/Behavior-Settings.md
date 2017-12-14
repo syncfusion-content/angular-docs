@@ -557,7 +557,8 @@ In the **HTML** page set the corresponding **&lt;input&gt;** elements for render
 
 {% highlight html %}
 
-<input id="percent" type="text" ej-percentagetextbox [value]="value" [showRoundedCorner]="true"/>
+<input id="percent" type="text" ej-percentagetextbox [value]="value" 
+[showRoundedCorner]="true"/>
 
 {% endhighlight %}
 

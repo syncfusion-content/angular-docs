@@ -280,7 +280,8 @@ Specifies the [`custom tooltip`](http://help.syncfusion.com/api/js/ejribbon#memb
 {% highlight html %}
 
        <ej-ribbon id="resize" width="300" applicationTab.type="menu" 
-       applicationTab.menuItemID="menu" [collapsePinSettings.customToolTip]="tooltip" applicationTab.menuSettings.openOnClick="false">
+       applicationTab.menuItemID="menu" [collapsePinSettings.customToolTip]="tooltip" 
+       applicationTab.menuSettings.openOnClick="false">
         <e-tabs>
             <e-tab id="home" text="HOME" [groups]="groups1">
             </e-tab>
@@ -350,7 +351,8 @@ export class ResizeComponent {
 {% highlight html %}
 
       <ej-ribbon id="resize" width="300" applicationTab.type="menu" 
-       applicationTab.menuItemID="menu" [collapsePinSettings.customToolTip]="tooltip" applicationTab.menuSettings.openOnClick="false">
+       applicationTab.menuItemID="menu" [collapsePinSettings.customToolTip]="tooltip" 
+       applicationTab.menuSettings.openOnClick="false">
         <e-tabs>
             <e-tab id="home" text="HOME" [groups]="groups1">
             </e-tab>

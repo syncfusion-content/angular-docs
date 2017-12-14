@@ -106,7 +106,8 @@ In the HTML page set the corresponding &lt;input&gt; elements for rendering Nume
 
 {% highlight html %}
 
-<input id="numeric" type="text" ej-numerictextbox [value]="value" [minValue]="minValue"  [maxValue]="maxValue" [enableStrictMode]="true"/>
+<input id="numeric" type="text" ej-numerictextbox [value]="value" [minValue]="minValue"  
+[maxValue]="maxValue" [enableStrictMode]="true"/>
     
 {% endhighlight %}
 
