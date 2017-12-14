@@ -32,13 +32,14 @@ Separates the control from the next control in the group when group `alignType` 
 
 {% highlight html %}
 
-<ej-ribbon id="Default" width="500px" applicationTab.type="menu" applicationTab.menuItemID="ribbonmenu">
+<ej-ribbon id="Default" width="500px" applicationTab.type="menu"
+ applicationTab.menuItemID="menu">
    <e-tabs>
         <e-tab id="home" text="HOME" [groups]="groups1">
         </e-tab>
    </e-tabs>
 </ej-ribbon>
-<ul id="ribbonmenu">
+<ul id="menu">
    <li>
         <a>FILE </a>
         <ul>
@@ -56,7 +57,7 @@ import {Component} from '@angular/core';
 import {NorthwindService} from '../../services/northwind.service';
 
 @Component({
-  selector: 'sd-home',
+  selector: 'ej-app',
   templateUrl: 'app/components/ribbon/ribbon.component.html',
   providers: [NorthwindService]
 })
@@ -103,14 +104,15 @@ Set group [`type`](http://help.syncfusion.com/api/js/ejribbon#members:tabs-group
 
 {% highlight html %}
 
-<ej-ribbon id="Default" width="500px" applicationTab.type="menu" applicationTab.menuItemID="ribbonmenu">
+<ej-ribbon id="Default" width="500px" applicationTab.type="menu" 
+applicationTab.menuItemID="menu">
     <e-tabs>
         <e-tab id="home" text="HOME" [groups]="groups1">
         </e-tab>
     </e-tabs>
 </ej-ribbon>
 
-<ul id="ribbonmenu">
+<ul id="menu">
     <li>
         <a>FILE </a>
         <ul>
@@ -118,7 +120,7 @@ Set group [`type`](http://help.syncfusion.com/api/js/ejribbon#members:tabs-group
         </ul>
     </li>
 </ul>
-<button id="btn">Using Content ID</button>
+<button id="button">Using Content ID</button>
 
 {% endhighlight %}
 
@@ -128,7 +130,7 @@ import {Component} from '@angular/core';
 import {NorthwindService} from '../../services/northwind.service';
 
 @Component({
-  selector: 'sd-home',
+  selector: 'ej-app',
   templateUrl: 'app/components/ribbon/ribbon.component.html',
   providers: [NorthwindService]
 })
@@ -142,7 +144,7 @@ groups1 = [{
      }, {
          text: "Data",
          type: "custom",
-         contentID: "btn"
+         contentID: "button"
      }]
   }
       
@@ -156,13 +158,14 @@ Set [`enableGroupExpander`](http://help.syncfusion.com/api/js/ejribbon#members:t
 
 {% highlight html %}
 
-<ej-ribbon id="Default" width="500px" applicationTab.type="menu" applicationTab.menuItemID="ribbonmenu">
+<ej-ribbon id="Default" width="500px" applicationTab.type="menu" 
+applicationTab.menuItemID="menu">
     <e-tabs>
         <e-tab id="home" text="HOME" [groups]="groups1">
         </e-tab>
     </e-tabs>
 </ej-ribbon>
-<ul id="ribbonmenu">
+<ul id="menu">
     <li>
         <a>FILE </a>
         <ul>
@@ -170,7 +173,7 @@ Set [`enableGroupExpander`](http://help.syncfusion.com/api/js/ejribbon#members:t
         </ul>
     </li>
 </ul>
-<button id="btn">Home button</button>
+<button id="button">Home button</button>
 
 {% endhighlight %}
 
@@ -180,7 +183,7 @@ import {Component} from '@angular/core';
 import {NorthwindService} from '../../services/northwind.service';
 
 @Component({
-  selector: 'sd-home',
+  selector: 'ej-app',
   templateUrl: 'app/components/ribbon/ribbon.component.html',
   providers: [NorthwindService]
 })
@@ -192,7 +195,7 @@ export class RibbonComponent {
         alignType: "rows",
         type: "custom",
         enableGroupExpander: true,
-        contentID: "btn"
+        contentID: "button"
     }]
   }
 {% endhighlight %}

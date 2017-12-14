@@ -93,8 +93,9 @@ The presence of the context menu can be controlled by the `showContextMenu` prop
 
 {% highlight html %}
 
-<ej-fileexplorer id="fileExplorer" path= "http://js.syncfusion.com/demos/ejServices/Content/FileBrowser/"
-    ajaxAction="http://js.syncfusion.com/demos/ejServices/api/FileExplorer/FileOperations" 
+<ej-fileexplorer id="fileExplorer" 
+   path= "http://js.syncfusion.com/demos/ejServices/Content/FileBrowser/"
+   ajaxAction="http://js.syncfusion.com/demos/ejServices/api/FileExplorer/FileOperations" 
    [showContextMenu]="false" style="display:block">
 </ej-fileexplorer>
 
@@ -138,10 +139,12 @@ To add/remove/re-arrange context menu items, you need to use contextMenuSettings
 
 {% highlight html %}
 	
-<ej-fileexplorer id="fileExplorer" path= "http://js.syncfusion.com/demos/ejServices/Content/FileBrowser/"
-    ajaxAction="http://js.syncfusion.com/demos/ejServices/api/FileExplorer/FileOperations"
-    (menuOpen)="onMenuOpen($event)" (layoutChange)="onLayoutChange()" 
-    [isResponsive]="true" minWidth="150px" [contextMenuSettings]="contextMenuSettings" width="100%" layout="tile" style="display:block">
+<ej-fileexplorer id="fileExplorer" 
+  path= "http://js.syncfusion.com/demos/ejServices/Content/FileBrowser/"
+  ajaxAction="http://js.syncfusion.com/demos/ejServices/api/FileExplorer/FileOperations"
+  (menuOpen)="onMenuOpen($event)" (layoutChange)="onLayoutChange()" 
+  [isResponsive]="true" minWidth="150px" [contextMenuSettings]="contextMenuSettings"
+  width="100%" layout="tile" style="display:block">
 </ej-fileexplorer>
 
 {% endhighlight %}
@@ -154,7 +157,8 @@ import { ViewEncapsulation } from '@angular/core';
 @Component({
   selector: 'ej-app',
   templateUrl: 'src/fileexplorer/fileexplorer.component.html',
-  styleUrls: ['src/fileexplorer/fileexplorer.component.css'], encapsulation: ViewEncapsulation.None,
+  styleUrls: ['src/fileexplorer/fileexplorer.component.css'],
+  encapsulation: ViewEncapsulation.None,
 })
 export class FileExplorerComponent {
     contextMenuSettings: Object;
@@ -163,12 +167,15 @@ export class FileExplorerComponent {
                     // define the ContextMenu items
                     items: {
                         // removed the 'NewFolder' item from NavigationPane ContextMenu
-                        navbar: ['Upload', '|', 'Delete', 'Rename', '|', 'Cut', 'Copy', 'Paste', '|', 'Getinfo'],
-                        // added the custom ContextMenu item (View) to Current working directory ContextMenu
-                        cwd: ['Refresh', 'Paste', '|', 'SortBy', 'View', '|', 'NewFolder', 'Upload', '|', 'Getinfo'],
+                        navbar: ['Upload', '|', 'Delete', 'Rename', '|', 'Cut', 'Copy',
+                        'Paste', '|', 'Getinfo'],
+                        // added the custom ContextMenu item (View) to Current working 
+                        directory ContextMenu
+                        cwd: ['Refresh', 'Paste', '|', 'SortBy', 'View', '|', 'NewFolder',
+                        'Upload', '|', 'Getinfo'],
                         // removed 'Upload' item from Selected files/ folder's ContextMenu
-                        files: ['Open', 'Download', '|', 'Delete', 'Rename', '|', 'Cut', 'Copy', 'Paste', '|',
-                            'OpenFolderLocation', 'Getinfo']
+                        files: ['Open', 'Download', '|', 'Delete', 'Rename', '|', 'Cut',
+                        'Copy', 'Paste', '|','OpenFolderLocation', 'Getinfo']
                     },
                     // added the custom ContextMenu item's (View) functionality
                     customMenuFields: [
@@ -181,24 +188,24 @@ export class FileExplorerComponent {
                             id: 'tile',
                             text: 'Tile view',
                             action: function (event) {
-                                 let fileExplorerObj = $('#fileExplorer4').data('ejFileExplorer');
-                                 fileExplorerObj.option('layout', event.ID);
+                            let fileExplorerObj = $('#fileExplorer4').data('ejFileExplorer');
+                            fileExplorerObj.option('layout', event.ID);
                             }
                         },
                         {
                             id: 'grid',
                             text: 'Grid view',
                            action: function (event) {
-                                 let fileExplorerObj = $('#fileExplorer4').data('ejFileExplorer');
-                                 fileExplorerObj.option('layout', event.ID);
+                           let fileExplorerObj = $('#fileExplorer4').data('ejFileExplorer');
+                           fileExplorerObj.option('layout', event.ID);
                             }
                         },
                         {
-                            id: 'largeicons',
-                            text: 'Large icons view',
+                            id: 'large',
+                            text: 'large',
                            action: function (event) {
-                                 let fileExplorerObj = $('#fileExplorer4').data('ejFileExplorer');
-                                 fileExplorerObj.option('layout', event.ID);
+                           let fileExplorerObj = $('#fileExplorer4').data('ejFileExplorer');
+                           fileExplorerObj.option('layout', event.ID);
                             }
                         }, ]
                     }, ]
@@ -206,14 +213,15 @@ export class FileExplorerComponent {
     }
     onLayoutChange() {
          let fileExplorerObj = $('#fileExplorer4').data('ejFileExplorer');
-         $('.fe-context-menu .View').removeClass('custom-grid custom-tile custom-largeicons');
+         $('.fe-context-menu .View').removeClass('custom-grid custom-tile custom-large');
          $('.fe-context-menu .View').addClass('custom-' + fileExplorerObj.model.layout);
     }
     onMenuOpen(event) {
         if (event.contextMenu == 'cwd') {
                 let fileExplorerObj = $('#fileExplorer4').data('ejFileExplorer');
                 $('.fe-context-menu').find('.e-fe-activeicon').removeClass('e-fe-activeicon');
-                $('.fe-context-menu').find('.' + fileExplorerObj.model.layout).addClass('e-fe-activeicon');
+                $('.fe-context-menu').find('.' + fileExplorerObj.model.layout)
+                .addClass('e-fe-activeicon');
             }
     }
 }
@@ -228,7 +236,7 @@ Icons of context menu items can be customized by overriding the default context 
         content: "\e7b9";
     }
 
-    .fe-context-menu .custom-largeicons:before {
+    .fe-context-menu .custom-large:before {
         content: "\e7bb";
     }
 
@@ -250,10 +258,11 @@ You would be notified with events when you try to open the context menu items (*
 
 {% highlight html %}
 
-<ej-fileexplorer id="fileExplorer" path= "http://js.syncfusion.com/demos/ejServices/Content/FileBrowser/"
-    ajaxAction="http://js.syncfusion.com/demos/ejServices/api/FileExplorer/FileOperations"
-    (menuOpen)="onMenuOpen($event)" (menuBeforeOpen)="onMenuBeforeOpen($event)" (menuClick)="onMenuClick($event)"
-     style="display:block">
+<ej-fileexplorer id="fileExplorer" 
+   path= "http://js.syncfusion.com/demos/ejServices/Content/FileBrowser/"
+   ajaxAction="http://js.syncfusion.com/demos/ejServices/api/FileExplorer/FileOperations"
+   (menuOpen)="onMenuOpen($event)" (menuBeforeOpen)="onMenuBeforeOpen($event)" 
+   (menuClick)="onMenuClick($event) "style="display:block">
 </ej-fileexplorer>
 
 {% endhighlight %}
@@ -282,7 +291,7 @@ export class FileExplorerComponent {
     }
     onMenuClick(event) {
         switch (args.text) {
-            case "largeicons":
+            case "large":
                 //do your custom action here.
                 break;
         }

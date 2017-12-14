@@ -24,13 +24,14 @@ Set the UL element `id` to [`applicationTab.menuItemID`](http://help.syncfusion.
 
 {% highlight html %}
     
-     <ej-ribbon id="Default" width="500px" applicationTab.type="menu" applicationTab.menuItemID="ribbonmenu" applicationTab.menuSettings.openOnClick="false">
+     <ej-ribbon id="Default" width="500px" applicationTab.type="menu" 
+     applicationTab.menuItemID="menu" applicationTab.menuSettings.openOnClick="false">
         <e-tabs>
             <e-tab id="home" text="HOME" [groups]="groups1">
             </e-tab>
         </e-tabs>
      </ej-ribbon>
-      <ul id="ribbonmenu">
+      <ul id="menu">
           <li>
             <a>FILE</a>
                <ul>
@@ -52,7 +53,7 @@ import {Component} from '@angular/core';
 import {NorthwindService} from '../../services/northwind.service';
 
 @Component({
-  selector: 'sd-home',
+  selector: 'ej-app',
   templateUrl: 'app/components/ribbon/ribbon.component.html',
   providers: [NorthwindService]
 })

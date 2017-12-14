@@ -19,7 +19,8 @@ The following steps explain the **State Maintenance** in the **MaskEdit** contro
 
 {% highlight html %}
 
-<input id="maskedit" ej-maskedit [name]="name" [maskFormat]="format" [inputMode]="inputMode" [enablePersistence]="true" />
+<input id="maskedit" ej-maskedit [name]="name" [maskFormat]="format" 
+[inputMode]="inputMode" [enablePersistence]="true" />
     
 {% endhighlight %}
 
@@ -61,7 +62,8 @@ In the **HTML** page, add a **&lt;div&gt;** element to render the **MaskEdit** w
 
 {% highlight html %}
 
-<input id="maskedit" ej-maskedit [name]="name" [maskFormat]="format" [inputMode]="inputMode" [enabled]="false" />
+<input id="maskedit" ej-maskedit [name]="name" [maskFormat]="format" [inputMode]="inputMode" 
+[enabled]="false" />
     
 {% endhighlight %}
 
@@ -108,7 +110,8 @@ In the **HTML** page, add a **&lt;div&gt;** element to render the **MaskEdit** w
 
 {% highlight html %}
 
-<input id="maskedit" ej-maskedit [name]="name" [maskFormat]="format" [inputMode]="inputMode" [width]="width" [height]="height"/>
+<input id="maskedit" ej-maskedit [name]="name" [maskFormat]="format" [inputMode]="inputMode" 
+[width]="width" [height]="height"/>
     
 {% endhighlight %}
 
@@ -151,7 +154,8 @@ In the **HTML** page, add a **&lt;div&gt;** element to render the **MaskEdit** w
 
 {% highlight html %}
 
-<input id="maskedit" ej-maskedit [name]="name" [maskFormat]="format" [inputMode]="inputMode" [value]="value"/>
+<input id="maskedit" ej-maskedit [name]="name" [maskFormat]="format" [inputMode]="inputMode" 
+[value]="value"/>
     
 {% endhighlight %}
 
@@ -192,7 +196,8 @@ In the **HTML** page, add a **&lt;div&gt;** element to render the **MaskEdit** w
 
 {% highlight html %}
 
-<input id="maskedit" ej-maskedit [name]="name" [maskFormat]="format" [inputMode]="inputMode" [value]="value" [readOnly]="true"/>
+<input id="maskedit" ej-maskedit [name]="name" [maskFormat]="format" [inputMode]="inputMode" 
+[value]="value" [readOnly]="true"/>
     
 {% endhighlight %}
 
@@ -233,7 +238,8 @@ In the **HTML** page, add a **&lt;div&gt;** element to render the **MaskEdit** w
 
 {% highlight html %}
 
-<input id="maskedit" ej-maskedit [name]="name" [maskFormat]="format" [inputMode]="inputMode" [value]="value" [showError]="true"/>
+<input id="maskedit" ej-maskedit [name]="name" [maskFormat]="format" [inputMode]="inputMode" 
+[value]="value" [showError]="true"/>
     
 {% endhighlight %}
 

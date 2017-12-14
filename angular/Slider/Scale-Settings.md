@@ -22,7 +22,8 @@ In an **HTML** page, specify the **<div>** elements to render the “Default Sli
 {% highlight html %}
 
 <div>Default Slider</div>
-<ej-slider id='defaultSlider' [type]='default' [value]='value' [max]='maxvalue' [min]='minvalue' [ticks]='ticks'></ej-slider>
+<ej-slider id='defaultSlider' [type]='default' [value]='value' [max]='maxValue' 
+[min]='minValue' [ticks]='ticks'></ej-slider>
 
 <div>Range Slider</div>
 <ej-slider id='rangeSlider' [type]='range' [value]='value' [ticks]='ticks'></ej-slider>
@@ -71,7 +72,8 @@ In an **HTML** page, specify the **<div>** elements to render the “Default Sli
 
 
 <div>Default Slider</div>
-<ej-slider id='defaultSlider' [type]='default' [value]='value' [max]='maxvalue' [min]='minvalue' [ticks]='ticks'></ej-slider>
+<ej-slider id='defaultSlider' [type]='default' [value]='value' [max]='maxValue' 
+[min]='minValue' [ticks]='ticks'></ej-slider>
 
 <div>Range Slider</div>
 <ej-slider id='rangeSlider' [type]='range' [value]='value' [ticks]='ticks'></ej-slider>
@@ -125,7 +127,8 @@ In an **HTML** page, specify the **<div>** elements to render the “Default Sli
 {% highlight html %}
 
 <div>Default Slider</div>
-<ej-slider id='defaultSlider' [type]='default' [value]='value' [max]='maxvalue' [min]='minvalue' [ticks]='ticks'></ej-slider>
+<ej-slider id='defaultSlider' [type]='default' [value]='value' [max]='maxValue' 
+[min]='minValue' [ticks]='ticks'></ej-slider>
 
 <div>Range Slider</div>
 <ej-slider id='rangeSlider' [type]='range' [value]='value' [ticks]='ticks'></ej-slider>

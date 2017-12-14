@@ -97,7 +97,8 @@ In the HTML page, add a &lt;div&gt; element to render the MaskEdit widget.
 
 {% highlight html %}
 
-<input id="maskedit" ej-maskedit [value]="value" [maskFormat]="format" [showRoundedCorner]="true" [inputMode]="inputMode" />
+<input id="maskedit" ej-maskedit [value]="value" [maskFormat]="format" 
+[showRoundedCorner]="true" [inputMode]="inputMode" />
     
 {% endhighlight %}
 
@@ -136,7 +137,8 @@ In the HTML page, add a &lt;div&gt; element to render the MaskEdit widget.
 
 {% highlight html %}
 
-<input id="maskedit" ej-maskedit [name]="name" [maskFormat]="format" [watermarkText]="watermarkText" [inputMode]="inputMode" />
+<input id="maskedit" ej-maskedit [name]="name" [maskFormat]="format" 
+[watermarkText]="watermarkText" [inputMode]="inputMode" />
     
 {% endhighlight %}
 
@@ -178,7 +180,8 @@ In the HTML page, add a &lt;div&gt; element to render the MaskEdit widget
 
 {% highlight html %}
 
-<input id="maskedit" ej-maskedit [name]="name" [maskFormat]="format" [textAlign]="textAlign" [inputMode]="inputMode" />
+<input id="maskedit" ej-maskedit [name]="name" [maskFormat]="format" [textAlign]="textAlign" 
+[inputMode]="inputMode" />
     
 {% endhighlight %}
 

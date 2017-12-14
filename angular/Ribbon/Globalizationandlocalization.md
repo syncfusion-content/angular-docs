@@ -49,13 +49,14 @@ For further information on – how to refer the required culture scripts into yo
 
 {% highlight html %}
 
-<ej-ribbon id="resize" width="600" locale="es-ES" showQAT="true" applicationTab.type="menu" applicationTab.menuItemID="ribbonmenu" applicationTab.menuSettings.openOnClick="false">
+<ej-ribbon id="resize" width="600" locale="es-ES" showQAT="true" applicationTab.type="menu"
+ applicationTab.menuItemID="menu" applicationTab.menuSettings.openOnClick="false">
      <e-tabs>
          <e-tab id="home" text="HOME" [groups]="groups1">
          </e-tab>
      </e-tabs>
 </ej-ribbon>
-<ul id="ribbonmenu">
+<ul id="menu">
     <li>
         <a>FILE</a>
         <ul>
@@ -123,13 +124,14 @@ By default, Ribbon render its content and layout from left to right. To customiz
 
 {% highlight html %}
 
-<ej-ribbon id="kanban" width="40%" [enableRTL]="true" applicationTab.type="menu" applicationTab.menuItemID="ribbonmenu" applicationTab.menuSettings.openOnClick="false">
+<ej-ribbon id="kanban" width="40%" [enableRTL]="true" applicationTab.type="menu" 
+applicationTab.menuItemID="menu" applicationTab.menuSettings.openOnClick="false">
      <e-tabs>
         <e-tab id="home" text="HOME" [groups]="groups1">
         </e-tab>
        </e-tabs>
 </ej-ribbon>
-<ul id="ribbonmenu">
+<ul id="menu">
      <li>
         <a>FILE</a>
         <ul>

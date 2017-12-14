@@ -45,7 +45,8 @@ From below you can see the available toolbar items and its categorization:
 
         // all tools categories are placed in the toolbar by the below order
 
-        this.toolsList: ["layout", "creation", "navigation", "addressBar", "editing", "copyPaste", "sortBy", "getProperties", "searchBar"]
+        this.toolsList: ["layout", "creation", "navigation", "addressBar", "editing", 
+        "copyPaste", "sortBy", "getProperties", "searchBar"]
 
 {% endhighlight %}
 
@@ -130,8 +131,10 @@ The visibility of the toolbar can be customized through the `showToolbar` proper
 
 {% highlight html %}
 
-<ej-fileexplorer id="fileExplorer" path= "http://js.syncfusion.com/demos/ejServices/Content/FileBrowser/"
-    ajaxAction="http://js.syncfusion.com/demos/ejServices/api/FileExplorer/FileOperations" [showToolbar]="false" style="display:block">
+<ej-fileexplorer id="fileExplorer" 
+   path= "http://js.syncfusion.com/demos/ejServices/Content/FileBrowser/"
+   ajaxAction="http://js.syncfusion.com/demos/ejServices/api/FileExplorer/FileOperations" 
+   [showToolbar]="false" style="display:block">
 </ej-fileexplorer>
 
 {% endhighlight %}
@@ -142,8 +145,10 @@ As you can see the available toolbar items from [here](#toolbar-items). From the
 
 {% highlight html %}
 
-<ej-fileexplorer id="fileExplorer" path= "http://js.syncfusion.com/demos/ejServices/Content/FileBrowser/"
-    ajaxAction="http://js.syncfusion.com/demos/ejServices/api/FileExplorer/FileOperations" [toolsList]="toolsList" [tools]="tools" style="display:block">
+<ej-fileexplorer id="fileExplorer" 
+  path= "http://js.syncfusion.com/demos/ejServices/Content/FileBrowser/"
+  ajaxAction="http://js.syncfusion.com/demos/ejServices/api/FileExplorer/FileOperations" 
+  [toolsList]="toolsList" [tools]="tools" style="display:block">
 </ej-fileexplorer>
 
 {% endhighlight %}
@@ -187,8 +192,10 @@ So you can configure the filter type with case sensitivity like below:
 
 {% highlight html %}
 
-<ej-fileexplorer id="fileExplorer" path= "http://js.syncfusion.com/demos/ejServices/Content/FileBrowser/"
-    ajaxAction="http://js.syncfusion.com/demos/ejServices/api/FileExplorer/FileOperations" [filterSettings]="filterSettings" style="display:block">
+<ej-fileexplorer id="fileExplorer" 
+  path= "http://js.syncfusion.com/demos/ejServices/Content/FileBrowser/"
+  ajaxAction="http://js.syncfusion.com/demos/ejServices/api/FileExplorer/FileOperations" 
+  [filterSettings]="filterSettings" style="display:block">
 </ej-fileexplorer>
 
 {% endhighlight %}
@@ -236,8 +243,10 @@ From the [toolbar items](#toolbar-items) you can see the list of built-in tools 
 
 {% highlight html %}
 
-<ej-fileexplorer id="fileExplorer" path= "http://js.syncfusion.com/demos/ejServices/Content/FileBrowser/"
-    ajaxAction="http://js.syncfusion.com/demos/ejServices/api/FileExplorer/FileOperations" [toolsList]="toolsList" [tools]="tools" style="display:block">
+<ej-fileexplorer id="fileExplorer" 
+   path= "http://js.syncfusion.com/demos/ejServices/Content/FileBrowser/"
+   ajaxAction="http://js.syncfusion.com/demos/ejServices/api/FileExplorer/FileOperations" 
+   [toolsList]="toolsList" [tools]="tools" style="display:block">
 </ej-fileexplorer>
 
 {% endhighlight %}
@@ -254,7 +263,8 @@ export class FileExplorerComponent {
     toolsList: Object;
     tools: Object;
     constructor() {
-    this.toolsList= ["creation", "navigation", "addressBar", "copyPaste", "searchBar", "customTool"];
+    this.toolsList= ["creation", "navigation", "addressBar", "copyPaste", 
+    "searchBar", "customTool"];
     // defines the tool items for customTool category 
     this.tools= {
         customTool: [{
@@ -351,8 +361,10 @@ This property has the below sub properties with the default values:
 
 {% highlight html %}
 
-<ej-fileexplorer id="fileExplorer" path= "http://js.syncfusion.com/demos/ejServices/Content/FileBrowser/"
-    ajaxAction="http://js.syncfusion.com/demos/ejServices/api/FileExplorer/FileOperations" [uploadSettings]="uploadSettings" style="display:block">
+<ej-fileexplorer id="fileExplorer" 
+   path= "http://js.syncfusion.com/demos/ejServices/Content/FileBrowser/"
+   ajaxAction="http://js.syncfusion.com/demos/ejServices/api/FileExplorer/FileOperations"
+   [uploadSettings]="uploadSettings" style="display:block">
 </ej-fileexplorer>
 
 {% endhighlight %}
