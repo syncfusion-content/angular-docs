@@ -88,9 +88,10 @@ The following code example describes the above behavior.
             </e-columns>
         </ej-grid> 
     </div>
-</ej-tab>  
+   </ej-tab>  
             
-     </ng-template> 
+</ng-template> 
+
 </ej-grid>
 
 {% endhighlight %}
