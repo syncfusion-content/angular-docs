@@ -65,8 +65,8 @@ Before adding router configuration for above created ejPercentageTextbox compone
 <div>
 	<ul class="nav navbar-nav">
 		. . . .
-	<li><a data-toggle="collapse" data-target="#skeleton-navigation-navbar-collapse.in" href="#percentagetextbox"
-    [routerLink]="['/percentagetextbox']">PercentageTextbox </a></li>
+	<li><a data-toggle="collapse" data-target="#skeleton-navigation-navbar-collapse.in" 
+    href="#percentagetextbox" [routerLink]="['/percentagetextbox']">PercentageTextbox </a></li>
 	</ul>
 </div>
 <main>

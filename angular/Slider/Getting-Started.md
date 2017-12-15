@@ -70,8 +70,8 @@ Before adding router configuration for above created ejSlider component, we reco
 <div>
 	<ul class="nav navbar-nav">
 		. . . .
-	<li><a data-toggle="collapse" data-target="#skeleton-navigation-navbar-collapse.in" href="#slider" 
-    [routerLink]="['/slider']">Slider </a></li>
+	<li><a data-toggle="collapse" data-target="#skeleton-navigation-navbar-collapse.in" 
+    href="#slider" [routerLink]="['/slider']">Slider </a></li>
 	</ul>
 </div>
 <main>
@@ -186,8 +186,8 @@ Before adding router configuration for above created ejSlider component, we reco
 <div>
 	<ul class="nav navbar-nav">
 		. . . .
-	<li><a data-toggle="collapse" data-target="#skeleton-navigation-navbar-collapse.in" href="#slider"
-     [routerLink]="['/slider']">Slider </a></li>
+	<li><a data-toggle="collapse" data-target="#skeleton-navigation-navbar-collapse.in" 
+    href="#slider" [routerLink]="['/slider']">Slider </a></li>
 	</ul>
 </div>
 <main>
