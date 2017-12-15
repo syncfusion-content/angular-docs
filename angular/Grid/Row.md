@@ -113,6 +113,7 @@ import {Component, ViewEncapsulation} from '@angular/core';
            //The datasource "window.employeeView" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
            this.gridData = (window as any).employeeView;
            
+           //The datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
            this.DetailsData = (window as any).gridData;
 		}
      }
