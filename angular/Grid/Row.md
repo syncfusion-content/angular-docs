@@ -63,35 +63,36 @@ On enabling details template, new column will be added in grid with an expander 
 The following code example describes the above behavior.
 
 {% highlight html %}
-<ej-grid #grid [allowPaging]="true" [allowSorting]="true" detailsTemplate="#tabGridContents" [dataSource]="gridData"  [allowGrouping]='true'  [pageSettings]='page' (detailsDataBound)="detailsDataBound($event)" >
+
+<ej-grid  [allowPaging]="true" detailsTemplate="#tabGridContents" [dataSource]="gridData" >
     <e-columns>
-        <e-column field="EmployeeID" headerText="Employee ID" [priority]=1 width="75" textAlign="right"></e-column>        
-        <e-column field="FirstName" headerText="First Name" [priority]=2 width="80"></e-column>
-               
+        <e-column field="EmployeeID"></e-column>        
+        <e-column field="FirstName"></e-column>
+        <e-column field="Title"></e-column>        
+        <e-column field="City"></e-column>
     </e-columns>
-     <ng-template #tabGridContents e-details-template let-data> 
-    
+
+    <ng-template #tabGridContents e-details-template let-data>     
          <ej-tab [(selectedItemIndex)]="selectIndex">
          <ul>
            <li><a href="#Grid">Stock Grid</a></li>       
         </ul>
     <div id="Grid">
-        <ej-grid [allowPaging]="true" [editSettings]="editsettings" [pageSettings.pageSize]="pagesize" [dataSource]="data.DetailsData">
+        <ej-grid [allowPaging]="true" [dataSource]="DetailsData">
             <e-columns>
-                <e-column field="OrderID"  headerText="OrderID"></e-column>
-                <e-column field="EmployeeID" headerText="EmployeeID"></e-column>
-                <e-column field="ShipCity" headerText="ShipCity"></e-column>
-                <e-column field="ShipCountry" headerText="ShipCountry"></e-column>
-                <e-column field="Freight" headerText="Freight"></e-column>
+                <e-column field="OrderID"></e-column>
+                <e-column field="EmployeeID"></e-column>
+                <e-column field="ShipCity"></e-column>
+                <e-column field="ShipCountry"></e-column>
+                <e-column field="Freight"></e-column>
             </e-columns>
         </ej-grid> 
     </div>
-    
 </ej-tab>  
             
      </ng-template> 
-
 </ej-grid>
+
 {% endhighlight %}
 
 {% highlight javascript %}
@@ -103,13 +104,15 @@ import {Component, ViewEncapsulation} from '@angular/core';
     })
     export class AppComponent {
         public gridData: any;
-        public pagesize: number;
-        editsettings: any;
-        template: any;
+
+        public DetailsData : any;
+        
         constructor()
         {
            //The datasource "window.employeeView" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
            this.gridData = (window as any).employeeView;
+           
+           this.DetailsData = (window as any).gridData;
 		}
      }
      
