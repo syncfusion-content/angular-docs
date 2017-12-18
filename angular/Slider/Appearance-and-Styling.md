@@ -1,4 +1,4 @@
----
+﻿---
 layout: post
 title: Appearance-and-Styling
 description: appearance and styling	
@@ -146,6 +146,8 @@ The following steps explains you on how to set the showRoundedCorner property in
 {% highlight html %}
 
 <ej-slider id="default" [value]="value" width="500" [showRoundedCorner]="showRoundedCorner"></ej-slider>
+
+{% endhighlight %}
 
 {% highlight html %}
 <script>
