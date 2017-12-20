@@ -188,7 +188,7 @@ export class RibbonComponent {
 
 # Initially Collapsible
 
-Set [`collapsible'](https://help.syncfusion.com/api/angular/ejribbon#members:collapsible) as true to render ribbon control in collapsed state, which results ribbon tabs to render without any content initially.
+Set [`collapsible`](https://help.syncfusion.com/api/angular/ejribbon#members:collapsible) as true to render ribbon control in collapsed state, which results ribbon tabs to render without any content initially.
 While using initially collapsible ribbon with [`enableOnDemand`](https://help.syncfusion.com/api/angular/ejribbon#members:enableondemand) feature improves the performance by reducing initial loading time of ribbon.
 
 {% highlight html %}
