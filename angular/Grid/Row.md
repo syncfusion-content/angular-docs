@@ -78,7 +78,7 @@ The following code example describes the above behavior.
            <li><a href="#Grid">Stock Grid</a></li>       
         </ul>
     <div id="Grid">
-        <ej-grid [allowPaging]="true" [dataSource]="DetailsData">
+        <ej-grid [allowPaging]="true" [dataSource]="data.DetailsData">
             <e-columns>
                 <e-column field="OrderID"></e-column>
                 <e-column field="EmployeeID"></e-column>
@@ -88,10 +88,10 @@ The following code example describes the above behavior.
             </e-columns>
         </ej-grid> 
     </div>
-   </ej-tab>  
+    
+</ej-tab>  
             
-</ng-template> 
-
+     </ng-template> 
 </ej-grid>
 
 {% endhighlight %}
@@ -103,20 +103,57 @@ import {Component, ViewEncapsulation} from '@angular/core';
       selector: 'ej-app',
       templateUrl: 'app/app.component.html',  //give the path file for Grid control html file.
     })
-    export class AppComponent {
-        public gridData: any;
+    export class GridComponent {
+    
+    public gridData: any;
 
-        public DetailsData : any;
-        
-        constructor()
+    public DetailsData : any;
+
+    constructor() {
+       
+        this.gridData = [{
+            EmployeeID: 1, FirstName: 'Nancy', Title: 'Sales Representative', 
+            DetailsData:[{ OrderID : 10835, EmployeeID: 1, ShipCity : "Berlin", ShipCountry : "Germany", Freight : 69.53 },
+            { OrderID : 10952, EmployeeID: 1, ShipCity : "Berlin", ShipCountry : "Germany", Freight : 40.42 },
+            { OrderID : 10677, EmployeeID: 1, ShipCity : "Mexico D.F.", ShipCountry : "Mexico", Freight : 4.03 },
+            { OrderID : 10558, EmployeeID: 1, ShipCity : "Colchester", ShipCountry : "UK", Freight : 72.97 },
+            { OrderID : 10453, EmployeeID: 1, ShipCity : "Colchester", ShipCountry : "UK", Freight : 25.36 }
+            ], 
+            City: 'Seattle', Country: 'USA', 
+        },
         {
-           //The datasource "window.employeeView" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
-           this.gridData = (window as any).employeeView;
-           
-           //The datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
-           this.DetailsData = (window as any).gridData;
-		}
-     }
+            EmployeeID: 2, FirstName: 'Andrew', Title: 'Vice President, Sales',
+            DetailsData:[{ OrderID : 10477, EmployeeID: 2, ShipCity : "Berlin", ShipCountry : "Germany", Freight : 69.53 },
+            { OrderID : 10247, EmployeeID: 2, ShipCity : "Berlin", ShipCountry : "Germany", Freight : 40.42 },
+            { OrderID : 10345, EmployeeID: 2, ShipCity : "Mexico D.F.", ShipCountry : "Mexico", Freight : 4.03 },
+            { OrderID : 10544, EmployeeID: 2, ShipCity : "Colchester", ShipCountry : "UK", Freight : 72.97 },
+            { OrderID : 10345, EmployeeID: 2, ShipCity : "Colchester", ShipCountry : "UK", Freight : 25.36 }
+            ],
+            City: 'Tacoma', Country: 'USA'
+        },
+        {
+            EmployeeID: 3, FirstName: 'Janet', Title: 'Sales Representative',
+            DetailsData:[{ OrderID : 10478, EmployeeID: 3, ShipCity : "Berlin", ShipCountry : "Germany", Freight : 69.53 },
+            { OrderID : 10249, EmployeeID: 3, ShipCity : "Berlin", ShipCountry : "Germany", Freight : 40.42 },
+            { OrderID : 10340, EmployeeID: 3, ShipCity : "Mexico D.F.", ShipCountry : "Mexico", Freight : 4.03 },
+            { OrderID : 10320, EmployeeID: 3, ShipCity : "Colchester", ShipCountry : "UK", Freight : 72.97 },
+            { OrderID : 10550, EmployeeID: 3, ShipCity : "Colchester", ShipCountry : "UK", Freight : 25.36 }
+            ],
+            City: 'Tacoma', Country: 'USA'
+        },
+        {
+            EmployeeID: 4, FirstName: 'Margaret', Title: 'Sales Representative',
+            DetailsData:[{ OrderID : 10444, EmployeeID: 4, ShipCity : "Berlin", ShipCountry : "Germany", Freight : 69.53 },
+            { OrderID : 10886, EmployeeID: 4, ShipCity : "Berlin", ShipCountry : "Germany", Freight : 40.42 },
+            { OrderID : 10390, EmployeeID: 4, ShipCity : "Mexico D.F.", ShipCountry : "Mexico", Freight : 4.03 },
+            { OrderID : 10678, EmployeeID: 4, ShipCity : "Colchester", ShipCountry : "UK", Freight : 72.97 },
+            { OrderID : 10369, EmployeeID: 4, ShipCity : "Colchester", ShipCountry : "UK", Freight : 25.36 }
+            ],
+            City: 'Redmond', Country: 'USA'
+        }]
+        ----------------
+     }     
+  }
      
 {% endhighlight %}
 
