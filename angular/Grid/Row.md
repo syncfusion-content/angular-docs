@@ -73,7 +73,7 @@ The following code example describes the above behavior.
     </e-columns>
 
     <ng-template #tabGridContents e-details-template let-data>     
-         <ej-tab [(selectedItemIndex)]="selectIndex">
+         <ej-tab>
          <ul>
            <li><a href="#Grid">Stock Grid</a></li>       
         </ul>
@@ -150,8 +150,8 @@ import {Component, ViewEncapsulation} from '@angular/core';
             { OrderID : 10369, EmployeeID: 4, ShipCity : "Colchester", ShipCountry : "UK", Freight : 25.36 }
             ],
             City: 'Redmond', Country: 'USA'
-        }]
-        ----------------
+        }];
+       
      }     
   }
      
