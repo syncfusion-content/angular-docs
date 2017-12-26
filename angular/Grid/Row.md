@@ -71,7 +71,6 @@ The following code example describes the above behavior.
         <e-column field="Title"></e-column>        
         <e-column field="City"></e-column>
     </e-columns>
-
     <ng-template #tabGridContents e-details-template let-data>     
          <ej-tab>
          <ul>
@@ -88,9 +87,7 @@ The following code example describes the above behavior.
             </e-columns>
         </ej-grid> 
     </div>
-    
 </ej-tab>  
-            
      </ng-template> 
 </ej-grid>
 
