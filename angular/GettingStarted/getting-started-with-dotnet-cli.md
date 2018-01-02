@@ -32,7 +32,7 @@ To getting started with Syncfusion Angular Components, the NPM packages [ej-angu
 
 ## Install the SPA Template
 
-* To create a new application in .Net Core, we should install the Single Page Application(SPA) template by following command.
+* To create a new application in .NET Core, we should install the Single Page Application(SPA) template by following command.
 
 {% highlight js %}
 dotnet new --install Microsoft.AspNetCore.SpaTemplates::*
@@ -40,7 +40,7 @@ dotnet new --install Microsoft.AspNetCore.SpaTemplates::*
 
 ![](/angular/GettingStarted/Images/createtemplate.png)
 
-* To generate a new angular project run the below command in your directory.
+* To generate a new Angular project run the below command in your directory.
 
 {% highlight javascript %}
 
@@ -574,7 +574,7 @@ module.exports = (env) => {
 // Refer this code for package.json file
 
 {
-  "name": "ejappliaction",
+  "name": "ejapplication",
   "private": true,
   "version": "0.0.0",
   "scripts": {
@@ -662,3 +662,15 @@ dotnet run
 * Open the `.csproj` file which is in project folder and then press `Ctrl+F5` to launch the application in a browser.
 
 ![](/angular/GettingStarted/Images/spatemplateoutput.png)
+
+## Sample Application
+
+We have prepared .NET CLI Application with the above steps. Refer to the link for application
+[Getting Started with .NET CLI](http://www.syncfusion.com/downloads/support/directtrac/general/ze/EJAngularSample301335016.zip). Run the below commands at the root of the application, to launch the application.
+
+```batch
+dotnet restore
+npm install
+dotnet run
+
+```
