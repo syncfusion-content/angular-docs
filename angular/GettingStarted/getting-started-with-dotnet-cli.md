@@ -662,3 +662,12 @@ dotnet run
 * Open the `.csproj` file which is in project folder and then press `Ctrl+F5` to launch the application in a browser.
 
 ![](/angular/GettingStarted/Images/spatemplateoutput.png)
+
+## Sample Application
+
+We have prepared .NET CLI Application with the above steps. Refer to the link for application
+[Getting Started with .NET CLI](http://www.syncfusion.com/downloads/support/directtrac/general/ze/EJAngularSample301335016.zip). To run this project follow the below steps to the root of the application.
+
+* dotnet restore
+* npm install
+* dotnet run
