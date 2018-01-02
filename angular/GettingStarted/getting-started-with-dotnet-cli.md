@@ -666,8 +666,11 @@ dotnet run
 ## Sample Application
 
 We have prepared .NET CLI Application with the above steps. Refer to the link for application
-[Getting Started with .NET CLI](http://www.syncfusion.com/downloads/support/directtrac/general/ze/EJAngularSample301335016.zip). To run this project follow the below steps to the root of the application.
+[Getting Started with .NET CLI](http://www.syncfusion.com/downloads/support/directtrac/general/ze/EJAngularSample301335016.zip). Run the below commands at the root of the application, to launch the application.
 
-* dotnet restore
-* npm install
-* dotnet run
+```batch
+dotnet restore
+npm install
+dotnet run
+
+```
