@@ -462,7 +462,7 @@ The following screenshot displays a **BulletGraph** in the caption and title in 
 
 **Show Tooltip**
 
-You can use a Tooltip in your application to display any information. The tooltip is enabled by setting the **visible** property in tooltip to **True**. 
+You can use a Tooltip in your application to display any information. The tooltip is enabled by setting the **visible** property in tooltip to **true**. 
 
 {% highlight html %}
 
