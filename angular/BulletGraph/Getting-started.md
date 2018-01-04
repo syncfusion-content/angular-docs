@@ -8,11 +8,11 @@ keywords: ejbulletgraph, bulletgraph, bulletgraph widget, Angular bulletgraph
 ---
 # Getting Started
 
-Before we start with the Bulletgraph, please refer [this page](https://help.syncfusion.com/angular-2/overview) for general information regarding integrating Syncfusion widget’s.
+Before we start with the BulletGraph, please refer [this page](https://help.syncfusion.com/angular-2/overview) for general information regarding integrating Syncfusion widget’s.
 
 ## Adding JavaScript and CSS Reference
 
-To render the Bulletgraph control, the following list of external dependencies are needed, 
+To render the BulletGraph control, the following list of external dependencies are needed, 
 
 * [jQuery](http://jquery.com) - 1.7.1 and later versions
 * [jsRender](https://github.com/borismoore/jsrender) - to render the templates
@@ -50,7 +50,7 @@ The other required internal dependencies are tabulated below,
         ej.bulletgraph.min.js
       </td>
       <td>
-        Bulletgraph core script file which includes Bulletgraph related scripts files.
+        BulletGraph core script file which includes BulletGraph related scripts files.
       </td>
    </tr>
 </table>
@@ -63,7 +63,7 @@ Create an HTML page and add the scripts references in the order mentioned in the
 
     <html>
     <head>
-    <title>Angular Bulletgraph</title>
+    <title>Angular BulletGraph</title>
 
     <!-- Essential Studio for JavaScript  theme reference -->
     <link rel="stylesheet" href="http://cdn.syncfusion.com/{{ site.releaseversion }}/js/web/flat-azure/ej.web.all.min.css" />
@@ -105,7 +105,7 @@ N> Uncompressed version of library files are also available which is used for de
 
 ## Control Initialization
 
-* Copy Bulletgraph Syncfusion Angular source component(s) from the below build location and add it in `src/ej` folder (For ex., consider the `bulletgraph` component).
+* Copy BulletGraph Syncfusion Angular source component(s) from the below build location and add it in `src/ej` folder (For ex., consider the `bulletgraph` component).
 
 {% highlight javascript %}
 (Installed Location)\Syncfusion\Essential Studio\14.3.0.49\JavaScript\assets-src\angular2\ 
@@ -141,7 +141,7 @@ export class BulletgraphComponent {
 
 Before adding router configuration for above created ejBulletgraph component, we recommend you to go through the [Angular Routing](https://angular.io/docs/ts/latest/guide/router.html) configuration to get the deeper knowledge about Angular routing. 
 
-* Now, we are going to configure the route navigation link for created bulletgraph sample in `src/app.component.html` file.
+* Now, we are going to configure the route navigation link for created bullet graph sample in `src/app.component.html` file.
 
 {% highlight html %}
 <div>
@@ -197,7 +197,7 @@ export class AppModule { }
 npm start
 {% endhighlight %}
 
-* Browse to [http://localhost:3000](http://localhost:3000) to see the application. And navigate to bulletgraph tab. The component is rendered as like the below screenshot. You can make changes in the code found under src folder and the browser should auto-refresh itself while you save files. 
+* Browse to [http://localhost:3000](http://localhost:3000) to see the application. And navigate to bullet graph tab. The component is rendered as like the below screenshot. You can make changes in the code found under src folder and the browser should auto-refresh itself while you save files. 
 
 ![](Getting-started-images/Getting-Started_img1.png) 
 
