@@ -115,7 +115,7 @@ N> `core.ts` file is mandatory for all Syncfusion JavaScript Angular components.
 
 * Create `BulletGraph` folder inside `src` folder.
 
-* Create `BulletGraph.component.html` view file inside `src/BulletGraph` folder and render ejBulletgraph Angular component using the below code example. 
+* Create `BulletGraph.component.html` view file inside `src/BulletGraph` folder and render ejBulletGraph Angular component using the below code example. 
 
 {% highlight html %}
 <ej-bulletgraph id="defaultbulletgraph">
@@ -148,7 +148,7 @@ Before adding router configuration for above created ejBulletGraph component, we
 	<ul class="nav navbar-nav">
 		<li>
 		    <a data-toggle="collapse" data-target="#skeleton-navigation-navbar-collapse.in" 
-		       href="#bulletGraph" [routerLink]="['/bulletgraph']">bulletgraph </a>
+		       href="#BulletGraph" [routerLink]="['/BulletGraph']">BulletGraph </a>
 		</li>
 	</ul>
 </div>
@@ -157,17 +157,17 @@ Before adding router configuration for above created ejBulletGraph component, we
 </main>
 {% endhighlight %}
 
-* Import the ejBulletgraph sample component and define the route in `src/app.routes.ts` file.
+* Import the ejBulletGraph sample component and define the route in `src/app.routes.ts` file.
 
 {% highlight ts %}
 import { Routes } from '@angular/router';
 . . . . 
-import { BulletgraphComponent } from './BulletGraph/BulletGraph.component';
+import { BulletGraphComponent } from './BulletGraph/BulletGraph.component';
 
 export const rootRouterConfig: Routes = [
     { path: '', redirectTo: 'home', pathMatch: 'full' },
     . . . . 
-    { path: 'BulletGraph', component: BulletgraphComponent }
+    { path: 'BulletGraph', component: BulletGraphComponent }
 ];
 {% endhighlight %}
 
@@ -177,7 +177,7 @@ export const rootRouterConfig: Routes = [
 import { NgModule, enableProdMode, ErrorHandler } from '@angular/core';
 . . . . . 
 import { EJ_BULLETGRAPH_COMPONENTS } from './ej/BulletGraph.component';
-import { BulletgraphComponent } from './BulletGraph/BulletGraph.component';
+import { BulletGraphComponent } from './BulletGraph/BulletGraph.component';
 
 import { rootRouterConfig } from './app.routes';
 . . . . 
