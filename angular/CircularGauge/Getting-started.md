@@ -182,7 +182,7 @@ export const rootRouterConfig: Routes = [
 ];
 {% endhighlight %}
 
-* Import and declare the Syncfusion source component and ejcircularGauge sample component into `app.module.ts` like the below code snippet.
+* Import and declare the Syncfusion source component and ejCircularGauge sample component into `app.module.ts` like the below code snippet.
 
 {% highlight ts %}
 import { NgModule, enableProdMode, ErrorHandler } from '@angular/core';
@@ -214,7 +214,7 @@ npm start
 
 ## Set Background Color
 
-You can draw the speedometer with dark background and to vary the speed of the pointer, set the **readOnly** option as **False** for user interaction. 
+You can draw the speedometer with dark background and to vary the speed of the pointer, set the **readOnly** option as **false** for user interaction. 
 
 {% highlight html %}
 
@@ -346,7 +346,7 @@ On executing the above code, sample renders a **Circular Gauge** with customized
 
 ## Add Range Values
 
-Ranges denote the property of scale value in the speedometer. The color values of the ranges specify the speed variation. Set **showRanges** property to **True** to show the ranges in the **Circular Gauge**. Select safe zone for low speed, caution zone for moderate speed and high zone for high speed. You can customize the range with the properties such as start value, end value, start width, end width,  background color , border color, etc.,
+Ranges denote the property of scale value in the speedometer. The color values of the ranges specify the speed variation. Set **showRanges** property to **true** to show the ranges in the **Circular Gauge**. Select safe zone for low speed, caution zone for moderate speed and high zone for high speed. You can customize the range with the properties such as start value, end value, start width, end width,  background color , border color, etc.,
 
 {% highlight javascript %}
 
