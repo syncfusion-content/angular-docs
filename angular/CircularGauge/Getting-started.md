@@ -182,7 +182,7 @@ export const rootRouterConfig: Routes = [
 ];
 {% endhighlight %}
 
-* Import and declare the Syncfusion source component and ejcircularGauge sample component into `app.module.ts` like the below code snippet.
+* Import and declare the Syncfusion source component and ejCircularGauge sample component into `app.module.ts` like the below code snippet.
 
 {% highlight ts %}
 import { NgModule, enableProdMode, ErrorHandler } from '@angular/core';

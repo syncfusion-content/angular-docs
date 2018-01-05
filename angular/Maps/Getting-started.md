@@ -178,7 +178,7 @@ export const rootRouterConfig: Routes = [
 ];
 {% endhighlight %}
 
-* Import and declare the Syncfusion source component and ejmaps sample component into `app.module.ts` like the below code snippet.
+* Import and declare the Syncfusion source component and ejMaps sample component into `app.module.ts` like the below code snippet.
 
 {% highlight javascript %}
 import { NgModule, enableProdMode, ErrorHandler } from '@angular/core';
@@ -235,11 +235,11 @@ templateUrl:"src/maps/maps.component.html",
 providers:[DataService]
 })
 export class MapsComponent{
-usmap: any;
+usMap: any;
 dataSource: any;
 colorMapping: any;
     constructor(dataService:DataService){
-        this.usmap=dataService.mapsData();
+        this.usMap=dataService.mapsData();
         this.dataSource=dataService.populationData();
     }
 }
@@ -347,9 +347,9 @@ templateUrl:"src/maps/maps.component.html",
 providers:[DataService]
 })
 export class MapsComponent{
-usmap: any;
+usMap: any;
     constructor(dataService:DataService){
-        this.usmap=dataService.mapsData();
+        this.usMap=dataService.mapsData();
     }
 }
 

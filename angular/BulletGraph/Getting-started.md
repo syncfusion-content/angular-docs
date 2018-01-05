@@ -105,7 +105,7 @@ N> Uncompressed version of library files are also available which is used for de
 
 ## Control Initialization
 
-* Copy BulletGraph Syncfusion Angular source component(s) from the below build location and add it in `src/ej` folder (For ex., consider the `bulletgraph` component).
+* Copy BulletGraph Syncfusion Angular source component(s) from the below build location and add it in `src/ej` folder (For ex., consider the `BulletGraph` component).
 
 {% highlight javascript %}
 (Installed Location)\Syncfusion\Essential Studio\14.3.0.49\JavaScript\assets-src\angular2\ 
@@ -113,16 +113,16 @@ N> Uncompressed version of library files are also available which is used for de
 
 N> `core.ts` file is mandatory for all Syncfusion JavaScript Angular components. The repository having the source file from Essential Studio for JavaScript v14.3.0.49.
 
-* Create `bulletgraph` folder inside `src` folder.
+* Create `BulletGraph` folder inside `src` folder.
 
-* Create `bulletgraph.component.html` view file inside `src/bulletgraph` folder and render ejBulletgraph Angular component using the below code example. 
+* Create `BulletGraph.component.html` view file inside `src/BulletGraph` folder and render ejBulletgraph Angular component using the below code example. 
 
 {% highlight html %}
 <ej-bulletgraph id="defaultbulletgraph">
 </ej-bulletgraph>
 {% endhighlight %}
 
-* Create `bulletgraph.component.ts` model file inside the folder `src/bulletgraph` and create sample component using the below code example.
+* Create `BulletGraph.component.ts` model file inside the folder `src/BulletGraph` and create sample component using the below code example.
 
 {% highlight ts %}
 
@@ -130,7 +130,7 @@ import { Component, ViewEncapsulation } from '@angular/core';
 
 @Component({
   selector: 'ej-app',
-  templateUrl: 'src/bulletgraph/bulletgraph.component.html'
+  templateUrl: 'src/BulletGraph/BulletGraph.component.html'
 })
 export class BulletgraphComponent {
 
@@ -139,7 +139,7 @@ export class BulletgraphComponent {
 
 ## Configure the routes for the Router
 
-Before adding router configuration for above created ejBulletgraph component, we recommend you to go through the [Angular Routing](https://angular.io/docs/ts/latest/guide/router.html) configuration to get the deeper knowledge about Angular routing. 
+Before adding router configuration for above created ejBulletGraph component, we recommend you to go through the [Angular Routing](https://angular.io/docs/ts/latest/guide/router.html) configuration to get the deeper knowledge about Angular routing. 
 
 * Now, we are going to configure the route navigation link for created bullet graph sample in `src/app.component.html` file.
 
@@ -148,7 +148,7 @@ Before adding router configuration for above created ejBulletgraph component, we
 	<ul class="nav navbar-nav">
 		<li>
 		    <a data-toggle="collapse" data-target="#skeleton-navigation-navbar-collapse.in" 
-		       href="#bulletgraph" [routerLink]="['/bulletgraph']">bulletgraph </a>
+		       href="#bulletGraph" [routerLink]="['/bulletgraph']">bulletgraph </a>
 		</li>
 	</ul>
 </div>
@@ -162,22 +162,22 @@ Before adding router configuration for above created ejBulletgraph component, we
 {% highlight ts %}
 import { Routes } from '@angular/router';
 . . . . 
-import { BulletgraphComponent } from './bulletgraph/bulletgraph.component';
+import { BulletgraphComponent } from './BulletGraph/BulletGraph.component';
 
 export const rootRouterConfig: Routes = [
     { path: '', redirectTo: 'home', pathMatch: 'full' },
     . . . . 
-    { path: 'bulletgraph', component: BulletgraphComponent }
+    { path: 'BulletGraph', component: BulletgraphComponent }
 ];
 {% endhighlight %}
 
-* Import and declare the Syncfusion source component and ejbulletgraph sample component into `app.module.ts` like the below code snippet.
+* Import and declare the Syncfusion source component and ejBulletGraph sample component into `app.module.ts` like the below code snippet.
 
 {% highlight ts %}
 import { NgModule, enableProdMode, ErrorHandler } from '@angular/core';
 . . . . . 
-import { EJ_BULLETGRAPH_COMPONENTS } from './ej/bulletgraph.component';
-import { BulletgraphComponent } from './bulletgraph/bulletgraph.component';
+import { EJ_BULLETGRAPH_COMPONENTS } from './ej/BulletGraph.component';
+import { BulletgraphComponent } from './BulletGraph/BulletGraph.component';
 
 import { rootRouterConfig } from './app.routes';
 . . . . 
@@ -224,23 +224,23 @@ import { DataService} from '../service/data.service'
 
 @Component({
     selector:'ej-app',
-    templateUrl:'src/bulletgraph/bulletgraph.component.html',
+    templateUrl:'src/BulletGraph/BulletGraph.component.html',
     providers:[DataService]
 })
 export class BulletgraphComponent{
     fieldData:Object;
     constructor(dataService:DataService){
-        this.fieldData= dataService.bulletgraphData()
+        this.fieldData= dataService.bulletGraphData()
     }
 }
 
 {% endhighlight %}
 
-Create a folder service and add file data.service.ts for serving data to  bulletgraph component file. Refer the below code snippet.
+Create a folder service and add file data.service.ts for serving data to  bullet graph component file. Refer the below code snippet.
 
 {% highlight ts %}
 export class DataService{
-bulletgraphData():Array<any>{
+bulletGraphData():Array<any>{
         return[
                {
                    value: 90, comparativeMeasureValue: 100,
