@@ -178,7 +178,7 @@ export const rootRouterConfig: Routes = [
 ];
 {% endhighlight %}
 
-* Import and declare the Syncfusion source component and ejmaps sample component into `app.module.ts` like the below code snippet.
+* Import and declare the Syncfusion source component and ejMaps sample component into `app.module.ts` like the below code snippet.
 
 {% highlight javascript %}
 import { NgModule, enableProdMode, ErrorHandler } from '@angular/core';
@@ -235,11 +235,11 @@ templateUrl:"src/maps/maps.component.html",
 providers:[DataService]
 })
 export class MapsComponent{
-usmap: any;
+usMap: any;
 dataSource: any;
 colorMapping: any;
     constructor(dataService:DataService){
-        this.usmap=dataService.mapsData();
+        this.usMap=dataService.mapsData();
         this.dataSource=dataService.populationData();
     }
 }
@@ -347,9 +347,9 @@ templateUrl:"src/maps/maps.component.html",
 providers:[DataService]
 })
 export class MapsComponent{
-usmap: any;
+usMap: any;
     constructor(dataService:DataService){
-        this.usmap=dataService.mapsData();
+        this.usMap=dataService.mapsData();
     }
 }
 
@@ -476,7 +476,7 @@ The following screenshot illustrates a map with gradient color property enabled.
 
 ## Enable Tooltip
 
-The tooltip is displayed only when the `showTooltip` is set to “**True**” in the `layers`. By default, it takes the property of the bound object that is referred in the `valuePath` and displays its content on hovering the corresponding shape. The `tooltipTemplate` property is used for customizing the template for tooltip.	
+The tooltip is displayed only when the `showTooltip` is set to “**true**” in the `layers`. By default, it takes the property of the bound object that is referred in the `valuePath` and displays its content on hovering the corresponding shape. The `tooltipTemplate` property is used for customizing the template for tooltip.	
 
 {% highlight html %}
 
