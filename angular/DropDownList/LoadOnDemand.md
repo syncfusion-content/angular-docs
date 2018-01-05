@@ -54,4 +54,4 @@ export class DefaultComponent {
     }
 }
 
-![](LoadOnDemand/loadondemand.png)
+![](LoadOnDemand_images/loadondemand.png)
