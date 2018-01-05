@@ -115,7 +115,7 @@ N> Uncompressed version of library files are also available which is used for de
 
 ## Control Initialization
 
-* Copy LinearGauge Syncfusion Angular source component(s) from the below build location and add it in `src/ej` folder (For ex., consider the `lineargauge` component).
+* Copy LinearGauge Syncfusion Angular source component(s) from the below build location and add it in `src/ej` folder (For ex., consider the `LinearGauge` component).
 
 {% highlight javascript %}
 (Installed Location)\Syncfusion\Essential Studio\14.3.0.49\JavaScript\assets-src\angular2\ 
@@ -123,16 +123,16 @@ N> Uncompressed version of library files are also available which is used for de
 
 N> `core.ts` file is mandatory for all Syncfusion JavaScript Angular components. The repository having the source file from Essential Studio for JavaScript v14.3.0.49.
 
-* Create `lineargauge` folder inside `src` folder.
+* Create `LinearGauge` folder inside `src` folder.
 
-* Create `lineargauge.component.html` view file inside `src/lineargauge` folder and render ejLinearGauge Angular component using the below code example. 
+* Create `LinearGauge.component.html` view file inside `src/LinearGauge` folder and render ejLinearGauge Angular component using the below code example. 
 
 {% highlight html %}
 <ej-lineargauge id="defaultlineargauge">
 </ej-lineargauge>
 {% endhighlight %}
 
-* Create `lineargauge.component.ts` model file inside the folder `src/lineargauge` and create sample component using the below code example.
+* Create `LinearGauge.component.ts` model file inside the folder `src/LinearGauge` and create sample component using the below code example.
 
 {% highlight ts %}
 
@@ -140,7 +140,7 @@ import { Component, ViewEncapsulation } from '@angular/core';
 
 @Component({
   selector: 'ej-app',
-  templateUrl: 'src/lineargauge/lineargauge.component.html'
+  templateUrl: 'src/LinearGauge/LinearGauge.component.html'
 })
 export class LinearGaugeComponent {
 
@@ -151,13 +151,13 @@ export class LinearGaugeComponent {
 
 Before adding router configuration for above created ejLinearGauge component, we recommend you to go through the [Angular Routing](https://angular.io/docs/ts/latest/guide/router.html) configuration to get the deeper knowledge about Angular routing. 
 
-* Now, we are going to configure the route navigation link for created lineargauge sample in `src/app.component.html` file.
+* Now, we are going to configure the route navigation link for created linear gauge sample in `src/app.component.html` file.
 
 {% highlight html %}
 <div>
 	<ul class="nav navbar-nav">
 		<li>
-            <a data-toggle="collapse" data-target="#skeleton-navigation-navbar-collapse.in" href="#lineargauge" [routerLink]="['/lineargauge']">lineargauge </a>
+            <a data-toggle="collapse" data-target="#skeleton-navigation-navbar-collapse.in" href="#LinearGauge" [routerLink]="['/LinearGauge']">LinearGauge </a>
         </li>
 	</ul>
 </div>
@@ -171,22 +171,22 @@ Before adding router configuration for above created ejLinearGauge component, we
 {% highlight ts %}
 import { Routes } from '@angular/router';
 . . . . 
-import { LinearGaugeComponent } from './lineargauge/lineargauge.component';
+import { LinearGaugeComponent } from './LinearGauge/LinearGauge.component';
 
 export const rootRouterConfig: Routes = [
     { path: '', redirectTo: 'home', pathMatch: 'full' },
     . . . . 
-    { path: 'lineargauge', component: LinearGaugeComponent }
+    { path: 'LinearGauge', component: LinearGaugeComponent }
 ];
 {% endhighlight %}
 
-* Import and declare the Syncfusion source component and ejlineargauge sample component into `app.module.ts` like the below code snippet.
+* Import and declare the Syncfusion source component and ejLinearGauge sample component into `app.module.ts` like the below code snippet.
 
 {% highlight ts %}
 import { NgModule, enableProdMode, ErrorHandler } from '@angular/core';
 . . . . . 
-import { EJ_LINEARGAUGE_COMPONENTS } from './ej/lineargauge.component';
-import { LinearGaugeComponent } from './lineargauge/lineargauge.component';
+import { EJ_LINEARGAUGE_COMPONENTS } from './ej/LinearGauge.component';
+import { LinearGaugeComponent } from './LinearGauge/LinearGauge.component';
 
 import { rootRouterConfig } from './app.routes';
 . . . . 
@@ -206,7 +206,7 @@ export class AppModule { }
 npm start
 {% endhighlight %}
 
-* Browse to [http://localhost:3000](http://localhost:3000) to see the application. And navigate to lineargauge tab. The component is rendered as like the below screenshot. You can make changes in the code found under src folder and the browser should auto-refresh itself while you save files. 
+* Browse to [http://localhost:3000](http://localhost:3000) to see the application. And navigate to linear gauge tab. The component is rendered as like the below screenshot. You can make changes in the code found under src folder and the browser should auto-refresh itself while you save files. 
 
 ![](Getting-started-images/Getting-Started_img1.png) 
 
@@ -232,9 +232,9 @@ On executing the above code sample renders a default **Linear Gauge** with heigh
 
 ## Set animate option and Label Color
 
-* You can draw the Thermometer with Label color and set animate property to _True_.  
+* You can draw the Thermometer with Label color and set animate property to _true_.  
 
-* Initially set the animate property to _False_ to avoid unwanted script loads.
+* Initially set the animate property to _false_ to avoid unwanted script loads.
 
 
 
