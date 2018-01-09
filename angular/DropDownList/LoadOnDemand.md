@@ -16,7 +16,7 @@ The loadOnDemand property is used to enable or disable the load on demand functi
 
 {% highlight html %}
 
-    <input id="bookSelect" ej-dropdownlist [dataSource]="data" [fields]="fieldsvalues" width="50%"  [loadOnDemand]="loadOnDemand"/>
+    <input id="bookSelect" ej-dropdownlist [dataSource]="data" [fields]="fields" width="50%"  [loadOnDemand]="loadOnDemand"/>
      
 {% endhighlight %}
 
@@ -30,28 +30,29 @@ import {Component} from '@angular/core';
 })
 export class DefaultComponent {
     data: Array<Object> = [];
-    fieldsvalues: Object;
+    fields: Object;
     value: string;
 	loadOnDemand: true;
     constructor() {
         this.data = [
-            { empid: 'cr1', text: 'Dodge Avenger', value: 'Dodge Avenger' },
-            { empid: 'cr2', text: 'Chrysler 200', value: 'Chrysler 200' },
-            { empid: 'cr3', text: 'Ford Focus', value: 'Ford Focus' },
-            { empid: 'cr4', text: 'Ford Taurus', value: 'Ford Taurus' },
-            { empid: 'cr5', text: 'Dazzler', value: 'Dazzler' },
-            { empid: 'cr6', text: 'Chevy Spark', value: 'Chevy Spark' },
-            { empid: 'cr7', text: 'Chevy Volt', value: 'Chevy Volt' },
-            { empid: 'cr8', text: 'Honda Fit', value: 'Honda Fit' },
-            { empid: 'cr9', text: 'Honda Crosstour', value: 'Honda Crosstour' },
-            { empid: 'cr10', text: 'Acura RL', value: 'Acura RL' },
-            { empid: 'cr11', text: 'Hyundai Elantra', value: 'Hyundai Elantra' },
-            { empid: 'cr12', text: 'Mazda3', value: 'Mazda3' }
+            { id: 'cr1', text: 'Dodge Avenger', value: 'Dodge Avenger' },
+            { id: 'cr2', text: 'Chrysler 200', value: 'Chrysler 200' },
+            { id: 'cr3', text: 'Ford Focus', value: 'Ford Focus' },
+            { id: 'cr4', text: 'Ford Taurus', value: 'Ford Taurus' },
+            { id: 'cr5', text: 'Dazzler', value: 'Dazzler' },
+            { id: 'cr6', text: 'Chevy Spark', value: 'Chevy Spark' },
+            { id: 'cr7', text: 'Chevy Volt', value: 'Chevy Volt' },
+            { id: 'cr8', text: 'Honda Fit', value: 'Honda Fit' },
+            { id: 'cr9', text: 'Honda Cross tour', value: 'Honda Cross tour' },
+            { id: 'cr11', text: 'Hyundai Elantra', value: 'Hyundai Elantra' },
+            { id: 'cr12', text: 'Mazda3', value: 'Mazda3' }
         ];
-        this.fieldsvalues = { dataSource: this.data, text: 'text', value: 'value' };
+        this.fields = { dataSource: this.data, text: 'text', value: 'value' };
         this.value = 'Dazzler';
 		this.loadOnDemand = true;
     }
 }
+
+{% endhighlight %}
 
 ![](LoadOnDemand_images/loadondemand.png)
