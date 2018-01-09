@@ -16,7 +16,7 @@ The loadOnDemand property is used to enable or disable the load on demand functi
 
 {% highlight html %}
 
-    <input id="bookSelect" ej-dropdownlist [dataSource]="data" [fields]="fieldsvalues" width="50%"  [loadOnDemand]="loadOnDemand"/>
+    <input id="bookSelect" ej-dropdownlist [dataSource]="data" [fields]="fields" width="50%"  [loadOnDemand]="loadOnDemand"/>
      
 {% endhighlight %}
 
@@ -30,7 +30,7 @@ import {Component} from '@angular/core';
 })
 export class DefaultComponent {
     data: Array<Object> = [];
-    fieldsvalues: Object;
+    fields: Object;
     value: string;
 	loadOnDemand: true;
     constructor() {
@@ -48,10 +48,12 @@ export class DefaultComponent {
             { empid: 'cr11', text: 'Hyundai Elantra', value: 'Hyundai Elantra' },
             { empid: 'cr12', text: 'Mazda3', value: 'Mazda3' }
         ];
-        this.fieldsvalues = { dataSource: this.data, text: 'text', value: 'value' };
+        this.fields = { dataSource: this.data, text: 'text', value: 'value' };
         this.value = 'Dazzler';
 		this.loadOnDemand = true;
     }
 }
+
+{% endhighlight %}
 
 ![](LoadOnDemand_images/loadondemand.png)
