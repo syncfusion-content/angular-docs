@@ -64,19 +64,19 @@ npm install @ngtools/webpack --save-dev
 
 The below steps depicts the configuration of `@ngtools/webpack` in Angular application.
 
-* `@ngtools/webpack` compiles the typescript files in application. It replaces other typescript loader like `ts-loader` or `awesome-typescript-loader.` It works with `AngularCompilerPlugin` together to enable AOT compilation.
+* `@ngtools/webpack` compiles the typescript files in application. It replaces other typescript loader like `ts-loader` or `awesome-typescript-loader.` It works with `AngularCompilerPlugin` together to enable AOT compilation.
 
 ### Options for AngularCompilerPlugin
 
-* Add instance of [AngularCompilerPlugin](https://github.com/angular/angular-cli/tree/master/packages/%40ngtools/webpack), which has an apply property. This apply property is called by the webpack compiler, giving access to the entire compilation lifecycle. Add options `tsConfigPath` and `entryModule` with `AngularCompilerPlugin` instance.
+* Add instance of [AngularCompilerPlugin](https://github.com/angular/angular-cli/tree/master/packages/%40ngtools/webpack), which has an apply property. This apply property is called by the webpack compiler, giving access to the entire compilation lifecycle. Add options `tsConfigPath` and `entryModule` with `AngularCompilerPlugin` instance.
 
-  * `tsConfigPath` - The path to the `tsconfig.json` file. In your `tsconfig.json`, you can pass options to the Angular Compiler with `angularCompilerOptions`.
+  * `tsConfigPath` - The path to the `tsconfig.json` file. In your `tsconfig.json`, you can pass options to the Angular Compiler with `angularCompilerOptions`.
 
-  * `entryModule` - Optional if specified in `angularCompilerOptions`. The path and classname of the main application module. This follows the format `path/to/file#ClassName`.
+  * `entryModule` - Optional if specified in `angularCompilerOptions`. The path and classname of the main application module. This follows the format `path/to/file#ClassName`.
 
 N> To know more about Options in AOT refer [here](https://github.com/angular/angular-cli/tree/master/packages/%40ngtools/webpack)
 
-Refer to the below AOT configuration code snippet for `config/webpack.dev.js` file. 
+Refer to the below AOT configuration code snippet for `config/webpack.dev.js` file. 
 
 {% highlight javascript %}
 
@@ -533,7 +533,7 @@ platformBrowserDynamic().bootstrapModule(AppModule);
   "scripts": {
     "start": "webpack-dev-server --inline --progress --port 3000",
     "test": "karma start",
-    "build": "rimraf dist && webpack --config webpack.config.js --progress --profile --bail"
+    "build": "rimraf dist && webpack --config config/webpack.prod.js --progress --profile --bail"
   },
   "keywords": [
     "syncfusion",
@@ -553,27 +553,24 @@ platformBrowserDynamic().bootstrapModule(AppModule);
   "dependencies": {
     "@angular/common": "~5.1.2",
     "@angular/compiler": "~5.1.2",
-    "@angular/compiler-cli": "^5.1.2",
+    "@angular/compiler-cli": "~5.1.2",
     "@angular/core": "~5.1.2",
     "@angular/forms": "~5.1.2",
     "@angular/http": "~5.1.2",
     "@angular/platform-browser": "~5.1.2",
     "@angular/platform-browser-dynamic": "~5.1.2",
     "@angular/router": "~5.1.2",
-    "bootstrap": "^3.3.6",
     "core-js": "^2.4.1",
-    "ej-angular2": "^15.4.18",
+    "rxjs": "^5.4.3",
+    "zone.js": "^0.7.4",
+    "bootstrap": "^3.3.6",
     "jquery": "~3.2.1",
     "jsrender": "~0.9.84",
-    "rxjs": "^5.4.3",
     "syncfusion-javascript": "^15.4.17",
-    "zone.js": "^0.7.4"
+    "ej-angular2": "^15.4.18"
   },
   "devDependencies": {
     "@ngtools/webpack": "^1.9.3",
-    "@types/ej.web.all": "^15.4.0",
-    "@types/jquery": "^3.2.12",
-    "@types/node": "^6.0.46",
     "angular2-template-loader": "~0.6.2",
     "awesome-typescript-loader": "~3.1.3",
     "css-loader": "^0.26.1",
@@ -597,6 +594,9 @@ platformBrowserDynamic().bootstrapModule(AppModule);
     "url-loader": "^0.5.8",
     "webpack": "~2.6.1",
     "webpack-dev-server": "~2.4.5",
+    "@types/ej.web.all": "^15.4.0",
+    "@types/jquery": "^3.2.12",
+    "@types/node": "^6.0.46"
   }
 }
 
