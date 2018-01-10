@@ -40,6 +40,6 @@ export class NumericTextboxComponent {
 
 {% endhighlight %}
 
-The output for **NumericTextBox** when **enableRTL** is **“True”** is as follows. 
+The output for **NumericTextBox** when **enableRTL** is **“true”** is as follows. 
 
 ![](/angular/NumericTextbox/RTL-Support_images/RTL-Support_img1.png)
