@@ -65,7 +65,7 @@ export class RatingComponent {
 } 
 {% endhighlight %}
  
-Add the below css in external file named as rating.component.css
+Add the below CSS in external file named as rating.component.css
 
 {% highlight css %}
 
@@ -162,7 +162,7 @@ export class RatingComponent {
 
 {% endhighlight %}
 
-Add the below css in external file named as rating.component.css
+Add the below CSS in external file named as rating.component.css
 
 {% highlight css %}
 
