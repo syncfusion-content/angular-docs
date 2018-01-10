@@ -42,6 +42,6 @@ export class CurrencyTextboxComponent {
 {% endhighlight %}
 
 
-The output for CurrencyTextBox when **enableRTL** is **“True”** is as follows. 
+The output for CurrencyTextBox when **enableRTL** is **“true”** is as follows. 
 
 ![](/angular/CurrencyTextbox/RTL-Support_images/RTL-Support_img1.png)
