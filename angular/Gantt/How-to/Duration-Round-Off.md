@@ -40,4 +40,12 @@ export class AppComponent {
 
 ![](Duration-Round-Off_images/OnResizing_img1.png)
 
+Before resizing
+
+{:.caption}
+
 ![](Duration-Round-Off_images/AfterResizing_img2.png)
+
+After resizing
+
+{:.caption} 
