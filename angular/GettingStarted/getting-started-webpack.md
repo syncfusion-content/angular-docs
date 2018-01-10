@@ -27,7 +27,6 @@ The cloned Angular seed consists of files in the following structure. The files 
 
 * config
     * helpers.js
-    * webpack.common.js
     * webpack.dev.js
     * webpack.prod.js
 * src
@@ -49,11 +48,7 @@ The below table depicts the purpose of files in the above structure.
 </tr>
 <tr>
 <td>webpack.config.js</td>
-<td><ul><li>Webpack is a powerful module bundler which building a dependency graph, and emitting one or more bundles. </li> <li>With plugins and rules, Webpack can preprocess and minify different non-JavaScript files such as Typescript, SASS, and LESS files.</li> <li>We can determine what Webpack does and how it does it with a JavaScript configuration file.</li></ul></td>
-</tr>
-<tr>
-<td>webpack.common.js</td>
-<td>It is known as the common configuration file for development, production and test environments. The configuration imports dependencies with `require` statements and exports several objects as properties of a `module.exports` object.<ul><li>entries - We can supply webpack with one or more entry files and let it find and incorporate the dependencies that radiate from those entries.</li> <li>resolve -The application will import lot of java script and typescript files. But most `import` statements don't mention the extension at all. So, we should tell the Webpack to resolve extension-less file requests by looking for matching files with ts or js extension.</li> <li>plugins - It creates instances of the plugins. i.e. Webpack has a build pipeline with well-defined phases. Tap into that pipeline with plugins such as the `uglify` minification plugin.</li></ul></td>
+<td><ul><li>Webpack is a powerful module bundler which building a dependency graph, and emitting one or more bundles. </li> <li>With plugins and rules, Webpack can preprocess and minify different non-JavaScript files such as TypeScript, SASS, and LESS files.</li> <li>We can determine what Webpack does and how it does it with a JavaScript configuration file.</li></ul></td>
 </tr>
 <tr>
 <td>webpack.prod.js</td>
@@ -61,7 +56,7 @@ The below table depicts the purpose of files in the above structure.
 </tr>
 <tr>
 <td>webpack.dev.js</td>
-<td>The development build relies on the webpack development server, configured near the bottom of the file. Here, <ul> <li>Webpack puts output bundles in the `dist` folder</li> <li>HtmlwebpackPlugin use the public path and the filename settings to generate appropriate `script` and `link` tags into the index.html.</li> <li>CSS styles are buried inside the JavaScript bundles by default.</li> </ul> </td>
+<td>The development build relies on the webpack development server, configured near the bottom of the file.The configuration imports dependencies with `require` statements and exports several objects as properties of a `module.exports` object.<ul><li>entries - We can supply webpack with one or more entry files and let it find and incorporate the dependencies that radiate from those entries.</li> <li>resolve -The application will import lot of JavaScript and TypeScript files. But most `import` statements don't mention the extension at all. So, we should tell the Webpack to resolve extension-less file requests by looking for matching files with ts or js extension.</li> <li>plugins - It creates instances of the plugins. i.e. Webpack has a build pipeline with well-defined phases. Tap into that pipeline with plugins such as the `uglify` minification plugin.</li></ul> Here, <ul> <li>Webpack puts output bundles in the `dist` folder</li> <li>HtmlwebpackPlugin use the public path and the filename settings to generate appropriate `script` and `link` tags into the index.html.</li> <li>CSS styles are buried inside the JavaScript bundles by default.</li> </ul> </td>
 </tr>
 <tr>
 <td>src/app/app.component.ts</td>
@@ -69,7 +64,7 @@ The below table depicts the purpose of files in the above structure.
 </tr>
 <tr>
 <td>src/app/app.module.ts</td>
-<td>It tells the angular how to construct and bootstrap the app in the root module. In our application, it bootstraps the `AppComponent` to launch the application.</td>
+<td>It tells the Angular how to construct and bootstrap the app in the root module. In our application, it bootstraps the `AppComponent` to launch the application.</td>
 </tr>
 <tr>
 <td>src/main.ts</td>
@@ -85,7 +80,7 @@ The below table depicts the purpose of files in the above structure.
 </tr>
 <tr>
 <td>tsconfig.json</td>
-<td>All typescript files need to be transpiled/compiled to native JavaScript files so that we can run them on browser. To accomplish this, we need to add `Typescript Configuration file` called as tsconfig.json, which is used as input of typescript compiler(tsc) to transpile the typescript files.</td>
+<td>All TypeScript files need to be transpiled/compiled to native JavaScript files so that we can run them on browser. To accomplish this, we need to add `TypeScript Configuration file` called as tsconfig.json, which is used as input of TypeScript compiler(tsc) to transpile the TypeScript files.</td>
 </tr>
 </table>
 
@@ -112,7 +107,7 @@ export class ComponentName {
 
 N> We recommend you to go through the [quick start](https://angular.io/docs/ts/latest/quickstart.html) of Angular application to get deeper knowledge of setup and structure of the application.
 
-## Configuration of Syncfusion Javascript Widget Dependencies
+## Configuration of Syncfusion JavaScript Widget Dependencies
 
 * Syncfusion JavaScript widgets need `window.jQuery` to render the Angular components, since, we need to import jQuery in `vendor.ts` file and include `Syncfusion theme files` from `node_modules` as like the below code snippet. Refer the [cloned seed](https://github.com/syncfusion/angular2-seeds/blob/master/src/vendor.ts/#L12-L16) for this code snippet.
 
@@ -126,7 +121,7 @@ import '../node_modules/syncfusion-javascript/Content/ej/web/material/ej.web.all
 
 {% endhighlight %}
 
-N> To overcome the issue `$(..)['ej'+this.controlname] is not defined`, [alias](https://webpack.js.org/configuration/resolve/) is used to define `jQuery` in `webpack configuration(common)` file which we already configured in [webpack seed](https://github.com/syncfusion/angular2-seeds/blob/master/config/webpack.common.js/#L14-L19) application.
+N> To overcome the issue `$(..)['ej'+this.controlname] is not defined`, [alias](https://webpack.js.org/configuration/resolve/) is used to define `jQuery` in `webpack configuration(common)` file which we already configured in [webpack seed](https://github.com/syncfusion/angular2-seeds/blob/master/config/webpack.dev.js/#L23-L25) application.
 
 ## Consuming ej-angular2 library
 
