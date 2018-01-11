@@ -53,7 +53,7 @@ The following code example is used to render the **Rating** control with **minim
 
 {% highlight html %}
 
- <ej-rating id="rating" [minValue]="minvalue"></ej-rating>
+ <ej-rating id="rating" [minValue]="minValue"></ej-rating>
 
 {% endhighlight %}
 
@@ -66,9 +66,9 @@ import { Component } from '@angular/core';
 })
 
 export class RatingComponent {
-    minvalue: number;
+    minValue: number;
     constructor() {
-        this.minvalue = 3;
+        this.minValue = 3;
     }
 }
 
@@ -88,7 +88,7 @@ The following code example is used to render the Rating control with **maximum**
 
 {% highlight html %}
 
- <ej-rating id="rating" [maxValue]="maxvalue"></ej-rating>
+ <ej-rating id="rating" [maxValue]="maxValue"></ej-rating>
 
 {% endhighlight %}
 
@@ -101,9 +101,9 @@ import { Component } from '@angular/core';
 })
 
 export class RatingComponent {
-    maxvalue: number;
+    maxValue: number;
     constructor() {
-        this.maxvalue = 10;
+        this.maxValue = 10;
     }
 }
 
@@ -136,16 +136,16 @@ The following code example is used to render the **Rating** control with **Preci
 		<td valign="top">Half Precision:
 		</td>
 		<td>
-		<ej-rating  id="halfRating" [precision]="halfprecision" [value]="halfvalue"></ej-rating>                
+		<ej-rating  id="halfRating" [precision]="half" [value]="value"></ej-rating>                
 		</td>
 	</tr>  
 	<tr>
 		<td valign="top">Exact Precision:
 		</td>
 		<td>
-		<ej-rating  id="exactRating" [precision]="exactprecision" [value]="exactvalue"></ej-rating>     
+		<ej-rating  id="exactRating" [precision]="exact" [value]="star"></ej-rating>     
 		</td>
-	</tr>         
+	</tr>           
 </table>
 </div>
     
@@ -161,16 +161,16 @@ import { Component } from '@angular/core';
 
 export class RatingComponent {
     rate: number;
-    halfvalue: number;
-    exactvalue: number;
-    halfprecision: any;
-    exactprecision: any;
+    value: number;
+    star: number;
+    half: any;
+    exact: any;
     constructor() {
         this.rate = 4;
-        this.halfvalue = 3.5;
-        this.exactvalue = 3.7;
-        this.halfprecision = ej.Rating.Precision.Half;
-        this.exactprecision = ej.Rating.Precision.Exact;
+        this.value = 3.5;
+        this.star = 3.7;
+        this.half = ej.Rating.Precision.Half;
+        this.exact = ej.Rating.Precision.Exact;
     }
 }
 

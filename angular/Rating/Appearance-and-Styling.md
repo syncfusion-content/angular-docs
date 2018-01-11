@@ -39,7 +39,7 @@ The following code example is used to render the **Rating** control with customi
 
 {% highlight html %}
 
-<ej-rating id="rating" [value]="rate" [shapeWidth]="shapewidth" [shapeHeight]="shapeheight"> </ej-rating>
+<ej-rating id="rating" [value]="rate" [shapeWidth]="shapeWidth" [shapeHeight]="shapeHeight"> </ej-rating>
  
 {% endhighlight %} 
  
@@ -55,12 +55,12 @@ import {ViewEncapsulation} from '@angular/core';
 })
 export class RatingComponent {
     rate: number;
-    shapewidth: number;
-    shapeheight: number;
+    shapeWidth: number;
+    shapeHeight: number;
     constructor() {
         this.rate = 4;
-        this.shapewidth = 29;
-        this.shapeheight = 29;
+        this.shapeWidth = 29;
+        this.shapeHeight = 29;
     }
 } 
 {% endhighlight %}
@@ -167,7 +167,7 @@ Add the below CSS in external file named as rating.component.css
 {% highlight css %}
 
 .custom {
-       background-color: greenyellow;
+       background-color: pink;
 }
 
 {% endhighlight %}
