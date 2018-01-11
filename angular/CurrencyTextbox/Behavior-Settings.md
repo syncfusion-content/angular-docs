@@ -136,13 +136,13 @@ export class CurrencyTextboxComponent {
 
 {% endhighlight %}
 
-The output for **CurrencyTextBox** when **enableStrictMode** is **“True”** is as follows**.**
+The output for **CurrencyTextBox** when **enableStrictMode** is **“true”** is as follows**.**
 
 ![](/angular/CurrencyTextbox/Behavior-Settings_images/Behavior-Settings_img4.png) 
 
 ## Enabled or Disabled
 
-The CurrencyTextBox control has an option to enable or disable its element. You can set the **enabled** property as “**True**” to enable the CurrencyTextBox control.
+The CurrencyTextBox control has an option to enable or disable its element. You can set the **enabled** property as “**true**” to enable the CurrencyTextBox control.
 
 ### Configure Enabled or Disabled 
 
@@ -175,18 +175,18 @@ export class CurrencyTextboxComponent {
 {% endhighlight %}
 
 
-The output for CurrencyTextBox when **enabled** is **“False”** and when **enabled** is “**True**”**.**
+The output for CurrencyTextBox when **enabled** is **“false”** and when **enabled** is “**true**”**.**
 
 
 ![](/angular/CurrencyTextbox/Behavior-Settings_images/Behavior-Settings_img5.png)
 
-CurrencyTextBox with enabled as False
+CurrencyTextBox with enabled as false
 {:.caption}
 
 
 ![](/angular/CurrencyTextbox/Behavior-Settings_images/Behavior-Settings_img6.png)
 
-CurrencyTextBox with enabled as True
+CurrencyTextBox with enabled as true
 {:.caption}
 
 ## Adjusting CurrencyTextBox Size
@@ -441,7 +441,7 @@ CurrencyTextBox with minValue
 
 ## Read Only Support
 
-The CurrencyTextBox supports read only option. When you enable the **readOnly** property to the control, the value cannot be changed in the CurrencyTextBox. You can set the **readOnly** property as “**True”** to enable this option.
+The CurrencyTextBox supports read only option. When you enable the **readOnly** property to the control, the value cannot be changed in the CurrencyTextBox. You can set the **readOnly** property as “**true”** to enable this option.
 
 ### Configure Read Only
 
@@ -473,7 +473,7 @@ export class CurrencyTextboxComponent {
 {% endhighlight %}
 
 
-The output for CurrencyTextBox when **readOnly** is “**True**” is as follows. The CurrencyTextBox values cannot be edited or changed.
+The output for CurrencyTextBox when **readOnly** is “**true**” is as follows. The CurrencyTextBox values cannot be edited or changed.
 
 
 ![](/angular/CurrencyTextbox/Behavior-Settings_images/Behavior-Settings_img14.png) 
@@ -594,7 +594,7 @@ export class CurrencyTextboxComponent {
 
 {% endhighlight %}
 
-The output for CurrencyTextBox when **showRoundedCorner** is “**True**”.
+The output for CurrencyTextBox when **showRoundedCorner** is “**true**”.
 
 ![](/angular/CurrencyTextbox/Behavior-Settings_images/Behavior-Settings_img16.png) 
 
@@ -633,17 +633,17 @@ export class CurrencyTextboxComponent {
 {% endhighlight %}
 
 
-The output for **CurrencyTextBox** when **showSpinButton** is “**True**”.
+The output for **CurrencyTextBox** when **showSpinButton** is “**true**”.
 
 
 ![](/angular/CurrencyTextbox/Behavior-Settings_images/Behavior-Settings_img17.png)
 
-CurrencyTextBox with showSpinButton is True
+CurrencyTextBox with showSpinButton is true
 {:.caption}
 
 ![](/angular/CurrencyTextbox/Behavior-Settings_images/Behavior-Settings_img18.png)
 
-CurrencyTextBox with showSpinButton is False
+CurrencyTextBox with showSpinButton is false
 {:.caption}
 
 ## Water Mark Text Support
