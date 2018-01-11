@@ -190,7 +190,7 @@ The following code example is used to render the **Rating** control with customi
 
 {% highlight html %}
 
-<ej-rating id="rating" [maxValue]="maxvalue" [incrementStep]="increment"></ej-rating>
+<ej-rating id="rating" [maxValue]="maxValue" [incrementStep]="increment"></ej-rating>
 
 {% endhighlight %}
 
@@ -203,10 +203,10 @@ import { Component } from '@angular/core';
 })
 
 export class RatingComponent {
-    maxvalue: number;
+    maxValue: number;
     increment: number;
     constructor() {
-        this.maxvalue = 10;
+        this.maxValue = 10;
         this.increment = 2;
     }
 }
