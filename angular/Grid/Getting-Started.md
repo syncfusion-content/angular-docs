@@ -27,10 +27,6 @@ N> `core.ts` source file is mandatory for all Syncfusion JavaScript Angular comp
 
 If you want to know about the external and internal dependencies of the Grid control, please refer here [here](https://help.syncfusion.com/js/grid/getting-started)
 
-I> `ej.angular2.min.js` file is additionally required to render the Grid in Angular-2 platform which is available under the location,
-
-(**Installed location**)\Syncfusion\Essential Studio\{{ site.releaseversion }}\JavaScript\assets\scripts\common.
-
 
 ## Data Binding
 

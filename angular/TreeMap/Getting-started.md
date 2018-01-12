@@ -176,7 +176,7 @@ export const rootRouterConfig: Routes = [
 ];
 {% endhighlight %}
 
-* Import and declare the Syncfusion source component and ejtreemap sample component into `app.module.ts` like the below code snippet.
+* Import and declare the Syncfusion source component and ejTreemap sample component into `app.module.ts` like the below code snippet.
 
 {% highlight ts %}
 import { NgModule, enableProdMode, ErrorHandler } from '@angular/core';
@@ -341,7 +341,7 @@ The following screenshot displays a customized **TreeMap** control.
 
 ## Enable Tooltip
 
-You can enable the tooltip by setting `showTooltip` property to “True”. By default, it takes the property of the bound object that is referred in the `weightValuePath` and displays its content when the corresponding node is hovered. You can customize the template for tooltip using `tooltipTemplate` property.
+You can enable the tooltip by setting `showTooltip` property to “true”. By default, it takes the property of the bound object that is referred in the `weightValuePath` and displays its content when the corresponding node is hovered. You can customize the template for tooltip using `tooltipTemplate` property.
 
 Add the template script to index.html file for treemap tooltip template , refer the below code snippet for tooltipTemplate
 
@@ -388,7 +388,7 @@ The following screenshot displays a ToolTip in a **TreeMap** control.
 
 ## Enable Legend
 
-You can set the color value of leaf nodes using TreeMap Legend. This legend is appropriate only for the TreeMap whose leaf nodes are colored using `rangeColorMapping`. You can set `showLegend` property value to “True” to make a legend visible.
+You can set the color value of leaf nodes using TreeMap Legend. This legend is appropriate only for the TreeMap whose leaf nodes are colored using `rangeColorMapping`. You can set `showLegend` property value to “true” to make a legend visible.
 
 ### Label for Legend
 

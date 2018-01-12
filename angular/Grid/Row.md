@@ -54,6 +54,203 @@ The following output is displayed as a result of the above code example.
 ![](Row_images/Row_img1.png)
 
 
+## Details Template
+
+It provides a detailed view /additional information about each row of the grid. You can render any type of template using ng-template with e-detailstemplate attribute in grid.
+
+On enabling details template, new column will be added in grid with an expander button in it and that can be expanded or collapsed to show or hide the underlying details of row respectively.
+
+The following code example describes the above behavior.
+
+{% highlight html %}
+
+<ej-grid  [allowPaging]="true" detailsTemplate="#tabGridContents" [dataSource]="gridData" >
+    <e-columns>
+        <e-column field="EmployeeID"></e-column>        
+        <e-column field="FirstName"></e-column>
+        <e-column field="Title"></e-column>        
+        <e-column field="City"></e-column>
+    </e-columns>
+    <ng-template #tabGridContents e-details-template let-data>     
+         <ej-tab>
+         <ul>
+           <li><a href="#Grid">Stock Grid</a></li>       
+        </ul>
+    <div id="Grid">
+        <ej-grid [allowPaging]="true" [dataSource]="data.DetailsData">
+            <e-columns>
+                <e-column field="OrderID"></e-column>
+                <e-column field="EmployeeID"></e-column>
+                <e-column field="ShipCity"></e-column>
+                <e-column field="ShipCountry"></e-column>
+                <e-column field="Freight"></e-column>
+            </e-columns>
+        </ej-grid> 
+    </div>
+</ej-tab>  
+     </ng-template> 
+</ej-grid>
+
+{% endhighlight %}
+
+{% highlight javascript %}
+
+import {Component, ViewEncapsulation} from '@angular/core';
+    @Component({
+      selector: 'ej-app',
+      templateUrl: 'app/app.component.html',  //give the path file for Grid control html file.
+    })
+    export class GridComponent {
+    
+    public gridData: any;
+
+    public DetailsData : any;
+
+    constructor() {
+       
+        this.gridData = [{
+            EmployeeID: 1, FirstName: 'Nancy', Title: 'Sales Representative', 
+            DetailsData:[{ OrderID : 10835, EmployeeID: 1, ShipCity : "Berlin", ShipCountry : "Germany", Freight : 69.53 },
+            { OrderID : 10952, EmployeeID: 1, ShipCity : "Berlin", ShipCountry : "Germany", Freight : 40.42 },
+            { OrderID : 10677, EmployeeID: 1, ShipCity : "Mexico D.F.", ShipCountry : "Mexico", Freight : 4.03 },
+            { OrderID : 10558, EmployeeID: 1, ShipCity : "Colchester", ShipCountry : "UK", Freight : 72.97 },
+            { OrderID : 10453, EmployeeID: 1, ShipCity : "Colchester", ShipCountry : "UK", Freight : 25.36 }
+            ], 
+            City: 'Seattle', Country: 'USA', 
+        },
+        {
+            EmployeeID: 2, FirstName: 'Andrew', Title: 'Vice President, Sales',
+            DetailsData:[{ OrderID : 10477, EmployeeID: 2, ShipCity : "Berlin", ShipCountry : "Germany", Freight : 69.53 },
+            { OrderID : 10247, EmployeeID: 2, ShipCity : "Berlin", ShipCountry : "Germany", Freight : 40.42 },
+            { OrderID : 10345, EmployeeID: 2, ShipCity : "Mexico D.F.", ShipCountry : "Mexico", Freight : 4.03 },
+            { OrderID : 10544, EmployeeID: 2, ShipCity : "Colchester", ShipCountry : "UK", Freight : 72.97 },
+            { OrderID : 10345, EmployeeID: 2, ShipCity : "Colchester", ShipCountry : "UK", Freight : 25.36 }
+            ],
+            City: 'Tacoma', Country: 'USA'
+        },
+        {
+            EmployeeID: 3, FirstName: 'Janet', Title: 'Sales Representative',
+            DetailsData:[{ OrderID : 10478, EmployeeID: 3, ShipCity : "Berlin", ShipCountry : "Germany", Freight : 69.53 },
+            { OrderID : 10249, EmployeeID: 3, ShipCity : "Berlin", ShipCountry : "Germany", Freight : 40.42 },
+            { OrderID : 10340, EmployeeID: 3, ShipCity : "Mexico D.F.", ShipCountry : "Mexico", Freight : 4.03 },
+            { OrderID : 10320, EmployeeID: 3, ShipCity : "Colchester", ShipCountry : "UK", Freight : 72.97 },
+            { OrderID : 10550, EmployeeID: 3, ShipCity : "Colchester", ShipCountry : "UK", Freight : 25.36 }
+            ],
+            City: 'Tacoma', Country: 'USA'
+        },
+        {
+            EmployeeID: 4, FirstName: 'Margaret', Title: 'Sales Representative',
+            DetailsData:[{ OrderID : 10444, EmployeeID: 4, ShipCity : "Berlin", ShipCountry : "Germany", Freight : 69.53 },
+            { OrderID : 10886, EmployeeID: 4, ShipCity : "Berlin", ShipCountry : "Germany", Freight : 40.42 },
+            { OrderID : 10390, EmployeeID: 4, ShipCity : "Mexico D.F.", ShipCountry : "Mexico", Freight : 4.03 },
+            { OrderID : 10678, EmployeeID: 4, ShipCity : "Colchester", ShipCountry : "UK", Freight : 72.97 },
+            { OrderID : 10369, EmployeeID: 4, ShipCity : "Colchester", ShipCountry : "UK", Freight : 25.36 }
+            ],
+            City: 'Redmond', Country: 'USA'
+        }];
+       
+     }     
+  }
+     
+{% endhighlight %}
+
+The following output is displayed as a result of the above code example.
+
+![](Row_images/Row_img12.PNG)
+
+
+## Row Template
+
+Row template enables you to set the customized look and behavior to all Grid rows.You can render any type of template using ng-template with e-row-template attribute in grid.
+
+The following code example describes the above behavior.
+
+{% highlight html %}
+<ej-grid  [dataSource]="gridData" [rowTemplate]="temp" >
+    <e-columns>
+        <e-column headerText="Photo"></e-column>
+        <e-column headerText="Employee Details"></e-column>
+    </e-columns>
+    <ng-template rowtemplate e-row-template let-data>
+<tr>
+   <td class="photo">
+   <img style="width: 130px; height: 160px" src="/13.2.0.29/themes/web/images/employees/{{data.EmployeeID}}.png" />
+   </td>
+   <td class="details">
+   <table class="CardTable" cellpadding="3" cellspacing="2">
+   <colgroup>
+   <col width="50%">
+   <col width="50%">
+   </colgroup>
+   <tbody>
+   <tr>
+   <td class="CardHeader">First Name </td>
+   <td>{{data.FirstName}}</td>
+   </tr>
+   <tr>
+   <td class="CardHeader">Last Name</td>
+   <td>{{data.LastName}}</td>
+   </tr>
+   <tr>
+   <td class="CardHeader">Title
+   </td>
+   <td>{{data.Title}}</td>
+   </tr>
+   </tbody>
+   </table>
+   </td>
+   </tr>
+    </ng-template>
+
+</ej-grid>
+{% endhighlight %}
+
+{% highlight css %}
+.photo img {
+	width: 130px;
+}
+.photo, .details {
+	border-color: #c4c4c4;
+	border-style: solid;
+}
+.photo {
+	border-width: 1px 0px 0px 0px;
+}
+.details {
+	border-width: 1px 0px 0px 1px;
+}
+.details > table {
+	width: 100%;
+}
+.CardHeader {
+	font-weight: bolder;
+}
+{% endhighlight %}
+
+{% highlight javascript %}
+
+ import {Component, ViewEncapsulation} from '@angular/core';
+    @Component({
+      selector: 'ej-app',
+      templateUrl: 'app/app.component.html',  //give the path file for Grid control html file.
+    })
+    export class AppComponent {
+       ublic gridData: any;
+    
+    temp:any;
+    
+    constructor() {
+       
+        this.gridData = (window as any).employeeView,
+    
+        this.temp = "#rowtemplate";
+     }
+{% endhighlight %}
+
+The following output is displayed as a result of the above code example.
+
+![](Row_images/Row_img11.png)
+
 ## Alternate row styling
 
 Alternate row styling enhances the readability of grid rows by setting different background color for every alternate row. You can enable the alternative row styling in grid by using [`enableAltRow`](https://help.syncfusion.com/api/angular/ejgrid#members:enablealtrow "enableAltRow") property. 

@@ -19,7 +19,7 @@ TreeMap contains various elements such as,
 
 You can set the color value of **leaf nodes** using `treeMapLegend`. This legend is appropriate only for the **TreeMap** whose leaf nodes are colored using `rangeColorMapping`.
 
-You can set `showLegend` property value to **“True”** to enable or disable legend visibility.
+You can set `showLegend` property value to **“true”** to enable or disable legend visibility.
 
 ### TreeMap Legend
 
@@ -135,7 +135,7 @@ You can also set labels for the leaf nodes by setting the `showLabels` property 
        leafItemSettings.labelPath="Region" [leafItemSettings.showLabels]="true">
     <e-levels>
        <e-level groupPath="Continent" [showLabels]="true" [groupGap]=2 
-             [headerHeight]="20" [groupPadding]="5"  headerTemplate="headertemplate">
+             [headerHeight]="20" [groupPadding]="5"  headerTemplate="headerTemplate">
        </e-level>
     </e-levels>                                                     
 </ej-treemap> 
@@ -161,7 +161,7 @@ You can handle the label overflow, by specifying any one of the following values
 **None**       - By specifying textOverflow as “none”, it displays the default label text.
 **Hide**       - By specifying textOverflow as “hide”, You can hide the label, when it exceeds the header width.
 **Wrap**       - By specifying textOverflow as “wrap”, you can wrap the label text.
-**Wrapbyword** - By specifying textOverflow as “wrapbyword”, you can wrap the label text by word.
+**WrapByWord** - By specifying textOverflow as “wrap by word”, you can wrap the label text by word.
 
 
 
@@ -171,7 +171,7 @@ You can handle the label overflow, by specifying any one of the following values
        leafItemSettings.labelPath="Region" [leafItemSettings.showLabels]="true" leafItemSettings.textOverFlow="Wrap">
     <e-levels>
        <e-level groupPath="Continent" [showLabels]="true" [groupGap]=2 
-             [headerHeight]="20" [groupPadding]="5"  headerTemplate="headertemplate">
+             [headerHeight]="20" [groupPadding]="5"  headerTemplate="headerTemplate">
        </e-level>
     </e-levels>                                                     
 </ej-treemap> 

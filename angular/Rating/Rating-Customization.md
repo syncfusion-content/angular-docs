@@ -53,7 +53,7 @@ The following code example is used to render the **Rating** control with **minim
 
 {% highlight html %}
 
- <ej-rating id="rating" [minValue]="minvalue"></ej-rating>
+ <ej-rating id="rating" [minValue]="minValue"></ej-rating>
 
 {% endhighlight %}
 
@@ -66,9 +66,9 @@ import { Component } from '@angular/core';
 })
 
 export class RatingComponent {
-    minvalue: number;
+    minValue: number;
     constructor() {
-        this.minvalue = 3;
+        this.minValue = 3;
     }
 }
 
@@ -88,7 +88,7 @@ The following code example is used to render the Rating control with **maximum**
 
 {% highlight html %}
 
- <ej-rating id="rating" [maxValue]="maxvalue"></ej-rating>
+ <ej-rating id="rating" [maxValue]="maxValue"></ej-rating>
 
 {% endhighlight %}
 
@@ -101,9 +101,9 @@ import { Component } from '@angular/core';
 })
 
 export class RatingComponent {
-    maxvalue: number;
+    maxValue: number;
     constructor() {
-        this.maxvalue = 10;
+        this.maxValue = 10;
     }
 }
 
@@ -136,16 +136,16 @@ The following code example is used to render the **Rating** control with **Preci
 		<td valign="top">Half Precision:
 		</td>
 		<td>
-		<ej-rating  id="halfRating" [precision]="halfprecision" [value]="halfvalue"></ej-rating>                
+		<ej-rating  id="halfRating" [precision]="half" [value]="value"></ej-rating>                
 		</td>
 	</tr>  
 	<tr>
 		<td valign="top">Exact Precision:
 		</td>
 		<td>
-		<ej-rating  id="exactRating" [precision]="exactprecision" [value]="exactvalue"></ej-rating>     
+		<ej-rating  id="exactRating" [precision]="exact" [value]="star"></ej-rating>     
 		</td>
-	</tr>         
+	</tr>           
 </table>
 </div>
     
@@ -161,16 +161,16 @@ import { Component } from '@angular/core';
 
 export class RatingComponent {
     rate: number;
-    halfvalue: number;
-    exactvalue: number;
-    halfprecision: any;
-    exactprecision: any;
+    value: number;
+    star: number;
+    half: any;
+    exact: any;
     constructor() {
         this.rate = 4;
-        this.halfvalue = 3.5;
-        this.exactvalue = 3.7;
-        this.halfprecision = ej.Rating.Precision.Half;
-        this.exactprecision = ej.Rating.Precision.Exact;
+        this.value = 3.5;
+        this.star = 3.7;
+        this.half = ej.Rating.Precision.Half;
+        this.exact = ej.Rating.Precision.Exact;
     }
 }
 
@@ -190,7 +190,7 @@ The following code example is used to render the **Rating** control with customi
 
 {% highlight html %}
 
-<ej-rating id="rating" [maxValue]="maxvalue" [incrementStep]="increment"></ej-rating>
+<ej-rating id="rating" [maxValue]="maxValue" [incrementStep]="increment"></ej-rating>
 
 {% endhighlight %}
 
@@ -203,10 +203,10 @@ import { Component } from '@angular/core';
 })
 
 export class RatingComponent {
-    maxvalue: number;
+    maxValue: number;
     increment: number;
     constructor() {
-        this.maxvalue = 10;
+        this.maxValue = 10;
         this.increment = 2;
     }
 }
@@ -219,7 +219,7 @@ The following screenshot illustrates the **Rating** with customized increment.
 
 ## Resetting values
 
-**EJ Rating** control provides support for value **reset** at runtime. This is achieved by enabling the [allowReset](https://help.syncfusion.com/api/js/ejrating#members:allowreset) property to be **‘True’.** By default, the property value is set to **‘True’.**
+**EJ Rating** control provides support for value **reset** at runtime. This is achieved by enabling the [allowReset](https://help.syncfusion.com/api/js/ejrating#members:allowreset) property to be **‘true’.** By default, the property value is set to **‘true’.**
 
 The following code example is used to render the **Rating** control with **allowReset**.
 
@@ -255,7 +255,7 @@ The following screenshot illustrates the **Rating** with **allowReset**.
 
 ## Read only
 
-**Rating** control provides support for changeable or unchangeable values for **Rating** control. This is achieved by the [readOnly](https://help.syncfusion.com/api/js/ejrating#members:readonly) property. When this property is set to **‘True’** the **Rating** value becomes unchangeable. By default, this property value is set to **‘False’.**
+**Rating** control provides support for changeable or unchangeable values for **Rating** control. This is achieved by the [readOnly](https://help.syncfusion.com/api/js/ejrating#members:readonly) property. When this property is set to **‘true’** the **Rating** value becomes unchangeable. By default, this property value is set to **‘false’.**
 
 The following code example is used to render the **Rating** control with **readOnly**.
 
@@ -273,7 +273,7 @@ The following screenshot illustrates the **Rating** with **readOnly.**
 
 ## Enable or Disable
 
-**Rating** control provides support to **enable** or **disable** the control. This is achieved by the [enabled](https://help.syncfusion.com/api/js/ejrating#members:enabled) property. By default the property value is **‘True’.**
+**Rating** control provides support to **enable** or **disable** the control. This is achieved by the [enabled](https://help.syncfusion.com/api/js/ejrating#members:enabled) property. By default the property value is **‘true’.**
 
 The following code example is used to render the **Rating** control with **enable** or **disable** support.
 
