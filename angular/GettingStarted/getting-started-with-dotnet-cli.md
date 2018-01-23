@@ -229,7 +229,7 @@ const nonTreeShakableModules = [
         . . .     
  {% endhighlight %}
 
-* Also add `gif and cur` filetypes in `webpack.config.vendor.js` to load `syncfusion-javascript` theme's used files(.png, .jpg, etc.). 
+* Also add `gif and cur` file types in `webpack.config.vendor.js` to load `syncfusion-javascript` theme's used files(.png, .jpg, etc.). 
 
 {% highlight javascript %}
 . . .
