@@ -9,7 +9,7 @@ documentation: ug
 
 # Getting Started with Angular SPA on ASP.NET Core using Yeoman Generator
 
-ASP.NET Single Page Application(SPA) helps you to build applications that include significant client-side interactions using HTML 5, CSS 3 and Javascript.
+ASP.NET Single Page Application(SPA) helps you to build applications that include significant client-side interactions using HTML 5, CSS 3 and JavaScript.
 
 To getting started with Syncfusion Angular Components, the NPM packages [ej-angular2](https://www.npmjs.com/package/ej-angular2) and [syncfusion-javascript](https://www.npmjs.com/package/syncfusion-javascript) helps to seamlessly supports ASP.NET Core environment for our components. The following steps depicts, to create an application in ASP.NET Core using SPA template with Syncfusion Angular Components.
 
@@ -60,7 +60,7 @@ setx ASPNETCORE_ENVIRONMENT "Development"
 
 ![](/angular/GettingStarted/Images/environmentvariable.png)
 
-N> To know more about environment varaible refer the [link](https://blogs.msdn.microsoft.com/webdev/2017/02/14/building-single-page-applications-on-asp-net-core-with-javascriptservices/)
+N> To know more about environment variable refer the [link](https://blogs.msdn.microsoft.com/webdev/2017/02/14/building-single-page-applications-on-asp-net-core-with-javascriptservices/)
 
 ## Configuration of Syncfusion Angular Component
 
@@ -227,7 +227,7 @@ module.exports = (env) => {
         . . .
 {% endhighlight %}
 
-* To bundle the Syncfusion Javsctipt Theme file, run the below command in your command prompt
+* To bundle the Syncfusion JavaScript Theme file, run the below command in your command prompt
 
 {% highlight javascript %}
 
@@ -244,7 +244,7 @@ N> If you change the theme in `webpack.config.js` file , run th above command to
 {% highlight html %}
 
 <div id="parent" >
-	<input id="btnOpen" style="height: 30px" type="button" ej-button class="ejinputtext" value="Click to open Dialog" (click)="onClick($event)" *ngIf="btndisplay" />
+	<input id="btnOpen" style="height: 30px" type="button" ej-button class="ejinputtext" value="Click to open Dialog" (click)="onClick($event)" *ngIf="button_display" />
 	<ej-dialog id="basicDialog" #dialog title="Facebook" [(enableResize)]="resize" containment="#parent" (close)="onClose($event)">
 		Facebook is an online social networking service headquartered in Menlo Park, California. Its website was launched on February
 		4, 2004, by Mark Zuckerberg with his Harvard College roommates and fellow students Eduardo Saverin, Andrew McCollum, Dustin
@@ -269,20 +269,20 @@ import { EJComponents } from 'ej-angular2';
 })
 export class HomeComponent {
   resize: boolean;
-  btndisplay: boolean;
+  button_display: boolean;
   @ViewChild('dialog') dialog: EJComponents<any, any>;
   constructor() {
     this.resize = false;
-    this.btndisplay = false;
+    this.button_display = false;
   }
   //Button click event handler to open the ejDialog
   onClick(event) {
-    this.btndisplay = false;
+    this.button_display = false;
     this.dialog.widget.element.ejDialog('open');
   }
   //Dialog close event handler
   onClose(event) {
-    this.btndisplay = true;
+    this.button_display = true;
   }
 }
 
@@ -305,20 +305,20 @@ import { EJComponents } from 'ej-angular2';
 })
 export class HomeComponent {
   resize: boolean;
-  btndisplay: boolean;
+  button_display: boolean;
   @ViewChild('dialog') dialog: EJComponents<any, any>;
   constructor() {
     this.resize = false;
-    this.btndisplay = false;
+    this.button_display = false;
   }
   //Button click event handler to open the ejDialog
   onClick(event) {
-    this.btndisplay = false;
+    this.button_display = false;
     this.dialog.widget.element.ejDialog('open');
   }
   //Dialog close event handler
   onClose(event) {
-    this.btndisplay = true;
+    this.button_display = true;
   }
 }
 {% endhighlight %}
@@ -328,7 +328,7 @@ export class HomeComponent {
 <!-- Refer the code for home.component.html file -->
 
 <div id="parent" >
-	<input id="btnOpen" style="height: 30px" type="button" ej-button class="ejinputtext" value="Click to open Dialog" (click)="onClick($event)" *ngIf="btndisplay" />
+	<input id="btnOpen" style="height: 30px" type="button" ej-button class="ejinputtext" value="Click to open Dialog" (click)="onClick($event)" *ngIf="button_display" />
 	<ej-dialog id="basicDialog" #dialog title="Facebook" [(enableResize)]="resize" containment="#parent" (close)="onClose($event)">
 		Facebook is an online social networking service headquartered in Menlo Park, California. Its website was launched on February
 		4, 2004, by Mark Zuckerberg with his Harvard College roommates and fellow students Eduardo Saverin, Andrew McCollum, Dustin
