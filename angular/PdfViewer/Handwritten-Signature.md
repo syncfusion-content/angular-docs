@@ -17,7 +17,7 @@ The below code snippet describes how to show only the signature tool in the comp
 
 {% highlight html %}
 
-    <ej-pdfviewer [(serviceUrl)]="service" [(toolbarSettings)]="toolbarsettings" id="pdfviewer" style="width:100%;min-height:600px">
+    <ej-pdfviewer [(serviceUrl)]="service" [(toolbarSettings)]="toolbarSettings" id="pdfviewer" style="width:100%;min-height:600px">
     </ej-pdfviewer>
 
 {% endhighlight %}
@@ -35,7 +35,7 @@ export class DefaultComponent {
     toolbarSettings: object;
     constructor() {
         this.service = 'http://js.syncfusion.com/demos/ejservices/api/PdfViewer';
-        this.toolbarsettings = { toolbarItem: ej.PdfViewer.ToolbarItems.SignatureTool };
+        this.toolbarSettings = { toolbarItem: ej.PdfViewer.ToolbarItems.SignatureTool };
     }
 }
     
@@ -43,7 +43,7 @@ export class DefaultComponent {
 
 **Drawing and adding signature in the PDF document**
 
-The handwritten signature can be added by drawing the signature content in the signature panel and on clicking the button labelled ADD, the signature will be added in the PDF documents. The following screenshots are pictorial representation of this.
+The handwritten signature can be added by drawing the signature content in the signature panel and on clicking the ADD button, the signature will be added in the PDF documents. The following screenshots are pictorial representation of this.
 
 ![](Signature_images/Signature_img1.png)
 
