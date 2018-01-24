@@ -67,7 +67,7 @@ import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 
 import { EJAngular2Module } from 'ej-angular2';
-import 'syncfusion-ej-global/i18n/ej.culture.fr-FR.min.js'; // Here we supported the french culture
+import 'syncfusion-ej-global/i18n/ej.culture.fr-FR.min.js'; // Here we supported the French culture
 import { AppComponent } from './app.component';
 import { TextboxComponent } from './textbox/textbox.component';
 ...

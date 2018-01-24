@@ -40,6 +40,18 @@ npm install -g @angular/cli
 
 N> To know more about angular-cli commands refer [here](https://github.com/angular/angular-cli)
 
+N> The latest version `1.6.4 of @angular/cli` throws the following error `Module build failed: Error: Can't resolve 'ej.theme.min.css' in 'E:\AngularSyncfusion\node_modules\syncfusion-javascript\Content\ej\web\material'`. To resolve this issue, downgrade the `@angular/cli` version to `1.6.3`. Refer to the below command to install the lower version of NPM package.Refer [here](https://github.com/angular/angular-cli/issues/9185 ) to know more about this issue. 
+
+{% highlight javascript %}
+npm install -g @angular/cli@1.6.3
+{% endhighlight %}
+
+And also if you are facing any other issue like  `Error: Cannot find module '@angular-devkit/core` while downgrading the angular-cli version from 1.6.4 to 1.6.3, then we need to install `@angular-devkit/core` NPM package globally. Refer to the below command to install this package. 
+
+{% highlight javascript %}
+npm install -g @angular-devkit/core
+{% endhighlight %}
+
 ## Create a new Application
 
 * To create a new Angular application run the below command in Command Prompt
@@ -170,7 +182,7 @@ export class AppModule { }
 
 {% highlight html %}
 <div id="parent" >
-	<input id="btnOpen" style="height: 30px" type="button" ej-button class="ejinputtext" value="Click to open Dialog" (click)="onClick($event)" *ngIf="btndisplay"/>
+	<input id="btnOpen" style="height: 30px" type="button" ej-button class="ejinputtext" value="Click to open Dialog" (click)="onClick($event)" *ngIf="button_display"/>
 	<ej-dialog id="basicDialog" #dialog title="Facebook" [(enableResize)]="resize" containment="#parent" (close)="onClose($event)">
 		Facebook is an online social networking service headquartered in Menlo Park, California. Its website was launched on February
 		4, 2004, by Mark Zuckerberg with his Harvard College roommates and fellow students Eduardo Saverin, Andrew McCollum, Dustin
@@ -195,20 +207,20 @@ import { EJComponents } from 'ej-angular2';
 })
 export class AppComponent {
   resize: boolean;
-  btndisplay: boolean;
+  button_display: boolean;
   @ViewChild('dialog') dialog: EJComponents <any,any>;
     constructor() {
     this.resize = false;
-    this.btndisplay = false;
+    this.button_display = false;
   }
   //Button click event handler to open the ejDialog
   onClick(event) {
-   this.btndisplay = false;
+   this.button_display = false;
    this.dialog.widget.element.ejDialog('open');
   }
   //Dialog close event handler
   onClose(event) {
-    this.btndisplay = true;
+    this.button_display = true;
   }
 }
 
@@ -233,20 +245,20 @@ import { EJComponents } from 'ej-angular2';
 })
 export class AppComponent {
   resize: boolean;
-  btndisplay: boolean;
+  button_display: boolean;
   @ViewChild('dialog') dialog: EJComponents<any, any>;
   constructor() {
     this.resize = false;
-    this.btndisplay = false;
+    this.button_display = false;
   }
   //Button click event handler to open the ejDialog
   onClick(event) {
-    this.btndisplay = false;
+    this.button_display = false;
     this.dialog.widget.element.ejDialog('open');
   }
   //Dialog close event handler
   onClose(event) {
-    this.btndisplay = true;
+    this.button_display = true;
   }
 }
 {% endhighlight %}
@@ -256,7 +268,7 @@ export class AppComponent {
 <!-- Refer the code for app.component.html file (src/app/app.component.html)-->
 
 <div id="parent" >
-	<input id="btnOpen" style="height: 30px" type="button" ej-button class="ejinputtext" value="Click to open Dialog" (click)="onClick($event)" *ngIf="btndisplay" />
+	<input id="btnOpen" style="height: 30px" type="button" ej-button class="ejinputtext" value="Click to open Dialog" (click)="onClick($event)" *ngIf="button_display" />
 	<ej-dialog id="basicDialog" #dialog title="Facebook" [(enableResize)]="resize" containment="#parent" (close)="onClose($event)">
 		Facebook is an online social networking service headquartered in Menlo Park, California. Its website was launched on February
 		4, 2004, by Mark Zuckerberg with his Harvard College roommates and fellow students Eduardo Saverin, Andrew McCollum, Dustin
@@ -314,7 +326,7 @@ platformBrowserDynamic().bootstrapModule(AppModule);
 {
   "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
   "project": {
-    "name": "angularcliaot"
+    "name": "ej-project"
   },
   "apps": [
     {

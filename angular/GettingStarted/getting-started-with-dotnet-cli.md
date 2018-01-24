@@ -229,7 +229,7 @@ const nonTreeShakableModules = [
         . . .     
  {% endhighlight %}
 
-* Also add `gif and cur` filetypes in `webpack.config.vendor.js` to load `syncfusion-javascript` theme's used files(.png, .jpg, etc.). 
+* Also add `gif and cur` file types in `webpack.config.vendor.js` to load `syncfusion-javascript` theme's used files(.png, .jpg, etc.). 
 
 {% highlight javascript %}
 . . .
@@ -313,7 +313,7 @@ module.exports = (env) => {
 {% highlight html %}
 
 <div id="parent" >
-	<input id="btnOpen" style="height: 30px" type="button" ej-button class="ejinputtext" value="Click to open Dialog" (click)="onClick($event)" *ngIf="btndisplay" />
+	<input id="btnOpen" style="height: 30px" type="button" ej-button class="ejinputtext" value="Click to open Dialog" (click)="onClick($event)" *ngIf="button_display" />
 	<ej-dialog id="basicDialog" #dialog title="Facebook" [(enableResize)]="resize" containment="#parent" (close)="onClose($event)">
 		Facebook is an online social networking service headquartered in Menlo Park, California. Its website was launched on February
 		4, 2004, by Mark Zuckerberg with his Harvard College roommates and fellow students Eduardo Saverin, Andrew McCollum, Dustin
@@ -338,20 +338,20 @@ import { EJComponents } from 'ej-angular2';
 })
 export class HomeComponent {
   resize: boolean;
-  btndisplay: boolean;
+  button_display: boolean;
   @ViewChild('dialog') dialog: EJComponents<any, any>;
   constructor() {
     this.resize = false;
-    this.btndisplay = false;
+    this.button_display = false;
   }
   //Button click event handler to open the ejDialog
   onClick(event: any) {
-    this.btndisplay = false;
+    this.button_display = false;
     this.dialog.widget.element.ejDialog('open');
   }
   //Dialog close event handler
   onClose(event: any) {
-    this.btndisplay = true;
+    this.button_display = true;
   }
 }
 
@@ -375,20 +375,20 @@ import { EJComponents } from 'ej-angular2';
 })
 export class HomeComponent {
   resize: boolean;
-  btndisplay: boolean;
+  button_display: boolean;
   @ViewChild('dialog') dialog: EJComponents<any, any>;
   constructor() {
     this.resize = false;
-    this.btndisplay = false;
+    this.button_display = false;
   }
   //Button click event handler to open the ejDialog
   onClick(event: any) {
-    this.btndisplay = false;
+    this.button_display = false;
     this.dialog.widget.element.ejDialog('open');
   }
   //Dialog close event handler
   onClose(event: any) {
-    this.btndisplay = true;
+    this.button_display = true;
   }
 }
 {% endhighlight %}
@@ -398,7 +398,7 @@ export class HomeComponent {
 <!-- Refer the code for home.component.html file -->
 
 <div id="parent" >
-	<input id="btnOpen" style="height: 30px" type="button" ej-button class="ejinputtext" value="Click to open Dialog" (click)="onClick($event)" *ngIf="btndisplay" />
+	<input id="btnOpen" style="height: 30px" type="button" ej-button class="ejinputtext" value="Click to open Dialog" (click)="onClick($event)" *ngIf="button_display" />
 	<ej-dialog id="basicDialog" #dialog title="Facebook" [(enableResize)]="resize" containment="#parent" (close)="onClose($event)">
 		Facebook is an online social networking service headquartered in Menlo Park, California. Its website was launched on February
 		4, 2004, by Mark Zuckerberg with his Harvard College roommates and fellow students Eduardo Saverin, Andrew McCollum, Dustin
