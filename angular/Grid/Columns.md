@@ -699,7 +699,7 @@ Using [`command`](https://help.syncfusion.com/api/angular/ejgrid#members:columns
 3. delete
 4. cancel
 
-Through [`buttonOptions`](https://help.syncfusion.com/api/angular/ejgrid#members:columns-commands-buttonoptions "buttonOptions") property of [`commands`](https://help.syncfusion.com/api/angular/ejgrid#members:columns-commands "commands"), you can specify all the button options which are supported by Essential Studio JavaScript [`Button`](https://help.syncfusion.com/api/js/ejbutton# "Button") control. 
+Through [`buttonOptions`](https://help.syncfusion.com/api/angular/ejgrid#members:columns-commands-buttonoptions "buttonOptions") property of [`commands`](https://help.syncfusion.com/api/angular/ejgrid#members:columns-commands "commands"), you can specify all the button options which are supported by Essential Studio JavaScript [`Button`](https://help.syncfusion.com/api/angular/ejbutton# "Button") control. 
 
 The following code example describes the above behavior.
 

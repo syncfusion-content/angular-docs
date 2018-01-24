@@ -415,7 +415,7 @@ The following output is displayed after dropping Grid rows.
 
 You can also drag and drop grid rows to any custom control. For instance, let it be a form.
 
-Enable the Grid property [`allowRowDragAndDrop`](https://help.syncfusion.com/api/angular/ejgrid#members:allowrowdraganddrop "allowRowDragAndDrop") and specify the target form element ID in [`dropTargetID`](https://help.syncfusion.com/api/js/ejgrid#members:rowdropsettings-droptargetid "dropTargetID") property of Grid [`rowDropSettings`](https://help.syncfusion.com/api/angular/ejgrid#members:rowdropsettings "rowDropSettings").
+Enable the Grid property [`allowRowDragAndDrop`](https://help.syncfusion.com/api/angular/ejgrid#members:allowrowdraganddrop "allowRowDragAndDrop") and specify the target form element ID in [`dropTargetID`](https://help.syncfusion.com/api/angular/ejgrid#members:rowdropsettings-droptargetid "dropTargetID") property of Grid [`rowDropSettings`](https://help.syncfusion.com/api/angular/ejgrid#members:rowdropsettings "rowDropSettings").
 
 The following code example describes the above behavior.
 
