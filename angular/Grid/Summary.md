@@ -204,7 +204,7 @@ Summaries with `True` and `False` count aggregate can be defined by using [`summ
 
 ## Custom Summary
 
-Custom Summary can be used to create summary values based on your required custom logic and calculations. To enable Custom Summary, [`summaryType`](https://help.syncfusion.com/api/angular/ejgrid#members:summaryrows-summarycolumns-summarytype "summaryType") should be [`custom`](https://help.syncfusion.com/js/grid/summary#custom-summary-by-string "custom") and `value` property need to define as function. In this property `value` function, you need to use Grid instance to access `model.dataSource` and `model.currentViewData`. After the custom calculation, the returned value will be displayed in corresponding Summary cell.
+Custom Summary can be used to create summary values based on your required custom logic and calculations. To enable Custom Summary, [`summaryType`](https://help.syncfusion.com/api/angular/ejgrid#members:summaryrows-summarycolumns-summarytype "summaryType") should be `custom` and `value` property need to define as function. In this property `value` function, you need to use Grid instance to access `model.dataSource` and `model.currentViewData`. After the custom calculation, the returned value will be displayed in corresponding Summary cell.
 
 
 {% highlight html %}
@@ -264,7 +264,7 @@ Custom Summary can be used to create summary values based on your required custo
 
 ## Group Summary
 
-    Group Summary is used to summarize values of a particular column based on group and it shows at bottom of each Group. To enable Group Summary for particular Group, you need to define [`showTotalSummary`](https://help.syncfusion.com/api/js/ejgrid#members:summaryrows-showtotalsummary "showTotalSummary") as false.
+    Group Summary is used to summarize values of a particular column based on group and it shows at bottom of each Group. To enable Group Summary for particular Group, you need to define [`showTotalSummary`](https://help.syncfusion.com/api/angular/ejgrid#members:summaryrows-showtotalsummary "showTotalSummary") as false.
 
 {% highlight html %}
 
@@ -318,7 +318,7 @@ W> Minimum one column should be grouped to show summary details.
 
 ## Group Caption Summary
 
-To show summaries in each Group's Caption row, particular [summary row](https://help.syncfusion.com/api/angular/ejgrid#members:summaryrows) should have [`showTotalSummary`](https://help.syncfusion.com/api/angular/ejgrid#members:summaryrows-showtotalsummary "showtotalsummary") as `false` and [`showCaptionSummary`](https://help.syncfusion.com/api/js/ejgrid#members:summaryrows-showcaptionsummary "showCaptionSummary") as `true`.
+To show summaries in each Group's Caption row, particular [summary row](https://help.syncfusion.com/api/angular/ejgrid#members:summaryrows) should have [`showTotalSummary`](https://help.syncfusion.com/api/angular/ejgrid#members:summaryrows-showtotalsummary "showtotalsummary") as `false` and [`showCaptionSummary`](https://help.syncfusion.com/api/angular/ejgrid#members:summaryrows-showcaptionsummary "showCaptionSummary") as `true`.
 
 
 {% highlight html %}
@@ -374,7 +374,7 @@ W> Minimum one column should be grouped to show summary details.
 
 ## Summary Template
 
-Using `template` property of `summaryColumns` you can render any type of JsRender templates or customizing the summary value.
+Using `template` property of [`summaryColumns`](https://help.syncfusion.com/api/angular/ejgrid#members:summaryrows-summarycolumns) you can render any type of JsRender templates or customizing the summary value.
 
 The following code example describes the above behavior.
 
@@ -446,7 +446,7 @@ The following output is displayed as a result of the above code example.
 
 ## Format
 
-To format Summary values, [`format`](https://help.syncfusion.com/api/angular/ejgrid#members:summaryrows-summarycolumns-format "format") property needs to be assigned in [`summaryColumns`](https://help.syncfusion.com/api/js/ejgrid#members:summaryrows-summarycolumns "summaryColumns") collection object.  To know more about formatting options. Please refer [**globalize.js**](https://github.com/jquery/globalize/tree/v0.1.1#)
+To format Summary values, [`format`](https://help.syncfusion.com/api/angular/ejgrid#members:summaryrows-summarycolumns-format "format") property needs to be assigned in [`summaryColumns`](https://help.syncfusion.com/api/angular/ejgrid#members:summaryrows-summarycolumns "summaryColumns") collection object.  To know more about formatting options. Please refer [**globalize.js**](https://github.com/jquery/globalize/tree/v0.1.1#)
 
 {% highlight html %}
 

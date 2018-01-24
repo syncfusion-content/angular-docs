@@ -326,9 +326,9 @@ When you move the cursor over the particular cell it provides an information abo
 
 **Template**
 
-HTML templates can be specified in the `tooltip` property of the particular column cell as a string (HTML element) or ID of the template's HTML element.You can use JsRender syntax in the template. For more information about JsRender syntax, please refer to [this link](http://www.jsviews.com/#jsrapi "this link"). 
+HTML templates can be specified in the [`tooltip`](https://help.syncfusion.com/api/angular/ejgrid#members:columns-tooltip) property of the particular column cell as a string (HTML element) or ID of the template's HTML element.You can use JsRender syntax in the template. For more information about JsRender syntax, please refer to [this link](http://www.jsviews.com/#jsrapi "this link").
  
-N> The `tooltip` template must contain `value` property to bind the corresponding cell text in tooltip
+N> The [`tooltip`](https://help.syncfusion.com/api/angular/ejgrid#members:columns-tooltip) template must contain `value` property to bind the corresponding cell text in tooltip
  
 The following code example describes the above behavior.
 
@@ -378,11 +378,11 @@ The following output is displayed as a result of the above code example.
 
 ## ClipMode
 
-When the cell value contains a long text that will not fit into the grid column cell, the `clipMode` property is used. By using the `clipMode`, the cell value will be displayed with ellipsis or with clipped content when the text overflows inside a column cell.
+When the cell value contains a long text that will not fit into the grid column cell, the [`clipMode`](https://help.syncfusion.com/api/angular/ejgrid#members:columns-clipmode) property is used. By using the [`clipMode`](https://help.syncfusion.com/api/angular/ejgrid#members:columns-clipmode), the cell value will be displayed with ellipsis or with clipped content when the text overflows inside a column cell.
 
-N> 1. By default the `clipMode` will be set as `clip`. 
+N> 1. By default the [`clipMode`](https://help.syncfusion.com/api/angular/ejgrid#members:columns-clipmode) will be set as `clip`. 
 
-N> 2. For [`clipMode`] property you can assign either `string` value (`ellipsis`)  or `enum` value (`ej.Grid.ClipMode.Ellipsis`).
+N> 2. For [`clipMode`](https://help.syncfusion.com/api/angular/ejgrid#members:columns-clipmode) property you can assign either `string` value (`ellipsis`)  or `enum` value (`ej.Grid.ClipMode.Ellipsis`).
 
 
 **List of Enumeration types**
@@ -479,7 +479,7 @@ The following output is displayed as a result of the above code example.
 
 Ellipsis will be displayed when the content overflows its column width. Here the tooltip will be shown only for the corresponding column cells that shows ellipsis.
 
-N> If `clipMode` is set as `EllipsisWithTooltip`, then `tooltip` must be given.
+N> If [`clipMode`](https://help.syncfusion.com/api/angular/ejgrid#members:columns-clipmode) is set as `EllipsisWithTooltip`, then `tooltip` must be given.
 
 The following code example describes the above behavior.
 

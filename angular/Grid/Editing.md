@@ -9,20 +9,20 @@ api: /api/Angular/grid
 --- 
 # Editing
 
-The grid control has support for dynamic insertion, updating and deletion of records. You can start the edit action either by double clicking the particular row or by selecting the required row and clicking on Edit icon in toolbar. Similarly, you can add new record to grid either by clicking on insert icon in toolbar or on an external button which is bound to call `addRecord` method of grid. `Save` and `Cancel` while on edit mode is possible using respective toolbar icon in grid.
+The grid control has support for dynamic insertion, updating and deletion of records. You can start the edit action either by double clicking the particular row or by selecting the required row and clicking on Edit icon in toolbar. Similarly, you can add new record to grid either by clicking on insert icon in toolbar or on an external button which is bound to call [`addRecord`](https://help.syncfusion.com/api/angular/ejgrid#methods:addrecord "addRecord") method of grid. `Save` and `Cancel` while on edit mode is possible using respective toolbar icon in grid.
 
 Deletion of the record is possible by selecting the required row and clicking on Delete icon in toolbar. 
 
-The primary key for the data source should be defined in `e-column` definition, for editing to work properly. In `e-column` definition, particular primary column's `isPrimaryKey` property should be set to `true`. Refer the Knowledge base [link](http://www.syncfusion.com/kb/2675/cant-edit-any-row-except-the-first-row-in-grid# "link") for more information.
+The primary key for the data source should be defined in [`columns`](https://help.syncfusion.com/api/angular/ejgrid#members:columns "columns") definition, for editing to work properly. In [`columns`](https://help.syncfusion.com/api/angular/ejgrid#members:columns "columns") definition, particular primary column's [`isPrimaryKey`](https://help.syncfusion.com/api/angular/ejgrid#members:columns-isprimarykey "isPrimaryKey") property should be set to `true`. Refer the Knowledge base [link](http://www.syncfusion.com/kb/2675/cant-edit-any-row-except-the-first-row-in-grid# "link") for more information.
 
 N> 1. In grid, the primary key column will be automatically set to read only while editing the row, but you can specify primary key column value while adding a new record.
-N> 2. The column which is specified as `isIdentity` will be in readonly mode both while editing and adding a record. Also, auto incremented value is assigned to that `isIdentity` column.
+N> 2. The column which is specified as [`isIdentity`](https://help.syncfusion.com/api/angular/ejgrid#members:columns-isidentity "isIdentity") will be in readonly mode both while editing and adding a record. Also, auto incremented value is assigned to that [`isIdentity`](https://help.syncfusion.com/api/angular/ejgrid#members:columns-isidentity "isIdentity") column.
 
 ## Toolbar with edit option
 
-Using toolbar which is rendered at the top of the grid header, you can show all the CRUD related action. To enable toolbar and toolbar items, set `showToolbar` property as true and `toolbarItems`. The default toolbar items are `Add`, `Edit`, `Delete`, `Update` and `Cancel`.
+Using toolbar which is rendered at the top of the grid header, you can show all the CRUD related action. To enable toolbar and toolbar items, set [`showToolbar`](https://help.syncfusion.com/api/angular/ejgrid#members:toolbarsettings-showtoolbar "showToolbar") property as true and [`toolbarItems`](https://help.syncfusion.com/api/angular/ejgrid#members:toolbarsettings-toolbaritems "toolbarItems"). The default toolbar items are `Add`, `Edit`, `Delete`, `Update` and `Cancel`.
 
-N> For `toolbarItems` property you can assign either `string` value ("add") or `enum` value (`ej.Grid.ToolBarItems.Add`).
+N> For [`toolbarItems`](https://help.syncfusion.com/api/angular/ejgrid#members:toolbarsettings-toolbaritems "toolbarItems") property you can assign either `string` value ("add") or `enum` value (`ej.Grid.ToolBarItems.Add`).
 
 {% highlight html %}
 
@@ -68,19 +68,19 @@ The following output is displayed as a result of the above code example.
 
 ## Cell edit type and its params
 
-The edit type of bound column can be customized using `editType` property of `columns`. The following Essential Javascript controls are supported built-in by `editType`. You can set the `editType` based on specific data type of the column. 
+The edit type of bound column can be customized using [`editType`](https://help.syncfusion.com/api/angular/ejgrid#members:columns-edittype "editType") property of [`columns`](https://help.syncfusion.com/api/angular/ejgrid#members:columns "columns"). The following Essential Javascript controls are supported built-in by [`editType`](https://help.syncfusion.com/api/angular/ejgrid#members:columns-edittype "editType"). You can set the [`editType`](https://help.syncfusion.com/api/angular/ejgrid#members:columns-edittype "editType") based on specific data type of the column.
 
-* `CheckBox` control for boolean data type.
-* `NumericTextBox`control for integers, double, and decimal data types.
+* [`CheckBox`](https://help.syncfusion.com/api/angular/ejcheckbox "CheckBox") control for boolean data type.
+* `NumericTextBox` control for integers, double, and decimal data types.
 * `InputTextBox` control for string data type.
-* `DatePicker` control for date data type.
-* `DateTimePicker`control for date-time data type.
-* `DropDownList`control for list of data type.
+* [`DatePicker`](https://help.syncfusion.com/api/angular/ejdatepicker "DatePicker") control for date data type.
+* `DateTimePicker` control for date-time data type.
+* `DropDownList` control for list of data type.
 
 
-And also you can define the model for all the editTypes controls while editing through `editParams` property of `columns`.
+And also you can define the model for all the editTypes controls while editing through [`editParams`](https://help.syncfusion.com/api/angular/ejgrid#members:columns-editparams "editParams") property of [`columns`](https://help.syncfusion.com/api/angular/ejgrid#members:columns "columns").
 
-The following table describes `editType`and their corresponding `editParams` of the specific data type of the column.
+The following table describes [`editType`](https://help.syncfusion.com/api/angular/ejgrid#members:columns-edittype "editType") and their corresponding [`editParams`](https://help.syncfusion.com/api/angular/ejgrid#members:columns-editparams "editParams") of the specific data type of the column.
 
 <table>
 <tr>
@@ -121,8 +121,8 @@ editParams: {  allowGrouping: true }</td></tr>
 
 </table>
 
-N> 1. If `editType` is not set, then by default it will display the input element ("stringedit") while editing a column.
-N> 2. For `editType` property you can assign either `string` value ("numericedit") or `enum` value (`ej.Grid.EditingType.Numeric`).
+N> 1. If [`editType`](https://help.syncfusion.com/api/angular/ejgrid#members:columns-edittype "editType") is not set, then by default it will display the input element ("stringedit") while editing a column.
+N> 2. For [`editType`](https://help.syncfusion.com/api/angular/ejgrid#members:columns-edittype "editType") property you can assign either `string` value ("numericedit") or `enum` value (`ej.Grid.EditingType.Numeric`).
 
 The following code example describes the above behavior.
 
@@ -173,7 +173,7 @@ The following output is displayed as a result of the above code example.
 
 ## Cell Edit Template
 
-On editing the column values, custom editor can be created by using `editTemplate` property of `columns`. It has three functions, they are
+On editing the column values, custom editor can be created by using [`editTemplate`](https://help.syncfusion.com/api/angular/ejgrid#members:columns-edittemplate "editTemplate") property of [`columns`](https://help.syncfusion.com/api/angular/ejgrid#members:columns "columns"). It has three functions, they are
 
 1. `create` - It is used to create the control at time of initialize.
 2. `read` - It is used to read the input value at time of save.
@@ -244,9 +244,9 @@ The following output is displayed as a result of the above code example.
 
 ### Inline 
 
-Set `editMode` as `normal`, then the row itself is changed as edited row.
+Set [`editMode`](https://help.syncfusion.com/api/angular/ejgrid#members:editsettings-editmode "editMode") as `normal`, then the row itself is changed as edited row.
 
-N> For `editMode` property you can assign either `string` value ("normal") or `enum` value (`ej.Grid.EditMode.Normal`).
+N> For [`editMode`](https://help.syncfusion.com/api/angular/ejgrid#members:editsettings-editmode "editMode") property you can assign either `string` value ("normal") or `enum` value (`ej.Grid.EditMode.Normal`).
 
 The following code example describes the above behavior.
 
@@ -294,7 +294,7 @@ The following output is displayed as a result of the above code example.
 
 ### Inline Form
 
-Set `editMode` as `inlineform`, then edit form will be inserted next to the row which is to be edited.
+Set [`editMode`](https://help.syncfusion.com/api/angular/ejgrid#members:editsettings-editmode "editMode") as `inlineform`, then edit form will be inserted next to the row which is to be edited.
 
 The following code example describes the above behavior.
 
@@ -351,14 +351,14 @@ You can edit any of the fields pertaining to a single record of data and apply i
 
 Using this template support, you can edit the fields that are not bound to grid columns.
 
-To edit the records using Inline template form, set `editMode`as `inlineformtemplate` and specify the template ID to `inlineFormTemplateID` of `editSettings`property.
+To edit the records using Inline template form, set [`editMode`](https://help.syncfusion.com/api/angular/ejgrid#members:editsettings-editmode "editMode") as `inlineformtemplate`and specify the template ID to [`inlineFormTemplateID`](https://help.syncfusion.com/api/angular/ejgrid#members:editsettings-inlineformtemplateid "inlineFormTemplateID") of [`editSettings`](https://help.syncfusion.com/api/angular/ejgrid#members:editsettings "editSettings") property.
 
-While using template form, you can change the HTML elements to appropriate JS controls based on the column type. This can be achieved by using `actionComplete` event of grid.
+While using template form, you can change the HTML elements to appropriate JS controls based on the column type. This can be achieved by using [`actionComplete`](https://help.syncfusion.com/api/angular/ejgrid#events:actioncomplete "actionComplete") event of grid.
 
 N> 1. `value` attribute is used to bind the corresponding field value while editing.
 N> 2. `name` attribute is used to get the changed field values while saving the edited record.
 N> 3.  It's a standard way to enclose the `template` within the `script` tag with `type` as "text/ng-template".
-N> 4.  For `editMode` property you can assign either `string` value ("inlineformtemplate") or `enum` value (`ej.Grid.EditMode.InlineTemplateForm`) 
+N> 4.  For [`editMode`](https://help.syncfusion.com/api/angular/ejgrid#members:editsettings-editmode "editMode") property you can assign either `string` value ("inlineformtemplate") or `enum` value (`ej.Grid.EditMode.InlineTemplateForm`) 
 
 
 The following code example describes the above behavior.
@@ -454,7 +454,7 @@ After the template elements are converted to JS controls using actionComplete ev
 
 ### Dialog
 
-Set `editMode` as `dialog` to edit data using a dialog box, which displays the fields associated with the data record being edited.
+Set [`editMode`](https://help.syncfusion.com/api/angular/ejgrid#members:editsettings-editmode "editMode") as `dialog` to edit data using a dialog box, which displays the fields associated with the data record being edited.
 
 The following code example describes the above behavior.
 
@@ -506,13 +506,13 @@ You can edit any of the fields pertaining to a single record of data and apply i
 
 Using this template support, you can edit the fields that are not bound to grid columns.
 
-To edit the records using Inline template form, set `editMode` as dialogtemplate and specify the template id to `dialogEditorTemplateID` property of `editSettings`.
+To edit the records using Inline template form, set [`editMode`](https://help.syncfusion.com/api/angular/ejgrid#members:editsettings-editmode "editMode") as dialogtemplate and specify the template id to [`dialogEditorTemplateID`](https://help.syncfusion.com/api/angular/ejgrid#members:editsettings-dialogeditortemplateid "dialogEditorTemplateID") property of [`editSettings`](https://help.syncfusion.com/api/angular/ejgrid#members:editsettings "editSettings").
 
 While using template, you can change the elements that are defined in the `template`, to appropriate JS controls based on the column type. This can be achieved by using `actionComplete`event of grid.
 
 N> 1. `value` attribute is used to bind the corresponding field value while editing.
 N> 2. `name` attribute is used to get the changed field values while save the edited record. 
-N> 3. For [`editMode`] property you can assign either `string` value ("dialogtemplate") or `enum` value (`ej.Grid.EditMode.DialogTemplate`).
+N> 3. For [`editMode`](https://help.syncfusion.com/api/angular/ejgrid#members:editsettings-editmode "editMode") property you can assign either `string` value ("dialogtemplate") or `enum` value (`ej.Grid.EditMode.DialogTemplate`).
 
 The following code example describes the above behavior.
 
@@ -606,7 +606,7 @@ After the template elements are converted to JS controls using actionComplete ev
 
 ### External Form
 
-By setting the `editMode` as `externalform`, the edit form is opened outside the grid content.
+By setting the [`editMode`](https://help.syncfusion.com/api/angular/ejgrid#members:editsettings-editmode "editMode") as `externalform`, the edit form is opened outside the grid content.
 
 The following code example describes the above behavior.
 
@@ -662,7 +662,7 @@ You can position an external edit form in the following two ways.
 1. Top-right
 2. Bottom left
 
-This can be achieved by setting the `formPosition` property of `editSettings` as "topright" or "bottomleft".
+This can be achieved by setting the [`formPosition`](https://help.syncfusion.com/api/angular/ejgrid#members:editsettings-formposition "formPosition") property of [`editSettings`](https://help.syncfusion.com/api/angular/ejgrid#members:editsettings "editSettings") as "topright" or "bottomleft".
 
 The following code example describes the above behavior.
 
@@ -716,13 +716,13 @@ You can edit any of the fields pertaining to a single record of data and apply i
 
 Using this template support, you can edit the fields that are not bound to grid columns.
 
-To edit the records using External template form, set `editMode` as externalformtemplate and specify the template id to `externalFormTemplateID` property of `editSettings`.
+To edit the records using External template form, set [`editMode`](https://help.syncfusion.com/api/angular/ejgrid#members:editsettings-editmode "editMode") as externalformtemplate and specify the template id to [`externalFormTemplateID`](https://help.syncfusion.com/api/angular/ejgrid#members:editsettings-externalformtemplateid "externalFormTemplateID") property of [`editSettings`](https://help.syncfusion.com/api/angular/ejgrid#members:editsettings "editSettings").
 
-While using template, you can change the elements that are defined in the template, to appropriate JS controls based on the column type. This can be achieved by using `actionComplete` event of grid.
+While using template, you can change the elements that are defined in the template, to appropriate JS controls based on the column type. This can be achieved by using [`actionComplete`](https://help.syncfusion.com/api/angular/ejgrid#events:actioncomplete "actionComplete") event of grid.
 
 N> 1. `value` attribute is used to bind the corresponding field value while editing. 
 N> 2. `name` attribute is used to get the changed field values while save the edited record. 
-N> 3. For `editMode` property you can assign either `string` value ("externalformtemplate") or `enum` value (`ej.Grid.EditMode.ExternalFormTemplate`).
+N> 3. For [`editMode`](https://help.syncfusion.com/api/angular/ejgrid#members:editsettings-editmode "editMode") property you can assign either `string` value ("externalformtemplate") or `enum` value (`ej.Grid.EditMode.ExternalFormTemplate`).
 
 The following code example describes the above behavior.
 
@@ -815,7 +815,7 @@ After the template elements are converted to JS controls using actionComplete ev
 
 ### Batch / Excel-like
 
-Users can start editing by clicking a cell and typing data into it. Edited cell will be marked while navigating to next cell or any other row, so that you know which fields or cells has been edited. Set `editMode` as `batch` to enable batch editing.
+Users can start editing by clicking a cell and typing data into it. Edited cell will be marked while navigating to next cell or any other row, so that you know which fields or cells has been edited. Set [`editMode`](https://help.syncfusion.com/api/angular/ejgrid#members:editsettings-editmode "editMode") as `batch` to enable batch editing.
 
 N> Refer the KB [link](http://www.syncfusion.com/kb/3016/how-to-suppress-grid-confirmation-messages# "link") for "How to suppress grid confirmation messages" in batch mode.
 
@@ -866,9 +866,9 @@ The following output is displayed as a result of the above code example.
 
 ## Confirmation messages
 
-To show the confirm dialog while saving or discarding the batch changes (discarding during the grid action like filtering, sorting and paging), set `showConfirmDialog` as `true`.
+To show the confirm dialog while saving or discarding the batch changes (discarding during the grid action like filtering, sorting and paging), set [`showConfirmDialog`](https://help.syncfusion.com/api/angular/ejgrid#members:editsettings-showconfirmdialog "showConfirmDialog") as `true`.
 
-N> `showConfirmDialog` property is only for batch editing mode.
+N> [`showConfirmDialog`](https://help.syncfusion.com/api/angular/ejgrid#members:editsettings-showconfirmdialog "showConfirmDialog") property is only for batch editing mode.
 
 The following code example describes the above behavior.
 
@@ -910,9 +910,9 @@ The following code example describes the above behavior.
 {% endhighlight %}
 
 
-To show delete confirm dialog while deleting a record, set `showDeleteConfirmDialog` as true.
+To show delete confirm dialog while deleting a record, set [`showDeleteConfirmDialog`](https://help.syncfusion.com/api/angular/ejgrid#members:editsettings-showdeleteconfirmdialog "showDeleteConfirmDialog") as true.
 
-N> `showDeleteConfirmDialog` property is for all type of `editMode`.
+N> [`showDeleteConfirmDialog`](https://help.syncfusion.com/api/angular/ejgrid#members:editsettings-showdeleteconfirmdialog "showDeleteConfirmDialog") property is for all type of [`editMode`](https://help.syncfusion.com/api/angular/ejgrid#members:editsettings-editmode "editMode").
 
 The following code example describes the above behavior.
 
@@ -972,7 +972,7 @@ The below validation script files are needed when editing is enabled with valida
 ### jQuery Validation
 
 
-You can set validation rules using `validationRules` property of `columns`. The following are jQuery validation methods.
+You can set validation rules using [`validationRules`](https://help.syncfusion.com/api/angular/ejgrid#members:columns-validationrules "validationRules") property of [`columns`](https://help.syncfusion.com/api/angular/ejgrid#members:columns "columns"). The following are jQuery validation methods.
 
 __List__ __of__ __Jquery__ __validation__ __methods__
 
@@ -1483,7 +1483,7 @@ Please refer the below image for more information about batch parameters
 
 ## Adding New Row Position
 
-To add new row in the top or bottom position of grid content, set `rowPosition` property of `editSettings` depending on the requirement.
+To add new row in the top or bottom position of grid content, set [`rowPosition`](https://help.syncfusion.com/api/angular/ejgrid#members:editsettings-rowposition "rowPosition") property of [`editSettings`](https://help.syncfusion.com/api/angular/ejgrid#members:editsettings "editSettings") depending on the requirement.
 
 The following code example describes the above behavior.
 
@@ -1532,9 +1532,9 @@ The following output is displayed as a result of the above code example.
 
 ## Render with blank row for easy add new
 
-The blank add new row is displayed in the grid content during grid initialization itself to add a new record easily. To enable show add new row by default, set `showAddNewRow` property of `editSettings` as `true`.
+The blank add new row is displayed in the grid content during grid initialization itself to add a new record easily. To enable show add new row by default, set [`showAddNewRow`](https://help.syncfusion.com/api/angular/ejgrid#members:editsettings-showaddnewrow "showAddNewRow") property of [`editSettings`](https://help.syncfusion.com/api/angular/ejgrid#members:editsettings "editSettings") as `true`.
 
-The blank add new row is displayed either in the top or bottom of the corresponding page, its position is based on the `rowPosition` property of `editSettings`.
+The blank add new row is displayed either in the top or bottom of the corresponding page, its position is based on the [`rowPosition`](https://help.syncfusion.com/api/angular/ejgrid#members:editsettings-rowposition "rowPosition") property of [`editSettings`](https://help.syncfusion.com/api/angular/ejgrid#members:editsettings "editSettings").
 
 The following code example describes the above behavior.
 
@@ -1582,12 +1582,12 @@ The following output is displayed as a result of the above code example.
 
 
 N> 1. If it is remote, then the newly added record is placed based on the index from current view data. 
-N> 2. If it is local, then the newly added record is added at the top of the page even if the added new `rowPosition` is mentioned as "bottom".
+N> 2. If it is local, then the newly added record is added at the top of the page even if the added new [`rowPosition`](https://help.syncfusion.com/api/angular/ejgrid#members:editsettings-rowposition "rowPosition") is mentioned as "bottom".
 
 
 ## Default column values on add new
 
-While adding new record in grid, there is an option to set the default value for the columns. Using `defaultValue` property of `columns` you can set the default values for that particular column while editing or adding a new row.
+While adding new record in grid, there is an option to set the default value for the columns. Using [`defaultValue`](https://help.syncfusion.com/api/angular/ejgrid#members:columns-defaultvalue "defaultValue") property of [`columns`](https://help.syncfusion.com/api/angular/ejgrid#members:columns "columns") you can set the default values for that particular column while editing or adding a new row.
 
 The following code example describes the above behavior.
 
