@@ -27,7 +27,7 @@ If client width is less than 321px, the grid will render in mobile mode. In whic
 
 ### Responsive Row
 
-Enabling Responsive row makes the Grid to render the record values in vertical order which removes the need for horizontal scrolling to view complete record details. It can be enabled by defining [`enableResponsiveRow`](https://help.syncfusion.com/api/js/ejgrid#members:enableresponsiverow "enableResponsiveRow") property as `true`.
+Enabling Responsive row makes the Grid to render the record values in vertical order which removes the need for horizontal scrolling to view complete record details. It can be enabled by defining [`enableResponsiveRow`](https://help.syncfusion.com/api/angular/ejgrid#members:enableresponsiverow "enableResponsiveRow") property as `true`.
 
 {% highlight html %}
 
@@ -192,7 +192,7 @@ Filtering design in tab layout.
 
 ## Width
 
-By default, the grid is adaptable to its parent container. It can adjust its width of columns based on parent container width. You can also assign `width` of [`columns`](https://help.syncfusion.com/api/js/ejgrid#members:columns "columns") in percentage.
+By default, the grid is adaptable to its parent container. It can adjust its width of columns based on parent container width. You can also assign [`width`](https://help.syncfusion.com/api/angular/ejgrid#members:columns-width) of [`columns`](https://help.syncfusion.com/api/angular/ejgrid#members:columns "columns") in percentage.
 
 {% highlight html %}
     
@@ -222,11 +222,11 @@ import {Component, ViewEncapsulation} from '@angular/core';
 
 {% endhighlight %}
 
-I>  [`allowScrolling`](https://help.syncfusion.com/api/js/ejgrid#members:allowscrolling "allowScrolling") should be false while defining width in percentage.
+I>  [`allowScrolling`](https://help.syncfusion.com/api/angular/ejgrid#members:allowscrolling "allowScrolling") should be false while defining width in percentage.
 
 ## Min Width
 
-Min Width is used to maintain minimum width for the Grid. To enable Min Width, [`minWidth`](https://help.syncfusion.com/api/js/ejgrid#members:minwidth "minWidth") should be defined. If the grid width is less than [`minWidth`](https://help.syncfusion.com/api/js/ejgrid#members:minwidth "minWidth") then the scrollbar will be displayed to maintain minimum width.
+Min Width is used to maintain minimum width for the Grid. To enable Min Width, [`minWidth`](https://help.syncfusion.com/api/angular/ejgrid#members:minwidth "minWidth") should be defined. If the grid width is less than [`minWidth`](https://help.syncfusion.com/api/angular/ejgrid#members:minwidth "minWidth") then the scrollbar will be displayed to maintain minimum width.
 
 {% highlight html %}
     
@@ -263,11 +263,11 @@ import {Component, ViewEncapsulation} from '@angular/core';
 
 MinWidth set to Grid
 
-N> We can render the Grid with height responsive by setting the scrollSettings `height`as `100%`. If the grid height is greater than its parent container's height then the vertical scrollbar will be displayed to view the content.
+N> We can render the Grid with height responsive by setting the scrollSettings [`height`](https://help.syncfusion.com/api/angular/ejgrid#members:scrollsettings-height) as `100%`. If the grid height is greater than its parent container's height then the vertical scrollbar will be displayed to view the content.
 
 ## Priority for Columns
 
-Priority makes column to be visible or hidden based on the `priority` value and browser's width to best accommodate the possible columns. To enable `priority` for `columns`, `priority` needs to be defined in columns collection. These Priority values are from one to six.
+Priority makes column to be visible or hidden based on the [`priority`](https://help.syncfusion.com/api/angular/ejgrid#members:columns-priority) value and browser's width to best accommodate the possible columns. To enable [`priority`](https://help.syncfusion.com/api/angular/ejgrid#members:columns-priority) for `columns`, [`priority`](https://help.syncfusion.com/api/angular/ejgrid#members:columns-priority) needs to be defined in columns collection. These Priority values are from one to six.
 
 {% highlight html %}
     

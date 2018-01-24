@@ -9,7 +9,7 @@ api: /api/Angular/grid
 --- 
 # Grouping
 
-The Grid control has options to group the records based on the required column. When grouping is applied, grouped records are organized into a hierarchical structure to facilitate easier expand and collapse of records. To enable grouping, set [`allowGrouping`](https://help.syncfusion.com/api/js/ejgrid#members:allowgrouping "allowGrouping") property as `true`.
+The Grid control has options to group the records based on the required column. When grouping is applied, grouped records are organized into a hierarchical structure to facilitate easier expand and collapse of records. To enable grouping, set [`allowGrouping`](https://help.syncfusion.com/api/angular/ejgrid#members:allowgrouping "allowGrouping") property as `true`.
 
 Columns can be grouped by simply dragging the column header and drop on the group drop area or simply click the group button which is displayed in the column. By default, sorting is done while grouping the column.
 
@@ -54,7 +54,7 @@ The following output is displayed as a result of the above code example.
 
 ## Initial Grouping
 
-While initializing the grid itself, there is an option to group the column and display it in a hierarchical structure. To enable initial grouping, set array of column's [`field`](https://help.syncfusion.com/api/js/ejgrid#members:columns-field "field") name to be grouped to [`groupSettings.groupedColumns`](https://help.syncfusion.com/api/js/ejgrid#members:groupsettings-groupedcolumns "groupSettings.groupedColumns") property. Define the [`field`](https://help.syncfusion.com/api/js/ejgrid#members:columns-field "field") name in the array format.
+While initializing the grid itself, there is an option to group the column and display it in a hierarchical structure. To enable initial grouping, set array of column's [`field`](https://help.syncfusion.com/api/angular/ejgrid#members:columns-field "field") name to be grouped to [`groupSettings.groupedColumns`](https://help.syncfusion.com/api/angular/ejgrid#members:groupsettings-groupedcolumns "groupSettings.groupedColumns") property. Define the [`field`](https://help.syncfusion.com/api/angular/ejgrid#members:columns-field "field") name in the array format.
 
 The following code example describes the above behavior.
 
@@ -144,7 +144,7 @@ The following output is displayed as a result of the above code example.
 
 ## Group buttons
 
-To do grouping easily without doing drag and drop column header by setting [`showToggleButton`](https://help.syncfusion.com/api/js/ejgrid#members:groupsettings-showtogglebutton "showToggleButton") property of [`groupSettings`](https://help.syncfusion.com/api/js/ejgrid#members:groupsettings "groupSettings") as `true`.
+To do grouping easily without doing drag and drop column header by setting [`showToggleButton`](https://help.syncfusion.com/api/angular/ejgrid#members:groupsettings-showtogglebutton "showToggleButton") property of [`groupSettings`](https://help.syncfusion.com/api/angular/ejgrid#members:groupsettings "groupSettings") as `true`.
 
 The following code example describes the above behavior.
 
@@ -189,7 +189,7 @@ The following output is displayed as a result of the above code example.
 
 ## Hide Ungroup button
 
-Hide ungroup button from grouped columns which is in the group drop area by setting the [`showUngroupButton`](https://help.syncfusion.com/api/js/ejgrid#members:groupsettings-showungroupbutton "showUngroupButton") property of [`groupSettings`](https://help.syncfusion.com/api/js/ejgrid#members:groupsettings "groupSettings") as `false`.
+Hide ungroup button from grouped columns which is in the group drop area by setting the [`showUngroupButton`](https://help.syncfusion.com/api/angular/ejgrid#members:groupsettings-showungroupbutton "showUngroupButton") property of [`groupSettings`](https://help.syncfusion.com/api/angular/ejgrid#members:groupsettings "groupSettings") as `false`.
 
 The following code example describes the above behavior.
 
@@ -234,7 +234,7 @@ The following output is displayed as a result of the above code example.
 
 ## Hide Grouped Column
 
-While grouping a particular column, there is an option to hide the grouped columns from grid. To enable hide grouped column option, set [`showGroupedColumn`](https://help.syncfusion.com/api/js/ejgrid#members:groupsettings-showgroupedcolumn "showGroupedColumn") property of [`groupSettings`](https://help.syncfusion.com/api/js/ejgrid#members:groupsettings "groupSettings") as `false`.
+While grouping a particular column, there is an option to hide the grouped columns from grid. To enable hide grouped column option, set [`showGroupedColumn`](https://help.syncfusion.com/api/angular/ejgrid#members:groupsettings-showgroupedcolumn "showGroupedColumn") property of [`groupSettings`](https://help.syncfusion.com/api/angular/ejgrid#members:groupsettings "groupSettings") as `false`.
 
 The following code example describes the above behavior.
 
@@ -279,7 +279,7 @@ The following output is displayed as a result of the above code example.
 
 ## AutoSize Drop Area
 
-Drag any column header and move it to the group drop area, then its portion expands smoothly. Stop this animation by setting [`enableDropAreaAutoSizing`](https://help.syncfusion.com/api/js/ejgrid#members:groupsettings-enabledropareaautosizing "enableDropAreaAutoSizing") property of [`groupSettings`](https://help.syncfusion.com/api/js/ejgrid#members:groupsettings "groupSettings") as `false`.
+Drag any column header and move it to the group drop area, then its portion expands smoothly. Stop this animation by setting [`enableDropAreaAutoSizing`](https://help.syncfusion.com/api/angular/ejgrid#members:groupsettings-enabledropareaautosizing "enableDropAreaAutoSizing") property of [`groupSettings`](https://help.syncfusion.com/api/angular/ejgrid#members:groupsettings "groupSettings") as `false`.
 
 The following code example describes the above behavior.
 
@@ -324,7 +324,7 @@ The following output is displayed as a result of the above code example.
 
 ## Hide Drop area
 
-To avoid ungrouping or further grouping of a column after an initial column grouping by setting [`showDropArea`](https://help.syncfusion.com/api/js/ejgrid#members:groupsettings-showdroparea "showDropArea") property of [`groupSettings`](https://help.syncfusion.com/api/js/ejgrid#members:groupsettings "groupSettings") as `false`.
+To avoid ungrouping or further grouping of a column after an initial column grouping by setting [`showDropArea`](https://help.syncfusion.com/api/angular/ejgrid#members:groupsettings-showdroparea "showDropArea") property of [`groupSettings`](https://help.syncfusion.com/api/angular/ejgrid#members:groupsettings "groupSettings") as `false`.
 
 The following code example describes the above behavior.
 
@@ -369,7 +369,7 @@ The following output is displayed as a result of the above code example.
 
 ## Group Caption Format / Group Caption Template
 
-Using [`captionFormat`](https://help.syncfusion.com/api/angular/ejgrid#members:groupsettings-captionformat "captionFormat") property of [`groupSettings`](https://help.syncfusion.com/api/js/ejgrid#members:groupsettings "groupSettings") you can render any type of template using ngtemplate with e-groupcaption-template attribute to customize the group caption text. 
+Using [`captionFormat`](https://help.syncfusion.com/api/angular/ejgrid#members:groupsettings-captionformat "captionFormat") property of [`groupSettings`](https://help.syncfusion.com/api/angular/ejgrid#members:groupsettings "groupSettings") you can render any type of template using ngtemplate with e-groupcaption-template attribute to customize the group caption text. 
 
 The following code example describes the above behavior.
 

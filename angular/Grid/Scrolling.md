@@ -417,9 +417,9 @@ export class GridComponent {
 
 ## Virtual Scrolling
 
-The virtual scrolling support allows you to load data that you require (load data based on page size) without buffering the entire huge database. To enable virtual scrolling by setting `allowVirtualScrolling`  property of `scrollSettings`  as `true`. 
+The virtual scrolling support allows you to load data that you require (load data based on page size) without buffering the entire huge database. To enable virtual scrolling by setting [`allowVirtualScrolling`](https://help.syncfusion.com/api/angular/ejgrid#members:scrollsettings-allowvirtualscrolling) property of [`scrollSettings`](https://help.syncfusion.com/api/angular/ejgrid#members:scrollsettings) as `true`. 
 
-We also have an enhanced virtual scrolling feature with an improvised virtual scrolling performance. To enable improvised virtual scrolling feature by setting `enableVirtualization` property of `scrollSettings` as true and it doesn't requires `allowVirtualScrolling` to be enabled. It allows you to load the grid with data while scrolling. Some of the relevant functionalities of this are,
+We also have an enhanced virtual scrolling feature with an improvised virtual scrolling performance. To enable improvised virtual scrolling feature by setting [`enableVirtualization`](https://help.syncfusion.com/api/angular/ejgrid#members:scrollsettings-enablevirtualization) property of `scrollSettings` as true and it doesn't requires [`allowVirtualScrolling`](https://help.syncfusion.com/api/angular/ejgrid#members:scrollsettings-allowvirtualscrolling) to be enabled. It allows you to load the grid with data while scrolling. Some of the relevant functionalities of this are,
 
 1.	White space will not be appeared in the Grid. 
 2.	Improved page rendering performance. 
@@ -488,7 +488,7 @@ The following output is displayed as a result of the above code example.
 
 #### Enhanced Virtual Scrolling:
 
-In order to enable this, you need to set the `enableVirtualization` property of the `scrollSettings` as true. 
+In order to enable this, you need to set the [`enableVirtualization`](https://help.syncfusion.com/api/angular/ejgrid#members:scrollsettings-enablevirtualization) property of the `scrollSettings` as true.
 
 The following code example describes the above behavior.
 

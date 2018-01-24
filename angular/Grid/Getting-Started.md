@@ -30,7 +30,7 @@ If you want to know about the external and internal dependencies of the Grid con
 
 ## Data Binding
 
-[`Data binding`](http://help.syncfusion.com/js/grid/data-binding) in the grid is achieved by assigning an array of JavaScript objects to the [`dataSource`](http://help.syncfusion.com/js/api/ejgrid#members:columns-datasource) property. Refer to the following code example.
+[`Data binding`](https://help.syncfusion.com/angular/grid/data-binding) in the grid is achieved by assigning an array of JavaScript objects to the [`dataSource`](https://help.syncfusion.com/api/angular/ejgrid#members:datasource) property. Refer to the following code example.
 
 {% highlight html %}
 
@@ -69,7 +69,7 @@ If you want to know about the external and internal dependencies of the Grid con
 {:.image }
 
 N> 1.In the above code snippet, `ej-grid` denotes the control directive for the Syncfusion's Grid Angular widget and all its properties can be initialized with the exact casing of original property names also binded within square bracket(`[]`).(For example, [dataSource]).
-N> 2.Events can be bound to the control using the event name within bracket [`()`].  For example, the `actionBegin` event of Grid control can be defined as follows.
+N> 2.Events can be bound to the control using the event name within bracket [`()`].  For example, the [`actionBegin`](https://help.syncfusion.com/api/angular/ejgrid#events:actionbegin) event of Grid control can be defined as follows.
      
  {% highlight html %}
 
@@ -80,7 +80,7 @@ N> 2.Events can be bound to the control using the event name within bracket [`()
 
 ## Enable Paging
 
-[`Paging`](http://help.syncfusion.com/js/grid/paging) can be enabled by setting the [`allowPaging`](http://help.syncfusion.com/js/api/ejgrid#members:allowpaging) to true. The Paging feature in�Grid�offers complete navigation support to easily switch between the pages, using the page bar available at the bottom of the Grid control
+[`Paging`](https://help.syncfusion.com/angular/grid/paging) can be enabled by setting the [`allowPaging`](https://help.syncfusion.com/api/angular/ejgrid#members:allowpaging) to true. The Paging feature in�Grid�offers complete navigation support to easily switch between the pages, using the page bar available at the bottom of the Grid control
 
 {% highlight html %}
 
@@ -118,12 +118,12 @@ N> 2.Events can be bound to the control using the event name within bracket [`()
 ![](Getting-started_images/Getting-started2_img2.png)
 {:.image }
 
-N> Pager settings can be customized by using the `pageSize` of [`pagesettings`](http://help.syncfusion.com/js/api/ejgrid#members:pagesettings-pagesize) property. When it is not given the default values for `pageSize` and `pageCount` are 12 and 8 respectively.
+N> Pager settings can be customized by using the `pageSize` of [`pagesettings`](http://help.syncfusion.com/api/angular/ejgrid#members:pagesettings-pagesize) property. When it is not given the default values for `pageSize` and `pageCount` are 12 and 8 respectively.
 
 
 ## Enable Filtering
 
-[`Filtering`](/js/grid/filter) can be enabled by setting the [`allowFiltering`] (https://help.syncfusion.com/js/api/ejgrid#members:allowfiltering) to be `true`. By default, the filter bar row is displayed to perform filtering, you can change the filter type by using `filterType` of [`filterSetting`](http://help.syncfusion.com/js/api/ejgrid#members:filtersettings) property.
+[`Filtering`](https://help.syncfusion.com/angular/grid/filter) can be enabled by setting the [`allowFiltering`](https://help.syncfusion.com/api/angular/ejgrid#members:allowfiltering) to be `true`. By default, the filter bar row is displayed to perform filtering, you can change the filter type by using `filterType` of [`filterSetting`](http://help.syncfusion.com/api/angular/ejgrid#members:filtersettings) property.
 
 
 {% highlight html %}
@@ -165,7 +165,7 @@ N> Pager settings can be customized by using the `pageSize` of [`pagesettings`](
 
 ## Enable Grouping
 
-[`Grouping`](/js/grid/grouping) can be enabled by setting the [`allowGrouping`](http://help.syncfusion.com/js/api/ejgrid#members:allowgrouping) to `true`.  Columns can be grouped dynamically by drag and drop the grid column header to the group drop area. The initial grouping can be done by adding required column names in the `groupedColumns` of [`groupSettings`](http://help.syncfusion.com/js/api/ejgrid#members:groupsettings-groupedcolumns) property. 
+[`Grouping`](https://help.syncfusion.com/angular/grid/grouping) can be enabled by setting the [`allowGrouping`](http://help.syncfusion.com/api/angular/ejgrid#members:allowgrouping) to `true`.  Columns can be grouped dynamically by drag and drop the grid column header to the group drop area. The initial grouping can be done by adding required column names in the `groupedColumns` of [`groupSettings`](http://help.syncfusion.com/api/angular/ejgrid#members:groupsettings-groupedcolumns) property. 
 
 
 {% highlight html %}
@@ -249,7 +249,7 @@ export class AppComponent {
 
 ## Add Summaries
 
-[`Summaries`](http://help.syncfusion.com/js/grid/summary) can be added by setting the [`showSummary`](http://help.syncfusion.com/js/api/ejgrid#members:showsummary) to true and adding required summary rows and columns in the [`summaryRows`](http://help.syncfusion.com/js/api/ejgrid#members:summaryrows) property. For demonstration, Freight column's sum value is displayed as summary.
+[`Summaries`](https://help.syncfusion.com/angular/grid/summary) can be added by setting the [`showSummary`](http://help.syncfusion.com/api/angular/ejgrid#members:showsummary) to true and adding required summary rows and columns in the [`summaryRows`](http://help.syncfusion.com/api/angular/ejgrid#members:summaryrows) property. For demonstration, Freight column's sum value is displayed as summary.
 
 {% highlight html %}
 

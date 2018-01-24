@@ -68,7 +68,7 @@ export class GridComponent {
 
 ## Expand or Collapse All Child
 
-The Grid can able to expand and collapse all the [`childGrid`](https://help.syncfusion.com/api/angular/ejgrid#members:childgrid "childGrid") through programmatically using [`expandAll`](https://help.syncfusion.com/api/js/ejgrid#methods:expandall "expandAll") and [`collapseAll`](https://help.syncfusion.com/api/angular/ejgrid#methods:collapseall "collapseAll") method.
+The Grid can able to expand and collapse all the [`childGrid`](https://help.syncfusion.com/api/angular/ejgrid#members:childgrid "childGrid") through programmatically using [`expandAll`](https://help.syncfusion.com/api/angular/ejgrid#methods:expandall "expandAll") and [`collapseAll`](https://help.syncfusion.com/api/angular/ejgrid#methods:collapseall "collapseAll") method.
 
 {% highlight html %}
 <input type="button" ej-button id="button" value="expandAll"  (ejclick)= "onClick($event)" /> 
