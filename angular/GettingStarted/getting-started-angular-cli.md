@@ -52,7 +52,7 @@ N> If you are facing any other issues like  `Error: Cannot find module '@angular
 npm install -g @angular-devkit/core
 {% endhighlight %}
 
-N> if still facing the issue, we recommend you to uninstall the `@angular/cli` and reinstall `@angular/cli@1.6.3`.
+N> If the issue persist, we recommend you to uninstall the `@angular/cli` and reinstall `@angular/cli@1.6.3`.
 
 ## Create a new Application
 
