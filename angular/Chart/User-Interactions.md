@@ -331,6 +331,24 @@ You can able to show the trackball tooltip in two modes, using trackballTooltipS
 ![](User-Interactions_images/User-Interactions_img30.png)
 
 
+#### Trackball tooltip template:
+Trackball tooltip template is used to display the tooltip in customized template format. You can define the desired template in css style. You can enable the **toolTipTemplate**  by using the following code snippet.
+
+
+{% highlight html %}
+
+
+<ej-chart id="zooming"
+        [crosshair.visible]="true" 
+        crosshair.type="trackball"
+        [crosshair.trackballTooltipSettings]="{mode: 'grouping', toolTipTemplate: 'tooltip'}" >    
+</ej-chart>
+
+{% endhighlight %}
+
+![](User-Interactions_images/User-Interactions_img33.png)
+
+
 ## Highlight
 
 EjChart provides highlighting support for the series and data points on mouse hover. To enable the highlighting option, set the **enable** property to *true* in the **highlightsettings** of the series.
