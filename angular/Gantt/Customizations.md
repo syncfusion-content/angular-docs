@@ -21,7 +21,7 @@ Gantt provides support for the following UI customizations,
 You can design your own taskbars to view the tasks in Gantt by using [`taskbarTemplate`](/api/angular/ejgantt#members:taskbartemplate "taskbarTemplate") property. And it is possible to map the JsRender script or script element’s ID to this property. It is also possible to customize the parent taskbars and milestones with custom templates by using [`parentTaskbarTemplate`](/api/angular/ejgantt#members:parenttaskbartemplate "parentTaskbarTemplate") and [`milestoneTemplate`](/api/angular/ejgantt#members:milestonetemplate "milestoneTemplate") properties. 
 
 The following code example shows how to define template for taskbars in Gantt.
-Write the following jsRender code in index.html file.
+Write the following JsRender code in index.html file.
 
 {% highlight javascript %}
 
@@ -100,7 +100,7 @@ The following code example explains how to map custom templates to task labels a
 
 {% highlight javascript %}
 
-<script id="rightlabelTemplate" type="text/x-jsrender">
+<script id="rightLabelTemplate" type="text/x-jsrender">
 
     {{"{{"}}if #data['resourceNames']{{}}}}
 
@@ -118,7 +118,7 @@ The following code example explains how to map custom templates to task labels a
 
 </script>
 
-<script id="leftlabelTemplate" type="text/x-jsrender">
+<script id="leftLabelTemplate" type="text/x-jsrender">
 
     <div style="padding-top:5px;">
 
@@ -133,8 +133,8 @@ The following code example explains how to map custom templates to task labels a
 {% highlight html %}
 
 <ej-gantt
-    rightTaskLabelTemplate= "#rightlabelTemplate"
-    leftTaskLabelTemplate= "#leftlabelTemplate">
+    rightTaskLabelTemplate= "#rightLabelTemplate"
+    leftTaskLabelTemplate= "#leftLabelTemplate">
 </ej-gantt>
 
 {% endhighlight %}
