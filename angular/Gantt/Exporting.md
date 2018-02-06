@@ -42,7 +42,7 @@ export class AppComponent {
         }
 
     }
-    toolbarclick(sender) {
+    toolbarClick(sender) {
         var id = $(sender.currentTarget).attr("id");
         var gantt = $("#GanttControl").ejGantt("instance");
         gantt.exportGantt = gantt["export"];
@@ -63,12 +63,12 @@ export class AppComponent {
 
 The PDF and Excel exporting services for Gantt are explained in detail [here](https://help.syncfusion.com/js/gantt/services-reference).
 
-The below screen shot shows Gantt with excel and Pdf exporting enabled.
+The below screen shot shows Gantt with excel and PDF exporting enabled.
 ![](Export_images/Export_img1.png)
 
 ## Server Configuration
 Gantt data can be converted to PDF and excel file formats in server side only, through EJ’s helper functions in .NET. 
-To use Gantt pdf export in projects, it is required to create a server with any of the following web services. 
+To use Gantt PDF export in projects, it is required to create a server with any of the following web services. 
 
 * Web API
 * WCF Service
@@ -88,8 +88,8 @@ public class GanttController : ApiController
             string ganttModel = HttpContext.Current.Request.Params["GanttModel"];
             GanttProperties ganttProperty = ConvertGanttObject(ganttModel);
             ExcelExport exp = new ExcelExport();
-            TaskDetailsCollection tc = new TaskDetailsCollection();
-            IEnumerable<TaskDetails> data = tc.GetDataSource();
+            TaskDetailsCollection taskCollection = new TaskDetailsCollection();
+            IEnumerable<TaskDetails> data = taskCollection.GetDataSource();
             exp.Export(ganttProperty, data, "ExcelExport.xlsx", ExcelVersion.Excel2010, new GanttExportSettings() { Theme = ExportTheme.FlatAzure });
         }
        
@@ -101,8 +101,8 @@ public class GanttController : ApiController
             string locale = HttpContext.Current.Request.Params["locale"];
             GanttProperties ganttProperty = ConvertGanttObject(ganttModel);
             PdfExport exp = new PdfExport();
-            TaskDetailsCollection tc = new TaskDetailsCollection();
-            IEnumerable<TaskDetails> data = tc.GetDataSource();
+            TaskDetailsCollection taskCollection = new TaskDetailsCollection();
+            IEnumerable<TaskDetails> data = taskCollection.GetDataSource();
             GanttPdfExportSettings settings = new GanttPdfExportSettings();
             settings.EnableFooter = true;
             settings.IsFitToWidth = isFitToWidth;
@@ -116,13 +116,13 @@ public class GanttController : ApiController
             JavaScriptSerializer serializer = new JavaScriptSerializer();
             IEnumerable div = (IEnumerable)serializer.Deserialize(ganttProperty, typeof(IEnumerable));
             GanttProperties ganttProp = new GanttProperties();
-            foreach (KeyValuePair<string, object> ds in div)
+            foreach (KeyValuePair<string, object> currentProperty in div)
             {
-                var property = ganttProp.GetType().GetProperty(ds.Key, BindingFlags.Instance | BindingFlags.Public | BindingFlags.IgnoreCase);
+                var property = ganttProp.GetType().GetProperty(currentProperty.Key, BindingFlags.Instance | BindingFlags.Public | BindingFlags.IgnoreCase);
                 if (property != null)
                 {
                     Type type = property.PropertyType;
-                    string serialize = serializer.Serialize(ds.Value);
+                    string serialize = serializer.Serialize(currentProperty.Value);
                     object value = serializer.Deserialize(serialize, type);
                     property.SetValue(ganttProp, value, null);
                 }
@@ -162,7 +162,7 @@ The Gantt export supports the below themes,
 * bootstrap-theme
 * high-contrast
 * material
-* office 365
+* Office 365
 
 The desired theme should be passed as a parameter to the Export method and the code snippet for this as follows
 
@@ -175,8 +175,8 @@ public void ExcelExport()
    string ganttModel = HttpContext.Current.Request.Params["GanttModel"];
    GanttProperties ganttProperty = ConvertGridObject(ganttModel);
    ExcelExport exp = new ExcelExport();
-   TaskDetailsCollection tc = new TaskDetailsCollection();
-   IEnumerable<TaskDetails> data = tc.GetDataSource();
+   TaskDetailsCollection taskCollection = new TaskDetailsCollection();
+   IEnumerable<TaskDetails> data = taskCollection.GetDataSource();
    exp.Export(ganttProperty, data, "ExcelExport.xlsx", ExcelVersion.Excel2010, new GanttExportSettings() { Theme = ExportTheme.FlatAzure });
 }
 
