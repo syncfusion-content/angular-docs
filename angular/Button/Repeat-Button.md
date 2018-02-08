@@ -21,7 +21,7 @@ In the **HTML** page, add the following button elements to configure **Button** 
     <table>
     <tr>
         <td>
-            <input id="button_repeat" (click)="btnClick($event)" [showRoundedCorner]="true" timeInterval="200" [repeatButton]="true" size="mini" text="Click "type="button" ej-button/> 
+            <input id="button_repeat" (ejclick)="btnClick($event)" [showRoundedCorner]="true" timeInterval="200" [repeatButton]="true" size="mini" text="Click "type="button" ej-button/> 
 
     </tr>
 	 <div class="align">
