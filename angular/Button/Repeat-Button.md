@@ -21,7 +21,7 @@ In the **HTML** page, add the following button elements to configure **Button** 
     <table>
     <tr>
         <td>
-            <input id="button_repeat" (click)="btnClick($event)" [showRoundedCorner]="true" timeInterval="200" [repeatButton]="true" size="mini" text="Click "type="button" ej-button/> 
+            <input id="button_repeat" (ejclick)="buttonClick($event)" [showRoundedCorner]="true" timeInterval="200" [repeatButton]="true" size="mini" text="Click "type="button" ej-button/> 
 
     </tr>
 	 <div class="align">
@@ -48,7 +48,7 @@ In the **HTML** page, add the following button elements to configure **Button** 
 export class DefaultComponent {
     constructor() {
     }
-	 btnClick(e) {
+	 buttonClick(e) {
        $(".eventTrace").html("click event has been triggered..</br>" + $(".eventTrace").html());
     }
 }
