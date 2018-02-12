@@ -355,3 +355,54 @@ The following code example describes the above behavior.
      }
 
 {% endhighlight %}
+
+
+## Drag Selection
+
+The [Drag](https://help.syncfusion.com/api/js/ejgrid#members:selectionsettings-enabletoggle "Drag") selection allows to perform selection of the particular row, cell or column by performing mouse dragging.  To enable drag selection, set [`allowDragSelection`](https://help.syncfusion.com/api/js/ejgrid#members:selectionsettings-enabletoggle "allowDragSelection") property of the [`selectionSettings`](https://help.syncfusion.com/api/js/ejgrid#members:selectionsettings "selectionSettings") as `true` and set the [`selectionMode`](https://help.syncfusion.com/api/js/ejgrid#members:selectionsettings-selectionmode "selectionMode") property of [`selectionSettings`](https://help.syncfusion.com/api/js/ejgrid#members:selectionsettings "selectionSettings") as `cell`. Now you can select the cells in the Grid by drgging the mouse. 
+
+N> The multi selection needs to be enabled, to select multiple cells in Grid by mouse dragging. 
+
+The following code example describes the above behavior. 
+
+{% highlight html %}
+
+ <ej-grid id="Grid" [dataSource]="gridData" [allowPaging]="true" [allowSelection]="true" [selectionType]="multiple" [selectionSettings]="selectionMode" >
+    <e-columns>
+        <e-column field="OrderID"  headerText="OrderID" ></e-column>
+        <e-column field="EmployeeID" headerText="EmployeeID"></e-column>
+        <e-column field="ShipCity" headerText="ShipCity"></e-column>
+        <e-column field="ShipCountry" headerText="ShipCountry"></e-column>
+        <e-column field="Freight" headerText="Freight"></e-column>
+    </e-columns>
+</ej-grid>
+
+{% endhighlight %}
+
+
+{% highlight javascript %}
+
+    import {Component, ViewEncapsulation} from '@angular/core';
+    @Component({
+      selector: 'ej-app',
+      templateUrl: 'app/app.component.html',  //give the path file for Grid control html file.
+      providers:[NorthwindService]
+    })
+    export class AppComponent {
+        public gridData;
+        public selectionMode;
+    	constructor()
+        {
+           //The datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
+           this.gridData = window.gridData;
+	
+		   this.selectionMode = { selectionMode :["cell"], allowDragSelection: true };
+		   
+		}
+     }
+
+{% endhighlight %}  
+
+The following output is displayed as a result of the above code example.
+
+![](selection_images/selection_img11.png)
