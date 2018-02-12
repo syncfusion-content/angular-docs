@@ -394,7 +394,7 @@ The following code example describes the above behavior.
     	constructor()
         {
            //The datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
-           this.gridData = window.gridData;
+           this.gridData = (window as any).gridData;
 	
 		   this.selectionMode = { selectionMode :["cell"], allowDragSelection: true };
 		   
