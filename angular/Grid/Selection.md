@@ -393,7 +393,7 @@ The following code example describes the above behavior.
         public selectionMode;
     	constructor()
         {
-           //The datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
+           //The datasource "(window as any).gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
            this.gridData = (window as any).gridData;
 	
 		   this.selectionMode = { selectionMode :["cell"], allowDragSelection: true };
