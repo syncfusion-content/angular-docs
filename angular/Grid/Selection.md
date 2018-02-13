@@ -312,7 +312,7 @@ The following output is displayed as a result of the above code example.
 
 ## Toggle Selection
 
-The `Toggle`selection allows to perform selection and unselection of the particular row, cell or column.  To enable toggle selection, set [`enableToggle`](https://help.syncfusion.com/api/angular/ejgrid#members:selectionsettings-enabletoggle) property of [`selectionSettings`](https://help.syncfusion.com/api/angular/ejgrid#members:selectionsettings) as `true`. If you click on the selected row, cell or column then it will be unselected and vice versa.
+The Toggle selection allows to perform selection and unselection of the particular row, cell or column.  To enable toggle selection, set [`enableToggle`](https://help.syncfusion.com/api/angular/ejgrid#members:selectionsettings-enabletoggle) property of [`selectionSettings`](https://help.syncfusion.com/api/angular/ejgrid#members:selectionsettings) as `true`. If you click on the selected row, cell or column then it will be unselected and vice versa.
 
 N> If multi selection is enabled, then in first click on any selected row (without pressing Ctrl key), it will clear multi selection and in second click on the same row, it will be unselected. 
 
@@ -359,7 +359,7 @@ The following code example describes the above behavior.
 
 ## Drag Selection
 
-The [Drag](https://help.syncfusion.com/api/angular/ejgrid#members:selectionsettings-allowdragselection "Drag") selection allows to perform selection of the particular row, cell or column by performing mouse dragging.  To enable drag selection, set [`allowDragSelection`](https://help.syncfusion.com/api/angular/ejgrid#members:selectionsettings-allowdragselection "allowDragSelection") property of the [`selectionSettings`](https://help.syncfusion.com/api/js/ejgrid#members:selectionsettings "selectionSettings") as `true`. Now you can select the cells in the Grid by drgging the mouse. 
+The Drag selection allows to perform selection of the particular row, cell or column by performing mouse dragging.  To enable drag selection, set [`allowDragSelection`](https://help.syncfusion.com/api/js/ejgrid#members:selectionsettings-allowdragselection "allowDragSelection") property of the [`selectionSettings`](https://help.syncfusion.com/api/js/ejgrid#members:selectionsettings "selectionSettings") as `true`. Now you can select the cells, rows or columns in the Grid by drgging the mouse. 
 
 N> The [`selectionType`](https://help.syncfusion.com/api/angular/ejgrid#members:selectiontype "selectionType") property as should be set as `multiple`, to select multiple cells in Grid by mouse dragging. 
 
