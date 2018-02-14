@@ -330,13 +330,13 @@ The following output is displayed as a result of the above code example.
 ## Resizing
 
 
-The [`allowResizing`](https://help.syncfusion.com/api/js/ejgrid#members:allowresizing "allowResizing") property enables the grid to set the width to columns based on resizing the grid column manually.
+The [`allowResizing`](https://help.syncfusion.com/api/angular/ejgrid#members:allowresizing "allowResizing") property enables the grid to set the width to columns based on resizing the grid column manually.
 
 
 ### Resizing modes
 
 
-[`resizeSettings.resizeMode`](https://help.syncfusion.com/api/js/ejgrid#members:resizesettings-resizemode "resizeSettings.resizeMode") mode is used to change the resizing modes. It indicates whether to define mode of resizing.
+[`resizeSettings.resizeMode`](https://help.syncfusion.com/api/angular/ejgrid#members:resizesettings-resizemode "resizeSettings.resizeMode") mode is used to change the resizing modes. It indicates whether to define mode of resizing.
 
 
 <table>
