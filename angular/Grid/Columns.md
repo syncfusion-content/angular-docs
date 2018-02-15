@@ -345,15 +345,15 @@ The [`allowResizing`](https://help.syncfusion.com/api/angular/ejgrid#members:all
 <th>Description</th>
 </tr>
 <tr>
-<td class="name">Normal</td>
+<td class="name">normal</td>
 <td class="description">New column size will be adjusted by all other Columns</td>
 </tr>
 <tr>
-<td class="name">NextColumn</td>
+<td class="name">nextColumn</td>
 <td class="description">New column Size will be adjusted using next column.</td>
 </tr>
 <tr>
-<td class="name">Control</td>
+<td class="name">control</td>
 <td class="description">New column Size will be adjusted using entire control</td>
 </tr>
 </table>
@@ -365,14 +365,15 @@ The following code example describes the above behavior.
 {% highlight html %}
 
 
-  < ej - grid id= "Grid"[dataSource] = "gridData"[allowResizing] = "true" [resizeSettings] = "resizeSettings">
-                <e-columns >
-                   <e-column field= "ShipCity" headerText= "Ship City" width= "80" > </e-column>
-                       < e - column field= "ShipPostalCode" headerText= "Ship Postal Code" width= "40" > </e-column>
-                           < e - column field= "ShipName" headerText= "Ship Name" width= "40" > </e-column>
-                               < e - column field= "ShipAddress" headerText= "Ship Address" width= "100" > </e-column>
-                                    < /e-columns>
-                                   < /ej-grid>
+ <ej-grid id= "Grid"[dataSource] = "gridData"[allowResizing] = "true" [resizeSettings] = "resizeSettings">
+                <e-columns>
+                   <e-column field="OrderID" width="110"></e-column>
+                    <e-column field="EmployeeID" width="110"></e-column>
+                      <e-column field="Freight" width="100"></e-column>
+                        <e-column field="ShipCountry" width="150"></e-column>
+                           <e-column field="ShipCity" width="100"></e-column>
+                                   </ej-grid>
+
 
 
 {% endhighlight %}
@@ -387,7 +388,6 @@ import { Component, ViewEncapsulation } from '@angular/core';
                                export class AppComponent {
                                    public gridData;
                                    public resizeSettings;
-                                   
                                    constructor() {
                                        //The datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
                                        this.gridData = window.gridData;
