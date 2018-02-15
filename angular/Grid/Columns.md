@@ -327,6 +327,74 @@ The following output is displayed as a result of the above code example.
 ![](columns_images/columns_img7.png)
 
 
+## Resizing
+
+
+The [`allowResizing`](https://help.syncfusion.com/api/angular/ejgrid#members:allowresizing "allowResizing") property enables the grid to set the width to columns based on resizing the grid column manually.
+
+
+### Resizing modes
+
+
+[`resizeSettings.resizeMode`](https://help.syncfusion.com/api/angular/ejgrid#members:resizesettings-resizemode "resizeSettings.resizeMode") mode is used to change the resizing modes. It indicates whether to define mode of resizing.
+
+
+<table>
+<tr>
+<th>Name</th>
+<th>Description</th>
+</tr>
+<tr>
+<td class="name">normal</td>
+<td class="description">New column size will be adjusted by all other Columns</td>
+</tr>
+<tr>
+<td class="name">nextColumn</td>
+<td class="description">New column Size will be adjusted using next column.</td>
+</tr>
+<tr>
+<td class="name">control</td>
+<td class="description">New column Size will be adjusted using entire control</td>
+</tr>
+</table>
+
+
+The following code example describes the above behavior.
+
+
+{% highlight html %}
+ <ej-grid id= "Grid"[dataSource] = "gridData"[allowResizing] = "true" [resizeSettings] = "resizeSettings">
+    <e-columns>
+        <e-column field="OrderID" width="100"></e-column>
+        <e-column field="EmployeeID"></e-column>
+        <e-column field="Freight" width="75"></e-column>
+        <e-column field="ShipCountry" width="50"></e-column>
+        <e-column field="ShipCity"></e-column>
+    </e-columns>
+</ej-grid>
+{% endhighlight %}
+
+{% highlight ts %}
+
+    import { Component, ViewEncapsulation } from '@angular/core';
+    @Component({
+         selector: 'ej-app',
+         templateUrl: 'app/app.component.html',  //give the path file for Grid control html file.
+    })
+    export class AppComponent {
+        public gridData;
+        public resizeSettings;
+        constructor() 
+        {
+            //The datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
+            this.gridData = window.gridData;
+            this.resizeSettings = { allowResizing: true, resizeMode:"nextcolumn"};
+        }
+    }
+
+{% endhighlight %}
+
+
 ## Resize to fit 
 
 The [`allowResizeToFit`](https://help.syncfusion.com/api/angular/ejgrid#members:allowresizetofit "allowResizeToFit") property enable the Grid to set width to columns based on maximum width of the particular column's content to facilitate full visibility of data in all the grid rows. This automatic behavior is applicable only for the columns which does not have width specified. 
