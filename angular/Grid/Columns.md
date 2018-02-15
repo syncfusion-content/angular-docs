@@ -366,13 +366,14 @@ The following code example describes the above behavior.
 
 
  <ej-grid id= "Grid"[dataSource] = "gridData"[allowResizing] = "true" [resizeSettings] = "resizeSettings">
-                <e-columns>
-                   <e-column field="OrderID" width="110"></e-column>
-                    <e-column field="EmployeeID" width="110"></e-column>
-                      <e-column field="Freight" width="100"></e-column>
-                        <e-column field="ShipCountry" width="150"></e-column>
-                           <e-column field="ShipCity" width="100"></e-column>
-                                   </ej-grid>
+    <e-columns>
+        <e-column field="OrderID" width="100"></e-column>
+        <e-column field="EmployeeID"></e-column>
+        <e-column field="Freight" width="75"></e-column>
+        <e-column field="ShipCountry" width="50"></e-column>
+        <e-column field="ShipCity"></e-column>
+    </e-columns>
+</ej-grid>
 
 
 
@@ -380,20 +381,21 @@ The following code example describes the above behavior.
 {% highlight ts %}
 
 
-import { Component, ViewEncapsulation } from '@angular/core';
-                               @Component({
-                                   selector: 'ej-app',
-                                   templateUrl: 'app/app.component.html',  //give the path file for Grid control html file.
-                               })
-                               export class AppComponent {
-                                   public gridData;
-                                   public resizeSettings;
-                                   constructor() {
-                                       //The datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
-                                       this.gridData = window.gridData;
-                                       this.resizeSettings = { allowResizing: true, resizeMode:"nextcolumn"};
-                                   }
-                               }
+    import { Component, ViewEncapsulation } from '@angular/core';
+    @Component({
+         selector: 'ej-app',
+         templateUrl: 'app/app.component.html',  //give the path file for Grid control html file.
+    })
+    export class AppComponent {
+        public gridData;
+        public resizeSettings;
+        constructor() 
+        {
+            //The datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
+            this.gridData = window.gridData;
+            this.resizeSettings = { allowResizing: true, resizeMode:"nextcolumn"};
+        }
+    }
 
 
 {% endhighlight %}
