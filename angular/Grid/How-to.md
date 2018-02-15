@@ -193,3 +193,63 @@ import {Component, ViewEncapsulation, ViewChild } from '@angular/core';
 The following output is displayed as a result of the above code example.
 ![](externalsearch_images/externalsearch_img1.png)
 
+## Hierarchy Grid with different foreignKeyField in parent and child table
+
+The `queryString` property is used to filter the childGrid data based on value in parent Grid data. But when the field name provided in `queryString` does not exists in Child Grid, then `foreignKeyField` property is used to filter the childGrid data. If the foreign key column name differes for parent and child grid then use `foreignKeyField` property of Grid.
+
+The following code example explains the above behavior.
+
+{% highlight html %}
+
+<ej-grid id="Grid"  [allowPaging]="true"  [dataSource]="gridData"  [childGrid]="childData"  >
+    <e-columns>
+        <e-column field="EmployeeID" headerText="Employee ID"  width="85" textAlign="right"></e-column>
+        <e-column field="FirstName" headerText="First Name" textAlign="left"  width="100"></e-column>    
+        <e-column field="City" headerText="City" textAlign="left" width="10"></e-column> 
+        <e-column field="Country" headerText="Country" textAlign="left" width="100"></e-column>        
+    </e-columns>
+</ej-grid>
+
+{% endhighlight %}
+
+{% highlight javascript %}
+
+import { Component } from '@angular/core';
+
+
+@Component({
+    selector: 'ej-app',
+    templateUrl: 'src/grid/grid.component.html',
+})
+export class GridComponent {
+    public gridData: any;
+    public childData: any;    
+    constructor() {
+
+        //The datasource "window.employeeView" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
+        this.gridData = (window as any).employeeView;
+        this.childData = {
+
+            dataSource: ej.DataManager({ url: " http://js.syncfusion.com/demos/ejServices/Wcf/Northwind.svc/Orders", crossDomain: true }),
+            queryString: "FirstName",
+            foreignKeyField : "CustomerName",
+            allowPaging: true,
+            pageSettings: {
+                pageSize: 5
+            }, columns: [
+                { field: "OrderID", headerText: 'Order ID', textAlign: ej.TextAlign.Right, width: 75 },
+                { field: "ShipCity", headerText: 'Ship City', textAlign: ej.TextAlign.Left, width: 100 },
+                { field: "CustomerName", headerText: 'First Name', textAlign: ej.TextAlign.Left, width: 100 },
+                { field: "Freight", headerText: 'Freight', textAlign: ej.TextAlign.Left, width: 120 },
+                { field: "ShipName", headerText: 'Ship Name', textAlign: ej.TextAlign.Left, width: 100 }
+            ],
+
+        }
+    }
+}
+
+
+{% endhighlight %}
+
+The following output is displayed as a result of the above code example.
+![](Hierarchy-Grid_images/Hierarchy-Grid_images2.png)
