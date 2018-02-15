@@ -363,8 +363,6 @@ The following code example describes the above behavior.
 
 
 {% highlight html %}
-
-
  <ej-grid id= "Grid"[dataSource] = "gridData"[allowResizing] = "true" [resizeSettings] = "resizeSettings">
     <e-columns>
         <e-column field="OrderID" width="100"></e-column>
@@ -374,12 +372,9 @@ The following code example describes the above behavior.
         <e-column field="ShipCity"></e-column>
     </e-columns>
 </ej-grid>
-
-
-
 {% endhighlight %}
-{% highlight ts %}
 
+{% highlight ts %}
 
     import { Component, ViewEncapsulation } from '@angular/core';
     @Component({
@@ -396,7 +391,6 @@ The following code example describes the above behavior.
             this.resizeSettings = { allowResizing: true, resizeMode:"nextcolumn"};
         }
     }
-
 
 {% endhighlight %}
 
