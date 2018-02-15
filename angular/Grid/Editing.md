@@ -1202,7 +1202,7 @@ Refer thr following code example
 
 {% highlight html %}
 
- <ej-grid id="Grid" [dataSource]="gridData" allowPaging="true" [toolbarSettings]="toolbarItems" [editSettings]="editSettings" >
+ <ej-grid id = "Grid" [dataSource] = "gridData" allowPaging = "true" [toolbarSettings] = "toolbarItems" [editSettings] = "editSettings" >
     <e-columns>
         <e-column field="OrderID" [isPrimaryKey]="true" headerText="OrderID"></e-column>
         <e-column field="CustomerID" headerText="CustomerID"></e-column>
@@ -1236,8 +1236,8 @@ Refer thr following code example
            });
 		   this.editSettings = { allowEditing: true, allowAdding: true, allowDeleting: true };
 	       this.toolbarItems={ showToolbar : true, toolbarItems : ["add", "edit", "delete", "update", "cancel"]};
-         }
-     }
+        }
+    }
 
 {% endhighlight %} 
 
