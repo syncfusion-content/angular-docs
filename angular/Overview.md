@@ -182,11 +182,11 @@ value</td></tr>
 <tr>
 <td>
 ejGantt</td><td>
-dataSource<br/>selectedRowIndex<br/>splitterSettings.position<br/>selectedRowIndices</td></tr>
+dataSource<br/>selectedRowIndex<br/>splitterSettings.position</td></tr>
 <tr>
 <td>
 ejGrid</td><td>
-dataSource<br/>pageSettings.currentPage</td></tr>
+dataSource<br/>pageSettings.currentPage<br/>selectedRowIndices<br/>selectedRowIndex</td></tr>
 <tr>
 <td>
 ejGroupButton</td><td>
