@@ -253,3 +253,160 @@ export class GridComponent {
 
 The following output is displayed as a result of the above code example.
 ![](Hierarchy-Grid_images/Hierarchy-Grid_images2.png)
+
+## Perform Grid Actions on External button click
+
+### CRUD operations
+
+Using [`addRecord`](https://help.syncfusion.com/api/angular/ejgrid#methods:addRecord “addRecord”) method of Grid, you can add a record to a Grid externally without using in-built toolbar add support. While using [`addRecord`](https://help.syncfusion.com/api/angular/ejgrid#methods:addRecord “addRecord”) method it is necessary to set [`allowAdding`](https://help.syncfusion.com/api/angular/ejgrid#members:allowAdding “allowAdding”) property as `true`.
+Using [`deleteRecord`](https://help.syncfusion.com/api/angular/ejgrid#methods:deleteRecord “deleteRecord”) method of Grid, you can delete a record to a Grid externally without using in-built toolbar delete support. While using [`deleteRecord`](https://help.syncfusion.com/api/angular/ejgrid#methods:deleteRecord “deleteRecord”) method it is necessary to set [`allowDeleting`](https://help.syncfusion.com/api/angular/ejgrid#members:allowDeleting “allowDeleting”) property as `true`.
+Using [`updateRecord`](https://help.syncfusion.com/api/angular/ejgrid#methods:updateRecord “updateRecord”) method of Grid, you can update a record to a Grid externally without using in-built toolbar update support. While using [`updateRecord`](https://help.syncfusion.com/api/angular/ejgrid#methods:updateRecord “updateRecord”) method it is necessary to set [`allowEditing`](https://help.syncfusion.com/api/angular/ejgrid#members:allowEditing “allowEditing”) property as `true`.
+
+### Filtering
+
+Using [`filterColumn`](https://help.syncfusion.com/api/angular/ejgrid#methods:filterColumn “filterColumn”) method of Grid, you can filter the data in the Grid externally without using in-built filter support. While using [`filterColumn`](https://help.syncfusion.com/api/angular/ejgrid#methods:filterColumn “filterColumn”) method it is necessary to set [`allowFiltering`](https://help.syncfusion.com/api/angular/ejgrid#members:allowFiltering “allowFiltering”) property as `true`.
+
+### Grouping
+
+Using [`groupColumn`](https://help.syncfusion.com/api/angular/ejgrid#methods:groupColumn “groupColumn”) and [`ungroupColumn`](https://help.syncfusion.com/api/angular/ejgrid#methods:ungroupColumn “ungroupColumn”) method of Grid, you can group/ungroup the Grid externally without using in-built grouping support. While using [`groupColumn`](https://help.syncfusion.com/api/angular/ejgrid#methods:groupcolumn “groupColumn”) and [`ungroupColumn`](https://help.syncfusion.com/api/angular/ejgrid#methods:ungroupcolumn “ungroupColumn”) method it is necessary to set [`allowGrouping`](https://help.syncfusion.com/api/angular/ejgrid#members:allowgrouping “allowGrouping”) property as `true`.
+
+### Sorting
+
+Using [`sortColumn`](https://help.syncfusion.com/api/angular/ejgrid#methods:sortcolumn “sortColumn”) method of Grid, you can sort the Grid externally without using in-built sorting support. While using [`sortColumn`](https://help.syncfusion.com/api/angular/ejgrid#methods:sortcolumn “sortColumn”) method it is necessary to set [`allowSorting`](https://help.syncfusion.com/api/angular/ejgrid#members:allowsorting “allowSorting”) property as `true`.
+
+The following code example explains the above behavior.
+
+{% tabs %}
+{% highlight html %}
+<table>
+    <tr>
+        <td><b>CRUD</b><br><input type="button" ej-button id="Addrecord" text="Addrecord" (click)="addRecord($event)"/>
+                            <input type="button" ej-button id="Updaterecord" text="Updaterecord" (click)="updateRecord($event)"/>
+                            <input type="button" ej-button id="DeleteRecord" text="DeleteRecord" (click)="deleteRecord($event)"/></td>
+        <td><b>Filtering</b><br><br><input type="text" id="filterone" /><input type="text" id="filtertwo" /><input type="button" ej-button id="filteri" text="Filter" (click)="Filterfn($event)"/><input type="button" ej-button id="ClearFilter" text="Clear" (click)="clearfilterfn($event)"/></td>
+        <input id="filtercolumnone" ej-dropdownlist [watermarkText]="watermarkone" [targetID]="OrderList"/><div id="Order"><ul><li>10248</li><li>10249</li><li>10250</li><li>10251</li><li>10252</li></ul></div>
+        <input id="filtercolumntwo" ej-dropdownlist [watermarkText]="watermarktwo" [targetID]="EmployeeList"/><div id="Employee"><ul><li>1</li><li>2</li><li>3</li><li>4</li><li>5</li></ul></div>
+        <td><b>Grouping</b><br><br>
+            <input id="groupcolumnname" ej-dropdownlist [targetID]="columnNameList" [selectedIndex]="index"/><div id="columnName"><ul><li>OrderID</li><li>CustomerID</li><li>Freight</li><li>Verified</li><li>ShipName</li></ul></div><br>
+            <input type="button" ej-button id="groupColumn" text="GroupColumn" (click)="clicktoGroup($event)"/>
+            <input type="button" ej-button id="unGroupColumn" text="UnGroupColumn" (click)="clicktoGroup($event)"/>
+        </td>
+        <td><b>Sorting</b><br><br>
+            <input id="SortColumnName" ej-dropdownlist [targetID]="sortcolumnNameList" [selectedIndex]="index"/><div id="sortcolumnName"><ul><li>Order ID</li><li>Customer ID</li><li>Employee ID</li><li>Freight</li><li>Ship City</li></ul></div>
+            <input id="Directions" ej-dropdownlist [targetID]="directionsList" [selectedIndex]="index"/><div id="directions"><ul><li>Ascending</li><li>Descending</li></ul></div>
+            <input type="button" ej-button id="doSorting" text="Sort" (click)="Sortfn($event)"/>
+            <input type="button" ej-button id="clearSort" text="Clear" (click)="clearsortfn($event)"/>
+        </td>
+    </tr>
+</table>
+<ej-grid #Grid [dataSource]="gridData" [allowPaging]="true" [allowSorting]="true" [allowFiltering]="true" [allowGrouping]="true" [editSettings]="editSettings" [toolbarSettings]="toolbarSettings">
+    <e-columns>
+        <e-column field= "OrderID" [isPrimaryKey]="true" headerText="Order ID"></e-column>
+        <e-column field= "CustomerID" headerText="Customer ID"></e-column>
+        <e-column field= "EmployeeID" headerText="Employee ID"></e-column>
+        <e-column field= "Freight"></e-column>
+        <e-column field= "OrderDate" headerText="Order Date"></e-column>
+    </e-columns>
+</ej-grid> 
+
+{% endhighlight %}
+
+{% highlight ts %}
+
+import {Component, ViewEncapsulation, ViewChild } from '@angular/core';
+    @Component({
+      selector: 'ej-app',
+      templateUrl: 'app/app.component.html',  //give the path file for Grid control html file.
+    })
+    export class AppComponent {
+        public gridData;
+        @ViewChild("grid") gridIns: EJComponents<any, any>;  
+        editSettings:any;
+        directionsList:any;
+        sortcolumnNameList:any;
+        columnNameList:any;
+        watermarkone:string;
+        watermarktwo:string;
+        EmployeeList:any;
+        index:number;
+        OrderList:any;
+        toolbarSettings:any;
+    	constructor()
+        {
+            //The datasource "(window as any).gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
+            this.gridData = (window as any).gridData;
+            this.editSettings={allowEditing:true,allowAdding:true,allowDeleting:true };
+            this.toolbarSettings={ showToolbar: true,toolbarItems: ["add","edit","update","cancel"]};
+            this.directionsList="directions";
+            this.sortcolumnNameList="sortcolumnName";
+            this.columnNameList="columnName";
+            this.EmployeeList="Employee";
+            this.OrderList="Order";
+            this.watermarkone="Slect filter value one";
+            this.watermarktwo="Slect filter value two";
+            this.index=0;
+         }
+         addRecord() {
+            this.Grid.widget.addRecord({"OrderID":12333});
+         }
+         updateRecord() {
+            this.Grid.widget.updateRecord("OrderID", { OrderID: 10248, EmployeeID: 1});
+         }
+         deleteRecord() {
+            this.Grid.widget.deleteRecord("OrderID", { OrderID: this.Grid.widget.model.dataSource_two[this.Grid.widget.model.selectedRowIndex].OrderID });
+         }
+         Filterfn(args) {
+            var obj = $('#FlatGrid').data("ejGrid");
+            var one = $('#filtercolumnone').data("ejDropDownList");
+            var two = $('#filtercolumntwo').data("ejDropDownList");
+            var One = one.getValue();
+            var Two = two.getValue();
+            this.Grid.widget.filterColumn([{field:"OrderID",operator:"equal",value:One,predicate:"and", matchcase:true},{field:"EmployeeID",operator:"equal",value:Two,predicate:"and", matchcase:true}]);
+         }
+         clearfilterfn(args) {
+            this.Grid.widget.clearFiltering();
+         }
+         clearsortfn(args) {
+                        this.Grid.widget.clearSorting();
+         }
+         Sortfn(args) {
+                var sortdo = $('#doSorting').data("ejButton");
+                if (sortdo._id == "doSorting") {
+                    var name = $('#SortColumnName').data("ejDropDownList");
+                var direction = $('#Directions').data("ejDropDownList");
+                var columnName = name.getValue().replace(/\s*/g, "");
+                var sortDirection = direction.getValue().toLowerCase();
+                this.Grid.widget.sortColumn(columnName, sortDirection);
+            }
+         }
+         clicktoGroup(args) {
+            var columnName = $("#groupcolumnname").ejDropDownList("getSelectedValue");
+            if (args.srcElement.id == "groupColumn") {
+                this.Grid.widget.groupColumn(columnName);
+                    $("#groupColumn").ejButton("disable");
+                    $("#unGroupColumn").ejButton("enable");
+                
+            }
+            else {
+                this.Grid.widget.ungroupColumn(columnName);
+                $("#unGroupColumn").ejButton("disable");
+                $("#groupColumn").ejButton("enable");
+            }
+         }
+         Onchange() {
+            var columnName = $("#groupcolumnname").ejDropDownList("getSelectedValue");
+            if ($.inArray(columnName, this.Grid.widget.model.groupSettings.groupedColumns) != -1) {
+                $("#unGroupColumn").ejButton("enable");
+                $("#groupColumn").ejButton("disable");
+            }
+            else {
+                $("#groupColumn").ejButton("enable");
+                $("#unGroupColumn").ejButton("disable");
+            }
+         }
+    }
+{% endhighlight %}
+
+{% endtabs %}
+The following output is displayed as a result of the above code example.
+![](externalsearch_images/Actionswithexternalbutton_img1.png)
