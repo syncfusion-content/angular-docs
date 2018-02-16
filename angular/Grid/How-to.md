@@ -284,16 +284,16 @@ The following code example explains the above behavior.
                             <input type="button" ej-button id="Updaterecord" text="Updaterecord" (click)="updateRecord($event)"/>
                             <input type="button" ej-button id="DeleteRecord" text="DeleteRecord" (click)="deleteRecord($event)"/></td>
         <td><b>Filtering</b><br><br><input type="text" id="filterone" /><input type="text" id="filtertwo" /><input type="button" ej-button id="filteri" text="Filter" (click)="Filterfn($event)"/><input type="button" ej-button id="ClearFilter" text="Clear" (click)="clearfilterfn($event)"/></td>
-        <input id="filtercolumnone" ej-dropdownlist [targetID]="OrderList"/><div id="Order"><ul><li>10001</li><li>10249</li><li>10250</li><li>10251</li><li>10252</li></ul></div>
-        <input id="filtercolumntwo" ej-dropdownlist [targetID]="EmployeeList"/><div id="Employee"><ul><li>1</li><li>2</li><li>3</li><li>4</li><li>5</li></ul></div>
+        <input id="filtercolumnone" ej-dropdownlist [watermarkText]="watermarkone" [targetID]="OrderList"/><div id="Order"><ul><li>10248</li><li>10249</li><li>10250</li><li>10251</li><li>10252</li></ul></div>
+        <input id="filtercolumntwo" ej-dropdownlist [watermarkText]="watermarktwo" [targetID]="EmployeeList"/><div id="Employee"><ul><li>1</li><li>2</li><li>3</li><li>4</li><li>5</li></ul></div>
         <td><b>Grouping</b><br><br>
-            <input id="groupcolumnname" ej-dropdownlist [targetID]="columnNameList"/><div id="columnName"><ul><li>OrderID</li><li>CustomerID</li><li>Freight</li><li>Verified</li><li>ShipName</li></ul></div><br>
+            <input id="groupcolumnname" ej-dropdownlist [targetID]="columnNameList" [selectedIndex]="index"/><div id="columnName"><ul><li>OrderID</li><li>CustomerID</li><li>Freight</li><li>Verified</li><li>ShipName</li></ul></div><br>
             <input type="button" ej-button id="groupColumn" text="GroupColumn" (click)="clicktoGroup($event)"/>
             <input type="button" ej-button id="unGroupColumn" text="UnGroupColumn" (click)="clicktoGroup($event)"/>
         </td>
         <td><b>Sorting</b><br><br>
-            <input id="SortColumnName" ej-dropdownlist [targetID]="sortcolumnNameList"/><div id="sortcolumnName"><ul><li>Order ID</li><li>Customer ID</li><li>Employee ID</li><li>Freight</li><li>Ship City</li></ul></div>
-            <input id="Directions" ej-dropdownlist [targetID]="directionsList"/><div id="directions"><ul><li>Ascending</li><li>Descending</li></ul></div>
+            <input id="SortColumnName" ej-dropdownlist [targetID]="sortcolumnNameList" [selectedIndex]="index"/><div id="sortcolumnName"><ul><li>Order ID</li><li>Customer ID</li><li>Employee ID</li><li>Freight</li><li>Ship City</li></ul></div>
+            <input id="Directions" ej-dropdownlist [targetID]="directionsList" [selectedIndex]="index"/><div id="directions"><ul><li>Ascending</li><li>Descending</li></ul></div>
             <input type="button" ej-button id="doSorting" text="Sort" (click)="Sortfn($event)"/>
             <input type="button" ej-button id="clearSort" text="Clear" (click)="clearsortfn($event)"/>
         </td>
@@ -325,7 +325,10 @@ import {Component, ViewEncapsulation, ViewChild } from '@angular/core';
         directionsList:any;
         sortcolumnNameList:any;
         columnNameList:any;
+        watermarkone:string;
+        watermarktwo:string;
         EmployeeList:any;
+        index:number;
         OrderList:any;
         toolbarSettings:any;
     	constructor()
@@ -339,12 +342,15 @@ import {Component, ViewEncapsulation, ViewChild } from '@angular/core';
             this.columnNameList="columnName";
             this.EmployeeList="Employee";
             this.OrderList="Order";
+            this.watermarkone="Slect filter value one";
+            this.watermarktwo="Slect filter value two";
+            this.index=0;
          }
          addRecord() {
             this.Grid.widget.addRecord({"OrderID":12333});
          }
          updateRecord() {
-            this.Grid.widget.updateRecord("OrderID", { OrderID: 10248, ShipAddress: "VINE" });
+            this.Grid.widget.updateRecord("OrderID", { OrderID: 10248, EmployeeID: 1});
          }
          deleteRecord() {
             this.Grid.widget.deleteRecord("OrderID", { OrderID: this.Grid.widget.model.dataSource_two[this.Grid.widget.model.selectedRowIndex].OrderID });
