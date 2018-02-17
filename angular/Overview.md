@@ -186,7 +186,7 @@ dataSource<br/>selectedRowIndex<br/>splitterSettings.position</td></tr>
 <tr>
 <td>
 ejGrid</td><td>
-dataSource<br/>pageSettings.currentPage</td></tr>
+dataSource<br/>pageSettings.currentPage<br/>selectedRowIndices<br/>selectedRowIndex</td></tr>
 <tr>
 <td>
 ejGroupButton</td><td>
