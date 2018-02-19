@@ -27,7 +27,7 @@ The below steps describes to add component with above cloned seed application.
 
 ## Syncfusion JavaScript components source configuration and sample creation
 
-* Copy required Syncfusion Angular source component(s) from the below build location and add it in `src/ej` folder (For ex., consider the `pivotchart` component).
+* Copy required Syncfusion Angular source component(s) from the below build location and add it in `src/ej` folder (For ex., consider the `pivot chart` component).
 
 {% highlight javascript %}
 
