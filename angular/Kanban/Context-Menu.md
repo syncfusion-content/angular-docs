@@ -190,7 +190,7 @@ The following code example describes the above behavior.
 
 {% highlight html %}
 
-    <ej-kanban [datasource]="kanbanData" keyfield="Status" fields.swimlaneKey="Assignee" fields.content="Summary" fields.primarykey="Id" [contextmenusettings.enable]="true" (contextclick)="onContextClick($event)" fields.tag="Tags" [contextmenusettings.menuitems]="menuitem" [contextmenusettings.custommenuitems]="customMenuItems">
+    <ej-kanban [datasource]="kanbanData" keyfield="Status" fields.swimlaneKey="Assignee" fields.content="Summary" fields.primarykey="Id" [contextmenusettings.enable]="true" (contextclick)="onContextClick($event)" fields.tag="Tags" [contextmenusettings.menuitems]="menuItem" [contextmenusettings.custommenuitems]="customMenuItems">
     <e-kanban-columns>
         <e-kanban-column key="Open" headertext="Backlog"></e-kanban-column>
         <e-kanban-column key="InProgress" headertext="In Progress"></e-kanban-column>
@@ -222,13 +222,13 @@ export class KanbanComponent {
         { field: 'Estimate', editType: ej.Kanban.EditingType.Numeric, editParams: { decimalPlaces: 2 }, validationRules: { range: [0, 1000] } },
         { field: 'Summary', editType: ej.Kanban.EditingType.TextArea, validationRules: { required: true } }
     ];
-        this.menuitem = [];
+        this.menuItem = [];
         this.customMenuItems = [{ text: "Clear Selection" }];
     };
     onContextClick(event) {
-        var kbnObj = $(event.targetelement).parents('.e-kanban').data('ejKanban')
+        var kanbanObj = $(event.targetelement).parents('.e-kanban').data('ejKanban')
         if (event.text == "Clear Selection")
-            kbnObj.KanbanSelection.clear();
+            kanbanObj.KanbanSelection.clear();
     }
 
 } 
@@ -248,7 +248,7 @@ The following code example describes the above behavior.
 
 {% highlight html %}
 
-    <ej-kanban [datasource]="kanbanData" keyfield="Status" fields.swimlaneKey="Assignee" fields.content="Summary" fields.primarykey="Id" [contextmenusettings.enable]="true" (contextclick)="onContextClick($event)" fields.tag="Tags" [contextmenusettings.menuitems]="menuitem" [contextmenusettings.custommenuitems]="customMenuItems">
+    <ej-kanban [datasource]="kanbanData" keyfield="Status" fields.swimlaneKey="Assignee" fields.content="Summary" fields.primarykey="Id" [contextmenusettings.enable]="true" (contextclick)="onContextClick($event)" fields.tag="Tags" [contextmenusettings.menuitems]="menuItem" [contextmenusettings.custommenuitems]="customMenuItems">
     <e-kanban-columns>
         <e-kanban-column key="Open" headertext="Backlog"></e-kanban-column>
         <e-kanban-column key="InProgress" headertext="In Progress"></e-kanban-column>
@@ -285,15 +285,15 @@ export class KanbanComponent {
         { field: 'Estimate', editType: ej.Kanban.EditingType.Numeric, editParams: { decimalPlaces: 2 }, validationRules: { range: [0, 1000] } },
         { field: 'Summary', editType: ej.Kanban.EditingType.TextArea, validationRules: { required: true } }
     ];
-        this.menuitem = [];
+        this.menuItem = [];
         this.customMenuItems = [{ text: "Clear Selection" }, { text: "Move to Column", template: "#submenu" }];
     };
     onContextClick(event) {
-        var kbnObj = $(event.targetelement).parents('.e-kanban').data('ejKanban')
+        var kanbanObj = $(event.targetelement).parents('.e-kanban').data('ejKanban')
         if (event.text == "Clear Selection")
-            kbnObj.KanbanSelection.clear();
+            kanbanObj.KanbanSelection.clear();
         else if (event.text != "Move to Column")
-            kbnObj.updateCard(event.cardData.Id, event.cardData);
+            kanbanObj.updateCard(event.cardData.Id, event.cardData);
     }
 
 } 
