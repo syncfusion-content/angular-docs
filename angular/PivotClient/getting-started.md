@@ -29,7 +29,7 @@ The following steps describe how to add component with above cloned seed applica
 
 ## Syncfusion JavaScript components source configuration and sample creation
 
-* Copy required Syncfusion Angular source component(s) from the build location specified below and add it in `src/ej` folder (For ex., consider the `pivot client` component).
+* Copy required Syncfusion Angular source component(s) from the build location specified below and add it in `src/ej` folder (For ex., consider the `PivotClient` component).
 
 {% highlight javascript %}
 
@@ -39,9 +39,9 @@ The following steps describe how to add component with above cloned seed applica
 
 N> `core.ts` file is mandatory for all Syncfusion JavaScript Angular components. The repository having the source file from Essential Studio for JavaScript v{{ site.releaseversion }}.
 
-* Create `pivotclient` folder inside `src` folder.
+* Create `PivotClient` folder inside `src` folder.
 
-* Create `pivotclient.component.html` view file inside `src/pivotclient` folder and render ejPivotClient Angular component using the below code snippet.
+* Create `PivotClient.component.html` view file inside `src/PivotClient` folder and render ejPivotClient Angular component using the below code snippet.
 
 {% highlight html %}
 
@@ -49,7 +49,7 @@ N> `core.ts` file is mandatory for all Syncfusion JavaScript Angular components.
 
 {% endhighlight %}
 
-* Create `pivotclient.component.ts` model file inside the folder `src/pivotclient` and create sample component using the below code snippet.
+* Create `PivotClient.component.ts` model file inside the folder `src/PivotClient` and create sample component using the below code snippet.
 
 {% highlight ts %}
 
@@ -57,8 +57,8 @@ import { Component } from '@angular/core';
 
 @Component({
   selector: 'ej-app',
-  templateUrl: 'app/components/pivotclient/pivotclient.component.html',
-  styleUrls: ['app/components/pivotclient/pivotclient.component.css'],
+  templateUrl: 'src/PivotClient/PivotClient.component.html',
+  styleUrls: ['src/PivotClient/PivotClient.component.css'],
 })
 
 export class PivotClientComponent {
@@ -78,7 +78,7 @@ Before adding router configuration for above created ejPivotClient component, we
     <div>
         <ul class="nav navbar-nav">
             . . . .
-            <li><a data-toggle="collapse" data-target="#skeleton-navigation-navbar-collapse.in" href="#pivotclient" [routerLink]="['/pivotclient']">PivotClient </a></li>
+            <li><a data-toggle="collapse" data-target="#skeleton-navigation-navbar-collapse.in" href="#PivotClient" [routerLink]="['/PivotClient']">PivotClient </a></li>
         </ul>
     </div>
     <main>
@@ -93,12 +93,12 @@ Before adding router configuration for above created ejPivotClient component, we
 
 import { Routes } from '@angular/router';
 . . . .
-import { PivotClientComponent } from './pivotclient/pivotclient.component';
+import { PivotClientComponent } from './PivotClient/PivotClient.component';
 
 export const rootRouterConfig: Routes = [
     { path: '', redirectTo: 'home', pathMatch: 'full' },
     . . . .
-    { path: 'pivotclient', component: PivotClientComponent }
+    { path: 'PivotClient', component: PivotClientComponent }
 ];
 
 {% endhighlight %}
@@ -109,8 +109,7 @@ export const rootRouterConfig: Routes = [
 
 import { NgModule, enableProdMode, ErrorHandler } from '@angular/core';
 . . . . .
-import { EJ_PIVOTCLIENT_COMPONENTS } from './ej/pivotclient.component';
-import { PivotClientComponent } from './pivotclient/pivotclient.component';
+import { PivotClientComponent } from './PivotClient/PivotClient.component';
 
 import { rootRouterConfig } from './app.routes';
 . . . .
@@ -125,7 +124,7 @@ export class AppModule { }
 
 ## Control initialization
 
-Add necessary HTML elements in `pivotclient.component.html` to render PivotClient
+Add necessary HTML elements in `PivotClient.component.html` to render PivotClient
 
 {% highlight html %}
 
