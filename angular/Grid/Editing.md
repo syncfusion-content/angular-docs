@@ -1194,6 +1194,53 @@ Also, using 'DataOperations' helper class you can perform grid action at server 
 7. PerformSelect
 8. Execute
 
+### Remotesave Adaptor:
+
+RemoteSaveAdaptor is used for binding local data and performs all data operatons in client-side. It interacts with server-side only for CRUD operations to pass the modified records.
+
+Refer thr following code example
+
+{% highlight html %}
+
+ <ej-grid id = "Grid" [dataSource] = "gridData" allowPaging = "true" [toolbarSettings] = "toolbarItems" [editSettings] = "editSettings" >
+    <e-columns>
+        <e-column field="OrderID" [isPrimaryKey]="true" headerText="OrderID"></e-column>
+        <e-column field="CustomerID" headerText="CustomerID"></e-column>
+        <e-column field="EmployeeID" headerText="EmployeeID"></e-column>   
+	    <e-column field="Freight" headerText="Freight" editType="numericedit" format="{0:C}" ></e-column>
+        <e-column field="ShipName" headerText="ShipName"></e-column>
+        <e-column field="ShipCountry" headerText="ShipCountry"></e-column>
+    </e-columns>
+</ej-grid> 
+
+{% endhighlight %}
+
+{% highlight javascript %}
+
+    import {Component, ViewEncapsulation} from '@angular/core';
+    @Component({
+      selector: 'ej-app',
+      templateUrl: 'app/app.component.html',  //give the path file for Grid control html file.
+    })
+    export class AppComponent {
+      public editSettings;
+      public toolbarItems;
+       constructor()
+        {
+          public gridData = ej.DataManager({
+                json : "(IEnumerable<object>)ViewBag.datasource",
+                adaptor : "remoteSaveAdaptor",
+                updateUrl : "Home/Update",
+			    insertUrl : "Home/Insert",
+			    removeUrl : "Home/Delete",
+           });
+		   this.editSettings = { allowEditing: true, allowAdding: true, allowDeleting: true };
+	       this.toolbarItems={ showToolbar : true, toolbarItems : ["add", "edit", "delete", "update", "cancel"]};
+        }
+    }
+
+{% endhighlight %} 
+
 ### Accessing CRUD action request details in server side:
 
 The 'Server-Side' function must be declared with the following parameter name for each editing functionality.
