@@ -22,22 +22,24 @@ To quick start with Syncfusion JavaScript Angular components run the below comma
 
  > npm install
 {% endhighlight %}
- 
+
 The below steps describes to add component with above cloned seed application.
 
 ## Syncfusion JavaScript components source configuration and sample creation
 
-* Copy required Syncfusion Angular source component(s) from the below build location and add it in `src/ej` folder (For ex., consider the `pivotchart` component).
+* Copy required Syncfusion Angular source component(s) from the below build location and add it in `src/ej` folder (For ex., consider the `PivotChart` component).
 
 {% highlight javascript %}
-(Installed Location)\Syncfusion\Essential Studio\{{ site.releaseversion }}\JavaScript\assets-src\angular2\ 
+
+(Installed Location)\Syncfusion\Essential Studio\{{ site.releaseversion }}\JavaScript\assets-src\angular2\
+
 {% endhighlight %}
 
 N> `core.ts` file is mandatory for all Syncfusion JavaScript Angular components. The repository having the source file from Essential Studio for JavaScript v{{ site.releaseversion }}.
 
-* Create `pivotchart` folder inside `src` folder.
+* Create `PivotChart` folder inside `src` folder.
 
-* Create `pivotchart.component.html` view file inside `src/pivotchart` folder and render ejPivotChart Angular component using the below code example. 
+* Create `PivotChart.component.html` view file inside `src/PivotChart` folder and render ejPivotChart Angular component using the below code example. 
 
 {% highlight html %}
 
@@ -45,7 +47,7 @@ N> `core.ts` file is mandatory for all Syncfusion JavaScript Angular components.
 
 {% endhighlight %}
 
-* Create `pivotchart.component.ts` model file inside the folder `src/pivotchart` and create sample component using the below code example.
+* Create `PivotChart.component.ts` model file inside the folder `src/PivotChart` and create sample component using the below code example.
 
 {% highlight ts %}
 
@@ -53,8 +55,8 @@ import { Component } from '@angular/core';
 
 @Component({
   selector: 'ej-app',
-  templateUrl: 'app/components/pivotchart/pivotchart.component.html',
-  styleUrls: ['app/components/pivotchart/pivotchart.component.css'], 
+  templateUrl: 'src/PivotChart/PivotChart.component.html',
+  styleUrls: ['src/PivotChart/PivotChart.component.css'],
 })
 
 export class PivotChartComponent {
@@ -70,28 +72,30 @@ Before adding router configuration for above created ejPivotChart component, we 
 * Now, we are going to configure the route navigation link for created PivotChart sample in `src/app.component.html` file.
 
 {% highlight html %}
-<div>
-	<ul class="nav navbar-nav">
-		. . . .
-		<li><a data-toggle="collapse" data-target="#skeleton-navigation-navbar-collapse.in" href="#pivotchart" [routerLink]="['/pivotchart']">PivotChart </a></li>
-	</ul>
-</div>
-<main>
-	<router-outlet></router-outlet>
-</main>
+
+    <div>
+        <ul class="nav navbar-nav">
+            . . . .
+            <li><a data-toggle="collapse" data-target="#skeleton-navigation-navbar-collapse.in" href="#PivotChart" [routerLink]="['/PivotChart']">PivotChart </a></li>
+        </ul>
+    </div>
+    <main>
+        <router-outlet></router-outlet>
+    </main>
+
 {% endhighlight %}
 
 * Import the ejPivotChart sample component and define the route in `src/app.routes.ts` file.
 
 {% highlight javascript %}
 import { Routes } from '@angular/router';
-. . . . 
-import { PivotChartComponent } from './pivotchart/pivotchart.component';
+. . . .
+import { PivotChartComponent } from './PivotChart/PivotChart.component';
 
 export const rootRouterConfig: Routes = [
     { path: '', redirectTo: 'home', pathMatch: 'full' },
     . . . . 
-    { path: 'pivotchart', component: PivotChartComponent }
+    { path: 'PivotChart', component: PivotChartComponent }
 ];
 {% endhighlight %}
 
@@ -100,18 +104,18 @@ export const rootRouterConfig: Routes = [
 {% highlight javascript %}
 
 import { NgModule, enableProdMode, ErrorHandler } from '@angular/core';
-. . . . . 
-import { EJ_PIVOTCHART_COMPONENTS } from './ej/pivotchart.component';
-import { PivotChartComponent } from './pivotchart/pivotchart.component';
+. . . . .
+import { PivotChartComponent } from './PivotChart/PivotChart.component';
 
 import { rootRouterConfig } from './app.routes';
-. . . . 
+. . . .
 @NgModule({
   imports: [BrowserModule, FormsModule, HttpModule, RouterModule.forRoot(rootRouterConfig, { useHash: true })],
   declarations: [. . . . , EJ_PIVOTCHART_COMPONENTS,PivotChartComponent],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
+
 {% endhighlight %}
 
 ## Relational
@@ -120,7 +124,7 @@ This section covers the information that you need to know to populate a simple P
 
 ### Control Initialization
 
-Add necessary HTML elements in `pivotchart.component.html` to render PivotChart
+Add necessary HTML elements in `PivotChart.component.html` to render PivotChart
 
 {% highlight html %}
 
@@ -136,7 +140,7 @@ Create a **CSS** page and add necessary CSS elements for PivotChart
 ej-pivotchart {
     display: block;
     height: 500px;
-    width: 100%; 
+    width: 100%;
 }
 .e-pivotchart{
     position: inherit !important;
@@ -162,7 +166,7 @@ Let us now see how to populate the PivotChart control using a sample JSON data a
 //..
 
 export class PivotChartComponent {
-    public data; rows; columns;values; size; legend; load; primaryYAxis; commonSeriesOptions; 
+    public data; rows; columns;values; size; legend; load; primaryYAxis; commonSeriesOptions;
     constructor() {
       this.data = [
           { Amount: 100, Country: "Canada", Date: "FY 2005", Product: "Bike", Quantity: 2, State: "Alberta" },
@@ -215,7 +219,7 @@ This section covers the information that you need to know to populate a simple P
 
 ### Control Initialization
 
-Add necessary HTML elements in `pivotchart.component.html` to render PivotChart
+Add necessary HTML elements in `PivotChart.component.html` to render PivotChart
 
 {% tabs %}
 
@@ -270,9 +274,9 @@ Let us now see how to populate the PivotChart control using a sample JSON data a
 import {Component, ViewEncapsulation} from '@angular/core';
 
 @Component({
-  selector: 'sd-home',
-  templateUrl: 'app/components/pivotchart/pivotchart.component.html', //give the path file for pivotchart component html file.
-  styleUrls: ['app/components/pivotchart/pivotchart.component.css'],  //give the path file for pivotchart component css file.
+  selector: 'ej-app',
+  templateUrl: 'src/PivotChart/PivotChart.component.html', //give the path file for PivotChart component html file.
+  styleUrls: ['src/PivotChart/PivotChart.component.css'],  //give the path file for PivotChart component css file.
 })
 export class PivotChartComponent {
     public data; cube; catalog; rows; columns;values;size; legend; load; primaryXAxis; primaryYAxis; type; commonSeriesOptions;
