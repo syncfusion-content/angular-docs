@@ -414,7 +414,7 @@ The following output is displayed as a result of the above code example.
 
 ## Display other Syncfusion controls in Grid columns
 
-We can display the other Syncfusion controls using `template` property of Grid columns and you can render any type of JsRender templates.
+We can display the other Syncfusion controls using `template` property of Grid columns.
 
 {% highlight html %}
 
