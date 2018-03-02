@@ -342,9 +342,9 @@ At Initial load
 {:.caption}
 
 ![](Timescale-Modes_images/Timescale-Modes_img8.png)
-`updateTimescaleView` property as `true`
+`updateTimescaleView` property as `false`
 {:.caption}
 
 ![](Timescale-Modes_images/Timescale-Modes_img9.png)
-`updateTimescaleView` property as `false`
+`updateTimescaleView` property as `true`
 {:.caption}
