@@ -410,3 +410,48 @@ import {Component, ViewEncapsulation, ViewChild } from '@angular/core';
 {% endtabs %}
 The following output is displayed as a result of the above code example.
 ![](externalsearch_images/Actionswithexternalbutton_img1.png)
+
+
+## Display other Syncfusion controls in Grid columns
+
+We can display the other Syncfusion controls using `ng-template` with `e-template` attribute directive in Grid columns.
+
+{% highlight html %}
+
+<ej-grid #grid [(dataSource)]="gridData" [allowPaging]="true" >
+    <e-columns>
+        <e-column headerText="Employee Rating" width="150">
+            <ng-template e-template let-data>
+                <ej-rating id="rating" [value]="data.EmployeeID" [allowReset]="true"></ej-rating>
+            </ng-template>
+        </e-column>
+        <e-column field="EmployeeID" [isPrimaryKey]="true" headerText="Employee ID"  width="90"></e-column>
+        <e-column field="FirstName"  headerText="First Name" width="90"></e-column>
+        <e-column field="LastName" headerText="Last Name" width="90" ></e-column>
+        <e-column field="Country" headerText="Country" width="80" ></e-column>
+    </e-columns>     
+</ej-grid>
+
+{% endhighlight %}   
+{% highlight ts %}
+
+import {Component, ViewEncapsulation, ViewChild } from '@angular/core';
+    @Component({
+      selector: 'ej-app',
+      templateUrl: 'app/app.component.html',  //give the path file for Grid control html file.
+    })
+    export class AppComponent {
+        public gridData;
+        @ViewChild("grid") gridIns: EJComponents<any, any>;  
+    	constructor()
+        {
+            //The datasource "(window as any).gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
+            this.gridData = (window as any).employeeView;
+            
+        }
+     }
+
+{% endhighlight %}
+
+The following output is displayed as a result of the above code example.
+![](Display-Other-controls/Display_Other_controls_img1.png)
