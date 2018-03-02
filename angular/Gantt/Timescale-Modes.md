@@ -308,7 +308,7 @@ export class AppComponent {
 
 ## Customize automatic timescale update action
 
-In Gantt, schedule timeline was automatically updated when the tasks date values are updated beyond the schedule date values. This can be enabled/disabled by using[`updateTimescaleView`](/api/angular/ejgantt#members:scheduleheadersettings-updatetimescaleview) property.
+In Gantt, schedule timeline was automatically updated when the tasks date values are updated beyond the schedule date values. This can be enabled/disabled by using [`updateTimescaleView`](/api/angular/ejgantt#members:scheduleheadersettings-updatetimescaleview "scheduleHeaderSettings.updateTimescaleView") property.
 The following code snippets shows how to prevent the automatic timescale update in Gantt.
 
 {% highlight javascript %}
@@ -335,12 +335,16 @@ The following code snippets shows how to prevent the automatic timescale update 
 }
 {% endhighlight %}
 
-The following screenshot shows the output of above code example.
+The following screenshot illustrates the behavior of `updateTimescaleView` property.
 
 ![](Timescale-Modes_images/Timescale-Modes_img7.png)
 At Initial load
 {:.caption}
 
 ![](Timescale-Modes_images/Timescale-Modes_img8.png)
-After update of Plan Timeline task's start date value to 01/23/2017
+`updateTimescaleView` property as `true`
+{:.caption}
+
+![](Timescale-Modes_images/Timescale-Modes_img9.png)
+`updateTimescaleView` property as `false`
 {:.caption}
