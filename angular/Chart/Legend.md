@@ -121,7 +121,7 @@ You can change the size of the legend items by using the `itemStyle.width` and `
 
 ### Legend size
 
-By default, legend takes 20% of the **height** horizontally when it was placed on the top or bottom position and 20% of the **width** vertically while placing on the left or right position of the chart. You can change this default legend size by using the `size`(../api/ejchart#members:legend-size) option of the legend.  
+By default, legend takes 20% of the **height** horizontally when it was placed on the top or bottom position and 20% of the **width** vertically while placing on the left or right position of the chart. You can change this default legend size by using the **size** option of the legend.  
 
 {% highlight html %}
 
@@ -229,11 +229,11 @@ You can get the legend item details such as *index*, *bounds*, *shape* and *seri
 
 {% highlight html %}
 
-<ej-chart id="chartcontainer" (legendItemClick)="onlegendclicked($event)"> 
+<ej-chart id="chartcontainer" (legendItemClick)="onLegendClicked($event)"> 
 </ej-chart>
  
   <script>
-     function onlegendclicked(sender) {
+     function onLegendClicked(sender) {
         //Get legend item details on legend item click.
         var legendItem = sender.data;
      }
