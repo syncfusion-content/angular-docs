@@ -40,19 +40,6 @@ npm install -g @angular/cli
 
 N> To know more about angular-cli commands refer [here](https://github.com/angular/angular-cli)
 
-N> The latest version `1.6.4 of @angular/cli` throws the following error `Module build failed: Error: Can't resolve 'ej.theme.min.css' in 'E:\AngularSyncfusion\node_modules\syncfusion-javascript\Content\ej\web\material'`. To resolve this issue, downgrade the `@angular/cli` version to `1.6.3`. Refer to the below command to install the lower version of NPM package.Refer [here](https://github.com/angular/angular-cli/issues/9185 ) to know more about this issue. 
-
-{% highlight javascript %}
-npm install -g @angular/cli@1.6.3
-{% endhighlight %}
-
-N> If you are facing any other issues like  `Error: Cannot find module '@angular-devkit/core'` while downgrading the angular-cli version from 1.6.4 to 1.6.3, then we need to install `@angular-devkit/core` NPM package globally. Refer to the below command to install this package. 
-
-{% highlight javascript %}
-npm install -g @angular-devkit/core
-{% endhighlight %}
-
-N> If the issue persist, we recommend you to uninstall the `@angular/cli` and reinstall `@angular/cli@1.6.3`.
 
 ## Create a new Application
 
