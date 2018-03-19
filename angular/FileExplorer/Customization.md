@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Customization
 description: FileExplorer Customization.
@@ -136,3 +136,5 @@ You can set the alias name to the root folder of FileExplorer by using `rootFold
    ajaxAction="http://js.syncfusion.com/demos/ejServices/api/FileExplorer/FileOperations" 
    rootFolderName="This PC" style="display:block">
 </ej-fileexplorer>
+
+{% endhighlight %}
