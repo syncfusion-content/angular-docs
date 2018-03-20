@@ -127,7 +127,7 @@ The footer displays the details of the current selected files and folders, and t
 
 ## Customize the Root Folder name in FileExplorer
 
-You can set the alias name for root folder name in FileExplorer by using rootFolderName API. It is used to replace the actual root folder name in the FileExplorer UI. Refer to the below code block for set the alias name for root folder name in FileExplorer.  
+You can set the alias name to the root folder of FileExplorer by using `rootFolderName` API. It is used to replace the actual root folder name in the FileExplorer UI. Refer to the below code to set the alias name for the root folder of FileExplorer.  
 
 {% highlight html %}
 
@@ -136,3 +136,5 @@ You can set the alias name for root folder name in FileExplorer by using rootFol
    ajaxAction="http://js.syncfusion.com/demos/ejServices/api/FileExplorer/FileOperations" 
    rootFolderName="This PC" style="display:block">
 </ej-fileexplorer>
+
+{% endhighlight %}
