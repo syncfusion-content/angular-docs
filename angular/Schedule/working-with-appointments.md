@@ -760,7 +760,7 @@ export class ScheduleComponent {
         if ($(e.target).parents(".e-schedule").length != 0) {
             var scheduleObj = $("#Schedule1").data("ejSchedule");
             var result = scheduleObj.getSlotByElement($(e.target));
-            // set value to custom appointmnt window fields
+            // set value to custom appointment window fields
             $("#subject").val(e.droppedElementData.text);
             $("#customdescription").val(e.droppedElementData.text);
             $("#StartTime").ejDateTimePicker({ value: new Date(result.startTime) });
