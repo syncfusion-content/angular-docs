@@ -677,7 +677,7 @@ The following code example lets you drag and drop the external items from the tr
                 <tr>
                     <td>Description:</td>
                     <td colspan="2">
-                        <textarea id="customdescription" name="Description" rows="3" cols="50" style="width: 100%; resize: vertical"></textarea>
+                        <textarea id="customDescription" name="Description" rows="3" cols="50" style="width: 100%; resize: vertical"></textarea>
                     </td>
                 </tr>
                 <tr>
@@ -726,7 +726,7 @@ import { Component } from '@angular/core';
 export class ScheduleComponent {
     public currentDate: Date;
     public dataSource;
-    public blockdataSource;
+    public blockDataSource;
     public group;
     public resourceData;
     constructor() {
@@ -762,7 +762,7 @@ export class ScheduleComponent {
             var result = scheduleObj.getSlotByElement($(e.target));
             // set value to custom appointment window fields
             $("#subject").val(e.droppedElementData.text);
-            $("#customdescription").val(e.droppedElementData.text);
+            $("#customDescription").val(e.droppedElementData.text);
             $("#StartTime").ejDateTimePicker({ value: new Date(result.startTime) });
             $("#EndTime").ejDateTimePicker({ value: new Date(result.endTime) });
             $("#resource").val(result.resources.text);
@@ -1579,7 +1579,7 @@ It holds the binding name for <b>customStyle</b> field in the blockout dataSourc
 
 {% highlight html %}
 
-<ej-schedule id="Schedule1" width="100%" height="525px" [currentDate]=currentDate [blockoutSettings.enable]="true" [blockoutSettings.dataSource]=blockdataSource blockoutSettings.id="id" blockoutSettings.startTime="BlockStartTime" blockoutSettings.endTime="BlockEndTime" blockoutSettings.subject="BlockSubject" blockoutSettings.isBlockAppointment="IsBlockAppointment">
+<ej-schedule id="Schedule1" width="100%" height="525px" [currentDate]=currentDate [blockoutSettings.enable]="true" [blockoutSettings.dataSource]=blockDataSource blockoutSettings.id="id" blockoutSettings.startTime="BlockStartTime" blockoutSettings.endTime="BlockEndTime" blockoutSettings.subject="BlockSubject" blockoutSettings.isBlockAppointment="IsBlockAppointment">
 </ej-schedule>
 
 {% endhighlight %}
@@ -1593,11 +1593,11 @@ import { Component } from '@angular/core';
     templateUrl: 'src/schedule/schedule.component.html'
 })
 export class ScheduleComponent {
-    public blockdataSource;
+    public blockDataSource;
     public currentDate: Date;
     constructor() {
         this.currentDate = new Date(2017, 4, 5);
-        this.blockdataSource = [{
+        this.blockDataSource = [{
             BlockId: 101,
             BlockStartTime: new Date(2017, 4, 5, 10, 0),
             BlockEndTime: new Date(2017, 4, 5, 11, 0),
@@ -1623,7 +1623,7 @@ The Appointments that lies within the blocked time range can be restricted to pe
 
 {% highlight html %}
 
-<ej-schedule id="Schedule1" width="100%" height="525px" [currentDate]=currentDate [blockoutSettings.enable]="true" [blockoutSettings.dataSource]=blockdataSource blockoutSettings.id="id" blockoutSettings.startTime="BlockStartTime" blockoutSettings.endTime="BlockEndTime" blockoutSettings.subject="BlockSubject" blockoutSettings.isBlockAppointment="IsBlockAppointment">
+<ej-schedule id="Schedule1" width="100%" height="525px" [currentDate]=currentDate [blockoutSettings.enable]="true" [blockoutSettings.dataSource]=blockDataSource blockoutSettings.id="id" blockoutSettings.startTime="BlockStartTime" blockoutSettings.endTime="BlockEndTime" blockoutSettings.subject="BlockSubject" blockoutSettings.isBlockAppointment="IsBlockAppointment">
 </ej-schedule>
 
 {% endhighlight %}
@@ -1637,11 +1637,11 @@ import { Component } from '@angular/core';
     templateUrl: 'src/schedule/schedule.component.html'
 })
 export class ScheduleComponent {
-    public blockdataSource;
+    public blockDataSource;
     public currentDate: Date;
     constructor() {
         this.currentDate = new Date(2017, 4, 5);
-        this.blockdataSource = [{
+        this.blockDataSource = [{
             BlockId: 101,
             BlockStartTime: new Date(2017, 4, 5, 10, 0),
             BlockEndTime: new Date(2017, 4, 5, 11, 0),
@@ -1662,7 +1662,7 @@ The `blockoutSettings` holds the below properties to customize the block interva
 
 {% highlight html %}
 
-<ej-schedule id="Schedule1" width="100%" height="525px" [currentDate]=currentDate [blockoutSettings.enable]="true" blockoutSettings.templateId="#blocktemplate" [blockoutSettings.dataSource]=blockdataSource blockoutSettings.id="id" blockoutSettings.startTime="BlockStartTime" blockoutSettings.endTime="BlockEndTime"
+<ej-schedule id="Schedule1" width="100%" height="525px" [currentDate]=currentDate [blockoutSettings.enable]="true" blockoutSettings.templateId="#blocktemplate" [blockoutSettings.dataSource]=blockDataSource blockoutSettings.id="id" blockoutSettings.startTime="BlockStartTime" blockoutSettings.endTime="BlockEndTime"
     blockoutSettings.subject="BlockSubject" blockoutSettings.isBlockAppointment="IsBlockAppointment">
 </ej-schedule>
 
@@ -1690,11 +1690,11 @@ import { Component } from '@angular/core';
     templateUrl: 'src/schedule/schedule.component.html'
 })
 export class ScheduleComponent {
-    public blockdataSource;
+    public blockDataSource;
     public currentDate: Date;
     constructor() {
         this.currentDate = new Date(2017, 4, 5);
-        this.blockdataSource = [{
+        this.blockDataSource = [{
             BlockId: 101,
             BlockStartTime: new Date(2017, 4, 5, 10, 0),
             BlockEndTime: new Date(2017, 4, 5, 11, 0),
@@ -1714,7 +1714,7 @@ export class ScheduleComponent {
 
 <ej-schedule id="Schedule1" width="100%" height="525px" [currentDate]=currentDate
     [blockoutSettings.enable]="true"
-    [blockoutSettings.dataSource]=blockdataSource
+    [blockoutSettings.dataSource]=blockDataSource
     blockoutSettings.id="id"
     blockoutSettings.startTime="BlockStartTime"
     blockoutSettings.endTime="BlockEndTime"
@@ -1741,7 +1741,7 @@ import { Component } from '@angular/core';
 export class ScheduleComponent {
     public currentDate: Date;
     public dataSource;
-    public blockdataSource;
+    public blockDataSource;
     public group;
     public resourceData;
     constructor() {
@@ -1753,7 +1753,7 @@ export class ScheduleComponent {
             EventEndTime: new Date(2017, 4, 2, 10, 30),
             OwnerId: 2
         }];
-        this.blockdataSource = [{
+        this.blockDataSource = [{
             BlockId: 101,
             BlockStartTime: new Date(2017, 4, 5, 10, 0),
             BlockEndTime: new Date(2017, 4, 5, 11, 0),

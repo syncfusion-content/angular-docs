@@ -104,7 +104,7 @@ import { Component } from '@angular/core';
 })
 export class ScheduleComponent {
     public scheduleData: any;
-    public currentdate: Date;
+    public currentDate: Date;
     public group: any;
     public allowMultiple: Boolean;
     public resourceData: any;
@@ -122,7 +122,7 @@ export class ScheduleComponent {
             StartTimeZone: "UTC +05:30",
             EndTime: new Date(2017, 5, 4, 1, 30),
             EndTimeZone: "UTC +05:30",
-            Description: "Never Giveup on Obstacles",
+            Description: "Never Give up on Obstacles",
             location: "US",
             AllDay: false,
             Recurrence: true,
@@ -133,7 +133,7 @@ export class ScheduleComponent {
             RecurrenceId: 1,
             RecurrenceExDate: null
         }];
-        this.currentdate = new Date(2017, 5, 5);
+        this.currentDate = new Date(2017, 5, 5);
         this.group = {
             resources: ['Owners']
         };
