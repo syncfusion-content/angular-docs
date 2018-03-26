@@ -773,24 +773,24 @@ export class ScheduleComponent {
 
     save() {
         var obj = {};
-        var formelement = $("#customWindow").find("#custom").get(0);
-        for (var index = 0; index < formelement.length; index++) {
-            var columnName = formelement[index].name, $element = $(formelement[index]);
+        var formElement = $("#customWindow").find("#custom").get(0);
+        for (var index = 0; index < formElement.length; index++) {
+            var columnName = formElement[index].name, $element = $(formElement[index]);
             if (columnName != undefined) {
                 if (columnName == "Subject") {
-                    var value = formelement[index].value;
+                    var value = formElement[index].value;
                 }
                 if (columnName == "Description") {
-                    value = formelement[index].value;
+                    value = formElement[index].value;
                 }
                 if (columnName == "StartTime") {
-                    value = new Date(formelement[index].value);
+                    value = new Date(formElement[index].value);
                 }
                 if (columnName == "EndTime") {
-                    value = new Date(formelement[index].value);
+                    value = new Date(formElement[index].value);
                 }
                 if (columnName == "OwnerId") {
-                    value = parseInt(formelement[index].value);
+                    value = parseInt(formElement[index].value);
                 }
                 if (columnName != "Resource") {
                     obj[columnName] = value;
