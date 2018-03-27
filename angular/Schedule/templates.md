@@ -466,7 +466,7 @@ When template is applied for the `prioritySettings`, these default icons will be
 {% highlight css %}
 
 	.critical,
-	.ultracritical,
+	.ultra-critical,
 	.none {
 		height: 13px;
 		width: 13px;
@@ -483,7 +483,7 @@ When template is applied for the `prioritySettings`, these default icons will be
 		background-position: -13px;
 	}
 
-	.ultracritical {
+	.ultra-critical {
 		background-color: #56ca85;
 		background-position: -59px;
 	}
@@ -525,7 +525,7 @@ export class ScheduleComponent {
         }, {
             text: "Ultra Critical",
             id: 3,
-            value: "ultracritical"
+            value: "ultra-critical"
         }];
     }
 }

@@ -1536,7 +1536,7 @@ The `blockoutSettings` holds the below block intervals related properties such a
 * `templateId` - It applies the template design to block the intervals.
 * `dataSource` - Binds the block intervals dataSource collection. This property should be assigned either with the JSON data array collection or instance of `ej.DataManger`.
 
-The below blockout fields holds the appropriate column names from the dataSource - 
+The below block out fields holds the appropriate column names from the dataSource - 
 
 <table>
 <tr>
@@ -1546,35 +1546,35 @@ Description<br/><br/></th></tr>
 <tr>
 <td>
 id<br/><br/></td><td>
-It holds the binding name for <b>id</b> field in the blockout dataSource<br/><br/></td></tr>
+It holds the binding name for <b>id</b> field in the block out dataSource<br/><br/></td></tr>
 <tr>
 <td>
 subject<br/><br/></td><td>
-It holds the binding name for <b>subject</b> field in the blockout dataSource<br/><br/></td></tr>
+It holds the binding name for <b>subject</b> field in the block out dataSource<br/><br/></td></tr>
 <tr>
 <td>
 startTime<br/><br/></td><td>
-It holds the binding name for <b>startTime</b> field in the blockout dataSource.<br/><br/></td></tr>
+It holds the binding name for <b>startTime</b> field in the block out dataSource.<br/><br/></td></tr>
 <tr>
 <td>
 endTime<br/><br/></td><td>
-It holds the binding name for <b>endTime</b> field in the blockout dataSource.<br/><br/></td></tr>
+It holds the binding name for <b>endTime</b> field in the block out dataSource.<br/><br/></td></tr>
 <tr>
 <td>
 isBlockAppointment<br/><br/></td><td>
-It holds the binding name for <b>isBlockAppointment</b> field in the blockout dataSource.<br/><br/></td></tr>
+It holds the binding name for <b>isBlockAppointment</b> field in the block out dataSource.<br/><br/></td></tr>
 <tr>
 <td>
 isAllDay<br/><br/></td><td>
-It holds the binding name for <b>isAllDay</b> field in the blockout dataSource.<br/><br/></td></tr>
+It holds the binding name for <b>isAllDay</b> field in the block out dataSource.<br/><br/></td></tr>
 <tr>
 <td>
 resourceId<br/><br/></td><td>
-It holds the binding name for <b>resourceId</b> field in the blockout dataSource.<br/><br/></td></tr>
+It holds the binding name for <b>resourceId</b> field in the block out dataSource.<br/><br/></td></tr>
 <tr>
 <td>
 customStyle<br/><br/></td><td>
-It holds the binding name for <b>customStyle</b> field in the blockout dataSource.<br/><br/></td></tr>
+It holds the binding name for <b>customStyle</b> field in the block out dataSource.<br/><br/></td></tr>
 </table>
 
 {% highlight html %}
