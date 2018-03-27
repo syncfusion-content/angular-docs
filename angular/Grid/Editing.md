@@ -68,7 +68,7 @@ The following output is displayed as a result of the above code example.
 
 ## Cell edit type and its params
 
-The edit type of bound column can be customized using [`editType`](https://help.syncfusion.com/api/angular/ejgrid#members:columns-edittype "editType") property of [`columns`](https://help.syncfusion.com/api/angular/ejgrid#members:columns "columns"). The following Essential Javascript controls are supported built-in by [`editType`](https://help.syncfusion.com/api/angular/ejgrid#members:columns-edittype "editType"). You can set the [`editType`](https://help.syncfusion.com/api/angular/ejgrid#members:columns-edittype "editType") based on specific data type of the column.
+The edit type of bound column can be customized using [`editType`](https://help.syncfusion.com/api/angular/ejgrid#members:columns-edittype "editType") property of [`columns`](https://help.syncfusion.com/api/angular/ejgrid#members:columns "columns"). The following Essential JavaScript controls are supported built-in by [`editType`](https://help.syncfusion.com/api/angular/ejgrid#members:columns-edittype "editType"). You can set the [`editType`](https://help.syncfusion.com/api/angular/ejgrid#members:columns-edittype "editType") based on specific data type of the column.
 
 * [`CheckBox`](https://help.syncfusion.com/api/angular/ejcheckbox "CheckBox") control for boolean data type.
 * `NumericTextBox` control for integers, double, and decimal data types.
@@ -1156,17 +1156,17 @@ Also when you use `UrlAdaptor`, you need to return the data as `JSON` and the JS
 The following code example describes the above behavior.
 
 {% highlight cs %}
-public ActionResult DataSource(DataManager dm)
+public ActionResult DataSource(DataManager dataManager)
 {
 	IEnumerable DataSource = OrderRepository.GetAllRecords();
 	DataResult result = new DataResult();
 	DataOperations operation = new DataOperations();
 	result.result = DataSource;
 	result.count = result.result.AsQueryable().Count();
-	if (dm.Skip > 0)
-		result.result = operation.PerformSkip(result.result, dm.Skip);
-	if (dm.Take > 0)
-		result.result = operation.PerformTake(result.result, dm.Take);
+	if (dataManager.Skip > 0)
+		result.result = operation.PerformSkip(result.result, dataManager.Skip);
+	if (dataManager.Take > 0)
+		result.result = operation.PerformTake(result.result, dataManager.Take);
 	return Json(result, JsonRequestBehavior.AllowGet);
 }
 public class DataResult
@@ -1196,9 +1196,9 @@ Also, using 'DataOperations' helper class you can perform grid action at server 
 
 ### Remotesave Adaptor:
 
-RemoteSaveAdaptor is used for binding local data and performs all data operatons in client-side. It interacts with server-side only for CRUD operations to pass the modified records.
+RemoteSaveAdaptor is used for binding local data and performs all data operations in client-side. It interacts with server-side only for CRUD operations to pass the modified records.
 
-Refer thr following code example
+Refer the following code example
 
 {% highlight html %}
 
