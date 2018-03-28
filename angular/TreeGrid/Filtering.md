@@ -297,6 +297,6 @@ export class AppComponent {
     }
 }
 {% endhighlight %}
-The below screenshot show the output of above code example.
+The below screenshot shows the output of above code example.
 
 ![](Filtering_images/Filtering_img5.png)
