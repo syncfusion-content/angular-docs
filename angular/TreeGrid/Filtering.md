@@ -261,3 +261,42 @@ The output of the filtering enabled for only one column is as follows.
 ![](Filtering_images/Filtering_img4.png)
 
 [Click here](http://js.syncfusion.com/demos/web/#!/bootstrap/treegrid/columnfiltering) to find the demo sample for filtering in TreeGrid
+
+## Filtering multiple columns dynamically
+
+It is possible to filtering multiple columns dynamically by using the [`filterContent`](/api/js/ejtreegrid#methods:filtercontent) public method. 
+The below code snippet explains how to filter mulitple columns dynamically in TreeGrid
+
+{% highlight html %}
+ 
+<button id="filterContent" (click)="filterContent($event)">filterContent</button>
+<ej-treegrid id="TreeGridControl">
+ [filterSettings]= "filterSettings"
+//...
+</ej-treegrid>
+
+{% endhighlight %}
+
+
+{% highlight ts %}
+
+export class AppComponent {
+    public filterSettings: any;
+    constructor() {
+        //...
+        this.filterSettings = {
+            filterType: ej.TreeGrid.FilterType.Menu,
+        }
+    }
+    public filterContent(event) {
+        var treeObj = $("#TreeGridControl").ejTreeGrid("instance");
+        var predicate = ej.Predicate("taskName", ej.FilterOperators.startsWith, "Plan", true)
+                        .or("taskName", ej.FilterOperators.equal, "Software Specification", true)
+                        .and("progress", ej.FilterOperators.notEqual, 0, true);
+        treeObj.filterContent(predicate);
+    }
+}
+{% endhighlight %}
+The output of the filtering applied for a column is as follows.
+
+![](Filtering_images/Filtering_img5.png)
