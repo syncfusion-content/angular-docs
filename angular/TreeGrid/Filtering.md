@@ -42,7 +42,7 @@ The output of the TreeGrid with filtering enabled is as follows.
 
 ### Filter Bar 
 
-This is the default filtering mode in TreeGrid. It can also be enabled by setting `filterSettings.filterType` as `filterbar`. When this filtering mode is enabled, a filter row will be displayed below the column header, in which we can provide the filter query.
+This is the default filtering mode in TreeGrid. It can also be enabled by setting `filterSettings.filterType` as ej.TreeGrid.FilterType.FilterBar. When this filtering mode is enabled, a filter row will be displayed below the column header, in which we can provide the filter query.
 
 There are two types of actions available to initiate the filtering process in the filter bar mode,
 
@@ -86,7 +86,7 @@ The output of the filtering with filter bar enabled is as follows.
 ![](Filtering_images/Filtering_img2.png)
 
 ### Menu filtering
-Menu filtering can be enabled by setting `filterSettings.filterType` property as `menu`. The below code snippet explains how to enable menu filtering in TreeGrid
+Menu filtering can be enabled by setting `filterSettings.filterType` property as ej.TreeGrid.FilterType.Menu. The below code snippet explains how to enable menu filtering in TreeGrid
 
 {% highlight javascript %}
 
