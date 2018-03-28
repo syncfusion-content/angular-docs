@@ -42,7 +42,7 @@ The output of the TreeGrid with filtering enabled is as follows.
 
 ### Filter Bar 
 
-This is the default filtering mode in TreeGrid. It can also be enabled by setting `filterSettings.filterType` as `filterbar`. When this filtering mode is enabled, a filter row will be displayed below the column header, in which we can provide the filter query.
+This is the default filtering mode in TreeGrid. It can also be enabled by setting `filterSettings.filterType` as `filter bar`. When this filtering mode is enabled, a filter row will be displayed below the column header, in which we can provide the filter query.
 
 There are two types of actions available to initiate the filtering process in the filter bar mode,
 
@@ -163,8 +163,8 @@ export class AppComponent {
             },
             {
                 field: "priority",
-                editType: "dropdownedit",
-                filterEditType: "dropdownedit",
+                editType: ej.TreeGrid.EditingType.Dropdown,
+                filterEditType: ej.TreeGrid.EditingType.Dropdown,
                 dropdownData: stageData,
                 editParams: {
                     fields: {
@@ -176,8 +176,8 @@ export class AppComponent {
             },
             {
                 field: "progress",
-                editType: "numericedit",
-                filterEditType: "numericedit"
+                editType: ej.TreeGrid.EditingType.Numeric,
+                filterEditType: ej.TreeGrid.EditingType.Numeric
             }
         ],
     }
@@ -265,7 +265,7 @@ The output of the filtering enabled for only one column is as follows.
 ## Filtering multiple columns dynamically
 
 It is possible to filtering multiple columns dynamically by using the [`filterContent`](/api/js/ejtreegrid#methods:filtercontent) public method. 
-The below code snippet explains how to filter mulitple columns dynamically in TreeGrid
+The below code snippet explains how to filter multiple columns dynamically in TreeGrid
 
 {% highlight html %}
  
