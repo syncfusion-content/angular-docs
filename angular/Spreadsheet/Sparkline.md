@@ -43,7 +43,7 @@ The following code example describes the above behavior,
 
 {% highlight html %}
 
- <ej-spreadsheet id="Spreadsheet" [allowSparkline]= (loadComplete)= loadComplete($event)  >
+ <ej-spreadsheet id="Spreadsheet" [allowSparkline]= true (loadComplete)= loadComplete($event)  >
      <e-sheets>
             <e-sheet>
                  <e-rangesettings>
