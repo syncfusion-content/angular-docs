@@ -39,7 +39,7 @@ Usually, the appointments are displayed with its **Subject** and **Start/End tim
 {% highlight html %}
 
 <ej-schedule id="Schedule1" width="100%" height="525px" [currentDate]=currentDate [appointmentSettings.dataSource]=dataSource
-    appointmentTemplateId="#apptemplate">
+    appointmentTemplateId="#appTemplate">
 </ej-schedule>
 
 {% endhighlight %}
@@ -49,7 +49,7 @@ Place the js-render template in the "index.html" page.
 {% highlight html %}
 
 <!--Template to apply on appointments-->
-<script id="apptemplate" type="text/x-jsrender">
+<script id="appTemplate" type="text/x-jsrender">
     {{"{{"}}if View !== "agenda"{{}}}}
         <div style="height:100%; background-color:orange; margin-left: 5px;">
             <div style="margin-left: 2px;">{{"{{"}}:Subject{{}}}}</div>
@@ -100,7 +100,7 @@ The cells can be customized with the following code example.
 {% highlight html %}
 
 <ej-schedule id="Schedule1" width="100%" height="525px" [currentDate]=currentDate [appointmentSettings.dataSource]=dataSource
-    allDayCellsTemplateId="#alldayTemplate" workCellsTemplateId="#workTemplate">
+    allDayCellsTemplateId="#allDayTemplate" workCellsTemplateId="#workTemplate">
 </ej-schedule>
 
 {% endhighlight %}
@@ -110,7 +110,7 @@ Place the js-render template in the "index.html" page.
 {% highlight html %}
 
 <!-- Template for All-day cells -->
-<script id="alldayTemplate" type="text/x-jsrender">
+<script id="allDayTemplate" type="text/x-jsrender">
     <div class="e-icon e-scheduleallday" style="opacity:0.5"></div>
     <span style="opacity:0.5">AllDay</span>
 </script>
@@ -132,11 +132,11 @@ Place the js-render template in the "index.html" page.
             {{"{{"}}else view == 'month' && resource.text == 'Party Hall-B' && date.getDay() == 5{{}}}}
                 <div style="background-color:lightblue">Conf.</div>
             {{"{{"}}else resource.text == 'Party Hall-B' && date.getDate() == 16{{}}}}
-                <div style="background-color:darkkhaki">Happyday</div>
+                <div style="background-color:darkkhaki">Happy day</div>
             {{"{{"}}else view != 'month' && resource.text == 'Party Hall-B' && date.getDay() == 5 && date.getHours() == 12{{}}}}
                 <div style="background-color:goldenrod">Conf.</div>
             {{"{{"}}else date.getDate() == 10 && date.getMonth() == 11{{}}}}
-                <div style="background-color:palegreen">Day Spl</div>
+                <div style="background-color:palegreen">Day Special</div>
             {{"{{"}}else date.getDate() == 25 && date.getMonth() == 11{{}}}}
                 <div style="background-color:sandybrown">Christmas</div>
             {{"{{"}}/if{{}}}}
@@ -466,7 +466,7 @@ When template is applied for the `prioritySettings`, these default icons will be
 {% highlight css %}
 
 	.critical,
-	.ultracritical,
+	.ultra-critical,
 	.none {
 		height: 13px;
 		width: 13px;
@@ -483,7 +483,7 @@ When template is applied for the `prioritySettings`, these default icons will be
 		background-position: -13px;
 	}
 
-	.ultracritical {
+	.ultra-critical {
 		background-color: #56ca85;
 		background-position: -59px;
 	}
@@ -525,7 +525,7 @@ export class ScheduleComponent {
         }, {
             text: "Ultra Critical",
             id: 3,
-            value: "ultracritical"
+            value: "ultra-critical"
         }];
     }
 }
@@ -605,7 +605,7 @@ The following code snippet shows how to customize the content of the date, time 
 {% highlight html %}
 
 <ej-schedule id="Schedule1" width="100%" height="525px" [currentDate]=currentDate [appointmentSettings.dataSource]=dataSource
-    currentView="agenda" appointmentTemplateId="#apptemplate" agendaViewSettings.dateColumnTemplateId="#datetemplate" agendaViewSettings.timeColumnTemplateId="#timetemplate">
+    currentView="agenda" appointmentTemplateId="#appTemplate" agendaViewSettings.dateColumnTemplateId="#dateTemplate" agendaViewSettings.timeColumnTemplateId="#timeTemplate">
 </ej-schedule>
 
 {% endhighlight %}
@@ -615,7 +615,7 @@ Place the js-render template in the "index.html" page.
 {% highlight html %}
 
 <!--Template for date column-->
-<script id="datetemplate" type="text/x-jsrender">
+<script id="dateTemplate" type="text/x-jsrender">
     <div style="height:100%">
         <div>
             <div>{{"{{"}}:~dateDisplay(StartTime){{}}}}</div>
@@ -624,7 +624,7 @@ Place the js-render template in the "index.html" page.
 </script>
 
 <!--Template for time column-->
-<script id="timetemplate" type="text/x-jsrender">
+<script id="timeTemplate" type="text/x-jsrender">
     <div style="height:100%">
         <div>
             <div>{{"{{"}}:~timeDisplay(StartTime){{}}}}</div>
@@ -633,7 +633,7 @@ Place the js-render template in the "index.html" page.
 </script>
 
 <!--Template for appointment which applies for event column in agenda view-->
-<script id="apptemplate" type="text/x-jsrender">
+<script id="appTemplate" type="text/x-jsrender">
     {{"{{"}}if View !== "agenda"{{}}}}
         <div style="height:100%; background-color:orange; margin-left: 5px;">
             <div style="margin-left: 2px;">{{"{{"}}:Subject{{}}}}</div>
