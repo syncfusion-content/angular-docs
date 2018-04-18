@@ -658,7 +658,7 @@ The Scheduler elements are listed below which can be formatted through this even
             <td class="description">Depicts the header date cell element within the Scheduler.</td>
         </tr>
         <tr>
-            <td class="name">empty td</td>
+            <td class="name">emptytd</td>
             <td class="description">Depicts the empty space above the vertical scroller within the Scheduler.</td>
         </tr>
         <tr>
