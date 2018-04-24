@@ -204,7 +204,7 @@ export class ScheduleComponent {
             OwnerId: 2
         }, {
             Id: 101,
-            Subject: "Discovery of exo-planets",
+            Subject: "Discovery of planets",
             StartTime: new Date(2017, 4, 7, 6, 0),
             EndTime: new Date(2017, 4, 7, 9, 30),
             OwnerId: 1
@@ -267,7 +267,7 @@ export class ScheduleComponent {
             OwnerId: 2
         }, {
             Id: 101,
-            Subject: "Discovery of exo-planets",
+            Subject: "Discovery of planets",
             StartTime: new Date(2017, 4, 7, 6, 0),
             EndTime: new Date(2017, 4, 7, 9, 30),
             OwnerId: 1
@@ -330,7 +330,7 @@ export class ScheduleComponent {
             OwnerId: 2
         }, {
             Id: 101,
-            Subject: "Discovery of exo-planets",
+            Subject: "Discovery of planets",
             StartTime: new Date(2017, 4, 7, 6, 0),
             EndTime: new Date(2017, 4, 7, 9, 30),
             OwnerId: 1
@@ -400,7 +400,7 @@ export class ScheduleComponent {
             OwnerId: 2
         }, {
             Id: 101,
-            Subject: "Discovery of exo-planets",
+            Subject: "Discovery of planets",
             StartTime: new Date(2017, 4, 7, 6, 0),
             EndTime: new Date(2017, 4, 7, 9, 30),
             OwnerId: 1

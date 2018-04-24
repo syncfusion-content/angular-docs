@@ -677,7 +677,7 @@ The following code example lets you drag and drop the external items from the tr
                 <tr>
                     <td>Description:</td>
                     <td colspan="2">
-                        <textarea id="customdescription" name="Description" rows="3" cols="50" style="width: 100%; resize: vertical"></textarea>
+                        <textarea id="customDescription" name="Description" rows="3" cols="50" style="width: 100%; resize: vertical"></textarea>
                     </td>
                 </tr>
                 <tr>
@@ -726,7 +726,7 @@ import { Component } from '@angular/core';
 export class ScheduleComponent {
     public currentDate: Date;
     public dataSource;
-    public blockdataSource;
+    public blockDataSource;
     public group;
     public resourceData;
     constructor() {
@@ -760,9 +760,9 @@ export class ScheduleComponent {
         if ($(e.target).parents(".e-schedule").length != 0) {
             var scheduleObj = $("#Schedule1").data("ejSchedule");
             var result = scheduleObj.getSlotByElement($(e.target));
-            // set value to custom appointmnt window fields
+            // set value to custom appointment window fields
             $("#subject").val(e.droppedElementData.text);
-            $("#customdescription").val(e.droppedElementData.text);
+            $("#customDescription").val(e.droppedElementData.text);
             $("#StartTime").ejDateTimePicker({ value: new Date(result.startTime) });
             $("#EndTime").ejDateTimePicker({ value: new Date(result.endTime) });
             $("#resource").val(result.resources.text);
@@ -773,24 +773,24 @@ export class ScheduleComponent {
 
     save() {
         var obj = {};
-        var formelement = $("#customWindow").find("#custom").get(0);
-        for (var index = 0; index < formelement.length; index++) {
-            var columnName = formelement[index].name, $element = $(formelement[index]);
+        var formElement = $("#customWindow").find("#custom").get(0);
+        for (var index = 0; index < formElement.length; index++) {
+            var columnName = formElement[index].name, $element = $(formElement[index]);
             if (columnName != undefined) {
                 if (columnName == "Subject") {
-                    var value = formelement[index].value;
+                    var value = formElement[index].value;
                 }
-                if (columnName == "Desctiption") {
-                    value = formelement[index].value;
+                if (columnName == "Description") {
+                    value = formElement[index].value;
                 }
                 if (columnName == "StartTime") {
-                    value = new Date(formelement[index].value);
+                    value = new Date(formElement[index].value);
                 }
                 if (columnName == "EndTime") {
-                    value = new Date(formelement[index].value);
+                    value = new Date(formElement[index].value);
                 }
                 if (columnName == "OwnerId") {
-                    value = parseInt(formelement[index].value);
+                    value = parseInt(formElement[index].value);
                 }
                 if (columnName != "Resource") {
                     obj[columnName] = value;
@@ -1471,7 +1471,7 @@ When an option "Only this Appointment" is selected, a single occurrence of the r
 
 #### Following appointments
 
-When an option "Following Appointments" is selected, all the following events of the recurrence appointment from the current instance will be edited or deleted. The previous instances of the reccurrence appointment before this current instances will be retained as it is on the Scheduler.
+When an option "Following Appointments" is selected, all the following events of the recurrence appointment from the current instance will be edited or deleted. The previous instances of the recurrence appointment before this current instances will be retained as it is on the Scheduler.
 
 #### Entire series
 
@@ -1536,7 +1536,7 @@ The `blockoutSettings` holds the below block intervals related properties such a
 * `templateId` - It applies the template design to block the intervals.
 * `dataSource` - Binds the block intervals dataSource collection. This property should be assigned either with the JSON data array collection or instance of `ej.DataManger`.
 
-The below blockout fields holds the appropriate column names from the dataSource - 
+The below block out fields holds the appropriate column names from the dataSource - 
 
 <table>
 <tr>
@@ -1546,40 +1546,40 @@ Description<br/><br/></th></tr>
 <tr>
 <td>
 id<br/><br/></td><td>
-It holds the binding name for <b>id</b> field in the blockout dataSource<br/><br/></td></tr>
+It holds the binding name for <b>id</b> field in the block out dataSource<br/><br/></td></tr>
 <tr>
 <td>
 subject<br/><br/></td><td>
-It holds the binding name for <b>subject</b> field in the blockout dataSource<br/><br/></td></tr>
+It holds the binding name for <b>subject</b> field in the block out dataSource<br/><br/></td></tr>
 <tr>
 <td>
 startTime<br/><br/></td><td>
-It holds the binding name for <b>startTime</b> field in the blockout dataSource.<br/><br/></td></tr>
+It holds the binding name for <b>startTime</b> field in the block out dataSource.<br/><br/></td></tr>
 <tr>
 <td>
 endTime<br/><br/></td><td>
-It holds the binding name for <b>endTime</b> field in the blockout dataSource.<br/><br/></td></tr>
+It holds the binding name for <b>endTime</b> field in the block out dataSource.<br/><br/></td></tr>
 <tr>
 <td>
 isBlockAppointment<br/><br/></td><td>
-It holds the binding name for <b>isBlockAppointment</b> field in the blockout dataSource.<br/><br/></td></tr>
+It holds the binding name for <b>isBlockAppointment</b> field in the block out dataSource.<br/><br/></td></tr>
 <tr>
 <td>
 isAllDay<br/><br/></td><td>
-It holds the binding name for <b>isAllDay</b> field in the blockout dataSource.<br/><br/></td></tr>
+It holds the binding name for <b>isAllDay</b> field in the block out dataSource.<br/><br/></td></tr>
 <tr>
 <td>
 resourceId<br/><br/></td><td>
-It holds the binding name for <b>resourceId</b> field in the blockout dataSource.<br/><br/></td></tr>
+It holds the binding name for <b>resourceId</b> field in the block out dataSource.<br/><br/></td></tr>
 <tr>
 <td>
 customStyle<br/><br/></td><td>
-It holds the binding name for <b>customStyle</b> field in the blockout dataSource.<br/><br/></td></tr>
+It holds the binding name for <b>customStyle</b> field in the block out dataSource.<br/><br/></td></tr>
 </table>
 
 {% highlight html %}
 
-<ej-schedule id="Schedule1" width="100%" height="525px" [currentDate]=currentDate [blockoutSettings.enable]="true" [blockoutSettings.dataSource]=blockdataSource blockoutSettings.id="id" blockoutSettings.startTime="BlockStartTime" blockoutSettings.endTime="BlockEndTime" blockoutSettings.subject="BlockSubject" blockoutSettings.isBlockAppointment="IsBlockAppointment">
+<ej-schedule id="Schedule1" width="100%" height="525px" [currentDate]=currentDate [blockoutSettings.enable]="true" [blockoutSettings.dataSource]=blockDataSource blockoutSettings.id="id" blockoutSettings.startTime="BlockStartTime" blockoutSettings.endTime="BlockEndTime" blockoutSettings.subject="BlockSubject" blockoutSettings.isBlockAppointment="IsBlockAppointment">
 </ej-schedule>
 
 {% endhighlight %}
@@ -1593,11 +1593,11 @@ import { Component } from '@angular/core';
     templateUrl: 'src/schedule/schedule.component.html'
 })
 export class ScheduleComponent {
-    public blockdataSource;
+    public blockDataSource;
     public currentDate: Date;
     constructor() {
         this.currentDate = new Date(2017, 4, 5);
-        this.blockdataSource = [{
+        this.blockDataSource = [{
             BlockId: 101,
             BlockStartTime: new Date(2017, 4, 5, 10, 0),
             BlockEndTime: new Date(2017, 4, 5, 11, 0),
@@ -1623,7 +1623,7 @@ The Appointments that lies within the blocked time range can be restricted to pe
 
 {% highlight html %}
 
-<ej-schedule id="Schedule1" width="100%" height="525px" [currentDate]=currentDate [blockoutSettings.enable]="true" [blockoutSettings.dataSource]=blockdataSource blockoutSettings.id="id" blockoutSettings.startTime="BlockStartTime" blockoutSettings.endTime="BlockEndTime" blockoutSettings.subject="BlockSubject" blockoutSettings.isBlockAppointment="IsBlockAppointment">
+<ej-schedule id="Schedule1" width="100%" height="525px" [currentDate]=currentDate [blockoutSettings.enable]="true" [blockoutSettings.dataSource]=blockDataSource blockoutSettings.id="id" blockoutSettings.startTime="BlockStartTime" blockoutSettings.endTime="BlockEndTime" blockoutSettings.subject="BlockSubject" blockoutSettings.isBlockAppointment="IsBlockAppointment">
 </ej-schedule>
 
 {% endhighlight %}
@@ -1637,11 +1637,11 @@ import { Component } from '@angular/core';
     templateUrl: 'src/schedule/schedule.component.html'
 })
 export class ScheduleComponent {
-    public blockdataSource;
+    public blockDataSource;
     public currentDate: Date;
     constructor() {
         this.currentDate = new Date(2017, 4, 5);
-        this.blockdataSource = [{
+        this.blockDataSource = [{
             BlockId: 101,
             BlockStartTime: new Date(2017, 4, 5, 10, 0),
             BlockEndTime: new Date(2017, 4, 5, 11, 0),
@@ -1662,7 +1662,7 @@ The `blockoutSettings` holds the below properties to customize the block interva
 
 {% highlight html %}
 
-<ej-schedule id="Schedule1" width="100%" height="525px" [currentDate]=currentDate [blockoutSettings.enable]="true" blockoutSettings.templateId="#blocktemplate" [blockoutSettings.dataSource]=blockdataSource blockoutSettings.id="id" blockoutSettings.startTime="BlockStartTime" blockoutSettings.endTime="BlockEndTime"
+<ej-schedule id="Schedule1" width="100%" height="525px" [currentDate]=currentDate [blockoutSettings.enable]="true" blockoutSettings.templateId="#blocktemplate" [blockoutSettings.dataSource]=blockDataSource blockoutSettings.id="id" blockoutSettings.startTime="BlockStartTime" blockoutSettings.endTime="BlockEndTime"
     blockoutSettings.subject="BlockSubject" blockoutSettings.isBlockAppointment="IsBlockAppointment">
 </ej-schedule>
 
@@ -1690,11 +1690,11 @@ import { Component } from '@angular/core';
     templateUrl: 'src/schedule/schedule.component.html'
 })
 export class ScheduleComponent {
-    public blockdataSource;
+    public blockDataSource;
     public currentDate: Date;
     constructor() {
         this.currentDate = new Date(2017, 4, 5);
-        this.blockdataSource = [{
+        this.blockDataSource = [{
             BlockId: 101,
             BlockStartTime: new Date(2017, 4, 5, 10, 0),
             BlockEndTime: new Date(2017, 4, 5, 11, 0),
@@ -1714,7 +1714,7 @@ export class ScheduleComponent {
 
 <ej-schedule id="Schedule1" width="100%" height="525px" [currentDate]=currentDate
     [blockoutSettings.enable]="true"
-    [blockoutSettings.dataSource]=blockdataSource
+    [blockoutSettings.dataSource]=blockDataSource
     blockoutSettings.id="id"
     blockoutSettings.startTime="BlockStartTime"
     blockoutSettings.endTime="BlockEndTime"
@@ -1741,7 +1741,7 @@ import { Component } from '@angular/core';
 export class ScheduleComponent {
     public currentDate: Date;
     public dataSource;
-    public blockdataSource;
+    public blockDataSource;
     public group;
     public resourceData;
     constructor() {
@@ -1753,7 +1753,7 @@ export class ScheduleComponent {
             EventEndTime: new Date(2017, 4, 2, 10, 30),
             OwnerId: 2
         }];
-        this.blockdataSource = [{
+        this.blockDataSource = [{
             BlockId: 101,
             BlockStartTime: new Date(2017, 4, 5, 10, 0),
             BlockEndTime: new Date(2017, 4, 5, 11, 0),

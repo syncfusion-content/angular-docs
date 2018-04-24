@@ -297,7 +297,7 @@ The following code example lets you create the custom appointment window (using 
                         <td colspan="3">
                             <div class="customcheck">AllDay:</div>
                             <div class="customcheck">
-                                <input id="allday" type="checkbox" name="AllDay" (change)="alldayCheck($event)" />
+                                <input id="allDay" type="checkbox" name="AllDay" (change)="allDayCheck($event)" />
                             </div>
                             <div class="customcheck">Recurrence:</div>
                             <div>
@@ -305,17 +305,17 @@ The following code example lets you create the custom appointment window (using 
                             </div>
                         </td>
                     </tr>
-                    <tr id="summarytr" style="display:none;">
+                    <tr id="summary" style="display:none;">
                         <td colspan="3">
-                            <div class="recsummary">Summary:</div>
+                            <div class="recSummary">Summary:</div>
                             <div>
-                                <label id="recsummary" name="Summary"></label>
+                                <label id="recSummary" name="Summary"></label>
                             </div>
                         </td>
                     </tr>
-                    <tr id="edittr" style="display:none;">
+                    <tr id="edit" style="display:none;">
                         <td colspan="3">
-                            <div><a id="recedit" (click)="Recurrencerule()">Edit</a></div>
+                            <div><a id="recedit" (click)="recurrenceRule()">Edit</a></div>
                         </td>
                     </tr>
                 </tbody>
@@ -330,8 +330,8 @@ The following code example lets you create the custom appointment window (using 
         <div id="recurrenceEditor"></div>
         <br />
         <div>
-            <input ej-button (ejclick)="onRecurrenceClick($event)" text="Cancel" type="button" id="reccancel" />
-            <input ej-button (ejclick)="onRecurrenceClick($event)" text="Submit" type="button" id="recsubmit" />
+            <input ej-button (ejclick)="onRecurrenceClick($event)" text="Cancel" type="button" id="recCancel" />
+            <input ej-button (ejclick)="onRecurrenceClick($event)" text="Submit" type="button" id="recSubmit" />
         </div>
     </div>
 </ej-dialog>
@@ -409,12 +409,12 @@ export class ScheduleComponent {
         $("#recWindow").css("display", "none");
         $("#appWindow").css("display", "");
         if (!ej.isNullOrUndefined(args.target)) {
-            // When double clicked on the Scheduler cells, if the target is allday or month cells – only then enable check mark on the allday checkbox
+            // When double clicked on the Scheduler cells, if the target is all day or month cells – only then enable check mark on the all day checkbox
             if ($(args.target.currentTarget).hasClass("e-alldaycells") || (args.startTime.getHours() == 0 && args.endTime.getHours() == 23))
-                $("#allday").prop("checked", true);
+                $("#allDay").prop("checked", true);
             else
-                args.model.currentView == "month" ? $("#allday").prop("checked", true) : $("#allday").prop("checked", false);
-            // If the target is allday or month cells – disable the StartTime and EndTime fields
+                args.model.currentView == "month" ? $("#allDay").prop("checked", true) : $("#allDay").prop("checked", false);
+            // If the target is all day or month cells – disable the StartTime and EndTime fields
             $("#StartTime,#EndTime").ejDateTimePicker({
                 enabled: ($(args.target.currentTarget).hasClass("e-alldaycells") || (args.startTime.getHours() == 0 && args.endTime.getHours() == 23) || $(args.target.currentTarget).hasClass("e-monthcells") || args.model.currentView == "month") ? false : true
             });
@@ -432,12 +432,12 @@ export class ScheduleComponent {
                 text: value,
                 value: value
             });
-            $("#allday").prop("checked", args.appointment.AllDay);
+            $("#allDay").prop("checked", args.appointment.AllDay);
             $("#recurrence").ejCheckBox({ checked: args.appointment.Recurrence });
             if (args.appointment.Recurrence) {
-                $("#edittr").css("display", "");
-                $("#recsummary").html(args.appointment.RecurrenceRule);
-                $("#summarytr").css("display", "");
+                $("#edit").css("display", "");
+                $("#recSummary").html(args.appointment.RecurrenceRule);
+                $("#summary").css("display", "");
                 var recObj = $("#recurrenceEditor").ejRecurrenceEditor('instance');
                 recObj._recRule = args.appointment.RecurrenceRule; // app recurrence rule is stored in Recurrence editor object
                 recObj.recurrenceRuleSplit(args.appointment.RecurrenceRule, args.appointment.recurrenceExDate); //splitting the recurrence rule
@@ -454,21 +454,21 @@ export class ScheduleComponent {
             return false;
         }
         var obj = {};
-        var formelement = $("#customWindow").find("#custom").get(0);
+        var formElement = $("#customWindow").find("#custom").get(0);
         // looping through the custom form elements to get each value and form a JSON object
-        for (var index = 0; index < formelement.length; index++) {
-            var columnName = formelement[index].name, $element = $(formelement[index]);
+        for (var index = 0; index < formElement.length; index++) {
+            var columnName = formElement[index].name, $element = $(formElement[index]);
             if (columnName != undefined) {
                 if (columnName != "" && obj[columnName] == null) {
-                    var value = formelement[index].value;
+                    var value = formElement[index].value;
                     if (columnName == "Id" && value != "") {
                         value = parseInt(value);
                     }
                     if ($element.hasClass("e-datetimepicker")) {
                         value = new Date(value);
                     }
-                    if (formelement[index].type == "checkbox") {
-                        value = formelement[index].checked;
+                    if (formElement[index].type == "checkbox") {
+                        value = formElement[index].checked;
                     }
                     obj[columnName] = value;
                 }
@@ -496,10 +496,10 @@ export class ScheduleComponent {
         recObj.clearRecurrenceFields();
         $("#subject").val("");
         $("#AppointmentType").val("");
-        $("#recsummary").html("");
-        $("#summarytr").css("display", "none");
+        $("#recSummary").html("");
+        $("#summary").css("display", "none");
         $("#recurrence").ejCheckBox({ checked: false });
-        $("#edittr").css("display", "none");
+        $("#edit").css("display", "none");
         $("#StartTime,#EndTime").ejDateTimePicker({ enabled: true });
     }
 
@@ -509,20 +509,20 @@ export class ScheduleComponent {
             if (args.isChecked) {
                 $("#recWindow").css("display", "");
                 $("#appWindow").css("display", "none");
-                $("#edittr").css("display", "");
+                $("#edit").css("display", "");
             } else {
                 $("#recWindow").css("display", "none");
-                $("#edittr").css("display", "none");
-                $("#recsummary").html("");
-                $("#summarytr").css("display", "none");
+                $("#edit").css("display", "none");
+                $("#recSummary").html("");
+                $("#summary").css("display", "none");
             }
         }
     }
 
     // This function executes when the All-day checkbox is checked in the custom appointment window
-    alldayCheck(): void {
+    allDayCheck(): void {
         // Disables and sets the specific hours to the StartTime and EndTime fields, when the all-day checkbox is checked
-        if ($("#allday").prop("checked")) {
+        if ($("#allDay").prop("checked")) {
             $("#StartTime").ejDateTimePicker({
                 value: new Date(new Date($("#StartTime").data("ejDateTimePicker").model.value).setHours(0, 0, 0)),
                 enabled: false
@@ -543,15 +543,15 @@ export class ScheduleComponent {
 
     // This function executes when the submit/cancel button in the recurrence editor window is pressed.
     onRecurrenceClick(args: any): void {
-        if ($(args.e.currentTarget).attr("id") === "recsubmit") {
+        if ($(args.e.currentTarget).attr("id") === "recSubmit") {
             var recObj = $("#recurrenceEditor").ejRecurrenceEditor('instance');
             recObj.closeRecurPublic();
             this.recurRule = recObj._recRule;
-            $("#recsummary").html(this.recurRule);
+            $("#recSummary").html(this.recurRule);
         } else {
-            if (($(args.e.currentTarget).attr("id") === "reccancel")) {
-                if ($("#recsummary").html() === "") {
-                    $("#edittr").css("display", "none");
+            if (($(args.e.currentTarget).attr("id") === "recCancel")) {
+                if ($("#recSummary").html() === "") {
+                    $("#edit").css("display", "none");
                     $("#recurrence").ejCheckBox({ checked: false });
                 } else {
                     $("#recurrence").ejCheckBox({ checked: true });
@@ -560,13 +560,13 @@ export class ScheduleComponent {
         }
         $("#recWindow").css("display", "none");
         $("#appWindow").css("display", "");
-        if ($("#recsummary").html() !== "") {
-            $("#summarytr").css("display", "");
+        if ($("#recSummary").html() !== "") {
+            $("#summary").css("display", "");
         }
     }
 
     // This function executes when the Edit anchor tag in the edit appointment window is clicked.
-    Recurrencerule(): void {
+    recurrenceRule(): void {
         $("#recWindow").css("display", "");
         $("#appWindow").css("display", "none");
     }
