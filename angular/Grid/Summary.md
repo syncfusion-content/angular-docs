@@ -242,8 +242,8 @@ Custom Summary can be used to create summary values based on your required custo
                 summaryColumns: [{ 
                   summaryType: ej.Grid.SummaryType.Custom, 
                   displayColumn: "Freight", 
-                  customSummaryValue: function currency() {
-                      return ej.sum(this.model.dataSource(), "Freight");
+                  customSummaryValue: function currency(args,data) {
+                      return ej.sum(data, "Freight");
                   }, 
                   format: "{0:C2}" }] 
             }, { 
