@@ -59,7 +59,7 @@ N> For themes, you can use the `ej.web.all.min.css` CDN link from the code examp
 
 ## Initialize Spreadsheet
 
-The Sreadsheet component can be created with prefix of `ej-`.The code example for defining controls in Angular is as follows,
+The Spreadsheet component can be created with prefix of `ej-`.The code example for defining controls in Angular is as follows,
 
 {% highlight html %}
 
