@@ -36,7 +36,7 @@ Summary rows visibility can be controlled by [`showSummary`](https://help.syncfu
     })
     export class AppComponent {
         public gridData;
-         public summaryrows;
+        public summaryrows;
         constructor()
         {
            //The datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
@@ -99,7 +99,7 @@ Summaries with Sum, Average, Maximum and Minimum aggregate can be defined by usi
     })
     export class AppComponent {
         public gridData;
-         public summaryrows;
+        public summaryrows;
         constructor()
         {
            //The datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
@@ -174,7 +174,7 @@ Summaries with `True` and `False` count aggregate can be defined by using [`summ
     })
     export class AppComponent {
         public gridData;
-         public summaryrows;
+        public summaryrows;
         constructor()
         {
            //The datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
