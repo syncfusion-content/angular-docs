@@ -36,7 +36,7 @@ Summary rows visibility can be controlled by [`showSummary`](https://help.syncfu
     })
     export class AppComponent {
         public gridData;
-         public summaryrows;
+        public summaryrows;
         constructor()
         {
            //The datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
@@ -99,7 +99,7 @@ Summaries with Sum, Average, Maximum and Minimum aggregate can be defined by usi
     })
     export class AppComponent {
         public gridData;
-         public summaryrows;
+        public summaryrows;
         constructor()
         {
            //The datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
@@ -174,7 +174,7 @@ Summaries with `True` and `False` count aggregate can be defined by using [`summ
     })
     export class AppComponent {
         public gridData;
-         public summaryrows;
+        public summaryrows;
         constructor()
         {
            //The datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
@@ -242,8 +242,8 @@ Custom Summary can be used to create summary values based on your required custo
                 summaryColumns: [{ 
                   summaryType: ej.Grid.SummaryType.Custom, 
                   displayColumn: "Freight", 
-                  customSummaryValue: function currency() {
-                      return ej.sum(this.model.dataSource(), "Freight");
+                  customSummaryValue: function currency(args,data) {
+                      return ej.sum(data, "Freight");
                   }, 
                   format: "{0:C2}" }] 
             }, { 
