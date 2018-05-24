@@ -266,13 +266,9 @@ Similarly, if the user navigates to a new page, the root nodes of that specific 
 N> 1. Load on demand support in TreeGrid can be enabled only for remote data.
 N> 2. For better initial load time performance, we need to define the “hasChildMapping” property.
 
-Load on demand support in TreeGrid can be enabled by the following ways,
-
-1. By enabling [`enableLoadOnDemand`](https://help.syncfusion.com/api/js/ejtreegrid#members:enableLoadOnDemand "enableLoadOnDemand") property of TreeGrid control
-2. By enabling **crossDomain** property while binding data source using ejDataManager control.
+Load on demand support in TreeGrid can be enabled by using the property [`enableLoadOnDemand`](/api/js/ejtreegrid#members:enableloadondemand).
 
 The following code explains how to use Load on Demand in TreeGrid Control,
-
 
 {% highlight javascript %}
 
@@ -307,7 +303,7 @@ export class AppComponent {
 {% highlight javascript %}
 
 <ej-treegrid id="TreeGridControl" [dataSource]="projectData" [columns]="columns" [treeColumnIndex]=treeColumnIndex 
-    idMapping="TaskID"  parentIdMapping="ParentID" hasChildMapping= "isParent" [enableVirtualization]="true"
+    idMapping="TaskID"  parentIdMapping="ParentID" hasChildMapping= "isParent" [enableLoadOnDemand]="true" [enableVirtualization]="true"
     //...>
 </ej-treegrid>
 
@@ -317,38 +313,6 @@ The output for load on demand support in TreeGrid:
 
 ![](Data-Binding_images/Data-Binding_img3.png)
 ![](Data-Binding_images/Data-Binding_img4.png)
-
-The following code snippet shows on how to enable load on demand support using  [`enableLoadOnDemand`](https://help.syncfusion.com/api/js/ejtreegrid#members:enableLoadOnDemand "enableLoadOnDemand") property.
-
-{% highlight javascript %}
-
-import { Component } from '@angular/core';
-
-@Component({
-  selector: 'ej-app',
-    templateUrl: 'app/app.component.html'
-})
-export class AppComponent {
-    public projectData:any;
-    public dataManager:any;
-  constructor() {
-   //...
-    this.dataManager = ej.DataManager({
-        url: "http://js.syncfusion.com/demos/ejServices/Wcf/TreeGridGantt/TreeGantt.svc/SelfReferenceDatas"
-    });
-   this.projectData=  this.dataManager;
-  }
-}
-
-{% endhighlight %}
-
-{% highlight javascript %}
-
-<ej-treegrid id="TreeGridControl" [enableLoadOnDemand]="true"
-    //...>
-</ej-treegrid>
-
-{% endhighlight %}
 
 The following output shows how load on demand works for expanding action
 
