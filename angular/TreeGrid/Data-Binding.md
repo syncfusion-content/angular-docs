@@ -41,12 +41,12 @@ export class AppComponent {
         this.columns = [{
                 field: "taskID",
                 headerText: "Task Id",
-                editType: "numericedit"
+                editType: ej.TreeGrid.EditingType.Numeric
             },
             {
                 field: "taskName",
                 headerText: "Task Name",
-                editType: "stringedit",
+                editType: ej.TreeGrid.EditingType.String,
                 allowEditing: true,
                 validationRules: {
                     maxlength: 5
@@ -55,23 +55,23 @@ export class AppComponent {
             {
                 field: "startDate",
                 headerText: "Start Date",
-                editType: "datepicker"
+                editType: ej.TreeGrid.EditingType.DatePicker
             },
             {
                 field: "endDate",
                 headerText: "End Date",
-                editType: "datepicker",
+                editType: ej.TreeGrid.EditingType.DatePicker,
                 allowEditing: true
             },
             {
                 field: "duration",
                 headerText: "Duration",
-                editType: "numericedit"
+                editType: ej.TreeGrid.EditingType.Numeric
             },
             {
                 field: "progress",
                 headerText: "Status",
-                editType: "numericedit"
+                editType: ej.TreeGrid.EditingType.Numeric
             },
         ]
         this.projectData = [{
@@ -143,12 +143,12 @@ export class AppComponent {
         this.columns = [{
                 field: "taskID",
                 headerText: "Task Id",
-                editType: "numericedit"
+                editType: ej.TreeGrid.EditingType.Numeric
             },
             {
                 field: "taskName",
                 headerText: "Task Name",
-                editType: "stringedit",
+                editType: ej.TreeGrid.EditingType.String,
                 allowEditing: true,
                 validationRules: {
                     maxlength: 5
@@ -157,23 +157,23 @@ export class AppComponent {
             {
                 field: "startDate",
                 headerText: "Start Date",
-                editType: "datepicker"
+                editType: ej.TreeGrid.EditingType.DatePicker
             },
             {
                 field: "endDate",
                 headerText: "End Date",
-                editType: "datepicker",
+                editType: ej.TreeGrid.EditingType.DatePicker,
                 allowEditing: true
             },
             {
                 field: "duration",
                 headerText: "Duration",
-                editType: "numericedit"
+                editType: ej.TreeGrid.EditingType.Numeric
             },
             {
                 field: "progress",
                 headerText: "Status",
-                editType: "numericedit"
+                editType: ej.TreeGrid.EditingType.Numeric
             },
         ]
         this.projectData = [
