@@ -248,7 +248,7 @@ The following screen shot displays the **RangeNavigator** with a range from 2010
 
 To add series to **ej-rangenavigator,** you need to set **dataSource** property of **ej-rangenavigator** as shown in the following code example. 
 
-You can create a folder `service` and add data.serivce.ts file to give data source for **RangeNavigator** as follows.
+You can create a folder `service` and add data.service.ts file to give data source for **RangeNavigator** as follows.
 
 
 {% highlight ts %}
