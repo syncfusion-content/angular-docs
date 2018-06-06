@@ -272,7 +272,7 @@ Now, add the **dataSource** to the **RangeNavigator** and provide the field name
 
 {% highlight javascript %}
 
-<ej-rangenavigator [dataSource]="datarange" xName="xDate" yName="yValue">           
+<ej-rangenavigator [dataSource]="dataRange" xName="xDate" yName="yValue">           
 </ej-rangenavigator>
 
 {% endhighlight %}
@@ -287,9 +287,9 @@ templateUrl:"src/rangenavigator/rangenavigator.component.html",
 providers:[DataService]
 })
 export class RangenavigatorComponent{
-datarange:any;
+dataRange:any;
     constructor(dataService:DataService){
-        this.datarange=dataService.rangeData();
+        this.dataRange=dataService.rangeData();
     }    
 }
 {% endhighlight %}
