@@ -48,7 +48,7 @@ The code example for defining PDF viewer control in Angular is as follows,
 
 {% highlight html %}
 
-    <ej-pdfviewer [(serviceUrl)]="service" id="pdfviewer" style="width:100%;min-height:600px">
+    <ej-pdfviewer [(serviceUrl)]="service" id="pdfviewer" style="width:100%;min-height:600px;display:block">
     </ej-pdfviewer>
 
 {% endhighlight %}
