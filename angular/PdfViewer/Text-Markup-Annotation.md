@@ -24,7 +24,7 @@ The below code snippet describes how to show only the text markup annotation too
 
 {% highlight html %}
 
-    <ej-pdfviewer [(serviceUrl)]="service" [(toolbarSettings)]="toolbarSettings" id="pdfviewer" style="width:100%;min-height:600px">
+    <ej-pdfviewer [(serviceUrl)]="service" [(toolbarSettings)]="toolbarSettings" id="pdfviewer" style="width:100%;min-height:600px;display:block">
     </ej-pdfviewer>
 
 {% endhighlight %}
