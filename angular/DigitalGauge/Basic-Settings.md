@@ -52,13 +52,13 @@ Execute the above code examples to render the **Digital****Gauge** as follows.
 
 **Themes** give the good appearance to the control. There are two types of **Themes** available for **Digital****Gauge** as follows
 
-* FlatLight
+* flatlight
 
-* FlatDark
+* flatdark
 
 {% highlight html %}
 
-<ej-digitalgauge id="DigitalGauge1" [isResponsive]="true" themes="FlatDark" value="Syncfusion"
+<ej-digitalgauge id="DigitalGauge1" [isResponsive]="true" themes="flatdark" value="Syncfusion"
                                                                           height="200" width="500">
 </ej-digitalgauge>
 
