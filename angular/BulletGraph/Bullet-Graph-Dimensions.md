@@ -65,17 +65,17 @@ The following screenshot displays **Bullet Graph** with comparative measure valu
 
 ## Theme
 
-**Bullet Graph Theme** is customized using **theme** property. Default value is **FlatLight. Bullet Graph** supports **FlatLight** and **FlatDark** themes. **FlatDark** theme improves **Bullet Graph** appearance when background of **Bullet Graph** container uses dark color like black.
+**Bullet Graph Theme** is customized using **theme** property. Default value is **flatlight. Bullet Graph** supports **flatlight** and **flatdark** themes. **Flatdark** theme improves **Bullet Graph** appearance when background of **Bullet Graph** container uses dark color like black.
 
 {% highlight html %}
 
-<ej-bulletgraph id="bullet1" theme="FlatDark">         
+<ej-bulletgraph id="bullet1" theme="flatdark">         
           
 </ej-bulletgraph>
    
 {% endhighlight %}
 
-The following screenshot displays **Bullet Graph** with **FlatDark** theme
+The following screenshot displays **Bullet Graph** with **flatdark** theme
 
 ![](Bullet-Graph-Dimensions_images/Bullet-Graph-Dimensions_img4.png)
 
