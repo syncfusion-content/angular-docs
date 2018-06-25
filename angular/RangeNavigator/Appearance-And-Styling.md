@@ -176,22 +176,22 @@ this.labelSettings = {
 
 **RangeNavigator** theme is a set of pre-defined options that are applied to the control before each **RangeNavigator** is instantiated. Following predefined themes are available in **Angular** **RangeNavigator**.
 
-1. FlatLight
-2. FlatDark
-3. GradientLight 
-4. GradientDark 
-5. Azure                      
-6. AzureDark               
-7. Lime 
-8. LimeDark
-9. Saffron
-10. SaffronDark
-11. GradientAzure
-12. GradientAzureDark
-13. GradientLime
-14. GradientLimeDark
-15. GradientSaffron
-16. GradientSaffronDark
+1. flatlight
+2. flatdark
+3. gradientlight 
+4. gradientdark 
+5. azure                      
+6. azuredark               
+7. lime 
+8. limedark
+9. saffron
+10. saffrondark
+11. gradientazure
+12. gradientazuredark
+13. gradientlime
+14. gradientlimedark
+15. gradientsaffron
+16. gradientsaffrondark
 
 {% highlight html %}
 
