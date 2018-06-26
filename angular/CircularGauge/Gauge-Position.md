@@ -17,23 +17,23 @@ Semi-circular Gauge can be positioned with the help of the attribute called gaug
 
 The possible enum values for the gaugePosition are as follows:
 
-* TopLeft
+* Topleft
 
-* TopCenter
+* Topcenter
 
-* TopRight
+* Topright
 
-* MiddleLeft
+* Middleleft
 
 * Center
 
-* MiddleRight
+* Middleright
 
-* BottomLeft
+* Bottomleft
 
-* BottomCenter
+* Bottomcenter
 
-* BottomRight
+* Bottomright
 
 {% highlight html %}
 
