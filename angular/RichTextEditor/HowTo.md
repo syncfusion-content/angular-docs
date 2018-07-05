@@ -17,7 +17,7 @@ To use web fonts in EJ RTE, it is not needed for the web fonts to be present in 
 
 {% highlight html %}
 
-   <textarea ej-rte id="rte" [(toolsList)]="toolslist" [(tools)]="tools" [fontName]="fonts" (create)="create()"></textarea>
+   <textarea ej-rte id="rte" [(toolsList)]="list" [(tools)]="tools" [fontName]="fonts" (create)="create()"></textarea>
      
 {% endhighlight %}
 
@@ -30,7 +30,7 @@ import {Component} from '@angular/core';
   templateUrl: 'app/components/rte/rte.component.html'
 })
 export class RTEComponent {
-    toolslist: any;
+    list: any;
     tools: Object;
     fonts: any;
     constructor() {
@@ -41,7 +41,7 @@ export class RTEComponent {
                 { text: "Roboto", value: "Roboto" },
                 { text: "Great vibes", value: "Great Vibes,cursive" }
          ];
-        this.toolslist = ["links", "lists", "doAction", "style", "images"];
+        this.list = ["links", "lists", "doAction", "style", "images"];
         this.tools = { style: ["bold", "italic"], lists: ["unorderedList", "orderedList"], doAction: ["undo", "redo"], links: ["createLink", "removeLink"], images: ["image"] };
     }
     create() {

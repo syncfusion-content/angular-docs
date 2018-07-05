@@ -105,7 +105,7 @@ Apply the given styles in the code table to show the **toolbar items** as follow
             width: 24px;
             background-repeat: no-repeat;
         } 
-        .e-tooltxt:hover .tools, .darktheme .cols-sample-area .e-tooltxt:hover .tools {
+        .e-tooltxt:hover .tools, .dark-theme .cols-sample-area .e-tooltxt:hover .tools {
             background-image: url('app/content/images/toolbar/mail.png');
         } 
         .tools.done {
@@ -240,7 +240,7 @@ Add the following styles in the code table to display the toolbar items as follo
             width: 24px;
             background-repeat: no-repeat;
         }
-        .e-tooltxt:hover .tools, .darktheme .cols-sample-area .e-tooltxt:hover .tools {
+        .e-tooltxt:hover .tools, .dark-theme .cols-sample-area .e-tooltxt:hover .tools {
             background-image: url('app/content/images/toolbar/mail.png');
         }
         .tools.done {

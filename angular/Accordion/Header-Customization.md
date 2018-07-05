@@ -128,7 +128,7 @@ Output for Accordion control with the selected item by index is as follows.
 
 ## Multiple Selection
 
-In **Accordion** widget, you can select multiple panel items using [selectedItems](https://help.syncfusion.com/api/js/ejaccordion#members:selecteditems) property. It takes array of indices that needs to be selected on rendering the control. As you need to select multiple items, you can set [enableMultipleOpen](https://help.syncfusion.com/api/js/ejaccordion#members:enablemultipleopen) to **true**.
+In **Accordion** widget, you can select multiple panel items using [items](https://help.syncfusion.com/api/js/ejaccordion#members:items) property. It takes array of indices that needs to be selected on rendering the control. As you need to select multiple items, you can set [enableMultipleOpen](https://help.syncfusion.com/api/js/ejaccordion#members:enablemultipleopen) to **true**.
 
 ### Configure multiple selection in Accordion panel
 
@@ -136,7 +136,7 @@ The following code is used to configure selected items for **Accordion**.
 
 {% highlight html %}
 
- <ej-accordion [enableMultipleOpen]="true" [selectedItems]="selecteditems">
+ <ej-accordion [enableMultipleOpen]="true" [items]="items">
     <h3>
         <a href="#">Orubase</a>
     </h3>
@@ -168,9 +168,9 @@ import { Component } from '@angular/core';
     templateUrl: 'src/accordion/accordion.component.html',
 })
 export class AccordionComponent {
-    selecteditems: int;
+    items: int;
     constructor() {
-        this.selecteditems = [0, 2];
+        this.items = [0, 2];
     }
 }
 

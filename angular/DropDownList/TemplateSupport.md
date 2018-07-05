@@ -25,7 +25,7 @@ In the demo, a JSON array is created with text, Id, role and country which is in
 
 {% highlight html %}
 
-<input type="text" id="dropdown1" ej-dropdownlist [dataSource]="List" [width]="width" [headerTemplate]="headertemplate" [template]="template">
+<input type="text" id="dropdown1" ej-dropdownlist [dataSource]="List" [width]="width" [headerTemplate]="header" [template]="template">
 	 
 {% endhighlight %}
 
@@ -41,7 +41,7 @@ encapsulation: ViewEncapsulation.None
 })
 export class DropDownListComponent {
    	List: Array<Object>;
-    headertemplate: string;
+    header: string;
     template: string;
     width: any;
     constructor() {
@@ -66,7 +66,7 @@ export class DropDownListComponent {
                 role: "Representative",
                 country: "India"
         }];
-        this.headertemplate = "<div class='header'><span>PHOTO</span> <span>DETAILS</span></div>";
+        this.header = "<div class='header'><span>PHOTO</span> <span>DETAILS</span></div>";
         this.template = '<div><img class="Id" src="Employee/${Id}.png" alt="employee"/>' + '<div class="ename"> ${text} </div><div class="role"> ${role} </div><div class="cont"> ${country} </div></div>';
         this.width = "200";
     }
