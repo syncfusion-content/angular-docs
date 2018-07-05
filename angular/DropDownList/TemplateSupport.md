@@ -25,7 +25,7 @@ In the demo, a JSON array is created with text, Id, role and country which is in
 
 {% highlight html %}
 
-<input type="text" id="dropdown1" ej-dropdownlist [dataSource]="empList" [width]="width" [headerTemplate]="headertemplate" [template]="template">
+<input type="text" id="dropdown1" ej-dropdownlist [dataSource]="List" [width]="width" [headerTemplate]="headertemplate" [template]="template">
 	 
 {% endhighlight %}
 
@@ -34,18 +34,18 @@ In the demo, a JSON array is created with text, Id, role and country which is in
 import {Component} from '@angular/core';
 import {ViewEncapsulation} from '@angular/core';
 @Component({
-selector: 'sd-home',
+selector: 'ej-app',
 templateUrl: 'app/components/dropdown/dropdown.component.html',
 styleUrls: ['app/components/dropdown/dropdown.component.css'],
 encapsulation: ViewEncapsulation.None
 })
 export class DropDownListComponent {
-   	empList: Array<Object>;
+   	List: Array<Object>;
     headertemplate: string;
     template: string;
     width: any;
     constructor() {
-        this.empList = [{
+        this.List = [{
             text: "Erik Linden",
             Id: "3",
             role: "Representative",
@@ -66,7 +66,7 @@ export class DropDownListComponent {
                 role: "Representative",
                 country: "India"
         }];
-        this.headertemplate = "<div class='eheader'><span>PHOTO</span> <span>DETAILS</span></div>";
+        this.headertemplate = "<div class='header'><span>PHOTO</span> <span>DETAILS</span></div>";
         this.template = '<div><img class="Id" src="Employee/${Id}.png" alt="employee"/>' + '<div class="ename"> ${text} </div><div class="role"> ${role} </div><div class="cont"> ${country} </div></div>';
         this.width = "200";
     }
@@ -87,13 +87,13 @@ Add the below css in dropdown.component.css file.
         float: left;
     }
     
-    .eheader {
+    .header {
         font-weight: bold;
         border-bottom: 1px solid #c8c8c8;
         background: #c8c8c8;
     }
     
-    .eheader > span {
+    .header > span {
         display: inline-block;
         padding: 10px;
     }

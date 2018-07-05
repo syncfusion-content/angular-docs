@@ -63,7 +63,7 @@ To render the ejToolbar using angular directive, we need to inject the ej angula
 import {Component,ViewEncapsulation} from '@angular/core';
 import {encapsulation} from '@angular/core'; 
 @Component({
-  selector: 'sd-home',
+  selector: 'ej-app',
   templateUrl: 'app/components/toolbar/toolbar.component.html'
 })
 export class ToolBarComponent { 
@@ -83,7 +83,7 @@ Initialize the Toolbar items with **UL LI** template as follows.
 
 {% highlight html %}
 
-<ej-toolbar  [dataSource]="data" id="toolbar" [fields]="fieldsvalues"  [enableSeparator]="separator" width="250px"></ej-toolbar>
+<ej-toolbar  [dataSource]="data" id="toolbar" [fields]="fields"  [enableSeparator]="separator" width="250px"></ej-toolbar>
 
 {% endhighlight %}
 
@@ -95,38 +95,38 @@ Apply the given styles in the code table to show the **toolbar items** as follow
 
 <style type="text/css" class="cssStyles">
 
-        .e-tooltxt .mailtools {
-            background-image: url('app/content/images/toolbar/maild.png');
+        .e-tooltxt .tools {
+            background-image: url('app/content/images/toolbar/mail.png');
         } 
-        .e-tooltxt .mailtools {
+        .e-tooltxt .tools {
             display: block;
-            background-image: url('app/content/images/toolbar/maill.png');
+            background-image: url('app/content/images/toolbar/mail.png');
             height: 24px;
             width: 24px;
             background-repeat: no-repeat;
         } 
-        .e-tooltxt:hover .mailtools, .darktheme .cols-sample-area .e-tooltxt:hover .mailtools {
-            background-image: url('app/content/images/toolbar/mailh.png');
+        .e-tooltxt:hover .tools, .darktheme .cols-sample-area .e-tooltxt:hover .tools {
+            background-image: url('app/content/images/toolbar/mail.png');
         } 
-        .mailtools.done {
+        .tools.done {
             background-position: -11px -140px;
         } 
-        .mailtools.movetofolder {
+        .tools.move {
             background-position: -12px -40px;
         } 
-        .mailtools.categorize {
+        .tools.categorize {
             background-position: -14px -248px;
         } 
-        .mailtools.flag {
+        .tools.flag {
             background-position: -13px -282px;
         } 
-        .mailtools.forward {
+        .tools.forward {
             background-position: -14px -314px;
         } 
-        .mailtools.newmail {
+        .tools.newmail {
             background-position: -14px -348px;
         } 
-        .mailtools.reply {
+        .tools.reply {
             background-position: -14px -388px;
         } 
         .frame {
@@ -153,52 +153,52 @@ After updating the **Toolbar** **items** with their **CSS** styles, you can rend
 import {Component,ViewEncapsulation} from '@angular/core';
 import {encapsulation} from '@angular/core'; 
 @Component({
-  selector: 'sd-home',
+  selector: 'ej-app',
   templateUrl: 'app/components/toolbar/toolbar.component.html',
   styleUrls: ['app/components/toolbar/toolbar.component.css'],encapsulation: ViewEncapsulation.None
 })
 export class ToolBarComponent {
-	fieldsvalues:object;
+	fields:object;
 	data:array;
 	separator:boolean;
     constructor() {
 	this.data =  [
    {
-       empid: "1", tooltiptext:"New mail",
-       spriteCss: "mailtools movetofolder",
+       id: "1", tooltip:"New mail",
+       spriteCss: "tools move",
 
    }, {
-       empid: "2", tooltiptext:"Calendar",
-       spriteCss: "mailtools categorize",
+       id: "2", tooltip:"Calendar",
+       spriteCss: "tools categorize",
 
    }, {
-       empid: "3",tooltiptext:"Appointments",
-       spriteCss: "mailtools flag",
+       id: "3",tooltip:"Appointments",
+       spriteCss: "tools flag",
 
    }, {
-       empid: "4",tooltiptext:"Week",
-       spriteCss: "mailtools forward",
+       id: "4",tooltip:"Week",
+       spriteCss: "tools forward",
 
    }, {
-       empid: "5",tooltiptext:"Month",
-       spriteCss: "mailtools newmail",
+       id: "5",tooltip:"Month",
+       spriteCss: "tools newmail",
 
    },
     {
-        empid: "6",tooltiptext:"Notes",
-        spriteCss: "mailtools reply",
+        id: "6",tooltip:"Notes",
+        spriteCss: "tools reply",
 
     },
     {
-        empid: "7",tooltiptext:"Deleted",
-        spriteCss: "mailtools done",
+        id: "7",tooltip:"Deleted",
+        spriteCss: "tools done",
 
     }
         ];
 
 	this.separator = true;
 	
-	this.fieldsvalues = {tooltipText:"tooltiptext",id:"empid", spriteCssClass:"spriteCss"};
+	this.fields = {tooltip:"tooltip",id:"id", spriteCssClass:"spriteCss"};
 	}
 }
 
@@ -219,7 +219,7 @@ Initialize the Toolbar items with **UL LI** template as follows.
 
 {% highlight html %}
     
-<ej-toolbar  [dataSource]="data" id="toolbar" [fields]="fieldsvalues"  [enableSeparator]="separator" width="250px"></ej-toolbar>
+<ej-toolbar  [dataSource]="data" id="toolbar" [fields]="fields"  [enableSeparator]="separator" width="250px"></ej-toolbar>
 
 
 {% endhighlight %}
@@ -230,38 +230,38 @@ Add the following styles in the code table to display the toolbar items as follo
 
 <style> 
 
-      .e-tooltxt .mailtools {
+      .e-tooltxt .tools {
             background-image: url('app/content/images/toolbar/maild.png');
         }
-        .e-tooltxt .mailtools {
+        .e-tooltxt .tools {
             display: block;
             background-image: url('app/content/images/toolbar/maill.png');
             height: 24px;
             width: 24px;
             background-repeat: no-repeat;
         }
-        .e-tooltxt:hover .mailtools, .darktheme .cols-sample-area .e-tooltxt:hover .mailtools {
+        .e-tooltxt:hover .tools, .darktheme .cols-sample-area .e-tooltxt:hover .tools {
             background-image: url('app/content/images/toolbar/mailh.png');
         }
-        .mailtools.done {
+        .tools.done {
             background-position: -11px -140px;
         }
-        .mailtools.movetofolder {
+        .tools.move {
             background-position: -12px -40px;
         }
-        .mailtools.categorize {
+        .tools.categorize {
             background-position: -14px -248px;
         }
-        .mailtools.flag {
+        .tools.flag {
             background-position: -13px -282px;
         }
-        .mailtools.forward {
+        .tools.forward {
             background-position: -14px -314px;
         }
-        .mailtools.newmail {
+        .tools.newmail {
             background-position: -14px -348px;
         }
-        .mailtools.reply {
+        .tools.reply {
             background-position: -14px -388px;
         } 
         .frame {
@@ -287,50 +287,50 @@ After updating the Toolbar items with their **CSS** styles, you can render the t
 import {Component,ViewEncapsulation} from '@angular/core';
 import {encapsulation} from '@angular/core'; 
 @Component({
-  selector: 'sd-home',
+  selector: 'ej-app',
   templateUrl: 'app/components/toolbar/toolbar.component.html',
   styleUrls: ['app/components/toolbar/toolbar.component.css'],encapsulation: ViewEncapsulation.None
 })
 export class ToolBarComponent {
-	fieldsvalues:object;
+	fields:object;
 	data:array;
 	separator:boolean;
     constructor() {
 	this.data =  [
    {
-       empid: "1", tooltiptext:"New mail",
-       spriteCss: "mailtools movetofolder",
+       id: "1", tooltip:"New mail",
+       spriteCss: "tools move",
 
    }, {
-       empid: "2", tooltiptext:"Calendar",
-       spriteCss: "mailtools categorize",
+       id: "2", tooltip:"Calendar",
+       spriteCss: "tools categorize",
 
    }, {
-       empid: "3",tooltiptext:"Appointments",
-       spriteCss: "mailtools flag",
+       id: "3",tooltip:"Appointments",
+       spriteCss: "tools flag",
 
    }, {
-       empid: "4",tooltiptext:"Week",
-       spriteCss: "mailtools forward",
+       id: "4",tooltip:"Week",
+       spriteCss: "tools forward",
 
    }, {
-       empid: "5",tooltiptext:"Month",
-       spriteCss: "mailtools newmail",
+       id: "5",tooltip:"Month",
+       spriteCss: "tools newmail",
 
    },
     {
-        empid: "6",tooltiptext:"Notes",
-        spriteCss: "mailtools reply",
+        id: "6",tooltip:"Notes",
+        spriteCss: "tools reply",
 
     },
     {
-        empid: "7",tooltiptext:"Deleted",
-        spriteCss: "mailtools done",
+        id: "7",tooltip:"Deleted",
+        spriteCss: "tools done",
 
     }
         ];
 	this.separator = true;
-	this.fieldsvalues = {tooltipText:"tooltiptext",id:"empid", spriteCssClass:"spriteCss"};
+	this.fields = {tooltipText:"tooltip",id:"id", spriteCssClass:"spriteCss"};
 	}
 }
  
@@ -354,7 +354,7 @@ Initialize the content area and header as specified in the code table.
 <div class="control">
  <div class="ctrllabel"></div>
    <!-- Here Initialize the Toolbar items as like above code sample -->  
-	<ej-toolbar  [dataSource]="data" id="toolbar" [fields]="fieldsvalues"  [enableSeparator]="separator" width="634px"></ej-toolbar>   
+	<ej-toolbar  [dataSource]="data" id="toolbar" [fields]="fields"  [enableSeparator]="separator" width="634px"></ej-toolbar>   
    <div id="contentSection">
       <textarea id="content" rows="10" cols="30"> 
       Description:

@@ -26,7 +26,7 @@ In the `Accordion` component HTML file add the below given code.
         <a href="#">Orubase</a>
     </h3>
     <div>
-        Orubase is the only mobile application development framework built especially for developing complex line-of-business mobile applications targeting iOS, Android, and Windows Phone platforms in the shortest possible timeframe.
+        Orubase is the only mobile application development framework built especially for developing complex line-of-business mobile applications targeting iOS, Android, and Windows Phone platforms in the shortest possible time frame.
     </div>
     <h3>
         <a href="#">WinRTXAML</a>
@@ -64,7 +64,7 @@ Add the below code in order to set the mouseout event for accordion which will b
         <a href="#">Orubase</a>
     </h3>
     <div>
-        Orubase is the only mobile application development framework built especially for developing complex line-of-business mobile applications targeting iOS, Android, and Windows Phone platforms in the shortest possible timeframe.
+        Orubase is the only mobile application development framework built especially for developing complex line-of-business mobile applications targeting iOS, Android, and Windows Phone platforms in the shortest possible time frame.
     </div>
     <h3>
         <a href="#">WinRTXAML</a>
@@ -104,7 +104,7 @@ The following steps will explains the configuring selected item for **Accordion*
         <a href="#">Orubase</a>
     </h3>
     <div>
-        Orubase is the only mobile application development framework built especially for developing complex line-of-business mobile applications targeting iOS, Android, and Windows Phone platforms in the shortest possible timeframe.
+        Orubase is the only mobile application development framework built especially for developing complex line-of-business mobile applications targeting iOS, Android, and Windows Phone platforms in the shortest possible time frame.
     </div>
     <h3>
         <a href="#">WinRTXAML</a>
@@ -141,7 +141,7 @@ The following code is used to configure selected items for **Accordion**.
         <a href="#">Orubase</a>
     </h3>
     <div>
-        Orubase is the only mobile application development framework built especially for developing complex line-of-business mobile applications targeting iOS, Android, and Windows Phone platforms in the shortest possible timeframe.
+        Orubase is the only mobile application development framework built especially for developing complex line-of-business mobile applications targeting iOS, Android, and Windows Phone platforms in the shortest possible time frame.
     </div>
     <h3>
         <a href="#">WinRTXAML</a>

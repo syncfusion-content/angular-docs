@@ -85,7 +85,7 @@ The [cssClass](https://help.syncfusion.com/api/js/ejtoolbar#members:cssclass) pr
 
 <style>
     .gradient-lime {
-        background-color: yellowgreen;
+        background-color: green;
     }
 </style>
 

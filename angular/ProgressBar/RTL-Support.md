@@ -25,7 +25,7 @@ The following code helps that how to **enable** the **RTL** property of the Prog
 
 import {Component} from '@angular/core';
 @Component({
-selector: 'sd-home',
+selector: 'ej-app',
 templateUrl: 'app/components/progressbar/progressbar.component.html'
 })
 export class ProgressBarComponent {  

@@ -75,7 +75,7 @@ Initialize **ProgressBar** in script.
  
 import {Component} from '@angular/core';
 @Component({
-selector: 'sd-home',
+selector: 'ej-app',
 templateUrl: 'app/components/progressbar/progressbar.component.html'
 })
 export class ProgressBarComponent {  
@@ -136,7 +136,7 @@ export class AppComponent {
 	content:string;
 	i: number;
 	k: number;
-	progresObj: any;
+	progress: any;
 	buttonObj: any;
 	timer: any;
 	obj: any;
@@ -148,7 +148,7 @@ export class AppComponent {
 	  }
 	  
 	  eventHandler(event) {
-			 this.progresObj= jQuery("#progressBar").data("ejProgressBar");
+			 this.progress= jQuery("#progressBar").data("ejProgressBar");
    console.log(event, event.keyCode, event.keyIdentifier);
    this.i = jQuery("#password").val().length;
         if (this.i < 5) 
@@ -161,20 +161,20 @@ export class AppComponent {
 			}
 }
  Strong() {     //Change the width and text of the progress ... called when the length is greater than 5
-        this.progresObj.option("text", "strong");
-        this.progresObj.option("percentage", this.k + 50);
+        this.progress.option("text", "strong");
+        this.progress.option("percentage", this.k + 50);
         jQuery(".e-progress").css("background-color", "#0055FF");
         jQuery(".e-progressbar").css("color", "#000000");       
     }
 very_strong() {     //Change the width and text of the progress ... called when the length is greater than 7
-        this.progresObj.option("text", "Very strong");
-       this. progresObj.option("percentage", this.k + 90);
+        this.progress.option("text", "Very strong");
+       this. progress.option("percentage", this.k + 90);
         jQuery(".e-progress").css("background-color", "Green");
         jQuery(".e-progressbar").css("color", "#000000");   
     }
 		weak() {     //Change the width and text of the progress... called when the length is less than 5
-        this.progresObj.option("text", "Weak");
-        this.progresObj.option("percentage", this.k+20 );
+        this.progress.option("text", "Weak");
+        this.progress.option("percentage", this.k+20 );
         jQuery(".e-progress").css("background-color", "#DE0909");
         jQuery(".e-progressbar").css("border-radius", "10px");      
     }
