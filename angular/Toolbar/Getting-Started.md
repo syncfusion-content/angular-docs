@@ -181,7 +181,7 @@ export class ToolBarComponent {
 
    }, {
        id: "5",tooltip:"Month",
-       spriteCss: "tools newmail",
+       spriteCss: "tools new",
 
    },
     {
@@ -231,17 +231,17 @@ Add the following styles in the code table to display the toolbar items as follo
 <style> 
 
       .e-tooltxt .tools {
-            background-image: url('app/content/images/toolbar/maild.png');
+            background-image: url('app/content/images/toolbar/mail.png');
         }
         .e-tooltxt .tools {
             display: block;
-            background-image: url('app/content/images/toolbar/maill.png');
+            background-image: url('app/content/images/toolbar/mail.png');
             height: 24px;
             width: 24px;
             background-repeat: no-repeat;
         }
         .e-tooltxt:hover .tools, .darktheme .cols-sample-area .e-tooltxt:hover .tools {
-            background-image: url('app/content/images/toolbar/mailh.png');
+            background-image: url('app/content/images/toolbar/mail.png');
         }
         .tools.done {
             background-position: -11px -140px;
@@ -315,7 +315,7 @@ export class ToolBarComponent {
 
    }, {
        id: "5",tooltip:"Month",
-       spriteCss: "tools newmail",
+       spriteCss: "tools new",
 
    },
     {
