@@ -69,8 +69,8 @@ In the following example, the page is broken into two separate editable areas, e
 
 {% highlight html %}
 
-       <textarea ej-rte class="rte" [(toolsList)]="toolslist" [(tools)]="tools" ></textarea>
-       <textarea ej-rte class="rte" [(toolsList)]="toolslist" [(tools)]="tools" ></textarea>
+       <textarea ej-rte class="rte" [(toolsList)]="list" [(tools)]="tools" ></textarea>
+       <textarea ej-rte class="rte" [(toolsList)]="list" [(tools)]="tools" ></textarea>
      
 {% endhighlight %}
 
@@ -83,10 +83,10 @@ import {Component} from '@angular/core';
   templateUrl: 'app/components/rte/rte.component.html'
 })
 export class RTEComponent {
-    toolslist: any;
+    list: any;
     tools: Object;
     constructor() {
-        this.toolslist = ["links", "lists", "doAction", "style", "images"];
+        this.list = ["links", "lists", "doAction", "style", "images"];
         this.tools = { style: ["bold", "italic"], lists: ["unorderedList", "orderedList"], doAction: ["undo", "redo"], links: ["createLink", "removeLink"], images: ["image"] };
     }
 }
@@ -99,8 +99,8 @@ In this next example each editable area will be loaded with an instance of RTE w
 
 {% highlight html %}
 
-       <textarea ej-rte class="rte" [(toolsList)]="toolslist" [(tools)]="tools" (create)="create()" [fontName]="fonts" ></textarea>
-       <textarea ej-rte class="rte" [(toolsList)]="toolslist" [(tools)]="tools" ></textarea>
+       <textarea ej-rte class="rte" [(toolsList)]="list" [(tools)]="tools" (create)="create()" [fontName]="fonts" ></textarea>
+       <textarea ej-rte class="rte" [(toolsList)]="list" [(tools)]="tools" ></textarea>
      
 {% endhighlight %}
 
@@ -113,7 +113,7 @@ import {Component} from '@angular/core';
   templateUrl: 'app/components/rte/rte.component.html'
 })
 export class RTEComponent {
-    toolslist: any;
+    list: any;
     tools: Object;
     fonts:any;
     constructor() {
@@ -124,7 +124,7 @@ export class RTEComponent {
                 { text: "Roboto", value: "Roboto" },
                 { text: "Great vibes", value: "Great Vibes,cursive" }
          ];
-        this.toolslist = ["links", "lists", "doAction", "style", "images"];
+        this.list = ["links", "lists", "doAction", "style", "images"];
         this.tools = { style: ["bold", "italic"], lists: ["unorderedList", "orderedList"], doAction: ["undo", "redo"], links: ["createLink", "removeLink"], images: ["image"] };
     }
     create() {

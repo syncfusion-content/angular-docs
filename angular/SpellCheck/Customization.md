@@ -17,7 +17,7 @@ The SpellCheck provides option to customize for the following scenarios.
 
 The SpellCheck control provide the support (`misspellWordCss`) to display the error word in user defined style. By default displaying the error words with the red underline. 
 
-The following code example depicts the way to customize the error word highlight (displaying error word with red color font and lightblue background).
+The following code example depicts the way to customize the error word highlight (displaying error word with red color font and blue background).
 
 {% highlight html %}
 
