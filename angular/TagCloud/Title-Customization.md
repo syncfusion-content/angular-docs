@@ -50,7 +50,7 @@ export class TagCloudComponent {
     { text: "Menu", url: "http://www.menucool.com", frequency: 3 },
     { text: "BBC", url: "http://www.bbc.co.uk/", frequency: 11 },
     { text: "Valley", url: "http://valleywag.gawker.com/", frequency: 6 },
-    { text: "WOWslider", url: "http://wowslider.com", frequency: 9 },
+    { text: "Slider", url: "http://wowslider.com", frequency: 9 },
     { text: "W3schools", url: "http://www.w3schools.com/", frequency: 2 }
     ];
     }

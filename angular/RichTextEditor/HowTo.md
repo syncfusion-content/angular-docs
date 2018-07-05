@@ -449,7 +449,7 @@ This requirement can have achieved by using [“cssClass”](https://help.syncfu
 import {Component} from '@angular/core';
 
 @Component({
-  selector: 'sd-home',
+  selector: 'ej-app',
   templateUrl: 'app/components/rte/rte.component.html'
 })
 export class RTEComponent {
