@@ -75,7 +75,7 @@ By default, there are 12 themes support available for **Toolbar** control namely
 * gradient-saffron
 * gradient-saffron-dark
 
-## CsssClass 
+## CssClass 
 
 The [cssClass](https://help.syncfusion.com/api/js/ejtoolbar#members:cssclass) property is used to set root class for **Toolbar** control theme. Set the value to this property as **string** type.
 

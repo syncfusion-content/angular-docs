@@ -15,7 +15,7 @@ The **TagCloud** items are displayed with a Title element by default. To hide th
 
 ### How to disable title in TagCloud
 
-Refer to the below code to disable the title in tagcloud.
+Refer to the below code to disable the title in TagCloud.
 
 {% highlight html %}
 
@@ -28,7 +28,7 @@ Refer to the below code to disable the title in tagcloud.
 import {Component} from '@angular/core';
 @Component({
     selector: 'sd-home',
-    templateUrl: 'app/components/tagcloud/tagcloud.component.html'
+    templateUrl: 'app/components/TagCloud/TagCloud.component.html'
     })
 export class TagCloudComponent {
     list: array;
@@ -82,7 +82,7 @@ The following code helps you that how to configure **titleText** for a **TagClou
 import {Component} from '@angular/core';
 @Component({
     selector: 'sd-home',
-    templateUrl: 'app/components/tagcloud/tagcloud.component.html'
+    templateUrl: 'app/components/TagCloud/TagCloud.component.html'
     })
 export class TagCloudComponent {
     list: array;
@@ -127,7 +127,7 @@ The following screenshot illustrates the **TagCloud** control with customized ti
 
 The following steps explains you to configure **titleImage** for a **TagCloud**.
 
-Refer to the below code to configure the title image in tagcloud.
+Refer to the below code to configure the title image in TagCloud.
 
 {% highlight html %}
 
@@ -141,8 +141,8 @@ import {Component} from '@angular/core';
 import {ViewEncapsulation} from '@angular/core'; 
 @Component({
     selector: 'sd-home',
-    templateUrl: 'app/components/tagcloud/tagcloud.component.html',
-    styleUrls: ['app/components/tagcloud/tagcloud.component.css'],
+    templateUrl: 'app/components/TagCloud/TagCloud.component.html',
+    styleUrls: ['app/components/TagCloud/TagCloud.component.css'],
     encapsulation: ViewEncapsulation.None
     })
 export class TagCloudComponent {
@@ -177,7 +177,7 @@ export class TagCloudComponent {
 
 {% endhighlight %}
 
-Add the below style in tagcloud.component.css file.
+Add the below style in TagCloud.component.css file.
 
 {% highlight css %}
 

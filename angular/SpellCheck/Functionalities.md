@@ -257,7 +257,7 @@ You can also add the custom words into the custom dictionary file through the di
 
 ## Checking content on typing
 
-SpellCheck control provides support for checking the content, on pressing the `Enter` and `Space` key. The cursor position will also be properly retained, while processing the SpellCheck operations. If you enable “enableValidateOnType” property, the spellcheck operation will be carried out on typing.
+SpellCheck control provides support for checking the content, on pressing the `Enter` and `Space` key. The cursor position will also be properly retained, while processing the SpellCheck operations. If you enable “enableValidateOnType” property, the SpellCheck operation will be carried out on typing.
 
 The following code example describes the above behavior.
 

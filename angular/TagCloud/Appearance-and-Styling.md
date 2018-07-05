@@ -98,7 +98,7 @@ Refer to the following code to configure format option for a **TagCloud**.
 import {Component} from '@angular/core';
 @Component({
     selector: 'sd-home',
-    templateUrl: 'app/components/tagcloud/tagcloud.component.html'
+    templateUrl: 'app/components/TagCloud/TagCloud.component.html'
     })
 export class TagCloudComponent {
     list: array;
@@ -180,8 +180,8 @@ import {Component} from '@angular/core';
 import {ViewEncapsulation} from '@angular/core'; 
 @Component({
     selector: 'sd-home',
-    templateUrl: 'app/components/tagcloud/tagcloud.component.html',
-    styleUrls: ['app/components/tagcloud/tagcloud.component.css'],
+    templateUrl: 'app/components/TagCloud/TagCloud.component.html',
+    styleUrls: ['app/components/TagCloud/TagCloud.component.css'],
     encapsulation: ViewEncapsulation.None
     })
 export class TagCloudComponent {
@@ -214,7 +214,7 @@ export class TagCloudComponent {
 
 {% endhighlight %}
 
-Add the below style in tagcloud.component.css file.
+Add the below style in TagCloud.component.css file.
 
 {% highlight css %}
 

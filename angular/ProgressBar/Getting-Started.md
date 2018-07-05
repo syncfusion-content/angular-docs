@@ -65,7 +65,7 @@ You can create the **ProgressBar** widget by using a simple input **&lt;div&gt;*
 
 {% endhighlight %}
 
-To render the ejProgrssBar using angular directive, we need to inject the ej angular directive with modules.
+To render the ejProgressBar using angular directive, we need to inject the ej angular directive with modules.
 
 It also includes a Password field and through that the progress of the **ProgressBar** can be controlled
 

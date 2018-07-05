@@ -534,13 +534,13 @@ Add the code snippet in stylesheet.
     
 {% endhighlight %}
 
-## RTE - Spellcheck Integration
+## RTE - SpellCheck Integration
 
-We have integrated spellcheck with RTE component. This spellchecker will validate the text present in RTE and provide suggestion in both context menu and dialog mode. 
+We have integrated SpellCheck with RTE component. This SpellCheck will validate the text present in RTE and provide suggestion in both context menu and dialog mode. 
 
-This can be achieved application side using RTE custom tools. We have rendered spellcheck control in RTE iframe element and using custom tool spellcheck dialog mode rendered. 
+This can be achieved application side using RTE custom tools. We have rendered SpellCheck control in RTE iframe element and using custom tool SpellCheck dialog mode rendered. 
 
-N> We have prevent the spellcheck context menu using "contextBeforeOpen" event and get the spellcheck suggestion list merge to RTE context menu. 
+N> We have prevent the SpellCheck context menu using "contextBeforeOpen" event and get the SpellCheck suggestion list merge to RTE context menu. 
 
 {% highlight html %}
 

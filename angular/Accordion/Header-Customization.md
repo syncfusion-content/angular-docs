@@ -95,7 +95,7 @@ Using [selectedItemIndex](https://help.syncfusion.com/api/js/ejaccordion#members
 
 ### Specify the selected item in Accordion panel
 
-The following steps will explains the configurating selected item for **Accordion**. You can refer to the below code.
+The following steps will explains the configuring selected item for **Accordion**. You can refer to the below code.
 
 {% highlight html %}
 
@@ -132,7 +132,7 @@ In **Accordion** widget, you can select multiple panel items using [selectedItem
 
 ### Configure multiple selection in Accordion panel
 
-The following codee is used to configure selected items for **Accordion**.
+The following code is used to configure selected items for **Accordion**.
 
 {% highlight html %}
 

@@ -46,7 +46,7 @@ Create an HTML file and add the following template into the **HTML** file for **
 
 {% endhighlight %}
  
-Add toolar tag for **Toolbar** rendering.
+Add toolbar tag for **Toolbar** rendering.
  
 {% highlight html %}
 

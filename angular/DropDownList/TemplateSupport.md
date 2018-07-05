@@ -21,7 +21,7 @@ N> Refer the check all option in popup list : [link](http://help.syncfusion.com/
 
 Create a set of div containers with common syntax or elements and assign it to the [template](http://helpjs.syncfusion.com/api/js/ejdropdownlist#members:template) property. You can add any HTML mark-up element inside the DropDownList list using this property.
 
-In the demo, a JSON array is created with text, imgId, role and country which is initialized with dataSource property. Content template is created by using the corresponding fields and assigned in template property. The content template is customized with images and custom CSS styles to visualize the items in popup.
+In the demo, a JSON array is created with text, Id, role and country which is initialized with dataSource property. Content template is created by using the corresponding fields and assigned in template property. The content template is customized with images and custom CSS styles to visualize the items in popup.
 
 {% highlight html %}
 
@@ -47,27 +47,27 @@ export class DropDownListComponent {
     constructor() {
         this.empList = [{
             text: "Erik Linden",
-            imgId: "3",
+            Id: "3",
             role: "Representative",
             country: "England"
              }, {
                 text: "John Linden",
-                imgId: "6",
+                Id: "6",
                 role: "Representative",
                 country: "Norway"
             }, {
                 text: "Louis",
-                imgId: "7",
+                Id: "7",
                 role: "Representative",
                 country: "Australia"
             }, {
                 text: "Lawrence",
-                imgId: "8",
+                Id: "8",
                 role: "Representative",
                 country: "India"
         }];
         this.headertemplate = "<div class='eheader'><span>PHOTO</span> <span>DETAILS</span></div>";
-        this.template = '<div><img class="imgId" src="Employee/${imgId}.png" alt="employee"/>' + '<div class="ename"> ${text} </div><div class="role"> ${role} </div><div class="cont"> ${country} </div></div>';
+        this.template = '<div><img class="Id" src="Employee/${Id}.png" alt="employee"/>' + '<div class="ename"> ${text} </div><div class="role"> ${role} </div><div class="cont"> ${country} </div></div>';
         this.width = "200";
     }
 }
@@ -78,7 +78,7 @@ Add the below css in dropdown.component.css file.
 
 {% highlight css %}
 	
-    .imgId {
+    .Id {
         margin: 0;
         padding: 3px 10px 3px 3px;
         border: 0 none;
