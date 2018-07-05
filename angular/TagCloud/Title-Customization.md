@@ -27,7 +27,7 @@ Refer to the below code to disable the title in TagCloud.
 
 import {Component} from '@angular/core';
 @Component({
-    selector: 'sd-home',
+    selector: 'ej-app',
     templateUrl: 'app/components/TagCloud/TagCloud.component.html'
     })
 export class TagCloudComponent {
@@ -81,7 +81,7 @@ The following code helps you that how to configure **titleText** for a **TagClou
 
 import {Component} from '@angular/core';
 @Component({
-    selector: 'sd-home',
+    selector: 'ej-app',
     templateUrl: 'app/components/TagCloud/TagCloud.component.html'
     })
 export class TagCloudComponent {
@@ -140,7 +140,7 @@ Refer to the below code to configure the title image in TagCloud.
 import {Component} from '@angular/core';
 import {ViewEncapsulation} from '@angular/core'; 
 @Component({
-    selector: 'sd-home',
+    selector: 'ej-app',
     templateUrl: 'app/components/TagCloud/TagCloud.component.html',
     styleUrls: ['app/components/TagCloud/TagCloud.component.css'],
     encapsulation: ViewEncapsulation.None

@@ -156,7 +156,7 @@ export class AppComponent {
         else if (this.i == 5 && this.i < 7) 
             this.Strong();
         else if(this.i==7 || this.i>7) {
-        var pwd = jQuery("#password").val(); 
+        var password = jQuery("#password").val(); 
             this.very_strong();
 			}
 }
