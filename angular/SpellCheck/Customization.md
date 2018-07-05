@@ -49,7 +49,7 @@ export class SpellCheckComponent {
 
 <style>
         .highlight {
-            background-color: lightblue;
+            background-color: blue;
             color: red;
         }
 </style>
