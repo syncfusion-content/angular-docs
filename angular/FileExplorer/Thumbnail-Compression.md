@@ -22,4 +22,4 @@ You can enable this option using “**enableThumbnailCompress**” API of FileEx
 
 {% endhighlight %}
 
-N> In server side, don’t forget to add “[GetImage](https://help.syncfusion.com/cr/cref_files/aspnetmvc/dociohelper/Syncfusion.EJ~Syncfusion.JavaScript.FileExplorerOperations~GetImage.html#)” handling operation that helps to reduce the image size before loading.
+N> In server side, don’t forget to add “[GetImage](https://help.syncfusion.com/cr/cref_files/aspnetmvc/Syncfusion.EJ~Syncfusion.JavaScript.FileExplorerOperations~GetImage.html#)” handling operation that helps to reduce the image size before loading.
