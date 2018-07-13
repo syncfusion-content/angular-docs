@@ -26,7 +26,7 @@ In the `Accordion` component HTML file add the below given code.
         <a href="#">Orubase</a>
     </h3>
     <div>
-        Orubase is the only mobile application development framework built especially for developing complex line-of-business mobile applications targeting iOS, Android, and Windows Phone platforms in the shortest possible timeframe.
+        Orubase is the only mobile application development framework built especially for developing complex line-of-business mobile applications targeting iOS, Android, and Windows Phone platforms in the shortest possible time frame.
     </div>
     <h3>
         <a href="#">WinRTXAML</a>
@@ -64,7 +64,7 @@ Add the below code in order to set the mouseout event for accordion which will b
         <a href="#">Orubase</a>
     </h3>
     <div>
-        Orubase is the only mobile application development framework built especially for developing complex line-of-business mobile applications targeting iOS, Android, and Windows Phone platforms in the shortest possible timeframe.
+        Orubase is the only mobile application development framework built especially for developing complex line-of-business mobile applications targeting iOS, Android, and Windows Phone platforms in the shortest possible time frame.
     </div>
     <h3>
         <a href="#">WinRTXAML</a>
@@ -95,7 +95,7 @@ Using [selectedItemIndex](https://help.syncfusion.com/api/js/ejaccordion#members
 
 ### Specify the selected item in Accordion panel
 
-The following steps will explains the configurating selected item for **Accordion**. You can refer to the below code.
+The following steps will explains the configuring selected item for **Accordion**. You can refer to the below code.
 
 {% highlight html %}
 
@@ -104,7 +104,7 @@ The following steps will explains the configurating selected item for **Accordio
         <a href="#">Orubase</a>
     </h3>
     <div>
-        Orubase is the only mobile application development framework built especially for developing complex line-of-business mobile applications targeting iOS, Android, and Windows Phone platforms in the shortest possible timeframe.
+        Orubase is the only mobile application development framework built especially for developing complex line-of-business mobile applications targeting iOS, Android, and Windows Phone platforms in the shortest possible time frame.
     </div>
     <h3>
         <a href="#">WinRTXAML</a>
@@ -128,20 +128,20 @@ Output for Accordion control with the selected item by index is as follows.
 
 ## Multiple Selection
 
-In **Accordion** widget, you can select multiple panel items using [selectedItems](https://help.syncfusion.com/api/js/ejaccordion#members:selecteditems) property. It takes array of indices that needs to be selected on rendering the control. As you need to select multiple items, you can set [enableMultipleOpen](https://help.syncfusion.com/api/js/ejaccordion#members:enablemultipleopen) to **true**.
+In **Accordion** widget, you can select multiple panel items using [items](https://help.syncfusion.com/api/js/ejaccordion#members:items) property. It takes array of indices that needs to be selected on rendering the control. As you need to select multiple items, you can set [enableMultipleOpen](https://help.syncfusion.com/api/js/ejaccordion#members:enablemultipleopen) to **true**.
 
 ### Configure multiple selection in Accordion panel
 
-The following codee is used to configure selected items for **Accordion**.
+The following code is used to configure selected items for **Accordion**.
 
 {% highlight html %}
 
- <ej-accordion [enableMultipleOpen]="true" [selectedItems]="selecteditems">
+ <ej-accordion [enableMultipleOpen]="true" [items]="items">
     <h3>
         <a href="#">Orubase</a>
     </h3>
     <div>
-        Orubase is the only mobile application development framework built especially for developing complex line-of-business mobile applications targeting iOS, Android, and Windows Phone platforms in the shortest possible timeframe.
+        Orubase is the only mobile application development framework built especially for developing complex line-of-business mobile applications targeting iOS, Android, and Windows Phone platforms in the shortest possible time frame.
     </div>
     <h3>
         <a href="#">WinRTXAML</a>
@@ -168,9 +168,9 @@ import { Component } from '@angular/core';
     templateUrl: 'src/accordion/accordion.component.html',
 })
 export class AccordionComponent {
-    selecteditems: int;
+    items: int;
     constructor() {
-        this.selecteditems = [0, 2];
+        this.items = [0, 2];
     }
 }
 

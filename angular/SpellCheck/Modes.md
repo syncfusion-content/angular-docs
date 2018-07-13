@@ -8,7 +8,7 @@ keywords: operations, spellcheck modes, dialog mode, context menu mode,  custom 
 ---
 # SpellCheck Operations
 
-Essential SpellCheck provides two ways to perform the spellcheck operation(error correction). They are,
+Essential SpellCheck provides two ways to perform the SpellCheck operation(error correction). They are,
 
 * Dialog Mode 
 * Context Menu Mode  
@@ -17,7 +17,7 @@ Essential SpellCheck provides two ways to perform the spellcheck operation(error
 
 ### Description
 
-SpellCheck provides the dialog mode option to perform the following spellcheck operations.
+SpellCheck provides the dialog mode option to perform the following SpellCheck operations.
 
 * Ignore Once
 * Ignore All
@@ -31,7 +31,7 @@ The following code snippet shows how to open the dialog to spell check the conte
 
 {% highlight html %}
 
-<ej-spellcheck id="SpellCheck" contenteditable="true" style="display:block" [dictionarySettings]="dictionarysettings" [contextMenuSettings.enable]="false">
+<ej-spellcheck id="SpellCheck" contenteditable="true" style="display:block" [dictionarySettings]="dictionary" [contextMenuSettings.enable]="false">
     Facebook is a social networking service headquartered in Menlo Park, California. Its website was launched on February 4, 2004, by Mark Zuckerberg with his Harvard College roommates and fellow students Eduardo, Andrew McCollum, Dustin and Chris Hughes. The fouders had initially limited the websites membrship to Harvard students, but later expanded it to collges in the Boston area, the Ivy League, and Stanford Univrsity. It graually added support for students at various other universities and later to high-school students.
 </ej-spellcheck>
 
@@ -40,9 +40,9 @@ The following code snippet shows how to open the dialog to spell check the conte
 {% highlight javascript %}
 
 export class SpellCheckComponent {
-    public dictionarysettings: any;
+    public dictionary: any;
     constructor() {
-        this.dictionarysettings = {
+        this.dictionary = {
             dictionaryUrl: "http://js.syncfusion.com/ejServices/api/SpellCheck/CheckWords",
             customDictionaryUrl: "http://js.syncfusion.com/ejServices/api/SpellCheck/AddToDictionary"
         };
@@ -60,7 +60,7 @@ To define the specific actions before the dialog window open, the client-side ev
 
 {% highlight html %}
 
-<ej-spellcheck id="SpellCheck" contenteditable="true" style="display:block" [dictionarySettings]="dictionarysettings" [contextMenuSettings.enable]="false" (dialogBeforeOpen)="onDialogBeforeOpen($event)">
+<ej-spellcheck id="SpellCheck" contenteditable="true" style="display:block" [dictionarySettings]="dictionary" [contextMenuSettings.enable]="false" (dialogBeforeOpen)="onDialogBeforeOpen($event)">
     Facebook is a social networking service headquartered in Menlo Park, California. Its website was launched on February 4, 2004, by Mark Zuckerberg with his Harvard College roommates and fellow students Eduardo, Andrew McCollum, Dustin and Chris Hughes. The fouders had initially limited the websites membrship to Harvard students, but later expanded it to collges in the Boston area, the Ivy League, and Stanford Univrsity. It graually added support for students at various other universities and later to high-school students.
 </ej-spellcheck>
 <input id="CheckSpell" type="button" class="ejinputtext" style="height:30px" value="Spell check" (click)="checkErrors($event)" />
@@ -70,9 +70,9 @@ To define the specific actions before the dialog window open, the client-side ev
 {% highlight javascript %}
 
 export class SpellCheckComponent {
-    public dictionarysettings: any;
+    public dictionary: any;
     constructor() {
-        this.dictionarysettings = {
+        this.dictionary = {
             dictionaryUrl: "http://js.syncfusion.com/ejServices/api/SpellCheck/CheckWords",
             customDictionaryUrl: "http://js.syncfusion.com/ejServices/api/SpellCheck/AddToDictionary"
         };
@@ -93,7 +93,7 @@ The client-side event `dialogOpen` can be used to define the specific actions af
 
 {% highlight html %}
 
-<ej-spellcheck id="SpellCheck" contenteditable="true" style="display:block" [dictionarySettings]="dictionarysettings" [contextMenuSettings.enable]="false" (dialogOpen)="onDialogOpen($event)">
+<ej-spellcheck id="SpellCheck" contenteditable="true" style="display:block" [dictionarySettings]="dictionary" [contextMenuSettings.enable]="false" (dialogOpen)="onDialogOpen($event)">
     Facebook is a social networking service headquartered in Menlo Park, California. Its website was launched on February 4, 2004, by Mark Zuckerberg with his Harvard College roommates and fellow students Eduardo, Andrew McCollum, Dustin and Chris Hughes. The fouders had initially limited the websites membrship to Harvard students, but later expanded it to collges in the Boston area, the Ivy League, and Stanford Univrsity. It graually added support for students at various other universities and later to high-school students.
 </ej-spellcheck>
 <input id="CheckSpell" type="button" class="ejinputtext" style="height:30px" value="Spell check" (click)="checkErrors($event)" />
@@ -102,9 +102,9 @@ The client-side event `dialogOpen` can be used to define the specific actions af
 {% highlight javascript %}
 
 export class SpellCheckComponent {
-    public dictionarysettings: any;
+    public dictionary: any;
     constructor() {
-        this.dictionarysettings = {
+        this.dictionary = {
             dictionaryUrl: "http://js.syncfusion.com/ejServices/api/SpellCheck/CheckWords",
             customDictionaryUrl: "http://js.syncfusion.com/ejServices/api/SpellCheck/AddToDictionary"
         };
@@ -125,7 +125,7 @@ The following code example used to define some actions after the dialog closing 
 
 {% highlight html %}
 
-<ej-spellcheck id="SpellCheck" contenteditable="true" style="display:block" [dictionarySettings]="dictionarysettings" [contextMenuSettings.enable]="false" (dialogClose)="onDialogClose($event)">
+<ej-spellcheck id="SpellCheck" contenteditable="true" style="display:block" [dictionarySettings]="dictionary" [contextMenuSettings.enable]="false" (dialogClose)="onDialogClose($event)">
     Facebook is a social networking service headquartered in Menlo Park, California. Its website was launched on February 4, 2004, by Mark Zuckerberg with his Harvard College roommates and fellow students Eduardo, Andrew McCollum, Dustin and Chris Hughes. The fouders had initially limited the websites membrship to Harvard students, but later expanded it to collges in the Boston area, the Ivy League, and Stanford Univrsity. It graually added support for students at various other universities and later to high-school students.
 </ej-spellcheck>
 <input id="CheckSpell" type="button" class="ejinputtext" style="height:30px" value="Spell check" (click)="checkErrors($event)" />
@@ -134,9 +134,9 @@ The following code example used to define some actions after the dialog closing 
 {% highlight javascript %}
 
 export class SpellCheckComponent {
-    public dictionarysettings: any;
+    public dictionary: any;
     constructor() {
-        this.dictionarysettings = {
+        this.dictionary = {
             dictionaryUrl: "http://js.syncfusion.com/ejServices/api/SpellCheck/CheckWords",
             customDictionaryUrl: "http://js.syncfusion.com/ejServices/api/SpellCheck/AddToDictionary"
         };
@@ -153,11 +153,11 @@ export class SpellCheckComponent {
 }
 {% endhighlight %}
 
-It is possible to predict the error word details before starting the spellcheck operations through dialog mode by using the client side event `start`. The below code example describes the above behavior.
+It is possible to predict the error word details before starting the SpellCheck operations through dialog mode by using the client side event `start`. The below code example describes the above behavior.
 
 {% highlight html %}
 
-<ej-spellcheck id="SpellCheck" contenteditable="true" style="display:block" [dictionarySettings]="dictionarysettings" [contextMenuSettings.enable]="false" (start)="onSpellCheckStart($event)">
+<ej-spellcheck id="SpellCheck" contenteditable="true" style="display:block" [dictionarySettings]="dictionary" [contextMenuSettings.enable]="false" (start)="onSpellCheckStart($event)">
     Facebook is a social networking service headquartered in Menlo Park, California. Its website was launched on February 4, 2004, by Mark Zuckerberg with his Harvard College roommates and fellow students Eduardo, Andrew McCollum, Dustin and Chris Hughes. The fouders had initially limited the websites membrship to Harvard students, but later expanded it to collges in the Boston area, the Ivy League, and Stanford Univrsity. It graually added support for students at various other universities and later to high-school students.
 </ej-spellcheck>
 <input id="CheckSpell" type="button" class="ejinputtext" style="height:30px" value="Spell check" (click)="checkErrors($event)" />
@@ -166,9 +166,9 @@ It is possible to predict the error word details before starting the spellcheck 
 {% highlight javascript %}
 
 export class SpellCheckComponent {
-    public dictionarysettings: any;
+    public dictionary: any;
     constructor() {
-        this.dictionarysettings = {
+        this.dictionary = {
             dictionaryUrl: "http://js.syncfusion.com/ejServices/api/SpellCheck/CheckWords",
             customDictionaryUrl: "http://js.syncfusion.com/ejServices/api/SpellCheck/AddToDictionary"
         };
@@ -189,7 +189,7 @@ You can get the corrected text content details before updating it into target el
 
 {% highlight html %}
 
-<ej-spellcheck id="SpellCheck" contenteditable="true" style="display:block" [dictionarySettings]="dictionarysettings" [contextMenuSettings.enable]="false" (complete)="onSpellCheckComplete($event)">
+<ej-spellcheck id="SpellCheck" contenteditable="true" style="display:block" [dictionarySettings]="dictionary" [contextMenuSettings.enable]="false" (complete)="onSpellCheckComplete($event)">
     Facebook is a social networking service headquartered in Menlo Park, California. Its website was launched on February 4, 2004, by Mark Zuckerberg with his Harvard College roommates and fellow students Eduardo, Andrew McCollum, Dustin and Chris Hughes. The fouders had initially limited the websites membrship to Harvard students, but later expanded it to collges in the Boston area, the Ivy League, and Stanford Univrsity. It graually added support for students at various other universities and later to high-school students.
 </ej-spellcheck>
 <input id="CheckSpell" type="button" class="ejinputtext" style="height:30px" value="Spell check" (click)="checkErrors($event)" />
@@ -198,9 +198,9 @@ You can get the corrected text content details before updating it into target el
 {% highlight javascript %}
 
 export class SpellCheckComponent {
-    public dictionarysettings: any;
+    public dictionary: any;
     constructor() {
-        this.dictionarysettings = {
+        this.dictionary = {
             dictionaryUrl: "http://js.syncfusion.com/ejServices/api/SpellCheck/CheckWords",
             customDictionaryUrl: "http://js.syncfusion.com/ejServices/api/SpellCheck/AddToDictionary"
         };
@@ -219,16 +219,16 @@ export class SpellCheckComponent {
 
 ## Context Menu Mode
 
-SpellCheck provides default context menu options to perform the spellcheck operations. It also allows to define additional custom context menu options.
+SpellCheck provides default context menu options to perform the SpellCheck operations. It also allows to define additional custom context menu options.
 
 The options that are available under `contextMenuSettings` are as follows,
 
 * `**enable**` - Enables/disables the context menu option in SpellCheck.
-* `**menuItems**` - Contains the options to perform spellcheck operations.
+* `**menuItems**` - Contains the options to perform SpellCheck operations.
 
 ### Default Menu Options
 
-The menu items contains the following options to perform the spellcheck operation.
+The menu items contains the following options to perform the SpellCheck operation.
 
 * Ignore All
 * Add to Dictionary 
@@ -237,7 +237,7 @@ The following code snippet shows how to enable the context menu settings in Spel
 
 {% highlight html %}
 
-<ej-spellcheck id="SpellCheck" contenteditable="true" style="display:block" [dictionarySettings]="dictionarysettings" [contextMenuSettings.enable]="true">
+<ej-spellcheck id="SpellCheck" contenteditable="true" style="display:block" [dictionarySettings]="dictionary" [contextMenuSettings.enable]="true">
     Facebook is a social networking service headquartered in Menlo Park, California. Its website was launched on February 4, 2004, by Mark Zuckerberg with his Harvard College roommates and fellow students Eduardo, Andrew McCollum, Dustin and Chris Hughes. The fouders had initially limited the websites membrship to Harvard students, but later expanded it to collges in the Boston area, the Ivy League, and Stanford Univrsity. It graually added support for students at various other universities and later to high-school students.
 </ej-spellcheck>
 <input id="CheckSpell" type="button" class="ejinputtext" style="height:30px" value="Spell check" (click)="checkErrors($event)" />
@@ -246,9 +246,9 @@ The following code snippet shows how to enable the context menu settings in Spel
 {% highlight javascript %}
 
 export class SpellCheckComponent {
-    public dictionarysettings: any;
+    public dictionary: any;
     constructor() {
-        this.dictionarysettings = {
+        this.dictionary = {
             dictionaryUrl: "http://js.syncfusion.com/ejServices/api/SpellCheck/CheckWords",
             customDictionaryUrl: "http://js.syncfusion.com/ejServices/api/SpellCheck/AddToDictionary"
         };
@@ -270,7 +270,7 @@ The following code example depicts how **to add the custom menu items** into the
 
 {% highlight html %}
 
-<ej-spellcheck id="SpellCheck" contenteditable="true" style="display:block" [dictionarySettings]="dictionarysettings" [contextMenuSettings.enable]="true" [contextMenuSettings.menuItems]="menuItems">
+<ej-spellcheck id="SpellCheck" contenteditable="true" style="display:block" [dictionarySettings]="dictionary" [contextMenuSettings.enable]="true" [contextMenuSettings.menuItems]="menuItems">
     Facebook is a social networking service headquartered in Menlo Park, California. Its website was launched on February 4, 2004, by Mark Zuckerberg with his Harvard College roommates and fellow students Eduardo, Andrew McCollum, Dustin and Chris Hughes. The fouders had initially limited the websites membrship to Harvard students, but later expanded it to collges in the Boston area, the Ivy League, and Stanford Univrsity. It graually added support for students at various other universities and later to high-school students.
 </ej-spellcheck>
 <input id="CheckSpell" type="button" class="ejinputtext" style="height:30px" value="Spell check" (click)="checkErrors($event)" />
@@ -279,10 +279,10 @@ The following code example depicts how **to add the custom menu items** into the
 {% highlight javascript %}
 
 export class SpellCheckComponent {
-    public dictionarysettings: any;
+    public dictionary: any;
     public menuItems:any;
     constructor() {
-        this.dictionarysettings = {
+        this.dictionary = {
             dictionaryUrl: "http://js.syncfusion.com/ejServices/api/SpellCheck/CheckWords",
             customDictionaryUrl: "http://js.syncfusion.com/ejServices/api/SpellCheck/AddToDictionary"
         };
@@ -307,7 +307,7 @@ The client-side event `contextClick` can be used to define specific actions when
 
 {% highlight html %}
 
-<ej-spellcheck id="SpellCheck" contenteditable="true" style="display:block" [dictionarySettings]="dictionarysettings" [contextMenuSettings.enable]="true" [contextMenuSettings.menuItems]="menuItems" (contextClick)="onCustomMenuClick($event)">
+<ej-spellcheck id="SpellCheck" contenteditable="true" style="display:block" [dictionarySettings]="dictionary" [contextMenuSettings.enable]="true" [contextMenuSettings.menuItems]="menuItems" (contextClick)="onCustomMenuClick($event)">
     Facebook is a social networking service headquartered in Menlo Park, California. Its website was launched on February 4, 2004, by Mark Zuckerberg with his Harvard College roommates and fellow students Eduardo, Andrew McCollum, Dustin and Chris Hughes. The fouders had initially limited the websites membrship to Harvard students, but later expanded it to collges in the Boston area, the Ivy League, and Stanford Univrsity. It graually added support for students at various other universities and later to high-school students.
 </ej-spellcheck>
 <input id="CheckSpell" type="button" class="ejinputtext" style="height:30px" value="Spell check" (click)="checkErrors($event)" />
@@ -316,10 +316,10 @@ The client-side event `contextClick` can be used to define specific actions when
 {% highlight javascript %}
 
 export class SpellCheckComponent {
-    public dictionarysettings: any;
+    public dictionary: any;
     public menuItems:any;
     constructor() {
-        this.dictionarysettings = {
+        this.dictionary = {
             dictionaryUrl: "http://js.syncfusion.com/ejServices/api/SpellCheck/CheckWords",
             customDictionaryUrl: "http://js.syncfusion.com/ejServices/api/SpellCheck/AddToDictionary"
         };
@@ -346,7 +346,7 @@ It is possible to predict the target (error word) on which the right click is ma
 
 {% highlight html %}
 
-<ej-spellcheck id="SpellCheck" contenteditable="true" style="display:block" [dictionarySettings]="dictionarysettings" [contextMenuSettings.enable]="true" (contextOpen)="onBeforeOpen($event)">
+<ej-spellcheck id="SpellCheck" contenteditable="true" style="display:block" [dictionarySettings]="dictionary" [contextMenuSettings.enable]="true" (contextOpen)="onBeforeOpen($event)">
     Facebook is a social networking service headquartered in Menlo Park, California. Its website was launched on February 4, 2004, by Mark Zuckerberg with his Harvard College roommates and fellow students Eduardo, Andrew McCollum, Dustin and Chris Hughes. The fouders had initially limited the websites membrship to Harvard students, but later expanded it to collges in the Boston area, the Ivy League, and Stanford Univrsity. It graually added support for students at various other universities and later to high-school students.
 </ej-spellcheck>
 <input id="CheckSpell" type="button" class="ejinputtext" style="height:30px" value="Spell check" (click)="checkErrors($event)" />
@@ -355,9 +355,9 @@ It is possible to predict the target (error word) on which the right click is ma
 {% highlight javascript %}
 
 export class SpellCheckComponent {
-    public dictionarysettings: any;
+    public dictionary: any;
     constructor() {
-        this.dictionarysettings = {
+        this.dictionary = {
             dictionaryUrl: "http://js.syncfusion.com/ejServices/api/SpellCheck/CheckWords",
             customDictionaryUrl: "http://js.syncfusion.com/ejServices/api/SpellCheck/AddToDictionary"
         };
@@ -378,7 +378,7 @@ You can get the current spell check operation arguments details with the client-
 
 {% highlight html %}
 
-<ej-spellcheck id="SpellCheck" contenteditable="true" style="display:block" [dictionarySettings]="dictionarysettings" [contextMenuSettings.enable]="true" (validating)="onSpellChecking($event)">
+<ej-spellcheck id="SpellCheck" contenteditable="true" style="display:block" [dictionarySettings]="dictionary" [contextMenuSettings.enable]="true" (validating)="onSpellChecking($event)">
     This textarea sample uses a dialog to display all the textarea spell errors.
 </ej-spellcheck>
 <input id="CheckSpell" type="button" class="ejinputtext" style="height:30px" value="Spell check" (click)="checkErrors($event)" />
@@ -387,9 +387,9 @@ You can get the current spell check operation arguments details with the client-
 {% highlight javascript %}
 
 export class SpellCheckComponent {
-    public dictionarysettings: any;
+    public dictionary: any;
     constructor() {
-        this.dictionarysettings = {
+        this.dictionary = {
             dictionaryUrl: "http://js.syncfusion.com/ejServices/api/SpellCheck/CheckWords",
             customDictionaryUrl: "http://js.syncfusion.com/ejServices/api/SpellCheck/AddToDictionary"
         };

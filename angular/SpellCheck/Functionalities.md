@@ -26,7 +26,7 @@ The following code example describes the above method implementation.
 
 {% highlight html %}
 
-<ej-spellcheck id="SpellCheck" contenteditable="true" style="display:block" [dictionarySettings]="dictionarysettings">
+<ej-spellcheck id="SpellCheck" contenteditable="true" style="display:block" [dictionarySettings]="dictionary">
 </ej-spellcheck>
 
 {% endhighlight %}
@@ -34,9 +34,9 @@ The following code example describes the above method implementation.
 {% highlight javascript %}
 
 export class SpellCheckComponent {
-    public dictionarysettings: any;
+    public dictionary: any;
     constructor() {
-        this.dictionarysettings = {
+        this.dictionary = {
             dictionaryUrl: "http://js.syncfusion.com/ejServices/api/SpellCheck/CheckWords",
             customDictionaryUrl: "http://js.syncfusion.com/ejServices/api/SpellCheck/AddToDictionary"
         };        
@@ -58,7 +58,7 @@ The following code example describes the way of using ignore all method.
 
 {% highlight html %}
 
-<ej-spellcheck id="SpellCheck" contenteditable="true" style="display:block" [dictionarySettings]="dictionarysettings">
+<ej-spellcheck id="SpellCheck" contenteditable="true" style="display:block" [dictionarySettings]="dictionary">
 </ej-spellcheck>
 
 {% endhighlight %}
@@ -66,9 +66,9 @@ The following code example describes the way of using ignore all method.
 {% highlight javascript %}
 
 export class SpellCheckComponent {
-    public dictionarysettings: any;
+    public dictionary: any;
     constructor() {
-        this.dictionarysettings = {
+        this.dictionary = {
             dictionaryUrl: "http://js.syncfusion.com/ejServices/api/SpellCheck/CheckWords",
             customDictionaryUrl: "http://js.syncfusion.com/ejServices/api/SpellCheck/AddToDictionary"
         };        
@@ -88,7 +88,7 @@ The `ignore words` option is used to ignore the collection of words from an erro
 
 {% highlight html %}
 
-<ej-spellcheck id="SpellCheck" contenteditable="true" style="display:block" [dictionarySettings]="dictionarysettings" [contextMenuSettings.enable]="false" [ignoreWords]="ignoreWords">
+<ej-spellcheck id="SpellCheck" contenteditable="true" style="display:block" [dictionarySettings]="dictionary" [contextMenuSettings.enable]="false" [ignoreWords]="ignoreWords">
     Facebook is a social networking service headquartered in Menlo Park, California. Its website was launched on February 4, 2004, by Mark Zuckerberg with his Harvard College roommates and fellow students Eduardo, Andrew McCollum, Dustin and Chris Hughes. The fouders had initially limited the websites membrship to Harvard students, but later expanded it to collges in the Boston area, the Ivy League, and Stanford Univrsity. It graually added support for students at various other universities and later to high-school students.
 </ej-spellcheck>
 <input id="CheckSpell" type="button" class="ejinputtext" style="height:30px" value="Spell check" (click)="checkErrors($event)" />
@@ -97,9 +97,9 @@ The `ignore words` option is used to ignore the collection of words from an erro
 {% highlight javascript %}
 
 export class SpellCheckComponent {
-    public dictionarysettings: any;
+    public dictionary: any;
     constructor() {
-        this.dictionarysettings = {
+        this.dictionary = {
             dictionaryUrl: "http://js.syncfusion.com/ejServices/api/SpellCheck/CheckWords",
             customDictionaryUrl: "http://js.syncfusion.com/ejServices/api/SpellCheck/AddToDictionary"
         };
@@ -127,7 +127,7 @@ The following code example uses to enable the checking of all the words formed w
 
 {% highlight html %}
 
-<ej-spellcheck id="SpellCheck" contenteditable="true" style="display:block" [dictionarySettings]="dictionarysettings" [contextMenuSettings.enable]="false" [ignoreSettings.ignoreUpperCase]="false" [ignoreSettings.ignoreAlphaNumericWords]="false" [ignoreSettings.ignoreMixedCaseWords]="false" [ignoreSettings.ignoreUrl]="false" [ignoreSettings.ignoreEmailAddress]="false" [ignoreSettings.ignoreFileNames]="false">
+<ej-spellcheck id="SpellCheck" contenteditable="true" style="display:block" [dictionarySettings]="dictionary" [contextMenuSettings.enable]="false" [ignoreSettings.ignoreUpperCase]="false" [ignoreSettings.ignoreAlphaNumericWords]="false" [ignoreSettings.ignoreMixedCaseWords]="false" [ignoreSettings.ignoreUrl]="false" [ignoreSettings.ignoreEmailAddress]="false" [ignoreSettings.ignoreFileNames]="false">
     Facebook is a social networking service headquartered in Menlo Park, California. Its website was launched on February 4, 2004, by Mark Zuckerberg with his Harvard College roommates and fellow students Eduardo, Andrew McCollum, Dustin and Chris Hughes. The fouders had initially limited the websites membrship to Harvard students, but later expanded it to collges in the Boston area, the Ivy League, and Stanford Univrsity. It graually added support for students at various other universities and later to high-school students.
 </ej-spellcheck>
 <input id="CheckSpell" type="button" class="ejinputtext" style="height:30px" value="Spell check" (click)="checkErrors($event)" />
@@ -136,9 +136,9 @@ The following code example uses to enable the checking of all the words formed w
 {% highlight javascript %}
 
 export class SpellCheckComponent {
-    public dictionarysettings: any;
+    public dictionary: any;
     constructor() {
-        this.dictionarysettings = {
+        this.dictionary = {
             dictionaryUrl: "http://js.syncfusion.com/ejServices/api/SpellCheck/CheckWords",
             customDictionaryUrl: "http://js.syncfusion.com/ejServices/api/SpellCheck/AddToDictionary"
         };
@@ -162,7 +162,7 @@ The following code example describes the behavior of change method.
 
 {% highlight html %}
 
-<ej-spellcheck id="SpellCheck" contenteditable="true" style="display:block" [dictionarySettings]="dictionarysettings">
+<ej-spellcheck id="SpellCheck" contenteditable="true" style="display:block" [dictionarySettings]="dictionary">
 </ej-spellcheck>
 
 {% endhighlight %}
@@ -170,9 +170,9 @@ The following code example describes the behavior of change method.
 {% highlight javascript %}
 
 export class SpellCheckComponent {
-    public dictionarysettings: any;
+    public dictionary: any;
     constructor() {
-        this.dictionarysettings = {
+        this.dictionary = {
             dictionaryUrl: "http://js.syncfusion.com/ejServices/api/SpellCheck/CheckWords",
             customDictionaryUrl: "http://js.syncfusion.com/ejServices/api/SpellCheck/AddToDictionary"
         };        
@@ -194,7 +194,7 @@ The following code example uses to change all the error word occurrences.
 
 {% highlight html %}
 
-<ej-spellcheck id="SpellCheck" contenteditable="true" style="display:block" [dictionarySettings]="dictionarysettings">
+<ej-spellcheck id="SpellCheck" contenteditable="true" style="display:block" [dictionarySettings]="dictionary">
 </ej-spellcheck>
 
 {% endhighlight %}
@@ -202,9 +202,9 @@ The following code example uses to change all the error word occurrences.
 {% highlight javascript %}
 
 export class SpellCheckComponent {
-    public dictionarysettings: any;
+    public dictionary: any;
     constructor() {
-        this.dictionarysettings = {
+        this.dictionary = {
             dictionaryUrl: "http://js.syncfusion.com/ejServices/api/SpellCheck/CheckWords",
             customDictionaryUrl: "http://js.syncfusion.com/ejServices/api/SpellCheck/AddToDictionary"
         };        
@@ -228,7 +228,7 @@ The following code example uses to add the custom word into the custom dictionar
 
 {% highlight html %}
 
-<ej-spellcheck id="SpellCheck" contenteditable="true" style="display:block" [dictionarySettings]="dictionarysettings">
+<ej-spellcheck id="SpellCheck" contenteditable="true" style="display:block" [dictionarySettings]="dictionary">
 </ej-spellcheck>
 
 {% endhighlight %}
@@ -236,9 +236,9 @@ The following code example uses to add the custom word into the custom dictionar
 {% highlight javascript %}
 
 export class SpellCheckComponent {
-    public dictionarysettings: any;
+    public dictionary: any;
     constructor() {
-        this.dictionarysettings = {
+        this.dictionary = {
             dictionaryUrl: "http://js.syncfusion.com/ejServices/api/SpellCheck/CheckWords",
             customDictionaryUrl: "http://js.syncfusion.com/ejServices/api/SpellCheck/AddToDictionary"
         };        
@@ -257,13 +257,13 @@ You can also add the custom words into the custom dictionary file through the di
 
 ## Checking content on typing
 
-SpellCheck control provides support for checking the content, on pressing the `Enter` and `Space` key. The cursor position will also be properly retained, while processing the SpellCheck operations. If you enable “enableValidateOnType” property, the spellcheck operation will be carried out on typing.
+SpellCheck control provides support for checking the content, on pressing the `Enter` and `Space` key. The cursor position will also be properly retained, while processing the SpellCheck operations. If you enable “enableValidateOnType” property, the SpellCheck operation will be carried out on typing.
 
 The following code example describes the above behavior.
 
 {% highlight html %}
 
-<ej-spellcheck id="SpellCheck" contenteditable="true" style="display:block" [dictionarySettings]="dictionarysettings" [contextMenuSettings.enable]="true" [enableValidateOnType]="true">
+<ej-spellcheck id="SpellCheck" contenteditable="true" style="display:block" [dictionarySettings]="dictionary" [contextMenuSettings.enable]="true" [enableValidateOnType]="true">
 </ej-spellcheck>
 
 {% endhighlight %}
@@ -271,9 +271,9 @@ The following code example describes the above behavior.
 {% highlight javascript %}
 
 export class SpellCheckComponent {
-    public dictionarysettings: any;
+    public dictionary: any;
     constructor() {
-        this.dictionarysettings = {
+        this.dictionary = {
             dictionaryUrl: "http://js.syncfusion.com/ejServices/api/SpellCheck/CheckWords",
             customDictionaryUrl: "http://js.syncfusion.com/ejServices/api/SpellCheck/AddToDictionary"
         };        
@@ -296,7 +296,7 @@ The following code example describes the above behavior.
 
 {% highlight html %}
 
-<ej-spellcheck id="SpellCheck" contenteditable="true" style="display:block" [dictionarySettings]="dictionarysettings">
+<ej-spellcheck id="SpellCheck" contenteditable="true" style="display:block" [dictionarySettings]="dictionary">
 </ej-spellcheck>
 
 {% endhighlight %}
@@ -304,9 +304,9 @@ The following code example describes the above behavior.
 {% highlight javascript %}
 
 export class SpellCheckComponent {
-    public dictionarysettings: any;
+    public dictionary: any;
     constructor() {
-        this.dictionarysettings = {
+        this.dictionary = {
             dictionaryUrl: "http://js.syncfusion.com/ejServices/api/SpellCheck/CheckWords",
             customDictionaryUrl: "http://js.syncfusion.com/ejServices/api/SpellCheck/AddToDictionary"
         };        
@@ -332,7 +332,7 @@ The following code example describes the above behavior.
 
 {% highlight html %}
 
-<ej-spellcheck id="SpellCheck" contenteditable="true" style="display:block" [dictionarySettings]="dictionarysettings" [ajaxDataType]="json" [enableAsync]="false">
+<ej-spellcheck id="SpellCheck" contenteditable="true" style="display:block" [dictionarySettings]="dictionary" [ajaxDataType]="json" [enableAsync]="false">
 </ej-spellcheck>
 
 {% endhighlight %}
@@ -340,9 +340,9 @@ The following code example describes the above behavior.
 {% highlight javascript %}
 
 export class SpellCheckComponent {
-    public dictionarysettings: any;
+    public dictionary: any;
     constructor() {
-        this.dictionarysettings = {
+        this.dictionary = {
             dictionaryUrl: "http://js.syncfusion.com/ejServices/api/SpellCheck/CheckWords",
             customDictionaryUrl: "http://js.syncfusion.com/ejServices/api/SpellCheck/AddToDictionary"
         };        
