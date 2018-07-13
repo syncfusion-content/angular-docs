@@ -17,7 +17,7 @@ To use web fonts in EJ RTE, it is not needed for the web fonts to be present in 
 
 {% highlight html %}
 
-   <textarea ej-rte id="rte" [(toolsList)]="toolslist" [(tools)]="tools" [fontName]="fonts" (create)="create()"></textarea>
+   <textarea ej-rte id="rte" [(toolsList)]="list" [(tools)]="tools" [fontName]="fonts" (create)="create()"></textarea>
      
 {% endhighlight %}
 
@@ -26,22 +26,22 @@ To use web fonts in EJ RTE, it is not needed for the web fonts to be present in 
 import {Component} from '@angular/core';
 
 @Component({
-  selector: 'sd-home',
+  selector: 'ej-app',
   templateUrl: 'app/components/rte/rte.component.html'
 })
 export class RTEComponent {
-    toolslist: any;
+    list: any;
     tools: Object;
     fonts: any;
     constructor() {
         this.fonts = [
                 { text: "Segoe UI", value: "Segoe UI" },
                 //Added from Google web fonts
-                { text: "Noto Sans", value: "Noto Sans" },
+                { text: "Sans", value: "Sans" },
                 { text: "Roboto", value: "Roboto" },
                 { text: "Great vibes", value: "Great Vibes,cursive" }
          ];
-        this.toolslist = ["links", "lists", "doAction", "style", "images"];
+        this.list = ["links", "lists", "doAction", "style", "images"];
         this.tools = { style: ["bold", "italic"], lists: ["unorderedList", "orderedList"], doAction: ["undo", "redo"], links: ["createLink", "removeLink"], images: ["image"] };
     }
     create() {
@@ -69,8 +69,8 @@ In the following example, the page is broken into two separate editable areas, e
 
 {% highlight html %}
 
-       <textarea ej-rte class="rte" [(toolsList)]="toolslist" [(tools)]="tools" ></textarea>
-       <textarea ej-rte class="rte" [(toolsList)]="toolslist" [(tools)]="tools" ></textarea>
+       <textarea ej-rte class="rte" [(toolsList)]="list" [(tools)]="tools" ></textarea>
+       <textarea ej-rte class="rte" [(toolsList)]="list" [(tools)]="tools" ></textarea>
      
 {% endhighlight %}
 
@@ -79,14 +79,14 @@ In the following example, the page is broken into two separate editable areas, e
 import {Component} from '@angular/core';
 
 @Component({
-  selector: 'sd-home',
+  selector: 'ej-app',
   templateUrl: 'app/components/rte/rte.component.html'
 })
 export class RTEComponent {
-    toolslist: any;
+    list: any;
     tools: Object;
     constructor() {
-        this.toolslist = ["links", "lists", "doAction", "style", "images"];
+        this.list = ["links", "lists", "doAction", "style", "images"];
         this.tools = { style: ["bold", "italic"], lists: ["unorderedList", "orderedList"], doAction: ["undo", "redo"], links: ["createLink", "removeLink"], images: ["image"] };
     }
 }
@@ -99,8 +99,8 @@ In this next example each editable area will be loaded with an instance of RTE w
 
 {% highlight html %}
 
-       <textarea ej-rte class="rte" [(toolsList)]="toolslist" [(tools)]="tools" (create)="create()" [fontName]="fonts" ></textarea>
-       <textarea ej-rte class="rte" [(toolsList)]="toolslist" [(tools)]="tools" ></textarea>
+       <textarea ej-rte class="rte" [(toolsList)]="list" [(tools)]="tools" (create)="create()" [fontName]="fonts" ></textarea>
+       <textarea ej-rte class="rte" [(toolsList)]="list" [(tools)]="tools" ></textarea>
      
 {% endhighlight %}
 
@@ -109,22 +109,22 @@ In this next example each editable area will be loaded with an instance of RTE w
 import {Component} from '@angular/core';
 
 @Component({
-  selector: 'sd-home',
+  selector: 'ej-app',
   templateUrl: 'app/components/rte/rte.component.html'
 })
 export class RTEComponent {
-    toolslist: any;
+    list: any;
     tools: Object;
     fonts:any;
     constructor() {
         this.fonts = [
                 { text: "Segoe UI", value: "Segoe UI" },
                 //Added from Google web fonts
-                { text: "Noto Sans", value: "Noto Sans" },
+                { text: " Sans", value: " Sans" },
                 { text: "Roboto", value: "Roboto" },
                 { text: "Great vibes", value: "Great Vibes,cursive" }
          ];
-        this.toolslist = ["links", "lists", "doAction", "style", "images"];
+        this.list = ["links", "lists", "doAction", "style", "images"];
         this.tools = { style: ["bold", "italic"], lists: ["unorderedList", "orderedList"], doAction: ["undo", "redo"], links: ["createLink", "removeLink"], images: ["image"] };
     }
     create() {
@@ -154,7 +154,7 @@ Bind the “keydown” event to the RTE’s Iframe, from which we can prevent th
 import {Component} from '@angular/core';
 
 @Component({
-  selector: 'sd-home',
+  selector: 'ej-app',
   templateUrl: 'app/components/rte/rte.component.html'
 })
 export class RTEComponent {
@@ -194,7 +194,7 @@ Yes, we can capture the ctrl + s keypress inside Rich Text Editor. To achieve th
 
 {% highlight ts %}
 @Component({
-  selector: 'sd-home',
+  selector: 'ej-app',
   templateUrl: 'app/components/rte/rte.component.html'
 })
 export class RTEComponent {
@@ -241,7 +241,7 @@ You can find the cursor location by getting the offset value of desired text usi
 import {Component} from '@angular/core';
 
 @Component({
-  selector: 'sd-home',
+  selector: 'ej-app',
   templateUrl: 'app/components/rte/rte.component.html'
 })
 export class RTEComponent {
@@ -279,7 +279,7 @@ This can be achieved by setting the CSS “whitespace” as nowrap in RTE body e
 import {Component} from '@angular/core';
 
 @Component({
-  selector: 'sd-home',
+  selector: 'ej-app',
   templateUrl: 'app/components/rte/rte.component.html'
 })
 export class RTEComponent {
@@ -311,7 +311,7 @@ This can be achieved by using “selectRange” method in the RTE. In this below
 import {Component} from '@angular/core';
 
 @Component({
-  selector: 'sd-home',
+  selector: 'ej-app',
   templateUrl: 'app/components/rte/rte.component.html'
 })
 export class RTEComponent {
@@ -360,7 +360,7 @@ Second manually set the cursor location using “_getRange” method. Please ref
 import {Component} from '@angular/core';
 
 @Component({
-  selector: 'sd-home',
+  selector: 'ej-app',
   templateUrl: 'app/components/rte/rte.component.html'
 })
 export class RTEComponent {
@@ -407,7 +407,7 @@ we can add separator in the RTE toolbar list. We have a property [“enableSepar
 
 {% highlight html %}
 
-<textarea ej-rte id="rteSample" rows="10" cols="30" [value]="val" style="width: 740px; height: 440px" (preRender)="OnPrerender()">       
+<textarea ej-rte id="rteSample" rows="10" cols="30" [value]="val" style="width: 740px; height: 440px" (preRender)="Render()">       
 </textarea>
 
 {% endhighlight %}
@@ -417,7 +417,7 @@ we can add separator in the RTE toolbar list. We have a property [“enableSepar
 import {Component} from '@angular/core';
 
 @Component({
-  selector: 'sd-home',
+  selector: 'ej-app',
   templateUrl: 'app/components/rte/rte.component.html'
 })
 export class RTEComponent {
@@ -425,7 +425,7 @@ export class RTEComponent {
     constructor() {
        this.val="The RichTextEditor (RTE) control enables you to edit the contents with insert table and images.It also provides a toolbar that helps to apply rich text formats to the content entered in the TextArea.";
     }
-    OnPrerender() {
+    Render() {
     var obj = $("#rteSample_toolbar").data("ejToolbar");
     obj.option("enableSeparator", true);
                 }
@@ -449,7 +449,7 @@ This requirement can have achieved by using [“cssClass”](https://help.syncfu
 import {Component} from '@angular/core';
 
 @Component({
-  selector: 'sd-home',
+  selector: 'ej-app',
   templateUrl: 'app/components/rte/rte.component.html'
 })
 export class RTEComponent {
@@ -534,13 +534,13 @@ Add the code snippet in stylesheet.
     
 {% endhighlight %}
 
-## RTE - Spellcheck Integration
+## RTE - SpellCheck Integration
 
-We have integrated spellcheck with RTE component. This spellchecker will validate the text present in RTE and provide suggestion in both context menu and dialog mode. 
+We have integrated SpellCheck with RTE component. This SpellCheck will validate the text present in RTE and provide suggestion in both context menu and dialog mode. 
 
-This can be achieved application side using RTE custom tools. We have rendered spellcheck control in RTE iframe element and using custom tool spellcheck dialog mode rendered. 
+This can be achieved application side using RTE custom tools. We have rendered SpellCheck control in RTE iframe element and using custom tool SpellCheck dialog mode rendered. 
 
-N> We have prevent the spellcheck context menu using "contextBeforeOpen" event and get the spellcheck suggestion list merge to RTE context menu. 
+N> We have prevent the SpellCheck context menu using "contextBeforeOpen" event and get the SpellCheck suggestion list merge to RTE context menu. 
 
 {% highlight html %}
 
@@ -554,7 +554,7 @@ N> We have prevent the spellcheck context menu using "contextBeforeOpen" event a
 import {Component} from '@angular/core';
 
 @Component({
-  selector: 'sd-home',
+  selector: 'ej-app',
   templateUrl: 'app/components/rte/rte.component.html'
 })
 export class RTEComponent {
@@ -601,7 +601,7 @@ The style element must be defined in stylesheet.
 
 <style>
         .e-rte-toolbar-icon.e-spell {
-            background: url(../content/images/rte/Icon_Spellchecker.svg) no-repeat;
+            background: url(../content/images/rte/Icon_Spell.svg) no-repeat;
             background-position: 3px 5px;
         }
 </style>

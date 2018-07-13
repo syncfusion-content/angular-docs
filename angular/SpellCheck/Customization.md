@@ -17,11 +17,11 @@ The SpellCheck provides option to customize for the following scenarios.
 
 The SpellCheck control provide the support (`misspellWordCss`) to display the error word in user defined style. By default displaying the error words with the red underline. 
 
-The following code example depicts the way to customize the error word highlight (displaying error word with red color font and lightblue background).
+The following code example depicts the way to customize the error word highlight (displaying error word with red color font and blue background).
 
 {% highlight html %}
 
-<ej-spellcheck id="SpellCheck" contenteditable="true" style="display:block" [dictionarySettings]="dictionarysettings" [contextMenuSettings.enable]="false" misspellWordCss="highlight">
+<ej-spellcheck id="SpellCheck" contenteditable="true" style="display:block" [dictionarySettings]="dictionary" [contextMenuSettings.enable]="false" misspellWordCss="highlight">
     Facebook is a social networking service headquartered in Menlo Park, California. Its website was launched on February 4, 2004, by Mark Zuckerberg with his Harvard College roommates and fellow students Eduardo, Andrew McCollum, Dustin and Chris Hughes. The fouders had initially limited the websites membrship to Harvard students, but later expanded it to collges in the Boston area, the Ivy League, and Stanford Univrsity. It graually added support for students at various other universities and later to high-school students.
 </ej-spellcheck>
 <input id="CheckSpell" type="button" class="ejinputtext" style="height:30px" value="Spell check" (click)="checkErrors($event)" />
@@ -31,9 +31,9 @@ The following code example depicts the way to customize the error word highlight
 {% highlight javascript %}
 
 export class SpellCheckComponent {
-    public dictionarysettings: any;
+    public dictionary: any;
     constructor() {
-        this.dictionarysettings = {
+        this.dictionary = {
             dictionaryUrl: "http://js.syncfusion.com/ejServices/api/SpellCheck/CheckWords",
             customDictionaryUrl: "http://js.syncfusion.com/ejServices/api/SpellCheck/AddToDictionary"
         };
@@ -49,7 +49,7 @@ export class SpellCheckComponent {
 
 <style>
         .highlight {
-            background-color: lightblue;
+            background-color: blue;
             color: red;
         }
 </style>
@@ -64,7 +64,7 @@ The following code example describes the way to control the suggestion count.
 
 {% highlight html %}
 
-<ej-spellcheck id="SpellCheck" contenteditable="true" style="display:block" [dictionarySettings]="dictionarysettings" [contextMenuSettings.enable]="false" [maxSuggestionCount]="3">
+<ej-spellcheck id="SpellCheck" contenteditable="true" style="display:block" [dictionarySettings]="dictionary" [contextMenuSettings.enable]="false" [maxSuggestionCount]="3">
     Facebook is a social networking service headquartered in Menlo Park, California. Its website was launched on February 4, 2004, by Mark Zuckerberg with his Harvard College roommates and fellow students Eduardo, Andrew McCollum, Dustin and Chris Hughes. The fouders had initially limited the websites membrship to Harvard students, but later expanded it to collges in the Boston area, the Ivy League, and Stanford Univrsity. It graually added support for students at various other universities and later to high-school students.
 </ej-spellcheck>
 <input id="CheckSpell" type="button" class="ejinputtext" style="height:30px" value="Spell check" (click)="checkErrors($event)" />
@@ -74,9 +74,9 @@ The following code example describes the way to control the suggestion count.
 {% highlight javascript %}
 
 export class SpellCheckComponent {
-    public dictionarysettings: any;
+    public dictionary: any;
     constructor() {
-        this.dictionarysettings = {
+        this.dictionary = {
             dictionaryUrl: "http://js.syncfusion.com/ejServices/api/SpellCheck/CheckWords",
             customDictionaryUrl: "http://js.syncfusion.com/ejServices/api/SpellCheck/AddToDictionary"
         };
