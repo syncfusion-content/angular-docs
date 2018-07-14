@@ -15,7 +15,7 @@ The **TagCloud** items are displayed with a Title element by default. To hide th
 
 ### How to disable title in TagCloud
 
-Refer to the below code to disable the title in tagcloud.
+Refer to the below code to disable the title in TagCloud.
 
 {% highlight html %}
 
@@ -27,8 +27,8 @@ Refer to the below code to disable the title in tagcloud.
 
 import {Component} from '@angular/core';
 @Component({
-    selector: 'sd-home',
-    templateUrl: 'app/components/tagcloud/tagcloud.component.html'
+    selector: 'ej-app',
+    templateUrl: 'app/components/TagCloud/TagCloud.component.html'
     })
 export class TagCloudComponent {
     list: array;
@@ -37,20 +37,20 @@ export class TagCloudComponent {
     { text: "Google", url: "http://www.google.co.in", frequency: 12 },
     { text: "a2zwebhelp", url: "http://www.a2zwebhelp.com", frequency: 3 },
     { text: "Arts Technica", url: "http://arstechnica.com/", frequency: 8 },
-    { text: "Bxslider", url: "http://bxslider.com/examples", frequency: 2 },
+    { text: "slider", url: "http://bxslider.com/examples", frequency: 2 },
     { text: "Yahoo", url: "http://in.yahoo.com/", frequency: 12 },
     { text: "Facebook", url: "https://www.facebook.com/", frequency: 5 },
-    { text: "Blogspot", url: "http://www.blogspot.com/", frequency: 8 },
+    { text: "Blogs", url: "http://www.blogspot.com/", frequency: 8 },
     { text: "Microsoft", url: "http://www.microsoft.com/", frequency: 20 },
     { text: "Amazon.com", url: "http://www.amazon.com/", frequency: 1 },
     { text: "MSN", url: "http://www.msn.com/", frequency: 3 },
     { text: "Engadget", url: "http://www.engadget.com/", frequency: 5 },
     { text: "LinkedIn", url: "http://www.linkedIn.com/", frequency: 9 },
     { text: "Twitter", url: "http://www.Twitter.com/", frequency: 0 },
-    { text: "Menucool", url: "http://www.menucool.com", frequency: 3 },
+    { text: "Menu", url: "http://www.menucool.com", frequency: 3 },
     { text: "BBC", url: "http://www.bbc.co.uk/", frequency: 11 },
-    { text: "Valleywag", url: "http://valleywag.gawker.com/", frequency: 6 },
-    { text: "WOWslider", url: "http://wowslider.com", frequency: 9 },
+    { text: "Valley", url: "http://valleywag.gawker.com/", frequency: 6 },
+    { text: "Slider", url: "http://wowslider.com", frequency: 9 },
     { text: "W3schools", url: "http://www.w3schools.com/", frequency: 2 }
     ];
     }
@@ -81,8 +81,8 @@ The following code helps you that how to configure **titleText** for a **TagClou
 
 import {Component} from '@angular/core';
 @Component({
-    selector: 'sd-home',
-    templateUrl: 'app/components/tagcloud/tagcloud.component.html'
+    selector: 'ej-app',
+    templateUrl: 'app/components/TagCloud/TagCloud.component.html'
     })
 export class TagCloudComponent {
     list: array;
@@ -92,20 +92,20 @@ export class TagCloudComponent {
     { text: "Google", url: "http://www.google.co.in", frequency: 12 },
     { text: "a2zwebhelp", url: "http://www.a2zwebhelp.com", frequency: 3 },
     { text: "Arts Technica", url: "http://arstechnica.com/", frequency: 8 },
-    { text: "Bxslider", url: "http://bxslider.com/examples", frequency: 2 },
+    { text: "slider", url: "http://bxslider.com/examples", frequency: 2 },
     { text: "Yahoo", url: "http://in.yahoo.com/", frequency: 12 },
     { text: "Facebook", url: "https://www.facebook.com/", frequency: 5 },
-    { text: "Blogspot", url: "http://www.blogspot.com/", frequency: 8 },
+    { text: "Blogs", url: "http://www.blogspot.com/", frequency: 8 },
     { text: "Microsoft", url: "http://www.microsoft.com/", frequency: 20 },
     { text: "Amazon.com", url: "http://www.amazon.com/", frequency: 1 },
     { text: "MSN", url: "http://www.msn.com/", frequency: 3 },
     { text: "Engadget", url: "http://www.engadget.com/", frequency: 5 },
     { text: "LinkedIn", url: "http://www.linkedIn.com/", frequency: 9 },
     { text: "Twitter", url: "http://www.Twitter.com/", frequency: 0 },
-    { text: "Menucool", url: "http://www.menucool.com", frequency: 3 },
+    { text: "Menu", url: "http://www.menucool.com", frequency: 3 },
     { text: "BBC", url: "http://www.bbc.co.uk/", frequency: 11 },
-    { text: "Valleywag", url: "http://valleywag.gawker.com/", frequency: 6 },
-    { text: "WOWslider", url: "http://wowslider.com", frequency: 9 },
+    { text: "Valley", url: "http://valleywag.gawker.com/", frequency: 6 },
+    { text: "Slider", url: "http://wowslider.com", frequency: 9 },
     { text: "W3schools", url: "http://www.w3schools.com/", frequency: 2 }
     ];
     this.title = "Tech Sites";
@@ -127,7 +127,7 @@ The following screenshot illustrates the **TagCloud** control with customized ti
 
 The following steps explains you to configure **titleImage** for a **TagCloud**.
 
-Refer to the below code to configure the title image in tagcloud.
+Refer to the below code to configure the title image in TagCloud.
 
 {% highlight html %}
 
@@ -140,9 +140,9 @@ Refer to the below code to configure the title image in tagcloud.
 import {Component} from '@angular/core';
 import {ViewEncapsulation} from '@angular/core'; 
 @Component({
-    selector: 'sd-home',
-    templateUrl: 'app/components/tagcloud/tagcloud.component.html',
-    styleUrls: ['app/components/tagcloud/tagcloud.component.css'],
+    selector: 'ej-app',
+    templateUrl: 'app/components/TagCloud/TagCloud.component.html',
+    styleUrls: ['app/components/TagCloud/TagCloud.component.css'],
     encapsulation: ViewEncapsulation.None
     })
 export class TagCloudComponent {
@@ -154,20 +154,20 @@ export class TagCloudComponent {
     { text: "Google", url: "http://www.google.co.in", frequency: 12 },
     { text: "a2zwebhelp", url: "http://www.a2zwebhelp.com", frequency: 3 },
     { text: "Arts Technica", url: "http://arstechnica.com/", frequency: 8 },
-    { text: "Bxslider", url: "http://bxslider.com/examples", frequency: 2 },
+    { text: "slider", url: "http://bxslider.com/examples", frequency: 2 },
     { text: "Yahoo", url: "http://in.yahoo.com/", frequency: 12 },
     { text: "Facebook", url: "https://www.facebook.com/", frequency: 5 },
-    { text: "Blogspot", url: "http://www.blogspot.com/", frequency: 8 },
+    { text: "Blogs", url: "http://www.blogspot.com/", frequency: 8 },
     { text: "Microsoft", url: "http://www.microsoft.com/", frequency: 20 },
     { text: "Amazon.com", url: "http://www.amazon.com/", frequency: 1 },
     { text: "MSN", url: "http://www.msn.com/", frequency: 3 },
     { text: "Engadget", url: "http://www.engadget.com/", frequency: 5 },
     { text: "LinkedIn", url: "http://www.linkedIn.com/", frequency: 9 },
     { text: "Twitter", url: "http://www.Twitter.com/", frequency: 0 },
-    { text: "Menucool", url: "http://www.menucool.com", frequency: 3 },
+    { text: "Menu", url: "http://www.menucool.com", frequency: 3 },
     { text: "BBC", url: "http://www.bbc.co.uk/", frequency: 11 },
-    { text: "Valleywag", url: "http://valleywag.gawker.com/", frequency: 6 },
-    { text: "WOWslider", url: "http://wowslider.com", frequency: 9 },
+    { text: "Valley", url: "http://valleywag.gawker.com/", frequency: 6 },
+    { text: "Slider", url: "http://wowslider.com", frequency: 9 },
     { text: "W3schools", url: "http://www.w3schools.com/", frequency: 2 }
     ];
     this.title = "Tech Sites";
@@ -177,7 +177,7 @@ export class TagCloudComponent {
 
 {% endhighlight %}
 
-Add the below style in tagcloud.component.css file.
+Add the below style in TagCloud.component.css file.
 
 {% highlight css %}
 

@@ -42,7 +42,7 @@ The following code helps you for the configuration of [saveUrl](https://help.syn
 
 {% endhighlight %}
 
-Configure the handler to save the file. Create a folder (for example, upload files) and save the uploaded files into this folder.  
+Configure the handler to save the file. Create a folder (for example,files) and save the uploaded files into this folder.  
 
 {% highlight c# %}
 
@@ -52,7 +52,7 @@ saveFiles.ashx
 
     public void ProcessRequest(HttpContext context)
     {
-        string targetFolder = HttpContext.Current.Server.MapPath("uploadfiles");
+        string targetFolder = HttpContext.Current.Server.MapPath("files");
         if (!Directory.Exists(targetFolder))
         {
             Directory.CreateDirectory(targetFolder);
@@ -64,10 +64,10 @@ saveFiles.ashx
                 for (int i = 0; i < uploadedFiles.Count; i++)
                 {
                     string fileName = uploadedFiles[i].FileName;
-                    int indx = fileName.LastIndexOf("\\");
-                    if (indx > -1)
+                    int index = fileName.LastIndexOf("\\");
+                    if (index > -1)
                     {
-                        fileName = fileName.Substring(indx + 1);
+                        fileName = fileName.Substring(index + 1);
                     }
                     uploadedFiles[i].SaveAs(targetFolder + "\\" + fileName);
                 }
@@ -121,7 +121,7 @@ The following code helps you for the configuration of **removeUrl** property in 
 
 {% endhighlight %}
 
-Configure the handlers to remove the file from the target location. From that location, the file is searched and removed from the ‘**uploadfiles’** folder.
+Configure the handlers to remove the file from the target location. From that location, the file is searched and removed from the ‘**files’** folder.
 
 {% highlight c# %}
 
@@ -134,7 +134,7 @@ removeFiles.ashx
     {
         System.Collections.Specialized.NameValueCollection s = context.Request.Params;
         string fileName = s["fileNames"];
-        string targetFolder = HttpContext.Current.Server.MapPath("uploadfiles");
+        string targetFolder = HttpContext.Current.Server.MapPath("files");
         if (!Directory.Exists(targetFolder))
         {
             Directory.CreateDirectory(targetFolder);
@@ -166,7 +166,7 @@ The following screenshot displays the output.
 
 The **Uploadbox** widget provides support to upload the file automatically once file is selected by using browse button, that is, without clicking upload button. To achieve this, set the [autoUpload](https://help.syncfusion.com/api/js/ejuploadbox#members:autoupload) property to ‘**true**’. The data type is **Boolean**. By default, the value is set to ‘**false**’, so **upload** button is clicked to upload the files. 
 
-The following codee helps you for the configuration of [autoUpload](https://help.syncfusion.com/api/js/ejuploadbox#members:autoupload) property in **Uploadbox**
+The following code helps you for the configuration of [autoUpload](https://help.syncfusion.com/api/js/ejuploadbox#members:autoupload) property in **Uploadbox**
 
 {% highlight html %}
 
