@@ -672,7 +672,7 @@ List of Column type and Filter operators
     
 ## FilterBar Template
 
-Usually enabling allowFiltering, will create default textbox in Grid FilterBar. So, Using [`filterBarTemplate`](https://help.syncfusion.com/api/angular/ejgrid#members:columns-filterbartemplate "filterBarTemplate") property of `columns` we can render any other controls like AutoComplete, DropDownList etc in filterbar to filter the grid data for the particular column.
+Usually enabling allowFiltering, will create default textbox in Grid Filter Bar. So, Using [`filterBarTemplate`](https://help.syncfusion.com/api/angular/ejgrid#members:columns-filterbartemplate "filterBarTemplate") property of `columns` we can render any other controls like AutoComplete, DropDownList etc in `filterbar` to filter the grid data for the particular column.
 It has three functions. They are    
 
 1. `create` - It is used to create the control at time of initialize.
