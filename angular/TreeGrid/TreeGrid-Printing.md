@@ -118,7 +118,7 @@ export class AppComponent {
         }
     }
     beforePrint(sender) {
-        // willbe triggered before printing the TreeGrid
+        // will be triggered before printing the TreeGrid
     }
 }
 
