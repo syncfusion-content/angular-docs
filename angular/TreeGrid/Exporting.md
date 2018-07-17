@@ -60,7 +60,7 @@ export class AppComponent {
 
 {% endhighlight %}
 
-The below screen shot shows Gantt with excel and Pdf exporting enabled
+The below screen shot shows Gantt with excel and PDF exporting enabled
 
 ![](Export_images/Export_img1.png)
 

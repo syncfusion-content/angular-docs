@@ -28,7 +28,7 @@ The below steps describes to add component with above cloned seed application.
 
 ## Syncfusion JavaScript components source configuration and sample creation
 
-* Copy required Syncfusion Angular source component(s) from the below build location and add it in `src/ej` folder (For ex., consider the `treegrid` component).
+* Copy required Syncfusion Angular source component(s) from the below build location and add it in `src/ej` folder (For ex., consider the `TreeGrid` component).
 
 {% highlight javascript %}
 (Installed Location)\Syncfusion\Essential Studio\{{ site.releaseversion }}\JavaScript\assets-src\angular2\ 
@@ -36,9 +36,9 @@ The below steps describes to add component with above cloned seed application.
 
 N> `core.ts` file is mandatory for all Syncfusion JavaScript Angular components. The repository having the source file from Essential Studio for JavaScript v{{ site.releaseversion }}.
 
-* Create `treegrid` folder inside `src` folder.
+* Create `TreeGrid` folder inside `src` folder.
 
-* Create `treegrid.component.html` view file inside `src/treegrid` folder and render ejTreeGrid Angular component using the below code example. 
+* Create `TreeGrid.component.html` view file inside `src/TreeGrid` folder and render ejTreeGrid Angular component using the below code example. 
 
 {% highlight html %}
 
@@ -56,7 +56,7 @@ N> `core.ts` file is mandatory for all Syncfusion JavaScript Angular components.
 
 {% endhighlight %}
 
-* Create `treegrid.component.ts` model file inside the folder `src/treegrid` and create sample component using the below code example.
+* Create `TreeGrid.component.ts` model file inside the folder `src/TreeGrid` and create sample component using the below code example.
 
 {% highlight javascript %}
 

@@ -77,7 +77,7 @@ Column template is used to customize the column’s look and feel, based on requ
 
 The following code example shows you how to display a column with resource images.
 
-place the following jsRender template in index.html file.
+place the following JsRender template in index.html file.
 
 {% highlight javascript %}
 
