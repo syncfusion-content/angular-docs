@@ -263,12 +263,12 @@ export class AppComponent {
         //...
     }
     public add(event, item) {
-        treegridObj = $("# TreeGridContainer ").data("ejTreeGrid");
-        treegridObj.showAddDialog();
+        treeGridObj = $("# TreeGridContainer ").data("ejTreeGrid");
+        treeGridObj.showAddDialog();
     }
     public edit(event, item) {
-        treegridObj = $("# TreeGridContainer ").data("ejTreeGrid ");
-        treegridObj.showEditDialog(3);
+        treeGridObj = $("# TreeGridContainer ").data("ejTreeGrid ");
+        treeGridObj.showEditDialog(3);
     }
 }
 

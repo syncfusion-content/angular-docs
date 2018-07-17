@@ -29,7 +29,7 @@ It is possible to format a column using ‘load’ event. The following code exa
 
 {% highlight javascript %}
 
-<ej-gantt id="GanttControl" (load)="onganttload($event)">
+<ej-gantt id="GanttControl" (load)="onGanttLoad($event)">
 </ej-gantt>
 
 {% endhighlight %}
@@ -47,7 +47,7 @@ export class AppComponent {
   constructor() {
      //...
   }
-   onganttload(sender) {
+   onGanttLoad(sender) {
         var gantt = $("#GanttControl").ejGantt("instance");
         var columns = gantt.getColumns();
         columns[5]["format"] = "{0:p0}";
@@ -108,7 +108,7 @@ place the following JsRender template in index.html file.
         resourceIdMapping= "resourceId"
         [resources]= "columnTemplateResource"
         [allowGanttChartEditing]= "false" 
-        (load)="onganttload($event)">
+        (load)="onGanttLoad($event)">
 </ej-gantt>
 
 {% endhighlight %}
@@ -154,7 +154,7 @@ export class AppComponent {
             }, ]
         }];
     }
-    onganttload(sender) {
+    onGanttLoad(sender) {
         var gantt = $("#gantt").ejGantt("instance");
         var columns = gantt.getColumns();
         columns[2].visible = columns[3].visible = false;

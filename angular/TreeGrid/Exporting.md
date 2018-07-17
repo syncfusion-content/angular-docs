@@ -16,7 +16,7 @@ The below code snippet explains the above behavior,
 
 {% highlight javascript %}
 
-<ej-treegrid id="TreeGridControl" [toolbarSettings]="toolbarSettings" (toolbarClick)="toolbarclick($event)"
+<ej-treegrid id="TreeGridControl" [toolbarSettings]="toolbarSettings" (toolbarClick)="toolbarClick($event)"
     //...>
 </ej-treegrid>
 
@@ -43,16 +43,16 @@ export class AppComponent {
             ]
         }
     }
-    toolbarclick(sender) {
+    toolbarClick(sender) {
         var id = $(sender.currentTarget).attr("id");
-        var treegridObj = $("# TreeGridContainer ").data("ejTreeGrid");
-        treegridObj.exportGrid = this["export"];
+        var treeGridObj = $("# TreeGridContainer ").data("ejTreeGrid");
+        treeGridObj.exportGrid = this["export"];
         if (id == "TreeGridContainer_pdfExport") {
-            treegridObj.exportGrid(window.baseurl + 'api/TreeGrid/PdfExport', "", false);
+            treeGridObj.exportGrid(window.baseurl + 'api/TreeGrid/PdfExport', "", false);
             sender.cancel = true;
         }
         if (id == "TreeGridContainer_excelExport") {
-            treegridObj.exportGrid(window.baseurl + 'api/TreeGrid/ExcelExport', "", false);
+            treeGridObj.exportGrid(window.baseurl + 'api/TreeGrid/ExcelExport', "", false);
             sender.cancel = true;
         }
     }
@@ -86,8 +86,8 @@ public class TreeGridController : ApiController
             string treeGridModel = HttpContext.Current.Request.Params["TreeGridModel"];
             TreeGridProperties treeGridProperty = ConvertGridObject(treeGridModel);
             PdfExport exp = new PdfExport();
-            TaskDetailsCollection tc = new TaskDetailsCollection();
-            IEnumerable<TaskDetails> data = tc.GetDataSource();
+            TaskDetailsCollection taskCollection = new TaskDetailsCollection();
+            IEnumerable<TaskDetails> data = taskCollection.GetDataSource();
             TreeGridExportSettings settings = new TreeGridExportSettings();
             settings.Theme = ExportTheme.FlatAzure;
             exp.Export(treeGridProperty, data, settings, "Export");
@@ -99,8 +99,8 @@ public class TreeGridController : ApiController
             string treeGridModel = HttpContext.Current.Request.Params["TreeGridModel"];
             TreeGridProperties treeGridProperty = ConvertGridObject(treeGridModel);
             ExcelExport exp = new ExcelExport();
-            TaskDetailsCollection tc = new TaskDetailsCollection();
-            IEnumerable<TaskDetails> data = tc.GetDataSource();
+            TaskDetailsCollection taskCollection = new TaskDetailsCollection();
+            IEnumerable<TaskDetails> data = taskCollection.GetDataSource();
             exp.Export(treeGridProperty, data, "ExcelExport.xlsx", ExcelVersion.Excel2010, new TreeGridExportSettings() { Theme = ExportTheme.FlatAzure });
         }
 
@@ -109,13 +109,13 @@ public class TreeGridController : ApiController
             JavaScriptSerializer serializer = new JavaScriptSerializer();
             IEnumerable div = (IEnumerable)serializer.Deserialize(treeGridProperty, typeof(IEnumerable));
             TreeGridProperties treeGridProp = new TreeGridProperties();
-            foreach (KeyValuePair<string, object> ds in div)
+            foreach (KeyValuePair<string, object> dataSource in div)
             {
-                var property = treeGridProp.GetType().GetProperty(ds.Key, BindingFlags.Instance | BindingFlags.Public | BindingFlags.IgnoreCase);
+                var property = treeGridProp.GetType().GetProperty(dataSource.Key, BindingFlags.Instance | BindingFlags.Public | BindingFlags.IgnoreCase);
                 if (property != null)
                 {
                     Type type = property.PropertyType;
-                    string serialize = serializer.Serialize(ds.Value);
+                    string serialize = serializer.Serialize(dataSource.Value);
                     object value = serializer.Deserialize(serialize, type);
                     property.SetValue(treeGridProp, value, null);
                 }
@@ -168,8 +168,8 @@ public void ExcelExport()
   string treeGridModel = HttpContext.Current.Request.Params["TreeGridModel"];
   TreeGridProperties treeGridProperty = ConvertGridObject(treeGridModel);
   ExcelExport exp = new ExcelExport();
-  TaskDetailsCollection tc = new TaskDetailsCollection();
-  IEnumerable<TaskDetails> data = tc.GetDataSource();
+  TaskDetailsCollection taskCollection = new TaskDetailsCollection();
+  IEnumerable<TaskDetails> data = taskCollection.GetDataSource();
   exp.Export(gridProperty, data, "ExcelExport.xlsx", ExcelVersion.Excel2010, new TreeGridExportSettings() { Theme = ExportTheme.FlatAzure });
 } 
 

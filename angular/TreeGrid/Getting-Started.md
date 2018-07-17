@@ -64,13 +64,13 @@ import { Component } from '@angular/core';
 
 @Component({
   selector: 'ej-app',
-  templateUrl: 'app/components/treegrid/treegrid.component.html',
-  styleUrls: ['app/components/treegrid/treegrid.component.css'], 
+  templateUrl: 'app/components/treeGrid/treeGrid.component.html',
+  styleUrls: ['app/components/treeGrid/treeGrid.component.css'], 
 })
 
 export class DefaultComponent {
 
-    this.treegridData =  [{
+    this.treeGridData =  [{
          taskID: 1,
          taskName: "Planning",
          startDate: "02/03/2014",
@@ -112,12 +112,12 @@ Before adding router configuration for above created ejTreeGrid component, we re
 {% highlight javascript %}
 import { Routes } from '@angular/router';
 . . . . 
-import { TreeGridComponent } from './treegrid/treegrid.component';
+import { TreeGridComponent } from './treeGrid/treeGrid.component';
 
 export const rootRouterConfig: Routes = [
     { path: '', redirectTo: 'home', pathMatch: 'full' },
     . . . . 
-    { path: 'treegrid', component: TreeGridComponent }
+    { path: 'treeGrid', component: TreeGridComponent }
 ];
 {% endhighlight %}
 
@@ -127,8 +127,8 @@ export const rootRouterConfig: Routes = [
 
 import { NgModule, enableProdMode, ErrorHandler } from '@angular/core';
 . . . . . 
-import { EJ_TREEGRID_COMPONENTS } from './ej/treegrid.component';
-import { TreeGridComponent } from './treegrid/treegrid.component';
+import { EJ_TREEGRID_COMPONENTS } from './ej/treeGrid.component';
+import { TreeGridComponent } from './treeGrid/treeGrid.component';
 
 import { rootRouterConfig } from './app.routes';
 . . . . 
@@ -170,7 +170,7 @@ You can enable Editing in TreeGrid by using the [`editSettings`](http://help.syn
 {% highlight html %}
 
 <ej-treegrid id="TreeGridControl" 
-    [editSettings]="editsettings"
+    [editSettings]="editSettings"
    >
 </ej-treegrid>
 
@@ -182,12 +182,12 @@ import { Component } from '@angular/core';
 
 @Component({
   selector: 'ej-app',
-  templateUrl: 'app/components/treegrid/treegrid.component.html',
-  styleUrls: ['app/components/treegrid/treegrid.component.css'], 
+  templateUrl: 'app/components/treeGrid/treeGrid.component.html',
+  styleUrls: ['app/components/treeGrid/treeGrid.component.css'], 
 })
 
 export class DefaultComponent {
-     this.editsettings = {
+     this.editSettings = {
             allowAdding: true,
             allowEditing: true,
             allowDeleting: true,
@@ -205,7 +205,7 @@ And also, the following editors are provided for editing support in TreeGrid con
 * numeric
 * dropdown
 * datepicker
-* datetimepicker
+* dateTimePicker
 
 You can set the editor type for a particular column as follows.
 
