@@ -455,3 +455,67 @@ import {Component, ViewEncapsulation, ViewChild } from '@angular/core';
 
 The following output is displayed as a result of the above code example.
 ![](Display-Other-controls/Display_Other_controls_img1.png)
+
+
+## Getting Datasource of Grid in Sorted Order
+
+Grid column can be sorted and after sorting, the datasource can be obtained in the same order using `sortBy` query and `executeLocal` method of DataManager.
+
+The following code example describes the above behavior.
+
+{% tabs %}
+
+{% highlight html %}
+
+<input type="button" ej-button id="button1" value="GetSortedData" (ejclick)="GetSortedData($event)" />
+
+<ej-grid #grid  [dataSource]="gridData" [allowPaging]="true" [allowSorting]="true" [allowMultiSorting]="true">
+      
+  <e-columns>     
+      <e-column field="OrderID" headerText="OrderID" width="75" textAlign="right"></e-column>
+      <e-column field="EmployeeID" headerText="EmployeeID" width="90" textAlign="right"></e-column>
+      <e-column field="CustomerID" headerText="CustomerID" width="90" textAlign="right"></e-column>
+  </e-columns>  
+
+</ej-grid>
+  
+{% endhighlight %}
+  
+{% highlight ts %}
+
+import {Component, ViewEncapsulation,ViewChild} from '@angular/core';
+
+import {CommonModule} from "@angular/common";
+
+@Component({
+    selector: 'ej-app',
+    templateUrl: 'src/grid/grid.component.html',
+})
+export class GridComponent {
+    public gridData;
+    constructor()
+    {
+       //The datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
+       this.gridData = window.gridData;
+            
+    }
+
+    GetSortedData(e: any){
+            var obj = $(".e-grid").ejGrid("instance");   
+            var Sort = obj.model.sortSettings.sortedColumns;  
+            var query = ej.Query();               
+            if(obj.model.sortSettings.sortedColumns.length){
+                for(var i=Sort.length-1;i>=0;i--){        
+                  query.sortBy(Sort[i].field, Sort[i].direction); 
+                }
+            var SortedDatasource = ej.DataManager(obj.model.dataSource()).executeLocal(query); 
+                  console.log(SortedDatasource); 
+            }
+        }
+}
+	
+{% endhighlight %}
+
+{% endtabs %}
+
+N>  This solution will work only for local data.
