@@ -88,7 +88,7 @@ In this case only the visible records in the current page will be send to printi
 
 ## beforePrint Event 
 
-beforePrint event will be triggered once after printing initiated in TreeGrid. This event contains the treegrid element which is going to be printing. The following code explains this.
+beforePrint event will be triggered once after printing initiated in TreeGrid. This event contains the TreeGrid element which is going to be printing. The following code explains this.
 
 {% highlight javascript %}
 
@@ -118,7 +118,7 @@ export class AppComponent {
         }
     }
     beforePrint(sender) {
-        // willbe triggered before printing the TreeGrid
+        // will be triggered before printing the TreeGrid
     }
 }
 
