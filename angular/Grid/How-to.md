@@ -283,19 +283,19 @@ The following code example explains the above behavior.
         <td><b>CRUD</b><br><input type="button" ej-button id="Addrecord" text="Addrecord" (click)="addRecord($event)"/>
                             <input type="button" ej-button id="Updaterecord" text="Updaterecord" (click)="updateRecord($event)"/>
                             <input type="button" ej-button id="DeleteRecord" text="DeleteRecord" (click)="deleteRecord($event)"/></td>
-        <td><b>Filtering</b><br><br><input type="text" id="filterone" /><input type="text" id="filtertwo" /><input type="button" ej-button id="filteri" text="Filter" (click)="Filterfn($event)"/><input type="button" ej-button id="ClearFilter" text="Clear" (click)="clearfilterfn($event)"/></td>
-        <input id="filtercolumnone" ej-dropdownlist [watermarkText]="watermarkone" [targetID]="OrderList"/><div id="Order"><ul><li>10248</li><li>10249</li><li>10250</li><li>10251</li><li>10252</li></ul></div>
-        <input id="filtercolumntwo" ej-dropdownlist [watermarkText]="watermarktwo" [targetID]="EmployeeList"/><div id="Employee"><ul><li>1</li><li>2</li><li>3</li><li>4</li><li>5</li></ul></div>
+        <td><b>Filtering</b><br><br><input type="text" id="filterone" /><input type="text" id="filtertwo" /><input type="button" ej-button id="filteri" text="Filter" (click)="FilterFn($event)"/><input type="button" ej-button id="ClearFilter" text="Clear" (click)="clearfilterfn($event)"/></td>
+        <input id="filterColumnOne" ej-dropdownlist [watermarkText]="waterMarkOne" [targetID]="OrderList"/><div id="Order"><ul><li>10248</li><li>10249</li><li>10250</li><li>10251</li><li>10252</li></ul></div>
+        <input id="filterColumnTwo" ej-dropdownlist [watermarkText]="waterMarkTwo" [targetID]="EmployeeList"/><div id="Employee"><ul><li>1</li><li>2</li><li>3</li><li>4</li><li>5</li></ul></div>
         <td><b>Grouping</b><br><br>
-            <input id="groupcolumnname" ej-dropdownlist [targetID]="columnNameList" [selectedIndex]="index"/><div id="columnName"><ul><li>OrderID</li><li>CustomerID</li><li>Freight</li><li>Verified</li><li>ShipName</li></ul></div><br>
-            <input type="button" ej-button id="groupColumn" text="GroupColumn" (click)="clicktoGroup($event)"/>
-            <input type="button" ej-button id="unGroupColumn" text="UnGroupColumn" (click)="clicktoGroup($event)"/>
+            <input id="groupColumnName" ej-dropdownlist [targetID]="columnNameList" [selectedIndex]="index"/><div id="columnName"><ul><li>OrderID</li><li>CustomerID</li><li>Freight</li><li>Verified</li><li>ShipName</li></ul></div><br>
+            <input type="button" ej-button id="groupColumn" text="GroupColumn" (click)="clickToGroup($event)"/>
+            <input type="button" ej-button id="unGroupColumn" text="UnGroupColumn" (click)="clickToGroup($event)"/>
         </td>
         <td><b>Sorting</b><br><br>
             <input id="SortColumnName" ej-dropdownlist [targetID]="sortcolumnNameList" [selectedIndex]="index"/><div id="sortcolumnName"><ul><li>Order ID</li><li>Customer ID</li><li>Employee ID</li><li>Freight</li><li>Ship City</li></ul></div>
             <input id="Directions" ej-dropdownlist [targetID]="directionsList" [selectedIndex]="index"/><div id="directions"><ul><li>Ascending</li><li>Descending</li></ul></div>
-            <input type="button" ej-button id="doSorting" text="Sort" (click)="Sortfn($event)"/>
-            <input type="button" ej-button id="clearSort" text="Clear" (click)="clearsortfn($event)"/>
+            <input type="button" ej-button id="doSorting" text="Sort" (click)="SortFn($event)"/>
+            <input type="button" ej-button id="clearSort" text="Clear" (click)="clearSortFn($event)"/>
         </td>
     </tr>
 </table>
@@ -323,10 +323,10 @@ import {Component, ViewEncapsulation, ViewChild } from '@angular/core';
         @ViewChild("grid") gridIns: EJComponents<any, any>;  
         editSettings:any;
         directionsList:any;
-        sortcolumnNameList:any;
+        sortColumnNameList:any;
         columnNameList:any;
-        watermarkone:string;
-        watermarktwo:string;
+        waterMarkOne:string;
+        waterMarkTwo:string;
         EmployeeList:any;
         index:number;
         OrderList:any;
@@ -338,12 +338,12 @@ import {Component, ViewEncapsulation, ViewChild } from '@angular/core';
             this.editSettings={allowEditing:true,allowAdding:true,allowDeleting:true };
             this.toolbarSettings={ showToolbar: true,toolbarItems: ["add","edit","update","cancel"]};
             this.directionsList="directions";
-            this.sortcolumnNameList="sortcolumnName";
+            this.sortColumnNameList="sortColumnName";
             this.columnNameList="columnName";
             this.EmployeeList="Employee";
             this.OrderList="Order";
-            this.watermarkone="Slect filter value one";
-            this.watermarktwo="Slect filter value two";
+            this.waterMarkOne="Select filter value one";
+            this.waterMarkTwo="Select filter value two";
             this.index=0;
          }
          addRecord() {
@@ -355,7 +355,7 @@ import {Component, ViewEncapsulation, ViewChild } from '@angular/core';
          deleteRecord() {
             this.Grid.widget.deleteRecord("OrderID", { OrderID: this.Grid.widget.model.dataSource_two[this.Grid.widget.model.selectedRowIndex].OrderID });
          }
-         Filterfn(args) {
+         FilterFn(args) {
             var obj = $('#FlatGrid').data("ejGrid");
             var one = $('#filtercolumnone').data("ejDropDownList");
             var two = $('#filtercolumntwo').data("ejDropDownList");
@@ -363,13 +363,13 @@ import {Component, ViewEncapsulation, ViewChild } from '@angular/core';
             var Two = two.getValue();
             this.Grid.widget.filterColumn([{field:"OrderID",operator:"equal",value:One,predicate:"and", matchcase:true},{field:"EmployeeID",operator:"equal",value:Two,predicate:"and", matchcase:true}]);
          }
-         clearfilterfn(args) {
+         clearFilterFn(args) {
             this.Grid.widget.clearFiltering();
          }
-         clearsortfn(args) {
+         clearSortFn(args) {
                         this.Grid.widget.clearSorting();
          }
-         Sortfn(args) {
+         SortFn(args) {
                 var sortdo = $('#doSorting').data("ejButton");
                 if (sortdo._id == "doSorting") {
                     var name = $('#SortColumnName').data("ejDropDownList");
@@ -379,8 +379,8 @@ import {Component, ViewEncapsulation, ViewChild } from '@angular/core';
                 this.Grid.widget.sortColumn(columnName, sortDirection);
             }
          }
-         clicktoGroup(args) {
-            var columnName = $("#groupcolumnname").ejDropDownList("getSelectedValue");
+         clickToGroup(args) {
+            var columnName = $("#groupColumnName").ejDropDownList("getSelectedValue");
             if (args.srcElement.id == "groupColumn") {
                 this.Grid.widget.groupColumn(columnName);
                     $("#groupColumn").ejButton("disable");
@@ -393,8 +393,8 @@ import {Component, ViewEncapsulation, ViewChild } from '@angular/core';
                 $("#groupColumn").ejButton("enable");
             }
          }
-         Onchange() {
-            var columnName = $("#groupcolumnname").ejDropDownList("getSelectedValue");
+         OnChange() {
+            var columnName = $("#groupColumnName").ejDropDownList("getSelectedValue");
             if ($.inArray(columnName, this.Grid.widget.model.groupSettings.groupedColumns) != -1) {
                 $("#unGroupColumn").ejButton("enable");
                 $("#groupColumn").ejButton("disable");
