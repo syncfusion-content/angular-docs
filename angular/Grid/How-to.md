@@ -283,7 +283,7 @@ The following code example explains the above behavior.
         <td><b>CRUD</b><br><input type="button" ej-button id="Addrecord" text="Addrecord" (click)="addRecord($event)"/>
                             <input type="button" ej-button id="Updaterecord" text="Updaterecord" (click)="updateRecord($event)"/>
                             <input type="button" ej-button id="DeleteRecord" text="DeleteRecord" (click)="deleteRecord($event)"/></td>
-        <td><b>Filtering</b><br><br><input type="text" id="filterone" /><input type="text" id="filtertwo" /><input type="button" ej-button id="filteri" text="Filter" (click)="FilterFn($event)"/><input type="button" ej-button id="ClearFilter" text="Clear" (click)="clearfilterfn($event)"/></td>
+        <td><b>Filtering</b><br><br><input type="text" id="filterone" /><input type="text" id="filtertwo" /><input type="button" ej-button id="filteri" text="Filter" (click)="FilterFunction($event)"/><input type="button" ej-button id="ClearFilter" text="Clear" (click)="clearfilterfn($event)"/></td>
         <input id="filterColumnOne" ej-dropdownlist [watermarkText]="waterMarkOne" [targetID]="OrderList"/><div id="Order"><ul><li>10248</li><li>10249</li><li>10250</li><li>10251</li><li>10252</li></ul></div>
         <input id="filterColumnTwo" ej-dropdownlist [watermarkText]="waterMarkTwo" [targetID]="EmployeeList"/><div id="Employee"><ul><li>1</li><li>2</li><li>3</li><li>4</li><li>5</li></ul></div>
         <td><b>Grouping</b><br><br>
@@ -294,8 +294,8 @@ The following code example explains the above behavior.
         <td><b>Sorting</b><br><br>
             <input id="SortColumnName" ej-dropdownlist [targetID]="sortcolumnNameList" [selectedIndex]="index"/><div id="sortcolumnName"><ul><li>Order ID</li><li>Customer ID</li><li>Employee ID</li><li>Freight</li><li>Ship City</li></ul></div>
             <input id="Directions" ej-dropdownlist [targetID]="directionsList" [selectedIndex]="index"/><div id="directions"><ul><li>Ascending</li><li>Descending</li></ul></div>
-            <input type="button" ej-button id="doSorting" text="Sort" (click)="SortFn($event)"/>
-            <input type="button" ej-button id="clearSort" text="Clear" (click)="clearSortFn($event)"/>
+            <input type="button" ej-button id="doSorting" text="Sort" (click)="SortFunction($event)"/>
+            <input type="button" ej-button id="clearSort" text="Clear" (click)="clearSortFunction($event)"/>
         </td>
     </tr>
 </table>
@@ -355,23 +355,23 @@ import {Component, ViewEncapsulation, ViewChild } from '@angular/core';
          deleteRecord() {
             this.Grid.widget.deleteRecord("OrderID", { OrderID: this.Grid.widget.model.dataSource_two[this.Grid.widget.model.selectedRowIndex].OrderID });
          }
-         FilterFn(args) {
+         FilterFunction(args) {
             var obj = $('#FlatGrid').data("ejGrid");
-            var one = $('#filtercolumnone').data("ejDropDownList");
-            var two = $('#filtercolumntwo').data("ejDropDownList");
+            var one = $('#filterColumnOne').data("ejDropDownList");
+            var two = $('#filterColumnTwo').data("ejDropDownList");
             var One = one.getValue();
             var Two = two.getValue();
             this.Grid.widget.filterColumn([{field:"OrderID",operator:"equal",value:One,predicate:"and", matchcase:true},{field:"EmployeeID",operator:"equal",value:Two,predicate:"and", matchcase:true}]);
          }
-         clearFilterFn(args) {
+         clearFilterFunction(args) {
             this.Grid.widget.clearFiltering();
          }
-         clearSortFn(args) {
+         clearSortFunction(args) {
                         this.Grid.widget.clearSorting();
          }
-         SortFn(args) {
-                var sortdo = $('#doSorting').data("ejButton");
-                if (sortdo._id == "doSorting") {
+         SortFunction(args) {
+                var sortDo = $('#doSorting').data("ejButton");
+                if (sortDo._id == "doSorting") {
                     var name = $('#SortColumnName').data("ejDropDownList");
                 var direction = $('#Directions').data("ejDropDownList");
                 var columnName = name.getValue().replace(/\s*/g, "");
