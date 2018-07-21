@@ -228,3 +228,5 @@ export class AppComponent {
 The following output is displayed as a result of the above code example.
 
 ![](sorting_images/sorting_img5.png)
+
+N> To get the sorted data of the grid after sorting a column you can refer the [`How To`](https://help.syncfusion.com/angular/grid/how-to "Getting Datasource of Grid in Sorted Order").
