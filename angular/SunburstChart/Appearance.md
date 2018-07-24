@@ -37,7 +37,7 @@ The Sunburst Chart supports different themes.
 *	Lime
 *	LimeDark
 *	Saffron
-*	Saffrondark
+*	SaffronDark
 *	Gradient-Azure
 *	Gradient-AzureDark
 *	Gradient-lime

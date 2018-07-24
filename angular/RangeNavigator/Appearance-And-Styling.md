@@ -183,7 +183,7 @@ this.labelSettings = {
 5. Azure                      
 6. AzureDark               
 7. Lime 
-8. Limedark
+8. LimeDark
 9. Saffron
 10. SaffronDark
 11. GradientAzure
