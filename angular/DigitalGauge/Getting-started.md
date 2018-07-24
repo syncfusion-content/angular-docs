@@ -181,7 +181,7 @@ export const rootRouterConfig: Routes = [
 ];
 {% endhighlight %}
 
-* Import and declare the Syncfusion source component and ejdigitalgauge sample component into `app.module.ts` like the below code snippet.
+* Import and declare the Syncfusion source component and ejDigitalGauge sample component into `app.module.ts` like the below code snippet.
 
 {% highlight ts %}
 import { NgModule, enableProdMode, ErrorHandler } from '@angular/core';
@@ -256,7 +256,7 @@ You can customize the **Digital Gauge** using different properties.
 <ej-digitalgauge id="digitalGauge" [height]="145" [width]="260">
     <e-digitalgauge-items>
         <e-digitalgauge-item value='"102"' [segmentSettings.width]="2" [segmentSettings.length]="20"
-             characterSettings.type="sevensegment" [characterSettings.spacing]="12">
+             characterSettings.type="SevenSegment" [characterSettings.spacing]="12">
         </e-digitalgauge-item>
     </e-digitalgauge-items>
 </ej-digitalgauge>
@@ -313,30 +313,30 @@ You can add **Items collection** to display the temperature value as used in the
                        frame.backgroundImageUrl="Content/ej/web/common-images/frame.png">
     <e-digitalgauge-items>
         <e-digitalgauge-item value='"102"' [segmentSettings.width]="2" [segmentSettings.length]="20"
-           characterSettings.type="sevensegment" [characterSettings.spacing]="12" [position.x]="0"
+           characterSettings.type="SevenSegment" [characterSettings.spacing]="12" [position.x]="0"
            [position.y]="12">
         </e-digitalgauge-item>
         <e-digitalgauge-item value='"0"' [segmentSettings.width]="2" [segmentSettings.length]="5" 
-            [segmentSettings.spacing]="0" characterSettings.type="sevensegment"
+            [segmentSettings.spacing]="0" characterSettings.type="SevenSegment"
             [characterSettings.spacing]="5" [position.x]="77" [position.y]="7">
         </e-digitalgauge-item>
         <e-digitalgauge-item value="F" [segmentSettings.width]="2" [segmentSettings.length]="20" 
-            [segmentSettings.spacing]="0" characterSettings.type="sevensegment" 
+            [segmentSettings.spacing]="0" characterSettings.type="SevenSegment" 
             [characterSettings.spacing]="12" [position.x]="216" [position.y]="12">
         </e-digitalgauge-item>
         <e-digitalgauge-item value='"38"' [segmentSettings.width]="1" [segmentSettings.length]="5" 
             [segmentSettings.spacing]="0" segmentSettings.color="#F5b43f"
-            characterSettings.type="sevensegment" [characterSettings.spacing]="12" [position.x]="60"
+            characterSettings.type="SevenSegment" [characterSettings.spacing]="12" [position.x]="60"
             [position.y]="68">
         </e-digitalgauge-item>
         <e-digitalgauge-item value='"0"' [segmentSettings.width]="2" [segmentSettings.length]="2"
             [segmentSettings.spacing]="0" segmentSettings.color="#F5b43f"
-            characterSettings.type="sevensegment" [characterSettings.spacing]="12" [position.x]="82"
+            characterSettings.type="SevenSegment" [characterSettings.spacing]="12" [position.x]="82"
              [position.y]="65">
         </e-digitalgauge-item>
         <e-digitalgauge-item value="c" [segmentSettings.width]="2" [segmentSettings.length]="4"
              [segmentSettings.spacing]="0" segmentSettings.color="#F5b43f"
-                  characterSettings.type="sevensegment" [characterSettings.spacing]="12" [position.x]="110"
+                  characterSettings.type="SevenSegment" [characterSettings.spacing]="12" [position.x]="110"
                    [position.y]="68">
         </e-digitalgauge-item>
     </e-digitalgauge-items>
