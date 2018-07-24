@@ -53,7 +53,7 @@ The following code shows how to set Hide and Trim mode.
 ![](DataLabel_images/DataLabel_img3.png)
 
 ## Label Rotation Mode
-You can rotate the data label by using `labelrotationmode` property. By default, the labelRotationMode is set as **angle**. 
+You can rotate the data label by using `labelRotationMode` property. By default, the labelRotationMode is set as **angle**. 
 
 The following code shows how to set labelRotationMode as normal and angle.
 

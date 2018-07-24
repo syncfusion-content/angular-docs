@@ -28,29 +28,29 @@ The Sunburst Chart rendered with palette colors
  
 ## Built- in Themes
 The Sunburst Chart supports different themes. 
-*	flatlight
-*	flatdark
-*	gradientlight
-*	gradientdark
-*	azure
-*	azuredark
-*	lime
-*	limedark
-*	saffron
-*	saffrondark
-*	gradient-azure
-*	gradient-azuredark
-*	gradient-lime
-*	gradient-limedark
-*	gradient-saffron
-*	gradient-saffrondark
+*	FlatLight
+*	FlatDark
+*	GradientLight
+*	GradientDark
+*	Azure
+*	AzureDark
+*	Lime
+*	LimeDark
+*	Saffron
+*	Saffrondark
+*	Gradient-Azure
+*	Gradient-AzureDark
+*	Gradient-lime
+*	Gradient-LimeDark
+*	Gradient-Saffron
+*	Gradient-SaffronDark
 
-You can set your desired theme by using the **e-theme** property. **Flat light** is the default theme used in the Sunburst Chart.
+You can set your desired theme by using the **e-theme** property. **FlatLight** is the default theme used in the Sunburst Chart.
 
 {% highlight js %}
 
 
-<ej-sunburstchart id="sunburst"  theme="flatdark">
+<ej-sunburstchart id="sunburst"  theme="FlatDark">
 </ej-sunburstchart>
 
 {% endhighlight %}
