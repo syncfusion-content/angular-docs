@@ -1195,7 +1195,7 @@ Also, using 'DataOperations' helper class you can perform grid action at server 
 7. PerformSelect
 8. Execute
 
-### Remotesave Adaptor:
+### RemoteSaveAdaptor:
 
 RemoteSaveAdaptor is used for binding local data and performs all data operations in client-side. It interacts with server-side only for CRUD operations to pass the modified records.
 
@@ -1295,7 +1295,7 @@ Parameters Table
                 added
             </td>
             <td rowspan="3">
-                public ActionResult BatchUpdate(string action, List &lt;editableorder&gt; added, List &lt;editableorder&gt; changed, List &lt;editableorder&gt; deleted, int? key){ }
+                public ActionResult BatchUpdate(string action, List &lt;EditableOrder&gt; added, List &lt;EditableOrder&gt; changed, List &lt;EditableOrder&gt; deleted, int? key){ }
             </td>
         </tr>
         <tr>
