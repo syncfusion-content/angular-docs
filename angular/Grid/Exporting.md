@@ -13,7 +13,7 @@ To export the grid, `export` method should  be called with export mapper as para
 
 {% highlight html %}
 
-<ej-grid #grid [allowPaging]="true" [dataSource]="gridData" [toolbarSettings]="toolbarsettings" [allowSorting]="true" (toolbarClick)="toolbar($event)">
+<ej-grid #grid [allowPaging]="true" [dataSource]="gridData" [toolbarSettings]="toolbarSettings" [allowSorting]="true" (toolbarClick)="toolbar($event)">
 
     <e-columns>
         <e-column field="OrderID" headertext="Order ID" width="75" textalign="right"></e-column>
@@ -37,7 +37,7 @@ import {Component, ViewEncapsulation} from '@angular/core';
     export class AppComponent {
         public gridData;
 
-	    public toolbarsettings;
+	    public toolbarSettings;
 
         toolbar(e:any){
                 if (e.itemName == "Excel Export") {
@@ -60,7 +60,7 @@ import {Component, ViewEncapsulation} from '@angular/core';
 
        this.gridData = new ej.DataManager({ url: "http://mvc.syncfusion.com/Services/Northwnd.svc/Orders" });
 
-       this.toolbarsettings = { showToolbar: true, toolbarItems: ["excelExport", "wordExport", "pdfExport"] }
+       this.toolbarSettings = { showToolbar: true, toolbarItems: ["excelExport", "wordExport", "pdfExport"] }
 
        }
     }
@@ -450,7 +450,7 @@ You can modify the template column of exporting files using server events. The c
 
 {% highlight html %}
 
-<ej-grid #grid [dataSource]="gridData" [allowPaging]="true" [toolbarSettings]="toolbarsettings" (toolbarClick)="toolbar($event)">
+<ej-grid #grid [dataSource]="gridData" [allowPaging]="true" [toolbarSettings]="toolbarSettings" (toolbarClick)="toolbar($event)">
     <e-columns>
         <e-column headerText="Photo">
             <ng-template e-template let-data>
@@ -476,7 +476,7 @@ import {Component, ViewEncapsulation} from '@angular/core';
     export class AppComponent {
         public gridData;
 
-	    public toolbarsettings;
+	    public toolbarSettings;
 
         toolbar(e:any){
 
@@ -500,7 +500,7 @@ import {Component, ViewEncapsulation} from '@angular/core';
 
        this.gridData = new ej.DataManager({ url: "http://mvc.syncfusion.com/Services/Northwnd.svc/Employees" });
 
-       this.toolbarsettings = { showToolbar: true, toolbarItems: ["excelExport", "wordExport", "pdfExport"] }
+       this.toolbarSettings = { showToolbar: true, toolbarItems: ["excelExport", "wordExport", "pdfExport"] }
 
       }
    }
@@ -652,7 +652,7 @@ You can modify the detailTemplate of exporting files using server events. The co
 
 {% highlight html %}
 
-<ej-grid #grid [allowPaging]="true" [allowSorting]="true" [dataSource]="gridData" [detailsTemplate]="temp" [allowPaging]="true" [toolbarSettings]="toolbarsettings" (toolbarClick)="toolbar($event)">
+<ej-grid #grid [allowPaging]="true" [allowSorting]="true" [dataSource]="gridData" [detailsTemplate]="temp" [allowPaging]="true" [toolbarSettings]="toolbarSettings" (toolbarClick)="toolbar($event)">
     <e-columns>
          <e-column field="EmployeeID" headerText="EmployeeID"></e-column>
         <e-column field="FirstName" headerText="FirstName"></e-column>
@@ -661,7 +661,7 @@ You can modify the detailTemplate of exporting files using server events. The co
     </e-columns>    
     <ng-template e-details-template let-data>
         <div>
-        <b> More Details: </b> <br /><br /> <b class='detail'>Last Name</b> - data.LastName <br /> <br /> <b class='detail'>Home Phone</b> - data.HomePhone <br /> <br /> <b class='detail'>Exten No</b> - data.Extension
+        <b> More Details: </b> <br /><br /> <b class='detail'>Last Name</b> - data.LastName <br /> <br /> <b class='detail'>Home Phone</b> - data.HomePhone <br /> <br /> <b class='detail'>Extension No.</b> - data.Extension
         </div>
     </ng-template>
 </ej-grid>
@@ -678,7 +678,7 @@ import {Component, ViewEncapsulation} from '@angular/core';
     export class AppComponent {
         public gridData;
 
-	    public toolbarsettings;
+	    public toolbarSettings;
 
         temp: any;
 
@@ -704,7 +704,7 @@ import {Component, ViewEncapsulation} from '@angular/core';
 
        this.gridData = new ej.DataManager({ url: "http://mvc.syncfusion.com/Services/Northwnd.svc/Employees" });
 
-       this.toolbarsettings = { showToolbar: true, toolbarItems: ["excelExport", "wordExport", "pdfExport"] };
+       this.toolbarSettings = { showToolbar: true, toolbarItems: ["excelExport", "wordExport", "pdfExport"] };
 
        this.temp = "#template";
 
@@ -828,11 +828,11 @@ private GridProperties ConvertGridObject(string gridProperty)
 
 Grid will be exported with its child Grid. This can be achieved by enabling `IncludeChildGrid` property of the respective Exporting classes like `GridExcelExport`, `GridWordExport` and `GridPdfExport` and include the dataSource needed for ChildGrid in the GridProperties object after deserializing them. Remaining procedures will be same as the normal Grid Exporting.
 
-N> Excel File will be exported in the collapsed state with the expand/collapse icon whereas other file-formats like Pdf and Word will be exported in expanded state.
+N> Excel File will be exported in the collapsed state with the expand/collapse icon whereas other file-formats like PDF and Word will be exported in expanded state.
 
 {% highlight html %}
 
-<ej-grid id="Grid"  [allowPaging]="true"  [dataSource]="gridData" [toolbarSettings]="toolbarsettings" [exportToWordAction]= "exportWord" [exportToExcelAction]= "exportExcel" [exportToPdfAction]= "exportPdf"   [childGrid]="childData"  >
+<ej-grid id="Grid"  [allowPaging]="true"  [dataSource]="gridData" [toolbarSettings]="toolbarSettings" [exportToWordAction]= "exportWord" [exportToExcelAction]= "exportExcel" [exportToPdfAction]= "exportPdf"   [childGrid]="childData"  >
     <e-columns>
         <e-column field="EmployeeID" headerText="Employee ID"  width="85" textAlign="right"></e-column>
         <e-column field="FirstName" headerText="First Name" textAlign="left"  width="100"></e-column>
@@ -856,7 +856,7 @@ import { Component } from '@angular/core';
 export class GridComponent {
     public gridData: any;
     public childData: any;    
-    public toolbarsettings;
+    public toolbarSettings;
     public exportPdf =  "http://js.syncfusion.com/ExportingServices/api/JSGridExport/HierarchyPdfExport";
     public exportWord = "http://js.syncfusion.com/ExportingServices/api/JSGridExport/HierarchyWordExport";
     public exportExcel =  "http://js.syncfusion.com/ExportingServices/api/JSGridExport/HierarchyExcelExport";
@@ -864,7 +864,7 @@ export class GridComponent {
 		@ViewChild('grid') Grid: EJComponents<any, any>;
         this.gridData = (window as any).employeeView;
 		
-        this.toolbarsettings = { showToolbar: true, toolbarItems: ["excelExport", "wordExport", "pdfExport"] }
+        this.toolbarSettings = { showToolbar: true, toolbarItems: ["excelExport", "wordExport", "pdfExport"] }
         this.childData = {
             dataSource: ej.DataManager({ url: "http://js.syncfusion.com/demos/ejServices/Wcf/Northwind.svc/Orders", crossDomain: true, offline: true }),
             queryString: "EmployeeID",
@@ -893,17 +893,17 @@ export class GridComponent {
             JavaScriptSerializer serializer = new JavaScriptSerializer();
             IEnumerable div = (IEnumerable)serializer.Deserialize(gridProperty, typeof(IEnumerable));
             GridProperties gridProp = new GridProperties();
-            foreach (KeyValuePair<string, object> ds in div)
+            foreach (KeyValuePair<string, object> data in div)
             {
-                var property = gridProp.GetType().GetProperty(ds.Key, BindingFlags.Instance | BindingFlags.Public | BindingFlags.IgnoreCase);
+                var property = gridProp.GetType().GetProperty(data.Key, BindingFlags.Instance | BindingFlags.Public | BindingFlags.IgnoreCase);
                 if (property != null)
                 {
                     Type type = property.PropertyType;
                     object value = null;
-                    string serialize = serializer.Serialize(ds.Value);
-                    if (ds.Key == "childGrid" && ds.Value != null)
+                    string serialize = serializer.Serialize(data.Value);
+                    if (data.Key == "childGrid" && data.Value != null)
                         value = ConvertGridObject(serialize);
-                    else if (ds.Key == "query")
+                    else if (data.Key == "query")
                         continue;
                     else
                         value = serializer.Deserialize(serialize, type);
