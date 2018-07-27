@@ -27,7 +27,7 @@ To getting started with Syncfusion Angular Components, the NPM packages [ej-angu
 
 * [Node JS](https://nodejs.org/en/)(v6.x.x or higher)
 * [NPM](http://blog.npmjs.org/post/85484771375/how-to-install-npm)(v4.x.x or higher)
-* [.NET Core SDK 2.1.302](https://www.microsoft.com/net/download/core#/current)
+* [.NET Core SDK 2.1.*](https://www.microsoft.com/net/download/core#/current)
 
 ## Install the SPA Template
 
