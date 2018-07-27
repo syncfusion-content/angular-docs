@@ -54,7 +54,8 @@ dotnet new angular
 {% highlight javascript %}
 
 dotnet restore
-npm install // Run this command in ClientApp folder
+cd ClientApp
+npm install
 
 {% endhighlight %}
 
@@ -137,7 +138,6 @@ window['$'] = jquery;
       "styles": [
         "styles.css",
         "../node_modules/bootstrap/dist/css/bootstrap.min.css",
-        // Here we have referred Syncfusion Theme
         "./../node_modules/syncfusion-javascript/Content/ej/web/office-365/ej.web.all.min.css"  
       ],
       "scripts": [],
@@ -548,10 +548,14 @@ We have prepared .NET CLI Application with the above steps. Refer to the link fo
 
 ```batch
 
-`dotnet restore` in Application folder
+`dotnet restore`
 
-`npm install` in ClientApp Folder
+cd ClientApp
 
-`dotnet run` in Application folder
+`npm install`
+
+cd..
+
+`dotnet run`
 
 ```
