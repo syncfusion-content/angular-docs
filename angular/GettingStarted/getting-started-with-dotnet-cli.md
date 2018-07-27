@@ -7,7 +7,6 @@ control: Introduction
 documentation: ug
 ---
 
-
 # Getting Started with Angular SPA on ASP.NET Core with .NET CLI
 
 ASP.NET Single Page Application(SPA) helps you to build applications that include significant client-side interactions using HTML 5, CSS 3 and JavaScript.
@@ -28,7 +27,7 @@ To getting started with Syncfusion Angular Components, the NPM packages [ej-angu
 
 * [Node JS](https://nodejs.org/en/)(v6.x.x or higher)
 * [NPM](http://blog.npmjs.org/post/85484771375/how-to-install-npm)(v4.x.x or higher)
-* [.NET Core SDK 2.0](https://www.microsoft.com/net/download/core#/current) 
+* [.NET Core SDK 2.1.302](https://www.microsoft.com/net/download/core#/current)
 
 ## Install the SPA Template
 
@@ -48,7 +47,6 @@ dotnet new angular
 
 {% endhighlight %}
 
-
 ## Install the Dependencies
 
 * To restore the .NET dependencies and install the NPM dependencies, run the below command in your root directory.
@@ -56,6 +54,7 @@ dotnet new angular
 {% highlight javascript %}
 
 dotnet restore
+cd ClientApp
 npm install
 
 {% endhighlight %}
@@ -76,7 +75,7 @@ N> To know more about environment variable refer the [link](https://blogs.msdn.m
 
 * Open the project in Visual Studio Code or Visual Studio 2017 to configure the Syncfusion Components.
 
-* To install Syncfusion JavaScript for Angular components run below commands from sample's root folder.
+* To install Syncfusion JavaScript for Angular components run below commands from `ClientApp` folder.
 
 {% highlight javascript %}
 
@@ -87,232 +86,124 @@ npm install --save-dev @types/ej.web.all
 
 {% endhighlight %}
 
-* And also include the typings `jquery` and `ej.web.all` in `tsconfig.json` file. 
+* And also include the typings `jquery` and `ej.web.all` in `ClientApp/src/tsconfig.app.json` file.
 
 {% highlight javascript %}
 
 {
+  "extends": "../tsconfig.json",
   "compilerOptions": {
+    "outDir": "../out-tsc/app",
+    "baseUrl": "./",
     "module": "es2015",
-    "moduleResolution": "node",
-    "target": "es5",
-    "sourceMap": true,
-    "experimentalDecorators": true,
-    "emitDecoratorMetadata": true,
-    "skipDefaultLibCheck": true,
-    "skipLibCheck": true, // Workaround for https://github.com/angular/angular/issues/17863. Remove this if you upgrade to a fixed version of Angular.
-    "strict": true,
-    "lib": [ "es6", "dom" ],
-    "types": [ "webpack-env",
-               "jquery",
-               "ej.web.all"
-             ]
+    "types": [
+      "jquery",
+      "ej.web.all"
+    ]
   },
-  "exclude": [ "bin", "node_modules" ],
-  "atom": { "rewriteTsconfig": false }
+  "exclude": [
+    "test.ts",
+    "**/*.spec.ts"
+  ]
 }
 
 {% endhighlight %}
 
-* Import `ej-angular2` module into `app.module.shared.ts` file.
+* Syncfusion JavaScript widgets need `window.jQuery` object to render the Angular components, since, we need to import jQuery in `ClientApp/src/polyfills.ts` file as like the below code snippet.
+
+{% highlight javascript %}
+
+import * as jquery from 'jquery';
+window['jQuery'] = jquery;
+window['$'] = jquery;
+
+{% endhighlight %}
+
+## Refer the Syncfusion Theme Files
+
+* We configured the Syncfusion Angular components and their dependencies. For the appearance we need to include `Syncfusion theme files` from `node_modules` in style section of `angular-cli.json` file. Here, we referred the `material theme`. 
+
+{% highlight javascript %}
+{
+  "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
+  "project": {
+    "name": "aspcoresample"
+  },
+  "apps": [
+    {
+      "root": "src",
+      "outDir": "dist",
+      . . .
+      . . .
+      "styles": [
+        "styles.css",
+        "../node_modules/bootstrap/dist/css/bootstrap.min.css",
+        "./../node_modules/syncfusion-javascript/Content/ej/web/office-365/ej.web.all.min.css"  
+      ],
+      "scripts": [],
+      "environmentSource": "environments/environment.ts",
+      "environments": {
+        "dev": "environments/environment.ts",
+        "prod": "environments/environment.prod.ts"
+      }
+    }
+  ],
+ . . .
+  }
+}
+
+{% endhighlight %}
+
+## Render Syncfusion Angular Component
+
+* To render any Syncfusion Angular Components into the project, we need to import `ej-angular2` module into `ClientApp/src/app/app.module.ts` file. Refer to the below code snippet.
 
 {% highlight ts %}
 
+import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-. . .
-. . .
+import { FormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
+import { RouterModule } from '@angular/router';
 import { EJAngular2Module } from 'ej-angular2';
+import { AppComponent } from './app.component';
+import { NavMenuComponent } from './nav-menu/nav-menu.component';
+import { HomeComponent } from './home/home.component';
+import { CounterComponent } from './counter/counter.component';
+import { FetchDataComponent } from './fetch-data/fetch-data.component';
 
 @NgModule({
-    declarations: [
-        AppComponent,
-        NavMenuComponent,
-        CounterComponent,
-        FetchDataComponent,
-        HomeComponent
-    ],
-    imports: [
-        CommonModule,
-        HttpModule,
-        FormsModule,
-        RouterModule.forRoot([
-            { path: '', redirectTo: 'home', pathMatch: 'full' },
-            { path: 'home', component: HomeComponent },
-            { path: 'counter', component: CounterComponent },
-            { path: 'fetch-data', component: FetchDataComponent },
-            { path: '**', redirectTo: 'home' }
-        ]),
-        EJAngular2Module.forRoot()
-    ]
+  declarations: [
+    AppComponent,
+    NavMenuComponent,
+    HomeComponent,
+    CounterComponent,
+    FetchDataComponent
+  ],
+  imports: [
+    BrowserModule.withServerTransition({ appId: 'ng-cli-universal' }),
+    HttpClientModule,
+    FormsModule,
+    RouterModule.forRoot([
+      { path: '', component: HomeComponent, pathMatch: 'full' },
+      { path: 'counter', component: CounterComponent },
+      { path: 'fetch-data', component: FetchDataComponent },
+    ]), EJAngular2Module.forRoot()
+  ],
+  providers: [],
+  bootstrap: [AppComponent]
 })
-export class AppModuleShared {
-}
+export class AppModule { }
 
-{% endhighlight %}
-
-* Syncfusion JavaScript components need jQuery to render the control, so add jQuery plugin in `webpack.config.js` file. Refer to the below code snippet.
-
-{% highlight javascript %}
-. . .
-. . .
-    const clientBundleConfig = merge(sharedConfig, {
-        entry: { 'main-client': './ClientApp/boot.browser.ts' },
-        output: { path: path.join(__dirname, clientBundleOutputDir) },
-        plugins: [
-            new webpack.ProvidePlugin({
-                '$': "jquery",
-                'jQuery': "jquery",
-                'window.jQuery': "jquery",
-                'window.$': 'jquery'
-                }), 
-            new webpack.DllReferencePlugin({
-                context: __dirname,
-                manifest: require('./wwwroot/dist/vendor-manifest.json')
-            })
-       ...
-       ...
-{% endhighlight %}
-
-N> If we run our application, we will get the following error.
-
-![](/angular/GettingStarted/Images/windowerror.png)
-
-* To overcome this issue, modify the `Views/Home/index.cshtml` file is referred as below.
-
-{% highlight javascript %}
-
-@{
-ViewData["Title"] = "Home Page";
-}
-
-<!--To overcome the issue "ReferenceError: window is not defined"-->
-<app asp-ng2-prerender-module="ClientApp/dist/main-server">Loading...</app>
-
-<script src="~/dist/vendor.js" asp-append-version="true"></script>
-@section scripts {
-<script src="~/dist/main-client.js" asp-append-version="true"></script>
-}
-
-{% endhighlight %}
-
-## Bundling Syncfusion JavaScript Theme Files
-
-* We are going to configure bundling of `syncfusion-javascript` theme file into `vendor.css` by importing the file in `webpack.config.vendor.js`. 
-
- {% highlight javascript %}
- const path = require('path');
-const webpack = require('webpack');
-const ExtractTextPlugin = require('extract-text-webpack-plugin');
-const merge = require('webpack-merge');
-const treeShakableModules = [
-    '@angular/animations',
-    '@angular/common',
-    '@angular/compiler',
-    '@angular/core',
-    '@angular/forms',
-    '@angular/http',
-    '@angular/platform-browser',
-    '@angular/platform-browser-dynamic',
-    '@angular/router',
-    'zone.js',
-];
-const nonTreeShakableModules = [
-    'bootstrap',
-    'bootstrap/dist/css/bootstrap.css',
-    'syncfusion-javascript/Content/ej/web/material/ej.web.all.min.css', 
-    'es6-promise',
-    'es6-shim',
-    'event-source-polyfill',
-    'jquery',
-];
-        . . .
-        . . .     
- {% endhighlight %}
-
-* Also add `gif and cur` file types in `webpack.config.vendor.js` to load `syncfusion-javascript` theme's used files(.png, .jpg, etc.). 
-
-{% highlight javascript %}
-. . .
-. . .
-const allModules = treeShakableModules.concat(nonTreeShakableModules);
-
-module.exports = (env) => {
-    const extractCSS = new ExtractTextPlugin('vendor.css');
-    const isDevBuild = !(env && env.prod);
-    const sharedConfig = {
-        stats: { modules: false },
-        resolve: { extensions: [ '.js' ] },
-        module: {
-            rules: [
-                { test: /\.(png|woff|woff2|eot|ttf|svg|gif|cur)(\?|$)/, use: 'url-loader?limit=100000' }
-            ]
-        },
-        output: {
-            publicPath: 'dist/',
-            filename: '[name].js',
-            library: '[name]_[hash]'
-        },
-        . . .
-        . . .
-{% endhighlight %}
-
-* To bundle the Syncfusion JavaScript Theme file, add the below script `build` under `scripts` section in `package.json` file.
-
-{% highlight javascript %}
-
- "scripts": {
-    "test": "karma start ClientApp/test/karma.conf.js",
-    "build": "webpack --config webpack.config.vendor.js && webpack"
-  },
-
-{% endhighlight %}
-
-N> we can refer different theme files from `syncfusion-javascript` package installed location `<sample_location>/node_modules/syncfusion-javascript/Content/ej/web`.
-
-* After adding the script in `package.json` file, Run the below command in your command prompt.
-
-{% highlight javascript %}
-
-npm run build 
-
-{% endhighlight %}
-
-N> If you change the theme in `webpack.config.vendor.js` file, run the above command to bundle the new theme in application.
-
-N> If you get an error like below screenshot while bundling other themes in application, then change the output path from `dist/` to `./` in `webpack.config.vendor.js` file. 
-
-![](/angular/GettingStarted/Images/bundlingerror.png)
-
-Refer to the below code snippet to change the output path in `webpack.config.vendor.js`.
-
-{% highlight javascript %}
-module.exports = (env) => {
-    const extractCSS = new ExtractTextPlugin('vendor.css');
-    const isDevBuild = !(env && env.prod);
-    const sharedConfig = {
-        stats: { modules: false },
-        resolve: { extensions: [ '.js' ] },
-        module: {
-            rules: [
-                { test: /\.(png|woff|woff2|eot|ttf|svg|gif|cur)(\?|$)/, use: 'url-loader?limit=100000' },
-            ]
-        },
-        output: {
-            publicPath: './',
-            filename: '[name].js',
-            library: '[name]_[hash]'
-        },
-        . . .
-         . . .
 {% endhighlight %}
 
 ## Adding Dialog sample
 
-* Import the `ejDialog` component in `home.component.html`.
+* Render the `ejDialog` component in `ClientApp/src/app/home/home.component.html`.
 
 {% highlight html %}
 
-<div id="parent" >
+<div id="parent">
 	<input id="btnOpen" style="height: 30px" type="button" ej-button class="ejinputtext" value="Click to open Dialog" (click)="onClick($event)" *ngIf="button_display" />
 	<ej-dialog id="basicDialog" #dialog title="Facebook" [(enableResize)]="resize" containment="#parent" (close)="onClose($event)">
 		Facebook is an online social networking service headquartered in Menlo Park, California. Its website was launched on February
@@ -325,38 +216,37 @@ module.exports = (env) => {
 
 {% endhighlight %}
 
-* Create sample component using the below code example in `home.component.ts`.
+* Modify the `home.component.ts` file using the below code example.
 
 {% highlight ts %}
 
-import { Component, ViewChild } from '@angular/core';
+import { Component, ViewEncapsulation, ViewChild } from '@angular/core';
 import { EJComponents } from 'ej-angular2';
 
 @Component({
-    selector: 'home',
-    templateUrl: './home.component.html'
+  selector: 'app-home',
+  templateUrl: './home.component.html',
 })
 export class HomeComponent {
   resize: boolean;
   button_display: boolean;
-  @ViewChild('dialog') dialog: EJComponents<any, any>;
-  constructor() {
+  @ViewChild('dialog') dialog: EJComponents <any,any>;
+    constructor() {
     this.resize = false;
     this.button_display = false;
   }
   //Button click event handler to open the ejDialog
-  onClick(event: any) {
-    this.button_display = false;
-    this.dialog.widget.element.ejDialog('open');
+  onClick(event) {
+   this.button_display = false;
+   this.dialog.widget.element.ejDialog('open');
   }
   //Dialog close event handler
-  onClose(event: any) {
+  onClose(event) {
     this.button_display = true;
   }
 }
 
 {% endhighlight %}
-
 
 Refer the below codes to create the application.
 
@@ -364,33 +254,34 @@ Refer the below codes to create the application.
 
 {% highlight ts %}
 
-// Refer the code for home.component.ts file 
+// Refer the code for home.component.ts file.
 
-import { Component, ViewChild } from '@angular/core';
+import { Component, ViewEncapsulation, ViewChild } from '@angular/core';
 import { EJComponents } from 'ej-angular2';
 
 @Component({
-  selector: 'home',
-  templateUrl: './home.component.html'
+  selector: 'app-home',
+  templateUrl: './home.component.html',
 })
 export class HomeComponent {
   resize: boolean;
   button_display: boolean;
-  @ViewChild('dialog') dialog: EJComponents<any, any>;
-  constructor() {
+  @ViewChild('dialog') dialog: EJComponents <any,any>;
+    constructor() {
     this.resize = false;
     this.button_display = false;
   }
   //Button click event handler to open the ejDialog
-  onClick(event: any) {
-    this.button_display = false;
-    this.dialog.widget.element.ejDialog('open');
+  onClick(event) {
+   this.button_display = false;
+   this.dialog.widget.element.ejDialog('open');
   }
   //Dialog close event handler
-  onClose(event: any) {
+  onClose(event) {
     this.button_display = true;
   }
 }
+
 {% endhighlight %}
 
 {% highlight html %}
@@ -412,236 +303,223 @@ export class HomeComponent {
 
 {% highlight ts %}
 
-// Refer the code for app.module.shared.ts file 
+// Refer the code for app.module.ts file
 
+import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
-import { HttpModule } from '@angular/http';
+import { HttpClientModule } from '@angular/common/http';
 import { RouterModule } from '@angular/router';
-
-import { AppComponent } from './components/app/app.component';
-import { NavMenuComponent } from './components/navmenu/navmenu.component';
-import { HomeComponent } from './components/home/home.component';
-import { FetchDataComponent } from './components/fetchdata/fetchdata.component';
-import { CounterComponent } from './components/counter/counter.component';
 import { EJAngular2Module } from 'ej-angular2';
+import { AppComponent } from './app.component';
+import { NavMenuComponent } from './nav-menu/nav-menu.component';
+import { HomeComponent } from './home/home.component';
+import { CounterComponent } from './counter/counter.component';
+import { FetchDataComponent } from './fetch-data/fetch-data.component';
 
 @NgModule({
-    declarations: [
-        AppComponent,
-        NavMenuComponent,
-        CounterComponent,
-        FetchDataComponent,
-        HomeComponent
-    ],
-    imports: [
-        CommonModule,
-        HttpModule,
-        FormsModule,
-        RouterModule.forRoot([
-            { path: '', redirectTo: 'home', pathMatch: 'full' },
-            { path: 'home', component: HomeComponent },
-            { path: 'counter', component: CounterComponent },
-            { path: 'fetch-data', component: FetchDataComponent },
-            { path: '**', redirectTo: 'home' }
-        ]),
-        EJAngular2Module.forRoot()
-    ]
+  declarations: [
+    AppComponent,
+    NavMenuComponent,
+    HomeComponent,
+    CounterComponent,
+    FetchDataComponent
+  ],
+  imports: [
+    BrowserModule.withServerTransition({ appId: 'ng-cli-universal' }),
+    HttpClientModule,
+    FormsModule,
+    RouterModule.forRoot([
+      { path: '', component: HomeComponent, pathMatch: 'full' },
+      { path: 'counter', component: CounterComponent },
+      { path: 'fetch-data', component: FetchDataComponent },
+    ]), EJAngular2Module.forRoot()
+  ],
+  providers: [],
+  bootstrap: [AppComponent]
 })
-export class AppModuleShared {
-}
-
-{% endhighlight %}
-
-{% highlight javascript %}
-
-// Refer this code to add 'jQuery plugin' in 'webpack.config.js'
-
-const path = require('path');
-const webpack = require('webpack');
-const merge = require('webpack-merge');
-const AotPlugin = require('@ngtools/webpack').AotPlugin;
-const CheckerPlugin = require('awesome-typescript-loader').CheckerPlugin;
-
-module.exports = (env) => {
-    // Configuration in common to both client-side and server-side bundles
-    const isDevBuild = !(env && env.prod);
-    const sharedConfig = {
-        stats: { modules: false },
-        context: __dirname,
-        resolve: { extensions: [ '.js', '.ts' ] },
-        output: {
-            filename: '[name].js',
-            publicPath: 'dist/' // Webpack dev middleware, if enabled, handles requests for this URL prefix
-        },
-        module: {
-            rules: [
-                { test: /\.ts$/, include: /ClientApp/, use: isDevBuild ? ['awesome-typescript-loader?silent=true', 'angular2-template-loader'] : '@ngtools/webpack' },
-                { test: /\.html$/, use: 'html-loader?minimize=false' },
-                { test: /\.css$/, use: [ 'to-string-loader', isDevBuild ? 'css-loader' : 'css-loader?minimize' ] },
-                { test: /\.(png|jpg|jpeg|gif|svg)$/, use: 'url-loader?limit=25000' }
-            ]
-        },
-        plugins: [new CheckerPlugin()]
-    };
-
-    // Configuration for client-side bundle suitable for running in browsers
-    const clientBundleOutputDir = './wwwroot/dist';
-    const clientBundleConfig = merge(sharedConfig, {
-        entry: { 'main-client': './ClientApp/boot.browser.ts' },
-        output: { path: path.join(__dirname, clientBundleOutputDir) },
-        plugins: [
-            new webpack.ProvidePlugin({
-                '$': "jquery",
-                'jQuery': "jquery",
-                'window.jQuery': "jquery",
-                'window.$': 'jquery'
-                }), 
-            new webpack.DllReferencePlugin({
-                context: __dirname,
-                manifest: require('./wwwroot/dist/vendor-manifest.json')
-            })
-        ].concat(isDevBuild ? [
-            // Plugins that apply in development builds only
-            new webpack.SourceMapDevToolPlugin({
-                filename: '[file].map', // Remove this line if you prefer inline source maps
-                moduleFilenameTemplate: path.relative(clientBundleOutputDir, '[resourcePath]') // Point sourcemap entries to the original file locations on disk
-            })
-        ] : [
-            // Plugins that apply in production builds only
-            new webpack.optimize.UglifyJsPlugin(),
-            new AotPlugin({
-                tsConfigPath: './tsconfig.json',
-                entryModule: path.join(__dirname, 'ClientApp/app/app.module.browser#AppModule'),
-                exclude: ['./**/*.server.ts']
-            })
-        ])
-    });
-
-    // Configuration for server-side (prerendering) bundle suitable for running in Node
-    const serverBundleConfig = merge(sharedConfig, {
-        resolve: { mainFields: ['main'] },
-        entry: { 'main-server': './ClientApp/boot.server.ts' },
-        plugins: [
-            new webpack.DllReferencePlugin({
-                context: __dirname,
-                manifest: require('./ClientApp/dist/vendor-manifest.json'),
-                sourceType: 'commonjs2',
-                name: './vendor'
-            })
-        ].concat(isDevBuild ? [] : [
-            // Plugins that apply in production builds only
-            new AotPlugin({
-                tsConfigPath: './tsconfig.json',
-                entryModule: path.join(__dirname, 'ClientApp/app/app.module.server#AppModule'),
-                exclude: ['./**/*.browser.ts']
-            })
-        ]),
-        output: {
-            libraryTarget: 'commonjs',
-            path: path.join(__dirname, './ClientApp/dist')
-        },
-        target: 'node',
-        devtool: 'inline-source-map'
-    });
-
-    return [clientBundleConfig, serverBundleConfig];
-};
-
-{% endhighlight %}
-
-{% highlight html %}
-
-<!--Refer the code for index.cshtml file-->
-
-@{
-    ViewData["Title"] = "Home Page";
-}
-
-<!--To overcome the issue "ReferenceError: window is not defined"-->
-<app asp-ng2-prerender-module="ClientApp/dist/main-server">Loading...</app>
-
-<script src="~/dist/vendor.js" asp-append-version="true"></script>
-@section scripts {
-    <script src="~/dist/main-client.js" asp-append-version="true"></script>
-}
+export class AppModule { }
 
 {% endhighlight %}
 
 {% highlight json %}
 
-// Refer this code for package.json file
+// Refer the code for angular-cli.json file.
 
 {
-  "name": "ejapplication",
-  "private": true,
-  "version": "0.0.0",
-  "scripts": {
-    "test": "karma start ClientApp/test/karma.conf.js",
-    "build": "webpack --config webpack.config.vendor.js && webpack"
+  "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
+  "project": {
+    "name": "aspcoresample"
   },
-  "dependencies": {
-    "@angular/animations": "4.2.5",
-    "@angular/common": "4.2.5",
-    "@angular/compiler": "4.2.5",
-    "@angular/compiler-cli": "4.2.5",
-    "@angular/core": "4.2.5",
-    "@angular/forms": "4.2.5",
-    "@angular/http": "4.2.5",
-    "@angular/platform-browser": "4.2.5",
-    "@angular/platform-browser-dynamic": "4.2.5",
-    "@angular/platform-server": "4.2.5",
-    "@angular/router": "4.2.5",
-    "@ngtools/webpack": "1.5.0",
-    "@types/webpack-env": "1.13.0",
-    "angular2-template-loader": "0.6.2",
-    "aspnet-prerendering": "^3.0.1",
-    "aspnet-webpack": "^2.0.1",
-    "awesome-typescript-loader": "3.2.1",
-    "bootstrap": "3.3.7",
-    "css": "2.2.1",
-    "css-loader": "0.28.4",
-    "ej-angular2": "^15.3.29",
-    "es6-shim": "0.35.3",
-    "event-source-polyfill": "0.0.9",
-    "expose-loader": "0.7.3",
-    "extract-text-webpack-plugin": "2.1.2",
-    "file-loader": "^0.11.2",
-    "html-loader": "0.4.5",
-    "isomorphic-fetch": "2.2.1",
-    "jquery": "3.2.1",
-    "json-loader": "0.5.4",
-    "preboot": "4.5.2",
-    "raw-loader": "0.5.1",
-    "reflect-metadata": "0.1.10",
-    "rxjs": "5.4.2",
-    "style-loader": "0.18.2",
-    "syncfusion-javascript": "^15.3.29",
-    "to-string-loader": "1.1.5",
-    "typescript": "2.4.1",
-    "url-loader": "0.5.9",
-    "webpack": "2.5.1",
-    "webpack-hot-middleware": "2.18.2",
-    "webpack-merge": "4.1.0",
-    "zone.js": "0.8.12"
+  "apps": [
+    {
+      "root": "src",
+      "outDir": "dist",
+      "assets": [
+        "assets"
+      ],
+      "index": "index.html",
+      "main": "main.ts",
+      "polyfills": "polyfills.ts",
+      "test": "test.ts",
+      "tsconfig": "tsconfig.app.json",
+      "testTsconfig": "tsconfig.spec.json",
+      "prefix": "app",
+      "styles": [
+        "styles.css",
+        "../node_modules/bootstrap/dist/css/bootstrap.min.css",
+        "./../node_modules/syncfusion-javascript/Content/ej/web/office-365/ej.web.all.min.css" 
+      ],
+      "scripts": [],
+      "environmentSource": "environments/environment.ts",
+      "environments": {
+        "dev": "environments/environment.ts",
+        "prod": "environments/environment.prod.ts"
+      }
+    }
+  ],
+  "e2e": {
+    "protractor": {
+      "config": "./protractor.conf.js"
+    }
   },
-  "devDependencies": {
-    "@types/chai": "4.0.1",
-    "@types/ej.web.all": "^15.3.2",
-    "@types/jasmine": "2.5.53",
-    "@types/jquery": "^3.2.12",
-    "chai": "4.0.2",
-    "jasmine-core": "2.6.4",
-    "karma": "1.7.0",
-    "karma-chai": "0.1.0",
-    "karma-chrome-launcher": "2.2.0",
-    "karma-cli": "1.0.1",
-    "karma-jasmine": "1.1.0",
-    "karma-webpack": "2.0.3"
+  "lint": [
+    {
+      "project": "src/tsconfig.app.json",
+      "exclude": "**/node_modules/**"
+    },
+    {
+      "project": "src/tsconfig.spec.json",
+      "exclude": "**/node_modules/**"
+    },
+    {
+      "project": "e2e/tsconfig.e2e.json",
+      "exclude": "**/node_modules/**"
+    }
+  ],
+  "test": {
+    "karma": {
+      "config": "./karma.conf.js"
+    }
+  },
+  "defaults": {
+    "styleExt": "css",
+    "component": {},
+    "build": {
+      "progress": true
+    }
   }
 }
 
+{% endhighlight %}
+
+{% highlight ts %}
+
+// Refer the code for polyfills.ts (src/polyfills.ts)
+
+/**
+ * This file includes polyfills needed by Angular and is loaded before the app.
+ * You can add your own extra polyfills to this file.
+ *
+ * This file is divided into 2 sections:
+ *   1. Browser polyfills. These are applied before loading ZoneJS and are sorted by browsers.
+ *   2. Application imports. Files imported after ZoneJS that should be loaded before your main
+ *      file.
+ *
+ * The current setup is for so-called "evergreen" browsers; the last versions of browsers that
+ * automatically update themselves. This includes Safari >= 10, Chrome >= 55 (including Opera),
+ * Edge >= 13 on the desktop, and iOS 10 and Chrome on mobile.
+ *
+ * Learn more in https://angular.io/docs/ts/latest/guide/browser-support.html
+ */
+
+/***************************************************************************************************
+ * BROWSER POLYFILLS
+ */
+
+/** IE9, IE10 and IE11 requires all of the following polyfills. **/
+// import 'core-js/es6/symbol';
+// import 'core-js/es6/object';
+// import 'core-js/es6/function';
+// import 'core-js/es6/parse-int';
+// import 'core-js/es6/parse-float';
+// import 'core-js/es6/number';
+// import 'core-js/es6/math';
+// import 'core-js/es6/string';
+// import 'core-js/es6/date';
+// import 'core-js/es6/array';
+// import 'core-js/es6/regexp';
+// import 'core-js/es6/map';
+// import 'core-js/es6/weak-map';
+// import 'core-js/es6/set';
+
+/** IE10 and IE11 requires the following for NgClass support on SVG elements */
+// import 'classlist.js';  // Run `npm install --save classlist.js`.
+
+/** IE10 and IE11 requires the following for the Reflect API. */
+// import 'core-js/es6/reflect';
+
+
+/** Evergreen browsers require these. **/
+// Used for reflect-metadata in JIT. If you use AOT (and only Angular decorators), you can remove.
+import 'core-js/es7/reflect';
+
+
+/**
+ * Required to support Web Animations `@angular/platform-browser/animations`.
+ * Needed for: All but Chrome, Firefox and Opera. http://caniuse.com/#feat=web-animation
+ **/
+// import 'web-animations-js';  // Run `npm install --save web-animations-js`.
+
+/**
+ * By default, zone.js will patch all possible macroTask and DomEvents
+ * user can disable parts of macroTask/DomEvents patch by setting following flags
+ */
+
+ // (window as any).__Zone_disable_requestAnimationFrame = true; // disable patch requestAnimationFrame
+ // (window as any).__Zone_disable_on_property = true; // disable patch onProperty such as onclick
+ // (window as any).__zone_symbol__BLACK_LISTED_EVENTS = ['scroll', 'mousemove']; // disable patch specified eventNames
+
+ /*
+ * in IE/Edge developer tools, the addEventListener will also be wrapped by zone.js
+ * with the following flag, it will bypass `zone.js` patch for IE/Edge
+ */
+// (window as any).__Zone_enable_cross_context_check = true;
+
+/***************************************************************************************************
+ * Zone JS is required by default for Angular itself.
+ */
+import 'zone.js/dist/zone';  // Included with Angular CLI.
+
+import * as jquery from 'jquery';
+window['jQuery'] = jquery;
+window['$'] = jquery;
+
+/***************************************************************************************************
+ * APPLICATION IMPORTS
+ */
+
+{% endhighlight %}
+
+{% highlight json %}
+
+// Refer the code for tsconfig.app.json(src/tsconfig.app.json)
+{
+  "extends": "../tsconfig.json",
+  "compilerOptions": {
+    "outDir": "../out-tsc/app",
+    "baseUrl": "./",
+    "module": "es2015",
+    "types": [
+      "jquery",
+      "ej.web.all"
+    ]
+  },
+  "exclude": [
+    "test.ts",
+    "**/*.spec.ts"
+  ]
+}
 
 {% endhighlight %}
 
@@ -649,7 +527,7 @@ module.exports = (env) => {
 
 ## Run the Application
 
-* Now run the application with below command and navigate to [http://localhost:5000/](http://localhost:5000/) to see the output window.
+* Now run the application with below command in application folder.
 
 {% highlight javascript %}
 
@@ -666,11 +544,18 @@ dotnet run
 ## Sample Application
 
 We have prepared .NET CLI Application with the above steps. Refer to the link for application
-[Getting Started with .NET CLI](http://www.syncfusion.com/downloads/support/directtrac/general/ze/EJAngularSample301335016.zip). Run the below commands at the root of the application, to launch the application.
+[Getting Started with .NET CLI](http://www.syncfusion.com/downloads/support/directtrac/general/ze/aspcoresample1576232350.zip). Run the below commands at the root of the application, to launch the application.
 
 ```batch
-dotnet restore
-npm install
-dotnet run
+
+`dotnet restore`
+
+cd ClientApp
+
+`npm install`
+
+cd..
+
+`dotnet run`
 
 ```
