@@ -142,7 +142,7 @@ The output for **CurrencyTextBox** when **enableStrictMode** is **“true”** i
 
 ## Enabled or Disabled
 
-The CurrencyTextBox control has an option to enable or disable its element. You can set the **enabled** property as “**true**” to enable the CurrencyTextBox control. Also you can enable/disable the **CurrencyTextBox** by using [enable](https://help.syncfusion.com/api/js/ejtextboxes#methods:enable) and [disable](https://help.syncfusion.com/api/js/ejtextboxes#methods:disable) methods.
+The CurrencyTextBox control has an option to enable or disable its element. You can set the **enabled** property as “**true**” to enable the CurrencyTextBox control. Also you can enable/disable the **CurrencyTextBox** by using [enable](https://help.syncfusion.com/api/angular/ejtextboxes#methods:enable) and [disable](https://help.syncfusion.com/api/angular/ejtextboxes#methods:disable) methods.
 
 ### Configure Enabled or Disabled 
 
