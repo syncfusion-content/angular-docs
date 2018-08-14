@@ -142,7 +142,7 @@ The output for **PercentageTextBox** when **enableStrictMode** is **“true”**
 
 ## Enabled or Disabled
 
-The **PercentageTextBox** control has an option to enable or disable its element. You can set the **enabled** property as “**true**” to enable the **PercentageTextBox** control.
+The **PercentageTextBox** control has an option to enable or disable its element. You can set the **enabled** property as “**true**” to enable the **PercentageTextBox** control. Also you can enable/disable the **PercentageTextBox** by using [enable](https://help.syncfusion.com/api/angular/ejtextboxes#methods:enable) and [disable](https://help.syncfusion.com/api/angular/ejtextboxes#methods:disable) methods.
 
 ### Configure Enabled or Disabled 
 
@@ -312,7 +312,7 @@ export class PercentageTextboxComponent {
 
 ## Define Value
 
-The value of **PercentageTextBox** can be assigned by using the **value** property. The default value for **value** property is null.
+The value of **PercentageTextBox** can be assigned by using the **value** property. The default value for **value** property is null. You can get the value of **PercentageTextBox** by using [getValue](https://help.syncfusion.com/api/angular/ejtextboxes#methods:getvalue) method.
 
 ### Configure Value
 
