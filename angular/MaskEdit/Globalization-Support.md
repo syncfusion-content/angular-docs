@@ -39,7 +39,7 @@ $</td>
 
 To know more about EJ globalize support, please refer the below link
 
-[https://help.syncfusion.com/js/localization] (https://help.syncfusion.com/js/localization)
+[https://help.syncfusion.com/js/localization](https://help.syncfusion.com/js/localization)
 
 
 The following example describes the way to use localization for **MaskEdit** widgets.
