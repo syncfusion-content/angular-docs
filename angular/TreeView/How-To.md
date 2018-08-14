@@ -38,8 +38,8 @@ TreeView allow you to refresh the entire tree data by using [refresh](http://hel
 
 TreeView allow you to persist the updated data after performing node manipulation. By using persistence option, you can sustain on page refresh.
 
-The [nodeAdd](https://help.syncfusion.com/api/js/ejtreeview#events:nodeadd), [nodeCut](https://help.syncfusion.com/api/js/ejtreeview#events:nodecut), [nodeDelete](https://help.syncfusion.com/api/js/ejtreeview#events:nodedelete) and [nodePaste](https://help.syncfusion.com/api/js/ejtreeview#events:nodepaste) events occurs based on Treeview node manipulation. The [beforeAdd](https://help.syncfusion.com/api/js/ejtreeview#events:beforeadd), 
-[beforeCut](https://help.syncfusion.com/api/js/ejtreeview#events:beforecut), [beforeDelete](https://help.syncfusion.com/api/js/ejtreeview#events:beforedelete) and [beforePaste](https://help.syncfusion.com/api/js/ejtreeview#events:beforepaste) events are triggered before the TreeView component node manipulation.
+The [nodeAdd](https://help.syncfusion.com/api/angular/ejtreeview#events:nodeadd), [nodeCut](https://help.syncfusion.com/api/angular/ejtreeview#events:nodecut), [nodeDelete](https://help.syncfusion.com/api/angular/ejtreeview#events:nodedelete) and [nodePaste](https://help.syncfusion.com/api/angular/ejtreeview#events:nodepaste) events occurs based on Treeview node manipulation. The [beforeAdd](https://help.syncfusion.com/api/angular/ejtreeview#events:beforeadd), 
+[beforeCut](https://help.syncfusion.com/api/angular/ejtreeview#events:beforecut), [beforeDelete](https://help.syncfusion.com/api/angular/ejtreeview#events:beforedelete) and [beforePaste](https://help.syncfusion.com/api/angular/ejtreeview#events:beforepaste) events are triggered before the TreeView component node manipulation.
 
 Refer the sample from the link [PersistData](https://plnkr.co/edit/im7rElfoOawRkyvy8hqi?p=preview) to know how to persist updated tree data after refresh.
 
