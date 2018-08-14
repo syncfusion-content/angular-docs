@@ -9,7 +9,7 @@ documentation: ug
 
 # Globalization Support in MaskEdit
 
-We have provided the globalization support in **MaskEdit** control. Our **MaskEdit** control mainly rendered based on the **maskFormat** property, so we have provided the globalization support based on the maskFormat literals. We have given this globalization support option on below maskFormat literals in **MaskEdit** control. 
+We have provided the globalization support in **MaskEdit** control. Our **MaskEdit** control mainly rendered based on the **maskFormat** property, so we have provided the globalization support based on the maskFormat literals. We have given this globalization support option on below maskFormat literals in **MaskEdit** control. You can change the globalization by using the [locale](https://help.syncfusion.com/api/angular/ejmaskedit#members:locale) property. The default value for **locale** property is 'en-US' in **MaskEdit** control.
 
 <table class="props">
 <thead>
