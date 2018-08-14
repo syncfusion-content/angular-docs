@@ -13,7 +13,7 @@ keywords: group,ribbon group
 
 ## Adding Tab Groups
 
-Group items can be added to Tabs by specifying [`text`](http://help.syncfusion.com/api/js/ejribbon#members:tabs-groups-text) and corresponding [`content`](http://help.syncfusion.com/api/js/ejribbon#members:tabs-groups-content) to be displayed. The content of group can be specified as either with [`content`](http://help.syncfusion.com/api/js/ejribbon#members:tabs-groups-content) collection, [`contentID`](http://help.syncfusion.com/api/js/ejribbon#members:tabs-groups-contentid) or [`customContent`](http://help.syncfusion.com/api/js/ejribbon#members:tabs-groups-customcontent).
+Group items can be added to Tabs by specifying [`text`](http://help.syncfusion.com/api/js/ejribbon#members:tabs-groups-text) and corresponding [`content`](http://help.syncfusion.com/api/js/ejribbon#members:tabs-groups-content) to be displayed. The content of group can be specified as either with [`content`](http://help.syncfusion.com/api/js/ejribbon#members:tabs-groups-content) collection, [`contentID`](http://help.syncfusion.com/api/js/ejribbon#members:tabs-groups-contentid) or [`customContent`](http://help.syncfusion.com/api/js/ejribbon#members:tabs-groups-customcontent). You can add tab group dynamically in the ribbon control with given tab index, tab group object and group index position by using [`addTabGroup`](https://help.syncfusion.com/api/js/ejribbon#methods:addtabgroup) method.
 
 ### Adding Content
 
