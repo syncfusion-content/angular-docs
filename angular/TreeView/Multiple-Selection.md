@@ -95,6 +95,7 @@ export class AppComponent {
 ## Get Selected Nodes
 
 To get the selected Nodes of TreeView, you can use [getSelectedNodes](https://help.syncfusion.com/api/angular/ejtreeview#methods:getselectednodes) method. It returns the collections of TreeView selected nodes.
+You can use [getSelectedNodesIndex](https://help.syncfusion.com/api/angular/ejtreeview#methods:getselectednodesindex) method to get the index positions of currently selected nodes.
 
 {% highlight html %} 
  
