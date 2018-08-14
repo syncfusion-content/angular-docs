@@ -310,7 +310,7 @@ export class NumericTextboxComponent {
 
 ## Define Value
 
-The value of **NumericTextBox** can be assigned by using the **value** property. The default value for **value** property is null.
+The value of **NumericTextBox** can be assigned by using the **value** property. The default value for **value** property is null. You can get the value of **NumericTextBox** by using [getValue](https://help.syncfusion.com/api/angular/ejtextboxes#methods:getvalue) method.
 
 ### Configure Value
 
