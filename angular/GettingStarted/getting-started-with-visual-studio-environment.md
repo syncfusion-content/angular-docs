@@ -25,7 +25,7 @@ ASP.Net Core is a cross-platform framework for building applications such as web
 ## Prerequisites
 
 * [Node JS](https://nodejs.org/en/) ( v6.x.x or higher)
-* [NPM](http://blog.npmjs.org/post/85484771375/how-to-install-npm) (v3.x.x or higher)
+* [NPM](https://docs.npmjs.com/getting-started/installing-node#install-npm--manage-npm-versions) (v3.x.x or higher)
 * Install Visual Studio 2015 Update 3
 * Configure External Web Tools
 * Install TypeScript 2.2 for Visual Studio 2015
@@ -307,7 +307,7 @@ After adding this property, we can run our application without errors.
 
 ## Configure the routes for the Router
 
-Before adding router configuration for the created application, we recommend you to go through the [Angular Routing](https://angular.io/docs/ts/latest/guide/router.html) configuration to get the deeper knowledge about Angular routing.
+Before adding router configuration for the created application, we recommend you to go through the [Angular Routing](https://angular.io/guide/router) configuration to get the deeper knowledge about Angular routing.
 
 * Create `dialog` folder inside `src` folder.
 

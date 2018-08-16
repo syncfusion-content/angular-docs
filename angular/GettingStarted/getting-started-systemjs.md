@@ -196,7 +196,7 @@ export class DialogComponent {
 
 ## Configure the routes for the Router
 
-Before adding router configuration for above created ejDialog component, we recommend you to go through the [Angular Routing](https://angular.io/docs/ts/latest/guide/router.html) configuration to get the deeper knowledge about Angular routing.
+Before adding router configuration for above created ejDialog component, we recommend you to go through the [Angular Routing](https://angular.io/guide/router) configuration to get the deeper knowledge about Angular routing.
 
 * Now, we are going to configure the route navigation link for created Dialog sample in `src/app.component.html` file.
 
