@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Getting Started with Angular on ASP.Net Core using Visual Studio 2015
+title:  Getting Started with Angular on ASP.NET Core using Visual Studio 2015
 description: Overview of Syncfusion Essential Angular
 platform: Angular
 control: Introduction
@@ -8,9 +8,9 @@ documentation: ug
 ---
  
 
-# Getting Started with Angular on ASP.Net Core using Visual Studio 2015
+# Getting Started with Angular on ASP.NET Core using Visual Studio 2015
 
-ASP.Net Core is a cross-platform framework for building applications such as web apps. Now, we are going to discuss about how to create a angular application in ASP.NET Core Environment in detailed.
+ASP.NET Core is a cross-platform framework for building applications such as web apps. Now, we are going to discuss about how to create a angular application in ASP.NET Core Environment in detailed.
 
 ## Synopsis
 
@@ -170,7 +170,7 @@ N> If the packages are not installed properly try the below steps in the sample'
   },
   "exclude": [
     "node_modules",
-    "node_modues/typings",
+    "node_modules/typings",
     "typings",
     "wwwroot/lib",
     "wwwroot"
@@ -234,7 +234,7 @@ N> If the packages are not installed properly try the below steps in the sample'
 |              Tasks            |               Purpose                |                                       
 |:------------------------------|:-------------------------------------|
 |default                        |The default task is used in gulp to run any number of dependent sub tasks defined in a sequential order automatically.|
-|copy:lib                       |It is used to copy all libraries from node_modules to `wwwroot/lib` folder. These libraries are used to run the Angular application in ASP.Net Core environment             |
+|copy:lib                       |It is used to copy all libraries from node_modules to `wwwroot/lib` folder. These libraries are used to run the Angular application in ASP.NET Core environment             |
 |copy:systemjs           	    |This task copy the systemjs.config.js file from `src` folder to `wwwroot` folder|  
 |clean                          |A task that uses the rimraf Node deletion module to remove the library files from `wwwroot/lib` folder.|
 |ts                             |It is used to transpile the typescript files into `wwwroot` folder.|
@@ -745,7 +745,7 @@ platformBrowserDynamic().bootstrapModule(AppModule);
   },
   "exclude": [
     "node_modules",
-    "node_modues/typings",
+    "node_modules/typings",
     "typings",
     "wwwroot/lib",
     "wwwroot"

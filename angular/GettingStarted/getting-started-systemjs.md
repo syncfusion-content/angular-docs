@@ -55,7 +55,7 @@ The below table depicts the purpose of files in the above structure.
 </tr>
 <tr>
 <td>package.json </td>
-<td>It serves as documentation for what packages our project depends on. It allows you to specify the name, version, scripts, dependencies of a package. <ul> <li> Name- Name of our package </li> <li> Version- Current version of package </li> <li> Scripts- It runs at various time of lifecycle of package </li> <li> Dependencies- It is used for production in our application </li> </ul> In our application, we used name, version, scripts and dependencies in package.json file
+<td>It serves as documentation for what packages our project depends on. It allows you to specify the name, version, scripts, dependencies of a package. <ul> <li> Name- Name of our package </li> <li> Version- Current version of package </li> <li> Scripts- It runs at various time of life cycle of package </li> <li> Dependencies- It is used for production in our application </li> </ul> In our application, we used name, version, scripts and dependencies in package.json file
 </td>
 </tr>
 <tr>
