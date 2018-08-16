@@ -27,7 +27,7 @@ To render Syncfusion Angular components in ASP .NET MVC project:
 ## Prerequisites
 
 * [Node JS](https://nodejs.org/en/) ( v6.x.x or higher)
-* [NPM](http://blog.npmjs.org/post/85484771375/how-to-install-npm) (v3.x.x or higher)
+* [NPM](https://docs.npmjs.com/getting-started/installing-node#install-npm--manage-npm-versions) (v3.x.x or higher)
 * Install Visual Studio 2015 Update 3
 * Install TypeScript 2.2 for Visual Studio 2015
 

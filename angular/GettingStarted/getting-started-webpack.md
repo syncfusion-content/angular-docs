@@ -56,7 +56,7 @@ The below table depicts the purpose of files in the above structure.
 </tr>
 <tr>
 <td>webpack.dev.js</td>
-<td>The development build relies on the webpack development server, configured near the bottom of the file.The configuration imports dependencies with `require` statements and exports several objects as properties of a `module.exports` object.<ul><li>entries - We can supply webpack with one or more entry files and let it find and incorporate the dependencies that radiate from those entries.</li> <li>resolve -The application will import lot of JavaScript and TypeScript files. But most `import` statements don't mention the extension at all. So, we should tell the Webpack to resolve extension-less file requests by looking for matching files with ts or js extension.</li> <li>plugins - It creates instances of the plugins. i.e. Webpack has a build pipeline with well-defined phases. Tap into that pipeline with plugins such as the `uglify` minification plugin.</li></ul> Here, <ul> <li>Webpack puts output bundles in the `dist` folder</li> <li>HtmlwebpackPlugin use the public path and the filename settings to generate appropriate `script` and `link` tags into the index.html.</li> <li>CSS styles are buried inside the JavaScript bundles by default.</li> </ul> </td>
+<td>The development build relies on the webpack development server, configured near the bottom of the file.The configuration imports dependencies with `require` statements and exports several objects as properties of a `module.exports` object.<ul><li>entries - We can supply webpack with one or more entry files and let it find and incorporate the dependencies that radiate from those entries.</li> <li>resolve -The application will import lot of JavaScript and TypeScript files. But most `import` statements don't mention the extension at all. So, we should tell the Webpack to resolve extension-less file requests by looking for matching files with ts or js extension.</li> <li>plugins - It creates instances of the plugins. i.e. Webpack has a build pipeline with well-defined phases. Tap into that pipeline with plugins such as the `Uglify` minification plugin.</li></ul> Here, <ul> <li>Webpack puts output bundles in the `dist` folder</li> <li>HtmlwebpackPlugin use the public path and the filename settings to generate appropriate `script` and `link` tags into the index.html.</li> <li>CSS styles are buried inside the JavaScript bundles by default.</li> </ul> </td>
 </tr>
 <tr>
 <td>src/app/app.component.ts</td>
@@ -72,7 +72,7 @@ The below table depicts the purpose of files in the above structure.
 </tr>
 <tr>
 <td>package.json</td>
-<td>It serves as documentation for what packages our project depends on. It allows you to specify the name, version, scripts, dependencies of a package.<ul><li> Name- Name of our package </li> <li> Version- Current version of package </li> <li> Scripts- It runs at various time of lifecycle of package </li> <li> Dependencies- It is used for production in our application </li></ul> In our application, we used name, version, scripts and dependencies in package.json file </td>
+<td>It serves as documentation for what packages our project depends on. It allows you to specify the name, version, scripts, dependencies of a package.<ul><li> Name- Name of our package </li> <li> Version- Current version of package </li> <li> Scripts- It runs at various time of life cycle of package </li> <li> Dependencies- It is used for production in our application </li></ul> In our application, we used name, version, scripts and dependencies in package.json file </td>
 </tr>
 <tr>
 <td> index.html  </td>
@@ -209,7 +209,7 @@ export class DialogComponent {
 
 ## Configure the routes for the Router
 
-Before adding router configuration for above created ejDialog component, we recommend you to go through the [Angular Routing](https://angular.io/docs/ts/latest/guide/router.html) configuration to get the deeper knowledge about Angular routing. 
+Before adding router configuration for above created ejDialog component, we recommend you to go through the [Angular Routing](https://angular.io/guide/router) configuration to get the deeper knowledge about Angular routing. 
 
 * Now, we are going to configure the route navigation link for created Dialog sample in `src/app/app.component.html` file.
 

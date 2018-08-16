@@ -403,7 +403,7 @@ ejWaitingPopup</td><td>
 
 
 
-N> For complete understanding of Angular inputs and outputs binding syntaxes, refer [this](https://angular.io/docs/ts/latest/guide/template-syntax.html#!#binding-syntax-an-overview) Angular help document.
+N> For complete understanding of Angular inputs and outputs binding syntaxes, refer [this](https://angular.io/guide/template-syntax#binding-syntax-an-overview) Angular help document.
 
 ## Invoking EJ widget methods from component instance
 
