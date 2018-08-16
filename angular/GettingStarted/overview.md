@@ -18,7 +18,7 @@ We have implemented seed application in GitHub repository [Syncfusion Angular se
 ## Prerequisite
 
 * [Node JS](https://nodejs.org/en/) (v6.x.x or higher).  
-* [NPM](http://blog.npmjs.org/post/85484771375/how-to-install-npm) (4.x.x or higher).
+* [NPM](https://docs.npmjs.com/getting-started/installing-node#install-npm--manage-npm-versions) (4.x.x or higher).
 
 To get deep understanding about Syncfusion Angular seed application with SystemJS and Webpack, refer below links.
 
