@@ -19,14 +19,17 @@ To getting started with Syncfusion Angular Components, the NPM packages [ej-angu
 * [Install the SPA Template](#install-the-spa-template)
 * [Install the Dependencies](#install-the-dependencies)
 * [Configuration of Syncfusion Angular Component](#configuration-of-syncfusion-angular-component)
-* [Bundling Syncfusion JavaScript Theme Files](#bundling-syncfusion-javascript-theme-files)
+* [Refer the Syncfusion Theme Files](#refer-the-syncfusion-theme-files)
+* [Render Syncfusion Angular Component](#render-syncfusion-angular-component)
 * [Adding Dialog Sample](#adding-dialog-sample) 
 * [Run the Application](#run-the-application)
+* [Running the Application using Visual Studio 2017](#running-the-application-using-visual-studio-2017)
+* [Sample Application](#sample-application)
 
 ## Prerequisites
 
 * [Node JS](https://nodejs.org/en/)(v6.x.x or higher)
-* [NPM](http://blog.npmjs.org/post/85484771375/how-to-install-npm)(v4.x.x or higher)
+* [NPM](https://docs.npmjs.com/getting-started/installing-node#install-npm--manage-npm-versions)(v4.x.x or higher)
 * [.NET Core SDK 2.1.*](https://www.microsoft.com/net/download/core#/current)
 
 ## Install the SPA Template

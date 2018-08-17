@@ -68,7 +68,7 @@ The below steps depicts the configuration of `@ngtools/webpack` in Angular appli
 
 ### Options for AngularCompilerPlugin
 
-* Add instance of [AngularCompilerPlugin](https://github.com/angular/angular-cli/tree/master/packages/%40ngtools/webpack), which has an apply property. This apply property is called by the webpack compiler, giving access to the entire compilation lifecycle. Add options `tsConfigPath` and `entryModule` with `AngularCompilerPlugin` instance.
+* Add instance of [AngularCompilerPlugin](https://github.com/angular/angular-cli/tree/master/packages/%40ngtools/webpack), which has an apply property. This apply property is called by the webpack compiler, giving access to the entire compilation life cycle. Add options `tsConfigPath` and `entryModule` with `AngularCompilerPlugin` instance.
 
   * `tsConfigPath` - The path to the `tsconfig.json` file. In your `tsconfig.json`, you can pass options to the Angular Compiler with `angularCompilerOptions`.
 
