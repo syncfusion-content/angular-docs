@@ -33,11 +33,11 @@ export class AppComponent {
     }
     public localData : any = [
           { id: 1, name: { nodeName: "Discover Music"}, hasChild: true, expanded: true },
-          { id: 2, pid: 1, name: {nodeName:"Hot Singles" }},
-          { id: 3, pid: 1, name: {nodeName:"Rising Artists" }},
-          { id: 4, pid: 1, name:{nodeName: "Live Music" }}];
+          { id: 2, parent: 1, name: {nodeName:"Hot Singles" }},
+          { id: 3, parent: 1, name: {nodeName:"Rising Artists" }},
+          { id: 4, parent: 1, name:{nodeName: "Live Music" }}];
 
-    public fields:any = { id: "id", parentId: "pid", text: "name.nodeName", hasChild: "hasChild", dataSource: this.localData, expanded: "expanded" }
+    public fields:any = { id: "id", parentId: "parent", text: "name.nodeName", hasChild: "hasChild", dataSource: this.localData, expanded: "expanded" }
     public allowMultiSelection: boolean = true;
 }
 
@@ -72,11 +72,11 @@ import { TreeViewComponent } from '@syncfusion/ej2-ng-navigations';
 export class AppComponent {
      public localData : any = [
           { id: 1, name: { nodeName: "Discover Music"}, hasChild: true, expanded: true },
-          { id: 2, pid: 1, name: {nodeName:"Hot Singles" }},
-          { id: 3, pid: 1, name: {nodeName:"Rising Artists" }},
-          { id: 4, pid: 1, name:{nodeName: "Live Music" }}];
+          { id: 2, parent: 1, name: {nodeName:"Hot Singles" }},
+          { id: 3, parent: 1, name: {nodeName:"Rising Artists" }},
+          { id: 4, parent: 1, name:{nodeName: "Live Music" }}];
 
-    public fields:any = { id: "id", parentId: "pid", text: "name.nodeName", hasChild: "hasChild", dataSource: this.localData, expanded: "expanded" }
+    public fields:any = { id: "id", parentId: "parent", text: "name.nodeName", hasChild: "hasChild", dataSource: this.localData, expanded: "expanded" }
     public allowMultiSelection: boolean = true;
     constructor() {
     }
@@ -119,11 +119,11 @@ import { TreeViewComponent } from '@syncfusion/ej2-ng-navigations';
 export class AppComponent {
      public localData : any = [
           { id: 1, name: { nodeName: "Discover Music"}, hasChild: true, expanded: true },
-          { id: 2, pid: 1, name: {nodeName:"Hot Singles" }},
-          { id: 3, pid: 1, name: {nodeName:"Rising Artists" }},
-          { id: 4, pid: 1, name:{nodeName: "Live Music" }}];
+          { id: 2, parent: 1, name: {nodeName:"Hot Singles" }},
+          { id: 3, parent: 1, name: {nodeName:"Rising Artists" }},
+          { id: 4, parent: 1, name:{nodeName: "Live Music" }}];
 
-    public fields:any = { id: "id", parentId: "pid", text: "name.nodeName", hasChild: "hasChild", dataSource: this.localData, expanded: "expanded" }
+    public fields:any = { id: "id", parentId: "parent", text: "name.nodeName", hasChild: "hasChild", dataSource: this.localData, expanded: "expanded" }
     public allowMultiSelection: boolean = true;
     constructor() {
     }
