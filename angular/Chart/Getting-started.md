@@ -185,7 +185,7 @@ export const rootRouterConfig: Routes = [
 ];
 {% endhighlight %}
 
-* Import and declare the Syncfusion source component and ejchart sample component into `app.module.ts` like the below code snippet.
+* Import and declare the Syncfusion source component and ejChart sample component into `app.module.ts` like the below code snippet.
 
 {% highlight ts %}
 import { NgModule, enableProdMode, ErrorHandler } from '@angular/core';
@@ -248,7 +248,7 @@ import { DataService } from '../service/data.service';
 export class ChartComponent{
     dataSource:Array<any>;
     constructor(dataService:DataService){
-        this.dataSource=dataService.chartdata();
+        this.dataSource=dataService.chartData();
     }
 }
 
@@ -259,7 +259,7 @@ Create a folder service and add file data.service.ts for serving data to  chart 
 {% highlight ts %}
 
 export class DataService{
-    chartdata():Array<any>{
+    chartData():Array<any>{
         return[  
             { month: 'Jan', sales: 35 },
             { month: 'Feb', sales: 28 },
