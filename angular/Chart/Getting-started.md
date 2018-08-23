@@ -8,7 +8,9 @@ keywords: ejchart, chart, chart widget, Angular chart
 ---
 # Getting Started
 
-Before we start with the Chart, please refer [this page](https://help.syncfusion.com/angular-2/overview) for general information regarding integrating Syncfusion widget’s.
+To get start with how to use the Chart component within Angular-2 platform, refer the basic requisites and the configurations needs to be done on the system from [here](/angular-2/overview).
+
+Once the configurations are done, Create an angular seed application by referring [here](/angular-2/gettingstarted/overview).
 
 ## Adding JavaScript and CSS Reference
 
@@ -97,9 +99,7 @@ Create an HTML page and add the scripts references in the order mentioned in the
     <script src="node_modules/systemjs/dist/system.src.js"></script>
 
     <!-- Essential Studio for JavaScript  script references -->
-    <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
-    <script src="http://cdn.syncfusion.com/{{ site.releaseversion }}/js/web/ej.web.all.min.js"> </script>
-    <script src="http://cdn.syncfusion.com/{{ site.releaseversion }}/js/common/ej.angular2.min.js"></script>
+    <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script> 
 
     <!-- 2. Configure SystemJS -->
     <script src="systemjs.config.js"></script>
@@ -127,13 +127,7 @@ N> Uncompressed version of library files are also available which is used for de
 
 ## Control Initialization
 
-* Copy Chart Syncfusion Angular source component(s) from the below build location and add it in `src/ej` folder (For ex., consider the `chart` component).
-
-{% highlight javascript %}
-(Installed Location)\Syncfusion\Essential Studio\14.3.0.49\JavaScript\assets-src\angular2\ 
-{% endhighlight %}
-
-N> `core.ts` file is mandatory for all Syncfusion JavaScript Angular components. The repository having the source file from Essential Studio for JavaScript v14.3.0.49.
+To render the Chart component, please follow the below steps.
 
 * Create `chart` folder inside `src` folder.
 
@@ -191,12 +185,13 @@ export const rootRouterConfig: Routes = [
 ];
 {% endhighlight %}
 
-* Import and declare the Syncfusion source component and ejchart sample component into `app.module.ts` like the below code snippet.
+* Import and declare the Syncfusion source component and ejChart sample component into `app.module.ts` like the below code snippet.
 
 {% highlight ts %}
 import { NgModule, enableProdMode, ErrorHandler } from '@angular/core';
 . . . . . 
-import { EJ_CHART_COMPONENTS } from './ej/chart.component';
+//import chart module from node module package
+import { EJ_CHART_COMPONENTS } from 'ej2-angular2';
 import { ChartComponent } from './chart/chart.component';
 
 import { rootRouterConfig } from './app.routes';
@@ -253,7 +248,7 @@ import { DataService } from '../service/data.service';
 export class ChartComponent{
     dataSource:Array<any>;
     constructor(dataService:DataService){
-        this.dataSource=dataService.chartdata();
+        this.dataSource=dataService.chartData();
     }
 }
 
@@ -264,7 +259,7 @@ Create a folder service and add file data.service.ts for serving data to  chart 
 {% highlight ts %}
 
 export class DataService{
-    chartdata():Array<any>{
+    chartData():Array<any>{
         return[  
             { month: 'Jan', sales: 35 },
             { month: 'Feb', sales: 28 },
