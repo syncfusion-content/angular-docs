@@ -18,7 +18,7 @@ Tab is a collection of control [`groups`](http://help.syncfusion.com/api/angular
         <e-tabs>
             <e-tab id="home" text="HOME" [groups]="groups1">
             </e-tab>
-            <e-tab id="sendrec" text="Send/Receive" [groups]="sendreceive">
+            <e-tab id="sendrec" text="Send/Receive" [groups]="group2">
             </e-tab>
         </e-tabs>
    </ej-ribbon>
@@ -47,7 +47,7 @@ import {Component} from '@angular/core';
 import {NorthwindService} from '../../services/northwind.service';
 
 @Component({
-  selector: 'sd-home',
+  selector: 'ej-app',
   templateUrl: 'app/components/ribbon/ribbon.component.html',
   providers: [NorthwindService]
 })
@@ -83,7 +83,7 @@ export class RibbonComponent {
                 }]
             }]
         }];
-   sendreceive = [{
+   group2 = [{
         type: "custom",
         contentID: "sendReceive"
    }];
