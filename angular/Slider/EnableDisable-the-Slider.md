@@ -15,6 +15,8 @@ documentation: ug
 
 Using this **enabled** property you can enable/disable the **Slider**. Data type of this property is “boolean”.
 
+Also you can enable/disable the **Slider** by using [enable](https://help.syncfusion.com/api/angular/ejslider#methods:enable) and [disable](https://help.syncfusion.com/api/angular/ejslider#methods:disable) methods.
+
 The following steps explains you on how to disable the **Slider**.
 
 {% highlight html %}
