@@ -349,10 +349,10 @@ If you want to enable / disable the custom added tool in toolbar, you need to pa
         
         var fileExpObj = $("#fileExplorer").data("ejFileExplorer");
         
-        //mytool is a cssClass of FileExplorer 
+        //tool is a cssClass of FileExplorer 
         // this disables the custom tool item 
         
-        var li = $(".mytool").find(".Help").closest('li'); 
+        var li = $(".tool").find(".Help").closest('li'); 
         fileExpObj.disableToolbarItem(li); 
         
         // this enables the custom tool item 
