@@ -341,6 +341,25 @@ fileExpObj.enableToolbarItem("NewFolder");
 
 {% endhighlight %}
 
+### Enable / Disable the custom added tool in Toolbar Item
+
+If you want to enable / disable the custom added tool in toolbar, you need to pass the corresponding li elements of custom added tool in [enableToolbarItem](https://help.syncfusion.com/api/js/ejfileexplorer#methods:enabletoolbaritem) / [disableToolbarItem](https://help.syncfusion.com/api/js/ejfileexplorer#methods:disabletoolbaritem) method of FileExplorer. Since we have consider this custom tool as a object type.
+
+{% highlight javascript %}
+        
+        var fileExpObj = $("#fileExplorer").data("ejFileExplorer");
+        
+        //mytool is a cssClass of FileExplorer 
+        // this disables the custom tool item 
+        
+        var li = $(".mytool").find(".Help").closest('li'); 
+        fileExpObj.disableToolbarItem(li); 
+        
+        // this enables the custom tool item 
+        fileExpObj.enableToolbarItem(li);
+
+{% endhighlight %}
+
 ## Customizing the Upload Functionality
 
 FileExplorer helps you to upload the file using Upload component. File upload can be done through the toolbar item or context menu item. The `uploadSettings` property is used to configure the upload functionalities.
