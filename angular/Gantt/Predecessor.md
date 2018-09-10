@@ -176,7 +176,7 @@ export class AppComponent {
     }
     actionBegin(sender) {
         if (sender.requestType == "validateLinkedTask") {
-            sender.validateMode.perserveLinkWithEditing = false;
+            sender.validateMode.preserveLinkWithEditing = false;
         }
     }
 }
