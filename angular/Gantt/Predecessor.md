@@ -93,7 +93,7 @@ False<br/><br/></td><td>
 In this validation mode, the taskbar editing will be considered as high priority, where in the case of inappropriate task dates the dependency links will be removed and tasks will be moved to the edited date.<br/><br/><br/><br/></td></tr>
 <tr>
 <td>
-args.validateMode.perserveLinkWithEditing<br/><br/></td><td>
+args.validateMode.preserveLinkWithEditing<br/><br/></td><td>
 True<br/><br/></td><td>
 In this validation mode, taskbar editing will be considered along with the dependency links. There will be no validations in task editing.<br/><br/><br/><br/></td></tr>
 </table>
@@ -176,7 +176,7 @@ export class AppComponent {
     }
     actionBegin(sender) {
         if (sender.requestType == "validateLinkedTask") {
-            sender.validateMode.perserveLinkWithEditing = false;
+            sender.validateMode.preserveLinkWithEditing = false;
         }
     }
 }
