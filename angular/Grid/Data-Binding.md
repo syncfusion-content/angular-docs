@@ -14,6 +14,9 @@ The Grid control uses `ej.DataManager` which supports both RESTful JSON data ser
 1. Local data
 2. Remote data
 
+
+N> DateTime values, retrieved from server-end or database, will be converted based on the local time zone. To avoid the local time zone conversion, refer this knowledge base [link](https://www.syncfusion.com/kb/8613/how-to-convert-dates-to-utc-format).
+
 ## Local Data
 
 To bind local data to the Grid, you can assign a JSON array to the [`dataSource`](https://help.syncfusion.com/api/angular/ejgrid#members:datasource "dataSource") property.
