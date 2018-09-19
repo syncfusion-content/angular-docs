@@ -202,14 +202,14 @@ export class DefaultComponent {
                     customSummaryValue: function currency(args,data){
                          return ej.sum(data, "TotalCosts");
                     },
-                    displayColumn: " TotalCosts "
+                    displayColumn: "TotalCosts"
                 }]
             }
         ],
   }
   function currency(args, data) {
-        //ej.sum is aggregate to add data of totalcosts from datasource
-        return ej.sum(data, " TotalCosts ");
+        //ej.sum is aggregate to add data of total costs from datasource
+        return ej.sum(data, "TotalCosts");
     }
 
 {% endhighlight %}
