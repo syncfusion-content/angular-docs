@@ -173,3 +173,49 @@ export class AppComponent {
     }
 }
 {% endhighlight %}
+
+## Custom Summary
+
+Custom summary can be used to create summary values based on your required custom logic and calculations. To enable the custom summary, the [summaryType](https://help.syncfusion.com/api/angular/ejtreegrid#members:summaryrows-summarycolumns-summarytype "summaryType") should be set to 'custom' and the [customSummaryValue](https://help.syncfusion.com/api/angular/ejtreegrid#members:summaryrows-summarycolumns-customsummaryvalue "customSummaryValue") property should be defined as function. After the custom calculation, the returned value will be displayed in the corresponding summary cell.
+
+{% highlight html %}
+<ej-treegrid id="TreeGridControl" showSummaryRow="true" [summaryRows]="summaryRow">
+</ej-treegrid>
+{% endhighlight %}
+
+{% highlight javascript %}
+import {Component} from '@angular/core';
+@Component({
+    selector: 'ej-app',
+    templateUrl: 'app/app.component.html',
+    styleUrls: ['app/app.component.css']
+})
+export class DefaultComponent {
+  summaryRow:any;
+  constructor(public ganttDataService: GanttDataService) {
+    this.treeGridData = ganttDataService.getGanttData();
+	this.summaryRow=[
+            {
+                title: "Custom Summary",
+                summaryColumns: [{
+                    summaryType: ej.TreeGrid.SummaryType.Custom,
+                    customSummaryValue: function currency(args,data){
+                         return ej.sum(data, "TotalCosts");
+                    },
+                    displayColumn: " TotalCosts "
+                }]
+            }
+        ],
+  }
+  function currency(args, data) {
+        //ej.sum is aggregate to add data of totalcosts from datasource
+        return ej.sum(data, " TotalCosts ");
+    }
+
+{% endhighlight %}
+
+The output of the tree grid with custom summary value is obtained as follows.
+
+![](SummaryRows_images/CustomSummary_img1.png)
+
+
