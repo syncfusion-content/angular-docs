@@ -834,7 +834,7 @@ The following code example describes the above behavior.
 
 {% highlight html %}
 
-    <ej-grid [allowPaging]="true" [dataSource]="gridData" [showSummary]="true" [summaryRows]="summaryrows">
+    <ej-grid [allowPaging]="true" [dataSource]="gridData" [toolbarSettings]="toolbarSettings" [showSummary]="true" [summaryRows]="summaryrows">
 
      <e-columns>
         <e-column field="OrderID" headertext="OrderID" width="70" textalign="right"></e-column>
