@@ -824,6 +824,145 @@ private GridProperties ConvertGridObject(string gridProperty)
 
 {% endhighlight %}
 
+## Exporting with Custom Summary
+
+In Exporting, custom summary needs to be handled using `QueryCustomSummaryInfo` server-side event.
+
+The following code example describes the above behavior.
+
+{% tabs %}
+
+{% highlight html %}
+
+    <ej-grid [allowPaging]="true" [dataSource]="gridData" [showSummary]="true" [summaryRows]="summaryrows">
+
+     <e-columns>
+        <e-column field="OrderID" headertext="OrderID" width="70" textalign="right"></e-column>
+        <e-column field="CustomerID" headertext="Customer ID" width="70" textalign="left"></e-column>
+        <e-column field="EmployeeID" headertext="Employee ID" width="70" textalign="left"></e-column>
+        <e-column field="ShipCity" headertext="Ship City" idth="70" textalign="left"></e-column>
+        <e-column field="Freight" headertext="Freight" width="80" format="{0:C}" textalign="right"></e-column>
+     </e-columns>
+
+  </ej-grid>
+{% endhighlight  %}
+
+{% highlight javascript %}
+
+    import {Component, ViewEncapsulation} from '@angular/core';
+    @Component({
+        selector: 'ej-app',
+        templateUrl: 'app/app.component.html',  //give the path file for Grid control html file.
+    })
+    export class AppComponent {
+        public gridData;
+        public summaryrows;
+        public toolbarSettings;
+        toolbar(e:any){
+
+            if (e.itemName == "Excel Export") {
+                this.Grid.widget.export('http://js.syncfusion.com/demos/ejServices/api/grid/ExcelExport');
+                e.cancel = true;
+            }
+            else if (e.itemName == "Word Export") {
+                this.Grid.widget.export('http://js.syncfusion.com/demos/ejServices/api/grid/WordExport')
+                e.cancel = true;//prevent the default action
+            }
+            else if (e.itemName == "PDF Export") {
+                this.Grid.widget.export('http://js.syncfusion.com/demos/ejServices/api/grid/PdfExport')
+                e.cancel = true;
+            }
+        };
+        constructor()
+        {
+            //The datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
+            this.gridData = (window as any).gridData;
+            this.summaryrows = [{ 
+                summaryColumns: [{ 
+                  summaryType: ej.Grid.SummaryType.Custom, 
+                  displayColumn: "Freight", 
+                  customSummaryValue: function currency(args,data) {
+                       var rs = 100000;
+                       var value = 0.017;
+                       return (rs * value);
+                  }, 
+                  format: "{0:C2}" }] 
+            }];
+            this.toolbarSettings = { showToolbar: true, toolbarItems: ["excelExport", "wordExport", "pdfExport"] };
+        }
+    }
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+        public void ExcelExport(string GridModel)
+        {
+            ExcelExport exp = new ExcelExport();
+            GridExcelExport GridExp = new GridExcelExport();
+            GridExp.QueryCustomSummaryInfo = SummaryCellInfo;
+            GridExp.Theme = "flat-saffron";
+            GridExp.FileName = "Export.xlsx";
+            var DataSource = new NorthwindDataContext().OrdersViews.Take(100).ToList();
+            GridProperties obj = ConvertGridObject(GridModel);
+            exp.Export(obj, DataSource, GridExp);
+        }
+        public void WordExport(string GridModel)
+        {
+            WordExport exp = new WordExport();
+            GridWordExport GridExp = new GridWordExport();
+            GridExp.QueryCustomSummaryInfo = SummaryCellInfo;
+            GridExp.Theme = "flat-saffron";
+            GridExp.FileName = "Export.docx";
+            var DataSource = new NorthwindDataContext().OrdersViews.Take(100).ToList();
+            GridProperties obj = ConvertGridObject(GridModel);
+            exp.Export(obj, DataSource, GridExp);
+        }
+        public void PdfExport(string GridModel)
+        {
+            PdfExport exp = new PdfExport();
+            GridPdfExport GridExp = new GridPdfExport();
+            GridExp.QueryCustomSummaryInfo = SummaryCellInfo;
+            GridExp.Theme = "flat-saffron";
+            GridExp.FileName = "Export.pdf";
+            var DataSource = new NorthwindDataContext().OrdersViews.Take(100).ToList();
+            GridProperties obj = ConvertGridObject(GridModel);
+            exp.Export(obj, DataSource, GridExp);
+        }
+        private object SummaryCellInfo(IQueryable arg1, SummaryColumn arg2)
+        {
+            var rs = 0; double value = 0;
+            if (arg2.DisplayColumn == "Freight")
+            {
+                rs = 100000;
+                value = 0.017;
+            }
+
+            return (rs * value);
+        }
+        private GridProperties ConvertGridObject(string gridProperty)
+        {
+            JavaScriptSerializer serializer = new JavaScriptSerializer();
+            IEnumerable div = (IEnumerable)serializer.Deserialize(gridProperty, typeof(IEnumerable));
+            GridProperties gridProp = new GridProperties();
+            foreach (KeyValuePair<string, object> ds in div)
+            {
+                var property = gridProp.GetType().GetProperty(ds.Key, BindingFlags.Instance | BindingFlags.Public | BindingFlags.IgnoreCase);
+                if (property != null)
+                {
+                    Type type = property.PropertyType;
+                    string serialize = serializer.Serialize(ds.Value);
+                    object value = serializer.Deserialize(serialize, type);
+                    property.SetValue(gridProp, value, null);
+                }
+            }
+            return gridProp;
+        }
+   
+{% endhighlight  %}
+
+{% endtabs %}
+
 ## Hierarchy Grid Exporting
 
 Grid will be exported with its child Grid. This can be achieved by enabling `IncludeChildGrid` property of the respective Exporting classes like `GridExcelExport`, `GridWordExport` and `GridPdfExport` and include the dataSource needed for ChildGrid in the GridProperties object after deserializing them. Remaining procedures will be same as the normal Grid Exporting.
