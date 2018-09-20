@@ -209,7 +209,7 @@ N> In the above code, `ej.web.all.min.js` script reference has been added for de
 
     {% endhighlight %}
 
-To create your own reporting service for report designer follow the steps explained in the following link [Reporting Service ](https://help.syncfusion.com/js/reportdesigner/getting-started#add-webapi-controller-for-report-designer).
+N> In the report designer service url, need to mention the controller name of the reporting service. To create reporting service for report designer follow the steps explained in the following link [Reporting Service ](https://help.syncfusion.com/js/reportdesigner/getting-started#add-webapi-controller-for-report-designer).
 
 ## Run the Application
 
