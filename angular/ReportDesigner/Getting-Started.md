@@ -9,7 +9,7 @@ keywords: ejReportDesigner, ReportDesigner, js ReportDesigner
 
 # Getting Started
 
-Before we start with the ReportDesigner, please refer [this page](https://help.syncfusion.com/angular-2/overview) for general information regarding integrating Syncfusion widget’s.
+This section explains briefly about how to integrate a **Report Designer** control in your application with **Angular**.
 
 # Getting started with Webpack
 
@@ -165,11 +165,11 @@ Open the **ReportDesigner.component.html** page and add the scripts and CSS refe
 
 {% endhighlight %}
 
-In the above code, `ej.web.all.min.js` script reference has been added for demonstration purpose. It is not recommended to use it during deployment, as it contains all the widgets, which results in deploying large script file. Instead, you can use [CSG](http://csg.syncfusion.com/# "") utility to generate a custom script file with the required widgets for deployment purpose.
+N> In the above code, `ej.web.all.min.js` script reference has been added for demonstration purpose. It is not recommended to use it during deployment, as it contains all the widgets, which results in deploying large script file. Instead, you can use [CSG](http://csg.syncfusion.com/# "") utility to generate a custom script file with the required widgets for deployment purpose.
 
 ## Initialize and configure the control
 
-1. Add the below code snippet in body tag of **ReportDesigner.component.html** page.
+1.Add the below code snippet in body tag of **ReportDesigner.component.html** page.
 
     {% highlight html %}
 
@@ -187,7 +187,7 @@ In the above code, `ej.web.all.min.js` script reference has been added for demon
 
     {% endhighlight %}
 
-2. Open a typescript file **ReportDesigner.component.ts** and add the below code snippet.
+2.Open a typescript file **ReportDesigner.component.ts** and add the below code snippet.
 
     {% highlight ts %}
 
@@ -208,6 +208,8 @@ In the above code, `ej.web.all.min.js` script reference has been added for demon
     }
 
     {% endhighlight %}
+
+To create your own reporting service for report designer follow the steps explained in the following link [Reporting Service ](https://help.syncfusion.com/js/reportdesigner/getting-started#add-webapi-controller-for-report-designer).
 
 ## Run the Application
 
