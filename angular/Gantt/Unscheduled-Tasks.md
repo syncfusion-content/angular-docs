@@ -5,7 +5,7 @@ description: Unscheduled Tasks
 platform: Angular
 control: Gantt
 documentation: ug
-api: /api/js/ejgantt
+api: /api/angular/ejgantt
 ---
 
 # Unscheduled Tasks
