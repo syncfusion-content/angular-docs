@@ -32,59 +32,59 @@ The following steps describe how to add report designer control with above clone
 
 * Copy the report designer **reportdesigner.component.ts**  and `core.ts` file from the build location specified below and paste it in `src/ej` folder.
 
-    {% highlight javascript %}
+{% highlight javascript %}
 
-    (Installed Location)\Syncfusion\Essential Studio\{{ site.releaseversion }}\JavaScript\assets-src\angular2\
+(Installed Location)\Syncfusion\Essential Studio\{{ site.releaseversion }}\JavaScript\assets-src\angular2\
 
-    {% endhighlight %}
+{% endhighlight %}
 
-    N> `core.ts` file is mandatory for all Syncfusion JavaScript Angular components
+> `core.ts` file is mandatory for all Syncfusion JavaScript Angular components
 
 * Create `ReportDesigner` folder inside `src` folder.
 
 * Create `ReportDesigner.component.html` view file inside `src/ReportDesigner` folder and render ejReportDesigner Angular component using the below code snippet.
 
-    {% highlight html %}
+{% highlight html %}
 
-    <ej-reportdesigner></ej-reportdesigner>
+<ej-reportdesigner></ej-reportdesigner>
 
-    {% endhighlight %}
+{% endhighlight %}
 
 * Create `ReportDesigner.component.ts` model file inside the folder `src/ReportDesigner` and create sample component using the below code snippet.
 
-    {% highlight ts %}
+{% highlight ts %}
 
-    import { Component } from '@angular/core';
+import { Component } from '@angular/core';
 
-    @Component({
-        selector: 'ej-app',
-        templateUrl: 'src/ReportDesigner/ReportDesigner.component.html',
-        styleUrls: ['src/ReportDesigner/ReportDesigner.component.css']
-    })
+@Component({
+    selector: 'ej-app',
+    templateUrl: 'src/ReportDesigner/ReportDesigner.component.html',
+    styleUrls: ['src/ReportDesigner/ReportDesigner.component.css']
+})
 
-    export class ReportDesignerComponent {
-            //..
-    }
+export class ReportDesignerComponent {
+        //..
+}
 
-    {% endhighlight %}
+{% endhighlight %}
 
 ## Configuring the routes for the router
 
 * Now, we are going to configure the route navigation link for created ReportDesigner sample in `src/app.component.html` file.
 
-    {% highlight html %}
+{% highlight html %}
 
-        <div>
-            <ul class="nav navbar-nav">
-                . . . .
-                <li><a data-toggle="collapse" data-target="#skeleton-navigation-navbar-collapse.in" href="#ReportDesigner" [routerLink]="['/ReportDesigner']">ReportDesigner </a></li>
-            </ul>
-        </div>
-        <main>
-            <router-outlet></router-outlet>
-        </main>
+<div>
+    <ul class="nav navbar-nav">
+        . . . .
+        <li><a data-toggle="collapse" data-target="#skeleton-navigation-navbar-collapse.in" href="#ReportDesigner" [routerLink]="['/ReportDesigner']">ReportDesigner </a></li>
+    </ul>
+</div>
+<main>
+    <router-outlet></router-outlet>
+</main>
 
-    {% endhighlight %}
+{% endhighlight %}
 
 * Import the ejReportDesigner sample component and define the route in `src/app.routes.ts` file.
 
