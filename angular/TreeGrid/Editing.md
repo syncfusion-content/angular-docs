@@ -277,7 +277,7 @@ export class AppComponent {
 
 ### Batch Editing
 
-The batch editing support in the tree grid is used to save all added, edited, and deleted changes to the database with single action. This can be enable by setting the [`editMode`](https://help.syncfusion.com/api/angular/ejtreegrid#members:editsettings-editmode) property to `batchEditing`. The following code example shows how to enable the batchEditing in the tree grid control.
+The batch editing support in the tree grid is used to save all added, edited, and deleted changes to the database with a single action. This can be enabled by setting the [`editMode`](https://help.syncfusion.com/api/angular/ejtreegrid#members:editsettings-editmode) property to `batchEditing`. The following code example shows how to enable the batchEditing in the tree grid control.
 
 {% highlight html %}
 
@@ -299,7 +299,7 @@ export class AppComponent {
 
 {% endhighlight %}
 
-The output of the tree grid with `batchEditing` is obtained as follows.
+The output of a tree grid with `batchEditing` is as follows.
 
 ![](Editing_images/BatchEdit_img1.png)
 
@@ -326,7 +326,7 @@ export class AppComponent {
 
 {% endhighlight %}
 
-The output of the tree grid with `batchEditSettings` and `editMode` as `row` is as obtained follows.
+The output of a tree grid with `batchEditSettings` and `editMode` set as `row` is as follows.
 
 ![](Editing_images/BatchEdit_img2.png)
 
