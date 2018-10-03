@@ -73,7 +73,7 @@ import { Component } from '@angular/core';
 @Component({
     selector: 'my-app',
     template: `<h2>Two-Way Binding</h2>
-    <input type="text" ej-autocomplete [dataSource]="states" (open)="onOpen($event)" [(ngModel)]="value"/>
+    <input type="text" ej-autocomplete [dataSource]="states" [(ngModel)]="value"/>
     <input type="text" name="AutoComplete" class="input ej-inputtext" [(ngModel)]="value" />
     `
 })
@@ -483,7 +483,7 @@ import { EJComponents } from 'ej-angular2';
 export class AppComponent {
     states: Array<string>;
     value:string; 
-    @ViewChild('autocomplete') autocomplete: EJComponents<any, any>;
+    @ViewChild('myApp') autocomplete: EJComponents<any, any>;
     constructor() {
         this.states = [
          "Audi S6", "Austin-Healey", "Alfa Romeo", "Aston Martin",
