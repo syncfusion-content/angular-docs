@@ -496,7 +496,7 @@ npm start
 
 * Browse to [http://localhost:3000](http://localhost:3000) to see the application. And navigate to Dialog tab. The component is rendered as like the below screenshot. You can make changes in the code found under src folder and the browser should auto-refresh itself while you save files.
 
-![Essential JS 1 for Angular with Webpack](/angular/GettingStarted/Images/getting-started-output.png) 
+![Essential JS 1 for Angular with SystemJS](/angular/GettingStarted/Images/getting-started-output.png) 
 
 ## Demos
 
