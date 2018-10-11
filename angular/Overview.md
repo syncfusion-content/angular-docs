@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Welcome to Syncfusion Essential Angular
-description: Overview of Syncfusion Essential Angular
+title: Welcome to Syncfusion Essential JS 1 Angular
+description: Learn the prerequisite and features of Essential JS 1 for Angular components
 platform: Angular
 control: Introduction
 documentation: ug
