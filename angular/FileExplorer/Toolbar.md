@@ -60,7 +60,8 @@ Description</th></tr>
 <tr>
 <td>
 NewFolder <br/><br/></td><td>
-It creates a new folder on the current directory.<br/><br/>While click on the NewFolder item, the dialog displays to get the folder name. Based on the user input, FileExplorer creates new folder on the current directory.<br/><br/><br/><br/></td></tr>
+It creates a new folder on the current directory.<br/><br/>While click on the NewFolder item, the dialog displays to get the folder name. Based on the user input, FileExplorer creates new folder on the current directory.
+Also {{'[createFolder](https://help.syncfusion.com/api/angular/ejfileexplorer#events:createfolder)'| markdownify}} event will be triggered when new folder is created successfully in the file system.<br/><br/><br/><br/></td></tr>
 <tr>
 <td>
 Back <br/><br/></td><td>
@@ -84,7 +85,8 @@ It refreshes the current directory.<br/><br/><br/><br/></td></tr>
 <tr>
 <td>
 Upload <br/><br/></td><td>
-It uploads a file or list of files into the current directory.<br/><br/>And you can customize the upload configurations.<br/><br/><br/><br/></td></tr>
+It uploads a file or list of files into the current directory.<br/><br/>And you can customize the upload configurations, for details check {{'[here](https://help.syncfusion.com/angular/fileexplorer/toolbar#customizing-the-upload-functionality)'| markdownify }}.
+<br/><br/><br/><br/></td></tr>
 <tr>
 <td>
 Delete <br/><br/></td><td>
@@ -92,19 +94,24 @@ It delete the current selected file or folder. The delete icon is enable state i
 <tr>
 <td>
 Rename <br/><br/></td><td>
-This is used to rename the current selected file or folder. The rename icon is enable state if you select any file or folder.<br/><br/>Even if you selected multiple files, it renames the last selected file only.<br/><br/><br/><br/></td></tr>
+It delete the current selected file or folder. The delete icon is enable state if you select any file or folder.<br/><br/>
+The {{'[remove](https://help.syncfusion.com/api/angular/ejfileexplorer#events:remove)'| markdownify}} event will be triggered when file or folder is deleted.<br/><br/>If you selected the multiple files, it deletes all the selected items.<br/><br/><br/><br/></td></tr>
 <tr>
 <td>
 Download <br/><br/></td><td>
-It downloads the selected files. The download icon is enable state if you select any file or folder.<br/><br/>If you select multiple files, it downloads all the files in a zip format.<br/><br/><br/><br/></td></tr>
+It downloads the selected files. The download icon is enable state if you select any file or folder.<br/><br/>
+The {{'[beforeDownload](https://help.syncfusion.com/api/angular/ejfileexplorer#events:beforedownload)'| markdownify}} event will be triggered before the files are downloaded.
+<br/><br/>If you select multiple files, it downloads all the files in a zip format.<br/><br/><br/><br/></td></tr>
 <tr>
 <td>
 Cut <br/><br/></td><td>
-It makes the copy of the selected files or folders into the clipboard. When the user paste the files in any location, the files are removed from the source location.<br/><br/><br/><br/></td></tr>
+It makes the copy of the selected files or folders into the clipboard. When the user paste the files in any location, the files are removed from the source location.
+The {{'[cut](https://help.syncfusion.com/api/angular/ejfileexplorer#events:cut)'| markdownify}} event will be triggered when files or folders are removed from the source.<br/><br/><br/><br/></td></tr>
 <tr>
 <td>
 Copy <br/><br/></td><td>
-It makes the copy of the selected files or folders into the clipboard. When the user paste the files, the copy of the files only pasted in the target location.<br/><br/><br/><br/></td></tr>
+It makes the copy of the selected files or folders into the clipboard. When the user paste the files, the copy of the files are pasted in the target location.
+The {{'[copy](https://help.syncfusion.com/api/angular/ejfileexplorer#events:copy)'| markdownify}} event will be triggered when file or folder is copied.<br/><br/><br/><br/></td></tr>
 <tr>
 <td>
 Paste <br/><br/></td><td>
@@ -112,7 +119,8 @@ It paste the files from the clipboard into the currently selected folder. <br/><
 <tr>
 <td>
 Details <br/><br/></td><td>
-It displays the details of the current selected file or folder.<br/><br/><br/><br/></td></tr>
+It pastes the files from the clipboard into the currently selected folder. <br/><br/>Note: Only when the files are copied into the clipboard it is enabled.
+The {{'[paste](https://help.syncfusion.com/api/angular/ejfileexplorer#events:paste)'| markdownify}} event will be triggered when file or folder is pasted.<br/><br/><br/><br/></td></tr>
 <tr>
 <td>
 Search bar<br/><br/></td><td>
@@ -127,7 +135,7 @@ It's used to sorting the files and folders from the current directory.The sortin
 
 ## Toolbar Visibility
 
-The visibility of the toolbar can be customized through the `showToolbar` property. By disabling this property you can remove the toolbar from FileExplorer.
+The visibility of the toolbar can be customized through the [showToolbar](https://help.syncfusion.com/api/angular/ejfileexplorer#members:showtoolbar) property. By disabling this property you can remove the toolbar from FileExplorer. Also you can remove the particular toolbar item by using [removeToolbarItem](https://help.syncfusion.com/api/angular/ejfileexplorer#methods:removetoolbaritem) method.
 
 {% highlight html %}
 
@@ -333,6 +341,25 @@ fileExpObj.enableToolbarItem("NewFolder");
 
 {% endhighlight %}
 
+### Enable / Disable the custom added tool in Toolbar Item
+
+If you want to enable / disable the custom added tool in toolbar, you need to pass the corresponding li elements of custom added tool in [enableToolbarItem](https://help.syncfusion.com/api/js/ejfileexplorer#methods:enabletoolbaritem) / [disableToolbarItem](https://help.syncfusion.com/api/js/ejfileexplorer#methods:disabletoolbaritem) method of FileExplorer. Since we have consider this custom tool as a object type.
+
+{% highlight javascript %}
+        
+        var fileExpObj = $("#fileExplorer").data("ejFileExplorer");
+        
+        //tool is a cssClass of FileExplorer 
+        // this disables the custom tool item 
+        
+        var li = $(".tool").find(".Help").closest('li'); 
+        fileExpObj.disableToolbarItem(li); 
+        
+        // this enables the custom tool item 
+        fileExpObj.enableToolbarItem(li);
+
+{% endhighlight %}
+
 ## Customizing the Upload Functionality
 
 FileExplorer helps you to upload the file using Upload component. File upload can be done through the toolbar item or context menu item. The `uploadSettings` property is used to configure the upload functionalities.
@@ -358,6 +385,8 @@ This property has the below sub properties with the default values:
 **maxFileSize**: The property limits the maximum file size to upload. It accepts the value in bytes.
 
 **autoUpload**: when you enable this property,  the upload action performed automatically after select the files. When you disable this property, it shows a confirmation dialog with the selected file details and perform the upload action on press the “upload” button. 
+
+During upload process following events will be triggered, {{'[beforeUploadSend](https://help.syncfusion.com/api/angular/ejfileexplorer#events:beforeuploadsend)'| markdownify}}, {{'[beforeUploadDialogOpen](https://help.syncfusion.com/api/angular/ejfileexplorer#events:beforeuploaddialogopen)'| markdownify}}, {{'[beforeUpload](https://help.syncfusion.com/api/angular/ejfileexplorer#events:beforeupload)'| markdownify}}, {{'[uploadError](https://help.syncfusion.com/api/angular/ejfileexplorer#events:uploaderror)'| markdownify}}, {{'[uploadSuccess](https://help.syncfusion.com/api/angular/ejfileexplorer#events:uploadsuccess)'| markdownify}} and {{'[uploadComplete](https://help.syncfusion.com/api/angular/ejfileexplorer#events:uploadcomplete)'| markdownify}}. You can customize the upload settings with these events.
 
 {% highlight html %}
 

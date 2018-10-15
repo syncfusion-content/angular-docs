@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Welcome to Syncfusion Essential Angular
-description: Overview of Syncfusion Essential Angular
+title: Welcome to Syncfusion Essential JS 1 Angular
+description: Learn the prerequisite and features of Essential JS 1 for Angular components
 platform: Angular
 control: Introduction
 documentation: ug
@@ -18,7 +18,7 @@ The Syncfusion Angular components are named with prefix `ej` to avoid conflictin
 * Event binding
 
 <blockquote class="notes angular-version">
-<p>The Essential JavaScript for Syncfusion Angular components supports Angular release version <a href="https://blog.angular.io/version-5-0-0-of-angular-now-available-37e414935ced" title="Release Version">5.0.0</a>.</p>
+<p>The Essential JavaScript for Syncfusion Angular components supports Angular release version <a href="https://blog.angular.io/version-6-of-angular-now-available-cc56b0efa7a4" title="Release Version">6.0.0</a>.</p>
 </blockquote>
 
 N> To getting started with Syncfusion Angular seed application navigate to [here](/angular-2/GettingStarted "Getting started").
@@ -73,7 +73,7 @@ import { Component } from '@angular/core';
 @Component({
     selector: 'my-app',
     template: `<h2>Two-Way Binding</h2>
-    <input type="text" ej-autocomplete [dataSource]="states" (open)="onOpen($event)" [(ngModel)]="value"/>
+    <input type="text" ej-autocomplete [dataSource]="states" [(ngModel)]="value"/>
     <input type="text" name="AutoComplete" class="input ej-inputtext" [(ngModel)]="value" />
     `
 })
@@ -483,7 +483,7 @@ import { EJComponents } from 'ej-angular2';
 export class AppComponent {
     states: Array<string>;
     value:string; 
-    @ViewChild('autocomplete') autocomplete: EJComponents<any, any>;
+    @ViewChild('myApp') autocomplete: EJComponents<any, any>;
     constructor() {
         this.states = [
          "Audi S6", "Austin-Healey", "Alfa Romeo", "Aston Martin",

@@ -60,4 +60,50 @@ The following screen shot shows working time range in Gantt control.
 
 ![](Working-time-range_images/Working-time-range_img1.png)
 
+## Highlight working time range
 
+Highlight the working time range with a background color by using the `dayWorkingTime.background` property. You can highlight the non-working time ranges in a day. To do this, set the `highlightNonWorkingTime` property to `true`. To customize the non-working time background, use the `nonWorkingBackground` property.
+
+The following code snippet explains how to define the working time range with background in Gantt.
+
+{% highlight javascript %}
+<ej-gantt id="GanttControl" 
+          [dayWorkingTime]="dayWorkingTime"
+          [highlightNonWorkingTime]="true"
+          nonWorkingBackground="#B7C3D0" >
+</ej-gantt>
+{% endhighlight %}
+
+{% highlight javascript %}
+import {
+    Component
+} from '@angular/core';
+
+@Component({
+    selector: 'ej-app',
+    templateUrl: 'app/app.component.html'
+})
+export class AppComponent {
+    public dayWorkingTime: any;
+    constructor() {
+        //...
+        this.dayWorkingTime = [{
+                "from": "08:00 AM",
+                "to": "12:00 PM",
+                background: "#EBF5FB"
+            },
+            {
+                "from": "01:00 PM",
+                "to": "05:00 PM",
+                background: "#EBF5FB"
+            }
+        ]
+    }
+}
+{% endhighlight %}
+
+N> The background colors of working time range are highlighted only when the `scheduleHeaderSettings.scheduleHeaderType` value as `ej.Gantt.ScheduleHeaderType.Day`.
+
+The following screenshot shows the working time range with background colors.
+
+![](Working-time-range_images/Working-time-range_img2.png)

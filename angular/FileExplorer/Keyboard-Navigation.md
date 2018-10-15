@@ -10,7 +10,7 @@ documentation: ug
 
 # Keyboard Navigation
 
-The FileExplorer control can be fully accessible with the help of keyboard shortcuts. The below table shows the list of keyboard shortcuts to access the FileExplorer control. 
+The FileExplorer control can be fully accessible with the help of keyboard shortcuts and it can be allowed by specifying [allowKeyboardNavigation](https://help.syncfusion.com/api/angular/ejfileexplorer#members:allowkeyboardnavigation) as true. The below table shows the list of keyboard shortcuts to access the FileExplorer control. 
 
 N> set focus on FileExplorer component to access the keyboard shortcuts.
 
