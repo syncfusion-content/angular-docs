@@ -28,7 +28,7 @@ The easiest way to start Syncfusion Angular is to use [QuickStart](https://angul
 
 {% highlight javascript %}
 
-git clone https://github.com/angular/quickstart.git quickstart
+git clone https://github.com/angular/quickstart.git quick-start
 
 {% endhighlight %}
 
@@ -36,7 +36,7 @@ Or [Download the QuickStart](https://github.com/angular/quickstart/archive/maste
 
 {% highlight javascript %}
 
-cd quickstart
+cd quick-start
 npm install
 npm start
 
