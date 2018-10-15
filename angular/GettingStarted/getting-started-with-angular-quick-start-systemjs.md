@@ -24,7 +24,7 @@ Below steps depicts how to configure Syncfusion Angular components for local dev
 
 ## Clone Angular QuickStart
 
-The easiest way to start Syncfusion Angular is to use [QuickStart](https://angular.io/guide/setup) of Angular. Clone the Angular quickstart with below commands.
+The easiest way to start Syncfusion Angular is to use [QuickStart](https://angular.io/guide/setup) of Angular. Clone the Angular quick-start with below commands.
 
 {% highlight javascript %}
 
@@ -66,7 +66,7 @@ npm install syncfusion-javascript --save
 
 {% endhighlight %}
 
-* For accessing `ej` object in quickstart application, install typings [jquery](https://www.npmjs.com/package/@types/jquery) and [ej.web.all](https://www.npmjs.com/package/@types/ej.web.all) package. i.e. Accessing `ej.TextAlign.Left` from typing file `ej.web.all`. Install these packages with below commands.
+* For accessing `ej` object in quick-start application, install typings [jquery](https://www.npmjs.com/package/@types/jquery) and [ej.web.all](https://www.npmjs.com/package/@types/ej.web.all) package. i.e. Accessing `ej.TextAlign.Left` from typing file `ej.web.all`. Install these packages with below commands.
 
 {% highlight javascript %}
 
