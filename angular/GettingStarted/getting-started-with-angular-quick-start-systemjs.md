@@ -265,4 +265,4 @@ export class AppComponent {
 Run the command `npm start` to view the output of the application.  Output will appear as follows.
 
 
-![](/angular/GettingStarted/Images/quickstart-systemjs-output.png)
+![Getting Started SystemJS](/angular/GettingStarted/Images/quickstart-systemjs-output.png)
