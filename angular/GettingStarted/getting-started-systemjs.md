@@ -93,7 +93,7 @@ export class ComponentName {
 
 {% endhighlight %}
 
-N> We recommend you to go through the [quick start](https://angular.io/docs/ts/latest/quickstart.html) of Angular application to get deeper knowledge of setup and structure of the application.
+N> We recommend you to go through the [quick start](https://angular.io/guide/quickstart) of Angular application to get deeper knowledge of setup and structure of the application.
 
 ## Consuming ej-angular2 library
 
