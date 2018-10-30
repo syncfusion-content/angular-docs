@@ -93,7 +93,7 @@ namespace ReportViewerDemo.Api
 
 1. Right-Click the Project, select Add  and select Global.asax file from the listed templates.
 
-   ![](Getting-Started_images/Getting-Started_img5.png) 
+   ![Getting-Started](Getting-Started_images/Getting-Started_img5.png) 
    
    Adding Global.asax
    {:.caption}
