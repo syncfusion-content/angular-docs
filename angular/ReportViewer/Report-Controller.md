@@ -68,9 +68,9 @@ namespace ReportViewerDemo.Api
         //Get action for getting resources from the report
         [System.Web.Http.ActionName("GetResource")]
         [AcceptVerbs("GET")]
-        public object GetResource(string key, string resourcetype, bool isPrint) 
+        public object GetResource(string key, string resourceType, bool isPrint) 
         {
-            return ReportHelper.GetResource(key, resourcetype, isPrint);
+            return ReportHelper.GetResource(key, resourceType, isPrint);
         }
         
         //Method will be called when initialize the report options before start processing the report        
