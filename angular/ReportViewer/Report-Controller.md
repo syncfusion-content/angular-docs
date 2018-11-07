@@ -176,6 +176,7 @@ namespace ReportViewerDemo.Api
    ~~~
 
 ## Create a Web API Controller for .NET Core platform
+The ASP.NET Core Report viewer uses WebApi services to process the report file and get the request from control.
 
 ### References
 You should add the following packages for the report viewer:
@@ -190,7 +191,7 @@ Purpose
 </tr>
 <tr>
 <td>Syncfusion.EJ.AspNet.Core</td>
-<td>Builds the report designer controls with the tag helper.</td>
+<td>Builds the report viewer controls with the tag helper.</td>
 </tr>
 <tr>
 <td>Syncfusion.EJ.ReportViewer.AspNet.Core</td>
@@ -198,7 +199,7 @@ Purpose
 </tr>
 <tr>
 <td>System.Data.SqlClient</td>
-<td>This is an optional package for the report designer. It should be referred in project when renders the RDL report and which contains the SQL Server and SQL Azure datasource. Also, the package version should be higher of 4.1.0 . </td>
+<td>This is an optional package for the report viewer. It should be referred in project when renders the RDL report and which contains the SQL Server and SQL Azure datasource. Also, the package version should be higher of 4.1.0 . </td>
 </tr>
 </table>
 
@@ -214,7 +215,7 @@ Purpose
 </tr>
 <tr>
 <td>Syncfusion.EJ</td>
-<td>Builds the report designer controls with the tag helper.</td>
+<td>Builds the report viewer controls with the tag helper.</td>
 </tr>
 <tr>
 <td>Syncfusion.Report.Net.Core</td>
@@ -242,17 +243,13 @@ Purpose
 </tr>
 <tr>
 <td>Newtonsoft.Json</td>
-<td>Serialize and deserialize the data for report designer. It is a mandatory package for the report designer, and the package version should be higher of 10.0.1 for NET Core 2.0 and others should be higher of 9.0.1.</td>
+<td>Serialize and deserialize the data for report viewer. It is a mandatory package for the report viewer, and the package version should be higher of 10.0.1 for NET Core 2.0 and others should be higher of 9.0.1.</td>
 </tr>
 </table>
 
 N> Please ensure all the above dependent packages are added properly after the NuGet package installation completed.
 
-### Add controller for ReportViewer in ASP.NET Core platform
- 
-The ASP.NET Core Report Designer uses WebApi services to process the report file and get the request from control.
-
-#### Inherit IReportController
+### Inherit IReportController
  
 The ApiController should inherit the `IReportController` interface to build the report viewer compatible Web API, and the `ReportHelper` should be used with `IReportController` interface implemented methods. The `ReportHelper` will perform the server-side related process and will return the required data for the report viewer to process the rendering. Here, the sample code is provided with an MVC application to build the Web API service along with the existing controller.
 
