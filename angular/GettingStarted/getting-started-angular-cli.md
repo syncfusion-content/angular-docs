@@ -512,7 +512,7 @@ ng serve
 
 {% endhighlight %}
 
-![Getting Started Angular CLI](/Images/angularcli.png)
+![Getting Started Angular CLI](Images/angularcli.png)
 
 ## ng build - production
 
