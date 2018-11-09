@@ -215,6 +215,13 @@ export class AppComponent {
 
  {% endhighlight %}
 
+N> If you have faced the issue `'ej' is not defined` after the above configuration in Angular CLI latest version 7, Please refer the below code snippet in your application where you have rendered Syncfusion Components(model file) to resolve the issue.
+
+{% highlight ts %}
+
+`/// <reference types="ej.web.all" />`
+
+{% endhighlight %}
 
 Refer the below codes to create the application
 
