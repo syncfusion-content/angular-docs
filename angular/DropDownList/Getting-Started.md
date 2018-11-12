@@ -86,7 +86,7 @@ The DropDownList can be created from a HTML ‘input’ element with the HTML 'i
 
 {% highlight html %}
 	
-	  <input id="dropdown1" ej-dropdownlist [dataSource]="data" [fields]="fieldsvalues" [(value)]="value"/>
+	  <input id="dropdown1" ej-dropdownlist [dataSource]="data" [fields]="fields" [(value)]="value"/>
 			
 {% endhighlight %}
 	
@@ -95,12 +95,12 @@ The DropDownList can be created from a HTML ‘input’ element with the HTML 'i
 		import {Component} from '@angular/core';
 
          @Component({
-           selector: 'sd-home',
+           selector: 'ej-app',
            templateUrl: 'app/components/dropdown/dropdown.component.html' //give the path file for dropdownlist component html file.
           })
           export class DropDownListComponent {
                 data: Array<Object> = [];
-                fieldsvalues: Object;
+                fields: Object;
                 value: string;
                 constructor() {
                 this.data = [
@@ -111,13 +111,13 @@ The DropDownList can be created from a HTML ‘input’ element with the HTML 'i
                     {text: "ListItem 5", value: "ListItem 5" },
             
                   ];
-              this.fieldsvalues = { dataSource: this.data, text: "text", value: "value" };
+              this.fields = { dataSource: this.data, text: "text", value: "value" };
               }
             }		
 	
 {% endhighlight %}
 
-![](Getting-Started-images/Getting-Started_img1.jpeg)
+![DropDownList](Getting-Started-images/Getting-Started_img1.jpeg)
 
 ## Populating data
 
@@ -125,7 +125,7 @@ The DropDownList can be bounded to both local array and remote data services .Yo
  
 {% highlight html %}
 
-	 <input id="dropdown1" ej-dropdownlist [dataSource]="customers" [fields]="fieldsvalues" [(value)]="value"/>
+	 <input id="dropdown1" ej-dropdownlist [dataSource]="customers" [fields]="fields" [(value)]="value"/>
 	
 {% endhighlight %}
 	
@@ -140,20 +140,20 @@ The DropDownList can be bounded to both local array and remote data services .Yo
              })
         export class AppComponent {
                customers: Array<Object> = [];
-               fieldsvalues: Object;
+               fields: Object;
                constructor() {
                this.customers = [
                  { id: "1", text: "ALFKI" }, { id: "2", text: "ANATR" }, { id: "3", text: "ANTON" },
                  { id: "4", text: "AROUT" }, { id: "5", text: "BERGS" }, { id: "6", text: "BLAUS" }
                ];
-             this.fieldsvalues = { dataSource: this.customers, id: 'id', text: 'text', value: 'text' };
+             this.fields = { dataSource: this.customers, id: 'id', text: 'text', value: 'text' };
     }
        
          }
 	
 {% endhighlight %}
 	
-![](Getting-Started-images/Getting-Started2.jpg)
+![Data](Getting-Started-images/Getting-Started2.jpg)
 
 ## Setting Dimensions
 
@@ -161,7 +161,7 @@ DropDownList dimensions can be set using width and height API.
 	
 {% highlight html %}
 	
-	<input id="bookSelect" ej-dropdownlist [dataSource]="data" [fields]="fieldsvalues" width="300px" height="50px"/>
+	<input id="bookSelect" ej-dropdownlist [dataSource]="data" [fields]="fields" width="300px" height="50px"/>
 
 {% endhighlight %}
 	
@@ -171,7 +171,7 @@ PopupWidth and popupHeight can be used to create a fixed size popup list.
 
 {% highlight html %}
 
-	<input id="bookSelect" ej-dropdownlist [dataSource]="data" [fields]="fieldsvalues" width="300px" height="50px" popupWidth="300px" popupHeight="200px"/>
+	<input id="bookSelect" ej-dropdownlist [dataSource]="data" [fields]="fields" width="300px" height="50px" popupWidth="300px" popupHeight="200px"/>
 
 {% endhighlight %}
 	
@@ -183,7 +183,7 @@ N> To select multiple items based on index, refer [here](functionalities#selecti
 
 {% highlight html %}
 
-	<input id="bookSelect" ej-dropdownlist [dataSource]="data" [fields]="fieldsvalues" [(value)]="value" (ejchange)="onChange($event)" width="300px" height="50px" popupWidth="300px" popupHeight="100px"/>
+	<input id="bookSelect" ej-dropdownlist [dataSource]="data" [fields]="fields" [(value)]="value" (ejchange)="onChange($event)" width="300px" height="50px" popupWidth="300px" popupHeight="100px"/>
 
 {% endhighlight %}
 	
@@ -198,7 +198,7 @@ N> To select multiple items based on index, refer [here](functionalities#selecti
                    })
         export class AppComponent {
               data: Array<Object> = [];
-                fieldsvalues: Object;
+                fields: Object;
                 value: string;
                 constructor() {
                 this.data = [
@@ -209,7 +209,7 @@ N> To select multiple items based on index, refer [here](functionalities#selecti
                     {text: "ListItem 5", value: "ListItem 5" },
             
                   ];
-              this.fieldsvalues = { dataSource: this.data, text: "text", value: "value" };
+              this.fields = { dataSource: this.data, text: "text", value: "value" };
               this.value = "ListItem 1";
               }
 			  onChange(event)
