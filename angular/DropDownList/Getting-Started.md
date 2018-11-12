@@ -183,7 +183,7 @@ N> To select multiple items based on index, refer [here](functionalities#selecti
 
 {% highlight html %}
 
-	<input id="bookSelect" ej-dropdownlist [dataSource]="data" [fields]="fieldsvalues" [(value)]="value" (change)="onChange($event)" width="300px" height="50px" popupWidth="300px" popupHeight="100px"/>
+	<input id="bookSelect" ej-dropdownlist [dataSource]="data" [fields]="fieldsvalues" [(value)]="value" (ejchange)="onChange($event)" width="300px" height="50px" popupWidth="300px" popupHeight="100px"/>
 
 {% endhighlight %}
 	
