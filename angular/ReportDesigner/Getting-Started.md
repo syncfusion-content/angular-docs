@@ -1,5 +1,5 @@
 ---
-title: Getting Started for Angular ReportDesigner
+title: Getting Started for Angular Syncfusion Web ReportDesigner
 description: ReportDesigner
 platform: Angular
 control: ReportDesigner
@@ -208,4 +208,4 @@ Execute the below command in the command prompt.
 
 The application gets opened in the browser automatically and now, navigate to the **ReportDesigner** tab to view the ReportDesigner output on the page as displayed in the following screenshot.
 
-![](Getting-Started_images/Getting-Started-img1.png) 
+![Report Designer Demo](Getting-Started_images/Getting-Started-img1.png) 
