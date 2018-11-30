@@ -1,6 +1,6 @@
 ---
 layout: post
-title: action-buttons
+title: Syncfusion action-buttons
 description: action buttons
 platform: Angular
 control: Angular- Dialog
@@ -27,7 +27,7 @@ Add the following code in HTML page to render Dialog component.
 
 {% highlight html %}
 
-    <ej-dialog id="dialog" title="Dialog" [actionButtons]="actionbuttons">
+    <ej-dialog id="dialog" title="Dialog" [actionButtons]="actionButtons">
         This is a simple dialog
     </ej-dialog>
 
@@ -38,9 +38,9 @@ Add the following code in constructor file.
 {% highlight javascript %}
 
     export class AppComponent {
-        actionbuttons: any;
+        actionButtons: any;
         constructor() {
-            this.actionbuttons = ["close", "maximize", "minimize"];
+            this.actionButtons = ["close", "maximize", "minimize"];
         }
     }
 
@@ -58,7 +58,7 @@ Add the following code in HTML page to define actionButtonClick event of Dialog 
 
 {% highlight html %}
 
-    <ej-dialog id="dialog" title="Dialog" [actionButtons]="actionbuttons" (actionButtonClick)="playMedia($event)">
+    <ej-dialog id="dialog" title="Dialog" [actionButtons]="actionButtons" (actionButtonClick)="playMedia($event)">
         This is a simple dialog
     </ej-dialog>
 
@@ -69,9 +69,9 @@ Add the following code in constructor file.
 {% highlight javascript %}
 
     export class AppComponent {
-        actionbuttons: any;
+        actionButtons: any;
         constructor() {
-            this.actionbuttons = ["close", "maximize", "minimize", "pin", "mediaplay", "search"];
+            this.actionButtons = ["close", "maximize", "minimize", "pin", "mediaplay", "search"];
         }
         playMedia(event){
             console.log(event.buttonID);
@@ -85,7 +85,7 @@ Add the following code in constructor file.
 
 ### Giving Modal dialog
 
-The Dialog component’s [modal dialog](https://en.wikipedia.org/wiki/Modal_window)acts like a child window that is displayed on top of the main window/screen and disables the main window interaction until it is closed. We can enable or disablethis modal dialog in our dialog component by using the property **enableModal**.
+The Dialog component’s [`modal dialog`](https://en.wikipedia.org/wiki/Modal_window) acts like a child window that is displayed on top of the main window/screen and disables the main window interaction until it is closed. We can enable or disable this modal dialog in our dialog component by using the property **enableModal**.
 
 You can refer the following code example to set this property.
 
@@ -93,7 +93,7 @@ You can refer the following code example to set this property.
 
 {% highlight html %}
 
-    <ej-dialog id="lognForm" title="Modal dialog" [enableModal]="enablemodal" [enableResize]="resize" [isResponsive]="responsive">
+    <ej-dialog id="lognForm" title="Modal dialog" [enableModal]="enableModal" [enableResize]="resize" [isResponsive]="responsive">
         This is a simple model dialog
     </ej-dialog>
 
@@ -104,11 +104,11 @@ Add the following code in constructor file.
 {% highlight javascript %}
 
     export class AppComponent {
-        enablemodal: boolean;
+        enableModal: boolean;
         resize:boolean;
         responsive:boolean;
         constructor() {
-            this.enablemodal = true;
+            this.enableModal = true;
             this.resize=true;
             this.responsive=true;
         }
@@ -116,7 +116,7 @@ Add the following code in constructor file.
 
 {% endhighlight %}
 
-![](action-buttons_images\giving-modael-dialog_img1.png)
+![Modal dialog](action-buttons_images\giving-modael-dialog_img1.png)
 
 
 ### Containment
@@ -128,7 +128,7 @@ You can refer the following code example to set this property.
 {% highlight html %}
 
     <div class="cols-sample-area">
-        <ej-dialog id="lognForm" title="Modal dialog" [enableModal]="enablemodal" [containment]="containment" [enableResize]="resize" [isResponsive]="responsive">
+        <ej-dialog id="lognForm" title="Modal dialog" [enableModal]="enableModal" [containment]="containment" [enableResize]="resize" [isResponsive]="responsive">
             This is a simple model dialog
         </ej-dialog>
     </div>
@@ -140,12 +140,12 @@ Add the following code in constructor file.
 {% highlight javascript %}
 
     export class AppComponent {
-        enablemodal: boolean;
+        enableModal: boolean;
         resize:boolean;
         responsive:boolean;
         containment:any;
         constructor() {
-            this.enablemodal = true;
+            this.enableModal = true;
             this.resize=true;
             this.responsive=true;
             this.containment=".cols-sample-area";
@@ -156,7 +156,7 @@ Add the following code in constructor file.
 
 In the above code we have restricted to move the dialog component with the given containment (i.e.) with the cols-sample-area 
 
-![](action-buttons_images\containment_img1.png)
+![Containment](action-buttons_images\containment_img1.png)
 
-Note: This **containment** property is mostly used forthe Modal dialog to restrict to specific container. And this property is similar to the “[target](https://help.syncfusion.com/api/js/ejdialog)” property but this additionally sets the drag area for dialog. Also this property overrides target property if both are set.
+Note: This **containment** property is mostly used for the Modal dialog to restrict to specific container. And this property is similar to the “[target](https://help.syncfusion.com/api/js/ejdialog)” property but this additionally sets the drag area for dialog. Also this property overrides target property if both are set.
 

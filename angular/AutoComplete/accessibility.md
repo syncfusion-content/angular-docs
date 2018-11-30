@@ -1,6 +1,6 @@
 ---
 layout: post
-title: accessibility
+title: Syncfusion accessibility
 description: accessibility
 platform: Angular
 control: Autocomplete 
@@ -11,7 +11,7 @@ documentation: ug
 
 ### Keyboard Interaction
 
-Autocomplete component is completely compatible to work with Keyboard as Keyboard as an alternative for mouse. The keyboard intseraction will be enabled by default in the Autocomplete component. Press Alt+J to focus the Autocomplete element.
+Autocomplete component is completely compatible to work with Keyboard as Keyboard as an alternative for mouse. The keyboard interaction will be enabled by default in the Autocomplete component. Press Alt+J to focus the Autocomplete element.
 
 Please refer the below table for details about short cut keys and its corresponding usage.
 

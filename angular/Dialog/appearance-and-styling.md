@@ -1,6 +1,6 @@
 ---
 layout: post
-title: appearance-and-styling
+title: Syncfusion appearance-and-styling
 description: appearance and styling
 platform: Angular
 control: Angular- Dialog
@@ -17,7 +17,7 @@ Add the following code in HTML page.
 
 {% highlight html %}
 
-    <ej-dialog id="dialog" title="Dialog" [showHeader]="showheader">
+    <ej-dialog id="dialog" title="Dialog" [showHeader]="showHeader">
         This is a simple dialog
     </ej-dialog>
 
@@ -28,9 +28,9 @@ Add the following code in constructor file.
 {% highlight javascript %}
 
     export class AppComponent {
-        showheader:boolean;
+        showHeader:boolean;
         constructor() {
-            this.showheader=false;
+            this.showHeader=false;
     }
 
 {% endhighlight %}
@@ -43,7 +43,7 @@ Add the following code in HTML page.
 
 {% highlight html %}
 
-    <ej-dialog id="dialog" title="Dialog" [showOnInit]="showoninit">
+    <ej-dialog id="dialog" title="Dialog" [showOnInit]="showOnInit">
         This is a simple dialog
     </ej-dialog>
 
@@ -54,22 +54,22 @@ Add the following code in constructor file.
 {% highlight javascript %}
 
     export class AppComponent {
-        showoninit:boolean;
+        showOnInit:boolean;
         constructor() {
-            this.showoninit=false;
+            this.showOnInit=false;
     }
 
 {% endhighlight %}
 
 ### Applying Rounded Corner
 
-You can use **showRoundedCorner** property to add rounded borders to the dialog popup elements. By default, roundedcorner property is disabled in Dialog.
+You can use **showRoundedCorner** property to add rounded borders to the dialog popup elements. By default, rounded corner property is disabled in Dialog.
 
 Add the following code in HTML page.
 
 {% highlight html %}
 
-    <ej-dialog id="dialog" title="Dialog" [showRoundedCorner]="showroundedcorner">
+    <ej-dialog id="dialog" title="Dialog" [showRoundedCorner]="showRoundedCorner">
         This is a simple dialog
     </ej-dialog>
 
@@ -80,15 +80,15 @@ Add the following code in constructor file.
 {% highlight javascript %}
 
     export class AppComponent {
-        showroundedcorner:boolean;
+        showRoundedCorner:boolean;
         constructor() {
-            this.showroundedcorner=true;
+            this.showRoundedCorner=true;
     }
 
 {% endhighlight %}
 
 
-![](appearance-and-styling_images\applying-rounded-corner_img1.png)
+![Rounded Corner](appearance-and-styling_images\applying-rounded-corner_img1.png)
 
 ### Responsive Dialog:
 
@@ -102,7 +102,7 @@ Add the following code in HTML page.
 
 {% highlight html %}
 
-    <ej-dialog id="dialog" title="Dialog" [htmlAttributes]="htmlattributes">
+    <ej-dialog id="dialog" title="Dialog" [htmlAttributes]="htmlAttributes">
         This is a simple dialog
     </ej-dialog>
 
@@ -113,9 +113,9 @@ Add the following code in constructor file.
 {% highlight javascript %}
 
     export class AppComponent {
-        htmlattributes:object;
+        htmlAttributes:object;
         constructor() {
-            this.htmlattributes={
+            this.htmlAttributes={
                     class: "my-class", style: "border:1px solid red"
                 }
     }
@@ -123,5 +123,5 @@ Add the following code in constructor file.
 
 {% endhighlight %}
 
-![](appearance-and-styling_images\using-adding-html-attributes_img1.png)
+![Attributes](appearance-and-styling_images\using-adding-html-attributes_img1.png)
 
