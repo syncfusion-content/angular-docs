@@ -1,6 +1,6 @@
 ---
 layout: post
-title: accessibility
+title: Syncfusion accessibility
 description: accessibility
 platform: Angular
 control: Autocomplete 

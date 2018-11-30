@@ -1,6 +1,6 @@
 ---
 layout: post
-title: animation
+title: Syncfusion animation
 description: animation
 platform: Angular
 control: Angular- Dialog
@@ -164,7 +164,7 @@ Add the following code in constructor file.
 {% endhighlight %}
 
 
-![](animation_images\iimage-_img1.png)
+![Animation](animation_images\iimage-_img1.png)
 
 
 

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: see-also
+title: Syncfusion see-also
 description: see also
 platform: Angular
 control: Autocomplete 
@@ -102,7 +102,7 @@ export class AppComponent {
 {% endhighlight %}
 
 
-![](howto_images\Validate.png)
+![Validate](howto_images\Validate.png)
 
 **NOTE**
 
@@ -161,7 +161,7 @@ export class AppComponent {
 {% endhighlight %}
 
 
-![](howto_images\get-the-key-value-of-the-selected-item_img1.png)
+![Key value](howto_images\get-the-key-value-of-the-selected-item_img1.png)
 
 
 But when using the remote datasource, we cannot able to maintain the key value in the **e-selectvaluekey** model property. Hence in that case we can use the **e-select** property to get the key value in the select event’s argument.

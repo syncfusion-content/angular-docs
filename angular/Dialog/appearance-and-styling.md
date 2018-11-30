@@ -1,6 +1,6 @@
 ---
 layout: post
-title: appearance-and-styling
+title: Syncfusion appearance-and-styling
 description: appearance and styling
 platform: Angular
 control: Angular- Dialog
@@ -88,7 +88,7 @@ Add the following code in constructor file.
 {% endhighlight %}
 
 
-![](appearance-and-styling_images\applying-rounded-corner_img1.png)
+![Rounded Corner](appearance-and-styling_images\applying-rounded-corner_img1.png)
 
 ### Responsive Dialog:
 
@@ -123,5 +123,5 @@ Add the following code in constructor file.
 
 {% endhighlight %}
 
-![](appearance-and-styling_images\using-adding-html-attributes_img1.png)
+![Attributes](appearance-and-styling_images\using-adding-html-attributes_img1.png)
 

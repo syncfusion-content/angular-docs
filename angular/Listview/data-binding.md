@@ -1,6 +1,6 @@
 ---
 layout: post
-title: data binding
+title: Syncfusion data binding
 description: data binding
 platform: Angular
 control: ListView
@@ -44,7 +44,7 @@ export class AppComponent {
 
 Run the code to get the following output
 
-![https://help.syncfusion.com/js/ListView/Data-Binding_images/localdatabinding_img1.png](databinding_images\localdatabinding_img1.png)
+![Local data](databinding_images\localdatabinding_img1.png)
 
 ## Remote Data Binding
 
@@ -85,7 +85,7 @@ export class AppComponent {
 
 Run the above code to render the following output.
 
-![](databinding_images\odata_img1.png)
+![Data binding](databinding_images\odata_img1.png)
 
 ### WebAPI
 
@@ -122,7 +122,7 @@ In the above data manager configuration, “crossDomain” must be set to true t
 
 Run the above code to render the following output.
 
-![](databinding_images\webapi_img1.png)
+![Web api data binding](databinding_images\webapi_img1.png)
 
 
 ## FieldSettings
@@ -214,10 +214,10 @@ export class AppComponent {
 
 Run the code to get the following output
 
-![https://help.syncfusion.com/js/ListView/Data-Binding_images/fieldsettings_img1.png](databinding_images\fieldsettings_img1.png)
+![Field settings](databinding_images\fieldsettings_img1.png)
 
 When you click on the parent item, it navigates to its corresponding child list item as follows.
 
-![https://help.syncfusion.com/js/ListView/Data-Binding_images/fieldsettings_img1.png](databinding_images\fieldsettings_img2.png)
+![Data binding field settings](databinding_images\fieldsettings_img2.png)
 
 

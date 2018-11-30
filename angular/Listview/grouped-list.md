@@ -1,6 +1,6 @@
 ---
 layout: post
-title: grouped list
+title: Syncfusion grouped list
 description: grouped list
 platform: Angular
 control: ListView
@@ -52,7 +52,7 @@ export class AppComponent {
 
 Run the codes to get the following output
 
-![https://help.syncfusion.com/js/ListView/Grouped-List_images/firstlevelgrouplist_img1.png](grouplist_images\firstlevelgrouplist_img1.png)
+![First level group list](grouplist_images\firstlevelgrouplist_img1.png)
 
 ### Nested Child Group List
 
@@ -106,5 +106,5 @@ export class AppComponent {
 
 Run the codes to get the following output
 
-![https://help.syncfusion.com/js/ListView/Grouped-List_images/nestedchildgrouplist_img1.pn](grouplist_images\nestedchildgrouplist_img1.png)
+![Nested child](grouplist_images\nestedchildgrouplist_img1.png)
 

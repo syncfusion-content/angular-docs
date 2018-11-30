@@ -1,6 +1,6 @@
 ---
 layout: post
-title: action-buttons
+title: Syncfusion action-buttons
 description: action buttons
 platform: Angular
 control: Angular- Dialog
@@ -116,7 +116,7 @@ Add the following code in constructor file.
 
 {% endhighlight %}
 
-![](action-buttons_images\giving-modael-dialog_img1.png)
+![Modal dialog](action-buttons_images\giving-modael-dialog_img1.png)
 
 
 ### Containment
@@ -156,7 +156,7 @@ Add the following code in constructor file.
 
 In the above code we have restricted to move the dialog component with the given containment (i.e.) with the cols-sample-area 
 
-![](action-buttons_images\containment_img1.png)
+![Containment](action-buttons_images\containment_img1.png)
 
 Note: This **containment** property is mostly used for the Modal dialog to restrict to specific container. And this property is similar to the “[target](https://help.syncfusion.com/api/js/ejdialog)” property but this additionally sets the drag area for dialog. Also this property overrides target property if both are set.
 
