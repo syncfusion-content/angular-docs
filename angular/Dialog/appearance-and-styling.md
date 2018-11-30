@@ -63,7 +63,7 @@ Add the following code in constructor file.
 
 ### Applying Rounded Corner
 
-You can use **showRoundedCorner** property to add rounded borders to the dialog popup elements. By default, roundedcorner property is disabled in Dialog.
+You can use **showRoundedCorner** property to add rounded borders to the dialog popup elements. By default, rounded corner property is disabled in Dialog.
 
 Add the following code in HTML page.
 

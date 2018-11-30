@@ -18,7 +18,7 @@ Since the Autocomplete is a form control, we can set the validation for Autocomp
 
 **NOTE**
 
-[jquery.validate.min](http://cdn.syncfusion.com/js/assets/external/jquery.validate.min.js)script file should be referred for validation, for more details, refer[here.](https://jqueryvalidation.org/documentation/)
+[`jquery.validate.min`](http://cdn.syncfusion.com/js/assets/external/jquery.validate.min.js) script file should be referred for validation, for more details, refer[here.](https://jqueryvalidation.org/documentation/)
 
 {% highlight html %}
 

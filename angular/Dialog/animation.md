@@ -67,7 +67,7 @@ Add the following code in HTML page.
 {% endhighlight %}
 
 
-The content of that dialogcontent.html file is below:
+The content of that `dialogcontent.html` file is below:
 
 **&lt;div id="content"&gt;** This content is loaded via AJAX request. **&lt;/div&gt;**
 

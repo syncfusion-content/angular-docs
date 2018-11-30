@@ -154,8 +154,8 @@ text</td><td>
 Defines the specific field name in the data source to load the suggestion list with data.</td></tr>
 <tr>
 <td>
-primarykey</td><td>
-This primarykey field name in the data source defines the ‘PrimaryKey’ of an item</td></tr>
+`primaryKey`</td><td>
+This field name in the data source defines the Primary Key of an item</td></tr>
 <tr>
 <td>
 checked</td><td>
