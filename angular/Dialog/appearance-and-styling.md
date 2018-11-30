@@ -17,7 +17,7 @@ Add the following code in HTML page.
 
 {% highlight html %}
 
-    <ej-dialog id="dialog" title="Dialog" [showHeader]="showheader">
+    <ej-dialog id="dialog" title="Dialog" [showHeader]="showHeader">
         This is a simple dialog
     </ej-dialog>
 
@@ -28,9 +28,9 @@ Add the following code in constructor file.
 {% highlight javascript %}
 
     export class AppComponent {
-        showheader:boolean;
+        showHeader:boolean;
         constructor() {
-            this.showheader=false;
+            this.showHeader=false;
     }
 
 {% endhighlight %}
@@ -43,7 +43,7 @@ Add the following code in HTML page.
 
 {% highlight html %}
 
-    <ej-dialog id="dialog" title="Dialog" [showOnInit]="showoninit">
+    <ej-dialog id="dialog" title="Dialog" [showOnInit]="showOnInit">
         This is a simple dialog
     </ej-dialog>
 
@@ -54,9 +54,9 @@ Add the following code in constructor file.
 {% highlight javascript %}
 
     export class AppComponent {
-        showoninit:boolean;
+        showOnInit:boolean;
         constructor() {
-            this.showoninit=false;
+            this.showOnInit=false;
     }
 
 {% endhighlight %}
@@ -69,7 +69,7 @@ Add the following code in HTML page.
 
 {% highlight html %}
 
-    <ej-dialog id="dialog" title="Dialog" [showRoundedCorner]="showroundedcorner">
+    <ej-dialog id="dialog" title="Dialog" [showRoundedCorner]="showRoundedCorner">
         This is a simple dialog
     </ej-dialog>
 
@@ -80,9 +80,9 @@ Add the following code in constructor file.
 {% highlight javascript %}
 
     export class AppComponent {
-        showroundedcorner:boolean;
+        showRoundedCorner:boolean;
         constructor() {
-            this.showroundedcorner=true;
+            this.showRoundedCorner=true;
     }
 
 {% endhighlight %}
@@ -102,7 +102,7 @@ Add the following code in HTML page.
 
 {% highlight html %}
 
-    <ej-dialog id="dialog" title="Dialog" [htmlAttributes]="htmlattributes">
+    <ej-dialog id="dialog" title="Dialog" [htmlAttributes]="htmlAttributes">
         This is a simple dialog
     </ej-dialog>
 
@@ -113,9 +113,9 @@ Add the following code in constructor file.
 {% highlight javascript %}
 
     export class AppComponent {
-        htmlattributes:object;
+        htmlAttributes:object;
         constructor() {
-            this.htmlattributes={
+            this.htmlAttributes={
                     class: "my-class", style: "border:1px solid red"
                 }
     }

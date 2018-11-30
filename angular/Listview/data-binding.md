@@ -17,7 +17,7 @@ Create div element to render the ListView sample.
 
 {% highlight html %}
 
-<ej-listview [dataSource]="listdata" [fieldSettings]="fieldsdata" [width]="width">
+<ej-listview [dataSource]="listData" [fieldSettings]="fieldsData" [width]="width">
 </ej-listview>
 
 {% endhighlight %}
@@ -25,17 +25,17 @@ Create div element to render the ListView sample.
 {% highlight ts %}
 
 export class AppComponent {
-    listdata: any;
+    listData: any;
     width: any;
-    fieldsdata: any;
+    fieldsData: any;
     constructor() {
-         this.listdata =
+         this.listData =
            [{ Texts: 'Discover Music' },
             { Texts: 'Sales and Events' },
             { Texts: 'Categories' },
             { Texts: 'MP3 Albums' },
             { Texts: 'More in Music' }];
-        this.fieldsdata = { 'text': 'Texts' };
+        this.fieldsData = { 'text': 'Texts' };
         this.width = 400;      
     }
 }
@@ -58,7 +58,7 @@ Here the CustomerID field is mapped with text property of the field object. The 
 
 {% highlight html %}
 
- <ej-listview [dataSource]="listdata" [fieldSettings]="fieldsdata" [width]="width" [query]="query">
+ <ej-listview [dataSource]="listData" [fieldSettings]="fieldsData" [width]="width" [query]="query">
  </ej-listview>
 
 {% endhighlight %}
@@ -66,17 +66,17 @@ Here the CustomerID field is mapped with text property of the field object. The 
 {% highlight ts %}
 
 export class AppComponent {
-    listdata: any;
+    listData: any;
     width: any;
-    fieldsdata: any;
+    fieldsData: any;
     query: any;
     constructor() {
-        this.listdata = ej.DataManager({
+        this.listData = ej.DataManager({
              //OData service
              url: "http://mvc.syncfusion.com/Services/Northwnd.svc/"
         });
         this.query = ej.Query().from('Customers').take(10);
-        this.fieldsdata = { 'text': 'CustomerID' };
+        this.fieldsData = { 'text': 'CustomerID' };
         this.width = 400;      
     }
 }
@@ -93,7 +93,7 @@ Run the above code to render the following output.
 
 {% highlight html %}
 
-<ej-listview [dataSource]="listdata" [fieldSettings]="fieldsdata" [height]="height">
+<ej-listview [dataSource]="listData" [fieldSettings]="fieldsData" [height]="height">
 </ej-listview>
 
 {% endhighlight %}
@@ -101,15 +101,15 @@ Run the above code to render the following output.
 {% highlight ts %}
 
 export class AppComponent {
-    listdata: any;
-    fieldsdata: any;
+    listData: any;
+    fieldsData: any;
     height: any;
     constructor() {
-        this.listdata = ej.DataManager({
+        this.listData = ej.DataManager({
             url: "http://js.syncfusion.com/ejservices/Wcf/Northwind.svc/",
             crossDomain: true
         });
-        this.fieldsdata = { text: "CustomerID" };
+        this.fieldsData = { text: "CustomerID" };
         this.height = 500;    
     }
 }
@@ -166,7 +166,7 @@ Please refer the following code examples.
 
 {% highlight html %}
 
- <ej-listview [dataSource]="listdata" [fieldSettings]="fieldsdata" showHeader="true" headerTitle="List Items">
+ <ej-listview [dataSource]="listData" [fieldSettings]="fieldsData" showHeader="true" headerTitle="List Items">
 </ej-listview>
 
 {% endhighlight %}
@@ -174,37 +174,37 @@ Please refer the following code examples.
 {% highlight ts %}
 
 export class AppComponent {
-    listdata: any;
-    fieldsdata: any;
+    listData: any;
+    fieldsData: any;
     constructor() {
-        this.listdata = [{ "Texts": "Discover Music", "PrimaryKeys": "1", "Title": "Discover Music", "BackIconText": "back" },
-            { "Texts": "Hot Singles", "ParentPrimaryKeyss": "1" },
-            { "Texts": "Rising Artists", "PrimaryKeyss": null, "ParentPrimaryKeyss": "1" },
-            { "Texts": "Live Music", "ParentPrimaryKeyss": "1" },
-            { "Texts": "Best of 2013 So Far", "ParentPrimaryKeyss": "1" },
+        this.listData = [{ "Texts": "Discover Music", "PrimaryKeys": "1", "Title": "Discover Music", "BackIconText": "back" },
+            { "Texts": "Hot Singles", "ParentPrimaryKeys": "1" },
+            { "Texts": "Rising Artists", "PrimaryKeyss": null, "ParentPrimaryKeys": "1" },
+            { "Texts": "Live Music", "ParentPrimaryKeys": "1" },
+            { "Texts": "Best of 2013 So Far", "ParentPrimaryKeys": "1" },
             { "Texts": "Sales and Events", "PrimaryKeys": "2", "Title": "Sales and Events", "BackIconText": "back" },
-            { "Texts": "100 Albums - $5 Each", "ParentPrimaryKeyss": "2" },
-            { "Texts": "Hip-Hop and R&B Sale", "ParentPrimaryKeyss": "2" },
-            { "Texts": "CD Deals", "ParentPrimaryKeyss": "2" },
+            { "Texts": "100 Albums - $5 Each", "ParentPrimaryKeys": "2" },
+            { "Texts": "Hip-Hop and R&B Sale", "ParentPrimaryKeys": "2" },
+            { "Texts": "CD Deals", "ParentPrimaryKeys": "2" },
             { "Texts": "Categories", "PrimaryKeys": "3", "Title": "Categories", "BackIconText": "back" },
-            { "Texts": "Songs", "ParentPrimaryKeyss": "3" },
-            { "Texts": "Bestselling Albums", "ParentPrimaryKeyss": "3" },
-            { "Texts": "New Releases", "ParentPrimaryKeyss": "3" },
-            { "Texts": "Bestselling Songs", "ParentPrimaryKeyss": "3" },
+            { "Texts": "Songs", "ParentPrimaryKeys": "3" },
+            { "Texts": "Bestselling Albums", "ParentPrimaryKeys": "3" },
+            { "Texts": "New Releases", "ParentPrimaryKeys": "3" },
+            { "Texts": "Bestselling Songs", "ParentPrimaryKeys": "3" },
             { "Texts": "MP3 Albums", "PrimaryKeys": "4", "Title": "MP3 Albums", "BackIconText": "back" },
-            { "Texts": "Rock", "ParentPrimaryKeyss": "4" },
-            { "Texts": "Gospel", "ParentPrimaryKeyss": "4" },
-            { "Texts": "Latin Music", "ParentPrimaryKeyss": "4" },
-            { "Texts": "Jazz", "ParentPrimaryKeyss": "4" },
+            { "Texts": "Rock", "ParentPrimaryKeys": "4" },
+            { "Texts": "Gospel", "ParentPrimaryKeys": "4" },
+            { "Texts": "Latin Music", "ParentPrimaryKeys": "4" },
+            { "Texts": "Jazz", "ParentPrimaryKeys": "4" },
             { "Texts": "More in Music", "PrimaryKeys": "5", "Title": "More in Music", "BackIconText": "back" },
-            { "Texts": "Music Trade-In", "ParentPrimaryKeyss": "5" },
-            { "Texts": "Redeem a Gift Card", "ParentPrimaryKeyss": "5" },
-            { "Texts": "Band T-Shirts", "ParentPrimaryKeyss": "5" },
-            { "Texts": "Web MVC", "ParentPrimaryKeyss": "5" }];
-        this.fieldsdata = {
+            { "Texts": "Music Trade-In", "ParentPrimaryKeys": "5" },
+            { "Texts": "Redeem a Gift Card", "ParentPrimaryKeys": "5" },
+            { "Texts": "Band T-Shirts", "ParentPrimaryKeys": "5" },
+            { "Texts": "Web MVC", "ParentPrimaryKeys": "5" }];
+        this.fieldsData = {
             "text": "Texts",
             "primaryKey": "PrimaryKeys",
-            "parentPrimaryKey": "ParentPrimaryKeyss",
+            "parentPrimaryKey": "ParentPrimaryKeys",
             "childHeaderTitle": "Title",
             "childHeaderBackButtonText": "BackIconText" };   
     }

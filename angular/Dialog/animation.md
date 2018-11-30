@@ -61,13 +61,13 @@ Add the following code in HTML page.
 
 {% highlight html %}
 
-    <ej-dialog id="dialog" title="Dialog" [contentUrl]="contenturl" [contentType]="contenttype">
+    <ej-dialog id="dialog" title="Dialog" [contentUrl]="contentUrl" [contentType]="contentType">
     </ej-dialog>
 
 {% endhighlight %}
 
 
-The content of that `dialogcontent.html` file is below:
+The content of that `dialogContent.html` file is below:
 
 **&lt;div id="content"&gt;** This content is loaded via AJAX request. **&lt;/div&gt;**
 
@@ -76,11 +76,11 @@ Add the following code in constructor file.
 {% highlight javascript %}
 
     export class AppComponent {
-        contenturl:any;
-        contenttype:any;
+        contentUrl:any;
+        contentType:any;
         constructor() {
-            this.contenturl="dialogcontent.html";
-            this.contenttype="ajax";
+            this.contentUrl="dialogContent.html";
+            this.contentType="ajax";
     }
 
 {% endhighlight %}
@@ -114,7 +114,7 @@ Add the following code in HTML page.
 
 {% highlight html %}
 
-    <ej-dialog id="dialog" title="Dialog" [contentUrl]="contenturl" [contentType]="contenttype">
+    <ej-dialog id="dialog" title="Dialog" [contentUrl]="contentUrl" [contentType]="contentType">
     </ej-dialog>
 
 {% endhighlight %}
@@ -124,16 +124,16 @@ Add the following code in constructor file.
 {% highlight javascript %}
 
     export class AppComponent {
-        contenturl:any;
-        contenttype:any;
+        contentUrl:any;
+        contentType:any;
         constructor() {
-            this.contenturl="dialogcontent.html";
-            this.contenttype="iframe";
+            this.contentUrl="dialogContent.html";
+            this.contentType="iframe";
     }
 
 {% endhighlight %}
 
-![](animation_images\iiframe_img1.png)
+![Frame](animation_images\iiframe_img1.png)
 
 
 #### Image 
@@ -144,7 +144,7 @@ Add the following code in HTML page.
 
 {% highlight html %}
 
-    <ej-dialog id="dialog" title="Dialog" [contentUrl]="contenturl" [contentType]="contenttype">
+    <ej-dialog id="dialog" title="Dialog" [contentUrl]="contentUrl" [contentType]="contentType">
     </ej-dialog>
 
 {% endhighlight %}
@@ -154,11 +154,11 @@ Add the following code in constructor file.
 {% highlight javascript %}
 
     export class AppComponent {
-        contenturl:any;
-        contenttype:any;
+        contentUrl:any;
+        contentType:any;
         constructor() {
-            this.contenturl=" http://js.syncfusion.com/demos/web/content/images/twitter.jpg";
-            this.contenttype="image";
+            this.contentUrl=" http://js.syncfusion.com/demos/web/content/images/twitter.jpg";
+            this.contentType="image";
     }
 
 {% endhighlight %}

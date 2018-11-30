@@ -27,7 +27,7 @@ Add the following code in HTML page to render Dialog component.
 
 {% highlight html %}
 
-    <ej-dialog id="dialog" title="Dialog" [actionButtons]="actionbuttons">
+    <ej-dialog id="dialog" title="Dialog" [actionButtons]="actionButtons">
         This is a simple dialog
     </ej-dialog>
 
@@ -38,9 +38,9 @@ Add the following code in constructor file.
 {% highlight javascript %}
 
     export class AppComponent {
-        actionbuttons: any;
+        actionButtons: any;
         constructor() {
-            this.actionbuttons = ["close", "maximize", "minimize"];
+            this.actionButtons = ["close", "maximize", "minimize"];
         }
     }
 
@@ -58,7 +58,7 @@ Add the following code in HTML page to define actionButtonClick event of Dialog 
 
 {% highlight html %}
 
-    <ej-dialog id="dialog" title="Dialog" [actionButtons]="actionbuttons" (actionButtonClick)="playMedia($event)">
+    <ej-dialog id="dialog" title="Dialog" [actionButtons]="actionButtons" (actionButtonClick)="playMedia($event)">
         This is a simple dialog
     </ej-dialog>
 
@@ -69,9 +69,9 @@ Add the following code in constructor file.
 {% highlight javascript %}
 
     export class AppComponent {
-        actionbuttons: any;
+        actionButtons: any;
         constructor() {
-            this.actionbuttons = ["close", "maximize", "minimize", "pin", "mediaplay", "search"];
+            this.actionButtons = ["close", "maximize", "minimize", "pin", "mediaplay", "search"];
         }
         playMedia(event){
             console.log(event.buttonID);
@@ -93,7 +93,7 @@ You can refer the following code example to set this property.
 
 {% highlight html %}
 
-    <ej-dialog id="lognForm" title="Modal dialog" [enableModal]="enablemodal" [enableResize]="resize" [isResponsive]="responsive">
+    <ej-dialog id="lognForm" title="Modal dialog" [enableModal]="enableModal" [enableResize]="resize" [isResponsive]="responsive">
         This is a simple model dialog
     </ej-dialog>
 
@@ -104,11 +104,11 @@ Add the following code in constructor file.
 {% highlight javascript %}
 
     export class AppComponent {
-        enablemodal: boolean;
+        enableModal: boolean;
         resize:boolean;
         responsive:boolean;
         constructor() {
-            this.enablemodal = true;
+            this.enableModal = true;
             this.resize=true;
             this.responsive=true;
         }
@@ -128,7 +128,7 @@ You can refer the following code example to set this property.
 {% highlight html %}
 
     <div class="cols-sample-area">
-        <ej-dialog id="lognForm" title="Modal dialog" [enableModal]="enablemodal" [containment]="containment" [enableResize]="resize" [isResponsive]="responsive">
+        <ej-dialog id="lognForm" title="Modal dialog" [enableModal]="enableModal" [containment]="containment" [enableResize]="resize" [isResponsive]="responsive">
             This is a simple model dialog
         </ej-dialog>
     </div>
@@ -140,12 +140,12 @@ Add the following code in constructor file.
 {% highlight javascript %}
 
     export class AppComponent {
-        enablemodal: boolean;
+        enableModal: boolean;
         resize:boolean;
         responsive:boolean;
         containment:any;
         constructor() {
-            this.enablemodal = true;
+            this.enableModal = true;
             this.resize=true;
             this.responsive=true;
             this.containment=".cols-sample-area";
