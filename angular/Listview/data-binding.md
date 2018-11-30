@@ -179,7 +179,7 @@ export class AppComponent {
     constructor() {
         this.listData = [{ "Texts": "Discover Music", "PrimaryKeys": "1", "Title": "Discover Music", "BackIconText": "back" },
             { "Texts": "Hot Singles", "ParentPrimaryKeys": "1" },
-            { "Texts": "Rising Artists", "PrimaryKeyss": null, "ParentPrimaryKeys": "1" },
+            { "Texts": "Rising Artists", "PrimaryKeys": null, "ParentPrimaryKeys": "1" },
             { "Texts": "Live Music", "ParentPrimaryKeys": "1" },
             { "Texts": "Best of 2013 So Far", "ParentPrimaryKeys": "1" },
             { "Texts": "Sales and Events", "PrimaryKeys": "2", "Title": "Sales and Events", "BackIconText": "back" },
