@@ -1,6 +1,6 @@
 ---
 layout: post
-title: see-also
+title: Syncfusion see-also
 description: see also
 platform: Angular
 control: Autocomplete 
@@ -18,7 +18,7 @@ Since the Autocomplete is a form control, we can set the validation for Autocomp
 
 **NOTE**
 
-[jquery.validate.min](http://cdn.syncfusion.com/js/assets/external/jquery.validate.min.js)script file should be referred for validation, for more details, refer[here.](https://jqueryvalidation.org/documentation/)
+[`jquery.validate.min`](http://cdn.syncfusion.com/js/assets/external/jquery.validate.min.js) script file should be referred for validation, for more details, refer[here.](https://jqueryvalidation.org/documentation/)
 
 {% highlight html %}
 
@@ -26,7 +26,7 @@ Since the Autocomplete is a form control, we can set the validation for Autocomp
 <!DOCTYPE html>
 <html lang="en" ng-app="AutoCompleteApp">
 <head>
-    <title>Essential Studio for JavaScript : Angular JS Support for Autocomplete</title>
+    <title>Essential Studio for JavaScript : AngularJS Support for Autocomplete</title>
     <!-- Style sheet for default theme (flat azure) -->
     <link href="http://cdn.syncfusion.com/14.4.0.15/js/web/default-theme/ej.web.all.min.css" rel="stylesheet" />
     <!--Scripts-->
@@ -64,8 +64,8 @@ Since the Autocomplete is a form control, we can set the validation for Autocomp
 export class AppComponent {
    countries: Array<any>;
     fields: Object;
-    validrules:Object;
-    validmessage:Object;
+    validRules:Object;
+    validMessage:Object;
     constructor() {     
         this.countries = [
 
@@ -91,8 +91,8 @@ export class AppComponent {
 
                 ];
             this.fields = { key: 'index', text: 'name' };
-            this.validrules = { required: true};
-            this.validmessage = {required: "please select some value"}
+            this.validRules = { required: true};
+            this.validMessage = {required: "please select some value"}
     }
     
 }
@@ -102,7 +102,7 @@ export class AppComponent {
 {% endhighlight %}
 
 
-![](howto_images\Validate.png)
+![Validate](howto_images\Validate.png)
 
 **NOTE**
 
@@ -127,7 +127,7 @@ By default, the selected item’s key value will be maintained in the **e-select
 export class AppComponent {
    countries: Array<any>;
     fields: Object;
-    keyvalue:String;
+    keyValue:String;
     constructor() {     
         this.countries = [
 
@@ -153,7 +153,7 @@ export class AppComponent {
 
                 ];
             this.fields = { key: 'index', text: 'name' };
-            this.keyvalue = "C2"
+            this.keyValue = "C2"
     }
 }
 
@@ -161,14 +161,14 @@ export class AppComponent {
 {% endhighlight %}
 
 
-![](howto_images\get-the-key-value-of-the-selected-item_img1.png)
+![Key value](howto_images\get-the-key-value-of-the-selected-item_img1.png)
 
 
 But when using the remote datasource, we cannot able to maintain the key value in the **e-selectvaluekey** model property. Hence in that case we can use the **e-select** property to get the key value in the select event’s argument.
 
 {% highlight html %}
 
-<input type="text" ej-autocomplete width="300" [query]="query" [fields]="fields" watermarkText="Search a customer" [dataSource]="dataManger" (select)="onselect($event)" />
+<input type="text" ej-autocomplete width="300" [query]="query" [fields]="fields" watermarkText="Search a customer" [dataSource]="dataManger" (select)="onSelect($event)" />
 
 {% endhighlight %}
 
@@ -184,9 +184,9 @@ export class AppComponent {
         this.dataManger = ej.DataManager({ url: 'http://mvc.syncfusion.com/Services/Northwnd.svc/' }); 
         this.query = ej.Query().from('Suppliers').select('SupplierID', 'ContactName');
     }
-onselect(event) {
+onSelect(event) {
     //Get key here
-       var mykey= event.key;
+       var myKey= event.key;
     }
 
 }
