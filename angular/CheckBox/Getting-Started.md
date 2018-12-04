@@ -96,7 +96,7 @@ npm start
 
 ![](Getting-Started_images/default.png)
 
-### Databinding
+### Data Binding
 
 To bind the model values to the **CheckBox** component, define the model values in the **AppComponent** class available in CheckBox.component.ts file as given below.
 

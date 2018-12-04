@@ -45,7 +45,7 @@ Create the TS file app.component.ts like below to render the component in corres
 ## Configuring Button
 
 This section encompasses the details on how you can configure the **Button** control in your application and customize it with various properties such as various size based on your requirement.
-To modify the size of the Button and rename the button, add the following snippet in your app.coponent.html file.
+To modify the size of the Button and rename the button, add the following snippet in your app.component.html file.
 
  {% highlight html %}
 

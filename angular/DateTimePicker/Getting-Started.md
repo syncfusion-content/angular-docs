@@ -63,7 +63,7 @@ npm start
 
 ![](Getting-Started_images/datetime.png)
 
-### Databinding
+### Data Binding
 
 To bind the model values to the **DateTimePicker** component, define the model values in the **AppComponent** class available in DateTimepicker.component.ts file as given below.
 

@@ -101,7 +101,7 @@ npm start
 
 ![](Getting-Started_images/two-way.png)
 
-### Databinding
+### Data Binding
 
 With the above steps you have rendered a simple **RadioButton** component with the value set in initial rendering. 
 

@@ -113,7 +113,7 @@ npm start
 
 ## Configuring Properties
 
-### Databinding
+### Data Binding
 
 With the above steps you have rendered a simple TimePicker component with the value set in initial rendering. 
 
