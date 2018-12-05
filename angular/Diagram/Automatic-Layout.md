@@ -73,7 +73,7 @@ export class HierarchicalLayoutComponent {
 
 {% endhighlight %}
 
-![Automatic Layout](/angular/Diagram/Automatic-Layout_images/Automatic-Layout_img1.png)
+![Automatic Layout](../Diagram/Automatic-Layout_images/Automatic-Layout_img1.png)
 
 N> You can ignore a particular Node from layout arrangement by setting its **excludeFromLayout** property as true.
 
