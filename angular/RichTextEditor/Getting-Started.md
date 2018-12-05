@@ -1,5 +1,5 @@
 ---
-title: Getting Started for Angular RichTextEditor
+title: Getting Started for Angular RichTextEditor | Syncfusion
 description: How to create a RichTextEditor control.
 platform: Angular
 control: RTE
@@ -9,7 +9,7 @@ keywords: ejrte, rte, js rte
 
 # Getting started
 
-This section helps to understand the getting started od RTE control with the step-by-step instruction.
+This section helps to understand the getting started of RTE control with the step-by-step instruction.
 
 ## Create RTE Control
 
@@ -62,7 +62,7 @@ export class AppComponent {
 
 Now, the RTE is rendered.
 
-![](Getting-Started_images/Getting-Started_img1.png)
+![RTE](Getting-Started_images/Getting-Started_img1.png)
 
 ## Toolbar–Configuration
 
@@ -93,7 +93,7 @@ export class RatingComponent {
 
 The above code example displays the following output.
 
-![](Getting-Started_images/Getting-Started_img2.png)
+![tools](Getting-Started_images/Getting-Started_img2.png)
 
 You can set the content of the editor as follows.
 
@@ -122,4 +122,4 @@ export class AppComponent {
 
 The following screenshot displays a RTE widget.
 
-![](Getting-Started_images/Getting-Started_img3.png)
+![value](Getting-Started_images/Getting-Started_img3.png)
