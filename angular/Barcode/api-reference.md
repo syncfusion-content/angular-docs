@@ -512,7 +512,7 @@ Specifies the type of the Barcode. See <a href="global.html#SymbologyType">Symbo
 Default Value:
 {:.param}
 
-* symbologyType="qrbarcode"
+* symbologyType="qrBarcode"
 
 
 
