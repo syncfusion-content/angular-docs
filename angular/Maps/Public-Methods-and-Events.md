@@ -188,7 +188,7 @@ onMarkerSelected(sender){
 
 
 
-### mouseleave
+### mouseLeave
 
 
 Triggers while leaving the hovered map shape
