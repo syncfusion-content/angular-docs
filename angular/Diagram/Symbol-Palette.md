@@ -88,7 +88,7 @@ export class SymbolpaletteComponent {
 
 The following image shows the symbol palette with multiple palette Items.
 
-![Add palettes to symbol palette](/angular/Diagram/Symbol-Palette_images/Symbol-Palette_img3.png)
+![Add palettes to symbol palette](../Diagram/Symbol-Palette_images/Symbol-Palette_img3.png)
 
 ### Customize the Palette Header
 
@@ -143,7 +143,7 @@ export class SymbolpaletteComponent {
 
 The following image shows the customized palette header
 
-![customized palette header](/angular/Diagram/Symbol-Palette_images/customizethepaletteheader_img1.png)
+![customized palette header](../Diagram/Symbol-Palette_images/customizethepaletteheader_img1.png)
 
 ## Add symbols to palette
 
@@ -233,9 +233,9 @@ export class SymbolPaletteComponent {
 
 {% endhighlight %}
 
-![symbol palette](/angular/Diagram/Symbol-Palette_images/Symbol-Palette_img1.png)
+![symbol palette](../Diagram/Symbol-Palette_images/Symbol-Palette_img1.png)
 
-![symbol palette](/angular/Diagram/Symbol-Palette_images/Symbol-Palette_img2.png)
+![symbol palette](../Diagram/Symbol-Palette_images/Symbol-Palette_img2.png)
 
 
 ## Symbol Previews
@@ -253,7 +253,7 @@ You can customize the preview size of the individual palette items. The `palette
 
 {% endhighlight %}
 
-![symbol preview](/angular/Diagram/Symbol-Palette_images/Symbol-Palette_img4.png)
+![symbol preview](../Diagram/Symbol-Palette_images/Symbol-Palette_img4.png)
 
 Symbol palette allows to sets the offset of the dragging helper relative to the mouse cursor.
 
@@ -292,7 +292,7 @@ export class SymbolpaletteComponent {
 
 {% endhighlight %}
 
-![symbol preview](/angular/Diagram/Symbol-Palette_images/Symbol-Palette_img6.png)
+![symbol preview](../Diagram/Symbol-Palette_images/Symbol-Palette_img6.png)
 
 
 Symbol preview size will be set based on the following precedence.

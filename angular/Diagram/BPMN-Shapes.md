@@ -37,7 +37,7 @@ export class DefaultComponent {}
 }
 
 {% endhighlight %}
-![BPMN diagram](/angular/Diagram/Shapes_images/Shapes_img5.png)
+![BPMN diagram](../Diagram/Shapes_images/Shapes_img5.png)
 
 N> The default value for the property `shape` is "event".
 
@@ -45,13 +45,13 @@ The list of BPMN shapes are as follows.
 
 | Shape | Image |
 |---|---|
-| Event | ![Event](/angular/Diagram/Shapes_images/Shapes_img6.png) |
-| Gateway | ![Gateway](/angular/Diagram/Shapes_images/Shapes_img7.png) |
-| Task | ![Task](/angular/Diagram/Shapes_images/Shapes_img8.png) |
-| Message | ![Message](/angular/Diagram/Shapes_images/Shapes_img9.png) |
-| DataSource | ![DataSource](/angular/Diagram/Shapes_images/Shapes_img10.png) |
-| DataObject | ![DataObject](/angular/Diagram/Shapes_images/Shapes_img11.png) |
-| Group | ![Group](/angular/Diagram/Shapes_images/Shapes_img12.png) |
+| Event | ![Event](../Diagram/Shapes_images/Shapes_img6.png) |
+| Gateway | ![Gateway](../Diagram/Shapes_images/Shapes_img7.png) |
+| Task | ![Task](../Diagram/Shapes_images/Shapes_img8.png) |
+| Message | ![Message](../Diagram/Shapes_images/Shapes_img9.png) |
+| DataSource | ![DataSource](../Diagram/Shapes_images/Shapes_img10.png) |
+| DataObject | ![DataObject](../Diagram/Shapes_images/Shapes_img11.png) |
+| Group | ![Group](../Diagram/Shapes_images/Shapes_img12.png) |
 
 The BPMN shapes and its types are explained as follows.
 
@@ -107,25 +107,25 @@ export class NodesComponent {
 
 {% endhighlight %}
 
-![BPMN event](/angular/Diagram/Shapes_images/Shapes_img13.png)
+![BPMN event](../Diagram/Shapes_images/Shapes_img13.png)
 
 Event triggers are notated as icons inside the circle and they represent the specific details of the process. The `triggers` property of node allows you to set the type of trigger and by default, it is set as "none". The following table illustrates the type of event triggers.
 
 | Triggers | Start | Non-Interrupting Start | Intermediate | Non-Interrupting Intermediate | Throwing Intermediate | End |
 | --- | --- | --- | --- | --- | --- | --- |
-| None | ![None](/angular/Diagram/Shapes_images/Shapes_img63.png) | ![None](/angular/Diagram/Shapes_images/Shapes_img64.png) | ![None](/angular/Diagram/Shapes_images/Shapes_img65.png) | ![None](/angular/Diagram/Shapes_images/Shapes_img66.png) |   | ![None](/angular/Diagram/Shapes_images/Shapes_img67.png) |
-| Message | ![Message](/angular/Diagram/Shapes_images/Shapes_img68.png) | ![Message](/angular/Diagram/Shapes_images/Shapes_img69.png) | ![Message](/angular/Diagram/Shapes_images/Shapes_img70.png) | ![Message](/angular/Diagram/Shapes_images/Shapes_img71.png) | ![Message](/angular/Diagram/Shapes_images/Shapes_img72.png) | ![Message](/angular/Diagram/Shapes_images/Shapes_img73.png) |
-| Timer | ![Timer](/angular/Diagram/Shapes_images/Shapes_img74.png) | ![Timer](/angular/Diagram/Shapes_images/Shapes_img75.png) | ![Timer](/angular/Diagram/Shapes_images/Shapes_img76.png) | ![Timer](/angular/Diagram/Shapes_images/Shapes_img77.png) |   |   |
-| Conditional | ![Conditional](/angular/Diagram/Shapes_images/Shapes_img78.png) | ![Conditional](/angular/Diagram/Shapes_images/Shapes_img79.png) | ![Conditional](/angular/Diagram/Shapes_images/Shapes_img80.png) | ![Conditional](/angular/Diagram/Shapes_images/Shapes_img81.png) |   |   |
-| Link |   |   | ![Link](/angular/Diagram/Shapes_images/Shapes_img82.png) |   | ![Link](/angular/Diagram/Shapes_images/Shapes_img83.png) |   |
-| Signal | ![Signal](/angular/Diagram/Shapes_images/Shapes_img84.png) | ![Signal](/angular/Diagram/Shapes_images/Shapes_img85.png) | ![Signal](/angular/Diagram/Shapes_images/Shapes_img86.png) | ![Signal](/angular/Diagram/Shapes_images/Shapes_img87.png) | ![Signal](/angular/Diagram/Shapes_images/Shapes_img88.png) | ![Signal](/angular/Diagram/Shapes_images/Shapes_img89.png) |
-| Error | ![Error](/angular/Diagram/Shapes_images/Shapes_img90.png) |   | ![Error](/angular/Diagram/Shapes_images/Shapes_img91.png) |   |   | ![Error](/angular/Diagram/Shapes_images/Shapes_img92.png) |
-| Escalation | ![Escalation](/angular/Diagram/Shapes_images/Shapes_img93.png) | ![Escalation](/angular/Diagram/Shapes_images/Shapes_img94.png) | ![Escalation](/angular/Diagram/Shapes_images/Shapes_img95.png) | ![Escalation](/angular/Diagram/Shapes_images/Shapes_img96.png) | ![Escalation](/angular/Diagram/Shapes_images/Shapes_img97.png) | ![Escalation](/angular/Diagram/Shapes_images/Shapes_img98.png) |
-| Termination |   |   |   |   |   | ![Termination](/angular/Diagram/Shapes_images/Shapes_img99.png) |
-| Compensation | ![Compensation](/angular/Diagram/Shapes_images/Shapes_img100.png) |   | ![Compensation](/angular/Diagram/Shapes_images/Shapes_img101.png) |   | ![Compensation](/angular/Diagram/Shapes_images/Shapes_img102.png) | ![Compensation](/angular/Diagram/Shapes_images/Shapes_img103.png) |
-| Cancel |   |   | ![Cancel](/angular/Diagram/Shapes_images/Shapes_img104.png) |   |   | ![Cancel](/angular/Diagram/Shapes_images/Shapes_img105.png) |
-| Multiple | ![Multiple](/angular/Diagram/Shapes_images/Shapes_img106.png) | ![Multiple](/angular/Diagram/Shapes_images/Shapes_img107.png) | ![Multiple](/angular/Diagram/Shapes_images/Shapes_img108.png) | ![Multiple](/angular/Diagram/Shapes_images/Shapes_img109.png) | ![Multiple](/angular/Diagram/Shapes_images/Shapes_img110.png) | ![Multiple](/angular/Diagram/Shapes_images/Shapes_img111.png) |
-| Parallel | ![Parallel](/angular/Diagram/Shapes_images/Shapes_img112.png) | ![Parallel](/angular/Diagram/Shapes_images/Shapes_img113.png) | ![Parallel](/angular/Diagram/Shapes_images/Shapes_img114.png) | ![Parallel](/angular/Diagram/Shapes_images/Shapes_img115.png) |   |   |
+| None | ![None](../Diagram/Shapes_images/Shapes_img63.png) | ![None](../Diagram/Shapes_images/Shapes_img64.png) | ![None](../Diagram/Shapes_images/Shapes_img65.png) | ![None](../Diagram/Shapes_images/Shapes_img66.png) |   | ![None](../Diagram/Shapes_images/Shapes_img67.png) |
+| Message | ![Message](../Diagram/Shapes_images/Shapes_img68.png) | ![Message](../Diagram/Shapes_images/Shapes_img69.png) | ![Message](../Diagram/Shapes_images/Shapes_img70.png) | ![Message](../Diagram/Shapes_images/Shapes_img71.png) | ![Message](../Diagram/Shapes_images/Shapes_img72.png) | ![Message](../Diagram/Shapes_images/Shapes_img73.png) |
+| Timer | ![Timer](../Diagram/Shapes_images/Shapes_img74.png) | ![Timer](../Diagram/Shapes_images/Shapes_img75.png) | ![Timer](../Diagram/Shapes_images/Shapes_img76.png) | ![Timer](../Diagram/Shapes_images/Shapes_img77.png) |   |   |
+| Conditional | ![Conditional](../Diagram/Shapes_images/Shapes_img78.png) | ![Conditional](../Diagram/Shapes_images/Shapes_img79.png) | ![Conditional](../Diagram/Shapes_images/Shapes_img80.png) | ![Conditional](../Diagram/Shapes_images/Shapes_img81.png) |   |   |
+| Link |   |   | ![Link](../Diagram/Shapes_images/Shapes_img82.png) |   | ![Link](../Diagram/Shapes_images/Shapes_img83.png) |   |
+| Signal | ![Signal](../Diagram/Shapes_images/Shapes_img84.png) | ![Signal](../Diagram/Shapes_images/Shapes_img85.png) | ![Signal](../Diagram/Shapes_images/Shapes_img86.png) | ![Signal](../Diagram/Shapes_images/Shapes_img87.png) | ![Signal](../Diagram/Shapes_images/Shapes_img88.png) | ![Signal](../Diagram/Shapes_images/Shapes_img89.png) |
+| Error | ![Error](../Diagram/Shapes_images/Shapes_img90.png) |   | ![Error](../Diagram/Shapes_images/Shapes_img91.png) |   |   | ![Error](../Diagram/Shapes_images/Shapes_img92.png) |
+| Escalation | ![Escalation](../Diagram/Shapes_images/Shapes_img93.png) | ![Escalation](../Diagram/Shapes_images/Shapes_img94.png) | ![Escalation](../Diagram/Shapes_images/Shapes_img95.png) | ![Escalation](../Diagram/Shapes_images/Shapes_img96.png) | ![Escalation](../Diagram/Shapes_images/Shapes_img97.png) | ![Escalation](../Diagram/Shapes_images/Shapes_img98.png) |
+| Termination |   |   |   |   |   | ![Termination](../Diagram/Shapes_images/Shapes_img99.png) |
+| Compensation | ![Compensation](../Diagram/Shapes_images/Shapes_img100.png) |   | ![Compensation](../Diagram/Shapes_images/Shapes_img101.png) |   | ![Compensation](../Diagram/Shapes_images/Shapes_img102.png) | ![Compensation](../Diagram/Shapes_images/Shapes_img103.png) |
+| Cancel |   |   | ![Cancel](../Diagram/Shapes_images/Shapes_img104.png) |   |   | ![Cancel](../Diagram/Shapes_images/Shapes_img105.png) |
+| Multiple | ![Multiple](../Diagram/Shapes_images/Shapes_img106.png) | ![Multiple](../Diagram/Shapes_images/Shapes_img107.png) | ![Multiple](../Diagram/Shapes_images/Shapes_img108.png) | ![Multiple](../Diagram/Shapes_images/Shapes_img109.png) | ![Multiple](../Diagram/Shapes_images/Shapes_img110.png) | ![Multiple](../Diagram/Shapes_images/Shapes_img111.png) |
+| Parallel | ![Parallel](../Diagram/Shapes_images/Shapes_img112.png) | ![Parallel](../Diagram/Shapes_images/Shapes_img113.png) | ![Parallel](../Diagram/Shapes_images/Shapes_img114.png) | ![Parallel](../Diagram/Shapes_images/Shapes_img115.png) |   |   |
 
 ### Gateway
 
@@ -157,7 +157,7 @@ export class NodesComponent {
 
 {% endhighlight %}
 
-![Gateway](/angular/Diagram/Shapes_images/Shapes_img25.png)
+![Gateway](../Diagram/Shapes_images/Shapes_img25.png)
 
 N> By default, the `gateway` will be set as "none".
 
@@ -165,13 +165,13 @@ There are several types of gateways as tabulated
 
 | Gateways | Image |
 |---|---|
-| Exclusive | ![Exclusive](/angular/Diagram/Shapes_images/Shapes_img26.png) |
-| Parallel | ![Parallel](/angular/Diagram/Shapes_images/Shapes_img27.png) |
-| Inclusive | ![Inclusive](/angular/Diagram/Shapes_images/Shapes_img28.png) |
-| Complex | ![Complex](/angular/Diagram/Shapes_images/Shapes_img29.png) |
-| EventBased | ![EventBased](/angular/Diagram/Shapes_images/Shapes_img30.png) |
-| ExclusiveEventBased | ![ExclusiveEventBased](/angular/Diagram/Shapes_images/Shapes_img31.png) |
-| ParallelEventBased | ![ParallelEventBased](/angular/Diagram/Shapes_images/Shapes_img32.png) |
+| Exclusive | ![Exclusive](../Diagram/Shapes_images/Shapes_img26.png) |
+| Parallel | ![Parallel](../Diagram/Shapes_images/Shapes_img27.png) |
+| Inclusive | ![Inclusive](../Diagram/Shapes_images/Shapes_img28.png) |
+| Complex | ![Complex](../Diagram/Shapes_images/Shapes_img29.png) |
+| EventBased | ![EventBased](../Diagram/Shapes_images/Shapes_img30.png) |
+| ExclusiveEventBased | ![ExclusiveEventBased](../Diagram/Shapes_images/Shapes_img31.png) |
+| ParallelEventBased | ![ParallelEventBased](../Diagram/Shapes_images/Shapes_img32.png) |
 
 ### Activity
 
@@ -209,7 +209,7 @@ export class NodesComponent {
 }
 
 {% endhighlight %}
-![Activity](/angular/Diagram/Shapes_images/Shapes_img33.png)
+![Activity](../Diagram/Shapes_images/Shapes_img33.png)
 
 The different activities of BPMN process are listed as follows.
 
@@ -247,20 +247,20 @@ export class NodesComponent {
 
 {% endhighlight %}
 
-![Task](/angular/Diagram/Shapes_images/Shapes_img34.png)
+![Task](../Diagram/Shapes_images/Shapes_img34.png)
 
 The various types of BPMN tasks are tabulated as follows.
 
 | Task Type | Image |
 |---|---|
-| Service | ![Service](/angular/Diagram/Shapes_images/Shapes_img35.png) |
-| Send | ![Send](/angular/Diagram/Shapes_images/Shapes_img34.png) |
-| Receive | ![Receive](/angular/Diagram/Shapes_images/Shapes_img37.png) |
-| Instantiating Receive | ![Instantiating Receive](/angular/Diagram/Shapes_images/Shapes_img38.png) |
-| Manual | ![Manual](/angular/Diagram/Shapes_images/Shapes_img39.png) |
-| Business Rule | ![Business Rule](/angular/Diagram/Shapes_images/Shapes_img40.png) |
-| User | ![User](/angular/Diagram/Shapes_images/Shapes_img41.png) |
-| Script | ![Script](/angular/Diagram/Shapes_images/Shapes_img42.png) |
+| Service | ![Service](../Diagram/Shapes_images/Shapes_img35.png) |
+| Send | ![Send](../Diagram/Shapes_images/Shapes_img34.png) |
+| Receive | ![Receive](../Diagram/Shapes_images/Shapes_img37.png) |
+| Instantiating Receive | ![Instantiating Receive](../Diagram/Shapes_images/Shapes_img38.png) |
+| Manual | ![Manual](../Diagram/Shapes_images/Shapes_img39.png) |
+| Business Rule | ![Business Rule](../Diagram/Shapes_images/Shapes_img40.png) |
+| User | ![User](../Diagram/Shapes_images/Shapes_img41.png) |
+| Script | ![Script](../Diagram/Shapes_images/Shapes_img42.png) |
 
 #### Subprocess
 
@@ -296,7 +296,7 @@ export class NodesComponent {
 
 {% endhighlight %}
 
-![subprocess](/angular/Diagram/Shapes_images/Shapes_img116.png)
+![subprocess](../Diagram/Shapes_images/Shapes_img116.png)
 
 The different types of subprocess are as follows.
 
@@ -338,7 +338,7 @@ export class NodesComponent {
 
 {% endhighlight %}
 
-![Event subprocess](/angular/Diagram/Shapes_images/Shapes_img117.png)
+![Event subprocess](../Diagram/Shapes_images/Shapes_img117.png)
 
 ##### Transaction Subprocess
 
@@ -386,7 +386,7 @@ export class NodesComponent {
 
 {% endhighlight %}
 
-![Transaction subprocess](/angular/Diagram/Shapes_images/Shapes_img118.png)
+![Transaction subprocess](../Diagram/Shapes_images/Shapes_img118.png)
 
 #### Processes 
 
@@ -457,7 +457,7 @@ export class NodesComponent {
             }];
 {% endhighlight %}
 
-![process](/angular/Diagram/Shapes_images/Shapes_img151.png)
+![process](../Diagram/Shapes_images/Shapes_img151.png)
 
 #### Loop
 
@@ -509,15 +509,15 @@ export class NodesComponent {
 
 {% endhighlight %}
 
-![Loop](/angular/Diagram/Shapes_images/Shapes_img43.png)
+![Loop](../Diagram/Shapes_images/Shapes_img43.png)
 
 The following table contains various types of BPMN loops.
 
 | Loops | Task | SubProcess |
 |---|---|---|
-| Standard | ![Standard](/angular/Diagram/Shapes_images/Shapes_img44.png) | ![Standard](/angular/Diagram/Shapes_images/Shapes_img45.png) |
-| SequenceMultiInstance | ![SequenceMultiInstance](/angular/Diagram/Shapes_images/Shapes_img46.png) | ![SequenceMultiInstance](/angular/Diagram/Shapes_images/Shapes_img47.png) |
-| ParallelMultiInstance | ![ParallelMultiInstance](/angular/Diagram/Shapes_images/Shapes_img48.png) | ![ParallelMultiInstance](/angular/Diagram/Shapes_images/Shapes_img49.png) |
+| Standard | ![Standard](../Diagram/Shapes_images/Shapes_img44.png) | ![Standard](../Diagram/Shapes_images/Shapes_img45.png) |
+| SequenceMultiInstance | ![SequenceMultiInstance](../Diagram/Shapes_images/Shapes_img46.png) | ![SequenceMultiInstance](../Diagram/Shapes_images/Shapes_img47.png) |
+| ParallelMultiInstance | ![ParallelMultiInstance](../Diagram/Shapes_images/Shapes_img48.png) | ![ParallelMultiInstance](../Diagram/Shapes_images/Shapes_img49.png) |
 
 #### Compensation
 
@@ -568,7 +568,7 @@ export class NodesComponent {
 
 {% endhighlight %}
 
-![Compensation](/angular/Diagram/Shapes_images/Shapes_img50.png)
+![Compensation](../Diagram/Shapes_images/Shapes_img50.png)
 
 #### Call
 
@@ -603,7 +603,7 @@ export class NodesComponent {
 
 {% endhighlight %}
 
-![Call](/angular/Diagram/Shapes_images/Shapes_img51.png)
+![Call](../Diagram/Shapes_images/Shapes_img51.png)
 
 #### Ad-Hoc
 
@@ -637,7 +637,7 @@ export class NodesComponent {
 
 {% endhighlight %}
 
-![Ad-Hoc](/angular/Diagram/Shapes_images/Shapes_img52.png)
+![Ad-Hoc](../Diagram/Shapes_images/Shapes_img52.png)
 
 #### Boundary
 
@@ -675,9 +675,9 @@ The following table contains various types of BPMN boundaries.
 
 | Boundary | Image |
 |---|---|
-| Call | ![Call](/angular/Diagram/Shapes_images/Shapes_img53.png) |
-| Event | ![Event](/angular/Diagram/Shapes_images/Shapes_img54.png) |
-| Default | ![Default](/angular/Diagram/Shapes_images/Shapes_img55.png) |
+| Call | ![Call](../Diagram/Shapes_images/Shapes_img53.png) |
+| Event | ![Event](../Diagram/Shapes_images/Shapes_img54.png) |
+| Default | ![Default](../Diagram/Shapes_images/Shapes_img55.png) |
 
 ### Data
 
@@ -713,15 +713,15 @@ export class NodesComponent {
 
 {% endhighlight %}
 
-![Data](/angular/Diagram/Shapes_images/Shapes_img56.png)
+![Data](../Diagram/Shapes_images/Shapes_img56.png)
 
 The following table contains various representation of BPMN Data Object.
 
 | Boundary | Image |
 |---|---|
-| Collection Data Object | ![Collection Data Object](/angular/Diagram/Shapes_images/Shapes_img119.png) |
-| Data Input | ![Data Input](/angular/Diagram/Shapes_images/Shapes_img120.png) |
-| Data Ouptput | ![Data Ouptput](/angular/Diagram/Shapes_images/Shapes_img121.png) |
+| Collection Data Object | ![Collection Data Object](../Diagram/Shapes_images/Shapes_img119.png) |
+| Data Input | ![Data Input](../Diagram/Shapes_images/Shapes_img120.png) |
+| Data Ouptput | ![Data Ouptput](../Diagram/Shapes_images/Shapes_img121.png) |
 
 ### Datasource
 
@@ -752,7 +752,7 @@ export class NodesComponent {
 
 {% endhighlight %}
 
-![Datasource](/angular/Diagram/Shapes_images/Shapes_img57.png)
+![Datasource](../Diagram/Shapes_images/Shapes_img57.png)
 
 ### Artifact
 
@@ -804,7 +804,7 @@ export class NodesComponent {
 
 {% endhighlight %}
 
-![Text Annotation](/angular/Diagram/Shapes_images/Shapes_img122.png)
+![Text Annotation](../Diagram/Shapes_images/Shapes_img122.png)
 
 #### Group
 
@@ -835,7 +835,7 @@ export class NodesComponent {
 
 {% endhighlight %}
 
-![Group](/angular/Diagram/Shapes_images/Shapes_img123.png)
+![Group](../Diagram/Shapes_images/Shapes_img123.png)
 
 #### BPMN Flows
 
@@ -884,15 +884,15 @@ export class NodesComponent {
 
 {% endhighlight %}
 
-![Association](/angular/Diagram/Shapes_images/Shapes_img134.png)
+![Association](../Diagram/Shapes_images/Shapes_img134.png)
 
 The following table demonstrates the visual representation of assosiation flows.
 
 | Association | Image |
 |---|---|
-| Default | ![Default](/angular/Diagram/Shapes_images/Shapes_img133.png) |
-| Directional | ![Directional](/angular/Diagram/Shapes_images/Shapes_img134.png) |
-| BiDirectional | ![BiDirectional](/angular/Diagram/Shapes_images/Shapes_img132.png) |
+| Default | ![Default](../Diagram/Shapes_images/Shapes_img133.png) |
+| Directional | ![Directional](../Diagram/Shapes_images/Shapes_img134.png) |
+| BiDirectional | ![BiDirectional](../Diagram/Shapes_images/Shapes_img132.png) |
 
 N> The default value for the property `association` is "default".
 
@@ -938,15 +938,15 @@ export class NodesComponent {
 
 {% endhighlight %}
 
-![Sequence](/angular/Diagram/Shapes_images/Shapes_img135.png)
+![Sequence](../Diagram/Shapes_images/Shapes_img135.png)
 
 The following table contains various representation of sequence flows.
 
 | Sequence | Image |
 |---|---|
-| Default | ![Default](/angular/Diagram/Shapes_images/Shapes_img136.png) |
-| Conditional | ![Conditional](/angular/Diagram/Shapes_images/Shapes_img135.png) |
-| Normal | ![Normal](/angular/Diagram/Shapes_images/Shapes_img137.png) |
+| Default | ![Default](../Diagram/Shapes_images/Shapes_img136.png) |
+| Conditional | ![Conditional](../Diagram/Shapes_images/Shapes_img135.png) |
+| Normal | ![Normal](../Diagram/Shapes_images/Shapes_img137.png) |
 
 N> The default value for the property `sequence` is "normal".
 
@@ -992,14 +992,14 @@ export class NodesComponent {
 
 {% endhighlight %}
 
-![Message](/angular/Diagram/Shapes_images/Shapes_img138.png)
+![Message](../Diagram/Shapes_images/Shapes_img138.png)
 
 The following table contains various representation of message flows.
 
 | Message | Image |
 |---|---|
-| Default | ![Default](/angular/Diagram/Shapes_images/Shapes_img139.png) |
-| InitiatingMessage | ![InitiatingMessage](/angular/Diagram/Shapes_images/Shapes_img138.png) |
-| NonInitiatingMessage | ![NonInitiatingMessage](/angular/Diagram/Shapes_images/Shapes_img140.png) |
+| Default | ![Default](../Diagram/Shapes_images/Shapes_img139.png) |
+| InitiatingMessage | ![InitiatingMessage](../Diagram/Shapes_images/Shapes_img138.png) |
+| NonInitiatingMessage | ![NonInitiatingMessage](../Diagram/Shapes_images/Shapes_img140.png) |
 
 N> The default value for the property `message` is "default".
