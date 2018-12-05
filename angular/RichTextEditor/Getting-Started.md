@@ -1,5 +1,5 @@
 ---
-title: Getting Started for Angular RichTextEditor
+title: Getting Started for Angular RichTextEditor | Syncfusion
 description: How to create a RichTextEditor control.
 platform: Angular
 control: RTE
@@ -9,7 +9,7 @@ keywords: ejrte, rte, js rte
 
 # Getting started
 
-This section helps to understand the getting started od RTE control with the step-by-step instruction.
+This section helps to understand the getting started of RTE control with the step-by-step instruction.
 
 ## Create RTE Control
 
@@ -62,7 +62,7 @@ export class AppComponent {
 
 Now, the RTE is rendered.
 
-![](Getting-Started_images/Getting-Started_img1.png)
+![RTE](Getting-Started_images/Getting-Started_img1.png)
 
 ## Toolbar–Configuration
 
@@ -70,7 +70,7 @@ You can configure a toolbar with the tools as your application requires.
 
 {% highlight html %}
  
- <textarea ej-rte width="600px" height="300px" [(toolsList)]="toolslist"></textarea>
+ <textarea ej-rte width="600px" height="300px" [(toolsList)]="tools"></textarea>
 
 {% endhighlight %}
 
@@ -79,13 +79,13 @@ You can configure a toolbar with the tools as your application requires.
 import {Component} from '@angular/core';
 
 @Component({
-  selector: 'sd-home',
+  selector: 'my-app',
   templateUrl: 'app/components/rating/rating.component.html'
 })
 export class RatingComponent {
-    toolslist: any; 
+    tools: any; 
     constructor() {
-        this.toolslist = ["formatStyle", "font", "style", "effects", "alignment", "lists", "indenting", "clipboard", "doAction", "clear", "casing", "customTools", "print"];  
+        this.tools = ["formatStyle", "font", "style", "effects", "alignment", "lists", "indenting", "clipboard", "doAction", "clear", "casing", "customTools", "print"];  
     }
 }
 
@@ -93,7 +93,7 @@ export class RatingComponent {
 
 The above code example displays the following output.
 
-![](Getting-Started_images/Getting-Started_img2.png)
+![tools](Getting-Started_images/Getting-Started_img2.png)
 
 You can set the content of the editor as follows.
 
@@ -122,4 +122,4 @@ export class AppComponent {
 
 The following screenshot displays a RTE widget.
 
-![](Getting-Started_images/Getting-Started_img3.png)
+![value](Getting-Started_images/Getting-Started_img3.png)
