@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Define and add the frequently used nodes/connectors to the symbol palette
+title: Define and add nodes/connectors to symbol palette
 description: How to add shapes to the symbol palette and drag and drop them over the drawing area?
 platform: Angular
 control: Diagram
@@ -39,7 +39,7 @@ import {Component} from '@angular/core';
 
 @Component({
   selector: 'ej-app',
-  templateUrl: 'app/components/diagram/Symbolpalette.component.html',
+  templateUrl: 'app/components/diagram/Symbol-palette.component.html',
 })
 
 export class SymbolpaletteComponent {
@@ -233,9 +233,9 @@ export class SymbolPaletteComponent {
 
 {% endhighlight %}
 
-![](/angular/Diagram/Symbol-Palette_images/Symbol-Palette_img1.png)
+![symbol palette](/angular/Diagram/Symbol-Palette_images/Symbol-Palette_img1.png)
 
-![](/angular/Diagram/Symbol-Palette_images/Symbol-Palette_img2.png)
+![symbol palette](/angular/Diagram/Symbol-Palette_images/Symbol-Palette_img2.png)
 
 
 ## Symbol Previews
@@ -253,7 +253,7 @@ You can customize the preview size of the individual palette items. The `palette
 
 {% endhighlight %}
 
-![](/angular/Diagram/Symbol-Palette_images/Symbol-Palette_img4.png)
+![symbol preview](/angular/Diagram/Symbol-Palette_images/Symbol-Palette_img4.png)
 
 Symbol palette allows to sets the offset of the dragging helper relative to the mouse cursor.
 
@@ -292,7 +292,7 @@ export class SymbolpaletteComponent {
 
 {% endhighlight %}
 
-![](/angular/Diagram/Symbol-Palette_images/Symbol-Palette_img6.png)
+![symbol preview](/angular/Diagram/Symbol-Palette_images/Symbol-Palette_img6.png)
 
 
 Symbol preview size will be set based on the following precedence.
