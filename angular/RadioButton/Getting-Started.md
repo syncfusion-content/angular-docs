@@ -99,7 +99,7 @@ npm start
 
 6.Browse the port where your application is hosted and navigate to RadioButton tab to see the output. 
 
-![](Getting-Started_images/two-way.png)
+![Adding RadioButton component](Getting-Started_images/two-way.png)
 
 ### Data Binding
 
@@ -165,4 +165,4 @@ export class AppComponent {
 
 Execute the above code to get the following output
 
-![](Getting-Started_images/two-way.png)
+![Data Binding](Getting-Started_images/two-way.png)

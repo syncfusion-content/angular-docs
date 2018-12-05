@@ -61,7 +61,7 @@ npm start
 
 6.Browse the port where your application is hosted and navigate to **DateTimepicker** tab to see the output. 
 
-![](Getting-Started_images/datetime.png)
+![Adding DateTimePicker component](Getting-Started_images/datetime.png)
 
 ### Data Binding
 
@@ -119,6 +119,6 @@ export class AppComponent {
 
 The following screenshot illustrates the output of above code.
 
-![](getting-started_images/minmax.png) 
+![Configuring DateTimePicker](getting-started_images/minmax.png) 
 
 
