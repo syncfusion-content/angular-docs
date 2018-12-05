@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Define and add nodes/connectors to symbol palette
+title:  Add nodes and connectors in Syncfusion Symbol palette control.
 description: How to add shapes to the symbol palette and drag and drop them over the drawing area?
 platform: Angular
 control: Diagram
@@ -88,7 +88,7 @@ export class SymbolpaletteComponent {
 
 The following image shows the symbol palette with multiple palette Items.
 
-![](/angular/Diagram/Symbol-Palette_images/Symbol-Palette_img3.png)
+![Add palettes to symbol palette](/angular/Diagram/Symbol-Palette_images/Symbol-Palette_img3.png)
 
 ### Customize the Palette Header
 
@@ -143,7 +143,7 @@ export class SymbolpaletteComponent {
 
 The following image shows the customized palette header
 
-![](/angular/Diagram/Symbol-Palette_images/customizethepaletteheader_img1.png)
+![customized palette header](/angular/Diagram/Symbol-Palette_images/customizethepaletteheader_img1.png)
 
 ## Add symbols to palette
 

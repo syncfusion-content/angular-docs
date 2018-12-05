@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Syncfusion diagram layout nodes and connectors in an organized structure
+title:  Organize layout in Syncfusion diagram.
 description: How to arrange nodes by using the automatic layouts?.
 platform: Angular
 control: Diagram
@@ -555,7 +555,7 @@ export class OrganizationalChartComponent {
         },
 
         //Sets the alignment of the layout
-        horizontalALignment: ej.datavisualization.Diagram.HorizontalAlignment.Left,
+        horizontalAlignment: ej.datavisualization.Diagram.HorizontalAlignment.Left,
         verticalAlignment: ej.datavisualization.Diagram.VerticalAlignment.Top,
     };
     this.defaultSettings = {
@@ -606,7 +606,7 @@ export class OrganizationalChartComponent {
         },
 
         //Sets the alignment of the layout
-        horizontalALignment: ej.datavisualization.Diagram.HorizontalAlignment.Left,
+        horizontalAlignment: ej.datavisualization.Diagram.HorizontalAlignment.Left,
         verticalAlignment: ej.datavisualization.Diagram.VerticalAlignment.Top,
          //Sets the margin
         margin: {
@@ -665,7 +665,7 @@ export class OrganizationalChartComponent {
         },
 
         //Sets the alignment of the layout
-        horizontalALignment: ej.datavisualization.Diagram.HorizontalAlignment.Left,
+        horizontalAlignment: ej.datavisualization.Diagram.HorizontalAlignment.Left,
         verticalAlignment: ej.datavisualization.Diagram.VerticalAlignment.Top,
          //Sets the margin
         margin: {

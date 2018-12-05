@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Visually represents internal business procedures.
-description: How to graphically notate the internal business procedure? 
+title: BPMN shapes in Syncfusion Diagram control.
+description: How to graphically notate the internal business procedure?
 platform:  Angular
 control: Diagram
 documentation: ug
