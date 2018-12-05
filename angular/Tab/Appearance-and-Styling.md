@@ -41,7 +41,7 @@ Add the following **HTML** to render **Tab** with header image.
     import {Component} from '@angular/core';
     import {ViewEncapsulation} from '@angular/core';
     @Component({
-    selector: 'sd-home',
+    selector: 'my-app',
     templateUrl: 'app/components/tab/tab.component.html',
     styleUrls: ['app/components/tab/tab.component.css'],
     encapsulation: ViewEncapsulation.None
@@ -243,7 +243,7 @@ Add the following **HTML** to render **Tab** with customized height and height a
 import {Component} from '@angular/core';
 
     @Component({
-    selector: 'sd-home',
+    selector: 'my-app',
     templateUrl: 'app/components/tab/tab.component.html'
     })
     export class TabComponent { 
@@ -292,7 +292,7 @@ Add the following **HTML** to render **Tab** with customized width.
 import {Component} from '@angular/core';
 
     @Component({
-    selector: 'sd-home',
+    selector: 'my-app',
     templateUrl: 'app/components/tab/tab.component.html'
     })
     export class TabComponent { 
@@ -362,7 +362,7 @@ Add the following **HTML** to render **Tab** with customized style.
     import {Component} from '@angular/core';
     import {ViewEncapsulation} from '@angular/core';
     @Component({
-    selector: 'sd-home',
+    selector: 'my-app',
     templateUrl: 'app/components/tab/tab.component.html',
     styleUrls: ['src/value/value.component.css'],
     encapsulation: ViewEncapsulation.None
