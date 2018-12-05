@@ -70,7 +70,7 @@ You can configure a toolbar with the tools as your application requires.
 
 {% highlight html %}
  
- <textarea ej-rte width="600px" height="300px" [(toolsList)]="toolslist"></textarea>
+ <textarea ej-rte width="600px" height="300px" [(toolsList)]="tools"></textarea>
 
 {% endhighlight %}
 
@@ -79,13 +79,13 @@ You can configure a toolbar with the tools as your application requires.
 import {Component} from '@angular/core';
 
 @Component({
-  selector: 'sd-home',
+  selector: 'my-app',
   templateUrl: 'app/components/rating/rating.component.html'
 })
 export class RatingComponent {
-    toolslist: any; 
+    tools: any; 
     constructor() {
-        this.toolslist = ["formatStyle", "font", "style", "effects", "alignment", "lists", "indenting", "clipboard", "doAction", "clear", "casing", "customTools", "print"];  
+        this.tools = ["formatStyle", "font", "style", "effects", "alignment", "lists", "indenting", "clipboard", "doAction", "clear", "casing", "customTools", "print"];  
     }
 }
 
