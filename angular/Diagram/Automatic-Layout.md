@@ -81,7 +81,7 @@ N> You can ignore a particular Node from layout arrangement by setting its **exc
 
 The Radial Tree layout arranges nodes on a virtual concentric circles around a root node. Sub-trees formed by the branching of child nodes are located radially around the child nodes. This arrangement results in an ever-expanding concentric arrangement with radial proximity to the root node indicating the node level in the hierarchy. When no root node is set, the algorithm automatically considers one of the Diagram nodes as the root node.
 
-To arrange nodes in a radial tree structure, you need to set the `layout.type` as `radialtree`. The following code illustrates how to arrange the nodes in a radial tree structure.
+To arrange nodes in a radial tree structure, you need to set the `layout.type` as `ej.datavisualization.Diagram.LayoutTypes.RadialTree`. The following code illustrates how to arrange the nodes in a radial tree structure.
 
 {% highlight javascript %}
 
@@ -287,7 +287,7 @@ export class RadialTreeComponent {
 
 ## Organizational Chart
 
-An **organizational chart** is a Diagram that displays the structure of an organization and relationships. To create an organizational chart, `layout.type` should be set as `organizationalchart`.
+An **organizational chart** is a Diagram that displays the structure of an organization and relationships. To create an organizational chart, `layout.type` should be set as `ej.datavisualization.Diagram.LayoutTypes.OrganizationalChart`.
 The following code example illustrates how to create an organizational chart.
 
 {% highlight javascript %}

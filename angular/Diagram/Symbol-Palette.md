@@ -13,7 +13,7 @@ The **SymbolPalette** displays a collection of palettes. The Palette shows a s
 
 ## Create symbol palette
 
-The `diagramId` property of symbolpalette should be set with the corresponding Diagram ID to drag and drop the nodes and connectors into the Diagram. The following code illustrates how to create symbolpalette.  
+The `diagramId` property of symbol palette should be set with the corresponding Diagram ID to drag and drop the nodes and connectors into the Diagram. The following code illustrates how to create symbol palette.  
 
 {% highlight html %}
 
