@@ -61,9 +61,9 @@ npm start
 
 6.Browse the port where your application is hosted and navigate to **DateTimepicker** tab to see the output. 
 
-![](Getting-Started_images/datetime.png)
+![Adding DateTimePicker component](Getting-Started_images/datetime.png)
 
-### Databinding
+### Data Binding
 
 To bind the model values to the **DateTimePicker** component, define the model values in the **AppComponent** class available in DateTimepicker.component.ts file as given below.
 
@@ -119,6 +119,6 @@ export class AppComponent {
 
 The following screenshot illustrates the output of above code.
 
-![](getting-started_images/minmax.png) 
+![Configuring DateTimePicker](getting-started_images/minmax.png) 
 
 
