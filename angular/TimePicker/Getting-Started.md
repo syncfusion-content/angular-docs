@@ -24,6 +24,7 @@ Copy the required Angular source components file from the installed location and
 > _Note:_ _core.ts file is mandatory for all Syncfusion JavaScript Angular components. The repository having the source file from Essential Studio for JavaScript v14.3.0.49._
 
 ### Adding JavaScript and CSS Reference
+
 Create an HTML page and refer the necessary script and CSS dependency files in your application with the help of given  [Angular Getting Started Documentation.](https://help.syncfusion.com/angular-2/overview)
 
 Example
@@ -109,11 +110,11 @@ npm start
 
 6. Browse the port where your application is hosted and navigate to TimePicker tab to see the output. 
 
-![](Getting-Started_images/Getting-Started_img1.png)
+![Control Initialization](Getting-Started_images/Getting-Started_img1.png)
 
 ## Configuring Properties
 
-### Databinding
+### Data Binding
 
 With the above steps you have rendered a simple TimePicker component with the value set in initial rendering. 
 
@@ -142,7 +143,7 @@ export class AppComponent {
 
 The following screenshot illustrates the output of above code.
 
-![](Getting-Started_images/Getting-Started_img2.png)
+![Data Binding](Getting-Started_images/Getting-Started_img2.png)
 
 ### DisableTimeRanges
 
@@ -173,6 +174,6 @@ export class AppComponent {
 
 The following screenshot illustrates the output of above code.
 
-![](Getting-Started_images/Getting-Started_img3.png)
+![DisableTimeRanges](Getting-Started_images/Getting-Started_img3.png)
 
 
