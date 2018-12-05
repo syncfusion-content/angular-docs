@@ -94,9 +94,9 @@ npm start
 
 6.Browse the port where your application is hosted and navigate to CheckBox tab to see the output. 
 
-![](Getting-Started_images/default.png)
+![Adding CheckBox component](Getting-Started_images/default.png)
 
-### Databinding
+### Data Binding
 
 To bind the model values to the **CheckBox** component, define the model values in the **AppComponent** class available in CheckBox.component.ts file as given below.
 
@@ -153,4 +153,4 @@ export class AppComponent {
 
 Execute the above code to get the following output.
 
-![](Getting-Started_images/two-way.png)
+![Data Binding](Getting-Started_images/two-way.png)
