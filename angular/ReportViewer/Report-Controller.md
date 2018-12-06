@@ -1,5 +1,5 @@
 ---
-title: Syncfusion Report Controller
+title: Report Controller
 description: report controller
 platform: Angular
 control: ReportViewer
@@ -63,7 +63,7 @@ Processes the report request and returns the result.</td></tr>
 
 ## Create a Web API Controller for .NET platform
 
-ReportViewer uses WebApi services to process the report file and process the request from control.
+Right-Click the Project, select Add and select Web API Controller Class file from the listed templates.
 
 ![Getting-Started](Getting-Started_images/Getting-Started_img4.png) 
 
@@ -177,7 +177,7 @@ namespace ReportViewerDemo.Api
 
 ### Enable CORS
 
-1. Add the CORS NuGet package. In Visual Studio, Goto the Tools menu, select NuGet Package Manager, then select Package Manager Console. In the Package Manager Console window, type the following command:
+1. Add the CORS NuGet package. In Visual Studio, goto the Tools menu, select NuGet Package Manager, then select Package Manager Console. In the Package Manager Console window, type the following command:
 
     {% highlight html %}
 
@@ -263,7 +263,7 @@ namespace ReportViewerDemo.Api
 ~~~
 
 ## Create a Web API Controller for .NET Core platform
-The ASP.NET Core Report viewer uses WebApi services to process the report file and get the request from control.
+Right-Click the Project, select Add and select Web API Controller Class file from the listed templates.
 
 ### References
 You should add the following packages for the report viewer:
