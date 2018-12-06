@@ -1,5 +1,5 @@
 ---
-title: Report Controller
+title: Syncfusion Report Controller
 description: report controller
 platform: Angular
 control: ReportViewer
