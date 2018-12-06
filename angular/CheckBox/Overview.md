@@ -16,7 +16,7 @@ documentation: ug
 * **Trendy Look :** Rich Appearance with Theme Support
 * **RTL :** Supports for Right to Left alignment
 * **Tri-State:** Supports **CheckBox** with three states.
-* **Easy Customization:** The customization of **CheckBox** is made simplesupports the basic functionalities of both controls.
+* **Easy Customization:** The customization of **CheckBox** is made simple supports the basic functionalities of both controls.
 * **Data-Binding:** Supports two-way and one-way binding of data between View-Model
 * **Themes:** Essential PHP controls consist of 17 built-in themes (6 – flat and 6 – gradient effects), and also support custom skin options to set user-defined themes.
 * **Responsive and Touch support:** Fits in all range of devices and supports touch devices

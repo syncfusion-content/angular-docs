@@ -1,6 +1,6 @@
 ---
 layout: post
-title: data binding
+title: Syncfusion data binding
 description: data binding
 platform: Angular
 control: Autocomplete 
@@ -82,7 +82,7 @@ export class AppComponent {
 
 Run the above code to render the following output.
 
-![](databinding_images\localdata_img1.png)
+![Local data](databinding_images\localdata_img1.png)
 
 ## Remote data
 
@@ -117,7 +117,7 @@ export class AppComponent {
 
 Run the above code to render the following output.
 
-![](databinding_images\odata_img1.png)
+![remote data](databinding_images\odata_img1.png)
 
 
 ### WebAPI
@@ -156,7 +156,7 @@ export class AppComponent {
 
 Run the above code to render get the following output.
 
-![](databinding_images\webapi_img1.png)
+![Web api](databinding_images\webapi_img1.png)
 
 NOTE
 
@@ -165,10 +165,10 @@ In the above data manager configuration, “crossDomain” must be set to true t
 
 ### Handling errors
 
-In remote binding, the server might not return data sometimes due to various reasons. In such cases we need to handle the error properly. We can handle this errorsusing the “[actionFailure](http://help.syncfusion.com/api/js/ejautocomplete)” event.
+In remote binding, the server might not return data sometimes due to various reasons. In such cases we need to handle the error properly. We can handle this errors using the [`actionFailure`](http://help.syncfusion.com/api/js/ejautocomplete) event.
 
 ### See Also
 
-[actioncomplete](http://help.syncfusion.com/api/js/ejautocomplete) event
+[action complete](http://help.syncfusion.com/api/js/ejautocomplete) event
 
-[actionsuccess](http://help.syncfusion.com/api/js/ejautocomplete) event
+[action success](http://help.syncfusion.com/api/js/ejautocomplete) event

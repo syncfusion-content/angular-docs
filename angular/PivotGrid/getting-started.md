@@ -1,5 +1,5 @@
 ---
-title: Getting Started for Angular PivotGrid
+title: Getting Started for PivotGrid in Syncfusion Essential Angular2
 description: How to create a PivotGrid with data source.
 platform: Angular
 control: PivotGrid
@@ -22,7 +22,7 @@ To quick start with Syncfusion JavaScript Angular components run the below comma
 
  > npm install
 {% endhighlight %}
- 
+
 The below steps describes to add component with above cloned seed application.
 
 ## Syncfusion JavaScript components source configuration and sample creation
@@ -30,14 +30,14 @@ The below steps describes to add component with above cloned seed application.
 * Copy required Syncfusion Angular source component(s) from the below build location and add it in `src/ej` folder (For ex., consider the `pivotgrid` component).
 
 {% highlight javascript %}
-(Installed Location)\Syncfusion\Essential Studio\{{ site.releaseversion }}\JavaScript\assets-src\angular2\ 
+(Installed Location)\Syncfusion\Essential Studio\{{ site.releaseversion }}\JavaScript\assets-src\angular2\
 {% endhighlight %}
 
 N> `core.ts` file is mandatory for all Syncfusion JavaScript Angular components. The repository having the source file from Essential Studio for JavaScript v{{ site.releaseversion }}.
 
 * Create `pivotgrid` folder inside `src` folder.
 
-* Create `pivotgrid.component.html` view file inside `src/pivotgrid` folder and render ejPivotGrid Angular component using the below code example. 
+* Create `pivotgrid.component.html` view file inside `src/pivotgrid` folder and render ejPivotGrid Angular component using the below code example.
 
 {% highlight html %}
 
@@ -54,7 +54,7 @@ import { Component } from '@angular/core';
 @Component({
   selector: 'ej-app',
   templateUrl: 'app/components/pivotgrid/pivotgrid.component.html',
-  styleUrls: ['app/components/pivotgrid/pivotgrid.component.css'], 
+  styleUrls: ['app/components/pivotgrid/pivotgrid.component.css'],
 })
 
 export class PivotGridComponent {
@@ -65,7 +65,7 @@ export class PivotGridComponent {
 
 ## Configure the routes for the Router
 
-Before adding router configuration for above created ejPivotGrid component, we recommend you to go through the [Angular Routing](https://angular.io/docs/ts/latest/guide/router.html) configuration to get the deeper knowledge about Angular routing. 
+Before adding router configuration for above created ejPivotGrid component, we recommend you to go through the [Angular Routing](https://angular.io/docs/ts/latest/guide/router.html) configuration to get the deeper knowledge about Angular routing.
 
 * Now, we are going to configure the route navigation link for created PivotGrid sample in `src/app.component.html` file.
 
@@ -85,12 +85,12 @@ Before adding router configuration for above created ejPivotGrid component, we r
 
 {% highlight javascript %}
 import { Routes } from '@angular/router';
-. . . . 
+. . . .
 import { PivotGridComponent } from './pivotgrid/pivotgrid.component';
 
 export const rootRouterConfig: Routes = [
     { path: '', redirectTo: 'home', pathMatch: 'full' },
-    . . . . 
+    . . . .
     { path: 'pivotgrid', component: PivotGridComponent }
 ];
 {% endhighlight %}
@@ -100,12 +100,12 @@ export const rootRouterConfig: Routes = [
 {% highlight javascript %}
 
 import { NgModule, enableProdMode, ErrorHandler } from '@angular/core';
-. . . . . 
+. . . . .
 import { EJ_PIVOTGRID_COMPONENTS } from './ej/pivotgrid.component';
 import { PivotGridComponent } from './pivotgrid/pivotgrid.component';
 
 import { rootRouterConfig } from './app.routes';
-. . . . 
+. . . .
 @NgModule({
   imports: [BrowserModule, FormsModule, HttpModule, RouterModule.forRoot(rootRouterConfig, { useHash: true })],
   declarations: [. . . . , EJ_PIVOTGRID_COMPONENTS,PivotGridComponent],
@@ -136,10 +136,10 @@ Create a **CSS** page and add necessary CSS elements for PivotGrid
     ej-pivotgrid {
         display: block;
         height: 450px;
-        width: 100%; 
+        width: 100%;
         overflow: auto;
     }
-    
+
     .e-pivotgrid {
         position: inherit !important;
 }
@@ -192,8 +192,8 @@ Let us now see how to populate the PivotGrid control using a sample JSON data as
               { Amount: 250, Country: "United States", Date: "FY 2008", Product: "Car", Quantity: 3, State: "North Carolina" },
               { Amount: 300, Country: "United States", Date: "FY 2007", Product: "Van", Quantity: 4, State: "South Carolina" }
             ];
-            this.rows= [{ fieldName: "Country", fieldCaption: "Country" }], 
-            this.columns= [{ fieldName: "Product", fieldCaption: "Product" }], 
+            this.rows= [{ fieldName: "Country", fieldCaption: "Country" }],
+            this.columns= [{ fieldName: "Product", fieldCaption: "Product" }],
             this.values= [{ fieldName: "Amount", fieldCaption: "Amount" }],
             this.filters= []
         }
@@ -205,12 +205,12 @@ Let us now see how to populate the PivotGrid control using a sample JSON data as
 
 The above code will generate a simple PivotGrid with “Country” field in Row, “Product” field in Column and “Amount” field in Value section.
 
-![](getting-started_images/purejs.png)
+![Relational pivot grid control in Angular](getting-started_images/purejs.png)
 
 ### Apply Sorting
 
 You can sort a field either to ascending or descending order using the **"sortOrder"** property. Sorting is applicable only for Row and Column fields. By default, fields are arranged in ascending order.
- 
+
 {% highlight ts %}
 
 //..
@@ -219,8 +219,8 @@ export class PivotGridComponent {
     public data; rows; columns;values;filters;
     constructor() {
         this.data = []; // data source
-        this.rows= [{ fieldName: "Country", fieldCaption: "Country", sortOrder: ej.PivotAnalysis.SortOrder.Descending }], 
-        this.columns= [{ fieldName: "Product", fieldCaption: "Product" }], 
+        this.rows= [{ fieldName: "Country", fieldCaption: "Country", sortOrder: ej.PivotAnalysis.SortOrder.Descending }],
+        this.columns= [{ fieldName: "Product", fieldCaption: "Product" }],
         this.values= [{ fieldName: "Amount", fieldCaption: "Amount" }],
         this.filters= []
     }
@@ -228,11 +228,11 @@ export class PivotGridComponent {
 
 {% endhighlight %}
 
-![](Getting-Started_images/purejssorting.png)
+![Sorting in Angular pivot grid control](Getting-Started_images/purejssorting.png)
 
 ### Apply Filtering
 
-Filtering option allows you to specify a set of values that either need to be displayed or hided. Also filtering option is applicable only for Row, Column and Filter areas.
+Filtering option allows you to specify a set of values that either need to be displayed or hidden. Also filtering option is applicable only for Row, Column and Filter areas.
 
 **"filterItems"** object allow us to apply filtering to the fields using the following properties:
 
@@ -247,20 +247,20 @@ export class PivotGridComponent {
     public data; rows; columns;values;filters;
     constructor() {
         this.data = []; // data source
-        this.rows= [{ fieldName: "Country", 
-                    fieldCaption: "Country", 
-                    filterItems: { 
+        this.rows= [{ fieldName: "Country",
+                    fieldCaption: "Country",
+                    filterItems: {
                         filterType: ej.PivotAnalysis.FilterType.Exclude,
                         values: ["United Kingdom"]
-                    } 
-                }], 
-        this.columns= [{ fieldName: "Product", 
+                    }
+                }],
+        this.columns= [{ fieldName: "Product",
                     fieldCaption: "Product",
                     filterItems: {
                         filterType: ej.PivotAnalysis.FilterType.Include,
                         values: ["Bike", "Car"]
                     }
-                 }], 
+                 }],
         this.values= [{ fieldName: "Amount", fieldCaption: "Amount" }],
         this.filters= []
     }
@@ -268,7 +268,7 @@ export class PivotGridComponent {
 
 {% endhighlight %}
 
-![](Getting-Started_images/purejsfiltering.png)
+![Filtering in Angular pivot grid control](Getting-Started_images/purejsfiltering.png)
 
 ### Apply Summary Types
 
@@ -294,7 +294,7 @@ export class PivotGridComponent {
 
 {% endhighlight %}
 
-![](Getting-Started_images/purejssummarytype.png)
+![Summary types in Angular pivot grid control](Getting-Started_images/purejssummarytype.png)
 
 ## OLAP
 
@@ -318,10 +318,10 @@ Create a **CSS** page and add necessary CSS elements for PivotGrid
     ej-pivotgrid {
         display: block;
         height: 450px;
-        width: 100%; 
+        width: 100%;
         overflow: auto;
     }
-    
+
     .e-pivotgrid{
         position: inherit !important;
     }
@@ -359,4 +359,4 @@ Let us now see how to populate the PivotGrid control using a sample JSON data as
 
 The above code will generate a simple PivotGrid with “Fiscal” field in Row, “Customer Geography” field in Column and “Internet Sales Amount” field in Value section.
 
-![](getting-started_images/Olap.png)
+![OLAP pivot grid control in Angular](getting-started_images/Olap.png)
