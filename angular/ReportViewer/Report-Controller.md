@@ -95,7 +95,7 @@ You should add the following assembly for the ReportViewer webAPI controller in 
 
 The ApiController inherits the `IReportController` and you can add the following code example to its methods definition in order to process the report file. The interface `IReportController` contains the required actions and helper methods declaration to process the report. The `ReportHelper` class contains helper methods that helps to process Post/Get request from control and return the response to control.
 
-{% highlight c# %}
+~~~ csharp
 
 using Syncfusion.EJ.ReportViewer;
 using System;
@@ -137,7 +137,7 @@ namespace ReportViewerDemo.Api
     }
 }
 
-{% endhighlight %}
+~~~
 
 ### WebAPI Routing
 
@@ -174,6 +174,93 @@ namespace ReportViewerDemo.Api
 		   }
 	   }
    ~~~
+
+### Enable CORS
+
+1. Add the CORS NuGet package. In Visual Studio, Goto the Tools menu, select NuGet Package Manager, then select Package Manager Console. In the Package Manager Console window, type the following command:
+
+    {% highlight html %}
+
+    Install-Package Microsoft.AspNet.WebApi.Cors
+
+    {% endhighlight %}
+
+2. You can call enable cors method in Application_Start event into Global.asax file as follows.
+
+~~~ csharp
+
+    using System;
+    using System.Collections.Generic;
+    using System.Linq;
+    using System.Web;
+    using System.Web.Security;
+    using System.Web.SessionState;
+    using System.Web.Http;
+
+    namespace ReportViewerDemo 
+    {
+        public class Global: System.Web.HttpApplication 
+        {
+            protected void Application_Start(object sender, EventArgs e) 
+            {
+                System.Web.Http.GlobalConfiguration.Configuration.EnableCors();
+                System.Web.Http.GlobalConfiguration.Configuration.Routes.MapHttpRoute(
+                name: "DefaultApi",
+                routeTemplate: "api/{controller}/{action}/{id}",
+                defaults: new { id = RouteParameter.Optional });
+            }
+        }
+    }
+
+~~~
+ 
+ 3. Add the [EnableCors] attribute to the ApiController class as follows
+
+~~~ csharp
+
+    using Syncfusion.EJ.ReportViewer;
+    using System;
+    using System.Collections.Generic;
+    using System.Linq;
+    using System.Net;
+    using System.Net.Http;
+    using System.Web.Http;
+    using System.Web.Http.Cors;
+    
+    namespace ReportViewerDemo.Api 
+    {
+        [EnableCors(origins: "*", headers: "*", methods: "*")]
+        public class ReportApiController: ApiController,IReportController 
+        {
+            //Post action for processing the rdl/rdlc report 
+            public object PostReportAction(Dictionary < string, object > jsonResult 
+            {
+                return ReportHelper.ProcessReport(jsonResult, this);
+            }
+            
+            //Get action for getting resources from the report
+            [System.Web.Http.ActionName("GetResource")]
+            [AcceptVerbs("GET")]
+            public object GetResource(string key, string resourceType, bool isPrint) 
+            {
+                return ReportHelper.GetResource(key, resourceType, isPrint);
+            }
+            
+            //Method will be called when initialize the report options before start processing the report        
+            public void OnInitReportOptions(ReportViewerOptions reportOption)
+            {
+                //You can update report options here
+            }
+            
+            //Method will be called when reported is loaded
+            public void OnReportLoaded(ReportViewerOptions reportOption) 
+            {
+                //You can update report options here
+            }
+        }
+    }
+
+~~~
 
 ## Create a Web API Controller for .NET Core platform
 The ASP.NET Core Report viewer uses WebApi services to process the report file and get the request from control.
@@ -255,7 +342,7 @@ The ApiController should inherit the `IReportController` interface to build the 
 
 Please add the following code example in controller page.
 
-{% highlight C# %}
+~~~ csharp
 
 using System.Collections.Generic;
 using Microsoft.AspNetCore.Mvc;
@@ -319,6 +406,182 @@ namespace ReportViewerDemo.Controllers
     }
 }
 
-{% endhighlight %}
+~~~
+
+### WebAPI Routing
+
+You can route the WebAPI in configure method into Startup.cs file as follows.
+
+~~~ csharp
+
+ using Microsoft.AspNetCore.Builder;
+ using Microsoft.AspNetCore.Hosting;
+ using Microsoft.Extensions.Configuration;
+ using Microsoft.Extensions.DependencyInjection;
+ 
+ namespace ReportViewerDemo
+ {
+     public class Startup
+     {
+         public Startup(IConfiguration configuration)
+         {
+             Configuration = configuration;
+         }
+ 
+         public IConfiguration Configuration { get; }
+ 
+         // This method gets called by the runtime. Use this method to add services to the container.
+         public void ConfigureServices(IServiceCollection services)
+         {
+             services.AddMvc();
+         }
+ 
+         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
+         public void Configure(IApplicationBuilder app, IHostingEnvironment env)
+         {
+             if (env.IsDevelopment())
+             {
+                 app.UseDeveloperExceptionPage();
+             }
+ 
+             app.UseMvc();
+ 
+             app.UseMvc(routes =>
+             {
+                 routes.MapRoute(
+                     name: "default",
+                     template: "api/{controller=ReportApi}/ {action=Index}/{id?}");
+             });
+         }
+     }
+ }
+ 
+~~~
+
+### Enable CORS
+
+1. You can add cors in ConfigureServices method into Startup.cs file as follows.
+
+~~~ csharp
+
+    using Microsoft.AspNetCore.Builder;
+    using Microsoft.AspNetCore.Hosting;
+    using Microsoft.Extensions.Configuration;
+    using Microsoft.Extensions.DependencyInjection;
+
+    namespace ReportViewerDemo
+    {
+        public class Startup
+        {
+            public Startup(IConfiguration configuration)
+            {
+                Configuration = configuration;
+            }
+
+            public IConfiguration Configuration { get; }
+
+            // This method gets called by the runtime. Use this method to add services to the container.
+            public void ConfigureServices(IServiceCollection services)
+            {
+                services.AddMvc();
+                services.AddCors(o => o.AddPolicy("MyPolicy", builder =>
+                {
+                    builder.AllowAnyOrigin()
+                        .AllowAnyMethod()
+                        .AllowAnyHeader();
+                }));
+            }
+
+            // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
+            public void Configure(IApplicationBuilder app, IHostingEnvironment env)
+            {
+                if (env.IsDevelopment())
+                {
+                    app.UseDeveloperExceptionPage();
+                }
+
+                app.UseMvc();
+
+                app.UseMvc(routes =>
+                {
+                    routes.MapRoute(
+                        name: "default",
+                        template: "api/{controller=ReportApi}/{action=Index}/{id?}");
+                });
+            }
+        }
+    }
+
+~~~
+ 
+ 2. Add the [EnableCors] attribute to the ApiController class as follows
+
+~~~ csharp
+
+    using System.Collections.Generic;
+    using Microsoft.AspNetCore.Mvc;
+    using Microsoft.AspNetCore.Cors;
+
+    namespace ReportViewerDemo.Controllers
+    {
+        [EnableCors("MyPolicy")]
+        public class HomeController : ApiController, Syncfusion.EJ.ReportViewer.IReportController
+        {
+            // Report viewer requires a memory cache to store the information of consecutive client request and
+            // have the rendered report viewer information in server.
+            private Microsoft.Extensions.Caching.Memory.IMemoryCache _cache;
+
+            // IHostingEnvironment used with sample to get the application data from wwwroot.
+            private Microsoft.AspNetCore.Hosting.IHostingEnvironment _hostingEnvironment;
+
+            // Post action to process the report from server based json parameters and send the result back to the client.
+            public HomeController(Microsoft.Extensions.Caching.Memory.IMemoryCache memoryCache, 
+                Microsoft.AspNetCore.Hosting.IHostingEnvironment hostingEnvironment)
+            {
+                _cache = memoryCache;
+                _hostingEnvironment = hostingEnvironment;
+            }
+
+            public IActionResult Index()
+            {
+                return View();
+            }
+
+            ...
+            ...
+            ...
+
+            // Post action to process the report from server based json parameters and send the result back to the client.
+            public object PostReportAction([FromBody] Dictionary<string, object> jsonArray)
+            {
+                return Syncfusion.EJ.ReportViewer.ReportHelper.ProcessReport(jsonArray, this, this._cache);
+            }
+
+            // Method will be called to initialize the report information to load the report with ReportHelper for processing.
+            public void OnInitReportOptions(Syncfusion.EJ.ReportViewer.ReportViewerOptions reportOption)
+            {
+                string basePath = _hostingEnvironment.WebRootPath;
+                // Here, we have loaded the sample report report from application the folder wwwroot. Sample.rdl should be there in wwwroot application folder.
+                FileStream reportStream = new FileStream(basePath + @"\invoice.rdl", FileMode.Open, FileAccess.Read);
+                reportOption.ReportModel.Stream = reportStream;
+            }
+
+            // Method will be called when reported is loaded with internally to start to layout process with ReportHelper.
+            public void OnReportLoaded(Syncfusion.EJ.ReportViewer.ReportViewerOptions reportOption)
+            {
+            }
+            
+            //Get action for getting resources from the report
+            [ActionName("GetResource")]
+            [AcceptVerbs("GET")]
+            // Method will be called from Report Viewer client to get the image src for Image report item.
+            public object GetResource(Syncfusion.EJ.ReportViewer.ReportResource resource)
+            {
+                return Syncfusion.EJ.ReportViewer.ReportHelper.GetResource(resource, this, _cache);
+            }
+        }
+    }
+
+~~~
 
 N> You cannot load the application report with path information in ASP.NET Core. So, you should load the report as `Stream` like an example provided above in `OnInitReportOptions`. If you need to get the invoice sample report then you can obtain it from the Syncfusion ASP.NET Core sample browser installed location (wwwroot\reports\invoice.rdl).
