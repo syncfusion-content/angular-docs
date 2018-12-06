@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Layout nodes and connectors in an organized structure
+title:  Organize layout in Syncfusion diagram.
 description: How to arrange nodes by using the automatic layouts?.
 platform: Angular
 control: Diagram
@@ -38,7 +38,7 @@ import { Component } from '@angular/core';
 
 @Component({
     selector: 'ej-app',
-    templateUrl: 'app/components/diagram/hierarchicallayout.component.html',
+    templateUrl: 'app/components/diagram/hierarchical-layout.component.html',
 })
 export class HierarchicalLayoutComponent {
     dataSourceSettings: Object;
@@ -48,9 +48,9 @@ export class HierarchicalLayoutComponent {
     constructor() {
         //Initializes data source
         let data = [
-            {Name: "Steve-Ceo"},
-            {Name: "Kevin-Manager",ReportingPerson: "Steve-Ceo"},
-            {Name: "Peter-Manager",ReportingPerson: "Steve-Ceo"},
+            {Name: "Steve-CEO"},
+            {Name: "Kevin-Manager",ReportingPerson: "Steve-CEO"},
+            {Name: "Peter-Manager",ReportingPerson: "Steve-CEO"},
             {Name: "John- Manager",ReportingPerson: "Peter-Manager"},
             {Name: "Mary-CSE ",ReportingPerson: "Peter-Manager"},
             {Name: "Jim-CSE ",ReportingPerson: "Kevin-Manager"},
@@ -63,7 +63,7 @@ export class HierarchicalLayoutComponent {
             },
             connector: { lineColor: '#000000', constraints: ej.datavisualization.Diagram.ConnectorConstraints.None, segments: [{ 'type': 'orthogonal' }], }
         };
-        this.layout = { type: 'hierarchicaltree',orientation: "toptobottom", horizontalSpacing: 25, verticalSpacing: 35, marginX : 3, marginY: 3};
+        this.layout = { type: ' ej.datavisualization.Diagram.LayoutTypes.HierarchicalTree',orientation: "ej.datavisualization.Diagram.LayoutOrientations.TopToBottom", horizontalSpacing: 25, verticalSpacing: 35, marginX : 3, marginY: 3};
         this.nodeTemplate = function (diagram, node) {
             node.labels[0].text = node.Name;
         };
@@ -73,7 +73,7 @@ export class HierarchicalLayoutComponent {
 
 {% endhighlight %}
 
-![](/angular/Diagram/Automatic-Layout_images/Automatic-Layout_img1.png)
+![Automatic Layout](../Diagram/Automatic-Layout_images/Automatic-Layout_img1.png)
 
 N> You can ignore a particular Node from layout arrangement by setting its **excludeFromLayout** property as true.
 
@@ -81,7 +81,7 @@ N> You can ignore a particular Node from layout arrangement by setting its **exc
 
 The Radial Tree layout arranges nodes on a virtual concentric circles around a root node. Sub-trees formed by the branching of child nodes are located radially around the child nodes. This arrangement results in an ever-expanding concentric arrangement with radial proximity to the root node indicating the node level in the hierarchy. When no root node is set, the algorithm automatically considers one of the Diagram nodes as the root node.
 
-To arrange nodes in a radial tree structure, you need to set the `layout.type` as `radialtree`. The following code illustrates how to arrange the nodes in a radial tree structure.
+To arrange nodes in a radial tree structure, you need to set the `layout.type` as `ej.datavisualization.Diagram.LayoutTypes.RadialTree`. The following code illustrates how to arrange the nodes in a radial tree structure.
 
 {% highlight javascript %}
 
@@ -92,7 +92,7 @@ import { EJComponents } from './../../ej/core';
 
 @Component({
     selector: 'ej-app',
-    templateUrl: 'app/components/diagram/radialtree.component.html'
+    templateUrl: 'app/components/diagram/radial-tree.component.html'
 })
 
 export class RadialTreeComponent {
@@ -268,7 +268,7 @@ export class RadialTreeComponent {
             },
         };
         this.layout = {
-        type: "radialtree",
+        type: "ej.datavisualization.Diagram.LayoutTypes.RadialTree",
         horizontalSpacing: 30,
         verticalSpacing: 30
     };
@@ -283,11 +283,11 @@ export class RadialTreeComponent {
 }
 {% endhighlight %}
 
-![](/angular/Diagram/Automatic-Layout_images/Automatic-Layout_img2.png)
+![Radial Layout](../Diagram/Automatic-Layout_images/Automatic-Layout_img2.png)
 
 ## Organizational Chart
 
-An **organizational chart** is a Diagram that displays the structure of an organization and relationships. To create an organizational chart, `layout.type` should be set as `organizationalchart`.
+An **organizational chart** is a Diagram that displays the structure of an organization and relationships. To create an organizational chart, `layout.type` should be set as `ej.datavisualization.Diagram.LayoutTypes.OrganizationalChart`.
 The following code example illustrates how to create an organizational chart.
 
 {% highlight javascript %}
@@ -297,7 +297,7 @@ import { Component } from '@angular/core';
 
 @Component({
     selector: 'ej-app',
-    templateUrl: 'app/components/diagram/organizationalchart.component.html',
+    templateUrl: 'app/components/diagram/organizational-chart.component.html',
 })
 export class OrganizationalChartComponent {
     dataSourceSettings: Object;
@@ -437,7 +437,7 @@ export class OrganizationalChartComponent {
             },
             connector: { lineColor: '#000000', segments: [{ 'type': 'orthogonal' }], targetDecorator: { shape: 'none' } }
         };
-        this.layout = { type: 'organizationalchart' };
+        this.layout = { type: ' ej.datavisualization.Diagram.LayoutTypes.OrganizationalChart' };
         this.nodeTemplate = function (diagram, node) {
             node.labels[0].text = node.Role;
         };
@@ -446,7 +446,7 @@ export class OrganizationalChartComponent {
 
 {% endhighlight %}
 
-![](/angular/Diagram/Automatic-Layout_images/Automatic-Layout_img3.png)
+![Organizational layout](../Diagram/Automatic-Layout_images/Automatic-Layout_img3.png)
 
 Organizational chart layout starts parsing from root and iterate through all its child elements. ‘getLayoutInfo’ method provides necessary information of a node’s children and the way to arrange (direction, orientation, offsets, etc.) them. You can customize the arrangements by overriding this function as explained.
 
@@ -475,7 +475,7 @@ this.getLayoutInfo(diagram, node, options) {
 }
    //Uses layout to auto-arrange nodes on the Diagram page
     this.layout = {
-        type: "organizationalchart",
+        type: "ej.datavisualization.Diagram.LayoutTypes.OrganizationalChart",
         getLayoutInfo: getLayoutInfo
     };
 
@@ -499,13 +499,13 @@ The following table illustrates the different chart orientations and chart types
 
 | Orientation | Type | Description | Example |
 |---|---|---|---|
-| Horizontal | Left | Arranges the child nodes horizontally at the left side of parent. | ![](/angular/Diagram/Automatic-Layout_images/Automatic-Layout_img4.png) |
-| | Right | Arranges the child nodes horizontally at the right side of parent. | ![](/angular/Diagram/Automatic-Layout_images/Automatic-Layout_img5.png) |
-| | Center | Arranges the children like standard tree layout orientation. | ![](/angular/Diagram/Automatic-Layout_images/Automatic-Layout_img6.png) |
-| | Balanced | Arranges the leaf-level child nodes in multiple rows. | ![](/angular/Diagram/Automatic-Layout_images/Automatic-Layout_img16.png) |
-| Vertical | Left | Vertically arranges the children at the left side of parent | ![](/angular/Diagram/Automatic-Layout_images/Automatic-Layout_img7.png) |
-| | Right | Vertically arranges the children at the right side of parent | ![](/angular/Diagram/Automatic-Layout_images/Automatic-Layout_img8.png) |
-| | Alternate | Vertically arranges the children at both left and right sides of parent | ![](/angular/Diagram/Automatic-Layout_images/Automatic-Layout_img9.png) |
+| Horizontal | Left | Arranges the child nodes horizontally at the left side of parent. | ![Left alignment](../Diagram/Automatic-Layout_images/Automatic-Layout_img4.png) |
+| | Right | Arranges the child nodes horizontally at the right side of parent. | ![Right alignment](../Diagram/Automatic-Layout_images/Automatic-Layout_img5.png) |
+| | Center | Arranges the children like standard tree layout orientation. | ![Center alignment](../Diagram/Automatic-Layout_images/Automatic-Layout_img6.png) |
+| | Balanced | Arranges the leaf-level child nodes in multiple rows. | ![Balanced alignment](../Diagram/Automatic-Layout_images/Automatic-Layout_img16.png) |
+| Vertical | Left | Vertically arranges the children at the left side of parent | ![Vertical alignment](../Diagram/Automatic-Layout_images/Automatic-Layout_img7.png) |
+| | Right | Vertically arranges the children at the right side of parent | ![Right alignment](../Diagram/Automatic-Layout_images/Automatic-Layout_img8.png) |
+| | Alternate | Vertically arranges the children at both left and right sides of parent | ![Alternate alignment](../Diagram/Automatic-Layout_images/Automatic-Layout_img9.png) |
 
 ## Customize Layout
 
@@ -529,7 +529,7 @@ import { Component } from '@angular/core';
 
 @Component({
     selector: 'ej-app',
-    templateUrl: 'app/components/diagram/organizationalchart.component.html',
+    templateUrl: 'app/components/diagram/organizational-chart.component.html',
 })
 export class OrganizationalChartComponent {
     layout: Object;
@@ -555,7 +555,7 @@ export class OrganizationalChartComponent {
         },
 
         //Sets the alignment of the layout
-        horizontalALignment: ej.datavisualization.Diagram.HorizontalAlignment.Left,
+        horizontalAlignment: ej.datavisualization.Diagram.HorizontalAlignment.Left,
         verticalAlignment: ej.datavisualization.Diagram.VerticalAlignment.Top,
     };
     this.defaultSettings = {
@@ -572,7 +572,7 @@ export class OrganizationalChartComponent {
 
 {% endhighlight %}
 
-![](/angular/Diagram/Automatic-Layout_images/Automatic-Layout_img14.png)
+![TopToBottom Alignment](../Diagram/Automatic-Layout_images/Automatic-Layout_img14.png)
 
 ### Layout Margin
 
@@ -606,7 +606,7 @@ export class OrganizationalChartComponent {
         },
 
         //Sets the alignment of the layout
-        horizontalALignment: ej.datavisualization.Diagram.HorizontalAlignment.Left,
+        horizontalAlignment: ej.datavisualization.Diagram.HorizontalAlignment.Left,
         verticalAlignment: ej.datavisualization.Diagram.VerticalAlignment.Top,
          //Sets the margin
         margin: {
@@ -630,7 +630,7 @@ export class OrganizationalChartComponent {
 
 {% endhighlight %}
 
-![](/angular/Diagram/Automatic-Layout_images/Automatic-Layout_img15.png)
+![Layout margin](../Diagram/Automatic-Layout_images/Automatic-Layout_img15.png)
 
 ### Layout Orientation
 
@@ -665,7 +665,7 @@ export class OrganizationalChartComponent {
         },
 
         //Sets the alignment of the layout
-        horizontalALignment: ej.datavisualization.Diagram.HorizontalAlignment.Left,
+        horizontalAlignment: ej.datavisualization.Diagram.HorizontalAlignment.Left,
         verticalAlignment: ej.datavisualization.Diagram.VerticalAlignment.Top,
          //Sets the margin
         margin: {
@@ -688,7 +688,7 @@ export class OrganizationalChartComponent {
 }};
 {% endhighlight %}
 
-![](/angular/Diagram/Automatic-Layout_images/Automatic-Layout_img12.png)
+![Layout orientation](../Diagram/Automatic-Layout_images/Automatic-Layout_img12.png)
 
 ### Fixed Node
 
@@ -722,7 +722,7 @@ export class OrganizationalChartComponent {
                 Manager: "parent",
             }];
         this.layout = {
-                type: "organizationalchart",
+                type: "ej.datavisualization.Diagram.LayoutTypes.OrganizationalChart",
                 fixedNode: "parent",
                 getLayoutInfo: getLayoutInfo
             };
@@ -740,7 +740,7 @@ export class OrganizationalChartComponent {
 
 {% endhighlight %}
 
-![](/angular/Diagram/Automatic-Layout_images/Automatic-Layout_img13.png)
+![Fixed node](../Diagram/Automatic-Layout_images/Automatic-Layout_img13.png)
 
 ### Expand and collapse
 
@@ -757,7 +757,7 @@ export class OrganizationalChartComponent {
     constructor() {
             //Uses layout to auto-arrange nodes on the Diagram page
             this.layout = {
-            type: "organizationalchart",
+            type: "ej.datavisualization.Diagram.LayoutTypes.OrganizationalChart",
             fixedNode: "node1"
             };
             //Defines double click event

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Customization
+title: Syncfusion EJ1 Maps - Customization
 description: customization
 platform: Angular
 control: Maps
@@ -52,7 +52,7 @@ this.mapLayers = [
 {% endhighlight %}
 
 
-![](Customization_images/Customization_img1.png)
+![Shape Customization](Customization_images/Customization_img1.png)
 
 ## Color Mapping
 
@@ -149,7 +149,7 @@ When the underlying object value is 700000, then the fill color of the correspon
 
 When the underlying value is below any of the given sorted range or above the sorted range, then the fill is set from fill.
 
-![](Customization_images/Customization_img2.png)
+![ColorMapping](Customization_images/Customization_img2.png)
 
 * `equalColorMapping` - The equalColorMapping is used to differentiate the shape’s fill based on its underlying value and color. The properties of equalColorMapping is listed in the following table.
 
@@ -266,7 +266,7 @@ this.mapLayers = [{
 
 {% endhighlight %}
 
-![](Customization_images/Customization_img3.png) 
+![Equal ColorMapping](Customization_images/Customization_img3.png) 
 
 ## Color Palette
 
@@ -294,17 +294,17 @@ this.mapLayers = [{
 
 {% endhighlight %}
 
-![](Customization_images/Customization_img4.png)
+![AutoFill](Customization_images/Customization_img4.png)
 
 ### Color Palette
 
 The `colorPalette` property determines whether the auto fill colors are fetched from built-in color palettes or custom palette.
 
-The `colorPalette` property can be set with palette1, palette2, palette3 and custompalette values where palette1, palette2 and palette3 are built-in color palettes and default value for this property is “palette1”.
+The `colorPalette` property can be set with palette1, palette2, palette3 and customPalette values where palette1, palette2 and palette3 are built-in color palettes and default value for this property is “palette1”.
 
 The `customPalette` property is used to set an array of colors to be auto filled in shapes.
 
-This property is enabled only when `colorPalette` property value is set to “custompalette”.
+This property is enabled only when `colorPalette` property value is set to “customPalette”.
 
 {% highlight ts %}
 
@@ -313,7 +313,7 @@ this.mapLayers = [{
     ShapeSettings: {
         // ...
         autoFill: true,
-        colorPalette: "custompalette",
+        colorPalette: "customPalette",
         customPalette: ["#E51400", "#A4C400", "#730202", "#008B00", "#EF6535",
                         "#1BA0E2", "#C63477", "#0050EF", "#BF004D", "#AA00FF"]
         // ...
@@ -329,7 +329,7 @@ this.mapLayers = [{
 
 {% endhighlight %}
 
-![](Customization_images/Customization_img5.png)
+![Color Palette](Customization_images/Customization_img5.png)
 
 ## Tooltip
 
@@ -356,7 +356,7 @@ this.mapLayers= [{
 
 {% endhighlight %}
 
-![](Customization_images/Customization_img6.png)
+![Tooltip](Customization_images/Customization_img6.png)
 
 ### Tooltip Template
 
@@ -399,7 +399,7 @@ toolTipTemplate: 'myTooltip'
 
 The following screenshot illustrates a map control displaying a Tooltip with template.
 
-![](Customization_images/Customization_img7.png)
+![Tooltip Template](Customization_images/Customization_img7.png)
 
 
 ### Customize map background
