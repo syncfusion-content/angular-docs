@@ -353,7 +353,7 @@ To render a 100% Stacked Area Chart, set the `type` as **"stackingArea100"** in 
 
 ## Stacked Spline Area Chart
 
-To render a Stacked Spline Area Chart, set the [`type`](../api/ejchart.html#members:series-type) as **"stackingsplinearea"** in the chart series. 
+To render a Stacked Spline Area Chart, set the [`type`](../api/ejchart.html#members:series-type) as **"stackingSplineArea"** in the chart series. 
 
 
 {% highlight html %}
@@ -1418,7 +1418,7 @@ You can change the scatter size by using the `size` property of the series marke
 
 ## HiLoOpenClose Chart 
 
-To create a HiLoOpenClose chart, you can set the series `type` as **"hiloopenclose"** in the chart series. HiLoOpenClose chart requires 5 fields (`x`, `high`, `low`, `open` and `close`) to plot a segment.  
+To create a HiLoOpenClose chart, you can set the series `type` as **"hiloOpenClose"** in the chart series. HiLoOpenClose chart requires 5 fields (`x`, `high`, `low`, `open` and `close`) to plot a segment.  
 
 
 {% highlight ts %}
@@ -1872,8 +1872,8 @@ To customize the error bar cap *visibility, length, width* and *fill* color, you
 
 ## Box and Whisker Chart 
 
-To render a Box and Whisker Chart, set the series `type` as **"boxandwhisker"**.Box and Whisker chart requires
-2 fields (x and y) to plot a segment. The feild y requires n number of data or it contains minimum five values to plot a segment.
+To render a Box and Whisker Chart, set the series `type` as **"boxAndWhisker"**.Box and Whisker chart requires
+2 fields (x and y) to plot a segment. The field y requires n number of data or it contains minimum five values to plot a segment.
 
 {% highlight html %}
 

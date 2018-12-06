@@ -66,7 +66,7 @@ this.chartindicators = [{
 
 ### Accumulation Distribution
 
-To create an Accumulation Distribution indicator, set the `indicators.type` as **"accumulationdistribution"**. Accumulation Distribution require **‘volume’** field additionally with the `dataSource` to calculate the signal line.
+To create an Accumulation Distribution indicator, set the `indicators.type` as **"accumulationDistribution"**. Accumulation Distribution require **‘volume’** field additionally with the `dataSource` to calculate the signal line.
 
 {% highlight ts %}
 
@@ -97,7 +97,7 @@ this.chartindicators = [{
 
 ### Average True Range (ATR)
 
-You can create an ATR indicator by setting the `indicators.type` as **"atr"** in the `indicators`. 
+You can create an ATR indicator by setting the `indicators.type` as **"ATR"** in the `indicators`. 
 
 {% highlight ts %}
 
@@ -127,7 +127,7 @@ this.chartindicators = [{
 
 ### Bollinger Band 
 
-Bollinger Band indicator is created by setting the `indicators.type` as **"bollingerband"**. It contains three lines, namely upper band, lower band and signal line. Bollinger Band default value of the period is 14 and standardDeviations is 2.
+Bollinger Band indicator is created by setting the `indicators.type` as **"bollingerBand"**. It contains three lines, namely upper band, lower band and signal line. Bollinger Band default value of the period is 14 and standardDeviations is 2.
 
 {% highlight ts %}
 
@@ -157,7 +157,7 @@ this.chartindicators = [{
 
 ### Exponential Moving Average (EMA)
 
-To render an EMA indicator, you have to set the `indicators.type` as **"ema"**.  
+To render an EMA indicator, you have to set the `indicators.type` as **"EMA"**.  
 
 {% highlight ts %}
 
@@ -267,7 +267,7 @@ this.chartindicators = [{
 
 ### Relative Strength Index (RSI)
 
-To render the RSI indicator, set the `indicators.type` as **"rsi"**. It contains three lines, namely upper band, lower band and signal line. Upper and lower band always render at value 70 and 30 respectively and signal line is calculated based on the **RSI** formula.
+To render the RSI indicator, set the `indicators.type` as **"RSI"**. It contains three lines, namely upper band, lower band and signal line. Upper and lower band always render at value 70 and 30 respectively and signal line is calculated based on the **RSI** formula.
 
 {% highlight ts %}
 
@@ -299,7 +299,7 @@ this.chartindicators = [{
 
 ### Simple Moving Average (SMA)
 
-To render the SMA indicator, you should specify the `indicators.type` as **"sma"**.  
+To render the SMA indicator, you should specify the `indicators.type` as **"SMA"**.  
 
 {% highlight ts %}
 
@@ -361,7 +361,7 @@ this.chartindicators = [{
 
 ### Triangular Moving Average (TMA)
 
-To render the TMA indicator, you should specify the `indicators.type` as **"tma"**. 
+To render the TMA indicator, you should specify the `indicators.type` as **"TMA"**. 
 
 {% highlight ts %}
 

@@ -112,7 +112,7 @@ The following code example shows how to add background shapes and set template t
 
 The appearance of the labels can be customized by using the `font` and `offset` options. The `offset` option is used to move the labels vertically. Also, labels can be rotated by using the `rotate` option.
 
-The following code example shows how to rotate datalabel text and customize the font.
+The following code example shows how to rotate data label text and customize the font.
 
 
 {% highlight html %}

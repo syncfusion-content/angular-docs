@@ -351,7 +351,7 @@ Trackball tooltip template is used to display the tooltip in customized template
 
 ## Highlight
 
-EjChart provides highlighting support for the series and data points on mouse hover. To enable the highlighting option, set the **enable** property to *true* in the **highlightsettings** of the series.
+EjChart provides highlighting support for the series and data points on mouse hover. To enable the highlighting option, set the **enable** property to *true* in the **highlightSettings** of the series.
 
 N> When hovering mouse on the data points, the corresponding series legend also will be highlighted.
 
@@ -364,7 +364,7 @@ N> When hovering mouse on the data points, the corresponding series legend also 
 
 ### Highlight Mode
 
-You can set three different highlight mode for the highlighting data point and series by using the **mode** property of the **highlightsettings**.
+You can set three different highlight mode for the highlighting data point and series by using the **mode** property of the **highlightSettings**.
 
 * Series
 * Points

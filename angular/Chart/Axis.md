@@ -39,7 +39,7 @@ Category axis displays the text labels instead of numbers. To use the categorica
 
 ### Place labels on ticks
 
-Labels in the category axis can be placed on the ticks by setting the `labelPlacement` property of axis to the **onticks**. The default value of the `labelPlacement` property is **betweenticks** i.e. labels are placed between the ticks, by default.
+Labels in the category axis can be placed on the ticks by setting the `labelPlacement` property of axis to the **onTicks**. The default value of the `labelPlacement` property is **betweenTicks** i.e. labels are placed between the ticks, by default.
 
 {% highlight html %}
 
