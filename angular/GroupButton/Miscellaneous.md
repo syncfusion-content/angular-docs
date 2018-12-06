@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Miscellaneous
+title: Miscellaneous | GroupButton | Angular | Syncfusion
 description: miscellaneous
 platform: Angular
 control: GroupButton
@@ -11,7 +11,7 @@ documentation: ug
 
 ## Show/Hide the items
 
-Particular currently showing button items can be hidden. Also it provides the options to show the hided button again. These functionalities can be achieved using **showItem** or **hideItem** method.
+Particular currently showing button items can be hidden. Also it provides the options to show the hidden button again. These functionalities can be achieved using **showItem** or **hideItem** method.
 
 **Hide the Button item based on given index**
 
@@ -21,7 +21,7 @@ Particular currently showing button items can be hidden. Also it provides the op
     <tr>
         <td> Group Buttons </td>
         <td>
-			<ej-groupbutton  id="groupbutton" groupButtonMode="radiobutton" (create)="create($event)">
+			<ej-groupbutton  id="GroupButton" groupButtonMode="radiobutton" (create)="create($event)">
             <ul>
             <li>
             Credit Card
@@ -45,13 +45,13 @@ Particular currently showing button items can be hidden. Also it provides the op
 import { Component } from '@angular/core';
 @Component({
     selector: 'ej-app',
-    templateUrl: './groupbutton.component.html'
+    templateUrl: './GroupButton.component.html'
 })
 export class GroupButtonComponent {
     constructor() {
     }
     create(e) {
-        var groupButtonObj = $("#groupbutton").data("ejGroupButton");
+        var groupButtonObj = $("#GroupButton").data("ejGroupButton");
         groupButtonObj.hideItem(1);
     }
 }
@@ -66,7 +66,7 @@ export class GroupButtonComponent {
     <tr>
         <td> Group Buttons </td>
         <td>
-			<ej-groupbutton  id="groupbutton" groupButtonMode="radiobutton" (create)="create($event)">
+			<ej-groupbutton  id="GroupButton" groupButtonMode="radiobutton" (create)="create($event)">
             <ul>
             <li>
             Credit Card
@@ -90,13 +90,13 @@ export class GroupButtonComponent {
 import { Component } from '@angular/core';
 @Component({
     selector: 'ej-app',
-    templateUrl: './groupbutton.component.html'
+    templateUrl: './GroupButton.component.html'
 })
 export class GroupButtonComponent {
     constructor() {
     }
     create(e) {
-        var groupButtonObj = $("#groupbutton").data("ejGroupButton");
+        var groupButtonObj = $("#GroupButton").data("ejGroupButton");
        groupButtonObj.showItem(1);
     }
 }
@@ -115,7 +115,7 @@ Also entire GroupButton can be enabled or disabled using enable (), disable publ
     <tr>
         <td> Group Buttons </td>
         <td>
-			<ej-groupbutton  id="groupbutton" groupButtonMode="radiobutton" (create)="create($event)">
+			<ej-groupbutton  id="GroupButton" groupButtonMode="radiobutton" (create)="create($event)">
             <ul>
             <li>
             Credit Card
@@ -139,14 +139,14 @@ Also entire GroupButton can be enabled or disabled using enable (), disable publ
 import { Component } from '@angular/core';
 @Component({
     selector: 'ej-app',
-    templateUrl: './groupbutton.component.html'
+    templateUrl: './GroupButton.component.html'
 })
 export class GroupButtonComponent {
    
     constructor() {
     }
     create(e) {
-        var groupButtonObj = $("#groupbutton").data("ejGroupButton");
+        var groupButtonObj = $("#GroupButton").data("ejGroupButton");
         groupButtonObj.disableItem(1);
     }
 }
@@ -167,7 +167,7 @@ By passing the jQuery element of the required button to **getIndex** public meth
     <tr>
         <td> Group Buttons </td>
         <td>
-			<ej-groupbutton  id="groupbutton" groupButtonMode="radiobutton" (create)="create($event)">
+			<ej-groupbutton  id="GroupButton" groupButtonMode="radiobutton" (create)="create($event)">
             <ul>
             <li>
             Credit Card
@@ -191,7 +191,7 @@ By passing the jQuery element of the required button to **getIndex** public meth
 import { Component } from '@angular/core';
 @Component({
     selector: 'ej-app',
-    templateUrl: './groupbutton.component.html'
+    templateUrl: './GroupButton.component.html'
 })
 export class GroupButtonComponent {
    
@@ -199,8 +199,8 @@ export class GroupButtonComponent {
        
     }
     create(e) {
-        var groupButtonObj = $("#groupbutton").data("ejGroupButton");
-        var element = $("#groupbutton").find('li')[0];
+        var groupButtonObj = $("#GroupButton").data("ejGroupButton");
+        var element = $("#GroupButton").find('li')[0];
         alert(groupButtonObj.getIndex(element));
     }
 }
@@ -217,7 +217,7 @@ You can get the selection state of required button by passing that button jQuery
     <tr>
         <td> Group Buttons </td>
         <td>
-			<ej-groupbutton  id="groupbutton" groupButtonMode="radiobutton" (create)="create($event)">
+			<ej-groupbutton  id="GroupButton" groupButtonMode="radiobutton" (create)="create($event)">
             <ul>
             <li>
             Credit Card
@@ -241,13 +241,13 @@ You can get the selection state of required button by passing that button jQuery
 import { Component } from '@angular/core';
 @Component({
     selector: 'ej-app',
-    templateUrl: './groupbutton.component.html'
+    templateUrl: './GroupButton.component.html'
 })
 export class GroupButtonComponent {
     constructor() {
     }
     create(e) {
-        var groupButtonObj = $("#groupbutton").data("ejGroupButton");
+        var groupButtonObj = $("#GroupButton").data("ejGroupButton");
         groupButtonObj.selectItem(1);
         alert(groupButtonObj.isSelected(1));
     }
@@ -264,7 +264,7 @@ Also you can get the active / disabled state required button by passing that but
     <tr>
         <td> Group Buttons </td>
         <td>
-			<ej-groupbutton  id="groupbutton" groupButtonMode="radiobutton" (create)="create($event)">
+			<ej-groupbutton  id="GroupButton" groupButtonMode="radiobutton" (create)="create($event)">
             <ul>
             <li>
             Credit Card
@@ -288,13 +288,13 @@ Also you can get the active / disabled state required button by passing that but
 import { Component } from '@angular/core';
 @Component({
     selector: 'ej-app',
-    templateUrl: './groupbutton.component.html'
+    templateUrl: './GroupButton.component.html'
 })
 export class GroupButtonComponent {
     constructor() {
     }
     create(e) {
-        var groupButtonObj = $("#groupbutton").data("ejGroupButton");
+        var groupButtonObj = $("#GroupButton").data("ejGroupButton");
         groupButtonObj.disableItem(1);
         alert(groupButtonObj.isDisabled(1));
     }
