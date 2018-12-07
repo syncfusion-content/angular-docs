@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Interactions available in Essential Angular Chart
+title: Interactions available in Syncfusion Essential Angular Chart
 description: What are the interactions available in Chart like tooltip, crosshair, trackball, highlighting, zooming and panning, etc..,
 platform: Angular
 control: Chart
@@ -29,7 +29,7 @@ Tooltip for the data points can be enabled by using the **visible** option of th
 
 
 
-![](User-Interactions_images/User-Interactions_img1.png)
+![Point Tooltip](User-Interactions_images/User-Interactions_img1.png)
 
 ### Format the tooltip 
 
@@ -49,7 +49,7 @@ You can also use * **#series.<optionname>#** * as placeholder to display the val
 
 {% endhighlight %}
 
-![](User-Interactions_images/User-Interactions_img2.png)
+![Tooltip Format](User-Interactions_images/User-Interactions_img2.png)
 
 ### Tooltip Template
 
@@ -85,7 +85,7 @@ You can also use * **#series.<optionname>#** * as place holder to display the va
 
 {% endhighlight %}
 
-![](User-Interactions_images/User-Interactions_img3.png)
+![Tooltip Template](User-Interactions_images/User-Interactions_img3.png)
 
 
 #### Tooltip template animation
@@ -123,7 +123,7 @@ The **fill** and **border** options are used to customize the background color a
 
 {% endhighlight %}
 
-![](User-Interactions_images/User-Interactions_img4.png)
+![Tooltip Customization](User-Interactions_images/User-Interactions_img4.png)
 
 #### Tooltip with rounded corners
 
@@ -141,7 +141,7 @@ The options **rx** and **ry** are used to customize the corner radius of the too
 {% endhighlight %}
 
 
-![](User-Interactions_images/User-Interactions_img5.png)
+![Rounded Tooltip](User-Interactions_images/User-Interactions_img5.png)
 
 
 ## Zooming and Panning
@@ -165,12 +165,12 @@ N> Pinch zooming is supported only in browsers that support multi-touch gestures
 
 {% endhighlight %}
 
-![](User-Interactions_images/User-Interactions_img6.png)
+![Enable Zooming](User-Interactions_images/User-Interactions_img6.png)
 
 
 After zooming the chart, a zooming toolbar will appear with options to *zoom*, *pan* and *reset*. Selecting the Pan option will allow to pan the chart and selecting the Reset option will reset the zoomed chart.
 
-![](User-Interactions_images/User-Interactions_img7.png)
+![Zooming ToolBar](User-Interactions_images/User-Interactions_img7.png)
 
 
 ### Types of zooming
@@ -196,7 +196,7 @@ You can choose the items displayed in the zooming toolbar by specifying the prop
 
 {% endhighlight %}
 
-![](User-Interactions_images/User-Interactions_img8.png)
+![ToolBar Customization](User-Interactions_images/User-Interactions_img8.png)
 
 
 ### Enable ScrollBar
@@ -210,7 +210,7 @@ EjChart provides scrollbar support to view the other portions of chart area whic
 
 {% endhighlight %}
 
-![](User-Interactions_images/User-Interactions_img9.png)
+![Zooming Scrollbar](User-Interactions_images/User-Interactions_img9.png)
 
 ## Crosshair
 
@@ -230,7 +230,7 @@ Crosshair can be enabled by using the **visible** option in the **crosshair**. C
 
 {% endhighlight %}
 
-![](User-Interactions_images/User-Interactions_img10.png)
+![Crosshair and Label Visibility](User-Interactions_images/User-Interactions_img10.png)
 
 ### Customize the crosshair line and crosshair label
 
@@ -252,7 +252,7 @@ The **fill** and **border** options of the **crosshairLabel** is used to customi
 
 {% endhighlight %}
 
-![](User-Interactions_images/User-Interactions_img11.png)
+![Crosshair Line and Label Customization](User-Interactions_images/User-Interactions_img11.png)
 
 ## Trackball
 
@@ -273,7 +273,7 @@ Trackball can be enabled by setting the **visible** option of the crosshair to *
 {% endhighlight %}
 
 
-![](User-Interactions_images/User-Interactions_img12.png)
+![Trackball Visibility](User-Interactions_images/User-Interactions_img12.png)
 
 #### Customize trackball marker and trackball line
 
@@ -290,7 +290,7 @@ Shape and size of the trackball marker can be customized by using the **shape** 
 
 {% endhighlight %}
 
-![](User-Interactions_images/User-Interactions_img13.png)
+![Trackball Marker and Line Customization](User-Interactions_images/User-Interactions_img13.png)
 
 
 ### Format Trackball tooltip
@@ -310,7 +310,7 @@ X and Y values displayed in the trackball tooltip are formatted based on its axi
 
 {% endhighlight %}
 
-![](User-Interactions_images/User-Interactions_img14.png)
+![Trackball Tooltip Format](User-Interactions_images/User-Interactions_img14.png)
 
 
 You can able to show the trackball tooltip in two modes, using trackballTooltipSettings.
@@ -328,7 +328,7 @@ You can able to show the trackball tooltip in two modes, using trackballTooltipS
 
 {% endhighlight %}
 
-![](User-Interactions_images/User-Interactions_img30.png)
+![Trackball Tooltip Settings](User-Interactions_images/User-Interactions_img30.png)
 
 
 #### Trackball tooltip template:
@@ -346,12 +346,12 @@ Trackball tooltip template is used to display the tooltip in customized template
 
 {% endhighlight %}
 
-![](User-Interactions_images/User-Interactions_img33.png)
+![Trackball Tooltip Template](User-Interactions_images/User-Interactions_img33.png)
 
 
 ## Highlight
 
-EjChart provides highlighting support for the series and data points on mouse hover. To enable the highlighting option, set the **enable** property to *true* in the **highlightsettings** of the series.
+EjChart provides highlighting support for the series and data points on mouse hover. To enable the highlighting option, set the **enable** property to *true* in the **highlightSettings** of the series.
 
 N> When hovering mouse on the data points, the corresponding series legend also will be highlighted.
 
@@ -364,7 +364,7 @@ N> When hovering mouse on the data points, the corresponding series legend also 
 
 ### Highlight Mode
 
-You can set three different highlight mode for the highlighting data point and series by using the **mode** property of the **highlightsettings**.
+You can set three different highlight mode for the highlighting data point and series by using the **mode** property of the **highlightSettings**.
 
 * Series
 * Points
@@ -385,7 +385,7 @@ To highlight all the data points of the specified series, you can set the **"ser
 
 {% endhighlight %}
 
-![](User-Interactions_images/User-Interactions_img15.png)
+![Series Highlight](User-Interactions_images/User-Interactions_img15.png)
 
 
 **Point mode**
@@ -399,7 +399,7 @@ To highlight a single point, you can set the **"point"** value to the **mode** o
 
 {% endhighlight %}
 
-![](User-Interactions_images/User-Interactions_img16.png)
+![Point Highlight](User-Interactions_images/User-Interactions_img16.png)
 
 
 **Cluster mode**
@@ -414,7 +414,7 @@ To highlight the points that corresponds to the same index in all the series, se
 
 {% endhighlight %}
 
-![](User-Interactions_images/User-Interactions_img17.png)
+![Cluster Highlight](User-Interactions_images/User-Interactions_img17.png)
 
 ### Customize the highlight styles
 
@@ -432,7 +432,7 @@ To customize the highlighted series, use the **color**, **border** and **opacity
 
 {% endhighlight %}
 
-![](User-Interactions_images/User-Interactions_img18.png)
+![Highlight Style Customization](User-Interactions_images/User-Interactions_img18.png)
 
 
 ### Patterns to highlight
@@ -466,7 +466,7 @@ EjChart provides pattern support for highlighting the data by setting the value 
 
 {% endhighlight %}
 
-![](User-Interactions_images/User-Interactions_img19.png)
+![Highlight Patterns](User-Interactions_images/User-Interactions_img19.png)
 
 #### Custom pattern
 
@@ -539,7 +539,7 @@ To select all the data points of the specified series, you can set the **"series
 
 {% endhighlight %}
 
-![](User-Interactions_images/User-Interactions_img20.png)
+![Series Selection](User-Interactions_images/User-Interactions_img20.png)
 
 **Point mode**
 
@@ -556,7 +556,7 @@ To highlight a single point, you can set the **"point"** value to the **mode** o
 
 {% endhighlight %}
 
-![](User-Interactions_images/User-Interactions_img21.png)
+![Point Selection](User-Interactions_images/User-Interactions_img21.png)
 
 
 **Cluster mode**
@@ -574,7 +574,7 @@ To select the points that corresponds to the same index in all the series, set t
 
 {% endhighlight %}
 
-![](User-Interactions_images/User-Interactions_img22.png)
+![Cluster Selection](User-Interactions_images/User-Interactions_img22.png)
 
 
 
@@ -603,7 +603,7 @@ To fetch the selected area data points value, you can set the selectionSettings 
 
 {% endhighlight %}
 
-![](User-Interactions_images/User-Interactions_img23.png)
+![Range Selection](User-Interactions_images/User-Interactions_img23.png)
 
 
 ### Selection Type
@@ -629,7 +629,7 @@ To select a data point or a series on mouse click based on the **selectionSettin
 
 {% endhighlight %}
 
-![](User-Interactions_images/User-Interactions_img24.png)
+![Single Selection](User-Interactions_images/User-Interactions_img24.png)
 
 **Multiple Type**
 
@@ -647,7 +647,7 @@ For selecting multiple data points or series on mouse click, set **selectionSett
 
 {% endhighlight %}
 
-![](User-Interactions_images/User-Interactions_img25.png)
+![Multiple Selection](User-Interactions_images/User-Interactions_img25.png)
 
 
 ### Customizing selection styles
@@ -666,7 +666,7 @@ To customize the selection styles, use the **color**, **border** and **opacity**
 
 {% endhighlight %}
 
-![](User-Interactions_images/User-Interactions_img26.png)
+![Selection Style Customization](User-Interactions_images/User-Interactions_img26.png)
 
 
 ### Patterns for selection
@@ -704,7 +704,7 @@ EjChart provides pattern support for the data selection by setting the value to 
 
 {% endhighlight %}
 
-![](User-Interactions_images/User-Interactions_img27.png)
+![Selection Patterns](User-Interactions_images/User-Interactions_img27.png)
 
 
 #### Custom pattern
@@ -736,7 +736,7 @@ To create a custom pattern for selecting the data points, set the **pattern** ty
 {% endhighlight %}
 
 
-![](User-Interactions_images/User-Interactions_img28.png)
+![Custom Patterns](User-Interactions_images/User-Interactions_img28.png)
 
 
 ### Handling Series Selection
@@ -785,7 +785,7 @@ We can able to select the point/series programmatically on chart load, by settin
 
 {% endhighlight %}
 
-![](User-Interactions_images/User-Interactions_img29.png)
+![Selected DataPoint Indexes](User-Interactions_images/User-Interactions_img29.png)
 
 
 ## Data Editing
@@ -803,7 +803,7 @@ EjChart provides support to change the location of the rendered points. This can
 
 {% endhighlight %}
 
-![](User-Interactions_images/User-Interactions_img31.png)
+![DataPoint Dragging](User-Interactions_images/User-Interactions_img31.png)
 
 [Click](http://ng2jq.syncfusion.com/#/chart/drag) here to view the data editing online demo sample.
 
@@ -822,4 +822,4 @@ To drag the point along x and y axes, you can specify `type` as xy in dragSettin
 
 {% endhighlight %}
 
-![](User-Interactions_images/User-Interactions_img32.png)
+![Drag Direction](User-Interactions_images/User-Interactions_img32.png)
