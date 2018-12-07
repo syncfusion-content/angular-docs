@@ -165,6 +165,29 @@ Report from SSRS
 
 The ReportViewer has data binding support to visualize the RDLC reports and Set the desired `reportPath`, `reportServerUrl`, `processingMode` and `reportServiceUrl` to ReportViewer. The following code example helps you to bind data to ReportViewer.
 
+<table>
+<tr>
+<th>
+API</th><th>
+Description</th></tr>
+<tr>
+<td>
+reportServerUrl</td><td>
+It is used to specifies the URL for the report server.</td></tr>
+<tr>
+<td>
+reportServiceUrl</td><td>
+It is used to specifies the report Web API service URL.</td></tr>
+<tr>
+<td>
+processingMode</td><td>
+Specifies the processing mode of the report.</td></tr>
+<tr>
+<td>
+reportPath</td><td>
+Gets or sets the path of the report file.</td></tr>
+</table>
+
 {% highlight html %}
 
 <ej-reportviewer id="reportViewer_Control" [reportServiceUrl] = "serviceUrl" [processingMode] = "Local"	 [reportServerUrl] = "serverUrl" [reportPath] = "reportPath" [dataSources]="reportData" >
@@ -181,43 +204,150 @@ ej-reportviewer {
 
 {% endhighlight %}
 
-{% highlight ts %}
+### Pass DataSource from the Client Side
 
-import { Component } from '@angular/core';
+ {% highlight ts %}
 
-@Component({
-    selector: 'ej-app',
-    templateUrl: 'src/reportviewer/reportviewer.component.html',
-	styleUrls: ['src/reportviewer/reportviewer.component.css']
-})
+ import { Component } from '@angular/core';
 
-export class ReportViewerComponent {
-    public serviceUrl: string;    
-    public reportPath: string;
-	public reportData: any;
+ @Component({
+     selector: 'ej-app',
+     templateUrl: 'src/reportviewer/reportviewer.component.html',
+ 	 styleUrls: ['src/reportviewer/reportviewer.component.css']
+ })
 
-    constructor() {
-        this.serviceUrl = 'http://js.syncfusion.com/ejservices/api/ReportViewer';        
-        this.reportPath = 'AreaCharts.rdlc"';
-		this.reportData = [{
-      value: [
-        { SalesPersonID: 281, FullName: 'Ito', Title: 'Sales Representative', SalesTerritory: 'South West', Y2002: 0, Y2003: 28000, Y2004: 3018725 },
-        { SalesPersonID: 282, FullName: 'Saraiva', Title: 'Sales Representative', SalesTerritory: 'Canada', Y2002: 25000, Y2003: 14000, Y2004: 3189356 },
-        { SalesPersonID: 283, FullName: 'Cambell', Title: 'Sales Representative', SalesTerritory: 'North West', Y2002: 12000, Y2003: 13000, Y2004: 1930885 },
-        { SalesPersonID: 275, FullName: 'Blythe', Title: 'Sales Representative', SalesTerritory: 'North East', Y2002: 19000, Y2003: 47000, Y2004: 4557045 },
-        { SalesPersonID: 276, FullName: 'Mitchell', Title: 'Sales Representative', SalesTerritory: 'South West', Y2002: 28000, Y2003: 46000, Y2004: 5240075 },
-        { SalesPersonID: 277, FullName: 'Carson', Title: 'Sales Representative', SalesTerritory: 'Central', Y2002: 33000, Y2003: 49000, Y2004: 3857163 },
-        { SalesPersonID: 278, FullName: 'Vargas', Title: 'Sales Representative', SalesTerritory: 'Canada', Y2002: 11000, Y2003: 14000, Y2004: 1764938 },
-        { SalesPersonID: 279, FullName: 'Reiter', Title: 'Sales Representative', SalesTerritory: 'South East', Y2002: 32000, Y2003: 26000, Y2004: 2811012 }
-      ],
-      name: 'AdventureWorksXMLDataSet'
-    }];
+ export class ReportViewerComponent {
+     public serviceUrl: string;    
+     public reportPath: string;
+	 public reportData: any;
+
+     constructor() {
+         this.serviceUrl = 'http://js.syncfusion.com/ejservices/api/ReportViewer';        
+         this.reportPath = 'AreaCharts.rdlc"';
+	     this.reportData = [{
+       value: [
+         { SalesPersonID: 281, FullName: 'Ito', Title: 'Sales Representative', SalesTerritory: 'South West', Y2002: 0, Y2003: 28000, Y2004: 3018725 },
+         { SalesPersonID: 282, FullName: 'Saraiva', Title: 'Sales Representative', SalesTerritory: 'Canada', Y2002: 25000, Y2003: 14000, Y2004: 3189356 },
+         { SalesPersonID: 283, FullName: 'Cambell', Title: 'Sales Representative', SalesTerritory: 'North West', Y2002: 12000, Y2003: 13000, Y2004: 1930885 },
+         { SalesPersonID: 275, FullName: 'Blythe', Title: 'Sales Representative', SalesTerritory: 'North East', Y2002: 19000, Y2003: 47000, Y2004: 4557045 },
+         { SalesPersonID: 276, FullName: 'Mitchell', Title: 'Sales Representative', SalesTerritory: 'South West',Y2002: 28000, Y2003: 46000, Y2004: 5240075 },
+         { SalesPersonID: 277, FullName: 'Carson', Title: 'Sales Representative', SalesTerritory: 'Central', Y2002: 33000, Y2003: 49000, Y2004: 3857163 },
+         { SalesPersonID: 278, FullName: 'Vargas', Title: 'Sales Representative', SalesTerritory: 'Canada', Y2002: 11000, Y2003: 14000, Y2004: 1764938 },
+         { SalesPersonID: 279, FullName: 'Reiter', Title: 'Sales Representative', SalesTerritory: 'South East', Y2002: 32000, Y2003: 26000, Y2004: 2811012 }
+       ],
+       name: 'AdventureWorksXMLDataSet'
+     }];
+     }
+ }
+
+ {% endhighlight %}
+
+ N> Default RDLC Report will be rendered, which is used in the online service.
+
+### Pass DataSource from the Server Side
+
+ The ReportViewer has data binding support from server side to visualize the RDLC reports. You can pass DataSource from WebAPI controller 
+
+   ~~~ csharp
+
+    using Syncfusion.EJ.ReportViewer;
+    using System;
+    using System.Collections.Generic;
+    using System.Linq;
+    using System.Net;
+    using System.Net.Http;
+    using System.Web.Http;
+
+    namespace ReportViewerDemo.Api 
+    {
+        public class ReportApiController: ApiController,IReportController 
+        {
+            //Post action for processing the rdl/rdlc report 
+            public object PostReportAction(Dictionary < string, object > jsonResult 
+            {
+                return ReportHelper.ProcessReport(jsonResult, this);
+            }
+        
+            //Get action for getting resources from the report
+            [System.Web.Http.ActionName("GetResource")]
+            [AcceptVerbs("GET")]
+            public object GetResource(string key, string resourceType, bool isPrint) 
+            {
+                return ReportHelper.GetResource(key, resourceType, isPrint);
+            }
+            
+            //Method will be called when initialize the report options before start processing the report        
+            public void OnInitReportOptions(ReportViewerOptions reportOption)
+            {
+                //You can update report options here
+            }
+        
+            //Method will be called when reported is loaded
+            public void OnReportLoaded(ReportViewerOptions reportOption) 
+            {
+                reportOption.ReportModel.DataSources.Clear();
+                reportOption.ReportModel.DataSources.Add(new ReportDataSource { Name = "AdventureWorksXMLDataSet", Value = AdventureWorksXMLDataSet.GetData() });
+            }
+        }
+
+        public class AdventureWorksXMLDataSet
+        {
+            public int SalesPersonID { get; set; }
+            public string FullName { get; set; }
+            public string Title { get; set; }
+            public string SalesTerritory { get; set; }
+            public double Y2002 { get; set; }
+            public double Y2003 { get; set; }
+            public double Y2004 { get; set; }
+            public DateTime LastModifiedOn { get; set; }
+
+            internal static IList GetData()
+            {
+                List<AdventureWorksXMLDataSet> AdventureWorksCollection = new List<AdventureWorksXMLDataSet>();
+                AdventureWorksXMLDataSet AdventureWork = null;
+
+                AdventureWork = new AdventureWorksXMLDataSet()
+                {
+                    SalesPersonID= 281, FullName= "Ito", Title= "Sales Representative", SalesTerritory= "South West", Y2002= 0, Y2003= 28000, Y2004= 3018725, LastModifiedOn = DateTime.Today,
+                };
+                AdventureWorksCollection.Add(AdventureWork);
+                AdventureWork = new AdventureWorksXMLDataSet()
+                {
+                    SalesPersonID= 282, FullName= "Saraiva", Title= "Sales Representative", SalesTerritory= "Canada", Y2002= 25000, Y2003= 14000, Y2004= 3189356,
+                    LastModifiedOn = DateTime.Today,
+                };
+                AdventureWorksCollection.Add(AdventureWork);
+                AdventureWork = new AdventureWorksXMLDataSet()
+                {
+                        SalesPersonID= 283, FullName= "Cambell", Title= "Sales Representative", SalesTerritory= "North West", Y2002= 12000, Y2003= 13000, Y2004= 1930885,
+                    LastModifiedOn = DateTime.Today,
+                };
+                AdventureWorksCollection.Add(AdventureWork);
+                AdventureWork = new AdventureWorksXMLDataSet()
+                {
+                    SalesPersonID= 275, FullName= "Blythe", Title= "Sales Representative", SalesTerritory= "North East", Y2002= 19000, Y2003= 47000, Y2004= 4557045,
+                    LastModifiedOn = DateTime.Today,
+                };
+                AdventureWorksCollection.Add(AdventureWork);
+                AdventureWork = new AdventureWorksXMLDataSet()
+                {
+                    SalesPersonID= 276, FullName= "Mitchell", Title= "Sales Representative", SalesTerritory= "South West", Y2002= 28000, Y2003= 46000, Y2004= 5240075,
+                    LastModifiedOn = DateTime.Today,
+                };
+                AdventureWorksCollection.Add(AdventureWork);
+                AdventureWork = new AdventureWorksXMLDataSet()
+                {
+                    SalesPersonID= 277, FullName= "Carson", Title= "Sales Representative", SalesTerritory= "Central", Y2002= 33000, Y2003= 49000, Y2004= 3857163,
+                    LastModifiedOn = DateTime.Today,
+                };
+                AdventureWorksCollection.Add(AdventureWork);
+
+                return AdventureWorksCollection;
+            }
+        }
     }
-}
 
-{% endhighlight %}
-
-N> Default RDLC Report will be rendered, which is used in the online service.
+   ~~~
 
 ### Run the Application
 

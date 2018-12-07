@@ -177,17 +177,17 @@ namespace ReportViewerDemo.Api
 
 ### Enable CORS
 
-1. Add the CORS NuGet package. In Visual Studio, goto the Tools menu, select NuGet Package Manager, then select Package Manager Console. In the Package Manager Console window, type the following command:
+1 Add the CORS NuGet package. In Visual Studio, goto the Tools menu, select NuGet Package Manager, then select     Package Manager Console. In         the Package Manager Console window, type the following command:
 
-    {% highlight html %}
+  {% highlight html %}
 
     Install-Package Microsoft.AspNet.WebApi.Cors
 
-    {% endhighlight %}
+  {% endhighlight %}
+    
+2 You can call enable cors method in Application_Start event into Global.asax file as follows.
 
-2. You can call enable cors method in Application_Start event into Global.asax file as follows.
-
-~~~ csharp
+    ~~~ csharp
 
     using System;
     using System.Collections.Generic;
@@ -212,11 +212,11 @@ namespace ReportViewerDemo.Api
         }
     }
 
-~~~
+    ~~~
  
- 3. Add the [EnableCors] attribute to the ApiController class as follows
+3 Add the [EnableCors] attribute to the ApiController class as follows
 
-~~~ csharp
+    ~~~ csharp
 
     using Syncfusion.EJ.ReportViewer;
     using System;
@@ -226,7 +226,7 @@ namespace ReportViewerDemo.Api
     using System.Net.Http;
     using System.Web.Http;
     using System.Web.Http.Cors;
-    
+
     namespace ReportViewerDemo.Api 
     {
         [EnableCors(origins: "*", headers: "*", methods: "*")]
@@ -237,7 +237,7 @@ namespace ReportViewerDemo.Api
             {
                 return ReportHelper.ProcessReport(jsonResult, this);
             }
-            
+        
             //Get action for getting resources from the report
             [System.Web.Http.ActionName("GetResource")]
             [AcceptVerbs("GET")]
@@ -260,7 +260,7 @@ namespace ReportViewerDemo.Api
         }
     }
 
-~~~
+    ~~~
 
 ## Create a Web API Controller for .NET Core platform
 Right-Click the Project, select Add and select Web API Controller Class file from the listed templates.
@@ -460,9 +460,9 @@ You can route the WebAPI in configure method into Startup.cs file as follows.
 
 ### Enable CORS
 
-1. You can add cors in ConfigureServices method into Startup.cs file as follows.
+1 You can add cors in ConfigureServices method into Startup.cs file as follows.
 
-~~~ csharp
+    ~~~ csharp
 
     using Microsoft.AspNetCore.Builder;
     using Microsoft.AspNetCore.Hosting;
@@ -512,11 +512,11 @@ You can route the WebAPI in configure method into Startup.cs file as follows.
         }
     }
 
-~~~
+    ~~~
  
- 2. Add the [EnableCors] attribute to the ApiController class as follows
+2 Add the [EnableCors] attribute to the ApiController class as follows
 
-~~~ csharp
+    ~~~ csharp
 
     using System.Collections.Generic;
     using Microsoft.AspNetCore.Mvc;
@@ -582,6 +582,6 @@ You can route the WebAPI in configure method into Startup.cs file as follows.
         }
     }
 
-~~~
+    ~~~
 
 N> You cannot load the application report with path information in ASP.NET Core. So, you should load the report as `Stream` like an example provided above in `OnInitReportOptions`. If you need to get the invoice sample report then you can obtain it from the Syncfusion ASP.NET Core sample browser installed location (wwwroot\reports\invoice.rdl).
