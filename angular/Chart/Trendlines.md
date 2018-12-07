@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Trendlines in Essential Angular Chart
+title: Trendlines in Syncfusion Essential Angular Chart
 description: What are the different types of trendlines available in chart.
 platform: Angular
 control: Chart
@@ -9,7 +9,7 @@ documentation: ug
 
 # Trendlines
 
-EjChart can generate Trendlines for Cartesian type series *(Line, Column, Scatter, Area, Candle, HiLo etc.)* except bar type series. You can add more than one trendline object to the `trendlines`(../api/ejchart#members:series-trendlines) option.
+EjChart can generate Trendlines for Cartesian type series *(Line, Column, Scatter, Area, Candle, HiLo etc.)* except bar type series. You can add more than one trendline object to the [`trendlines`](../api/ejchart#members:series-trendlines) option.
 
 {% highlight ts %}
 
@@ -31,7 +31,7 @@ this.ChartTrendlines= [{
 
 {% endhighlight %}
 
-![](Trendlines_images/Trendlines_img1.png)
+![Trendlines Visibility](Trendlines_images/Trendlines_img1.png)
 
 
 ## Customize the trendline styles
@@ -59,7 +59,7 @@ this.ChartTrendlines = [{
 
 {% endhighlight %}
 
-![](Trendlines_images/Trendlines_img2.png)
+![Trendline Customization](Trendlines_images/Trendlines_img2.png)
 
 
 
@@ -98,7 +98,7 @@ this.ChartTrendlines = [{
 
 {% endhighlight %}
 
-![](Trendlines_images/Trendlines_img3.png)
+![Linear Trendline](Trendlines_images/Trendlines_img3.png)
 
 
 ### Exponential
@@ -126,7 +126,7 @@ this.ChartTrendlines = [{
 {% endhighlight %}
 
 
-![](Trendlines_images/Trendlines_img4.png)
+![Exponential Trendline](Trendlines_images/Trendlines_img4.png)
 
 
 ### Logarithmic
@@ -154,7 +154,7 @@ this.ChartTrendlines = [{
 {% endhighlight %}
 
 
-![](Trendlines_images/Trendlines_img5.png)
+![Logarithmic Trendline](Trendlines_images/Trendlines_img5.png)
 
 
 ### Power
@@ -182,7 +182,7 @@ this.ChartTrendlines = [{
 {% endhighlight %}
 
 
-![](Trendlines_images/Trendlines_img6.png)
+![Power Trendline](Trendlines_images/Trendlines_img6.png)
 
 
 ### Polynomial
@@ -210,7 +210,7 @@ this.ChartTrendlines = [{
 {% endhighlight %}
 
 
-![](Trendlines_images/Trendlines_img7.png)
+![Polynomial Trendline](Trendlines_images/Trendlines_img7.png)
 
 
 
@@ -238,7 +238,7 @@ this.ChartTrendlines = [{
 
 {% endhighlight %}
 
-![](Trendlines_images/Trendlines_img8.png)
+![Moving Average Trendline](Trendlines_images/Trendlines_img8.png)
 
 ## Forecasting
 
@@ -272,7 +272,7 @@ this.ChartTrendlines = [{
 
 {% endhighlight %}
 
-![](Trendlines_images/Trendlines_img9.png)
+![Forward Forecast](Trendlines_images/Trendlines_img9.png)
 
 
 
@@ -301,7 +301,7 @@ this.ChartTrendlines = [{
 
 {% endhighlight %}
 
-![](Trendlines_images/Trendlines_img10.png)
+![Backward Forecast](Trendlines_images/Trendlines_img10.png)
 
 
 ## Trendlines Legend
@@ -329,4 +329,4 @@ this.ChartTrendlines = [{
 
 {% endhighlight %}
 
-![](Trendlines_images/Trendlines_img11.png)
+![Trendline Legend](Trendlines_images/Trendlines_img11.png)

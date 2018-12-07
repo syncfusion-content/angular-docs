@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Customizing the appearance of Essential Angular Chart
+title: Customizing the appearance of Syncfusion Essential Angular Chart
 description: Learn how to customize the appearance of Chart using palettes, themes, color, background and animation. 
 platform: Angular
 control: Chart
@@ -16,13 +16,13 @@ The Chart displays different series in different colors by default. You can cust
 {% highlight html %}
 
    <ej-chart id="chartcontainer" [palette]="[ 'yellow', 'skyblue', 'orange', 
-                                 'yellow', 'cyan', 'lightblue', '#ff0ade']" >
+                                 'yellow', 'cyan', 'lightBlue', '#ff0ade']" >
    
    </ej-chart>
 
 {% endhighlight %}
 
-![](Appearance_images/Appearance_img1.png)
+![Color Palette](Appearance_images/Appearance_img1.png)
 
 
 N> The Color palette is applied to the points in accumulation type series
@@ -31,22 +31,22 @@ N> The Color palette is applied to the points in accumulation type series
 
 Following are the built-in themes available in the Chart
 
-* flatlight
-* flatdark
-* gradientlight
-* gradientdark
+* flatLight
+* flatDark
+* gradientLight
+* gradientDark
 * azure
-* azuredark
+* azureDark
 * lime
-* limedark
+* limeDark
 * saffron
-* saffrondark
+* saffronDark
 * gradient-azure
-* gradient-azuredark
+* gradient-azureDark
 * gradient-lime
-* gradient-limedark
+* gradient-limeDark
 * gradient-saffron
-* gradient-saffrondark
+* gradient-saffronDark
 
 
 You can set your desired theme by using the `theme` property. Flat light is the default theme used in the Chart.
@@ -60,7 +60,7 @@ You can set your desired theme by using the `theme` property. Flat light is the 
 
 {% endhighlight %}
 
-![](Appearance_images/Appearance_img2.png)
+![Themes](Appearance_images/Appearance_img2.png)
 
 
 ## Point level customization
@@ -83,7 +83,7 @@ Marker, data label and fill color of each point in a series can be customized in
 
 {% endhighlight %}
 
-![](Appearance_images/Appearance_img3.png)
+![Points Customization](Appearance_images/Appearance_img3.png)
 
 ## Series border customization
 
@@ -109,7 +109,7 @@ N> Series border can be applied to all the series (except Line, Spline, HiLo, Hi
 
 {% endhighlight %}
 
-![](Appearance_images/Appearance_img4.png)
+![Series Border](Appearance_images/Appearance_img4.png)
 
 ## Chart area customization
 
@@ -127,7 +127,7 @@ The Chart background can be customized by using the `background` property of the
 
 {% endhighlight %} 
 
-![](Appearance_images/Appearance_img5.png)
+![Background](Appearance_images/Appearance_img5.png)
 
 
 **Chart Margin**
@@ -144,7 +144,7 @@ The Chart [`margin`] property is used to add the margin to the chart area at the
 
 {% endhighlight %} 
 
-![](Appearance_images/Appearance_img6.png)
+![Margin](Appearance_images/Appearance_img6.png)
 
 **Setting background image**
 
@@ -159,7 +159,7 @@ Background image can be added to the chart by using the [`backGroundImageUrl`] p
 
 {% endhighlight %} 
 
-![](Appearance_images/Appearance_img7.png)
+![Background Image](Appearance_images/Appearance_img7.png)
 
 
 **Chart area background**
@@ -175,7 +175,7 @@ The Chart area background can be customized by using the [`background`] property
 
 {% endhighlight %} 
 
-![](Appearance_images/Appearance_img8.png)
+![Area Background](Appearance_images/Appearance_img8.png)
 
 
 ### Customize chart area grid bands
@@ -190,7 +190,7 @@ You can provide different color for alternate grid rows and columns formed by th
 
 {% endhighlight %} 
 
-![](Appearance_images/Appearance_img9.png)
+![GridBands](Appearance_images/Appearance_img9.png)
 
 
 ### Animation
@@ -199,7 +199,7 @@ You can enable animation by using the [`enableAnimation`] property of the series
 
 {% highlight html %}
 
-<ej-chart id="chartcontainer">
+<ej-chart id="chartContainer">
     <e-seriescollection>
         <e-series [enableAnimation]="true">
 		<-- Add points here-->
@@ -215,7 +215,7 @@ However, you can force the chart to animate series by calling the **animate** me
 
 {% highlight html %}
 
-<ej-chart id="chartcontainer">
+<ej-chart id="chartContainer">
     <e-seriescollection>
         <e-series [enableAnimation]="true">
 		<-- Add points here-->
@@ -233,7 +233,7 @@ However, you can force the chart to animate series by calling the **animate** me
 function animateChart(){
 
     //Calling the animate method for dynamic animation
-    $("#chartcontainer").ejChart("animate");      
+    $("#chartContainer").ejChart("animate");      
         
 }
 
