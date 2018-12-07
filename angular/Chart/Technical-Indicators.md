@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Technical Indicators
+title: Syncfusion EJ1 Chart - Technical Indicators
 description: What are the different types of technical indicators supported in Essential Chart for financial analysis.
 platform: Angular
 control: Chart
@@ -17,8 +17,8 @@ You can bind the series `dataSource` to the indicator by setting the specific se
 
 {% highlight ts %}
 
-this.chartindicators = [{
-    //Set Hilo series dataSource to indicator using seriesName
+this.chartIndicators = [{
+    //Set HiLo series dataSource to indicator using seriesName
     seriesName: "Hilo"
     //  ...
 }];
@@ -27,7 +27,7 @@ this.chartindicators = [{
 
 {% highlight html %}
 
-<ej-chart id="chartcontainer" [indicators]="chartindicators">
+<ej-chart id="chartcontainer" [indicators]="chartIndicators">
     <e-seriescollection>
         <e-series type="hiloopenclose" name="Hilo" [dataSource]="chartData" 
              xName= "xDate" high="High" low="Low" open="Open" close="Close">
@@ -42,7 +42,7 @@ Also, you can add data to the indicator directly by using the `dataSource` optio
 
 {% highlight ts %}
    
-this.chartindicators = [{
+this.chartIndicators = [{
     //Add dataSource to indicator directly
     dataSource: chartData,
     xName: "xDate",
@@ -57,7 +57,7 @@ this.chartindicators = [{
 
 {% highlight html %}
 
-<ej-chart id="chartcontainer" [indicators]="chartindicators">
+<ej-chart id="chartcontainer" [indicators]="chartIndicators">
 </ej-chart>
 
 {% endhighlight %}
@@ -66,15 +66,15 @@ this.chartindicators = [{
 
 ### Accumulation Distribution
 
-To create an Accumulation Distribution indicator, set the `indicators.type` as **"accumulationdistribution"**. Accumulation Distribution require **‘volume’** field additionally with the `dataSource` to calculate the signal line.
+To create an Accumulation Distribution indicator, set the `indicators.type` as **"accumulationDistribution"**. Accumulation Distribution require **‘volume’** field additionally with the `dataSource` to calculate the signal line.
 
 {% highlight ts %}
 
 //Initializing Indicators    
-this.chartindicators = [{
+this.chartIndicators = [{
     seriesName: "Hilo",
     //Set indicator type
-    type: "accumulationdistribution",
+    type: "accumulationDistribution",
     //  ...
 }];
 
@@ -82,7 +82,7 @@ this.chartindicators = [{
 
 {% highlight html %}
 
-<ej-chart id="chartcontainer" [indicators]="chartindicators">
+<ej-chart id="chartcontainer" [indicators]="chartIndicators">
     <e-seriescollection>
         <e-series name="Hilo" [dataSource]="chartData" xName= "xDate"
             high="High"  low="Low" open="Open" close="Close" volume="Volume">
@@ -93,19 +93,19 @@ this.chartindicators = [{
 
 {% endhighlight %}
 
-![](Technical-Indicators_images/Technical-Indicators_img1.png)
+![Accumulation Distribution](Technical-Indicators_images/Technical-Indicators_img1.png)
 
 ### Average True Range (ATR)
 
-You can create an ATR indicator by setting the `indicators.type` as **"atr"** in the `indicators`. 
+You can create an ATR indicator by setting the `indicators.type` as **"ATR"** in the `indicators`. 
 
 {% highlight ts %}
 
 //Initializing Indicators    
-this.chartindicators = [{
+this.chartIndicators = [{
     seriesName: "Hilo",
     //Set indicator type
-    type: "atr",
+    type: "ATR",
     //  ...
 }];
 
@@ -113,7 +113,7 @@ this.chartindicators = [{
 
 {% highlight html %}
 
-<ej-chart id="chartcontainer" [indicators]="chartindicators">
+<ej-chart id="chartcontainer" [indicators]="chartIndicators">
     <e-seriescollection>
         <e-series name="Hilo" [dataSource]="chartData" xName= "xDate"
                        high="High" low="Low" open="Open" close="Close">
@@ -123,19 +123,19 @@ this.chartindicators = [{
 
 {% endhighlight %}
 
-![](Technical-Indicators_images/Technical-Indicators_img2.png)
+![ATR](Technical-Indicators_images/Technical-Indicators_img2.png)
 
 ### Bollinger Band 
 
-Bollinger Band indicator is created by setting the `indicators.type` as **"bollingerband"**. It contains three lines, namely upper band, lower band and signal line. Bollinger Band default value of the period is 14 and standardDeviations is 2.
+Bollinger Band indicator is created by setting the `indicators.type` as **"bollingerBand"**. It contains three lines, namely upper band, lower band and signal line. Bollinger Band default value of the period is 14 and standardDeviations is 2.
 
 {% highlight ts %}
 
 //Initializing Indicators    
-this.chartindicators = [{
+this.chartIndicators = [{
     seriesName: "Hilo",
     //Set indicator type
-    type: "bollingerband",
+    type: "bollingerBand",
     //  ...
 }];
 
@@ -143,7 +143,7 @@ this.chartindicators = [{
 
 {% highlight html %}
 
-<ej-chart id="chartcontainer" [indicators]="chartindicators">
+<ej-chart id="chartcontainer" [indicators]="chartIndicators">
     <e-seriescollection>
         <e-series name="Hilo" [dataSource]="chartData" xName= "xDate"
          high="High" low="Low" open="Open" close="Close">
@@ -153,19 +153,19 @@ this.chartindicators = [{
 
 {% endhighlight %}
 
-![](Technical-Indicators_images/Technical-Indicators_img3.png)
+![Bollinger Band](Technical-Indicators_images/Technical-Indicators_img3.png)
 
 ### Exponential Moving Average (EMA)
 
-To render an EMA indicator, you have to set the `indicators.type` as **"ema"**.  
+To render an EMA indicator, you have to set the `indicators.type` as **"EMA"**.  
 
 {% highlight ts %}
 
 //Initializing Indicators    
-this.chartindicators = [{
+this.chartIndicators = [{
     seriesName: "Hilo",
     //Set indicator type
-    type: "ema",
+    type: "EMA",
     //  ...
 }];
 
@@ -173,7 +173,7 @@ this.chartindicators = [{
 
 {% highlight html %}
 
-<ej-chart id="chartcontainer" [indicators]="chartindicators">
+<ej-chart id="chartcontainer" [indicators]="chartIndicators">
     <e-seriescollection>
         <e-series name="Hilo" [dataSource]="chartData" xName= "xDate"
          high="High" low="Low" open="Open" close="Close">
@@ -183,7 +183,7 @@ this.chartindicators = [{
 
 {% endhighlight %}
 
-![](Technical-Indicators_images/Technical-Indicators_img4.png)
+![EMA](Technical-Indicators_images/Technical-Indicators_img4.png)
 
 ### Momentum 
 
@@ -192,7 +192,7 @@ Momentum Technical indicator is created by setting the `indicators.type` as **"m
 {% highlight ts %}
 
 //Initializing Indicators    
-this.chartindicators = [{
+this.chartIndicators = [{
     seriesName: "Hilo",
     //Set indicator type
     type: "momentum",
@@ -203,7 +203,7 @@ this.chartindicators = [{
 
 {% highlight html %}
 
-<ej-chart id="chartcontainer" [indicators]="chartindicators">
+<ej-chart id="chartcontainer" [indicators]="chartIndicators">
     <e-seriescollection>
         <e-series name="Hilo" [dataSource]="chartData" xName= "xDate"
          high="High" low="Low" open="Open" close="Close">
@@ -213,7 +213,7 @@ this.chartindicators = [{
 
 {% endhighlight %}
 
-![](Technical-Indicators_images/Technical-Indicators_img5.png)
+![Momentum](Technical-Indicators_images/Technical-Indicators_img5.png)
 
 ### Moving Average Convergence Divergence (MACD)
 
@@ -222,7 +222,7 @@ To render an MACD indicator, you have to set the `indicators.type` as **"macd"**
 {% highlight ts %}
 
 //Initializing Indicators    
-this.chartindicators = [{
+this.chartIndicators = [{
     seriesName: "Hilo",
     //Set indicator type
     type: "macd",
@@ -233,7 +233,7 @@ this.chartindicators = [{
 
 {% highlight html %}
 
-<ej-chart id="chartcontainer" [indicators]="chartindicators">
+<ej-chart id="chartcontainer" [indicators]="chartIndicators">
     <e-seriescollection>
         <e-series name="Hilo" [dataSource]="chartData" xName= "xDate"
                     high="High" low="Low" open="Open" close="Close">
@@ -243,7 +243,7 @@ this.chartindicators = [{
 
 {% endhighlight %}
 
-![](Technical-Indicators_images/Technical-Indicators_img6.png)
+![MACD](Technical-Indicators_images/Technical-Indicators_img6.png)
 
 
 #### macdType
@@ -253,7 +253,7 @@ By using the `macdType` enumeration property, you can change the MACD rendering 
 {% highlight ts %}
          
 //Initializing Indicators    
-this.chartindicators = [{
+this.chartIndicators = [{
     type: "macd",
     //Set macd draw type
     macdType: "histogram",
@@ -262,20 +262,20 @@ this.chartindicators = [{
 
 {% endhighlight %}
 
-![](Technical-Indicators_images/Technical-Indicators_img7.png)
+![MACD Type](Technical-Indicators_images/Technical-Indicators_img7.png)
 
 
 ### Relative Strength Index (RSI)
 
-To render the RSI indicator, set the `indicators.type` as **"rsi"**. It contains three lines, namely upper band, lower band and signal line. Upper and lower band always render at value 70 and 30 respectively and signal line is calculated based on the **RSI** formula.
+To render the RSI indicator, set the `indicators.type` as **"RSI"**. It contains three lines, namely upper band, lower band and signal line. Upper and lower band always render at value 70 and 30 respectively and signal line is calculated based on the **RSI** formula.
 
 {% highlight ts %}
 
 //Initializing Indicators    
-this.chartindicators = [{
+this.chartIndicators = [{
     seriesName: "Hilo",
     //Set indicator type
-    type: "rsi",
+    type: "RSI",
     //  ...
 }];
 
@@ -283,7 +283,7 @@ this.chartindicators = [{
 
 {% highlight html %}
 
-<ej-chart id="chartcontainer" [indicators]="chartindicators">
+<ej-chart id="chartcontainer" [indicators]="chartIndicators">
     <e-seriescollection>
         <e-series name="Hilo" [dataSource]="chartData" xName= "xDate"
                    high="High" low="Low" open="Open" close="Close">
@@ -294,20 +294,20 @@ this.chartindicators = [{
 {% endhighlight %}
 
 
-![](Technical-Indicators_images/Technical-Indicators_img8.png)
+![RSI](Technical-Indicators_images/Technical-Indicators_img8.png)
 
 
 ### Simple Moving Average (SMA)
 
-To render the SMA indicator, you should specify the `indicators.type` as **"sma"**.  
+To render the SMA indicator, you should specify the `indicators.type` as **"SMA"**.  
 
 {% highlight ts %}
 
 //Initializing Indicators    
-this.chartindicators = [{
+this.chartIndicators = [{
     seriesName: "Hilo",
     //Set indicator type
-    type: "sma",
+    type: "SMA",
     //  ...
 }];
 
@@ -315,7 +315,7 @@ this.chartindicators = [{
 
 {% highlight html %}
 
-<ej-chart id="chartcontainer" [indicators]="chartindicators">
+<ej-chart id="chartcontainer" [indicators]="chartIndicators">
     <e-seriescollection>
         <e-series name="Hilo" [dataSource]="chartData" xName= "xDate"
                    high="High" low="Low" open="Open" close="Close">
@@ -325,7 +325,7 @@ this.chartindicators = [{
 
 {% endhighlight %}
 
-![](Technical-Indicators_images/Technical-Indicators_img9.png)
+![SMA](Technical-Indicators_images/Technical-Indicators_img9.png)
 
 
 ### Stochastic 
@@ -335,7 +335,7 @@ For the Stochastic indicator, you need to set the `indicators.type` as **"stocha
 {% highlight ts %}
 
 //Initializing Indicators    
-this.chartindicators = [{
+this.chartIndicators = [{
     seriesName: "Hilo",
     //Set indicator type
     type: "stochastic",
@@ -346,7 +346,7 @@ this.chartindicators = [{
 
 {% highlight html %}
 
-<ej-chart id="chartcontainer" [indicators]="chartindicators">
+<ej-chart id="chartcontainer" [indicators]="chartIndicators">
     <e-seriescollection>
         <e-series name="Hilo" [dataSource]="chartData" xName= "xDate"
                      high="High" low="Low" open="Open" close="Close">
@@ -356,20 +356,20 @@ this.chartindicators = [{
 
 {% endhighlight %}
 
-![](Technical-Indicators_images/Technical-Indicators_img10.png)
+![Stochastic](Technical-Indicators_images/Technical-Indicators_img10.png)
 
 
 ### Triangular Moving Average (TMA)
 
-To render the TMA indicator, you should specify the `indicators.type` as **"tma"**. 
+To render the TMA indicator, you should specify the `indicators.type` as **"TMA"**. 
 
 {% highlight ts %}
 
 //Initializing Indicators    
-this.chartindicators = [{
+this.chartIndicators = [{
     seriesName: "Hilo",
     //Set indicator type
-    type: "tma",
+    type: "TMA",
     //  ...
 }];
 
@@ -377,7 +377,7 @@ this.chartindicators = [{
 
 {% highlight html %}
 
-<ej-chart id="chartcontainer" [indicators]="chartindicators">
+<ej-chart id="chartcontainer" [indicators]="chartIndicators">
     <e-seriescollection>
         <e-series name="Hilo" [dataSource]="chartData" xName= "xDate"
                      high="High" low="Low" open="Open" close="Close">
@@ -387,7 +387,7 @@ this.chartindicators = [{
 
 {% endhighlight %}
 
-![](Technical-Indicators_images/Technical-Indicators_img11.png)
+![TMA](Technical-Indicators_images/Technical-Indicators_img11.png)
 
 ## Enable Tooltip 
 
@@ -396,7 +396,7 @@ To display the indicator tooltip, use `visible` option of the `indicators.toolti
 {% highlight ts %}
            
 //Initializing Indicators    
-this.chartindicators = [{
+this.chartIndicators = [{
     //  ...
     tooltip: {
         //Enable tooltip for indicator
@@ -406,7 +406,7 @@ this.chartindicators = [{
 
 {% endhighlight %}
 
-![](Technical-Indicators_images/Technical-Indicators_img12.png)
+![Indicator Tooltip](Technical-Indicators_images/Technical-Indicators_img12.png)
 
 
 

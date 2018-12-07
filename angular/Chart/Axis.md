@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Chart Axis
+title: Syncfusion EJ1 Chart - Axis
 description: How to customize the grid lines, tick lines, labels and title of chart axis
 platform: Angular
 control: Chart
@@ -34,12 +34,12 @@ Category axis displays the text labels instead of numbers. To use the categorica
 
 
 
-![](Axis_images/axis_img1.png)
+![Category Axis](Axis_images/axis_img1.png)
 
 
 ### Place labels on ticks
 
-Labels in the category axis can be placed on the ticks by setting the `labelPlacement` property of axis to the **onticks**. The default value of the `labelPlacement` property is **betweenticks** i.e. labels are placed between the ticks, by default.
+Labels in the category axis can be placed on the ticks by setting the `labelPlacement` property of axis to the **onTicks**. The default value of the `labelPlacement` property is **betweenTicks** i.e. labels are placed between the ticks, by default.
 
 {% highlight html %}
 
@@ -50,7 +50,7 @@ Labels in the category axis can be placed on the ticks by setting the `labelPlac
 
 {% endhighlight %}
 
-![](Axis_images/axis_img2.png)
+![Label Placement](Axis_images/axis_img2.png)
 
 
 ### Display labels after a fixed interval
@@ -66,7 +66,7 @@ To display the labels after a fixed interval n, you can set the `interval` prope
 
 {% endhighlight %}
 
-![](Axis_images/axis_img3.png)
+![Range Interval](Axis_images/axis_img3.png)
 
 
 ### Indexed Category Axis
@@ -95,11 +95,11 @@ Category axis can also plot points based on index value of data points. Index ba
 {% endhighlight %}
 
 
-![](Axis_images/axis_img50.png)
+![Enabled Indexed Axis](Axis_images/axis_img50.png)
 
 **While Category axis isIndexed value false**
 
-![](Axis_images/axis_img51.png)
+![Disabled Indexed Axis](Axis_images/axis_img51.png)
 
 
 ## Numeric Axis 
@@ -114,7 +114,7 @@ Numeric axis uses numerical scale and displays numbers as labels. To use numeric
 
 {% endhighlight %}
 
-![](Axis_images/axis_img4.png)
+![Numeric Axis](Axis_images/axis_img4.png)
 
 
 ### Customize numeric range
@@ -131,7 +131,7 @@ To customize the range of an axis, you can use the `range` property of the axis 
 
 {% endhighlight %}
 
-![](Axis_images/axis_img5.png)
+![Range](Axis_images/axis_img5.png)
 
 
 #### Customizing numeric interval
@@ -147,7 +147,7 @@ Axis interval can be customized by using the `interval` property of the axis ran
 
 {% endhighlight %}
 
-![](Axis_images/axis_img6.png)
+![Interval](Axis_images/axis_img6.png)
 
 ### Apply padding to the range
 
@@ -171,7 +171,7 @@ When the value of the `rangePadding` property is **none**, padding can not be ap
 
 {% endhighlight %}
 
-![](Axis_images/axis_img7.png)
+![RangePadding None](Axis_images/axis_img7.png)
 
 
 #### Round
@@ -189,13 +189,13 @@ When the value of `rangePadding` property is **round**, the axis range is rounde
 
 **Chart before rounding axis range**
 
-![](Axis_images/axis_img8.png)
+![Before Rounding](Axis_images/axis_img8.png)
 
 
 
 **Chart after rounding axis range**
 
-![](Axis_images/axis_img9.png)
+![After Rounding](Axis_images/axis_img9.png)
 
 **Additional**
 
@@ -210,7 +210,7 @@ When the value of the `rangePadding` property is **additional**, the axis range 
 
 {% endhighlight %}
 
-![](Axis_images/axis_img10.png)
+![Additional RangePadding](Axis_images/axis_img10.png)
 
 
 **Normal**
@@ -226,7 +226,7 @@ When the value of the `rangePadding` property is **normal**, the padding is appl
 
 {% endhighlight %}
 
-![](Axis_images/axis_img11.png)
+![Normal RangePadding](Axis_images/axis_img11.png)
 
 #### Customizing the starting range of the axis
 
@@ -241,7 +241,7 @@ By default the Y axis will be always calculated from the value 0 for column, bar
 
 {% endhighlight %}
 
-![](Axis_images/axis_img66.png)
+![Start Range Customization](Axis_images/axis_img66.png)
 
 ## DateTime Axis
 
@@ -255,7 +255,7 @@ Date time axis uses date time scale and displays the date time values as axis la
 
 {% endhighlight %}
 
-![](Axis_images/axis_img12.png)
+![DateTime Axis](Axis_images/axis_img12.png)
 
 
 ### Customizing date time range
@@ -272,7 +272,7 @@ Date time axis uses date time scale and displays the date time values as axis la
 
 {% endhighlight %}
 
-![](Axis_images/axis_img13.png)
+![DateTime Range](Axis_images/axis_img13.png)
 
 
 ### Date time intervals
@@ -298,7 +298,7 @@ Essential Chart supports the following types of interval for date time axis.
 {% endhighlight %}
 
 
-![](Axis_images/axis_img14.png)
+![DateTime Intervals](Axis_images/axis_img14.png)
 
 
 ### Apply padding to the range
@@ -321,7 +321,7 @@ When the value of the `rangePadding` property is **none**, padding is applied to
 
 {% endhighlight %} 
 
-![](Axis_images/axis_img15.png)
+![None RangePadding](Axis_images/axis_img15.png)
 
 **Round**
 
@@ -337,12 +337,12 @@ When the value of the `rangePadding` property is **round**, the axis range is ro
 
 **Chart before rounding axis range**
 
-![](Axis_images/axis_img16.png)
+![Before Rounding](Axis_images/axis_img16.png)
 
 
 **Chart after rounding axis range**
 
-![](Axis_images/axis_img17.png)
+![After Rounding](Axis_images/axis_img17.png)
 
 **Additional** 
 
@@ -356,7 +356,7 @@ When the value of the `rangePadding` property is **additional**, the range is ro
 
 {% endhighlight %} 
 
-![](Axis_images/axis_img18.png)
+![Additional RangePadding](Axis_images/axis_img18.png)
 
 
 ## DateTime Category Axis
@@ -371,7 +371,7 @@ DateTime category axis takes date time value as input but behaves like category 
 
 {% endhighlight %}
 
-![](Axis_images/axis_img63.png)
+![DateTime Category](Axis_images/axis_img63.png)
 
  [Click](http://ng2jq.syncfusion.com/#/chart/datetimeCategory) here to view our online demo sample for date time axis.
 
@@ -388,7 +388,7 @@ Axis range can be customized by using the `range` property to set the `minimum`,
 
 {% endhighlight %}
 
-![](Axis_images/axis_img64.png)
+![DateTime Category Customization](Axis_images/axis_img64.png)
 
 ### DateTime Category intervals
 
@@ -412,7 +412,7 @@ Essential Chart supports the following types of interval for date time category 
 
 {% endhighlight %}
 
-![](Axis_images/axis_img65.png)
+![DateTime Category Intervals](Axis_images/axis_img65.png)
 
 
 ## Logarithmic Axis
@@ -428,7 +428,7 @@ Logarithmic axis uses logarithmic scale and it is very useful in visualizing whe
 {% endhighlight %}
 
 
-![](Axis_images/axis_img19.png)
+![Logarithmic Axis](Axis_images/axis_img19.png)
 
 
 ### Customize Logarithmic range
@@ -443,7 +443,7 @@ Logarithmic range can be customized by using the `range` property of the axis to
 
 {% endhighlight %}
 
-![](Axis_images/axis_img20.png)
+![Logarithmic Range](Axis_images/axis_img20.png)
 
 
 ### Logarithmic base
@@ -458,7 +458,7 @@ Logarithmic base can be customized by using the `logBase` property of the axis. 
 
 {% endhighlight %}
 
-![](Axis_images/axis_img21.png)
+![Logarithmic Base](Axis_images/axis_img21.png)
 
 
 ### Logarithmic interval
@@ -473,7 +473,7 @@ Logarithmic axis interval can be customized by using the `interval` property of 
 
 {% endhighlight %}
 
-![](Axis_images/axis_img22.png)
+![Logarithmic Interval](Axis_images/axis_img22.png)
 
 
 ## Label Format
@@ -490,7 +490,7 @@ Numeric labels can be formatted by using the `labelFormat` property. Numeric val
 
 {% endhighlight %}
 
-![](Axis_images/axis_img23.png)
+![Numeric Format](Axis_images/axis_img23.png)
 
 The following table describes the result of applying some commonly used label formats on numeric values. 
  
@@ -564,7 +564,7 @@ Date time labels can be formatted by using the `labelFormat` property of the axi
 
 {% endhighlight %}
 
-![](Axis_images/axis_img24.png)
+![DateTime Format](Axis_images/axis_img24.png)
 
 
 The following table describes the result of applying some common date time formats to the labelFormat property
@@ -626,7 +626,7 @@ Prefix and suffix can be added to the category labels by using the `labelFormat`
 
 {% endhighlight %}
 
-![](Axis_images/axis_img25.png)
+![LabelFormat Customization](Axis_images/axis_img25.png)
 
 
 ## Common axis features
@@ -647,7 +647,7 @@ Axis can be positioned anywhere in chart area using the `crossesAt` property of 
 
 {% endhighlight %}
 
-![](Axis_images/axis_img52.png)
+![Numeric CrossesAt](Axis_images/axis_img52.png)
 
 
 #### Crossing a specific Axis
@@ -671,7 +671,7 @@ this.chartAxes = [{name:"secondaryYAxis", orientation: "vertical"}];
 
 {% endhighlight %}
 
-![](Axis_images/axis_img53.png)
+![Numeric CrossesInAxis](Axis_images/axis_img53.png)
 
 Axis will be placed in the opposite side if value of `crossesAt` property is greater than the maximum value of crossing axis (axis name provided through `crossesInAxis` property or primary Y axis for horizontal axis).
 
@@ -684,7 +684,7 @@ Axis will be placed in the opposite side if value of `crossesAt` property is gre
 
 {% endhighlight %}
 
-![](Axis_images/axis_img54.png)
+![Opposite](Axis_images/axis_img54.png)
 
 
 #### Crossing in DateTime Axis
@@ -701,7 +701,7 @@ For crossing in a date time horizontal axis, date object should be provided as v
 
 {% endhighlight %}
 
-![](Axis_images/axis_img55.png)
+![DateTime CrossesAt](Axis_images/axis_img55.png)
 
 
 #### Crossing in Category Axis
@@ -720,7 +720,7 @@ W> String value provided for `crossesAt` property is case-sensitive.
 
 {% endhighlight %}
 
-![](Axis_images/axis_img56.png)
+![Categort CrossesAt](Axis_images/axis_img56.png)
 
 #### Positioning the axis elements while crossing
 
@@ -735,7 +735,7 @@ The `showNextToAxisLine`property is used for controlling the axis elements movem
 
 {% endhighlight %}
 
-![](Axis_images/axis_img67.png)
+![Axis Elements Positioning](Axis_images/axis_img67.png)
 
 
 ### Axis Visibility
@@ -750,7 +750,7 @@ Axis visibility can be controlled by using the `visible` property of the axis. T
 
 {% endhighlight %}
 
-![](Axis_images/axis_img26.png)
+![Axis Visibility](Axis_images/axis_img26.png)
 
 
 ### Axis title
@@ -773,7 +773,7 @@ this.titleFont={fontFamily:"Segoe UI", fontWeight: "bold", size: "16px", color: 
 
 {% endhighlight %}
 
-![](Axis_images/axis_img27.png)
+![Axis Title](Axis_images/axis_img27.png)
 
 You can modify the position of the axis title either inside or outside the chart area using the property `position`. By default, it will be placed outside the chart area. In addition, you can also change the alignment of the title to near, far and center by `alignment` property, using `offset` property you can change the position with respect to pixels.
 
@@ -786,7 +786,7 @@ You can modify the position of the axis title either inside or outside the chart
 
 {% endhighlight %}
 
-![](Axis_images/axis_img62.png)
+![Positioning Axis Title](Axis_images/axis_img62.png)
 
 ### Label customization
 
@@ -804,7 +804,7 @@ The `font` property of the axis provides options to customize the `font-family`,
 
 {% endhighlight %}
 
-![](Axis_images/axis_img28.png)
+![Axis Label Customization](Axis_images/axis_img28.png)
 
 
 ### Label and tick positioning
@@ -820,7 +820,7 @@ Axis labels and ticks can be positioned inside or outside the chart area by usin
 
 {% endhighlight %}
 
-![](Axis_images/axis_img29.png)
+![Axis Labels and Ticks](Axis_images/axis_img29.png)
 
 
 ### Edge labels placement
@@ -838,12 +838,12 @@ Labels with long text at the edges of an axis may appear partially outside the c
 
 **Chart before setting edge label placement to X-axis**
 
-![](Axis_images/axis_img30.png)
+![Before EdgeLabels Placement](Axis_images/axis_img30.png)
 
 
 **Chart after setting edge label placement to X-axis**
 
-![](Axis_images/axis_img31.png)
+![After EdgeLabels Placement](Axis_images/axis_img31.png)
 
 
 ### Grid lines customization
@@ -863,7 +863,7 @@ The `majorGridLines` and `minorGridLines` properties in the axis are used to cus
 
 {% endhighlight %}
 
-![](Axis_images/axis_img32.png)
+![GridLines Customization](Axis_images/axis_img32.png)
 
 
 ### Tick lines customization
@@ -884,7 +884,7 @@ The `majorTickLines` and `minorTickLines` properties in the axis are used to cus
 
 {% endhighlight %}
 
-![](Axis_images/axis_img33.png)
+![TickLines Customization](Axis_images/axis_img33.png)
 
   
 ### Inversing axis
@@ -901,12 +901,12 @@ Axis can be inversed by using the `isInversed` property of the axis. The default
 
 **Chart before inversing the axes**
 
-![](Axis_images/axis_img34.png)
+![Before Axis Inverse](Axis_images/axis_img34.png)
 
 
 **Chart after inversing the axes**
 
-![](Axis_images/axis_img35.png)
+![After Axis Inverse](Axis_images/axis_img35.png)
 
    
 
@@ -924,12 +924,12 @@ The `opposedPosition` property of axis can be used to place the axis at the oppo
 
 **Chart with X and Y axes at normal position**
 
-![](Axis_images/axis_img36.png)
+![Axis Normal Position](Axis_images/axis_img36.png)
 
 
 **Chart with Y-axis at opposed position**
 
-![](Axis_images/axis_img37.png)
+![Axis Opposed Position](Axis_images/axis_img37.png)
 
 
 ### Maximum number of labels per 100 pixels
@@ -946,19 +946,19 @@ A maximum of 3 labels are displayed for each 100 pixels in the axis, by default.
 
 **Chart before setting maximum labels per 100 pixels**
 
-![](Axis_images/axis_img38.png)
+![Before Maximum Labels](Axis_images/axis_img38.png)
 
 
 **Chart after setting maximum labels one per 100 pixels**
 
-![](Axis_images/axis_img39.png)
+![After Maximum Labels](Axis_images/axis_img39.png)
 
 
 ## Multiple Axis
 
 Multiple axes can be used in the Chart and chart area can be split into multiple panes to draw multiple series with multiple axes.
 
-![](Axis_images/axis_img40.png)
+![Multiple Axis](Axis_images/axis_img40.png)
 
 An additional horizontal or vertical axis can be added to the chart by adding an axis instance to the **axes** collection and then you can associate it to a series by specifying the name of the axis to the `xAxisName` or `yAxisName` property of the series.
 
@@ -985,7 +985,7 @@ this.chartAxes = [{name:"SecondaryXAxis"}, {name:"SecondaryYAxis"}];
 {% endhighlight %}
 
 
-![](Axis_images/axis_img41.png)
+![Secondary Axis](Axis_images/axis_img41.png)
 
 
 ## Smart Axis Labels
@@ -1002,42 +1002,42 @@ When the Axis labels overlap with each other based on the chart dimensions and l
 
 
 
-![](Axis_images/axis_img42.png)
+![Label Intersect Action](Axis_images/axis_img42.png)
 
 
 The following screenshot displays the result, when the *labelIntersectAction* property is set as **rotate45**.
 
-![](Axis_images/axis_img43.png)
+![Rotate45](Axis_images/axis_img43.png)
 
 
 The following screenshot displays the result, when the *labelIntersectAction* property is set as **rotate90**.
 
-![](Axis_images/axis_img44.png)
+![Rotate90](Axis_images/axis_img44.png)
 
 
 The following screenshot displays the result, when the *labelIntersectAction* property is set as **wrap**.
 
-![](Axis_images/axis_img45.png)
+![Wrap](Axis_images/axis_img45.png)
 
 
 The following screenshot displays the result, when of setting the **trim** as value to the *labelIntersectAction* property.
 
-![](Axis_images/axis_img46.png)
+![Trim](Axis_images/axis_img46.png)
 
 
 The following screenshot displays the result, when the *labelIntersectAction* property is set as **hide**.
 
-![](Axis_images/axis_img47.png)
+![Hide](Axis_images/axis_img47.png)
 
 
 The following screenshot displays the result, when the *labelIntersectAction* property is set as **multipleRows **.
 
-![](Axis_images/axis_img48.png)
+![MultipleRows](Axis_images/axis_img48.png)
 
 
 The following screenshot displays the result, when the *labelIntersectAction* property is set as **wrapByWord**.
 
-![](Axis_images/axis_img49.png)
+![WrayByWord](Axis_images/axis_img49.png)
 
 ## Multi-level Labels
 Axis can be customized with multiple levels of labels using the `multiLevelLabels` property. These labels are placed based on the start and end range values and we can add any number of labels to an axis.
@@ -1061,7 +1061,7 @@ this.multiLabels = [{
 
 {% endhighlight %}
 
-![](Axis_images/axis_img57.png)
+![MultiLevelLabels](Axis_images/axis_img57.png)
 
 ### Customizing the multi-Level labels
 The color, width and type of the border can be customized. The default border type is `Rectangle`. And the other supported border types are namely brace, curly brace, without top/bottom border and none. 
@@ -1088,7 +1088,7 @@ this.multiLabels = [{
 
 {% endhighlight %}
 
-![](Axis_images/axis_img58.png)
+![MultiLevelLabels Border](Axis_images/axis_img58.png)
 
 The text of the labels can be customized using the `text` and `font` properties 
 
@@ -1115,7 +1115,7 @@ this.multiLabels = [{
 
 {% endhighlight %}
 
-![](Axis_images/axis_img59.png)
+![MultiLevelLabels Font](Axis_images/axis_img59.png)
 
 You can change the alignment of the text to far, near and center position using the `textAlignment` property. By default, the text will be center aligned. 
 
@@ -1137,7 +1137,7 @@ You can change the alignment of the text to far, near and center position using 
 
 {% endhighlight %}
 
-![](Axis_images/axis_img60.png)
+![MultiLevelLabels Alignment](Axis_images/axis_img60.png)
 
 You can trim, wrap or wrapAndTrim the text if it exceeds the maximum text width value using the property `textOverflow`
 
@@ -1147,7 +1147,7 @@ this.multiLabels = [{
       //...
       // customizing the text overflow  
       textOverflow: “trim", 
-      maximumtextWidth: 40 
+      maximumTextWidth: 40 
   }];          
 
 {% endhighlight %}
@@ -1162,6 +1162,6 @@ this.multiLabels = [{
 
 The below screenshot shows the trimmed multi-level labels
 
-![](Axis_images/axis_img61.png)
+![MultiLevelLabels Width](Axis_images/axis_img61.png)
 
 And these labels can be placed in various rows using the `level` property.
