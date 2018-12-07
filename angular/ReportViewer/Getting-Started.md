@@ -1,5 +1,5 @@
 ---
-title: Getting Started for Angular ReportViewer
+title: Getting Started for Angular Syncfusion ReportViewer
 description: ReportViewer
 platform: Angular
 control: ReportViewer
@@ -97,7 +97,7 @@ Execute the below command in the command prompt.
 
 The application gets opened in the browser automatically and now, navigate to the **ReportViewer** tab to view the ReportViewer output on the page as displayed in the following screenshot.
 
-![](Getting-Started_images/Getting-Started_img1.png) 
+![RDL report snap](Getting-Started_images/Getting-Started_img1.png) 
 
 ReportViewer with Grouping Aggregate Report
 {:.caption}.
@@ -156,7 +156,7 @@ Execute the below command in the command prompt.
 
 The application gets opened in the browser automatically and now, navigate to the **ReportViewer** tab to view the ReportViewer output on the page as displayed in the following screenshot.
 
-![](Getting-Started_images/Getting-Started_img2.png) 
+![SSRS report snap](Getting-Started_images/Getting-Started_img2.png) 
    
 Report from SSRS
 {:.caption}
@@ -173,11 +173,11 @@ Description</th></tr>
 <tr>
 <td>
 reportServerUrl</td><td>
-It is used to specifies the URL for the report server.</td></tr>
+Specifies the URL for the Report Server.</td></tr>
 <tr>
 <td>
 reportServiceUrl</td><td>
-It is used to specifies the report Web API service URL.</td></tr>
+Specifies the report Web API service URL.</td></tr>
 <tr>
 <td>
 processingMode</td><td>
@@ -357,7 +357,7 @@ Execute the below command in the command prompt.
 
 The application gets opened in the browser automatically and now, navigate to the **ReportViewer** tab to view the ReportViewer output on the page as displayed in the following screenshot.
 
-![](Getting-Started_images/Getting-Started_img3.png) 
+![RDLC report snap](Getting-Started_images/Getting-Started_img3.png) 
 
 Area Chart RDLC Report
 {:.caption}
