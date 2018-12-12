@@ -47,7 +47,24 @@ In the above code, `ej.web.all.min.js`script reference has been added for demons
 
 ## Initialize and configure the control
 
-Add necessary HTML elements and CSS style to render ReportViewer and Set the desired `reportPath` and `reportServiceUrl` to ReportViewer. The code example for defining ReportViewer control in Angular is as follows,
+Add necessary HTML elements and CSS style to render ReportViewer and set the desired `reportPath` and `reportServiceUrl` proeprties to ReportViewer.
+
+<table>
+<tr>
+<th>
+API</th><th>
+Description</th></tr>
+<tr>
+<td>
+reportServiceUrl</td><td>
+Specifies the report Web API service URL.</td></tr>
+<tr>
+<td>
+reportPath</td><td>
+Gets or sets the path of a report file.</td></tr>
+</table>
+
+The following code snippet defines the ReportViewer control in Angular.
 
 {% highlight html %}
 
@@ -65,6 +82,14 @@ ej-reportviewer {
 
 {% endhighlight %}
 
+We can load the RDL / RDLC report in Angular by using both following options. 
+1. Using online Web API service.
+2. Using local Web API service.
+
+### Load report using online Web API service
+
+ The ReportViewer uses online Web API services to process the report file, process the request from control and return the processed data from control to client side.
+
 {% highlight ts %}
 
 import { Component } from '@angular/core';
@@ -81,6 +106,40 @@ export class ReportViewerComponent {
 
     constructor() {
         this.serviceUrl = 'http://js.syncfusion.com/ejservices/api/ReportViewer';        
+        this.reportPath = 'GroupingAgg.rdl';
+    }
+}
+
+{% endhighlight %}
+
+### Load report using local Web API service
+
+You can load the RDL / RDLC report with the help of local web service for .Net Platform and .Net core Platform.
+
+ 1 Local web service for .Net Platform
+   [How to load report using local Web API service for .Net Platform](/angular/reportviewer/report-service-for-dotnet)
+   Describes how to configure local Web API ServiceUrl in angular report viewer.
+
+ 2 Local web service for .Net core Platform
+   [How to load report using local Web API service for .Net Core Platform](/angular/reportviewer/report-service-for-dotnet-core)
+   Describes how to configure local Web API ServiceUrl in angular report viewer.
+
+{% highlight ts %}
+
+import { Component } from '@angular/core';
+
+@Component({
+    selector: 'ej-app',
+    templateUrl: 'src/reportviewer/reportviewer.component.html',
+	styleUrls: ['src/reportviewer/reportviewer.component.css']
+})
+
+export class ReportViewerComponent {
+    public serviceUrl: string;  
+    public reportPath: string;
+
+    constructor() {
+        this.serviceUrl = 'http://localhost/api/ReportApi/';        
         this.reportPath = 'GroupingAgg.rdl';
     }
 }
@@ -244,7 +303,7 @@ ej-reportviewer {
 
  N> Default RDLC Report will be rendered, which is used in the online service.
 
-### Pass DataSource from the Server Side
+### Pass dataSource from server side
 
  The ReportViewer has data binding support from server side to visualize the RDLC reports. You can pass DataSource from WebAPI controller 
 
