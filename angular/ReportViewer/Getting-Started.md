@@ -47,7 +47,7 @@ In the above code, `ej.web.all.min.js`script reference has been added for demons
 
 ## Initialize and configure the control
 
-Add necessary HTML elements and CSS style to render ReportViewer and set the desired `reportPath` and `reportServiceUrl` proeprties to ReportViewer.
+Add necessary HTML elements and CSS style to render ReportViewer and set the desired `reportPath` and `reportServiceUrl` properties to ReportViewer.
 
 <table>
 <tr>
@@ -114,14 +114,16 @@ export class ReportViewerComponent {
 
 ### Load report using local Web API service
 
-You can load the RDL / RDLC report with the help of local web service for .Net Platform and .Net core Platform.
+You can load the RDL / RDLC report with the help of local web service for .NET Platform and .NET core Platform.
 
- 1 Local web service for .Net Platform
-   [How to load report using local Web API service for .Net Platform](/angular/reportviewer/report-service-for-dotnet)
+ 1 Local web service for .NET Platform
+
+   [How to load report using local Web API service for .NET Platform](/angular/reportviewer/report-service-for-dotnet)
    Describes how to configure local Web API ServiceUrl in angular report viewer.
 
- 2 Local web service for .Net core Platform
-   [How to load report using local Web API service for .Net Core Platform](/angular/reportviewer/report-service-for-dotnet-core)
+ 2 Local web service for .NET core Platform
+
+   [How to load report using local Web API service for .NET Core Platform](/angular/reportviewer/report-service-for-dotnet-core)
    Describes how to configure local Web API ServiceUrl in angular report viewer.
 
 {% highlight ts %}
