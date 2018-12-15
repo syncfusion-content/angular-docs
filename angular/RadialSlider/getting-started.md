@@ -17,7 +17,7 @@ The following steps guide you to add a Radial Slider control.
 
 1)	To get start with how to use the Radial Slider component within Angular-2 platform, refer the basic requisites and the configurations needs to be done on the system from [here](https://help.syncfusion.com/angular-2/gettingstarted/overview).
 
-2)	Create a radial slider by adding ej-radialslider attribute for rendering the Radial Slider component on the application. 
+2)	Create a radial slider by adding [`ej-radialslider`] attribute for rendering the Radial Slider component on the application. 
 
 {% highlight javascript %}
 

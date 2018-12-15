@@ -17,11 +17,11 @@ The **value** attribute is used to set the badge value to a Tile. By default, th
 
 The **text** attribute is used to set the text instead of number for Tile badge. 
 
-The **maxValue** attribute is used to set the maximum badge value to a Tile. When you set the badge value greater than maxvalue, it shows maximum value in badge with **plus** symbol. 
+The **maxValue** attribute is used to set the maximum badge value to a Tile. When you set the badge value greater than maxValue, it shows maximum value in badge with **plus** symbol. 
 
-The **minValue** attribute is used to set the minimum badge value to a Tile. When you set the badge value less than minvalue, it shows minimum value in badge.
+The **minValue** attribute is used to set the minimum badge value to a Tile. When you set the badge value less than minValue, it shows minimum value in badge.
 
-The **position** attribute is used to set the position for badge text or badge value. By default, the badge value position as bottomright.
+The **position** attribute is used to set the position for badge text or badge value. By default, the badge value position as bottomRight.
 
 Refer to the following code examples.
 

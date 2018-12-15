@@ -26,7 +26,7 @@ Create an ul elements to render the both parent and child ListBox components as 
         
 {% endhighlight %}
 
-The child ListBox component id should mapping to the “cascadeTo” property of the parent ListBox component. To show the empty data of the child ListBox on component initializion by setting the “loadDataOnInit” property as false.
+The child ListBox component id should mapping to the “cascadeTo” property of the parent ListBox component. To show the empty data of the child ListBox on component initialization by setting the “loadDataOnInit” property as false.
 
 {% highlight ts %}
             
@@ -109,7 +109,7 @@ Create an ul elements to render the parent and the child ListBox component as be
 
 {% endhighlight %}
 
-The child ListBox component id should mapping to the “cascadeTo” property of the parent ListBox component. To show the empty data of the child ListBox on component initializion by setting the “loadDataOnInit” property as false.
+The child ListBox component id should mapping to the “cascadeTo” property of the parent ListBox component. To show the empty data of the child ListBox on component initialization by setting the “loadDataOnInit” property as false.
 
 {% highlight ts %}
 

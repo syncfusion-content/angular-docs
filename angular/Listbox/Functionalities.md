@@ -84,7 +84,7 @@ N> _The item reordering can be done dynamically without mouse interaction. For t
 
 ## Incremental Search
 
-The [Incremental search](https://en.wikipedia.org/wiki/Incremental_search) helps to finding the specific item in the ListBox. The user types any character in ListBox component for that matched list box item will be selected by enabling the “enableIncrementalSearch”property in the ListBox component. Incremental search can be case sensitive or case insensitive. To make case sensitive, you can use [caseSensitiveSearch](https://help.syncfusion.com/api/js/ejlistbox#members:casesensitivesearch) property. 
+The [Incremental search](https://en.wikipedia.org/wiki/Incremental_search) helps to finding the specific item in the ListBox. The user types any character in ListBox component for that matched list box item will be selected by enabling the `enableIncrementalSearch` property in the ListBox component. Incremental search can be case sensitive or case insensitive. To make case sensitive, you can use [caseSensitiveSearch](https://help.syncfusion.com/api/js/ejlistbox#members:casesensitivesearch) property. 
 
 {% highlight html %}
 

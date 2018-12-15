@@ -43,7 +43,7 @@ This property specifies where to open a given link. The value set to this proper
 <tr>
 <td>
 thumbnailText</td><td>
-This property specifies a caption for the thumbnailtext. The value set to this property is string type.</td></tr>
+This property specifies a caption for the thumbnailText. The value set to this property is string type.</td></tr>
 <tr>
 <td>
 thumbnailUrl</td><td>

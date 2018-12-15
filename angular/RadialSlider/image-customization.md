@@ -13,7 +13,7 @@ documentation: ug
 
 ### Using Class
 
-The **RadialSlider** property **innerCircleimageclass** allow to set image for the inner circle of the RadialSlider. By default, the Radial Slider innerCircleImageClass is set as **null**. Refer to the following code example.
+The **RadialSlider** property **innerCircleImageClass** allow to set image for the inner circle of the RadialSlider. By default, the Radial Slider innerCircleImageClass is set as **null**. Refer to the following code example.
 
 Add the following code in your HTML page to render the RadialSlider.
 

@@ -15,7 +15,7 @@ By default you can add any text or image to the ListBox list item. To customize 
 
 To create set of div element with common syntax and assign it to the template property. You can add any HTML mark-up element inside the ListBox using this property.
 
-To create the JSON array with text, imagename, role and country which is initialized in the dataSource property. Content template is created by using the corresponding fields and assigned in template property. The content template is customized with images and custom CSS styles to visualize the list items.
+To create the JSON array with text, imageName, role and country which is initialized in the dataSource property. Content template is created by using the corresponding fields and assigned in template property. The content template is customized with images and custom CSS styles to visualize the list items.
 
 {% highlight html %}
 

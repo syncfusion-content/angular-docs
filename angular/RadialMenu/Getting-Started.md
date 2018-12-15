@@ -19,7 +19,7 @@ The following steps guide you to add a RadialMenu component.
 
 To get start with how to use the RadialMenu component within Angular-2 platform, refer the basic requisites and the configurations needs to be done on the system from [here](https://help.syncfusion.com/angular-2/overview).
 
-Create a simple RadialMenu by adding ej-radialmenu attribute for initializing an empty RadialMenu component on the application. 
+Create a simple RadialMenu by adding [`ej-radialmenu`] attribute for initializing an empty RadialMenu component on the application. 
 
 {% highlight html %}
 
@@ -39,7 +39,7 @@ To configure items for RadialMenu component, define e-items in component file. Y
 
 * `imageUrl` - Map the image for items to use as image to items within `Field` object.
 
-In order to display items in RadialMenu component, you need to use **e-items** of **ej-radialmenu**.
+In order to display items in RadialMenu component, you need to use **e-items** of [`ej-radialmenu`].
 
 Refer to the following code example. Initialize Radial Menu component with items and set its target content as follows.
 

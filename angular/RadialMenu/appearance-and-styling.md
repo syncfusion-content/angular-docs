@@ -29,8 +29,8 @@ By default, the following themes support available for **RadialMenu** component 
 * gradient-lime-dark
 * gradient-saffron
 * gradient-saffron-dark
-* bootstarp-theme
-* office 365
+* bootstrap-theme
+* Office 365
 * material theme
 * high contrast 01
 * high contrast 02

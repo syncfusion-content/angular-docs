@@ -20,7 +20,7 @@ We can change ListBox items rendering order either as ascending or descending, b
 
 {% endhighlight %}
 
- Please use the below javaScript code to get sorted items in listbox.
+ Please use the below JavaScript code to get sorted items in listbox.
 
   {% highlight ts %}
 

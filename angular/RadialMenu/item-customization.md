@@ -63,7 +63,7 @@ Declare **click** event values in HTML page.
     
 {% endhighlight %}
 
-Define the click functions and radialmenu show function in constructor file.
+Define the click functions and radialMenu show function in constructor file.
     
 {% highlight javascript %}
 

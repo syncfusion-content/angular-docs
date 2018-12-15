@@ -116,7 +116,7 @@ export class AppComponent {
 
 **ListBox** control also allows you to customize its appearance using user-defined CSS and custom skin options such as colors and backgrounds. To apply custom themes you have a property called **cssClass**. **cssClass** property sets the root class for **ListBox** theme.
 
-Using this **cssClass** you can override the existing styles under the theme style sheet. The theme style sheet applies theme-specific styles like colors and backgrounds. In the following example, the value of **cssClass** property is set as “**customclass**”. **customclass** is added as root class to **ListBox** control at the runtime. From this root class you can customize the **ListBox** control theme.
+Using this **cssClass** you can override the existing styles under the theme style sheet. The theme style sheet applies theme-specific styles like colors and backgrounds. In the following example, the value of **cssClass** property is set as **customClass**. **customClass** is added as root class to **ListBox** control at the runtime. From this root class you can customize the **ListBox** control theme.
 
 Add the following code in your **HTML** page to render the ListBox.
 
@@ -193,7 +193,7 @@ export class AppComponent {
 
 {% endhighlight %}
 
-In the following style sheet the existing theme style sheet file has been over-ridden using root class “**customclass**”. 
+In the following style sheet the existing theme style sheet file has been over-ridden using root class **customClass**. 
 
 Add the following code in your style section.
 

@@ -7,7 +7,7 @@ control: Splitter
 documentation: ug
 ---
 
-# Apperance and Styling
+# Appearance and Styling
 
 ## Html Attributes
 
@@ -244,7 +244,7 @@ By default, the following themes support available for Splitter component namely
 * gradient-lime-dark
 * gradient-saffron
 * gradient-saffron-dark
-* bootstarp-theme
+* bootstrap-theme
 * high-contrast-01
 * high-contrast-02
 * material

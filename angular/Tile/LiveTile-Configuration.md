@@ -9,13 +9,13 @@ documentation: ug
 
 # LiveTile Configuration
 
-Live Tiles are used to display the current or up to date information like scores, stocks, weather, etc. You can enable Live Tile using livetile-enabled property set as true. The livetile-type property allows you to specify the type of animation while updating the information in Tile. 
+Live Tiles are used to display the current or up to date information like scores, stocks, weather, etc. You can enable Live Tile using livetile-enabled property set as true. The [`livetile-type`] property allows you to specify the type of animation while updating the information in Tile. 
 
 There are three types of Tile animation supported: Flip, Slide and Carousel.
 
-The livetile-imageurl property sets background image for Live Tile. This property accepts array values so you can specify the image url's for all the Tile components that are used in single Live Tile. 
+The [`livetile-imageUrl`] property sets background image for Live Tile. This property accepts array values so you can specify the image url's for all the Tile components that are used in single Live Tile. 
 
-You can specify time interval for each Tile ej-livetile property. Time interval is given in milliseconds. The default value is 2000.
+You can specify time interval for each Tile [`ej-livetile`] property. Time interval is given in milliseconds. The default value is 2000.
 
 Refer to the following code examples.
 

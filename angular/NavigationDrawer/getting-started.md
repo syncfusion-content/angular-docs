@@ -103,7 +103,7 @@ You can open the list items by clicking on target element using the targetId pro
 
 ![](Getting-Started_images\getting-started-img2.png)
 
-To set the images for list items of the Navigation Drawer by using the data-ej-imageurl property as follows.
+To set the images for list items of the Navigation Drawer by using the [`data-ej-imageurl`] property as follows.
 
 {% highlight html %}
 

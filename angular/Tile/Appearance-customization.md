@@ -120,7 +120,7 @@ To use [Allow Selection](https://help.syncfusion.com/api/js/ejtile#members:allow
 
 Tile component also allows you to customize its appearance using user-defined CSS and custom skin options such as colors and backgrounds. To apply custom themes you have a property called **cssClass**. **cssClass** property sets the root class for **Tile** theme.
 
-Using this **cssClass** you can override the existing styles under the theme style sheet. The theme style sheet applies theme-specific styles like colors and backgrounds. In the following example, the value of **cssClass** property is set as “**customclass**”. **customclass** is added as root class to **Tile** component at the runtime. From this root class you can customize the **Tile** component theme.
+Using this **cssClass** you can override the existing styles under the theme style sheet. The theme style sheet applies theme-specific styles like colors and backgrounds. In the following example, the value of **cssClass** property is set as **customClass**. **customClass** is added as root class to **Tile** component at the runtime. From this root class you can customize the **Tile** component theme.
 
 Add the following code in your **HTML** page to render the Tile.
 
@@ -143,7 +143,7 @@ Add the following code in your **HTML** page to render the Tile.
 
 {% endhighlight %} 
 
-In the following style sheet the existing theme style sheet file has been over-ridden using root class “**customclass**”. 
+In the following style sheet the existing theme style sheet file has been over-ridden using root class **customClass**. 
 
 Add the following code in your style section.
 

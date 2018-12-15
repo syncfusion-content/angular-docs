@@ -123,7 +123,7 @@ The below table depicts the properties of **ListBox** widget that supports model
 <tr>
 <td>
 ejListbox</td><td>
-valuedataSource</td></tr>
+[`valuedataSource`]</td></tr>
 </table>
 
 

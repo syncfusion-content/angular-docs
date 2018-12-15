@@ -50,7 +50,7 @@ The following screenshot illustrates the Signature with saving (downloading) the
 ![https://help.syncfusion.com/js/signature/How_To_images/savesignatureimagewithuserdefinedformat_img1.png](How_To_images\savesignatureimagewithuserdefinedformat_img1.png)
 
 
-### To clear the Siganture
+### To clear the Signature
 
 To clear the signature, you can simply use the **clear()** method. This method will clear all the drawn strokes in the signature canvas and leaves it empty.
 

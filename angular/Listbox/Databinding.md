@@ -41,7 +41,7 @@ The field object contains the following properties.
 
 The local data can be an array of JSON objects which is assigned for the datasource property of ListBox component.
 
-Here the empid and text are fields with it's mapped to the id and value fields of object respectively.
+Here the empId and text are fields with it's mapped to the id and value fields of object respectively.
 
 {% highlight html %}
 
@@ -59,18 +59,18 @@ export class AppComponent {
     value:string;
     constructor() {
     this.data=[
-        { empid: "cr1", text: "Dodge Avenger", value: "Dodge Avenger" },
-        { empid: "cr2", text: "Chrysler 200", value: "Chrysler 200" },
-        { empid: "cr3", text: "Ford Focus", value: "Ford Focus" },
-        { empid: "cr4", text: "Ford Taurus", value: "Ford Taurus" },
-        { empid: "cr5", text: "Dazzler", value: "Dazzler" },
-        { empid: "cr6", text: "Chevy Spark", value: "Chevy Spark" },
-        { empid: "cr7", text: "Chevy Volt", value: "Chevy Volt" },
-        { empid: "cr8", text: "Honda Fit", value: "Honda Fit" },
-        { empid: "cr9", text: "Honda Crosstour", value: "Honda Crosstour" },
-        { empid: "cr10", text: "Acura RL", value: "Acura RL" },
-        { empid: "cr11", text: "Hyundai Elantra", value: "Hyundai Elantra" },
-        { empid: "cr12", text: "Mazda3", value: "Mazda3" }
+        { empId: "cr1", text: "Dodge Avenger", value: "Dodge Avenger" },
+        { empId: "cr2", text: "Chrysler 200", value: "Chrysler 200" },
+        { empId: "cr3", text: "Ford Focus", value: "Ford Focus" },
+        { empId: "cr4", text: "Ford Taurus", value: "Ford Taurus" },
+        { empId: "cr5", text: "Dazzler", value: "Dazzler" },
+        { empId: "cr6", text: "Chevy Spark", value: "Chevy Spark" },
+        { empId: "cr7", text: "Chevy Volt", value: "Chevy Volt" },
+        { empId: "cr8", text: "Honda Fit", value: "Honda Fit" },
+        { empId: "cr9", text: "Honda Crosstour", value: "Honda Crosstour" },
+        { empId: "cr10", text: "Acura RL", value: "Acura RL" },
+        { empId: "cr11", text: "Hyundai Elantra", value: "Hyundai Elantra" },
+        { empId: "cr12", text: "Mazda3", value: "Mazda3" }
     ];
     this.fieldList={dataSource:this.data,text:"text",value:"value"};
     }

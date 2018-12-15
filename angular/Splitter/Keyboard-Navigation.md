@@ -91,7 +91,7 @@ In the **HTML** page set the corresponding **&lt;div&gt;** element for rendering
 {% endhighlight %}
 
 
-To control the focus key by using keycode of “altkey” and “j” key in document key down function. Declare the keydown function in script section.
+To control the focus key by using keyCode of “altKey” and “j” key in document key down function. Declare the keydown function in script section.
 
 
 {% highlight javascript %}

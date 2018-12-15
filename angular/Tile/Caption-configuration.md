@@ -17,7 +17,7 @@ The **text** attribute is used to set the caption text for Tile.
 
 The **icon** attribute is used to set the caption icon for tile instead of text. 
 
-The **position** attribute is used to set the position for caption text. By default, the caption text position as innerbottom.
+The **position** attribute is used to set the position for caption text. By default, the caption text position as innerBottom.
 
 The **alignment** attribute is used to align the text or icon of tile component. 
 
