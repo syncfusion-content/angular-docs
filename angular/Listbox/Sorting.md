@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Sorting
+title: Syncfusion ListBox Sorting
 description: sorting support
 platform: Angular
 control: ListBox
@@ -20,28 +20,27 @@ We can change ListBox items rendering order either as ascending or descending, b
 
 {% endhighlight %}
 
- Please use the below javaScript code to get sorted items in listbox.
+ Please use the below JavaScript code to get sorted items in listbox.
 
   {% highlight ts %}
 
     export class DefaultComponent {
-    data: Array<{ empid: string, text: string, value: string }>;
+    data: Array<{ employeeId: string, text: string, value: string }>;
     fieldList: Object;
     value: string;
     constructor() {
         this.data = [
-            { empid: 'cr1', text: 'Dodge Avenger', value: 'Dodge Avenger' },
-            { empid: 'cr2', text: 'Chrysler 200', value: 'Chrysler 200' },
-            { empid: 'cr3', text: 'Ford Focus', value: 'Ford Focus' },
-            { empid: 'cr4', text: 'Ford Taurus', value: 'Ford Taurus' },
-            { empid: 'cr5', text: 'Dazzler', value: 'Dazzler' },
-            { empid: 'cr6', text: 'Chevy Spark', value: 'Chevy Spark' },
-            { empid: 'cr7', text: 'Chevy Volt', value: 'Chevy Volt' },
-            { empid: 'cr8', text: 'Honda Fit', value: 'Honda Fit' },
-            { empid: 'cr9', text: 'Honda Crosstour', value: 'Honda Crosstour' },
-            { empid: 'cr10', text: 'Acura RL', value: 'Acura RL' },
-            { empid: 'cr11', text: 'Hyundai Elantra', value: 'Hyundai Elantra' },
-            { empid: 'cr12', text: 'Mazda3', value: 'Mazda3' }
+            { employeeId: 'cr1', text: 'Dodge Avenger', value: 'Dodge Avenger' },
+            { employeeId: 'cr2', text: 'Chrysler 200', value: 'Chrysler 200' },
+            { employeeId: 'cr3', text: 'Ford Focus', value: 'Ford Focus' },
+            { employeeId: 'cr4', text: 'Ford Taurus', value: 'Ford Taurus' },
+            { employeeId: 'cr5', text: 'Dazzler', value: 'Dazzler' },
+            { employeeId: 'cr6', text: 'Chevy Spark', value: 'Chevy Spark' },
+            { employeeId: 'cr7', text: 'Chevy Volt', value: 'Chevy Volt' },
+            { employeeId: 'cr8', text: 'Honda Fit', value: 'Honda Fit' },
+            { employeeId: 'cr9', text: 'Honda Cross tour', value: 'Honda Cross tour' },
+            { employeeId: 'cr10', text: 'Hyundai Elantra', value: 'Hyundai Elantra' },
+            { employeeId: 'cr11', text: 'Mazda3', value: 'Mazda3' }
         ];
         this.fieldList = { dataSource: this.data, text: 'text', value: 'value' };
         this.sorting=ej.SortOrder.Descending;
@@ -50,4 +49,4 @@ We can change ListBox items rendering order either as ascending or descending, b
 
   {% endhighlight %}
 
-![](Sorting-Images\img1.png)
+![Sorting](Sorting-Images\img1.png)

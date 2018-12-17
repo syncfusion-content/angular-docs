@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Editing
+title:  Syncfusion Kanban Editing
 description: Editing
 documentation: ug
 platform: Angular
@@ -68,7 +68,7 @@ export class DefaultComponent {
 
 The following output is displayed as a result of the above code example.
 
-![](Editing_images/editing_img1.png)
+![Kanban Editing](Editing_images/editing_img1.png)
 
 ## Edit modes
 
@@ -121,7 +121,7 @@ export class DefaultComponent {
 
 The following output is displayed as a result of the above code example.
 
-![](Editing_images/editing_img2.png)
+![Edit Mode as Dialog](Editing_images/editing_img2.png)
 
 ### Dialog Template Form
 
@@ -129,11 +129,11 @@ You can edit any of the fields pertaining to a single card of data and apply it 
 
 Using this template support, you can edit the fields that are not bound to [`editItems`](https://help.syncfusion.com/api/js/ejkanban#members:editsettings-edititems).
 
-To edit the cards using Dialog template form, set [`editMode`](https://help.syncfusion.com/api/js/ejkanban#members:editsettings-editmode) as `dialogtemplate` and specify the template id to [`dialogTemplate`](https://help.syncfusion.com/api/js/ejkanban#members:editsettings-dialogtemplate) property of [`editSettings`](https://help.syncfusion.com/api/js/ejkanban#members:editsettings).
+To edit the cards using Dialog template form, set [`editMode`](https://help.syncfusion.com/api/js/ejkanban#members:editsettings-editmode) as `dialogTemplate` and specify the template id to [`dialogTemplate`](https://help.syncfusion.com/api/js/ejkanban#members:editsettings-dialogtemplate) property of [`editSettings`](https://help.syncfusion.com/api/js/ejkanban#members:editsettings).
 
 N> 1. `value` attribute is used to bind the corresponding field value while editing.
 N> 2. `name` attribute is used to get the changed field values while save the edited card.
-N> 3.  For [`editMode`](https://help.syncfusion.com/api/js/ejkanban#members:editsettings-editmode) property you can assign `string` value `dialogtemplate`.
+N> 3.  For [`editMode`](https://help.syncfusion.com/api/js/ejkanban#members:editsettings-editmode) property you can assign `string` value `dialogTemplate`.
 
 The following code example describes the above behavior.
 
@@ -226,7 +226,7 @@ export class KanbanComponent {
        
     }
     actionComplete(e: any) {
-        if ((e.requestType == "beginedit" || e.requestType == "add") && e.model.editSettings.editMode == "dialogtemplate") {
+        if ((e.requestType == "beginedit" || e.requestType == "add") && e.model.editSettings.editMode == ej.Kanban.EditMode.DialogTemplate) {
             $("#Estimate").ejNumericTextbox({ value: parseFloat($("#Estimate").val()), width: "175px", height: "34px", decimalPlaces: 2 });
             $("#Assignee").ejDropDownList({ width: '175px' });
             $("#Status").ejDropDownList({ width: '175px' });
@@ -242,7 +242,7 @@ export class KanbanComponent {
 
 The following output is displayed as a result of the above code example.
 
-![](Editing_images/editing_img3.png)
+![Dialog Template Form](Editing_images/editing_img3.png)
 
 
 ### External Form
@@ -294,7 +294,7 @@ export class DefaultComponent {
 
 The following output is displayed as a result of the above code example.
 
-![](Editing_images/editing_img11.png)
+![External Form](Editing_images/editing_img11.png)
 
 ### External Template Form
 
@@ -302,13 +302,13 @@ You can edit any of the fields pertaining to a single card of data and apply it 
 
 Using this template support, you can edit the fields that are not bound to Kanban Edit Items.
 
-To edit the cards using External template form, set [`editMode`](https://help.syncfusion.com/api/js/ejkanban#members:editsettings-editmode) as `externalformtemplate` and specify the template id to [`externalFormTemplate`](https://help.syncfusion.com/api/js/ejkanban#members:editsettings-externalformtemplate) property of [`editSettings`](https://help.syncfusion.com/api/js/ejkanban#members:editsettings).
+To edit the cards using External template form, set [`editMode`](https://help.syncfusion.com/api/js/ejkanban#members:editsettings-editmode) as `externalFormTemplate` and specify the template id to [`externalFormTemplate`](https://help.syncfusion.com/api/js/ejkanban#members:editsettings-externalformtemplate) property of [`editSettings`](https://help.syncfusion.com/api/js/ejkanban#members:editsettings).
 
 While using template, you can change the elements that are defined in the template, to appropriate Syncfusion JS controls based on the column type. This can be achieved by using [`actionComplete`](https://help.syncfusion.com/api/js/ejkanban#events:actioncomplete) event of Kanban.
 
 N> 1. `value` attribute is used to bind the corresponding field value while editing. 
 N> 2. `name` attribute is used to get the changed field values while save the edited card. 
-N> 3. For [`editMode`](https://help.syncfusion.com/api/js/ejkanban#members:editsettings-editmode) property you can assign `string` value `externalformtemplate`.
+N> 3. For [`editMode`](https://help.syncfusion.com/api/js/ejkanban#members:editsettings-editmode) property you can assign `string` value `externalFormTemplate`.
 
 The following code example describes the above behavior.
 
@@ -417,7 +417,7 @@ export class KanbanComponent {
        
     }
     actionComplete(e: any) {
-        if ((e.requestType == "beginedit" || e.requestType == "add") && e.model.editSettings.editMode == "externalformtemplate") {
+        if ((e.requestType == "beginedit" || e.requestType == "add") && e.model.editSettings.editMode == ej.Kanban.EditMode.ExternalFormTemplate) {
             $("#Assignee").ejDropDownList({ width: '175px' });
             $("#Status").ejDropDownList({ width: '175px' });
             if (e.requestType == "beginedit" || e.requestType == "add") {
@@ -432,7 +432,7 @@ export class KanbanComponent {
 
 The following output is displayed as a result of the above code example.
 
-![](Editing_images/editing_img13.png)
+![External Template Form](Editing_images/editing_img13.png)
 
 ## Cell edit type and its params
 
@@ -561,7 +561,7 @@ export class DefaultComponent {
 
 The following output is displayed as a result of the above code example.
 
-![](Editing_images/editing_img4.png)
+![Cell Edit Type](Editing_images/editing_img4.png)
 
 ## Column Validation
 
@@ -698,4 +698,4 @@ export class DefaultComponent {
 
 The following output is displayed as a result of the above code example.
 
-![](Editing_images/editing_img5.png)
+![Editing Images](Editing_images/editing_img5.png)
