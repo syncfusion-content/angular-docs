@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Databinding
+title: Syncfusion ListBox DataBinding
 description: databinding
 platform: Angular
 control: ListBox
@@ -41,7 +41,7 @@ The field object contains the following properties.
 
 The local data can be an array of JSON objects which is assigned for the datasource property of ListBox component.
 
-Here the empid and text are fields with it's mapped to the id and value fields of object respectively.
+Here the employeeId and text are fields with it's mapped to the id and value fields of object respectively.
 
 {% highlight html %}
 
@@ -59,18 +59,17 @@ export class AppComponent {
     value:string;
     constructor() {
     this.data=[
-        { empid: "cr1", text: "Dodge Avenger", value: "Dodge Avenger" },
-        { empid: "cr2", text: "Chrysler 200", value: "Chrysler 200" },
-        { empid: "cr3", text: "Ford Focus", value: "Ford Focus" },
-        { empid: "cr4", text: "Ford Taurus", value: "Ford Taurus" },
-        { empid: "cr5", text: "Dazzler", value: "Dazzler" },
-        { empid: "cr6", text: "Chevy Spark", value: "Chevy Spark" },
-        { empid: "cr7", text: "Chevy Volt", value: "Chevy Volt" },
-        { empid: "cr8", text: "Honda Fit", value: "Honda Fit" },
-        { empid: "cr9", text: "Honda Crosstour", value: "Honda Crosstour" },
-        { empid: "cr10", text: "Acura RL", value: "Acura RL" },
-        { empid: "cr11", text: "Hyundai Elantra", value: "Hyundai Elantra" },
-        { empid: "cr12", text: "Mazda3", value: "Mazda3" }
+        { employeeId: "cr1", text: "Dodge Avenger", value: "Dodge Avenger" },
+        { employeeId: "cr2", text: "Chrysler 200", value: "Chrysler 200" },
+        { employeeId: "cr3", text: "Ford Focus", value: "Ford Focus" },
+        { employeeId: "cr4", text: "Ford Taurus", value: "Ford Taurus" },
+        { employeeId: "cr5", text: "Dazzler", value: "Dazzler" },
+        { employeeId: "cr6", text: "Chevy Spark", value: "Chevy Spark" },
+        { employeeId: "cr7", text: "Chevy Volt", value: "Chevy Volt" },
+        { employeeId: "cr8", text: "Honda Fit", value: "Honda Fit" },
+        { employeeId: "cr9", text: "Honda Cross tour", value: "Honda Cross tour" },
+        { employeeId: "cr10", text: "Hyundai Elantra", value: "Hyundai Elantra" },
+        { employeeId: "cr11", text: "Mazda3", value: "Mazda3" }
     ];
     this.fieldList={dataSource:this.data,text:"text",value:"value"};
     }
@@ -90,7 +89,7 @@ Here the CustomerID field is mapped with text property of the field object. The 
 {% highlight html %}
 
      <div id="control">
-       <ej-listbox [dataSource]="datamanager" [fields]="fieldList" [query]="query"></ej-listbox>
+       <ej-listbox [dataSource]="dataManager" [fields]="fieldList" [query]="query"></ej-listbox>
     </div>   
 
 {% endhighlight %}
@@ -100,9 +99,9 @@ Here the CustomerID field is mapped with text property of the field object. The 
 export class AppComponent {
     fieldList: object;
     query: any;
-    datamanager: any;
+    dataManager: any;
     constructor() {
-        this.datamanager = ej.DataManager({
+        this.dataManager = ej.DataManager({
             //OData service
             url: "http://mvc.syncfusion.com/Services/Northwnd.svc/"
         });
@@ -122,7 +121,7 @@ export class AppComponent {
 {% highlight html %}
 
     <div id="control">
-        <ej-listbox [dataSource]="datamanager" [fields]="fieldList"></ej-listbox>
+        <ej-listbox [dataSource]="dataManager" [fields]="fieldList"></ej-listbox>
     </div>   
 
 {% endhighlight %}
@@ -131,9 +130,9 @@ export class AppComponent {
 
  export class AppComponent {
     fieldList: object;
-    datamanager: any;
+    dataManager: any;
     constructor() {
-        this.datamanager = ej.DataManager({
+        this.dataManager = ej.DataManager({
             url: "http://mvc.syncfusion.com/UGService/api/Orders",
             crossDomain: true
         });
@@ -158,7 +157,7 @@ N> _In the above data manager configuration, “crossDomain” must be set to tr
 {% highlight javascript %}
 
     <div id="control">
-         <ej-listbox [dataSource]="datamanager" [fields]="fieldList" [query]="query" (actionFailure)="actionfailure($event)"></ej-listbox>   
+         <ej-listbox [dataSource]="dataManager" [fields]="fieldList" [query]="query" (actionFailure)="actionFailure($event)"></ej-listbox>   
     </div>
 
 {% endhighlight %}
@@ -167,17 +166,17 @@ N> _In the above data manager configuration, “crossDomain” must be set to tr
 
 export class AppComponent {
     fieldList: object;
-    datamanager: any;
+    dataManager: any;
     query: any;
     constructor() {
-        this.datamanager = ej.DataManager({
+        this.dataManager = ej.DataManager({
             url: "http://mvc.syncfusion.com/Services/Northwnd.svc/",
             crossDomain: true
         });
         this.query = ej.Query().from("Customers");
         this.fieldList = { text: "CustomerID" };       
     }
-    actionfailure(event) {
+    actionFailure(event) {
          //handle errors
     }
 }

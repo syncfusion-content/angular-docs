@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Appearance-and-Styling
+title: Syncfusion ListBox Appearance-and-Styling
 description: appearance and styling
 platform: Angular
 control: ListBox
@@ -81,7 +81,7 @@ import {FormsModule} from '@angular/forms';
 import {BrowserModule} from '@angular/platform-browser';
 
 @Component({
-  selector: 'sd-home',
+  selector: 'home',
   templateUrl: 'app/app.component.html',
   encapsulation: ViewEncapsulation.None,
 })
@@ -91,18 +91,17 @@ export class AppComponent {
     value:string;
     constructor() {
     this.data=[
-        { empid: "cr1", text: "Dodge Avenger", value: "Dodge Avenger" },
-        { empid: "cr2", text: "Chrysler 200", value: "Chrysler 200" },
-        { empid: "cr3", text: "Ford Focus", value: "Ford Focus" },
-        { empid: "cr4", text: "Ford Taurus", value: "Ford Taurus" },
-        { empid: "cr5", text: "Dazzler", value: "Dazzler" },
-        { empid: "cr6", text: "Chevy Spark", value: "Chevy Spark" },
-        { empid: "cr7", text: "Chevy Volt", value: "Chevy Volt" },
-        { empid: "cr8", text: "Honda Fit", value: "Honda Fit" },
-        { empid: "cr9", text: "Honda Crosstour", value: "Honda Crosstour" },
-        { empid: "cr10", text: "Acura RL", value: "Acura RL" },
-        { empid: "cr11", text: "Hyundai Elantra", value: "Hyundai Elantra" },
-        { empid: "cr12", text: "Mazda3", value: "Mazda3" }
+        { employeeId: "cr1", text: "Dodge Avenger", value: "Dodge Avenger" },
+        { employeeId: "cr2", text: "Chrysler 200", value: "Chrysler 200" },
+        { employeeId: "cr3", text: "Ford Focus", value: "Ford Focus" },
+        { employeeId: "cr4", text: "Ford Taurus", value: "Ford Taurus" },
+        { employeeId: "cr5", text: "Dazzler", value: "Dazzler" },
+        { employeeId: "cr6", text: "Chevy Spark", value: "Chevy Spark" },
+        { employeeId: "cr7", text: "Chevy Volt", value: "Chevy Volt" },
+        { employeeId: "cr8", text: "Honda Fit", value: "Honda Fit" },
+        { employeeId: "cr9", text: "Honda Cross tour", value: "Honda Cross tour" },
+        { employeeId: "cr10", text: "Hyundai Elantra", value: "Hyundai Elantra" },
+        { employeeId: "cr11", text: "Mazda3", value: "Mazda3" }
     ];
     this.fieldList={dataSource:this.data,text:"text",value:"value"};
     }
@@ -110,13 +109,13 @@ export class AppComponent {
 
 {% endhighlight %}
 
-![](Appearance-and-Styling_images/Appearance-and-Styling_img1.png)
+![Appearance and Styling](Appearance-and-Styling_images/Appearance-and-Styling_img1.png)
 
 ## Css Class
 
 **ListBox** control also allows you to customize its appearance using user-defined CSS and custom skin options such as colors and backgrounds. To apply custom themes you have a property called **cssClass**. **cssClass** property sets the root class for **ListBox** theme.
 
-Using this **cssClass** you can override the existing styles under the theme style sheet. The theme style sheet applies theme-specific styles like colors and backgrounds. In the following example, the value of **cssClass** property is set as “**customclass**”. **customclass** is added as root class to **ListBox** control at the runtime. From this root class you can customize the **ListBox** control theme.
+Using this **cssClass** you can override the existing styles under the theme style sheet. The theme style sheet applies theme-specific styles like colors and backgrounds. In the following example, the value of **cssClass** property is set as **customClass**. **customClass** is added as root class to **ListBox** control at the runtime. From this root class you can customize the **ListBox** control theme.
 
 Add the following code in your **HTML** page to render the ListBox.
 
@@ -149,7 +148,7 @@ Create input element and add in the body tag as below.
 
  <div><b>Select a car</b></div>
 
- <ej-listbox [dataSource]="data" [fields]="fieldList" [cssClass]="cssclass"> </ej-listbox>
+ <ej-listbox [dataSource]="data" [fields]="fieldList" [cssClass]="cssClass"> </ej-listbox>
 
 {% endhighlight %}
 
@@ -162,7 +161,7 @@ import {FormsModule} from '@angular/forms';
 import {BrowserModule} from '@angular/platform-browser';
 
 @Component({
-  selector: 'sd-home',
+  selector: 'home',
   templateUrl: 'app/app.component.html',
   encapsulation: ViewEncapsulation.None,
 })
@@ -170,42 +169,41 @@ export class AppComponent {
     data:array;
     fieldList:object;
     value:string;
-    cssclass: string;
+    cssClass: string;
     constructor() {
     this.data=[
-        { empid: "cr1", text: "Dodge Avenger", value: "Dodge Avenger" },
-        { empid: "cr2", text: "Chrysler 200", value: "Chrysler 200" },
-        { empid: "cr3", text: "Ford Focus", value: "Ford Focus" },
-        { empid: "cr4", text: "Ford Taurus", value: "Ford Taurus" },
-        { empid: "cr5", text: "Dazzler", value: "Dazzler" },
-        { empid: "cr6", text: "Chevy Spark", value: "Chevy Spark" },
-        { empid: "cr7", text: "Chevy Volt", value: "Chevy Volt" },
-        { empid: "cr8", text: "Honda Fit", value: "Honda Fit" },
-        { empid: "cr9", text: "Honda Crosstour", value: "Honda Crosstour" },
-        { empid: "cr10", text: "Acura RL", value: "Acura RL" },
-        { empid: "cr11", text: "Hyundai Elantra", value: "Hyundai Elantra" },
-        { empid: "cr12", text: "Mazda3", value: "Mazda3" }
+        { employeeId: "cr1", text: "Dodge Avenger", value: "Dodge Avenger" },
+        { employeeId: "cr2", text: "Chrysler 200", value: "Chrysler 200" },
+        { employeeId: "cr3", text: "Ford Focus", value: "Ford Focus" },
+        { employeeId: "cr4", text: "Ford Taurus", value: "Ford Taurus" },
+        { employeeId: "cr5", text: "Dazzler", value: "Dazzler" },
+        { employeeId: "cr6", text: "Chevy Spark", value: "Chevy Spark" },
+        { employeeId: "cr7", text: "Chevy Volt", value: "Chevy Volt" },
+        { employeeId: "cr8", text: "Honda Fit", value: "Honda Fit" },
+        { employeeId: "cr9", text: "Honda Cross tour", value: "Honda Cross tour" },
+        { employeeId: "cr10", text: "Hyundai Elantra", value: "Hyundai Elantra" },
+        { employeeId: "cr11", text: "Mazda3", value: "Mazda3" }
     ];
     this.fieldList={dataSource:this.data,text:"text",value:"value"};
-    this.cssclass = "customclass";
+    this.cssClass = "customClass";
     }
 }
 
 {% endhighlight %}
 
-In the following style sheet the existing theme style sheet file has been over-ridden using root class “**customclass**”. 
+In the following style sheet the existing theme style sheet file has been over-ridden using root class **customClass**. 
 
 Add the following code in your style section.
 
 {% highlight css %}
 
 <style>
-    .customclass .e-listbox .e-select {
+    .customClass .e-listbox .e-select {
         background: #FF1975;
     }
 </style>
 
 {% endhighlight %}
 
-![](Appearance-and-Styling_images/Appearance-and-Styling_img2.png)
+![Appearance](Appearance-and-Styling_images/Appearance-and-Styling_img2.png)
 

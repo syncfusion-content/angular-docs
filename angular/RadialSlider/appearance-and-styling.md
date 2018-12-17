@@ -1,6 +1,6 @@
 ---
 layout: post
-title: appearance-and-styling
+title: Syncfusion Radial slider appearance-and-styling
 description: appearance and styling
 platform: Angular
 control: Radial Slider
@@ -55,13 +55,13 @@ By default, there are 17 theme support available for RadialSlider component, nam
 
 **RadialSlider** component also allows you to customize its appearance using user-defined CSS. To apply custom themes you can use **cssClass** property, which sets the root class for RadialSlider theme.
 
-Using this cssClass you can override the existing styles under the theme style sheet. In the following example, the value of cssclass property is set as “purple-dark”. purple-dark is added as root class to RadialSlider component at the runtime. From this root class, you can customize the RadialSlider appearance.
+Using this cssClass you can override the existing styles under the theme style sheet. In the following example, the value of cssClass property is set as “purple-dark”. purple-dark is added as root class to RadialSlider component at the runtime. From this root class, you can customize the RadialSlider appearance.
 
 Add the following code in your HTML page to render the RadialSlider.
 
 {% highlight html %}
 
-    <ej-radialslider [radius]="radius" [innerCircleImageUrl]="imageurl" [cssClass]="cssclass">
+    <ej-radialslider [radius]="radius" [innerCircleImageUrl]="imageUrl" [cssClass]="cssClass">
     </ej-radialslider>
 
 {% endhighlight %}
@@ -80,12 +80,12 @@ Add the following code in constructor file.
     })
     export class AppComponent {
         radius: number;
-        imageurl:any;
-    cssclass:any;
+        imageUrl:any;
+    cssClass:any;
         constructor() {
             this.radius = 100;
-        this.imageurl= "http://js.syncfusion.com/demos/web/content/images/radialslider/chevron-right.png";
-        this.cssclass= "purple-dark";
+        this.imageUrl= "http://js.syncfusion.com/demos/web/content/images/radialslider/chevron-right.png";
+        this.cssClass= "purple-dark";
         }
     }
 
@@ -94,6 +94,6 @@ Add the following code in constructor file.
 
 The following screenshot illustrates the output of the above code.
 
-![https://help.syncfusion.com/js/radialslider/Appearance-and-Styling_images/Appearance-and-Styling_images_img1.png](Appearance-and-Styling_images\cssclass_img1.png)
+![Appearance and Styling](Appearance-and-Styling_images\cssClass_img1.png)
 
 
