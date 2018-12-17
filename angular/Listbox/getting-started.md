@@ -105,7 +105,7 @@ export class AppComponent {
 Run the above code to render the following output. 
 
 
-![Getting Started](Getting_Started_images\createanlistboxwidgetinAngular_img1.png)
+![Getting Started](Getting_Started_images\createanlistboxwidgetinangular2_img1.png)
 
 
 ## Model binding
