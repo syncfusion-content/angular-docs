@@ -1,6 +1,6 @@
 ---
 layout: post
-title: How To
+title: Syncfusion Splitter How To section
 description: How To
 platform: Angular
 control: Splitter
@@ -18,7 +18,7 @@ In the HTML page set the corresponding **&lt;div&gt;** element for rendering Spl
 
 {% highlight html %}
 
-    <ej-splitter  id="splitter" [properties]="proper" height="280" e-width="600" [cssclass]="cssclass">
+    <ej-splitter  id="splitter" [properties]="proper" height="280" e-width="600" [cssClass]="cssClass">
         <div>
             <div style="padding: 0px 15px;">
                 <h3 class="h3">Tools </h3>
@@ -41,23 +41,23 @@ Define **“cssClass”** in constructor file.
 
     export class AppComponent {
         proper:any;
-        cssclass:any;   
+        cssClass:any;   
         constructor() {
             this.proper =[{ paneSize: "50%" }, {}];
-        this.cssclass ="customclass";
+        this.cssClass ="customClass";
         }
     }
     
 {% endhighlight %}
 
-Customize the **SplitBar** by setting **CSS** properties using CSSClass.
+Customize the **SplitBar** by setting **CSS** properties using cssClass.
 
 {% highlight css %}
 
-    .customclass.e-splitter .e-splitbar.e-h-bar {
+    .customClass.e-splitter .e-splitbar.e-h-bar {
         width: 16px;
     }
-    .customclass.e-splitter .e-splitbar > .e-icon:before {
+    .customClass.e-splitter .e-splitbar > .e-icon:before {
         font-size: 18px;
     }
 
@@ -65,7 +65,7 @@ Customize the **SplitBar** by setting **CSS** properties using CSSClass.
 
 The output for **Splitter** after customizing the CSS class.
 
-![](How To_images\HowTo_img1.png) 
+![Modified split bar](How To_images\HowTo_img1.png) 
 
 ## Make Splitter with other components Responsive?
 
@@ -115,8 +115,8 @@ Define **“isResponsive”** and **“properties”** in constructor file.
 
 The output for **Splitter** with **innerSplitter at initial rendering** as given below:
 
-![](How To_images\HowTo_img2.png) 
+![Splitter with responsive](How To_images\HowTo_img2.png) 
 
 After resizing the splitter, output of innerSplitter as follows.
 
-![](How To_images\HowTo_img3.png) 
+![Responsive](How To_images\HowTo_img3.png) 

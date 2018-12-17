@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Getting-Started
+title: Syncfusion Radial Menu Getting-Started
 description: getting started
 platform: Angular
 control: RadialMenu
@@ -11,7 +11,7 @@ documentation: ug
 
 This section helps to get started of the RadialMenu component in an Angular application.
 
-![](Getting_Started_images/getting-started_img1.png)
+![Getting Started](Getting_Started_images/getting-started_img1.png)
 
 ## Create a RadialMenu
 
@@ -23,7 +23,7 @@ Create a simple RadialMenu by adding [`ej-radialmenu`] attribute for initializin
 
 {% highlight html %}
 
-    <ej-radialmenu id="defaultradialmenu"  backImageClass= "backimageclass" targetElementId= "radialtarget1">
+    <ej-radialmenu id="defaultRadialMenu"  backImageClass= "backimageclass" targetElementId= "radialtarget1">
     </ej-radialmenu>
 
 
@@ -45,7 +45,7 @@ Refer to the following code example. Initialize Radial Menu component with items
 
 {% highlight html %}
 
-    <ej-radialmenu id="defaultradialmenu"  backImageClass= "backimageclass" targetElementId= "radialtarget1">
+    <ej-radialmenu id="defaultRadialMenu"  backImageClass= "backimageclass" targetElementId= "radialtarget1">
     <e-items>
         <e-item imageUrl="app/content/images/RadialMenu/font.png" text="Bold" ></e-item>
         <e-item imageUrl="app/content/images/RadialMenu/f1.png" text="Italic" ></e-item>
@@ -75,7 +75,7 @@ Define the RTE content in component constructor’s file.
     export class AppComponent {
     content: string;
     constructor() {
-        this.content = "Model–view–controller (MVC) is a software architecture pattern which separates the representation of information from the user's interaction with it. The model consists of application data, business rules, logic, and functions. A view can be any output representation of data, such as a chart or a diagram. Multiple views of the same data are possible, such as a bar chart for management and a tabular view for accountants. The controller mediates input, converting it to commands for the model or view.The central ideas behind MVC are code reusability and in addition to dividing the application into three kinds of components, the MVC design defines the interactions between them.
+        this.content = "Model–view–controller (MVC) is a software architecture pattern which separates the representation of information from the user's interaction with it. The model consists of application data, business rules, logic, and functions. A view can be any output representation of data, such as a chart or a diagram. Multiple views of the same data are possible, such as a bar chart for management and a tabular view for accountants. The controller mediates input, converting it to commands for the model or view.The central ideas behind MVC are code reusable and in addition to dividing the application into three kinds of components, the MVC design defines the interactions between them.
     A controller can send commands to its associated view to change the view's presentation of the model (e.g., by scrolling through a document). It can also send commands to the model to update the model's state (e.g., editing a document).
     A model notifies its associated views and controllers when there has been a change in its state. This notification allows the views to produce updated output, and the controllers to change the available set of commands. A passive implementation of MVC omits these notifications, because the application does not require them or the software platform does not support them.
     A view requests from the model the information that it needs to generate an output representation to the user.";
@@ -97,7 +97,7 @@ You can display the Radial Menu by performing desired action on the target conte
         // To set Radial Menu position within target
         x = iframeX > target.width() - radialRadius ? target.width() - radialDiameter : (iframeX > radialRadius ? iframeX - radialRadius : 0),
         y = (iframeY > target.height() - radialRadius ? target.height() - radialDiameter : (iframeY > radialRadius ? iframeY - radialRadius : 0)) + radialRadius;
-        $('#defaultradialmenu').ejRadialMenu("setPosition", x, y);
+        $('#defaultRadialMenu').ejRadialMenu("setPosition", x, y);
         $('iframe').contents().find('body').blur();
     }
 
@@ -106,7 +106,7 @@ You can display the Radial Menu by performing desired action on the target conte
 
 Run the above code and select any text inside the target. The settings icon is displayed. Click that icon to render the following output.
 
-![](Getting_Started_images\getting-started_img2.png)
+![Displaying Radial Menu](Getting_Started_images\getting-started_img2.png)
 
 ## RadialMenu item functionalities
 
@@ -114,7 +114,7 @@ You can set the functionalities for each item and define click event by using **
 
 {% highlight html %}
 
-    <ej-radialmenu id="defaultradialmenu"  backImageClass= "backimageclass" targetElementId= "radialtarget1" (click)="onItemClick($event)">
+    <ej-radialmenu id="defaultRadialMenu"  backImageClass= "backimageclass" targetElementId= "radialtarget1" (click)="onItemClick($event)">
         <e-items>
             <e-item imageUrl="app/content/images/RadialMenu/font.png" text="Bold" ></e-item>
             <e-item imageUrl="app/content/images/RadialMenu/f1.png" text="Italic" ></e-item>
@@ -133,7 +133,7 @@ Refer to the following code example to add functionalities for each items in eve
 {% highlight ts %}
 
     onChange(event) {
-        $('#defaultradialmenu').ejRadialMenu("enableItem", "Undo");
+        $('#defaultRadialMenu').ejRadialMenu("enableItem", "Undo");
     }
     onItemClick(e) {
         var rteObj = $("#rteSample1").data("ejRTE");
@@ -157,7 +157,7 @@ Refer to the following code example to add functionalities for each items in eve
 
 Run the above code and select any text inside the target. The settings icon is displayed. Click that icon to render the RadialMenu component. Click **bold** item in RadialMenu component, to render the following output.
 
-![](Getting_Started_images\Getting_Started_img3.png)
+![Radial Menu item functionalities](Getting_Started_images\Getting_Started_img3.png)
 
 
 

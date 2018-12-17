@@ -1,6 +1,6 @@
 ---
 layout: post
-title: data fields and configuration
+title: Syncfusion Rotator data fields and configuration
 description: data fields and configuration
 platform: Angular
 control: rotator
@@ -75,7 +75,7 @@ Rotator provides the data binding support for the Rotator item. So you can bi
         this.data = [
           { text: "Green", url: " http://js.syncfusion.com/demos/web/content/images/rotator/green.jpg" },
           { text: "Snowfall", url: " http://js.syncfusion.com/demos/web/content/images/rotator/snowfall.jpg" },
-          { text: "Beatutiful Bird", url: " http://js.syncfusion.com/demos/web/content/images/rotator/bird.jpg" },
+          { text: "Beautiful Bird", url: " http://js.syncfusion.com/demos/web/content/images/rotator/bird.jpg" },
           { text: "Tablet", url: " http://js.syncfusion.com/demos/web/content/images/rotator/tablet.jpg" },
           { text: "Nature", url: " http://js.syncfusion.com/demos/web/content/images/rotator/nature.jpg" }
 
@@ -89,5 +89,5 @@ Rotator provides the data binding support for the Rotator item. So you can bi
 
 
 
-![](data fields and configuration_images\localdatabinding_img1.png)
+![Data fields](data fields and configuration_images\localdatabinding_img1.png)
 

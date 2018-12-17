@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Globalization and Localization
+title:  Syncfusion Kanban Globalization and Localization
 description: Globalization and Localization
 documentation: ug
 platform: Angular
@@ -233,7 +233,7 @@ export class DefaultComponent {
 
 The following output is displayed as a result of the above code example.
 
-![](Localization_images/localization_img1.png)
+![Localization](Localization_images/localization_img1.png)
 
 ## Right to Left (RTL)
 
@@ -290,6 +290,6 @@ import {Component} from '@angular/core';
 
 The following output is displayed as a result of the above code example.
 
-![](Localization_images/localization_img2.png)
+![Right to Left](Localization_images/localization_img2.png)
 
 

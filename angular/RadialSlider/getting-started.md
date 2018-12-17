@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Getting-Started
+title: Syncfusion Radial Slider Getting-Started
 description: Getting Started
 platform: Angular
 control: RadialSlider
@@ -41,7 +41,7 @@ Define the radius in the component’s constructor file. Refer to the below ment
 
 To get the following output from the above-mentioned code.
 
-![](getting-started-images\getting-started-img.png)
+![Getting Started](getting-started-images\getting-started-img.png)
 
 
 N> You can find the Radial Slider component properties from the [API reference](https://help.syncfusion.com/api/js/ejradialslider)              

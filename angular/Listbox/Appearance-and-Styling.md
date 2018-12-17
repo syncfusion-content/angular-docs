@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Appearance-and-Styling
+title: Syncfusion ListBox Appearance-and-Styling
 description: appearance and styling
 platform: Angular
 control: ListBox
@@ -81,7 +81,7 @@ import {FormsModule} from '@angular/forms';
 import {BrowserModule} from '@angular/platform-browser';
 
 @Component({
-  selector: 'sd-home',
+  selector: 'home',
   templateUrl: 'app/app.component.html',
   encapsulation: ViewEncapsulation.None,
 })
@@ -91,18 +91,17 @@ export class AppComponent {
     value:string;
     constructor() {
     this.data=[
-        { empid: "cr1", text: "Dodge Avenger", value: "Dodge Avenger" },
-        { empid: "cr2", text: "Chrysler 200", value: "Chrysler 200" },
-        { empid: "cr3", text: "Ford Focus", value: "Ford Focus" },
-        { empid: "cr4", text: "Ford Taurus", value: "Ford Taurus" },
-        { empid: "cr5", text: "Dazzler", value: "Dazzler" },
-        { empid: "cr6", text: "Chevy Spark", value: "Chevy Spark" },
-        { empid: "cr7", text: "Chevy Volt", value: "Chevy Volt" },
-        { empid: "cr8", text: "Honda Fit", value: "Honda Fit" },
-        { empid: "cr9", text: "Honda Crosstour", value: "Honda Crosstour" },
-        { empid: "cr10", text: "Acura RL", value: "Acura RL" },
-        { empid: "cr11", text: "Hyundai Elantra", value: "Hyundai Elantra" },
-        { empid: "cr12", text: "Mazda3", value: "Mazda3" }
+        { empId: "cr1", text: "Dodge Avenger", value: "Dodge Avenger" },
+        { empId: "cr2", text: "Chrysler 200", value: "Chrysler 200" },
+        { empId: "cr3", text: "Ford Focus", value: "Ford Focus" },
+        { empId: "cr4", text: "Ford Taurus", value: "Ford Taurus" },
+        { empId: "cr5", text: "Dazzler", value: "Dazzler" },
+        { empId: "cr6", text: "Chevy Spark", value: "Chevy Spark" },
+        { empId: "cr7", text: "Chevy Volt", value: "Chevy Volt" },
+        { empId: "cr8", text: "Honda Fit", value: "Honda Fit" },
+        { empId: "cr9", text: "Honda Cross tour", value: "Honda Cross tour" },
+        { empId: "cr10", text: "Hyundai Elantra", value: "Hyundai Elantra" },
+        { empId: "cr11", text: "Mazda3", value: "Mazda3" }
     ];
     this.fieldList={dataSource:this.data,text:"text",value:"value"};
     }
@@ -110,7 +109,7 @@ export class AppComponent {
 
 {% endhighlight %}
 
-![](Appearance-and-Styling_images/Appearance-and-Styling_img1.png)
+![Appearance and Styling](Appearance-and-Styling_images/Appearance-and-Styling_img1.png)
 
 ## Css Class
 
@@ -149,7 +148,7 @@ Create input element and add in the body tag as below.
 
  <div><b>Select a car</b></div>
 
- <ej-listbox [dataSource]="data" [fields]="fieldList" [cssClass]="cssclass"> </ej-listbox>
+ <ej-listbox [dataSource]="data" [fields]="fieldList" [cssClass]="cssClass"> </ej-listbox>
 
 {% endhighlight %}
 
@@ -162,7 +161,7 @@ import {FormsModule} from '@angular/forms';
 import {BrowserModule} from '@angular/platform-browser';
 
 @Component({
-  selector: 'sd-home',
+  selector: 'home',
   templateUrl: 'app/app.component.html',
   encapsulation: ViewEncapsulation.None,
 })
@@ -170,24 +169,23 @@ export class AppComponent {
     data:array;
     fieldList:object;
     value:string;
-    cssclass: string;
+    cssClass: string;
     constructor() {
     this.data=[
-        { empid: "cr1", text: "Dodge Avenger", value: "Dodge Avenger" },
-        { empid: "cr2", text: "Chrysler 200", value: "Chrysler 200" },
-        { empid: "cr3", text: "Ford Focus", value: "Ford Focus" },
-        { empid: "cr4", text: "Ford Taurus", value: "Ford Taurus" },
-        { empid: "cr5", text: "Dazzler", value: "Dazzler" },
-        { empid: "cr6", text: "Chevy Spark", value: "Chevy Spark" },
-        { empid: "cr7", text: "Chevy Volt", value: "Chevy Volt" },
-        { empid: "cr8", text: "Honda Fit", value: "Honda Fit" },
-        { empid: "cr9", text: "Honda Crosstour", value: "Honda Crosstour" },
-        { empid: "cr10", text: "Acura RL", value: "Acura RL" },
-        { empid: "cr11", text: "Hyundai Elantra", value: "Hyundai Elantra" },
-        { empid: "cr12", text: "Mazda3", value: "Mazda3" }
+        { empId: "cr1", text: "Dodge Avenger", value: "Dodge Avenger" },
+        { empId: "cr2", text: "Chrysler 200", value: "Chrysler 200" },
+        { empId: "cr3", text: "Ford Focus", value: "Ford Focus" },
+        { empId: "cr4", text: "Ford Taurus", value: "Ford Taurus" },
+        { empId: "cr5", text: "Dazzler", value: "Dazzler" },
+        { empId: "cr6", text: "Chevy Spark", value: "Chevy Spark" },
+        { empId: "cr7", text: "Chevy Volt", value: "Chevy Volt" },
+        { empId: "cr8", text: "Honda Fit", value: "Honda Fit" },
+        { empId: "cr9", text: "Honda Cross tour", value: "Honda Cross tour" },
+        { empId: "cr10", text: "Hyundai Elantra", value: "Hyundai Elantra" },
+        { empId: "cr11", text: "Mazda3", value: "Mazda3" }
     ];
     this.fieldList={dataSource:this.data,text:"text",value:"value"};
-    this.cssclass = "customclass";
+    this.cssClass = "customClass";
     }
 }
 
@@ -200,12 +198,12 @@ Add the following code in your style section.
 {% highlight css %}
 
 <style>
-    .customclass .e-listbox .e-select {
+    .customClass .e-listbox .e-select {
         background: #FF1975;
     }
 </style>
 
 {% endhighlight %}
 
-![](Appearance-and-Styling_images/Appearance-and-Styling_img2.png)
+![Appearance](Appearance-and-Styling_images/Appearance-and-Styling_img2.png)
 

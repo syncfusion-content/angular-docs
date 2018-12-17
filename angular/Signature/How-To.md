@@ -1,6 +1,6 @@
 ---
 layout: post
-title: How To
+title: Syncfusion Signature How To section
 description: How To
 platform: Angular
 control: Signature
@@ -16,7 +16,7 @@ By default the downloaded image from the signature canvas will be of **png** for
 The following code example is used to download drawn image on the Signature component.
 
 {% highlight html %}
-<ej-signature id="mysign" [backgroundImage]="image" [saveWithBackground]="true" [saveImageFormat]="format" > </ej-signature>
+<ej-signature id="mySignature" [backgroundImage]="image" [saveWithBackground]="true" [saveImageFormat]="format" > </ej-signature>
 
 <input id="btnOpen" style="height: 30px" type="button" class="ejinputtext" value="Save" (click)="onClick($event)"/>
 
@@ -37,8 +37,8 @@ export class SignatureComponent {
      this.format="jpeg";
     }
 onClick(event) {
-    let obj = $('#mysign').ejSignature('instance');
-    obj.save("mysignature");
+    let obj = $('#mySignature').ejSignature('instance');
+    obj.save("mySignature");
   }
  }
 
@@ -47,7 +47,7 @@ onClick(event) {
 
 The following screenshot illustrates the Signature with saving (downloading) the drawn image.
 
-![https://help.syncfusion.com/js/signature/How_To_images/savesignatureimagewithuserdefinedformat_img1.png](How_To_images\savesignatureimagewithuserdefinedformat_img1.png)
+![Save Signature Image with user defined format](How_To_images\savesignatureimagewithuserdefinedformat_img1.png)
 
 
 ### To clear the Signature
@@ -55,7 +55,7 @@ The following screenshot illustrates the Signature with saving (downloading) the
 To clear the signature, you can simply use the **clear()** method. This method will clear all the drawn strokes in the signature canvas and leaves it empty.
 
 {% highlight html %}
-<ej-signature id="mysign" [height]="height" > </ej-signature>
+<ej-signature id="mySignature" [height]="height" > </ej-signature>
 
 <input id="btnOpen" style="height: 30px" type="button" class="ejinputtext" value="Save" (click)="onClick($event)"/>
 
@@ -72,7 +72,7 @@ export class SignatureComponent {
       this.height = 300;
     }
 onClick(event) {
-    let obj = $('#mysign').ejSignature('instance');
+    let obj = $('#mySignature').ejSignature('instance');
     obj.clear();
   }
  }
@@ -87,7 +87,7 @@ The following code example is used to render the Signature component with respon
 
 {% highlight html %}
 
-<ej-signature id="mysign" [isResponsive ]="true" > </ej-signature>
+<ej-signature id="mySignature" [isResponsive ]="true" > </ej-signature>
 
 
 {% endhighlight %}
@@ -97,11 +97,11 @@ The following screenshot illustrates the Signature with responsiveness.
 
 Before Responsiveness:
 
-![https://help.syncfusion.com/js/signature/How_To_images/makesignatureasresponsive_img1.png](How_To_images\makesignatureasresponsive_img1.png)
+![Make Signature before responsive](How_To_images\makesignatureasresponsive_img1.png)
 
 After giving the Responsiveness:
 
-![https://help.syncfusion.com/js/signature/How_To_images/makesignatureasresponsive_img2.png](How_To_images\makesignatureasresponsive_img2.png)
+![Make Signature after responsive](How_To_images\makesignatureasresponsive_img2.png)
 
 
 ### To check whether any input to the signature control since render

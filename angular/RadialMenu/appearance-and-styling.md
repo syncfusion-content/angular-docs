@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Appearance and Styling 
+title: Syncfusion Radial Menu Appearance and Styling 
 description: appearance and styling
 platform: Angular
 control: RadialMenu
@@ -30,7 +30,7 @@ By default, the following themes support available for **RadialMenu** component 
 * gradient-saffron
 * gradient-saffron-dark
 * bootstrap-theme
-* Office 365
+* office-365
 * material theme
 * high contrast 01
 * high contrast 02
@@ -69,7 +69,7 @@ Add the following styles in your code.
 
     <style type="text/css">
 
-        /* Customize the radialmenu */
+        /* Customize the radialMenu */
 
       .e-radialmenu .e-default, .e-radialmenu .e-outerdefault.customCss 
 
@@ -83,6 +83,6 @@ Add the following styles in your code.
 
 Output of RadialMenu configured based on CSS class is as follow,
 
-![](apperance-and-styling-images\appearance-and-styling_img1.png)
+![Appearance and Styling](apperance-and-styling-images\appearance-and-styling_img1.png)
 
 

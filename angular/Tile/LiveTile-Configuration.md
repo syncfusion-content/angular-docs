@@ -1,6 +1,6 @@
 ---
 layout: post
-title: LiveTile-Configuration
+title: Syncfusion LiveTile-Configuration
 description: livetile configuration
 platform: Angular
 control: Tile
@@ -9,7 +9,7 @@ documentation: ug
 
 # LiveTile Configuration
 
-Live Tiles are used to display the current or up to date information like scores, stocks, weather, etc. You can enable Live Tile using livetile-enabled property set as true. The [`livetile-type`] property allows you to specify the type of animation while updating the information in Tile. 
+Live Tiles are used to display the current or up to date information like scores, stocks, weather, etc. You can enable Live Tile using [`livetile-enabled`] property set as true. The [`livetile-type`] property allows you to specify the type of animation while updating the information in Tile. 
 
 There are three types of Tile animation supported: Flip, Slide and Carousel.
 
@@ -91,4 +91,4 @@ export class AppComponent {
 
 {% endhighlight %}
 
-![](LiveTile_images/livetile_image.png)
+![Live tile configuration](LiveTile_images/livetile_image.png)

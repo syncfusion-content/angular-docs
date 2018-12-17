@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Caption-settings
+title: Syncfusion Tile Caption-settings
 description: Caption-settings
 platform: Angular
 control: Tile
@@ -41,4 +41,4 @@ export class AppComponent {
 
 {% endhighlight %}
 
-![](Functionality_images/Text-Configuration_img1.png)
+![Caption Configuration](Functionality_images/Text-Configuration_img1.png)

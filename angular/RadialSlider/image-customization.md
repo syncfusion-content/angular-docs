@@ -1,6 +1,6 @@
 ---
 layout: post
-title: image-customization
+title: Syncfusion Radial Slider image-customization
 description: image customization
 platform: Angular
 control: Radial Slider
@@ -20,7 +20,7 @@ Add the following code in your HTML page to render the RadialSlider.
 
 {% highlight html %}
 
-    <ej-radialslider innerCircleImageUrl="http://js.syncfusion.com/demos/web/content/images/radialslider/chevron-right.png" [radius]="radius" [innerCircleImageClass]="imageclass">
+    <ej-radialslider innerCircleImageUrl="http://js.syncfusion.com/demos/web/content/images/radialslider/chevron-right.png" [radius]="radius" [innerCircleImageClass]="imageClass">
     </ej-radialslider>
 
 {% endhighlight %}
@@ -31,14 +31,14 @@ Add the following code in constructor file.
 
 
     @Component({
-    styles: ['.myclass{ background-image : url("http://js.syncfusion.com/UG/Mobile/Content/sent.png");}']
+    styles: ['.myClass{ background-image : url("http://js.syncfusion.com/UG/Mobile/Content/sent.png");}']
     })
     export class AppComponent {
         radius: number;
-        imageclass:any;
+        imageClass:any;
         constructor() {
             this.radius = 100;
-            this.imageclass="myclass";
+            this.imageClass="myClass";
         }
     }
 
@@ -46,7 +46,7 @@ Add the following code in constructor file.
 
 The following screenshot illustrates the output of above code.
 
-![](Image_customization_images\usingclass_img1.png)
+![Customization Images](Image_customization_images\usingclass_img1.png)
 
 ### Using image URL
 
@@ -59,7 +59,7 @@ Add the following code in your HTML page to render the **RadialSlider**.
 
 {% highlight html %}
 
-    <ej-radialslider [radius]="radius" [innerCircleImageUrl]="imageurl">
+    <ej-radialslider [radius]="radius" [innerCircleImageUrl]="imageUrl">
 
     </ej-radialslider>
 
@@ -71,10 +71,10 @@ Add the following code in constructor file.
 
     export class AppComponent {
         radius: number;
-        imageurl:any;
+        imageUrl:any;
         constructor() {
             this.radius = 100;
-            this.imageurl= "http://js.syncfusion.com/demos/web/content/images/radialslider/chevron-right.png";
+            this.imageUrl= "http://js.syncfusion.com/demos/web/content/images/radialslider/chevron-right.png";
         }
     }
 
@@ -82,5 +82,5 @@ Add the following code in constructor file.
 
 The following screenshot illustrates the output of above code.
 
-![https://help.syncfusion.com/js/radialslider/image-customization_images/image-customization_img2.png](Image_customization_images\usingimageurl_img1.png)
+![Customization Image using url](Image_customization_images\usingimageurl_img1.png)
 

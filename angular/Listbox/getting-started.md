@@ -1,6 +1,6 @@
 ---
 layout: post
-title: getting started
+title: Syncfusion Listbox getting started
 description: getting started
 platform: Angular
 control: ListBox
@@ -69,7 +69,7 @@ import {FormsModule} from '@angular/forms';
 import {BrowserModule} from '@angular/platform-browser';
 
 @Component({
-  selector: 'sd-home',
+  selector: 'home',
   templateUrl: 'app/app.component.html',
  styles: [
      ".e-listbox.e-ul li { height: 25px; padding-top: 6px;  }"
@@ -82,18 +82,17 @@ export class AppComponent {
     value:string;
     constructor() {
     this.data=[
-        { empid: "cr1", text: "Dodge Avenger", value: "Dodge Avenger" },
-        { empid: "cr2", text: "Chrysler 200", value: "Chrysler 200" },
-        { empid: "cr3", text: "Ford Focus", value: "Ford Focus" },
-        { empid: "cr4", text: "Ford Taurus", value: "Ford Taurus" },
-        { empid: "cr5", text: "Dazzler", value: "Dazzler" },
-        { empid: "cr6", text: "Chevy Spark", value: "Chevy Spark" },
-        { empid: "cr7", text: "Chevy Volt", value: "Chevy Volt" },
-        { empid: "cr8", text: "Honda Fit", value: "Honda Fit" },
-        { empid: "cr9", text: "Honda Crosstour", value: "Honda Crosstour" },
-        { empid: "cr10", text: "Acura RL", value: "Acura RL" },
-        { empid: "cr11", text: "Hyundai Elantra", value: "Hyundai Elantra" },
-        { empid: "cr12", text: "Mazda3", value: "Mazda3" }
+        { employeeId: "cr1", text: "Dodge Avenger", value: "Dodge Avenger" },
+        { employeeId: "cr2", text: "Chrysler 200", value: "Chrysler 200" },
+        { employeeId: "cr3", text: "Ford Focus", value: "Ford Focus" },
+        { employeeId: "cr4", text: "Ford Taurus", value: "Ford Taurus" },
+        { employeeId: "cr5", text: "Dazzler", value: "Dazzler" },
+        { employeeId: "cr6", text: "Chevy Spark", value: "Chevy Spark" },
+        { employeeId: "cr7", text: "Chevy Volt", value: "Chevy Volt" },
+        { employeeId: "cr8", text: "Honda Fit", value: "Honda Fit" },
+        { employeeId: "cr9", text: "Honda Cross tour", value: "Honda Cross tour" },
+        { employeeId: "cr10", text: "Hyundai Elantra", value: "Hyundai Elantra" },
+        { employeeId: "cr11", text: "Mazda3", value: "Mazda3" }
     ];
     this.fieldList={dataSource:this.data,text:"text",value:"value"};
     }
@@ -106,7 +105,7 @@ export class AppComponent {
 Run the above code to render the following output. 
 
 
-![](Getting_Started_images\createanlistboxwidgetinAngular_img1.png)
+![Getting Started](Getting_Started_images\createanlistboxwidgetinAngular_img1.png)
 
 
 ## Model binding
@@ -163,18 +162,17 @@ export class AppComponent {
     value:string;
     constructor() {
     this.data=[
-        { empid: "cr1", text: "Dodge Avenger", value: "Dodge Avenger" },
-        { empid: "cr2", text: "Chrysler 200", value: "Chrysler 200" },
-        { empid: "cr3", text: "Ford Focus", value: "Ford Focus" },
-        { empid: "cr4", text: "Ford Taurus", value: "Ford Taurus" },
-        { empid: "cr5", text: "Dazzler", value: "Dazzler" },
-        { empid: "cr6", text: "Chevy Spark", value: "Chevy Spark" },
-        { empid: "cr7", text: "Chevy Volt", value: "Chevy Volt" },
-        { empid: "cr8", text: "Honda Fit", value: "Honda Fit" },
-        { empid: "cr9", text: "Honda Crosstour", value: "Honda Crosstour" },
-        { empid: "cr10", text: "Acura RL", value: "Acura RL" },
-        { empid: "cr11", text: "Hyundai Elantra", value: "Hyundai Elantra" },
-        { empid: "cr12", text: "Mazda3", value: "Mazda3" }
+        { employeeId: "cr1", text: "Dodge Avenger", value: "Dodge Avenger" },
+        { employeeId: "cr2", text: "Chrysler 200", value: "Chrysler 200" },
+        { employeeId: "cr3", text: "Ford Focus", value: "Ford Focus" },
+        { employeeId: "cr4", text: "Ford Taurus", value: "Ford Taurus" },
+        { employeeId: "cr5", text: "Dazzler", value: "Dazzler" },
+        { employeeId: "cr6", text: "Chevy Spark", value: "Chevy Spark" },
+        { employeeId: "cr7", text: "Chevy Volt", value: "Chevy Volt" },
+        { employeeId: "cr8", text: "Honda Fit", value: "Honda Fit" },
+        { employeeId: "cr9", text: "Honda Cross tour", value: "Honda Cross tour" },
+        { employeeId: "cr10", text: "Hyundai Elantra", value: "Hyundai Elantra" },
+        { employeeId: "cr11", text: "Mazda3", value: "Mazda3" }
     ];
     this.fieldList={text:"text"};
     this.value="Mazda3";
@@ -186,7 +184,7 @@ export class AppComponent {
 
 Run the above code to render the following output. 
 
-![](Getting_Started_images\modelbinding_img1.png)
+![Model binding](Getting_Started_images\modelbinding_img1.png)
 
 
 ## Enable Selection
@@ -209,7 +207,7 @@ The selection property is used to render the ListBox list item by Selection.
 
 Run the above code to render the following output. 
 
-![](Getting_Started_images\enableselection_img1.png)
+![Enable Selection](Getting_Started_images\enableselection_img1.png)
 
 
 

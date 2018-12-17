@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Keyboard-Navigation
+title: Syncfusion Splitter Keyboard-Navigation
 description: keyboard navigation
 platform: Angular
 control: Splitter
@@ -82,7 +82,7 @@ In the **HTML** page set the corresponding **&lt;div&gt;** element for rendering
         <div>
             <div style="padding: 0px 15px;">
                 <h3 class="h3">Grid </h3>
-                Essential Mvc Grid offers full featured a Grid control with extensive support for
+                Essential MVC Grid offers full featured a Grid control with extensive support for
                 Grouping and the display of hierarchical data.
             </div>
         </div>
@@ -98,7 +98,7 @@ To control the focus key by using keyCode of “altKey” and “j” key in doc
 
 
     export class AppComponent {
-        cssclass:any;   
+        cssClass:any;   
         constructor() {
         }
         $(document).on("keydown", function (e) {
@@ -112,5 +112,5 @@ To control the focus key by using keyCode of “altKey” and “j” key in doc
 
 Run the sample and press **Alt + J** to focus the Splitter component. Perform provided functionality by using keyboard shortcuts.
 
-![](Keyboard-Navigation_images\Keyboard-Navigation_img1.png) 
+![Keyboard Navigations](Keyboard-Navigation_images\Keyboard-Navigation_img1.png) 
 

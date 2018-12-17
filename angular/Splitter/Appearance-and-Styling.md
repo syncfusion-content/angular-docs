@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Apperance and Styling
+title: Syncfusion Splitter Apperance and Styling
 description: Apperance and Styling
 platform: Angular
 control: Splitter
@@ -18,7 +18,7 @@ In the **HTML** page set the corresponding **&lt;div&gt;** elements for outer an
 
 {% highlight html %}
 
-    <ej-splitter id="splitter" class="ang-splitter" height ="100%" width="485" [properties]="proper" [orientation]="orientation" [htmlAttributes]="htmlattributes">					                
+    <ej-splitter id="splitter" class="ang-splitter" height ="100%" width="485" [properties]="proper" [orientation]="orientation" [htmlAttributes]="htmlAttributes">					                
             <div>
                 <div style="padding: 0px 15px;">
                     <h3 class="h3">Tools </h3>
@@ -42,11 +42,11 @@ Define **“htmlAttributes”** properties in constructor file.
     export class AppComponent {
         proper:any;
         orientation:any;
-        htmlattributes:any;	 
+        htmlAttributes:any;	 
         constructor() {
         this.proper1 = [{}, {}];
         this.orientation = ej.Orientation.Vertical;
-        this.htmlattributes = { class: "my-class", style: "border:1px solid red" };
+        this.htmlAttributes = { class: "my-class", style: "border:1px solid red" };
       }
     }
 
@@ -54,7 +54,7 @@ Define **“htmlAttributes”** properties in constructor file.
 
 The output for the above code as follows,
 
-![](Appearance-and-Styling_images\Appearance-and-Styling_img1.png) 
+![Appearance and Styling](Appearance-and-Styling_images\Appearance-and-Styling_img1.png) 
 
 ## Enabling Responsiveness
 
@@ -163,7 +163,7 @@ Define **“animationSpeed”** and **“enableAnimation”** properties in cons
 
 The output for **Splitter** when **enableAnimation** is “True”. Expanding or collapsing the outer pane in the Splitter produces the animation effect with the animation speed.
 
-![](Appearance-and-Styling_images\Appearance-and-Styling_img2.png) 
+![Enable Animation](Appearance-and-Styling_images\Appearance-and-Styling_img2.png) 
 
 ## Dimensions configuration
 
@@ -257,7 +257,7 @@ In the **HTML** page set the corresponding **&lt;div&gt;** element for rendering
 
 {% highlight html %}
 
-    <ej-splitter id="splitter" class="ang-splitter" height ="100%" width="485" [cssClass]="cssclass">					                
+    <ej-splitter id="splitter" class="ang-splitter" height ="100%" width="485" [cssClass]="cssClass">					                
             <div>
                 <div style="padding: 0px 15px;">
                     <h3 class="h3">Tools </h3>
@@ -279,9 +279,9 @@ Define **“cssClass”** in constructor file.
 {% highlight javascript %}
 
     export class AppComponent {
-        cssclass:any;   
+        cssClass:any;   
         constructor() {
-        this.cssclass ="customCSS";
+        this.cssClass ="customCSS";
         }
     }
 
@@ -295,7 +295,7 @@ Customize the **CSS** class by setting CSS properties.
         border-color: #661e19;
     }
 
-    /*Customize Splitbar*/
+    /*Customize SplitBar*/
     .customCSS .e-splitbar {
         background-color: #f9c89f;
     }
@@ -310,7 +310,7 @@ Customize the **CSS** class by setting CSS properties.
 
 The output for Splitter after customizing the CSS class.
 
-![](Appearance-and-Styling_images\Appearance-and-Styling_img3.png) 
+![Customize using class](Appearance-and-Styling_images\Appearance-and-Styling_img3.png) 
 
 
 

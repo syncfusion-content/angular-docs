@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Editing
+title:  Syncfusion Kanban Editing
 description: Editing
 documentation: ug
 platform: Angular
@@ -68,7 +68,7 @@ export class DefaultComponent {
 
 The following output is displayed as a result of the above code example.
 
-![](Editing_images/editing_img1.png)
+![Kanban Editing](Editing_images/editing_img1.png)
 
 ## Edit modes
 
@@ -121,7 +121,7 @@ export class DefaultComponent {
 
 The following output is displayed as a result of the above code example.
 
-![](Editing_images/editing_img2.png)
+![Edit Mode as Dialog](Editing_images/editing_img2.png)
 
 ### Dialog Template Form
 
@@ -226,7 +226,7 @@ export class KanbanComponent {
        
     }
     actionComplete(e: any) {
-        if ((e.requestType == "beginedit" || e.requestType == "add") && e.model.editSettings.editMode == "dialogtemplate") {
+        if ((e.requestType == "beginedit" || e.requestType == "add") && e.model.editSettings.editMode == ej.Kanban.EditMode.DialogTemplate) {
             $("#Estimate").ejNumericTextbox({ value: parseFloat($("#Estimate").val()), width: "175px", height: "34px", decimalPlaces: 2 });
             $("#Assignee").ejDropDownList({ width: '175px' });
             $("#Status").ejDropDownList({ width: '175px' });
@@ -242,7 +242,7 @@ export class KanbanComponent {
 
 The following output is displayed as a result of the above code example.
 
-![](Editing_images/editing_img3.png)
+![Dialog Template Form](Editing_images/editing_img3.png)
 
 
 ### External Form
@@ -294,7 +294,7 @@ export class DefaultComponent {
 
 The following output is displayed as a result of the above code example.
 
-![](Editing_images/editing_img11.png)
+![External Form](Editing_images/editing_img11.png)
 
 ### External Template Form
 
@@ -417,7 +417,7 @@ export class KanbanComponent {
        
     }
     actionComplete(e: any) {
-        if ((e.requestType == "beginedit" || e.requestType == "add") && e.model.editSettings.editMode == "externalformtemplate") {
+        if ((e.requestType == "beginedit" || e.requestType == "add") && e.model.editSettings.editMode == ej.Kanban.EditMode.ExternalFormTemplate) {
             $("#Assignee").ejDropDownList({ width: '175px' });
             $("#Status").ejDropDownList({ width: '175px' });
             if (e.requestType == "beginedit" || e.requestType == "add") {
@@ -432,7 +432,7 @@ export class KanbanComponent {
 
 The following output is displayed as a result of the above code example.
 
-![](Editing_images/editing_img13.png)
+![External Template Form](Editing_images/editing_img13.png)
 
 ## Cell edit type and its params
 
@@ -561,7 +561,7 @@ export class DefaultComponent {
 
 The following output is displayed as a result of the above code example.
 
-![](Editing_images/editing_img4.png)
+![Cell Edit Type](Editing_images/editing_img4.png)
 
 ## Column Validation
 
@@ -698,4 +698,4 @@ export class DefaultComponent {
 
 The following output is displayed as a result of the above code example.
 
-![](Editing_images/editing_img5.png)
+![Editing Images](Editing_images/editing_img5.png)

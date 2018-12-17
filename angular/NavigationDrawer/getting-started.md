@@ -1,6 +1,6 @@
 ---
 layout: post
-title: getting-started
+title: Syncfusion Navigation Drawer getting-started
 description: getting started
 platform: Angular
 control: Navigation Drawer
@@ -23,7 +23,7 @@ The following steps guide you to add a Navigation Drawer component.
 
 {% highlight javascript %}
 
- <div ej-navigationdrawer id="navpane" targetId="butdrawer" height="400"type="overlay" direction="left" [enableListView]="enablelistview" [listViewSettings]="lvset" position="normal">
+ <div ej-navigationdrawer id="navpane" targetId="butdrawer" height="400"type="overlay" direction="left" [enableListView]="enableListView" [listViewSettings]="liveSet" position="normal">
         <ul>
             <li data-ej-text="Home"></li>
             <li data-ej-text="People"></li>
@@ -42,7 +42,7 @@ Create the target element as follows to display the list items by clicking targe
 
    <div id="navdraw">
        <div id="container">
-          <div id="butdrawer" class="drawericon e-icon">
+          <div id="butdrawer" class="drawerIcon e-icon">
           </div>
        </div>
    </div>
@@ -60,7 +60,7 @@ To set the target icon image and with the correct position as using the below me
             padding-left: 0px;
         }
 
-        .drawericon {
+        .drawerIcon {
             background-position: center center;
             background-repeat: no-repeat;
             height: 32px;
@@ -69,7 +69,7 @@ To set the target icon image and with the correct position as using the below me
 			padding-right: 10px;
         }
    
-        .drawericon:before {
+        .drawerIcon:before {
             content: "\e76b";
             font-size: 28px;
 			height: 26px;
@@ -84,12 +84,12 @@ Add the following code in the component’s constructor file for accessing List 
 {% highlight javascript %}
 
 export class AppComponent {
-    lvset: any;
+    liveSet: any;
     el: boolean;
 
     constructor() {
-        this.enablelistview = true;
-        this.lvset = { width: 300, selectedItemIndex: 0, mouseUp: "headChange" };
+        this.enableListView = true;
+        this.liveSet = { width: 300, selectedItemIndex: 0, mouseUp: "headChange" };
     }
 }
 
@@ -97,17 +97,17 @@ export class AppComponent {
 
 Get the following output from the above-mentioned code
 
-![](Getting-Started_images\getting-started-img1.png)
+![Getting Started](Getting-Started_images\getting-started-img1.png)
 
 You can open the list items by clicking on target element using the targetId property.  
 
-![](Getting-Started_images\getting-started-img2.png)
+![Navigation Drawer Getting Started](Getting-Started_images\getting-started-img2.png)
 
 To set the images for list items of the Navigation Drawer by using the [`data-ej-imageurl`] property as follows.
 
 {% highlight html %}
 
-   <div ej-navigationdrawer id="navpane" targetId="butdrawer" height="400"type="overlay" direction="left" [enableListView]="el" [listViewSettings]="lvset" position="normal">
+   <div ej-navigationdrawer id="navpane" targetId="butdrawer" height="400"type="overlay" direction="left" [enableListView]="el" [listViewSettings]="liveSet" position="normal">
         <ul>
             <li data-ej-imageurl="http://js.syncfusion.com/demos/web/content/images/navigationdrawer/home.png" data-ej-text="Home"></li>
             <li data-ej-imageurl="http://js.syncfusion.com/demos/web/content/images/navigationdrawer/profile.png" data-ej-text="Profile"></li>
@@ -117,7 +117,7 @@ To set the images for list items of the Navigation Drawer by using the [`data-ej
 
 {% endhighlight %}
 
-![](Getting-Started_images\getting-started-img3.png)
+![Navigation Getting Started](Getting-Started_images\getting-started-img3.png)
 
 ## Customize Direction
 
@@ -125,20 +125,20 @@ By using direction property, to change the list view open direction. The possibl
 
 {% highlight html %}
 
-    <div ej-navigationdrawer id="navpane" targetId="butdrawer" height="400" type="overlay" direction="right" [enableListView]="el" contentId="navdrawer_container" [listViewSettings]="lvset" position="normal">
+    <div ej-navigationdrawer id="navpane" targetId="butdrawer" height="400" type="overlay" direction="right" [enableListView]="el" contentId="navdrawer_container" [listViewSettings]="liveSet" position="normal">
         <ul>
             <li data-ej-imageurl="http://js.syncfusion.com/demos/web/content/images/navigationdrawer/home.png" data-ej-text="Home" data-ej-href="#home"
-                id="navhome"></li>
+                id="navHome"></li>
             <li data-ej-imageurl="http://js.syncfusion.com/demos/web/content/images/navigationdrawer/profile.png" data-ej-text="Profile" data-ej-href="#profile"
-                id="navprofile"></li>
+                id="navProfile"></li>
             <li data-ej-imageurl="http://js.syncfusion.com/demos/web/content/images/navigationdrawer/photo.png" data-ej-text="Photos" data-ej-href="#photos"
-                id="navphotos"></li>
+                id="navPhotos"></li>
 
         </ul>
     </div>
 
 {% endhighlight %}
 
-![](Getting-Started_images\getting-started-img5.png)
+![Customize direction](Getting-Started_images\getting-started-img5.png)
 
 N> You can find the complete API list for all Syncfusion controls from the [API reference](https://help.syncfusion.com/api/js/ejnavigationdrawer)              

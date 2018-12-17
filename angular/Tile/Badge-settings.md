@@ -1,6 +1,6 @@
 ---
 layout: post
-title: badge-settings
+title: Syncfusion Tile badge-settings
 description: badge-settings
 platform: Angular
 control: Tile
@@ -45,4 +45,4 @@ export class AppComponent {
 
 {% endhighlight %}
 
-![](Functionality_images/Configure-Badge_img1.png)
+![Badge configurations](Functionality_images/Configure-Badge_img1.png)

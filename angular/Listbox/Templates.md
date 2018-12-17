@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Templates
+title: Syncfusion ListBox Templates
 description: templates
 platform: Angular
 control: ListBox
@@ -22,7 +22,7 @@ To create the JSON array with text, imageName, role and country which is initial
    <div class="frame">
        <div class="ctrllabel"></div>
            <div id="controlitem">
-               <ej-listbox id="selectExperts" [dataSource]="empList" [template]="template"></ej-listbox>
+               <ej-listbox id="selectExperts" [dataSource]="employeeList" [template]="template"></ej-listbox>
            </div>
   </div>
     
@@ -31,14 +31,14 @@ To create the JSON array with text, imageName, role and country which is initial
 {% highlight ts %}
 
 export class TemplateComponent {
-    empList: Array<any>;
+    employeeList: Array<any>;
     template: Object;
     constructor() {
-        this.template = '<div><img class="eimg" src="app/content/images/Employees/${eimg}.png" alt="employee"/>' +
-            '<div class="ename"> ${text} </div><div class="desig"> ${desig} </div><div class="cont"> ${country} </div></div>';
-        this.empList = [
-            { text: 'Erik Linden', eimg: '3', desig: 'Representative', country: 'England' }, { text: 'John Linden', eimg: '6', desig: 'Representative', country: 'Norway' },
-            { text: 'Louis', eimg: '7', desig: 'Representative', country: 'Australia' }, { text: 'Lawrence', eimg: '5', desig: 'Representative', country: 'India' }
+        this.template = '<div><img class="employeeImage" src="app/content/images/Employees/${employeeImage}.png" alt="employee"/>' +
+            '<div class="ename"> ${text} </div><div class="designation"> ${designation} </div><div class="cont"> ${country} </div></div>';
+        this.employeeList = [
+            { text: 'Erik Linden', employeeImage: '3', designation: 'Representative', country: 'England' }, { text: 'John Linden', employeeImage: '6', designation: 'Representative', country: 'Norway' },
+            { text: 'Louis', employeeImage: '7', designation: 'Representative', country: 'Australia' }, { text: 'Lawrence', employeeImage: '5', designation: 'Representative', country: 'India' }
         ];
     }
 }
@@ -47,7 +47,7 @@ export class TemplateComponent {
 
 {% highlight css %}
 
-    .eimg {
+    .employeeImage {
         margin: 0;
         padding: 3px 10px 3px 3px;
         border: 0 none;
@@ -61,7 +61,7 @@ export class TemplateComponent {
         padding: 6px 3px 1px 3px;
     }
 
-    .desig, .cont {
+    .designation, .cont {
         font-size: smaller;
         padding: 3px 3px -1px 0px;
     }
@@ -74,5 +74,5 @@ export class TemplateComponent {
      
 {% endhighlight %}
 
-![](Templates_Images\templates_img1.png)
+![Templates](Templates_Images\templates_img1.png)
 

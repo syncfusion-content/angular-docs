@@ -1,6 +1,6 @@
 ---
 layout: post
-title: item-customization
+title: Syncfusion Radial Menu item-customization
 description: item customization
 platform: Angular
 control: Radial Menu
@@ -22,7 +22,7 @@ Define imageUrl and text values in HTML page.
 
 {% highlight html %}
 
-    <ej-radialmenu id="defaultradialmenu" e-targetelementid="radialtarget1" [radius]="radius">
+    <ej-radialmenu id="defaultRadialMenu" e-targetelementid="radialtarget1" [radius]="radius">
     <e-items>
         <e-item imageUrl="http://js.syncfusion.com/demos/web/content/images/RadialMenu/copy.png" text="Copy"></e-item>
         <e-item imageUrl="http://js.syncfusion.com/demos/web/content/images/RadialMenu/paste.png" text="Paste"></e-item>
@@ -36,7 +36,7 @@ Define imageUrl and text values in HTML page.
 
 The following screenshot illustrates the output.
 
-![](item-customization_images\item-customization_img1.png)
+![Item customization](item-customization_images\item-customization_img1.png)
 
 ## Adding events to Radial Menu
 
@@ -48,7 +48,7 @@ Declare **click** event values in HTML page.
 {% highlight html %}
 
 
-    <ej-radialmenu id="defaultradialmenu" targetelementid="radialtarget1" (click)="onItemClick($event)">
+    <ej-radialmenu id="defaultRadialMenu" targetelementid="radialtarget1" (click)="onItemClick($event)">
     <e-items>        
         <e-item imageUrl="http://js.syncfusion.com/demos/web/content/images/RadialMenu/fontsize.png" text="Bold"></e-item>
         <e-item imageUrl="http://js.syncfusion.com/demos/web/content/images/RadialMenu/f1.png" text="Italic"></e-item>              
@@ -75,7 +75,7 @@ Define the click functions and radialMenu show function in constructor file.
 	this.radius = 200;
     $(window).resize(function() {
     if (ej.isMobile() && ej.isPortrait())
-    $('#apiradialmenu').css({ "left": 25 })
+    $('#apiRadialMenu').css({ "left": 25 })
     }); 
     }
 
@@ -87,11 +87,11 @@ Define the click functions and radialMenu show function in constructor file.
       // To set Radial Menu position within target
       x = iframeX > target.width() - radialRadius ? target.width() - radialDiameter : (iframeX > radialRadius ? iframeX - radialRadius : 0),
       y = (iframeY > target.height() - radialRadius ? target.height() - radialDiameter : (iframeY > radialRadius ? iframeY - radialRadius : 0)) + radialRadius;
-    $('#defaultradialmenu').ejRadialMenu("setPosition", x, y);
+    $('#defaultRadialMenu').ejRadialMenu("setPosition", x, y);
     $('iframe').contents().find('body').blur();
     }
     onChange(event) {
-        $('#defaultradialmenu').ejRadialMenu("enableItem", "Undo");
+        $('#defaultRadialMenu').ejRadialMenu("enableItem", "Undo");
     }   
     onItemClick(e) {
     var rteObj = $("#rteSample1").data("ejRTE");
@@ -130,7 +130,7 @@ Define the click functions and radialMenu show function in constructor file.
 
 The following screenshot illustrates the output.
 
-![](item-customization_images\item-customization_img2.png)
+![Adding events](item-customization_images\item-customization_img2.png)
 
 
 ## Badge Customization in Radial Menu Items
@@ -144,9 +144,9 @@ Declare badge properties in HTML Page.
 
 {% highlight html %}
 
-    <ej-radialmenu id="defaultradialmenu" e-targetelementid="radialtarget1">
+    <ej-radialmenu id="defaultRadialMenu" e-targetelementid="radialtarget1">
     <e-items>
-        <e-item imageUrl="http://js.syncfusion.com/demos/web/content/images/RadialMenu/copy.png" text="Copy" enabled="true" [badge]="badgesettings"></e-item>
+        <e-item imageUrl="http://js.syncfusion.com/demos/web/content/images/RadialMenu/copy.png" text="Copy" enabled="true" [badge]="badgeSettings"></e-item>
         <e-item imageUrl="http://js.syncfusion.com/demos/web/content/images/RadialMenu/paste.png" text="Paste"></e-item>
         <e-item imageUrl="http://js.syncfusion.com/demos/web/content/images/RadialMenu/redo.png" text="Redo"></e-item>
         <e-item imageUrl="http://js.syncfusion.com/demos/web/content/images/RadialMenu/undo.png" text="Undo"></e-item>
@@ -162,16 +162,16 @@ Define badge properties in constructor file.
 {% highlight javascript %}
 
     export class AppComponent {    
-    badgesettings:any;  
+    badgeSettings:any;  
     constructor() {   
-	this.badgesettings={enabled:true,value:3};  	 
+	this.badgeSettings={enabled:true,value:3};  	 
     }
 
 {% endhighlight %}
 
 The following screenshot illustrates the output.
 
-![](item-customization_images\item-customization_img3.png)
+![Badge customization](item-customization_images\item-customization_img3.png)
 
 ## Slider Customization in Radial Menu Items
 
@@ -184,7 +184,7 @@ Refer to the following code example.
 
 {% highlight html %}
 
-    <ej-radialmenu id="defaultradialmenu" targetelementid="radialtarget1" (click)="onItemClick($event)">
+    <ej-radialmenu id="defaultRadialMenu" targetelementid="radialtarget1" (click)="onItemClick($event)">
     <e-items>        
         <e-item imageUrl="http://js.syncfusion.com/demos/web/content/images/RadialMenu/fontsize.png" text="Bold" type="slider" [sliderSettings]="slidersetting"></e-item>
         <e-item imageUrl="http://js.syncfusion.com/demos/web/content/images/RadialMenu/f1.png" text="Italic"></e-item>              
@@ -204,11 +204,11 @@ Define slider ticks values in constructor file.
 {% highlight javascript %}
 
     export class AppComponent {    
-    badgesettings:any;  
-    slidersettings:any;
+    badgeSettings:any;  
+    sliderSettings:any;
     constructor() {    
-	this.badgesettings={enabled:true,value:2};
-	this.slidersettings={ ticks : [0, 2, 4, 6, 8, 10, 12, 14],
+	this.badgeSettings={enabled:true,value:2};
+	this.sliderSettings={ ticks : [0, 2, 4, 6, 8, 10, 12, 14],
         strokeWidth : 1
 		};  
     }
@@ -216,7 +216,7 @@ Define slider ticks values in constructor file.
 
 The following screenshot illustrates the output.
 
-![](item-customization_images\item-customization_img4.png)
+![Slider Customization](item-customization_images\item-customization_img4.png)
 
 
 

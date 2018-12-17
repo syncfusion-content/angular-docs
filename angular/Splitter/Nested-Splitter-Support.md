@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Nested Splitter Support
+title:  Syncfusion Splitter Nested Support
 description: Nested Splitter Support
 platform: Angular
 control: Splitter
@@ -72,4 +72,4 @@ Define properties of outerSplitter and innerSplitter in constructor file.
 
 The output for the above code as follows.
 
-![](Nested-Splitter-Support_images\Nested-Splitter-Support_img1.png) 
+![Nested Splitter Support](Nested-Splitter-Support_images\Nested-Splitter-Support_img1.png) 

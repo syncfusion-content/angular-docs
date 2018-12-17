@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Cascading
+title: Syncfusion ListBox Cascading
 description: Cascading
 platform: Angular
 control: ListBox
@@ -47,42 +47,42 @@ export class CascadeComponent {
             { parentId: 'h', text: 'Group H' },
             { parentId: 'i', text: 'Group I' },
             { parentId: 'j', text: 'Group J' }];
-        this.countries = [{ value: 11, parentId: 'a', text: 'Algeria', sprite: 'flag-dz' },
-        { value: 12, parentId: 'a', text: 'Armenia', sprite: 'flag-am' },
-        { value: 13, parentId: 'a', text: 'Bangladesh', sprite: 'flag-bd' },
-        { value: 14, parentId: 'a', text: 'Cuba', sprite: 'flag-cu' },
-        { value: 15, parentId: 'b', text: 'Denmark', sprite: 'flag-dk' },
-        { value: 16, parentId: 'b', text: 'Egypt', sprite: 'flag-eg' },
-        { value: 17, parentId: 'c', text: 'Finland', sprite: 'flag-fi' },
-        { value: 18, parentId: 'c', text: 'India', sprite: 'flag-in' },
-        { value: 19, parentId: 'c', text: 'Malaysia', sprite: 'flag-my' },
-        { value: 20, parentId: 'd', text: 'New Zealand', sprite: 'flag-nz' },
-        { value: 21, parentId: 'd', text: 'Norway', sprite: 'flag-no' },
-        { value: 22, parentId: 'd', text: 'Poland', sprite: 'flag-pl' },
-        { value: 23, parentId: 'e', text: 'Romania', sprite: 'flag-ro' },
-        { value: 24, parentId: 'e', text: 'Singapore', sprite: 'flag-sg' },
-        { value: 25, parentId: 'e', text: 'Thailand', sprite: 'flag-th' },
-        { value: 26, parentId: 'e', text: 'Ukraine', sprite: 'flag-ua' },
-        { value: 27, parentId: 'f', text: 'Falkland Islands', sprite: 'flag-ua' },
-        { value: 28, parentId: 'f', text: 'Faroe Islands', sprite: 'flag-ua' },
-        { value: 29, parentId: 'f', text: 'Fiji', sprite: 'flag-ua' },
-        { value: 30, parentId: 'g', text: 'Germany', sprite: 'flag-ua' },
-        { value: 31, parentId: 'g', text: 'Greece', sprite: 'flag-ua' },
-        { value: 32, parentId: 'g', text: 'Greenland', sprite: 'flag-ua' },
-        { value: 33, parentId: 'g', text: 'Ghana', sprite: 'flag-ua' },
-        { value: 34, parentId: 'h', text: 'Hong Kong', sprite: 'flag-ua' },
-        { value: 35, parentId: 'h', text: 'Haiti', sprite: 'flag-ua' },
-        { value: 36, parentId: 'i', text: 'Iceland', sprite: 'flag-ua' },
-        { value: 37, parentId: 'i', text: 'Indonesia', sprite: 'flag-ua' },
-        { value: 38, parentId: 'i', text: 'Ireland', sprite: 'flag-ua' },
-        { value: 39, parentId: 'j', text: 'Jamaica', sprite: 'flag-ua' },
-        { value: 40, parentId: 'j', text: 'Japan', sprite: 'flag-ua' },
-        { value: 41, parentId: 'j', text: 'Jordan', sprite: 'flag-ua' }];
+        this.countries = [{ value: 11, parentId: 'a', text: 'Algeria' },
+        { value: 12, parentId: 'a', text: 'Armenia' },
+        { value: 13, parentId: 'a', text: 'Bangladesh' },
+        { value: 14, parentId: 'a', text: 'Cuba' },
+        { value: 15, parentId: 'b', text: 'Denmark' },
+        { value: 16, parentId: 'b', text: 'Egypt' },
+        { value: 17, parentId: 'c', text: 'Finland' },
+        { value: 18, parentId: 'c', text: 'India' },
+        { value: 19, parentId: 'c', text: 'Malaysia' },
+        { value: 20, parentId: 'd', text: 'New Zealand' },
+        { value: 21, parentId: 'd', text: 'Norway' },
+        { value: 22, parentId: 'd', text: 'Poland' },
+        { value: 23, parentId: 'e', text: 'Romania' },
+        { value: 24, parentId: 'e', text: 'Singapore' },
+        { value: 25, parentId: 'e', text: 'Thailand' },
+        { value: 26, parentId: 'e', text: 'Ukraine' },
+        { value: 27, parentId: 'f', text: 'Falkland Islands' },
+        { value: 28, parentId: 'f', text: 'Islands' },
+        { value: 29, parentId: 'f', text: 'Fiji' },
+        { value: 30, parentId: 'g', text: 'Germany' },
+        { value: 31, parentId: 'g', text: 'Greece' },
+        { value: 32, parentId: 'g', text: 'Greenland' },
+        { value: 33, parentId: 'g', text: 'Ghana' },
+        { value: 34, parentId: 'h', text: 'Hong Kong' },
+        { value: 35, parentId: 'h', text: 'Haiti' },
+        { value: 36, parentId: 'i', text: 'Iceland' },
+        { value: 37, parentId: 'i', text: 'Indonesia' },
+        { value: 38, parentId: 'i', text: 'Ireland' },
+        { value: 39, parentId: 'j', text: 'Jamaica' },
+        { value: 40, parentId: 'j', text: 'Japan' },
+        { value: 41, parentId: 'j', text: 'Jordan' }];
     }
 }
 {% endhighlight %}
 
-![](Cascading_images\Cascading_img1.png)
+![Cascading](Cascading_images\Cascading_img1.png)
 
 ## Multilevel cascading
 
@@ -97,10 +97,10 @@ Create an ul elements to render the parent and the child ListBox component as be
         <ej-listbox id="groupsList" [dataSource]="data" [fields]="fields" cascadeTo="countryList"></ej-listbox>
      </div>
      <div class="contents">
-        <ej-listbox id="countryList" [loadDataOnInit]="false" [dataSource]="firstLevelChildData" [fields]="firstchildfields" cascadeTo="productList"></ej-listbox>
+        <ej-listbox id="countryList" [loadDataOnInit]="false" [dataSource]="firstLevelChildData" [fields]="firstChildFields" cascadeTo="productList"></ej-listbox>
      </div>
      <div class="contents">
-        <ej-listbox id="productList" [loadDataOnInit]="false" [dataSource]="secondLevelChildData" [fields]="secondchildfields" cascadeTo="subproductList"></ej-listbox>
+        <ej-listbox id="productList" [loadDataOnInit]="false" [dataSource]="secondLevelChildData" [fields]="secondChildFields" cascadeTo="subproductList"></ej-listbox>
      </div>
      <div class="contents">
         <ej-listbox id="subproductList" [loadDataOnInit]="false" [dataSource]="thirdLevelChildData"></ej-listbox>
@@ -119,8 +119,8 @@ export class appComponent {
     secondLevelChildData: Array<any>;
     thirdLevelChildData: Array<any>;
     fields: Object;
-    firstchildfields: Object;
-    secondchildfields: Object;
+    firstChildFields: Object;
+    secondChildFields: Object;
     groups: Array<any>;
     constructor() {
         this.data = [
@@ -130,36 +130,36 @@ export class appComponent {
             { subCategoryId: 12, categoryId: 'a', text: "Women" },
             { subCategoryId: 13, categoryId: 'b', text: "Home furniture" },
             { subCategoryId: 14, categoryId: 'b', text: "Bedding" }];
-        this.secondLevelChildData = [{ productid: 101, subCategoryId: 11, text: "men shirts" },
-            { productid: 102, subCategoryId: 11, text: "men pants" },
-            { productid: 103, subCategoryId: 12, text: "Women shirts" },
-            { productid: 104, subCategoryId: 12, text: "Women pants" },
-            { productid: 105, subCategoryId: 13, text: "sofa" },
-            { productid: 106, subCategoryId: 13, text: "chairs" },
-            { productid: 107, subCategoryId: 14, text: "bedsheets" },
-            { productid: 108, subCategoryId: 14, text: "pillows" }];
-        this.thirdLevelChildData = [{ productid: 101, text: "red men shirts" },
-            { productid: 101, text: "blue men shirts" },
-            { productid: 102, text: "red men pants" },
-            { productid: 102, text: "blue men pants" },
-            { productid: 103, text: "blueWomen shirts" },
-            { productid: 103, text: "red Women shirts" },
-            { productid: 104, text: "red women pants" },
-            { productid: 104, text: "blue women pants" },
-            { productid: 105, text: "red sofa" },
-            { productid: 105, text: "blue sofa" },
-            { productid: 106, text: "red chairs" },
-            { productid: 106, text: "blue chairs" },
-            { productid: 107, text: "red bedsheets" },
-            { productid: 107, text: "blue bedsheets" },
-            { productid: 108, text: "red pillows" },
-            { productid: 108, text: "blue pillows" }];
+        this.secondLevelChildData = [{ productId: 101, subCategoryId: 11, text: "men shirts" },
+            { productId: 102, subCategoryId: 11, text: "men pants" },
+            { productId: 103, subCategoryId: 12, text: "Women shirts" },
+            { productId: 104, subCategoryId: 12, text: "Women pants" },
+            { productId: 105, subCategoryId: 13, text: "sofa" },
+            { productId: 106, subCategoryId: 13, text: "chairs" },
+            { productId: 107, subCategoryId: 14, text: "bedsheets" },
+            { productId: 108, subCategoryId: 14, text: "pillows" }];
+        this.thirdLevelChildData = [{ productId: 101, text: "red men shirts" },
+            { productId: 101, text: "blue men shirts" },
+            { productId: 102, text: "red men pants" },
+            { productId: 102, text: "blue men pants" },
+            { productId: 103, text: "blueWomen shirts" },
+            { productId: 103, text: "red Women shirts" },
+            { productId: 104, text: "red women pants" },
+            { productId: 104, text: "blue women pants" },
+            { productId: 105, text: "red sofa" },
+            { productId: 105, text: "blue sofa" },
+            { productId: 106, text: "red chairs" },
+            { productId: 106, text: "blue chairs" },
+            { productId: 107, text: "red bedsheets" },
+            { productId: 107, text: "blue bedsheets" },
+            { productId: 108, text: "red pillows" },
+            { productId: 108, text: "blue pillows" }];
         this.fields = { value: 'categoryId' };
-        this.firstchildfields = { value: 'subCategoryId' };
-        this.secondchildfields = { value: 'productid' };
+        this.firstChildFields = { value: 'subCategoryId' };
+        this.secondChildFields = { value: 'productId' };
     }
 }
 
 {% endhighlight %}
 
-![](Cascading_images\Cascading_img2.png)
+![Multi level Cascading](Cascading_images\Cascading_img2.png)
