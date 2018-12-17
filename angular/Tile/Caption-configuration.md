@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Caption-settings
+title: Syncfusion Tile Caption-settings
 description: Caption-settings
 platform: Angular
 control: Tile
@@ -17,7 +17,7 @@ The **text** attribute is used to set the caption text for Tile.
 
 The **icon** attribute is used to set the caption icon for tile instead of text. 
 
-The **position** attribute is used to set the position for caption text. By default, the caption text position as innerbottom.
+The **position** attribute is used to set the position for caption text. By default, the caption text position as innerBottom.
 
 The **alignment** attribute is used to align the text or icon of tile component. 
 
@@ -41,4 +41,4 @@ export class AppComponent {
 
 {% endhighlight %}
 
-![](Functionality_images/Text-Configuration_img1.png)
+![Caption Configuration](Functionality_images/Text-Configuration_img1.png)

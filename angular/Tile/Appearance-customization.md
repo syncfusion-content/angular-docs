@@ -1,6 +1,6 @@
 ---
 layout: post
-title: appearance-customization
+title: Syncfusion Tile appearance-customization
 description: appearance-customization
 platform: Angular
 control: Tile
@@ -37,7 +37,7 @@ export class DefaultComponent {
 
 {% endhighlight %} 
 
-![](Functionality_images/Customize-size_img1.png)
+![Appearance](Functionality_images/Customize-size_img1.png)
 
 ## Image and Position Configuration
 
@@ -64,14 +64,14 @@ export class DefaultComponent {
 
 {% endhighlight %} 
 
-![](Functionality_images/Image-Configuration_img1.png)
+![Image Configuration](Functionality_images/Image-Configuration_img1.png)
 
 ## Applying Rounded Corner
 
 To use [showRoundedCorner](https://help.syncfusion.com/api/js/ejtile#members:showroundedcorner) property to add the rounded borders for the Tile component. By default, showRoundedCorner property is disabled in Tile.
 
 {% highlight html %} 
-     <ej-tile id="tile" tileSize="medium" imagePosition="center" imageUrl='http://js.syncfusion.com/ug/web/content/tile/camera.png' [caption]="caption1" [showRoundedCorner]="roundedcorner">
+     <ej-tile id="tile" tileSize="medium" imagePosition="center" imageUrl='http://js.syncfusion.com/ug/web/content/tile/camera.png' [caption]="caption1" [showRoundedCorner]="roundedCorner">
      </ej-tile>
     
    {% endhighlight %}  
@@ -80,23 +80,23 @@ To use [showRoundedCorner](https://help.syncfusion.com/api/js/ejtile#members:sho
 
    export class DefaultComponent {
       caption1: any;
-      roundedcorner: boolean;
+      roundedCorner: boolean;
       constructor() {
         this.caption1 = { text: 'Camera' };
-        this.roundedcorner = true;
+        this.roundedCorner = true;
       }
    }
 
 {% endhighlight %} 
 
-![](Functionality_images/Rounded-corner.png)
+![Rounded Corner](Functionality_images/Rounded-corner.png)
 
 ## Allow Selection
 
-To use [Allow Selection](https://help.syncfusion.com/api/js/ejtile#members:allowselection) property to select the Tile component. By default, selection is disabled in Tile.
+To use [Allow Selection](https://help.syncfusion.com/api/js/ejtile#members:allowSelection) property to select the Tile component. By default, selection is disabled in Tile.
 
 {% highlight html %} 
-     <ej-tile id="tile" tileSize="medium" imagePosition="center" imageUrl='http://js.syncfusion.com/ug/web/content/tile/camera.png' [caption]="caption1" [allowSelection]="allowselection">
+     <ej-tile id="tile" tileSize="medium" imagePosition="center" imageUrl='http://js.syncfusion.com/ug/web/content/tile/camera.png' [caption]="caption1" [allowSelection]="allowSelection">
      </ej-tile>
     
    {% endhighlight %}  
@@ -105,27 +105,27 @@ To use [Allow Selection](https://help.syncfusion.com/api/js/ejtile#members:allow
 
    export class DefaultComponent {
       caption1: any;
-      allowselection: boolean;
+      allowSelection: boolean;
       constructor() {
         this.caption1 = { text: 'Camera' };
-        this.allowselection = true;
+        this.allowSelection = true;
       }
    }
 
    {% endhighlight %} 
 
-![](Functionality_images/allow-selection.png)
+![Allow Selection](Functionality_images/allow-selection.png)
 
 ## Css Class
 
 Tile component also allows you to customize its appearance using user-defined CSS and custom skin options such as colors and backgrounds. To apply custom themes you have a property called **cssClass**. **cssClass** property sets the root class for **Tile** theme.
 
-Using this **cssClass** you can override the existing styles under the theme style sheet. The theme style sheet applies theme-specific styles like colors and backgrounds. In the following example, the value of **cssClass** property is set as “**customclass**”. **customclass** is added as root class to **Tile** component at the runtime. From this root class you can customize the **Tile** component theme.
+Using this **cssClass** you can override the existing styles under the theme style sheet. The theme style sheet applies theme-specific styles like colors and backgrounds. In the following example, the value of **cssClass** property is set as **customClass**. **customClass** is added as root class to **Tile** component at the runtime. From this root class you can customize the **Tile** component theme.
 
 Add the following code in your **HTML** page to render the Tile.
 
 {% highlight html %}
-     <ej-tile id="tile" tileSize="medium" imagePosition="center" imageUrl="http://js.syncfusion.com/ug/web/content/tile/camera.png" [caption]="caption1" [cssClass]="cssclass">
+     <ej-tile id="tile" tileSize="medium" imagePosition="center" imageUrl="http://js.syncfusion.com/ug/web/content/tile/camera.png" [caption]="caption1" [cssClass]="cssClass">
      </ej-tile>  
     
 {% endhighlight %}
@@ -134,27 +134,27 @@ Add the following code in your **HTML** page to render the Tile.
 
    export class DefaultComponent {
       caption1: any;
-      cssclass: string;
+      cssClass: string;
       constructor() {
         this.caption1 = { text: 'Camera' };
-        this.cssclass = "customclass";
+        this.cssClass = "customClass";
       }
    }
 
 {% endhighlight %} 
 
-In the following style sheet the existing theme style sheet file has been over-ridden using root class “**customclass**”. 
+In the following style sheet the existing theme style sheet file has been over-ridden using root class **customClass**. 
 
 Add the following code in your style section.
 
 {% highlight css %}
 
 <style>
-    .e-tile.customclass .e-image-parent {
+    .e-tile.customClass .e-image-parent {
         background:#FF1975;
     }
 </style>
 
 {% endhighlight %}
 
-![](Functionality_images/css-class.png)
+![Css Class](Functionality_images/css-class.png)
