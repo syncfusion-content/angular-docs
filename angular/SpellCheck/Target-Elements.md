@@ -91,4 +91,4 @@ export class SpellCheckComponent {
 
 {% endhighlight %}
 
-The spellcheck component iterates through the target elements which specified in the “controlsToValidate” property, and process the element’s content one by one in the order of CSS elements, and id specified elements.
+The SpellCheck component iterates through the target elements which specified in the “controlsToValidate” property, and process the element’s content one by one in the order of CSS elements, and id specified elements.
