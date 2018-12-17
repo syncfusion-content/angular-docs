@@ -19,7 +19,7 @@ The following code example describes the above behavior.
 
 {% highlight html %}
 
-<ej-spellcheck id="SpellCheck" contenteditable="true" [dictionarySettings]="dictionarysettings" controlsToValidate="#control1,#control2,#control3"></ej-spellcheck>
+<ej-spellcheck id="SpellCheck" contenteditable="true" [dictionarySettings]="dictionarySettings" controlsToValidate="#control1,#control2,#control3"></ej-spellcheck>
 <div id="control1">
     London, one of the most popular touist destinations in the world for a reason. A cultural and hisorical hub, London has an excellent public transportation system that allows visitors to see all the fantatic sights without spending a ton of money on a rental car.
     London contains four World Heritage Sites.
@@ -39,9 +39,9 @@ The following code example describes the above behavior.
 {% highlight javascript %}
 
 export class SpellCheckComponent {
-    public dictionarysettings: any;
+    public dictionarySettings: any;
     constructor() {
-        this.dictionarysettings = {
+        this.dictionarySettings = {
             dictionaryUrl: "http://js.syncfusion.com/ejServices/api/SpellCheck/CheckWords",
             customDictionaryUrl: "http://js.syncfusion.com/ejServices/api/SpellCheck/AddToDictionary"
         };
@@ -56,7 +56,7 @@ The following code example describes the spell checking of HTML element’s.
 
 {% highlight html %}
 
-<ej-spellcheck id="SpellCheck" contenteditable="true" [dictionarySettings]="dictionarysettings" controlsToValidate="#control1,#control2,#control3" [contextMenuSettings.enable]="false"></ej-spellcheck>
+<ej-spellcheck id="SpellCheck" contenteditable="true" [dictionarySettings]="dictionarySettings" controlsToValidate="#control1,#control2,#control3" [contextMenuSettings.enable]="false"></ej-spellcheck>
 <div id="control1">
     London, one of the most popular touist destinations in the world for a reason. A cultural and hisorical hub, London has an excellent public transportation system that allows visitors to see all the fantatic sights without spending a ton of money on a rental car.
     London contains four World Heritage Sites.
@@ -76,9 +76,9 @@ The following code example describes the spell checking of HTML element’s.
 {% highlight javascript %}
 
 export class SpellCheckComponent {
-    public dictionarysettings: any;
+    public dictionarySettings: any;
     constructor() {
-        this.dictionarysettings = {
+        this.dictionarySettings = {
             dictionaryUrl: "http://js.syncfusion.com/ejServices/api/SpellCheck/CheckWords",
             customDictionaryUrl: "http://js.syncfusion.com/ejServices/api/SpellCheck/AddToDictionary"
         };
