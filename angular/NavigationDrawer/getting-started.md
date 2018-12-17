@@ -128,11 +128,11 @@ By using direction property, to change the list view open direction. The possibl
     <div ej-navigationdrawer id="navpane" targetId="butdrawer" height="400" type="overlay" direction="right" [enableListView]="el" contentId="navdrawer_container" [listViewSettings]="liveSet" position="normal">
         <ul>
             <li data-ej-imageurl="http://js.syncfusion.com/demos/web/content/images/navigationdrawer/home.png" data-ej-text="Home" data-ej-href="#home"
-                id="navHome"></li>
+                id="navigationHome"></li>
             <li data-ej-imageurl="http://js.syncfusion.com/demos/web/content/images/navigationdrawer/profile.png" data-ej-text="Profile" data-ej-href="#profile"
-                id="navProfile"></li>
+                id="navigationProfile"></li>
             <li data-ej-imageurl="http://js.syncfusion.com/demos/web/content/images/navigationdrawer/photo.png" data-ej-text="Photos" data-ej-href="#photos"
-                id="navPhotos"></li>
+                id="navigationPhotos"></li>
 
         </ul>
     </div>
