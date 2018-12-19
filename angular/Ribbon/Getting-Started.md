@@ -324,3 +324,11 @@ export class RibbonComponent {
 {% endhighlight %}
 
 ![](Getting_Started_images/Getting_Started_img3.png)
+
+## User Interface
+
+Ribbon component able to integrate any custom components and customized their functionality in application end. Our Ribbon component is similar to Microsoft products(Word). The Ribbon UI consists of several sections like Application Tab, Quick Access Toolbar, Tab, Contextual Tab, Gallery and etc.The following screenshot shows the diagrammatic detail of Ribbon UI:
+
+![](Getting_Started_images/Ribbon.png)
+
+From above screenshot, you can see Ribbon has several subcomponents for different functionalities. The upcoming sections explains the brief details of each functionalities and their customizations.
