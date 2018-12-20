@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Template support with DropDownList widget
+title: Template support with DropDownList widget | Syncfusion
 description: Template Support with DropDownList widget
 platform: Angular
 control: DropDownList
