@@ -113,3 +113,66 @@ Add the below css in dropdown.component.css file.
 N> Images for this sample are available in (installed location)\Syncfusion\Essential Studio\{{ site.releaseversion }}\JavaScript\ng2 app\app\content\images<br/>
 
 ![](TemplateSupport_images/TemplateSupport_img1.png)
+
+## Modify position of popup to show over the DropDownList
+
+DropDownList popup element can be repositioned over the DropDownList input through popupShown event. Please refer to the below given code.
+
+{% highlight html %}
+
+<div style="padding:3%;">
+<input #skillsets id="skillsets" ej-dropdownlist [dataSource]="data" [fields]="fieldsvalues" watermarkText="Select type"  [headerTemplate]="template" (popupShown)="onopen($event)" />
+</div>
+	 
+{% endhighlight %}
+
+{% highlight html %}
+
+import {Component,ViewEncapsulation, ViewChild } from '@angular/core';
+import { EJComponents } from './../../../node_modules/ej-angular2/src/ej/core';
+
+@Component({
+selector: 'ej-app',
+templateUrl: 'app/components/dropdown/dropdown.component.html',
+styleUrls: ['app/components/dropdown/dropdown.component.css'],
+encapsulation: ViewEncapsulation.None
+})
+export class DropDownListComponent {
+  data: Array<Object> = [];
+    fieldsvalues: Object;
+    template: string; 
+    @ViewChild('skillsets') skillsets: EJComponents<ej.DropDownList, any>;
+
+    constructor() {
+        this.data =  [
+                { skill: "Asp.Net" }, { skill: "Asp.Net MVC" }, { skill: "C#" },
+                { skill: "Basic" }, { skill: "Java" }
+            ];
+        this.fieldsvalues = { dataSource: this.data, text: 'skill' };
+        this.template = "<div id='header'> <span class='con-head'><b>Select</b></span></div>";
+    }
+
+    onopen(args){
+        var ddlobj = this.skillsets.widget.element.ejDropDownList("instance"); 
+        ddlobj.popupListWrapper.offset({ top: ddlobj.popupListWrapper.offset().top - ddlobj.wrapper.height() - 3});
+    }
+}
+
+{% endhighlight %}
+
+Add the below css in dropdown.component.css file.
+
+{% highlight css %}
+	
+    #header{
+        padding-left: 14px;
+        padding-top: 7px;
+        padding-bottom: 7px;
+        background-color: whitesmoke;
+    }
+   
+{% endhighlight %}
+
+Now the popup will be opened over the input element as shown below
+
+![](TemplateSupport_images/TemplateSupport_img2.png)
