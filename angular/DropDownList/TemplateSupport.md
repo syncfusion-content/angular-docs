@@ -112,7 +112,7 @@ Add the below css in dropdown.component.css file.
 
 N> Images for this sample are available in (installed location)\Syncfusion\Essential Studio\{{ site.releaseversion }}\JavaScript\ng2 app\app\content\images<br/>
 
-![](TemplateSupport_images/TemplateSupport_img1.png)
+![template](TemplateSupport_images/TemplateSupport_img1.png)
 
 ## Modify position of popup to show over the DropDownList
 
@@ -121,7 +121,7 @@ DropDownList popup element can be repositioned over the DropDownList input throu
 {% highlight html %}
 
 <div style="padding:3%;">
-<input #skillsets id="skillsets" ej-dropdownlist [dataSource]="data" [fields]="fieldsvalues" watermarkText="Select type"  [headerTemplate]="template" (popupShown)="onopen($event)" />
+<input #skills id="skillsets" ej-dropdownlist [dataSource]="data" [fields]="fields" watermarkText="Select type"  [headerTemplate]="template" (popupShown)="open($event)" />
 </div>
 	 
 {% endhighlight %}
@@ -139,22 +139,22 @@ encapsulation: ViewEncapsulation.None
 })
 export class DropDownListComponent {
   data: Array<Object> = [];
-    fieldsvalues: Object;
+    fields: Object;
     template: string; 
-    @ViewChild('skillsets') skillsets: EJComponents<ej.DropDownList, any>;
+    @ViewChild('skills') skills: EJComponents<ej.DropDownList, any>;
 
     constructor() {
         this.data =  [
                 { skill: "Asp.Net" }, { skill: "Asp.Net MVC" }, { skill: "C#" },
                 { skill: "Basic" }, { skill: "Java" }
             ];
-        this.fieldsvalues = { dataSource: this.data, text: 'skill' };
+        this.fields = { dataSource: this.data, text: 'skill' };
         this.template = "<div id='header'> <span class='con-head'><b>Select</b></span></div>";
     }
 
-    onopen(args){
-        var ddlobj = this.skillsets.widget.element.ejDropDownList("instance"); 
-        ddlobj.popupListWrapper.offset({ top: ddlobj.popupListWrapper.offset().top - ddlobj.wrapper.height() - 3});
+    open(args){
+        var instance = this.skills.widget.element.ejDropDownList("instance"); 
+        instance.popupListWrapper.offset({ top: instance.popupListWrapper.offset().top - instance.wrapper.height() - 3});
     }
 }
 
@@ -175,4 +175,4 @@ Add the below css in dropdown.component.css file.
 
 Now the popup will be opened over the input element as shown below
 
-![](TemplateSupport_images/TemplateSupport_img2.png)
+![position](TemplateSupport_images/TemplateSupport_img2.png)
