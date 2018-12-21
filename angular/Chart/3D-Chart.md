@@ -30,7 +30,7 @@ For rendering a 3D Column Chart, specify the series *type* as **"column"** in th
 {% endhighlight %}
 
 
-![Column 3D](3D-Chart_images/3D-Chart_img1.png)
+![Column 3D](3D-Chart_images/Chart-3D_img1.png)
 
 [Click](http://ng2jq.syncfusion.com/#/chart/column3d) here to view the 3D Column Chart online demo sample.
 
@@ -99,7 +99,7 @@ Stacking Column 3DChart is rendered by specifying the series *type* as **"stacki
 {% endhighlight %}
 
 
-![Stacked Column 100% 3D](3D-Chart_images/3D-Chart_img4.png)
+![StackedColumn100 3D](3D-Chart_images/3D-Chart_img4.png)
 
 [Click](http://ng2jq.syncfusion.com/#/chart/stackingColumn3d100) here to view the 3D 100% Stacked Column Chart online demo sample.
 
@@ -143,7 +143,7 @@ You can create 100% Stacking Bar 3DChart by setting the series *type* as **"stac
 {% endhighlight %}
 
 
-![Stacked Bar 100% 3D](3D-Chart_images/3D-Chart_img6.png)
+![StackedBar100 3D](3D-Chart_images/3D-Chart_img6.png)
 
 
 ## 3D Pie Chart
