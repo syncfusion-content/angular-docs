@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Template Support.
+title: Syncfusion Radial Menu Template Support.
 description: Template Support.
 platform: Angular
 control: Radial Menu
@@ -9,11 +9,11 @@ documentation: ug
 
 ## Template Support
 
- Template support for RadialMenu items will allow you to use any type of [\<svg\>](https://developer.mozilla.org/en-US/docs/Web/SVG/Element#SVG_elements) Permittable tags inside our template. Here for example, using this template support you can use the SVG icons in Radial Menu instead of image tags. To use SVG icons in RadialMenu, you need to use [prependTo](https://help.syncfusion.com/api/js/ejradialmenu#members:items-prependTo) property.
+ Template support for RadialMenu items will allow you to use any type of [\<svg\>](https://developer.mozilla.org/en-US/docs/Web/SVG/Element#SVG_elements) Permitted tags inside our template. Here for example, using this template support you can use the SVG icons in Radial Menu instead of image tags. To use SVG icons in RadialMenu, you need to use [prependTo](https://help.syncfusion.com/api/js/ejradialmenu#members:items-prependTo) property.
 
  ### Add SVG to item Icon
 
-Using SVG icon will optimize the icons quality and to reduce space occupation by normal images and svg images are scalable and zoomable. Define the text element for SVG with x and y position and code for rendering the font icons. Assign the SVG element ID to **prependTo** property.
+Using SVG icon will optimize the icons quality and to reduce space occupation by normal images and svg images are scalable and Zoom. Define the text element for SVG with x and y position and code for rendering the font icons. Assign the SVG element ID to **prependTo** property.
 
 {% highlight html %}
 
@@ -33,7 +33,7 @@ Using SVG icon will optimize the icons quality and to reduce space occupation by
         <text x="93" y="100">&#xe607;</text>
     </svg>
         </div>     
-    <ej-radialmenu id="defaultradialmenu"  backImageClass= "backimageclass" targetElementId= "rteSample1" (ejclick)="onItemClick($event)">
+    <ej-radialmenu id="defaultRadialMenu"  backImageClass= "backimageclass" targetElementId= "rteSample1" (ejclick)="onItemClick($event)">
     <e-items>
         <e-item prependTo="#template1" text="Bold" ></e-item>
         <e-item prependTo="#template2" text="Italic" ></e-item>
@@ -64,7 +64,7 @@ Now add the following in corresponding typescript file,
          this.content = 'Model–view–controller (MVC) is a software architecture pattern which separates the representation of information  from the user' +
          'interaction with it.The model consists of application data, business rules, logic, and functions.A view can be; any output representation of data,' +
           'such as a chart or a diagram.Multiple views of the same data are possible, such as a bar chart for management and a tabular view for accountants.' +
-         ' The controller mediates input, converting it to commands for the model or view.<br/> The central ideas behind MVC are code reusability and in addition' +
+         ' The controller mediates input, converting it to commands for the model or view.<br/> The central ideas behind MVC are code reusable and in addition' +
          ' to dividing the application into three kinds of components, the MVC design defines the interactions between them.A controller can send commands' +
         ' to its associated view to change the view presentation of the model (e.g., by scrolling through a document). It can also send commands to the model to update the model state' +
          '(e.g., editing a document).A model notifies its associated views and controllers when there has been a change in its state.This notification allows the views to produce updated' +
@@ -78,24 +78,24 @@ Now add the following in corresponding typescript file,
       let radialDiameter;
       let iframeY;
       let iframeX;
-      let xPos;
-      let yPos;
+      let xPosition;
+      let yPosition;
       let x;
       let y;
       target = $('#radialtarget1');
-      $('#defaultradialmenu').ejRadialMenu({autoOpen: true});
+      $('#defaultRadialMenu').ejRadialMenu({autoOpen: true});
       radialRadius = 150;
       radialDiameter = 2 * radialRadius;
       iframeY = target.offset().top + event.event.clientY;
       iframeX = target.offset().left + event.event.clientX;
-      xPos = (iframeX > radialRadius ? iframeX - radialRadius : 0);
-      yPos = (iframeY > radialRadius ? iframeY - radialRadius : 0);
-      x = iframeX > (target.width() - radialRadius) ? (target.width() - radialDiameter) : xPos;
-      y = iframeY > (target.height() - radialRadius) ? (target.height() - radialDiameter) : yPos;
-      $('#defaultradialmenu').ejRadialMenu('setPosition', x, y);
+      xPosition = (iframeX > radialRadius ? iframeX - radialRadius : 0);
+      yPosition = (iframeY > radialRadius ? iframeY - radialRadius : 0);
+      x = iframeX > (target.width() - radialRadius) ? (target.width() - radialDiameter) : xPosition;
+      y = iframeY > (target.height() - radialRadius) ? (target.height() - radialDiameter) : yPosition;
+      $('#defaultRadialMenu').ejRadialMenu('setPosition', x, y);
     }
     onChange(event) {
-        $('#defaultradialmenu').ejRadialMenu('enableItem', 'Undo');
+        $('#defaultRadialMenu').ejRadialMenu('enableItem', 'Undo');
     }
     onItemClick(e) { 
         let rteObj = $('#rteSample1').data('ejRTE');
@@ -146,7 +146,6 @@ Add the following in style sheet,
             -webkit-font-smoothing: antialiased;
             /* Better Font Rendering =========== */
             -webkit-font-smoothing: antialiased;
-            -moz-osx-font-smoothing: grayscale;
         }
 
     </style>
@@ -155,7 +154,7 @@ Add the following in style sheet,
 
 The following screenshot illustrates the output,
 
-![](template-support\img1.png)
+![Template Support](template-support\img1.png)
 
  N> This is the example sample for SVG icon support for Radial Menu.Like wise you can add any SVG element to it, but you need to customize and position the element individually.  
 

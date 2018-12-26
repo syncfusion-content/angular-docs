@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Functionalities in the ListBox component
+title: Functionalities in the Syncfusion ListBox component
 description: Functionalities in the ListBox component
 platform: Angular
 control: ListBox
@@ -16,7 +16,7 @@ To move the list item from one Listbox component to another ListBox by using the
 
    <div class="frame">
             <div class="contents">
-                <ej-listbox id="selectskills" [dataSource]="skillset" [fields]="fields" [allowDragAndDrop]="true" width="180px" height="220px"></ej-listbox>
+                <ej-listbox id="selectskills" [dataSource]="skillSet" [fields]="fields" [allowDragAndDrop]="true" width="180px" height="220px"></ej-listbox>
             </div>
             <div class="contents">
                 <ej-listbox id="selected" [allowDragAndDrop]="true" width="180px" height="220px"></ej-listbox>
@@ -28,11 +28,11 @@ To move the list item from one Listbox component to another ListBox by using the
 {% highlight ts %}
 
 export class DragAndDropComponent {
-    skillset: Array<any>;
+    skillSet: Array<any>;
     fields: Object;
     constructor() {
         this.fields = { text: 'skill' };
-        this.skillset = [
+        this.skillSet = [
             { skill: 'ASP.NET' }, { skill: 'ActionScript' }, { skill: 'Basic' },
             { skill: 'C++' }, { skill: 'C#' }, { skill: 'dBase' }, { skill: 'Delphi' },
             { skill: 'ESPOL' }, { skill: 'F#' }, { skill: 'FoxPro' }, { skill: 'Java' },
@@ -43,9 +43,9 @@ export class DragAndDropComponent {
 
 {% endhighlight %}
 
-![](Drag-and-drop_images\Drag-and-drop_img1.png)
+![Drag and Drop](Drag-and-drop_images\Drag-and-drop_img1.png)
 
-![](Drag-and-drop_images\Drag-and-drop_img2.png)
+![Drag and Drop Images](Drag-and-drop_images\Drag-and-drop_img2.png)
 
 ## Reordering
 
@@ -54,7 +54,7 @@ To reorder the list item within the ListBox component by using “allowDragAndDr
 {% highlight html %}
   
      <div id="control">
-        <ej-listbox id="selectskills" [dataSource]="skillset" [fields]="fields" [allowDragAndDrop]="true" width="180px" height="220px"></ej-listbox>
+        <ej-listbox id="selectskills" [dataSource]="skillSet" [fields]="fields" [allowDragAndDrop]="true" width="180px" height="220px"></ej-listbox>
     </div>	
 
 {% endhighlight %}
@@ -62,11 +62,11 @@ To reorder the list item within the ListBox component by using “allowDragAndDr
 {% highlight ts %}
 
 export class AppComponent {
-    skillset: Array<any>;
+    skillSet: Array<any>;
     fields: Object;
     constructor() {
         this.fields = { text: 'skill' };
-        this.skillset = [
+        this.skillSet = [
             { skill: 'ASP.NET' }, { skill: 'ActionScript' }, { skill: 'Basic' },
             { skill: 'C++' }, { skill: 'C#' }, { skill: 'dBase' }, { skill: 'Delphi' },
             { skill: 'ESPOL' }, { skill: 'F#' }, { skill: 'FoxPro' }, { skill: 'Java' },
@@ -76,20 +76,20 @@ export class AppComponent {
 }
 {% endhighlight %}
 
-![](Drag-and-drop_images\Drag-and-drop_img3.png)
+![Reordering](Drag-and-drop_images\Drag-and-drop_img3.png)
 
-![](Drag-and-drop_images\Drag-and-drop_img4.png)
+![Drag and Drop Reordering](Drag-and-drop_images\Drag-and-drop_img4.png)
 
 N> _The item reordering can be done dynamically without mouse interaction. For that we have provided two methods “[moveUp](http://help.syncfusion.com/js/api/ejlistbox#methods:moveup)” and “[moveDown](http://help.syncfusion.com/js/api/ejlistbox#methods:movedown)”._
 
 ## Incremental Search
 
-The [Incremental search](https://en.wikipedia.org/wiki/Incremental_search) helps to finding the specific item in the ListBox. The user types any character in ListBox component for that matched list box item will be selected by enabling the “enableIncrementalSearch”property in the ListBox component. Incremental search can be case sensitive or case insensitive. To make case sensitive, you can use [caseSensitiveSearch](https://help.syncfusion.com/api/js/ejlistbox#members:casesensitivesearch) property. 
+The [Incremental search](https://en.wikipedia.org/wiki/Incremental_search) helps to finding the specific item in the ListBox. The user types any character in ListBox component for that matched list box item will be selected by enabling the `enableIncrementalSearch` property in the ListBox component. Incremental search can be case sensitive or case insensitive. To make case sensitive, you can use [caseSensitiveSearch](https://help.syncfusion.com/api/js/ejlistbox#members:casesensitivesearch) property. 
 
 {% highlight html %}
 
     <div id="control">
-       <ej-listbox id="selectskills" [dataSource]="skillset" [fields]="fields" [enableIncrementalSearch]="true" width="180px" height="220px"></ej-listbox>
+       <ej-listbox id="selectskills" [dataSource]="skillSet" [fields]="fields" [enableIncrementalSearch]="true" width="180px" height="220px"></ej-listbox>
     </div> 
 
 {% endhighlight %}
@@ -97,16 +97,16 @@ The [Incremental search](https://en.wikipedia.org/wiki/Incremental_search) helps
 {% highlight ts %}
 
 export class AppComponent {
-    skillset: Array<any>;
+    skillSet: Array<any>;
     fields: Object;
     constructor() {
         this.fields = { text: 'fonts' };
-        this.skillset = [
+        this.skillSet = [
             { fonts: "Algerian" },
             { fonts: "ARIAL" }, { fonts: "Bimini" }, { fonts: "Courier" },
             { fonts: "Cursive" }, { fonts: "Fantasy" }, { fonts: "Georgia" }, { fonts: "Impact" },
-            { fonts: "New york" }, { fonts: "Sans-Serif" }, { fonts: "Scripts" }, { fonts: "Times" },
-            { fonts: "Times New Roman" }, { fonts: "Verdana" }, { fonts: "Western" }, { fonts: "Zapfellipt bt" }
+            { fonts: "New York" }, { fonts: "Sans-Serif" }, { fonts: "Scripts" }, { fonts: "Times" },
+            { fonts: "Times New Roman" }, { fonts: "Verdana" }, { fonts: "Western" }
         ];
         ];
     }
@@ -114,11 +114,11 @@ export class AppComponent {
 
 {% endhighlight %}
 
-![](Keyboard-interaction_images\Keyboard-interaction_img1.png)
+![Incremental Search](Keyboard-interaction_images\Keyboard-interaction_img1.png)
 
 Press <kbd> tab </kbd> key to get ListBox focus and press <kbd>"C"</kbd> to get the following output.
 
-![](Keyboard-interaction_images\Keyboard-interaction_img2.png)
+![Keyboard Interaction](Keyboard-interaction_images\Keyboard-interaction_img2.png)
 
 
 
