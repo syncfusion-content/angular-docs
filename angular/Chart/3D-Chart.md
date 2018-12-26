@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 3D Chart types available in Essential Angular Chart
+title: 3D Chart types available in Syncfusion Essential Angular Chart
 description: Learn about the different types of 3D charts supported by Syncfusion Essential Angular Chart and how to customize the 3D view.
 platform: Angular
 control: Chart
@@ -30,7 +30,9 @@ For rendering a 3D Column Chart, specify the series *type* as **"column"** in th
 {% endhighlight %}
 
 
-![](3D-Chart_images/3D-Chart_img1.png)
+![Column 3D](3D-Chart_images/Chart-3D_img1.png)
+
+[Click](http://ng2jq.syncfusion.com/#/chart/column3d) here to view the 3D Column Chart online demo sample.
 
 
 ## 3D Bar Chart
@@ -51,8 +53,9 @@ You can create a 3D Bar Chart by setting the series *type* as **"bar"** in the c
 {% endhighlight %}
 
 
-![](3D-Chart_images/3D-Chart_img2.png)
+![Bar 3D](3D-Chart_images/Chart-3D_img2.png)
 
+[Click](http://ng2jq.syncfusion.com/#/chart/bar3d) here to view the 3D Bar Chart online demo sample.
 
 ## 3D Stacked Column Chart
 
@@ -73,8 +76,9 @@ Stacking Column 3DChart is rendered by specifying the series *type* as **"stacki
 {% endhighlight %}
 
 
-![](3D-Chart_images/3D-Chart_img3.png)
+![Stacked Column 3D](3D-Chart_images/Chart-3D_img3.png)
 
+[Click](http://ng2jq.syncfusion.com/#/chart/stackingColumn3d) here to view the 3D Stacked Column Chart online demo sample.
 
 ## 3D 100% Stacked Column Chart
 
@@ -95,8 +99,9 @@ Stacking Column 3DChart is rendered by specifying the series *type* as **"stacki
 {% endhighlight %}
 
 
-![](3D-Chart_images/3D-Chart_img4.png)
+![StackedColumn100 3D](3D-Chart_images/Chart-3D_img4.png)
 
+[Click](http://ng2jq.syncfusion.com/#/chart/stackingColumn3d100) here to view the 3D 100% Stacked Column Chart online demo sample.
 
 ## 3D Stacked Bar Chart
 
@@ -116,7 +121,7 @@ To create Stacking Bar 3DChart, set the series *type* as **"stackingBar"** in th
 {% endhighlight %}
 
 
-![](3D-Chart_images/3D-Chart_img5.png)
+![Stacked Bar 3D](3D-Chart_images/Chart-3D_img5.png)
 
 
 ## 3D 100% Stacked Bar Chart
@@ -138,7 +143,7 @@ You can create 100% Stacking Bar 3DChart by setting the series *type* as **"stac
 {% endhighlight %}
 
 
-![](3D-Chart_images/3D-Chart_img6.png)
+![StackedBar100 3D](3D-Chart_images/Chart-3D_img6.png)
 
 
 ## 3D Pie Chart
@@ -158,8 +163,9 @@ To render the Pie Chart in 3D view, enable the **enbel3D** option in the chart a
 {% endhighlight %}
 
 
-![](3D-Chart_images/3D-Chart_img7.png)
+![Pie 3D](3D-Chart_images/Chart-3D_img7.png)
 
+[Click](http://ng2jq.syncfusion.com/#/chart/pie3d) here to view the 3D Pie Chart online demo sample.
 
 ## 3D Doughnut Chart
 
@@ -178,7 +184,9 @@ To render the Doughnut Chart in 3D view, enable the **enbel3D** option in the ch
 {% endhighlight %}
 
 
-![](3D-Chart_images/3D-Chart_img8.png)
+![Doughnut 3D](3D-Chart_images/Chart-3D_img8.png)
+
+[Click](http://ng2jq.syncfusion.com/#/chart/doughnut3d) here to view the 3D Doughnut Chart online demo sample.
 
 ## Configure 3D Chart
 
@@ -194,7 +202,7 @@ To render the EjChart in 3D view, set the `enable3D` option as *true* in the cha
 {% endhighlight %}
 
 
-![](3D-Chart_images/3D-Chart_img9.png)
+![Enable 3D](3D-Chart_images/Chart-3D_img9.png)
 
  
 ### Placing Bar / Column kind of series side-by-side
@@ -210,7 +218,7 @@ To render the EjChart in 3D view, set the `enable3D` option as *true* in the cha
 {% endhighlight %}
 
 
-![](3D-Chart_images/3D-Chart_img10.png)
+![SideBySideSeriesPlacement](3D-Chart_images/Chart-3D_img10.png)
 
 
 ### Setting Axis Wall Size
@@ -227,7 +235,7 @@ In 3DChart, Cartesian axes lines are represented as walls and it defines the wid
 {% endhighlight %}
 
 
-![](3D-Chart_images/3D-Chart_img11.png)
+![Wall Size](3D-Chart_images/Chart-3D_img11.png)
 
 
 ### 3D Depth
@@ -243,7 +251,7 @@ By using the `depth` property, you can view the 3D Chart from the front view of 
 {% endhighlight %}
 
 
-![](3D-Chart_images/3D-Chart_img12.png)
+![Depth](3D-Chart_images/Chart-3D_img12.png)
 
 
 ### Rotating and Tilting 3D Chart
@@ -260,7 +268,7 @@ To spin the 3D Chart on mouse dragging, enable `enableRotation` option in the ch
 {% endhighlight %}
 
 
-![](3D-Chart_images/3D-Chart_img13.png)
+![Rotate and Tilt](3D-Chart_images/Chart-3D_img13.png)
 
 
 ### PerspectiveAngle	
@@ -278,4 +286,4 @@ The `perspectiveAngle` specifies the appearance of the height, width, depth and 
 {% endhighlight %}
 
 
-![](3D-Chart_images/3D-Chart_img14.png)
+![Perspective Angle](3D-Chart_images/Chart-3D_img14.png)
