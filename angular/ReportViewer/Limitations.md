@@ -20,4 +20,4 @@ documentation: ug
 
 ## Unsupported expression
 
-* The object function and VB function do not have complete support in the ReportViewer.
+* The VB function do not have complete support in the ReportViewer.
