@@ -24,16 +24,16 @@ Create a **HTML** page and add the scripts and CSS references in the order menti
     <!DOCTYPE html>
     <html>
     <head> 
-        <link href="http://cdn.syncfusion.com/14.3.0.52/js/web/flat-azure/ej.web.all.min.css" rel="stylesheet" />
+        <link href="https://cdn.syncfusion.com/14.3.0.52/js/web/flat-azure/ej.web.all.min.css" rel="stylesheet" />
         <script src="node_modules/core-js/client/shim.min.js"></script>
         <script src="node_modules/zone.js/dist/zone.js"></script>
         <script src="node_modules/reflect-metadata/Reflect.js"></script>
         <script src="node_modules/systemjs/dist/system.src.js"></script>
         <script src="https://code.jquery.com/jquery-3.0.0.min.js"></script>
-        <script src="http://cdn.syncfusion.com/js/assets/external/jsrender.min.js" type="text/javascript"></script>
+        <script src="https://cdn.syncfusion.com/js/assets/external/jsrender.min.js" type="text/javascript"></script>
         <script src="https://ajax.aspnetcdn.com/ajax/jquery.validate/1.14.0/jquery.validate.min.js"></script>
-        <script src="http://cdn.syncfusion.com/14.3.0.49/js/web/ej.web.all.min.js" type="text/javascript"></script>
-        <script src ="http://cdn.syncfusion.com/14.3.0.49/js/common/ej.angular2.min.js"></script>
+        <script src="https://cdn.syncfusion.com/14.3.0.49/js/web/ej.web.all.min.js" type="text/javascript"></script>
+        <script src ="https://cdn.syncfusion.com/14.3.0.49/js/common/ej.angular2.min.js"></script>
         <script src="systemjs.config.js"></script>
     </head>
     <body>
@@ -43,7 +43,7 @@ Create a **HTML** page and add the scripts and CSS references in the order menti
 
 {% endhighlight %}
 
-In the above code, `ej.web.all.min.js`script reference has been added for demonstration purpose. It is not recommended to use it during deployment, as it contains all the widgets, which results in deploying large script file. Instead, you can use[CSG](http://csg.syncfusion.com/# "") utility to generate a custom script file with the required widgets for deployment purpose.
+In the above code, `ej.web.all.min.js` script reference has been added for demonstration purpose. It is not recommended to use it during deployment, as it contains all the widgets, which results in deploying large script file. Instead, you can use [CSG](https://csg.syncfusion.com/# "") utility to generate a custom script file with the required widgets for deployment purpose.
 
 ## Initialize and configure the control
 
@@ -158,7 +158,7 @@ Execute the below command in the command prompt.
 
 The application gets opened in the browser automatically and now, navigate to the **ReportViewer** tab to view the ReportViewer output on the page as displayed in the following screenshot.
 
-![RDL report snap](Getting-Started_images/Getting-Started_img1.png) 
+![ReportViewer with Grouping Aggregate Report](Getting-Started_images/Getting-Started_img1.png) 
 
 ReportViewer with Grouping Aggregate Report
 {:.caption}.
@@ -217,7 +217,7 @@ Execute the below command in the command prompt.
 
 The application gets opened in the browser automatically and now, navigate to the **ReportViewer** tab to view the ReportViewer output on the page as displayed in the following screenshot.
 
-![SSRS report snap](Getting-Started_images/Getting-Started_img2.png) 
+![Report Viewer showcases the report from SSRS with the help of external Reporting Server](Getting-Started_images/Getting-Started_img2.png) 
    
 Report from SSRS
 {:.caption}
@@ -418,7 +418,7 @@ Execute the below command in the command prompt.
 
 The application gets opened in the browser automatically and now, navigate to the **ReportViewer** tab to view the ReportViewer output on the page as displayed in the following screenshot.
 
-![RDLC report snap](Getting-Started_images/Getting-Started_img3.png) 
+![Area Chart RDLC Report](Getting-Started_images/Getting-Started_img3.png) 
 
 Area Chart RDLC Report
 {:.caption}

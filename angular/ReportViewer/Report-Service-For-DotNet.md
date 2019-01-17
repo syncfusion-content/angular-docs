@@ -15,7 +15,7 @@ The ReportViewer uses Web API services to process the report file, process the r
 
 Right-Click the Project, select Add and select Web API Controller Class file from the listed templates.
 
-![Getting-Started](Getting-Started_images/Getting-Started_img4.png) 
+![Adding WebApi Controller](Getting-Started_images/Getting-Started_img4.png) 
 
 Adding WebApi Controller
 {:.caption}
@@ -141,9 +141,9 @@ Processes the report request and returns the result.</td></tr>
 
 ### WebAPI Routing
 
-1. Right-Click the Project, select Add  and select Global.asax file from the listed templates.
+1. Right-Click the Project, select Add and select Global.asax file from the listed templates.
 
-   ![Getting-Started](Getting-Started_images/Getting-Started_img5.png) 
+   ![Adding Global.asax](Getting-Started_images/Getting-Started_img5.png) 
    
    Adding Global.asax
    {:.caption}
@@ -177,7 +177,7 @@ Processes the report request and returns the result.</td></tr>
 
 ### Enable CORS
 
-1 Add the CORS NuGet package. In Visual Studio, goto the Tools menu, select NuGet Package Manager, then select     Package Manager Console. In         the Package Manager Console window, type the following command:
+1 Add the CORS NuGet package. In Visual Studio, goto the Tools menu, select NuGet Package Manager, then select Package Manager Console. In the Package Manager Console window, type the following command:
 
   {% highlight html %}
 
