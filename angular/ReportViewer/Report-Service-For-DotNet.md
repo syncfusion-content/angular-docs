@@ -9,11 +9,11 @@ keywords: IReportController, Report Controller, ApiController, ReportHelper
 
 # Report Controller
 
-The ReportViewer uses Web API services to process the report file, process the request from control and return the processed data from control to client side.
+The ReportViewer uses Web API services to process the report file, process the request from the control, and return the processed data from the control to client side.
 
 ## Create a Web API Controller for .NET platform
 
-Right-Click the Project, select Add and select Web API Controller Class file from the listed templates.
+Right-click the **Project**, select **Add**, and then choose **Web API Controller Class file** from the listed templates.
 
 ![Adding WebApi Controller](Getting-Started_images/Getting-Started_img4.png) 
 
@@ -21,7 +21,7 @@ Adding WebApi Controller
 {:.caption}
 
 ### References
-You should add the following assembly for the ReportViewer webAPI controller in .NET platform:
+You should add the following assembly for the ReportViewer WebAPI controller in .NET platform:
 
    * Syncfusion.Linq.Base
    * Syncfusion.Compression.Base
@@ -37,13 +37,13 @@ You should add the following assembly for the ReportViewer webAPI controller in 
    * Syncfusion.OfficeChart.Base
    * Syncfusion.Presentation.Base
 
-   N> Refer the above assemblies from the installed location, C:\Program Files (x86)\Syncfusion\Essential Studio\{platform}\{{ site.releaseversion }}\Assemblies
+   N> Refer to the above assemblies from the installed location, C:\Program Files (x86)\Syncfusion\Essential Studio\{platform}\{{ site.releaseversion }}\Assemblies
    N>
-   N> Refer System.Web.Http, System. Web.Http.WebHost, System.Net.Http.WebRequest and System.Net.Http.Formatting assemblies from ASP.NET WebApi NuGet package.
+   N> Refer to the System.Web.Http, System. Web.Http.WebHost, System.Net.Http.WebRequest and System.Net.Http.Formatting assemblies from the ASP.NET WebApi NuGet package.
 
 ### Inherit IReportController
 
-The ApiController inherits the `IReportController` and you can add the following code example to its methods definition in order to process the report file. The interface `IReportController` contains the required actions and helper methods declaration to process the report. The `ReportHelper` class contains helper methods that helps to process Post/Get request from control and return the response to control.
+The ApiController inherits the `IReportController`, and you can add the following code example to its methods definition to process the report file. The `IReportController` interface contains the required actions and helper methods declaration to process the report. The `ReportHelper` class contains helper methods that helps to process Post/Get request from control and return the response to the control.
 
 ~~~ csharp
 
@@ -91,7 +91,7 @@ namespace ReportViewerDemo.Api
 
 ### IReportController
 
-The interface `IReportController` has the declaration of action methods that is defined in WebApi Controller for processing the RDL/RDLC files and for processing request from ReportViewer control. The `IReportController` has the following action methods declaration. 
+The `IReportController` interface has declaration of action methods that is defined in the WebAPI Controller for processing the RDL/RDLC files and request from the ReportViewer control. The `IReportController` has the following action methods declaration. 
 
 <table>
 <tr>
@@ -101,7 +101,7 @@ Description</th></tr>
 <tr>
 <td>
 GetResource</td><td>
-Action (HttpGet) method for getting resource for report. </td></tr>
+Action (HttpGet) method for getting a resource for report. </td></tr>
 <tr>
 <td>
 PostReportAction</td><td>
@@ -109,20 +109,20 @@ Action (HttpPost) method for posting the request for report process. </td></tr>
 <tr>
 <td>
 PostFormReportAction</td><td>
-Action (HttpPost) method for posting the request for report exporting. It requires only in ASP.NET Core platform</td></tr>
+Action (HttpPost) method for posting the request to export the report. It requires only in ASP.NET Core platform.</td></tr>
 <tr>
 <td>
 OnInitReportOptions</td><td>
-Report initialization method that is triggered when report begins to be processed.</td></tr>
+Triggers the report initialization method when the report has to be processed.</td></tr>
 <tr>
 <td>
 OnReportLoaded</td><td>
-Report loaded method that is triggered when report and sub report begin loading.</td></tr>
+Triggers the report loaded method when loading the report and subreport.</td></tr>
 </table>
 
 ### ReportHelper
 
-The class `ReportHelper` contains helper methods that helps process Post/Get request from ReportViewer control and returns the response to ReportViewer control. The `ReportHelper` has the following methods. 
+The class `ReportHelper` contains helper methods that helps process Post/Get request from the ReportViewer control and returns the response to the ReportViewer control. The `ReportHelper` has the following methods. 
 
 <table>
 <tr>
@@ -141,14 +141,14 @@ Processes the report request and returns the result.</td></tr>
 
 ### WebAPI Routing
 
-1. Right-Click the Project, select Add and select Global.asax file from the listed templates.
+1. Right-click the **Project**, select **Add**, and then choose **Global.asax file** from the listed templates.
 
    ![Adding Global.asax](Getting-Started_images/Getting-Started_img5.png) 
    
    Adding Global.asax
    {:.caption}
 
-2. You can route the WebAPI in Application_Start event into Global.asax file as follows.
+2. You can route the WebAPI in Application_Start event into the Global.asax file as follows.
 
    ~~~ csharp
    
@@ -177,7 +177,7 @@ Processes the report request and returns the result.</td></tr>
 
 ### Enable CORS
 
-1 Add the CORS NuGet package. In Visual Studio, goto the Tools menu, select NuGet Package Manager, then select Package Manager Console. In the Package Manager Console window, type the following command:
+1 Add the CORS NuGet package. In Visual Studio, goto the Tools menu, select **NuGet Package Manager**, and then choose **Package Manager Console**. In the Package Manager Console window, type the following command.
 
   {% highlight html %}
 
@@ -185,7 +185,7 @@ Processes the report request and returns the result.</td></tr>
 
   {% endhighlight %}
     
-2 You can call enable cors method in Application_Start event into Global.asax file as follows.
+2 You can call the enable cors method in the Application_Start event into Global.asax file as follows.
 
     ~~~ csharp
 
@@ -214,7 +214,7 @@ Processes the report request and returns the result.</td></tr>
 
     ~~~
  
-3 Add the [EnableCors] attribute to the ApiController class as follows
+3 Add the [EnableCors] attribute to the ApiController class as follows.
 
     ~~~ csharp
 
