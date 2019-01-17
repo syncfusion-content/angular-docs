@@ -185,7 +185,7 @@ Triggers the report initialization method when the report has to be processed.</
 <tr>
 <td>
 OnReportLoaded</td><td>
-Triggers the report loaded method when the report and subreport begin loading.</td></tr>
+Triggers the report loaded method when loading the report and subreport.</td></tr>
 </table>
 
 ### ReportHelper
