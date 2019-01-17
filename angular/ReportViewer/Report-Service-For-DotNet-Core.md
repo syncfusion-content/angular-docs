@@ -12,7 +12,7 @@ keywords: IReportController, Report Controller, ApiController, ReportHelper
 The ReportViewer uses Web API services to process the report file, process the request from control and return the processed data from control to client side.
 
 ## Create a Web API Controller for .NET Core platform
-Right-Click the Project, select Add and select Web API Controller Class file from the listed templates.
+Right-click the Project, select Add and then choose  Web API Controller Class file from the listed templates.
 
 ### References
 You should add the following packages for the report viewer:
@@ -27,7 +27,7 @@ Purpose
 </tr>
 <tr>
 <td>Syncfusion.EJ.AspNet.Core</td>
-<td>Builds the report viewer controls with the tag helper.</td>
+<td>Builds the ReportViewer controls with the tag helper.</td>
 </tr>
 <tr>
 <td>Syncfusion.EJ.ReportViewer.AspNet.Core</td>
@@ -35,11 +35,11 @@ Purpose
 </tr>
 <tr>
 <td>System.Data.SqlClient</td>
-<td>This is an optional package for the report viewer. It should be referred in project when renders the RDL report and which contains the SQL Server and SQL Azure datasource. Also, the package version should be higher of 4.1.0 . </td>
+<td>This is an optional package for the report viewer. It should be referred in the project when rendering the RDL report, which contains the SQL Server and SQL Azure data source. Also, the package version should be higher than 4.1.0 . </td>
 </tr>
 </table>
 
-If we install the above NuGet packages, it automatically add the below ReportViewer dependent NuGet file in your application,
+If you install the above NuGet packages, it will automatically add the following ReportViewer dependent NuGet file in your application.
 
 <table>
 <tr>
@@ -51,7 +51,7 @@ Purpose
 </tr>
 <tr>
 <td>Syncfusion.EJ</td>
-<td>Builds the report viewer controls with the tag helper.</td>
+<td>Builds the ReportViewer controls with the tag helper.</td>
 </tr>
 <tr>
 <td>Syncfusion.Report.Net.Core</td>
@@ -59,19 +59,19 @@ Purpose
 </tr>
 <tr>
 <td>Syncfusion.Compression.Net.Core</td>
-<td>Supports for exporting the report to PDF, Microsoft Word, and Microsoft Excel format. It is a base library for the packages <b>Syncfusion.Pdf.Net.Core</b> , <b>Syncfusion.DocIO.Net.Core</b> and <b>Syncfusion.XlsIO.Net.Core</b>. </td>
+<td>Supports for exporting the report to PDF, Microsoft Word, and Microsoft Excel format. It is a base library for the <b>Syncfusion.Pdf.Net.Core</b> , <b>Syncfusion.DocIO.Net.Core</b>, and <b>Syncfusion.XlsIO.Net.Core</b> packages. </td>
 </tr>
 <tr>
 <td>Syncfusion.Pdf.Net.Core</td>
-<td>Supports for exporting the report to a PDF.</td>
+<td>Supports for exporting a report to PDF.</td>
 </tr>
 <tr>
 <td>Syncfusion.DocIO.Net.Core</td>
-<td>Supports for exporting the report to a Word.</td>
+<td>Supports for exporting a report to Microsoft Word.</td>
 </tr>
 <tr>
 <td>Syncfusion.XlsIO.Net.Core</td>
-<td>Supports for exporting the report to an Excel.</td>
+<td>Supports for exporting a report to Microsoft Excel.</td>
 </tr>
 <tr>
 <td>Syncfusion.OfficeChart.Net.Core</td>
@@ -79,17 +79,17 @@ Purpose
 </tr>
 <tr>
 <td>Newtonsoft.Json</td>
-<td>Serialize and deserialize the data for report viewer. It is a mandatory package for the report viewer, and the package version should be higher of 10.0.1 for NET Core 2.0 and others should be higher of 9.0.1.</td>
+<td>Serialize and deserialize data for the ReportViewer. It is a mandatory package for the ReportViewer, and the package version should be higher than 10.0.1 for NET Core 2.0 and others should be higher than 9.0.1.</td>
 </tr>
 </table>
 
-N> Please ensure all the above dependent packages are added properly after the NuGet package installation completed.
+N> Ensure whether all the above dependent packages are added properly after the NuGet package installation is completed.
 
 ### Inherit IReportController
  
-The ApiController should inherit the `IReportController` interface to build the report viewer compatible Web API, and the `ReportHelper` should be used with `IReportController` interface implemented methods. The `ReportHelper` will perform the server-side related process and will return the required data for the report viewer to process the rendering. Here, the sample code is provided with an MVC application to build the Web API service along with the existing controller.
+The ApiController should inherit the `IReportController` interface to build the ReportViewer compatible Web API, and the `ReportHelper` should be used with `IReportController` interface implemented methods. The `ReportHelper` will perform the server-side related process and will return the required data to render the report in the Report Viewer. Here, the sample code is provided with an MVC application to build the Web API service along with the existing controller.
 
-Please add the following code example in controller page.
+Add the following code example in the controller page.
 
 ~~~ csharp
 
@@ -159,7 +159,7 @@ namespace ReportViewerDemo.Controllers
 
 ### IReportController
 
-The interface `IReportController` has the declaration of action methods that is defined in WebApi Controller for processing the RDL/RDLC files and for processing request from ReportViewer control. The `IReportController` has the following action methods declaration. 
+The interface `IReportController` has declaration of action methods that is defined in the WebAPI Controller for processing the RDL/RDLC files and request from the ReportViewer control. The `IReportController` has the following action methods declaration. 
 
 <table>
 <tr>
@@ -169,7 +169,7 @@ Description</th></tr>
 <tr>
 <td>
 GetResource</td><td>
-Action (HttpGet) method for getting resource for report. </td></tr>
+Action (HttpGet) method for getting resource for a report. </td></tr>
 <tr>
 <td>
 PostReportAction</td><td>
@@ -190,7 +190,7 @@ Report loaded method that is triggered when report and sub report begin loading.
 
 ### ReportHelper
 
-The class `ReportHelper` contains helper methods that helps process Post/Get request from ReportViewer control and returns the response to ReportViewer control. The `ReportHelper` has the following methods. 
+The class `ReportHelper` contains helper methods that help the process Post/Get request from the ReportViewer control and returns the response to ReportViewer control. The `ReportHelper` has the following methods. 
 
 <table>
 <tr>
@@ -209,7 +209,7 @@ Processes the report request and returns the result.</td></tr>
 
 ### WebAPI Routing
 
-You can route the WebAPI in configure method into Startup.cs file as follows.
+You can route the WebAPI in the configure method into the Startup.cs file as follows.
 
 ~~~ csharp
 
@@ -259,7 +259,7 @@ You can route the WebAPI in configure method into Startup.cs file as follows.
 
 ### Enable CORS
 
-1 You can add cors in ConfigureServices method into Startup.cs file as follows.
+1 You can add cors in the ConfigureServices method to the Startup.cs file as follows.
 
     ~~~ csharp
 
@@ -313,7 +313,7 @@ You can route the WebAPI in configure method into Startup.cs file as follows.
 
     ~~~
  
-2 Add the [EnableCors] attribute to the ApiController class as follows
+2 Add the [EnableCors] attribute to the ApiController class as follows.
 
     ~~~ csharp
 
@@ -383,4 +383,4 @@ You can route the WebAPI in configure method into Startup.cs file as follows.
 
     ~~~
 
-N> You cannot load the application report with path information in ASP.NET Core. So, you should load the report as `Stream` like an example provided above in `OnInitReportOptions`. If you need to get the invoice sample report then you can obtain it from the Syncfusion ASP.NET Core sample browser installed location (wwwroot\reports\invoice.rdl).
+N> You cannot load the application report with path information in ASP.NET Core. So, you should load the report as `Stream` like an example provided above in `OnInitReportOptions`. If you need to get the invoice sample report, then you can obtain it from the Syncfusion ASP.NET Core sample browser installed location (wwwroot\reports\invoice.rdl).
