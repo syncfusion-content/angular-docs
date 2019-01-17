@@ -88,7 +88,7 @@ You can load the RDL/RDLC report in Angular by using the following options:
 
 ### Load report using online Web API service
 
- The ReportViewer uses online Web API services to process the report file and request from the control and then, return the processed data from the control to client side.
+ The ReportViewer uses online Web API services to process the report file, process the request from the control, and return the processed data from the control to client side.
 
 {% highlight ts %}
 
@@ -119,12 +119,12 @@ You can load the RDL/RDLC report with the help of local web service for .NET Pla
  1 Local web service for .NET Platform
 
    [How to load report using local Web API service for .NET Platform](/angular/reportviewer/report-service-for-dotnet)
-   Describes how to configure local Web API Service URL in Angular ReportViewer.
+   Describes how to configure the local Web API Service URL in Angular ReportViewer.
 
  2 Local web service for .NET core Platform
 
    [How to load report using local Web API service for .NET Core Platform](/angular/reportviewer/report-service-for-dotnet-core)
-   Describes how to configure local Web API Service URL in Angular ReportViewer.
+   Describes how to configure the local Web API Service URL in Angular ReportViewer.
 
 {% highlight ts %}
 
@@ -148,7 +148,7 @@ export class ReportViewerComponent {
 
 {% endhighlight %}
 
-N> Default RDL Report will be rendered, which is used in the online service. You can obtain sample rdl/rdlc files from Syncfusion installed location (%userprofile%\AppData\Local\Syncfusion\EssentialStudio\{{ site.releaseversion }}\Common\Data\ejReportTemplate).
+N> Default RDL Report will be rendered, which is used in the online service. You can obtain the sample RDL/RDLC files from Syncfusion installed location (%userprofile%\AppData\Local\Syncfusion\EssentialStudio\{{ site.releaseversion }}\Common\Data\ejReportTemplate).
 
 ## Run the Application
 
