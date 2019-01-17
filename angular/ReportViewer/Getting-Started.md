@@ -43,11 +43,11 @@ Create a **HTML** page and add the scripts and CSS references in the order menti
 
 {% endhighlight %}
 
-In the above code, `ej.web.all.min.js` script reference has been added for demonstration purpose. It is not recommended to use it during deployment, as it contains all the widgets, which results in deploying large script file. Instead, you can use [CSG](https://csg.syncfusion.com/# "") utility to generate a custom script file with the required widgets for deployment purpose.
+In the above code, the `ej.web.all.min.js` script reference has been added for demonstration purpose. It is not recommended to use during deployment as it contains all the widgets, which result in deploying large script file. Instead, you can use the [CSG](https://csg.syncfusion.com/# "") utility to generate a custom script file with required widgets for deployment purpose.
 
 ## Initialize and configure the control
 
-Add necessary HTML elements and CSS style to render ReportViewer and set the desired `reportPath` and `reportServiceUrl` properties to ReportViewer.
+Add necessary HTML elements and CSS style to render the ReportViewer and set the desired `reportPath` and `reportServiceUrl` properties to the ReportViewer.
 
 <table>
 <tr>
@@ -82,13 +82,13 @@ ej-reportviewer {
 
 {% endhighlight %}
 
-We can load the RDL / RDLC report in Angular by using both following options. 
-1. Using online Web API service.
-2. Using local Web API service.
+You can load the RDL/RDLC report in Angular by using the following options: 
+* Online Web API service.
+* Local Web API service.
 
 ### Load report using online Web API service
 
- The ReportViewer uses online Web API services to process the report file, process the request from control and return the processed data from control to client side.
+ The ReportViewer uses online Web API services to process the report file and request from the control and then, return the processed data from the control to client side.
 
 {% highlight ts %}
 
@@ -114,17 +114,17 @@ export class ReportViewerComponent {
 
 ### Load report using local Web API service
 
-You can load the RDL / RDLC report with the help of local web service for .NET Platform and .NET core Platform.
+You can load the RDL/RDLC report with the help of local web service for .NET Platform and .NET core Platform.
 
  1 Local web service for .NET Platform
 
    [How to load report using local Web API service for .NET Platform](/angular/reportviewer/report-service-for-dotnet)
-   Describes how to configure local Web API ServiceUrl in angular report viewer.
+   Describes how to configure local Web API Service URL in Angular ReportViewer.
 
  2 Local web service for .NET core Platform
 
    [How to load report using local Web API service for .NET Core Platform](/angular/reportviewer/report-service-for-dotnet-core)
-   Describes how to configure local Web API ServiceUrl in angular report viewer.
+   Describes how to configure local Web API Service URL in Angular ReportViewer.
 
 {% highlight ts %}
 
@@ -265,7 +265,7 @@ ej-reportviewer {
 
 {% endhighlight %}
 
-### Pass DataSource from the Client Side
+### Pass data source from client side
 
  {% highlight ts %}
 
@@ -305,9 +305,9 @@ ej-reportviewer {
 
  N> Default RDLC Report will be rendered, which is used in the online service.
 
-### Pass dataSource from server side
+### Pass data source from server side
 
- The ReportViewer has data binding support from server side to visualize the RDLC reports. You can pass DataSource from WebAPI controller 
+ The ReportViewer has a data binding support from server side to visualize the RDLC reports. You can pass the data source from the WebAPI controller.
 
    ~~~ csharp
 
