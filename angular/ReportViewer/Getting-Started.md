@@ -158,7 +158,7 @@ Execute the below command in the command prompt.
 
 The application gets opened in the browser automatically and now, navigate to the **ReportViewer** tab to view the ReportViewer output on the page as displayed in the following screenshot.
 
-![ReportViewer with Grouping Aggregate Report](Getting-Started_images/Getting-Started_img1.png) 
+![Grouping aggregate RDL report rendered in ReportViewer](Getting-Started_images/Getting-Started_img1.png) 
 
 ReportViewer with Grouping Aggregate Report
 {:.caption}.
@@ -418,7 +418,7 @@ Execute the below command in the command prompt.
 
 The application gets opened in the browser automatically and now, navigate to the **ReportViewer** tab to view the ReportViewer output on the page as displayed in the following screenshot.
 
-![Area Chart RDLC Report](Getting-Started_images/Getting-Started_img3.png) 
+![Area chart RDLC report rendered in ReportViewer](Getting-Started_images/Getting-Started_img3.png) 
 
 Area Chart RDLC Report
 {:.caption}

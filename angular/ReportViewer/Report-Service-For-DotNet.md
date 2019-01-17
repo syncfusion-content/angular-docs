@@ -15,7 +15,7 @@ The ReportViewer uses Web API services to process the report file, process the r
 
 Right-click the **Project**, select **Add**, and then choose **Web API Controller Class file** from the listed templates.
 
-![Adding WebApi Controller](Getting-Started_images/Getting-Started_img4.png) 
+![Shows dialog to adding a new WebApi controller for ReportViewer](Getting-Started_images/Getting-Started_img4.png) 
 
 Adding WebApi Controller
 {:.caption}
@@ -143,7 +143,7 @@ Processes the report request and returns the result.</td></tr>
 
 1. Right-click the **Project**, select **Add**, and then choose **Global.asax file** from the listed templates.
 
-   ![Adding Global.asax](Getting-Started_images/Getting-Started_img5.png) 
+   ![Shows dialog to adding a Global.asax file for WebAPI routing](Getting-Started_images/Getting-Started_img5.png) 
    
    Adding Global.asax
    {:.caption}
