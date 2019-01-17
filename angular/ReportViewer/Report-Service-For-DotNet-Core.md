@@ -12,7 +12,7 @@ keywords: IReportController, Report Controller, ApiController, ReportHelper
 The ReportViewer uses Web API services to process the report file, process the request from control, and return the processed data from control to client side.
 
 ## Create a Web API Controller for .NET Core platform
-Right-click the Project, select **Add** and then choose **Web API Controller Class file** from the listed templates.
+Right-click the **Project**, select **Add** and then choose **Web API Controller Class file** from the listed templates.
 
 ### References
 You should add the following packages for the ReportViewer:
