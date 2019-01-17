@@ -119,12 +119,12 @@ You can load the RDL/RDLC report with the help of local web service for .NET Pla
  1 Local web service for .NET Platform
 
    [How to load report using local Web API service for .NET Platform](/angular/reportviewer/report-service-for-dotnet)
-   Describes how to configure the local Web API Service URL in Angular ReportViewer.
+   Describes how to configure the local Web API service URL for .NET platform in Angular ReportViewer.
 
  2 Local web service for .NET core Platform
 
    [How to load report using local Web API service for .NET Core Platform](/angular/reportviewer/report-service-for-dotnet-core)
-   Describes how to configure the local Web API Service URL in Angular ReportViewer.
+   Describes how to configure the local Web API service URL for .NET Core platform in Angular ReportViewer.
 
 {% highlight ts %}
 
