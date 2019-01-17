@@ -9,13 +9,13 @@ keywords: IReportController, Report Controller, ApiController, ReportHelper
 
 # Report Controller
 
-The ReportViewer uses Web API services to process the report file, process the request from control and return the processed data from control to client side.
+The ReportViewer uses Web API services to process the report file, process the request from control, and return the processed data from control to client side.
 
 ## Create a Web API Controller for .NET Core platform
-Right-click the Project, select Add and then choose  Web API Controller Class file from the listed templates.
+Right-click the Project, select **Add** and then choose **Web API Controller Class file** from the listed templates.
 
 ### References
-You should add the following packages for the report viewer:
+You should add the following packages for the ReportViewer:
 
 <table>
 <tr>
@@ -59,11 +59,11 @@ Purpose
 </tr>
 <tr>
 <td>Syncfusion.Compression.Net.Core</td>
-<td>Supports for exporting the report to PDF, Microsoft Word, and Microsoft Excel format. It is a base library for the <b>Syncfusion.Pdf.Net.Core</b> , <b>Syncfusion.DocIO.Net.Core</b>, and <b>Syncfusion.XlsIO.Net.Core</b> packages. </td>
+<td>Supports for exporting the report to PDF, Microsoft Word, and Microsoft Excel format. It is a base library for the <b>Syncfusion.Pdf.Net.Core</b>, <b>Syncfusion.DocIO.Net.Core</b>, and <b>Syncfusion.XlsIO.Net.Core</b> packages. </td>
 </tr>
 <tr>
 <td>Syncfusion.Pdf.Net.Core</td>
-<td>Supports for exporting a report to PDF.</td>
+<td>Supports for exporting a report to PDF format.</td>
 </tr>
 <tr>
 <td>Syncfusion.DocIO.Net.Core</td>
@@ -159,7 +159,7 @@ namespace ReportViewerDemo.Controllers
 
 ### IReportController
 
-The interface `IReportController` has declaration of action methods that is defined in the WebAPI Controller for processing the RDL/RDLC files and request from the ReportViewer control. The `IReportController` has the following action methods declaration. 
+The `IReportController` interface has declaration of action methods that is defined in the WebAPI Controller for processing the RDL/RDLC files and request from the ReportViewer control. The `IReportController` has the following action methods declaration.
 
 <table>
 <tr>
@@ -177,15 +177,15 @@ Action (HttpPost) method for posting the request for report process. </td></tr>
 <tr>
 <td>
 PostFormReportAction</td><td>
-Action (HttpPost) method for posting the request for report exporting. It requires only in ASP.NET Core platform</td></tr>
+Action (HttpPost) method for posting the request to export the report. It requires only in ASP.NET Core platform.</td></tr>
 <tr>
 <td>
 OnInitReportOptions</td><td>
-Report initialization method that is triggered when report begins to be processed.</td></tr>
+Triggers the report initialization method when the report has to be processed.</td></tr>
 <tr>
 <td>
 OnReportLoaded</td><td>
-Report loaded method that is triggered when report and sub report begin loading.</td></tr>
+Triggers the report loaded method when the report and subreport begin loading.</td></tr>
 </table>
 
 ### ReportHelper
