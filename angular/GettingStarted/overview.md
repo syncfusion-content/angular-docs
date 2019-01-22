@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Overview of Syncfusion Angular seed application
-description: Overview of Syncfusion Essential Angular.
+description: Overview of Syncfusion Essential Angular component into SystemJS and Webpack loader..
 platform: Angular
 control: Introduction
 documentation: ug
@@ -22,5 +22,5 @@ We have implemented seed application in GitHub repository [Syncfusion Angular se
 
 To get deep understanding about Syncfusion Angular seed application with SystemJS and Webpack, refer below links.
 
-* [Webpack Getting started](/angular/GettingStarted/getting-started-webpack "Getting started with Webpack")
-* [SystemJS Getting started](/angular/GettingStarted/getting-started-systemjs "Getting started with SystemJS")
+* [Webpack Getting started](/angular/gettingstarted/getting-started-webpack "Getting started with Webpack")
+* [SystemJS Getting started](/angular/gettingstarted/getting-started-systemjs "Getting started with SystemJS")
