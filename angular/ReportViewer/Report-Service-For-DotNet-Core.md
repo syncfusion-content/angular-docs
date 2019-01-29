@@ -14,6 +14,11 @@ The ReportViewer uses Web API services to process the report file, process the r
 ## Create a Web API Controller for .NET Core platform
 Right-click the **Project**, select **Add** and then choose **Web API Controller Class file** from the listed templates.
 
+![Shows dialog to adding a new WebApi controller for ReportViewer](Getting-Started_images/Getting-Started_img4.png)
+
+Adding WebApi Controller
+{:.caption}
+
 ### References
 You should add the following packages for the ReportViewer:
 
@@ -261,7 +266,7 @@ You can route the WebAPI in the configure method into the Startup.cs file as fol
 
 1 You can add cors in the ConfigureServices method to the Startup.cs file as follows.
 
-    ~~~ csharp
+~~~ csharp
 
     using Microsoft.AspNetCore.Builder;
     using Microsoft.AspNetCore.Hosting;
@@ -311,11 +316,11 @@ You can route the WebAPI in the configure method into the Startup.cs file as fol
         }
     }
 
-    ~~~
+~~~
  
 2 Add the [EnableCors] attribute to the ApiController class as follows.
 
-    ~~~ csharp
+~~~ csharp
 
     using System.Collections.Generic;
     using Microsoft.AspNetCore.Mvc;
@@ -381,6 +386,6 @@ You can route the WebAPI in the configure method into the Startup.cs file as fol
         }
     }
 
-    ~~~
+~~~
 
 N> You cannot load the application report with path information in ASP.NET Core. So, you should load the report as `Stream` like an example provided above in `OnInitReportOptions`. If you need to get the invoice sample report, then you can obtain it from the Syncfusion ASP.NET Core sample browser installed location (wwwroot\reports\invoice.rdl).
