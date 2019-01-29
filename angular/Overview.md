@@ -21,7 +21,7 @@ The Syncfusion Angular components are named with prefix `ej` to avoid conflictin
 <p>The Essential JavaScript for Syncfusion Angular components supports Angular release version <a href="https://blog.angular.io/version-6-of-angular-now-available-cc56b0efa7a4" title="Release Version">6.0.0</a>.</p>
 </blockquote>
 
-N> To getting started with Syncfusion Angular seed application navigate to [here](/angular-2/GettingStarted "Getting started").
+N> To getting started with Syncfusion Angular seed application navigate to [here](/angular/gettingstarted/overview "Getting started").
 
 ## Property Binding
 
