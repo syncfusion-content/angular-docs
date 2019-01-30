@@ -179,15 +179,15 @@ Processes the report request and returns the result.</td></tr>
 
 1 Add the CORS NuGet package. In Visual Studio, goto the Tools menu, select **NuGet Package Manager**, and then choose **Package Manager Console**. In the Package Manager Console window, type the following command.
 
-  {% highlight html %}
+{% highlight html %}
 
     Install-Package Microsoft.AspNet.WebApi.Cors
 
-  {% endhighlight %}
+{% endhighlight %}
     
 2 You can call the enable cors method in the Application_Start event into Global.asax file as follows.
 
-    ~~~ csharp
+~~~ csharp
 
     using System;
     using System.Collections.Generic;
@@ -212,11 +212,11 @@ Processes the report request and returns the result.</td></tr>
         }
     }
 
-    ~~~
+~~~
  
 3 Add the [EnableCors] attribute to the ApiController class as follows.
 
-    ~~~ csharp
+~~~ csharp
 
     using Syncfusion.EJ.ReportViewer;
     using System;
@@ -260,4 +260,4 @@ Processes the report request and returns the result.</td></tr>
         }
     }
 
-    ~~~
+~~~
