@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Getting Started with Angular CLI
+title:  Getting Started with Angular CLI | Syncfusion
 description: Overview of Syncfusion Essential Angular
 platform: Angular
 control: Introduction
