@@ -522,7 +522,7 @@ To generate production build, run below command.
 node_modules\.bin\ng build --prod
 {% endhighlight %}
 
-If you get error `FATAL ERROR: CALL_AND_RETRY_LAST Allocation failed - JavaScript heap out of memory` add `--max_old_space_size=xxxx` space in `ngc.cmd` and `ng.cmd` file from `node_modules\.bin` folder.
+If you get error `FATAL ERROR: CALL_AND_RETRY_LAST Allocation failed - JavaScript heap out of memory` add `--max_old_space_size=xx` space in `ngc.cmd` and `ng.cmd` file from `node_modules\.bin` folder.
 
 Modify **ngc.cmd**
 

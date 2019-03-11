@@ -14,7 +14,7 @@ Once the configurations are done, Create an angular seed application by referrin
 
 ## Create a SpellCheck control in Angular 2
 
-To render the SpellCheck component on a page, simply define it with the ej-spellcheck tag as shown in the below code example.
+To render the SpellCheck component on a page, simply define it with the `ej-spellcheck` tag as shown in the below code example.
 
 {% highlight html %}
 
