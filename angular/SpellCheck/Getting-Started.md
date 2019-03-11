@@ -31,7 +31,7 @@ The CheckWords method will perform the splitting of target sentence into separat
 
 {% highlight html %}
 
-<ej-spellcheck id="SpellCheck" contenteditable="true" style="display:block" [dictionarySettings]="dictionarysettings">
+<ej-spellcheck id="SpellCheck" contenteditable="true" style="display:block" [dictionarySettings]="dictionary">
     Facebook is a social networking service headquartered in Menlo Park, California. Its website was launched on February 4, 2004, by Mark Zuckerberg with his Harvard College roommates and fellow students Eduardo, Andrew McCollum, Dustin and Chris Hughes. The fouders had initially limited the websites membrship to Harvard students, but later expanded it to collges in the Boston area, the Ivy League, and Stanford Univrsity. It graually added support for students at various other universities and later to high-school students.
 </ej-spellcheck>
 
@@ -40,9 +40,9 @@ The CheckWords method will perform the splitting of target sentence into separat
 {% highlight javascript %}
 
 export class SpellCheckComponent {
-    public dictionarysettings: any;
+    public dictionary: any;
     constructor() {
-        this.dictionarysettings = {
+        this.dictionary = {
             dictionaryUrl: "http://js.syncfusion.com/ejServices/api/SpellCheck/CheckWords",
             customDictionaryUrl: "http://js.syncfusion.com/ejServices/api/SpellCheck/AddToDictionary"
         };
@@ -58,7 +58,7 @@ The following code example depicts that checking the spelling of the target elem
 
 {% highlight html %}
 
-<ej-spellcheck id="SpellCheck" contenteditable="true" style="display:block" [dictionarySettings]="dictionarysettings" [contextMenuSettings.enable]="false">
+<ej-spellcheck id="SpellCheck" contenteditable="true" style="display:block" [dictionarySettings]="dictionary" [contextMenuSettings.enable]="false">
     Facebook is a social networking service headquartered in Menlo Park, California. Its website was launched on February 4, 2004, by Mark Zuckerberg with his Harvard College roommates and fellow students Eduardo, Andrew McCollum, Dustin and Chris Hughes. The fouders had initially limited the websites membrship to Harvard students, but later expanded it to collges in the Boston area, the Ivy League, and Stanford Univrsity. It graually added support for students at various other universities and later to high-school students.
 </ej-spellcheck>
 <input id="CheckSpell" type="button" class="ejinputtext" style="height:30px" value="Spell check" (click)="checkErrors($event)" />
@@ -68,9 +68,9 @@ The following code example depicts that checking the spelling of the target elem
 {% highlight javascript %}
 
 export class SpellCheckComponent {
-    public dictionarysettings: any;
+    public dictionary: any;
     constructor() {
-        this.dictionarysettings = {
+        this.dictionary = {
             dictionaryUrl: "http://js.syncfusion.com/ejServices/api/SpellCheck/CheckWords",
             customDictionaryUrl: "http://js.syncfusion.com/ejServices/api/SpellCheck/AddToDictionary"
         };
