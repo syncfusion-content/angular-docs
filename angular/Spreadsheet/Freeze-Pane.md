@@ -20,7 +20,7 @@ The freeze pane can be applied in a following ways,
 ### User Interface
 Select any cell and on OTHERS tab click Freeze Panes in Freeze Panes dropdown list.
 
-![](Freeze-Pane_images/Freeze-Pane_img1.png)
+![Freeze-Pane](Freeze-Pane_images/Freeze-Pane_img1.png)
 
 ### Initial Load
 You can use `allowFreezing` property to enable or disable freeze pane in Spreadsheet.
@@ -30,13 +30,9 @@ The following code example describes the above behavior,
 
 {% highlight html %}
 
-<ej-spreadsheet id="spreadsheet">
+<ej-spreadsheet id="Spreadsheet">
     <e-sheets>
-        <e-sheet [frozenRows]="5" [frozenColumns]="2">
-            <e-rangesettings>
-                <e-rangesetting [dataSource]="spreadData"></e-rangesetting>
-            </e-rangesettings>
-        </e-sheet>
+        <e-sheet [dataSource]= "spreadData" [frozenRows]="5" [frozenColumns]="2"></e-sheet>
     </e-sheets>
 </ej-spreadsheet>
 
@@ -56,7 +52,7 @@ export class SpreadsheetService {
 
 {% highlight javascript %}
 
-import { Component, ViewEncapsulation } from '@angular/core';
+import { Component } from '@angular/core';
 import { SpreadsheetService } from './services/spreadsheet.service';
 
 @Component({
@@ -82,13 +78,9 @@ The following code example describes the above behavior,
 
 {% highlight html %}
 
-<ej-spreadsheet id="spreadsheet" (loadComplete)=loadComplete($event)>
+<ej-spreadsheet #spreadsheet id="Spreadsheet">
     <e-sheets>
-        <e-sheet>
-            <e-rangesettings>
-                <e-rangesetting [dataSource]="spreadData"></e-rangesetting>
-            </e-rangesettings>
-        </e-sheet>
+        <e-sheet [dataSource]= "spreadData"></e-sheet>
     </e-sheets>
 </ej-spreadsheet>
 
@@ -96,7 +88,8 @@ The following code example describes the above behavior,
 
 {% highlight javascript %}
 
-import { Component, ViewEncapsulation } from '@angular/core';
+import { Component, ViewChild } from '@angular/core';
+import { EJComponents } from 'ej-angular2';
 import { SpreadsheetService } from './services/spreadsheet.service';
 
 @Component({
@@ -109,17 +102,16 @@ export class AppComponent {
   constructor(public SpreadsheetService: SpreadsheetService) {
     this.spreadData = SpreadsheetService.getPersonList();  //Person list
   }
-  loadComplete(event) {
-    let xlObj = $("#spreadsheet").data("ejSpreadsheet");
-    if (!xlObj.isImport)
-      xlObj.XLFreeze.freezePanes(5, 2);
+  @ViewChild('spreadsheet') xlObj: EJComponents<any, any>;
+  ngAfterViewInit() {
+    this.xlObj.widget.XLFreeze.freezePanes(5, 2);
   }
 }
 
 {% endhighlight %}
 
 The following output is displayed as a result of the above behavior.
-![](Freeze-Pane_images/Freeze-Pane_img2.png)
+![FreezePanes](Freeze-Pane_images/Freeze-Pane_img2.png)
 
 N> When we apply freeze pane by selecting cell “A1”, rows and columns are frozen based on the middle cell in the worksheet.
 
@@ -138,13 +130,9 @@ The following code example describes the above behavior,
 
 {% highlight html %}
 
-<ej-spreadsheet id="spreadsheet">
+<ej-spreadsheet id="Spreadsheet">
     <e-sheets>
-        <e-sheet [frozenRows]="3">
-            <e-rangesettings>
-                <e-rangesetting [dataSource]="spreadData"></e-rangesetting>
-            </e-rangesettings>
-        </e-sheet>
+        <e-sheet [dataSource]= "spreadData" [frozenRows]="3"></e-sheet>
     </e-sheets>
 </ej-spreadsheet>
 
@@ -152,7 +140,7 @@ The following code example describes the above behavior,
 
 {% highlight javascript %}
 
-import { Component, ViewEncapsulation } from '@angular/core';
+import { Component } from '@angular/core';
 import { SpreadsheetService } from './services/spreadsheet.service';
 
 @Component({
@@ -176,13 +164,9 @@ The following code example describes the above behavior,
 
 {% highlight html %}
 
-<ej-spreadsheet id="spreadsheet" (loadComplete)=loadComplete($event)>
+<ej-spreadsheet #spreadsheet id="Spreadsheet">
     <e-sheets>
-        <e-sheet>
-            <e-rangesettings>
-                <e-rangesetting [dataSource]="spreadData"></e-rangesetting>
-            </e-rangesettings>
-        </e-sheet>
+        <e-sheet [dataSource]= "spreadData"></e-sheet>
     </e-sheets>
 </ej-spreadsheet>
 
@@ -190,7 +174,8 @@ The following code example describes the above behavior,
 
 {% highlight javascript %}
 
-import { Component, ViewEncapsulation } from '@angular/core';
+import { Component, ViewChild } from '@angular/core';
+import { EJComponents } from 'ej-angular2';
 import { SpreadsheetService } from './services/spreadsheet.service';
 
 @Component({
@@ -201,19 +186,18 @@ import { SpreadsheetService } from './services/spreadsheet.service';
 export class AppComponent {
   public spreadData;
   constructor(public SpreadsheetService: SpreadsheetService) {
-    this.spreadData = SpreadsheetService.getPersonList();  //Person List
+    this.spreadData = SpreadsheetService.getPersonList();  //Person list
   }
-  loadComplete(event) {
-    let xlObj = $("#spreadsheet").data("ejSpreadsheet");
-    if (!xlObj.isImport)
-      xlObj.XLFreeze.freezeRows(3);
+  @ViewChild('spreadsheet') xlObj: EJComponents<any, any>;
+  ngAfterViewInit() {
+    this.xlObj.widget.XLFreeze.freezeRows(3);
   }
 }
 
 {% endhighlight %}
 
 The following output is displayed as a result of the above code example.
-![](Freeze-Pane_images/Freeze-Pane_img3.png)
+![FreezeRows](Freeze-Pane_images/Freeze-Pane_img3.png)
 
 N> On OTHERS tab click Freeze Top Row in FreezePanes dropdown list, to freeze top row. You can also freeze top row using [`freezeTopRow`](https://help.syncfusion.com/api/js/ejspreadsheet#methods:xlfreeze-freezetoprow "freezeTopRow") method. 
 
@@ -231,13 +215,9 @@ The following code example describes the above behavior
 
 {% highlight html %}
 
-<ej-spreadsheet id="spreadsheet">
+<ej-spreadsheet id="Spreadsheet">
     <e-sheets>
-        <e-sheet [frozenColumns]="3">
-            <e-rangesettings>
-                <e-rangesetting [dataSource]="spreadData"></e-rangesetting>
-            </e-rangesettings>
-        </e-sheet>
+        <e-sheet [dataSource]= "spreadData" [frozenColumns]="3"></e-sheet>
     </e-sheets>
 </ej-spreadsheet>
 
@@ -245,7 +225,7 @@ The following code example describes the above behavior
 
 {% highlight javascript %}
 
-import { Component, ViewEncapsulation } from '@angular/core';
+import { Component } from '@angular/core';
 import { SpreadsheetService } from './services/spreadsheet.service';
 
 @Component({
@@ -268,13 +248,9 @@ The following code example describes the above behavior
 
 {% highlight html %}
 
-<ej-spreadsheet id="spreadsheet" (loadComplete)= loadComplete($event)>
+<ej-spreadsheet #spreadsheet id="Spreadsheet">
     <e-sheets>
-        <e-sheet>
-            <e-rangesettings>
-                <e-rangesetting [dataSource]="spreadData"></e-rangesetting>
-            </e-rangesettings>
-        </e-sheet>
+        <e-sheet [dataSource]= "spreadData"></e-sheet>
     </e-sheets>
 </ej-spreadsheet>
 
@@ -282,7 +258,8 @@ The following code example describes the above behavior
 
 {% highlight javascript %}
 
-import { Component, ViewEncapsulation } from '@angular/core';
+import { Component, ViewChild } from '@angular/core';
+import { EJComponents } from 'ej-angular2';
 import { SpreadsheetService } from './services/spreadsheet.service';
 
 @Component({
@@ -293,19 +270,18 @@ import { SpreadsheetService } from './services/spreadsheet.service';
 export class AppComponent {
   public spreadData;
   constructor(public SpreadsheetService: SpreadsheetService) {
-    this.spreadData = SpreadsheetService.getPersonList();  //Person List
+    this.spreadData = SpreadsheetService.getPersonList();  //Person list
   }
-  loadComplete(event) {
-    let xlObj = $("#spreadsheet").data("ejSpreadsheet");
-    if (!xlObj.isImport)
-      xlObj.XLFreeze.freezeColumns(3);
+  @ViewChild('spreadsheet') xlObj: EJComponents<any, any>;
+  ngAfterViewInit() {
+    this.xlObj.widget.XLFreeze.freezeColumns(3);
   }
 }
 
 {% endhighlight %}
 
 The following output is displayed as a result of the above code example.
-![](Freeze-Pane_images/Freeze-Pane_img4.png)
+![FreezeColumns](Freeze-Pane_images/Freeze-Pane_img4.png)
 
 N> On OTHERS tab click Freeze First Column in FreezePanes dropdown list, to freeze left Column. You can also apply freeze first column using [`freezeLeftColumn`](https://help.syncfusion.com/api/js/ejspreadsheet#methods:xlfreeze-freezeleftcolumn "freezeLeftColumn") method. 
 
@@ -319,7 +295,7 @@ The unfreeze pane can be applied in a following ways,
 
 ### User Interface
 On OTHERS tab click Unfreeze Panes in Freeze Panes dropdown list.
-![](Freeze-Pane_images/Freeze-Pane_img5.png)
+![UnfreezePanes](Freeze-Pane_images/Freeze-Pane_img5.png)
 
 ### Method
 You can unfreeze rows or columns using [`unfreezePanes`](https://help.syncfusion.com/api/js/ejspreadsheet#methods:xlfreeze-unfreezepanes "unfreezePanes") method. 
@@ -328,13 +304,9 @@ The following code example describes the above behavior,
 
 {% highlight html %}
 
-<ej-spreadsheet id="spreadsheet" (loadComplete)= loadComplete($event)>
+<ej-spreadsheet #spreadsheet id="Spreadsheet">
     <e-sheets>
-        <e-sheet>
-            <e-rangesettings>
-                <e-rangesetting [dataSource]="spreadData"></e-rangesetting>
-            </e-rangesettings>
-        </e-sheet>
+        <e-sheet [dataSource]= "spreadData"></e-sheet>
     </e-sheets>
 </ej-spreadsheet>
 
@@ -342,7 +314,8 @@ The following code example describes the above behavior,
 
 {% highlight javascript %}
 
-import { Component, ViewEncapsulation } from '@angular/core';
+import { Component, ViewChild } from '@angular/core';
+import { EJComponents } from 'ej-angular2';
 import { SpreadsheetService } from './services/spreadsheet.service';
 
 @Component({
@@ -353,20 +326,18 @@ import { SpreadsheetService } from './services/spreadsheet.service';
 export class AppComponent {
   public spreadData;
   constructor(public SpreadsheetService: SpreadsheetService) {
-    this.spreadData = SpreadsheetService.getPersonList();  //Person List
+    this.spreadData = SpreadsheetService.getPersonList();  //Person list
   }
-  loadComplete(event) {
-    let xlObj = $("#spreadsheet").data("ejSpreadsheet");
-    if (!xlObj.isImport) {
-      xlObj.XLFreeze.freezePanes(5, 2);
-      xlObj.XLFreeze.unfreezePanes();
-    }
+  @ViewChild('spreadsheet') xlObj: EJComponents<any, any>;
+  ngAfterViewInit() {
+    this.xlObj.widget.XLFreeze.freezePanes(5, 2);
+    this.xlObj.widget.XLFreeze.unfreezePanes();
   }
 }
 
 {% endhighlight %}
 
 The following output is displayed as a result of the above code example.
-![](Freeze-Pane_images/Freeze-Pane_img6.png)
+![UnfreezePanes](Freeze-Pane_images/Freeze-Pane_img6.png)
 
 
