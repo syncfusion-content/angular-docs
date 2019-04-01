@@ -140,14 +140,10 @@ Conditional formatting helps you to apply formats to a cell or range with certai
 Events can be bound to the controls using the event name within bracket [`()`]. For example, the `loadComplete` event of Spreadsheet control can be defined as follows.
 
 {% highlight html %}
-
-    <ej-spreadsheet id="spreadsheet" [allowConditionalFormats]= true (loadComplete)= loadComplete($event)>
-      <e-sheets>
+    <ej-spreadsheet #spreadsheet [allowConditionalFormats]= true>
+        <e-sheets >
+            <e-sheet [dataSource]="spreadData" startCell="A1" [headerStyles]="{'font-weight':'bold'}">
             <e-sheet>
-                 <e-rangesettings>
-                    <e-rangesetting [dataSource]="spreadData" startCell="A1" [headerStyles]="{'font-weight':'bold'}"></e-rangesetting>
-                 </e-rangesettings>
-            </e-sheet>
         </e-sheets>
     </ej-spreadsheet>
 {% endhighlight %}
@@ -156,25 +152,25 @@ To apply conditional formats for a range use [`setCFRule`](http://help.syncfusio
 
 {% highlight ts %}
 
-    import {Component, ViewEncapsulation} from '@angular/core';
-    import { SpreadsheetService } from '../services/spreadsheet.service';
+import { Component, ViewChild } from '@angular/core';
+import { EJComponents } from 'ej-angular2';
 
-    @Component({
-        selector: 'ej-app',
-        templateUrl: 'app/app.component.html',  //give the path file for spreadsheet control html file.
-        providers:[SpreadsheetService]
-    })
+@Component({
+    selector: 'ej-app',
+    templateUrl: 'app/app.component.html',  //give the path file for spreadsheet control html file.
+})
 
-    export class AppComponent {
-        public spreadData;
-        constructor(public SpreadsheetService: SpreadsheetService) {
-            this.spreadData = SpreadsheetService.getDefaultData();
-     }
-        loadComplete(event) {
-            let xlObj = $("#spreadsheet").data("ejSpreadsheet");
-            xlObj.XLCFormat.setCFRule({ "action": "greaterthan", "inputs": ["10"], "color": "redft", "range": "D2:D8" });
-        }
+export class AppComponent {
+    public spreadData;
+    constructor(){
+        // The datasource "window.defaultData" is referred from 'http://js.syncfusion.com/demos/web/scripts/xljsondata.min.js'
+        this.spreadData = (window as any).defaultData;  
     }
+    @ViewChild('spreadsheet') xlObj: EJComponents<any, any>;
+    ngAfterViewInit() {
+        this.xlObj.widget.XLCFormat.setCFRule({ "action": "greaterthan", "inputs": ["10"], "color": "redft", "range": "D2:D8" });
+    }
+}
 
 {% endhighlight %}
 
@@ -187,33 +183,26 @@ N> For more details about `Conditional Formatting` refer following [`link`](http
 The Spreadsheet can save its data, style, format into an excel file. To enable save option in Spreadsheet set `exportSettings.allowExporting` option as `true`and Specify `exportSettings.excelUrl` option to save documents using server side helper. The following code example illustrates this,
 
 {% highlight html %}
-
-    <ej-spreadsheet id="spreadsheet"  exportSettings.excelUrl="http://js.syncfusion.com/demos/ejservices/api/Spreadsheet/ExcelExport" >
-    <e-sheets>
-            <e-sheet>
-                 <e-rangesettings>
-                    <e-rangesetting [dataSource]="spreadData" startCell="A1" [headerStyles]="{'font-weight':'bold'}"></e-rangesetting>
-                 </e-rangesettings>
-            </e-sheet>
-        </e-sheets>
-    </ej-spreadsheet>
-
+<ej-spreadsheet id="spreadsheet" exportSettings.excelUrl="http://js.syncfusion.com/demos/ejservices/api/Spreadsheet/ExcelExport">
+    <e-sheets >
+        <e-sheet [dataSource]="spreadData" startCell="A1" [headerStyles]="{'font-weight':'bold'}"></e-sheet>
+    </e-sheets>
+</ej-spreadsheet>
 {% endhighlight %}
 
 {% highlight ts %}
 
-    import {Component, ViewEncapsulation} from '@angular/core';
-    import { SpreadsheetService } from '../services/spreadsheet.service';
+    import {Component} from '@angular/core';
     @Component({
         selector: 'ej-app',
         templateUrl: 'app/app.component.html',  //give the path file for spreadsheet control html file.
-        providers:[SpreadsheetService]
     })
     export class AppComponent {
         public spreadData;
-        constructor(public SpreadsheetService: SpreadsheetService) {
-            this.spreadData = SpreadsheetService.getDefaultData();
-     }
+        constructor(){
+            // The datasource "window.defaultData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
+            this.spreadData = (window as any).defaultData;  
+        }
     }
   
 {% endhighlight %}

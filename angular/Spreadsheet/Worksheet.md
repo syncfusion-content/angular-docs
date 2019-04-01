@@ -46,27 +46,25 @@ You can dynamically insert a sheet by one of the following ways,
 The following code example describes the above behavior.
 
 {% highlight html %}
-<ej-spreadsheet id="spreadsheet" [sheetCount]= 1 (loadComplete)= loadComplete($event)>
+<ej-spreadsheet #spreadsheet [sheetCount]= 1 (loadComplete)= loadComplete($event)>
 </ej-spreadsheet> 
 {% endhighlight %}
 
 {% highlight ts %}
 
-import {Component, ViewEncapsulation} from '@angular/core';
-    @Component({
-        selector: 'ej-app',
-        templateUrl: 'app/app.component.html',  //give the path file for spreadsheet component html file.
-    })
-    export class AppComponent {
-
-   loadComplete(args) {  
-    let xlObj = $("#spreadsheet").data("ejSpreadsheet");     
-    if(!xlObj.isImport) {
-        xlObj.addNewSheet(); //To add as a last sheet.
-        //xlObj.insertSheet(); // To insert a sheet before the active sheet.
+import { Component, ViewChild } from '@angular/core';
+import { EJComponents } from 'ej-angular2';
+@Component({
+    selector: 'ej-app',
+    templateUrl: 'app/app.component.html',  //give the path file for spreadsheet component html file.
+})
+export class AppComponent {
+    @ViewChild('spreadsheet') xlObj: EJComponents<any, any>;
+    ngAfterViewInit() {
+      this.xlObj.widget.addNewSheet(); //To add as a last sheet.
+      //this.xlObj.widget.insertSheet(); // To insert a sheet before the active sheet.
     }
-  }
- }
+}
 
 {% endhighlight %}
 
@@ -83,24 +81,22 @@ The Spreadsheet provides support to create a copy of an existing worksheet. You 
 The following code example describes the above behavior.
 
 {% highlight html %}
-<ej-spreadsheet id="spreadsheet" [sheetCount]= 3 (loadComplete)= loadComplete($event)>
-</ej-spreadsheet> 
+<ej-spreadsheet #spreadsheet [sheetCount]= 3></ej-spreadsheet> 
 {% endhighlight %}
 
 {% highlight ts %}
-import {Component, ViewEncapsulation} from '@angular/core';
-    @Component({
-        selector: 'ej-app',
-        templateUrl: 'app/app.component.html',  //give the path file for spreadsheet component html file.
-    })
-    export class AppComponent {
-
-    loadComplete(args) {  
-    let xlObj = $("#spreadsheet").data("ejSpreadsheet");        
-    if (!xlObj.isImport)
-        xlObj.copySheet(1, 3, true); //arg1- from index, arg2 -to index, arg3 - isCopySheet
+import { Component, ViewChild } from '@angular/core';
+import { EJComponents } from 'ej-angular2';
+@Component({
+    selector: 'ej-app',
+    templateUrl: 'app/app.component.html',  //give the path file for spreadsheet component html file.
+})
+export class AppComponent {
+    @ViewChild('spreadsheet') xlObj: EJComponents<any, any>;
+    ngAfterViewInit() {
+      this.xlObj.widget.copySheet(1, 3, true); //arg1- from index, arg2 -to index, arg3 - isCopySheet
     }
- }
+}
 {% endhighlight %}
 
 The following output is displayed as a result of the above code example.
@@ -116,24 +112,22 @@ The Spreadsheet provides support to move an existing worksheet. You can dynamica
 The following code example describes the above behavior.
 
 {% highlight html %}
-<ej-spreadsheet id="spreadsheet" [sheetCount]= 3 (loadComplete)= loadComplete($event)>
-</ej-spreadsheet> 
+<ej-spreadsheet #spreadsheet [sheetCount]= 3></ej-spreadsheet> 
 {% endhighlight %}
 
 {% highlight ts %}
-import {Component, ViewEncapsulation} from '@angular/core';
-    @Component({
-        selector: 'ej-app',
-        templateUrl: 'app/app.component.html',  //give the path file for spreadsheet component html file.
-    })
-    export class AppComponent {
-
-    loadComplete(args) {  
-    let xlObj = $("#spreadsheet").data("ejSpreadsheet");        
-    if (!xlObj.isImport)
-        xlObj.copySheet(1, 3, false); //arg1- from index, arg2 -to index, arg3 - isCopySheet
+import { Component, ViewChild } from '@angular/core';
+import { EJComponents } from 'ej-angular2';
+@Component({
+    selector: 'ej-app',
+    templateUrl: 'app/app.component.html',  //give the path file for spreadsheet component html file.
+})
+export class AppComponent {
+    @ViewChild('spreadsheet') xlObj: EJComponents<any, any>;
+    ngAfterViewInit() {
+      this.xlObj.widget.copySheet(1, 3, false); //arg1- from index, arg2 -to index, arg3 - isCopySheet
     }
- }
+}
 {% endhighlight %}
 
 The following output is displayed as a result of the above code example.
@@ -151,25 +145,23 @@ You can also remove an active worksheet using [`deleteSheet`](https://help.syncf
 The following code example describes the above behavior.
 
 {% highlight html %}
-<ej-spreadsheet id="spreadsheet" [sheetCount]= 2 (loadComplete)= loadComplete($event)>
-</ej-spreadsheet> 
+<ej-spreadsheet #spreadsheet [sheetCount]= 2></ej-spreadsheet>
 {% endhighlight %}
 
 {% highlight ts %}
 
-import {Component, ViewEncapsulation} from '@angular/core';
-    @Component({
-        selector: 'ej-app',
-        templateUrl: 'app/app.component.html',  //give the path file for spreadsheet component html file.
-    })
-  export class AppComponent {
-
-  loadComplete(args) {  
-    let xlObj = $("#spreadsheet").data("ejSpreadsheet");  
-    if (!xlObj.isImport)
-        xlObj.deleteSheet();
+import { Component, ViewChild } from '@angular/core';
+import { EJComponents } from 'ej-angular2';
+@Component({
+    selector: 'ej-app',
+    templateUrl: 'app/app.component.html',  //give the path file for spreadsheet component html file.
+})
+export class AppComponent {
+    @ViewChild('spreadsheet') xlObj: EJComponents<any, any>;
+    ngAfterViewInit() {
+      this.xlObj.widget.deleteSheet();
     }
- }
+}
 
 {% endhighlight %}
 
@@ -186,25 +178,25 @@ The Spreadsheet has support for renaming an existing worksheet. You can dynamica
 The following code example describes the above behavior.
 
 {% highlight html %}
-<ej-spreadsheet id="spreadsheet" [sheetCount]= 2 (loadComplete)= loadComplete($event)>
-</ej-spreadsheet> 
+<ej-spreadsheet #spreadsheet [sheetCount]= 2></ej-spreadsheet>
 {% endhighlight %}
 
 {% highlight ts %}
 
-import {Component, ViewEncapsulation} from '@angular/core';
-    @Component({
-        selector: 'ej-app',
-        templateUrl: 'app/app.component.html',  //give the path file for spreadsheet component html file.
-    })
-  export class AppComponent {
+{% highlight ts %}
 
-  loadComplete(args) {  
-    let xlObj = $("#spreadsheet").data("ejSpreadsheet");        
-    if (!xlObj.isImport)
-        xlObj.sheetRename("RenameSheet");
+import { Component, ViewChild } from '@angular/core';
+import { EJComponents } from 'ej-angular2';
+@Component({
+    selector: 'ej-app',
+    templateUrl: 'app/app.component.html',  //give the path file for spreadsheet component html file.
+})
+export class AppComponent {
+    @ViewChild('spreadsheet') xlObj: EJComponents<any, any>;
+    ngAfterViewInit() {
+      this.xlObj.widget.sheetRename("RenameSheet");
     }
- }
+}
 
 {% endhighlight %}
 
@@ -221,7 +213,7 @@ Headers in the spreadsheet are numbered rows and lettered columns in worksheets.
 The following code example describes the above behavior.
 
 {% highlight html %}
-<ej-spreadsheet id="spreadsheet">
+<ej-spreadsheet>
   <e-sheets>
       <e-sheet [showHeadings]='false'>
     </e-sheet>
@@ -231,14 +223,12 @@ The following code example describes the above behavior.
 
 {% highlight ts %}
 
-import {Component, ViewEncapsulation} from '@angular/core';
-    @Component({
-        selector: 'ej-app',
-        templateUrl: 'app/app.component.html',  //give the path file for spreadsheet component html file.
-    })
-  export class AppComponent {
-
- }
+import {Component} from '@angular/core';
+@Component({
+    selector: 'ej-app',
+    templateUrl: 'app/app.component.html',  //give the path file for spreadsheet component html file.
+})
+export class AppComponent {}
 
 {% endhighlight %}
 
@@ -256,27 +246,25 @@ You can dynamically show/hide worksheet by using one of the following ways,
 The following code example describes the above behavior.
 
 {% highlight html %}
-<ej-spreadsheet id="spreadsheet" [sheetCount]= 3 (loadComplete)= loadComplete($event)>
-</ej-spreadsheet> 
+<ej-spreadsheet #spreadsheet [sheetCount]= 3></ej-spreadsheet> 
 {% endhighlight %}
 
 {% highlight ts %}
 
-import {Component, ViewEncapsulation} from '@angular/core';
-    @Component({
-        selector: 'ej-app',
-        templateUrl: 'app/app.component.html',  //give the path file for spreadsheet component html file.
-    })
- export class AppComponent {
-
- loadComplete(args) {  
-    let xlObj = $("#spreadsheet").data("ejSpreadsheet");        
-    if (!xlObj.isImport)
-        xlObj.hideSheet(1);
-        xlObj.hideSheet(2);
-        xlObj.unhideSheet(1);
+import { Component, ViewChild } from '@angular/core';
+import { EJComponents } from 'ej-angular2';
+@Component({
+    selector: 'ej-app',
+    templateUrl: 'app/app.component.html',  //give the path file for spreadsheet component html file.
+})
+export class AppComponent {
+    @ViewChild('spreadsheet') xlObj: EJComponents<any, any>;
+    ngAfterViewInit() {
+      this.xlObj.widget.hideSheet(1);
+      this.xlObj.widget.hideSheet(2);
+      this.xlObj.widget.unhideSheet(1);
     }
- }
+}
 
 {% endhighlight %}
 
@@ -293,7 +281,7 @@ Gridlines act as a border like appearance of cells. They are used to distinguish
 The following code example describes the above behavior.
 
 {% highlight html %}
-<ej-spreadsheet id="spreadsheet">
+<ej-spreadsheet>
   <e-sheets>
       <e-sheet [showGridlines]='false'>
     </e-sheet>
@@ -303,14 +291,12 @@ The following code example describes the above behavior.
 
 {% highlight ts %}
 
-import {Component, ViewEncapsulation} from '@angular/core';
-    @Component({
-        selector: 'ej-app',
-        templateUrl: 'app/app.component.html',  //give the path file for spreadsheet component html file.
-    })
-   export class AppComponent {
-
- }
+import {Component} from '@angular/core';
+@Component({
+    selector: 'ej-app',
+    templateUrl: 'app/app.component.html',  //give the path file for spreadsheet component html file.
+})
+export class AppComponent {}
 
 {% endhighlight %}
 

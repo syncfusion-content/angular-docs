@@ -30,13 +30,9 @@ The following code example describes the above behavior,
 
 {% highlight html %}
 
-<ej-spreadsheet id="spreadsheet">
+<ej-spreadsheet>
     <e-sheets>
-        <e-sheet [frozenRows]="5" [frozenColumns]="2">
-            <e-rangesettings>
-                <e-rangesetting [dataSource]="spreadData"></e-rangesetting>
-            </e-rangesettings>
-        </e-sheet>
+        <e-sheet [dataSource]= "spreadData" [frozenRows]="5" [frozenColumns]="2"></e-sheet>
     </e-sheets>
 </ej-spreadsheet>
 
@@ -56,7 +52,7 @@ export class SpreadsheetService {
 
 {% highlight javascript %}
 
-import { Component, ViewEncapsulation } from '@angular/core';
+import { Component } from '@angular/core';
 import { SpreadsheetService } from './services/spreadsheet.service';
 
 @Component({
@@ -82,13 +78,9 @@ The following code example describes the above behavior,
 
 {% highlight html %}
 
-<ej-spreadsheet id="spreadsheet" (loadComplete)=loadComplete($event)>
+<ej-spreadsheet #spreadsheet>
     <e-sheets>
-        <e-sheet>
-            <e-rangesettings>
-                <e-rangesetting [dataSource]="spreadData"></e-rangesetting>
-            </e-rangesettings>
-        </e-sheet>
+        <e-sheet [dataSource]= "spreadData"></e-sheet>
     </e-sheets>
 </ej-spreadsheet>
 
@@ -96,7 +88,8 @@ The following code example describes the above behavior,
 
 {% highlight javascript %}
 
-import { Component, ViewEncapsulation } from '@angular/core';
+import { Component, ViewChild } from '@angular/core';
+import { EJComponents } from 'ej-angular2';
 import { SpreadsheetService } from './services/spreadsheet.service';
 
 @Component({
@@ -109,10 +102,9 @@ export class AppComponent {
   constructor(public SpreadsheetService: SpreadsheetService) {
     this.spreadData = SpreadsheetService.getPersonList();  //Person list
   }
-  loadComplete(event) {
-    let xlObj = $("#spreadsheet").data("ejSpreadsheet");
-    if (!xlObj.isImport)
-      xlObj.XLFreeze.freezePanes(5, 2);
+  @ViewChild('spreadsheet') xlObj: EJComponents<any, any>;
+  ngAfterViewInit() {
+    this.xlObj.widget.XLFreeze.freezePanes(5, 2);
   }
 }
 
@@ -138,13 +130,9 @@ The following code example describes the above behavior,
 
 {% highlight html %}
 
-<ej-spreadsheet id="spreadsheet">
+<ej-spreadsheet>
     <e-sheets>
-        <e-sheet [frozenRows]="3">
-            <e-rangesettings>
-                <e-rangesetting [dataSource]="spreadData"></e-rangesetting>
-            </e-rangesettings>
-        </e-sheet>
+        <e-sheet [dataSource]= "spreadData" [frozenRows]="3"></e-sheet>
     </e-sheets>
 </ej-spreadsheet>
 
@@ -152,7 +140,7 @@ The following code example describes the above behavior,
 
 {% highlight javascript %}
 
-import { Component, ViewEncapsulation } from '@angular/core';
+import { Component } from '@angular/core';
 import { SpreadsheetService } from './services/spreadsheet.service';
 
 @Component({
@@ -176,13 +164,9 @@ The following code example describes the above behavior,
 
 {% highlight html %}
 
-<ej-spreadsheet id="spreadsheet" (loadComplete)=loadComplete($event)>
+<ej-spreadsheet #spreadsheet>
     <e-sheets>
-        <e-sheet>
-            <e-rangesettings>
-                <e-rangesetting [dataSource]="spreadData"></e-rangesetting>
-            </e-rangesettings>
-        </e-sheet>
+        <e-sheet [dataSource]= "spreadData"></e-sheet>
     </e-sheets>
 </ej-spreadsheet>
 
@@ -190,7 +174,8 @@ The following code example describes the above behavior,
 
 {% highlight javascript %}
 
-import { Component, ViewEncapsulation } from '@angular/core';
+import { Component, ViewChild } from '@angular/core';
+import { EJComponents } from 'ej-angular2';
 import { SpreadsheetService } from './services/spreadsheet.service';
 
 @Component({
@@ -201,12 +186,11 @@ import { SpreadsheetService } from './services/spreadsheet.service';
 export class AppComponent {
   public spreadData;
   constructor(public SpreadsheetService: SpreadsheetService) {
-    this.spreadData = SpreadsheetService.getPersonList();  //Person List
+    this.spreadData = SpreadsheetService.getPersonList();  //Person list
   }
-  loadComplete(event) {
-    let xlObj = $("#spreadsheet").data("ejSpreadsheet");
-    if (!xlObj.isImport)
-      xlObj.XLFreeze.freezeRows(3);
+  @ViewChild('spreadsheet') xlObj: EJComponents<any, any>;
+  ngAfterViewInit() {
+    this.xlObj.widget.XLFreeze.freezeRows(3);
   }
 }
 
@@ -231,13 +215,9 @@ The following code example describes the above behavior
 
 {% highlight html %}
 
-<ej-spreadsheet id="spreadsheet">
+<ej-spreadsheet>
     <e-sheets>
-        <e-sheet [frozenColumns]="3">
-            <e-rangesettings>
-                <e-rangesetting [dataSource]="spreadData"></e-rangesetting>
-            </e-rangesettings>
-        </e-sheet>
+        <e-sheet [dataSource]= "spreadData" [frozenColumns]="3"></e-sheet>
     </e-sheets>
 </ej-spreadsheet>
 
@@ -245,7 +225,7 @@ The following code example describes the above behavior
 
 {% highlight javascript %}
 
-import { Component, ViewEncapsulation } from '@angular/core';
+import { Component } from '@angular/core';
 import { SpreadsheetService } from './services/spreadsheet.service';
 
 @Component({
@@ -268,13 +248,9 @@ The following code example describes the above behavior
 
 {% highlight html %}
 
-<ej-spreadsheet id="spreadsheet" (loadComplete)= loadComplete($event)>
+<ej-spreadsheet #spreadsheet>
     <e-sheets>
-        <e-sheet>
-            <e-rangesettings>
-                <e-rangesetting [dataSource]="spreadData"></e-rangesetting>
-            </e-rangesettings>
-        </e-sheet>
+        <e-sheet [dataSource]= "spreadData"></e-sheet>
     </e-sheets>
 </ej-spreadsheet>
 
@@ -282,7 +258,8 @@ The following code example describes the above behavior
 
 {% highlight javascript %}
 
-import { Component, ViewEncapsulation } from '@angular/core';
+import { Component, ViewChild } from '@angular/core';
+import { EJComponents } from 'ej-angular2';
 import { SpreadsheetService } from './services/spreadsheet.service';
 
 @Component({
@@ -293,12 +270,11 @@ import { SpreadsheetService } from './services/spreadsheet.service';
 export class AppComponent {
   public spreadData;
   constructor(public SpreadsheetService: SpreadsheetService) {
-    this.spreadData = SpreadsheetService.getPersonList();  //Person List
+    this.spreadData = SpreadsheetService.getPersonList();  //Person list
   }
-  loadComplete(event) {
-    let xlObj = $("#spreadsheet").data("ejSpreadsheet");
-    if (!xlObj.isImport)
-      xlObj.XLFreeze.freezeColumns(3);
+  @ViewChild('spreadsheet') xlObj: EJComponents<any, any>;
+  ngAfterViewInit() {
+    this.xlObj.widget.XLFreeze.freezeColumns(3);
   }
 }
 
@@ -328,13 +304,9 @@ The following code example describes the above behavior,
 
 {% highlight html %}
 
-<ej-spreadsheet id="spreadsheet" (loadComplete)= loadComplete($event)>
+<ej-spreadsheet #spreadsheet>
     <e-sheets>
-        <e-sheet>
-            <e-rangesettings>
-                <e-rangesetting [dataSource]="spreadData"></e-rangesetting>
-            </e-rangesettings>
-        </e-sheet>
+        <e-sheet [dataSource]= "spreadData"></e-sheet>
     </e-sheets>
 </ej-spreadsheet>
 
@@ -342,7 +314,8 @@ The following code example describes the above behavior,
 
 {% highlight javascript %}
 
-import { Component, ViewEncapsulation } from '@angular/core';
+import { Component, ViewChild } from '@angular/core';
+import { EJComponents } from 'ej-angular2';
 import { SpreadsheetService } from './services/spreadsheet.service';
 
 @Component({
@@ -353,14 +326,12 @@ import { SpreadsheetService } from './services/spreadsheet.service';
 export class AppComponent {
   public spreadData;
   constructor(public SpreadsheetService: SpreadsheetService) {
-    this.spreadData = SpreadsheetService.getPersonList();  //Person List
+    this.spreadData = SpreadsheetService.getPersonList();  //Person list
   }
-  loadComplete(event) {
-    let xlObj = $("#spreadsheet").data("ejSpreadsheet");
-    if (!xlObj.isImport) {
-      xlObj.XLFreeze.freezePanes(5, 2);
-      xlObj.XLFreeze.unfreezePanes();
-    }
+  @ViewChild('spreadsheet') xlObj: EJComponents<any, any>;
+  ngAfterViewInit() {
+    this.xlObj.widget.XLFreeze.freezePanes(5, 2);
+    this.xlObj.widget.XLFreeze.unfreezePanes();
   }
 }
 
