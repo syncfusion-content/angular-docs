@@ -24,14 +24,13 @@ You can set formula for a cell by specifying `value` property in cell data bindi
 
 {% highlight html %}
 
-<ej-spreadsheet id="spreadsheet" [sheets] = "spreadData">
-</ej-spreadsheet>
+<ej-spreadsheet id="Spreadsheet" [sheets]="spreadData"></ej-spreadsheet>
 
 {% endhighlight %}
 
 {% highlight javascript %}
 
-import { Component, ViewEncapsulation } from '@angular/core';
+import { Component } from '@angular/core';
 
 @Component({
   selector: 'ej-app',
@@ -40,7 +39,7 @@ import { Component, ViewEncapsulation } from '@angular/core';
 export class AppComponent {
   public spreadData;
   constructor() {
-    this.spreadData = [{
+     this.spreadData = [{
       rows: [{
         cells: [{
           value: 1
@@ -56,7 +55,15 @@ export class AppComponent {
           value: "=SUM(A1,A2)"
         }]
       }]
-    }];
+    },
+    {
+      rows: [{
+        cells: [{
+          value: "=Sum(Sheet1!A1:A2)"
+        }]
+      }]
+    }];  
+  }
   }
 }
 
@@ -79,14 +86,14 @@ You can set formula for a cell using [`updateCellValue`](https://help.syncfusion
 
 {% highlight html %}
 
-<ej-spreadsheet id="spreadsheet" [sheets] = "spreadData" (loadComplete)= loadComplete($event)>
-</ej-spreadsheet>
+<ej-spreadsheet #spreadsheet id="Spreadsheet" [sheets]="spreadData"></ej-spreadsheet>
 
 {% endhighlight %}
 
 {% highlight javascript %}
 
-import { Component, ViewEncapsulation } from '@angular/core';
+import { Component, ViewChild } from '@angular/core';
+import { EJComponents } from 'ej-angular2';
 
 @Component({
   selector: 'ej-app',
@@ -108,9 +115,9 @@ export class AppComponent {
       }]
     }];
   }
-  loadComplete(event) {
-    let xlObj = $("#spreadsheet").data("ejSpreadsheet");
-    xlObj.XLEdit.updateCellValue({ rowIndex: 2, colIndex: 0 }, "=SUM(A1,A2)");
+  @ViewChild('spreadsheet') xlObj: EJComponents<any, any>;
+  ngAfterViewInit() {
+    this.xlObj.widget.XLEdit.updateCellValue({ rowIndex: 2, colIndex: 0 }, "=SUM(A1,A2)");
   }
 }
 
@@ -124,14 +131,13 @@ You can set formula for a cell by edit and save a cell through user interface us
 
 {% highlight html %}
 
-<ej-spreadsheet id="spreadsheet" [sheets] = "spreadData">
-</ej-spreadsheet>
+<ej-spreadsheet id="Spreadsheet" [sheets]="spreadData"></ej-spreadsheet>
 
 {% endhighlight %}
 
 {% highlight javascript %}
 
-import { Component, ViewEncapsulation } from '@angular/core';
+import { Component } from '@angular/core';
 
 @Component({
   selector: 'ej-app',

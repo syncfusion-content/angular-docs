@@ -22,33 +22,27 @@ Columns are a collection of cells that run vertically. Each column is identified
 The following code example describes the above behavior.
 
 {% highlight html %}
-<ej-spreadsheet id="spreadsheet" [rowCount]= 50 [columnCount]= 36 >
+<ej-spreadsheet id="Spreadsheet" [rowCount]= 50 [columnCount]= 36 >
     <e-sheets>
-        <e-sheet>
-            <e-rangesettings>
-                <e-rangesetting [dataSource]= "spreadData" ></e-rangesetting>
-            </e-rangesettings>
+        <e-sheet [dataSource]= "spreadData">
         </e-sheet>
     </e-sheets>
 </ej-spreadsheet>
 {% endhighlight %}
 
 {% highlight ts %} 
-
-import {Component, ViewEncapsulation} from '@angular/core';
-import { SpreadsheetService } from '../services/spreadsheet.service';
-    @Component({
-        selector: 'ej-app',
-        templateUrl: 'app/app.component.html',  //give the path file for spreadsheet control html file.
-        providers:[SpreadsheetService]
-    })
-    export class AppComponent {
-        public spreadData;
-        constructor(public SpreadsheetService: SpreadsheetService) {
-            this.spreadData = SpreadsheetService.getDefaultData();
-     }
+import {Component} from '@angular/core';
+@Component({
+    selector: 'ej-app',
+    templateUrl: 'app/app.component.html',  //give the path file for spreadsheet control html file.
+})
+export class AppComponent {
+    public spreadData;
+    constructor(){
+        // The datasource "window.defaultData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
+        this.spreadData = (window as any).defaultData;  
     }
-
+}
 {% endhighlight %}
 
 ## List of operations 
@@ -165,53 +159,47 @@ The following code example describes the above behavior.
 
 {% highlight html %}
 
-<ej-spreadsheet id="spreadsheet" [allowInsert]= true [allowDelete]= true (loadComplete)= loadComplete($event)>
+<ej-spreadsheet #spreadsheet id="Spreadsheet" [allowInsert]= true [allowDelete]= true >
     <e-sheets>
-        <e-sheet>
-            <e-rangesettings>
-                <e-rangesetting [dataSource]= "spreadData" ></e-rangesetting>
-            </e-rangesettings>
-        </e-sheet>
+        <e-sheet [dataSource]= "spreadData"></e-sheet>
     </e-sheets>
 </ej-spreadsheet>
 
 {% endhighlight %}
 
 {% highlight ts %}
-import {Component, ViewEncapsulation} from '@angular/core';
-import { SpreadsheetService } from '../services/spreadsheet.service';
+import { Component, ViewChild } from '@angular/core';
+import { EJComponents } from 'ej-angular2';
 
-    @Component({
-        selector: 'ej-app',
-        templateUrl: 'app/app.component.html',  //give the path file for spreadsheet control html file.
-        providers:[SpreadsheetService]
-    })
+@Component({
+    selector: 'ej-app',
+    templateUrl: 'app/app.component.html',  //give the path file for spreadsheet control html file.
+})
 
-    export class AppComponent {
-        public spreadData;
-        constructor(public SpreadsheetService: SpreadsheetService) {
-            this.spreadData = SpreadsheetService.getDefaultData();
-     }
-
-    loadComplete(event) {
-     let xlObj = $("#spreadsheet").data("ejSpreadsheet");
-     if(!xlObj.isImport) {
-        xlObj.insertEntireRow(2, 2);
-        xlObj.insertEntireColumn(2, 2);
-        xlObj.deleteEntireRow(4, 4);
-        xlObj.deleteEntireColumn(4, 4);
-        xlObj.insertShiftBottom({rowIndex: 4, colIndex: 4}, {rowIndex: 4, colIndex: 4});
-        xlObj.insertShiftRight({rowIndex: 3, colIndex: 4}, {rowIndex: 3, colIndex: 4});
-        xlObj.deleteShiftUp({rowIndex: 4, colIndex: 6}, {rowIndex: 4, colIndex: 6});
-        xlObj.deleteShiftLeft({rowIndex: 3, colIndex: 6}, {rowIndex: 3, colIndex: 6});
+export class AppComponent {
+    public spreadData;
+    constructor(){
+        // The datasource "window.defaultData" is referred from 'http://js.syncfusion.com/demos/web/scripts/xljsondata.min.js'
+        this.spreadData = (window as any).defaultData;  
     }
-     }
+    @ViewChild('spreadsheet') xlObj: EJComponents<any, any>;
+    ngAfterViewInit() {
+        let inst = this.xlObj.widget;
+        inst.insertEntireRow(2, 2);
+        inst.insertEntireColumn(2, 2);
+        inst.deleteEntireRow(4, 4);
+        inst.deleteEntireColumn(4, 4);
+        inst.insertShiftBottom({rowIndex: 4, colIndex: 4}, {rowIndex: 4, colIndex: 4});
+        inst.insertShiftRight({rowIndex: 3, colIndex: 4}, {rowIndex: 3, colIndex: 4});
+        inst.deleteShiftUp({rowIndex: 4, colIndex: 6}, {rowIndex: 4, colIndex: 6});
+        inst.deleteShiftLeft({rowIndex: 3, colIndex: 6}, {rowIndex: 3, colIndex: 6});
     }
+}
 {% endhighlight %}
 
 The following output is displayed as a result of the above code example.
 
-![](Rows-and-Columns_images/Rows-and-Columns_img1.png)
+![Insert-Delete-Operation](Rows-and-Columns_images/Rows-and-Columns_img1.png)
 
 ## Show and Hide 
 
@@ -234,46 +222,40 @@ You can hide the columns dynamically by using one of the following ways,
 The following code example describes the above behavior.
 
 {% highlight html %}
-<ej-spreadsheet id="spreadsheet" (loadComplete)= loadComplete($event)>
+<ej-spreadsheet #spreadsheet id="Spreadsheet">
     <e-sheets>
-        <e-sheet>
-            <e-rangesettings>
-                <e-rangesetting [dataSource]= "spreadData"  ></e-rangesetting>
-            </e-rangesettings>
-        </e-sheet>
+        <e-sheet [dataSource]= "spreadData"></e-sheet>
     </e-sheets>
 </ej-spreadsheet>
 {% endhighlight %}
 
 {% highlight ts %}
-import {Component, ViewEncapsulation} from '@angular/core';
-import { SpreadsheetService } from '../services/spreadsheet.service';
+import { Component, ViewChild } from '@angular/core';
+import { EJComponents } from 'ej-angular2';
 
-    @Component({
-        selector: 'ej-app',
-        templateUrl: 'app/app.component.html',  //give the path file for spreadsheet control html file.
-        providers:[SpreadsheetService]
-    })
+@Component({
+    selector: 'ej-app',
+    templateUrl: 'app/app.component.html',  //give the path file for spreadsheet control html file.
+})
 
-    export class AppComponent {
-        public spreadData;
-        constructor(public SpreadsheetService: SpreadsheetService) {
-            this.spreadData = SpreadsheetService.getDefaultData();
-     }
-    loadComplete(event) {
-     let xlObj = $("#spreadsheet").data("ejSpreadsheet");
-     xlObj.setWidthToColumns([180, ]);
-     if(!xlObj.isImport){
-        xlObj.hideRow(2);
-        xlObj.hideColumn(2);
+export class AppComponent {
+    public spreadData;
+    constructor(){
+        // The datasource "window.defaultData" is referred from 'http://js.syncfusion.com/demos/web/scripts/xljsondata.min.js'
+        this.spreadData = (window as any).defaultData;  
     }
-     }
+    @ViewChild('spreadsheet') xlObj: EJComponents<any, any>;
+    ngAfterViewInit() {
+        let inst = this.xlObj.widget;
+        inst.hideRow(2);
+        inst.hideColumn(2);
+    }
 }
 {% endhighlight %}
 
 The following output is displayed as a result of the above code example.
 
-![](Rows-and-Columns_images/Rows-and-Columns_img2.png)
+![Show-Rows-columns](Rows-and-Columns_images/Rows-and-Columns_img2.png)
 
 #### Show Row
 
@@ -292,45 +274,40 @@ You can show the hidden columns dynamically by using one of the following ways,
 The following code example describes the above behavior.
 
 {% highlight html %}
-<ej-spreadsheet id="spreadsheet" (loadComplete)= loadComplete($event)>
+<ej-spreadsheet #spreadsheet id="Spreadsheet">
     <e-sheets>
-        <e-sheet>
-            <e-rangesettings>
-                <e-rangesetting [dataSource]= "spreadData" ></e-rangesetting>
-            </e-rangesettings>
-        </e-sheet>
+        <e-sheet [dataSource]= "spreadData"></e-sheet>
     </e-sheets>
 </ej-spreadsheet>
 {% endhighlight %}
 
 {% highlight ts %}
-import {Component, ViewEncapsulation} from '@angular/core';
-import { SpreadsheetService } from '../services/spreadsheet.service';
+import { Component, ViewChild } from '@angular/core';
+import { EJComponents } from 'ej-angular2';
 
-    @Component({
-        selector: 'ej-app',
-        templateUrl: 'app/app.component.html',  //give the path file for spreadsheet control html file.
-        providers:[SpreadsheetService]
-    })
+@Component({
+    selector: 'ej-app',
+    templateUrl: 'app/app.component.html',  //give the path file for spreadsheet control html file.
+})
 
-    export class AppComponent {
-        public spreadData;
-        constructor(public SpreadsheetService: SpreadsheetService) {
-            this.spreadData = SpreadsheetService.getDefaultData();
-     }
-    loadComplete(event) {
-     let xlObj = $("#spreadsheet").data("ejSpreadsheet");
-     if(!xlObj.isImport){
-        xlObj.showRow(2);
-        xlObj.showColumn(2);
-     }
-     }
+export class AppComponent {
+    public spreadData;
+    constructor(){
+        // The datasource "window.defaultData" is referred from 'http://js.syncfusion.com/demos/web/scripts/xljsondata.min.js'
+        this.spreadData = (window as any).defaultData;  
+    }
+    @ViewChild('spreadsheet') xlObj: EJComponents<any, any>;
+    ngAfterViewInit() {
+        let inst = this.xlObj.widget;
+        inst.showRow(2);
+        inst.showColumn(2);
+    }
 }
 {% endhighlight %}
 
 The following output is displayed as a result of the above code example.
 
-![](Rows-and-Columns_images/Rows-and-Columns_img3.png)
+![Hide-Rows-columns](Rows-and-Columns_images/Rows-and-Columns_img3.png)
 
 ## Resizing
 
@@ -345,44 +322,39 @@ You can perform resizing using one of the following ways,
 The following code example describes the above behavior.
 
 {% highlight html %}
-<ej-spreadsheet id="spreadsheet" [allowResizing]= true [rowHeight]= '21'(loadComplete)= loadComplete($event)>
+<ej-spreadsheet #spreadsheet id="Spreadsheet" [allowResizing]= true [rowHeight]= '21'>
     <e-sheets>
-        <e-sheet [columnWidth]= '64'>
-            <e-rangesettings>
-                <e-rangesetting [dataSource]= "spreadData" ></e-rangesetting>
-            </e-rangesettings>
-        </e-sheet>
+        <e-sheet [dataSource]= "spreadData" [columnWidth]= '64'></e-sheet>
     </e-sheets>
 </ej-spreadsheet>
 {% endhighlight %}
 
 {% highlight ts %}
 
-import {Component, ViewEncapsulation} from '@angular/core';
-import { SpreadsheetService } from '../services/spreadsheet.service';
+import { Component, ViewChild } from '@angular/core';
+import { EJComponents } from 'ej-angular2';
 
-    @Component({
-        selector: 'ej-app',
-        templateUrl: 'app/app.component.html',  //give the path file for spreadsheet control html file.
-        providers:[SpreadsheetService]
-    })
+@Component({
+    selector: 'ej-app',
+    templateUrl: 'app/app.component.html',  //give the path file for spreadsheet control html file.
+})
 
-    export class AppComponent {
-        public spreadData;
-        constructor(public SpreadsheetService: SpreadsheetService) {
-            this.spreadData = SpreadsheetService.getDefaultData();
-     }
-    loadComplete(event) {
-let xlObj = $("#spreadsheet").data("ejSpreadsheet");
-     if(!xlObj.isImport){
-        xlObj.XLResize.setColWidth(2, 100);
-        xlObj.XLResize.setRowHeight(2, 40);
+export class AppComponent {
+    public spreadData;
+    constructor(){
+        // The datasource "window.defaultData" is referred from 'http://js.syncfusion.com/demos/web/scripts/xljsondata.min.js'
+        this.spreadData = (window as any).defaultData;  
     }
-     }     
+    @ViewChild('spreadsheet') xlObj: EJComponents<any, any>;
+    ngAfterViewInit() {
+        let inst = this.xlObj.widget;
+        inst.XLResize.setColWidth(2, 100);
+        inst.XLResize.setRowHeight(2, 40);
+    }
 }
 
 {% endhighlight %}
 
 The following output is displayed as a result of the above code example.
 
-![](Rows-and-Columns_images/Rows-and-Columns_img4.png)
+![Resizing](Rows-and-Columns_images/Rows-and-Columns_img4.png)
