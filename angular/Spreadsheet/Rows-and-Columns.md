@@ -199,7 +199,7 @@ export class AppComponent {
 
 The following output is displayed as a result of the above code example.
 
-![](Rows-and-Columns_images/Rows-and-Columns_img1.png)
+![Insert-Delete-Operation](Rows-and-Columns_images/Rows-and-Columns_img1.png)
 
 ## Show and Hide 
 
@@ -255,7 +255,7 @@ export class AppComponent {
 
 The following output is displayed as a result of the above code example.
 
-![](Rows-and-Columns_images/Rows-and-Columns_img2.png)
+![Show-Rows-columns](Rows-and-Columns_images/Rows-and-Columns_img2.png)
 
 #### Show Row
 
@@ -307,7 +307,7 @@ export class AppComponent {
 
 The following output is displayed as a result of the above code example.
 
-![](Rows-and-Columns_images/Rows-and-Columns_img3.png)
+![Hide-Rows-columns](Rows-and-Columns_images/Rows-and-Columns_img3.png)
 
 ## Resizing
 
@@ -357,4 +357,4 @@ export class AppComponent {
 
 The following output is displayed as a result of the above code example.
 
-![](Rows-and-Columns_images/Rows-and-Columns_img4.png)
+![Resizing](Rows-and-Columns_images/Rows-and-Columns_img4.png)

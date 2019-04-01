@@ -1,5 +1,5 @@
 ---
-title: Getting Started for Angular Spreadsheet
+title: Getting Started | Spreadsheet | Angular | Syncfusion
 description: How to create a Spreadsheet with data source, apply format and export it as excel file.
 platform: Angular
 control: Spreadsheet
@@ -82,7 +82,7 @@ The Spreadsheet component can be created with prefix of `ej-`.The code example f
 
 Now, the Spreadsheet is rendered with default row and column count.
 
-![](Getting-Started_images/Getting-Started_img1.png)
+![Getting-Started](Getting-Started_images/Getting-Started_img1.png)
 
 ## Populate Spreadsheet with data
 
@@ -129,7 +129,7 @@ Now, this section explains how to populate JSON data to the Spreadsheet. You can
 
 {% endhighlight %}
 
-![](Getting-Started_images/Getting-Started_img2.png)
+![Getting-Started](Getting-Started_images/Getting-Started_img2.png)
 
 N> For more details about `data binding` refer following [`link`](http://help.syncfusion.com/angular-2/spreadsheet/data-binding "link")
 
@@ -174,7 +174,7 @@ export class AppComponent {
 
 {% endhighlight %}
 
-![](Getting-Started_images/Getting-Started_img3.png)
+![Getting-Started](Getting-Started_images/Getting-Started_img3.png)
 
 N> For more details about `Conditional Formatting` refer following [`link`](http://help.syncfusion.com/angular-2/spreadsheet/data-presentation#conditional-formatting "link")
 

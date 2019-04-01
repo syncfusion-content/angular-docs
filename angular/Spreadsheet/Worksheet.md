@@ -69,7 +69,7 @@ export class AppComponent {
 {% endhighlight %}
 
 The following output is displayed as a result of the above code example.
-![](Worksheet_images/Worksheet_img1.png)
+![Add](Worksheet_images/Worksheet_img1.png)
 
 ### Copy
 
@@ -100,7 +100,7 @@ export class AppComponent {
 {% endhighlight %}
 
 The following output is displayed as a result of the above code example.
-![](Worksheet_images/Worksheet_img2.png)
+![Copy](Worksheet_images/Worksheet_img2.png)
 
 ### Move
 
@@ -131,7 +131,7 @@ export class AppComponent {
 {% endhighlight %}
 
 The following output is displayed as a result of the above code example.
-![](Worksheet_images/Worksheet_img3.png)
+![Move](Worksheet_images/Worksheet_img3.png)
 
 ### Remove
 
@@ -166,7 +166,7 @@ export class AppComponent {
 {% endhighlight %}
 
 The following output is displayed as a result of the above code example.
-![](Worksheet_images/Worksheet_img4.png)
+![Remove](Worksheet_images/Worksheet_img4.png)
 
 ### Rename
 
@@ -201,7 +201,7 @@ export class AppComponent {
 {% endhighlight %}
 
 The following output is displayed as a result of the above code example.
-![](Worksheet_images/Worksheet_img5.png)
+![Rename](Worksheet_images/Worksheet_img5.png)
 
 ## Headers
 
@@ -233,7 +233,7 @@ export class AppComponent {}
 {% endhighlight %}
 
 The following output is displayed as a result of the above code example.
-![](Worksheet_images/Worksheet_img6.png)
+![Headers](Worksheet_images/Worksheet_img6.png)
 
 ## Show/Hide Sheets
 
@@ -269,7 +269,7 @@ export class AppComponent {
 {% endhighlight %}
 
 The following output is displayed as a result of the above code example.
-![](Worksheet_images/Worksheet_img7.png)
+![Show-Hide-Sheets](Worksheet_images/Worksheet_img7.png)
 
 ## Show/Hide Gridlines
 
@@ -302,4 +302,4 @@ export class AppComponent {}
 
 
 The following output is displayed as a result of the above code example.
-![](Worksheet_images/Worksheet_img8.png)
+![Gridlines](Worksheet_images/Worksheet_img8.png)

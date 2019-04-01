@@ -111,7 +111,7 @@ export class AppComponent {
 {% endhighlight %}
 
 The following output is displayed as a result of the above behavior.
-![](Freeze-Pane_images/Freeze-Pane_img2.png)
+![FreezePanes](Freeze-Pane_images/Freeze-Pane_img2.png)
 
 N> When we apply freeze pane by selecting cell “A1”, rows and columns are frozen based on the middle cell in the worksheet.
 
@@ -197,7 +197,7 @@ export class AppComponent {
 {% endhighlight %}
 
 The following output is displayed as a result of the above code example.
-![](Freeze-Pane_images/Freeze-Pane_img3.png)
+![FreezeRows](Freeze-Pane_images/Freeze-Pane_img3.png)
 
 N> On OTHERS tab click Freeze Top Row in FreezePanes dropdown list, to freeze top row. You can also freeze top row using [`freezeTopRow`](https://help.syncfusion.com/api/js/ejspreadsheet#methods:xlfreeze-freezetoprow "freezeTopRow") method. 
 
@@ -281,7 +281,7 @@ export class AppComponent {
 {% endhighlight %}
 
 The following output is displayed as a result of the above code example.
-![](Freeze-Pane_images/Freeze-Pane_img4.png)
+![FreezeColumns](Freeze-Pane_images/Freeze-Pane_img4.png)
 
 N> On OTHERS tab click Freeze First Column in FreezePanes dropdown list, to freeze left Column. You can also apply freeze first column using [`freezeLeftColumn`](https://help.syncfusion.com/api/js/ejspreadsheet#methods:xlfreeze-freezeleftcolumn "freezeLeftColumn") method. 
 
@@ -338,6 +338,6 @@ export class AppComponent {
 {% endhighlight %}
 
 The following output is displayed as a result of the above code example.
-![](Freeze-Pane_images/Freeze-Pane_img6.png)
+![UnfreezePanes](Freeze-Pane_images/Freeze-Pane_img6.png)
 
 
