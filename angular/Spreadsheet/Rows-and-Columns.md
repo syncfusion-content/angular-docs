@@ -22,7 +22,7 @@ Columns are a collection of cells that run vertically. Each column is identified
 The following code example describes the above behavior.
 
 {% highlight html %}
-<ej-spreadsheet [rowCount]= 50 [columnCount]= 36 >
+<ej-spreadsheet id="Spreadsheet" [rowCount]= 50 [columnCount]= 36 >
     <e-sheets>
         <e-sheet [dataSource]= "spreadData">
         </e-sheet>
@@ -159,7 +159,7 @@ The following code example describes the above behavior.
 
 {% highlight html %}
 
-<ej-spreadsheet #spreadsheet [allowInsert]= true [allowDelete]= true >
+<ej-spreadsheet #spreadsheet id="Spreadsheet" [allowInsert]= true [allowDelete]= true >
     <e-sheets>
         <e-sheet [dataSource]= "spreadData"></e-sheet>
     </e-sheets>
@@ -222,7 +222,7 @@ You can hide the columns dynamically by using one of the following ways,
 The following code example describes the above behavior.
 
 {% highlight html %}
-<ej-spreadsheet #spreadsheet >
+<ej-spreadsheet #spreadsheet id="Spreadsheet">
     <e-sheets>
         <e-sheet [dataSource]= "spreadData"></e-sheet>
     </e-sheets>
@@ -274,7 +274,7 @@ You can show the hidden columns dynamically by using one of the following ways,
 The following code example describes the above behavior.
 
 {% highlight html %}
-<ej-spreadsheet #spreadsheet >
+<ej-spreadsheet #spreadsheet id="Spreadsheet">
     <e-sheets>
         <e-sheet [dataSource]= "spreadData"></e-sheet>
     </e-sheets>
@@ -322,7 +322,7 @@ You can perform resizing using one of the following ways,
 The following code example describes the above behavior.
 
 {% highlight html %}
-<ej-spreadsheet #spreadsheet [allowResizing]= true [rowHeight]= '21'>
+<ej-spreadsheet #spreadsheet id="Spreadsheet" [allowResizing]= true [rowHeight]= '21'>
     <e-sheets>
         <e-sheet [dataSource]= "spreadData" [columnWidth]= '64'></e-sheet>
     </e-sheets>

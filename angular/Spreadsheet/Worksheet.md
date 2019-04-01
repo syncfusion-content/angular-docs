@@ -46,7 +46,7 @@ You can dynamically insert a sheet by one of the following ways,
 The following code example describes the above behavior.
 
 {% highlight html %}
-<ej-spreadsheet #spreadsheet [sheetCount]= 1 (loadComplete)= loadComplete($event)>
+<ej-spreadsheet #spreadsheet id="Spreadsheet" [sheetCount]= 1 (loadComplete)= loadComplete($event)>
 </ej-spreadsheet> 
 {% endhighlight %}
 
@@ -81,7 +81,7 @@ The Spreadsheet provides support to create a copy of an existing worksheet. You 
 The following code example describes the above behavior.
 
 {% highlight html %}
-<ej-spreadsheet #spreadsheet [sheetCount]= 3></ej-spreadsheet> 
+<ej-spreadsheet #spreadsheet id="Spreadsheet" [sheetCount]= 3></ej-spreadsheet> 
 {% endhighlight %}
 
 {% highlight ts %}
@@ -112,7 +112,7 @@ The Spreadsheet provides support to move an existing worksheet. You can dynamica
 The following code example describes the above behavior.
 
 {% highlight html %}
-<ej-spreadsheet #spreadsheet [sheetCount]= 3></ej-spreadsheet> 
+<ej-spreadsheet #spreadsheet id="Spreadsheet" [sheetCount]= 3></ej-spreadsheet> 
 {% endhighlight %}
 
 {% highlight ts %}
@@ -145,7 +145,7 @@ You can also remove an active worksheet using [`deleteSheet`](https://help.syncf
 The following code example describes the above behavior.
 
 {% highlight html %}
-<ej-spreadsheet #spreadsheet [sheetCount]= 2></ej-spreadsheet>
+<ej-spreadsheet #spreadsheet id="Spreadsheet" [sheetCount]= 2></ej-spreadsheet>
 {% endhighlight %}
 
 {% highlight ts %}
@@ -178,7 +178,7 @@ The Spreadsheet has support for renaming an existing worksheet. You can dynamica
 The following code example describes the above behavior.
 
 {% highlight html %}
-<ej-spreadsheet #spreadsheet [sheetCount]= 2></ej-spreadsheet>
+<ej-spreadsheet #spreadsheet id="Spreadsheet" [sheetCount]= 2></ej-spreadsheet>
 {% endhighlight %}
 
 {% highlight ts %}
@@ -213,7 +213,7 @@ Headers in the spreadsheet are numbered rows and lettered columns in worksheets.
 The following code example describes the above behavior.
 
 {% highlight html %}
-<ej-spreadsheet>
+<ej-spreadsheet id="Spreadsheet">
   <e-sheets>
       <e-sheet [showHeadings]='false'>
     </e-sheet>
@@ -246,7 +246,7 @@ You can dynamically show/hide worksheet by using one of the following ways,
 The following code example describes the above behavior.
 
 {% highlight html %}
-<ej-spreadsheet #spreadsheet [sheetCount]= 3></ej-spreadsheet> 
+<ej-spreadsheet #spreadsheet id="Spreadsheet" [sheetCount]= 3></ej-spreadsheet> 
 {% endhighlight %}
 
 {% highlight ts %}
@@ -281,7 +281,7 @@ Gridlines act as a border like appearance of cells. They are used to distinguish
 The following code example describes the above behavior.
 
 {% highlight html %}
-<ej-spreadsheet>
+<ej-spreadsheet id="Spreadsheet">
   <e-sheets>
       <e-sheet [showGridlines]='false'>
     </e-sheet>

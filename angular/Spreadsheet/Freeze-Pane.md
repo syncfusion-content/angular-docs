@@ -20,7 +20,7 @@ The freeze pane can be applied in a following ways,
 ### User Interface
 Select any cell and on OTHERS tab click Freeze Panes in Freeze Panes dropdown list.
 
-![](Freeze-Pane_images/Freeze-Pane_img1.png)
+![Freeze-Pane](Freeze-Pane_images/Freeze-Pane_img1.png)
 
 ### Initial Load
 You can use `allowFreezing` property to enable or disable freeze pane in Spreadsheet.
@@ -30,7 +30,7 @@ The following code example describes the above behavior,
 
 {% highlight html %}
 
-<ej-spreadsheet>
+<ej-spreadsheet id="Spreadsheet">
     <e-sheets>
         <e-sheet [dataSource]= "spreadData" [frozenRows]="5" [frozenColumns]="2"></e-sheet>
     </e-sheets>
@@ -78,7 +78,7 @@ The following code example describes the above behavior,
 
 {% highlight html %}
 
-<ej-spreadsheet #spreadsheet>
+<ej-spreadsheet #spreadsheet id="Spreadsheet">
     <e-sheets>
         <e-sheet [dataSource]= "spreadData"></e-sheet>
     </e-sheets>
@@ -130,7 +130,7 @@ The following code example describes the above behavior,
 
 {% highlight html %}
 
-<ej-spreadsheet>
+<ej-spreadsheet id="Spreadsheet">
     <e-sheets>
         <e-sheet [dataSource]= "spreadData" [frozenRows]="3"></e-sheet>
     </e-sheets>
@@ -164,7 +164,7 @@ The following code example describes the above behavior,
 
 {% highlight html %}
 
-<ej-spreadsheet #spreadsheet>
+<ej-spreadsheet #spreadsheet id="Spreadsheet">
     <e-sheets>
         <e-sheet [dataSource]= "spreadData"></e-sheet>
     </e-sheets>
@@ -215,7 +215,7 @@ The following code example describes the above behavior
 
 {% highlight html %}
 
-<ej-spreadsheet>
+<ej-spreadsheet id="Spreadsheet">
     <e-sheets>
         <e-sheet [dataSource]= "spreadData" [frozenColumns]="3"></e-sheet>
     </e-sheets>
@@ -248,7 +248,7 @@ The following code example describes the above behavior
 
 {% highlight html %}
 
-<ej-spreadsheet #spreadsheet>
+<ej-spreadsheet #spreadsheet id="Spreadsheet">
     <e-sheets>
         <e-sheet [dataSource]= "spreadData"></e-sheet>
     </e-sheets>
@@ -295,7 +295,7 @@ The unfreeze pane can be applied in a following ways,
 
 ### User Interface
 On OTHERS tab click Unfreeze Panes in Freeze Panes dropdown list.
-![](Freeze-Pane_images/Freeze-Pane_img5.png)
+![UnfreezePanes](Freeze-Pane_images/Freeze-Pane_img5.png)
 
 ### Method
 You can unfreeze rows or columns using [`unfreezePanes`](https://help.syncfusion.com/api/js/ejspreadsheet#methods:xlfreeze-unfreezepanes "unfreezePanes") method. 
@@ -304,7 +304,7 @@ The following code example describes the above behavior,
 
 {% highlight html %}
 
-<ej-spreadsheet #spreadsheet>
+<ej-spreadsheet #spreadsheet id="Spreadsheet">
     <e-sheets>
         <e-sheet [dataSource]= "spreadData"></e-sheet>
     </e-sheets>

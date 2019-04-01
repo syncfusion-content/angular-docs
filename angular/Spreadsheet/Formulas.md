@@ -24,7 +24,7 @@ You can set formula for a cell by specifying `value` property in cell data bindi
 
 {% highlight html %}
 
-<ej-spreadsheet [sheets] = "spreadData"></ej-spreadsheet>
+<ej-spreadsheet id="Spreadsheet" [sheets]="spreadData"></ej-spreadsheet>
 
 {% endhighlight %}
 
@@ -86,7 +86,7 @@ You can set formula for a cell using [`updateCellValue`](https://help.syncfusion
 
 {% highlight html %}
 
-<ej-spreadsheet #spreadsheet [sheets] = "spreadData"></ej-spreadsheet>
+<ej-spreadsheet #spreadsheet id="Spreadsheet" [sheets]="spreadData"></ej-spreadsheet>
 
 {% endhighlight %}
 
@@ -131,7 +131,7 @@ You can set formula for a cell by edit and save a cell through user interface us
 
 {% highlight html %}
 
-<ej-spreadsheet [sheets] = "spreadData"></ej-spreadsheet>
+<ej-spreadsheet id="Spreadsheet" [sheets]="spreadData"></ej-spreadsheet>
 
 {% endhighlight %}
 

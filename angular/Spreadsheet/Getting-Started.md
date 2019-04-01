@@ -137,10 +137,8 @@ N> For more details about `data binding` refer following [`link`](http://help.sy
 
 Conditional formatting helps you to apply formats to a cell or range with certain color based on the cells values. You can use `allowConditionalFormats` property within square bracket(`[]`) to enable/disable Conditional formats.
 
-Events can be bound to the controls using the event name within bracket [`()`]. For example, the `loadComplete` event of Spreadsheet control can be defined as follows.
-
 {% highlight html %}
-    <ej-spreadsheet #spreadsheet [allowConditionalFormats]= true>
+    <ej-spreadsheet #spreadsheet id="Spreadsheet" [allowConditionalFormats]= true>
         <e-sheets >
             <e-sheet [dataSource]="spreadData" startCell="A1" [headerStyles]="{'font-weight':'bold'}">
             <e-sheet>
