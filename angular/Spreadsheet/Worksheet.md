@@ -183,8 +183,6 @@ The following code example describes the above behavior.
 
 {% highlight ts %}
 
-{% highlight ts %}
-
 import { Component, ViewChild } from '@angular/core';
 import { EJComponents } from 'ej-angular2';
 @Component({
