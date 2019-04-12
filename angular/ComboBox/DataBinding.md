@@ -133,7 +133,7 @@ In the following sample, displayed first 6 contacts from the `customer` table of
                   this.queries = query;
 		          this.data = dataManager;
                   this.fields = {text: "CustomerID", value: "CustomerID" };
-				   this.placeholder = 'Select a customer';
+				  this.placeholder = 'Select a customer';
               }
             }		
 	
