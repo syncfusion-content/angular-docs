@@ -139,4 +139,4 @@ In the following sample, displayed first 6 contacts from the `customer` table of
 	
 {% endhighlight %}
 
-![](DataBinding_images/DataBinding_image1.png)
+![RemoteData](DataBinding_images/DataBinding_image1.png)
