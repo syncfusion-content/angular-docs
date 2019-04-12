@@ -194,7 +194,7 @@ The following example shows how to perform case-sensitive filter.
               }
                filtering(e: any) {
                     let  query = new ej.Query().select(['game', 'id']);
-                   query = (e.text !== '') ? query.where('game', ej.FilterOperators.endsWith, e.text, false) : query;
+                   query = (e.text !== '') ? query.where('game', ej.FilterOperators.startsWith, e.text, false) : query;
                    e.updateData(this.data, query);
               }
             }		
