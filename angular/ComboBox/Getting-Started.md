@@ -93,7 +93,7 @@ After initializing, populate the ComboBox with data using the [dataSource](https
 
 After completing the configuration required to render a basic ComboBox, run the above sample to display the output in your default browser.
 	
-![](Getting-Started_images/Getting-Started_img1.png)
+![Data](Getting-Started_images/Getting-Started_img1.png)
 
 ## Custom Values
 
