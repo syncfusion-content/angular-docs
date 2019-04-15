@@ -101,7 +101,7 @@ In the following sample, vegetables are grouped according to the category.
               constructor() {
                 this.data = [
                   { vegetable: 'Cabbage', category: 'Leafy and Salad' }, { vegetable: 'Spinach', category: 'Leafy and Salad' },
-                  { vegetable: 'Wheatgrass', category: 'Leafy and Salad' }, { vegetable: 'Yarrow', category: 'Leafy and Salad' },
+                  { vegetable: 'Wheat grass', category: 'Leafy and Salad' }, { vegetable: 'Yarrow', category: 'Leafy and Salad' },
 				  { vegetable: 'Chickpea', category: 'Beans' }, { vegetable: 'Green bean', category: 'Beans' },
 				  { vegetable: 'Horse gram', category: 'Beans' }, { vegetable: 'Garlic', category: 'Bulb and Stem' },
 				  { vegetable: 'Nopal', category: 'Bulb and Stem' }, { vegetable: 'Onion', category: 'Bulb and Stem' }];
@@ -288,7 +288,7 @@ In the following sample, popup list content displays the notification of no data
             constructor() {
                  this.data =[];
                  this.fields = { text: 'text',value: 'country' };
-                 this.Template = "<span class='norecord'> NO DATA AVAILABLE</span>"
+                 this.Template = "<span class='record'> NO DATA AVAILABLE</span>"
                }
             }		
 	
@@ -298,7 +298,7 @@ In the following sample, popup list content displays the notification of no data
 
     <style>
 
-     .norecord:before{
+     .record:before{
         content: '\e7c3';
         font-family: 'e-icons';
         font-size: 18px;
