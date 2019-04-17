@@ -443,9 +443,9 @@ export class AppComponent {
        set(e: any){  
            if(this.Edit) 
               //update the editSettings based on value in button click event 
-              this.grid.widget.option({editSettings: {allowEditing:true,allowAdding: true,allowDeleting: true,showAddNewRow:true,rowposition: ej.Grid.RowPosition.Bottom }}) 
+              this.grid.widget.option({editSettings: {allowEditing:true,allowAdding: true,allowDeleting: true,showAddNewRow:true,rowPosition: ej.Grid.RowPosition.Bottom }}) 
         else 
-             this.grid.widget.option({editSettings: {allowEditing:false,allowAdding: false,allowDeleting: false,showAddNewRow:false,rowposition: ej.Grid.RowPosition.Bottom }}) 
+             this.grid.widget.option({editSettings: {allowEditing:false,allowAdding: false,allowDeleting: false,showAddNewRow:false,rowPosition: ej.Grid.RowPosition.Bottom }}) 
       } 
 }
 
