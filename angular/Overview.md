@@ -405,6 +405,52 @@ ejWaitingPopup</td><td>
 
 N> For complete understanding of Angular inputs and outputs binding syntaxes, refer [this](https://angular.io/guide/template-syntax#binding-syntax-an-overview) Angular help document.
 
+## Setting complex properties dynamically
+
+Complex properties donot have two-way binding support in Angular. To set these complex properties dynamically, use setModel option. For example, `editSettings` in Grid is a complex property and you can change this dynamically as done in the following code
+
+{% highlight ts %}
+
+import {Component, ViewChild } from '@angular/core';
+import { EJComponents } from 'ej-angular2';
+
+@Component({
+    selector: 'my-app',
+    template: `<button (click)="set()">Click</button>
+     <ej-grid #grid  [allowPaging]="true" [allowScrolling]="true" [toolbarSettings]="toolbarItems" [dataSource]="gridData">
+       <e-columns>
+        <e-column field="OrderID" headerText="Order ID"  width="85" textAlign="right"></e-column>
+        <e-column field="CustomerID" headerText="Customer ID" textAlign="left"  width="100"></e-column>
+        <e-column field="EmployeeID" headerText="Employee ID " width="120" textAlign="left"></e-column> 
+        <e-column field="Freight" headerText="Freight" width="120" textAlign="left"></e-column> 
+        <e-column field="ShipCity" headerText="Ship City " width="120" textAlign="left"></e-column>   
+      </e-columns>
+    </ej-grid>`
+})
+export class AppComponent {
+     @ViewChild('grid') grid: EJComponents<any, any>; 
+        public gridData; 
+        public toolbarItems; 
+        public Edit; 
+       
+        constructor() 
+        { 
+           this.gridData = window.gridData; 
+           this.toolbarItems = { showToolbar : true, toolbarItems : ["add", "edit", "delete", "update", "cancel"]}; 
+           this.Edit = true; 
+        } 
+      
+       set(e: any){  
+           if(this.Edit) 
+              //update the editSettings based on value in button click event 
+              this.grid.widget.option({editSettings: {allowEditing:true,allowAdding: true,allowDeleting: true,showAddNewRow:true,rowposition: ej.Grid.RowPosition.Bottom }}) 
+        else 
+             this.grid.widget.option({editSettings: {allowEditing:false,allowAdding: false,allowDeleting: false,showAddNewRow:false,rowposition: ej.Grid.RowPosition.Bottom }}) 
+      } 
+}
+
+{% endhighlight %}
+
 ## Invoking EJ widget methods from component instance
 
 You can invoke the ej widget's public methods using Angular component instance reference like the below syntax.
