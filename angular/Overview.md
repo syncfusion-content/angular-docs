@@ -407,7 +407,7 @@ N> For complete understanding of Angular inputs and outputs binding syntaxes, re
 
 ## Setting complex properties dynamically
 
-Complex properties donot have two-way binding support in Angular. To set these complex properties dynamically, use setModel option. For example, `editSettings` in Grid is a complex property and you can change this dynamically as done in the following code
+Complex properties don't have two-way binding support in Angular. To set these complex properties dynamically, use setModel option. For example, `editSettings` in Grid is a complex property and you can change this dynamically as done in the following code
 
 {% highlight ts %}
 
