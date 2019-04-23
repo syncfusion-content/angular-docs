@@ -22,7 +22,7 @@ N> For the **OHLC** type series, you have to map four dataSource fields (**high*
 
 <ej-chart id="container">
         <e-seriescollection >
-            <e-series xName="ShipCity" [dataSource]="chartData" yName="Freight" >
+            <e-series xName="month" [dataSource]="chartData" yName="sales" >
             </e-series>
         </e-seriescollection>
 </ej-chart>
@@ -32,21 +32,14 @@ N> For the **OHLC** type series, you have to map four dataSource fields (**high*
 {% highlight ts %}
 
 this.chartData = [
-    { ShipCity: "STOCKHOLM", Freight: 28 },
-    { ShipCity: "MOSCOW", Freight: 148 },
-    { ShipCity: "OTTAWA", Freight: 8 },
-    { ShipCity: "KIEV", Freight: 43 },
-    { ShipCity: "COPENHAGEN", Freight: 28 },
-    { ShipCity: "Juneau", Freight: 35 },
-    { ShipCity: "Resende", Freight: 13.97 },
-    { ShipCity: "San Cristobal", Freight: 81.91 },
-
-];
+          { month: 'Jan', sales: 35 }, { month: 'Feb', sales: 28 },  { month: 'Mar', sales: 34 },
+          { month: 'Apr', sales: 32 },{ month: 'May', sales: 40 },{ month: 'Jun', sales: 32 },
+          { month: 'Jul', sales: 35 },  { month: 'Aug', sales: 55 }, { month: 'Sep', sales: 38 },
+          { month: 'Oct', sales: 30 }, { month: 'Nov', sales: 25 }, { month: 'Dec', sales: 32 }];
 
 {% endhighlight %}
 
 ![](Working-with-Data_images/Working-with-Data_img1.png)
-
 
 
 2.You can also plot data to chart using **points** option in the series. Using this property you can customize each and every point in the data.
