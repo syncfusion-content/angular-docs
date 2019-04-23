@@ -76,7 +76,7 @@ You can bind the remote data to the chart by using the DataManager and you can u
         });
         // Query creation
         var query = ej.Query().from("Orders").take(6);
-        var chart = $("#chartcontainer").ejChart("instance");
+        var chart = $("#chart").ejChart("instance");
         chart.model.series[0].dataSource=dataManager;
         chart.model.series[0].query=query;
         chart.redraw();
