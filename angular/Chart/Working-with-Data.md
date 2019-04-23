@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Data binding
+title: Data binding in Syncfusion Essential Angular Chart
 description: Learn how to bind Chart with JSON data from a remote server or locally in client browser.
 platform: Angular
 control: Chart
@@ -39,7 +39,7 @@ this.chartData = [
 
 {% endhighlight %}
 
-![](Working-with-Data_images/Working-with-Data_img1.png)
+![Local Data](Working-with-Data_images/Working-with-Data_img1.png)
 
 
 2.You can also plot data to chart using **points** option in the series. Using this property you can customize each and every point in the data.
@@ -56,22 +56,21 @@ this.chartData = [
                     <e-point  x="James" y="11000"> </e-point>
                     <e-point  x="Mary" y="10000"> </e-point>
                 </e-points>
-            </e-series>        
+            </e-series>
         </e-seriescollection>
     </ej-chart>
 
 {% endhighlight %}
 
-![](Working-with-Data_images/Working-with-Data_img2.png)
+![Local Data](Working-with-Data_images/Working-with-Data_img2.png)
 
 ## Remote Data
 
 You can bind the remote data to the chart by using the DataManager and you can use the **query** property of the series to filter the data from the dataSource.
 
-
 {% highlight javascript %}
 
-        //Remote URL           
+        //Remote URL
         var dataManger = new ej.DataManager({
             url: "http://mvc.syncfusion.com/Services/Northwnd.svc/"
         });
@@ -95,4 +94,4 @@ You can bind the remote data to the chart by using the DataManager and you can u
 
 {% endhighlight %}
 
-![](Working-with-Data_images/Working-with-Data_img3.png)
+![Remote Data](Working-with-Data_images/Working-with-Data_img3.png)
