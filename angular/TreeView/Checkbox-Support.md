@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Checkboxes
+title: Checkbox for Syncfusion TreeView
 description: checkboxes
 platform: Angular
 control: TreeView
@@ -17,8 +17,8 @@ TreeView supports tristate checkboxes in addition with standard two state checkb
 
  {% highlight html %} 
  
- <ej-treeview id='treeview' [fields]='field' [autoCheckParentNode]='autoCheckParentNode'>
- </ej-treeview>
+<ej-treeview id='treeview' [fields]='field' [showCheckbox]='true' [autoCheckParentNode]='autoCheckParentNode'>
+</ej-treeview>
 
   {% endhighlight %}
 
@@ -37,60 +37,33 @@ export class AppComponent {
     constructor() {
     }
       //define the data source
-    public continents:Object[] = [
-        {
-        code: 'AF', name: 'Africa', countries: [
-            { code: 'NGA', name: 'Nigeria' },
-            { code: 'EGY', name: 'Egypt' },
-            { code: 'ZAF', name: 'South Africa' }
-        ]
-    },
-    {
-        code: 'AS', name: 'Asia', expanded: true, countries: [
-            { code: 'CHN', name: 'China' },
-            { code: 'IND', name: 'India', selected: true },
-            { code: 'JPN', name: 'Japan' }
-        ]
-    },
-    {
-        code: 'EU', name: 'Europe', countries: [
-            { code: 'DNK', name: 'Denmark' },
-            { code: 'FIN', name: 'Finland' },
-            { code: 'AUT', name: 'Austria' }
-        ]
-    },
-    {
-        code: 'NA', name: 'North America', countries: [
-            { code: 'USA', name: 'United States of America' },
-            { code: 'CUB', name: 'Cuba' },
-            { code: 'MEX', name: 'Mexico' }
-        ]
-    },
-    {
-        code: 'SA', name: 'South America', countries: [
-            { code: 'BRA', name: 'Brazil' },
-            { code: 'COL', name: 'Colombia' },
-            { code: 'ARG', name: 'Argentina' }
-        ]
-    },
-    {
-        code: 'OC', name: 'Oceania', countries: [
-            { code: 'AUS', name: 'Australia' },
-            { code: 'NZL', name: 'New Zealand' },
-            { code: 'WSM', name: 'Samoa' }
-        ]
-    },
-    {
-        code: 'AN', name: 'Antarctica', countries: [
-            { code: 'Ross', name: 'Ross Island' },
-            { code: 'ATF', name: 'French Southern Lands' }
-        ]
-    }
-    ];
+   public Data:Object[] = [
+        { id: 1, name: 'Discover Music', hasChild: true, expanded: true },
+        { id: 2, parent: 1, name: 'Hot Singles', selected: true },
+        { id: 3, parent: 1, name: 'Rising Artists', selected: true },
+        { id: 4, parent: 1, name: 'Live Music', selected: true },
+        { id: 6, parent: 1, name: 'Best of 2013 So Far' },
+        { id: 7, name: 'Sales and Events', hasChild: true, expanded: true },
+        { id: 8, parent: 7, name: '100 Albums - $5 Each' },
+        { id: 9, parent: 7, name: 'Hip-Hop and R&B Sale' },
+        { id: 10, parent: 7, name: 'CD Deals' },
+        { id: 11, name: 'Categories', hasChild: true },
+        { id: 12, parent: 11, name: 'Songs' },
+        { id: 13, parent: 11, name: 'Bestselling Albums' },
+        { id: 14, parent: 11, name: 'New Releases' },
+        { id: 15, parent: 11, name: 'Bestselling Songs' },
+        { id: 16, name: 'MP3 Albums', hasChild: true },
+        { id: 17, parent: 16, name: 'Rock' },
+        { id: 18, parent: 16, name: 'Gospel' },
+        { id: 19, parent: 16, name: 'Latin Music' },
+        { id: 20, parent: 16, name: 'Jazz' },
+        { id: 21, name: 'More in Music', hasChild: true },
+        { id: 22, parent: 21, name: 'Music Trade-In' },
+        { id: 23, parent: 21, name: 'Redeem a Gift Card' },
+        { id: 24, parent: 21, name: 'Band T-Shirts' },
+        { id: 25, parent: 21, name: 'Mobile MVC' }];
     
-    public field:Object = { dataSource: this.continents, id: 'code', text: 'name', 
-    child: 'countries' };
-
+    public field:Object = { id: 'id', parentId: 'parent', text: 'name', hasChild: 'hasChild', dataSource: this.Data, expanded: 'expanded', selected: 'selected'};
     public autoCheckParentNode: boolean = false;
 }
 
@@ -106,7 +79,7 @@ By default checkbox state of child nodes depends up on parent node checkbox stat
 
  {% highlight html %} 
  
- <ej-treeview id='treeView' [fields]='field' [autoCheck]='autocheck'></ej-treeview>
+ <ej-treeview id='treeView' [fields]='field' [autoCheck]='false'></ej-treeview>
 
   {% endhighlight %}
 
