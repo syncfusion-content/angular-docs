@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Overview of Angular-2 DatePicker
+title: Overview | Angular | DatePicker | Syncfusion
 description: How to get started with Angular datepicker?
 platform: Angular
 control: DatePicker
