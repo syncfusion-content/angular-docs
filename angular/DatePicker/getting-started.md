@@ -50,7 +50,7 @@ Create the component TS file like below to render the component.
 
 Execution of above code will render the following output.
 
-![](gettingstarted_images\gettingstarted_img1.png)
+![Angular date picker control](gettingstarted_images\gettingstarted_img1.png)
 
 ## Model biding
 
