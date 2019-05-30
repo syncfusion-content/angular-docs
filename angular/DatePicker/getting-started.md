@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Overview | Angular | DatePicker | Syncfusion
-description: How to get started with Angular datepicker?
+title: Getting Started | DatePicker | Angular | Syncfusion 
+description: This section describes how to add datepicker control into application and describes how to configure data binding support.[
 platform: Angular
 control: DatePicker
 documentation: ug
