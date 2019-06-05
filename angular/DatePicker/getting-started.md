@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Getting Started | DatePicker | Angular | Syncfusion 
-description: This section describes how to add datepicker control into application and describes how to configure data binding support.[
+description: This section describes how to add datepicker control into application and describes how to configure data binding support.
 platform: Angular
 control: DatePicker
 documentation: ug
@@ -50,7 +50,7 @@ Create the component TS file like below to render the component.
 
 Execution of above code will render the following output.
 
-![Angular date picker control](gettingstarted_images\gettingstarted_img1.png)
+![Angular datepicker control](gettingstarted_images\gettingstarted_img1.png)
 
 ## Model biding
 
