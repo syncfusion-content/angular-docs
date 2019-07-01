@@ -529,9 +529,9 @@ N> Editing, grouping, filtering, sorting, summary and searching support are not 
 The following code example describes the above behavior. 
 
 {% highlight html %}
-<ej-grid id="Grid" [dataSource]="gridData" [allowPaging]="true" >
+<ej-grid id="Grid" [dataSource]="gridData" [allowPaging]="true" [editSettings]="editSettings" >
     <e-columns>
-        <e-column field= "OrderID"></e-column>
+        <e-column field= "OrderID" [isPrimaryKey]="true"></e-column>
         <e-column field= "CustomerID"></e-column>
         <e-column field= "EmployeeID"></e-column>
         <e-column field= "Freight"></e-column>
@@ -554,10 +554,12 @@ The following code example describes the above behavior.
     })
     export class AppComponent {
         public gridData;
+        public editSettings;
     	constructor()
         {        
             //The datasource "(window as any).gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
             this.gridData = (window as any).gridData;
+            this.editSettings = {allowDeleting: true};
         }
         Click(){
             this.Grid.widget.deleteRecord("OrderID", this.Grid.widget.getSelectedRecords()[0]);
