@@ -45,7 +45,7 @@ The following code example shows auto-generate columns behavior.
 
 The following output is displayed as a result of the above code example.
 
-![](columns_images/columns_img1.png)
+![Auto generation](columns_images/columns_img1.png)
 
 
 ## Headers
@@ -90,7 +90,7 @@ The following code example describes the above behavior.
 
 The following output is displayed as a result of the above code example.
 
-![](columns_images/columns_img2.png)
+![HeaderText](columns_images/columns_img2.png)
 
 
 ### Header Text alignment
@@ -140,7 +140,7 @@ The following code example describes the above behavior.
 
 The following output is displayed as a result of the above code example.
 
-![](columns_images/columns_img3.png)
+![HeaderText Alignment](columns_images/columns_img3.png)
 
 
 ## Header Template
@@ -188,7 +188,7 @@ The following code example describes the above behavior.
 
 The following output is displayed as a result of the above code example.
 
-![](columns_images/columns_img4.png)
+![Header Template](columns_images/columns_img4.png)
 
 
 ## Text alignment
@@ -238,7 +238,7 @@ The following code example describes the above behavior.
 
 The following output is displayed as a result of the above code example.
 
-![](columns_images/columns_img5.png)
+![Text alignment](columns_images/columns_img5.png)
 
 
 ## Format
@@ -281,7 +281,7 @@ The following code example describes the above behavior.
 
 The following output is displayed as a result of the above code example.
 
-![](columns_images/columns_img6.png)
+![Format](columns_images/columns_img6.png)
 
 
 ## Width
@@ -324,7 +324,7 @@ The following code example describes the above behavior.
 
 The following output is displayed as a result of the above code example.
 
-![](columns_images/columns_img7.png)
+![Width](columns_images/columns_img7.png)
 
 
 ## Resizing
@@ -435,7 +435,7 @@ The following code example describes the above behavior.
 
 The following output is displayed as a result of the above code example.
 
-![](columns_images/columns_img8.png)
+![Resize to fit](columns_images/columns_img8.png)
 
 
 ## Reorder
@@ -476,7 +476,7 @@ The following code example describes the above behavior.
 
 The following output is displayed as a result of the above code example.
 
-![](columns_images/columns_img10.png)
+![Reorder](columns_images/columns_img10.png)
 
 
 ## Visibility
@@ -517,7 +517,7 @@ The following code example describes the above behavior.
 
 The following output is displayed as a result of the above code example.
 
-![](columns_images/columns_img11.png)
+![Visibility](columns_images/columns_img11.png)
 
 
 ## Unbound Column
@@ -529,9 +529,9 @@ N> Editing, grouping, filtering, sorting, summary and searching support are not 
 The following code example describes the above behavior. 
 
 {% highlight html %}
-<ej-grid id="Grid" [dataSource]="gridData" [allowPaging]="true" >
+<ej-grid id="Grid" [dataSource]="gridData" [allowPaging]="true" [editSettings]="editSettings" >
     <e-columns>
-        <e-column field= "OrderID"></e-column>
+        <e-column field= "OrderID" [isPrimaryKey]="true"></e-column>
         <e-column field= "CustomerID"></e-column>
         <e-column field= "EmployeeID"></e-column>
         <e-column field= "Freight"></e-column>
@@ -554,10 +554,12 @@ The following code example describes the above behavior.
     })
     export class AppComponent {
         public gridData;
+        public editSettings;
     	constructor()
         {        
             //The datasource "(window as any).gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
             this.gridData = (window as any).gridData;
+            this.editSettings = {allowDeleting: true};
         }
         Click(){
             this.Grid.widget.deleteRecord("OrderID", this.Grid.widget.getSelectedRecords()[0]);
@@ -568,7 +570,7 @@ The following code example describes the above behavior.
 
 The following output is displayed as a result of the above code example.
 
-![](columns_images/columns_img13.png)
+![Unbound Column](columns_images/columns_img13.png)
 
 
 ## Column Template
@@ -623,7 +625,7 @@ The following code example describes the above behavior.
 
 The following output is displayed as a result of the above code example.
 
-![](columns_images/columns_img14.png)
+![Column Template](columns_images/columns_img14.png)
 
 
 ## Controlling Grid actions
@@ -704,7 +706,7 @@ The following code example describes the above behavior.
 
 The following output is displayed as a result of the above code example.
 
-![](columns_images/columns_img15.png)
+![Read Only](columns_images/columns_img15.png)
 
 
 ## Expression Column
@@ -753,7 +755,7 @@ The following code example describes the above behavior.
 
 The following output is displayed as a result of the above code example.
 
-![](columns_images/columns_img16.png)
+![Expression Column](columns_images/columns_img16.png)
 
 
 ## Command Column
@@ -809,7 +811,7 @@ The following code example describes the above behavior.
 
 The following output is displayed as a result of the above code example.
 
-![](columns_images/columns_img17.png)
+![Command Column](columns_images/columns_img17.png)
 
 
 ### Custom buttons
@@ -863,7 +865,7 @@ The following code example describes the above behavior.
 
 The following output is displayed as a result of the above code example.
 
-![](columns_images/columns_img18.png)
+![Custom buttons](columns_images/columns_img18.png)
 
 
 ## Column Chooser
@@ -908,7 +910,7 @@ The following code example describes the above behavior.
 
 The following output is displayed as a result of the above code example.
 
-![](columns_images/columns_img19.png)
+![Column Chooser](columns_images/columns_img19.png)
 
 
 ## Foreign Key Column
@@ -959,7 +961,7 @@ The following code example describes the above behavior.
 
 The following output is displayed as a result of the above code example.
 
-![](columns_images/columns_img20.png)
+![Foreign Key Column](columns_images/columns_img20.png)
 
 
 ## Customize column
@@ -1012,7 +1014,7 @@ The following code example describes the above behavior.
 
 The following output is displayed as a result of the above code example.
 
-![](columns_images/columns_img23.png)
+![Customize column](columns_images/columns_img23.png)
 
 
 ## Type
@@ -1099,7 +1101,7 @@ The following code example describes the above behavior.
 
 The following output is displayed as a result of the above code example.
 
-![](columns_images/columns_img24.png)
+![Type](columns_images/columns_img24.png)
 
 ## Column Layout
 
@@ -1146,7 +1148,7 @@ The following code example describes the above behavior.
 
 The following output is displayed as a result of the above code example.
 
-![](columns_images/columns_img25.png)
+![Column Layout](columns_images/columns_img25.png)
 
 
 
