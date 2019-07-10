@@ -71,7 +71,7 @@ You can bind the remote data to the chart by using the DataManager and you can u
 {% highlight javascript %}
 
         //Remote URL
-        var dataManger = new ej.DataManager({
+        var dataManager = new ej.DataManager({
             url: "http://mvc.syncfusion.com/Services/Northwnd.svc/"
         });
         // Query creation
