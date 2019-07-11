@@ -73,7 +73,7 @@ The following code example describes the above behavior.
 
 The following output is displayed as a result of the above code example.
 
-![](Cell_images/cell_img1.png)
+![Both Wrap Mode](Cell_images/cell_img1.png)
 
 ## Header
 
@@ -119,7 +119,7 @@ The following code example describes the above behavior.
 
 The following output is displayed as a result of the above code example.
 
-![](Cell_images/cell_img1_1.png)
+![Header Wrap Mode](Cell_images/cell_img1_1.png)
 
 ## Content
 
@@ -166,7 +166,7 @@ The following code example describes the above behavior.
 
 The following output is displayed as a result of the above code example.
 
-![](Cell_images/cell_img1_2.png)
+![Content Wrap Mode](Cell_images/cell_img1_2.png)
 
 ## Cell Merging
 
@@ -178,6 +178,11 @@ N> The following features are not supported with Cell Merging
 N> 1. Normal Mode Editing
 N> 2. Inline Mode Editing
 N> 3. Inline TemplateForm Mode Editing
+N> 4. Grouping
+N> 5. Virtual Scrolling
+N> 6. Frozen Columns
+N> 7. Cell Selection Modes
+N> 8. Column Selection
 
 The following code example describes the above behavior.
 
@@ -226,7 +231,7 @@ The following code example describes the above behavior.
 
 The following output is displayed as a result of the above code example.
 
-![](Cell_images/cell_img2.png)
+![Cell Merging](Cell_images/cell_img2.png)
 
 
 ## Custom Attribute
@@ -278,7 +283,7 @@ The following code example describes the above behavior.
 
 The following output is displayed as a result of the above code example.
 
-![](Cell_images/cell_img3.png)
+![Custom Attribute](Cell_images/cell_img3.png)
 
 
 ## Displaying HTML content
@@ -322,7 +327,7 @@ The following code example describes the above behavior.
 
 The following output is displayed as a result of the above code example.
 
-![](Cell_images/cell_img4.png)
+![Displaying HTML](Cell_images/cell_img4.png)
 
 
 ## Tooltip
@@ -379,7 +384,7 @@ The following code example describes the above behavior.
 
 The following output is displayed as a result of the above code example.
 
-![](Cell_images/cell_img5.png)
+![Tooltip](Cell_images/cell_img5.png)
 
 ## ClipMode
 
@@ -436,7 +441,7 @@ The following code example describes the above behavior.
 
 The following output is displayed as a result of the above code example.
 
-![](Cell_images/cell_img6.png)
+![Clip](Cell_images/cell_img6.png)
  
 ### Ellipsis
 
@@ -478,7 +483,7 @@ The following code example describes the above behavior.
 
 The following output is displayed as a result of the above code example.
 
-![](Cell_images/cell_img7.png)
+![Ellipsis](Cell_images/cell_img7.png)
 
 ### Ellipsis With Tooltip
 
@@ -530,5 +535,5 @@ The following code example describes the above behavior.
 
 The following output is displayed as a result of the above code example.
 
-![](Cell_images/cell_img8.png)
+![Ellipsis with Tooltip](Cell_images/cell_img8.png)
 
