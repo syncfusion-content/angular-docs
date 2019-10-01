@@ -732,5 +732,5 @@ app.on('activate', () => {
 
 * The electron executable file is created in the location `ej-angular-package-win32-x64/ej-angular-package.exe`. Double click on the `.exe` file to launch the application.
 
-![Electron Output](./angular/GettingStarted/Images/electronoutput.png)
+![Electron Output](./angular/GettingStarted/Images/electronoutput.PNG)
 
