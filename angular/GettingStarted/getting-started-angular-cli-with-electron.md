@@ -249,7 +249,7 @@ npm install electron --save-dev
 
 ## Electron Configuration
 
-* To configure the electron in our application, create `electron` folder in `src` directory. Then add `main.js` file in `src/electron` directory. This `main.js` file is the `startup of electron application`. It should create window and it handles the system events.To know more about main process of electron, refer the link [here](https://electron.atom.io/docs/tutorial/quick-start/#write-your-first-electron-app)
+* To configure the electron in our application, create `main.js` file outside the `src` directory. This `main.js` file is the `startup of electron application`. It should create window and it handles the system events.To know more about main process of electron, refer the link [here](https://electron.atom.io/docs/tutorial/quick-start/#write-your-first-electron-app)
 
 Refer to the below code snippet for `electron/main.js` file.
 
@@ -266,8 +266,8 @@ function createWindow () {
   // Create the browser window.
   win = new BrowserWindow({width: 800, height: 600})
  
-  // and load the index.html of the app.
-  win.loadURL(`file://${__dirname}/index.html`)
+  // and load the index.html of the app.directory name is angular-electron.
+  win.loadFile('./dist/angular-electron/index.html');
  
   // Open the DevTools.
   // win.webContents.openDevTools()
@@ -342,20 +342,22 @@ Refer to the below code snippet for `package.json` file.
 * To build the application with electron, we should add the `npm scripts` in `package.json` file as like the below code snippet.
 
 {% highlight javascript %}
- "build-electron": "ng build --base-href . && xcopy src\\electron\\* dist && xcopy package.json dist ",
- "electron": "npm run build-electron && electron dist",
+ "electron-build": "ng build --prod ",
+ "electron": "electron",
  {% endhighlight %}
 
 The below table explains the functionalities of above npm scripts.
 
 |npm scripts              | Functionality       |
 |:------------------------|:--------------------|
-|build-electron|It builds the application using ngc compiler and copy the `main.js` file and `package.json` file to `dist` folder|
+|electron-build|It builds the application using ngc compiler and copy the `main.js` file and `package.json` file to `dist` folder|
 |electron      |It runs the build-electron script and launch the application from dist folder|
 
 * Now, run the below command to build the application with electron and it will launch the electron application.
 
 {% highlight javascript %}
+
+npm run eletron-build
 
 npm run electron
  
