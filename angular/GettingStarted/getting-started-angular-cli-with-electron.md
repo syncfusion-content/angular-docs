@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  Getting Started Angular CLI with Electron | Syncfusion
-description: Overview of Syncfusion Essential Angular
+description: Overview of Syncfusion Essential Angular Components | Getting Started Angular CLI with Electron |  Syncfusion.
 platform: Angular
 control: Introduction
 documentation: ug
@@ -732,5 +732,5 @@ app.on('activate', () => {
 
 * The electron executable file is created in the location `ej-angular-package-win32-x64/ej-angular-package.exe`. Double click on the `.exe` file to launch the application.
 
-![Electron Output](./angular/GettingStarted/Images/electronoutput.PNG)
+![Electron Output](/angular/GettingStarted/Images/electronoutput.PNG)
 
