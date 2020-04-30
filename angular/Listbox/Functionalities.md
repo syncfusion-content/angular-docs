@@ -10,16 +10,16 @@ documentation: ug
 
 ## Drag and Drop
 
-To move the list item from one Listbox component to another ListBox by using the drag and drop support through “allowDragAndDrop” property.
+To move the list item from one Listbox component to another ListBox by using the drag and drop support through [allowDrag](https://help.syncfusion.com/api/js/ejlistbox#members:allowdrag) and [allowDrop](https://help.syncfusion.com/api/js/ejlistbox#members:allowdrop) property.
 
 {% highlight html %}
 
    <div class="frame">
             <div class="contents">
-                <ej-listbox id="selectskills" [dataSource]="skillSet" [fields]="fields" [allowDragAndDrop]="true" width="180px" height="220px"></ej-listbox>
+                <ej-listbox id="selectskills" [dataSource]="skillSet" [fields]="fields" [allowDrag]="true" [allowDrop]="true" width="180px" height="220px"></ej-listbox>
             </div>
             <div class="contents">
-                <ej-listbox id="selected" [allowDragAndDrop]="true" width="180px" height="220px"></ej-listbox>
+                <ej-listbox id="selected" [allowDrag]="true" [allowDrop]="true" width="180px" height="220px"></ej-listbox>
             </div>
     </div>
 
@@ -29,7 +29,7 @@ To move the list item from one Listbox component to another ListBox by using the
 
 export class DragAndDropComponent {
     skillSet: Array<any>;
-    fields: Object;
+    fields: object;
     constructor() {
         this.fields = { text: 'skill' };
         this.skillSet = [
@@ -49,12 +49,12 @@ export class DragAndDropComponent {
 
 ## Reordering
 
-To reorder the list item within the ListBox component by using “allowDragAndDrop” property.
+To reorder the list item within the ListBox component by using [allowDrag](https://help.syncfusion.com/api/js/ejlistbox#members:allowdrag) and [allowDrop](https://help.syncfusion.com/api/js/ejlistbox#members:allowdrop) property.
 
 {% highlight html %}
   
      <div id="control">
-        <ej-listbox id="selectskills" [dataSource]="skillSet" [fields]="fields" [allowDragAndDrop]="true" width="180px" height="220px"></ej-listbox>
+        <ej-listbox id="selectskills" [dataSource]="skillSet" [fields]="fields" [allowDrag]="true" [allowDrop]="true" width="180px" height="220px"></ej-listbox>
     </div>	
 
 {% endhighlight %}
@@ -63,7 +63,7 @@ To reorder the list item within the ListBox component by using “allowDragAndDr
 
 export class AppComponent {
     skillSet: Array<any>;
-    fields: Object;
+    fields: object;
     constructor() {
         this.fields = { text: 'skill' };
         this.skillSet = [
