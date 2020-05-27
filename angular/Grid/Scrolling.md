@@ -537,7 +537,7 @@ The following output is displayed as a result of the above code example.
 
 ### Infinite or Continuous Mode:
 
-In Infinite or Continuous Mode, the data is loaded in grid when the scrollbar reaches the end.  You can enable the continuous mode by setting the [`virtualScrollMode`](https://help.syncfusion.com/api/angular/ejgrid#members:scrollsettings-virtualscrollmode "virtualScrollMode") property as `continuous`.
+In Infinite or Continuous mode, the data is loaded in grid when the scrollbar reaches the end.  You can enable the continuous mode by setting the [`virtualScrollMode`](https://help.syncfusion.com/api/angular/ejgrid#members:scrollsettings-virtualscrollmode "virtualScrollMode") property as `continuous`.
 
 The following code example describes the above behavior.
 
