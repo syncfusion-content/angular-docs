@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Welcome to Syncfusion Essential JS 1 Angular
-description: Learn the prerequisite and features of Essential JS 1 for Angular components
+title: About Essential JS 1 Angular | Syncfusion
+description: Learn here all about introduction of Syncfusion Essential JS 1 for Angular components, its features, and more.
 platform: Angular
 control: Introduction
 documentation: ug
 --- 
 
-# Angular 
+# Essential JS 1 Angular Overview 
 
 Essential JavaScript provides support for [Angular](https://angular.io/docs/ts/latest/quickstart.html) Framework through wrappers. Each Syncfusion widgets are created as Angular components with built in support for data binding to make complex property definition easier.
 
