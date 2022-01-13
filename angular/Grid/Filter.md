@@ -72,7 +72,7 @@ The following output is displayed as a result of the above code example.
 
 ## Menu filter
 
-You can enable menu filter by setting [`filterSettings.filterType`](https://help.syncfusion.com/api/angular/ejgrid#members:filtersettings-filtertype "filterSettings.filterType") property as `menu`. 
+You can enable menu filter by setting [`filterSettings.filterType`](https://help.syncfusion.com/api/angular/ejgrid#members:filtersettings-filtertype) property as `menu`. 
 
 There is an option to show or hide the additional filter options in the menu by setting [`showPredicate`](https://help.syncfusion.com/api/angular/ejgrid#members:filtersettings-showpredicate "showPredicate") of [`filterSettings`](https://help.syncfusion.com/api/angular/ejgrid#members:filtersettings "filterSettings") property as `true` or `false` respectively.
 
@@ -136,7 +136,7 @@ Boolean Filter
 
 ## Excel-like filter
 
-You can enable excel menu by setting [`filterSettings.filterType`](https://help.syncfusion.com/api/angular/ejgrid#members:filtersettings-filtertype "filterSettings.filterType") as `excel`. The excel menu contains an option such as Sorting, Clear filter, submenu for advanced filtering.
+You can enable excel menu by setting [`filterSettings.filterType`](https://help.syncfusion.com/api/angular/ejgrid#members:filtersettings-filtertype) as `excel`. The excel menu contains an option such as Sorting, Clear filter, submenu for advanced filtering.
 
 The following code example describes the above behavior.
 
@@ -184,7 +184,7 @@ The following output is displayed as a result of the above code example.
 
 By default, the checkbox list is generated from distinct values of the filter column from dataSource which gives an option to search and select the required items.
 
-Also on checkbox list generation, if the number of distinct values are greater than 1000, then the excel filter will display only first 1000 values to ensure the best performance on rendering and searching. However this limit has been customized according to your requirement by setting [`filterSettings.maxFilterChoices`](https://help.syncfusion.com/api/angular/ejgrid#members:filtersettings-maxfilterchoices "filterSettings.maxFilterChoices") property with required limit in integer.
+Also on checkbox list generation, if the number of distinct values are greater than 1000, then the excel filter will display only first 1000 values to ensure the best performance on rendering and searching. However this limit has been customized according to your requirement by setting [`filterSettings.maxFilterChoices`](https://help.syncfusion.com/api/angular/ejgrid#members:filtersettings-maxfilterchoices) property with required limit in integer.
 
 N> 1. Using excel filter events you can change the dataSource of the checkbox list. 
 N> 2. `ej.Query` of checkbox list can also be changed using excel filter events.

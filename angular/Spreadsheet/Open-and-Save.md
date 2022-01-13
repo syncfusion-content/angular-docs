@@ -1,6 +1,6 @@
 ---
-title: Open and Save with Spreadsheet widget for Syncfusion Essential Angular-2
-description: How to perform Open and Save and configure its functionalities like server mapper, import URL etc.
+title: Open and Save with Spreadsheet widget for Syncfusion Angular-2
+description: Learn here all about Open and Save support in Syncfusion Essential Studio Angular Spreadsheet Control, its elements, and more.
 platform: Angular
 control: Spreadsheet
 documentation: ug

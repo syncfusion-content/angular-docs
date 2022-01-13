@@ -33,9 +33,9 @@ To render Syncfusion Angular components in ASP .NET MVC project:
 
 Open Visual Studio 2015 and select `ASP.NET Web Application`. Provide the name as `ESAngularMVCDemo` and select `MVC` project template.
 
-![Angular GettingStarted](/angular/GettingStarted/Images/createproject.png)
+![Angular GettingStarted](angular/GettingStarted/Images/createproject.png)
 
-![Angular MVC GettingStarted](/angular/GettingStarted/Images/mvc.png)
+![Angular MVC GettingStarted](angular/GettingStarted/Images/mvc.png)
 
 ## Configure TypeScript configuration file
 
