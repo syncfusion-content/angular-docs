@@ -1,16 +1,14 @@
 ---
 layout: post
-title: Getting started with Globalization 
-description: Overview of Syncfusion Essential Angular.
+title: Gettingstarted with Globalization & Localization in Angular|Syncfusion
+description: Learn here about Globalization and Localization in Syncfusion Essential Angular Control, its elements, and more.
 platform: Angular
 control: Introduction
 documentation: ug
 ---
 
 
-# Getting started with Globalization and Localization support for Angular Components
-
-## Globalization
+# Getting started with Globalization & Localization support for Angular
 
 Syncfusion Components has been provided with the built-in globalization support, so that it will be able to adapt for the culture-specific format based on the defined locale property.
 
@@ -77,7 +75,7 @@ import { TextboxComponent } from './textbox/textbox.component';
 
 N> If we import the culture before the `EJAngular2Module`, we get the following error in our application. So, we should import the culture after the `ej-angular2` package.
 
-![](/angular/GettingStarted/Images/cultureerror.png)
+![Angular Getting Started](/angular/GettingStarted/Images/cultureerror.png)
 
 ## Run the Application
 
@@ -91,11 +89,11 @@ npm start
 
 Before adding the culture to Angular Component
 
-![](/angular/GettingStarted/Images/textbox.png)
+![Angular culture to Angular Component](/angular/GettingStarted/Images/textbox.png)
 
 After added the `French culture` to Angular Component
 
-![](/angular/GettingStarted/Images/locale.png)
+![Angular French culture to Angular Component](/angular/GettingStarted/Images/locale.png)
 
 ## Localization
 
@@ -131,7 +129,7 @@ import { rootRouterConfig } from './app.routes';
 
 N> If we import the culture before the `EJAngular2Module`, we get the following error in our application.  So, we should import the culture after the `ej-angular2` package.
 
-![](/angular/GettingStarted/Images/cultureerror.png)
+![Angular culture error](/angular/GettingStarted/Images/cultureerror.png)
 
 * Add the `locale` property to modify the needed culture in `grid` component.
 
@@ -181,11 +179,11 @@ npm start
 
 Before adding the culture to Angular Component
 
-![](/angular/GettingStarted/Images/gridwithoutculture.png)
+![Angular Angular Component](/angular/GettingStarted/Images/gridwithoutculture.png)
 
 After added the `German culture` to Angular Component
 
-![](/angular/GettingStarted/Images/culturegrid.png)
+![Angular German culture to Angular Component](/angular/GettingStarted/Images/culturegrid.png)
 
 	
 ## FAQ

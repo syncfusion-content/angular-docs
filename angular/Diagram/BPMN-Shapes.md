@@ -1,13 +1,13 @@
 ---
 layout: post
-title: BPMN shapes in Syncfusion Diagram control.
-description: How to graphically notate the internal business procedure?
+title: BPMN shapes in Angular Diagram control | Syncfusion
+description: Learn here all about BPMN shapes in Syncfusion Essential Studio Angular Diagram control, its elements, and more.
 platform:  Angular
 control: Diagram
 documentation: ug
 ---
 
-### BPMN Shapes
+# BPMN Shapes in Angular Diagram
 
 BPMN shapes are used to represent the internal business procedure in a graphical notation and enables you to communicate the procedures in a standard manner. To create a BPMN shape, the `type` of the node should be set as "bpmn" and its `shape` should be set as any one of the built-in shape. [BPMN Shapes](/api/js/global#bpmnshapes "BPMN Shapes"). The following code example illustrates how to create a simple business process. 
 
@@ -55,7 +55,7 @@ The list of BPMN shapes are as follows.
 
 The BPMN shapes and its types are explained as follows.
 
-### Event 
+## Event 
 
 An event is notated with a circle and it represents an event in a business process. The type of events are as follows.
 

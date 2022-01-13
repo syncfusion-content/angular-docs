@@ -6,7 +6,7 @@ control: Spreadsheet
 documentation: ug
 ---
 
-# Open and Save
+# Open and Save with Spreadsheet widget for Syncfusion Essential Angular
 
 The native data format for Spreadsheet is JSON. You can load and store JSON data with Spreadsheet. In Spreadsheet we have [`saveAsJSON`](https://help.syncfusion.com/api/js/ejspreadsheet#methods:saveasjson "saveAsJSON") and [`loadFromJSON`](https://help.syncfusion.com/api/js/ejspreadsheet#methods:loadfromjson "loadFromJSON") method which is used to save Spreadsheet as JSON and same JSON used to render Spreadsheet.
 
@@ -90,7 +90,7 @@ public class JSXLExportController : ApiController
 
 {% endhighlight %}
 
-![](Open-and-Save_images/Open-and-Save_img1.png)
+![Angular Spreadsheet Open and Save](Open-and-Save_images/Open-and-Save_img1.png)
 
 ### Methods
 
