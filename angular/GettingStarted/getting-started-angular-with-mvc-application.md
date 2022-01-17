@@ -41,7 +41,7 @@ Open Visual Studio 2015 and select `ASP.NET Web Application`. Provide the name a
 
 Include TypeScript Configuration file that does the work of `transpiling TypeScript files into JavaScript files`. Create TypeScript configuration file `tsconfig.json` by right clicking `sample root folder->Add->New Item->TypeScript JSON Configuration File.`
 
-![Angular TypeScript configuration file](/angular/GettingStarted/Images/tsconfig.png)
+![Angular TypeScript configuration file](GettingStarted/Images/tsconfig.png)
 
 Copy the following code into the `tsconfig.json` file.
 
@@ -80,7 +80,7 @@ Copy the following code into the `tsconfig.json` file.
 
 Add the JSON file named as `package.json` by right clicking `sample root folder-> Add->New Item->NPM Configuration File` and copy below code into the file. The file contains Angular packages.
 
-![Angular NPM Configuration file](/angular/GettingStarted/Images/npmconfig.png)
+![Angular NPM Configuration file](GettingStarted/Images/npmconfig.png)
 
 {% highlight javascript %}
 
@@ -153,7 +153,7 @@ Add the JSON file named as `package.json` by right clicking `sample root folder-
 
 Now right click the `package.json` file and choose `Restore Packages` to restore packages.
 
-![Angular NPM Configuration file](/angular/GettingStarted/Images/restorepackage.png) 
+![Angular NPM Configuration file](GettingStarted/Images/restorepackage.png) 
 
 N> If the packages are not installed properly, open the command prompt and navigate to the location where the package.json file is defined. Run the following command to install packages.
 
@@ -373,12 +373,12 @@ To load Angular in ASP.NET MVC, include the script references of Angular core mo
 
 Run the GULP tasks, so that the Angular TypeScript files are compiled and moved to the appropriate folder (Scripts). Open the `Task Runner Explorer (View->Other Windows->Task Runner)` in Visual Studio 2015. 
 
-![Angular Task Runner](/angular/GettingStarted/Images/taskrunner.png)
+![Angular Task Runner](GettingStarted/Images/taskrunner.png)
 
 Run the default task as shown in the following screenshot.
 
-![Angular mvcgulptask](/angular/GettingStarted/Images/mvcgulptask.png)
+![Angular mvcgulptask](GettingStarted/Images/mvcgulptask.png)
 
 Run the task runner to compile then build and run the application to view the Syncfusion JavaScript Angular components in ASP.NET MVC application.
 
-![Angular Grid GettingStarted](/angular/GettingStarted/Images/grid.png)
+![Angular Grid GettingStarted](GettingStarted/Images/grid.png)

@@ -75,7 +75,7 @@ import { TextboxComponent } from './textbox/textbox.component';
 
 N> If we import the culture before the `EJAngular2Module`, we get the following error in our application. So, we should import the culture after the `ej-angular2` package.
 
-![Angular Getting Started](/angular/GettingStarted/Images/cultureerror.png)
+![Angular Getting Started](GettingStarted/Images/cultureerror.png)
 
 ## Run the Application
 
@@ -89,11 +89,11 @@ npm start
 
 Before adding the culture to Angular Component
 
-![Angular culture to Angular Component](/angular/GettingStarted/Images/textbox.png)
+![Angular culture to Angular Component](GettingStarted/Images/textbox.png)
 
 After added the `French culture` to Angular Component
 
-![Angular French culture to Angular Component](/angular/GettingStarted/Images/locale.png)
+![Angular French culture to Angular Component](GettingStarted/Images/locale.png)
 
 ## Localization
 
@@ -129,7 +129,7 @@ import { rootRouterConfig } from './app.routes';
 
 N> If we import the culture before the `EJAngular2Module`, we get the following error in our application.  So, we should import the culture after the `ej-angular2` package.
 
-![Angular culture error](/angular/GettingStarted/Images/cultureerror.png)
+![Angular culture error](GettingStarted/Images/cultureerror.png)
 
 * Add the `locale` property to modify the needed culture in `grid` component.
 
@@ -179,11 +179,11 @@ npm start
 
 Before adding the culture to Angular Component
 
-![Angular Angular Component](/angular/GettingStarted/Images/gridwithoutculture.png)
+![Angular Angular Component](GettingStarted/Images/gridwithoutculture.png)
 
 After added the `German culture` to Angular Component
 
-![Angular German culture to Angular Component](/angular/GettingStarted/Images/culturegrid.png)
+![Angular German culture to Angular Component](GettingStarted/Images/culturegrid.png)
 
 	
 ## FAQ
