@@ -377,7 +377,7 @@ Run the GULP tasks, so that the Angular TypeScript files are compiled and moved 
 
 Run the default task as shown in the following screenshot.
 
-![Angular mvcgulptask](GettingStarted/Images/mvcgulptask.png)
+![Angular mvc gulp task configuration](GettingStarted/Images/mvcgulptask.png)
 
 Run the task runner to compile then build and run the application to view the Syncfusion JavaScript Angular components in ASP.NET MVC application.
 
