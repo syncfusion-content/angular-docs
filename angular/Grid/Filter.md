@@ -1,13 +1,13 @@
 ---
 layout: post
 title: Filtering with Grid widget for Syncfusion Essential Angular-2
-description: How to enable filtering and its functionalities
+description: Learn here about Filter Support in Syncfusion Essential Studio Angular Grid Control, its elements, and more.
 platform: Angular
 control: Grid
 documentation: ug
 api: /api/Angular/grid
 --- 
-# Filtering
+# Filtering support in Angular Grid
 
 Filtering helps to view particular or related records from dataSource which meets a given filtering criteria. To enable filter, set [`allowFiltering`](https://help.syncfusion.com/api/angular/ejgrid#members:allowfiltering "allowFiltering") as `true`. 
 
@@ -67,12 +67,12 @@ The following code example describes the above behavior.
 
 The following output is displayed as a result of the above code example.
 
-![](filtering_images/filtering_img1.png)
+![Angular Grid filtering](filtering_images/filtering_img1.png)
 
 
 ## Menu filter
 
-You can enable menu filter by setting [`filterSettings.filterType`](https://help.syncfusion.com/api/angular/ejgrid#members:filtersettings-filtertype "filterSettings.filterType") property as `menu`. 
+You can enable menu filter by setting [`filterSettings.filterType`](https://help.syncfusion.com/api/angular/ejgrid#members:filtersettings-filtertype) property as `menu`. 
 
 There is an option to show or hide the additional filter options in the menu by setting [`showPredicate`](https://help.syncfusion.com/api/angular/ejgrid#members:filtersettings-showpredicate "showPredicate") of [`filterSettings`](https://help.syncfusion.com/api/angular/ejgrid#members:filtersettings "filterSettings") property as `true` or `false` respectively.
 
@@ -118,25 +118,25 @@ The following code example describes the above behavior.
 
 The following output is displayed as a result of the above code example.
 
-![](filtering_images/filtering_img2.png)
+![Angular Grid Menu filter](filtering_images/filtering_img2.png)
 {:caption}
 Numeric Filter
 
-![](filtering_images/filtering_img3.png)
+![Angular Grid Numeric Filter](filtering_images/filtering_img3.png)
 {:caption}
 String Filter
 
-![](filtering_images/filtering_img4.png)
+![Angular Grid String Filter](filtering_images/filtering_img4.png)
 {:caption}
 Date Filter
 
-![](filtering_images/filtering_img5.png)
+![Angular Grid Date Filter](filtering_images/filtering_img5.png)
 
 Boolean Filter
 
 ## Excel-like filter
 
-You can enable excel menu by setting [`filterSettings.filterType`](https://help.syncfusion.com/api/angular/ejgrid#members:filtersettings-filtertype "filterSettings.filterType") as `excel`. The excel menu contains an option such as Sorting, Clear filter, submenu for advanced filtering.
+You can enable excel menu by setting [`filterSettings.filterType`](https://help.syncfusion.com/api/angular/ejgrid#members:filtersettings-filtertype) as `excel`. The excel menu contains an option such as Sorting, Clear filter, submenu for advanced filtering.
 
 The following code example describes the above behavior.
 
@@ -177,14 +177,14 @@ The following code example describes the above behavior.
 
 The following output is displayed as a result of the above code example.
 
-![](filtering_images/filtering_img6.png)
+![Angular Grid Excel like filter](filtering_images/filtering_img6.png)
 
 
 ### Checkbox list generation:
 
 By default, the checkbox list is generated from distinct values of the filter column from dataSource which gives an option to search and select the required items.
 
-Also on checkbox list generation, if the number of distinct values are greater than 1000, then the excel filter will display only first 1000 values to ensure the best performance on rendering and searching. However this limit has been customized according to your requirement by setting [`filterSettings.maxFilterChoices`](https://help.syncfusion.com/api/angular/ejgrid#members:filtersettings-maxfilterchoices "filterSettings.maxFilterChoices") property with required limit in integer.
+Also on checkbox list generation, if the number of distinct values are greater than 1000, then the excel filter will display only first 1000 values to ensure the best performance on rendering and searching. However this limit has been customized according to your requirement by setting [`filterSettings.maxFilterChoices`](https://help.syncfusion.com/api/angular/ejgrid#members:filtersettings-maxfilterchoices) property with required limit in integer.
 
 N> 1. Using excel filter events you can change the dataSource of the checkbox list. 
 N> 2. `ej.Query` of checkbox list can also be changed using excel filter events.
@@ -229,7 +229,7 @@ The following code example describes the above behavior.
 
 The following output is displayed as a result of the above code example.
 
-![](filtering_images/filtering_img7.png)
+![Angular Grid Checkbox list](filtering_images/filtering_img7.png)
 
 
 ### Add current selection to filter checkbox:
@@ -238,7 +238,7 @@ When filtering is done multiple times on the same column then the previously fil
 
 The following image describes the above mentioned behavior.
 
-![](filtering_images/filtering_img12.png)
+![Angular Grid filter checkbox](filtering_images/filtering_img12.png)
 
 
 ### Case Sensitivity
@@ -286,7 +286,7 @@ The following code example describes the above behavior.
 
 The following output is displayed as a result of the above code example.
 
-![](filtering_images/filtering_img8.png)
+![Angular Grid Filter](filtering_images/filtering_img8.png)
 
 
 ## Filter bar
@@ -471,7 +471,7 @@ The following code example describes the above behavior.
 
 The following output is displayed as a result of the above code example.
 
-![](filtering_images/filtering_img9.png)
+![Angular Grid Filter bar](filtering_images/filtering_img9.png)
 
 
 Filter bar modes:
@@ -528,7 +528,7 @@ The following code example describes the above behavior.
 
 The following output is displayed as a result of the above code example.
 
-![](filtering_images/filtering_img10.png)
+![Angular Grid Filter bar message](filtering_images/filtering_img10.png)
 
 
 ## Filter Operators
@@ -748,6 +748,6 @@ import {Component, ViewEncapsulation} from '@angular/core';
 
 The following output is displayed as a result of the above code example.
 
-![](filtering_images/filtering_img11.png)
+![Angular Grid FilterBar Template](filtering_images/filtering_img11.png)
 {:caption}
 After Filtering
