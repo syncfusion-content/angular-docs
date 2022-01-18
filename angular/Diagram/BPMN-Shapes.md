@@ -1,13 +1,13 @@
 ---
 layout: post
-title: BPMN shapes in Syncfusion Diagram control.
-description: How to graphically notate the internal business procedure?
+title: BPMN shapes in Angular Diagram control | Syncfusion
+description: Learn here all about BPMN shapes in Syncfusion Essential Studio Angular Diagram control, its elements, and more.
 platform:  Angular
 control: Diagram
 documentation: ug
 ---
 
-### BPMN Shapes
+# BPMN Shapes in Angular Diagram
 
 BPMN shapes are used to represent the internal business procedure in a graphical notation and enables you to communicate the procedures in a standard manner. To create a BPMN shape, the `type` of the node should be set as "bpmn" and its `shape` should be set as any one of the built-in shape. [BPMN Shapes](/api/js/global#bpmnshapes "BPMN Shapes"). The following code example illustrates how to create a simple business process. 
 
@@ -55,7 +55,7 @@ The list of BPMN shapes are as follows.
 
 The BPMN shapes and its types are explained as follows.
 
-### Event 
+## Event 
 
 An event is notated with a circle and it represents an event in a business process. The type of events are as follows.
 
@@ -127,7 +127,7 @@ Event triggers are notated as icons inside the circle and they represent the spe
 | Multiple | ![Multiple](../Diagram/Shapes_images/Shapes_img106.png) | ![Multiple](../Diagram/Shapes_images/Shapes_img107.png) | ![Multiple](../Diagram/Shapes_images/Shapes_img108.png) | ![Multiple](../Diagram/Shapes_images/Shapes_img109.png) | ![Multiple](../Diagram/Shapes_images/Shapes_img110.png) | ![Multiple](../Diagram/Shapes_images/Shapes_img111.png) |
 | Parallel | ![Parallel](../Diagram/Shapes_images/Shapes_img112.png) | ![Parallel](../Diagram/Shapes_images/Shapes_img113.png) | ![Parallel](../Diagram/Shapes_images/Shapes_img114.png) | ![Parallel](../Diagram/Shapes_images/Shapes_img115.png) |   |   |
 
-### Gateway
+## Gateway
 
 Gateway is used to control the flow of a process. It is represented as a diamond shape. To create a gateway, the `shape` property of node should be set as "gateway" and the `gateway` property can be set with any of the appropriate [Gateways](/api/js/global#bpmngateways "Gateways"). The following code example illustrates how to create a BPMN Gateway.
 
@@ -173,7 +173,7 @@ There are several types of gateways as tabulated
 | ExclusiveEventBased | ![ExclusiveEventBased](../Diagram/Shapes_images/Shapes_img31.png) |
 | ParallelEventBased | ![ParallelEventBased](../Diagram/Shapes_images/Shapes_img32.png) |
 
-### Activity
+## Activity
 
 The activity is the task that is performed in a business process. It is represented by a rounded rectangle.
 
@@ -213,7 +213,7 @@ export class NodesComponent {
 
 The different activities of BPMN process are listed as follows.
 
-#### Tasks
+### Tasks
 
 The `task` property of node allows you to define the `type` of task such as sending, receiving, user based task etc… By default, the `type` property of task is set as "none". The following code illustrates how to create different types of BPMN tasks. 
 
@@ -388,7 +388,7 @@ export class NodesComponent {
 
 ![Transaction subprocess](../Diagram/Shapes_images/Shapes_img118.png)
 
-#### Processes 
+###### Processes 
 
 Processes is a array collection that defines the children values for BPMN subprocess.
 
@@ -459,7 +459,7 @@ export class NodesComponent {
 
 ![process](../Diagram/Shapes_images/Shapes_img151.png)
 
-#### Loop
+####### Loop
 
 Loop is a task that is internally being looped. The `loop` property of task allows you to define the type of loop. The default value for `loop` is "none". 
 
@@ -519,7 +519,7 @@ The following table contains various types of BPMN loops.
 | SequenceMultiInstance | ![SequenceMultiInstance](../Diagram/Shapes_images/Shapes_img46.png) | ![SequenceMultiInstance](../Diagram/Shapes_images/Shapes_img47.png) |
 | ParallelMultiInstance | ![ParallelMultiInstance](../Diagram/Shapes_images/Shapes_img48.png) | ![ParallelMultiInstance](../Diagram/Shapes_images/Shapes_img49.png) |
 
-#### Compensation
+######## Compensation
 
 Compensation is triggered when operation is partially failed and you can enable it with the `compensation` property of task.
 
@@ -570,7 +570,7 @@ export class NodesComponent {
 
 ![Compensation](../Diagram/Shapes_images/Shapes_img50.png)
 
-#### Call
+######## Call
 
 A call activity is a global sub-process that is reused at various points of the business flow and you can set it with the `call` property of task.
 
@@ -605,7 +605,7 @@ export class NodesComponent {
 
 ![Call](../Diagram/Shapes_images/Shapes_img51.png)
 
-#### Ad-Hoc
+######## Ad-Hoc
 
 An ad hoc subprocess is a group of tasks that are executed in any order or skipped in order to fulfill the end condition and you can set it with the `adhoc` property of subprocess. 
 
@@ -639,7 +639,7 @@ export class NodesComponent {
 
 ![Ad-Hoc](../Diagram/Shapes_images/Shapes_img52.png)
 
-#### Boundary
+######## Boundary
 
 Boundary represents the type of task that is being processed. The `boundary` property of sub process allows you to define the type of boundary. By default, it is set as "default".
 
@@ -679,7 +679,7 @@ The following table contains various types of BPMN boundaries.
 | Event | ![Event](../Diagram/Shapes_images/Shapes_img54.png) |
 | Default | ![Default](../Diagram/Shapes_images/Shapes_img55.png) |
 
-### Data
+## Data
 
 A data object represents information flowing through the process, such as data placed into the process, data resulting from the process, data that needs to be collected, or data that must be stored. To define a data object, set the `shape` as `ej.datavisualization.Diagram.BPMNShapes.DataObject` and `type` property defines whether data is an input or a output. You can create multiple instances of data object with the `collection` property of data.
 
@@ -723,7 +723,7 @@ The following table contains various representation of BPMN Data Object.
 | Data Input | ![Data Input](../Diagram/Shapes_images/Shapes_img120.png) |
 | Data Ouptput | ![Data Ouptput](../Diagram/Shapes_images/Shapes_img121.png) |
 
-### Datasource
+## Datasource
 
 DataSource is used to store or access data associated with a business process. To create a data source, set the `shape` as "datasource". The following code example illustrate how to create data source.
 
@@ -754,14 +754,14 @@ export class NodesComponent {
 
 ![Datasource](../Diagram/Shapes_images/Shapes_img57.png)
 
-### Artifact
+## Artifact
 
 Artifact is used to show additional information about a Process in order to make it easier to understand. There are 2 types of artifacts in BPMN.
 
 * Text Annotation
 * Group
 
-#### Text Annoatation
+### Text Annoatation
 
 A BPMN object can be associated with a text annotation which does not affect the flow but gives details about objects within a flow. The `annotation` property of the node is used to connect an annotation element to the BPNN node.
 
@@ -837,11 +837,11 @@ export class NodesComponent {
 
 ![Group](../Diagram/Shapes_images/Shapes_img123.png)
 
-#### BPMN Flows
+##### BPMN Flows
 
 BPMN Flows are lines that connects BPMN flow objects.
 
-### Association
+## Association
 
 BPMN Association flow is used to link flow objects with its corresponding text or artifact. An association is represented as a dotted graphical line with opened arrow. The type of association are as follows.
 
@@ -896,7 +896,7 @@ The following table demonstrates the visual representation of assosiation flows.
 
 N> The default value for the property `association` is "default".
 
-### Sequence
+## Sequence
 
 A Sequence flow shows the order in which the activities are performed in a BPMN Process and is represented with a solid graphical line.The type of sequence are as follows.
 
@@ -950,7 +950,7 @@ The following table contains various representation of sequence flows.
 
 N> The default value for the property `sequence` is "normal".
 
-### Message
+## Message
 
 A Message flow shows the flow of messages between two Participents.A message flow is represented by dashed line.The type of message are as follows.
 
