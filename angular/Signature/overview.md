@@ -1,17 +1,17 @@
 ---
 layout: post
-title: overview
-description: overview
+title: Overview of Syncfusion Essential Angular Signature Control
+description: Learn here all about overview of Syncfusion Essential Studio Angular Signature Control, its elements, and more.
 platform: Angular
 control: Signature
 documentation: ug
 ---
 
-## Overview
+# Overview of Syncfusion Essential Angular Signature
 
 The Essential Angular Signature is a Plugin that is used to capture or drawing the smooth signatures. It captures user’s signature as vector outlines of strokes. Using Signature we can customize the background, stroke width and stroke color and also convert captured signature to an image format. It is also provided with Undo, Redo & Clear options.
 
-### Key Features
+## Key Features
 
 * **Height and Width** - Set the height and width of the signature canvas.
 
