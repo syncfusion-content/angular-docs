@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Getting started with Essential JS 1 for Angular with SystemJS
+title: Getting started with SystemJS for Angular | Syncfusion
 description: Learn how to integrate Essential JS 1 Angular component into SystemJS loader Angular application environment..
 platform: Angular
 control: Introduction
@@ -494,9 +494,9 @@ npm start
 
 {% endhighlight %}
 
-* Browse to [http://localhost:3000](http://localhost:3000) to see the application. And navigate to Dialog tab. The component is rendered as like the below screenshot. You can make changes in the code found under src folder and the browser should auto-refresh itself while you save files.
+* Browse to http://localhost:3000 to see the application. And navigate to Dialog tab. The component is rendered as like the below screenshot. You can make changes in the code found under src folder and the browser should auto-refresh itself while you save files.
 
-![Essential JS 1 for Angular with SystemJS](/angular/GettingStarted/Images/getting-started-output.png) 
+![Essential JS 1 for Angular with SystemJS](Images/getting-started-output.png) 
 
 ## Demos
 
