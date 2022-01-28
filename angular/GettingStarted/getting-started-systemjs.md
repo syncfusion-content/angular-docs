@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Getting started with Essential JS 1 for Angular with SystemJS
+title: Getting started with SystemJS for Angular | Syncfusion
 description: Learn how to integrate Essential JS 1 Angular component into SystemJS loader Angular application environment..
 platform: Angular
 control: Introduction

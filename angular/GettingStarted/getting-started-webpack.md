@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Getting started with Essential JS 1 for Angular with Webpack.
+title: Getting started with Webpack for Angular | Syncfusion
 description: Learn how to integrate Essential JS 1 Angular component into Webpack loader Angular application environment.
 platform: Angular
 control: Introduction
