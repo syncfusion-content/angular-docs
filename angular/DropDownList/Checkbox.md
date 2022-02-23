@@ -1,13 +1,13 @@
 ---
 layout: post
-title: CheckBox with DropDownList widget 
-description: Describes about Checkbox functionalities in DropDownList widget 
+title: CheckBox in Angular DropDownList widget | Syncfusion
+description: Learn here about CheckBox support in Syncfusion Essential Angular DropDownList widget, its elements and features, and more.
 platform: Angular
 control: DropDownList
 documentation: ug
 ---
 
-# Checkbox
+# Checkbox in Angular DropDownList
 
 DropDownList displays checkboxes to the left of each item when you set [showCheckBox](http://help.syncfusion.com/api/js/ejdropdownlist#members:showcheckbox) property to true. It allows you to select more than one item at a time from DropDownList. Popup list stays open until the user finishes selection. When you click on an item’s text or checkbox then the checkbox checked status get change.
 
@@ -41,7 +41,7 @@ export class DropDownListComponent {
 
 {% endhighlight %}
 
-![](Checkbox_images/Checkbox_img1.png)
+![Angular DropDownList Checkbox](Checkbox_images/Checkbox_img1.png)
 
 N> if you want to showcase the DropDownList with default checked items on data binding, specify selected field with Boolean values.
 
@@ -75,7 +75,7 @@ export class DropDownListComponent {
 
 {% endhighlight %}
 
-![](Checkbox_images/Checkbox_img2.png)
+![Angular DropDownList](Checkbox_images/Checkbox_img2.png)
 
 ## Selection Modes
 
@@ -124,7 +124,7 @@ export class DropDownListComponent {
 
 {% endhighlight %}
 
-![](Checkbox_images/Checkbox_img3.png)
+![Angular DropDownList Delimiter](Checkbox_images/Checkbox_img3.png)
 
 ### Visual Mode
 
@@ -162,7 +162,7 @@ export class DropDownListComponent {
 
 {% endhighlight %}
 
-![](Checkbox_images/Checkbox_img4.png)
+![Angular DropDownList Visual Mode](Checkbox_images/Checkbox_img4.png)
 
 ## Check/Uncheck All
 
