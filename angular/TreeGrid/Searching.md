@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Searching
-description: TreeGrid Searching
+title: Searching in Angular TreeGrid Control | Syncfusion
+description: Learn here about Searching support in Syncfusion Essential Angular TreeGrid Control, its elements, and more.
 platform: Angular
 control: TreeGrid
 documentation: ug
 api: /api/js/ejtreegrid
 ---
 
-## Searching
+# Searching in Angular TreeGrid
 
 The TreeGrid control has an option to search its content using toolbar search box. The toolbar search box can be enabled by using the [`toolbarSettings.toolbarItems`](/api/angular/ejtreegrid#members:toolbarsettings-toolbaritems) property. The following code example explains how to integrate search textbox in toolbar.
 
@@ -44,7 +44,7 @@ export class AppComponent {
 {% endhighlight %}
 
 The below screenshot shows TreeGrid search with `plan` key word.
-![](Searching_images/Searching_img1.png)
+![Angular TreeGrid Searching](Searching_images/Searching_img1.png)
 
 ## Search Hierarchy Modes
 
@@ -85,6 +85,6 @@ export class AppComponent {
 {% endhighlight %}
 
 The following image depicts the output of the previous code example.
-![](Searching_images/SearchHierarchyModes_img1.png)
+![Angular TreeGrid Search Hierarchy Modes](Searching_images/SearchHierarchyModes_img1.png)
 
 The above screenshot shows Tree Grid with `child` search mode.
