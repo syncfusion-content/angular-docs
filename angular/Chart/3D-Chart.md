@@ -7,7 +7,7 @@ control: Chart
 documentation: ug
 ---
 
-# 3D Chart
+# 3D Chart in Angular Chart
 
 Essential 3D Chart for Angular allows you to view 8 chart types in 3D view such as `Bar`, `StackingBar`, `StackingBar100`, `Column`, `Stacked Column`, `100% Stacked Column`], `Pie`, `Doughnut`.
 
