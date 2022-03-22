@@ -1,13 +1,13 @@
 ---
 layout: post
 title: Trendlines in Syncfusion Essential Angular Chart
-description: What are the different types of trendlines available in chart.
+description: Learn here about Trendlines support in Syncfusion Essential Angular Chart Control, its elements, and more.
 platform: Angular
 control: Chart
 documentation: ug
 ---
 
-# Trendlines
+# Trendlines support in Angular Chart
 
 EjChart can generate Trendlines for Cartesian type series *(Line, Column, Scatter, Area, Candle, HiLo etc.)* except bar type series. You can add more than one trendline object to the [`trendlines`](../api/ejchart#members:series-trendlines) option.
 

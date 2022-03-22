@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Selection
-description: selection
+title: Selection in Angular TreeGrid Control | Syncfusion
+description: Learn here about selection support in Syncfusion Essential Angular TreeGrid Control, its elements, and more.
 platform: Angular
 control: TreeGrid
 documentation: ug
 api: /api/js/ejtreegrid
 ---
 
-# Selection
+# Selection in Angular TreeGrid
 
 The TreeGrid control provides support for row and cell selections. 
 
@@ -27,7 +27,7 @@ The following code example shows you to disable the row selection in TreeGrid.
 
 The output of the TreeGrid with row selection is as follows.
 
-![](Selection_images/Selection_img1.png)
+![Angular TreeGrid Row selection](Selection_images/Selection_img1.png)
 
 ### Selecting a row at initial load
 
@@ -98,7 +98,7 @@ export class AppComponent {
 
 The output of the TreeGrid with multiple row selection is as follows.
 
-![](Selection_images/Selection_img5.png)
+![Angular TreeGrid Multiple row selection](Selection_images/Selection_img5.png)
 
 To enable multiple selection, you can set `selectionSettings.selectionType` property either as `multiple` or enumeration value `ej.TreeGrid.SelectionType.Multiple`.
 
@@ -171,7 +171,7 @@ export class AppComponent {
 
 The output of the TreeGrid with cell selection is as follows.
 
-![](Selection_images/Selection_img2.png)
+![Angular TreeGrid Cell selection](Selection_images/Selection_img2.png)
 
 ### Multiple cell selection
 
@@ -209,7 +209,7 @@ export class AppComponent {
 
 The output of the TreeGrid with multiple cell selection is as follows.
 
-![](Selection_images/Selection_img3.png)
+![Angular TreeGrid Multiple cell selection](Selection_images/Selection_img3.png)
 
 ### Selecting cells programmatically 
 
@@ -245,7 +245,7 @@ export class AppComponent {
 
 {% endhighlight %}
 
-![](Selection_images/Selection_img4.png)
+![Angular TreeGrid Selecting cells programmatically](Selection_images/Selection_img4.png)
 
 ## Checkbox selection
 
@@ -289,7 +289,7 @@ export class AppComponent {
 
 The output of the TreeGrid with checkbox enabled in column header
 
-![](Selection_images/Selection_img6.png)
+![Angular TreeGrid checkbox enabled in column header](Selection_images/Selection_img6.png)
 
 ### Hierarchy selection
 It is possible to select the rows hierarchically using checkboxes in TreeGrid by enabling the `selectionSettings.enableHierarchySelection` property.
@@ -329,7 +329,7 @@ export class AppComponent {
 
 The output of the TreeGrid with hierarchy selection enabled
 
-![](Selection_images/Selection_img7.png)
+![Angular TreeGrid selection enabled](Selection_images/Selection_img7.png)
 
 ### Checkbox column
 
@@ -383,7 +383,7 @@ export class AppComponent {
 
 The output of the TreeGrid with checkbox enabled in task name column.
 
-![](Selection_images/Selection_img7.png)
+![Angular TreeGrid Selection](Selection_images/Selection_img7.png)
 
 ## MultiSelection – Touch Option
 
@@ -423,4 +423,4 @@ export class AppComponent {
 
 The following output is displayed the result of multiple selection in touch device environment.
 
-![](Selection_images/multiselection.png)
+![Angular TreeGrid multiselection](Selection_images/multiselection.png)
