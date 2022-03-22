@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Getting Started | Button | Angular | Syncfusion
-description: getting started
+title: Getting Started with Angular Button Control | Syncfusion
+description: Learn here about getting started with Syncfusion Essential Angular Button Control, its elements, and more.
 platform: Angular
 control: Button
 documentation: ug
 ---
 
-# Getting Started
+# Getting Started with Angular Button
 
 This section explains the details on how to render and configure a **Button** component in an **Angular** application.
 
