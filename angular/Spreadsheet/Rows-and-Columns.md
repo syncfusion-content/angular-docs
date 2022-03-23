@@ -1,13 +1,13 @@
 ---
 layout: post
 title: Rows and Columns with Spreadsheet widget for Syncfusion Essential JS
-description: How to use and customize the Spreadsheet rows and columns
+description: How to use and customize the rows and columns in Syncfusion Angular SpreadSheet Control, its elements, and more.
 platform: Angular
 control: Spreadsheet
 documentation: ug
 --- 
 
-# Rows and Columns
+# Rows and Columns in Angular SpreadSheet
 
 Spreadsheet is a tabular format consisting of rows and columns. Rows and columns are used to represent the editing area in Spreadsheet. The intersection point of rows and columns are called as cells. In that you can perform editing. You have `rowCount` and `columnCount` in sheets property for defining the rows and columns count. By default Spreadsheet creates `20` rows and `21` columns. Based on this grid content will be created.
 

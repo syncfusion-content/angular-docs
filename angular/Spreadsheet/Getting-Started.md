@@ -1,12 +1,12 @@
 ---
 title: Getting Started | Spreadsheet | Angular | Syncfusion
-description: How to create a Spreadsheet with data source, apply format and export it as excel file.
+description: Learn here about getting started with Syncfusion Essential Angular SpreadSheet Control, its elements, and more.
 platform: Angular
 control: Spreadsheet
 documentation: Ug
 keywords: 
 ---
-# Getting started
+# Getting started with Angular SpreadSheet
 
 Before we start with the Spreadsheet, please refer [`this page`](https://help.syncfusion.com/angular-2/overview) for general information regarding integrating Syncfusion widget's.
 This section explains you the steps required to populate the Spreadsheet with data, format, and export it as excel file. This section covers only the minimal features that you need to know to get started with the Spreadsheet.
