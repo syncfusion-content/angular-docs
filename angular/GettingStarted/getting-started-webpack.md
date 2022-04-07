@@ -7,7 +7,6 @@ control: Introduction
 documentation: ug
 ---
 
-
 # Getting started with Webpack
 
 To quick start with Syncfusion JavaScript Angular components run the below commands to clone the repository for [Webpack starter](https://github.com/syncfusion/angular2-seeds) and installing required dependency packages.
