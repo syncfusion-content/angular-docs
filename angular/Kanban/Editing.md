@@ -1,13 +1,14 @@
 ---
 layout: post
-title:  Syncfusion Kanban Editing
-description: Editing
+title: Editing support in Angular Kanban Control | Syncfusion
+description: Learn here about Editing support in Syncfusion Essential Angular Kanban Control, its elements, and more.
 documentation: ug
 platform: Angular
+control: Kanban
 keywords: editing,kanban editing
 ---
 
-# Editing
+# Editing support in Angular Kanban
 
 The Kanban control has support for dynamic insertion, updating and deletion of cards. 
 
@@ -653,7 +654,7 @@ equalTo</td><td>
 Requires the element to be the same as another.</td></tr>
 </table>
 
-Kanban supports all the standard validation methods of jQuery, please refer the jQuery validation documentation [`link`](https://jqueryvalidation.org/) for more information.
+Kanban supports all the standard validation methods of jQuery, please refer the jQuery validation documentation [`link`](https://jqueryvalidation.org/documentation/) for more information.
 
 The following code example describes the above behavior.
 
