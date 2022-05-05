@@ -1,13 +1,13 @@
 ---
 layout: post
-title: getting started
-description: getting started
+title: Getting Started with Angular ListView Control | Syncfusion
+description: Learn here about getting started with Syncfusion Essential Angular ListView Control, its elements, and more.
 platform: Angular
 control: ListView
 documentation: ug
 ---
 
-# Getting Started
+# Getting Started with Angular ListView
 
 The Angular ListView control allows you to select an item from a list-like interface and provides the infrastructure to display a set of data items in different layouts or views. Lists display data, data navigation, result lists, and data entry. 
 
@@ -86,7 +86,7 @@ export class ListViewComponent {
 
 Run the above code to render the following output. 
 
-![](getting_started_images\createanlistviewwidgetinAngular_img1.png)
+![Angular ListView creating function](getting_started_images\createanlistviewwidgetinAngular_img1.png)
 
 
 ## Model binding
@@ -154,7 +154,7 @@ export class AppComponent {
 Run the above code to render the following output. 
 
 
-![](getting_started_images\modelbinding_img1.png)
+![Angular ListView Model binding](getting_started_images\modelbinding_img1.png)
 
 
 ## Add Header
@@ -175,8 +175,4 @@ We can add a header for **ListView**. Refer to the following script.
 Run the above code to render the following output. 
 
 
-![](getting_started_images\addheader_img1.png)
-
-
-
-
+![Angular ListView Add Header](getting_started_images\addheader_img1.png)
