@@ -6,6 +6,7 @@ control: maps
 documentation: ug
 keywords: ejmaps, maps, maps widget, Angular maps
 ---
+
 #Getting Started with Angular Maps
 
 Before we start with the Maps, please refer [this page](https://help.syncfusion.com/angular-2/overview) for general information regarding integrating Syncfusion widget’s.
@@ -205,7 +206,7 @@ export class AppModule { }
 npm start
 {% endhighlight %}
 
-* Browse to [http://localhost:3000](http://localhost:3000) to see the application. And navigate to maps tab. The component is rendered as like the below screenshot. You can make changes in the code found under src folder and the browser should auto-refresh itself while you save files. 
+* The component is rendered as like the below screenshot. You can make changes in the code found under src folder and the browser should auto-refresh itself while you save files. 
 
 ![Angular Maps Running the application](Getting-started-images/Getting-Started_img1.png) 
 

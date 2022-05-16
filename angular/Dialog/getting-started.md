@@ -11,7 +11,7 @@ documentation: ug
 
 This section helps you to understand the getting started of the Dialog component with the step-by-step instructions.
 
-# Create a Dialog
+## Create a Dialog
 
 The following steps guide you to add a Dialog control.
 
