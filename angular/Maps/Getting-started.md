@@ -1,12 +1,12 @@
 ---
-title: Getting Started for Maps
-description: How to create a maps, add layers, enable tooltip,legend and other functionalities
+title: Getting Started with Angular Maps Control | Syncfusion
+description: Learn here about getting started with Syncfusion Essential Angular Maps Control, its elements, features, and more.
 platform: Angular
 control: maps
 documentation: ug
 keywords: ejmaps, maps, maps widget, Angular maps
 ---
-#Getting Started
+#Getting Started with Angular Maps
 
 Before we start with the Maps, please refer [this page](https://help.syncfusion.com/angular-2/overview) for general information regarding integrating Syncfusion widget’s.
 
@@ -207,7 +207,7 @@ npm start
 
 * Browse to [http://localhost:3000](http://localhost:3000) to see the application. And navigate to maps tab. The component is rendered as like the below screenshot. You can make changes in the code found under src folder and the browser should auto-refresh itself while you save files. 
 
-![](Getting-started-images/Getting-Started_img1.png) 
+![Angular Maps Running the application](Getting-started-images/Getting-Started_img1.png) 
 
 ### Prepare Shape Data
 
@@ -357,7 +357,7 @@ usMap: any;
 
 The above code renders a map, with default properties and shape input provided through data in layers.
 
-![](Getting-Started-images/Getting-Started_img2.png)
+![Angular Maps](Getting-Started-images/Getting-Started_img2.png)
 
 ## Data Binding in Map
 
@@ -413,7 +413,7 @@ You can customize the shape’s color by using `fill`, `stroke` and `strokeThick
 
 
 
-![](Getting-Started-images/Getting-Started_img3.png)
+![Angular Maps Customize Map Appearance](Getting-Started-images/Getting-Started_img3.png)
 
 ### Customize Map Appearance by Range
 
@@ -472,7 +472,7 @@ colorMapping: any;
 {% endhighlight %}
 The following screenshot illustrates a map with gradient color property enabled.
 
-![](Getting-Started-images/Getting-Started_img4.png)
+![Angular Maps Customize Map Appearance by Range](Getting-Started-images/Getting-Started_img4.png)
 
 ## Enable Tooltip
 
@@ -494,7 +494,7 @@ The tooltip is displayed only when the `showTooltip` is set to “**true**” in
 
 The following screenshot illustrates a map control displaying a Tooltip.
 
-![](Getting-Started-images/Getting-Started_img5.png)
+![Angular Maps Enable Tooltip](Getting-Started-images/Getting-Started_img5.png)
 
 ## Legend
 
@@ -533,4 +533,4 @@ You can use `leftLabel` and `rightLabel` property to provide left and right labe
 
 The following screenshot illustrates a map displaying an interactive legend.
 
-![](Getting-Started-images/Getting-Started_img6.png)
+![Angular Maps Label](Getting-Started-images/Getting-Started_img6.png)

@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Populate-Data
-description: populate data
+title: Populate Data in Angular Maps Control | Syncfusion
+description: Learn here about populate data in Syncfusion Essential Angular Maps Control, its elements, features, and more.
 platform: Angular
 control: Maps
 documentation: ug
 ---
 
-# Populate Data
+# Populate Data in Angular Maps
 
 In this section you can learn how to populate shape data for providing Data input to Map control and usage of DataSource property.
 

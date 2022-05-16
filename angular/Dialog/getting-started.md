@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Getting-Started
-description: Getting Started
+title: Getting Started with Angular Dialog Control | Syncfusion
+description: Learn here about getting started with Syncfusion Essential Angular Dialog Control, its elements, and more.
 platform: Angular
 control: dialog
 documentation: ug
 ---
 
-# Getting Started
+# Getting Started with Angular Dialog
 
 This section helps you to understand the getting started of the Dialog component with the step-by-step instructions.
 
@@ -29,7 +29,7 @@ The following steps guide you to add a Dialog control.
 
 To get the following output from the above-mentioned code.
 
-![](getting-started-images\getting-started-img1.png)
+![Angular Dialog creating getting started](getting-started-images\getting-started-img1.png)
 
 ## Add dialog content
 
@@ -45,7 +45,7 @@ Add the below code to render dialog component with content.
 
 To get the following output from the above-mentioned code
 
-![](getting-started-images\getting-started-img2.png)
+![Angular Dialog Add dialog content](getting-started-images\getting-started-img2.png)
 
 ## Set the title
 
@@ -61,7 +61,7 @@ To set the dialog component title as using the below mentioned code.
 
 To get the following output from the above-mentioned code.
 
-![](getting-started-images\getting-started-img3.png)
+![Angular Dialog Set the title](getting-started-images\getting-started-img3.png)
 
 ## Open Dialog dynamically
 
@@ -101,7 +101,7 @@ export class AppComponent {
 
 To get the following output from the above-mentioned code.
 
-![](getting-started-images\getting-started-img4.png)
+![Angular Dialog Open Dialog dynamically](getting-started-images\getting-started-img4.png)
 
 
 N> You can find the Dialog component properties from the [API reference](https://help.syncfusion.com/api/js/ejdialog)              
