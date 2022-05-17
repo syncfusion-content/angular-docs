@@ -7,7 +7,7 @@ documentation: ug
 keywords: ejmaps, maps, maps widget, Angular maps
 ---
 
-#Getting Started with Angular Maps
+# Getting Started with Angular Maps
 
 Before we start with the Maps, please refer [this page](https://help.syncfusion.com/angular-2/overview) for general information regarding integrating Syncfusion widget’s.
 
