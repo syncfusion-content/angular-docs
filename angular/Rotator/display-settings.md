@@ -1,13 +1,13 @@
 ---
 layout: post
-title: display settings
-description: display settings
+title: Display settings in Angular Rotator Control | Syncfusion
+description: Learn here about display settings support in Syncfusion Essential Angular Rotator Control, its elements, and more.
 platform: Angular
 control: rotator
 documentation: ug
 ---
 
-## Display settings
+## Display settings in Angular Rotator
 
 ### Display Items count
 
@@ -68,7 +68,7 @@ This property specifies the number of Rotator Items to be displayed. The defau
 {% endhighlight %}
 
 
-![](display settings_images\displayitemscount_img1.png)
+![Angular Rotator displayitemscount](display settings_images\displayitemscount_img1.png)
 
 ### Navigation steps
 
@@ -109,7 +109,7 @@ This property specifies the number of Rotator Items to navigate on a single 
 
 
 
-![](display settings_images\navigationsteps_img1.png)
+![Angular Rotator navigationsteps](display settings_images\navigationsteps_img1.png)
 
 ### Set Starting index
 
@@ -150,7 +150,7 @@ This property **startIndex** sets the index of the slide that is displayed fir
 
 
 
-![](display settings_images\setstartingindex_img1.png)
+![Angular Rotator setstartingindex](display settings_images\setstartingindex_img1.png)
 
 ### Frame space
 
@@ -191,7 +191,7 @@ This **frameSpace** property sets the space between the Rotator Items. The val
 
 
 
-![](display settings_images\framespace_img1.png)
+![Angular Rotator framespace](display settings_images\framespace_img1.png)
 
 ### Animation settings
 
@@ -474,7 +474,7 @@ This feature allows you to add text along with the image in Rotator component
 
 
 
-![](display settings_images\imagewithcontents_img1.png)
+![Angular Rotator imagewithcontents](display settings_images\imagewithcontents_img1.png)
 
 
 

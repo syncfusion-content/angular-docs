@@ -1,16 +1,16 @@
 ---
 layout: post
-title: Syncfusion EJ1 Maps - Public Methods and Events
-description: Public Methods and Events
+title: Public Methods and Events in Angular Maps Control | Syncfusion
+description: Learn here about Public Methods and Events in Syncfusion Essential Angular Maps Control, its elements, and more.
 platform: Angular
 control: Maps
 documentation: ug
 ---
 
 
-## Methods
+# Public Methods and Events in Angular Maps
 
-### navigateTo(latitude, longitude, level)
+## navigateTo(latitude, longitude, level)
 
 
 Method for navigating to specific shape based on latitude, longitude and zoom level.
