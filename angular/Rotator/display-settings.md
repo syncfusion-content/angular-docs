@@ -7,9 +7,9 @@ control: rotator
 documentation: ug
 ---
 
-## Display settings in Angular Rotator
+# Display settings in Angular Rotator
 
-### Display Items count
+## Display Items count
 
 This property specifies the number of Rotator Items to be displayed. The default value is ‘1’. The value set to this property is string or number.
 

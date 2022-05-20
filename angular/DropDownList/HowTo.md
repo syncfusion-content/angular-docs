@@ -300,7 +300,7 @@ The following screenshot exhibits the output of the above code,
 
 ![Angular DropDownList Add check all option in popup list](HowTo_images/HowTo_img2.jpeg)
 
-# To Cascade DropDownLists with different field names
+## To Cascade DropDownLists with different field names
 By default cascading is performed based on the Value field, so that it needs to be same with cascaded DropDownList. If you need to cascade 2 DropDownLists with different field names and same values in it, you can achieve it using cascadeQuery and [cascade](https://help.syncfusion.com/api/js/ejdropdownlist#events:cascade "") event. Define the cascade event for the DropDownList from which you need to filter the datasource for the other DropDownList. 
 
 In the cascade event arguments, modify the cascadeQuery which has the filtering query for the cascading DropDownList with your customized query.  So to filter the datasource based on the different field names, pass an ej.Query() which want to execute for cascade DropDownList.
