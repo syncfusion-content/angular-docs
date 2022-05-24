@@ -1,7 +1,7 @@
 ---
 layout: post
-title: How to - DropDownList widget for Syncfusion Essential JS
-description: How To Section in DropDownList widget for Syncfusion Essential JS
+title: How to - DropDownList widget for Syncfusion Essential Angular
+description: How To Section in DropDownList widget for Syncfusion Essential Angular, its elements, features, and more.
 platform: angular
 control: DropDownList
 documentation: ug
@@ -9,7 +9,7 @@ keywords: DropDownList, dropdown, Adding Items, Set Focus, custommization
 api: /api/js/ejdropdownlist
 ---
 
-# How To
+# How To Section in Angular DropDownList
 
 ## Set focus to control initially?
 
@@ -161,7 +161,7 @@ export class DropDownListComponent {
 
 The following screenshot will exhibit the select event arguments details,
 
-![](HowTo_images/HowTo_img1.jpeg)
+![Angular DropDownList Retrieve the selected item data](HowTo_images/HowTo_img1.jpeg)
 
 ## Append custom HTML in DropDownList popup outside the scroller part?
 
@@ -298,9 +298,9 @@ export class DropDownListComponent {
 
 The following screenshot exhibits the output of the above code,
 
-![](HowTo_images/HowTo_img2.jpeg)
+![Angular DropDownList Add check all option in popup list](HowTo_images/HowTo_img2.jpeg)
 
-# To Cascade DropDownLists with different field names
+## To Cascade DropDownLists with different field names
 By default cascading is performed based on the Value field, so that it needs to be same with cascaded DropDownList. If you need to cascade 2 DropDownLists with different field names and same values in it, you can achieve it using cascadeQuery and [cascade](https://help.syncfusion.com/api/js/ejdropdownlist#events:cascade "") event. Define the cascade event for the DropDownList from which you need to filter the datasource for the other DropDownList. 
 
 In the cascade event arguments, modify the cascadeQuery which has the filtering query for the cascading DropDownList with your customized query.  So to filter the datasource based on the different field names, pass an ej.Query() which want to execute for cascade DropDownList.
@@ -368,7 +368,7 @@ export class cascadeToComponent {
 
 {% endhighlight %}
 
-![](HowTo_images/HowTo_img3.png)
+![Angular DropDownList To Cascade DropDownLists with different field names](HowTo_images/HowTo_img3.png)
 
 ## To reorder the selected items and assign it to the top of popup list
 Consider a DropDownList enabled with Virtual Scrolling, Filter search and Checkbox. This allows you to search through the list items and select multiple items. Selected items will be maintained in the DropDownList textbox but randomly shown in the pop up. 
@@ -714,10 +714,10 @@ export class DropDownListComponent {
 The following screenshot exhibits the output of above code:
 
 Before removing an item:
-![](HowTo_images/Image1.JPG)
+![Angular DropDownList Before removing an item](HowTo_images/Image1.JPG)
 
 After removing an item:
-![](HowTo_images/Image2.JPG)
+![Angular DropDownList After removing an item](HowTo_images/Image2.JPG)
 
 
 ## Select the image rather than the text from the DropDownList when the template concept is used?
@@ -807,7 +807,7 @@ Apply the following styles
 
 {% endhighlight %}
 
-![](HowTo_images/customValue.png)
+![Angular DropDownList customValue](HowTo_images/customValue.png)
 
 N> This scenarios, will be suits for the single select mode in the DropDownList.
 
@@ -867,7 +867,7 @@ export class DropDownListComponent {
 
 {% endhighlight %}
 
- ![](HowTo_images/htmlAttr.png)
+ ![Angular DropDownList htmlAttr](HowTo_images/htmlAttr.png)
 
 ## Add tooltip on hovering the DropDownList’s items?
  
@@ -1086,7 +1086,7 @@ export class DropdownlistComponent {
 
 {% endhighlight %}
 
-![](HowTo_images/Json1.png)
+![Angular DropDownList JSON data source](HowTo_images/Json1.png)
 
 Method 2: Using Visual Mode
 
@@ -1134,4 +1134,4 @@ export class DropdownlistComponent {
 
 {% endhighlight %}
 
-![](HowTo_images/Json2.png)
+![Angular DropDownList Json](HowTo_images/Json2.png)
