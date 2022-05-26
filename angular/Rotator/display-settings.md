@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Display settings in Angular rotator control | Syncfusion
-description: Learn more about display settings in Syncfusion Angular rotator control, its elements, and more.
+description: Learn here more about display settings in Syncfusion Angular rotator control, its elements, and more.
 platform: Angular
 control: rotator
 documentation: ug
