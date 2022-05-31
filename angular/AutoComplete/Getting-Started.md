@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Getting-Started
-description: getting started
+title: Getting Started with Angular AutoComplete Component | Syncfusion
+description: Learn here about getting started with Syncfusion Angular AutoComplete component, its elements, and more.
 platform: Angular
 control: Autocomplete 
 documentation: ug
 ---
 
-# Getting Started
+# Getting Started with Angular AutoComplete
 
 The [Angular AutoComplete](https://www.syncfusion.com/angular-ui-components/angular-autocomplete) control is a textbox control that provides a list of suggestions based on your query. When you enter text into the text box, the control performs a search operation and provides a list of results. There are several filter types available to perform the search.
 
