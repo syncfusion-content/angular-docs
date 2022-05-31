@@ -9,7 +9,7 @@ documentation: ug
 
 # Getting Started
 
-The Angular AutoComplete control is a textbox control that provides a list of suggestions based on your query. When you enter text into the text box, the control performs a search operation and provides a list of results. There are several filter types available to perform the search.
+The [Angular AutoComplete](https://www.syncfusion.com/angular-ui-components/angular-autocomplete) control is a textbox control that provides a list of suggestions based on your query. When you enter text into the text box, the control performs a search operation and provides a list of results. There are several filter types available to perform the search.
 
 This section helps to understand the getting started of the Angular AutoComplete with the step-by-step instructions.
 
@@ -87,7 +87,7 @@ export class AppComponent {
 {% endhighlight %}
 
 
-![](Getting_started_images/autocomplete.png)
+![Angular autocomplete](Getting_started_images/autocomplete.png)
 
 ## Model binding
 
@@ -145,7 +145,7 @@ export class AppComponent {
 
 {% endhighlight %}
 
-![](Getting_started_images/modelbinding.png)
+![Data binding in angular autocomplete](Getting_started_images/modelbinding.png)
 
 
 ## Data binding
@@ -242,7 +242,7 @@ export class AppComponent {
 {% endtabs %}
 
 
-![](Getting_started_images/datasource.png)
+![Data source binding in autocomplete](Getting_started_images/datasource.png)
 
 ## Enable Popup Button
 
@@ -277,7 +277,7 @@ This button helps you to show all the available suggestions on clicking it.
 
 {% endhighlight %}
 
-![](Getting_started_images/showpopupbutton.png)
+![Pop up button in angular autcomplete](Getting_started_images/showpopupbutton.png)
 
 ## Two Way Binding
 
@@ -377,4 +377,6 @@ export class AppComponent {
 
 {% endtabs %}
 
-![](Getting_started_images/twowaybinding.png)
+![Two way binding in angular autocomplete](Getting_started_images/twowaybinding.png)
+
+> You can refer to our [Angular AutoComplete](https://www.syncfusion.com/angular-ui-components/angular-autocomplete) feature tour page for its groundbreaking feature representations. You can also explore our [Angular AutoComplete example](https://ej2.syncfusion.com/angular/demos/#/material/auto-complete/default) to understand how to render and configure the AutoComplete in Angular.
