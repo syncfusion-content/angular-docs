@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  Angular SPA on ASP.NET Core with .NET CLI
-description: Overview of Syncfusion Essential Angular
+description: Learn here about overview of Syncfusion Essential Angular with .NET CLI, its elements, features and more.
 platform: Angular
 control: Introduction
 documentation: ug
@@ -40,7 +40,7 @@ To getting started with Syncfusion Angular Components, the NPM packages [ej-angu
 dotnet new --install Microsoft.AspNetCore.SpaTemplates::*
 {% endhighlight %}
 
-![](/angular/GettingStarted/Images/createtemplate.png)
+![angular GettingStarted createtemplate](/angular/GettingStarted/Images/createtemplate.png)
 
 * To generate a new Angular project run the below command in your directory.
 
@@ -70,7 +70,7 @@ setx ASPNETCORE_ENVIRONMENT "Development"
 
 {% endhighlight %}
 
-![](/angular/GettingStarted/Images/environmentvariable.png)
+![angular GettingStarted environmentvariable](/angular/GettingStarted/Images/environmentvariable.png)
 
 N> To know more about environment variable refer the [link](https://blogs.msdn.microsoft.com/webdev/2017/02/14/building-single-page-applications-on-asp-net-core-with-javascriptservices/)
 
@@ -542,7 +542,7 @@ dotnet run
 
 * Open the `.csproj` file which is in project folder and then press `Ctrl+F5` to launch the application in a browser.
 
-![](/angular/GettingStarted/Images/spatemplateoutput.png)
+![angular GettingStarted spatemplateoutput](/angular/GettingStarted/Images/spatemplateoutput.png)
 
 ## Sample Application
 
