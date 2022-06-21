@@ -542,7 +542,7 @@ dotnet run
 
 * Open the `.csproj` file which is in project folder and then press `Ctrl+F5` to launch the application in a browser.
 
-![angular GettingStarted spatemplateoutput](Images/spatemplateoutput.png)
+![angular GettingStarted template output](Images/spatemplateoutput.png)
 
 ## Sample Application
 
