@@ -401,4 +401,4 @@ The following screen shot displays Gantt chart in which highlight weekends is di
 npm start
 {% endhighlight %}
 
-* Browse to [http://localhost:3000](http://localhost:3000) to see the application. And navigate to Gantt tab. The component is rendered as like the below screenshot. You can make changes in the code found under src folder and the browser should auto-refresh itself while you save files. 
+* Browse to http://localhost:3000 to see the application. And navigate to Gantt tab. The component is rendered as like the below screenshot. You can make changes in the code found under src folder and the browser should auto-refresh itself while you save files. 
