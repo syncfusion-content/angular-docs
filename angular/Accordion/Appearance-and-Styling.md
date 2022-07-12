@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Appearance-and-Styling
-description: appearance and styling
+title: Appearance and Styling in Angular Accordion Control | Syncfusion
+description: Learn here about appearance and styling in Syncfusion Essential Angular Accordion Control, its elements, and more.
 platform: Angular
 control: Accordion 
 documentation: ug
 ---
 
-# Appearance and Styling
+# Appearance and Styling in Angular Accordion
 
 ## Adjusting Accordion size
 
@@ -67,7 +67,7 @@ export class AccordionComponent {
 Output for Accordion control when panel height is set to auto so that the maximum content height and Fill for minimum content height in all the panels is as follows.
 
 
-![](Appearance-and-Styling_images/Appearance-and-Styling_img1.png) 
+![Angular Accordion Rounded corner](Appearance-and-Styling_images/Appearance-and-Styling_img1.png) 
 
 ## Rounded corner
 
@@ -105,7 +105,7 @@ The following steps explains you in enabling the **showRoundedCorner** property 
 
 Output for accordion widget when “showRoundedCorner” is set to “true” is as follows.
 
-![](Appearance-and-Styling_images/Appearance-and-Styling_img2.png) 
+![Angular Accordion Customize Accordion icon](Appearance-and-Styling_images/Appearance-and-Styling_img2.png) 
 
 ## Customize Accordion icon
 
@@ -161,7 +161,7 @@ export class AccordionComponent {
 
 Output for Accordion widget with customized icons is as follows.
 
-![](Appearance-and-Styling_images/Appearance-and-Styling_img3.png) 
+![Angular Accordion Animations](Appearance-and-Styling_images/Appearance-and-Styling_img3.png) 
 
 ## Animations
 
@@ -306,4 +306,4 @@ Define CSS class for customizing the Accordion.
 
 Output for Accordion with customized CSS property to hide the Accordion icon and format its content is as follows.
 
-![](Appearance-and-Styling_images/Appearance-and-Styling_img4.png)
+![Angular Accordion appearance](Appearance-and-Styling_images/Appearance-and-Styling_img4.png)
