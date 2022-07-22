@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Visually represent a business process with its functional blocks/departments
-description: How to visually represent a business process and the relationships among its functional blocks?
+title: Swim lane in Angular Diagram Control | Syncfusion
+description: Learn here about swim lane support in Syncfusion Essential Angular Diagram Control, its elements, and more.
 platform: Angular
-control: Control Name undefined
+control: Diagram
 documentation: ug
 ---
 
-# Swim lane
+# Swim lane in Angular Diagram
 
 Swim-lane Diagrams are typically used to visualize the relationship between a business process and the department responsible for it by focusing on the logical relationships between activities. Swimlanes may be arranged either horizontally or vertically.
 
@@ -81,7 +81,7 @@ The following code example illustrates how to add a swimlane to the Diagram thro
 
 {% endhighlight %}
 
-![](/angular/Diagram/Swim-lane_images/Swim-lane_img2.png)
+![Angular Diagram swim lane](Swim-lane_images/Swim-lane_img2.png)
 
 ## Headers
 
@@ -116,7 +116,7 @@ export class SwimlaneComponent {
 
 {% endhighlight %}
 
-![](/angular/Diagram/Swim-lane_images/Swim-lane_img3.png)
+![Angular Diagram headers](Swim-lane_images/Swim-lane_img3.png)
 
 ### Disable headers
 
@@ -283,7 +283,7 @@ export class SwimlaneComponent {
 
 {% endhighlight %}
 
-![](/angular/Diagram/Swim-lane_images/Swim-lane_img4.png)
+![Angular Diagram phase](Swim-lane_images/Swim-lane_img4.png)
 
 ## Phase
 
@@ -331,7 +331,7 @@ export class SwimlaneComponent {
 
 {% endhighlight %}
 
-![](/angular/Diagram/Swim-lane_images/Swim-lane_img5.png)
+![Angular Diagram limitations](Swim-lane_images/Swim-lane_img5.png)
 
 ## Limitations
 
