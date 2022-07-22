@@ -1,12 +1,12 @@
 ---
 layout: post
-title: Custom Buttons
-description: Custom Buttons
+title: Custom Buttons in Angular Button Control | Syncfusion
+description: Learn here about Custom Buttons support in Syncfusion Essential Angular Button Control, its elements, and more.
 platform: Angular
 control: Button
 documentation: ug
 ---
-# Custom Buttons
+# Custom Buttons in Angular Button
 
 Essential Angular Button control has an option of using normal ejButton as **Custom Button** to give visual weight to ejButton which helps user interface to notify and differentiate the priority action button with the other normal buttons.
 
@@ -109,7 +109,7 @@ The following steps explains you the details about customizing normal ejButton w
 
 Execute the above code to render the following output.
 
-![](Custom-Buttons_images/custom_buttons.png) 
+![Angular Button custom image](Custom-Buttons_images/custom_buttons.png) 
 
 ## Image in Button  
 
@@ -155,7 +155,7 @@ Now,assign this custom CSS class name to prefixIcon or suffixIcon property of th
 
 Execute the above code to render the following output.
 
-![](Custom-Buttons_images/profile.png)
+![Angular Button profile](Custom-Buttons_images/profile.png)
 
 
 
