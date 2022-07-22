@@ -1,13 +1,13 @@
 ---
 layout: post
 title: Editing with Spreadsheet widget for Syncfusion Essential JS
-description: How to Edit the Spreadsheet 
+description: Learn here about editing support in Syncfusion Essential Angular Spreadsheet Control, its elements, and more.
 platform: Angular
 control: Spreadsheet
 documentation: ug
 ---
 
-# Editing 
+# Editing support in Angular Spreadsheet
 
 You can edit the contents of a cell directly in the cell. You can also do this by typing in the formula bar. When you edit the cell, Spreadsheet is operating in edit mode. In editing mode formatting options are not available. You can use `allowEditing` property to enable/disable editing feature.
 
@@ -75,7 +75,7 @@ import { SpreadsheetService } from '../services/spreadsheet.service';
 
 The following output is displayed as a result of the above code example.
 
-![](Editing_images/Editing_img1.png)
+![Angular Spreadsheet Read Only cells](Editing_images/Editing_img1.png)
 
 ## Read-Only cells
 
@@ -127,7 +127,7 @@ import { SpreadsheetService } from '../services/spreadsheet.service';
 
 The following output is displayed as a result of editing in Spreadsheet which is rendered with above code example.
 
-![](Editing_images/Editing_img2.png)
+![Angular Spreadsheet Events](Editing_images/Editing_img2.png)
 
 ## Events
 
