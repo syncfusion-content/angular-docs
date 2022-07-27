@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Serialize the Diagram as JSON and load Diagram from serialized JSON
-description: How to save and load the Diagram?
+title: Serialization in Angular Diagram Control | Syncfusion
+description: Learn here about Serialization support in Syncfusion Essential Angular Diagram Control, its elements, and more.
 platform:  Angular
 control: Diagram
 documentation: ug
 ---
 
-# Serialization
+# Serialization in Angular Diagram
 
 **Serialization** is the process of saving and loading for state persistence of the Diagram.
 
