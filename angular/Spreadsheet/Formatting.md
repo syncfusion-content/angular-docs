@@ -1,12 +1,12 @@
 ---
-title: Formatting with Spreadsheet widget for Syncfusion Essential Angular-2
-description: How to use different types of formatting in Spreadsheet and configure its properties.
+title: Formatting in Angular SpreadSheet Control | Syncfusion
+description: Learn here about Formatting support in Syncfusion Essential Angular SpreadSheet Control, its elements, and more.
 platform: Angular
 control: Spreadsheet
 documentation: UG
 ---
 
-# Formatting
+# Formatting in Angular SpreadSheet
 
 Spreadsheet supports many formatting options to make your data easier to view and understand. Use `allowCellFormatting` API to enable / disable formatting option in Spreadsheet. The different types of formatting supported in Spreadsheet are,
     
@@ -82,7 +82,7 @@ export class AppComponent {
 {% endhighlight %}
 
 The following output is displayed as a result of the above code example.
-![](Formatting_images/Formatting_img1.png)
+![Angular SpreadSheet method](Formatting_images/Formatting_img1.png)
 
 ### Method
 
@@ -123,7 +123,7 @@ export class AppComponent {
 {% endhighlight %}
 
 The following output is displayed as a result of the above code example.
-![](Formatting_images/Formatting_img2.png)
+![Angular SpreadSheet user interface](Formatting_images/Formatting_img2.png)
 
 ### User Interface
 
@@ -132,7 +132,7 @@ You can set number format for a cell through number formatting options in ribbon
 ### Custom Number Format
 
 Spreadsheet supports many number format to display your data as currency, date, percentage and so on. If these pre-defined number formats do not meet your needs you can create and apply your own number formats using format cell dialog. The following screenshot illustrate this,
-![](Formatting_images/Formatting_img3.png)
+![Angular SpreadSheet text formatting](Formatting_images/Formatting_img3.png)
 
 N> Spreadsheet supports basic number format customization and it doesn't have all functionality similar to excel   
 
@@ -198,7 +198,7 @@ export class AppComponent {
 {% endhighlight %}
 
 The following output is displayed as a result of the above code example.
-![](Formatting_images/Formatting_img4.png)
+![Angular SpreadSheet method](Formatting_images/Formatting_img4.png)
 
 #### Method
 
@@ -239,7 +239,7 @@ export class AppComponent {
 {% endhighlight %}
 
 The following output is displayed as a result of the above code example.
-![](Formatting_images/Formatting_img5.png)
+![Angular SpreadSheet user interface](Formatting_images/Formatting_img5.png)
 
 #### User Interface
 
@@ -293,7 +293,7 @@ export class AppComponent {
 {% endhighlight %}
 
 The following output is displayed as a result of the above code example.
-![](Formatting_images/Formatting_img6.png)
+![Angular SpreadSheet format](Formatting_images/Formatting_img6.png)
 
 #### User Interface
 
@@ -347,7 +347,7 @@ To highlight cell or range of cells from whole workbook you can apply background
 ### Cell Styles
 
 Cell styles is a collection of pre-defined styles with multiple formatting characteristics to apply several formats in one step. You can apply cell style for a cell using `cell style` option in ribbon `HOME` tab. The following screenshot illustrate this,
-![](Formatting_images/Formatting_img7.png)
+![Angular SpreadSheet format painter](Formatting_images/Formatting_img7.png)
 
 ### Format painter
 
