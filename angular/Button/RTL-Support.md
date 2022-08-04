@@ -1,13 +1,13 @@
 ---
 layout: post
-title: RTL-Support
-description: rtl support
+title: RTL Support in Angular Button Control | Syncfusion
+description: Learn here about RTL Support in Syncfusion Essential Angular Button Control, its elements, and more.
 platform: Angular
 control: Button
 documentation: ug
 ---
 
-# RTL Support
+# RTL Support in Angular Button
 
 In some cases you can use right to left alignment. Here, RTL support is provided using **enableRTL** property. In RTL mode when you have more than one content (image/text, image/image) in button, then these content are aligned in right to left format. For example, when text is in left and image is in right position, after applying right to left alignment these position are interchanged.
 
@@ -46,5 +46,5 @@ In above mentioned code example prefixIcon property is used and the icon that is
 
 Execute the above code to render the following output.
 
-![](RTL-Support_images/RTL-Support_img1.png) 
+![Angular Button RTL Support](RTL-Support_images/RTL-Support_img1.png) 
 

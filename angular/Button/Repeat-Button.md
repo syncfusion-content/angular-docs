@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Repeat-Button
-description: repeat button
+title: Repeat Button in Angular Button Control | Syncfusion
+description: Learn here about Repeat Button support in Syncfusion Essential Angular Button Control, its elements, and more.
 platform: Angular
 control: Button
 documentation: ug
 ---
 
-# Repeat Button
+# Repeat Button in Angular Button
 
 When you press button continuously, click event is raised at each specific time interval. This type of button is called **Repeat Button**. This functionality repeatedly raises the click event of button in both button click and from button in pressed state to the released state. **timeInterval** property is used to specify the time Interval for triggering click event, when the button is in pressed state. **repeatButton** property is used to set the button in repeat mode.
 
@@ -58,5 +58,5 @@ export class DefaultComponent {
 
 Execute the above code to render the following output.
 
-![](Repeat-Button_images/Repeat-Button_img1.png) 
+![Angular Button repeat button](Repeat-Button_images/Repeat-Button_img1.png) 
 
