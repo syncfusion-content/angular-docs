@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Getting started with Syncfusion Essential HeatMap for Angular.0
-description: Getting started walk through to create your first Heat map.
+title: Getting started with Angular HeatMap Control | Syncfusion
+description: Learn here about Getting started with Syncfusion Essential Angular HeatMap Control, its elements, and more.
 platform: Angular
 control: ejHeatMap
 keywords: HeatMap, js heatmap, Populating data
 ---
 
-# Getting Started
+# Getting Started with Angular HeatMap
 
 This section helps to get started of the HeatMap component for Angular.0. 
 
@@ -138,7 +138,7 @@ export class HeatMapComponent {
 }
 {% endhighlight %}
 
-![](Getting-Started_images/Getting-Started_img1.png)
+![Angular HeatMap legend](Getting-Started_images/Getting-Started_img1.png)
 
 ## Initialize Legend
 
@@ -179,4 +179,4 @@ export class HeatMapComponent {
 }
 {% endhighlight %}
 
-![](Getting-Started_images/Getting-Started_img2.png)
+![Angular HeatMap getting started](Getting-Started_images/Getting-Started_img2.png)
