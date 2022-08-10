@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Chart legend
-description: How to cutomize the legend in Essential Angular Chart.
+title: Chart Legend in Angular| Syncfusion
+description: Learn here all more about Chart legend support in Syncfusion Angular control, its elements, and more.
 platform: Angular
 control: Chart
 documentation: ug
 ---
 
-# Legend
+# Legend in Angular Chart
 
 The legend contains the list of chart series and Trendlines that appear in a chart. 
 
@@ -22,7 +22,7 @@ By default, the legend is enabled in the chart. You can enable or disable it by 
 
 {% endhighlight %}
 
-![](Legend_images/Legend_img1.png)
+![Angular Chart legend](Legend_images/Legend_img1.png)
 
 ## Legend title
 
@@ -35,7 +35,7 @@ To add the title to the legend, you have to specify the `legend.title.text` opti
 
 {% endhighlight %}
 
-![](Legend_images/Legend_img2.png)
+![Angular Chart legend title](Legend_images/Legend_img2.png)
 
 
 ## Position and Align the Legend
@@ -49,7 +49,7 @@ By using the `position` option, you can position the legend at *left*, *right*, 
 
 {% endhighlight %}
 
-![](Legend_images/Legend_img3.png)
+![Angular Chart position and align legend](Legend_images/Legend_img3.png)
 
 **Legend Alignment**
 
@@ -62,7 +62,7 @@ You can align the legend to the *center*, *far* or *near* based on its position 
 
 {% endhighlight %}
 
-![](Legend_images/Legend_img4.png)
+![Angular Chart legend alignment](Legend_images/Legend_img4.png)
 
 
 ## Arrange legend items in the rows and columns
@@ -85,7 +85,7 @@ You can arrange the legend items horizontally and vertically by using the `rowCo
 
 {% endhighlight %}
 
-![](Legend_images/Legend_img5.png)
+![Angular Chart arranged legend items in the row and columns](Legend_images/Legend_img5.png)
 
 
 ## Customization
@@ -101,7 +101,7 @@ To change the legend icon shape, you have to specify the shape in the `shape` pr
 
 {% endhighlight %}
 
-![](Legend_images/Legend_img6.png)
+![Angular Chart legend shapes](Legend_images/Legend_img6.png)
 
 
 ### Legend items size and border
@@ -117,7 +117,7 @@ You can change the size of the legend items by using the `itemStyle.width` and `
 
 {% endhighlight %}
 
-![](Legend_images/Legend_img7.png)
+![Angular Chart legend items size and border](Legend_images/Legend_img7.png)
 
 ### Legend size
 
@@ -130,7 +130,7 @@ By default, legend takes 20% of the **height** horizontally when it was placed o
 
 {% endhighlight %}
 
-![](Legend_images/Legend_img8.png)
+![Angular Chart legend size](Legend_images/Legend_img8.png)
 
 
 ### Legend Item Padding
@@ -144,7 +144,7 @@ You can control the spacing between the legend items by using the `itemPadding` 
 
 {% endhighlight %}
 
-![](Legend_images/Legend_img9.png)
+![Angular Chart legend item padding](Legend_images/Legend_img9.png)
 
 ### Legend border
 
@@ -157,7 +157,7 @@ You can customize the legend border by using the `border` option in the legend.
 
 {% endhighlight %}
 
-![](Legend_images/Legend_img10.png)
+![Angular Chart legend border](Legend_images/Legend_img10.png)
 
 ### Scrollbar for legend
 
@@ -171,7 +171,7 @@ You can enable or disable the legend scrollbar by using the `enableScrollbar` op
 
 {% endhighlight %}
 
-![](Legend_images/Legend_img11.png)
+![Angular Chart scrollbar for legend](Legend_images/Legend_img11.png)
 
 ### Customize the legend text
 
@@ -192,7 +192,7 @@ this.titleFont= { fontFamily: 'Segoe UI', fontStyle: 'Italic',
 
 {% endhighlight %}
 
-![](Legend_images/Legend_img12.png)
+![Angular Chart customize the legend text](Legend_images/Legend_img12.png)
 
 ### LegendItems Text Overflow
 
@@ -207,20 +207,20 @@ You can trim the legend item text when its width exceeds the `legend.textWidth`,
 
 {% endhighlight %}
 
-![](Legend_images/Legend_img13.png) 
+![Angular Chart legend items text overflow](Legend_images/Legend_img13.png) 
 
 
 **Wrap**
 
 By specifying `textOverflow` as **"wrap"**, you can wrap the legend text by word.
 
-![](Legend_images/Legend_img14.png)
+![Angular Chart legend text by word](Legend_images/Legend_img14.png)
 
 **WrapAndTrim**
 
 You can wrap and trim the legend text by specifying `textOverflow` as **"wrapAndTrim"**. The original text will be displayed on mouse hover.
 
-![](Legend_images/Legend_img15.png)
+![Angular Chart wrapped and trimmed the legend text](Legend_images/Legend_img15.png)
    
 
 ## Handle the legend item clicked
@@ -253,7 +253,7 @@ You can select a specific series or point while clicking on the corresponding le
 
 {% endhighlight %}
 
-![](Legend_images/Legend_img16.png)
+![Angular Chart series selection on legend item click](Legend_images/Legend_img16.png)
 
 
 
@@ -276,4 +276,4 @@ You can collapse the specific series/point legend item displaying in the chart, 
    
 {% endhighlight %}
 
-![](Legend_images/Legend_img17.png)
+![Angular Chart collapsing legend item](Legend_images/Legend_img17.png)
