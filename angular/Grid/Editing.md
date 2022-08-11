@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Grid Widgets in Angular| Syncfusion
-description: Learn here all more about Grid Widgets support in Syncfusion Angular control, its elements, and more.
+title: Editing in Angular Grid Control | Syncfusion 
+description: Learn here all more about Editing support in Syncfusion Essential Angular Grid control, its elements, and more.
 platform: Angular
 control: Grid
 documentation: ug
