@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Editing in Angular Grid Control | Syncfusion 
-description: Learn here all more about Editing support in Syncfusion Essential Angular Grid control, its elements, and more.
+description: Learn here all about Editing support in Syncfusion Essential Angular Grid control, its elements, and more.
 platform: Angular
 control: Grid
 documentation: ug
