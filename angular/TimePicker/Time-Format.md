@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Time-Format
-description: time format
+title: Time Picker in Angular TimePicker Control | Syncfusion
+description: Learn here all about time format support in Syncfusion Angular TimePicker control, its elements, and more.
 platform: Angular
 control: TimePicker
 documentation: ug
 ---
 
-# Time Format
+# Time Format in Angular TimePicker
 
 **TimePicker** widget provides you an option to change the time format.
 
@@ -40,5 +40,5 @@ export class DefaultComponent {
 
 Execute the above code to render the following output.
 
-![](/Angular/TimePicker/Time-Format_images/Time-Format_img1.png) 
+![Angular TimePicker time format](/Angular/TimePicker/Time-Format_images/Time-Format_img1.png) 
 
