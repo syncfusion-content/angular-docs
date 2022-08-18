@@ -40,5 +40,5 @@ export class DefaultComponent {
 
 Execute the above code to render the following output.
 
-![Angular TimePicker time format](/Angular/TimePicker/Time-Format_images/Time-Format_img1.png) 
+![Angular TimePicker time format](Time-Format_images/Time-Format_img1.png) 
 
