@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Miscellaneous
-description: miscellaneous
+title: Miscellaneous in Angular Button Control | Syncfusion
+description: Learn here about miscellaneous support in Syncfusion Essential Angular Button Control, its elements, and more.
 platform: Angular
 control: Button
 documentation: ug
 ---
 
-# Miscellaneous
+# Miscellaneous in Angular Button
 
 ## Text
 
@@ -48,7 +48,7 @@ In the above code, the content of button “button” is replaced by the text va
 
 Execute the above code to render the following output.
 
-![](Miscellaneous_images/Miscellaneous_img1.png) 
+![Angular Button miscellaneous](Miscellaneous_images/Miscellaneous_img1.png) 
 
 ## Show Rounded Corner
 
@@ -87,7 +87,7 @@ In the **HTML** page, add the following button elements to configure **Button** 
 
 Execute the above code to render the following output.
 
-![](Miscellaneous_images/Miscellaneous_img2.png) 
+![Angular Button show rounded corner](Miscellaneous_images/Miscellaneous_img2.png) 
 
 
 
