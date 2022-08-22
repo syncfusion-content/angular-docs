@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Legend in Angular Chart Control | Syncfusion
-description: HLearn here all about Legend support in Syncfusion Essential Angular Chart control, its elements, and more
+description: Learn here all about Legend support in Syncfusion Essential Angular Chart control, its elements, and more
 platform: Angular
 control: Chart
 documentation: ug
