@@ -207,7 +207,7 @@ You can trim the legend item text when its width exceeds the `legend.textWidth`,
 
 {% endhighlight %}
 
-![ReactJS Chart legend items text overflow](Legend_images/Legend_img13.png) 
+![Angular Chart legend items text overflow](Legend_images/Legend_img13.png) 
 
 
 **Wrap**
