@@ -7,7 +7,7 @@ control: Grid
 documentation: ug
 api: /api/Angular/grid
 --- 
-# Grouping
+# Grouping with Grid widget for Syncfusion Essential Angular-2
 
 The Grid control has options to group the records based on the required column. When grouping is applied, grouped records are organized into a hierarchical structure to facilitate easier expand and collapse of records. To enable grouping, set [`allowGrouping`](https://help.syncfusion.com/api/angular/ejgrid#members:allowgrouping "allowGrouping") property as `true`.
 
@@ -94,7 +94,7 @@ import {Component, ViewEncapsulation} from '@angular/core';
 
 The following output is displayed as a result of the above code example.
 
-![](Grouping_images/Grouping_img2.png)
+![Angular Grid initial grouping](Grouping_images/Grouping_img2.png)
 
 
 ## Multi-Column Grouping
@@ -139,7 +139,7 @@ import {Component, ViewEncapsulation} from '@angular/core';
 
 The following output is displayed as a result of the above code example.
 
-![](Grouping_images/Grouping_img3.png)
+![Angular Grid multi column grouping](Grouping_images/Grouping_img3.png)
 
 
 ## Group buttons
@@ -184,7 +184,7 @@ import {Component, ViewEncapsulation} from '@angular/core';
 
 The following output is displayed as a result of the above code example.
 
-![](Grouping_images/Grouping_img4.png)
+![Angular Grid group buttons](Grouping_images/Grouping_img4.png)
 
 
 ## Hide Ungroup button
@@ -229,7 +229,7 @@ import {Component, ViewEncapsulation} from '@angular/core';
 
 The following output is displayed as a result of the above code example.
 
-![](Grouping_images/Grouping_img5.png)
+![Angular Grid hide ungroup button](Grouping_images/Grouping_img5.png)
 
 
 ## Hide Grouped Column
@@ -274,7 +274,7 @@ import {Component, ViewEncapsulation} from '@angular/core';
 
 The following output is displayed as a result of the above code example.
 
-![](Grouping_images/Grouping_img6.png)
+![Angular Grid hide grouped column](Grouping_images/Grouping_img6.png)
 
 
 ## AutoSize Drop Area
@@ -319,7 +319,7 @@ import {Component, ViewEncapsulation} from '@angular/core';
 
 The following output is displayed as a result of the above code example.
 
-![](Grouping_images/Grouping_img7.png)
+![Angular Grid autosize drop area](Grouping_images/Grouping_img7.png)
 
 
 ## Hide Drop area
@@ -364,7 +364,7 @@ import {Component, ViewEncapsulation} from '@angular/core';
 
 The following output is displayed as a result of the above code example.
 
-![](Grouping_images/Grouping_img8.png)
+![Angular Grid hide drop area](Grouping_images/Grouping_img8.png)
 
 
 ## Group Caption Format / Group Caption Template
@@ -420,9 +420,9 @@ import {Component, ViewEncapsulation} from '@angular/core';
 
 The following output is displayed as a result of the above code example.
 
-![](Grouping_images/Grouping_img9.png)
+![Angular Grid group caption format](Grouping_images/Grouping_img9.png)
 
-![](Grouping_images/Grouping_img10.png)
+![Angular Grid group caption template](Grouping_images/Grouping_img10.png)
 
 ## Handling grouped records count in server-side    
 
@@ -505,4 +505,4 @@ import {Component, ViewEncapsulation} from '@angular/core';
 
 The following output is displayed as a result of the above code example.
 
-![](Grouping_images/Grouping_img11.png)
+![Angular Grid grouped records](Grouping_images/Grouping_img11.png)
