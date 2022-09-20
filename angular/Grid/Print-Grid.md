@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Print in Angular Grid Control | Syncfusion
-description: Learn here all about print support in Syncfusion Essential Angular Grid control, its elements, and more.
+title: Print with Grid widget for Syncfusion Angular-2
+description: How to enable print option in Grid
 platform: Angular
 control: Grid
 documentation: ug
 api: /api/angular/ejgrid
 ---
-# Print in Angular Grid
+# Print
 
 You need to use [`print()`](https://help.syncfusion.com/api/angular/ejgrid#methods:print) method from Grid instance to print the Grid. You can add Print option in Toolbar item by adding `ej.Grid.ToolBarItems.PrintGrid` in [`toolbarItems`](https://help.syncfusion.com/api/angular/grid#members:toolbarsettings-toolbaritems).
 
@@ -52,7 +52,7 @@ export class GridComponent {
 {% endhighlight %}
 
 
-![Angular Grid print](Print-Grid_images/Print_img1.png)
+![](Print-Grid_images/Print_img1.png)
 
 
 ## Page Setup
@@ -110,12 +110,12 @@ export class GridComponent {
 
 {% endhighlight %}
 
-![Angular Grid page setup](Print-Grid_images/Print_img2.png)
+![](Print-Grid_images/Print_img2.png)
 
 {:caption}
 Grid with external button for Print
 
-![Angular Grid Print visible page](Print-Grid_images/Print_img3.png)
+![](Print-Grid_images/Print_img3.png)
 {:caption}
 
 Print dialog in Chrome browser
