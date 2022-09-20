@@ -7,7 +7,7 @@ control: Circular Gauge
 documentation: ug
 ---
 
-# Labels in Angular Circular Gauge
+# Labels in Essential Angular Circular Gauge
 
 **Labels** are units that are used to display the values in the scales. You can customize Labels with the properties like angle, color, font, opacity, etc.
 

@@ -1,13 +1,13 @@
 ---
 layout: post
 title: Legend in Angular Chart Control | Syncfusion
-description: Learn here all about Legend support in Syncfusion Essential Angular Chart control, its elements, and more
+description: Learn here all about Legend support in Syncfusion Essential Angular Chart control, its elements, and more.
 platform: Angular
 control: Chart
 documentation: ug
 ---
 
-# Legend in Angular Chart
+# Legend in Essential Angular Chart
 
 The legend contains the list of chart series and Trendlines that appear in a chart. 
 
