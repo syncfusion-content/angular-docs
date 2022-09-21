@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Print Grid in Angular Grid control | Syncfusion
-description: Learn here about getting started with Syncfusion Angular Grid control, its elements, and more
+description: Learn here about getting started with Print Grid in Syncfusion Angular Grid control, its elements, and more
 platform: Angular
 control: Grid
 documentation: ug
@@ -9,7 +9,7 @@ api: /api/angular/ejgrid
 ---
 # Print Grid in Angular Grid
 
-You need to use [`print()`](https://help.syncfusion.com/api/angular/ejgrid#methods:print) method from Grid instance to print the Grid. You can add Print option in Toolbar item by adding `ej.Grid.ToolBarItems.PrintGrid` in [`toolbarItems`](https://help.syncfusion.com/api/angular/grid#members:toolbarsettings-toolbaritems).
+You need to use [`print`](https://help.syncfusion.com/api/angular/ejgrid#methods:print) method from Grid instance to print the Grid. You can add Print option in Toolbar item by adding `ej.Grid.ToolBarItems.PrintGrid` in [`toolbarItems`](https://help.syncfusion.com/api/angular/grid#members:toolbarsettings-toolbaritems).
 
 {% highlight html %}
 
