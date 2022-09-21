@@ -9,7 +9,7 @@ api: /api/angular/ejgrid
 ---
 # Print Grid in Angular Grid
 
-You need to use [`print`](https://help.syncfusion.com/api/angular/ejgrid#methods:print) method from Grid instance to print the Grid. You can add Print option in Toolbar item by adding `ej.Grid.ToolBarItems.PrintGrid` in [`toolbarItems`](https://help.syncfusion.com/api/angular/grid#members:toolbarsettings-toolbaritems).
+You need to use [`print`](https://help.syncfusion.com/api/angular/ejgrid#methods:print) method from Grid instance to print the Grid. You can add Print option in Toolbar item by adding `ej.Grid.ToolBarItems.PrintGrid` in [`toolbarItems`](https://help.syncfusion.com/api/angular/ejgrid#members:toolbarsettings-toolbaritems).
 
 {% highlight html %}
 
