@@ -1,6 +1,6 @@
 ---
 title: Getting Started with Syncfusion Angular PDF viewer
-description:  Check out the documentation for getting started with Angular PDF viewer and more.
+description:  Learn here about the documentation for getting started with Syncfusion Angular PDF viewer and more.
 platform: Angular
 control: PDF viewer
 documentation: ug
