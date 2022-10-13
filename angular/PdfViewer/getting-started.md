@@ -73,4 +73,4 @@ export class DefaultComponent {
 
 Now, the PDF viewer control is rendered with default PDF document, which used in the services.
 
-![](getting-started_images/pdfviewer.png)
+![Getting staretd with ng PDF Viewer](getting-started_images/angular-pdfviewer.png)
