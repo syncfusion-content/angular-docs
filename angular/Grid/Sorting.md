@@ -45,7 +45,7 @@ export class AppComponent {
 
 The following output is displayed as a result of the above code example.
 
-![](sorting_images/sorting_img1.png)
+![Angular Grid Sorting](sorting_images/sorting_img1.png)
 
 
 ## Initial Sorting
@@ -89,7 +89,7 @@ export class AppComponent {
 
 The following output is displayed as a result of the above code example.
 
-![](sorting_images/sorting_img2.png)
+![Angular Grid Initial Sorting](sorting_images/sorting_img2.png)
 
 
 ## Multi-Column Sorting
@@ -135,7 +135,7 @@ export class AppComponent {
 
 The following output is displayed as a result of the above code example.
 
-![](sorting_images/sorting_img3.png)
+![Angular Grid Multi-Column Sorting](sorting_images/sorting_img3.png)
 
 
 ## Stable sorting
@@ -184,7 +184,7 @@ export class AppComponent {
 
 The following output is displayed as a result of the above code example.
 
-![](sorting_images/sorting_img4.png)
+![Angular Grid Stable sorting](sorting_images/sorting_img4.png)
 
 
 ## Touch options
@@ -227,6 +227,6 @@ export class AppComponent {
 
 The following output is displayed as a result of the above code example.
 
-![](sorting_images/sorting_img5.png)
+![Angular Grid Touch options](sorting_images/sorting_img5.png)
 
 N> To get the sorted data of the grid after sorting a column you can refer the [`How To`](https://help.syncfusion.com/angular/grid/how-to "Getting Datasource of Grid in Sorted Order").

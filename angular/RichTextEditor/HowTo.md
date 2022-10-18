@@ -608,4 +608,4 @@ The style element must be defined in stylesheet.
 
 {% endhighlight %}
 
-![](RTESpellcheck_images/spellcheck_contextmode.png)
+![Angular RichTextEditor Context Mode](RTESpellcheck_images/spellcheck_contextmode.png)

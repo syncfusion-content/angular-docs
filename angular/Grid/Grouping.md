@@ -49,7 +49,7 @@ import {Component, ViewEncapsulation} from '@angular/core';
 
 The following output is displayed as a result of the above code example.
 
-![](Grouping_images/Grouping_img1.png)
+![Angular Grid Grouping](Grouping_images/Grouping_img1.png)
 
 
 ## Initial Grouping
@@ -94,7 +94,7 @@ import {Component, ViewEncapsulation} from '@angular/core';
 
 The following output is displayed as a result of the above code example.
 
-![](Grouping_images/Grouping_img2.png)
+![Angular Grid Initial Grouping](Grouping_images/Grouping_img2.png)
 
 
 ## Multi-Column Grouping
@@ -139,7 +139,7 @@ import {Component, ViewEncapsulation} from '@angular/core';
 
 The following output is displayed as a result of the above code example.
 
-![](Grouping_images/Grouping_img3.png)
+![Angular Grid Multi-Column Grouping](Grouping_images/Grouping_img3.png)
 
 
 ## Group buttons
@@ -184,7 +184,7 @@ import {Component, ViewEncapsulation} from '@angular/core';
 
 The following output is displayed as a result of the above code example.
 
-![](Grouping_images/Grouping_img4.png)
+![Angular Grid Group buttons](Grouping_images/Grouping_img4.png)
 
 
 ## Hide Ungroup button
@@ -229,7 +229,7 @@ import {Component, ViewEncapsulation} from '@angular/core';
 
 The following output is displayed as a result of the above code example.
 
-![](Grouping_images/Grouping_img5.png)
+![Angular Grid Hide Ungroup button](Grouping_images/Grouping_img5.png)
 
 
 ## Hide Grouped Column
@@ -274,7 +274,7 @@ import {Component, ViewEncapsulation} from '@angular/core';
 
 The following output is displayed as a result of the above code example.
 
-![](Grouping_images/Grouping_img6.png)
+![Angular Grid Hide Grouped Column](Grouping_images/Grouping_img6.png)
 
 
 ## AutoSize Drop Area
@@ -319,7 +319,7 @@ import {Component, ViewEncapsulation} from '@angular/core';
 
 The following output is displayed as a result of the above code example.
 
-![](Grouping_images/Grouping_img7.png)
+![Angular Grid AutoSize Drop Area](Grouping_images/Grouping_img7.png)
 
 
 ## Hide Drop area
@@ -364,7 +364,7 @@ import {Component, ViewEncapsulation} from '@angular/core';
 
 The following output is displayed as a result of the above code example.
 
-![](Grouping_images/Grouping_img8.png)
+![Angular Grid Hide Drop area](Grouping_images/Grouping_img8.png)
 
 
 ## Group Caption Format / Group Caption Template
@@ -420,9 +420,9 @@ import {Component, ViewEncapsulation} from '@angular/core';
 
 The following output is displayed as a result of the above code example.
 
-![](Grouping_images/Grouping_img9.png)
+![Angular Grid Group Caption Format](Grouping_images/Grouping_img9.png)
 
-![](Grouping_images/Grouping_img10.png)
+![Angular Grid Group Caption Template](Grouping_images/Grouping_img10.png)
 
 ## Handling grouped records count in server-side    
 
@@ -505,4 +505,4 @@ import {Component, ViewEncapsulation} from '@angular/core';
 
 The following output is displayed as a result of the above code example.
 
-![](Grouping_images/Grouping_img11.png)
+![Angular Grid Handling grouped records count in server-side](Grouping_images/Grouping_img11.png)

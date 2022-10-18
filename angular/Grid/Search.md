@@ -49,7 +49,7 @@ import {Component, ViewEncapsulation} from '@angular/core';
 
 The following output is displayed as a result of the above code example.
 
-![](searching_images/searching_img1.png)
+![Angular Grid Searching](searching_images/searching_img1.png)
 
 
 ## Initial Searching
@@ -98,7 +98,7 @@ import {Component, ViewEncapsulation} from '@angular/core';
 
 The following output is displayed as a result of the above code example.
 
-![](searching_images/searching_img2.png)
+![Angular Grid Initial Searching](searching_images/searching_img2.png)
 
 
 List of supported operators in searching.
