@@ -123,9 +123,9 @@ export class ModelComponent {
 
 ![Line Intervals in Angular Diagram](Gridlines_images/Gridlines_img2.png)
 
-# # Snapping
+## Snapping
 
-## Snap To Lines
+### Snap To Lines
 
 This feature allows the Diagram objects to snap to the nearest intersection of gridlines while being dragged or resized. This feature enables easier alignment during layout or design.
 
