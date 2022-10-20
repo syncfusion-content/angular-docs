@@ -1,17 +1,17 @@
 ---
 layout: post
-title: Visually represent the geometrical informations, process flow, or entities
-description: How to visually represent the geometrical information and process flows as nodes?
+title: Node in Angular Diagram Control | Syncfusion
+description: Learn here about node support in Syncfusion Essential Angular Diagram Control, its elements, and more.
 platform: Angular
 control: Diagram
 documentation: ug
 ---
 
-# Node
+# Node in Angular Diagram
 
 Nodes are graphical objects used to visually represent the geometrical information, process flow, internal business procedure, entity, or any other kind of data.
 
-![](/angular/Diagram/Node_images/Node_img1.png)
+![Angular Diagram node](Node_images/Node_img1.png)
 
 ## Create Node
 
@@ -57,7 +57,7 @@ export class NodesComponent {
 
 {% endhighlight %}
 
-![](/angular/Diagram/Node_images/Node_img2.png)
+![Angular Diagram position](Node_images/Node_img2.png)
 
 ## Position
 
@@ -95,7 +95,7 @@ export class NodesComponent {
 
 {% endhighlight %}
 
-![](/angular/Diagram/Node_images/Node_img4.png)
+![Angular Diagram types](Node_images/Node_img4.png)
 
 ## Types
 
@@ -128,7 +128,7 @@ export class NodesComponent {
 
 {% endhighlight %}
 
-![](/angular/Diagram/Node_images/Node_img5.png)
+![Angular Diagram gradient](Node_images/Node_img5.png)
 
 ### Gradient
 
@@ -205,7 +205,7 @@ export class PageSettingsComponent {
 
 {% endhighlight %}
 
-![](/angular/Diagram/Node_images/Node_img6.png)
+![Angular Diagram shadow](Node_images/Node_img6.png)
 
 ## Shadow
 
@@ -234,7 +234,7 @@ export class NodesComponent {
 {% endhighlight %}
 
 
-![](/angular/Diagram/Node_images/Node_img7.png)
+![Angular Diagram shadow effect](Node_images/Node_img7.png)
 
 The following code illustrates how to disable shadow effect at runtime.
 
@@ -292,7 +292,7 @@ export class NodesComponent {
 
 {% endhighlight %}
 
-![](/angular/Diagram/Node_images/Node_img8.png)
+![Angular Diagram icon](Node_images/Node_img8.png)
 
 ## Icon
 
@@ -361,13 +361,13 @@ export class ShapesComponent {
 
 {% endhighlight %}
 
-![](/angular/Diagram/Node_images/Node_img9.png)
+![Angular Diagram interaction](Node_images/Node_img9.png)
 
-![](/angular/Diagram/Node_images/Node_img10.png)
+![Angular Diagram constraints](Node_images/Node_img10.png)
 
 ## Interaction
 
-Diagram provides support to drag, resize, or rotate the node interactively. For more information about editing a node at runtime, refer to [Edit Nodes](/angular/Diagram/Interaction "Interaction").
+Diagram provides support to drag, resize, or rotate the node interactively. For more information about editing a node at runtime, refer to [Edit Nodes](/angular/diagram/interaction "Interaction").
 
 ## Constraints
 
