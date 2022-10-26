@@ -7,7 +7,7 @@ control: Diagram
 documentation: ug
 ---
 
-# Gridlines in  Angular Diagram 
+# Gridlines in Angular Diagram 
 
 **Gridlines** are the pattern of lines drawn behind the Diagram elements. It provides a visual guidance while dragging or arranging the objects on the Diagram surface.
 
