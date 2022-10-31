@@ -7,7 +7,7 @@ control: Chart
 documentation: ug
 ---
 
-# Appearance
+# Appearance in Angular Chart
 
 ## Custom Color Palette
 
@@ -243,7 +243,7 @@ function animateChart(){
 
 ### Control the Speed of animation
 
-To control the speed of animation, you can use the [`animationDuration`](../api/ejchart#members:series-animationduration) property in the series. 
+To control the speed of animation, you can use the [`animationDuration`](../api/js/ejchart#members:series-animationduration) property in the series. 
 
 
 {% highlight html %}
