@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Chart Annotations 
+title: Annotations in Angular Chart Control | Syncfusion
 description: How to add annotations in Essential Angular Chart and the different options available to customize its position. 
 platform: Angular
 control: Chart
 documentation: ug
 ---
 
-# Annotations
+# Annotations in Angular Chart
 
 annotations are used to mark the specific area of interest in the chart area with texts, shapes or images. 
 
@@ -28,7 +28,7 @@ You can add annotations to the chart by using the `annotations` option. By using
 {% endhighlight %}
 
 
-![](Annotations_images/Annotations_img1.png)
+![Angular Chart annotation](Annotations_images/Annotations_img1.png)
 
 
 ## Rotate the annotation template
@@ -50,7 +50,7 @@ To rotate the annotation template, you can use the `angle` property of the annot
 {% endhighlight %}
 
 
-![](Annotations_images/Annotations_img2.png)
+![Angular Chart rotate annotation](Annotations_images/Annotations_img2.png)
 
 ## Positioning Annotation
 
@@ -82,12 +82,12 @@ N> By using the `region` option, you can specify whether the annotation is place
 {% endhighlight %}
 
 
-![](Annotations_images/Annotations_img3.png)
+![Angular Chart positioning annotation](Annotations_images/Annotations_img3.png)
 
 
 ## Annotation alignments
 
-When the coordinateUnit is set to pixels or points, you can align the annotation relative to the coordinates by using the [`horizontalAlignment`](../api/ejchart#members:annotations-horizontalalignment) and [`verticalAlignment`] options. 
+When the coordinateUnit is set to pixels or points, you can align the annotation relative to the coordinates by using the [`horizontalAlignment`](../api/angular/ejchart#members:annotations-horizontalalignment) and [`verticalAlignment`] options. 
 
 {% highlight html %}
 
@@ -104,4 +104,4 @@ When the coordinateUnit is set to pixels or points, you can align the annotation
 {% endhighlight %}
 
 
-![](Annotations_images/Annotations_img4.png)
+![Angular Chart annotation alignment](Annotations_images/Annotations_img4.png)
