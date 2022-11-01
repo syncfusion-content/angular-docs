@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Grouping with Grid widget for Syncfusion Essential Angular-2
-description: How to enable grouping and its functionalities
+title: Grouping in Angular Grid Control | Syncfusion 
+description: Learn here all about Grouping support in Syncfusion Essential Angular Grid control, its elements, and more.
 platform: Angular
 control: Grid
 documentation: ug
 api: /api/Angular/grid
 --- 
-# Grouping
+# Grouping in Essential Angular Grid
 
 The Grid control has options to group the records based on the required column. When grouping is applied, grouped records are organized into a hierarchical structure to facilitate easier expand and collapse of records. To enable grouping, set [`allowGrouping`](https://help.syncfusion.com/api/angular/ejgrid#members:allowgrouping "allowGrouping") property as `true`.
 

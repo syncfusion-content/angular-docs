@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Sorting with Grid widget for Syncfusion Essential JS
-description: How to enable sorting and its functionalities
-platform: js
+title: Sorting in Angular Grid Control | Syncfusion
+description: Learn here all about Sorting support in Syncfusion Essential Angular Grid control, its elements, and more.
+platform: Angular
 control: Grid
 documentation: ug
 api: /api/js/ejgrid
 --- 
-# Sorting
+# Sorting in Essential Angular Grid
 
 The Grid control has support to sort data bound columns in ascending or descending order. This can be achieved by setting [`allowSorting`](https://help.syncfusion.com/api/angular/ejgrid#members:allowsorting "allowSorting") property as `true`. 
 

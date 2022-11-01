@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Searching with Grid widget for Syncfusion Essential Angular-2
-description: How to enable search opition and its functionalities
+title: Searching in Angular Grid Control | Syncfusion
+description: Learn here all about Searching support in Syncfusion Essential Angular Grid control, its elements, and more.
 platform: Angular
 control: Grid
 documentation: ug
 api: /api/Angular/grid
 --- 
-# Searching
+# Searching in Essential Angular Grid
 
 The grid has an option to search its content using the JavaScript method [`search`](https://help.syncfusion.com/api/angular/ejgrid#methods:search "search") with search key as parameter. Also, it provides an option to integrate Search text box in grid toolbar, by adding `search` toolbar item in [`toolbarSetting.toolbarItems`](https://help.syncfusion.com/api/angular/ejgrid#members:toolbarsettings-toolbaritems "toolbarSetting.toolbarItems") property.
 
