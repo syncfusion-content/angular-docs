@@ -50,7 +50,7 @@ The following output is displayed as a result of the above code example.
 
 ## Initial Sorting
 
-Through `sortedColumns` property of [`sortSettings`](https://help.syncfusion.com/api/angular/ejgrid#members:sortsettings "sortSettings"), you can sort the columns while initializing the grid itself. You need to specify the [`field`](https://help.syncfusion.com/api/angular/grid#members:sortsettings-sortedcolumns-field "field") (column) name and [`direction`](https://help.syncfusion.com/api/angular/grid#members:sortsettings-sortedcolumns-direction "direction") in the `sortedColumns`.
+Through `sortedColumns` property of [`sortSettings`](https://help.syncfusion.com/api/angular/ejgrid#members:sortsettings "sortSettings"), you can sort the columns while initializing the grid itself. You need to specify the [`field`](https://help.syncfusion.com/api/angular/ejgrid#members:sortsettings-sortedcolumns-field "field") (column) name and [`direction`](https://help.syncfusion.com/api/angular/ejgrid#members:sortsettings-sortedcolumns-direction "direction") in the `sortedColumns`.
 
 N> 1. For [`direction`](https://help.syncfusion.com/api/angular/ejgrid#members:sortsettings-sortedcolumns-direction "direction") property you can assign either `string` value ("descending") or `enum` value (`ej.sortOrder.Descending`). 
 N> 2. You can add multiple columns in `sortedColumns` for multi column sorting while initializing the grid itself.
