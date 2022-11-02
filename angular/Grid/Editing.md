@@ -7,7 +7,7 @@ control: Grid
 documentation: ug
 api: /api/Angular/grid
 --- 
-# Editing in Angular Grid
+# Editing in Essential Angular Grid
 
 The grid control has support for dynamic insertion, updating and deletion of records. You can start the edit action either by double clicking the particular row or by selecting the required row and clicking on Edit icon in toolbar. Similarly, you can add new record to grid either by clicking on insert icon in toolbar or on an external button which is bound to call [`addRecord`](https://help.syncfusion.com/api/angular/ejgrid#methods:addrecord "addRecord") method of grid. `Save` and `Cancel` while on edit mode is possible using respective toolbar icon in grid.
 
@@ -63,7 +63,7 @@ N> For [`toolbarItems`](https://help.syncfusion.com/api/angular/ejgrid#members:t
 
 The following output is displayed as a result of the above code example.
 
-![Anglar Grid editing](Editing_images/Editing_img1.png)
+![Angular Grid editing](Editing_images/Editing_img1.png)
 
 
 ## Cell edit type and its params
@@ -168,7 +168,7 @@ The following code example describes the above behavior.
 
 The following output is displayed as a result of the above code example.
 
-![Angular Grid Cell edit type and its params](Editing_images/Editing_img4.png)
+![Angular Grid cell edit type and its params](Editing_images/Editing_img4.png)
 
 
 ## Cell Edit Template
@@ -337,7 +337,7 @@ The following code example describes the above behavior.
 
 The following output is displayed as a result of the above code example.
 
-![Angular Grid inline](Editing_images/Editing_img4.png)
+![Angular grid inline](Editing_images/Editing_img4.png)
 
 
 The following output is displayed as a result of the above code example.
@@ -441,13 +441,13 @@ Place the ng-template in the "index.html" page.
 
 The following output is displayed as a result of the above code example.
 
-![Angular Grid inline template form](Editing_images/Editing_img6.png)
+![Angular Grid inline template form before](Editing_images/Editing_img6.png)
 
 {:caption}
 Before the template elements are converted to JS controls
 
 
-![Angular Grid before the template elements are converted to JS controls](Editing_images/Editing_img7.png)
+![Angular Grid inline template form after](Editing_images/Editing_img7.png)
 {:caption}
 After the template elements are converted to JS controls using actionComplete event 
 
@@ -596,11 +596,11 @@ Place the ng-template in the "index.html" page.
 
 The following output is displayed as a result of the above code example.
 
-![Angular Grid dialog template form](Editing_images/Editing_img9.png)
+![Angular Grid dialog template form before](Editing_images/Editing_img9.png)
 {:caption}
 Before the template elements are converted to JS controls
 
-![Angular Grid place the template in the index.html page](Editing_images/Editing_img10.png)
+![Angular Grid dialog template form after](Editing_images/Editing_img10.png)
 {:caption}
 After the template elements are converted to JS controls using actionComplete event 
 
@@ -805,11 +805,11 @@ Place the ng-template in the "index.html" page.
 
 The following output is displayed as a result of the above code example.
 
-![Angular Grid external template Form](Editing_images/Editing_img13.png)
+![Angular Grid external template form before](Editing_images/Editing_img13.png)
 {:caption}
 Before the template elements are converted to JS controls
 
-![Angylar Grid converted to JS controls](Editing_images/Editing_img14.png)
+![Angular Grid external template form after](Editing_images/Editing_img14.png)
 {:caption}
 After the template elements are converted to JS controls using actionComplete event
 
@@ -862,7 +862,7 @@ The following code example describes the above behavior.
 
 The following output is displayed as a result of the above code example.
 
-![Angular Grid batch/excel-like](Editing_images/Editing_img15.png)
+![Angular Grid batch](Editing_images/Editing_img15.png)
 
 
 ## Confirmation messages
@@ -1092,7 +1092,7 @@ The following code example describes the above behavior.
 
 The following output is displayed as a result of the above code example.
 
-![Angular Grid column validation](Editing_images/Editing_img18.png)
+![Angular Grid jquery validation](Editing_images/Editing_img18.png)
 
 
 ## Persisting data in Server
@@ -1181,7 +1181,7 @@ The grid actions (sorting, filtering, paging, searching, and aggregates) details
 
 Please refer the below screen shot.
 
-![Angular Grid persisting data in Server](Editing_images/Editing_img20.png)
+![Angular Grid URL adaptor](Editing_images/Editing_img20.png)
 
 
 Also, using 'DataOperations' helper class you can perform grid action at server side. The in-built methods that we have provided in the DataOperations class are listed below.
@@ -1545,7 +1545,7 @@ public ActionResult BatchUpdate(string action, List<EditableOrder> added, List<E
 
 Please refer the below image for more information about batch parameters
 
-![Angular Grid Batch URL](Editing_images/Editing_img25.png)
+![Angular Grid batch URL](Editing_images/Editing_img25.png)
 
 
 ## Adding New Row Position
@@ -1594,7 +1594,7 @@ The following code example describes the above behavior.
 
 The following output is displayed as a result of the above code example.
 
-![Angular Grid adding new row position](Editing_images/Editing_img26.png)
+![Angular Grid adds new row position](Editing_images/Editing_img26.png)
 
 
 ## Render with blank row for easy add new
@@ -1645,7 +1645,7 @@ The following code example describes the above behavior.
 
 The following output is displayed as a result of the above code example.
 
-![Angular Grid render with blank row for easy add new](Editing_images/Editing_img27.png)
+![Angular Grid render with blank row](Editing_images/Editing_img27.png)
 
 
 N> 1. If it is remote, then the newly added record is placed based on the index from current view data. 
