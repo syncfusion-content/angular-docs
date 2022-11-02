@@ -7,7 +7,7 @@ control: Chart
 documentation: ug
 ---
 
-# Legend in Angular Chart
+# Legend in Essential Angular Chart
 
 The legend contains the list of chart series and Trendlines that appear in a chart. 
 
