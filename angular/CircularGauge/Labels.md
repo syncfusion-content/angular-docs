@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Labels
-description: labels
+title: Labels in Angular Circular Gauge Control | Syncfusion
+description: Learn here all about labels support in Syncfusion Essential Angular Circular Gauge control, its elements, and more.
 platform: Angular
 control: Circular Gauge
 documentation: ug
 ---
 
-# Labels
+# Labels in Essential Angular Circular Gauge
 
 **Labels** are units that are used to display the values in the scales. You can customize Labels with the properties like angle, color, font, opacity, etc.
 
@@ -29,7 +29,7 @@ documentation: ug
 
 Execute the above code to render the following output.
 
-![](Labels_images/Labels_img1.png)
+![Angular Circular Gauge adding labels collection](Labels_images/Labels_img1.png)
 
 ## Label Customization
 
@@ -82,7 +82,7 @@ this.pointerLabels = [{
 
 Execute the above code to render the following output.
 
-![](Labels_images/Labels_img2.png)
+![Angular Circular Gauge labels customization](Labels_images/Labels_img2.png)
 
 **Unit text and Position**
 
@@ -116,7 +116,7 @@ Labels can be positioned with the help of two properties such as **distanceFromS
 
 Execute the above code to render the following output.
 
-![](Labels_images/Labels_img3.png)
+![Angular Circular Gauge unit text and position](Labels_images/Labels_img3.png)
 
 ## Multiple Labels
 
@@ -142,5 +142,5 @@ You can achieve multiple labels such as minor and major in a **Gauge** sample sc
 
 Execute the above code to render the following output.
 
-![](Labels_images/Labels_img4.png)
+![Angular Circular Gauge multiple labels](Labels_images/Labels_img4.png)
 
