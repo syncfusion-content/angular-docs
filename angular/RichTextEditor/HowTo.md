@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Customization of RichTextEditor widget for Syncfusion Essential JS
-description: Customization in RichTextEditor widget
+title: How To section in Angular RichTextEditor | Syncfusion 
+description: Learn here all about How To section in Syncfusion Essential Angular RichTextEditor control, its elements, and more.
 platform: angular
 control: RTE
 documentation: ug
@@ -9,7 +9,7 @@ keywords: RichTextEditor, Context Menu, Adding Items, Removing Items
 api: /api/js/ejrte
 ---
 
-# How To
+# How To section in Angular RichTextEditor
 
 ## Add Google web fonts to editor 
 
@@ -608,4 +608,4 @@ The style element must be defined in stylesheet.
 
 {% endhighlight %}
 
-![](RTESpellcheck_images/spellcheck_contextmode.png)
+![Angular RichTextEditor Context Mode](RTESpellcheck_images/spellcheck_contextmode.png)
