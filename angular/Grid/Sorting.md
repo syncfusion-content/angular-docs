@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Sorting with Grid widget for Syncfusion Essential JS
-description: How to enable sorting and its functionalities
-platform: js
+title: Sorting in Angular Grid Control | Syncfusion
+description: Learn here all about Sorting support in Syncfusion Essential Angular Grid control, its elements, and more.
+platform: Angular
 control: Grid
 documentation: ug
 api: /api/js/ejgrid
 --- 
-# Sorting
+# Sorting in Essential Angular Grid
 
 The Grid control has support to sort data bound columns in ascending or descending order. This can be achieved by setting [`allowSorting`](https://help.syncfusion.com/api/angular/ejgrid#members:allowsorting "allowSorting") property as `true`. 
 
@@ -45,12 +45,12 @@ export class AppComponent {
 
 The following output is displayed as a result of the above code example.
 
-![](sorting_images/sorting_img1.png)
+![Angular Grid sorting](sorting_images/sorting_img1.png)
 
 
 ## Initial Sorting
 
-Through `sortedColumns` property of [`sortSettings`](https://help.syncfusion.com/api/angular/ejgrid#members:sortsettings "sortSettings"), you can sort the columns while initializing the grid itself. You need to specify the [`field`](https://help.syncfusion.com/api/angular/grid#members:sortsettings-sortedcolumns-field "field") (column) name and [`direction`](https://help.syncfusion.com/api/angular/grid#members:sortsettings-sortedcolumns-direction "direction") in the `sortedColumns`.
+Through `sortedColumns` property of [`sortSettings`](https://help.syncfusion.com/api/angular/ejgrid#members:sortsettings "sortSettings"), you can sort the columns while initializing the grid itself. You need to specify the [`field`](https://help.syncfusion.com/api/angular/ejgrid#members:sortsettings-sortedcolumns-field "field") (column) name and [`direction`](https://help.syncfusion.com/api/angular/ejgrid#members:sortsettings-sortedcolumns-direction "direction") in the `sortedColumns`.
 
 N> 1. For [`direction`](https://help.syncfusion.com/api/angular/ejgrid#members:sortsettings-sortedcolumns-direction "direction") property you can assign either `string` value ("descending") or `enum` value (`ej.sortOrder.Descending`). 
 N> 2. You can add multiple columns in `sortedColumns` for multi column sorting while initializing the grid itself.
@@ -89,7 +89,7 @@ export class AppComponent {
 
 The following output is displayed as a result of the above code example.
 
-![](sorting_images/sorting_img2.png)
+![Angular Grid initial sorting](sorting_images/sorting_img2.png)
 
 
 ## Multi-Column Sorting
@@ -135,7 +135,7 @@ export class AppComponent {
 
 The following output is displayed as a result of the above code example.
 
-![](sorting_images/sorting_img3.png)
+![Angular Grid multi column sorting](sorting_images/sorting_img3.png)
 
 
 ## Stable sorting
@@ -184,7 +184,7 @@ export class AppComponent {
 
 The following output is displayed as a result of the above code example.
 
-![](sorting_images/sorting_img4.png)
+![Angular Grid stable sorting](sorting_images/sorting_img4.png)
 
 
 ## Touch options
@@ -227,6 +227,6 @@ export class AppComponent {
 
 The following output is displayed as a result of the above code example.
 
-![](sorting_images/sorting_img5.png)
+![Angular Grid touch options](sorting_images/sorting_img5.png)
 
 N> To get the sorted data of the grid after sorting a column you can refer the [`How To`](https://help.syncfusion.com/angular/grid/how-to "Getting Datasource of Grid in Sorted Order").
