@@ -1,13 +1,13 @@
 ---
-title: Getting Started for Angular PDF viewer
-description: PDF viewer 
+title: Getting Started with Syncfusion Angular PDF viewer
+description:  Learn here about the documentation for getting started with Syncfusion Angular PDF viewer, initialization, configuration and more.
 platform: Angular
 control: PDF viewer
 documentation: ug
 keywords: ejPdfViewer, PDF viewer, js pdfviewer
 ---
 
-# Getting Started
+# Getting Started with Angular PDF Viewer
 
 This section explains briefly about how to integrate a **PDF viewer** control in your application with **Angular**.
 
@@ -73,4 +73,4 @@ export class DefaultComponent {
 
 Now, the PDF viewer control is rendered with default PDF document, which used in the services.
 
-![](getting-started_images/pdfviewer.png)
+![Getting staretd with ng PDF Viewer](getting-started_images/angular-pdfviewer.png)
