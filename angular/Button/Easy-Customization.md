@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Easy-Customization
-description: easy customization
+title: Easy-Customization in Angular Button control | Syncfusion 
+description: Learn about Easy Customization support in Syncfusion Angular Button control, its elements, and more.
 platform: Angular
 control: Button
 documentation: ug
 ---
 
-# Easy Customization
+# Easy Customization in Angular Button
 
 Button is used in all applications. Button size, content and content location is varied according to each application. Here you can see some customizable option for button that can perform easily. 
 
@@ -110,7 +110,7 @@ In the **HTML** page, add the following button elements to configure button widg
 
 Execute the above code to render the following output.
 
-![](Easy-Customization_images/Easy-Customization_img1.png)
+![Angular Button Easy Customization](Easy-Customization_images/Easy-Customization_img1.png)
 
 
 ## Content Type
@@ -242,7 +242,7 @@ In the **HTML** page, add the following button elements to configure **Button** 
 
 Execute the above code to render the following output.
 
-![](Easy-Customization_images/Easy-Customization_img2.png) 
+![Angular Button Prefix and Suffix icon](Easy-Customization_images/Easy-Customization_img2.png) 
 
 
 ## Image Position
@@ -346,7 +346,7 @@ In the **HTML** page, add the following button elements to configure **Button** 
 
 Execute the above code to render the following output.
 
-![](Easy-Customization_images/Easy-Customization_img3.png)
+![Angular Button Image Position](Easy-Customization_images/Easy-Customization_img3.png)
 
 
 ## Theme support
@@ -449,5 +449,5 @@ export class DefaultComponent {
 
 Execute the above code to render the following output.
 
-![](Easy-Customization_images/Easy-Customization_img4.png)
+![Angular Button Custom CSS](Easy-Customization_images/Easy-Customization_img4.png)
 
