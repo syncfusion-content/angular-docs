@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Exporting options in Essential Angular Chart
-description: Learn how to export Chart as excel file or image.
+title: Exporting in Angular Chart Control | Syncfusion
+description: Learn here all about Exporting support in Syncfusion Essential Angular Chart control, its elements, and more.
 platform: Angular
 control: Chart
 documentation: ug
 ---
 
-# Exporting Chart
+# Exporting Chart in Essential Angular Chart
 
 Exporting a chart can be done in both client-side and in server-side. This can be modified by setting values to the property "mode" in exporting. Default value for mode is client. 
 
@@ -194,7 +194,7 @@ public void ExportChart(string Data, string ChartModel)
 
 Excel exporting is a server-side operation. In addition have to refer Syncfusion.XlsIO assembly to export as excel.
 
-![](Exporting_images/Exporting_img1.png)
+![Excel Exporting in Angular Chart](Exporting_images/Exporting_img1.png)
 
 #### Multiple chart excel exporting
 
@@ -260,7 +260,7 @@ Export multiple chart to excel at server-side
 
 {% endhighlight %}
 
-![](Exporting_images/Exporting_img2.png)
+![Multiple Excel Exporting in Angular Chart](Exporting_images/Exporting_img2.png)
 
 ## Naming the exported file
 
@@ -279,7 +279,7 @@ We can also rotate the chart and can export it. Possible angles of rotation are 
        
 {% endhighlight %}
 
-![](Exporting_images/Exporting_img3.png)
+![Rotating the Chart in Angular](Exporting_images/Exporting_img3.png)
 
 ## Setting orientation for the document
 

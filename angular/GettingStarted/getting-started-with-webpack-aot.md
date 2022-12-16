@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Getting started with Webpack Ahead-of-Time Configuration
-description: Overview of Syncfusion Essential Angular.
+title: Getting started with Webpack in Angular Application | Syncfusion
+description: Learn here all about Getting started with Webpack Ahead-of-Time Configuration in Syncfusion  Essential Angular Chart control, its elements, and more.
 platform: Angular
 control: Introduction
 documentation: ug
 ---
 
 
-# Getting started with Webpack Ahead-of-Time Configuration
+# Getting started with Webpack in Angular Application
 
 To quick start with Syncfusion JavaScript Angular components run the below commands to clone the repository for [Webpack starter](https://github.com/syncfusion/angular2-seeds) and installing required dependency packages.
 
@@ -658,4 +658,4 @@ export const rootRouterConfig: Routes = [
 npm start
 {% endhighlight %}
 
-![](/angular/GettingStarted/Images/aotoutput.png)
+![Running the Application in Angular Chart ](GettingStarted/Images/aotoutput.png)
