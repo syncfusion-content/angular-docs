@@ -1030,7 +1030,7 @@ export class ConnectorComponent {
 ![Angular Diagram Decorator Appearance](Connector_images/Connector_img23.png)
 
 ## Interaction
-Diagram allows to edit the connectors at runtime. To edit the connector segments at runtime, refer to [Connection Editing](/angular/Diagram/Interaction#connection-editing "Connection Editing").
+Diagram allows to edit the connectors at runtime. To edit the connector segments at runtime, refer to [Connection Editing](/angular/diagram/interaction#connection-editing "Connection Editing").
 
 ## Constraints
 The `constraints` property of connector allows to enable/disable certain features of connectors. For more information about constraints, refer to [Connector Constraints](/angular/Diagram/Constraints#connectorconstraints "Connector Constraints").
