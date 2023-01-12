@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Gridlines in Angular Diagram  Control | Syncfusion
+title: Gridlines in Angular Diagram Control | Syncfusion
 description: Learn here all about Gridlines support in Syncfusion Essential Angular Diagram control, its elements, and more.
 platform: Angular
 control: Diagram
