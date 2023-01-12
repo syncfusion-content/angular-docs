@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Getting started with Webpack Ahead-of-Time Configuration
-description: Overview of Syncfusion Essential Angular.
+title: Getting started with Webpack in Angular Application | Syncfusion
+description: Learn here all about Getting started with Webpack Ahead-of-Time Configuration in Syncfusion  Essential Angular Chart control, its elements, and more.
 platform: Angular
 control: Introduction
 documentation: ug
 ---
 
 
-# Getting started with Webpack Ahead-of-Time Configuration
+# Getting started with Webpack in Angular Application
 
 To quick start with Syncfusion JavaScript Angular components run the below commands to clone the repository for [Webpack starter](https://github.com/syncfusion/angular2-seeds) and installing required dependency packages.
 
@@ -68,13 +68,13 @@ The below steps depicts the configuration of `@ngtools/webpack` in Angular appli
 
 ### Options for AngularCompilerPlugin
 
-* Add instance of [AngularCompilerPlugin](https://github.com/angular/angular-cli/tree/master/packages/%40ngtools/webpack), which has an apply property. This apply property is called by the webpack compiler, giving access to the entire compilation life cycle. Add options `tsConfigPath` and `entryModule` with `AngularCompilerPlugin` instance.
+* Add instance of [AngularCompilerPlugin](https://github.com/angular/angular-cli/tree/main/packages/ngtools/webpack), which has an apply property. This apply property is called by the webpack compiler, giving access to the entire compilation life cycle. Add options `tsConfigPath` and `entryModule` with `AngularCompilerPlugin` instance.
 
   * `tsConfigPath` - The path to the `tsconfig.json` file. In your `tsconfig.json`, you can pass options to the Angular Compiler with `angularCompilerOptions`.
 
   * `entryModule` - Optional if specified in `angularCompilerOptions`. The path and classname of the main application module. This follows the format `path/to/file#ClassName`.
 
-N> To know more about Options in AOT refer [here](https://github.com/angular/angular-cli/tree/master/packages/%40ngtools/webpack)
+N> To know more about Options in AOT refer [here](https://github.com/angular/angular-cli/tree/main/packages/ngtools/webpack)
 
 Refer to the below AOT configuration code snippet for `config/webpack.dev.js` file. 
 
@@ -652,10 +652,10 @@ export const rootRouterConfig: Routes = [
 
 ## Running the application
 
-* Now run the application with below command and navigate to [http://localhost:3000/](http://localhost:3000/) to see the output window.
+* Now run the application with below command and navigate to [http://localhost:3000/](https://locall.host/3000/) to see the output window.
 
 {% highlight javascript %}
 npm start
 {% endhighlight %}
 
-![](/angular/GettingStarted/Images/aotoutput.png)
+![Running the Application in Angular Chart ](GettingStarted/Images/aotoutput.png)
