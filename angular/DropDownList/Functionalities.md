@@ -196,7 +196,7 @@ export class DropDownListComponent {
 
 {% endhighlight %}
 
-![](Functionalities_images/Functionalities_img1.png)
+![Using value or text in Angular DropDownList](Functionalities_images/Functionalities_img1.png)
 
 N> To retrieve the selected item’s LI elements and value you can use [getSelectedItem](http://help.syncfusion.com/api/js/ejdropdownlist#methods:getselecteditem), [getSelectedValue](http://help.syncfusion.com/api/js/ejdropdownlist#methods:getselectedvalue) methods respectively.
 
@@ -250,7 +250,7 @@ export class DropDownListComponent {
 
 {% endhighlight %}
 
-![](Functionalities_images/Functionalities_img2.png)
+![Using indicesin Angular DropDownList](Functionalities_images/Functionalities_img2.png)
 
 I> To use "selectedIndices" property, you should enable either showCheckbox or multiSelectMode property First.
 
@@ -428,7 +428,7 @@ export class DropDownListComponent {
 
 {% endhighlight %}
 
-![](Functionalities_images/Functionalities_img3.png)
+![Grouping in Angular DropDownList](Functionalities_images/Functionalities_img3.png)
 
 I> Virtual scrolling is not supported with Grouping.
 
@@ -603,9 +603,9 @@ export class DropDownListComponent {
 
 {% endhighlight %}
 
-![](Functionalities_images/Functionalities_img5.png)
+![Sorting in Angular DropDownList](Functionalities_images/Functionalities_img5.png)
 
-![](Functionalities_images/Functionalities_img6.jpeg)
+![Cascading in Angular DropDownList](Functionalities_images/Functionalities_img6.jpeg)
 
 ## Search
 
@@ -657,7 +657,7 @@ export class DropDownListComponent {
 
 {% endhighlight %}
 
-![](Functionalities_images/Functionalities_img8.png)
+![Incremental Search in Angular DropDownList](Functionalities_images/Functionalities_img8.png)
 
 ### Filter search
 
@@ -710,7 +710,7 @@ export class DropDownListComponent {
 
 {% endhighlight %}
 
-![](Functionalities_images/Functionalities_img9.png)
+![Filter search in Angular DropDownList](Functionalities_images/Functionalities_img9.png)
 
 ## Validation
 
@@ -801,5 +801,5 @@ export class DropDownListComponent {
 	
 {% endhighlight %}
 
-![](Functionalities_images/Functionalities_img10.jpeg)
+![Validation Messages in Angular DropDownList](Functionalities_images/Functionalities_img10.jpeg)
 

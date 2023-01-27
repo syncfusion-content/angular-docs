@@ -70,7 +70,7 @@ export class DropDownListComponent {
 
 {% endhighlight %}
 
-![](SettingDimension_images/SettingDimension_img1.png)
+![Item List in Angular DropDownList](SettingDimension_images/SettingDimension_img1.png)
 
 ## Popup resizing 
 
@@ -166,6 +166,6 @@ export class DropDownListComponent {
 
 {% endhighlight %}
 
-![](SettingDimension_images/SettingDimension_img2.png)
+![Popup resizing in Angular DropDownList](SettingDimension_images/SettingDimension_img2.png)
 
-![](SettingDimension_images/SettingDimension_img3.png)
+![customize the resize functionality in Angular DropDownList](SettingDimension_images/SettingDimension_img3.png)
