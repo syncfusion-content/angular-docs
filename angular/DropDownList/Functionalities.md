@@ -1,12 +1,12 @@
 ---
 layout: post
-title: Functionalities in the DropDownList widget
-description: Functionalities in the DropDownList widget
+title: Functionalities in the DropDownList widget | Syncfusion
+description: Learn here about Functionalities in the DropDownList widget in Syncfusion Essential Angular Application, its elements, and more. 
 platform: Angular
 control: DropDownList
 documentation: ug
 ---
-# Functionalities
+# Functionalities in the DropDownList widget
 
 ## Selection
 

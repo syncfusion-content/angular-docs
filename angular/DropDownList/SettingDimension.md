@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Demension in DropDownList widget
-description: Setting Dimensions to DropDownList widget
+title: Demension in DropDownList widget | Syncfusion
+description: Learn here how to Set Dimensions to DropDownList widget in Syncfusion Essential Angular Application, its elements, and more. 
 platform: Angular
 control: DropDownList
 documentation: ug
 ---
 
-# Setting dimensions 
+# Demension in DropDownList widget 
 
 ## Widget Sizing
 
