@@ -7,7 +7,7 @@ control: DateTimePicker
 documentation: ug
 ---
 
-# Getting Started with Angular DateTimePicker
+# Getting Started with Essential Angular DateTimePicker
 
 This section discloses the details on how to render and configure a **DateTimePicker** component in an Angular-2 application.
 
