@@ -1,6 +1,6 @@
 ---
 title:  Grid widget for Syncfusion Essential Angular-2
-description: Learn here more about Overview in Syncfusion Essential Angular Grid Control, its elements, and more
+description: Learn here more about Overview support in Syncfusion Essential Angular Grid Control, its elements, and more
 platform: Angular
 control: Grid
 documentation: ug
