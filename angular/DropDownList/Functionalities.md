@@ -1,18 +1,18 @@
 ---
 layout: post
-title: Functionalities in the DropDownList widget | Syncfusion
-description: Learn here about Functionalities in the DropDownList widget in Syncfusion Essential Angular Application, its elements, and more. 
+title: Functionalities in the Dropdown List | Syncfusion
+description: Learn here about Functionalities in the Dropdown List widget in Syncfusion Angular Dropdown List, its elements, and more. 
 platform: Angular
-control: DropDownList
+control: Dropdown List
 documentation: ug
 ---
-# Functionalities in the DropDownList widget
+# Functionalities in the Dropdown List
 
 ## Selection
 
 By default only one item can be selected from the popup list. For multiple selection, you have to enable [checkboxes](Checkbox). The selected item consist of active class (“e-active”) to differentiate it from other items.
 
-The following API’s, select the items in the DropDownList via text or value or indices.
+The following API’s, select the items in the Dropdown List via text or value or indices.
 
 <table>
     <tr>
@@ -72,7 +72,7 @@ The following API’s, select the items in the DropDownList via text or value or
 N> Index starts from 0 here.
 N> To use “selectedIndices” property, you should enable with showCheckbox or multiSelectMode property.
 
-The following methods, select the items in the DropDownList.
+The following methods, select the items in the Dropdown List.
 
 <table>
     <tr>
@@ -91,7 +91,7 @@ The following methods, select the items in the DropDownList.
             <br/>
         </td>
         <td>
-            This method is used to select the list of items in the DropDownList through the Index of the items.
+            This method is used to select the list of items in the Dropdown List through the Index of the items.
         </td>
     </tr>
     <tr>
@@ -100,7 +100,7 @@ The following methods, select the items in the DropDownList.
             <br/>
         </td>
         <td>
-            This method is used to select an item in the DropDownList by using the given text value.
+            This method is used to select an item in the Dropdown List by using the given text value.
         </td>
     </tr>
     <tr>
@@ -109,13 +109,13 @@ The following methods, select the items in the DropDownList.
             <br/>
         </td>
         <td>
-            This method is used to select an item in the DropDownList by using the given value.
+            This method is used to select an item in the Dropdown List by using the given value.
             <br/>
         </td>
     </tr>
 </table>
 
-The following methods, used to retrieve the items from the DropDownList.
+The following methods, used to retrieve the items from the Dropdown List.
 
 <table>
     <tr>
@@ -134,7 +134,7 @@ The following methods, used to retrieve the items from the DropDownList.
             <br/>
         </td>
         <td>
-            This method is used to retrieve the items that are bound with the DropDownList.
+            This method is used to retrieve the items that are bound with the Dropdown List.
         </td>
     </tr>
     <tr>
@@ -143,7 +143,7 @@ The following methods, used to retrieve the items from the DropDownList.
             <br/>
         </td>
         <td>
-            This method is used to get the selected items in the DropDownList.
+            This method is used to get the selected items in the Dropdown List.
         </td>
     </tr>
     <tr>
@@ -152,17 +152,17 @@ The following methods, used to retrieve the items from the DropDownList.
             <br/>
         </td>
         <td>
-            This method is used to retrieve the items value that are selected in the DropDownList.
+            This method is used to retrieve the items value that are selected in the Dropdown List.
             <br/>
         </td>
     </tr>
 </table>
 
-I> When multiSelectMode is enabled in a DropDownList and selected items having same text but its value is different means, the items can be selected. Please refer the online [link](http://jsplayground.syncfusion.com/Sync_5fgywhmb)
+I> When multiSelectMode is enabled in a Dropdown List and selected items having same text but its value is different means, the items can be selected. Please refer the online [link](http://jsplayground.syncfusion.com/Sync_5fgywhmb)
 
 ### Using value or text
 
-To select an item initially you can pass the item’s value via [value](http://help.syncfusion.com/api/js/ejdropdownlist#members:value) property or [selectItemByValue](http://help.syncfusion.com/api/js/ejdropdownlist#members:selectitembyvalue) method. To achieve this DropDownList widget must be initiated with the associate value. 
+To select an item initially you can pass the item’s value via [value](http://help.syncfusion.com/api/js/ejdropdownlist#members:value) property or [selectItemByValue](http://help.syncfusion.com/api/js/ejdropdownlist#members:selectitembyvalue) method. To achieve this Dropdown List widget must be initiated with the associate value. 
 
 {% highlight html %}
 
@@ -196,13 +196,13 @@ export class DropDownListComponent {
 
 {% endhighlight %}
 
-![Using value or text in Angular DropDownList](Functionalities_images/Functionalities_img1.png)
+![Using value or text in Angular Dropdown List](Functionalities_images/Functionalities_img1.png)
 
 N> To retrieve the selected item’s LI elements and value you can use [getSelectedItem](http://help.syncfusion.com/api/js/ejdropdownlist#methods:getselecteditem), [getSelectedValue](http://help.syncfusion.com/api/js/ejdropdownlist#methods:getselectedvalue) methods respectively.
 
 {% highlight javascript %}
 	
-  //create an instance from an existing DropDownList.
+  //create an instance from an existing Dropdown List.
 
         // only after control creation we can get dropdownObj otherwise it throws exception.
         var obj = $('#dropdown1').data("ejDropDownList");
@@ -250,7 +250,7 @@ export class DropDownListComponent {
 
 {% endhighlight %}
 
-![Using indicesin Angular DropDownList](Functionalities_images/Functionalities_img2.png)
+![Using indices in Angular Dropdown List](Functionalities_images/Functionalities_img2.png)
 
 I> To use "selectedIndices" property, you should enable either showCheckbox or multiSelectMode property First.
 
@@ -331,7 +331,7 @@ export class DropDownListComponent {
 
 ## Grouping
 
-The DropDownList items can be categorized by using a specific field in the popup list. This is enabled by using [groupBy](http://help.syncfusion.com/api/js/ejdropdownlist#members:fields-groupby) field on data source binding. By default grouping is disabled in DropDownList.
+The Dropdown List items can be categorized by using a specific field in the popup list. This is enabled by using [groupBy](http://help.syncfusion.com/api/js/ejdropdownlist#members:fields-groupby) field on data source binding. By default grouping is disabled in Dropdown List.
 The below given example explains the behavior of grouping with JSON array binding.
 
 {% highlight html %}
@@ -428,7 +428,7 @@ export class DropDownListComponent {
 
 {% endhighlight %}
 
-![Grouping in Angular DropDownList](Functionalities_images/Functionalities_img3.png)
+![Angular Dropdown List in Grouping](Functionalities_images/Functionalities_img3.png)
 
 I> Virtual scrolling is not supported with Grouping.
 
@@ -482,9 +482,9 @@ I> Virtual scrolling is not supported with Sorting.
 
 ## Cascading
 
-This works for series of DropDownList in which items are filtered based on the previous DropDownList‘s selection. Cascading is performed based on the value field and this field should be bounded with a foreign key. To perform cascading, specify the child DropDownList’s id in [cascadeTo](http://help.syncfusion.com/api/js/ejdropdownlist#members:cascadeto) property and use delimiter (“,”) to specify more than one child DropDownList.
+This works for series of Dropdown List in which items are filtered based on the previous Dropdown List‘s selection. Cascading is performed based on the value field and this field should be bounded with a foreign key. To perform cascading, specify the child Dropdown List’s id in [cascadeTo](http://help.syncfusion.com/api/js/ejdropdownlist#members:cascadeto) property and use delimiter (“,”) to specify more than one child DropdownL ist.
 
-Configuring the data items for cascading to the series of DropDownList is demonstrated below
+Configuring the data items for cascading to the series of Dropdown List is demonstrated below
 
 {% highlight html %}
 
@@ -603,9 +603,9 @@ export class DropDownListComponent {
 
 {% endhighlight %}
 
-![Sorting in Angular DropDownList](Functionalities_images/Functionalities_img5.png)
+![Angular Dropdown List Sorting](Functionalities_images/Functionalities_img5.png)
 
-![Cascading in Angular DropDownList](Functionalities_images/Functionalities_img6.jpeg)
+![Angular Dropdown List Cascading](Functionalities_images/Functionalities_img6.jpeg)
 
 ## Search
 
@@ -657,7 +657,7 @@ export class DropDownListComponent {
 
 {% endhighlight %}
 
-![Incremental Search in Angular DropDownList](Functionalities_images/Functionalities_img8.png)
+![Angular Dropdown List Incremental Search](Functionalities_images/Functionalities_img8.png)
 
 ### Filter search
 
@@ -710,11 +710,11 @@ export class DropDownListComponent {
 
 {% endhighlight %}
 
-![Filter search in Angular DropDownList](Functionalities_images/Functionalities_img9.png)
+![Angular Dropdown List Filter search](Functionalities_images/Functionalities_img9.png)
 
 ## Validation
 
-You can validate the DropDownList value on form submission by applying “validationRules” and “validationMessage” to the DropDownList. 
+You can validate the Dropdown List value on form submission by applying “validationRules” and “validationMessage” to the Dropdown List. 
 
 N> [jquery.validate.min](http://cdn.syncfusion.com/js/assets/external/jquery.validate.min.js) script file should be referred for validation, for more details, refer [here](http://jqueryvalidation.org/documentation).
 
@@ -728,7 +728,7 @@ You can set your own custom error message by using [validationMessage](https://h
 
 N> jQuery predefined error messages to that annotation attribute will be shown when this property is not defined. The below given example explain this behavior of ‘required’ attribute,
 
-When you initialize the DropDownList widget, it creates an input hidden element which is used to store the selected items value. Hence, the validation is performed based on the value stored in this hidden element.
+When you initialize the Dropdown List widget, it creates an input hidden element which is used to store the selected items value. Hence, the validation is performed based on the value stored in this hidden element.
 
 Required field and min value validation is demonstrated in the below given example.
 
@@ -801,5 +801,5 @@ export class DropDownListComponent {
 	
 {% endhighlight %}
 
-![Validation Messages in Angular DropDownList](Functionalities_images/Functionalities_img10.jpeg)
+![Angular Dropdown ListValidation Messages](Functionalities_images/Functionalities_img10.jpeg)
 

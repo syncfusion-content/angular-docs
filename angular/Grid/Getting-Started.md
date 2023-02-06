@@ -115,7 +115,7 @@ N> 2.Events can be bound to the control using the event name within bracket [`()
 
 {% endhighlight %}
 
-![Enable Paging in Angular Grid](Getting-started_images/Getting-started2_img2.png)
+![Angular Grid Enable Paging](Getting-started_images/Getting-started2_img2.png)
 {:.image }
 
 N> Pager settings can be customized by using the `pageSize` of [`pageSettings`](http://help.syncfusion.com/api/angular/ejgrid#members:pagesettings-pagesize) property. When it is not given the default values for `pageSize` and `pageCount` are 12 and 8 respectively.
@@ -160,7 +160,7 @@ N> Pager settings can be customized by using the `pageSize` of [`pageSettings`](
 {% endhighlight %}
 
 
-![Enable Filtering in Angular Grid](Getting-started_images/Getting-started2_img3.png)
+![Angular Grid in Enable Filtering](Getting-started_images/Getting-started2_img3.png)
 {:.image }
 
 ## Enable Grouping
@@ -202,7 +202,7 @@ N> Pager settings can be customized by using the `pageSize` of [`pageSettings`](
 {% endhighlight %}
 
 
-![Enable Grouping in Angular Grid](Getting-started_images/Getting-started2_img4.png)
+![Angular Grid in Enable Grouping](Getting-started_images/Getting-started2_img4.png)
 {:.image }
 
 Refer to the following code example for initial grouping.
@@ -243,7 +243,7 @@ export class AppComponent {
 {% endhighlight %}
 
 
-![Initial Grouping in Angular Grid](Getting-started_images/Getting-started2_img5.png)
+![Angular Grid in Initial Grouping](Getting-started_images/Getting-started2_img5.png)
 {:.image }
 
 
@@ -294,5 +294,5 @@ export class AppComponent {
 {% endhighlight %}
 
 
-![Add Summaries in Angular Grid](Getting-started_images/Getting-started2_img6.png)
+![Angular Grid in Add Summaries](Getting-started_images/Getting-started2_img6.png)
 {:.image }

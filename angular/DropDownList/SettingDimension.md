@@ -1,19 +1,19 @@
 ---
 layout: post
-title: Dimension in DropDownList widget | Syncfusion
-description: Learn here how to Set Dimensions to DropDownList widget in Syncfusion Essential Angular Application, its elements, and more. 
+title: Dimension in Dropdown List | Syncfusion
+description: Learn here how to Set Dimensions to Dropdown List widget in Syncfusion Angular Dropdown List, its elements, and more. 
 platform: Angular
-control: DropDownList
+control: Dropdown List
 documentation: ug
 ---
 
-# Dimension in DropDownList widget 
+# Dimension in Dropdown List 
 
 ## Widget Sizing
 
-### Fixed Size DropDownList widget
+### Fixed Size Dropdown List widget
 
-You can customize the widget dimensions using [width](http://help.syncfusion.com/api/js/ejdropdownlist#members:width) and [height](http://help.syncfusion.com/api/js/ejdropdownlist#members:height) properties. Fixed size values can be specified in pixel or percentage values. By default the DropDownList wrapper will be assigned with "143px" width and "30px" height.
+You can customize the widget dimensions using [width](http://help.syncfusion.com/api/js/ejdropdownlist#members:width) and [height](http://help.syncfusion.com/api/js/ejdropdownlist#members:height) properties. Fixed size values can be specified in pixel or percentage values. By default the Dropdown List wrapper will be assigned with "143px" width and "30px" height.
 
 ### Fixed size popup list
 
@@ -21,13 +21,13 @@ You can customize the popup list dimensions using [popupWidth](http://help.syncf
 
 ### Auto Sizing
 
-DropDownList is adaptive to mobile and web layout such that it is adjustable with screen resolution. The textbox will be rendered based on its parent containers dimensions on assigning 100% values to the width property. Default value for popupWidth is auto, so when you assign 100% to popupWidth then it will be rendered based on specified range.
+Dropdown List is adaptive to mobile and web layout such that it is adjustable with screen resolution. The textbox will be rendered based on its parent containers dimensions on assigning 100% values to the width property. Default value for popupWidth is auto, so when you assign 100% to popupWidth then it will be rendered based on specified range.
 
 ### Limit the number of items
 
 You can use [itemsCount](http://help.syncfusion.com/api/js/ejdropdownlist#members:itemscount) property to fetch only the specific number of items from the data source. To fetch the remaining items you can enable [virtual scrolling](databinding#virtual-scrolling) support which loads the data on scrolling the data items in popup list. 
 
-N> By default popup list is shown on DropDownList button click but you can display the list initially by enabling the [showPopupOnLoad](http://help.syncfusion.com/api/js/ejdropdownlist#members:showpopuponload) property. You can also use [showPopup ()](http://help.syncfusion.com/api/js/ejdropdownlist#methods:showpopup) or [hidePopup ()](http://help.syncfusion.com/api/js/ejdropdownlist#methods:hidepopup) methods at run time to display or hide the popup list.
+N> By default popup list is shown on Dropdown List button click but you can display the list initially by enabling the [showPopupOnLoad](http://help.syncfusion.com/api/js/ejdropdownlist#members:showpopuponload) property. You can also use [showPopup ()](http://help.syncfusion.com/api/js/ejdropdownlist#methods:showpopup) or [hidePopup ()](http://help.syncfusion.com/api/js/ejdropdownlist#methods:hidepopup) methods at run time to display or hide the popup list.
 
 {% highlight html %}
 
@@ -70,7 +70,7 @@ export class DropDownListComponent {
 
 {% endhighlight %}
 
-![Item List in Angular DropDownList](SettingDimension_images/SettingDimension_img1.png)
+![Angular Dropdown List in Item List](SettingDimension_images/SettingDimension_img1.png)
 
 ## Popup resizing 
 
@@ -166,6 +166,6 @@ export class DropDownListComponent {
 
 {% endhighlight %}
 
-![Popup resizing in Angular DropDownList](SettingDimension_images/SettingDimension_img2.png)
+![Angular Dropdown List in Popup resizing](SettingDimension_images/SettingDimension_img2.png)
 
-![customize the resize functionality in Angular DropDownList](SettingDimension_images/SettingDimension_img3.png)
+![Angular Dropdown List in customize the resize functionality](SettingDimension_images/SettingDimension_img3.png)
