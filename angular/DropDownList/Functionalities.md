@@ -1,12 +1,12 @@
 ---
 layout: post
-title: Functionalities in the DropDownList widget | Syncfusion
+title: Functionalities in the DropDownList | Syncfusion
 description: Learn here about Functionalities in the DropDownList widget in Syncfusion Essential Angular Application, its elements, and more. 
 platform: Angular
 control: DropDownList
 documentation: ug
 ---
-# Functionalities in the DropDownList widget
+# Functionalities in the DropDownList
 
 ## Selection
 
@@ -250,7 +250,7 @@ export class DropDownListComponent {
 
 {% endhighlight %}
 
-![Using indicesin Angular DropDownList](Functionalities_images/Functionalities_img2.png)
+![Using indices in Angular DropDownList](Functionalities_images/Functionalities_img2.png)
 
 I> To use "selectedIndices" property, you should enable either showCheckbox or multiSelectMode property First.
 

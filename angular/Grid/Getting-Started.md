@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Getting Started for Angular-2 Grid | Syncfusion 
-description: Learn here how to create the Grid, data bind, enable paging, grouping, filtering and add summaries in Syncfusion 
+description: Learn here more about getting started with Syncfusion Essential Angular Grid Control, its elements, and more.
 platform: Angular
 control: Grid
 documentation: ug
