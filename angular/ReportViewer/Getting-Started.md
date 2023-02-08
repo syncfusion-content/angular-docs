@@ -1,6 +1,6 @@
 ---
 title: Getting Started for Angular Syncfusion ReportViewer
-description: Learn here more about Getting started with Syncfusion Essential Angular ReportViewer Control, its elements, and more
+description: Learn here more about Getting started with Syncfusion Essential Angular ReportViewer Control, its elements, and more.
 platform: Angular
 control: ReportViewer
 documentation: ug
