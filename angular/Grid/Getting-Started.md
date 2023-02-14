@@ -9,7 +9,7 @@ keywords: ejGrid, Grid, Grid widget
 api: /api/Angular/grid
 ---
 
-# Getting Started for Angular-2 Grid
+# Getting Started for Angular Grid
 
 To get start with how to use the Grid component within Angular-2 platform, please refer the basic requisites and the configurations needs to be done on the system from [here](https://help.syncfusion.com/angular/gettingstarted/getting-started-systemjs).By following the above steps in the document, you can get the newly cloned **angular2-seeds** template sample folder.Grid control has been already configured in that **angular2-seeds** folder. So that you can use already existing Grid sample available in **src/grid** folder.
 
