@@ -9,7 +9,7 @@ documentation: ug
 
 # Essential JS 1 Angular Overview 
 
-Essential JavaScript provides support for [Angular](https://angular.io/docs/ts/latest/quickstart.html) Framework through wrappers. Each Syncfusion widgets are created as Angular components with built in support for data binding to make complex property definition easier.
+Essential JavaScript provides support for [Angular](https://angular.io/start) Framework through wrappers. Each Syncfusion widgets are created as Angular components with built in support for data binding to make complex property definition easier.
 
 The Syncfusion Angular components are named with prefix `ej` to avoid conflicting with other library component and offers the following features.
 
