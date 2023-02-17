@@ -7,7 +7,7 @@ documentation: ug
 keywords: ejReportViewer, ReportViewer, js ReportViewer
 ---
 
-# Getting Started with Essential Angular ReportViewer
+# Getting Started with Angular ReportViewer
 
 This section explains briefly about how to create a ReportViewer in your web application with Angular.
 
