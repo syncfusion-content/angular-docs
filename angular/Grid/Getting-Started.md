@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Getting Started for Angular-2 Grid
-description: How to create the Grid, data bind, enable paging, grouping, filtering and add summaries
+title: Getting Started with Angular Grid Control | Syncfusion 
+description: Learn here more about getting started with Syncfusion Essential Angular Grid Control, its elements, and more.
 platform: Angular
 control: Grid
 documentation: ug
@@ -9,7 +9,7 @@ keywords: ejGrid, Grid, Grid widget
 api: /api/Angular/grid
 ---
 
-# Getting started
+# Getting Started with Angular Grid
 
 To get start with how to use the Grid component within Angular-2 platform, please refer the basic requisites and the configurations needs to be done on the system from [here](https://help.syncfusion.com/angular/gettingstarted/getting-started-systemjs).By following the above steps in the document, you can get the newly cloned **angular2-seeds** template sample folder.Grid control has been already configured in that **angular2-seeds** folder. So that you can use already existing Grid sample available in **src/grid** folder.
 
@@ -65,7 +65,7 @@ If you want to know about the external and internal dependencies of the Grid con
 
 {% endhighlight %}
 
-![](Getting-started_images/Getting-started2_img1.jpeg)
+![Data Binding in Angular Grid](Getting-started_images/Getting-started2_img1.jpeg)
 {:.image }
 
 N> 1.In the above code snippet, `ej-grid` denotes the control directive for the Syncfusion's Grid Angular widget and all its properties can be initialized with the exact casing of original property names also binded within square bracket(`[]`).(For example, [dataSource]).
@@ -115,7 +115,7 @@ N> 2.Events can be bound to the control using the event name within bracket [`()
 
 {% endhighlight %}
 
-![](Getting-started_images/Getting-started2_img2.png)
+![Enable Paging in Angular Grid](Getting-started_images/Getting-started2_img2.png)
 {:.image }
 
 N> Pager settings can be customized by using the `pageSize` of [`pageSettings`](http://help.syncfusion.com/api/angular/ejgrid#members:pagesettings-pagesize) property. When it is not given the default values for `pageSize` and `pageCount` are 12 and 8 respectively.
@@ -160,7 +160,7 @@ N> Pager settings can be customized by using the `pageSize` of [`pageSettings`](
 {% endhighlight %}
 
 
-![](Getting-started_images/Getting-started2_img3.png)
+![Enable Filtering in Angular Grid](Getting-started_images/Getting-started2_img3.png)
 {:.image }
 
 ## Enable Grouping
@@ -202,7 +202,7 @@ N> Pager settings can be customized by using the `pageSize` of [`pageSettings`](
 {% endhighlight %}
 
 
-![](Getting-started_images/Getting-started2_img4.png)
+![Enable Grouping in Angular Grid](Getting-started_images/Getting-started2_img4.png)
 {:.image }
 
 Refer to the following code example for initial grouping.
@@ -243,7 +243,7 @@ export class AppComponent {
 {% endhighlight %}
 
 
-![](Getting-started_images/Getting-started2_img5.png)
+![Initial Grouping in Angular Grid](Getting-started_images/Getting-started2_img5.png)
 {:.image }
 
 
@@ -294,5 +294,5 @@ export class AppComponent {
 {% endhighlight %}
 
 
-![](Getting-started_images/Getting-started2_img6.png)
+![Add Summaries in Angular Grid](Getting-started_images/Getting-started2_img6.png)
 {:.image }
