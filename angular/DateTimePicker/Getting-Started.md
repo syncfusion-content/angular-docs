@@ -1,13 +1,13 @@
 ---
 layout: post
 title: Getting Started | DateTimePicker | Angular | Syncfusion
-description: getting started
+description: Learn here more about Getting Started with Syncfusion Essential Angular DateTimePicker Control, its elements, and more.
 platform: Angular
 control: DateTimePicker
 documentation: ug
 ---
 
-# Getting Started
+# Getting Started with Angular DateTimePicker
 
 This section discloses the details on how to render and configure a **DateTimePicker** component in an Angular-2 application.
 
