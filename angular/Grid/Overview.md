@@ -1,13 +1,13 @@
 ---
 title:  Grid widget for Syncfusion Essential Angular-2
-description: Overview of Grid control
+description: Learn here more about Overview support in Syncfusion Essential Angular Grid Control, its elements, and more.
 platform: Angular
 control: Grid
 documentation: ug
 keywords: ejGrid, Grid, Grid widget
 api: /api/Angular/grid
 ---
-# Overview
+# Overview in Angular Grid
 
 The Grid control for Angular is an efficient display engine for tabular data. It will pull data from a datasource, such as array of JSON objects, OData web services, or ej.DataManager; binding data fields to columns and displaying a column header to identify the field. It is a feature-rich control that provides extensive appearance customization options with support for grouped records. This Grid is very useful for generating complex grid-based reports with rich formatting. The most important features available in the Grid control for Angular are paging, sorting, filtering, searching, grouping, and editing
 
