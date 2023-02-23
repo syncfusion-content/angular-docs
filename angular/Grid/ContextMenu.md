@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Context Menu with Grid widget for Syncfusion Essential Angular-2
-description: Learn here about context menu in Syncfusion Essential Angular Grid Control, its elements, and more.
+description: Learn here about context menu support in Syncfusion Essential Angular Grid Control, its elements, and more.
 platform: Angular
 control: Grid
 documentation: ug
