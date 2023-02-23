@@ -67,7 +67,6 @@ export class DropDownListComponent {
             this.count = 3;
     }
 }
-
 {% endhighlight %}
 
 ![Angular DropDownList popup resize](SettingDimension_images/SettingDimension_img1.png)
