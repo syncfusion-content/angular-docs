@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Demension in DropDownList widget
-description: Setting Dimensions to DropDownList widget
+title: Setting Demension in Angular DropDownList Control | Syncfusion
+description: Learn here about Setting Dimensions in Syncfusion Essential Angular DropDownList Control, its elements, and more.
 platform: Angular
 control: DropDownList
 documentation: ug
 ---
 
-# Setting dimensions 
+# Setting dimensions in Angular DropDownList
 
 ## Widget Sizing
 
@@ -67,10 +67,9 @@ export class DropDownListComponent {
             this.count = 3;
     }
 }
-
 {% endhighlight %}
 
-![](SettingDimension_images/SettingDimension_img1.png)
+![Angular DropDownList popup resize](SettingDimension_images/SettingDimension_img1.png)
 
 ## Popup resizing 
 
@@ -166,6 +165,6 @@ export class DropDownListComponent {
 
 {% endhighlight %}
 
-![](SettingDimension_images/SettingDimension_img2.png)
+![Angular DropDownList setting dimension](SettingDimension_images/SettingDimension_img2.png)
 
-![](SettingDimension_images/SettingDimension_img3.png)
+![Angular DropDownList dimension](SettingDimension_images/SettingDimension_img3.png)
