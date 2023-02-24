@@ -1,13 +1,13 @@
 ---
 layout: post
 title: Context Menu with Grid widget for Syncfusion Essential Angular-2
-description: How to enable contextMenu and its functionalities  
+description: Learn here about context menu support in Syncfusion Essential Angular Grid Control, its elements, and more.
 platform: Angular
 control: Grid
 documentation: ug
 api: api/angular/ejgrid
 ---
-# Context Menu
+# Context Menu in Angular Grid
 
 Context menu is used to improve user action with Grid using popup menu. It can be shown by defining [`contextMenuSettings.enableContextMenu`](https://help.syncfusion.com/api/angular/ejgrid#members:contextmenusettings-enablecontextmenu "contextMenuSettings.enableContextMenu") as true. Context menu has option to add default items in [`contextMenuSettings.contextMenuItems`](https://help.syncfusion.com/api/angular/ejgrid#members:contextmenusettings-contextmenuitems "contextMenuSettings.contextMenuItems") and customized items in [`contextMenuSettings.customContextMenuItems`](https://help.syncfusion.com/api/angular/ejgrid#members:contextmenusettings-customcontextmenuitems "contextMenuSettings.customContextMenuItems").
 
@@ -184,17 +184,17 @@ export class GridComponent {
 
 {% endhighlight %}
 
-![](Context-Menu_images/ContextMenu_img1.png)
+![Angular Grid caption](Context-Menu_images/ContextMenu_img1.png)
 {:catption}
 
 Contextmenu at header
 
-![](Context-Menu_images/ContextMenu_img2.png)
+![Angular Grid ontextmenu at header](Context-Menu_images/ContextMenu_img2.png)
 {:catption}
 
 Contextmenu at body
 
-![](Context-Menu_images/ContextMenu_img3.png)
+![Angular Grid Contextmenu at body](Context-Menu_images/ContextMenu_img3.png)
 {:caption}
 
 Contextmenu at pager
@@ -250,7 +250,7 @@ export class GridComponent {
 
 
 {% endhighlight %}
-![](Context-Menu_images/ContextMenu_img4.png)
+![Angular Grid Sub Context Menu](Context-Menu_images/ContextMenu_img4.png)
 
 
 ## Sub Context Menu
@@ -302,7 +302,7 @@ export class GridComponent {
 }
 
 {% endhighlight %}
-![](Context-Menu_images/ContextMenu_img5.png)
+![Angular Grid Sub Context Menu with Template](Context-Menu_images/ContextMenu_img5.png)
 
 ## Sub Context Menu with Template
 
@@ -367,4 +367,4 @@ Place the js-render template in the "index.html" page.
 </script>
 
 {% endhighlight %}
-![](Context-Menu_images/ContextMenu_img5.png)
+![Angular Grid context menu](Context-Menu_images/ContextMenu_img5.png)
