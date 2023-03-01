@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Setting Demension in Angular DropDownList Control | Syncfusion
+title: Setting Dimension in Angular DropDownList Control | Syncfusion
 description: Learn here about Setting Dimensions in Syncfusion Essential Angular DropDownList Control, its elements, and more.
 platform: Angular
 control: DropDownList
