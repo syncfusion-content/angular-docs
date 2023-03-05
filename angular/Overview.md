@@ -7,7 +7,7 @@ control: Introduction
 documentation: ug
 --- 
 
-> The Syncfusion Angular components of Essential JavaScript 1 (jQuery-based widgets) are no longer actively developed, and the 2022 Volume 4 marked the last release. Users are encouraged to switch to the Syncfusion Angular components of Essential JS 2 library, which has been specifically designed to be lightweight and modular. Its size can be further optimized by including only the necessary controls and features for your application. For more information, please check out the Syncfusion Angular of Essential JS 2 library’s [documentation](https://ej2.syncfusion.com/angular/documentation/introduction) and [demo](https://ej2.syncfusion.com/angular/demos/#/bootstrap5/grid/overview).
+> The Syncfusion Angular components of Essential JavaScript 1 (jQuery-based widgets) are no longer actively developed, and the 2022 Volume 4 marked the last release. Users are encouraged to switch to the Syncfusion Angular components of the Essential JS 2 library, which has been specifically designed to be lightweight and modular. Its size can be further optimized by including only the necessary controls and features for your application. For more information, please check out the Syncfusion Angular of Essential JS 2 library’s [documentation](https://ej2.syncfusion.com/angular/documentation/introduction) and [demo](https://ej2.syncfusion.com/angular/demos/#/bootstrap5/grid/overview).
 
 # Essential JS 1 Angular Overview 
 
