@@ -1,12 +1,12 @@
 ---
 layout: post
-title: Localization in DropDownList widget
-description: Localization in DropDownList widget
+title: Localization in Angular DropDownList Control | Syncfusion
+description: Learn here about Localization support in Syncfusion Essential DropDownList Control, its elements, and more.
 platform: Angular
 control: DropDownList
 documentation: ug
 ---
-# Localization
+# Localization in Angular DropDownList
 
 The DropDownList provides option to localize its strings, it is used to adapting the DropDownList to a particular local language. By default, the DropDownList will use the US English (en-US) as its language.
 

@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Load on demand in DropDownList widget
-description: Load on demand in DropDownList widget
+title: Load on demand in Angular DropDownList Control | Syncfusion
+description: Learn here about Load on demand support in Syncfusion Essential DropDownList Control, its elements, and more.
 platform: AngularJS
 control: DropDownList
 documentation: ug
 keywords: loadOnDemand, DropDownList, dropdown
 
 ---
-## Load On Demand
+# Load On Demand in Angular DropDownList
 
 Load on demand feature allows the DropDownList items load on request from the service/database, during only on click the DropDown icon or DropDownList. This functionality helps to improve performance on control initial rendering time. Because data items load on request. 
 
@@ -55,4 +55,4 @@ export class DefaultComponent {
 
 {% endhighlight %}
 
-![](LoadOnDemand_images/loadondemand.png)
+![Angular DropDownList load on demand](LoadOnDemand_images/loadondemand.png)
