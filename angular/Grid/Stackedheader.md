@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Stacked Headers with Grid widget for Syncfusion Essential Angular-2
-description: How to stack column Header and customize it
+title: Stacked Headers in Angular Grid Control | Syncfusion
+description: Learn here about staked header in Syncfusion Essential Angular Grid Control, its elements, and more.
 platform: Angular
 control: Grid
 documentation: ug
 api: /api/angular/ejgrid
 ---
-# Stacked Headers
+# Stacked Headers in Essential Angular Grid
 
 The stacked headers helps you to group the logical columns in grid. It can be shown by setting [`showStackedHeader`](https://help.syncfusion.com/api/angular/ejgrid#members:showstackedheader "showStackedHeader") as `true` and by defining [`stackedHeaderRows`](https://help.syncfusion.com/api/angular/ejgrid#members:stackedheaderrows "stackedHeaderRows").
 
@@ -62,4 +62,4 @@ export class GridComponent {
 
 {% endhighlight %}
 
-![](Stackedheader_images/Stackedheader_img1.png)
+![Stacked header in Angular Grid](Stackedheader_images/Stackedheader_img1.png)
