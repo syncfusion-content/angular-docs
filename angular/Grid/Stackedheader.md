@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Stacked Headers in Angular Grid Control | Syncfusion
-description: Learn here about staked header in Syncfusion Essential Angular Grid Control, its elements, and more.
+description: Learn here about stacked headers in Syncfusion Essential Angular Grid Control, its elements, and more.
 platform: Angular
 control: Grid
 documentation: ug
@@ -62,4 +62,4 @@ export class GridComponent {
 
 {% endhighlight %}
 
-![Stacked header in Angular Grid](Stackedheader_images/Stackedheader_img1.png)
+![Stacked headers in Angular Grid](Stackedheader_images/Stackedheader_img1.png)
