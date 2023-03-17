@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Chart size
-description: Learn how to set Chart size and make it responsive. 
+title: Chart Dimension in Angular Chart Control | Syncfusion
+description: Learn here about chart dimensions support in Syncfusion Essential Angular Chart Control, its elements, and more.
 platform: Angular
 control: Chart
 documentation: ug
 ---
 
-# Chart Dimensions
+# Chart Dimensions in Essential Angular Chart
 
 You can set the size of the chart directly on the chart or to the container of the chart. When you do not specify the size, it takes 450px as the height and window size as its width, by default. 
 
@@ -36,7 +36,7 @@ You can also set the chart dimension by using the `size` property of the chart.
 
 {% endhighlight %}
 
-![](Chart-Dimensions_images/Chart-Dimensions_img1.png)
+![Set size in Angular Chart](Chart-Dimensions_images/Chart-Dimensions_img1.png)
 
 
 ## Setting size relative to the container size
@@ -53,7 +53,7 @@ N> Chart is using custom tag for rendering. For custom tag, default display styl
 
 {% endhighlight %}
 
-![](Chart-Dimensions_images/Chart-Dimensions_img2.png)
+![Responsive chart in Angular Chart](Chart-Dimensions_images/Chart-Dimensions_img2.png)
 
 
 ## Responsive chart
