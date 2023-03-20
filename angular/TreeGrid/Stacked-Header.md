@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Stacked-Header
-description: stacked header
+title: Getting Started with Angular TreeGrid Control | Syncfusion
+description: Learn here about stacked header support in Syncfusion Essential Angular TreeGrid Control, its elements, and more.
 platform: Angular
 control: TreeGrid
 documentation: ug
 api: /api/js/ejtreegrid
 
 ---
-# Stacked Headers
+# Stacked Headers in Angular TreeGrid Control
 
 The stacked headers helps you to group the logical columns in TreeGrid. It can be shown by setting `showStackedHeader` as `true` and by defining `stackedHeaderRows`.
 
@@ -54,7 +54,7 @@ export class AppComponent {
 
 {% endhighlight %}
 
-![](Stacked-header_images/Stacked-Header-img1.png)
+![Adding Stacked header columns in Angular TreeGrid](Stacked-header_images/Stacked-Header-img1.png)
 
 ## Stacked header column customization
 
@@ -102,7 +102,7 @@ write the below code in app.component.css file.
         }
 {% endhighlight %}
 
-![](Stacked-header_images/Stacked-Header-img2.png)
+![Customize stacked header cells in Angular TreeGrid](Stacked-header_images/Stacked-Header-img2.png)
 
 ### Text Align
 
@@ -136,7 +136,7 @@ export class AppComponent {
 }
 {% endhighlight %}
 
-![](Stacked-header_images/Stacked-Header-img4.png)
+![Text Align in Angular TreeGrid](Stacked-header_images/Stacked-Header-img4.png)
 
 ### Tooltip
 
@@ -176,7 +176,7 @@ export class AppComponent {
 }
 {% endhighlight %}
 
-![](Stacked-header_images/Stacked-Header-img3.png)
+![Tooltip in Angular TreeGrid](Stacked-header_images/Stacked-Header-img3.png)
 
 N>
 To enable stacked header tooltip we need to set `showGridCellTooltip` as `true`.
