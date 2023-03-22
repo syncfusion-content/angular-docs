@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Getting Started with Angular TreeGrid Control | Syncfusion
+title: Stacked Header in Angular TreeGrid Control | Syncfusion
 description: Learn here about stacked header support in Syncfusion Essential Angular TreeGrid Control, its elements, and more.
 platform: Angular
 control: TreeGrid
