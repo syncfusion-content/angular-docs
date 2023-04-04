@@ -1,13 +1,13 @@
 ---
 layout: post
-title:  Swimlanes
-description: Swimlanes
+title:  Swimlanes in Angular Kanaban Control | Syncfusion
+description: Learn here more about Swimlanes in Syncfusion Essential Angular Kanban Control, its elements, and more.
 documentation: ug
 platform: Angular
 keywords: swimlanes,kanban swimlanes
 ---
 
-## Swim lanes
+# Swim lanes in Angular Kanban
 
 Swim lanes are a horizontal categorization of issues in the Kanban control which brings transparency to the workflow. This can be enabled by mapping the [`swimlaneKey`](https://help.syncfusion.com/api/js/ejkanban#members:swimlaneKey) to appropriate column name in the [`dataSource`](https://help.syncfusion.com/api/js/ejkanban#members:datasource).
 
@@ -47,7 +47,7 @@ export class DefaultComponent {
 
 The following output is displayed as a result of the above code example.
 
-![](Swimlane_images/swimlane_img1.png)
+![Swim lanes in Angular Kanban](Swimlane_images/swimlane_img1.png)
 
 ## Drag And Drop between swim lanes
 
@@ -91,7 +91,7 @@ export class DefaultComponent {
 
 The following output is displayed as a result of the above code example.
 
-![](Swimlane_images/swimlane_img2.png)
+![Drag And Drop between swim lanes in Angular Kanban](Swimlane_images/swimlane_img2.png)
 
 ## Unassigned swim lane group
 
@@ -144,7 +144,7 @@ export class DefaultComponent {
 
 The output of the above code example.
 
-![](Swimlane_images/swimlane_img3.png)
+![Using default values in Angular Kanban](Swimlane_images/swimlane_img3.png)
 
 ### Using user defined values
 
@@ -186,4 +186,4 @@ export class DefaultComponent {
 
 The output of the above code example.
 
-![](Swimlane_images/swimlane_img4.png)
+![Using user defined values in Angular Kanban](Swimlane_images/swimlane_img4.png)
