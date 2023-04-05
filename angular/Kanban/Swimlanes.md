@@ -1,7 +1,7 @@
 ---
 layout: post
-title:  Swim lanes in Angular Kanaban Control | Syncfusion
-description: Learn here more about Swim lanes in Syncfusion Essential Angular Kanban Control, its elements, and more.
+title: Swimlanes in Angular Kanaban Control | Syncfusion
+description: Learn here more about Swimlanes in Syncfusion Essential Angular Kanban Control, its elements, and more.
 documentation: ug
 platform: Angular
 keywords: swimlanes,kanban swimlanes
