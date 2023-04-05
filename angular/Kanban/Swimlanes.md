@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Swimlanes in Angular Kanaban Control | Syncfusion
+title: Swimlanes in Angular Kanban Control | Syncfusion
 description: Learn here more about Swimlanes in Syncfusion Essential Angular Kanban Control, its elements, and more.
 documentation: ug
 platform: Angular
