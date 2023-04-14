@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Appearance and Styling in Angular Tab Control | Syncfusion
-description: Learn here about appearance and styling in Syncfusion Essential Angular TreeGrid Control, its elements, and more.
+description: Learn here about appearance and styling in Syncfusion Essential Angular Tab Control, its elements, and more.
 platform: Angular
 control: Tab
 documentation: ug
