@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Overview
-description: overview
+title: Overview of Angular Tile Control | Syncfusion
+description: Learn here more about Overview of Syncfusion Essential Angular Tile Control, its elements, and more.
 platform: Angular
 control: tile
 documentation: ug
 ---
 
-# Overview
+# Overview of Angular Tile 
 
 The Essential JavaScript Tile component provided with Angular support displays opaque rectangles or squares and they are arrayed on the start screen like a grid pattern. Tapping or selecting a Tile, launches the app or does some other action that is represented by the Tile. Tiles are arranged in a group separated by columns that looks like a start screen of a device and it can be either static or live.
 
