@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Add gridlines behind nodes and connectors to ease alignments
-description: How to add gridlines behind nodes and connectors?
+title: Gridlines in Angular Diagram Control | Syncfusion
+description: Learn here about adding gridlines behind nodes and connectors support in Syncfusion Essential Angular Diagram Control, its elements, and more.
 platform: Angular
 control: Diagram
 documentation: ug
 ---
 
-# Gridlines
+# Gridlines in Angular Diagram
 
 **Gridlines** are the pattern of lines drawn behind the Diagram elements. It provides a visual guidance while dragging or arranging the objects on the Diagram surface.
 
@@ -44,7 +44,7 @@ export class ModelComponent {
 
 {% endhighlight %}
 
-![](/angular/Diagram/Gridlines_images/Gridlines_img1.png)
+![Customize the gridlines visibility in Angular Diagram](/angular/Diagram/Gridlines_images/Gridlines_img1.png)
 
 To show only horizontal/vertical gridlines or to hide gridlines, refer to [Constraints](/angular/Diagram/Constraints#snapconstraints "Constraints")
 
@@ -82,7 +82,7 @@ export class ModelComponent {
 
 {% endhighlight %}
 
-![](/angular/Diagram/Gridlines_images/Gridlines_img4.png)
+![Appearance in Angular Diagram](/angular/Diagram/Gridlines_images/Gridlines_img4.png)
 
 ### Line Intervals
 
@@ -121,7 +121,7 @@ export class ModelComponent {
 
 {% endhighlight %}
 
-![](/angular/Diagram/Gridlines_images/Gridlines_img2.png)
+![Line Intervals in Angular Diagram](/angular/Diagram/Gridlines_images/Gridlines_img2.png)
 
 # Snapping
 
@@ -193,4 +193,4 @@ export class ModelComponent {
 
 {% endhighlight %}
 
-![](/angular/Diagram/Gridlines_images/Gridlines_img4.png)
+![Snap To Objects in Angular Diagram](/angular/Diagram/Gridlines_images/Gridlines_img4.png)
