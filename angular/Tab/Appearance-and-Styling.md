@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Appearance-and-Styling | Syncfusion
-description: appearance and styling
+title: Appearance and Styling in Angular Tab Control | Syncfusion
+description: Learn here about appearance and styling in Syncfusion Essential Angular Tab Control, its elements, and more.
 platform: Angular
 control: Tab
 documentation: ug
 ---
 
-# Appearance and Styling
+# Appearance and Styling in Angular Tab
 
 ## Header Image Customization
 
