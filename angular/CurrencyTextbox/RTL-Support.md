@@ -1,13 +1,13 @@
 ---
 layout: post
-title: RTL-Support
-description: rtl support
+title: RTL Support in Angular CurrencyTextBox Control | Syncfusion
+description: Learn here about RTL Support in Syncfusion Essential Angular CurrencyTextBox Control, its elements, and more.
 platform: Angular
 control: CurrencyTextBox  
 documentation: ug
 ---
 
-# RTL Support
+# RTL Support in Angular CurrencyTextBox
 
 The **Textbox** provides **RTL** (Right-To-Left) support. The alignment of CurrencyTextBox can be changed from **Left-To-Right** into **Right-To-Left**.
 
@@ -44,4 +44,4 @@ export class CurrencyTextboxComponent {
 
 The output for CurrencyTextBox when **enableRTL** is **“true”** is as follows. 
 
-![](/angular/CurrencyTextbox/RTL-Support_images/RTL-Support_img1.png)
+![Angular CurrencyTextBox RTL support](RTL-Support_images/RTL-Support_img1.png)

@@ -1,12 +1,12 @@
 ---
-title: Getting Started for CircularGauge
-description: How to create a circulargauge, add scales, enable tooltip and other functionalities
+title: Getting Started with Angular CircularGauge Control | Syncfusion
+description: Learn here about getting started with Syncfusion Essential Angular CircularGauge Control, its elements, and more.
 platform: Angular
 control: circulargauge
 documentation: ug
 keywords: ejcirculargauge, circulargauge, circulargauge widget, Angular circulargauge
 ---
-#Getting Started
+# Getting Started with Angular CircularGauge
 
 Before we start with the CircularGauge, please refer [this page](https://help.syncfusion.com/angular-2/overview) for general information regarding integrating Syncfusion widget’s.
 
@@ -210,7 +210,7 @@ npm start
 
 * Browse to [http://localhost:3000](http://localhost:3000) to see the application. And navigate to circularGauge tab. The component is rendered as like the below screenshot. You can make changes in the code found under src folder and the browser should auto-refresh itself while you save files. 
 
-![](Getting-started-images/Getting-Started_img1.png) 
+![Angular CircularGauge routes](Getting-started-images/Getting-Started_img1.png) 
 
 ## Set Background Color
 
@@ -227,7 +227,7 @@ You can draw the speedometer with dark background and to vary the speed of the p
 
 The above code example renders a **Gauge** as shown in the following screen shot.
 
-![](Getting-started-images/Getting-Started_img2.png)
+![Angular CircularGauge background color](Getting-started-images/Getting-Started_img2.png)
 
 ## Provide scale values
 
@@ -254,7 +254,7 @@ The above code example renders a **Gauge** as shown in the following screen shot
 
 On executing the above code, sample renders a **Circular Gauge** with customized labels as follows.
 
-![](Getting-started-images/Getting-Started_img3.png)
+![Angular CircularGauge scale value](Getting-started-images/Getting-Started_img3.png)
 
 ## Add Label Customization
 
@@ -279,7 +279,7 @@ To display the values in the **Gauge**, scale labels are used. You can customize
 
 On executing the above code, sample renders a default **Circular Gauge** with customized labels as follows.
 
-![](Getting-started-images/Getting-Started_img4.png)
+![Angular CircularGauge add label](Getting-started-images/Getting-Started_img4.png)
 
 ## Add pointer data
 
@@ -313,7 +313,7 @@ You can use three pointers that denote kilometer value, rotation per minute valu
 
 On executing the above code, sample renders a customized **Circular Gauge** as follows.
 
-![](Getting-started-images/Getting-Started_img5.png)
+![Angular CircularGauge add pointer](Getting-started-images/Getting-Started_img5.png)
 
 ## Add Tick Details
 
@@ -342,7 +342,7 @@ You can display the tick value with customization as given in the following code
 
 On executing the above code, sample renders a **Circular Gauge** with customized labels as follows.
 
-![](Getting-started-images/Getting-Started_img6.png)
+![Angular CircularGauge add ticks](Getting-started-images/Getting-Started_img6.png)
 
 ## Add Range Values
 
@@ -372,5 +372,5 @@ Ranges denote the property of scale value in the speedometer. The color values o
 
 On executing the above code, sample renders a **Circular Gauge** with customized range as follows.
 
-![](Getting-started-images/Getting-Started_img7.png)
+![Angular CircularGauge add range](Getting-started-images/Getting-Started_img7.png)
 

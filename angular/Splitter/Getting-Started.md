@@ -1,17 +1,17 @@
 ---
 layout: post
-title: Getting-Started
-description: getting started
+title: Getting Started with Angular Splitter Control | Syncfusion
+description: Learn here about getting started with Syncfusion Essential Angular Splitter Control, its elements, and more.
 platform: Angular
 control: Splitter
 documentation: ug
 ---
 
-# Getting Started
+# Getting Started with Angular Splitter
 
 This section helps to get started of the Splitter component in an Angular application.
 
-![](Getting_Started_images/Getting_Started_img1.png) 
+![Angular Splitter component](Getting_Started_images/Getting_Started_img1.png) 
 
 ## Create a Splitter
 

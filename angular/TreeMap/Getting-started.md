@@ -1,12 +1,12 @@
 ---
-title: Getting Started for TreeMap
-description: How to create a treemap, add levels, enable tooltip, colormapping and other functionalities
+title: Getting Started with Angular TreeMap Control | Syncfusion
+description: Learn here about getting started with Syncfusion Essential Angular TreeMap Control, its elements, and more.
 platform: Angular
 control: treemap
 documentation: ug
 keywords: ejtreemap, treemap, treemap widget, Angular treemap
 ---
-#Getting Started
+# Getting Started with Angular TreeMap
 
 Before we start with the TreeMap, please refer [this page](https://help.syncfusion.com/angular-2/overview) for general information regarding integrating Syncfusion widget’s.
 
@@ -272,7 +272,7 @@ npm start
 
 * Browse to [http://localhost:3000](http://localhost:3000) to see the application. And navigate to treemap tab. The component is rendered as like the below screenshot. You can make changes in the code found under src folder and the browser should auto-refresh itself while you save files. 
 
-![](Getting-started-images/Getting-Started_img1.png) 
+![Angular TreeMap group with level](Getting-started-images/Getting-Started_img1.png) 
 
 ## Group with Levels
 
@@ -302,7 +302,7 @@ The following code sample explains how to group TreeMap Items using ‘Levels’
 
 The following screenshot displays grouping of **TreeMap****Items** using **Levels**.
 
-![](Getting-started-images/Getting-Started_img2.png)
+![Angular TreeMap customize by range](Getting-started-images/Getting-Started_img2.png)
 
 ## Customize TreeMap by Range
 
@@ -337,7 +337,7 @@ The following code sample explains how to customize TreeMap appearance using Ran
 
 The following screenshot displays a customized **TreeMap** control. 
 
-![](Getting-started-images/Getting-Started_img3.png)
+![Angular TreeMap color with path](Getting-started-images/Getting-Started_img3.png)
 
 ## Enable Tooltip
 
@@ -384,7 +384,7 @@ You can customize the Leaf level TreeMap items using `leafItemSettings`. The Lab
 
 The following screenshot displays a ToolTip in a **TreeMap** control.
 
-![](Getting-started-images/Getting-Started_img5.png)
+![Angular TreeMap enable tooltip](Getting-started-images/Getting-Started_img5.png)
 
 ## Enable Legend
 
@@ -418,7 +418,7 @@ The following code sample illustrates how to add labels for legend in a TreeMap.
 
 The following screenshot displays labels in a **TreeMap** control. 
 
-![](Getting-started-images/Getting-Started_img6.png)
+![Angular TreeMap Label for Legend](Getting-started-images/Getting-Started_img6.png)
 
 N> Population data is referred from [List of continents by population](http://en.wikipedia.org/wiki/List_of_continents_by_population).
 
