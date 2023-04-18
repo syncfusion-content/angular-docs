@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Syncfusion appearance-and-styling
-description: appearance and styling
+title: Appearance and styling in Angular Dialog Control | Syncfusion
+description: Learn here about appearance and styling in Syncfusion Essential Angular Dialog Control, its elements, and more.
 platform: Angular
 control: Angular- Dialog
 documentation: ug
 ---
 
-## Appearance and styling
+# Appearance and styling in Angular Dialog
 
-### Showing header
+## Showing header
 
 In order to display any title for our dialog, we can use the **showHeader** property to display the header of the Dialog. By default, showHeader property is true in Dialog.	
 

@@ -1,13 +1,13 @@
 ---
 layout: post
-title: RTL Support
-description: RTL Support
+title: RTL Support in Angular Splitter Control | Syncfusion
+description: Learn here about RTL Support in Syncfusion Essential Angular Splitter Control, its elements, and more.
 platform: Angular
 control: Splitter
 documentation: ug
 ---
 
-# RTL Support
+# RTL Support in Angular Splitter
 
 **Splitter** provides you with **RTL (Right-To-Left)** support. The alignment of Splitter can be changed from Left-To-Right to Right-To-Left.
 
@@ -78,5 +78,5 @@ Define **“enableRTL”** property as true in constructor file.
 
 The output for Splitter when **enableRTL** is “true”.
 
-![](RTL-Support_images\RTL-Support_img1.png) 
+![Angular Splitter RTL support](RTL-Support_images\RTL-Support_img1.png) 
 
