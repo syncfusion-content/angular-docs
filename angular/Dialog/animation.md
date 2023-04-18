@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Syncfusion animation
-description: animation
+title: Animation in Angular Dialog Control | Syncfusion
+description: Learn here about animation support in Syncfusion Essential Angular Dialog Control, its elements, and more.
 platform: Angular
 control: Angular- Dialog
 documentation: ug
 ---
 
-## Animation
+# Animation in Angular Dialog
 
 The Dialog component can be animated while opening and closing the dialog.
 

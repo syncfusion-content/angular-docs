@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Printing option in Essential Angular Chart
-description: Learn how to print Chart 
+title: Printing option in Essential Angular Chart Control | Syncfusion
+description: Learn here about printing support in Syncfusion Essential Angular Chart Control, its elements, and more.
 form: Angular
 control: Chart
 documentation: ug
 ---
 
-# Printing Chart
+# Printing Chart in Angular Chart
 The rendered chart can be printed directly from the browser by calling the public method **print**. ID of the chart div element must be passed as argument to that method.
 
 {% highlight html %}
@@ -27,7 +27,7 @@ chartObj.print("container");
 
 This print method can be called by performing any action on the web page. For example, by clicking a button. While calling the print method in chart, print preview will be displayed in the browser.
 
-![](Printing_images/Printing_img1.png)
+![Angular Chart multiple chart](Printing_images/Printing_img1.png)
 
 [Click](http://ng2jq.syncfusion.com/#/chart/export) here to view the Printing chart online demo sample
 
@@ -55,7 +55,7 @@ chartObj.print("container1","container2");
 
 The Print preview of multiple Charts is shown below 
 
-![](Printing_images/Printing_img2.png)
+![Angular Chart page setup](Printing_images/Printing_img2.png)
 
 ## Page Setup
 

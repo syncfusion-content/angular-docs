@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Customization in DropDownList widget
-description: Customization in DropDownList widget 
+title: Customization in Angular DropDownList Control | Syncfusion
+description: Learn here about Customization in Syncfusion Essential Angular DropDownList Control, its elements, and more.
 platform: Angular
 control: DropDownList
 documentation: ug
 ---
 
-# Customization
+# Customization in Angular DropDownList
 
 ## Adding watermark text
 
@@ -54,9 +54,9 @@ export class DropDownListComponent {
 
 {% endhighlight %}
 
-![](Customization_images/Customization_img1.png)
+![Angular DropDownList customization](Customization_images/Customization_img1.png)
 
-![](Customization_images/Customization_img2.png)
+![Angular DropDownList watermark text](Customization_images/Customization_img2.png)
 
 ## Applying Rounded Corner
 
@@ -101,7 +101,7 @@ export class DropDownListComponent {
 
 {% endhighlight %}
 
-![](Customization_images/Customization_img3.png)
+![Angular DropDownList applying rounded corner](Customization_images/Customization_img3.png)
 
 I> The browser support details for rounded corner is given [here](http://www.w3schools.com/cssref/css3_pr_border-radius.asp).
 
@@ -150,7 +150,7 @@ export class DropDownListComponent {
 
 {% endhighlight %}
 
-![](Customization_images/Customization_img4.png)
+![Angular DropDownList enable disable](Customization_images/Customization_img4.png)
 
 N> you can disable/enable the single or multiple list items by using [disableItemsByIndices](http://help.syncfusion.com/api/js/ejdropdownlist#methods:disableitemsbyindices) and [enableItemsByIndices](http://help.syncfusion.com/api/js/ejdropdownlist#methods:enableitemsbyindices) property.
 
@@ -201,4 +201,4 @@ export class DropDownListComponent {
 
 {% endhighlight %}
 
-![](Customization_images/Customization_img5.png)
+![Angular DropDownList HTML Attributes](Customization_images/Customization_img5.png)
