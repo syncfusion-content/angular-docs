@@ -28,9 +28,9 @@ To getting started with Syncfusion Angular Components, the NPM packages [ej-angu
 
 ## Prerequisites
 
-* [Node JS](https://nodejs.org/en/)(v6.x.x or higher)
-* [NPM](https://docs.npmjs.com/getting-started/installing-node#install-npm--manage-npm-versions)(v4.x.x or higher)
-* [.NET Core SDK 2.1.*](https://www.microsoft.com/net/download/core#/current)
+* [Node JS](https://nodejs.org/en)(v6.x.x or higher)
+* [NPM](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm/)(v4.x.x or higher)
+* [.NET Core SDK 2.1.*](https://dotnet.microsoft.com/en-us/download#/current)
 
 ## Install the SPA Template
 
@@ -72,7 +72,7 @@ setx ASPNETCORE_ENVIRONMENT "Development"
 
 ![angular GettingStarted environmentvariable](Images/environmentvariable.png)
 
-N> To know more about environment variable refer the [link](https://blogs.msdn.microsoft.com/webdev/2017/02/14/building-single-page-applications-on-asp-net-core-with-javascriptservices/)
+N> To know more about environment variable refer the [link](https://devblogs.microsoft.com/dotnet/building-single-page-applications-on-asp-net-core-with-javascriptservices/)
 
 ## Configuration of Syncfusion Angular Component
 
@@ -433,7 +433,7 @@ export class AppModule { }
  * automatically update themselves. This includes Safari >= 10, Chrome >= 55 (including Opera),
  * Edge >= 13 on the desktop, and iOS 10 and Chrome on mobile.
  *
- * Learn more in https://angular.io/docs/ts/latest/guide/browser-support.html
+ * Learn more in https://angular.io/guide/browser-support
  */
 
 /***************************************************************************************************
@@ -470,7 +470,7 @@ import 'core-js/es7/reflect';
 
 /**
  * Required to support Web Animations `@angular/platform-browser/animations`.
- * Needed for: All but Chrome, Firefox and Opera. http://caniuse.com/#feat=web-animation
+ * Needed for: All but Chrome, Firefox and Opera. https://caniuse.com/web-animation
  **/
 // import 'web-animations-js';  // Run `npm install --save web-animations-js`.
 
