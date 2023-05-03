@@ -7,7 +7,7 @@ control: ListView
 documentation: ug
 ---
 
-# Virtual Scrolling in Angular ListView Control
+# Virtual Scrolling in Angular ListView
 
   We can load large data on demand using "allowVirtualScrolling" property. By default, "allowVirtualScrolling" set as boolean value of **"false"**. When it is set true, list items will be loaded on every scroll action. The number of items to be loaded per request can be specified using the “itemRequestCount” property.By default “itemRequestCount” value will be 5. We have provided two type of option for virtualScrolling,
 

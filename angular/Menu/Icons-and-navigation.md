@@ -7,7 +7,7 @@ control: Menu
 documentation: ug
 ---
 
-# Icons and navigation in Angular Menu Control
+# Icons and navigation in Angular Menu
 
 ## Icons
 
