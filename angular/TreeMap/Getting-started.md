@@ -14,7 +14,7 @@ Before we start with the TreeMap, please refer [this page](https://help.syncfusi
 
 To render the TreeMap control, the following list of external dependencies are needed, 
 
-* [jQuery](http://jquery.com) - 1.7.1 and later versions
+* [jQuery](https://jquery.com/) - 1.7.1 and later versions
 * [jsRender](https://github.com/borismoore/jsrender) - to render the templates
 * [Angular](https://angular.io/) - Angular latest versions
 
@@ -106,7 +106,7 @@ Create an HTML page and add the scripts references in the order mentioned in the
 
 {% endhighlight %}
 
-N> Uncompressed version of library files are also available which is used for development or debugging purpose and can be generated from the custom script [here](http://csg.syncfusion.com).
+N> Uncompressed version of library files are also available which is used for development or debugging purpose and can be generated from the custom script [here](https://csg.syncfusion.com/).
 
 ## Control Initialization
 
@@ -259,7 +259,7 @@ export class DataService{
 
 
 
-N> Population data is referred from [List of continents by population](http://en.wikipedia.org/wiki/List_of_continents_by_population).
+N> Population data is referred from [List of continents by population](https://en.wikipedia.org/wiki/List_of_continents_and_continental_subregions_by_population).
 
 
 ## Running the application
@@ -420,7 +420,7 @@ The following screenshot displays labels in a **TreeMap** control.
 
 ![Angular TreeMap Label for Legend](Getting-started-images/Getting-Started_img6.png)
 
-N> Population data is referred from [List of continents by population](http://en.wikipedia.org/wiki/List_of_continents_by_population).
+N> Population data is referred from [List of continents by population](https://en.wikipedia.org/wiki/List_of_continents_and_continental_subregions_by_population).
 
 
 

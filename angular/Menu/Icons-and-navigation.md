@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Icons-and-navigation
-description: icons and navigation
+title: Icons and navigation in Angular Menu Control | Syncfusion
+description: Learn here more about icons and navigation in Syncfusion Essential Angular Menu Control, its elements, and more.
 platform: Angular
 control: Menu
 documentation: ug
 ---
 
-# Icons and navigation
+# Icons and navigation in Angular Menu
 
 ## Icons
 
@@ -102,7 +102,7 @@ Add the following code in menu.component.css file.
 
 The following screenshot displays the output for the above code.                                                                                                       
 
-![](Icons-and-navigation_images/Icons-and-navigation_img1.png) 
+![Angular Menu with icons](Icons-and-navigation_images/Icons-and-navigation_img1.png) 
 
 N> Images for this sample are available in (installed location)\Syncfusion\Essential Studio\{{ site.releaseversion }}\JavaScript\samples\web\content\images<br/>
 
@@ -152,9 +152,9 @@ Add the following code in your **HTML** page.
 
 The following screenshot displays the output for the above code example.            
 
-![](Icons-and-navigation_images/Icons-and-navigation_img2.png) 
+![Angular Menu with navigation](Icons-and-navigation_images/Icons-and-navigation_img2.png) 
 
 
 When you click on “**Google**” that is present under “Search engine”, it navigates to the link that you specified in the sample code. Then the output is as follows.
 
-![](Icons-and-navigation_images/Icons-and-navigation_img3.png)
+![Angular Menu with icons and navigation](Icons-and-navigation_images/Icons-and-navigation_img3.png)

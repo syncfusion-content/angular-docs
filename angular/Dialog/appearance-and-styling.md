@@ -88,7 +88,7 @@ Add the following code in constructor file.
 {% endhighlight %}
 
 
-![Rounded Corner](appearance-and-styling_images\applying-rounded-corner_img1.png)
+![Angular Dialog Rounded Corner](appearance-and-styling_images\applying-rounded-corner_img1.png)
 
 ### Responsive Dialog:
 
@@ -123,5 +123,5 @@ Add the following code in constructor file.
 
 {% endhighlight %}
 
-![Attributes](appearance-and-styling_images\using-adding-html-attributes_img1.png)
+![Angular Dialog Attributes](appearance-and-styling_images\using-adding-html-attributes_img1.png)
 
