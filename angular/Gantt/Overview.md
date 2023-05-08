@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Overview
-description: overview
+title: Overview of Angular Gantt Control | Syncfusion
+description: Learn here more about Overview of Syncfusion Essential Angular Gantt Control, its elements, and more.
 platform: Angular
 control: Gantt
 documentation: ug
 ---
 
-# Overview
+# Overview of Angular Gantt
 
 The Essential Angular Gantt control is designed to visualize and edit the project schedule, and track the project progress. It helps to organize and schedule the projects and also you can update the project schedule through interactions like editing, dragging and resizing.
 
