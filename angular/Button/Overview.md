@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Overview
-description: overview
+title: Overview of Angular Button Control | Syncfusion
+description: Learn here about overview of Syncfusion Essential Angular Button Control, its elements and more.
 platform: Angular
 control: Button
 documentation: ug
 ---
 
-# Overview
+# Overview of Angular Button
 
 The **Essential JavaScript Button** control allows you to perform an action by clicking on it. The **Essential JavaScript Button** control has the feature of displaying both text and images. When the **Button** is clicked, it looks as if it is being pushed in and released.
 
