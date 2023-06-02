@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Virtual Scrolling in Angular Listvew control | Syncfusion
-description: Learn here about virtual scrolling support in Syncfusion Essential Angular ListView control, its elements and more.
+title: Virtual Scrolling in Angular Listvew Control | Syncfusion
+description: Learn here about virtual scrolling support in Syncfusion Essential Angular ListView Control, its elements and more.
 platform: Angular
 control: ListView
 documentation: ug
