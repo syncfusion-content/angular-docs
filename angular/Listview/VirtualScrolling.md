@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Virtual Scrolling
-description: virtual scrolling
+title: Virtual Scrolling in Angular Listvew control | Syncfusion
+description: Learn here about virtual scrolling support in Syncfusion Essential Angular ListView control, its elements and more.
 platform: Angular
 control: ListView
 documentation: ug
 ---
 
-# Virtual Scrolling
+# Virtual Scrolling in Angular Listvew
 
   We can load large data on demand using "allowVirtualScrolling" property. By default, "allowVirtualScrolling" set as boolean value of **"false"**. When it is set true, list items will be loaded on every scroll action. The number of items to be loaded per request can be specified using the “itemRequestCount” property.By default “itemRequestCount” value will be 5. We have provided two type of option for virtualScrolling,
 
