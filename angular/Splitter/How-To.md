@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Syncfusion Splitter How To section
-description: How To
+title: How To Section in Angular Splitter Control | Syncfusion
+description: Learn here all about how to section in Syncfusion Essential Angular Splitter control, its features, and more.
 platform: Angular
 control: Splitter
 documentation: ug
 ---
 
-# How To
+# How To Section in Angular Splitter
 
 ## Modify SplitBar size?
 
