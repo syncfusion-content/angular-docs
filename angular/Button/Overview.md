@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Overview of Angular Button Control | Syncfusion
-description: Learn here all about overview of Syncfusion Essential Angular Button control, its features, and more.
+description: Learn here all about overview of Syncfusion Essential Angular Button control, its elements, and more.
 platform: Angular
 control: Button
 documentation: ug

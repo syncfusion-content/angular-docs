@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Context Menu in Angular Menu Control | Syncfusion
-description: Learn here all about context menu support in Syncfusion Essential Angular Menu control, its features, and more.
+description: Learn here all about context menu support in Syncfusion Essential Angular Menu control, its elements, and more.
 platform: Angular
 control: Menu
 documentation: ug

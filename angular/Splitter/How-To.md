@@ -1,7 +1,7 @@
 ---
 layout: post
 title: How To Section in Angular Splitter Control | Syncfusion
-description: Learn here all about how to section in Syncfusion Essential Angular Splitter control, its features, and more.
+description: Learn here all about how to section in Syncfusion Essential Angular Splitter control, its elements, and more.
 platform: Angular
 control: Splitter
 documentation: ug

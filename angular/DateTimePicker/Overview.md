@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Overview of Angular DateTimePicker Control | Syncfusion
-description: Learn here all about overview of Syncfusion Essential Angular DateTimePicker control, its features, and more.
+description: Learn here all about overview of Syncfusion Essential Angular DateTimePicker control, its elements, and more.
 platform: Angular
 control: DateTimePicker
 documentation: ug
