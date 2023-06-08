@@ -1,13 +1,13 @@
 ---
 layout: post
-title: how-to
-description: How to
+title: How to section in Angular Dialog contral | Syncfusion
+description: Learn here all about how to section in Syncfusion Essential Angular Dialog control, its elements, and more.
 platform: Angular
 control: Angular- Dialog
 documentation: ug
 ---
 
-## How To?
+# How To with Angular Dialog
 
 ### Create Multiple Dialogs
 
