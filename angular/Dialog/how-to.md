@@ -1,15 +1,15 @@
 ---
 layout: post
-title: How to section in Angular Dialog contral | Syncfusion
+title: How To Section in Angular Dialog contral | Syncfusion
 description: Learn here all about how to section in Syncfusion Essential Angular Dialog control, its elements, and more.
 platform: Angular
 control: Angular- Dialog
 documentation: ug
 ---
 
-# How To with Angular Dialog
+# How To Section in Angular Dialog
 
-### Create Multiple Dialogs
+## Create Multiple Dialogs
 
 The Essential Angular Dialog can support multiple Dialog components in the same web page with different contents and different functionalities.
 
