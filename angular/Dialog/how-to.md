@@ -1,6 +1,6 @@
 ---
 layout: post
-title: How To Section in Angular Dialog contral | Syncfusion
+title: How To Section in Angular Dialog Control | Syncfusion
 description: Learn here all about how to section in Syncfusion Essential Angular Dialog control, its elements, and more.
 platform: Angular
 control: Angular- Dialog
