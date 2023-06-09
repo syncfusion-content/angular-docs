@@ -93,7 +93,7 @@ export class ComponentName {
 
 {% endhighlight %}
 
-N> We recommend you to go through the [quick start](https://angular.io/guide/quickstart) of Angular application to get deeper knowledge of setup and structure of the application.
+N> We recommend you to go through the [quick start](https://angular.io/start) of Angular application to get deeper knowledge of setup and structure of the application.
 
 ## Consuming ej-angular2 library
 
@@ -496,8 +496,8 @@ npm start
 
 * Browse to http://localhost:3000 to see the application. And navigate to Dialog tab. The component is rendered as like the below screenshot. You can make changes in the code found under src folder and the browser should auto-refresh itself while you save files.
 
-![Essential JS 1 for Angular with SystemJS](Images/getting-started-output.png) 
+![Essential JS 1 for Angular with getting started SystemJS](images/angular-getting-started-systemjs-output.png) 
 
 ## Demos
 
-We have implemented our [Angular sample browser](http://ng2jq.syncfusion.com/) using Syncfusion Angular components.
+We have implemented our [Angular sample browser](https://ej2.syncfusion.com/home/angular.html#platform/index.html) using Syncfusion Angular components.
