@@ -105,7 +105,7 @@ export class ComponentName {
 
 {% endhighlight %}
 
-N> We recommend you to go through the [quick start](https://angular.io/guide/quickstart) of Angular application to get deeper knowledge of setup and structure of the application.
+N> We recommend you to go through the [quick start](https://angular.io/start) of Angular application to get deeper knowledge of setup and structure of the application.
 
 ## Configuration of Syncfusion JavaScript Widget Dependencies
 
@@ -499,8 +499,8 @@ npm start
 
 N> if you want to use other port, open `package.json` file, then change port in `--port 3000` script and also change the port in `config/webpack.dev.js`.
 
-![Essential JS 1 for Angular with Webpack](Images/getting-started-output.png) 
+![Essential JS 1 for Angular getting started with Webpack](images/angular-getting-started-with-webpack-output.png) 
  
 ## Demos
 
-We have implemented our [Angular sample browser](http://ng2jq.syncfusion.com/) using Syncfusion Angular components.
+We have implemented our [Angular sample browser](https://ej2.syncfusion.com/home/angular.html#platform/index.html) using Syncfusion Angular components.
