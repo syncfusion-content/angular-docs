@@ -123,7 +123,7 @@ export class ModelComponent {
 
 ![Line Intervals in Angular Diagram](/angular/Diagram/Gridlines_images/Gridlines_img2.png)
 
-# Snapping
+## Snapping
 
 ## Snap To Lines
 
