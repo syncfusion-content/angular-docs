@@ -109,7 +109,7 @@ export class AppComponent {
 
 {% endhighlight %}
 
-![Appearance and Styling in Angular ListBox](Appearance-and-Styling_images/Appearance-and-Styling_img1.png)
+![Appearance and Styling in Angular ListBox](appearance-and-styling_images/angular-listbox-appearance-and-styling.png)
 
 ## Css Class
 
@@ -205,5 +205,5 @@ Add the following code in your style section.
 
 {% endhighlight %}
 
-![CSS Class in Angular ListBox](Appearance-and-Styling_images/Appearance-and-Styling_img2.png)
+![CSS Class in Angular ListBox](appearance-and-styling_images/angular-listbox-css-class.png)
 
