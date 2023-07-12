@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Appearance-and-Styling | ListBox | Angular | Syncfusion
-description: Learn here about Appearance and Styling in Syncfusion Essential Angular ListBox Control, its elements, and more.
+title: Appearance-And-Styling | ListBox | Angular | Syncfusion
+description: Learn here about Appearance And Styling in Syncfusion Essential Angular ListBox Control, its elements, and more.
 platform: Angular
 control: ListBox
 documentation: ug
 ---
 
-# Appearance and Styling in Angular ListBox 
+# Appearance And Styling in Angular ListBox 
 
 ## Theme
 
