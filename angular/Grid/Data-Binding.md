@@ -63,7 +63,7 @@ The following output is displayed as a result of the above code example.
 
 
 N> 1. There is no in-built support to bind the XML data to the grid. But you can achieve this requirement with the help of [`custom adaptor`]concept. 
-N> 2. Refer this [Knowledge Base link](http://www.syncfusion.com/kb/3377/how-to-process-xml-data-from-server-using-datamanager-and-bound-to-grid#) for bounding XML data to grid using custom adaptor. 
+N> 2. Refer this [Knowledge Base link](https://support.syncfusion.com/kb/article/3562/how-to-process-xml-data-from-server-using-datamanager-and-bound-to-aspnet-mvc-grid) for bounding XML data to grid using custom adaptor. 
 
 ## Remote Data
 
@@ -71,7 +71,7 @@ To bind remote data to Grid Control, you can assign a service data as an instanc
 
 ### OData
 
-OData is a standardized protocol for creating and consuming data. You can provide the [OData service](http://www.odata.org/#) URL directly to the `ej.DataManager` class and then you can assign it to Grid [`dataSource`](https://help.syncfusion.com/api/angular/ejgrid#members:datasource "dataSource").
+OData is a standardized protocol for creating and consuming data. You can provide the [OData service](https://www.odata.org/) URL directly to the `ej.DataManager` class and then you can assign it to Grid [`dataSource`](https://help.syncfusion.com/api/angular/ejgrid#members:datasource "dataSource").
 
 The following code example describes the above behavior.
 
@@ -159,7 +159,7 @@ The following code example describes the above behavior.
 	
 {% endhighlight %}
 
-{% seealso %}For further details about OData service please refer to [this link](http://www.odata.org/#). {% endseealso %}
+{% seealso %}For further details about OData service please refer to [this link](https://www.odata.org/#). {% endseealso %}
 
 
 ### WebAPI

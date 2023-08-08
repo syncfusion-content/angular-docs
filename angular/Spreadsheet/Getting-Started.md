@@ -15,13 +15,13 @@ This section explains you the steps required to populate the Spreadsheet with da
 
 To render the Spreadsheet control, the following list of external dependencies are needed, 
 
-* [jQuery](http://jquery.com) - 1.7.1 and later versions
+* [jQuery](https://jquery.com/) - 1.7.1 and later versions
 
 The required Angular script as `ej.angular2.min.js` which can be available in below `CDN` link:
 
-* [http://cdn.syncfusion.com/14.3.0.52/js/common/ej.angular2.min.js](http://cdn.syncfusion.com/14.3.0.52/js/common/ej.angular2.min.js)
+* [https://cdn.syncfusion.com/14.3.0.52/js/common/ej.angular2.min.js](https://cdn.syncfusion.com/14.3.0.52/js/common/ej.angular2.min.js)
 
-For other required internal dependencies refer the [`link`](http://help.syncfusion.com/js/spreadsheet/dependencies "link")
+For other required internal dependencies refer the [`link`](https://help.syncfusion.com/js/spreadsheet/dependencies "link")
 
 N> Spreadsheet uses one or more sub-controls, therefore refer the `ej.web.all.min.js` (which encapsulates all the `ej` controls and frameworks in a single file) in the application instead of referring all the above specified internal dependencies. 
 
@@ -54,8 +54,8 @@ So the complete boilerplate code is
 
 {% endhighlight %}
 
-N> In production, we highly recommend you to use our [`custom script generator`](http://helpjs.syncfusion.com/js/custom-script-generator)  to create custom script file with required controls and its dependencies only. Also to reduce the file size further please use [`GZip compression`](https://developers.google.com/web/fundamentals/performance/optimizing-content-efficiency/optimize-encoding-and-transfer?hl=en) in your server.
-N> For themes, you can use the `ej.web.all.min.css` CDN link from the code example given. To add the themes in your application, please refer to [`this link`](http://help.syncfusion.com/js/theming-in-essential-javascript-components).
+N> In production, we highly recommend you to use our [`custom script generator`](https://help.syncfusion.com/js/custom-script-generator)  to create custom script file with required controls and its dependencies only. Also to reduce the file size further please use [`GZip compression`](https://developers.google.com/web/fundamentals/performance/optimizing-content-efficiency/optimize-encoding-and-transfer?hl=en) in your server.
+N> For themes, you can use the `ej.web.all.min.css` CDN link from the code example given. To add the themes in your application, please refer to [`this link`](https://help.syncfusion.com/js/theming-in-essential-javascript-components).
 
 ## Initialize Spreadsheet
 
@@ -131,7 +131,7 @@ Now, this section explains how to populate JSON data to the Spreadsheet. You can
 
 ![Getting-Started](Getting-Started_images/Getting-Started_img2.png)
 
-N> For more details about `data binding` refer following [`link`](http://help.syncfusion.com/angular-2/spreadsheet/data-binding "link")
+N> For more details about `data binding` refer following [`link`](https://help.syncfusion.com/angular/spreadsheet/data-binding "link")
 
 ## Apply Conditional Formatting
 
@@ -146,7 +146,7 @@ Conditional formatting helps you to apply formats to a cell or range with certai
     </ej-spreadsheet>
 {% endhighlight %}
 
-To apply conditional formats for a range use [`setCFRule`](http://help.syncfusion.com/js/api/ejspreadsheet#methods:xlcformat-setcfrule "setCFRule") method. The following code example illustrates this,
+To apply conditional formats for a range use [`setCFRule`](https://help.syncfusion.com/api/js/ejspreadsheet#methods:xlcformat-setcfrule "setCFRule") method. The following code example illustrates this,
 
 {% highlight ts %}
 
@@ -174,7 +174,7 @@ export class AppComponent {
 
 ![Getting-Started](Getting-Started_images/Getting-Started_img3.png)
 
-N> For more details about `Conditional Formatting` refer following [`link`](http://help.syncfusion.com/angular-2/spreadsheet/data-presentation#conditional-formatting "link")
+N> For more details about `Conditional Formatting` refer following [`link`](https://help.syncfusion.com/angular/spreadsheet/data-presentation#conditional-formatting "link")
 
 ## Export Spreadsheet as Excel File
 
@@ -205,7 +205,7 @@ The Spreadsheet can save its data, style, format into an excel file. To enable s
   
 {% endhighlight %}
 
-Use shortcut [`Ctrl + S`](http://help.syncfusion.com/angular-2/spreadsheet/keyboard-shortcuts "Ctrl + S") to save Spreadsheet as excel file.
+Use shortcut [`Ctrl + S`](https://help.syncfusion.com/angular/spreadsheet/keyboard-shortcuts "Ctrl + S") to save Spreadsheet as excel file.
 
-N> 1. For more details about `Export` refer following [`link`](http://help.syncfusion.com/angular-2/spreadsheet/open-and-save#save "link")
-N> 2. For more details about `Server Configuration` refer following [`link`](http://help.syncfusion.com/angular-2/spreadsheet/open-and-save#server-configuration "link")
+N> 1. For more details about `Export` refer following [`link`](https://help.syncfusion.com/angular/spreadsheet/open-and-save#save "link")
+N> 2. For more details about `Server Configuration` refer following [`link`](https://help.syncfusion.com/angular/spreadsheet/open-and-save#server-configuration "link")
