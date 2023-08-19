@@ -713,7 +713,7 @@ The following output is displayed as a result of the above code example.
 
 [Expression](https://help.syncfusion.com/api/angular/ejgrid#members:columns-template "Expression") column is possible only for [`template`](https://help.syncfusion.com/api/angular/ejgrid#members:columns-template "template") column.
 
-You can use JsRender syntax in the template.For more information about JsRender syntax, please refer [the link](http://www.jsviews.com/#jsrapi "the link"). 
+You can use JsRender syntax in the template.For more information about JsRender syntax, please refer [the link](https://www.jsviews.com/#jsrapi "the link"). 
 
 N> This expression column is supported at read only mode.
 

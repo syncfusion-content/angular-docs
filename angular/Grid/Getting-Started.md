@@ -118,12 +118,12 @@ N> 2.Events can be bound to the control using the event name within bracket [`()
 ![Angular Grid Enable Paging](Getting-started_images/Getting-started2_img2.png)
 {:.image }
 
-N> Pager settings can be customized by using the `pageSize` of [`pageSettings`](http://help.syncfusion.com/api/angular/ejgrid#members:pagesettings-pagesize) property. When it is not given the default values for `pageSize` and `pageCount` are 12 and 8 respectively.
+N> Pager settings can be customized by using the `pageSize` of [`pageSettings`](https://help.syncfusion.com/api/angular/ejgrid#members:pagesettings-pagesize) property. When it is not given the default values for `pageSize` and `pageCount` are 12 and 8 respectively.
 
 
 ## Enable Filtering
 
-[`Filtering`](https://help.syncfusion.com/angular/grid/filter) can be enabled by setting the [`allowFiltering`](https://help.syncfusion.com/api/angular/ejgrid#members:allowfiltering) to be `true`. By default, the filter bar row is displayed to perform filtering, you can change the filter type by using `filterType` of [`filterSetting`](http://help.syncfusion.com/api/angular/ejgrid#members:filtersettings) property.
+[`Filtering`](https://help.syncfusion.com/angular/grid/filter) can be enabled by setting the [`allowFiltering`](https://help.syncfusion.com/api/angular/ejgrid#members:allowfiltering) to be `true`. By default, the filter bar row is displayed to perform filtering, you can change the filter type by using `filterType` of [`filterSetting`](https://help.syncfusion.com/api/angular/ejgrid#members:filtersettings) property.
 
 
 {% highlight html %}
@@ -165,7 +165,7 @@ N> Pager settings can be customized by using the `pageSize` of [`pageSettings`](
 
 ## Enable Grouping
 
-[`Grouping`](https://help.syncfusion.com/angular/grid/grouping) can be enabled by setting the [`allowGrouping`](http://help.syncfusion.com/api/angular/ejgrid#members:allowgrouping) to `true`.  Columns can be grouped dynamically by drag and drop the grid column header to the group drop area. The initial grouping can be done by adding required column names in the `groupedColumns` of [`groupSettings`](http://help.syncfusion.com/api/angular/ejgrid#members:groupsettings-groupedcolumns) property. 
+[`Grouping`](https://help.syncfusion.com/angular/grid/grouping) can be enabled by setting the [`allowGrouping`](https://help.syncfusion.com/api/angular/ejgrid#members:allowgrouping) to `true`.  Columns can be grouped dynamically by drag and drop the grid column header to the group drop area. The initial grouping can be done by adding required column names in the `groupedColumns` of [`groupSettings`](https://help.syncfusion.com/api/angular/ejgrid#members:groupsettings-groupedcolumns) property. 
 
 
 {% highlight html %}
@@ -249,7 +249,7 @@ export class AppComponent {
 
 ## Add Summaries
 
-[`Summaries`](https://help.syncfusion.com/angular/grid/summary) can be added by setting the [`showSummary`](http://help.syncfusion.com/api/angular/ejgrid#members:showsummary) to true and adding required summary rows and columns in the [`summaryRows`](http://help.syncfusion.com/api/angular/ejgrid#members:summaryrows) property. For demonstration, Freight column's sum value is displayed as summary.
+[`Summaries`](https://help.syncfusion.com/angular/grid/summary) can be added by setting the [`showSummary`](https://help.syncfusion.com/api/angular/ejgrid#members:showsummary) to true and adding required summary rows and columns in the [`summaryRows`](https://help.syncfusion.com/api/angular/ejgrid#members:summaryrows) property. For demonstration, Freight column's sum value is displayed as summary.
 
 {% highlight html %}
 
