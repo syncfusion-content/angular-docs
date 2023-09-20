@@ -446,7 +446,7 @@ Example
 
 <ts name="ej.datavisualization.Barcode.SymbologyType"/>
 
-Specifies the type of the Barcode. See <a href="global.html#SymbologyType">SymbologyType</a>
+Specifies the type of the Barcode. See <a href="api-reference#members:symbologytype">SymbologyType</a>
 <table class="params">
     <thead>
         <tr>
