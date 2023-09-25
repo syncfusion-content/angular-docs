@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  Getting Started with Angular on ASP.NET Core using Visual Studio 2015
-description: Overview of Syncfusion Essential Angular
+description: Learn here about overview in Syncfusion Essential Angular Control, its elements, and more.
 platform: Angular
 control: Introduction
 documentation: ug
@@ -34,7 +34,7 @@ ASP.NET Core is a cross-platform framework for building applications such as web
 
 * Create a new ASP.NET Core project in VS2015 and select Empty as template.
 
-![](/angular/GettingStarted/Images/createapp.png)
+![Create Empty Application in Angular](/angular/GettingStarted/Images/createapp.png)
 
 ## Configuration of Angular application
 
@@ -111,10 +111,10 @@ Refer the below code snippet for packages used in our application.
 
 {% endhighlight %}
 
-![](/angular/GettingStarted/Images/restore.png)
+![Configuration of Angular application](/angular/GettingStarted/Images/restore.png)
 
 
-![](/angular/GettingStarted/Images/npmpackages.png)
+![NPM Configuration file in Angular](/angular/GettingStarted/Images/npmpackages.png)
 
 N> If the packages are not installed properly try the below steps in the sample's root folder.
 
@@ -122,7 +122,7 @@ N> If the packages are not installed properly try the below steps in the sample'
 * npm install 
 * Refer the below screenshot to check whether the `External Web Tools` are arranged in that specified order in Visual Studio 2015 (`Tools->options->Projects and Solutions->External Web Tools`)
 
-![](/angular/GettingStarted/Images/path.png)
+![External Web Tools in Angular](/angular/GettingStarted/Images/path.png)
 
 * Copy the `src` folder in `Solution Explorer` from our [systemJS cloned seed](https://github.com/syncfusion/angular2-seeds/tree/systemjs) application. The cloned Angular-seed consists of following files.
 
@@ -289,12 +289,12 @@ gulp.task('default', ['watch', 'ts', 'copy:lib', 'copy:systemjs', 'copy:html', '
 {% endhighlight %}
 Once, you are finished with adding all Angular application files, you need to run the every gulp tasks via `View->Other Windows->Task Runner Explorer`.
 
-![](/angular/GettingStarted/Images/gulptask.png)
+![Task Runner Explorer in Angular](/angular/GettingStarted/Images/gulptask.png)
 
 
 N> If we run our application, we will get a following typescript error while building the application. Because the Gulp task `ts` will do the same work of typescript compiler.
 
-![](/angular/GettingStarted/Images/tscerror.png)
+![Typescript Error in Angular](/angular/GettingStarted/Images/tscerror.png)
 
 So, we should disable the typescript compiler in our Angular environment.
 
@@ -808,4 +808,4 @@ gulp.task('default', ['watch', 'ts', 'copy:lib', 'copy:systemjs', 'copy:html', '
 
 * To run the application, press `Ctrl+F5`.
 
-![](/angular/GettingStarted/Images/output.png)
+![Run the Application in Angular](/angular/GettingStarted/Images/output.png)

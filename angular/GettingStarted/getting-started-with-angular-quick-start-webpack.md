@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Integration of Syncfusion Angular components into Angular Quick Start - Webpack
-description: Overview of Syncfusion Essential Angular.
+description: Learn here about Overview in Syncfusion Essential Angular Control, its elements, and more.
 platform: Angular
 control: Introduction
 documentation: ug
@@ -391,7 +391,7 @@ npm start
 
 N> If you get the following error, you need to refer the corresponding image type `cur` in `config/webpack.common.js` file. 
 
-![](/angular/GettingStarted/Images/cssloader.png)
+![Run Application error in Angular](/angular/GettingStarted/Images/cssloader.png)
 
 * Refer the below code snippet to refer the image type `cur`.
 {% highlight javascript %}
@@ -433,7 +433,7 @@ module.exports = {
 
 N>If you get typescript error like in the below image, then we should include the typings dependencies `node and jasmine` in `src/tsconfig.json` file.
 
-![](/angular/GettingStarted/Images/typingsissue.png)
+![Transcripted Error in Angular](/angular/GettingStarted/Images/typingsissue.png)
 
 {% highlight javascript %}
 
@@ -460,4 +460,4 @@ N>If you get typescript error like in the below image, then we should include th
 
 {% endhighlight %}
 
-![](/angular/GettingStarted/Images/webpackoutput.png)
+![Run the Application in Angular](/angular/GettingStarted/Images/webpackoutput.png)

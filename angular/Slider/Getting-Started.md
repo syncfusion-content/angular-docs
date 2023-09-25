@@ -1,13 +1,13 @@
 ---
-title: Getting Started for Angular Slider
-description: Getting Started for Angular Slider
+title: Getting Started for Angular Slider | Syncfusion 
+description: Learn here about getting started with Angular Slider in Syncfusion Essential Angular Slider Control, its elements, and more.
 platform: Angular
 control: Slider
 documentation: Ug
 keywords: ejslider, js slider, slider
 ---
 
-# Getting Started
+# Getting Started with Angular Slider
 
 This section explains briefly about how to create a **Slider** control in your application with **Angular**.
 
@@ -125,7 +125,7 @@ npm start
 
 N> if you want to use other port, open `package.json` file, then change port in `--port 3000` script and also change the port in `config/webpack.dev.js`.
 
-![](Getting-Started_images/Getting-Started_img1.jpg)
+![Running the Web Pack application in Angular Slider](Getting-Started_images/Getting-Started_img1.jpg)
 
 ## Create Slider in Angular Application using SystemJS  
 
@@ -239,5 +239,5 @@ npm start
 
 * Browse to [http://localhost:3000](http://localhost:3000) to see the application. And navigate to Slider tab. The component is rendered as like the below screenshot. You can make changes in the code found under src folder and the browser should auto-refresh itself while you save files. 
 
-![](Getting-Started_images/Getting-Started_img1.jpg)
+![Running the SystemJS application in angular Slider](Getting-Started_images/Getting-Started_img1.jpg)
 
