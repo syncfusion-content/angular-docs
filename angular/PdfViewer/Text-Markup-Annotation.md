@@ -1,5 +1,5 @@
 ---
-title: Text markup annotation | PDF viewer component | Syncfusion
+title: Text markup annotation in Angular PDF viewer component | Syncfusion
 description: Learn here about Text markup annotation in Syncfusion Essential Angular PDF Viewer component, its elements, and more.
 platform: Angular
 control: PDF viewer
