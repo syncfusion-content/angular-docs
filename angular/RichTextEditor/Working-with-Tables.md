@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Working with Tables | Angular RichTextEditor | Syncfusion
+title: Working with Tables in Angular RichTextEditor | Syncfusion
 description: Learn here about Working with Tables in Syncfusion Essential Angular RichTextEditor Control, its elements, and more.
 platform: Angular
 control: RichTextEditor

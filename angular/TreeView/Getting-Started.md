@@ -1,6 +1,6 @@
 ---
-title: Getting Started for Angular TreeView | Syncfusion
-description: Learn here about getting started for Angular TreeView in Syncfusion Essential Angular Treeview Control, its elements, and more.
+title: Getting Started with Angular TreeView | Syncfusion
+description: Learn here about getting started with Angular TreeView in Syncfusion Essential Angular Treeview Control, its elements, and more.
 platform: Angular
 control: TreeView
 documentation: Ug

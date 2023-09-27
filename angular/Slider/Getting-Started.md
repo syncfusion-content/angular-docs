@@ -1,5 +1,5 @@
 ---
-title: Getting Started for Angular Slider | Syncfusion 
+title: Getting Started with Angular Slider | Syncfusion 
 description: Learn here about getting started with Angular Slider in Syncfusion Essential Angular Slider Control, its elements, and more.
 platform: Angular
 control: Slider
