@@ -1,6 +1,6 @@
 ---
 layout: post
-title: About Essential JS 1 Angular | Syncfusion
+title: Overview of Angular Essential JS | Syncfusion
 description: Learn here all about introduction of Syncfusion Essential JS 1 for Angular components, its features, and more.
 platform: Angular
 control: Introduction
