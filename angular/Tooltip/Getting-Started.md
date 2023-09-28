@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Getting started with Angular Tooltip | Syncfusion
+title: Getting started with Angular Tooltip Control | Syncfusion
 description: Learn here about getting started with Angular Tooltip in Syncfusion Essential Angular Tooltip Control, its elements, and more.
 platform: Angular
 control: Tooltip
@@ -125,7 +125,7 @@ Apply the following style sheet
     
 {% endhighlight %}
 
-![Create a Tooltip in Angular](Getteing-Started_images/Getteing-Started_img1.jpeg)
+![Create a tooltip in Angular](Getteing-Started_images/Getteing-Started_img1.jpeg)
 
 ## Setting Dimensions
 
@@ -203,5 +203,5 @@ Apply the following styles to show the Tooltip.
     
 {% endhighlight %}
 
-![Tooltip Appearance in Angular](Getteing-Started_images/Getteing-Started_img2.jpeg)
+![Tooltip appearance in Angular](Getteing-Started_images/Getteing-Started_img2.jpeg)
 

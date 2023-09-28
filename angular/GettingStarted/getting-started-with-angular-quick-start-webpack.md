@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Integration of Syncfusion Angular components into Angular Quick Start - Webpack
-description: Learn here about Overview in Syncfusion Essential Angular Control, its elements, and more.
+title: Getting started with Angular Platform | Syncfusion
+description: Learn here about Overview of Syncfusion Essential Angular Platform, its elements, and more.
 platform: Angular
 control: Introduction
 documentation: ug
 ---
 
 
-# Getting started with Angular Quick Start - Webpack
+# Getting started with Angular 
 
 Webpack is a popular module bundler, a tool for bundling application source code in convenient chunks and for loading that code from a server into a browser
 
@@ -391,7 +391,7 @@ npm start
 
 N> If you get the following error, you need to refer the corresponding image type `cur` in `config/webpack.common.js` file. 
 
-![Run Application error in Angular](/angular/GettingStarted/Images/cssloader.png)
+![Run application error in Angular](/angular/GettingStarted/Images/cssloader.png)
 
 * Refer the below code snippet to refer the image type `cur`.
 {% highlight javascript %}
@@ -460,4 +460,4 @@ N>If you get typescript error like in the below image, then we should include th
 
 {% endhighlight %}
 
-![Run the Application in Angular](/angular/GettingStarted/Images/webpackoutput.png)
+![Run the application in Angular](/angular/GettingStarted/Images/webpackoutput.png)
