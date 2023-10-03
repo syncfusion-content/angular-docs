@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Getting started with Angular Platform | Syncfusion
-description: Learn here about Overview of Syncfusion Essential Angular Platform, its elements, and more.
+title: Getting Started with Angular Quick Start - Webpack | Syncfusion
+description: Learn here about getting started with Syncfusion Essential Angular Platform, its elements, and more.
 platform: Angular
 control: Introduction
 documentation: ug
 ---
 
 
-# Getting started with Angular 
+# Getting started with Angular Quick Start - Webpack
 
 Webpack is a popular module bundler, a tool for bundling application source code in convenient chunks and for loading that code from a server into a browser
 

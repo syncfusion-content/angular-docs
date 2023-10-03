@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Getting started with Angular Tooltip Control | Syncfusion
-description: Learn here about getting started with Angular Tooltip in Syncfusion Essential Angular Tooltip Control, its elements, and more.
+description: Learn here about getting started with Syncfusion Essential Angular Tooltip Control, its elements, and more.
 platform: Angular
 control: Tooltip
 documentation: ug
