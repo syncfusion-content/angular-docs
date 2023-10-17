@@ -120,7 +120,7 @@ export class AppComponent {
 
     constructor() {
         this.dataManager = ej.DataManager({
-            url: "https://js.syncfusion.com/demos/ejServices/Wcf/TreeGridGantt/TreeGantt.svc/SelfReferenceDatas",
+            url: "http://js.syncfusion.com/demos/ejServices/Wcf/TreeGridGantt/TreeGantt.svc/SelfReferenceDatas",
             crossDomain: true
         });
         this.ganttData = this.dataManager;
@@ -229,7 +229,7 @@ export class AppComponent {
 
     constructor() {
         this.dataManager = ej.DataManager({
-            url: "https://js.syncfusion.com/demos/ejServices/Wcf/TreeGridGantt/TreeGantt.svc/SelfReferenceDatas"
+            url: "http://js.syncfusion.com/demos/ejServices/Wcf/TreeGridGantt/TreeGantt.svc/SelfReferenceDatas"
         });
         this.ganttData = this.dataManager;
 
