@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Syncfusion ListBox Appearance-and-Styling
-description: appearance and styling
+title: Appearance And Styling | ListBox | Angular | Syncfusion
+description: Learn here about Appearance And Styling in Syncfusion Essential Angular ListBox Control, its elements, and more.
 platform: Angular
 control: ListBox
 documentation: ug
 ---
 
-# Appearance and Styling
+# Appearance And Styling in Angular ListBox 
 
 ## Theme
 
@@ -109,7 +109,7 @@ export class AppComponent {
 
 {% endhighlight %}
 
-![Appearance and Styling](Appearance-and-Styling_images/Appearance-and-Styling_img1.png)
+![Appearance and Styling in Angular ListBox](appearance-and-styling_images/angular-listbox-appearance-and-styling.png)
 
 ## Css Class
 
@@ -205,5 +205,5 @@ Add the following code in your style section.
 
 {% endhighlight %}
 
-![Appearance](Appearance-and-Styling_images/Appearance-and-Styling_img2.png)
+![CSS Class in Angular ListBox](appearance-and-styling_images/angular-listbox-css-class.png)
 
