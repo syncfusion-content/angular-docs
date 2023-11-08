@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Syncfusion data binding
-description: data binding
+title: Data Binding in Angular AutoComplete Component |Syncfusion
+description: Learn here all about data binding in Syncfusion Essential Angular AutoComplete, it's elements and more details.
 platform: Angular
 control: Autocomplete 
 documentation: ug
 ---
 
-## Data Binding
+# Data Binding in Angular AutoComplete Component
 
 In order to render the AutoComplete component, the data needs to be bound to it in a proper way. The below sections explains about how to bind either the local or remote data to the AutoComplete component.
 
@@ -82,7 +82,7 @@ export class AppComponent {
 
 Run the above code to render the following output.
 
-![Local data](databinding_images\localdata_img1.png)
+![Local data in Angular AutoComplete data binding.](databinding_images\angular-autocomplete-local-data.png)
 
 ## Remote data
 
@@ -117,7 +117,7 @@ export class AppComponent {
 
 Run the above code to render the following output.
 
-![remote data](databinding_images\odata_img1.png)
+![Angular AutoComplete data binding remote data.](databinding_images\angular-autocomplete-remote-data.png)
 
 
 ### WebAPI
@@ -156,7 +156,7 @@ export class AppComponent {
 
 Run the above code to render get the following output.
 
-![Web api](databinding_images\webapi_img1.png)
+![Web api in Angular AutoComplete data binding.](databinding_images\angular-autocomplete-webapi.png)
 
 NOTE
 

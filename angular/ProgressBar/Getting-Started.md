@@ -1,21 +1,21 @@
 ---
 layout: post
-title: Getting-Started | ProgressBar | JavaScript | Syncfusion
-description: getting started
+title: Getting Started with Angular ProgressBar Component | Syncfusion
+description: Learn here all about getting started with Syncfusion Essential Angular ProgressBar, it's elements and more details.
 platform: Angular
 control: ProgressBar
 documentation: ug
 keywords: ejprogressbar, progressbar, js progressbar
 ---
 
-# Getting Started
+# Getting Started with Angular ProgressBar
 
 This section briefly describes how to create a **ProgressBar** control using **Javascript** and learn its features.
 **Essential JavaScript** **ProgressBar** displays a **ProgressBar** within a webpage that allows you to show the progress of an event. Here, you can learn how to customize the progress and color of the **ProgressBar** in a real-time application to indicate the strength of the password, where the progress changes with respect to the change in length of the password. This helps you to validate the password is typed. 
 
 The following screenshot shows the **ProgressBar.**
 
-![](/js/ProgressBar/Getting-Started_images/Getting-Started_img1.png) 
+![Getting Started with Angular ProgressBar.](/js/ProgressBar/Getting-Started_images/angular-progressbar-getting-Started.png) 
 
 ## Create a ProgressBar
 
@@ -87,7 +87,7 @@ Here, you can initialize the properties of the **ProgressBar** such as height, v
 
 The following screenshot displays a **ProgressBar** control.
 
-![](/js/ProgressBar/Getting-Started_images/Getting-Started_img2.png) 
+![Getting Started with Angular ProgressBar.](/js/ProgressBar/Getting-Started_images/angular-progressbar-create.png) 
 
 Include the following code within the **&lt;head&gt;** tag to change the page layout.
 
@@ -192,11 +192,11 @@ You can change themes or appearance of the ProgressBar as required.
 
 The final output is displayed as follows.
 
-![](/js/ProgressBar/Getting-Started_images/Getting-Started_img3.png) 
+![Getting Started with Angular ProgressBar.](/js/ProgressBar/Getting-Started_images/angular-progressbar-outputs.png) 
 
-![](/js/ProgressBar/Getting-Started_images/Getting-Started_img4.png) 
+![Getting Started with Angular ProgressBar.](/js/ProgressBar/Getting-Started_images/angular-progressbar-final-output.png) 
 
-![](/js/ProgressBar/Getting-Started_images/Getting-Started_img5.png) 
+![Getting Started with Angular ProgressBar.](/js/ProgressBar/Getting-Started_images/angular-progressbar-output-display.png) 
 
 You can also bind an event at the start and finish of a ProgressBar by using the start, complete and change properties of the ProgressBar.
 
