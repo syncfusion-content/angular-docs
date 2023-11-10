@@ -192,7 +192,7 @@ The following screenshot shows the output of the above steps.
 
 ![](Data-Binding_images/Data-Binding_img2.png)
 
-You can find the online demo sample for binding self-referential data [here](https://ej2.syncfusion.com/home/javascript.html#platforme)
+You can find the online demo sample for binding self-referential data [here](https://ej2.syncfusion.com/home/javascript.html#!/bootstrap/gantt/databinding/selfreference)
 
 ## Remote data
 
