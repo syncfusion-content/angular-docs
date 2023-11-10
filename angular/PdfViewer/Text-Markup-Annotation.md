@@ -1,18 +1,18 @@
 ---
-title: Text markup annotation of PDF viewer component.
-description: Text markup annotation of PDF viewer component.
+title: Text markup annotation in Angular PDF Viewer Component | Syncfusion
+description: Learn here about Text markup annotation in Syncfusion Essential Angular PDF Viewer Component, its elements, and more.
 platform: Angular
 control: PDF viewer
 documentation: ug
 keywords: ejPdfViewer, PDF viewer, js pdfviewer
 ---
 
-## Text Markup Annotation
+# Text Markup Annotation in Angular PDF Viewer
 
 PDF viewer control supports adding text markup annotations in the PDF documents. The component also renders the existing text markup annotations from the PDF document when the document is loaded in it.
 
 The following screenshot shows PDF viewer with the PDF document containing text markup annotations.
-![](Text-Markup-Annotation_images/Text_Markup_Annotations_img1.png)
+![Text markup annotation in Angular PDF Viewer](Text-Markup-Annotation_images/Text_Markup_Annotations_img1.png)
 
 **Adding text markup annotations**
 
@@ -50,21 +50,21 @@ export class DefaultComponent {
 
 The colorpicker control is provided in the text markup annotation tools to select the desired color for the text markup annotation to be added in the document.
 
-![](Text-Markup-Annotation_images/Text_Markup_Annotations_img2.png)
+![Adding text markup annotations in Angular PDF Viewer](Text-Markup-Annotation_images/Text_Markup_Annotations_img2.png)
 
 **Adding notes to the text markup annotation**
 
 The notes can be added to the text markup annotations using the context menu provided in the PDF viewer component.
 
 The below screenshot shows that the notes have been added to a text markup annotation in the PDF document.
-![](Text-Markup-Annotation_images/Text_Markup_Annotations_img3.png)
+![Adding notes to text markup annotation in Angular PDF Viewer](Text-Markup-Annotation_images/Text_Markup_Annotations_img3.png)
 
 **Editing the text markup annotation**
 
 The properties of the text markup annotations in the PDF document can be edited using the properties window provided in the PDF viewer component. The color, opacity, author and subject of the text markup annotation can be modified. The properties of the text markup annotation can also be locked using the locked checkbox in the properties window.
 
 The below screenshot shows the properties window used for editing the properties of a text markup annotation.
-![](Text-Markup-Annotation_images/Text_Markup_Annotations_img4.png)
+![Editing the text markup annotation in Angular PDF Viewer](Text-Markup-Annotation_images/Text_Markup_Annotations_img4.png)
 
 The text markup annotation in the PDF document can also be deleted from the PDF document.
 
