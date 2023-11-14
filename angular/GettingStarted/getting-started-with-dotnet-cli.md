@@ -29,7 +29,7 @@ To getting started with Syncfusion Angular Components, the NPM packages [ej-angu
 ## Prerequisites
 
 * [Node JS](https://nodejs.org/en)(v6.x.x or higher)
-* [NPM](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm/)(v4.x.x or higher)
+* [NPM](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm)(v4.x.x or higher)
 * [.NET Core SDK 2.1.*](https://dotnet.microsoft.com/en-us/download#/current)
 
 ## Install the SPA Template
@@ -547,7 +547,7 @@ dotnet run
 ## Sample Application
 
 We have prepared .NET CLI Application with the above steps. Refer to the link for application
-[Getting Started with .NET CLI](http://www.syncfusion.com/downloads/support/directtrac/general/ze/aspcoresample1576232350.zip). Run the below commands at the root of the application, to launch the application.
+[Getting Started with .NET CLI](https://www.syncfusion.com/downloads/support/directtrac/general/ze/aspcoresample1576232350.zip). Run the below commands at the root of the application, to launch the application.
 
 ```batch
 
