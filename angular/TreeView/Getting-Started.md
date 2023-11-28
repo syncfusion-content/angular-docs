@@ -1,13 +1,13 @@
 ---
-title: Getting Started for Angular TreeView
-description: Getting Started for Angular TreeView
+title: Getting Started with Angular TreeView Control | Syncfusion
+description: Learn here about getting started with Syncfusion Essential Angular Treeview Control, its elements, and more.
 platform: Angular
 control: TreeView
 documentation: Ug
 keywords: ejtreeview, js treeview, treeview
 ---
 
-# Getting Started
+# Getting Started with Angular TreeView
 
 This section explains briefly about how to create a **TreeView** control in your application with **Angular**.
 
@@ -184,7 +184,7 @@ npm start
 
 N> if you want to use other port, open `package.json` file, then change port in `--port 3000` script and also change the port in `config/webpack.dev.js`.
 
-![](Getting-Started_images/Getting-Started_img1.jpeg)
+![Running the web pack application in Angular TreeView](Getting-Started_images/Getting-Started_img1.jpeg)
 
 ## Create TreeView in Angular Application using SystemJS  
 
@@ -357,5 +357,4 @@ npm start
 
 * Browse to [http://localhost:3000](http://localhost:3000) to see the application. And navigate to TreeView tab. The component is rendered as like the below screenshot. You can make changes in the code found under src folder and the browser should auto-refresh itself while you save files. 
 
-![](Getting-Started_images/Getting-Started_img1.jpeg)
-
+![Running the systemJS application in Angular TreeView](Getting-Started_images/Getting-Started_img1.jpeg)
