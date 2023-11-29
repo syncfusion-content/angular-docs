@@ -358,7 +358,7 @@ grid.ignoreOnExport.splice(grid.ignoreOnExport.indexOf('dataSource'), 1);
 
 ##Theme
 
-The grid export have 13 theme option to match with our [built-in control themes](https://help.syncfusion.com/js/theming-in-essential-javascript-components#). They are
+The grid export have 13 theme option to match with our [built-in control themes](https://help.syncfusion.com/js/theming-in-essential-javascript-components). They are
 
 * default-theme
 * flat-azure-dark
