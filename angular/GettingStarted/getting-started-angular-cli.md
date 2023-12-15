@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  Getting Started with Angular CLI | Syncfusion
-description: Overview of Syncfusion Essential Angular
+description: Learn here all about getting started cli with the Syncfusion Essential Angular control, its elements, and more details.
 platform: Angular
 control: Introduction
 documentation: ug
@@ -512,7 +512,7 @@ ng serve
 
 {% endhighlight %}
 
-![Getting Started Angular CLI](Images/angularcli.png)
+![Getting Started Angular CLI](Images/getting-started-angular-cli.png)
 
 ## ng build - production
 
