@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Rows and Columns with Spreadsheet widget for Syncfusion Essential JS
-description: How to use and customize the rows and columns in Syncfusion Angular SpreadSheet Control, its elements, and more.
+title: Rows and Columns in Angular Spreadsheet Widget | Syncfusion
+description: Learn here all about how to use and customize the rows and columns in Syncfusion Essential Angular SpreadSheet control, its elements, and more details.
 platform: Angular
 control: Spreadsheet
 documentation: ug
@@ -199,7 +199,7 @@ export class AppComponent {
 
 The following output is displayed as a result of the above code example.
 
-![Insert-Delete-Operation](Rows-and-Columns_images/Rows-and-Columns_img1.png)
+![Insert delete operation in Angular Spreadsheet rows and columns.](Rows-and-Columns_images/angular-spreadsheet-delete.png)
 
 ## Show and Hide 
 
@@ -255,7 +255,7 @@ export class AppComponent {
 
 The following output is displayed as a result of the above code example.
 
-![Show-Rows-columns](Rows-and-Columns_images/Rows-and-Columns_img2.png)
+![Show rows and columns in Angular Spreadsheet.](Rows-and-Columns_images/angular-spreadsheet-show-rows-columns.png)
 
 #### Show Row
 
@@ -307,7 +307,7 @@ export class AppComponent {
 
 The following output is displayed as a result of the above code example.
 
-![Hide-Rows-columns](Rows-and-Columns_images/Rows-and-Columns_img3.png)
+![Hide rows and columns in Angualr Spreadsheet.](Rows-and-Columns_images/angular-spreadsheet-hide.png)
 
 ## Resizing
 
@@ -357,4 +357,4 @@ export class AppComponent {
 
 The following output is displayed as a result of the above code example.
 
-![Resizing](Rows-and-Columns_images/Rows-and-Columns_img4.png)
+![Resizing Angular Spreadsheet rows and columns.](Rows-and-Columns_images/angular-spreadsheet-resizing.png)
