@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Getting-Started
-description: getting started
+title: Getting Started with Angular ToggleButton Control | Syncfusion
+description: Learn here all about getting started with Syncfusion Essential Angular Toggle Button component, it's elements and more details.
 platform: Angular
 control: Toggle Button
 documentation: ug
 ---
 
-# Getting Started
+# Getting Started with Angular Toggle Button
 
 This section explains briefly about how to create a **Toggle Button** in your application. 
 
@@ -15,14 +15,14 @@ This section explains briefly about how to create a **Toggle Button** in your ap
 
 The HTML checkbox element can be easily configured as **Essential Toggle Button** control. The basic rendering of **Essential Toggle Button** is achieved by using default functionality.
 
-![](/Angular/ToggleButton/Getting-Started_images/Getting-Started_img1.png) 
+![Getting Started with Angular Toggle Button.](/Angular/ToggleButton/Getting-Started_images/angular-toggle-button-getting-started.png) 
 
 
 
-![](/Angular/ToggleButton/Getting-Started_images/Getting-Started_img2.png) 
+![Angular Toggle Button control structure.](/Angular/ToggleButton/Getting-Started_images/angular-toggle-button-structure.png) 
 
 ## Create a simple Toggle Button in Angular
-To get started, you need to refer the basic prerequisites and system configuration to be done from the given [Getting started](https://help.syncfusion.com/angular-2/gettingstarted/overview) document.
+To get started, you need to refer the basic prerequisites and system configuration to be done from the given [Getting started](https://help.syncfusion.com/angular/gettingstarted/overview) document.
 
 ## Toggle Button Creation
 
@@ -104,7 +104,7 @@ export class ToggleButtonComponent {
 Output of above steps
 
 
-![](/Angular/ToggleButton/Getting-Started_images/Getting-Started_img4.png) 
+![Angular Toggle Button label element.](/Angular/ToggleButton/Getting-Started_images/angular-toggle-button-element.png) 
 
 
 
