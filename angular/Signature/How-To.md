@@ -7,7 +7,7 @@ control: Signature
 documentation: ug
 ---
 
-##How To?
+#How To?
 
 ### Save signature image with user defined format
 
