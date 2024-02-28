@@ -1,15 +1,13 @@
 ---
 layout: post
-title: Syncfusion Signature How To section
-description: How To
+title: Save signature image using Angular Signature | Syncfusion
+description: Using the Angular Signature component the user can save the signature image with the defined format.
 platform: Angular
 control: Signature
 documentation: ug
 ---
 
-##How To?
-
-### Save signature image with user defined format
+# How to save signature image with user defined format?
 
 By default the downloaded image from the signature canvas will be of **png** format. We can define our own format to download the image with **saveImageFormat** property. And we can also save the image along with the background by using the **saveWithBackground** property.
 
