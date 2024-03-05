@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Overview of Angular Spreadsheet | Syncfusion
-description: Learn here all about overview support in Syncfusion Essential Studio Angular Spreadsheet Component, its elements, and more.
+description: Learn here all about overview of Syncfusion Essential Studio Angular Spreadsheet component, its elements, and more.
 platform: Angular
 control: Spreadsheet
 documentation: ug
