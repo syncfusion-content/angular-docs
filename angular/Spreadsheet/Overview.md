@@ -1,12 +1,12 @@
 ---
 layout: post
-title: Overview 
-description: overview
+title: Overview of Angular Spreadsheet | Syncfusion
+description: Learn here all about overview of Syncfusion Essential Angular Spreadsheet component, its elements, and more.
 platform: Angular
 control: Spreadsheet
 documentation: ug
 ---
-# Overview
+# Overview of Angular Spreadsheet
 
 The Spreadsheet control for Angular is a Microsoft Excel-like Spreadsheet component for web. It provides editing experience that is very similar to that of Excel and it is able to import and export Excel workbook files. The Spreadsheet control includes all the important features of Microsoft Excel like editing, sorting, filtering, formulas, data validation, formatting, table, charts, import and export.
 
