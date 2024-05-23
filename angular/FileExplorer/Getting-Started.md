@@ -239,5 +239,5 @@ npm start
 
 * Browse to [http://localhost:3000](http://localhost:3000) to see the application. And navigate to FileExplorer tab. The component is rendered as like the below screenshot. You can make changes in the code found under src folder and the browser should auto-refresh itself while you save files. 
 
-![](Getting-Started_images/Getting-Started_img1.jpeg)
+![Running the application in Angular File Explorer.](getting-started_images/angular-file-explorer-running-the-application.jpeg)
 
