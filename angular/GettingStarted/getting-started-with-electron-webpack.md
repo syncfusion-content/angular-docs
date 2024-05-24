@@ -17,7 +17,7 @@ The below steps depict how to create desktop app of Syncfusion Angular seed appl
 
 ## Prerequisites
 
-* [Node JS](https://nodejs.org/en/) (v6.x.x or higher)
+* [Node.js](https://nodejs.org/en/) (v6.x.x or higher)
 * [NPM](https://docs.npmjs.com/getting-started/installing-node#install-npm--manage-npm-versions) (v5.4.2 or higher)
 
 ## Synopsis

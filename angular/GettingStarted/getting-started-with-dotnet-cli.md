@@ -28,7 +28,7 @@ To getting started with Syncfusion Angular Components, the NPM packages [ej-angu
 
 ## Prerequisites
 
-* [Node JS](https://nodejs.org/en)(v6.x.x or higher)
+* [Node.js](https://nodejs.org/en)(v6.x.x or higher)
 * [NPM](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm)(v4.x.x or higher)
 * [.NET Core SDK 2.1.*](https://dotnet.microsoft.com/en-us/download#/current)
 
