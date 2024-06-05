@@ -16,7 +16,7 @@ The following steps depicts, to create an application in angular-cli with Syncfu
 
 ## Prerequisites
 
-* [Node JS](https://nodejs.org/en/) (v6.x.x or higher)
+* [Node.js](https://nodejs.org/en/) (v6.x.x or higher)
 * [NPM](https://docs.npmjs.com/getting-started/installing-node#install-npm--manage-npm-versions) (v3.x.x or higher)
 
 The following synopsis illustrates the major steps in creation of application.
