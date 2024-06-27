@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Hierarchical binding with Grid widget for Syncfusion Essential Angular-2
-description: How to bind the hierarchical data
-platform: Angular
+title: Hierarchical binding in Angular Grid Component | Syncfusion
+description: Learn here all about hierarchical binding support in Syncfusion Essential Angular Grid component, it's elements and more.
+platform: angular
 control: Grid
 documentation: ug
 api:  api/angular/ejgrid
 ---
-# Hierarchical Bindings
+# Hierarchical bindings in Angular Grid
 
 Hierarchical binding can be used to create the Grid with parent and child relation, this facilitate you to view the child records for a particular row by clicking on the Expander button present in first column of each grid row. This can be enabled by defining [`childGrid`](https://help.syncfusion.com/api/angular/ejgrid#members:childgrid "childGrid") and `childGrid.queryString`. [`childGrid`](https://help.syncfusion.com/api/angular/ejgrid#members:childgrid "childGrid") is to define options of child and `childGrid.queryString` is to define the relation between parent and child grid.
 
@@ -65,7 +65,7 @@ export class GridComponent {
 
 
 {% endhighlight %}
-![](Hierarchy-Grid_images/HierarchyGrid_img1.png)
+![Hierarchical bindings in Angular Grid](hierarchy-grid_images/angular-grid-hierarchical-bindings.png)
 
 
 ## Expand or Collapse All Child

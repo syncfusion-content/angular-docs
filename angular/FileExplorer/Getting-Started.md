@@ -1,13 +1,13 @@
 ---
-title: Getting Started for Angular FileExplorer
-description: Getting Started for Angular FileExplorer
-platform: Angular
+title: Getting Started with Angular File Explorer Component | Syncfusion
+description: Learn here all about getting started with Syncfusion Essential Angular File Explorer component, it's elements and more.
+platform: angular
 control: FileExplorer
 documentation: Ug
 keywords: ejfileexplorer, js fileexplorer, fileexplorer
 ---
 
-# Getting Started
+# Getting Started with Angular File Explorer
 
 This section explains briefly about how to create a **FileExplorer** control in your application with **Angular**.
 
@@ -125,7 +125,7 @@ npm start
 
 N> if you want to use other port, open `package.json` file, then change port in `--port 3000` script and also change the port in `config/webpack.dev.js`.
 
-![](Getting-Started_images/Getting-Started_img1.jpeg)
+![Running the application in Angular File Explorer.](getting-started_images/angular-file-explorer-running-the-application.jpeg)
 
 ## Create FileExplorer in Angular Application using SystemJS  
 
@@ -239,5 +239,5 @@ npm start
 
 * Browse to [http://localhost:3000](http://localhost:3000) to see the application. And navigate to FileExplorer tab. The component is rendered as like the below screenshot. You can make changes in the code found under src folder and the browser should auto-refresh itself while you save files. 
 
-![](Getting-Started_images/Getting-Started_img1.jpeg)
+![Running the application in Angular File Explorer.](getting-started_images/angular-file-explorer-running-the-application.jpeg)
 
