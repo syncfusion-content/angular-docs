@@ -138,6 +138,6 @@ Custom toolbar is used to create your own toolbar items in toolbar. It can add b
 
 {% endhighlight %}
 
-![Custom toolbar items in Angular Grid.](toolbar_images/angular-grid-custom-toolbar-items.png)
+![Custom toolbar items in Angular Grid.](toolbar_images/angular-grid-custom-toolbar-items.jpeg)
 
 
