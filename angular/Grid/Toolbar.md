@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Toolbar in Angular Grid Control | Syncfusion
-description: Learn here all about toolbar support in Syncfusion Essential Angular Grid control, it's element's and more.
+description: Learn here all about toolbar support in Syncfusion Essential Angular Grid control, it's elements, and more.
 platform: angular
 control: Grid
 documentation: ug
