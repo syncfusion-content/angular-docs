@@ -1,13 +1,13 @@
 ---
 layout: post
 title: legend
-description: Learn how to add and customize the legnds in Sunburst Chart.
+description: Learn here all about legend support in Syncfusion Essential Angular Sunburst Chart component, its elements, and more.
 platform: Angular 
 control: SunburstChart
 documentation: ug
 ---
 
-## Legend
+# Legend in Angular Sunburst Chart Component
 The legend is used to represent the first level of items in the Sunburst Chart.The `legend` can be initialized using the below code snippet
 
 {% highlight js %}
