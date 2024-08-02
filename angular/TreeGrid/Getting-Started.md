@@ -1,9 +1,9 @@
 ---
 layout: post
-title: Getting-Started
-description: getting started
-platform: Angular
-control: TreeGrid
+title: Getting-Started with Angular TreeGrid | Syncfusion
+description: Learn here about getting started with Syncfusion Angular TreeGrid control, its elements, and more
+platform: TreeGrid
+control: Getting Started
 documentation: ug
 ---
 
