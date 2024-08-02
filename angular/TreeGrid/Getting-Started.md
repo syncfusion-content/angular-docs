@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Getting-Started
-description: getting started
+title: Getting-Started with Angular TreeGrid | Syncfusion
+description: Learn here about getting started with the Syncfusion Angular TreeGrid control, its elements, and more
 platform: Angular
 control: TreeGrid
 documentation: ug
@@ -142,9 +142,9 @@ export class AppModule { }
 
 A TreeGrid Control is created as shown in the following screen shot.
 
-![](Getting-Started_images/Getting-Started_img3.png)
+![Enable Sorting in Angular TreeGrid Getting Started](Getting-Started_images/Getting-Started_img3.png)
 
-### Enable Sorting
+### 
 
 The TreeGrid control has sorting functionality, to arrange the data in ascending or descending order based on a particular column.
 
@@ -161,7 +161,7 @@ Enable the multicolumn sorting in TreeGrid by setting [`allowMultiSorting`](http
 
 {% endhighlight %}
 
-![](Getting-Started_images/Getting-Started_img4.png)
+![Enable Editing in Angular TreeGrid Getting Started](Getting-Started_images/Getting-Started_img4.png)
 
 ### Enable Editing
 
@@ -226,7 +226,7 @@ You can set the editor type for a particular column as follows.
 
 The output of the DateTimePicker editor in TreeGrid control is as follows.
 
-![](Getting-Started_images/Getting-Started_img5.png)
+![Running the application in Angular TreeGrid Getting Started](Getting-Started_images/Getting-Started_img5.png)
 
 ## Running the application
 
