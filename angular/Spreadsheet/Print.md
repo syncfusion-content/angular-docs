@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Print with Spreadsheet widget for Syncfusion Essential JS
-description: How to use the Spreadsheet Print
+description: Learn here about How to use the Spreadsheet Print with Syncfusion Angular Spreadsheet, its elements, and more.
 platform: Angular
 control: Spreadsheet
 documentation: ug
@@ -75,14 +75,14 @@ printSelClick(event) {
 
 The following output is displayed as a result of the above code example.
 
-![](Print_images/Print_img1.png)
+![Print Sheet / Print Selected Area in Angular Spreadsheet](Print_images/Print_img1.png)
 
-![](Print_images/Print_img2.png)
+![Print Sheet / Print Selected Area in Angular Spreadsheet](Print_images/Print_img2.png)
 
 Print dialog with entire sheet in Chrome browser
 {:.caption}
 
-![](Print_images/Print_img3.png)
+![Print dialog with entire sheet in Chrome browser in Angular Spreadsheet](Print_images/Print_img3.png)
 
 Print dialog with selected area print in chrome browser
 {:.caption}
@@ -109,7 +109,7 @@ The following code example describes the above behavior.
 {% endhighlight %}
 
 
-![](Print_images/Print_img4.png)
+![Print with Gridlines in Angular Shreadsheet](Print_images/Print_img4.png)
 
 Print dialog without gridlines in chrome browser
 {:.caption}
@@ -135,7 +135,7 @@ The following code example describes the above behavior.
 </ej-spreadsheet>
 {% endhighlight %}
 
-![](Print_images/Print_img5.png)
+![Print with Headings in Angular Spreadsheet](Print_images/Print_img5.png)
 
 Print dialog without headings in chrome browser
 {:.caption}
