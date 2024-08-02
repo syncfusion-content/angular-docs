@@ -1,6 +1,6 @@
 ---
-title: Data binding with Spreadsheet widget for Syncfusion Essential Angular-2
-description: How to perform Data Binding and configure its properties like dataSource, query etc.
+title: Data binding with Angular Spreadsheet widget | Syncfusion
+description: Learn here about how to perform Data Binding and configure its properties like dataSource, query in SfAngular Spreadsheet control, its elements, and more.
 platform: Angular
 control: Spreadsheet
 documentation: ug
@@ -63,7 +63,7 @@ export class AppComponent {
 {% endhighlight %}
 
 The following output is displayed as a result of the above code snippets.
-![](Data-Binding_images/Data-Binding_img1.png)
+![Local Data in Angular Spreadsheet](Data-Binding_images/Data-Binding_img1.png)
 
 ## Remote Data
 
@@ -98,7 +98,7 @@ export class AppComponent {
 {% endhighlight %}
 
 The following output is displayed as a result of the above code snippets.
-![](Data-Binding_images/Data-Binding_img2.png)
+![Remote Data in Angular Spreadsheet](Data-Binding_images/Data-Binding_img2.png)
 
 ### Offline Mode
 
@@ -137,7 +137,7 @@ export class AppComponent {
 
 {% endhighlight %}
 The following output is displayed as a result of the above code snippets.
-![](Data-Binding_images/Data-Binding_img2.png)
+![Offline Mode in Angular Spreadsheet](Data-Binding_images/Data-Binding_img2.png)
 
 ## HTML Table Data
 
@@ -230,7 +230,7 @@ Place the table in index.html page,
 
 {% endhighlight %}
 The following output is displayed as a result of the above code snippets.
-![](Data-Binding_images/Data-Binding_img3.png)
+![HTML Table Data in Angular Spreadsheet](Data-Binding_images/Data-Binding_img3.png)
 
 ## Ways to bind data in Spreadsheet
 
@@ -411,7 +411,7 @@ export class AppComponent {
 
 {% endhighlight %}
 The following output is displayed as a result of the above code snippets.
-![](Data-Binding_images/Data-Binding_img4.png)
+![Cell Binding in Angular Spreadsheet](Data-Binding_images/Data-Binding_img4.png)
 
 ### Range Binding
 
@@ -537,7 +537,7 @@ export class AppComponent {
 {% endhighlight %}
 
 The following output is displayed as a result of the above code snippets.
-![](Data-Binding_images/Data-Binding_img5.png)
+![Range Binding in Angular Spreadsheet](Data-Binding_images/Data-Binding_img5.png) 
 
 ### Sheet Binding
 
@@ -642,5 +642,5 @@ export class AppComponent {
 {% endhighlight %}
 
 The following output is displayed as a result of the above code snippets. 
-![](Data-Binding_images/Data-Binding_img6.png)
+![Sheet Binding in Angular Spreadsheet](Data-Binding_images/Data-Binding_img6.png) 
 
