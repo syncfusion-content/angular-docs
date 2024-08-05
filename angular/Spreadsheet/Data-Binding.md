@@ -5,7 +5,7 @@ platform: Angular
 control: Spreadsheet
 documentation: ug
 ---
-# Data Binding
+# Data binding with Syncfusion Angular Spreadsheet widget
 
 Spreadsheet can be populated with external datasource using `dataSource` property. The `dataSource` property can be assigned either with the instance of `ej.DataManager` or JSON data array collection. Spreadsheet supports three different kinds of Data binding.
 
