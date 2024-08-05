@@ -7,7 +7,7 @@ control: Grid
 documentation: ug
 api: /api/angular/ejgrid
 ---
-# Toolbar
+# Toolbar with Grid widget for Syncfusion Essential JS
 
 Toolbar can be shown by defining [`toolbarSettings.showToolbar`](https://help.syncfusion.com/api/angular/ejgrid#members:toolbarsettings-showtoolbar "showToolbar") should be true. Toolbar has option to add default items in [`toolbarSettings.toolbarItems`](https://help.syncfusion.com/api/angular/ejgrid#members:toolbarsettings-toolbaritems "toolbarItems") and customized items in [`toolbarSettings.customToolbarItems`](https://help.syncfusion.com/api/angular/ejgrid#members:toolbarsettings-customtoolbaritems "customToolbarItems").
 
