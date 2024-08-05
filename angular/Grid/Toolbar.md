@@ -1,13 +1,13 @@
 ---
 layout: post
 title: Toolbar with Grid widget for Syncfusion Essential JS
-description: How to enable toolbar and its actions.
+description: Learn here about how to enable toolbar and its actions with Syncfusion Angular Grid control, its elements, and more.
 platform: angular
 control: Grid
 documentation: ug
 api: /api/angular/ejgrid
 ---
-# Toolbar
+# Toolbar with Grid widget for Syncfusion Essential JS
 
 Toolbar can be shown by defining [`toolbarSettings.showToolbar`](https://help.syncfusion.com/api/angular/ejgrid#members:toolbarsettings-showtoolbar "showToolbar") should be true. Toolbar has option to add default items in [`toolbarSettings.toolbarItems`](https://help.syncfusion.com/api/angular/ejgrid#members:toolbarsettings-toolbaritems "toolbarItems") and customized items in [`toolbarSettings.customToolbarItems`](https://help.syncfusion.com/api/angular/ejgrid#members:toolbarsettings-customtoolbaritems "customToolbarItems").
 
@@ -80,7 +80,7 @@ Search text in records</td></tr>
 {% endhighlight %}
 
 
-![](Toolbar_images/Toolbar_img1.png)
+![Default Toolbar items in Angular Grid](Toolbar_images/Toolbar_img1.png)
 
 
 I> [`editSettings.allowAdding`](https://help.syncfusion.com/api/angular/ejgrid#members:editsettings-allowadding "allowAdding"), [`editSettings.allowEditing`](https://help.syncfusion.com/api/angular/ejgrid#members:editsettings-allowediting "allowEditing") and [`editSettings.allowDeleting`](https://help.syncfusion.com/api/angular/ejgrid#members:editsettings-allowdeleting "allowdeleting") need to be enabled for add, delete, edit, save & cancel in [`toolbarItems`](https://help.syncfusion.com/api/angular/ejgrid#members:toolbarsettings-toolbaritems "toolbaritems"). [`allowSearching`](https://help.syncfusion.com/api/angular/ejgrid#members:allowsearching "allowsearching")` to be enabled while adding Search in toolbar to perform search action.
@@ -138,6 +138,6 @@ Custom toolbar is used to create your own toolbar items in toolbar. It can add b
 
 {% endhighlight %}
 
-![](Toolbar_images/Toolbar_img2.jpeg)
+![Custom Toolbar items in Angular Grid](Toolbar_images/Toolbar_img2.jpeg)
 
 
