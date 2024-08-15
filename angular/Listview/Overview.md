@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Overview
-description: Overview
+title: Overview of Agular ListView Component | Syncfusion
+description: This component is ideal for building intuitive and dynamic list-based interfaces in Syncfusion Angular ListView applications.
 platform: Angular
 control: ListView
 documentation: ug
 ---
 
-## Overview
+# Overview of Agular ListView Component
 
 The Essential Angular ListView component builds interactive ListView interface. This control allows you to select an item from a list-like interface and display a set of data items in different layouts or views. Lists are used for displaying data, data navigation, result lists, and data entry.
 
