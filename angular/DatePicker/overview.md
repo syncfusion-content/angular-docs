@@ -2,7 +2,7 @@
 layout: post
 title: Overview of Angular DatePicker Component | Syncfusion
 description: The Syncfusion Angular DatePicker component is a powerful tool for implementing date selection in Angular applications.
-platform: Angular
+platform: angular
 control: DatePicker
 documentation: ug
 ---

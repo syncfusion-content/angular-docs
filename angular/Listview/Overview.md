@@ -2,7 +2,7 @@
 layout: post
 title: Overview of Agular ListView Component | Syncfusion
 description: This component is ideal for building intuitive and dynamic list-based interfaces in Syncfusion Angular ListView applications.
-platform: Angular
+platform: angular
 control: ListView
 documentation: ug
 ---
