@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Overview
-description: Overview
+title: Overview in Angular Listview | Syncfusio
+description: Learn here about overview support in Syncfusion Essential Angular Listview control, its elements and more details.
 platform: Angular
 control: ListView
 documentation: ug
 ---
 
-## Overview
+# Overview in Angular Listview control
 
 The Essential Angular ListView component builds interactive ListView interface. This control allows you to select an item from a list-like interface and display a set of data items in different layouts or views. Lists are used for displaying data, data navigation, result lists, and data entry.
 
