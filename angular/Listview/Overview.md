@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Overview of Angular ListView | Syncfusion
-description: Learn here about overview support in Syncfusion Essential Angular ListView control, its elements and more details.
+description: Learn here about overview of Syncfusion Essential Angular ListView control, its elements and more details.
 platform: angular
 control: ListView
 documentation: ug
