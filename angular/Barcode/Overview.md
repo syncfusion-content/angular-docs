@@ -1,13 +1,13 @@
 ---
-title: Getting Started for Angular Barcode
-description: Barcode
-platform: Angular
+title: Overview of Angular Barcode Component | Syncfusion
+description: Learn hare all about Overview of Syncfusion Essential Angular Barcode component, its elements and more details.
+platform: angular
 control: Barcode
 documentation: ug
 keywords: ejBarcode
 ---
 
-# Overview
+# Overview of Angular Barcode Component
 
 The Syncfusion Essential JS Barcode widget enables rendering of one dimension and two dimension barcodes in web page. Barcode provides you a simple and inexpensive method of encoding text information that can be easily read by electronic readers.
 
