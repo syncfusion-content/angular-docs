@@ -70,4 +70,4 @@ export class DefaultComponent {
 
 The above code will produce the Barcode as shown in the below figure.
 
-![](getting-started-images/default.png)
+![Initialize and configure in Angular Barcode.](getting-started-images/initialize-and-configure-in-angular-barcode.png)
