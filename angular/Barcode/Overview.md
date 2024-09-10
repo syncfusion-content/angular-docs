@@ -1,6 +1,6 @@
 ---
 title: Overview of Angular Barcode Component | Syncfusion
-description: Learn hare all about Overview of Syncfusion Essential Angular Barcode component, its elements and more details.
+description: Learn hare all about overview of Syncfusion Essential Angular Barcode control, its elements and more details.
 platform: angular
 control: Barcode
 documentation: ug

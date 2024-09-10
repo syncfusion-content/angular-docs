@@ -1,6 +1,6 @@
 ---
 title: Getting Started with Angular Barcode Component | Syncfusion
-description: Checkout and learn about Getting started with Angular Barcode component of Syncfusion Essential JS 2 and more details.
+description: Learn here all about getting started with Syncfusion Essential Angular Barcode control, its elements, and more details.
 platform: angular
 control: Barcode
 documentation: ug
