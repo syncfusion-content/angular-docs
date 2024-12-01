@@ -41,7 +41,7 @@ export class DropDownListComponent {
 
 {% endhighlight %}
 
-![Angular DropDownList Checkbox](Checkbox_images/Checkbox_img1.png)
+![Angular DropDownList checkbox.](checkbox_images/angular-dropdown-list-checkbox.png)
 
 N> if you want to showcase the DropDownList with default checked items on data binding, specify selected field with Boolean values.
 
@@ -75,7 +75,7 @@ export class DropDownListComponent {
 
 {% endhighlight %}
 
-![Angular DropDownList](Checkbox_images/Checkbox_img2.png)
+![Angular DropDownList selection modes.](checkbox_images/angular-dropdown-list-selection-modes.png)
 
 ## Selection Modes
 
@@ -124,7 +124,7 @@ export class DropDownListComponent {
 
 {% endhighlight %}
 
-![Angular DropDownList Delimiter](Checkbox_images/Checkbox_img3.png)
+![Angular DropDownList delimiter.](checkbox_images/angular-dropdown-list-delimiter.png)
 
 ### Visual Mode
 
@@ -162,7 +162,7 @@ export class DropDownListComponent {
 
 {% endhighlight %}
 
-![Angular DropDownList Visual Mode](Checkbox_images/Checkbox_img4.png)
+![Angular DropDownList visual mode.](checkbox_images/angular-dropdown-list-visual-mode.png)
 
 ## Check/Uncheck All
 
