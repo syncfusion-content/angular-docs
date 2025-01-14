@@ -18,7 +18,7 @@ Once the configurations are done, Create an angular seed application by referrin
 To render the Chart control, the following list of external dependencies are needed,
 
 * [jQuery](http://jquery.com) - 1.7.1 and later versions
-* [Angular](https://angular.io/) - Angular latest versions
+* [Angular](https://angular.dev/) - Angular latest versions
 
 The other required internal dependencies are tabulated below,
 
