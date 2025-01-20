@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Template-Support
-description: template support
+title: Template Support in VUe Tabs Control | Syncfusion
+description: Learn here about Template Support with Syncfusion Essential Angular Tabs control, its elements, and more.
 platform: Angular
 control: Tab
 documentation: ug
 ---
 
-# Template Support
+# Template Support in VUe Tabs Control
 
 We can use this option to load any HTML elements and showcase it in the Tab panels as per our requirement.
 
@@ -39,4 +39,4 @@ We can load the contents or HTML elements directly inside the &lt;div&gt; elemen
 
 The following screenshot illustrates the **Tab** with **Template** support.
 
-![](Template-Support_images/Template-Support_img1.png) 
+![Template Support in VUe Tabs Control.](Template-Support_images/template-support-in-vue-tabs-control.png) 
