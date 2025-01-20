@@ -3,7 +3,7 @@ layout: post
 title: Drag and Drop in Angular Kanban Control | Syncfusion
 description: Learn here about Drag and Drop with Syncfusion Essential Angular Kanban control, its elements, and more.
 documentation: ug
-platform: Angular
+platform: angular
 keywords: drag and drop,kanban drag and drop
 ---
 

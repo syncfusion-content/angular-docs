@@ -2,7 +2,7 @@
 layout: post
 title: Template Support in VUe Tabs Control | Syncfusion
 description: Learn here about Template Support with Syncfusion Essential Angular Tabs control, its elements, and more.
-platform: Angular
+platform: angular
 control: Tab
 documentation: ug
 ---

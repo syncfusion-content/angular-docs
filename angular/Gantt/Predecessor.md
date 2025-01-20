@@ -2,7 +2,7 @@
 layout: post
 title: Predecessor in Angular Gantt Control | Syncfusion
 description: Learn here about Predecessor with Syncfusion Essential Angular Gantt control, its elements, and more.
-platform: Angular
+platform: angular
 control: Gantt
 documentation: ug
 api: /api/js/ejgantt
