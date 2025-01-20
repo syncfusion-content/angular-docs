@@ -54,4 +54,4 @@ export class DefaultComponent {
 
 The following output is displayed as a result of the above code example.
 
-![](Drag_and_Drop_images/drag_and_drop_img1.png)
+![Drag and Drop in Angular Kanban Control.](drag_and_drop_images/drag-and-drop-in-angular-kanban-control-img1.png)
