@@ -1,13 +1,13 @@
 ---
 layout: post
-title:  Drag and Drop
-description: Drag and Drop
+title: Drag and Drop in Angular Kanban Control | Syncfusion
+description: Learn here about Drag and Drop with Syncfusion Essential Angular Kanban control, its elements, and more.
 documentation: ug
-platform: Angular
+platform: angular
 keywords: drag and drop,kanban drag and drop
 ---
 
-# Drag and Drop
+# Drag and Drop in Angular Kanban Control
 
 By default [`allowDragAndDrop`](https://help.syncfusion.com/api/js/ejkanban#members:allowdraganddrop) is true.Cards can be transited from one column to another column, by dragging and dropping. And it has drop position indicator which enables easier positioning of cards
 
@@ -54,4 +54,4 @@ export class DefaultComponent {
 
 The following output is displayed as a result of the above code example.
 
-![](Drag_and_Drop_images/drag_and_drop_img1.png)
+![Drag and Drop in Angular Kanban Control.](drag_and_drop_images/drag-and-drop-in-angular-kanban-control-img1.png)

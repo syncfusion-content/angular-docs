@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Predecessor
-description: Predecessor
-platform: Angular
+title: Predecessor in Angular Gantt Control | Syncfusion
+description: Learn here about Predecessor with Syncfusion Essential Angular Gantt control, its elements, and more.
+platform: angular
 control: Gantt
 documentation: ug
 api: /api/js/ejgantt
 ---
 
-# Predecessor
+# Predecessor in Angular Gantt Control
 
 ## Predecessor offset with duration units
 
@@ -59,7 +59,7 @@ export class AppComponent {
 
 The following screen shot depicts the duration unit support in the predecessor offset.
 
-![](Predecessor_images/Predecessor_img1.png)
+![Predecessor in Angular Gantt Control.](predecessor_images/predecessor-in-angular-gantt-contro-img2.png)
 
 ## Validate predecessor links on editing
 
@@ -185,7 +185,7 @@ export class AppComponent {
 
 In this case, if the user dragging action violated the predecessor type then the following dialog will be rendered to perform operation.
 
-![](Predecessor_images/Predecessor_img2.png)
+![Predecessor in Angular Gantt Control.](predecessor_images/predecessor-in-angular-gantt-contro-img2.png)
 
 
 
