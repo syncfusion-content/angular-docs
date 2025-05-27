@@ -6,7 +6,7 @@ control: sparkline
 documentation: ug
 keywords: ejsparkline, sparkline, sparkline widget, Angular sparkline
 ---
-#Getting Started
+# Getting Started
 
 Before we start with the Sparkline, please refer [this page](https://help.syncfusion.com/angular-2/overview) for general information regarding integrating Syncfusion widget’s.
 
