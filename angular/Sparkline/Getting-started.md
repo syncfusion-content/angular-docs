@@ -8,7 +8,7 @@ keywords: ejsparkline, sparkline, sparkline widget, Angular sparkline
 ---
 # Getting Started
 
-Before we start with the Sparkline, please refer [this page](https://help.syncfusion.com/angular-2/overview) for general information regarding integrating Syncfusion widget’s.
+Before we start with the Sparkline, please refer [this page](https://help.syncfusion.com/angular/sparkline/overview) for general information regarding integrating Syncfusion widget’s.
 
 ## Adding JavaScript and CSS Reference
 
