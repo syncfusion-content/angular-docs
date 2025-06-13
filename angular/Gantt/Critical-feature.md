@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Critical-feature
+title: Critical-feature in Angular Gantt | Syncfusion
 description: Critical-feature
 platform: Angular
 control: Gantt
