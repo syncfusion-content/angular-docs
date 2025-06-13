@@ -1,5 +1,5 @@
 ---
-title: Schedule Overview	
+title: Schedule Overview in Angular | Syncfusion	
 description: Scheduler Introduction
 platform: Angular
 control: schedule
