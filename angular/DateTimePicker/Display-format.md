@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Display-format
+title: How to Display-format in Angular DateTimePicker | Syncfusion
 description: display format
 platform: Angular
 control: DateTimePicker
