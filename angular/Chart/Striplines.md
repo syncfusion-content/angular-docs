@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Chart Striplines
+title: Horizontal or Vertical Chart Stripline in Angular | Syncfusion
 description: Learn how to add horizontal or vertical lines in Chart.                                                  
 platform: Angular
 control: Chart
