@@ -1,6 +1,6 @@
 ---
 title: Getting started with Kanban component	
-description: Rendering a Kanban control
+description: Check out and learn here all about Rendering of Syncfusion Angular Kanban control and much more details.
 platform: Angular
 control: kanban
 documentation: ug
@@ -246,7 +246,7 @@ export class KanbanComponent {
 
 {% endhighlight %}
 
-![](Getting_Started_images/Getting_Started_img1.png)
+![Control Initialization.](Getting_Started_images/Getting_Started_img1.png)
 
 ## Mapping Values
 
@@ -289,7 +289,7 @@ export class KanbanComponent {
 
 {% endhighlight %}
 
-![](Getting_Started_images/Getting_Started_img2.png)
+![Mapping field.](Getting_Started_images/Getting_Started_img2.png)
 
 ## Enable Swimlane
 
@@ -327,7 +327,7 @@ export class KanbanComponent {
 
 {% endhighlight %}
 
-![](Getting_Started_images/Getting_Started_img3.png)
+![Swimlane.](Getting_Started_images/Getting_Started_img3.png)
 
 ## Adding Filters
 
@@ -371,4 +371,4 @@ export class KanbanComponent {
 
 {% endhighlight %}
 
-![](Getting_Started_images/Getting_Started_img4.png)
+![Filters.](Getting_Started_images/Getting_Started_img4.png)

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Working with Lists operation in RichTextEditor widget
-description: Working with Lists customization for RichTextEditor widget
+description: Check out and learn here all about working with lists customization for RichTextEditor widget and much more details. 
 platform: Angular
 control: RichTextEditor
 documentation: ug
@@ -102,7 +102,7 @@ export class RTEComponent {
 
 {% endhighlight %}
 
-![](WorkingwithLists_images/ordered.png)
+![customOrderedList.](WorkingwithLists_images/ordered.png)
 
 ### Insert a customUnorderedList
 
@@ -161,4 +161,4 @@ export class RTEComponent {
 
 {% endhighlight %}
 
-![](WorkingwithLists_images/unordered.png)
+![customUnorderedList.](WorkingwithLists_images/unordered.png)
