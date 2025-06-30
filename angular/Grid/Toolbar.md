@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Toolbar with Grid widget for Syncfusion Essential JS
-description: Check out and learn here all about how to enable the toolbar and its actions of Syncfusion Angular Gantt and much more details.
+description: Check out and learn here all about how to enable the toolbar and its actions of Syncfusion Angular Grid and much more details.
 platform: angular
 control: Grid
 documentation: ug
