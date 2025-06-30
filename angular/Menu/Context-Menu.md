@@ -80,7 +80,7 @@ Add the following code in menu.component.css file.
 
 The following screen shot displays the output of the above code.
 
-![](Context-Menu_images/Context-Menu_img1.png) 
+![the output of the above code.](Context-Menu_images/Context-Menu_img1.png) 
 
 You can hide and show the context menu using the following methods.
 

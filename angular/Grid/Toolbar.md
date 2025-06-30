@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Toolbar with Grid widget for Syncfusion Essential JS
-description: How to enable toolbar and its actions.
+description: Check out and learn here all about how to enable the toolbar and its actions of Syncfusion Angular Grid and much more details.
 platform: angular
 control: Grid
 documentation: ug
@@ -80,7 +80,7 @@ Search text in records</td></tr>
 {% endhighlight %}
 
 
-![](Toolbar_images/Toolbar_img1.png)
+![Default toolbar items.](Toolbar_images/Toolbar_img1.png)
 
 
 I> [`editSettings.allowAdding`](https://help.syncfusion.com/api/angular/ejgrid#members:editsettings-allowadding "allowAdding"), [`editSettings.allowEditing`](https://help.syncfusion.com/api/angular/ejgrid#members:editsettings-allowediting "allowEditing") and [`editSettings.allowDeleting`](https://help.syncfusion.com/api/angular/ejgrid#members:editsettings-allowdeleting "allowdeleting") need to be enabled for add, delete, edit, save & cancel in [`toolbarItems`](https://help.syncfusion.com/api/angular/ejgrid#members:toolbarsettings-toolbaritems "toolbaritems"). [`allowSearching`](https://help.syncfusion.com/api/angular/ejgrid#members:allowsearching "allowsearching")` to be enabled while adding Search in toolbar to perform search action.
@@ -138,6 +138,6 @@ Custom toolbar is used to create your own toolbar items in toolbar. It can add b
 
 {% endhighlight %}
 
-![](Toolbar_images/Toolbar_img2.jpeg)
+![Custom toolbar.](Toolbar_images/Toolbar_img2.jpeg)
 
 
