@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Virtual Scrolling
+title: Virtual Scrolling in Angular ListView | Syncfusion
 description: virtual scrolling
 platform: Angular
 control: ListView
