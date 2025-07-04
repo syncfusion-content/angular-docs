@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Miscellaneous
+title: Miscellaneous in Angular RadioButton | Syncfusion
 description: miscellaneous
 platform: Angular
 control: RadioButton
