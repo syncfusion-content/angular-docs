@@ -1,6 +1,6 @@
 ---
 layout: post
-title: How-to
+title: customization of range selection in Angular DatePicker | Syncfusion
 description: How-to section
 platform: Angular
 control: DatePicker
