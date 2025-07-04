@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Context Menu
+title: Context Menu support in Angular FileExplorer | Syncfusion
 description: Context Menu support in FileExplorer.
 platform: Angular
 control: FileExplorer
