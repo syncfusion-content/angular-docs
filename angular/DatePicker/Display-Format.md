@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Display Format
-description: Formatting - Date and Time, Headers.
+title: Formatting-Date and Time, Headers in Angular DatePicker | Syncfusion
+description: Formatting - Date and Time, Headers 
 platform: Angular
 control: DatePicker
 documentation: ug
