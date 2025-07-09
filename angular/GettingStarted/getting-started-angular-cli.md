@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  Getting Started with Angular CLI | Syncfusion
-description: Overview of Syncfusion Essential Angular
+description: Check out and learn here all about overview of Syncfusion Essential Syncfusion Angular and much more details.
 platform: Angular
 control: Introduction
 documentation: ug
