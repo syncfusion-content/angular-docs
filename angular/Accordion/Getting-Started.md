@@ -434,5 +434,5 @@ You can set the Up or Down arrow icon to **Accordion** header, by adding **e-arr
 
 The following screenshot illustrates the customization of **selectedHeader** and **header** of the **Accordion** control.
 
-![Customize icon.](Getting-Started-images/Getting-Started_img5.png) 
+![Customize icon for Accordion.](Getting-Started-images/Getting-Started_img5.png) 
 
