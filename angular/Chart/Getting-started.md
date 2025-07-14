@@ -1,6 +1,6 @@
 ---
 title: Getting Started for Chart
-description: How to create a chart, add series, enable tooltip and other functionalities
+description: Checkout and learn here all about how to create a chart, add series, enable tooltip and other functionalities in Syncfusion Angular Chart.
 platform: Angular
 control: chart
 documentation: ug
