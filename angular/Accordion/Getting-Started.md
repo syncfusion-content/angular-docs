@@ -257,7 +257,7 @@ You can also open all the panels during initialization using the **selectedItems
 
 **Accordion** control with **enableMultipleOpen** property is illustrated in the following screen shot.
 
-![Configure multiple open in Accordion.](Getting-Started-images/Getting-Started_img3.png) 
+![Configure multiple open in Angular Accordion.](Getting-Started-images/Getting-Started_img3.png) 
 
 ### Setting rounded corner
 
@@ -343,7 +343,7 @@ N> showRoundedCorner property is False by default.
 
 The following screenshot illustrates the **Accordion** control with rounded corners.
 
-![Setting rounded corner in Accordion.](Getting-Started-images/Getting-Started_img4.png) 
+![Setting rounded corner in Angular Accordion.](Getting-Started-images/Getting-Started_img4.png) 
 
 ## Customize Icon
 
@@ -434,5 +434,5 @@ You can set the Up or Down arrow icon to **Accordion** header, by adding **e-arr
 
 The following screenshot illustrates the customization of **selectedHeader** and **header** of the **Accordion** control.
 
-![Customize icon for Accordion.](Getting-Started-images/Getting-Started_img5.png) 
+![Customize icon for Angular Accordion.](Getting-Started-images/Getting-Started_img5.png) 
 
