@@ -71,7 +71,7 @@ import {EJ_DIAGRAM_COMPONENTS} from 'ej/diagram.component';
 
 This creates an empty diagram
 
-![Initialize Diagram in Angular.](Getting-Started-images/Getting-Started_img1.png)
+![Initialize diagram in Angular.](Getting-Started-images/Getting-Started_img1.png)
 
 ### Initialize Nodes and Connectors
 
@@ -120,7 +120,7 @@ export class DiagramComponent {
 	
 {% endhighlight %}
 	
-![Initialize Nodes and Connectors in Diagram.](Getting-Started-images/Getting-Started_img2.png)
+![Initialize nodes and connectors in Diagram.](Getting-Started-images/Getting-Started_img2.png)
 
 ### Business object (Employee information)
 

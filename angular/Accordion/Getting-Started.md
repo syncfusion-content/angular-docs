@@ -146,7 +146,7 @@ Create the Accordion control as follows.
 
 You can execute the above code example to display the Accordion control with simple control list.
 
-![Create a Simple Accordion in Angular.](Getting-Started-images/Getting-Started_img2.png) 
+![Create a simple Accordion in Angular.](Getting-Started-images/Getting-Started_img2.png) 
 
 You can customize the Accordion control using various properties. The Accordion control properties and its default values are described in the following section.
 
@@ -257,7 +257,7 @@ You can also open all the panels during initialization using the **selectedItems
 
 **Accordion** control with **enableMultipleOpen** property is illustrated in the following screen shot.
 
-![Configure Multiple Open in Accordion.](Getting-Started-images/Getting-Started_img3.png) 
+![Configure multiple open in Accordion.](Getting-Started-images/Getting-Started_img3.png) 
 
 ### Setting rounded corner
 
@@ -434,5 +434,5 @@ You can set the Up or Down arrow icon to **Accordion** header, by adding **e-arr
 
 The following screenshot illustrates the customization of **selectedHeader** and **header** of the **Accordion** control.
 
-![Customize Icon.](Getting-Started-images/Getting-Started_img5.png) 
+![Customize icon.](Getting-Started-images/Getting-Started_img5.png) 
 
