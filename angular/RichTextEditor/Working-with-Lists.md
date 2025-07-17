@@ -102,7 +102,7 @@ export class RTEComponent {
 
 {% endhighlight %}
 
-![](WorkingwithLists_images/ordered.png)
+![inset a custom ordered list in angular rich text editor.](WorkingwithLists_images/ordered.png)
 
 ### Insert a customUnorderedList
 
@@ -161,4 +161,4 @@ export class RTEComponent {
 
 {% endhighlight %}
 
-![](WorkingwithLists_images/unordered.png)
+![insert a custom unordered list in angular rich text ecitor.](WorkingwithLists_images/unordered.png)
