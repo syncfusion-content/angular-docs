@@ -289,7 +289,7 @@ export class KanbanComponent {
 
 {% endhighlight %}
 
-![](Getting_Started_images/Getting_Started_img2.png)
+![mapping values in kanban.](Getting_Started_images/Getting_Started_img2.png)
 
 ## Enable Swimlane
 
@@ -327,7 +327,7 @@ export class KanbanComponent {
 
 {% endhighlight %}
 
-![](Getting_Started_images/Getting_Started_img3.png)
+![enable swimlane in angular kanban.](Getting_Started_images/Getting_Started_img3.png)
 
 ## Adding Filters
 
@@ -371,4 +371,4 @@ export class KanbanComponent {
 
 {% endhighlight %}
 
-![](Getting_Started_images/Getting_Started_img4.png)
+![adding filters in angular kanban.](Getting_Started_images/Getting_Started_img4.png)
