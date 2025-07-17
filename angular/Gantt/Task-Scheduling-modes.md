@@ -103,4 +103,4 @@ export class AppComponent {
 
 The following screen shot depicts a project with custom scheduling mode, where both automatic and manual scheduling modes are mapped to the tasks.
 
-![Manually scheduled tasks in Angular Gantt.](Task-Scheduling-modes_images/Task-Scheduling-modes_img1.png)
+![manually scheduled tasks in Angular Gantt.](Task-Scheduling-modes_images/Task-Scheduling-modes_img1.png)

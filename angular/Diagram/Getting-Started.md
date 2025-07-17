@@ -71,7 +71,7 @@ import {EJ_DIAGRAM_COMPONENTS} from 'ej/diagram.component';
 
 This creates an empty diagram
 
-![Initialize Diagram in Angular.](Getting-Started-images/Getting-Started_img1.png)
+![initialize Diagram in Angular.](Getting-Started-images/Getting-Started_img1.png)
 
 ### Initialize Nodes and Connectors
 
@@ -120,7 +120,7 @@ export class DiagramComponent {
 	
 {% endhighlight %}
 	
-![Initialize nodes and connectors in Angular Diagram.](Getting-Started-images/Getting-Started_img2.png)
+![initialize nodes and connectors in Angular Diagram.](Getting-Started-images/Getting-Started_img2.png)
 
 ### Business object (Employee information)
 
@@ -187,4 +187,4 @@ export class DefaultComponent {
 
 * The Employee details are displayed in the Diagram as follows.
 
-![Map data source in Angular Diagram.](Getting-Started-images/Getting-Started_img3.png)
+![map data source in Angular Diagram.](Getting-Started-images/Getting-Started_img3.png)
