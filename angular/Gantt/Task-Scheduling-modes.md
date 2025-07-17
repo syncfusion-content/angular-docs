@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Task-scheduling-modes
-description: Task scheduling modes
+description: Check out and learn here all about task scheduling modes for Angular Gantt in Syncfusion and much more details.
 platform: Angular
 control: Gantt
 documentation: ug
@@ -103,4 +103,4 @@ export class AppComponent {
 
 The following screen shot depicts a project with custom scheduling mode, where both automatic and manual scheduling modes are mapped to the tasks.
 
-![](Task-Scheduling-modes_images/Task-Scheduling-modes_img1.png)
+![manually scheduled tasks in Angular Gantt.](Task-Scheduling-modes_images/Task-Scheduling-modes_img1.png)

@@ -1,6 +1,6 @@
 ---
 title: Getting Started for Angular Accordion
-description: Getting Started for Angular Accordion
+description: Check out and learn here all about getting started with Angular Accordion in Syncfusion and much more details.
 platform: Angular
 control: Accordion
 documentation: Ug
@@ -16,7 +16,7 @@ This section encompasses the details on how you can configure the **Accordion** 
 
 The following screenshot illustrates you the usage of **Accordion** control in listing the controls under the Essential Studio products. 
 
-![](Getting-Started-images/Getting-Started_img1.png) 
+![configure Accordion in Angular.](Getting-Started-images/Getting-Started_img1.png) 
 
 The usage of **Accordion** control is described in the following sections.
 
@@ -146,7 +146,7 @@ Create the Accordion control as follows.
 
 You can execute the above code example to display the Accordion control with simple control list.
 
-![](Getting-Started-images/Getting-Started_img2.png) 
+![create a simple Accordion in Angular.](Getting-Started-images/Getting-Started_img2.png) 
 
 You can customize the Accordion control using various properties. The Accordion control properties and its default values are described in the following section.
 
@@ -257,7 +257,7 @@ You can also open all the panels during initialization using the **selectedItems
 
 **Accordion** control with **enableMultipleOpen** property is illustrated in the following screen shot.
 
-![](Getting-Started-images/Getting-Started_img3.png) 
+![Configure multiple open in Angular Accordion.](Getting-Started-images/Getting-Started_img3.png) 
 
 ### Setting rounded corner
 
@@ -343,7 +343,7 @@ N> showRoundedCorner property is False by default.
 
 The following screenshot illustrates the **Accordion** control with rounded corners.
 
-![](Getting-Started-images/Getting-Started_img4.png) 
+![setting rounded corner in Angular Accordion.](Getting-Started-images/Getting-Started_img4.png) 
 
 ## Customize Icon
 
@@ -434,5 +434,5 @@ You can set the Up or Down arrow icon to **Accordion** header, by adding **e-arr
 
 The following screenshot illustrates the customization of **selectedHeader** and **header** of the **Accordion** control.
 
-![](Getting-Started-images/Getting-Started_img5.png) 
+![customize icon for Angular Accordion.](Getting-Started-images/Getting-Started_img5.png) 
 
