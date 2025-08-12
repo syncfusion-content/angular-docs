@@ -43,7 +43,7 @@ export class AppComponent {
 
 The following output is displayed as a result of the above code example.
 
-![](paging_images/paging_img1.png)
+![paging in Grid](paging_images/paging_img1.png)
 
 
 ## Pager with query string
@@ -84,7 +84,7 @@ export class AppComponent {
 
 The following output is displayed as a result of the above code example.
 
-![](paging_images/paging_img2.png)
+![pager with query string in Grid](paging_images/paging_img2.png)
 
 
 ## Pager template
@@ -155,7 +155,7 @@ Place the template inside index.html file
 
 The following output is displayed as a result of the above code example.
 
-![](paging_images/paging_img3.png)
+![pager template in Angular Grid.](paging_images/paging_img3.png)
 
 
 ## Pager with pageSize drop down
@@ -196,4 +196,4 @@ export class AppComponent {
 
 The following output is displayed as a result of the above code example.
 
-![](paging_images/paging_img4.png)
+![pager with pagesize drop down in Angular Grid.](paging_images/paging_img4.png)

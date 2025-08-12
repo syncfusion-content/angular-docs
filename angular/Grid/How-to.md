@@ -191,7 +191,7 @@ import {Component, ViewEncapsulation, ViewChild } from '@angular/core';
 
 
 The following output is displayed as a result of the above code example.
-![](externalsearch_images/externalsearch_img1.png)
+![external search in Grid.](externalsearch_images/externalsearch_img1.png)
 
 ## Hierarchy Grid with different foreignKeyField in parent and child table
 
@@ -252,7 +252,7 @@ export class GridComponent {
 {% endhighlight %}
 
 The following output is displayed as a result of the above code example.
-![](Hierarchy-Grid_images/Hierarchy-Grid_images2.png)
+![Hierarchy Grid with different foreignKeyField in parent and child table in Grid.](Hierarchy-Grid_images/Hierarchy-Grid_images2.png)
 
 ## Perform Grid Actions on External button click
 
@@ -409,7 +409,7 @@ import {Component, ViewEncapsulation, ViewChild } from '@angular/core';
 
 {% endtabs %}
 The following output is displayed as a result of the above code example.
-![](externalsearch_images/Actionswithexternalbutton_img1.png)
+![sorting in Grid.](externalsearch_images/Actionswithexternalbutton_img1.png)
 
 
 ## Display other Syncfusion controls in Grid columns
@@ -454,7 +454,7 @@ import {Component, ViewEncapsulation, ViewChild } from '@angular/core';
 {% endhighlight %}
 
 The following output is displayed as a result of the above code example.
-![](Display-Other-controls/Display_Other_controls_img1.png)
+![display other Syncfusion controls in Grid columns.](Display-Other-controls/Display_Other_controls_img1.png)
 
 
 ## Getting Datasource of Grid in Sorted Order

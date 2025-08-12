@@ -59,7 +59,7 @@ The following code example describes the above behavior.
 
 The following output is displayed as a result of the above code example.
 
-![](dataBinding_images/dataBinding_img1.png)
+![to bind local data to the Grid.](dataBinding_images/dataBinding_img1.png)
 
 
 N> 1. There is no in-built support to bind the XML data to the grid. But you can achieve this requirement with the help of [`custom adaptor`]concept. 
@@ -116,7 +116,7 @@ The following code example describes the above behavior.
 	
 The following output is displayed as a result of the above code example.
 
-![](dataBinding_images/dataBinding_img2.png)
+![OData is a standardized protocol for creating and consuming data.](dataBinding_images/dataBinding_img2.png)
 
 N> By default, if no adaptor is specified for ej.DataManager and only the url link is mentioned it will consider as ODataService. 
 
@@ -242,7 +242,7 @@ namespace EJGrid.Controllers
 
 The following output is displayed as a result of the above code example.
 
-![](dataBinding_images/dataBinding_img3.png)
+![webapi service data to Grid.](dataBinding_images/dataBinding_img3.png)
 
 
 ### Load At Once
@@ -294,7 +294,7 @@ Please refer to this for further reference on `offline` property
 
 The following output is displayed as a result of the above code example.
 
-![](dataBinding_images/dataBinding_img5.png)
+![load at once in Grid](dataBinding_images/dataBinding_img5.png)
 
 
 ### Data Caching
@@ -347,7 +347,7 @@ The following code example describes the above behavior.
 
 The following output is displayed as a result of the above code example.
 
-![](dataBinding_images/dataBinding_img6.png)
+![date caching in Grid Data Binding.](dataBinding_images/dataBinding_img6.png)
 
 
 ### Custom request parameters and HTTP Header
@@ -403,7 +403,7 @@ The following code example describes the above behavior.
 
 The custom parameter will be passed along with the data request of the grid as follows.
 
-![](dataBinding_images/dataBinding_img7.png)
+![adding request parameters in Grid.](dataBinding_images/dataBinding_img7.png)
 
 
 #### Handling HTTP Errors
@@ -486,7 +486,7 @@ The following code example describes the above behavior.
 
 The following output is displayed as a result of the above code example.
 
-![](dataBinding_images/dataBinding_img8.png)
+![handling http errors in Grid.](dataBinding_images/dataBinding_img8.png)
 
 
 ## HTML Table 
@@ -590,7 +590,7 @@ The following code example describes the above behavior.
 
 The following output is displayed as a result of the above code example.
 
-![](dataBinding_images/dataBinding_img9.png)
+![html table in Grid.](dataBinding_images/dataBinding_img9.png)
 
 
 I> The HTML Table element is the only valid element when using HTML Table binding. Using other elements will throws an exception.

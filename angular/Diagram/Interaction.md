@@ -17,7 +17,7 @@ Selector provides a visual representation of selected elements. It behaves like 
 
 An element can be selected by clicking that element. During single click, all previously selected items are cleared. The following image shows how the selected elements are visually represented.
 
-![](/angular/Diagram/Interaction_images/Interaction_img1.png)
+![single selection in Diagram Interaction.](/angular/Diagram/Interaction_images/Interaction_img1.png)
 
 ### Selecting a group
 
@@ -37,7 +37,7 @@ Multiple elements can be selected with the following ways.
 
 Multiple selected elements are visually represented as shown.
 
-![](/angular/Diagram/Interaction_images/Interaction_img2.png)
+![multiple selected elements are visually represented as shown.](/angular/Diagram/Interaction_images/Interaction_img2.png)
 
 ### Select/Unselect elements programmatically
 
@@ -90,7 +90,7 @@ N> SelectedItems’s children is a read-only property. You cannot change the chi
 * An object can be dragged by clicking and dragging it. When multiple elements are selected, dragging any one of the selected elements move every selected element.
 * While dragging, the objects are snapped towards the nearest objects to make better alignments. For better alignments, refer to [Snapping](/angular/Diagram/Gridlines#snapping "Snapping").
 
-![](/angular/Diagram/Interaction_images/Interaction_img3.png)
+![an object can be dragged by clicking and dragging it.](/angular/Diagram/Interaction_images/Interaction_img3.png)
 
 ## Working with multiple diagrams
 
@@ -144,9 +144,9 @@ The following code illustrates how to drag nodes over multiple diagrams.
 
 The following screen short illustrates how the nodes are dragged from one diagram to another.
  
-![](/angular/Diagram/Interaction_images/Interaction_img12.png)
+![illustrates how the nodes are dragged from one diagram to another.](/angular/Diagram/Interaction_images/Interaction_img12.png)
 
-![](/angular/Diagram/Interaction_images/Interaction_img13.png)
+![illustrates how the nodes are dragged from one diagram to another in Diagram Interaction.](/angular/Diagram/Interaction_images/Interaction_img13.png)
  
 
 
