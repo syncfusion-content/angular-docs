@@ -69,7 +69,7 @@ The following code example describes the above behavior.
 
 The following output is displayed as a result of the above code example
 
-![](selection_images/selection_img1.png)
+![row selection in Angular Grid.](selection_images/selection_img1.png)
 
 
 ## Multiple Row Selection using Checkbox Column
@@ -116,7 +116,7 @@ The following code example describes the above behavior.
 
 The following output is displayed as a result of the above code example
 
-![](selection_images/selection_img6.png)
+![multiple row selection using checkbox column in Angular Grid.](selection_images/selection_img6.png)
 
 
 ## Cell Selection
@@ -161,7 +161,7 @@ Cell selection is enabled by setting [`selectionMode`](https://help.syncfusion.c
 
 The following output is displayed as a result of the above code example
 
-![](selection_images/selection_img2.png)
+![cell selection in Angular Grid.](selection_images/selection_img2.png)
 
 
 ### Cell Selection Mode
@@ -213,7 +213,7 @@ The following code example describes the above behavior.
 
 The following output is displayed as a result of the above code example
 
-![](selection_images/selection_img3.png)
+![cell selection mode in Angular Grid.](selection_images/selection_img3.png)
 
 
 N> Continuous selection is the default cell selection mode in grid when [`selectionMode`](https://help.syncfusion.com/api/angular/ejgrid#members:selectionsettings-selectionmode) is "cell"
@@ -262,7 +262,7 @@ The following code example describes the above behavior.
 
 The following output is displayed as a result of the above code example
 
-![](selection_images/selection_img4.png)
+![column selection in Angular Grid.](selection_images/selection_img4.png)
 
 
 ## Touch options
@@ -307,7 +307,7 @@ The following code example describes the above behavior.
 
 The following output is displayed as a result of the above code example.
 
-![](selection_images/selection_img5.png)
+![touch options in Angular Grid.](selection_images/selection_img5.png)
 
 
 ## Toggle Selection
@@ -405,4 +405,4 @@ The following code example describes the above behavior.
 
 The following output is displayed as a result of the above code example.
 
-![](selection_images/Selection_img7.png)
+![drag selection in Angular Grid.](selection_images/Selection_img7.png)
