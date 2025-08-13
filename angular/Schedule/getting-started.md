@@ -67,4 +67,4 @@ export class ScheduleComponent {
 {% endhighlight %}
 
 
-![](Getting-Started_images/Getting-Started_img1.png)
+![data-binding in Angular Schedule.](Getting-Started_images/Getting-Started_img1.png)
