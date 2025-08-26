@@ -53,23 +53,23 @@ The following code example describes the above behavior.
 </ej-spreadsheet>
 {% endhighlight %}
 
-![](Context-Menu_images/context-menu_img1.png)
+![context menu at cell in Angular Spreadsheet.](Context-Menu_images/context-menu_img1.png)
 
 Contextmenu at Cell
 {:.caption}
 
 
-![](Context-Menu_images/context-menu_img2.png)
+![context menu at column header in Angular Spreadsheet.](Context-Menu_images/context-menu_img2.png)
 
 Contextmenu at Column Header
 {:.caption}
 
-![](Context-Menu_images/context-menu_img3.png)
+![context menu at row header in Angular Spreadsheet.](Context-Menu_images/context-menu_img3.png)
 
 Contextmenu at Row Header
 {:.caption}
 
-![](Context-Menu_images/context-menu_img4.png)
+![context menu at pager in Angular Spreadsheet.](Context-Menu_images/context-menu_img4.png)
 
 Contextmenu at Pager
 {:.caption}

@@ -214,7 +214,7 @@ npm start
 
 * Browse to [http://localhost:3000](http://localhost:3000) to see the application. And navigate to chart tab. The component is rendered as like the below screenshot. You can make changes in the code found under src folder and the browser should auto-refresh itself while you save files. 
 
-![](Getting-started-images/Getting-Started_img1.png)
+![running the application in Angular Chart.](Getting-started-images/Getting-Started_img1.png)
 
 ## Data Binding
 
@@ -278,7 +278,7 @@ export class DataService{
 }
 {% endhighlight %}
 
-![](Getting-started-images/Getting-Started_img2.png)
+![data binding in Angular chart.](Getting-started-images/Getting-Started_img2.png)
 
 
 ## Add Data Labels
@@ -300,7 +300,7 @@ The following code example illustrates this,
 
 {% endhighlight %}
 
-![](Getting-started-images/Getting-Started_img3.png)
+![add data labels in Angular chart.](Getting-started-images/Getting-Started_img3.png)
 
 
 There are situations where the default label content is not sufficient to the user. In this case, you can use the [`template`](../api/ejchart#members:series-marker-datalabel-template) option to format the label content with some additional information.
@@ -323,7 +323,7 @@ The above HTML template is used as a template for each data label. Here, "point.
 
 The following code example shows how to set the id of the above template to [`template`](../api/ejchart#members:series-marker-datalabel-template) option,
 
-![](Getting-started-images/Getting-Started_img4.png)
+![how to set the id of the above template to template option.](Getting-started-images/Getting-Started_img4.png)
 
 ## Enable Tooltip
 
@@ -345,7 +345,7 @@ The following code example illustrates this,
 
 {% endhighlight %}
 
-![](Getting-started-images/Getting-Started_img5.png)
+![enable tooltip in Angular chart.](Getting-started-images/Getting-Started_img5.png)
 
 ## Add Chart Title
 
@@ -358,4 +358,4 @@ You need to add a title to the chart to provide quick information to the user ab
 
 {% endhighlight %}
 
-![](Getting-started-images/Getting-Started_img6.png)
+![add chart title in Angular chart.](Getting-started-images/Getting-Started_img6.png)

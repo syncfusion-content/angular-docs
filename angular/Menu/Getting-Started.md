@@ -13,7 +13,7 @@ keywords: ejmenu, js menu, menu
 This section explains briefly about how to create a **Menu** control in your application with **Angular**. The **Essential JavaScript** **Menu** supports displaying a **Menu** of list-out items. This **Menu** is based on ul-li hierarchy, where the sub-list items are rendered as the sub-menu items. The **Menu** control can also be rendered with local and remote data source.  From the following guidelines, you can learn how to customize the **Menu** control for a website. In this case, **Syncfusion's** website **Menu** is discussed. The following screenshot displays the appearance of **Menu**.
 
 
-![](Getting-Started_images/Getting-Started_img1.png) 
+![how to create a menu control in Angular Menu.](Getting-Started_images/Getting-Started_img1.png) 
 
 ## Create a Menu
 
@@ -68,7 +68,7 @@ Adding element for **Menu** rendering.
 
 Output of the above steps.
 
-![](Getting-Started_images/Getting-Started_img2.png) 
+![create a menu in Angular Menu.](Getting-Started_images/Getting-Started_img2.png) 
 
 ## Configure parent Menu items
 
@@ -106,7 +106,7 @@ Every **Menu** has a list of **Menu** items with list of sub level **Menu** item
 
 The following screenshot displays output.
 
-![](Getting-Started_images/Getting-Started_img3.jpg) 
+![configure parent menu items in Angular Menu.](Getting-Started_images/Getting-Started_img3.jpg) 
 
 ## Initialize sub-level Menu items
 
@@ -158,7 +158,7 @@ The following code example describes how to initialize first level sub menu item
 
 Execute the above code example to render the following output.
 
-![](Getting-Started_images/Getting-Started_img4.png) 
+![initialize sub-level menu items in Angular Menu.](Getting-Started_images/Getting-Started_img4.png) 
 
 ## Define multiple level Menu items
 
@@ -214,7 +214,7 @@ To initialize multiple levels sub menu items, use the following code example.
 
 The following screenshot is the output.
 
-![](Getting-Started_images/Getting-Started_img1.png) 
+![define multiple level menu items in Angular Menu.](Getting-Started_images/Getting-Started_img1.png) 
 
 By following the above mentioned steps, you can render the **Menu** control with multiple level sub items through online data source. You can simply customize the **Menu** widget in an efficient manner.
 

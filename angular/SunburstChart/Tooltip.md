@@ -18,7 +18,7 @@ ToolTip allows you to display any information over a sunburst segment. It appear
 
 {% endhighlight %}
 
-![](Tooltip_images/Tooltip_img1.png)
+![tooltip in Angular Sunburstchart.](Tooltip_images/Tooltip_img1.png)
 
 ## Tooltip Template   
 
@@ -45,7 +45,7 @@ HTML elements can be displayed in the tooltip by using the `tooltip.template` pr
 
 {% endhighlight %}
 
-![](Tooltip_images/Tooltip_img2.png)
+![tooltip template in Angular Sunburstchart.](Tooltip_images/Tooltip_img2.png)
 
 ## Customize the appearance of tooltip
 

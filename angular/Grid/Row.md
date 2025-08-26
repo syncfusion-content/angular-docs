@@ -51,7 +51,7 @@ The following code example describes the above behavior.
 
 The following output is displayed as a result of the above code example.
 
-![](Row_images/Row_img1.png)
+![row in Angular Grid.](Row_images/Row_img1.png)
 
 
 ## Details Template
@@ -156,7 +156,7 @@ import {Component, ViewEncapsulation} from '@angular/core';
 
 The following output is displayed as a result of the above code example.
 
-![](Row_images/Row_img12.PNG)
+![details template in Angular Grid.](Row_images/Row_img12.PNG)
 
 
 ## Row Template
@@ -234,7 +234,7 @@ The following code example describes the above behavior.
       selector: 'ej-app',
       templateUrl: 'app/app.component.html',  //give the path file for Grid control html file.
     })
-    export class AppComponent {
+    export class AppComponent { 
        ublic gridData: any;
     
     temp:any;
@@ -246,10 +246,10 @@ The following code example describes the above behavior.
         this.temp = "#rowtemplate";
      }
 {% endhighlight %}
-
+    }
 The following output is displayed as a result of the above code example.
 
-![](Row_images/Row_img11.png)
+![row template in Angular Grid.](Row_images/Row_img11.png)
 
 ## Alternate row styling
 
@@ -292,7 +292,7 @@ By default its value is `true`, so the following code example describes the how 
 
 The following output is displayed as a result of the above code example.
 
-![](Row_images/Row_img4.png)
+![alternate row styling in Angular Grid.](Row_images/Row_img4.png)
 
 
 ## Drag-and-Drop
@@ -341,12 +341,12 @@ The following code example describes the above behavior.
 
 The following output is displayed before reordering rows. 
 
-![](Row_images/Row_img5.png)
+![displayed before reordering rows in Angular Grid.](Row_images/Row_img5.png)
 {:Before Drop}
 
 The following output is displayed after reordering rows.
 
-![](Row_images/Row_img6.png)
+![displayed after reordering rows in Angular Grid.](Row_images/Row_img6.png)
 {:After Drop}
 
 
@@ -402,12 +402,12 @@ The following code example describes the above behavior.
 
 The following output is displayed before dropping Grid rows.
 
-![](Row_images/Row_img7.png)
+![displayed before dropping Grid rows in Angular Grid.](Row_images/Row_img7.png)
 {:Before Drop}
 
 The following output is displayed after dropping Grid rows.
 
-![](Row_images/Row_img8.png)
+![displayed after dropping Grid rows in Angular Grid.](Row_images/Row_img8.png)
 {:After Drop}
 
 
@@ -489,12 +489,12 @@ The following code example describes the above behavior.
 
 The following output is displayed before dropping the rows on Form.
 
-![](Row_images/Row_img9.png)
+![displayed before dropping the rows on Form in Angular Grid.](Row_images/Row_img9.png)
 {:Before Drop}
 
 The following output is displayed after dropping the rows on Form.
 
-![](Row_images/Row_img10.png)
+![displayed after dropping the rows on Form in Angular Grid.](Row_images/Row_img10.png)
 {:After Drop}
 
 N>   The default behavior of drag and drop between Grid or any other controls is as cut and paste. For copy and paste behavior specify the drag behavior in [`dragBehavior`](https://help.syncfusion.com/api/angular/ejgrid#members:rowdropsettings-dragbehavior "dragBehavior") property of [`rowDropSettings`](https://help.syncfusion.com/api/angular/ejgrid#members:rowdropsettings "rowDropSettings")  as ej.Grid.DragBehavior.Copy.

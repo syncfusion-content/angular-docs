@@ -12,7 +12,7 @@ documentation: ug
 
 TreeView node is structured with expand/collapse arrow, checkbox, image and text as shown in below.
 
-![](Tree-Node_images/Tree-Node_img1.png)
+![tree node in Angular TreeView.](Tree-Node_images/Tree-Node_img1.png)
 
 
 Also TreeView node object holds the following properties.
