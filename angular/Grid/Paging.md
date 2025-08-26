@@ -155,7 +155,7 @@ Place the template inside index.html file
 
 The following output is displayed as a result of the above code example.
 
-![pager template in Angular Grid.](paging_images/paging_img3.png)
+![pager template in Angular grid.](paging_images/paging_img3.png)
 
 
 ## Pager with pageSize drop down
@@ -196,4 +196,4 @@ export class AppComponent {
 
 The following output is displayed as a result of the above code example.
 
-![pager with pagesize drop down in Angular Grid.](paging_images/paging_img4.png)
+![pager with pagesize drop down in Angular grid.](paging_images/paging_img4.png)

@@ -252,7 +252,7 @@ export class GridComponent {
 {% endhighlight %}
 
 The following output is displayed as a result of the above code example.
-![Hierarchy Grid with different foreignKeyField in parent and child table in Grid.](Hierarchy-Grid_images/Hierarchy-Grid_images2.png)
+![hierarchy grid with different foreign key field in parent and child table in Grid.](Hierarchy-Grid_images/Hierarchy-Grid_images2.png)
 
 ## Perform Grid Actions on External button click
 

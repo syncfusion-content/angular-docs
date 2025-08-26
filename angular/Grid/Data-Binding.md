@@ -347,7 +347,7 @@ The following code example describes the above behavior.
 
 The following output is displayed as a result of the above code example.
 
-![date caching in Grid Data Binding.](dataBinding_images/dataBinding_img6.png)
+![date caching in Grid data binding.](dataBinding_images/dataBinding_img6.png)
 
 
 ### Custom request parameters and HTTP Header

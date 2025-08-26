@@ -234,7 +234,7 @@ The following code example describes the above behavior.
       selector: 'ej-app',
       templateUrl: 'app/app.component.html',  //give the path file for Grid control html file.
     })
-    export class AppComponent {
+    export class AppComponent { 
        ublic gridData: any;
     
     temp:any;
@@ -246,7 +246,7 @@ The following code example describes the above behavior.
         this.temp = "#rowtemplate";
      }
 {% endhighlight %}
-
+    }
 The following output is displayed as a result of the above code example.
 
 ![row template in Angular Grid.](Row_images/Row_img11.png)
@@ -346,7 +346,7 @@ The following output is displayed before reordering rows.
 
 The following output is displayed after reordering rows.
 
-![displayed after reordering rows in  Angular Grid.](Row_images/Row_img6.png)
+![displayed after reordering rows in Angular Grid.](Row_images/Row_img6.png)
 {:After Drop}
 
 

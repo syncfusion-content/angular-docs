@@ -278,7 +278,7 @@ export class DataService{
 }
 {% endhighlight %}
 
-![data binding in Angular Chart.](Getting-started-images/Getting-Started_img2.png)
+![data binding in Angular chart.](Getting-started-images/Getting-Started_img2.png)
 
 
 ## Add Data Labels
@@ -300,7 +300,7 @@ The following code example illustrates this,
 
 {% endhighlight %}
 
-![add data labels in Angular Chart.](Getting-started-images/Getting-Started_img3.png)
+![add data labels in Angular chart.](Getting-started-images/Getting-Started_img3.png)
 
 
 There are situations where the default label content is not sufficient to the user. In this case, you can use the [`template`](../api/ejchart#members:series-marker-datalabel-template) option to format the label content with some additional information.
@@ -345,7 +345,7 @@ The following code example illustrates this,
 
 {% endhighlight %}
 
-![enable tooltip in Angular Chart.](Getting-started-images/Getting-Started_img5.png)
+![enable tooltip in Angular chart.](Getting-started-images/Getting-Started_img5.png)
 
 ## Add Chart Title
 
@@ -358,4 +358,4 @@ You need to add a title to the chart to provide quick information to the user ab
 
 {% endhighlight %}
 
-![add chart title in Angular Chart.](Getting-started-images/Getting-Started_img6.png)
+![add chart title in Angular chart.](Getting-started-images/Getting-Started_img6.png)
