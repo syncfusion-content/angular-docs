@@ -18,7 +18,7 @@ ToolTip allows you to display any information over a sunburst segment. It appear
 
 {% endhighlight %}
 
-![tooltip in Angular Sunburstchart](Tooltip_images/Tooltip_img1.png)
+![tooltip in Angular Sunburstchart.](Tooltip_images/Tooltip_img1.png)
 
 ## Tooltip Template   
 
