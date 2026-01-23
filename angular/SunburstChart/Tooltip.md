@@ -7,7 +7,7 @@ control: Sunburst Chart
 documentation: ug
 ---
 
-## Tooltip  
+# How to add Tooltip to SunburstChart? 
 
 ToolTip allows you to display any information over a sunburst segment. It appears when mouse hovered over or touch any chart segment. By default, it displays the corresponding segment category name and its value
 
